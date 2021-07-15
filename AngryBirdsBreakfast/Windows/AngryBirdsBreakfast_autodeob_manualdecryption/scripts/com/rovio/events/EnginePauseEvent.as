@@ -1,0 +1,18 @@
+package com.rovio.events
+{
+   import flash.events.Event;
+   
+   public class EnginePauseEvent extends Event
+   {
+      
+      public static const ENGINE_PAUSE:String = "engine_pause";
+      
+      public static const ENGINE_RESUME:String = "engine_resume";
+       
+      
+      public function EnginePauseEvent(param1:String, param2:Boolean = false, param3:Boolean = false)
+      {
+         super(param1,param2,param3);
+      }
+   }
+}

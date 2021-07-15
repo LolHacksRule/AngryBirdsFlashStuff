@@ -1,0 +1,20 @@
+<Popup name="Popup_SelectLanguage" visible="True" fromLibrary="True"
+	   width="980" height="570"  scaleH="FALSE" scaleV="FALSE" aspectRatioFixed="TRUE">
+
+	<Container name="Container_LanguageSelectionGraphics" visible = "true" alignH="CENTER" alignV="CENTER">
+		<Button name="Button_Language_ArrowDown" MouseUp="SCROLL_LANGUAGE_DOWN" visible="false"/>
+		<Button name="Button_Language_ArrowUp" MouseUp="SCROLL_LANGUAGE_UP" visible="false"/>
+	</Container>
+	<Container name="Container_LanguageSelection" visible = "true" alignH="CENTER" alignV="CENTER">
+	</Container>
+
+
+
+	<Button name="Button_Play" MouseUp="BUTTON_PLAY" visible ="False" alignH="CENTER" alignV="CENTER"/>
+
+	<Button name="Button_Exit" MouseUp="BUTTON_EXIT" alignH="LEFT" alignV="BOTTOM"/>
+	<Button name="Button_Credits" MouseUp="BUTTON_CREDITS" alignH="LEFT" alignV="BOTTOM"/>
+	<Button name="Button_Mute" MouseUp="BUTTON_MUTE" alignH="LEFT" alignV="BOTTOM"/>
+	<MovieClip name="MovieClip_SoundOff" visible="False" alignH="LEFT" alignV="BOTTOM"/>
+	<Button name="Button_FullScreen" MouseUp="BUTTON_FULLSCREEN"  alignH="RIGHT" alignV="BOTTOM"/>
+</Popup>

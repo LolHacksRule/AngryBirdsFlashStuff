@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+==================================================================
+==			ISO 639-1 LANGUAGE CODES 							==
+==	 http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes		==
+==================================================================
+-->
+
+<data>
+		<language id = "sq" name = "Albanian" nativeName = "Shqipëri"></language>
+		<language id = "ar" name = "Arabic" nativeName = "عربي"></language>
+		<language id = "id" name = "Indonesian" nativeName = "Bahasa Indonesia"></language>
+		<language id = "bg" name = "Bulgarian" nativeName = "български"></language>
+		<language id = "hr" name = "Croatian" nativeName = "Hrvatski"></language>
+		<language id = "cs" name = "Czech" nativeName = "Čeština"></language>
+		<language id = "en" name = "English" nativeName = "English"></language>
+		<language id = "et" name = "Estonian" nativeName = "Eesti keel"></language>
+		<language id = "fr" name = "French" nativeName = "Français"></language>
+		<language id = "mk" name = "Macedonian" nativeName = "Македонски"></language>
+		<language id = "de" name = "German" nativeName = "Deutsch"></language>
+		<language id = "el" name = "Greek" nativeName = "Ελληνικά"></language>
+		<language id = "hu" name = "Hungarian" nativeName = "Magyar"></language>
+		<language id = "lv" name = "Latvian" nativeName = "Latviešu"></language>
+		<language id = "lt" name = "Lithuanian" nativeName = "Lietuvių"></language>
+		<language id = "es" name = "Spanish" nativeName = "Español Latinoamericano"></language>
+		<language id = "pl" name = "Polish" nativeName = "Polski"></language>
+		<language id = "ro" name = "Romanian" nativeName = "Română"></language>
+		<language id = "sr" name = "Serbian" nativeName = "Srpski"></language>
+		<language id = "sk" name = "Slovak" nativeName = "Slovenčina"></language>
+		<language id = "sl" name = "Slovenian" nativeName = "Slovenščina"></language>
+		<language id = "th" name = "Thai" nativeName = "ภาษาไทย"></language>
+		<language id = "zh" name = "Chinese" nativeName = "繁體中文"></language>
+</data>

@@ -1,0 +1,127 @@
+<UIDescription>
+	<Views>
+		<ViewLanguageSelection name="ViewLanguageSelection" width="980" height="570" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" aspectRatioFixed="TRUE" alignV="CENTER" alignH="CENTER" scaleV="False" scaleH="False">
+			<MovieClip name="MovieClip_BackGround" />
+		</ViewLanguageSelection>
+
+		<ViewLegal name="ViewLegal" width="760" height="570" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0">
+			<TextField name="TextField_LegalText" visible="true" enabled="false" alignH="CENTER" alignV="CENTER" scaleH="True" scaleV="True" aspectRatioFixed="TRUE"/>
+			<MovieClip name="MovieClip_BackGround" />
+			<Button name="Button_Agree" MouseUp="AGREE" alignH="RIGHT" alignV="BOTTOM" scaleH="True" scaleV="True" aspectRatioFixed="TRUE"/>
+			<Button name="Button_Disagree" MouseUp="DISAGREE" alignH="LEFT" alignV="BOTTOM" scaleH="True" scaleV="True" aspectRatioFixed="TRUE"/>
+		</ViewLegal>
+		
+		<ViewLevelSelectionCustom name="ViewLevelSelectionCustom" width="980" height="570" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" >
+			<MovieClip name="MovieClip_BackGround" alignH="CENTER" alignV="CENTER" scaleH="False" scaleV="False" aspectRatioFixed="FALSE"/>
+			
+			<MovieClip name="MovieClip_BreakfastLogo" alignH="CENTER" alignV="CENTER" scaleH="True" scaleV="True" aspectRatioFixed="TRUE"/>
+			<MovieClip name="MovieClip_LevelSelectionBirds" alignH="CENTER" alignV="CENTER" scaleH="True" scaleV="True" aspectRatioFixed="TRUE"/>
+			
+			<Container name="Container_Chapter1" alignH="CENTER" alignV="CENTER" scaleH="True" scaleV="True" aspectRatioFixed="TRUE" >
+				<Button name="Button_Level1" MouseUp="C1_LEVEL_1"/>
+				<Button name="Button_Level2" MouseUp="C1_LEVEL_2"/>
+				<Button name="Button_Level3" MouseUp="C1_LEVEL_3" />
+				<Button name="Button_Level4" MouseUp="C1_LEVEL_4" />
+				<Button name="Button_Level5" MouseUp="C1_LEVEL_5" />
+				<Button name="Button_Level6" MouseUp="C1_LEVEL_6" />
+				<Button name="Button_Level7" MouseUp="C1_LEVEL_7" />
+			</Container>
+
+			<Button name="Button_Back" MouseUp="BUTTON_BACK" alignV="BOTTOM" alingH="LEFT" scaleH="True" scaleV="True" aspectRatioFixed="TRUE"/>
+			<Button name="Button_Quit" MouseUp="BUTTON_QUIT" alignV="BOTTOM" alingH="LEFT" scaleH="True" scaleV="True" aspectRatioFixed="TRUE"/>
+
+			<Container name="Container_RightButtons" alignH="RIGHT" alignV="BOTTOM" scaleH="True" scaleV="True" aspectRatioFixed="TRUE">
+				<Button name="Button_Credits" MouseUp="BUTTON_CREDITS"/>
+				<Button name="Button_Mute" MouseUp="BUTTON_MUTE"/>
+				<Button name="Button_FullScreen" MouseUp="BUTTON_FULLSCREEN"/>
+				<MovieClip name="MovieClip_SoundOff" visible="false"/>
+			</Container>
+
+			
+		</ViewLevelSelectionCustom>
+
+		<ViewLogin name="ViewLogin" width="980" height="570" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE">
+			<Button name="Button_Back" MouseUp="BACK" alignH="RIGHT"/>
+		</ViewLogin>
+		
+		<!-- VIEW CUT SCENE -->
+		<View_CutScene name="ViewCutSceneCustom" width="760" height="570" scaleH="TRUE" scaleV="TRUE" alignV="CENTER" alignH="CENTER" aspectRatioFixed="TRUE">
+			<Container name="Container_Cutscene">
+			</Container>
+			<Button name="Button_Skip" visible="False" MouseUp="Skip" scaleOnMouseOver="True"/>
+			
+			<MovieClip name="MovieClip_Loading" visible="true"/>
+			<!-- <Button name="Button_FullScreen" MouseUp="FULLSCREEN_BUTTON" alignH="RIGHT" alignV="BOTTOM"/>-->
+		</View_CutScene> 
+
+		<View_Credits name="ViewCredits" width="980" height="570">
+			<Container name="Container_Credits" visible="false" alignV="CENTER" alignH="CENTER">
+				<TextField name="TextField_Version_Number" text="1.0.0 placeholder"
+					enabled="True" />
+			</Container>
+			<Button name="Button_Back" MouseUp="CREDITS_CLOSE_BUTTON" alignV="BOTTOM" alignH="LEFT"/>
+		</View_Credits>
+
+		<View_ChapterSelection name="ViewChapterSelectionBlack" width="980" height="570" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE">
+			<MovieClip name="MovieClip_Logo" alignH="CENTER" />
+			<MovieClip name="MovieClip_ChapterSelectionBG" />
+			<Container name="Container_ChapterSelection">
+				<Button name="Button_Login0" MouseUp="LOGIN" visible="false" />
+				<Button name="Button_Login1" MouseUp="LOGIN" visible="false" />
+				<Button name="Button_Login2" MouseUp="LOGIN" visible="false" />
+
+				<MovieClip name="MovieClip_Star1" visible="false" />
+				<MovieClip name="MovieClip_Star2" visible="false" />
+				<MovieClip name="MovieClip_Star3" visible="false" />
+			</Container>
+			<Button name="Button_Previous" MouseUp="PREVIOUS" />
+			<Button name="Button_Next" MouseUp="NEXT" />
+			<Container name="EnterCode">
+				<TextField name="TextField_PowerupPanelTitle" visible="true" />
+				<Button name="Button_CodeInstructions" MouseUp="CODE_FAQ" scaleOnMouseOver="True" />
+				<TextField name="TextField_TazosCodeEnter" visible="true" />
+				<Button name="Button_SubmitCode" MouseUp="UNLOCK_POWER_UP" />
+			</Container>
+
+		</View_ChapterSelection>
+
+		<!-- VIEW LEVEL PLAY -->
+		<View_LevelPlay name="ViewLevelPlayCustom" width="980" height="570">
+			<Container name="Container_HiscoreContainer" enabled="False" alignH="RIGHT">
+				<TextField name="TextField_Score_Label" text="Score" enabled="False" />
+				<TextField name="TextField_Highscore_Label" text="Highscore" enabled="False" />
+				<TextField name="TextField_Hiscore" text="0" enabled="False" />
+				<TextField name="TextField_CurrentScore" text="0" enabled="False" />
+			</Container>
+			<!-- Zoom Buttons -->
+			<Container name="Container_ZoomButtons" enabled="False" scaleFunction="SQRT" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE" alignV="BOTTOM" alignH="LEFT">
+				<Button name="Button_ZoomIn" MouseDown="ZOOM_IN" MouseUp="ZOOM_IN_RELEASE"
+					MouseOut="ZOOM_IN_RELEASE" />
+				<Button name="Button_ZoomOut" MouseDown="ZOOM_OUT" MouseUp="ZOOM_OUT_RELEASE"
+					MouseOut="ZOOM_OUT_RELEASE" />
+				<Button name="Button_Magnify" />
+			</Container>
+			<Button name="Button_Pause" MouseUp="PAUSE" scaleFunction="SQRT" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE"/>
+			<Button name="Button_Restart" MouseUp="RESTART_LEVEL" scaleFunction="SQRT" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE"/>
+<!-- 		<Button name="Button_FullScreen" MouseUp="BUTTON_FULLSCREEN" scaleFunction="SQRT" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE" alignV="BOTTOM" alignH="RIGHT"/> -->
+		</View_LevelPlay>
+
+		<!-- VIEW LEVEL LOAD -->
+		<View_LevelLoad name="ViewLevelLoad" width="760" height="570" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" aspectRatioFixed="TRUE" alignV="CENTER" alignH="CENTER" scaleV="True" scaleH="True">
+			<MovieClip name="MovieClip_BackGround" />
+			<MovieClip name="MovieClip_Loading" />
+
+			<TextField name="TextField_LevelLoading" enabled="False" visible ="false"/>
+		</View_LevelLoad>
+
+
+		<!-- NEW LEVEL END VIEW -->
+		<ViewLevelEndCustom name="ViewLevelEndCustom" aspectRatioFixed="TRUE" width="760" height="570">
+		</ViewLevelEndCustom>
+		<!-- NEW LEVEL END VIEW -->
+
+		<ViewLevelEndFailCustom name="ViewLevelEndFailCustom" aspectRatioFixed="TRUE" width="760" height="570"> 
+		</ViewLevelEndFailCustom>
+	</Views>
+
+</UIDescription>

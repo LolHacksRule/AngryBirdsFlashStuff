@@ -1,0 +1,14 @@
+<Assets>
+	<packages>
+		<pack url="packages/core.pak" />
+		<pack url="packages/episode_1.pak" />
+		<pack url="packages/episode_credits.pak" />
+	</packages>
+	<libraries>
+		<library swf="external_assets/AngryBirdsCredits.swf"
+			startupLoad="true" />
+		<library swf="external_assets/CustomUI.swf" startupLoad="true" />
+		<library swf="external_assets/Tutorials.swf" startupLoad="true" />
+		<library swf="external_assets/SoundsNew.swf" startupLoad="true" />
+	</libraries>
+</Assets>

@@ -1,0 +1,16 @@
+
+<Popup_Info name="Popup_Pause" visible="True" fromLibrary="True"
+	width="980" height="570" scaleH="False" scaleV="False" alignV="CENTER" aspectRatioFixed="TRUE" >
+	<Container name="Container_PauseMenu">
+		<TextField name="TextField_LevelName" />
+
+		<Button name="Button_Resume" MouseUp="RESUME_LEVEL" />
+		<Button name="Button_Replay" MouseUp="RESTART_LEVEL" />
+		<Button name="Button_Menu" MouseUp="MENU" />
+		
+		<Button name="Button_Help" MouseUp="HELP" alignV="CENTER"/>
+		<Button name="Button_Mute" MouseUp="MUTE" alignV="CENTER" />
+		<Button name="Button_FullScreen" MouseUp="FULLSCREEN" alignV="CENTER"/>
+		<MovieClip name="MovieClip_SoundOff" enabled="false" alignV="CENTER"/>
+	</Container>
+</Popup_Info>

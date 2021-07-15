@@ -1,0 +1,7 @@
+<Popup name="Popup_Tutorial" visible="True" fromLibrary="True"
+	width="760" height="570" scaleH="FALSE" scaleV="FALSE" aspectRatioFixed="TRUE">
+	<MovieClip name="MovieClip_Tutorial" visible="true"
+		autoAlign="false" />
+	<Button name="Button_CloseTutorial" MouseUp="CLOSE_TUTORIAL"
+		scaleOnMouseOver="FALSE" />
+</Popup>

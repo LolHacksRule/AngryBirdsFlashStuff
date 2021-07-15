@@ -1,0 +1,26 @@
+package §%_§
+{
+   import flash.events.Event;
+   
+   public class §+!x§ extends Event
+   {
+      
+      public static const §4!j§:String = "ErrorPaneEvent.OnHideComplete";
+       
+      
+      public function §+!x§(param1:String, param2:Boolean = false, param3:Boolean = false)
+      {
+         super(param1,param2,param3);
+      }
+      
+      override public function clone() : Event
+      {
+         return new §+!x§(type,bubbles,cancelable);
+      }
+      
+      override public function toString() : String
+      {
+         return formatToString("EpisodeButtonEvent","type","bubbles","cancelable","eventPhase");
+      }
+   }
+}
