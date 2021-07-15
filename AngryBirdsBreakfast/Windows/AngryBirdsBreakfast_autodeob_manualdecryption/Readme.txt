@@ -1,6 +1,6 @@
----------------------------------------------------------------------------------------------------------------------------------------
-	PLEASE USE TOOLDEOB UNLESS YOU REALLY WANT TO SEE WHAT I'VE BEEN THROUGH OR WANT TO SEE OBFUSCATED SCRIPTS FOR REFERENCE
----------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+	PLEASE USE TOOLDEOB UNLESS YOU REALLY WANT TO SEE WHAT I'VE BEEN THROUGH
+------------------------------------------------------------------------------------------
 
 What is this you ask? Why it's deobfuscated scripts as well as binary data filenames for the game!
 
