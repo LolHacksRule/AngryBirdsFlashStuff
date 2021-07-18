@@ -1,0 +1,27 @@
+package §23§
+{
+   public class b2ContactRegister
+   {
+       
+      
+      public var createFcn:Function;
+      
+      public var destroyFcn:Function;
+      
+      public var primary:Boolean;
+      
+      public var §'!<§:b2Contact;
+      
+      public var §[!7§:int;
+      
+      public function b2ContactRegister()
+      {
+         var _loc1_:Boolean = false;
+         var _loc2_:Boolean = true;
+         if(!_loc1_)
+         {
+            super();
+         }
+      }
+   }
+}

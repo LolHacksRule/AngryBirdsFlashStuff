@@ -1,0 +1,49 @@
+package §]">§
+{
+   import §"!&§.§8X§;
+   import §'!&§.b2World;
+   import §'4§.§^g§;
+   import §1"H§.§0"@§;
+   import §1"H§.§2!V§;
+   import §4&§.§#r§;
+   import §7!8§.Sprite;
+   
+   public class §@"D§ extends §1!0§
+   {
+       
+      
+      private var §=!b§:int = 0;
+      
+      public function §@"D§(param1:Sprite, param2:§#r§, param3:b2World, param4:§8X§, param5:Number, param6:Number, param7:Number, param8:Number)
+      {
+         super(param1,param2,param3,param4,param5,param6,param7,param8);
+      }
+      
+      override public function isDamageAwardingScore() : Boolean
+      {
+         return !§>_§;
+      }
+      
+      override protected function addDestructionParticles(param1:§;U§) : void
+      {
+         var _loc6_:Number = NaN;
+         var _loc7_:Number = NaN;
+         var _loc8_:Number = NaN;
+         var _loc3_:int = Math.min(49,Math.max(1,§+<§(false))) + 1;
+         var _loc4_:Number = 90;
+         var _loc5_:int = 0;
+         while(_loc5_ < _loc3_)
+         {
+            _loc6_ = (_loc4_ += Math.random() * (720 / _loc3_)) / (180 / Math.PI);
+            _loc7_ = (_loc7_ = -§'%§.width * §^g§.§5!-§) + Math.random() * -_loc7_ * 2;
+            _loc8_ = (_loc8_ = -§'%§.height * §^g§.§5!-§) + Math.random() * -_loc8_ * 2;
+            param1.§%!y§(§2!V§.§[!e§,§0"@§.§3!W§,§2!V§.§#!N§,§^!z§().GetPosition().x + _loc7_,§^!z§().GetPosition().y + _loc8_,1750 + Math.random() * 500,"",§2!V§.§+9§(itemName),4 * Math.cos(_loc6_),-4 * Math.sin(_loc6_),10,4 * 50);
+            _loc5_++;
+         }
+      }
+      
+      override public function addDamageParticles(param1:§;U§, param2:int) : void
+      {
+      }
+   }
+}
