@@ -14,24 +14,11 @@ package §9!4§
       
       public function §8!A§(param1:Number, param2:Number, param3:Number, param4:Boolean)
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(_loc6_ || param3)
-         {
-            super();
-            loop0:
-            while(true)
-            {
-               this.§"!d§ = param1;
-               do
-               {
-                  this.§,!W§ = param2;
-                  continue loop0;
-               }
-               while(_loc5_);
-               
-            }
-         }
+         super();
+         this.§"!d§ = param1;
+         this.§,!W§ = param2;
+         this.get = param3;
+         this.§;W§ = param4;
       }
       
       public function get x() : Number

@@ -16,12 +16,7 @@ package §=! §
       
       public function §1!O§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function §;f§(param1:DisplayObject) : ByteArray
@@ -39,73 +34,33 @@ package §=! §
       
       public static function §[!f§(param1:DisplayObject) : BitmapData
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
          var _loc2_:BitmapData = new BitmapData(param1.width,param1.height,false);
-         if(_loc3_ || §1!O§)
-         {
-            _loc2_.draw(param1);
-         }
+         _loc2_.draw(param1);
          return _loc2_;
       }
       
       public static function §=<§(param1:String, param2:Function) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         var _loc3_:String = "data:image/png;base64,";
-         if(!_loc5_)
+         if(param1.indexOf("data:image/png;base64,") == 0)
          {
-            §§push(param1);
-            if(!(_loc5_ && param2))
-            {
-               §§push(_loc3_);
-               if(_loc6_ || param2)
-               {
-                  if(§§pop().indexOf(§§pop()) == 0)
-                  {
-                     if(!_loc5_)
-                     {
-                        addr64:
-                        §§push(param1);
-                        if(!(_loc5_ && §1!O§))
-                        {
-                           §§push(_loc3_);
-                        }
-                        param1 = §§pop();
-                        var _loc4_:ByteArray = Base64.§;t§(param1);
-                     }
-                     §§goto(addr65);
-                  }
-                  addr65:
-                  if(!_loc5_)
-                  {
-                     §#!9§(_loc4_,param2);
-                  }
-                  return;
-               }
-               §§push(§§pop().substr(§§pop().length));
-            }
+            param1 = param1.substr("data:image/png;base64,".length);
          }
-         §§goto(addr64);
+         var _loc4_:ByteArray = Base64.§;t§(param1);
+         §#!9§(_loc4_,param2);
       }
       
       public static function §#!9§(param1:ByteArray, param2:Function) : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         §§push(§§newactivation());
-         loop0:
-         while(true)
+         var loader:Loader = null;
+         var bytes:ByteArray = param1;
+         var callback:Function = param2;
+         loader = new Loader();
+         loader.contentLoaderInfo.addEventListener(Event.INIT,function(param1:Event):void
          {
-            §§pop().§§slot[3] = null;
-            addr117:
-            while(true)
-            {
-               §§push(§§newactivation());
-               continue loop0;
-            }
-         }
+            loader.contentLoaderInfo.removeEventListener(Event.INIT,arguments.callee);
+            callback(loader.content as Bitmap);
+         });
+         loader.loadBytes(bytes);
       }
    }
 }

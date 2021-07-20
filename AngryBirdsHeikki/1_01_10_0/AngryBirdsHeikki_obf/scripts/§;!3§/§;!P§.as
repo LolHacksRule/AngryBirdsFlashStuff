@@ -24,18 +24,8 @@ package §;!3§
       
       public function §;!P§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            super();
-         }
-         do
-         {
-            this.§-o§ = getTimer();
-         }
-         while(!_loc1_);
-         
+         super();
+         this.§-o§ = getTimer();
       }
       
       public function get §7L§() : Boolean
@@ -45,12 +35,7 @@ package §;!3§
       
       public function set §7L§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            this.§ R§ = param1;
-         }
+         this.§ R§ = param1;
       }
       
       public function get §]_§() : String
@@ -60,12 +45,7 @@ package §;!3§
       
       public function set §]_§(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || this)
-         {
-            this.§,!O§ = param1;
-         }
+         this.§,!O§ = param1;
       }
       
       public function get name() : String
@@ -75,12 +55,7 @@ package §;!3§
       
       public function set name(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc2_))
-         {
-            this.mName = param1;
-         }
+         this.mName = param1;
       }
       
       public function get §5!D§() : String
@@ -90,12 +65,7 @@ package §;!3§
       
       public function set §5!D§(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || _loc3_)
-         {
-            this.§6u§ = param1;
-         }
+         this.§6u§ = param1;
       }
       
       public function get password() : String
@@ -105,22 +75,12 @@ package §;!3§
       
       public function set password(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || _loc3_)
-         {
-            this.§]<§ = param1;
-         }
+         this.§]<§ = param1;
       }
       
       public function get §@!X§() : uint
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            this.§#k§ = getTimer() - this.§-o§;
-         }
+         this.§#k§ = getTimer() - this.§-o§;
          return this.§#k§;
       }
       
@@ -131,80 +91,16 @@ package §;!3§
       
       public function set §7!M§(param1:uint) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || param1)
-         {
-            this.§%!%§ = param1;
-         }
+         this.§%!%§ = param1;
       }
       
       public function get §5!M§() : Boolean
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
+         if(this.§]_§ != null && this.§]_§.length > 0)
          {
-            §§push(this.§]_§);
-            loop0:
-            while(true)
-            {
-               §§push(§§pop() == null);
-               if(_loc1_ || _loc1_)
-               {
-                  §§push(!§§pop());
-               }
-               do
-               {
-                  if(!§§pop())
-                  {
-                     while(true)
-                     {
-                        if(§§pop())
-                        {
-                           if(_loc1_ || this)
-                           {
-                              addr79:
-                              §§push(true);
-                           }
-                           else
-                           {
-                              if(_loc2_)
-                              {
-                                 continue loop0;
-                              }
-                              addr19:
-                              §§push(false);
-                              if(!_loc2_)
-                              {
-                                 if(!(_loc2_ && _loc2_))
-                                 {
-                                    break;
-                                 }
-                                 addr108:
-                                 while(true)
-                                 {
-                                    §§pop();
-                                    continue loop0;
-                                 }
-                              }
-                           }
-                           addr80:
-                           return §§pop();
-                        }
-                        §§goto(addr19);
-                     }
-                     continue;
-                     addr70:
-                  }
-                  §§goto(addr108);
-               }
-               while(_loc2_ && this);
-               
-               return §§pop();
-            }
+            return true;
          }
-         §§goto(addr79);
+         return false;
       }
    }
 }

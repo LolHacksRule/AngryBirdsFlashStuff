@@ -16,41 +16,11 @@ package §"d§
       
       public function b2GearJointDef()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            super();
-            while(true)
-            {
-               type = b2Joint.§05§;
-            }
-            addr85:
-         }
-         loop1:
-         while(true)
-         {
-            this.joint1 = null;
-            while(_loc2_)
-            {
-               this.joint2 = null;
-               while(_loc2_ || this)
-               {
-                  if(!_loc1_)
-                  {
-                     this.§9K§ = 1;
-                     if(_loc2_ || _loc1_)
-                     {
-                        return;
-                     }
-                     continue;
-                     continue;
-                  }
-                  continue loop1;
-               }
-            }
-            §§goto(addr85);
-         }
+         super();
+         type = b2Joint.§05§;
+         this.joint1 = null;
+         this.joint2 = null;
+         this.§9K§ = 1;
       }
    }
 }

@@ -36,60 +36,23 @@ package §3!R§
       
       public function b2BodyDef()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            this.position = new b2Vec2();
-            while(true)
-            {
-               this.§ ;§ = new b2Vec2();
-               while(true)
-               {
-                  super();
-                  while(true)
-                  {
-                     this.§<!B§ = null;
-                     while(true)
-                     {
-                        this.position.Set(0,0);
-                        while(true)
-                        {
-                           this.angle = 0;
-                           loop5:
-                           while(true)
-                           {
-                              this.§ ;§.Set(0,0);
-                              addr157:
-                              while(true)
-                              {
-                                 this.§ ![§ = 0;
-                                 continue loop5;
-                              }
-                           }
-                           if(!(_loc1_ || _loc2_))
-                           {
-                              continue;
-                           }
-                           §§goto(addr52);
-                        }
-                     }
-                     if(!(_loc1_ || this))
-                     {
-                        continue;
-                     }
-                     this.§8,§ = 0;
-                     §§goto(addr131);
-                  }
-                  while(!(_loc2_ && this))
-                  {
-                     this.§?L§ = true;
-                     §§goto(addr107);
-                  }
-               }
-            }
-         }
-         §§goto(addr109);
+         this.position = new b2Vec2();
+         this.§ ;§ = new b2Vec2();
+         super();
+         this.§<!B§ = null;
+         this.position.Set(0,0);
+         this.angle = 0;
+         this.§ ;§.Set(0,0);
+         this.§ ![§ = 0;
+         this.§8,§ = 0;
+         this.§5!T§ = 0;
+         this.§>6§ = true;
+         this.§?L§ = true;
+         this.§[! § = false;
+         this.§,r§ = false;
+         this.type = b2Body.b2_staticBody;
+         this.§40§ = true;
+         this.§`d§ = 1;
       }
    }
 }

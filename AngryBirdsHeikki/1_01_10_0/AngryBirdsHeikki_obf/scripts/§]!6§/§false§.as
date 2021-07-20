@@ -8,12 +8,7 @@ package §]!6§
       
       public function §false§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            super();
-         }
+         super();
       }
       
       public static function §4!U§(param1:String, param2:Class) : void
@@ -27,36 +22,17 @@ package §]!6§
       
       public static function §5#§(param1:String, param2:Boolean = true) : Class
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
          var _loc3_:* = null;
-         if(_loc5_ || param1)
+         if(!ApplicationDomain.currentDomain.hasDefinition(param1))
          {
-            if(!ApplicationDomain.currentDomain.hasDefinition(param1))
+            _loc3_ = "Class \'" + param1 + "\' not found.";
+            if(param2)
             {
-               §§push("Class \'" + param1);
-               if(_loc5_ || param2)
-               {
-                  §§push(§§pop() + "\' not found.");
-               }
-               _loc3_ = §§pop();
-               while(param2)
-               {
-                  if(!(_loc4_ && param1))
-                  {
-                     throw new Error(_loc3_);
-                  }
-                  if(_loc5_ || param1)
-                  {
-                     addr77:
-                     break;
-                  }
-               }
-               return null;
+               throw new Error(_loc3_);
             }
-            return Class(ApplicationDomain.currentDomain.getDefinition(param1));
+            return null;
          }
-         §§goto(addr77);
+         return Class(ApplicationDomain.currentDomain.getDefinition(param1));
       }
    }
 }

@@ -8,12 +8,7 @@ package §9I§
       
       public function §+!5§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && this))
-         {
-            super();
-         }
+         super();
       }
    }
 }

@@ -18,83 +18,21 @@ package §7Z§
       
       public function §2u§(param1:Number, param2:Number, param3:String, param4:Boolean, param5:Number, param6:int)
       {
-         var _loc7_:Boolean = false;
-         var _loc8_:Boolean = true;
-         if(!_loc7_)
-         {
-            super(param1,param2);
-            loop0:
-            while(true)
-            {
-               this.§<g§ = param3;
-               while(true)
-               {
-                  this.§=![§ = param4;
-                  continue loop0;
-                  addr52:
-                  if(_loc8_ || param2)
-                  {
-                     loop4:
-                     while(true)
-                     {
-                        this.§2x§ = param6;
-                        if(_loc8_)
-                        {
-                           break;
-                        }
-                        addr35:
-                        while(_loc8_ || this)
-                        {
-                           §§goto(addr52);
-                           continue loop4;
-                        }
-                        continue loop0;
-                     }
-                     return;
-                     addr59:
-                  }
-               }
-            }
-         }
-         §§goto(addr59);
+         super(param1,param2);
+         this.§<g§ = param3;
+         this.§=![§ = param4;
+         this.§,8§ = param5;
+         this.§2x§ = param6;
       }
       
       override public function update(param1:Number, param2:Sprite, param3:§>a§) : Boolean
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(_loc5_)
+         if(!super.update(param1,param2,param3))
          {
-            §§push(super.update(param1,param2,param3));
-            loop0:
-            while(true)
-            {
-               if(§§pop())
-               {
-                  §§push(false);
-                  if(!(_loc4_ && param1))
-                  {
-                     return §§pop();
-                  }
-                  continue;
-               }
-               if(!_loc4_)
-               {
-                  while(true)
-                  {
-                     §&M§.§6!#§(this.§<g§);
-                  }
-                  addr68:
-               }
-               while(true)
-               {
-                  §§push(false);
-                  continue loop0;
-               }
-            }
-            return §§pop();
+            §&M§.§6!#§(this.§<g§);
+            return false;
          }
-         §§goto(addr68);
+         return false;
       }
       
       override public function clone() : §^!§

@@ -12,35 +12,16 @@ package §3!R§
       
       public function b2FilterData()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            super();
-         }
+         super();
       }
       
       public function Copy() : b2FilterData
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
          var _loc1_:b2FilterData = new b2FilterData();
-         if(!_loc2_)
-         {
-            _loc1_.§]!&§ = this.§]!&§;
-         }
-         while(true)
-         {
-            _loc1_.§+Q§ = this.§+Q§;
-            while(!(_loc2_ && _loc1_))
-            {
-               _loc1_.§7!-§ = this.§7!-§;
-               if(!(_loc2_ && _loc3_))
-               {
-                  return _loc1_;
-               }
-            }
-         }
+         _loc1_.§]!&§ = this.§]!&§;
+         _loc1_.§+Q§ = this.§+Q§;
+         _loc1_.§7!-§ = this.§7!-§;
+         return _loc1_;
       }
    }
 }

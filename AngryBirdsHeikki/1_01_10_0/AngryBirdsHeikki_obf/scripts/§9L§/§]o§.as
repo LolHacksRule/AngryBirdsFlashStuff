@@ -32,453 +32,131 @@ package §9L§
       
       public function §]o§(param1:§^D§, param2:DisplayObjectContainer, param3:XML, param4:XML)
       {
-         var _loc6_:Boolean = false;
-         var _loc7_:Boolean = true;
-         §§push(§§newactivation());
-         loop0:
-         while(true)
+         var canvas:§^D§ = param1;
+         var loadingScreen:DisplayObjectContainer = param2;
+         var uiData:XML = param3;
+         var assetData:XML = param4;
+         this.§'l§ = new EventDispatcher();
+         super(canvas);
+         if(§=Z§.stage)
          {
-            §§pop().§§slot[1] = param1;
-            addr155:
-            while(true)
+            this.init(loadingScreen,uiData,assetData);
+         }
+         else
+         {
+            §=Z§.addEventListener(Event.ADDED_TO_STAGE,function(param1:Event):void
             {
-               §§push(§§newactivation());
-               continue loop0;
-            }
+               §=Z§.removeEventListener(Event.ADDED_TO_STAGE,arguments.callee);
+               init(loadingScreen,uiData,assetData);
+            });
          }
       }
       
       protected function § S§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            §&M§.init();
-         }
+         §&M§.init();
       }
       
       protected function init(param1:DisplayObjectContainer, param2:XML, param3:XML) : void
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         if(!_loc6_)
+         § T§.initialize(stage);
+         § T§.§7!#§ = false;
+         §4,§.§&!#§(this.getVersionInfo());
+         §4,§.§?+§ = this.getVersionInfo();
+         §=p§.§<!I§ = §=Z§.stage.loaderInfo.parameters;
+         this.§ S§();
+         §?!%§(new §[u§());
+         var _loc4_:§>!W§ = this.initStateLoad();
+         §?!%§(_loc4_);
+         _loc4_.§&G§(param1);
+         _loc4_.§4!S§(param3);
+         §;A§.init(param2);
+         if(§4!H§.§7!"§())
          {
-            § T§.initialize(stage);
-            loop0:
-            while(true)
-            {
-               § T§.§7!#§ = false;
-               while(true)
-               {
-                  §4,§.§&!#§(this.getVersionInfo());
-                  loop2:
-                  while(true)
-                  {
-                     §4,§.§?+§ = this.getVersionInfo();
-                     while(true)
-                     {
-                        §=p§.§<!I§ = §=Z§.stage.loaderInfo.parameters;
-                        loop4:
-                        while(_loc5_ || param3)
-                        {
-                           if(_loc6_)
-                           {
-                              continue loop0;
-                           }
-                           while(true)
-                           {
-                              this.§ S§();
-                              loop6:
-                              while(!_loc6_)
-                              {
-                                 while(true)
-                                 {
-                                    §?!%§(new §[u§());
-                                    if(_loc5_ || this)
-                                    {
-                                       continue loop2;
-                                    }
-                                    continue loop6;
-                                 }
-                                 var _loc4_:§>!W§ = this.initStateLoad();
-                                 if(!(_loc6_ && param2))
-                                 {
-                                    §?!%§(_loc4_);
-                                 }
-                                 loop8:
-                                 do
-                                 {
-                                    _loc4_.§&G§(param1);
-                                    while(true)
-                                    {
-                                       _loc4_.§4!S§(param3);
-                                       loop10:
-                                       for(; !(_loc6_ && this); if(!(_loc5_ || param3))
-                                       {
-                                          continue;
-                                       },§4!H§.§-%§("serverConnectionError"),§§goto(addr144))
-                                       {
-                                          §;A§.init(param2);
-                                          while(true)
-                                          {
-                                             if(§4!H§.§7!"§())
-                                             {
-                                                if(!_loc6_)
-                                                {
-                                                   continue loop10;
-                                                }
-                                                addr144:
-                                                loop12:
-                                                while(!_loc6_)
-                                                {
-                                                   while(true)
-                                                   {
-                                                      §9^§(§>!W§.§@o§);
-                                                      do
-                                                      {
-                                                         this.§>E§();
-                                                      }
-                                                      while(_loc6_);
-                                                      
-                                                      if(_loc5_)
-                                                      {
-                                                         break;
-                                                      }
-                                                      continue loop12;
-                                                   }
-                                                   continue loop8;
-                                                }
-                                                continue;
-                                             }
-                                             §§goto(addr122);
-                                          }
-                                       }
-                                    }
-                                 }
-                                 while(!_loc5_);
-                                 
-                                 return;
-                              }
-                              continue loop4;
-                           }
-                        }
-                     }
-                  }
-               }
-            }
+            §4!H§.§-%§("serverConnectionError");
          }
-         §§goto(addr47);
+         §9^§(§>!W§.§@o§);
+         this.§>E§();
       }
       
       protected function initStateLoad() : §>!W§
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         §§push(§§findproperty(§>!W§));
-         §§push(true);
-         §§push(§>!W§.§@o§);
-         §§push(this.getMinLoadingScreenTime());
-         if(!_loc1_)
-         {
-            §§push(stage.loaderInfo.parameters.assetsUrl);
-            if(_loc2_ || _loc2_)
-            {
-               §§push(§§pop());
-               if(!(_loc1_ && _loc1_))
-               {
-                  if(!§§pop())
-                  {
-                     if(_loc2_ || _loc1_)
-                     {
-                        addr63:
-                        §§pop();
-                        addr65:
-                        §§push("");
-                        §§push(stage.loaderInfo.parameters.buildNumber);
-                        if(!(_loc1_ && _loc2_))
-                        {
-                           return new §§pop().§>!W§(§§pop(),§§pop(),§§pop(),§§pop(),§§pop() || "");
-                           addr87:
-                        }
-                     }
-                     §§goto(addr89);
-                  }
-                  §§goto(addr65);
-               }
-               §§goto(addr87);
-            }
-         }
-         §§goto(addr63);
+         return new §>!W§(true,§>!W§.§@o§,this.getMinLoadingScreenTime(),stage.loaderInfo.parameters.assetsUrl || "",stage.loaderInfo.parameters.buildNumber || "");
       }
       
       public function §>E§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc1_)
-         {
-            §=Z§.addEventListener(Event.ENTER_FRAME,this.§@8§);
-            while(true)
-            {
-               §=Z§.stage.addEventListener(Event.MOUSE_LEAVE,this.mouseLeave);
-            }
-            addr110:
-         }
-         loop1:
-         while(true)
-         {
-            §=Z§.stage.addEventListener(KeyboardEvent.KEY_DOWN,this.keyDown);
-            loop2:
-            do
-            {
-               if(!(_loc1_ || _loc2_))
-               {
-                  continue loop1;
-               }
-               §=Z§.stage.addEventListener(KeyboardEvent.KEY_UP,this.keyUp);
-               while(!_loc2_)
-               {
-                  this.§#!>§ = getTimer();
-                  if(!(_loc2_ && this))
-                  {
-                     continue loop2;
-                  }
-               }
-               §§goto(addr110);
-            }
-            while(_loc2_ && this);
-            
-            return;
-         }
+         §=Z§.addEventListener(Event.ENTER_FRAME,this.§@8§);
+         §=Z§.stage.addEventListener(Event.MOUSE_LEAVE,this.mouseLeave);
+         §=Z§.stage.addEventListener(KeyboardEvent.KEY_DOWN,this.keyDown);
+         §=Z§.stage.addEventListener(KeyboardEvent.KEY_UP,this.keyUp);
+         this.§#!>§ = getTimer();
       }
       
       public function mouseLeave(param1:Event) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
+         if(§=!@§())
          {
-            if(§=!@§())
-            {
-               if(_loc2_ || param1)
-               {
-                  §=!@§().mouseLeave();
-               }
-            }
+            §=!@§().mouseLeave();
          }
       }
       
       public function keyDown(param1:KeyboardEvent) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && param1))
+         if(§=!@§())
          {
-            if(§=!@§())
-            {
-               while(true)
-               {
-                  §=!@§().keyDown(param1);
-                  addr69:
-                  while(true)
-                  {
-                  }
-                  addr44:
-                  if(_loc3_ && _loc3_)
-                  {
-                     continue;
-                  }
-                  return;
-                  addr51:
-                  addr61:
-               }
-            }
-            while(true)
-            {
-               §4,§.keyDown(param1);
-               if(!_loc2_)
-               {
-                  continue;
-               }
-               §§goto(addr44);
-            }
-            §§goto(addr51);
+            §=!@§().keyDown(param1);
          }
-         §§goto(addr61);
+         §4,§.keyDown(param1);
       }
       
       public function keyUp(param1:KeyboardEvent) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
+         if(§=!@§())
          {
-            if(§=!@§())
-            {
-               if(!_loc3_)
-               {
-                  addr43:
-                  §=!@§().keyUp(param1);
-               }
-            }
-            return;
+            §=!@§().keyUp(param1);
          }
-         §§goto(addr43);
       }
       
       public function §@8§(param1:Event) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         §§push(getTimer() - this.§#!>§);
-         if(_loc4_)
+         var _loc2_:Number = getTimer() - this.§#!>§;
+         this.§#!>§ = getTimer();
+         §"!X§.§ s§.update(_loc2_);
+         this.§'l§.dispatchEvent(param1);
+         §!!%§.§`0§(§=Z§.mouseX,§=Z§.mouseY);
+         if(§1G§())
          {
-            §§push(Number(§§pop()));
+            return;
          }
-         var _loc2_:* = §§pop();
-         if(_loc4_ || this)
-         {
-            this.§#!>§ = getTimer();
-            loop0:
-            while(true)
-            {
-               §"!X§.§ s§.update(_loc2_);
-               loop1:
-               while(true)
-               {
-                  this.§'l§.dispatchEvent(param1);
-                  loop2:
-                  while(true)
-                  {
-                     §!!%§.§`0§(§=Z§.mouseX,§=Z§.mouseY);
-                     loop3:
-                     while(§1G§())
-                     {
-                        if(!_loc4_)
-                        {
-                           while(true)
-                           {
-                              break loop3;
-                           }
-                        }
-                        else
-                        {
-                           addr34:
-                           addr92:
-                        }
-                        continue;
-                        if(_loc4_ || _loc2_)
-                        {
-                           return;
-                        }
-                        continue;
-                        return;
-                     }
-                     while(true)
-                     {
-                        if(this.updateState(_loc2_) == §=p§.STATE_STATUS_COMPLETED)
-                        {
-                           if(!_loc4_)
-                           {
-                              continue loop2;
-                           }
-                           if(_loc3_)
-                           {
-                              continue;
-                           }
-                           if(!_loc4_)
-                           {
-                              continue loop1;
-                           }
-                        }
-                        else
-                        {
-                           §§goto(addr34);
-                        }
-                     }
-                  }
-                  continue loop0;
-               }
-            }
-         }
-         while(true)
+         if(this.updateState(_loc2_) == §=p§.STATE_STATUS_COMPLETED)
          {
             §1G§();
-            §§goto(addr63);
          }
       }
       
       override public function updateState(param1:Number) : int
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         §§push(super.updateState(param1));
-         if(!_loc3_)
+         var _loc2_:int = super.updateState(param1);
+         if(§=!@§().isGenericState())
          {
-            §§push(int(§§pop()));
-         }
-         var _loc2_:* = §§pop();
-         if(_loc4_)
-         {
-            if(§=!@§().isGenericState())
+            if(_loc2_ == §=p§.STATE_STATUS_COMPLETED)
             {
-               if(_loc4_ || _loc3_)
-               {
-                  §§push(_loc2_);
-                  while(true)
-                  {
-                     if(§§pop() != §=p§.STATE_STATUS_COMPLETED)
-                     {
-                        continue;
-                     }
-                     while(true)
-                     {
-                        §=Z§.addChild(§!!%§.activate());
-                     }
-                  }
-               }
-               while(true)
-               {
-                  this.setFirstGameState();
-                  if(_loc3_)
-                  {
-                     continue;
-                  }
-                  if(!_loc3_)
-                  {
-                     while(true)
-                     {
-                        §§goto(addr27);
-                     }
-                     addr56:
-                  }
-                  §§goto(addr82);
-               }
+               §=Z§.addChild(§!!%§.activate());
+               this.setFirstGameState();
             }
-            §§goto(addr27);
          }
-         §§goto(addr56);
+         return _loc2_;
       }
       
       override protected function previousStateDeactivate() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc1_)
-         {
-            §"!X§.§ s§.§"!`§();
-         }
+         §"!X§.§ s§.§"!`§();
       }
       
       public function setFirstGameState() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc1_)
-         {
-            §9^§(§[u§.§@o§);
-         }
+         §9^§(§[u§.§@o§);
       }
       
       public function getMinLoadingScreenTime() : Number
@@ -493,22 +171,12 @@ package §9L§
       
       public function addEventListener(param1:String, param2:Function, param3:Boolean = false, param4:int = 0, param5:Boolean = false) : void
       {
-         var _loc6_:Boolean = false;
-         var _loc7_:Boolean = true;
-         if(_loc7_ || param2)
-         {
-            this.§'l§.addEventListener(param1,param2,param3,param4,param5);
-         }
+         this.§'l§.addEventListener(param1,param2,param3,param4,param5);
       }
       
       public function removeEventListener(param1:String, param2:Function, param3:Boolean = false) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!_loc4_)
-         {
-            this.§'l§.removeEventListener(param1,param2,param3);
-         }
+         this.§'l§.removeEventListener(param1,param2,param3);
       }
       
       public function dispatchEvent(param1:Event) : Boolean

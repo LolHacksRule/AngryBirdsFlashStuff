@@ -11,62 +11,29 @@ package §20§
    {
       
       public static const §@o§:String = "StatePopupManager";
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc2_)
-         {
-            §@o§ = "StatePopupManager";
-         }
-      }
+       
       
       protected var §6U§:EventDispatcher;
       
       public function StatePopupManager()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            super(false,§@o§);
-            do
-            {
-               this.§6U§ = new EventDispatcher();
-            }
-            while(_loc1_);
-            
-         }
+         super(false,§@o§);
+         this.§6U§ = new EventDispatcher();
       }
       
       override public function uiInteractionHandler(param1:int, param2:String, param3:§1A§) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!_loc4_)
-         {
-            this.dispatchEvent(new §+!]§(§+!]§.§0!S§,param1,param2,param3));
-         }
+         this.dispatchEvent(new §+!]§(§+!]§.§0!S§,param1,param2,param3));
       }
       
       public function addEventListener(param1:String, param2:Function, param3:Boolean = false, param4:int = 0, param5:Boolean = false) : void
       {
-         var _loc6_:Boolean = false;
-         var _loc7_:Boolean = true;
-         if(_loc7_)
-         {
-            this.§6U§.addEventListener(param1,param2,param3,param4,param5);
-         }
+         this.§6U§.addEventListener(param1,param2,param3,param4,param5);
       }
       
       public function removeEventListener(param1:String, param2:Function, param3:Boolean = false) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!(_loc4_ && param3))
-         {
-            this.§6U§.removeEventListener(param1,param2,param3);
-         }
+         this.§6U§.removeEventListener(param1,param2,param3);
       }
       
       public function dispatchEvent(param1:Event) : Boolean

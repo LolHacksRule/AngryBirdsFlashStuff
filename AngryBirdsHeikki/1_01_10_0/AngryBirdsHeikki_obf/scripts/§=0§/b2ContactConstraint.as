@@ -41,74 +41,18 @@ package §=0§
       
       public function b2ContactConstraint()
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
+         this.§'!6§ = new b2Vec2();
+         this.localPoint = new b2Vec2();
+         this.normal = new b2Vec2();
+         this.§0,§ = new b2Mat22();
+         this.§=6§ = new b2Mat22();
+         super();
+         this.§-a§ = new Vector.<b2ContactConstraintPoint>(b2Settings.b2_maxManifoldPoints);
+         var _loc1_:int = 0;
+         while(_loc1_ < b2Settings.b2_maxManifoldPoints)
          {
-            this.§'!6§ = new b2Vec2();
-         }
-         loop0:
-         while(true)
-         {
-            this.localPoint = new b2Vec2();
-            loop1:
-            while(true)
-            {
-               this.normal = new b2Vec2();
-               while(true)
-               {
-                  this.§0,§ = new b2Mat22();
-                  loop3:
-                  while(true)
-                  {
-                     this.§=6§ = new b2Mat22();
-                     while(_loc2_)
-                     {
-                        continue loop0;
-                        while(_loc2_ || _loc3_)
-                        {
-                           continue loop3;
-                        }
-                     }
-                     continue loop1;
-                  }
-                  addr35:
-                  if(!(_loc2_ || _loc3_))
-                  {
-                     continue;
-                  }
-                  if(false)
-                  {
-                     while(true)
-                     {
-                        super();
-                        §§goto(addr47);
-                        §§goto(addr35);
-                     }
-                     continue;
-                     addr44:
-                  }
-                  var _loc1_:int = 0;
-                  addr113:
-                  if(_loc1_ >= b2Settings.b2_maxManifoldPoints)
-                  {
-                     if(!(_loc2_ || this))
-                     {
-                        addr130:
-                        if(_loc2_)
-                        {
-                           §§goto(addr113);
-                        }
-                        _loc1_++;
-                        §§goto(addr130);
-                        addr151:
-                     }
-                     return;
-                  }
-                  this.§-a§[_loc1_] = new b2ContactConstraintPoint();
-                  §§goto(addr151);
-               }
-            }
+            this.§-a§[_loc1_] = new b2ContactConstraintPoint();
+            _loc1_++;
          }
       }
    }

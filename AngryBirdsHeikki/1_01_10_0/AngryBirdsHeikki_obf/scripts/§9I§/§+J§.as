@@ -9,97 +9,36 @@ package §9I§
       
       public function §+J§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc2_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function §,!?§(param1:String) : String
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         §§push(§§newactivation());
-         if(_loc5_ || _loc3_)
+         var response:String = param1;
+         var decoded:String = response;
+         try
          {
-            §§push(param1);
-            if(!_loc4_)
-            {
-               §§pop().§§slot[1] = §§pop();
-               if(_loc5_)
-               {
-                  addr36:
-                  §§push(§§newactivation());
-                  §§push(response);
-                  if(_loc5_ || param1)
-                  {
-                     addr55:
-                     §§push(§§pop());
-                  }
-                  §§pop().§§slot[2] = §§pop();
-               }
-               try
-               {
-                  §§push(§§newactivation());
-                  if(_loc5_ || param1)
-                  {
-                     §§push(Base64.§%!K§(decoded));
-                     if(!_loc4_)
-                     {
-                        §§push(§§pop());
-                     }
-                     §§pop().§§slot[2] = §§pop();
-                     addr97:
-                     §§push(§§newactivation());
-                  }
-               }
-               catch(b64Error:Error)
-               {
-                  §§goto(addr97);
-               }
-               return §§pop().§§slot[2];
-            }
-            §§goto(addr55);
+            decoded = Base64.§%!K§(decoded);
          }
-         §§goto(addr36);
+         catch(b64Error:Error)
+         {
+         }
+         return decoded;
       }
       
       public static function §;!+§(param1:String) : Object
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         §§push(§§newactivation());
-         if(!_loc4_)
+         var userObject:Object = null;
+         var response:String = param1;
+         try
          {
-            §§pop().§§slot[2] = null;
-            if(_loc5_ || _loc3_)
-            {
-               addr35:
-               var response:String = param1;
-            }
-            try
-            {
-               §§push(§§newactivation());
-               if(_loc5_ || _loc3_)
-               {
-                  §§pop().§§slot[2] = §"c§.§%!K§(response);
-                  addr94:
-                  §§push(§§newactivation());
-               }
-               return §§pop().§§slot[2];
-            }
-            catch(error:Error)
-            {
-               if(!_loc4_)
-               {
-                  var userObject:Object = {"error":§1F§.CONNECTION_ERROR_RETRY};
-               }
-            }
-            §§goto(addr94);
+            userObject = §"c§.§%!K§(response);
          }
-         §§goto(addr35);
+         catch(error:Error)
+         {
+            userObject = {"error":§1F§.CONNECTION_ERROR_RETRY};
+         }
+         return userObject;
       }
    }
 }

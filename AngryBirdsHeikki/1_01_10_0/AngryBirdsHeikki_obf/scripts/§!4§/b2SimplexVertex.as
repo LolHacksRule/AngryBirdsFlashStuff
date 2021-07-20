@@ -20,51 +20,17 @@ package §!4§
       
       function b2SimplexVertex()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public function Set(param1:b2SimplexVertex) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§2!=§.SetV(param1.§2!=§);
-            loop0:
-            while(true)
-            {
-               this.§8!Z§.SetV(param1.§8!Z§);
-               while(true)
-               {
-                  this.§79§.SetV(param1.§79§);
-                  while(!(_loc2_ && param1))
-                  {
-                     while(true)
-                     {
-                        this.a = param1.a;
-                        while(true)
-                        {
-                           this.indexA = param1.indexA;
-                           while(true)
-                           {
-                              if(!_loc2_)
-                              {
-                                 continue;
-                              }
-                              continue loop0;
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr78);
+         this.§2!=§.SetV(param1.§2!=§);
+         this.§8!Z§.SetV(param1.§8!Z§);
+         this.§79§.SetV(param1.§79§);
+         this.a = param1.a;
+         this.indexA = param1.indexA;
+         this.indexB = param1.indexB;
       }
    }
 }

@@ -24,100 +24,31 @@ package §&!T§
       
       public function §<!,§(param1:Stage)
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && param1))
-         {
-            this.§18§ = param1;
-            while(true)
-            {
-               super(param1);
-               §§goto(addr68);
-            }
-         }
-         addr68:
-         while(true)
-         {
-            super.§-!C§.simulateMultitouch = true;
-            if(!(_loc2_ && this))
-            {
-               if(!_loc2_)
-               {
-                  break;
-               }
-               continue loop0;
-            }
-         }
+         this.§18§ = param1;
+         super(param1);
+         super.§-!C§.simulateMultitouch = true;
       }
       
       override public function init(param1:§&!E§) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && this))
-         {
-            super.init(param1);
-         }
+         super.init(param1);
       }
       
       override protected function initReplay() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            §?i§ = new §%!H§(§,4§.§0!$§);
-         }
+         §?i§ = new §%!H§(§,4§.§0!$§);
       }
       
       override protected function loadPreviousReplayData() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
+         if(§;$§)
          {
-            if(§;$§)
-            {
-               loop0:
-               while(true)
-               {
-                  §;;§ = §%!H§.initialize(§;$§);
-                  loop1:
-                  while(true)
-                  {
-                     §;;§.speed = 1;
-                     while(true)
-                     {
-                        §;;§.play();
-                        while(_loc2_ || this)
-                        {
-                           if(_loc2_)
-                           {
-                              §null § = -1000;
-                              while(!_loc1_)
-                              {
-                                 §;$§ = null;
-                                 if(_loc2_ || _loc2_)
-                                 {
-                                    if(_loc2_ || this)
-                                    {
-                                       break loop1;
-                                    }
-                                    continue loop1;
-                                 }
-                              }
-                              continue;
-                           }
-                           continue loop0;
-                        }
-                     }
-                  }
-                  addr52:
-               }
-            }
-            return;
+            §;;§ = §%!H§.initialize(§;$§);
+            §;;§.speed = 1;
+            §;;§.play();
+            §null § = -1000;
+            §;$§ = null;
          }
-         §§goto(addr52);
       }
       
       override protected function initLevelSlingshot(param1:§&!E§) : §9§
@@ -132,17 +63,9 @@ package §&!T§
       
       public function §6!Z§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || this)
+         if(§?i§)
          {
-            if(§?i§)
-            {
-               if(!_loc2_)
-               {
-                  (§?i§ as §%!H§).§6!Z§(mLevelEngine.currentStep);
-               }
-            }
+            (§?i§ as §%!H§).§6!Z§(mLevelEngine.currentStep);
          }
       }
       
@@ -153,12 +76,7 @@ package §&!T§
       
       override protected function initialize(param1:§&!E§) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && this))
-         {
-            super.initialize(param1);
-         }
+         super.initialize(param1);
       }
       
       override protected function preProcessLevel() : §&!E§
@@ -173,59 +91,14 @@ package §&!T§
       
       override protected function initThemeGraphicsManager() : §1!1§
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         §§push(§§findproperty(§1!1§));
-         if(!(_loc1_ && _loc2_))
-         {
-            §§push(this.§18§.loaderInfo.parameters.assetsUrl);
-            if(!_loc1_)
-            {
-               §§push(§§pop());
-               if(_loc2_ || _loc2_)
-               {
-                  if(!§§pop())
-                  {
-                     §§goto(addr87);
-                  }
-                  §§push(this.§18§.loaderInfo.parameters.buildNumber);
-                  if(_loc2_ || _loc2_)
-                  {
-                     if(!§§pop())
-                     {
-                        addr86:
-                        §§pop();
-                     }
-                     §§goto(addr87);
-                  }
-               }
-               §§goto(addr86);
-            }
-            addr87:
-            if(!(_loc1_ && this))
-            {
-               §§pop();
-               addr60:
-               §§push("");
-            }
-            return new §§pop().§1!1§(§§pop(),"",true,3);
-         }
-         §§goto(addr60);
+         return new §1!1§(this.§18§.loaderInfo.parameters.assetsUrl || "",this.§18§.loaderInfo.parameters.buildNumber || "",true,3);
       }
       
       override public function get backgroundTextureManager() : §>a§
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
+         if(§2n§)
          {
-            if(§2n§)
-            {
-               if(_loc2_)
-               {
-                  return §2n§.textureManager;
-               }
-            }
+            return §2n§.textureManager;
          }
          return null;
       }

@@ -18,80 +18,20 @@ package §"d§
       
       public function b2WeldJointDef()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc2_))
-         {
-            this.§@b§ = new b2Vec2();
-            loop0:
-            while(true)
-            {
-               this.§=i§ = new b2Vec2();
-               while(true)
-               {
-                  super();
-                  while(_loc2_)
-                  {
-                     type = b2Joint.§;'§;
-                     loop3:
-                     while(_loc2_ || this)
-                     {
-                        if(_loc2_)
-                        {
-                           while(true)
-                           {
-                              this.§;w§ = 0;
-                              if(!(_loc1_ && _loc1_))
-                              {
-                                 break;
-                              }
-                              continue loop3;
-                           }
-                           return;
-                           continue;
-                        }
-                        continue loop0;
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr65);
+         this.§@b§ = new b2Vec2();
+         this.§=i§ = new b2Vec2();
+         super();
+         type = b2Joint.§;'§;
+         this.§;w§ = 0;
       }
       
       public function §';§(param1:b2Body, param2:b2Body, param3:b2Vec2) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(_loc5_)
-         {
-            §&]§ = param1;
-            loop0:
-            do
-            {
-               §+0§ = param2;
-               while(true)
-               {
-                  this.§@b§.SetV(§&]§.GetLocalPoint(param3));
-                  while(!(_loc4_ && param2))
-                  {
-                     this.§=i§.SetV(§+0§.GetLocalPoint(param3));
-                     do
-                     {
-                        this.§;w§ = §+0§.GetAngle() - §&]§.GetAngle();
-                     }
-                     while(!(_loc5_ || param1));
-                     
-                     if(_loc5_ || param3)
-                     {
-                        continue loop0;
-                     }
-                  }
-               }
-            }
-            while(_loc4_ && param3);
-            
-         }
+         §&]§ = param1;
+         §+0§ = param2;
+         this.§@b§.SetV(§&]§.GetLocalPoint(param3));
+         this.§=i§.SetV(§+0§.GetLocalPoint(param3));
+         this.§;w§ = §+0§.GetAngle() - §&]§.GetAngle();
       }
    }
 }

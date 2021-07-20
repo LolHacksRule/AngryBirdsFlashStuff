@@ -12,42 +12,15 @@ package §!4§
       
       public function §+!>§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            this.v = new b2Vec2();
-            while(true)
-            {
-               this.id = new b2ContactID();
-               while(_loc1_)
-               {
-                  super();
-                  if(_loc1_)
-                  {
-                     return;
-                     addr38:
-                  }
-               }
-            }
-         }
-         §§goto(addr38);
+         this.v = new b2Vec2();
+         this.id = new b2ContactID();
+         super();
       }
       
       public function Set(param1:§+!>§) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc3_))
-         {
-            this.v.SetV(param1.v);
-            do
-            {
-               this.id.Set(param1.id);
-            }
-            while(_loc2_);
-            
-         }
+         this.v.SetV(param1.v);
+         this.id.Set(param1.id);
       }
    }
 }

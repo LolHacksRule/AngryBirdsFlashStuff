@@ -18,12 +18,7 @@ package §=0§
       
       public function b2PolyAndEdgeContact()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function §;O§(param1:*) : b2Contact
@@ -37,42 +32,16 @@ package §=0§
       
       public function §;!C§(param1:b2Fixture, param2:b2Fixture) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!(_loc3_ && param2))
-         {
-            super.§;!C§(param1,param2);
-            while(true)
-            {
-               b2Settings.b2Assert(param1.§0i§() == b2Shape.§=!'§);
-               §§goto(addr75);
-            }
-         }
-         addr75:
-         while(true)
-         {
-            b2Settings.b2Assert(param2.§0i§() == b2Shape.§%m§);
-            if(_loc4_)
-            {
-               if(!(_loc3_ && this))
-               {
-                  break;
-               }
-               continue loop0;
-            }
-         }
+         super.§;!C§(param1,param2);
+         b2Settings.b2Assert(param1.§0i§() == b2Shape.§=!'§);
+         b2Settings.b2Assert(param2.§0i§() == b2Shape.§%m§);
       }
       
       override b2internal function Evaluate() : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
          var _loc1_:b2Body = b2internal::&4.GetBody();
          var _loc2_:b2Body = b2internal::;,.GetBody();
-         if(!(_loc4_ && _loc3_))
-         {
-            this.§7y§(b2internal::1`,b2internal::&4.GetShape() as b2PolygonShape,_loc1_.m_xf,b2internal::;,.GetShape() as b2EdgeShape,_loc2_.m_xf);
-         }
+         this.§7y§(b2internal::1`,b2internal::&4.GetShape() as b2PolygonShape,_loc1_.m_xf,b2internal::;,.GetShape() as b2EdgeShape,_loc2_.m_xf);
       }
       
       private function §7y§(param1:b2Manifold, param2:b2PolygonShape, param3:b2Transform, param4:b2EdgeShape, param5:b2Transform) : void

@@ -18,54 +18,16 @@ package §3!R§
       
       public function b2TimeStep()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public function Set(param1:b2TimeStep) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§?u§ = param1.§?u§;
-            while(true)
-            {
-               this.§?o§ = param1.§?o§;
-               addr62:
-               if(_loc2_ && _loc3_)
-               {
-                  continue;
-               }
-               this.§-7§ = param1.§-7§;
-               while(!(_loc2_ && _loc3_))
-               {
-                  this.§?S§ = param1.§?S§;
-                  if(_loc3_)
-                  {
-                     return;
-                  }
-               }
-               while(!_loc2_)
-               {
-                  §§goto(addr62);
-                  §§goto(addr47);
-               }
-               addr47:
-               while(true)
-               {
-                  this.§'P§ = param1.§'P§;
-                  §§goto(addr60);
-               }
-               addr60:
-               addr85:
-            }
-         }
-         §§goto(addr85);
+         this.§?u§ = param1.§?u§;
+         this.§?o§ = param1.§?o§;
+         this.§'P§ = param1.§'P§;
+         this.§-7§ = param1.§-7§;
+         this.§?S§ = param1.§?S§;
       }
    }
 }
