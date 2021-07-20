@@ -1,4 +1,4 @@
-What is this you ask? Why it's a deobfuscated build the game!
+What is this you ask? Why it's a deobfuscated build of the game!
 
 How did this happen:
 
