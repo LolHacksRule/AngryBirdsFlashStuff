@@ -2,7 +2,7 @@ package com.angrybirds.data.level.item
 {
    import com.rovio.utils.HashMap;
    import com.rovio.Box2D.Common.Math.b2Vec2;
-   import each.Log;
+   import com.rovio.factory.Log;
    import flash.geom.Point;
    
    public class LevelItemShapeManager

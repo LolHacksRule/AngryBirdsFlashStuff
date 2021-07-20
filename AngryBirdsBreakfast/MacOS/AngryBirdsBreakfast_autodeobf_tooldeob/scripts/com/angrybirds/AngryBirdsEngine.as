@@ -6,7 +6,7 @@ package com.angrybirds
    import com.angrybirds.engine.LevelMain;
    import com.angrybirds.engine.controllers.ILevelMainController;
    import starling.core.Starling;
-   import each.FPSMeter;
+   import com.rovio.factory.FPSMeter;
    import flash.geom.Rectangle;
    
    public class AngryBirdsEngine

@@ -10,7 +10,7 @@ package com.angrybirds.engine.controllers
    import com.angrybirds.data.level.LevelManager;
    import com.angrybirds.engine.LevelSlingshot;
    import com.angrybirds.engine.LevelMain;
-   import each.MouseCursorController;
+   import com.rovio.factory.MouseCursorController;
    import flash.events.KeyboardEvent;
    import flash.events.MouseEvent;
    import flash.geom.Point;

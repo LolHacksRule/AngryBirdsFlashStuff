@@ -5,7 +5,7 @@ package com.angrybirds.engine.camera
    import com.angrybirds.data.level.LevelModel;
    import com.angrybirds.engine.LevelMain;
    import com.angrybirds.AngryBirdsEngine;
-   import each.Log;
+   import com.rovio.factory.Log;
    
    public class LevelCamera
    {

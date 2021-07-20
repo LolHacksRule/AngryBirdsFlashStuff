@@ -4,7 +4,7 @@ package com.angrybirds.data.level.item
    import starling.display.DisplayObject;
    import com.angrybirds.engine.LevelMain;
    import com.angrybirds.AngryBirdsEngine;
-   import each.Log;
+   import com.rovio.factory.Log;
    import flash.utils.Dictionary;
    
    public class LevelItemManager
