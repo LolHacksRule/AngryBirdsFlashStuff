@@ -1,0 +1,22 @@
+package
+{
+   import flash.display.MovieClip;
+   
+   public dynamic class Repeater_LevelSelection12 extends MovieClip
+   {
+       
+      
+      public var Button_Area1:Component_LevelSelection_1;
+      
+      public var Button_Area2:Component_LevelSelection_1;
+      
+      public var Button_Area3:Component_LevelSelection_1;
+      
+      public var Surface:MovieClip;
+      
+      public function Repeater_LevelSelection12()
+      {
+         super();
+      }
+   }
+}
