@@ -1,0 +1,159 @@
+<inventory>
+	<category button="Blocks">
+		<category button="Wood" highlight="true" >
+			<item unlockPrice="1" boltPrice="0" unlockLevel="3" group="LOW">WOOD_BLOCK_1X1</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="2" group="LOW">WOOD_BLOCK_2X1</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="4" group="LOW">WOOD_BLOCK_2X2</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="1" group="LOW">WOOD_BLOCK_4X1</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="1" group="LOW" scale="0.7">WOOD_BLOCK_8X1</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">WOOD_BLOCK_4X2</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="2" group="LOW">WOOD_TRIANGLE_4X4</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">WOOD_TRIANGLE_4X4_HOLLOW</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">WOOD_BLOCK_4X4_HOLLOW</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">WOOD_BLOCK_10X1</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">WOOD_CIRCLE_2X2</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">WOOD_CIRCLE_4X4</item>
+		</category>
+		<category button="Rock" highlight="true">
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">STONE_BLOCK_1X1</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="6" group="LOW">STONE_BLOCK_2X1</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">STONE_BLOCK_2X2</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="6" group="LOW">STONE_BLOCK_4X1</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="6" group="LOW" scale="0.7">STONE_BLOCK_8X1</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">STONE_BLOCK_4X2</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="7" group="LOW">STONE_TRIANGLE_4X4</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">STONE_TRIANGLE_4X4_HOLLOW</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">STONE_BLOCK_4X4_HOLLOW</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">STONE_BLOCK_10X1</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">STONE_CIRCLE_2X2</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">STONE_CIRCLE_4X4</item>
+		</category>
+		<category button="Ice" highlight="true">
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">ICE_BLOCK_1X1</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="5" group="LOW">ICE_BLOCK_2X1</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">ICE_BLOCK_2X2</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="5" group="LOW">ICE_BLOCK_4X1</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="5" group="LOW" scale="0.7">ICE_BLOCK_8X1</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">ICE_BLOCK_4X2</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="7" group="LOW">ICE_TRIANGLE_4X4</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">ICE_TRIANGLE_4X4_HOLLOW</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">ICE_BLOCK_4X4_HOLLOW</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">ICE_BLOCK_10X1</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">ICE_CIRCLE_2X2</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">ICE_CIRCLE_4X4</item>
+		</category>
+		<category button="Static" highlight="true">
+			<item>TERRAIN_TEXTURED_HILLS_1X1</item>
+			<item>TERRAIN_TEXTURED_HILLS_5X2</item>
+			<item>TERRAIN_TEXTURED_HILLS_5X5</item>
+			<item scale="0.6">TERRAIN_TEXTURED_HILLS_10X2</item>
+			<item scale="0.6">TERRAIN_TEXTURED_HILLS_10X10</item>
+			<item>TERRAIN_TEXTURED_HILLS_32X2</item>
+		</category>
+		<category button="Snow" highlight="true">
+		    <!-- 
+			<include_category>Snow</include_category>
+			 -->
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">SNOW_BLOCK_2X2</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">SNOW_BLOCK_4X2</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">SNOW_BLOCK_6X2</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">SNOW_BLOCK_4X4</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">SNOW_CIRCLE_4X4</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">SNOW_TRIANGLE_2X2</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">SNOW_TRIANGLE_4X4</item>			
+		</category>
+	</category>
+	<category button="Objects">
+		<category button="Food" highlight="true">
+		    <!--  
+			<include_category>Food</include_category>
+			-->
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_FOOD_APPLE</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="4" group="LOW">MISC_FOOD_DONUT</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_FOOD_EGG</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_FOOD_WATERMELON</item>
+			<item unlockPrice="1" boltPrice="1" unlockLevel="99" group="LOW">MISC_FOOD_BANANA</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_FOOD_STRAWBERRY</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_FOOD_HAM</item>
+		</category>
+		<category button="Fun" highlight="true">
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_EXPLOSIVE_TNT</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="9" group="LOW">MISC_RUBBER_DUCK</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_RUBBER_SMILEY</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_RUBBER_DICE</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_RUBBER_TRAMPOLINE</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_RUBBER_BEACHBALL</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_METAL_BALL_RED</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_METAL_BALL_GREY</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_BALLOON_YELLOW</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_BALLOON_RED</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_BALLOON_BLUE</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_BALLOON_GREEN</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_BALLOON_PURPLE</item>
+			<item>MISC_FB_CASTLE</item>
+			<item>MISC_FB_BUCKET</item>
+		</category> 
+		<category button="Misc" highlight="true">
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_METAL_CHEST</item>
+			<item>MISC_FB_BARREL</item>
+			<item>MISC_FB_SHOVEL</item>
+			<item>MISC_FB_HAMMER</item>
+			<item>MISC_FB_STICK</item>
+			<item>MISC_FB_NET</item>
+			<item>MISC_FB_BOBBER</item>
+			<item>MISC_FB_ROD</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_METAL_HOLYGRAIL</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_METAL_DIAMOND</item>
+		</category>
+		<category button="Build" highlight="true">
+			<item>MISC_ESTRADE_7X2</item>
+			<item>MISC_ESTRADE_9X3</item>
+			<item>MISC_ESTRADE_11X3</item>
+			<item>MISC_ESTRADE_1X2</item>
+			<item>MISC_ESTRADE_2X2</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_METAL_PILLAR</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_METAL_TIRE_2X2</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_METAL_TIRE_3X3</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_METAL_TIRE_4X4</item>
+			<item>MISC_FB_CONE</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_METAL_FLAG_FINLAND</item>
+			<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">MISC_METAL_FLAG_SWEDEN</item>
+			<item>MISC_FB_TAPE</item>
+			<item>MISC_CARPET</item>
+		</category>
+		<category button="Wear" highlight="true">
+			<item>MISC_FB_SMALL_HAT</item>
+			<item>MISC_FB_TINYGLASSES</item>
+			<item>MISC_FB_HAT</item>
+			<item>MISC_FB_GLASSES</item>
+			<item>MISC_FB_UMBRELLA_TOP</item>
+			<item>MISC_FB_UMBRELLA_BOTTOM</item>
+		</category>
+	</category>
+	<category button="Pigs">
+	    <!-- 
+		<include_category>Pigs</include_category>
+		 -->
+		<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">PIG_BASIC_SMALL</item>
+		<item unlockPrice="1" boltPrice="0" unlockLevel="7" group="LOW">PIG_BASIC_MEDIUM</item>
+		<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">PIG_BASIC_BIG</item>
+		<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">PIG_HELMET</item>
+		<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">PIG_KING</item>
+		<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">PIG_MUSTACHE</item>
+	</category>
+	<category button="Birds">
+	    <!-- 
+		<include_category>Birds</include_category>
+		 -->
+		<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">BIRD_RED</item>
+		<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">BIRD_YELLOW</item>
+		<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">BIRD_BLUE</item>
+		<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">BIRD_BLACK</item>
+		<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">BIRD_GREEN</item>
+		<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">BIRD_WHITE</item>
+		<item unlockPrice="1" boltPrice="0" unlockLevel="99" group="LOW">BIRD_REDBIG</item>
+	</category>
+	<category button="Backgrounds">
+		<include_category>Themes</include_category>
+	</category>
+</inventory>

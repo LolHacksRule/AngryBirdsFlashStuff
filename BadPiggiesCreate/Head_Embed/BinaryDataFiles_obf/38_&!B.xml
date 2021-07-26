@@ -1,0 +1,256 @@
+<UIDescription>
+	<Views>
+		<PopupView_EditorHelp name="Popup_EditorHelp" fromLibrary="True" overlay="True" width="800" height="600" alignH="CENTER" alignV="CENTER">
+			<Container name="Container_Advanced"  visible="False">
+				<Button name="Button_Back" MouseUp="HELP_BACK" Tooltip="Back" />
+				<Button name="Button_SettingSnap" />
+				<Button name="Button_SettingTips" />
+				<Button name="Button_SettingZoom" />
+			</Container>
+			<Container name="Container_Tips">
+				<Button name="Button_Advanced" MouseUp="HELP_ADVANCED" Tooltip="Advanced"/>
+				<Button name="Button_Prev" />
+				<Button name="Button_Next" />
+				<TextField name="TextField_Page" />
+			</Container>
+			<Button name="Button_Close" MouseUp="HELP_CLOSE" Tooltip="Close"/>
+		</PopupView_EditorHelp>
+		<PopupView_PlayHelp name="Popup_PlayHelp" fromLibrary="True" overlay="True" width="800" height="600" alignH="CENTER" alignV="CENTER">
+			<Button name="Button_Close" MouseUp="HELP_CLOSE" Tooltip="Close"/>
+			<Container name="Container_Tips">
+				<Button name="Button_Prev" />
+				<Button name="Button_Next" />
+				<TextField name="TextField_Page" />
+			</Container>
+		</PopupView_PlayHelp>
+		<PopupView_EditorPrompt name="Popup_EditorPrompt" fromLibrary="True" overlay="True" width="800" height="600" alignH="CENTER" alignV="CENTER">
+			<Container name="Container_Tips">
+				<Button name="Button_Close" MouseUp="PROMPT_CLOSE" Tooltip="Close"/>
+			</Container>
+		</PopupView_EditorPrompt>
+		
+		<View_Initialize name="ViewInitialize" width="800" height="600">
+			<MovieClip name="MovieClip_Initialize" scaleH="True" scaleV="True" />
+		</View_Initialize>
+		
+		<!-- LEVEL EDITOR VIEW -->
+		<View_LevelEditor name="ViewLevelEditor" width="800" height="600">      <!--  name parameter must be identical(case sensitive) with export name of the main movie clip of this UI view      -->
+			<Container name="Container_ZoomBar" alignV="Center" alignH="Right">
+				<Slider name="Button_Slider" Drag="ZOOM_DRAG" constraint_height="parent" />
+			</Container>
+			<Container name="Container_EditorMenu">
+				<Container name="Container_PageButtons" alignV="Bottom">
+					<Button name="Button_PrevPage" MouseUp="PREVIOUS_PAGE"/>
+					<Button name="Button_NextPage" MouseUp="NEXT_PAGE"/>
+				</Container>
+				<Button name="Button_CloseInventory" MouseUp="CLOSE_INVENTORY" visible="False" />
+				<Button name="Button_TabBlocks" MouseUp="SELECT_CATEGORY"/>
+				<Button name="Button_TabItems" MouseUp="SELECT_CATEGORY"/>
+				<Button name="Button_TabPigs" MouseUp="SELECT_CATEGORY"/>
+				<Button name="Button_TabBirds" MouseUp="SELECT_CATEGORY"/>
+				<Button name="Button_TabThemes" MouseUp="SELECT_CATEGORY"/>
+				<Button name="Button_TabStars" MouseUp="SELECT_CATEGORY"/>
+				<Container name="Container_Inventory">
+					<MovieClip name="Background_Inventory" />
+	 				<Container name="Container_MaterialCategories">
+						<Button name="Button_Material_Wood" MouseUp="SELECT_CATEGORY" />
+						<Button name="Button_Material_Rock" MouseUp="SELECT_CATEGORY" />
+						<Button name="Button_Material_Ice" MouseUp="SELECT_CATEGORY" />
+						<Button name="Button_Material_Static" MouseUp="SELECT_CATEGORY" />
+						<Button name="Button_Material_Snow" MouseUp="SELECT_CATEGORY" />
+					</Container>
+	 				<Container name="Container_TargetCategories">
+	 					<Button name="Button_Next" MouseUp="NEXT" visible="FALSE"/>
+	 					<Button name="Button_Previous" MouseUp="PREVIOUS" visible="FALSE" />
+	 					<Container name="Container_Scrollables">
+							<Button name="Button_Category_Misc" MouseUp="SELECT_CATEGORY" />
+							<Button name="Button_Category_Food" MouseUp="SELECT_CATEGORY" />
+							<Button name="Button_Category_Build" MouseUp="SELECT_CATEGORY" />
+							<Button name="Button_Category_Wear" MouseUp="SELECT_CATEGORY" />
+							<Button name="Button_Category_Fun" MouseUp="SELECT_CATEGORY" />
+						</Container>
+					</Container>
+				</Container>
+				<Container name="Container_StarValues" visible="false">
+					<MovieClip name="Background_Stars" />
+					<Button name="StarSlider_Upper" />
+					<Button name="StarSlider_Lower" />
+					<MovieClip name="OneStar" />
+					<MovieClip name="TwoStars" />
+					<MovieClip name="ThreeStars" />
+					<TextField name="MaxScore" text="0" />
+					<Container name="Container_MinScore" alignV="Bottom">
+						<TextField name="MinScore" text="0" />
+					</Container>
+				</Container>
+			</Container>
+
+			<Container name="Container_EditorMenuButtons" alignV="TOP">
+				<Button name="Button_GeometryMenu" MouseUp="TOGGLE_CATEGORY" Tooltip="Geometry" /> 	
+				<Button name="Button_TargetsMenu" MouseUp="TOGGLE_CATEGORY" Tooltip="Pigs & Birds" /> 	
+				<Button name="Button_BackgroundMenu" MouseUp="TOGGLE_CATEGORY" Tooltip="Backgrounds" /> 	
+			</Container>	
+			
+			<Container name="Container_Tools" alignH="RIGHT" alignV="TOP">
+				<Button name="Button_Gravity" MouseUp="TOGGLE_GRAVITY" Tooltip="Gravity"/>
+				<Button name="Button_ToolPan" MouseUp="TOOL_CAMERA" Tooltip="Panning" /> 
+				<Button name="Button_ToolSelect" MouseUp="TOOL_SELECT" Tooltip="Select"/>
+			</Container>
+
+			<Container name="Container_ContextMenu" MouseDown="EDITOR_TOOLBAR_MOUSEDOWN" MouseUp="EDITOR_TOOLBAR_MOUSEUP" visible="False">
+				<Button name="Button_RotateClockwiseContext" MouseUp="START_ROTATE" visible="True" Tooltip="Rotate"/>
+				<Button name="Button_Duplicate" MouseUp="DUPLICATE" visible="True" Tooltip="Duplicate"/> 
+				<Button name="Button_ToolDeleteContext" MouseUp="TOOL_DELETE" visible="True" Tooltip="Remove"/> 
+			</Container>
+
+			<Container name="Container_OperationTools" alignH="RIGHT" alignV="BOTTOM">
+				<MovieClip name="MovieClip_SaveGlow" visible="False" />
+				<Button name="Button_Help" MouseUp="HELP_BUTTON" Tooltip="Help"/>
+				<Button name="Button_Fullscreen" MouseUp="FULLSCREEN_BUTTON" Tooltip="Fullscreen" Toggle="TRUE"/>
+				<Button name="Button_TestPlay" MouseUp="PLAY_LEVEL" Tooltip="Preview"/>
+				<Button name="Button_Save" MouseUp="SAVE" visible="False" />
+			</Container>		
+		</View_LevelEditor>
+		
+		<View_LevelEndEditor name="ViewLevelEndEditor" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" width="800" height="600">
+			<MovieClip name="MovieClip_LevelEndStripeBG" alignH="CENTER" alignV="CENTER" scaleH="DOWN" scaleV="TRUE" />
+			<Container name="Container_LevelEndStripe"   alignH="CENTER" alignV="CENTER" scaleH="DOWN" scaleV="DOWN" aspectRatioFixed="TRUE">
+
+				<MovieClip name="MovieClip_StarLeft" />
+				<MovieClip name="MovieClip_StarCenter" />
+				<MovieClip name="MovieClip_StarRight" />
+				
+				<TextField name="TextField_LevelEndScore" enabled="True" />
+ 				<TextField name="TextField_LevelEndScoreEffects" enabled="True" />
+				<Button name="Button_Menu"  MouseUp="MENU" scaleOnMouseOver="TRUE"/>
+				<Button name="Button_Replay"  MouseUp="REPLAY" scaleOnMouseOver="TRUE"/>
+				<Button name="Button_Publish"  MouseUp="PUBLISH" scaleOnMouseOver="TRUE"/>
+			</Container>
+			<Button name="Button_FullScreen" MouseUp="FULLSCREEN_BUTTON" scaleH="DOWN" scaleV="DOWN" alignH="RIGHT" alignV="BOTTOM"/>
+		</View_LevelEndEditor>
+		
+		<View_LevelEndPreview name="ViewLevelEndPreview" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" width="800" height="600">
+			<MovieClip name="MovieClip_LevelEndStripeBG" alignH="CENTER" alignV="CENTER" scaleH="DOWN" scaleV="TRUE" />
+			<Container name="Container_LevelEndStripe"   alignH="CENTER" alignV="CENTER" scaleH="DOWN" scaleV="DOWN" aspectRatioFixed="TRUE">
+
+				<MovieClip name="MovieClip_StarLeft" />
+				<MovieClip name="MovieClip_StarCenter" />
+				<MovieClip name="MovieClip_StarRight" />
+				
+				<TextField name="TextField_LevelEndScore" enabled="True" />
+ 				<TextField name="TextField_LevelEndScoreEffects" enabled="True" />
+				<Button name="Button_Replay"  MouseUp="REPLAY" scaleOnMouseOver="TRUE"/>
+			</Container>
+			<Button name="Button_FullScreen" MouseUp="FULLSCREEN_BUTTON" scaleH="DOWN" scaleV="DOWN" alignH="RIGHT" alignV="BOTTOM"/>
+		</View_LevelEndPreview>
+		
+		<View_LevelEndFailPreview name="ViewLevelEndFailPreview" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" width="800" height="600">
+			<MovieClip name="MovieClip_LevelEndStripeBG" alignH="CENTER" alignV="CENTER" scaleH="DOWN" scaleV="TRUE" />
+			<Container name="Container_LevelEndStripe"   alignH="CENTER" alignV="CENTER" scaleH="DOWN" scaleV="DOWN" aspectRatioFixed="TRUE">
+				<MovieClip name="MovieClip_LevelEndFailedPig" />
+				<Button name="Button_Replay"  MouseUp="REPLAY"  scaleOnMouseOver="TRUE"/>
+			</Container>
+		</View_LevelEndFailPreview>
+		
+		<View_LevelEndFailEditor name="ViewLevelEndFailEditor" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" width="800" height="600">
+			<MovieClip name="MovieClip_LevelEndStripeBG" alignH="CENTER" alignV="CENTER" scaleH="DOWN" scaleV="TRUE" />
+			<Container name="Container_LevelEndStripe"   alignH="CENTER" alignV="CENTER" scaleH="DOWN" scaleV="DOWN" aspectRatioFixed="TRUE">
+				<MovieClip name="MovieClip_LevelEndFailedPig" />
+				<Button name="Button_Menu"  MouseUp="MENU"  scaleOnMouseOver="TRUE"/>
+				<Button name="Button_Replay"  MouseUp="REPLAY"  scaleOnMouseOver="TRUE"/>
+			</Container>
+			<Button name="Button_FullScreen" MouseUp="FULLSCREEN_BUTTON" scaleH="DOWN" scaleV="DOWN" alignH="RIGHT" alignV="BOTTOM"/>
+		</View_LevelEndFailEditor>
+				
+		<View_LevelEndBS name="ViewLevelEndBS" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" width="800" height="600">
+			<MovieClip name="MovieClip_LevelEndStripeBG" alignH="CENTER" alignV="CENTER" scaleH="DOWN" scaleV="TRUE" />
+			<Container name="Container_LevelEndStripe" alignH="CENTER" alignV="CENTER" scaleH="DOWN" scaleV="DOWN" aspectRatioFixed="TRUE">
+				<MovieClip name="MovieClip_StarLeft"/>
+				<MovieClip name="MovieClip_StarCenter"/>
+				<MovieClip name="MovieClip_StarRight"/>				
+				<TextField name="TextField_LevelEndScore" enabled="True" />
+ 				<TextField name="TextField_LevelEndScoreEffects" enabled="True" />
+				<Button name="Button_Menu"  MouseUp="MENU" scaleOnMouseOver="TRUE"/>
+				<Button name="Button_Replay"  MouseUp="REPLAY" scaleOnMouseOver="TRUE"/>
+				<Button name="Button_NextLevel"  MouseUp="NEXT"  scaleOnMouseOver="TRUE"/>
+				<Button name="Button_Share"  MouseUp="SHARE"  scaleOnMouseOver="TRUE"/>
+				<Button name="Button_Like"  MouseUp="LIKE"  scaleOnMouseOver="TRUE"/>
+			</Container>
+			<Button name="Button_FullScreen" MouseUp="FULLSCREEN_BUTTON" scaleH="DOWN" scaleV="DOWN" alignH="RIGHT" alignV="BOTTOM"/>
+		</View_LevelEndBS>
+
+		
+		<View_LevelEndFailBS name="ViewLevelEndFailBS" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" width="800" height="600">      <!--  name parameter must be identical(case sensitive) with export name of the main movie clip of this UI view      -->
+			<MovieClip name="MovieClip_LevelEndStripeBG" alignH="CENTER" alignV="CENTER" scaleH="DOWN" scaleV="TRUE" />
+			<Container name="Container_LevelEndStripe" alignH="CENTER" alignV="CENTER" scaleH="DOWN" scaleV="DOWN" aspectRatioFixed="TRUE">
+				<MovieClip name="MovieClip_LevelEndFailedPig" />
+				<Button name="Button_Menu"  MouseUp="MENU" scaleOnMouseOver="TRUE" />
+				<Button name="Button_Replay"  MouseUp="REPLAY" scaleOnMouseOver="TRUE"/>
+				<Button name="Button_NextLevel"  MouseUp="NEXT"  scaleOnMouseOver="TRUE"/>
+				<Button name="Button_Share"  MouseUp="SHARE"  scaleOnMouseOver="TRUE"/>
+				<Button name="Button_Like"  MouseUp="LIKE"  scaleOnMouseOver="TRUE"/>
+			</Container>
+			<Button name="Button_FullScreen" MouseUp="FULLSCREEN_BUTTON" scaleH="DOWN" scaleV="DOWN" alignH="RIGHT" alignV="BOTTOM"/>
+		</View_LevelEndFailBS>
+		
+		<View_LevelPauseEditor name="ViewLevelPauseEditor" width="800" height="600">
+			<MovieClip name="MovieClip_DarkBG" alignH="LEFT" alignV="CENTER" scaleH="TRUE" scaleV="TRUE"/>
+			<Container name="Container_PauseMenu">
+				<MovieClip name="MovieClip_PauseMenuBG" alignV="CENTER" scaleH="DOWN" scaleV="TRUE"/>
+				<TextField name="TextField_LevelName" text="22-22" enabled="True" />
+				<Button name="Button_Resume" MouseUp="RESUME_LEVEL" alignV="CENTER" scaleH="DOWN" scaleV="DOWN" aspectRatioFixed="TRUE"/>
+				<Button name="Button_Replay" MouseUp="RESTART_LEVEL" alignV="CENTER" scaleH="DOWN" scaleV="DOWN" aspectRatioFixed="TRUE"/>
+				<Button name="Button_Edit" visible="True"  MouseUp="MENU" alignV="CENTER" scaleH="DOWN" scaleV="DOWN" aspectRatioFixed="TRUE"/>
+				<Button name="Button_Help" MouseUp="HELP" alignV="BOTTOM" scaleH="DOWN" scaleV="DOWN" aspectRatioFixed="TRUE" />
+				<Button name="Button_Sound" MouseUp="TOGGLE_SOUNDS" alignV="BOTTOM" scaleH="DOWN" scaleV="DOWN" aspectRatioFixed="TRUE"/>
+			</Container>
+		</View_LevelPauseEditor>
+		
+		<View_LevelPauseBS name="ViewLevelPauseBS" width="800" height="600">
+			<MovieClip name="MovieClip_DarkBG" alignH="LEFT" alignV="CENTER" scaleH="TRUE" scaleV="TRUE"/>
+			<Container name="Container_PauseMenu">
+				<MovieClip name="MovieClip_PauseMenuBG" alignV="CENTER" scaleH="DOWN" scaleV="TRUE"/>
+				<TextField name="TextField_LevelName" text="22-22" enabled="True" />
+				<Button name="Button_Resume" MouseUp="RESUME_LEVEL" alignV="CENTER" scaleH="DOWN" scaleV="DOWN" aspectRatioFixed="TRUE" />
+				<Button name="Button_Replay" MouseUp="RESTART_LEVEL" alignV="CENTER" scaleH="DOWN" scaleV="DOWN" aspectRatioFixed="TRUE"/>
+				<Button name="Button_Edit" visible="True"  MouseUp="MENU" alignV="CENTER" scaleH="DOWN" scaleV="DOWN" aspectRatioFixed="TRUE"/>
+				<Button name="Button_Help" MouseUp="HELP" alignV="BOTTOM" scaleH="DOWN" scaleV="DOWN" aspectRatioFixed="TRUE"/>
+				<Button name="Button_Sound" MouseUp="TOGGLE_SOUNDS" alignV="BOTTOM" scaleH="DOWN" scaleV="DOWN"/>
+			</Container>
+		</View_LevelPauseBS>
+
+		<View_NoGUI name="ViewNoGUI" />
+		
+		<View_LevelPlayEditor name="ViewLevelPlayEditor" width="800" height="600">
+				<Container name="Container_HiscoreContainer" enabled="False" alignH="RIGHT">
+						<TextField name="TextField_CurrentScore" text="0" enabled="False"/>
+				</Container>
+				<Button name="Button_Pause" MouseUp="PAUSE" MouseOver="PLAY_VIEW_ROLLOVER" MouseOut="PLAY_VIEW_ROLLOUT" alignH="LEFT"/>
+				<Button name="Button_Restart" MouseUp="RESTART_LEVEL" MouseOver="PAN_LEFT_OVER" MouseOut="PAN_LEFT_OUT" alignH="LEFT"/>
+				<Button name="Button_FullScreen" MouseUp="FULLSCREEN_BUTTON" alignH="RIGHT" alignV="BOTTOM"/>
+		</View_LevelPlayEditor>
+
+		<View_LevelPreview name="ViewLevelPreview" width="800" height="600">
+			<Container name="Container_HiscoreContainer" enabled="False" alignH="RIGHT" visible="False" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE">
+					<TextField name="TextField_CurrentScore" text="0" enabled="False"/>
+			</Container>
+			<Container name="Container_Buttons" scaleH="True" scaleV="True" aspectRatioFixed="TRUE">
+				<Button name="Button_Restart" MouseUp="RESTART_LEVEL" MouseOver="PAN_LEFT_OVER" MouseOut="PAN_LEFT_OUT" alignH="LEFT"/>
+			</Container>
+		</View_LevelPreview> 
+				
+		<View_LevelPlayBS name="ViewLevelPlayBS" width="800" height="600">
+				<Container name="Container_HiscoreContainer" enabled="False" alignH="RIGHT">
+						<TextField name="TextField_CurrentScore" text="0" enabled="False"/>
+				</Container>
+				
+				<!-- <Button name="MovieClip_FeedBar" MouseUp="OPEN_FEED_DIALOG" enabled="True" /> -->
+				
+				
+<!--			<MovieClip name="MovieClip_AvatarPlaceholder" enabled="False" visible="False" />	  -->
+				<Button name="Button_Pause" MouseUp="PAUSE" MouseOver="PLAY_VIEW_ROLLOVER" MouseOut="PLAY_VIEW_ROLLOUT" alignH="LEFT"/>
+				<Button name="Button_Restart" MouseUp="RESTART_LEVEL" MouseOver="PAN_LEFT_OVER" MouseOut="PAN_LEFT_OUT" alignH="LEFT"/>
+				<Button name="Button_FullScreen" MouseUp="FULLSCREEN_BUTTON"  alignH="RIGHT" alignV="BOTTOM"/>
+		</View_LevelPlayBS> 
+	</Views>
+</UIDescription>

@@ -1,0 +1,97 @@
+<inventory>
+	<category button="Button_GeometryMenu">
+		<category button="Button_TabBlocks">
+			<category button="Button_Material_Wood" highlight="true">
+				<include_category>Wood</include_category>
+			</category>
+			<category button="Button_Material_Rock" highlight="true">
+				<include_category>Stone</include_category>
+			</category>
+			<category button="Button_Material_Ice" highlight="true">
+				<include_category>Ice</include_category>
+			</category>
+			<category button="Button_Material_Static" highlight="true">
+				<include_category>Textures</include_category>
+				<exclude>TERRAIN_TEXTURED_HILLS_2X2</exclude>
+			</category>
+			<category button="Button_Material_Snow" highlight="true">
+				<include_category>Snow</include_category>
+			</category>
+		</category>
+		<category button="Button_TabItems">
+			<category button="Button_Category_Misc" highlight="true">
+				<item>MISC_METAL_CHEST</item>
+				<item>MISC_FB_BARREL</item>
+				<item>MISC_FB_SHOVEL</item>
+				<item>MISC_FB_STICK</item>
+				<item>MISC_FB_NET</item>
+				<item>MISC_FB_HAMMER</item>
+				<item>MISC_FB_ROD</item>
+				<item>MISC_FB_BOBBER</item>
+				<item>MISC_METAL_HOLYGRAIL</item>
+				<item>MISC_METAL_DIAMOND</item>
+			</category>
+			<category button="Button_Category_Food" highlight="true">
+				<include_category>Food</include_category>
+			</category>
+			<category button="Button_Category_Build" highlight="true">
+				<item>MISC_ESTRADE_7X2</item>
+				<item>MISC_ESTRADE_9X3</item>
+				<item>MISC_ESTRADE_11X3</item>
+				<item>MISC_ESTRADE_1X2</item>
+				<item>MISC_ESTRADE_2X2</item>
+				<item>MISC_METAL_PILLAR</item>
+				<item>MISC_METAL_TIRE_2X2</item>
+				<item>MISC_METAL_TIRE_3X3</item>
+				<item>MISC_METAL_TIRE_4X4</item>
+				<item>MISC_METAL_FLAG_FINLAND</item>
+				<item>MISC_METAL_FLAG_SWEDEN</item>
+				<item>MISC_FB_CONE</item>
+				<item>MISC_FB_UMBRELLA_TOP</item>
+				<item>MISC_FB_UMBRELLA_BOTTOM</item>
+				<item>MISC_FB_TAPE</item>
+				<item>MISC_CARPET</item>
+			</category>
+			<category button="Button_Category_Fun" highlight="true">
+				<item>MISC_EXPLOSIVE_TNT</item>
+				<item>MISC_RUBBER_DUCK</item>
+				<item>MISC_RUBBER_SMILEY</item>
+				<item>MISC_RUBBER_TRAMPOLINE</item>
+				<item>MISC_RUBBER_BEACHBALL</item>
+				<item>MISC_METAL_BALL_RED</item>
+				<item>MISC_METAL_BALL_GREY</item>
+				<item>MISC_BALLOON_YELLOW</item>
+				<item>MISC_BALLOON_RED</item>
+				<item>MISC_BALLOON_BLUE</item>
+				<item>MISC_BALLOON_GREEN</item>
+				<item>MISC_BALLOON_PURPLE</item>
+				<item>MISC_FB_CASTLE</item>
+				<item>MISC_FB_BUCKET</item>
+				<item>MISC_RUBBER_DICE</item>
+			</category>
+			<category button="Button_Category_Wear" highlight="true">
+				<item>MISC_FB_SMALL_HAT</item>
+				<item>MISC_FB_HAT</item>
+				<item>MISC_FB_GLASSES</item>
+				<item>MISC_FB_TINYGLASSES</item>
+			</category>
+		</category>
+	</category>
+	<category button="Button_TargetsMenu">
+		<category button="Button_TabPigs">
+			<include_category>Pigs</include_category>
+		</category>
+		<category button="Button_TabBirds">
+			<include_category>Birds</include_category>
+			<exclude>POWERUP_SUPERBALL</exclude>
+		</category>
+	</category>
+	<category button="Button_BackgroundMenu">
+		<category button="Button_TabThemes">
+			<include_category>Themes</include_category>
+		</category>
+		<category button="Button_TabStars">
+			<component>Container_StarValues</component>
+		</category>
+	</category>
+</inventory>

@@ -1,0 +1,15 @@
+<assets>
+	<packages>
+        <pack url="packages/core.pak"/>
+        <pack url="packages/birds.pak"/>
+        <pack url="packages/pigs.pak"/>
+        <pack url="packages/blocks.pak"/>
+        <pack url="packages/episode_1.pak"/>
+        <pack url="packages/episode_2.pak"/>
+    </packages>
+
+	<libraries>
+		<library swf="external_assets/AngryBirdsCredits.swf" startupLoad="true" /> 
+		<library swf="external_assets/AngryBirdsFlashUI.swf" startupLoad="true" /> 
+	</libraries>
+</assets>

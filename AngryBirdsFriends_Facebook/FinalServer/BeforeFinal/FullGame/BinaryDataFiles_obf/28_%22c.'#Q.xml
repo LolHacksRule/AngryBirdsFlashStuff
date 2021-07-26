@@ -1,0 +1,15 @@
+
+		<Popup name="Popup_CoinShopTutorial" visible="False" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="1024" height="768">
+			<Container name="Container_CoinShopPopup" visible="False">
+			
+				<MovieClip name="AngryBirdLoader" visible="True"/>
+				
+				 <Button name="Button_Buy0" />
+	             <Button name="Button_Buy1" />
+	             <Button name="Button_Buy2" />
+	             <Button name="Button_Buy3" />
+	             <Button name="Button_Buy4" />
+	             <Button name="Button_Buy5" />
+				
+			</Container>
+		</Popup>

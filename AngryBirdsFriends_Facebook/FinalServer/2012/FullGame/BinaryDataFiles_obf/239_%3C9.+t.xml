@@ -1,0 +1,83 @@
+<Popup name="Popup_AngryShopBuy" visible="False" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="1024" height="768">
+	<Container name="Container_Popup" visible="False">
+
+		<MovieClip name="AngryBirdLoader" visible="True"/>
+	
+		<Button name="Button_ShopClose" MouseUp="SHOP_BUYPOPUP_CLOSE" />
+
+		<Container name="Container_BuyStuff">
+				<Container name="Container_OfEach" visible = "true">
+					<TextField name="TextField_OfEach1" enabled="False"/>
+					<TextField name="TextField_OfEach2" enabled="False"/>
+					<TextField name="TextField_OfEach3" enabled="False"/>
+					<TextField name="TextField_OfEach4" enabled="False"/>
+					<TextField name="TextField_OfEach5" enabled="False"/>
+					
+					<TextField name="TextField_ForFree1green" enabled="False" visible = "false"/>
+					<TextField name="TextField_ForFree2green" enabled="False" visible = "false"/>
+					<TextField name="TextField_ForFree3green" enabled="False" visible = "false"/>
+					<TextField name="TextField_ForFree4green" enabled="False" visible = "false"/>
+					<TextField name="TextField_ForFree5green" enabled="False" visible = "false"/>
+					
+					<TextField name="TextField_ForFree1red" enabled="False" visible = "false"/>
+					<TextField name="TextField_ForFree2red" enabled="False" visible = "false"/>
+					<TextField name="TextField_ForFree3red" enabled="False" visible = "false"/>
+					<TextField name="TextField_ForFree4red" enabled="False" visible = "false"/>
+					<TextField name="TextField_ForFree5red" enabled="False" visible = "false"/>
+				</Container>
+			
+				<Container name="Container_XOfEach" visible = "False"/>
+			
+				<Button name="Button_BuyItem1" MouseUp="SHOP_BUYPOPUP_BUY1"/>
+				<Button name="Button_BuyItem2" MouseUp="SHOP_BUYPOPUP_BUY2"/>
+				<Button name="Button_BuyItem3" MouseUp="SHOP_BUYPOPUP_BUY3"/>
+				<Button name="Button_BuyItem4" MouseUp="SHOP_BUYPOPUP_BUY4"/>
+				<Button name="Button_BuyItem5" MouseUp="SHOP_BUYPOPUP_BUY5"/>
+	
+				<Container name="MovieClip_BuyItemAsset">
+					<Button name="EasterEgg1Button" MouseUp="EASTER_EGG_1"/>
+				</Container>
+				
+				<MovieClip name="MovieClip_BuyItemAsset1"/>
+				<MovieClip name="MovieClip_BuyItemAsset2"/>
+				<MovieClip name="MovieClip_BuyItemAsset3"/>
+				<MovieClip name="MovieClip_BuyItemAsset4"/>
+				<MovieClip name="MovieClip_BuyItemAsset5"/>
+						
+				<TextField name="TextField_Price1" enabled="False"/>
+				<TextField name="TextField_Price2" enabled="False"/>
+				<TextField name="TextField_Price3" enabled="False"/>
+				<TextField name="TextField_Price4" enabled="False"/>
+				<TextField name="TextField_Price5" enabled="False"/>
+			
+				<Container name="Container_OldPrices">			
+					<TextField name="TextField_OldPrice1" enabled="False"/>
+					<TextField name="TextField_OldPrice2" enabled="False"/>
+					<TextField name="TextField_OldPrice3" enabled="False"/>
+					<TextField name="TextField_OldPrice4" enabled="False"/>
+					<TextField name="TextField_OldPrice5" enabled="False"/>
+				</Container>
+			
+			
+				<TextField name="TextField_Quantity1" enabled="False"/>
+				<TextField name="TextField_Quantity2" enabled="False"/>
+				<TextField name="TextField_Quantity3" enabled="False"/>
+				<TextField name="TextField_Quantity4" enabled="False"/>
+				<TextField name="TextField_Quantity5" enabled="False"/>
+				
+				<TextField name="TextField_PowerUpName" enabled="False"/>
+				<TextField name="TextField_PowerUpDescription" enabled="False"/>
+				<TextField name="TextField_UpperName" enabled="False"/>
+				
+				<Container name="Container_Sales_Tags" visible="false">
+					<TextField name="TagText1" text="-30%" enabled="false"/>
+					<TextField name="TagText2" text="-30%" enabled="false"/>
+					<TextField name="TagText3" text="-20%" enabled="false"/>
+					<TextField name="TagText4" text="-20%" enabled="false"/>
+					<TextField name="TagText5" text="-20%" enabled="false"/>
+				</Container>
+		
+			</Container>
+		
+	</Container>
+</Popup>

@@ -1,0 +1,156 @@
+<tuner game="AngryBirds Facebook" version="0.0.0">
+
+	<Item_Materials>
+	</Item_Materials>
+
+	<Item_Shapes>
+		<Shape id="MISC_FB_TAPE" shape="POLYGON">
+			<Vertex index="0" x="2" y="-0.5" />
+			<Vertex index="1" x="2" y="0.5" />
+			<Vertex index="2" x="-2" y="0.5" />
+			<Vertex index="3" x="-2" y="-0.5" />
+		</Shape>
+		<Shape id="MISC_FB_HAMMER" shape="POLYGON">
+			<Vertex index="0" x="1.1" y="-1.5" />
+			<Vertex index="1" x="1.1" y="1.5" />
+			<Vertex index="2" x="-1.1" y="1.5" />
+			<Vertex index="3" x="-1.1" y="-1.5" />
+		</Shape>
+		<Shape id="MISC_FB_CONE" shape="POLYGON">
+			<Vertex index="0" x="1.0" y="-1.05" />
+			<Vertex index="1" x="1.0" y="1.05" />
+			<Vertex index="2" x="-1.0" y="1.05" />
+			<Vertex index="3" x="-1.0" y="-1.05" />
+		</Shape>
+		<Shape id="MISC_FB_UMBRELLA_TOP" shape="POLYGON">
+			<Vertex index="0" x="0.46" y="-0.46" />
+			<Vertex index="1" x="0.46" y="0.46" />
+			<Vertex index="2" x="-0.46" y="0.46" />
+			<Vertex index="3" x="-0.46" y="-0.46" />
+		</Shape>
+		<Shape id="MISC_FB_UMBRELLA_BOTTOM" shape="POLYGON">
+			<Vertex index="0" x="1.909" y="-0.46" />
+			<Vertex index="1" x="1.909" y="0.46" />
+			<Vertex index="2" x="-1.909" y="0.46" />
+			<Vertex index="3" x="-1.909" y="-0.46" />
+		</Shape>
+		<Shape id="MISC_FB_BARREL" shape="POLYGON">
+			<Vertex index="0" x="1.8859999" y="-1.8859999" />
+			<Vertex index="1" x="1.8859999" y="1.8859999" />
+			<Vertex index="2" x="-1.8859999" y="1.8859999" />
+			<Vertex index="3" x="-1.8859999" y="-1.8859999" />
+		</Shape>
+		<Shape id="MISC_FB_GLASSES" shape="POLYGON">
+			<Vertex index="0" x="1.909" y="-0.94299996" />
+			<Vertex index="1" x="1.909" y="0.94299996" />
+			<Vertex index="2" x="-1.909" y="0.94299996" />
+			<Vertex index="3" x="-1.909" y="-0.94299996" />
+		</Shape>
+		<Shape id="MISC_FB_BUCKET" shape="POLYGON">
+			<Vertex index="0" x="0.94299996" y="-0.94299996" />
+			<Vertex index="1" x="0.94299996" y="0.94299996" />
+			<Vertex index="2" x="-0.94299996" y="0.94299996" />
+			<Vertex index="3" x="-0.94299996" y="-0.94299996" />
+		</Shape>
+		<Shape id="MISC_FB_SHOVEL" shape="POLYGON">
+			<Vertex index="0" x="0.94299996" y="-0.46" />
+			<Vertex index="1" x="0.94299996" y="0.46" />
+			<Vertex index="2" x="-0.94299996" y="0.46" />
+			<Vertex index="3" x="-0.94299996" y="-0.46" />
+		</Shape>
+		<Shape id="MISC_FB_CASTLE" shape="POLYGON">
+			<Vertex index="0" x="1.8859999" y="-1.8859999" />
+			<Vertex index="1" x="1.8859999" y="1.8859999" />
+			<Vertex index="2" x="-1.8859999" y="1.8859999" />
+			<Vertex index="3" x="-1.8859999" y="-1.8859999" />
+		</Shape>
+		<Shape id="FB_SAND_PARTICLE" shape="POLYGON">
+			<Vertex index="0" x="0.46" y="-0.46" />
+			<Vertex index="1" x="0.46" y="0.46" />
+			<Vertex index="2" x="-0.46" y="0.46" />
+			<Vertex index="3" x="-0.46" y="-0.46" />
+		</Shape>
+		<Shape id="MISC_FB_NET" shape="POLYGON">
+			<Vertex index="0" x="0.94299996" y="-0.94299996" />
+			<Vertex index="1" x="0.94299996" y="0.94299996" />
+			<Vertex index="2" x="-0.94299996" y="0.94299996" />
+			<Vertex index="3" x="-0.94299996" y="-0.94299996" />
+		</Shape>
+		<Shape id="MISC_FB_STICK" shape="POLYGON">
+			<Vertex index="0" x="1.909" y="-0.46" />
+			<Vertex index="1" x="1.909" y="0.46" />
+			<Vertex index="2" x="-1.909" y="0.46" />
+			<Vertex index="3" x="-1.909" y="-0.46" />
+		</Shape>
+		<Shape id="MISC_FB_HAT" shape="POLYGON">
+			<Vertex index="0" x="1.8859999" y="-1.8859999" />
+			<Vertex index="1" x="1.8859999" y="1.8859999" />
+			<Vertex index="2" x="-1.8859999" y="1.8859999" />
+			<Vertex index="3" x="-1.8859999" y="-1.8859999" />
+		</Shape>
+		<Shape id="MISC_FB_BOBBER" shape="POLYGON">
+			<Vertex index="0" x="0.46" y="-0.46" />
+			<Vertex index="1" x="0.46" y="0.46" />
+			<Vertex index="2" x="-0.46" y="0.46" />
+			<Vertex index="3" x="-0.46" y="-0.46" />
+		</Shape>
+		<Shape id="MISC_FB_ROD" shape="POLYGON">
+			<Vertex index="0" x="3.8639998" y="-0.46" />
+			<Vertex index="1" x="3.8639998" y="0.46" />
+			<Vertex index="2" x="-3.8639998" y="0.46" />
+			<Vertex index="3" x="-3.8639998" y="-0.46" />
+		</Shape>
+		<Shape id="MISC_FB_SMALL_HAT" shape="POLYGON">
+			<Vertex index="0" x="0.46" y="-0.46" />
+			<Vertex index="1" x="0.46" y="0.46" />
+			<Vertex index="2" x="-0.46" y="0.46" />
+			<Vertex index="3" x="-0.46" y="-0.46" />
+		</Shape>
+		<Shape id="MISC_FB_TINYGLASSES" shape="POLYGON">
+			<Vertex index="0" x="0.94299996" y="-0.46" />
+			<Vertex index="1" x="0.94299996" y="0.46" />
+			<Vertex index="2" x="-0.94299996" y="0.46" />
+			<Vertex index="3" x="-0.94299996" y="-0.46" />
+		</Shape>
+	</Item_Shapes>
+
+	<Item_Resources_Sounds>
+	</Item_Resources_Sounds>
+
+	<SoundChannels>
+	</SoundChannels>
+
+	<Items>
+		<Item id="MISC_FB_TAPE" shape="MISC_FB_TAPE" material="Material_Misc_Plastic" score="100" health="5.0" type="2" category="Misc" front="true"/>
+		<Item id="MISC_FB_HAMMER" shape="MISC_FB_HAMMER" material="Material_Block_Stone" score="100" health="20.0" type="2" category="Misc" front="false" />
+		<Item id="MISC_FB_CONE" shape="MISC_FB_CONE" material="Material_Misc_Plastic" score="100" health="5.0" type="2" category="Misc" front="true" />
+		<Item id="MISC_FB_UMBRELLA_TOP" shape="MISC_FB_UMBRELLA_TOP" material="Material_Misc_Plastic" score="100" health="5.0" type="2" category="Misc" front="true" />
+		<Item id="MISC_FB_UMBRELLA_BOTTOM" shape="MISC_FB_UMBRELLA_BOTTOM" material="Material_Misc_Plastic" score="100" health="5.0" type="2" category="Misc" front="false" />
+		<Item id="MISC_FB_BARREL" shape="MISC_FB_BARREL" material="Material_Block_Wood" score="100" health="15.0" type="2" category="Misc" />
+		<Item id="MISC_FB_GLASSES" shape="MISC_FB_GLASSES" material="Material_Misc_Plastic" score="100" health="5.0" type="2" category="Misc" front="true" />
+		<Item id="MISC_FB_BUCKET" shape="MISC_FB_BUCKET" material="Material_Misc_Plastic" score="100" health="5.0" type="2" category="Misc" />
+		<Item id="MISC_FB_SHOVEL" shape="MISC_FB_SHOVEL" material="Material_Misc_Plastic" score="100" health="5.0" type="2" category="Misc" front="false"  />
+		<Item id="MISC_FB_CASTLE" shape="MISC_FB_CASTLE" material="Material_Misc_Plastic" score="100" health="10.0" type="2" category="Misc" front="true" />
+		<Item id="FB_SAND_PARTICLE" shape="FB_SAND_PARTICLE" material="Material_Misc_Plastic" score="100" health="5.0" type="2" category="Misc" />
+		<Item id="MISC_FB_NET" shape="MISC_FB_NET" material="Material_Misc_Plastic" score="100" health="5.0" type="2" category="Misc" front="true" />
+		<Item id="MISC_FB_STICK" shape="MISC_FB_STICK" material="Material_Misc_Plastic" score="100" health="5.0" type="2" category="Misc" front="false" />
+		<Item id="MISC_FB_HAT" shape="MISC_FB_HAT" material="Material_Misc_Plastic" score="100" health="5.0" type="2" category="Misc" front="true" />
+		<Item id="MISC_FB_BOBBER" shape="MISC_FB_BOBBER" material="Material_Misc_Plastic" score="100" health="5.0" type="2" category="Misc" />
+		<Item id="MISC_FB_ROD" shape="MISC_FB_ROD" material="Material_Misc_Plastic" score="100" health="5.0" type="2" category="Misc" front="false" />
+		<Item id="MISC_FB_SMALL_HAT" shape="MISC_FB_SMALL_HAT" material="Material_Misc_Plastic" score="100" health="5.0" type="2" category="Misc" front="true"  />
+		<Item id="MISC_FB_TINYGLASSES" shape="MISC_FB_TINYGLASSES" material="Material_Misc_Plastic" score="100" health="5.0" type="2" category="Misc" front="true"  />
+
+		<Item id="MISC_EASTER_EGG_6" shape="Food_Egg" material="Material_Misc_Plastic" score="0" health="1.0" type="2" category="Misc" front="true"  />
+		<Item id="MISC_EASTER_EGG_7" shape="Food_Egg" material="Material_Misc_Plastic" score="0" health="1.0" type="2" category="Misc" front="true"  />
+		<Item id="MISC_EASTER_EGG_8" shape="Food_Egg" material="Material_Misc_Plastic" score="0" health="1.0" type="2" category="Misc" front="true"  />
+		<Item id="MISC_EASTER_EGG_9" shape="Food_Egg" material="Material_Misc_Plastic" score="0" health="1.0" type="2" category="Misc" front="true"  />
+		<Item id="MISC_EASTER_EGG_10" shape="Food_Egg" material="Material_Misc_Plastic" score="0" health="1.0" type="2" category="Misc" front="true"  />
+	</Items>
+
+	<Material_Damage_Multipliers>
+	</Material_Damage_Multipliers>
+
+	<Material_Velocity_Multipliers>
+	</Material_Velocity_Multipliers>
+
+</tuner>

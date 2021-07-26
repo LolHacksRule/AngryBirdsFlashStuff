@@ -1,0 +1,286 @@
+<UIDescription>
+	<Views>
+		<!--  TOURNAMENT LEVEL SELECTION VIEW -->
+		<View_Tournament name="ViewLevelSelectionTournament" width="1024" height="768">
+			<MovieClip name="MovieClip_TournamentLoading" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="UP" alignH="CENTER"/>
+			
+			<Container name="Container_TournamentTitle" alignH="CENTER" alignV="CENTER" scaleH="DOWN" scaleV="DOWN" aspectRatioFixed="TRUE"/>
+			
+			<Container name="Container_TopThree" alignH="CENTER" alignV="CENTER" scaleH="DOWN" scaleV="DOWN" aspectRatioFixed="TRUE"/>
+			
+			<Container name="Container_LevelSelection" alignH="CENTER" alignV="CENTER" scaleH="DOWN" scaleV="DOWN" aspectRatioFixed="TRUE"/>
+			
+			<Container name="Container_TotalTrophies" alignH="RIGHT" alignV="TOP" scaleH="DOWN" scaleV="DOWN" aspectRatioFixed="TRUE">
+				<Container name="Container_TotalTrophiesContent" autoAlign="false">
+					<Button name="Button_Previous_Results" MouseUp="TOURNAMENT_HISTORY" scaleOnMouseOver="TRUE" visible="true"/>
+				</Container>
+			</Container>
+			
+			<Container name="Container_ButtonBack" alignH="LEFT" alignV="BOTTOM" scaleOnMouseOver="TRUE">
+				<Button name="Button_Back" MouseUp="Back" autoAlign="FALSE"/>
+			</Container>
+			
+			<MovieClip name="MovieClip_Background" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE" alignH="CENTER"/>
+			<MovieClip name="MovieClip_BackgroundBespin" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE" alignH="CENTER"/>
+		</View_Tournament>
+
+        <!-- INTO PAGE -->
+        <View_IntroPage name="ViewIntro" width="760" height="570">
+			<MovieClip name="MovieClip_BackGround" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE" alignH="CENTER" alignV="CENTER" />
+        </View_IntroPage>
+
+        <!--  NEW LEVEL END VIEW    -->
+		<View_LevelEnd name="ViewLevelEnd" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" width="760" height="570">
+			<Container name="Container_Content" alignH="CENTER" alignV="CENTER" scaleH="true" scaleV="true" aspectRatioFixed="TRUE" scaleFunction="SQRT">
+				<MovieClip name="MovieClip_StarLeft" />
+				<MovieClip name="MovieClip_StarMiddle" />
+				<MovieClip name="MovieClip_StarRight" />
+
+                <MovieClip name="MovieClip_CoinLeft" visible="false"/>
+				<MovieClip name="MovieClip_CoinMiddle" visible="false" />
+				<MovieClip name="MovieClip_CoinRight" visible="false" />
+
+                <MovieClip name="MovieClip_FalconBadge" visible="true" />
+				<MovieClip name="MovieClip_LevelEndScore" />
+                <MovieClip name="MovieClip_BestStars" visible="false" />
+                <TextField name="TextField_BestScore" visible="false" />
+
+				<MovieClip name="MovieClip_NewHighScoreBadge" visible="false"/>
+				<MovieClip name="MovieClip_PowerupReward" visible="false"/>
+
+				<MovieClip name="MovieClip_TournamentUnlock" visible="false"/>
+				<MovieClip name="MovieClip_LevelsUntilTournament" visible="false"/>
+
+				<Button name="Button_Share" MouseUp="SHARE_CROWN" scaleOnMouseOver="TRUE" visible="false"/>
+
+                <Container name="Container_Buttons">
+                    <Button name="Button_Menu"  MouseUp="MENU" scaleOnMouseOver="TRUE"/>
+                    <Button name="Button_Tournament"  MouseUp="TOURNAMENT" scaleOnMouseOver="TRUE" visible="FALSE"/>
+                    <Container name="Container_ReplayButton">
+                        <Button name="Button_Replay"  MouseUp="REPLAY" scaleOnMouseOver="TRUE"/>
+                    </Container>
+                    <Container name="Container_NextButton">
+                        <Button name="Button_NextLevel"  MouseUp="NEXT_LEVEL" scaleOnMouseOver="TRUE"/>
+                        <Button name="Button_NextLevelLocked"  MouseUp="NEXT_LEVEL" visible="FALSE" scaleOnMouseOver="TRUE"/>
+				        <Button name="Button_CutScene"  MouseUp="NEXT_LEVEL" scaleOnMouseOver="TRUE" visible="FALSE"/>
+                    </Container>
+                </Container>
+			</Container>
+
+            <MovieClip name="MovieClip_Bg" width="760" height="570" scaleH="true" scaleV="true" alignH="CENTER" alignV="CENTER" />
+		</View_LevelEnd>
+		<!--  NEW LEVEL END VIEW    -->
+
+        <!--  FALCON LEVEL END VIEW    -->
+		<View_LevelEndFalcon name="ViewLevelEndFalcon" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" width="760" height="570">
+			<Container name="Container_Content" alignH="CENTER" alignV="CENTER" scaleH="true" scaleV="true" aspectRatioFixed="TRUE" scaleFunction="SQRT">
+				<MovieClip name="MovieClip_FalconFill"/>
+				<MovieClip name="MovieClip_EagleBadge"/>
+
+                <MovieClip name="MovieClip_TournamentUnlock" visible="false"/>
+                <MovieClip name="MovieClip_LevelsUntilTournament" visible="false"/>
+
+				<TextField name="TextField_EaglePercentage" text="0%" enabled="True" visible="true"/>
+				
+				<MovieClip name="MovieClip_PowerupReward" visible="false"/>
+
+                <Container name="Container_Buttons">
+                    <Button name="Button_Menu"  MouseUp="MENU" scaleOnMouseOver="TRUE"/>
+				    <Button name="Button_Replay"  MouseUp="REPLAY" scaleOnMouseOver="TRUE"/>
+                    <Container name="Container_NextButton">
+				        <Button name="Button_NextLevel"  MouseUp="NEXT_LEVEL" scaleOnMouseOver="TRUE"/>
+				        <Button name="Button_CutScene"  MouseUp="NEXT_LEVEL" scaleOnMouseOver="TRUE" visible="FALSE"/>
+                    </Container>
+                    <Button name="Button_Tournament"  MouseUp="TOURNAMENT" scaleOnMouseOver="TRUE" visible="FALSE"/>
+                </Container>
+			</Container>
+
+            <MovieClip name="MovieClip_Bg" width="760" height="570" scaleH="true" scaleV="true" alignH="CENTER" alignV="CENTER" />
+		</View_LevelEndFalcon>
+		<!--  FALCON LEVEL END VIEW    -->
+
+        <!--  name parameter must be identical(case sensitive) with export name of the main movie clip of this UI view      -->
+		<View_LevelEndFail name="ViewLevelEndFail" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" width="760" height="570">
+			<Container name="Container_Content" alignH="CENTER" alignV="CENTER"  scaleH="true" scaleV="true" aspectRatioFixed="TRUE" scaleFunction="SQRT">
+				<MovieClip name="MovieClip_Vader"/>
+
+                <Container name="Container_Buttons">
+                    <Button name="Button_Menu"  MouseUp="MENU" scaleOnMouseOver="TRUE"/>
+				    <Container name="Container_ReplayButton">
+                        <Button name="Button_Replay"  MouseUp="REPLAY" scaleOnMouseOver="TRUE"/>
+                    </Container>
+                    <Container name="Container_ExtraBird">
+                        <Button name="Button_ExtraBird"  MouseUp="REPLAY_EXTRA_BIRD" scaleOnMouseOver="TRUE" visible="TRUE" MouseOver="OVER_EXTRA_BIRD" MouseOut="OUT_EXTRA_BIRD" />
+                        <MovieClip name="MovieClip_GetMore" enabled="False" />
+                        <MovieClip name="MovieClip_Counter" enabled="False"/>
+                    </Container>
+				    <Container name="Container_NextButton">
+                        <Button name="Button_NextLevel"  MouseUp="NEXT_LEVEL" scaleOnMouseOver="TRUE"/>
+                        <Button name="Button_NextLevelLocked"  MouseUp="NEXT_LEVEL" visible="FALSE" scaleOnMouseOver="TRUE"/>
+				        <Button name="Button_CutScene"  MouseUp="NEXT_LEVEL" scaleOnMouseOver="TRUE" visible="FALSE"/>
+                    </Container>
+                </Container>
+			</Container>
+
+            <MovieClip name="MovieClip_Bg" width="760" height="570" scaleH="true" scaleV="true" alignH="CENTER" alignV="CENTER" />
+		</View_LevelEndFail>
+
+        <!--  VIEW LEVEL PLAY  -->
+		<View_LevelPlay name="ViewLevelPlay" width="760" height="570">
+            <!-- PLAY -->
+            <Container name="Container_Play">
+                <Container name="Container_ExtraBirdTimer" visible="False">
+                    <Container width="760" height="570" name="Container_ExtraBirdContent" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE"  alignH="CENTER" alignV="CENTER">
+                        <Container name="Container_AnimateIn" autoAlign="false">
+                            <MovieClip name="MovieClip_TimeLeft" />
+
+                            <Container name="Container_ExtraBirdButton">
+                                <Button name="Button_ExtraBird" MouseUp="EXTRA_BIRD" scaleOnMouseOver="TRUE" MouseOver="OVER_EXTRA_BIRD" MouseOut="OUT_EXTRA_BIRD" />
+                                <MovieClip name="MovieClip_GetMore" enabled="False"/>
+                                <MovieClip name="MovieClip_Counter" enabled="False"/>
+                            </Container>
+                            
+                            <Button name="Button_Use_Clone_Bird" MouseUp="EXTRA_BIRD" scaleOnMouseOver="TRUE" MouseOver="OVER_EXTRA_BIRD" MouseOut="OUT_EXTRA_BIRD" />
+                        </Container>
+                        
+                        <Button name="Button_Skip_Extra_Bird" MouseUp="SKIP_EXTRA_BIRD" scaleOnMouseOver="TRUE"/>
+					</Container>
+
+                    <MovieClip name="MovieClip_Blocker" width="760" height="570" scaleH="true" scaleV="true" alignH="CENTER" alignV="CENTER"/>
+                </Container>
+
+                <MovieClip name="MovieClip_IntroClips" width="760" height="570" visible="False" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE" alignV="CENTER" alignH="CENTER"/>
+
+                <Container name="Container_Buttons" scaleFunction="SQRT" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE">
+                
+                	<MovieClip name="LastCrystalActivated" visible="false"/>
+                	<MovieClip name="CrystalBreakAnimation" visible="false"/>
+                	
+                    <Button name="Button_Pause" MouseUp="PAUSE" alignH="LEFT" scaleOnMouseOver="TRUE" />
+                    <!--
+                    <Button name="Button_Restart" MouseUp="RESTART_LEVEL" alignH="LEFT" scaleOnMouseOver="TRUE" />
+                    -->
+                    <Button name="Button_OpenPowerupMenu" MouseUp="OPEN_POWERUP_MENU" alignH="LEFT" scaleOnMouseOver="TRUE" />
+
+                    <Container name="Container_PowerUpButtons">
+                        <Button name="Button_PowerUp0" MouseUp="USE_POWERUP_0" alignH="LEFT" MouseOver="OVER_POWERUP_0" MouseOut="OUT_POWERUP_0" />
+                        <Button name="Button_PowerUp1" MouseUp="USE_POWERUP_1" alignH="LEFT" MouseOver="OVER_POWERUP_1" MouseOut="OUT_POWERUP_1" />
+						<Button name="Button_PowerUp2" MouseUp="USE_POWERUP_2" alignH="LEFT" MouseOver="OVER_POWERUP_2" MouseOut="OUT_POWERUP_2" />
+                    </Container>
+
+                    <Container name="Container_MightyEagle">
+                        <Button name="Button_MightyEagle" alignH="LEFT" MouseUp="MIGHTY_EAGLE" scaleOnMouseOver="TRUE"  MouseOver="OVER_MIGHTY_EAGLE" MouseOut="OUT_MIGHTY_EAGLE" />
+                        <MovieClip name="MovieClip_GetMore" enabled="False"/>
+						<MovieClip name="MovieClip_Counter" enabled="False"/>
+                    </Container>
+
+                    <Container name="Container_ExtraBird">
+						<Button name="Button_ExtraBird" MouseUp="EXTRA_BIRD" alignH="LEFT" scaleOnMouseOver="TRUE" MouseOver="OVER_EXTRA_BIRD" MouseOut="OUT_EXTRA_BIRD" />
+						<MovieClip name="MovieClip_GetMore" enabled="False"/>
+						<MovieClip name="MovieClip_Counter" enabled="False"/>
+					</Container>
+                </Container>
+				
+				<Container name="Container_Vs" enabled="False" alignH="RIGHT" width="1024" height="768" scaleH="UP" scaleV="UP" aspectRatioFixed="TRUE" visible="True">
+					<MovieClip name="MovieClip_Boom" visible="False"/>
+					<MovieClip name="MovieClip_VsAnimation" visible="False"/>
+
+					<Container name="Container_VsHero">
+						<MovieClip name="MovieClip_VsProfilePicHero"/>
+						<MovieClip name="MovieClip_CrownHero" visible="False"/>
+						<TextField name="TextField_VsScore" text="0" enabled="False"/>
+						<TextField name="TextField_VsPositionHero" text="0" enabled="False"/>
+						<TextField name="TextField_NameHero" text="" enabled="False" visible="true"/>
+						<MovieClip name="PlayerNameMask"/>
+					</Container>
+	
+					<Container name="Container_VsEnemy">
+						<MovieClip name="MovieClip_VsProfilePicEnemy"/>
+						<MovieClip name="MovieClip_CrownEnemy" visible="False"/>
+						<TextField name="TextField_VsScoreEnemy" text="0" enabled="False"/>
+						<TextField name="TextField_VsPositionEnemy" text="0" enabled="False"/>
+						<TextField name="TextField_NameEnemy" text="" enabled="False" visible="true"/>
+						<MovieClip name="EnemyNameMask"/>
+					</Container>
+				</Container>
+
+                <Container name="Container_MightyFalconScore" alignH="RIGHT" width="1024" height="768" scaleFunction="SQRT" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE" visible="false">
+                   <MovieClip name="MovieClip_FalconFill"/>
+                   <Container name="Container_Score" autoAlign="false">
+                        <TextField name="TextField_EaglePercentage" text="0%" enabled="True"/>
+                        <MovieClip name="MovieClip_Title"/>
+                   </Container>
+                </Container>
+
+                <Container name="Container_ZoomButtons" enabled="False" scaleFunction="SQRT" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE" alignV="BOTTOM" alignH="LEFT">
+					<Button name="Button_ZoomIn" MouseDown="ZOOM_IN" MouseUp="ZOOM_IN_RELEASE" MouseOut="ZOOM_IN_RELEASE"/>
+					<Button name="Button_ZoomOut" MouseDown="ZOOM_OUT" MouseUp="ZOOM_OUT_RELEASE" MouseOut="ZOOM_OUT_RELEASE"/>
+				</Container>
+				
+				<Container name="Container_RightBottomCorner" visible="false" enabled="False" scaleFunction="SQRT" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE" alignH="RIGHT" alignV="BOTTOM">
+					<Button name="Button_Next_Level" MouseUp="NEXT_LEVEL" scaleOnMouseOver="TRUE"/>
+				</Container>
+				
+            </Container>
+
+            <!-- PAUSE -->
+            <Container name="Container_Pause">
+                <Container name="Container_PauseMenu">
+                    <Button name="Button_Resume" MouseUp="RESUME_LEVEL" alignV="CENTER" scaleOnMouseOver="TRUE"/>
+
+                    <MovieClip name="replayLocked" alignV="CENTER"/>
+
+                    <Container name="Container_ReplayButton" alignV="CENTER">
+                        <Button name="Button_Replay" MouseUp="RESTART_LEVEL" scaleOnMouseOver="TRUE" MouseOver="OVER_REPLAY" MouseOut="OUT_REPLAY"/>
+                    </Container>
+                    <Container name="Container_ButtonMenu" alignV="CENTER">
+                   		<Button name="Button_Menu" MouseUp="MENU" scaleOnMouseOver="TRUE"/>
+                    </Container>
+
+                    <MovieClip name="MovieClip_Paint" alignV="CENTER" />
+                    <MovieClip name="MovieClip_PauseMenuBG" scaleV="True"/>
+                </Container>
+
+                <Container name="RovioNewsContainer" visible="true" alignV="CENTER" alignH="CENTER" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="true">
+                    <Container name="News_Item_Holder" autoAlign="TRUE">
+                        <MovieClip name="RovioNewsLogo"/>
+                        <Button name="NewsArrowUp" MouseUp="NEWS_UP" visible="false"/>
+                        <Button name="NewsArrowDown" MouseUp="NEWS_DOWN" visible="false"/>
+                        <MovieClip name="AngryBirdLoader"/>
+                        <MovieClip name="NewsHolder" autoAlign="FALSE"/>
+                        <MovieClip name="HolderMask" />
+                    </Container>
+
+                    <Button name="Button_ShowNews" MouseUp="SHOW_NEWS" scaleOnMouseOver="TRUE"/>
+                </Container>
+
+                <MovieClip name="MovieClip_Bg" width="760" height="570" scaleH="True" scaleV="True" alignH="CENTER" alignV="CENTER"/>
+            </Container>
+		</View_LevelPlay>
+
+        <View_Credits name="ViewCredits" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" width="760" height="570">
+            <MovieClip name="MovieClip_CreditsMask" scaleH="True" scaleV="True" alignH="CENTER" alignV="CENTER" visible="false"/>
+
+            <Container name="Container_Masked" scaleH="True" scaleV="True" alignH="CENTER" alignV="CENTER">
+                <Container name="Container_Tilted">
+                    <Container name="Container_Credits">
+                        <Container name="Container_Part1">
+                            <TextField name="TextField_Version_Number" text="1.0.0 placeholder" enabled="True" />
+                            <TextField name="TextField_Version_Number_Server" text="1.0.0 placeholder" enabled="True" />
+                        </Container>
+
+                        <Container name="Container_Part4">
+                            <Button name="Button_AppEngine" MouseUp="APP_ENGINE_BUTTON" />
+                        </Container>
+                    </Container>
+                </Container>
+            </Container>
+
+			<Button name="Button_Back" MouseUp="CREDITS_CLOSE_BUTTON" alignH="LEFT" alignV="BOTTOM" aspectRatioFixed="TRUE" scaleOnMouseOver="TRUE"/>
+		</View_Credits>
+
+	</Views>
+
+	<Components>
+	</Components>
+</UIDescription>
