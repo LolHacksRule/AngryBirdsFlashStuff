@@ -1,0 +1,17 @@
+<assets>
+	<packages>
+		<pack url="packages/core.pak"/>
+		<pack url="packages/chapter1.pak"/>
+		<pack url="packages/chapter2.pak"/>
+		<pack url="packages/chapter3.pak"/>
+		<pack url="packages/chapterfacebook.pak"/>
+	</packages>
+
+	<libraries>
+		<library swf="external_assets/AngryBirdsCredits.swf" startupLoad="true" name="GameCredits"> 
+		</library>
+	
+		<library swf="external_assets/AngryBirdsFlashUI.swf" startupLoad="true" name="GameUiAssets"> 
+		</library>
+	</libraries>
+</assets>

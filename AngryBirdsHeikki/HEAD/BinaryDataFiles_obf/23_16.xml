@@ -1,0 +1,175 @@
+<LevelBackgrounds game="AngryBirds" version="0.0.0">
+    <Backgrounds>
+		
+       <!--  The layer which will remain on front should be listed on top  -->
+	  <!--  Background id must be same with the export name of main movie clip. Also same id must be used to create a new ground material  -->
+      
+      <Background id="INGAME_THEME_1" sky="0xc0dcea" ground="0x6edf94" texture="SILVERSTONE_STATIC" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_Helmet" >
+      	<Layers>      		      	
+      		<!-- Align the background in correct position with bottomOffset -->
+      		<!-- Grass layer -->
+      		<Layer id="THEME_1_MG2" speed="600" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Middle Ground -->      		
+      		<Layer id="SILVERSTONE_MG1" speed="400" foreground="0" scale="2" bottomOffset="0" />      		      		      		      
+      		<!-- Background -->
+      		<Layer id="SILVERSTONE_BG" speed="200" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Lower track-->
+      		<Layer id="THEME_1_FG" speed="1400" foreground="1" scale="2" bottomOffset="-2" />
+      	</Layers>
+      </Background>
+      
+     
+      <Background id="INGAME_THEME_2" sky="0x6eadbd" ground="0x227e3a" texture="THEME_11_STATICGREOUND" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_Helmet" >
+      	<Layers>      		      	
+      		<!-- Align the background in correct position with bottomOffset -->      		  
+      		<Layer id="THEME_2_MG2" speed="750" foreground="0" scale="2" bottomOffset="0" />
+      		<Layer id="THEME_2_MG1" speed="700" foreground="0" scale="2" bottomOffset="20" />	      		      		      
+      		<Layer id="THEME_2_BG2" speed="700" foreground="0" scale="1.5" bottomOffset="-125" />    	      			
+      		<Layer id="THEME_2_BG1" speed="700" foreground="0" scale="1.5" bottomOffset="-125" />    	      			
+      		<Layer id="THEME_2_FG" speed="1500" foreground="1" scale="1.5" bottomOffset="0" />
+      	</Layers>
+      </Background>
+      
+       <Background id="INGAME_THEME_3" sky="0xc5e8ff" ground="0xffe579" texture="THEME_3_STATICGROUND" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_Helmet" >
+      	<Layers>      		      	
+      		<!-- Align the background in correct position with bottomOffset -->
+      		<!-- Grass layer -->
+      		<Layer id="THEME_3_MG2" speed="600" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Middle Ground -->      		
+      		<Layer id="THEME_3_MG1" speed="400" foreground="0" scale="2" bottomOffset="0" />      		      		      		      
+      		<!-- Background -->
+      		<Layer id="THEME_3_BG1" speed="200" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Lower track-->
+      		<Layer id="THEME3_FG" speed="1400" foreground="1" scale="2" bottomOffset="-2" />
+      	</Layers>
+      </Background>
+      
+      <Background id="INGAME_THEME_4" sky="0xa4c3cb" ground="0x227e3a" texture="THEME4_STATIC_GROUND" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_Helmet" >
+      	<Layers>      		      	
+      		<!-- Align the background in correct position with bottomOffset -->
+      		<!-- Grass layer -->
+      		<Layer id="THEME4_MG2" speed="600" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Middle Ground -->      		
+      		<Layer id="THEME4_MG1" speed="400" foreground="0" scale="2" bottomOffset="0" />      		      		      		      
+      		<!-- Background -->
+      		<Layer id="THEME4_BG" speed="200" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Lower track-->
+      		<Layer id="THEME4_FG" speed="1400" foreground="1" scale="2" bottomOffset="-2" />
+      	</Layers>
+      </Background> 
+      
+      <Background id="INGAME_THEME_5" sky="0x6ea4a5" ground="0x32914b" texture="THEME_5_STATICGROUND" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_Helmet" >
+      	<Layers>      		      	
+      		<!-- Align the background in correct position with bottomOffset -->
+      		<!-- Grass layer -->
+      		<Layer id="THEME_5_MG2" speed="600" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Middle Ground -->      		
+      		<Layer id="THEME_5_MG1" speed="400" foreground="0" scale="2" bottomOffset="0" />      		      		      		      
+      		<!-- Background -->
+      		<Layer id="THEME_5_BG2" speed="200" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Background -->
+      		<Layer id="THEME_5_BG1" speed="200" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Lower track-->
+      		<Layer id="THEME_5_FG" speed="1400" foreground="1" scale="2" bottomOffset="-2" />
+      	</Layers>
+      </Background>
+      
+      <Background id="INGAME_THEME_6" sky="0x361571" ground="0x272635" texture="NIGHT_GROUND_TEXTURE" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_Helmet" >
+      	<Layers>      		      	
+      		<!-- Align the background in correct position with bottomOffset -->
+      		<!-- Grass layer -->
+      		<Layer id="NIGHT_MG2" speed="600" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Middle Ground -->      		
+      		<Layer id="NIGHT_MG1" speed="400" foreground="0" scale="2" bottomOffset="0" />      		      		      		      
+      		<!-- Background -->
+      		<Layer id="NIGHT_BG" speed="200" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Lower track-->
+      		<Layer id="NIGHT_FG1" speed="1400" foreground="1" scale="2" bottomOffset="-2" />
+      	</Layers>
+      </Background>
+      
+      <Background id="INGAME_THEME_7" sky="0xaee4ff" ground="0x6be27f" texture="HEIKKI_GROUND_TEXTURE" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_Helmet" >
+      	<Layers>      		      	
+      		<!-- Align the background in correct position with bottomOffset -->
+      		<!-- Grass layer -->
+      		<Layer id="HEIKKI_MG2" speed="600" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Middle Ground -->      		
+      		<Layer id="HEIKKI_MG1" speed="400" foreground="0" scale="2" bottomOffset="0" />      		      		      		      
+      		<!-- Background -->
+      		<Layer id="HEIKKI_SUZUKA_BG1" speed="200" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Lower track-->
+      		<Layer id="HEIKKI_FG1" speed="1400" foreground="1" scale="2" bottomOffset="-2" />
+      	</Layers>
+      </Background>
+      
+      <Background id="INGAME_THEME_8" sky="0xcbf0ff" ground="0xf1db72" texture="KOREA_GROUND_TEXTURE" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_Helmet" >
+      	<Layers>      		      	
+      		<!-- Align the background in correct position with bottomOffset -->
+      		<!-- Grass layer -->
+      		<Layer id="KOREA_MG2" speed="600" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Middle Ground -->      		
+      		<Layer id="KOREA_MG1" speed="400" foreground="0" scale="2" bottomOffset="0" />      		      		      		      
+      		<!-- Background -->
+      		<Layer id="KOREA_BG1" speed="200" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Lower track-->
+      		<Layer id="KOREA_FG1" speed="1400" foreground="1" scale="2" bottomOffset="-2" />
+      	</Layers>
+      </Background>
+      
+      <Background id="INGAME_THEME_9" sky="0xd5f8ff" ground="0xf1e172" texture="THEME_9_STATICGROUND" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_Helmet" >
+      	<Layers>      		      	
+      		<!-- Align the background in correct position with bottomOffset -->
+      		<!-- Grass layer -->
+      		<Layer id="THEME_9_MG2" speed="600" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Middle Ground -->      		
+      		<Layer id="THEME_9_MG1" speed="400" foreground="0" scale="2" bottomOffset="0" />
+		    <!-- Background -->
+      		<Layer id="THEME9_BG_2" speed="200" foreground="0" scale="2" bottomOffset="0" />      		      		      		      
+      		<!-- Background -->
+      		<Layer id="THEME_9_BG1" speed="200" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Lower track-->
+      		<Layer id="THEME_9_FG" speed="1400" foreground="1" scale="2" bottomOffset="-2" />
+      	</Layers>
+      </Background>
+
+      <Background id="INGAME_THEME_10" sky="0x0a1171" ground="0x1e2439" texture="THEME_10_STATICGROUND" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_Helmet" >
+      	<Layers>      		      	
+      		<!-- Align the background in correct position with bottomOffset -->
+      		<!-- Grass layer -->
+      		<Layer id="THEME_10_MG2" speed="600" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Middle Ground -->      		
+      		<Layer id="THEME_10_MG1" speed="400" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Background -->
+      		<Layer id="THEME10_BG" speed="200" foreground="0" scale="3" bottomOffset="175" xOffset="-550"/>
+      		<!-- Lower track-->
+      		<Layer id="THEME_10_FG" speed="1400" foreground="1" scale="2" bottomOffset="-2" />
+      	</Layers>
+      </Background>
+
+      <Background id="INGAME_THEME_11" sky="0xff825f" ground="0x5c3411" texture="THEME_11_STATICGROUND" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_Helmet" >
+      	<Layers>      		      	
+      		<!-- Align the background in correct position with bottomOffset -->
+      		<Layer id="THEME_11_FG" speed="1400" foreground="1" scale="2" bottomOffset="0" />
+      		<Layer id="THEME_11_MG2" speed="600" foreground="0" scale="2" bottomOffset="0" />
+      		<Layer id="THEME_11_MG1" speed="400" foreground="0" scale="2" bottomOffset="0" />
+      		<Layer id="THEME_11_BG" speed="200" foreground="0" scale="2" bottomOffset="0" />
+      	</Layers>
+      </Background>
+      
+      <Background id="INGAME_THEME_12" sky="0xb2f8ff" ground="0x32a665" texture="THEME12_STATICGROUND" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_Helmet" >
+      	<Layers>      		      	
+      		<!-- Align the background in correct position with bottomOffset -->
+      		<!-- Grass layer -->
+      		<Layer id="THEME12_MG2" speed="600" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Middle Ground -->      		
+      		<Layer id="THEME12_MG1" speed="400" foreground="0" scale="2" bottomOffset="0" />      		      		      		      
+      		<!-- Background -->
+      		<Layer id="THEME12_BG1" speed="200" foreground="0" scale="2" bottomOffset="0" />
+      		<!-- Lower track-->
+      		<Layer id="THEME12_FG" speed="1400" foreground="1" scale="2" bottomOffset="-6" />
+      	</Layers>
+      </Background>
+      
+  </Backgrounds>
+
+</LevelBackgrounds>

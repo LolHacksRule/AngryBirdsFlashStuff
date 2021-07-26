@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<group name="StatePlay">
+		<automatic>
+			<text id="TextField_Highscore_Label">
+				<language id="en">My best score</language>
+				<language id="es">Mi mejor puntaje</language>
+				<language id="zh">分数</language>
+			</text>
+			<text id="TextField_Score_Label">
+				<language id="en">Score</language>
+				<language id="es">Puntuación</language>
+				<language id="zh">最高分</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="StateEpisodeSelection">
+		<automatic>
+			<text id="TextField_PowerupPanelTitle">
+				<language id="en">Unlock the Tazos Power by typing in the code!</language>
+				<language id="es">¡Desbloquee los Tazos Power introduciendo el código!</language>
+			</text>
+			<button id="Button_CodeInstructions">
+				<language id="en">Where can I get the codes?</language>
+				<language id="es">¿Dónde obtener los códigos?</language>
+			</button>
+			<text id="TextField_TazosCodeEnter">
+				<language id="en">&lt;Type code here&gt;</language>
+				<language id="es">&lt;Introduzca el código aquí&gt;</language>
+			</text>
+			<button id="Button_Login0">
+				<language id="en">Login</language>
+				<language id="es">Iniciar sesión</language>
+				<language id="zh">登录</language>
+			</button>
+			<button id="Button_Login1">
+				<language id="en">Login</language>
+				<language id="es">Iniciar sesión</language>
+				<language id="zh">登录</language>
+			</button>
+			<button id="Button_Login2">
+				<language id="en">Login</language>
+				<language id="es">Iniciar sesión</language>
+				<language id="zh">登录</language>
+			</button>
+			
+		</automatic>
+	</group>
+
+	<group name="StateLevelLoading">
+		<automatic>
+			<text id="TextField_LevelLoading">
+				<language id="en">LOADING</language>
+				<language id="es">CARGANDO</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="EnterCode_Popup">
+		<automatic>
+			<text id="TextField_EnterCode">
+				<language id="en">Enter code</language>
+				<language id="es">Introducir código!</language>
+			</text>
+			<text id="TextField_TypeCodeHere">
+				<language id="en">&lt;Type code here&gt;</language>
+				<language id="es">&lt;Introduzca el código aquí&gt;</language>
+			</text>
+			<button id="Button_CodeInstructions">
+				<language id="en">Where can I get the codes?</language>
+				<language id="es">¿Dónde obtener los códigos?</language>
+			</button>
+		</automatic>
+	</group>
+
+	<group name="CodeSubmissionSuccessful_Popup">
+		<automatic>
+			<text id="TextField_Congratulations">
+				<language id="en">Congratulations!&#10;&#10;You have acquired&#10;five power-ups.</language>
+				<language id="es">¡Felicitaciones!&#10;&#10;¡Usted ha adquirido&#10;cinco poderes especiales!</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="PasswordResetEmailSent_Popup">
+		<automatic>
+			<text id="TextField_PasswordResetEmailSent">
+				<language id="en">Email has been sent!</language>
+				<language id="es">¡Correo electrónico enviado!</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="VerificationEmailSent_Popup">
+		<automatic>
+			<text id="TextField_VerificationEmailSent">
+				<language id="en">Verification email has been re-sent.</language>
+				<language id="es">Se ha vuelto a enviar un correo electrónico de verificación.</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="ServerError_Popup">
+		<automatic>
+			<text id="TextField_ServerError" isPopup="true">
+				<language id="en">Oops! The pigs are messing with our servers! If this happens again, please reload the game.</language>
+				<language id="es">¡Uups! ¡Los cerdos están jugando con nuestros servidores! Si esto sucede otra vez, por favor vuelva a cargar el juego.</language>
+				<language id="zh">不好了！捣蛋猪们正在骚扰我们的服务器！如您常见这段提示，请刷新游戏网站。</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="Logout_Popup">
+		<automatic>
+			<text id="TextField_LogoutQuestion" isPopup="true">
+				<language id="en">Are you sure you want to log out?</language>
+				<language id="es">¿Seguro que quiere finalizar la sesión?</language>
+				<language id="zh">确定退出吗？</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="VerifyAccount_Popup">
+		<automatic>
+			<text id="TextField_VerifyAccount" isPopup="true">
+				<language id="en">Please confirm your account by clicking the verification link which was sent to you by email.</language>
+				<language id="es">Por favor, confirme su cuenta haciendo clic en el enlace de verificación que se le envió por correo electrónico.</language>
+			</text>
+			<button id="Button_SendVerificationEmail" isPopup="true">
+				<language id="en">Please send me a new verification email.</language>
+				<language id="es">Por favor envíeme un correo electrónico de verificación nuevamente.</language>
+			</button>
+		</automatic>
+	</group>
+
+	<group name="ForgotPassword_Popup">
+		<automatic>
+			<text id="TextField_ForgotPasswordPopup" isPopup="true">
+				<language id="en">Forgot password?&#10;&#10;Enter email address:</language>
+				<language id="es">¿Ha olvidado su contraseña?&#10;&#10;Introduzca su dirección de correo electrónico:</language>
+				<language id="zh">忘记密码？&#10;&#10;请输入您的邮件地址：</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="ConfirmLogin_Popup">
+		<automatic>
+			<text id="TextField_LoginQuestion" isPopup="true">
+				<language id="en">Are you sure you want to login? The game in progress will end.</language>
+				<language id="es">¿Seguro que quieres iniciar sesión? Se perderá el progreso del juego.</language>
+				<language id="zh">确认登录吗？需要重新闯关。</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="Login_Popup">
+		<automatic>
+			<text id="Text_Email">
+				<language id="en">Email</language>
+				<language id="es">Correo electrónico</language>
+				<language id="zh">电子邮件</language>
+			</text>
+			<text id="Text_Email_Register">
+				<language id="en">Email</language>
+				<language id="es">Correo electrónico</language>
+				<language id="zh">电子邮件</language>
+			</text>
+			<text id="Text_Password">
+				<language id="en">Password</language>
+				<language id="es">Contraseña</language>
+				<language id="zh">密码</language>
+			</text>
+			<text id="Text_Password_Register">
+				<language id="en">Password</language>
+				<language id="es">Contraseña</language>
+				<language id="zh">密码</language>
+			</text>
+			<text id="TextField_RememberMe">
+				<language id="en">Remember me</language>
+				<language id="es">Recordar contraseña</language>
+				<language id="zh">下次记住我</language>
+			</text>
+			<text id="TextField_RememberMe_Register">
+				<language id="en">Remember me</language>
+				<language id="es">Recordar contraseña</language>
+				<language id="zh">下次记住我</language>
+			</text>
+			<text id="TextField_PasswordAgain">
+				<language id="en">Repeat password</language>
+				<language id="es">Repita su contraseña</language>
+				<language id="zh">确认密码</language>
+			</text>
+			<text id="TextField_Nickname">
+				<language id="en">Nickname</language>
+				<language id="es">Nombre de usuario</language>
+				<language id="zh">昵称</language>
+			</text>
+			<text id="TextField_FirstName">
+				<language id="en">First name</language>
+				<language id="es">Nombre</language>
+			</text>
+			<text id="TextField_LastName">
+				<language id="en">Last name</language>
+				<language id="es">Apellido</language>
+			</text>
+			<text id="TextField_BirthDate">
+				<language id="en">Date of birth</language>
+				<language id="es">Fecha de nacimiento</language>
+			</text>
+			<text id="TextField_IWantToReceiveAds">
+				<language id="en">I want to receive information on Angry Birds and other Rovio products by email.</language>
+				<language id="es">Deseo recibir información sobre Angry Birds y otros productos de Rovio via correo electrónico.</language>
+				<language id="zh">我想订阅邮件，以便了解更多关于愤怒的小鸟和Rovio其它相关产品的最新动态。</language>
+			</text>
+			<text id="TextField_IWantToReceiveExtAds">
+				<language id="en">I want to sign up to the PepsiCo newsletter.</language>
+				<language id="es">Quiero recibir correos con noticias de PepsiCo.</language>
+			</text>
+			<text id="TextField_Legal">
+				<language id="en">By registering you accept our &#10;Privacy Policy and Eula</language>
+				<language id="es">Al registrarse usted acepta nuestra &#10;Política de Privacidad y ACUERDO DE LICENCIA Y GARANTÍA LIMITADA</language>
+				<language id="zh">点击免费注册表示您同意Rovio服务使用协议和隐私权申明。&#10;隐私权申明和服务使用协议</language>
+			</text>
+			<text id="TextField_Register_And">
+				<language id="en">and</language>
+				<language id="es">y</language>
+				<language id="zh">和</language>
+			</text>
+			<text id="TextField_MM">
+				<language id="en">MM</language>
+				<language id="es">MM</language>
+			</text>
+			<text id="TextField_DD">
+				<language id="en">DD</language>
+				<language id="es">DD</language>
+			</text>
+			<text id="TextField_YYYY">
+				<language id="en">YYYY</language>
+				<language id="es">AAAA</language>
+			</text>
+			<text id="TextField_Zipcode">
+				<language id="en">Zip code</language>
+				<language id="es">Código postal</language>
+			</text>
+
+
+			<button id="Button_Tab_Login">
+				<language id="en">Login</language>
+				<language id="es">Iniciar sesión</language>
+				<language id="zh">登录</language>
+			</button>
+			<button id="Button_Tab_Register">
+				<language id="en">Register</language>
+				<language id="es">Registrar</language>
+				<language id="zh">注册</language>
+			</button>
+
+			<button id="Button_ForgotPassword">
+				<language id="en">Forgot Password?</language>
+				<language id="es">¿Ha olvidado su contraseña?</language>
+				<language id="zh">忘记密码</language>
+			</button>
+			<button id="Button_Login">
+				<language id="en">Login</language>
+				<language id="es">Iniciar sesión</language>
+				<language id="zh">登录</language>
+			</button>
+		</automatic>
+		<manual>
+			<text id="Button_PrivacyPolicy">
+				<language id="en">Privacy Policy</language>
+				<language id="es">Política de Privacidad</language>
+				<language id="zh">隐私权申明</language>
+			</text>
+			<text id="Button_Eula">
+				<language id="en">Eula</language>
+				<language id="es">ACUERDO DE LICENCIA Y GARANTÍA LIMITADA</language>
+				<language id="zh">服务使用协议</language>
+			</text>
+		</manual>
+	</group>
+
+	<group name="StateEnd">
+		<automatic>
+			<text id="TextField_LevelCleared">
+				<language id="en">Level Cleared!</language>
+				<language id="es">¡Nivel terminado!</language>
+				<language id="zh">闯关成功！</language>
+			</text>
+			<text id="MovieClip_BestScoreText">
+				<language id="en">Best:</language>
+				<language id="es">Mejor:</language>
+				<language id="zh">最高分</language>
+			</text>
+			<text id="TextField_NewHighScore">
+				<language id="en">New High Score!</language>
+				<language id="es">¡Nuevo puntaje alto!</language>
+				<language id="zh"> 新纪录！</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="StateEndFail">
+		<automatic>
+			<text id="TextField_LevelFailed">
+				<language id="en">Level Failed!</language>
+				<language id="es">¡Nivel fallado!</language>
+				<language id="zh">闯关失败！</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="HighscoreSidebar">
+		<automatic>
+			<text id="TextField_Leaderboards">
+				<language id="en">Weekly Competition</language>
+				<language id="es">Competencia Semanal</language>
+				<language id="zh">高分榜</language>
+			</text>
+			<text id="TextField_CompetitionTimeLeft">
+				<language id="en">x days left</language>
+				<language id="es">Quedan x días</language>
+			</text>
+			<text id="TextField_CompetitionTimeLeftHours">
+				<language id="en">x hours left</language>
+				<language id="es">Quedan x horas</language>
+			</text>
+			<!--<text id="TextField_MyScoreName">
+				<language id="en">My Score:</language>
+				<language id="es">Mi puntuación:</language>
+				<language id="zh">我的分数</language>
+			</text>-->
+			<button id="Button_Tab_Overall">
+				<language id="en">Episodes</language>
+				<language id="es">Episodios</language>
+			</button>
+			<button id="Button_Tab_Score">
+				<language id="en">Levels</language>
+				<language id="es">Niveles</language>
+			</button>
+			<button id="Button_Selected_Overall">
+				<language id="en">Episodes</language>
+				<language id="es">Episodios</language>
+			</button>
+			<button id="Button_Selected_Levels">
+				<language id="en">Levels</language>
+				<language id="es">Niveles</language>
+			</button>
+		</automatic>
+	</group>
+
+	<group name="Error_Messages">
+		<manual>
+			<text id="NICKNAME_LENGTH">
+				<language id="en">Nickname is too short. At least 5 characters.</language>
+				<language id="es">Su nombre de usuario ​​es demasiado corto. Utilice al menos 5 caracteres.</language>
+				<language id="zh">昵称太短，至少需要5个字母.</language>
+			</text>
+			<text id="FIRSTNAME_LENGTH">
+				<language id="en">First name is too short. Use at least 1 character.</language>
+				<language id="es">Su nombre es demasiado corto. Utilice al menos 1 carácter.</language>
+			</text>
+			<text id="LASTNAME_LENGTH">
+				<language id="en">Last name is too short. Use at least 1 character.</language>
+				<language id="es">Su apellido es demasiado corto. Utilice al menos 1 carácter.</language>
+			</text>
+			<text id="PASSWORD_LENGTH">
+				<language id="en">Password is too short. At least 5 characters.</language>
+				<language id="es">La contraseña es demasiado corta. Utilice al menos 5 caracteres.</language>
+				<language id="zh">密码太短，至少需要5个字母.</language>
+			</text>
+			<text id="PASSWORDS_DONT_MATCH">
+				<language id="en">The passwords don't match.</language>
+				<language id="es">Las contraseñas no coinciden.</language>
+				<language id="zh">前后密码不一致，请重新确认.</language>
+			</text>
+			<text id="INVALID_EMAIL">
+				<language id="en">The email you have provided is invalid.</language>
+				<language id="es">La dirección de correo electrónico que ha proporcionado no es válida.</language>
+				<language id="zh">对不起，该邮件地址不存在.</language>
+			</text>
+			<text id="INVALID_AGE">
+				<language id="en">Age is missing.</language>
+				<language id="es">Age is missing.SPA</language>
+			</text>
+			<text id="AGE_UNDER_13">
+				<language id="en">You must be over 13 years old.</language>
+				<language id="es">You must be over 13 years old.SPA</language>
+			</text>
+			<text id="PASSWORD_MISSING">
+				<language id="en">You need to enter a password.</language>
+				<language id="es">Es necesario introducir una contraseña.</language>
+				<language id="zh">请输入密码.</language>
+			</text>
+			<text id="CONNECTION_ERROR_RETRY">
+				<language id="en">Connection error. Please retry.</language>
+				<language id="es">Error de conexión. Por favor, inténtelo de nuevo.</language>
+				<language id="zh">对不起，暂时无法连接。请稍后再试.</language>
+			</text>
+			<text id="PLAYER_ID_USED">
+				<language id="en">The email you have provided is in use.</language>
+				<language id="es">La dirección de correo electrónico no está disponible.</language>
+				<language id="zh">对不起，该邮件地址已存在.</language>
+			</text>
+			<text id="PLAYER_REQUIRED">
+				<language id="en">You need to specify an email.</language>
+				<language id="es">Debe especificar una dirección de correo electrónico.</language>
+				<language id="zh">您输入的邮箱地址或密码有误。</language>
+			</text>
+			<text id="PLAYER_INVALID_LOGIN">
+				<language id="en">The login credentials are not valid.</language>
+				<language id="es">Las credenciales de acceso no son válidas.</language>
+				<language id="zh">对不起，登录信息不一致，请重新确认。</language>
+			</text>
+			<text id="PLAYER_NOT_VERIFIED">
+				<language id="en">You have not verified your account yet!</language>
+				<language id="es">¡Aún no ha verificado su cuenta!</language>
+			</text>
+			<text id="PLAYER_BANNED">
+				<language id="en">The email you provided has been banned.</language>
+				<language id="es">La dirección de correo electrónico que ha proporcionado ha sido bloqueada.</language>
+				<language id="zh">对不起，帐号已禁用.</language>
+			</text>
+			<text id="IP_BANNED">
+				<language id="en">Your IP has been banned.</language>
+				<language id="es">La IP ha sido bloqueada.</language>
+				<language id="zh"> 对不起，IP地址已禁用.</language>
+			</text>
+			<text id="FIELD_NOT_VALID">
+				<language id="en">The nickname you have entered is invalid.</language>
+				<language id="es">El nombre de usuario que ha introducido no es válido.</language>
+				<language id="zh">对不起，该昵称不合格。</language>
+			</text>
+			<text id="FIELD_OBLIGATORY"></text>
+			<text id="FIELD_LENGTH">
+				<language id="en">Nickname invalid.</language>
+				<language id="es">El nombre de usario que ha introducido no es válido.</language>
+				<language id="zh">昵称需在12个字母以内。</language>
+			</text>
+			<text id="SECURITY_ERROR">
+				<language id="en">Security violation.</language>
+				<language id="es">Violación de Seguridad.</language>
+				<language id="zh">对不起，该操作不允许。</language>
+			</text>
+			<text id="FORGOT_PASSWORD_EMAIL_SENT">
+				<language id="en">Email has been sent!</language>
+				<language id="es">¡Correo electrónico enviado!</language>
+				<language id="zh">系统邮件已发送到您的邮箱。</language>
+			</text>
+
+			<text id="LEVEL_LOCKED">
+				<language id="en">You need more stars to play this level.</language>
+				<language id="es">Necesitas más estrellas para jugar este nivel.</language>
+			</text>
+			<text id="VERIFICATION_EMAIL_RESEND">
+				<language id="en">Verification email has been re-sent to:</language>
+				<language id="es">Se ha vuelto a enviar un correo electrónico de verificación a:</language>
+			</text>
+			<text id="VERIFICATION_EMAIL_RESEND_ERROR">
+				<language id="en">Could not send verification email.</language>
+				<language id="es">No se ha envíado el correo electrónico de verificación.</language>
+			</text>
+
+			<text id="CODE_NOT_EXIST">
+				<language id="en">Incorrect code</language>
+				<language id="es">Código incorrecto</language>
+				<language id="zh">对不起，该激活码不存在。</language>
+			</text>
+			<text id="CODE_USED">
+				<language id="en">Code already used</language>
+				<language id="es">Código ya utilizado</language>
+				<language id="zh">对不起，该激活码已被使用。</language>
+			</text>
+			<text id="ENTER_CODE">
+				<language id="en">Enter code</language>
+				<language id="es">Introducir código</language>
+			</text>
+			<text id="BIRTHDATE_LENGTH">
+				<language id="en">Enter date of birth.</language>
+				<language id="es">Ingrese su fecha de nacimiento.</language>
+			</text>
+			<text id="BIRTHDATE_INVALID">
+				<language id="en">Invalid date of birth.</language>
+				<language id="es">Fecha de nacimiento incorrecta.</language>
+			</text>
+			<text id="MONTH_INVALID">
+				<language id="en">Month must be between 1 and 12.</language>
+				<language id="es">Mes debe estar entre 1 y 12.</language>
+			</text>
+			<text id="DAY_INVALID">
+				<language id="en">Day must be between 1 and 31.</language>
+				<language id="es">Día debe estar entre 1 y 31.</language>
+			</text>
+			<text id="YEAR_INVALID">
+				<language id="en">Year must be between 1900 and 2013.</language>
+				<language id="es">El año debe estar entre 1900 y 2013.</language>
+			</text>
+			<text id="GENERAL_REGISTRATION_ERROR">
+				<language id="en">Error in registration.</language>
+				<language id="es">Error en el registro.</language>
+			</text>
+			<text id="ZIPCODE_LENGTH">
+				<language id="en">Zip code is too short. Use at least 3 characters.</language>
+				<language id="es">Código postal es demasiado corto. Utilice al menos 3 caracteres.</language>
+			</text>
+			<text id="ONLY_NUMBERS_ALLOWED">
+				<language id="en">Use only numbers (0-9).</language>
+				<language id="es">Usar sólo números (0-9).</language>
+			</text>
+			<text id="ONLY_LETTERS_AND_NUMBERS_ALLOWED">
+				<language id="en">Use only letters (a-z) and numbers (0-9).</language>
+				<language id="es">Usar sólo letras (a-z) y números (0-9).</language>
+			</text>
+			<text id="ONLY_LETTERS_ALLOWED">
+				<language id="en">Use only letters (a-z).</language>
+				<language id="es">Usar sólo letras (a-z).</language>
+			</text>
+			<text id="ONLY_NAME_CHARS_ALLOWED">
+				<language id="en">Use only letters (a-z) and characters "-", "." and "'".</language>
+				<language id="es">Utilice sólo letras (a-z) y los caracteres "-", ".", y "'".</language>
+			</text>
+			<text id="ONLY_NICKNAME_CHARS_ALLOWED">
+				<language id="en">Use only letters (a-z), numbers (0-9) and character "-".</language>
+				<language id="es">Utilice sólo letras (a-z), números (0-9) y el carácter "-".</language>
+			</text>
+		</manual>
+	</group>
+</data>

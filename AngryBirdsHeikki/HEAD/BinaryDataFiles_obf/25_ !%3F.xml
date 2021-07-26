@@ -1,0 +1,174 @@
+<UIDescription>
+	<Views>
+		<!-- VIEW LOGIN -->
+		<View_Login name="ViewLogin">
+			<MovieClip name="MovieClip_LoginBackGround" Enabled="False" visible="False"/>
+			
+			<Container name="Container_ErrorPane">
+				<TextField name="TextField_ErrorMessage" Enabled="False"/>
+			</Container>
+			
+			<Container name="Container_Login_Tab">
+				<Button name="Button_Tab_Login" MouseUp="TAB_LOGIN" scaleOnMouseOver="True"/>	
+
+				<TextField name="TextField_UserNameField"/>
+				<TextField name="TextField_PasswordField"/>
+				
+				<Button name="Button_Submit" MouseUp="SUBMIT"/>
+				
+				<Button name="Checkbox_RememberMe" MouseUp="CHECKBOX_CHANGE"/>
+				
+				<Button name="Button_ForgotPassword" MouseUp="FORGOT_PASSWORD" scaleOnMouseOver = "True"/>
+				
+				<MovieClip name="MovieClip_ErrorLoginMarkEmail" Enabled="False" visible="False"/>
+				<MovieClip name="MovieClip_ErrorLoginMarkPassword" Enabled="False" visible="False"/>
+			</Container>
+			
+			<Container name="Container_Register_Tab">
+				<Button name="Button_Tab_Register" MouseUp="TAB_REGISTER" scaleOnMouseOver = "True"/>	
+
+				<TextField name="TextField_EmailField_Register"/>
+				<TextField name="TextField_PasswordField_Register"/>
+				<TextField name="TextField_PasswordFieldRepeat_Register"/>
+				<TextField name="TextField_NickNameField_Register"/>
+				
+				<Button name="Checkbox_RememberMe_Register" MouseUp="CHECKBOX_CHANGE"/>
+				<Button name="Checkbox_Marketing" MouseUp="CHECKBOX_MARKETING_CHANGE"/>
+				<Button name="Button_Submit_Register" MouseUp="SUBMIT_REGISTER"/>
+				
+				<Button name="Button_PrivacyPolicy" MouseUp="SUBMIT_PRIVACYPOLICY"/>
+				<Button name="Button_Eula" MouseUp="SUBMIT_EULA"/>
+				
+				
+				<MovieClip name="MovieClip_ErrorRegisterMarkEmail" Enabled="False" visible="False"/>
+				<MovieClip name="MovieClip_ErrorRegisterMarkPassword" Enabled="False" visible="False"/>
+				<MovieClip name="MovieClip_ErrorRegisterMarkPasswordRepeat" Enabled="False" visible="False"/>
+				<MovieClip name="MovieClip_ErrorRegisterMarkNick" Enabled="False" visible="False"/>
+			</Container>
+
+
+			
+			<MovieClip name="WaitingPopup" visible="false" />
+		</View_Login>
+		
+		<View_Credits name="ViewCredits" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" width="1024" height="768">      
+			<Container name="Container_Credits" visible = "false">
+				<TextField name="TextField_Version_Number" text="1.0.0 placeholder" enabled="True" />
+				<Button name="Button_Google_App_Engine" MouseUp="CREDITS_GAE_BUTTON" />		
+			</Container>
+			
+			<Button name="Button_Back" MouseUp="CREDITS_CLOSE_BUTTON" />
+				
+		</View_Credits>
+		
+		
+		<View_LevelSelectionHeikki name="ViewLevelSelectionHeikki" width="1024" height="768">
+			<Button name="Button_1" MouseUp="Lvl1" scaleOnMouseOver="TRUE"/>
+			<Button name="Button_2" MouseUp="Lvl2" scaleOnMouseOver="TRUE"/>
+			<Button name="Button_3" MouseUp="Lvl3" scaleOnMouseOver="TRUE"/>
+
+			<Button name="Button_4" MouseUp="Lvl4" scaleOnMouseOver="TRUE"/>
+			<Button name="Button_5" MouseUp="Lvl5" scaleOnMouseOver="TRUE"/>
+			<Button name="Button_6" MouseUp="Lvl6" scaleOnMouseOver="TRUE"/>
+
+			<Button name="Button_7" MouseUp="Lvl7" scaleOnMouseOver="TRUE"/>
+			<Button name="Button_8" MouseUp="Lvl8" scaleOnMouseOver="TRUE"/>
+			<Button name="Button_9" MouseUp="Lvl9" scaleOnMouseOver="TRUE"/>
+
+			<Button name="Button_10" MouseUp="Lvl10" scaleOnMouseOver="TRUE"/>
+			<Button name="Button_11" MouseUp="Lvl11" scaleOnMouseOver="TRUE"/>
+			<Button name="Button_12" MouseUp="Lvl12" scaleOnMouseOver="TRUE"/>
+			
+			<Container name="Container_Unlock_PowerUp" >
+				<Button name="Button_Confirm_Code" MouseUp="UNLOCK_POWER_UP" scaleOnMouseOver="FALSE"/>
+				<Button name="Button_Facebook_Link_Text" MouseUp="FACEBOOK_LINK" scaleOnMouseOver="FALSE"/>
+				
+				<TextField name="TextField_Unlock_Code" enabled="True"/>				
+			</Container>
+			
+			<Container name="Container_CodeActivated">
+				<TextField name="TextField_ActiveUntil" enabled="false" visible = "True"/>						
+			</Container>
+			
+			<Button name="Button_CutScene" MouseUp="CUT_SCENE" scaleOnMouseOver="TRUE"/>
+			
+			<MovieClip name="MovieClip_LevelSelectionBackGround" enabled="true" visible="true"/>
+			
+			<MovieClip name="MovieClip_Visor" enabled="true" visible="true"/>
+		</View_LevelSelectionHeikki>
+
+		<!--  VIEW LEVEL PLAY     -->
+		<View_LevelPlay name="ViewLevelPlay">    
+				<Container name="Container_HiscoreContainer" enabled="False" >
+						<TextField name="TextField_Hiscore" text="0" enabled="False"/>
+						<TextField name="TextField_CurrentScore" text="0" enabled="False"/>
+				</Container>
+				
+				<!-- <Button name="MovieClip_FeedBar" MouseUp="OPEN_FEED_DIALOG" enabled="True" /> -->
+				
+				<!-- Zoom Buttons -->
+				<Container name="Container_ZoomButtons" enabled="False" scaleFunction="SQRT" aspectRatioFixed="TRUE" width="1024" height="768">
+					<Button name="Button_ZoomIn" MouseDown="ZOOM_IN" MouseUp="ZOOM_IN_RELEASE" MouseOut="ZOOM_IN_RELEASE"/>
+					<Button name="Button_ZoomOut" MouseDown="ZOOM_OUT" MouseUp="ZOOM_OUT_RELEASE" MouseOut="ZOOM_OUT_RELEASE"/>
+					<Button name="Button_Magnify"/>
+				</Container>
+				<Button name="Button_Pause" MouseUp="PAUSE" MouseOver="PLAY_VIEW_ROLLOVER" MouseOut="PLAY_VIEW_ROLLOUT"/>
+				<Button name="Button_Restart" MouseUp="RESTART_LEVEL" MouseOver="PAN_LEFT_OVER" MouseOut="PAN_LEFT_OUT" />
+				<Button name="Button_PowerUp" MouseUp="POWERUP_USE" MouseOver="PAN_LEFT_OVER" MouseOut="PAN_LEFT_OUT" />				
+		</View_LevelPlay> 
+				
+		<!--  VIEW LEVEL LOAD    -->				
+		<View_LevelLoad name="ViewLevelLoad">      <!--  name parameter must be identical(case sensitive) with export name of the main movie clip of this UI view      -->
+				<!-- <MovieClip name="" /> --> 
+		</View_LevelLoad>
+		
+		<!--  NEW LEVEL END VIEW    -->
+		<View_LevelEnd name="ViewLevelEnd" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0">
+			<Container name="Container_LevelEndStripe">
+
+				<Button name="Button_Menu"  MouseUp="MENU"/>
+				<Button name="Button_Replay"  MouseUp="REPLAY"/>
+				<Button name="Button_Next"  MouseUp="NEXT_LEVEL"/>
+				
+				<MovieClip name="MovieClip_StarLeft" />
+				<MovieClip name="MovieClip_StarCenter" />
+				<MovieClip name="MovieClip_StarRight" />
+				
+				<TextField name="TextField_LevelEndScore" enabled="True" />
+				
+				<MovieClip name="MovieClip_NewHighScore" enabled="True" visible="false" />
+
+				<TextField name="TextField_BestScore" enabled="True" visible="false" />
+				<MovieClip name="MovieClip_BestScoreText" enabled="True" visible="false" />
+				<MovieClip name="MovieClip_BestScoreStars" enabled="True" visible="false" />
+
+				
+				<MovieClip name="MovieClip_NewHighScoreBadge" visible="false"/>
+			</Container>
+			
+		</View_LevelEnd>
+		<!--  NEW LEVEL END VIEW    -->				
+		
+		<View_LevelEndFail name="ViewLevelEndFail" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0">      <!--  name parameter must be identical(case sensitive) with export name of the main movie clip of this UI view      -->
+			<Container name="Container_LevelEndStripe">
+				<Button name="Button_Menu"  MouseUp="MENU" />
+				<Button name="Button_Replay"  MouseUp="REPLAY" />
+				<Button name="Button_Next"  MouseUp="NEXT_LEVEL"/>
+				
+				<MovieClip name="MovieClip_LevelEndFailedPig" visible="true"/>
+			</Container>
+		</View_LevelEndFail>
+		
+		<!-- CUT SCENE -->
+		<View_CutScene name="ViewCutScene">
+			<MovieClip name="MovieClip_CutSceneHelmet" visible="true"/>
+			<Button name="Button_Skip" visible="False" MouseUp="Skip"/>
+		</View_CutScene> 
+	</Views>
+	
+	<Components>
+		<Container name="Component_LevelSelection">
+			<MovieClip name="MovieClip_LevelSelectionLogos"/>
+		</Container>
+	</Components>
+</UIDescription>

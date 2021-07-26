@@ -1,0 +1,40 @@
+
+	<Container name="HighscoreSidebar" fromLibrary="True" isOverlay="true" >
+
+		<Button name="Button_Facebook" MouseUp="BUTTON_FACEBOOK"/>
+
+		<Container name="Container_Sidebar_Buttons">
+			<Button name="Button_Mute" MouseUp="MUTE"/>
+			<Button name="Button_Logout" MouseUp="LOGOUT"/>
+			<Button name="Button_Credits" MouseUp="CREDITS"/>
+			<Button name="Button_Tutorial" MouseUp="TUTORIAL"/>	
+			<MovieClip name="MovieClip_SoundOff" visible="true"/>
+		</Container>
+
+		<Container name="Container_SideBar_Tab_Overall">
+			<Button name="Button_Tab_Overall" MouseUp="TAB_DRUMS" scaleOnMouseOver="True"/>	
+		</Container>
+		<Container name="Container_Sidebar_Tab_Scores">
+			<Button name="Button_Tab_Score" MouseUp="TAB_SCORES" scaleOnMouseOver = "True"/>	
+			<TextField name="TextField_Level_Num" text="" enabled="False"/>
+			<Button name="Button_ArrowLeft" MouseUp="LEFT"/>
+			<Button name="Button_ArrowRight" MouseUp="RIGHT"/>
+		</Container>
+		
+		<MovieClip name="MovieClip_LoadingHiScores" visible="False" enabled="False"/>
+
+		<Container name="Container_Highscores">
+			<TextField name="TextField_MyScoreName" visible="True" enabled="False"/>
+			<MovieClip name="TextField_HeikkiScoreName" visible="True" enabled="False"/>
+
+			<TextField name="TextField_MyScoreNumber" text="0" enabled="False"/>
+			<TextField name="TextField_HeikkiScoreNumber" text="0" enabled="False"/>
+
+		
+			<MovieClip name="Highscore_Holder"/>
+			<Button name="Button_ArrowUp" MouseUp="UP"/>
+			<Button name="Button_ArrowDown" MouseUp="DOWN"/>
+		</Container>
+		
+		<MovieClip name="MovieClip_Sidebar_BG" visible="True"/>
+	</Container>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<texts>
+	<!-- English -->
+	<text name="NICKNAME_LENGTH" lang="en">Nickname is too short. Use at least 5 characters.</text>
+	<text name="PASSWORD_LENGTH" lang="en">Password is too short. Use at least 5 characters.</text>
+	<text name="PASSWORDS_DONT_MATCH" lang="en">The passwords don't match.</text>
+	<text name="INVALID_EMAIL" lang="en">The email you have provided is invalid.</text>
+	<text name="PASSWORD_MISSING" lang="en">You need to fill in a password.</text>
+	<text name="CONNECTION_ERROR_RETRY" lang="en">Connection error. Please retry.</text>
+	<text name="PLAYER_ID_USED" lang="en">The email you have provided is in use.</text>
+	<text name="PLAYER_REQUIRED" lang="en">You need to specify an email.</text>
+	<text name="PLAYER_INVALID_LOGIN" lang="en">The login credentials are not valid.</text>
+	<text name="PLAYER_BANNED" lang="en">The email you provided has has been banned.</text>
+	<text name="IP_BANNED" lang="en">The IP has been banned.</text>
+	<text name="FIELD_NOT_VALID" lang="en">The nickname is invalid.</text>
+	<text name="FIELD_OBLIGATORY" lang="en"></text>
+	<text name="FIELD_LENGTH" lang="en">Nickname invalid.</text>	
+	<text name="SECURITY_ERROR" lang="en">Security violation.</text>
+	<text name="FORGOT_PASSWORD_EMAIL_SENT" lang="en">Email has been sent to the address you provided.</text>
+</texts>

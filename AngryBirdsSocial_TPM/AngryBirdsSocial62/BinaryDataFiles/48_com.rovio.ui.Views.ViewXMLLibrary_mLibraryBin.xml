@@ -1,0 +1,231 @@
+<UIDescription>
+	<Views>
+
+		<!--  VIEW PLACEHOLDER LOGIN    -->		
+		<View_FakeLogin name="ViewFakeLogin">      <!--  name parameter must be identical(case sensitive) with export name of the main movie clip of this UI view      -->
+				<Container name="Container_Buttons">
+							<Button name="Button_Login"  MouseUp="LOGIN" Tooltip ="Login to Angry Birds !!!"/> 
+							<Button name="Button_SkipLogin" MouseUp="SKIP_LOGIN"/> 
+				</Container>
+				<TextField name="TextField_Email"  text="asten@rovio.com"/> 
+				<TextField name="TextField_Password" text="test" /> 
+		</View_FakeLogin>
+		
+		
+		<!--  VIEW LEVEL START    -->				
+		<View_LevelLoad name="ViewLevelLoad">      <!--  name parameter must be identical(case sensitive) with export name of the main movie clip of this UI view      -->
+				<!-- <MovieClip name="" /> --> 
+		</View_LevelLoad>
+		
+
+		<!--  VIEW LEVEL START    -->				
+		<View_LevelStart name="ViewLevelStart" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0">      <!--  name parameter must be identical(case sensitive) with export name of the main movie clip of this UI view      -->
+				<Container name="Container_Scores" visible="False">
+							<TextField name="TextField_PreviousScore"  /> 
+				</Container>
+				<Button name="Button_Play"  MouseUp="Play_Level" />
+				<Button name="Button_PlayLevel"  MouseUp="Play_Level" visible="False"/>
+				
+		</View_LevelStart>
+		
+		<!--  VIEW GAME PAUSE     -->		
+		<View_LevelPause name="ViewLevelPause" isOverlay="True" overlayColor="0x00FF00" overlayAlpha="0">      
+				<Button name="Button_Resume" MouseUp="RESUME_LEVEL" /> 	
+				<Button name="Button_Replay" MouseUp="RESTART_LEVEL" />
+				<Button name="Button_Help" visible="False" />
+				<Container name="Container_Debug">
+					<Button name="Button_EndLevel" MouseUp="END_LEVEL" />
+					<Button name="Button_Editor" MouseUp="OPEN_EDITOR" /> 
+				</Container>	
+		</View_LevelPause>		
+		
+		<View_LevelEditorStart name="ViewLevelEditorStart">
+			<MovieClip name="MovieClip_EditorStart_BadPiggiesLogo" />
+			
+			<Button name="Button_EditorStart_Build" MouseUp="EDITOR_START_BUILD" />
+			<Button name="Button_EditorStart_BuildFromScratch" MouseUp="EDITOR_START_BUILD_FROM_SCRATCH" visible="False" />
+			<Button name="Button_EditorStart_SelectTemplate" MouseUp="EDITOR_START_SELECT_TEMPLATE" visible="False" />
+			
+			
+				
+			<Popup name="Popup_EditorStart_LoadTemplate" visible="False" enabled="True" isOverlay="True" fromLibrary="True" >
+					<Button name="Button_LoadLevel_Close" MouseUp="POPUP_LOAD_LEVEL_CLOSE" />
+					<Repeater name="Repeater_TemplateSelection"  button="TemplateSelect_Base" enabled="True">
+					</Repeater>
+					
+			</Popup>
+			
+		</View_LevelEditorStart>
+		
+		<!--  VIEW EDITOR     -->		
+		<View_LevelEditor name="ViewLevelEditor">      
+				<Container name="Container_EditorTop">
+					<Button name="Button_ViewBird" MouseUp="TOP_BAR_BIRD_VIEW" Tooltip="Go to birds" /> 	
+					<Button name="Button_ViewBird_BirdAlone" MouseUp="TOP_BAR_BIRD_VIEW" Tooltip="Go to birds" /> 	
+					<Button name="Button_ViewPig" MouseUp="TOP_BAR_PIG_VIEW"  Tooltip ="Go to pigs"/>
+					<Button name="Button_ViewPig_PigAlone" MouseUp="TOP_BAR_PIG_VIEW"  Tooltip ="Go to pigs"/>
+					<Button name="Button_ZoomIn" MouseUp="TOP_BAR_ZOOM_IN" Tooltip ="Zoom In" />
+					<Button name="Button_ZoomOut" MouseUp="TOP_BAR_ZOOM_OUT" Tooltip ="Zoom Out" />
+					<Button name="Button_Hand" MouseUp="TOOL_CAMERA"  Tooltip="Drag Camera"/> 
+					<Button name="Button_Camera" MouseUp="TOP_BAR_OPEN_CAMERA_POPUP" Tooltip ="Define camera" />
+					<!-- <Button name="Button_ClearLevel" MouseUp="DELETE_ALL" /> -->		
+					<Button name="Button_Save" MouseUp="OPEN_FILE_DROP_DOWN" Tooltip ="New/Save/Load" />
+					<Button name="Button_TestPlay" MouseUp="PLAY_LEVEL" Tooltip="Testplay"/>
+					<Button name="Button_PublishLevel" MouseUp="PUBLISH" />
+					<MovieClip name="Movieclip_TestPlayHighlight" enabled="False"/>
+					
+					<Container name="Container_Editor_BlockLimit" enabled="False" visible="False">
+						<TextField name="Textfield_BlockLimit" enabled="False"/>
+						<MovieClip name="MovieClip_BlockLimit_Bg" enabled="False" />
+					</Container>
+				</Container>
+				<Container name="Container_Toolbar">
+					<Button name="Button_ToolSelect" MouseUp="TOOL_SELECT" Tooltip = "Selection Tool"  />
+					<Button name="Button_ToolRotate" MouseUp="TOOL_ROTATE" visible="False" Tooltip = "Rotation Tool (r)"/> 
+					<Button name="Button_ToolDelete" MouseUp="TOOL_DELETE" visible="False" Tooltip = "Eraser Tool (del)" /> 
+					<Button name="Button_ToolRotateAll" MouseUp="ACTION_ROTATE_SELECTED"  visible="False" Tooltip="Rotate Selected" /> 
+					<Button name="Button_ToolDeleteAll" MouseUp="ACTION_DELETE_SELECTED" visible="False" Tooltip ="Delete Selected"/> 
+					<Button name="Button_ToolUndo" MouseUp="ACTION_UNDO" Tooltip="Undo (z)"/> 
+					<Button name="Button_ToolDoPhysics" MouseUp="DO_PHYSICS" Tooltip="Toggle Physics (g)" /> 
+				</Container>
+				<Container name="Container_Bottom" enabled="True" MouseOver="BOTTOM_UI_ROLL_OVER" MouseOut="BOTTOM_UI_ROLL_OUT">
+					
+					<Repeater name="Repeater_Items"  button="Repeater_Button_Editor_Items" buttonAlign="Bottom" GlowFilter="0xFFFFFF" MouseOver="EDITOR_REPEATER_ITEMS_MOUSEOVER" MouseOut="EDITOR_REPEATER_ITEMS_MOUSEOUT" enabled="True">
+					</Repeater>
+					
+					<Container name="Container_Editor_CategoryBar" MouseOver="EDITOR_REPEATER_TABS_MOUSEOVER" MouseOut="EDITOR_REPEATER_TABS_MOUSEOUT" enabled="True">
+						<Repeater name="Repeater_Tabs"  button="Repeater_Button_Editor_Tabs"> <!--  button parameter must be identical(case sensitive) with export name of the button clip which will be used as a base for each selection      -->
+						</Repeater>
+						
+						<Button name="Button_BottomUI_ExtendLevel" MouseUp="BOTTOM_EXTEND_LEVEL" Tooltip ="Expand Level"/>
+						<Button name="Button_BottomUI_LevelTheme" MouseUp="BOTTOM_SELECT_THEME" Tooltip ="Change Background"/>
+					</Container>
+					
+				</Container>
+				
+				<Popup name="Popup_Editor_PublishLevel" visible="False" enabled="True" isOverlay="True" fromLibrary="True">
+					<TextField name="TextField_PublishLevel_LevelName" enabled="True" text="Best Level Ever" /> 
+					<TextField name="TextField_PublishLevel_LevelCost" enabled="False" /> 
+					<Button name="Button_PublishLevel_Publish" MouseUp="POPUP_PUBLISH_LEVEL_PUBLISH" />
+					<Button name="Button_PublishLevel_Close" MouseUp="POPUP_PUBLISH_LEVEL_CLOSE" />
+					<MovieClip name="MovieClip_PublishLevel_LevelThumbnail"/>
+				</Popup>
+				
+				<Popup name="Popup_Editor_LevelPublished" visible="False" enabled="True" isOverlay="True" fromLibrary="True">
+					<TextField name="TextField_LevelPublished_LevelName" enabled="False"/> 
+					<Button name="Button_LevelPublished_Play" MouseUp="POPUP_LEVEL_PUBLISHED_PLAY" />
+					<Button name="Button_LevelPublished_Share" MouseUp="POPUP_LEVEL_PUBLISHED_SHARE" />
+					<Button name="Button_LevelPublished_Close" MouseUp="POPUP_LEVEL_PUBLISHED_CLOSE" />
+				</Popup>
+				
+				<Popup name="Popup_Editor_LevelSaved" visible="False" enabled="True" isOverlay="True" fromLibrary="True">
+					<Button name="Button_LevelSaved_Ok" MouseUp="POPUP_LEVEL_SAVED_CLOSE" />
+					<Button name="Button_LevelSaved_Close" MouseUp="POPUP_LEVEL_SAVED_CLOSE" />
+				</Popup>
+		
+				<Container name="Container_CameraDropDown" visible="False" enabled="True" isOverlay="False" fromLibrary="True" isBehind="True">
+					<MovieClip name="MovieClip_CameraDropdown_Hitarea" />
+					<Button name="Button_CameraDropdown_SetCamera" MouseUp="DROPDOWN_CAMERA_SET_CAMERA" />
+					<Button name="Button_CameraDropdown_Autocamera" MouseUp="DROPDOWN_CAMERA_AUTO_CAMERA" />
+				</Container>
+				
+				<Container name="Container_FileDropDown" visible="False" enabled="True" isOverlay="False" fromLibrary="True" isBehind="True">
+					<MovieClip name="MovieClip_FileDropdown_Hitarea" />
+					<Button name="Button_FileDropdown_LoadLevel" MouseUp="DROPDOWN_FILE_LOAD_LEVEL" />
+					<Button name="Button_FileDropdown_SaveLevel" MouseUp="DROPDOWN_FILE_SAVE" />
+					<Button name="Button_FileDropdown_NewLevel" MouseUp="DROPDOWN_FILE_NEW_LEVEL" />
+				</Container>
+				
+				<Popup name="Popup_Editor_LoadLevel" visible="False" enabled="True" isOverlay="True" fromLibrary="True">
+						<Button name="Button_LoadLevel_Close" MouseUp="POPUP_LOAD_LEVEL_CLOSE" />
+				</Popup>
+				
+				<Popup name="Popup_Editor_CameraSettingView" enabled="False" visible="False"  fromLibrary="True">
+					<MovieClip name="MovieClip_CameraSettingView_Top" enabled="True"/>
+					<MovieClip name="MovieClip_CameraSettingView_Bottom" enabled="True" />
+					<Button name="Button_CameraSettingView_SetCamera" MouseUp="POPUP_SET_CAMERA_CONFIRM"/>
+					<Button name="Button_CameraSettingView_ZoomIn" MouseUp="POPUP_SET_CAMERA_ZOOM_IN" Tooltip ="Zoom In"/>
+					<Button name="Button_CameraSettingView_ZoomOut" MouseUp="POPUP_SET_CAMERA_ZOOM_OUT" Tooltip ="Zoom Out"/>
+					<Button name="Button_CameraSettingView_Close" MouseUp="POPUP_SET_CAMERA_CLOSE"/>			
+				</Popup>
+   				
+   				<Popup name="Popup_Editor_SetCameraConfirmation" enabled="True" visible="False" isOverlay="True" fromLibrary="True">
+					<MovieClip name="MovieClip_SetCameraConfirmation_Thumbnail" /> 
+ 					<Button name="Button_SetCameraConfirmation_Close" MouseUp="POPUP_CAMERA_CONFIRMATION_CLOSE"/>
+ 					<Button name="Button_SetCameraConfirmation_TryAgain" MouseUp="POPUP_CAMERA_CONFIRMATION_CLOSE"/>
+ 					<Button name="Button_SetCameraConfirmation_Confirm" MouseUp="POPUP_CAMERA_CONFIRMATION_CONFIRM"/>
+				</Popup>
+				
+   				<Popup name="Popup_Editor_LevelExtend" enabled="True" visible="False" fromLibrary="True" isOverlay="True">
+					<MovieClip name="MovieClip_LevelExtend_Image" />
+					<Container name="Container_LevelExtend_Extension1" visible="False">
+						<TextField name="TextField_LevelExtend_Cost1" text="x0" />
+						<Button name="Button_LevelExtend_Confirm1" MouseDown="POPUP_LEVELEXTEND_CONFIRM" />
+					</Container>
+					
+					<Container name="Container_LevelExtend_Extension2" visible="False">
+						<TextField name="TextField_LevelExtend_Cost2" text="x0" />
+						<Button name="Button_LevelExtend_Confirm2" MouseDown="POPUP_LEVELEXTEND_CONFIRM" />
+					</Container>
+					
+					<Container name="Container_LevelExtend_Extension3" visible="False">
+						<TextField name="TextField_LevelExtend_Cost3" text="x0" />
+						<Button name="Button_LevelExtend_Confirm3" MouseDown="POPUP_LEVELEXTEND_CONFIRM" />
+					</Container>
+					
+					<Button name="Button_LevelExtend_Exit" MouseUp="POPUP_LEVELEXTEND_CLOSE" />
+				</Popup>
+				
+				<Popup name="Popup_Editor_ThemeSelect" enabled="True" visible="False" fromLibrary="True" isOverlay="True">
+					<Button name="Button_ThemeSelect_Exit" MouseUp="POPUP_THEMESELECT_CLOSE" />
+					
+					<Repeater name="Repeater_ThemeSelection"  button="ThemeSelect_Base" GlowFilter="0xFFFFFF" MouseOver="EDITOR_REPEATER_ITEMS_MOUSEOVER" MouseOut="EDITOR_REPEATER_ITEMS_MOUSEOUT" enabled="True" surfaceAlign="Center">
+					</Repeater>
+					
+				</Popup>
+	</View_LevelEditor>		
+	
+	<View_LevelEditorTest name="ViewLevelEditorTestPlay">  
+		<Button name="Button_TestPlayBack" MouseUp="STOP_TEST_PLAY" />
+	</View_LevelEditorTest>    	
+	
+	<!--  VIEW LEVEL PLAY     -->
+		<View_LevelPlay name="ViewLevelPlay">    
+				<Container name="Container_HiscoreContainer" enabled="False" >
+						<TextField name="TextField_Hiscore" text="9999" enabled="False"/>
+				</Container>
+				<Container name="Container_FriendScores" enabled="False">
+				</Container>			
+				<TextField name="TextField_CurrentScore" text="0" enabled="False"/>
+				<Button name="SoundsToggle" MouseUp="Sounds_Toggle"/>
+				<Button name="Button_Pause" MouseUp="Pause"/>
+		</View_LevelPlay> 
+		
+		<!--  VIEW LEVEL END FAIL     -->
+		<View_LevelEndFail name="ViewLevelEndFail">    
+				<Button name="Button_Replay" MouseUp="REPLAY_LEVEL" />			
+				<TextField name="TextField_FailText" text="Level Failed!" />
+				<TextField name="TextField_BetterLuck" text="Better luck next time.." />
+		</View_LevelEndFail> 
+		
+		<!--  VIEW LEVEL END WIN     -->
+		<View_LevelEnd name="ViewLevelEnd">      <!--  name parameter must be identical(case sensitive) with export name of the main movie clip of this UI view      -->
+			<TextField name="TextField_Score" enabled="False" />
+			<Button name="Button_Replay" MouseUp="REPLAY_LEVEL"/>
+			<Button name="Button_LevelEnd_PlayMore" MouseUp="MORE_LEVELS"/>
+			<Button name="Button_LevelEnd_RateLevel" MouseUp="RATE_LEVEL"/>
+			<Button name="Button_LevelEnd_FriendsScores" MouseUp="FRIEND_SCORES"/>
+			<MovieClip name="LoadingIconAnimation" visible="True" />
+			<MovieClip name="MovieClip_LevelEnd_NewHighScore" visible="false" />
+			<Container name="Container_RateLevel" visible="False">
+				<Button name="Button_Like" MouseUp="LIKE_LEVEL" />
+				<Button name="Button_ThumbDown" MouseUp="DISLIKE_LEVEL" />
+				<Button name="Button_FacebookShare" MouseUp="SHARE_LEVEL" />
+				<Button name="Button_Embed" MouseUp="EMBED_LEVEL" />
+			</Container>
+			
+			<Repeater name="Repeater_FriendsTab"  button="FriendScore_Base" visible="True"></Repeater>
+			<Repeater name="Repeater_MoreLevels"  button="MoreLevels_Base" enabled="False"></Repeater>
+		</View_LevelEnd> 
+	</Views>
+</UIDescription>

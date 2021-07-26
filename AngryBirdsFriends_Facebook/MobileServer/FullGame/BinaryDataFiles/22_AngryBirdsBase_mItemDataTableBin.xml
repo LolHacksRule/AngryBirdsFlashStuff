@@ -1,0 +1,1296 @@
+<tuner game="AngryBirds" version="0.0.0">
+
+    <Item_Materials>
+	     <!-- bodyType: Acccepted values are dynamic for moving objects which can take damage such as birds /blocks / pigs   
+																			kinetic for moving objects which can not be damages such as moving ground platforms if we do  implement them later
+																			static for still objects which can not be damaged such as ground layers and terrains-->
+    	<!-- density: a number used to calculate object mass. Mass = density x volume
+							 Bigger mass means objects will fly less when they get hit and they will apply more damage to other objects when they hit them. -->
+
+    	<!-- friction: this number is used to calculate how much velocity loss will occur when they object hit each other 
+							 For example ice should have less friction than others so objects can slide on them without losing much velocity-->	
+
+    	<!-- restitution: this number is used to calculate how much objects will bounce from each other when they hit
+							 For example stone should have higher restitution than grass because objects can bounce better on stone-->
+
+   	    <!-- strenght: this number is used to calculate how much damage an object can take before being destroyed
+							 The final total energy value will be calculated based on strenght, volume and width/height ratio of the object-->
+
+   	    <!-- defense: This number will determine how much counter tolerance an object can show to damages
+							 If the damage is smaller than the defence then object will not lose any energy. This is useful to avoid constant damages in small impacts between blocks-->
+				
+		<Material id="Material_Block_Wood" bodyType="DYNAMIC" density="1.5" friction="4.0" restitution="0.2" strength="15.0" defence="2.5" sounds="WOOD" />
+		<Material id="Material_Block_Stone" bodyType="DYNAMIC" density="4.0" friction="4.0" restitution="0.1" strength="25.0" defence="15.0" sounds="STONE" />
+		<Material id="Material_Block_Ice" bodyType="DYNAMIC" density="0.75" friction="0.7" restitution="0.2" strength="8.0" defence="2.0" sounds="ICE" />
+		<Material id="Material_Block_Snow" bodyType="STATIC" density="1.0" friction="0.2" restitution="0.2" strength="8.0" defence="4.0" />
+		<Material id="Material_Block_Chrome_Stone" bodyType="DYNAMIC" density="2.0" friction="4.0" restitution="0.25" strength="1.0" defence="15.0" sounds="STONE" />
+		<Material id="Material_Misc_Food" bodyType="DYNAMIC" density="0.75" friction="0.7" restitution="0.4" strength="5.0" defence="1.0" />
+		<Material id="White_Egg" bodyType="DYNAMIC" density="3.0" friction="0.3" restitution="0.23" strength="1.0" defence="0.1" />
+		
+		<Material id="Material_Misc_Rubber" bodyType="DYNAMIC" density="0.5" friction="0.7" restitution="5.0" strength="-1.0" defence="-1.0" sounds="RUBBER" />
+		<Material id="Material_Misc_Rubber_Beach_Ball" bodyType="DYNAMIC" density="0.75" friction="0.7" restitution="1.1" strength="1000.0" defence="50.0" sounds="RUBBER" />
+		<Material id="Material_Misc_Rubber_Trampoline" bodyType="STATIC" density="1.0" friction="0.8" restitution="1.1" strength="-1.0" defence="-1.0" sounds="TRAMPOLINE" />
+		
+		<Material id="Material_Misc_Metal" bodyType="DYNAMIC" density="4.0" friction="4.0" restitution="0.1" strength="1000.0" defence="-1.0" />
+		<Material id="Material_Misc_Pillar" bodyType="DYNAMIC" density="10.0" friction="0.7" restitution="0.4" strength="120.0" defence="40.0" />
+		<Material id="Material_Misc_Plastic" bodyType="DYNAMIC" density="0.75" friction="0.7" restitution="0.4" strength="5.0" defence="5.0" />
+		
+		<Material id="Material_Misc_Balloon" bodyType="STATIC" density="0" friction="0.8" restitution="0.0" strength="0.1" defence="1" />
+		<Material id="TNT" bodyType="DYNAMIC" density="0.75" friction="0.7" restitution="0.4" strength="1.0" defence="1.0" />
+		<Material id="CHROME_BOMB" bodyType="DYNAMIC" density="0.75" friction="0.7" restitution="0.45" strength="10.0" defence="1.0" />
+		<Material id="POWERUP_BOMB" bodyType="DYNAMIC" density="0.75" friction="0.7" restitution="0.4" strength="1.0" defence="1.0" />
+		<Material id="Material_Misc_Golden_Egg" bodyType="DYNAMIC" density="0.75" friction="0.7" restitution="0.4" strength="5.0" defence="1.0" />
+		<Material id="Material_Misc_Chrome_Metal" bodyType="DYNAMIC" density="0.5" friction="0.7" restitution="0.4" strength="30.0" defence="5.0" />
+		<Material id="Material_Misc_Chrome_Chain" bodyType="DYNAMIC" density="1.0" friction="0.7" restitution="0.4" strength="8.0" defence="15.0" />
+		<Material id="Material_Misc_Chrome_Glass" bodyType="DYNAMIC" density="15.0" friction="3.0" restitution="0.0" strength="350.0" defence="25.0" />
+		<Material id="Material_Misc_Chrome_Implosion_Bomb" bodyType="DYNAMIC" density="0.75" friction="0.7" restitution="0.4" strength="1.0" defence="1.0" />
+		<Material id="Material_Misc_Rope" bodyType="DYNAMIC" density="0.75" friction="0.7" restitution="0.4" strength="5.0" defence="1.0" />
+		<Material id="Material_Bird_Red" bodyType="DYNAMIC" density="6.0" friction="0.3" restitution="0.43" strength="60.0" defence="1.0" />
+		<Material id="Material_Bird_Yellow" bodyType="DYNAMIC" density="6.0" friction="0.3" restitution="0.23" strength="60.0" defence="1.0" />
+		<Material id="Material_Bird_Blue" bodyType="DYNAMIC" density="4.5" friction="0.3" restitution="0.25" strength="60.0" defence="1.0" />
+		<Material id="Material_Bird_White" bodyType="DYNAMIC" density="4.5" friction="0.3" restitution="0.23" strength="60.0" defence="1.0" />
+		<Material id="Material_Bird_Black" bodyType="DYNAMIC" density="6.0" friction="0.3" restitution="0.03" strength="60.0" defence="1.0" />
+		<Material id="Material_Bird_Green" bodyType="DYNAMIC" density="3.0" friction="0.3" restitution="0.23" strength="60.0" defence="1.0" />
+		<Material id="Material_Bird_RedBig" bodyType="DYNAMIC" density="10.0" friction="0.3" restitution="0.45" strength="60.0" defence="1.0" />
+		<Material id="Material_Bird_Sardine" bodyType="DYNAMIC" density="1.0" friction="0.25" restitution="0.05" strength="60.0" defence="1.0" />
+		
+		<Material id="Material_Bird_Orange" bodyType="DYNAMIC" density="5.0" friction="0.3" restitution="0.25" strength="60.0" defence="1.0" />
+		<Material id="Material_Bird_Orange_Big" bodyType="DYNAMIC" density="0.1" friction="0.5" restitution="0" strength="60.0" defence="1.0" />
+		
+		<Material id="Material_Bird_Mighty_Eagle" bodyType="STATIC" density="8.0" friction="0.3" restitution="0.05" strength="2.0" defence="1.0" />
+		<Material id="Material_Pig_Basic_Small" bodyType="DYNAMIC" density="2.0" friction="0.7" restitution="0.05" strength="4.0" defence="1.0" />
+		<Material id="Material_Pig_Basic_Medium" bodyType="DYNAMIC" density="2.0" friction="0.3" restitution="0.05" strength="10.0" defence="1.0" />
+		<Material id="Material_Pig_Basic_Big" bodyType="DYNAMIC" density="2.0" friction="0.3" restitution="0.05" strength="20.0" defence="1.0" />
+		<Material id="Material_Pig_King" bodyType="DYNAMIC" density="1.0" friction="0.3" restitution="0.05" strength="100.0" defence="0.0" />
+		<Material id="Material_Pig_Helmet" bodyType="DYNAMIC" density="2.0" friction="0.3" restitution="0.05" strength="15.0" defence="8.0" />
+		<Material id="Material_Pig_Mustache" bodyType="DYNAMIC" density="1.0" friction="0.3" restitution="0.05" strength="30.0" defence="1.0" />
+		<Material id="Material_Ground_Hills" bodyType="STATIC" density="0.5" friction="0.8" restitution="0.0" strength="100.0" defence="-1.0" />
+		<Material id="Material_Ground_Snow" bodyType="STATIC" density="0.5" friction="0.7" restitution="0.05" strength="100.0" defence="-1.0" />
+		<Material id="Material_Texture_Hills" bodyType="STATIC" density="0.5" friction="0.8" restitution="0.0" strength="100.0" defence="-1.0" />
+		<Material id="Material_Estrade" bodyType="STATIC" density="0.5" friction="0.7" restitution="0.05" strength="100.0" defence="-1.0" />
+		<Material id="Material_Chrone_Platform" bodyType="STATIC" density="3.0" friction="0.25" restitution="0.25" strength="100.0" defence="-1.0" />
+		<Material id="Material_Slingshot" bodyType="STATIC" density="10000.0" friction="0.05" restitution="0.05" strength="10000.0" defence="-1.0" />
+		
+		<Material id="Material_Powerup_Superball" bodyType="DYNAMIC" density="0.5" friction="0.0" restitution="1.1" strength="0.0" defence="0.0" />
+		
+		<Material id="Material_Temporary_Block" bodyType="DYNAMIC" density="4.0" friction="4.0" restitution="0.1" strength="10000.0" defence="-1.0" />
+	</Item_Materials>
+
+    <Item_Shapes>
+	    <Shape id="RECT_FILLED_BORDER_GROUND"  shape="Rectangle" width="2000" height="100"></Shape> <!-- do not change this shape-->
+		
+		<Shape id="BLOCK_RECT_1X1" shape="POLYGON">
+			<Vertex index="0" x="0.46" y="-0.46" />
+			<Vertex index="1" x="0.46" y="0.46" />
+			<Vertex index="2" x="-0.46" y="0.46" />
+			<Vertex index="3" x="-0.46" y="-0.46" />
+		</Shape>
+
+		<Shape id="BLOCK_RECT_2X1" shape="POLYGON">
+			<Vertex index="0" x="0.94299996" y="-0.46" />
+			<Vertex index="1" x="0.94299996" y="0.46" />
+			<Vertex index="2" x="-0.94299996" y="0.46" />
+			<Vertex index="3" x="-0.94299996" y="-0.46" />
+		</Shape>
+
+		<Shape id="BLOCK_RECT_2X2" shape="POLYGON">
+			<Vertex index="0" x="0.94299996" y="-0.94299996" />
+			<Vertex index="1" x="0.94299996" y="0.94299996" />
+			<Vertex index="2" x="-0.94299996" y="0.94299996" />
+			<Vertex index="3" x="-0.94299996" y="-0.94299996" />
+		</Shape>
+
+		<Shape id="BLOCK_RECT_4X1" shape="POLYGON">
+			<Vertex index="0" x="1.909" y="-0.46" />
+			<Vertex index="1" x="1.909" y="0.46" />
+			<Vertex index="2" x="-1.909" y="0.46" />
+			<Vertex index="3" x="-1.909" y="-0.46" />
+		</Shape>
+
+		<Shape id="BLOCK_RECT_4X2" shape="POLYGON">
+			<Vertex index="0" x="1.909" y="-0.94299996" />
+			<Vertex index="1" x="1.909" y="0.94299996" />
+			<Vertex index="2" x="-1.909" y="0.94299996" />
+			<Vertex index="3" x="-1.909" y="-0.94299996" />
+		</Shape>
+
+		<Shape id="BLOCK_RECT_4X4" shape="POLYGON">
+			<Vertex index="0" x="1.8859999" y="-1.8859999" />
+			<Vertex index="1" x="1.8859999" y="1.8859999" />
+			<Vertex index="2" x="-1.8859999" y="1.8859999" />
+			<Vertex index="3" x="-1.8859999" y="-1.8859999" />
+		</Shape>
+
+		<Shape id="BLOCK_RECT_6X2" shape="POLYGON">
+			<Vertex index="0" x="2.783" y="-0.94299996" />
+			<Vertex index="1" x="2.783" y="0.94299996" />
+			<Vertex index="2" x="-2.783" y="0.94299996" />
+			<Vertex index="3" x="-2.783" y="-0.94299996" />
+		</Shape>
+
+		<Shape id="BLOCK_RECT_8X1" shape="POLYGON">
+			<Vertex index="0" x="3.8639998" y="-0.46" />
+			<Vertex index="1" x="3.8639998" y="0.46" />
+			<Vertex index="2" x="-3.8639998" y="0.46" />
+			<Vertex index="3" x="-3.8639998" y="-0.46" />
+		</Shape>
+
+		<Shape id="BLOCK_RECT_10X1" shape="POLYGON">
+			<Vertex index="0" x="4.715" y="-0.46" />
+			<Vertex index="1" x="4.715" y="0.46" />
+			<Vertex index="2" x="-4.715" y="0.46" />
+			<Vertex index="3" x="-4.715" y="-0.46" />
+		</Shape>
+
+		<Shape id="BLOCK_RECT_1X1_STATIC" shape="POLYGON">
+			<Vertex index="0" x="0.46" y="-0.46" />
+			<Vertex index="1" x="0.46" y="0.46" />
+			<Vertex index="2" x="-0.46" y="0.46" />
+			<Vertex index="3" x="-0.46" y="-0.46" />
+		</Shape>
+
+		<Shape id="BLOCK_RECT_5X2_STATIC" shape="POLYGON">
+			<Vertex index="0" x="2.425" y="-0.8" />
+			<Vertex index="1" x="2.425" y="0.8" />
+			<Vertex index="2" x="-2.425" y="0.8" />
+			<Vertex index="3" x="-2.425" y="-0.8" />
+		</Shape>
+		
+		<Shape id="BLOCK_RECT_2X2_STATIC" shape="POLYGON">
+			<Vertex index="0" x="0.8" y="-0.8" />
+			<Vertex index="1" x="0.8" y="0.8" />
+			<Vertex index="2" x="-0.8" y="0.8" />
+			<Vertex index="3" x="-0.8" y="-0.8" />
+		</Shape>
+		
+		<Shape id="BLOCK_RECT_5X5_STATIC" shape="POLYGON">
+			<Vertex index="0" x="2.425" y="-2.425" />
+			<Vertex index="1" x="2.425" y="2.425" />
+			<Vertex index="2" x="-2.425" y="2.425" />
+			<Vertex index="3" x="-2.425" y="-2.425" />
+		</Shape>
+
+		<Shape id="BLOCK_RECT_10X2_STATIC" shape="POLYGON">
+			<Vertex index="0" x="4.85" y="-0.825" />
+			<Vertex index="1" x="4.85" y="0.825" />
+			<Vertex index="2" x="-4.85" y="0.825" />
+			<Vertex index="3" x="-4.85" y="-0.825" />
+		</Shape>
+
+		<Shape id="BLOCK_RECT_10X10_STATIC" shape="POLYGON">
+			<Vertex index="0" x="4.85" y="-4.9" />
+			<Vertex index="1" x="4.85" y="4.9" />
+			<Vertex index="2" x="-4.85" y="4.9" />
+			<Vertex index="3" x="-4.85" y="-4.9" />
+		</Shape>
+
+		<Shape id="BLOCK_RECT_32X2_STATIC" shape="POLYGON">
+			<Vertex index="0" x="16.05" y="-0.825" />
+			<Vertex index="1" x="16.05" y="0.825" />
+			<Vertex index="2" x="-16.05" y="0.825" />
+			<Vertex index="3" x="-16.05" y="-0.825" />
+		</Shape>
+
+		<Shape id="BLOCK_RECT_CHROME_PLATFORM_STATIC" shape="POLYGON">
+			<Vertex index="0" x="5.5" y="-1.125" />
+			<Vertex index="1" x="5.5" y="1.125" />
+			<Vertex index="2" x="-5.5" y="1.125" />
+			<Vertex index="3" x="-5.5" y="-1.125" />
+		</Shape>
+
+		<Shape id="BLOCK_CIRCLE_2X2" shape="CIRCLE">
+			<Radius value="1.0"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+
+		<Shape id="BLOCK_CIRCLE_4X4" shape="CIRCLE">
+			<Radius value="1.8"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+
+		<Shape id="BLOCK_CIRCLE_PUMPKIN" shape="CIRCLE">
+			<Radius value="2.2"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+		
+		<Shape id="BLOCK_CIRCLE_GLASS_BALL" shape="CIRCLE">
+			<Radius value="1.65"/>
+			<Vertex index="0" x="0.0" y="0.4" />
+		</Shape>
+
+		<Shape id="BLOCK_TRIANGLE_2X2_RIGHT" shape="POLYGON">
+			<Vertex index="0" x="0.9375" y="0.9375" />
+			<Vertex index="1" x="-0.9375" y="0.9375" />
+			<Vertex index="2" x="0.9375" y="-0.9375" />
+		</Shape>
+
+		<Shape id="BLOCK_TRIANGLE_4X4_RIGHT" shape="POLYGON" flipAngleCorrection="-45">
+			<Vertex index="0" x="1.875" y="1.875" />
+			<Vertex index="1" x="-1.875" y="1.875" />
+			<Vertex index="2" x="1.875" y="-1.875" />
+		</Shape>
+
+		<Shape id="BLOCK_TRIANGLE_4X4_LEFT" shape="POLYGON" flipAngleCorrection="45">
+			<Vertex index="0" x="1.875" y="1.875" />
+			<Vertex index="1" x="-1.875" y="1.875" />
+			<Vertex index="2" x="-1.875" y="-1.875" />
+		</Shape>
+
+		<Shape id="BLOCK_TRIANGLE_4X4_EQUILATERAL" shape="POLYGON">
+			<Vertex index="0" x="1.875" y="1.875" />
+			<Vertex index="1" x="-1.875" y="1.875" />
+			<Vertex index="2" x="0.0" y="-1.875" />
+		</Shape>
+
+		<Shape id="GROUND_SHAPE" shape="POLYGON">
+			<Vertex index="0" x="375.0" y="0.0" />
+			<Vertex index="1" x="375.0" y="50.0" />
+			<Vertex index="2" x="-125.0" y="50.0" />
+			<Vertex index="3" x="-125.0" y="0.0" />
+		</Shape>
+
+		<Shape id="SLINGSHOT_SHAPE" shape="POLYGON">
+			<Vertex index="0" x="0.5" y="3.5" />
+			<Vertex index="1" x="0.5" y="8.5" />
+			<Vertex index="2" x="-0.5" y="8.5" />
+			<Vertex index="3" x="-0.5" y="3.5" />
+		</Shape>
+		
+		<Shape id="SARDINE_SHAPE" shape="POLYGON">
+			<Vertex index="0" x="1.75" y="-1.125" />
+			<Vertex index="1" x="1.75" y="1.125" />
+			<Vertex index="2" x="-1.75" y="1.125" />
+			<Vertex index="3" x="-1.75" y="-1.125" />
+		</Shape>
+		
+		<Shape id="MIGHTY_EAGLE_SHAPE" shape="CIRCLE">
+			<Radius value="5.5"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+
+		<Shape id="PIG_CIRCLE_SMALL" shape="CIRCLE">
+			<Radius value="1.075"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+
+		<Shape id="PIG_CIRCLE_MEDIUM" shape="CIRCLE">
+			<Radius value="1.85"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+
+		<Shape id="PIG_CIRCLE_BIG" shape="CIRCLE">
+			<Radius value="2.325"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+
+		<Shape id="PIG_CIRCLE_HELMET" shape="CIRCLE">
+			<Radius value="1.95"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+
+		<Shape id="PIG_CIRCLE_KING" shape="CIRCLE">
+			<Radius value="2.825"/>
+			<Vertex index="0" x="0.0" y="0.8" />
+		</Shape>
+
+		<Shape id="PIG_CIRCLE_MUSTACHE" shape="CIRCLE">
+			<Radius value="2.2"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+
+		<Shape id="BIRD_CIRCLE_ORANGE" shape="CIRCLE">
+			<Radius value="0.85"/>
+			<Vertex index="0" x="0.25" y="0.35" />
+		</Shape>
+
+		<Shape id="BIRD_CIRCLE_RED" shape="CIRCLE">
+			<Radius value="0.85"/>
+			<Vertex index="0" x="0.25" y="0.35" />
+		</Shape>
+		
+		<Shape id="POWERUP_SUPERBALL" shape="CIRCLE">
+			<Radius value="0.85"/>
+			<Vertex index="0" x="0.85" y="0.5" />
+		</Shape>
+
+		<Shape id="BIRD_CIRCLE_YELLOW" shape="CIRCLE">
+			<Radius value="0.8"/>
+			<Vertex index="0" x="0.35" y="0.4" />
+		</Shape>
+
+		<Shape id="BIRD_CIRCLE_BLUE" shape="CIRCLE">
+			<Radius value="0.6"/>
+			<Vertex index="0" x="0.1" y="0.15" />
+		</Shape>
+
+		<Shape id="BIRD_CIRCLE_WHITE" shape="CIRCLE">
+			<Radius value="1.3"/>
+			<Vertex index="0" x="0.45" y="0.8" />
+		</Shape>
+
+		<Shape id="BIRD_CIRCLE_BLACK" shape="CIRCLE">
+			<Radius value="1.0"/>
+			<Vertex index="0" x="0.15" y="0.75" />
+		</Shape>
+
+		<Shape id="BIRD_CIRCLE_GREEN" shape="CIRCLE">
+			<Radius value="1.5"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+
+		<Shape id="BIRD_CIRCLE_REDBIG" shape="CIRCLE">
+			<Radius value="1.8"/>
+			<Vertex index="0" x="0.45" y="0.85" />
+		</Shape>
+
+		<Shape id="FOOD_APPLE" shape="CIRCLE">
+			<Radius value="1.196"/>
+			<Vertex index="0" x="0.0" y="-0.1" />
+		</Shape>
+
+		<Shape id="FOOD_DONUT" shape="CIRCLE">
+			<Radius value="1.426"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+		
+		<Shape id="FOOD_EGG" shape="CIRCLE"> 
+			<Radius value="1.0350001"/>
+			<Vertex index="0" x="0.0" y="0.2" />
+		</Shape>
+
+		<Shape id="FOOD_WATERMELLON" shape="CIRCLE">
+			<Radius value="1.633"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+
+		<Shape id="FOOD_BANANA" shape="POLYGON">
+			<Vertex index="0" x="1.84" y="-1.012" />
+			<Vertex index="1" x="1.84" y="1.012" />
+			<Vertex index="2" x="-1.84" y="1.012" />
+			<Vertex index="3" x="-1.84" y="-1.012" />
+		</Shape>
+
+		<Shape id="FOOD_HAM" shape="CIRCLE">
+			<Radius value="1.61"/>
+			<Vertex index="0" x="0.0" y="-0.1" />
+		</Shape>
+
+		<Shape id="FOOD_STRAWBERRY" shape="CIRCLE">
+			<Radius value="1.242"/>
+			<Vertex index="0" x="0.0" y="-0.1" />
+		</Shape>
+
+		<Shape id="BALLOON_NORMAL" shape="POLYGON">
+			<Vertex index="0" x="1.2190001" y="-1.6559999" />
+			<Vertex index="1" x="1.2190001" y="1.6559999" />
+			<Vertex index="2" x="-1.2190001" y="1.6559999" />
+			<Vertex index="3" x="-1.2190001" y="-1.6559999" />
+		</Shape>
+
+		<Shape id="BALLOON_PIG" shape="POLYGON">
+			<Vertex index="0" x="1.84" y="-2.76" />
+			<Vertex index="1" x="1.84" y="2.76" />
+			<Vertex index="2" x="-1.84" y="2.76" />
+			<Vertex index="3" x="-1.84" y="-2.76" />
+		</Shape>
+
+		<Shape id="RUBBER_BEACHBALL" shape="CIRCLE">
+			<Radius value="1.85"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+
+		<Shape id="RUBBER_DICE" shape="POLYGON">
+			<Vertex index="0" x="1.425" y="-1.425" />
+			<Vertex index="1" x="1.425" y="1.425" />
+			<Vertex index="2" x="-1.425" y="1.425" />
+			<Vertex index="3" x="-1.425" y="-1.425" />
+		</Shape>
+
+		<Shape id="RUBBER_SMILEY" shape="CIRCLE">
+			<Radius value="1.8"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+
+		<Shape id="RUBBER_DUCK" shape="CIRCLE">
+			<Radius value="1.65"/>
+			<Vertex index="0" x="0.0" y="0.25" />
+		</Shape>
+
+		<Shape id="RUBBER_TRAMPOLINE" shape="POLYGON">
+			<Vertex index="0" x="3.45" y="-0.69" />
+			<Vertex index="1" x="3.45" y="0.69" />
+			<Vertex index="2" x="-3.45" y="0.69" />
+			<Vertex index="3" x="-3.45" y="-0.69" />
+		</Shape>
+
+		<Shape id="METAL_FLAG" shape="POLYGON">
+			<Vertex index="0" x="1.1" y="-3.0" />
+			<Vertex index="1" x="1.1" y="2.9" />
+			<Vertex index="2" x="-0.5" y="2.9" />
+			<Vertex index="3" x="-0.5" y="-3.0" />
+		</Shape>
+
+		<Shape id="METAL_CHEST" shape="POLYGON">
+			<Vertex index="0" x="2.25" y="-1.47" />
+			<Vertex index="1" x="2.25" y="1.47" />
+			<Vertex index="2" x="-2.25" y="1.47" />
+			<Vertex index="3" x="-2.25" y="-1.47" />
+		</Shape>
+
+		<Shape id="METAL_TOILET" shape="POLYGON">
+			<Vertex index="0" x="1.5" y="-2.25" />
+			<Vertex index="1" x="1.5" y="2.25" />
+			<Vertex index="2" x="-1.5" y="2.25" />
+			<Vertex index="3" x="-1.5" y="-2.25" />
+		</Shape>
+		
+		<Shape id="METAL_PILLAR" shape="POLYGON">
+			<Vertex index="0" x="2.047" y="-4.531" />
+			<Vertex index="1" x="2.047" y="4.531" />
+			<Vertex index="2" x="-2.047" y="4.531" />
+			<Vertex index="3" x="-2.047" y="-4.531" />
+		</Shape>
+		
+		<Shape id="METAL_HOLYGRAIL" shape="POLYGON">
+			<Vertex index="0" x="1.0" y="-2.0" />
+			<Vertex index="1" x="1.0" y="2.0" />
+			<Vertex index="2" x="-1.0" y="2.0" />
+			<Vertex index="3" x="-1.0" y="-2.0" />
+		</Shape>
+
+		<Shape id="METAL_DIAMOND" shape="POLYGON">
+			<Vertex index="0" x="1.2" y="-0.8" />
+			<Vertex index="1" x="0.0" y="1.0" />
+			<Vertex index="2" x="-1.2" y="-0.8" />
+		</Shape>
+
+		<Shape id="METAL_TIRE_2X2" shape="CIRCLE">
+			<Radius value="1.196"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+
+		<Shape id="METAL_TIRE_3X3" shape="CIRCLE">
+			<Radius value="1.472"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+
+		<Shape id="METAL_TIRE_4X4" shape="CIRCLE">
+			<Radius value="1.7479999"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+
+		<Shape id="METAL_BALL" shape="CIRCLE">
+			<Radius value="0.82799995"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+
+		<Shape id="METAL_TNT" shape="POLYGON">
+			<Vertex index="0" x="1.61" y="-1.587" />
+			<Vertex index="1" x="1.61" y="1.587" />
+			<Vertex index="2" x="-1.61" y="1.587" />
+			<Vertex index="3" x="-1.61" y="-1.587" />
+		</Shape>
+
+		<Shape id="METAL_CHROME_BOMB" shape="CIRCLE">
+			<Radius value="1.5"/>
+			<Vertex index="0" x="1.1" y="0.4" />
+		</Shape>
+		
+		<Shape id="POWERUP_BOMB" shape="CIRCLE">
+			<Radius value="0.8"/>
+			<Vertex index="0" x="0.0" y="0.4" />
+		</Shape>
+
+		<Shape id="METAL_CHAIN" shape="POLYGON">
+			<Vertex index="0" x="0.46" y="-1.84" />
+			<Vertex index="1" x="0.46" y="1.84" />
+			<Vertex index="2" x="-0.46" y="1.84" />
+			<Vertex index="3" x="-0.46" y="-1.84" />
+		</Shape>
+ 
+		<Shape id="MISC_ESTRADE_7X2" shape="POLYGON">
+			<Vertex index="0" x="3.675" y="-1.05" />
+			<Vertex index="1" x="3.675" y="1.05" />
+			<Vertex index="2" x="-3.675" y="1.05" />
+			<Vertex index="3" x="-3.675" y="-1.05" />
+		</Shape>
+
+		<Shape id="MISC_ESTRADE_9X3" shape="POLYGON">
+			<Vertex index="0" x="4.425" y="-1.35" />
+			<Vertex index="1" x="4.425" y="1.35" />
+			<Vertex index="2" x="-4.425" y="1.35" />
+			<Vertex index="3" x="-4.425" y="-1.35" />
+		</Shape>
+
+		<Shape id="MISC_ESTRADE_11X3" shape="POLYGON">
+			<Vertex index="0" x="5.575" y="-1.575" />
+			<Vertex index="1" x="5.575" y="1.575" />
+			<Vertex index="2" x="-5.575" y="1.575" />
+			<Vertex index="3" x="-5.575" y="-1.575" />
+		</Shape>
+
+		<Shape id="MISC_ESTRADE_1X2" shape="POLYGON">
+			<Vertex index="0" x="0.425" y="-0.675" />
+			<Vertex index="1" x="0.425" y="0.675" />
+			<Vertex index="2" x="-0.425" y="0.675" />
+			<Vertex index="3" x="-0.425" y="-0.675" />
+		</Shape>
+
+		<Shape id="MISC_ESTRADE_2X2" shape="POLYGON">
+			<Vertex index="0" x="1.125" y="-1.0" />
+			<Vertex index="1" x="1.125" y="1.0" />
+			<Vertex index="2" x="-1.125" y="1.0" />
+			<Vertex index="3" x="-1.125" y="-1.0" />
+		</Shape>
+
+		<Shape id="HELMET_SMALL" shape="NONE">
+			<Vertex index="0" x="-1.2" y="-0.37" />
+			<Vertex index="1" x="-0.4" y="-0.56" />
+			<Vertex index="2" x="0.4" y="-0.56" />
+			<Vertex index="3" x="1.2" y="-0.37" />
+			<Vertex index="4" x="1.2" y="0.0" />
+			<Vertex index="5" x="-1.2" y="0.0" />
+		</Shape>
+
+		<Shape id="HELMET_BIG" shape="NONE">
+			<Vertex index="0" x="-2.03" y="-0.62" />
+			<Vertex index="1" x="-0.68" y="-0.93" />
+			<Vertex index="2" x="0.68" y="-0.93" />
+			<Vertex index="3" x="2.03" y="-0.62" />
+			<Vertex index="4" x="2.03" y="0.0" />
+			<Vertex index="5" x="-2.03" y="0.0" />
+		</Shape>
+
+		<Shape id="BANDITO_HAT" shape="NONE">
+			<Vertex index="0" x="-0.68" y="-0.62" />
+			<Vertex index="1" x="-0.34" y="-0.93" />
+			<Vertex index="2" x="0.34" y="-0.93" />
+			<Vertex index="3" x="0.68" y="-0.62" />
+			<Vertex index="4" x="0.68" y="0.62" />
+			<Vertex index="5" x="-0.68" y="0.62" />
+		</Shape>
+
+		<Shape id="HELMET_SMALL" shape="NONE">
+			<Vertex index="0" x="-0.99" y="-0.33" />
+			<Vertex index="1" x="-0.5" y="-0.5" />
+			<Vertex index="2" x="0.5" y="-0.5" />
+			<Vertex index="3" x="0.74" y="-0.33" />
+			<Vertex index="4" x="0.74" y="0.0" />
+			<Vertex index="5" x="-0.99" y="0.0" />
+		</Shape>
+
+		<Shape id="HELMET_SMALL" shape="NONE">
+			<Vertex index="0" x="-1.61" y="-0.53" />
+			<Vertex index="1" x="-0.81" y="-0.8" />
+			<Vertex index="2" x="0.81" y="-0.8" />
+			<Vertex index="3" x="1.21" y="-0.53" />
+			<Vertex index="4" x="1.21" y="0.0" />
+			<Vertex index="5" x="-1.61" y="0.0" />
+		</Shape>
+
+		<Shape id="HELMET_SMALL" shape="NONE">
+			<Vertex index="0" x="-0.86" y="-0.63" />
+			<Vertex index="1" x="-0.58" y="-0.95" />
+			<Vertex index="2" x="0.58" y="-0.95" />
+			<Vertex index="3" x="1.15" y="-0.63" />
+			<Vertex index="4" x="1.15" y="0.32" />
+			<Vertex index="5" x="-0.86" y="0.32" />
+		</Shape>
+
+		<Shape id="FLYING_CARPET" shape="POLYGON">
+			<Vertex index="0" x="6.417" y="-1.7709999" />
+			<Vertex index="1" x="6.417" y="1.7709999" />
+			<Vertex index="2" x="-6.417" y="1.7709999" />
+			<Vertex index="3" x="-6.417" y="-1.7709999" />
+		</Shape>
+
+		<Shape id="THIN_ROPE" shape="POLYGON">
+			<Vertex index="0" x="0.092" y="-3.013" />
+			<Vertex index="1" x="0.092" y="3.013" />
+			<Vertex index="2" x="-0.092" y="3.013" />
+			<Vertex index="3" x="-0.092" y="-3.013" />
+		</Shape>
+
+		<Shape id="THIN_ROPE_SHORT" shape="POLYGON">
+			<Vertex index="0" x="0.092" y="-1.495" />
+			<Vertex index="1" x="0.092" y="1.495" />
+			<Vertex index="2" x="-0.092" y="1.495" />
+			<Vertex index="3" x="-0.092" y="-1.495" />
+		</Shape>
+
+		<Shape id="THICK_ROPE" shape="POLYGON">
+			<Vertex index="0" x="0.253" y="-3.036" />
+			<Vertex index="1" x="0.253" y="3.036" />
+			<Vertex index="2" x="-0.253" y="3.036" />
+			<Vertex index="3" x="-0.253" y="-3.036" />
+		</Shape>
+		
+		<Shape id="SHAPE_GOLD_PILE" shape="POLYGON">
+			<Vertex index="0" x="1.909" y="-0.46" />
+			<Vertex index="1" x="1.909" y="0.46" />
+			<Vertex index="2" x="-1.909" y="0.46" />
+			<Vertex index="3" x="-1.909" y="-0.46" />
+		</Shape>
+		
+		<!-- New shapes! -->
+		
+		<Shape id="BLOCK_RECT_4X1_STATIC" shape="POLYGON">
+			<Vertex index="0" x="1.8" y="-0.45" />
+			<Vertex index="1" x="1.8" y="0.45" />
+			<Vertex index="2" x="-1.8" y="0.45" />
+			<Vertex index="3" x="-1.8" y="-0.45" />
+		</Shape>
+		
+		<Shape id="BLOCK_RECT_2X1_STATIC" shape="POLYGON">
+			<Vertex index="0" x="0.9" y="-0.45" />
+			<Vertex index="1" x="0.9" y="0.45" />
+			<Vertex index="2" x="-0.9" y="0.45" />
+			<Vertex index="3" x="-0.9" y="-0.45" />
+		</Shape>
+		
+		<Shape id="BLOCK_CIRCLE_5X5" shape="CIRCLE">
+			<Radius value="2.3"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+
+		<Shape id="BLOCK_CIRCLE_10X10" shape="CIRCLE">
+			<Radius value="4.8"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+		
+		<Shape id="BLOCK_CIRCLE_20X20" shape="CIRCLE">
+			<Radius value="9.5"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+
+        <Shape id="BLOCK_TRIANGLE_5X5_LEFT" shape="POLYGON">
+            <Vertex index="0" x="2.4" y="2.4" />
+            <Vertex index="1" x="-2.4" y="2.4" />
+            <Vertex index="2" x="-2.4" y="-2.4" />
+        </Shape>
+
+		<Shape id="BLOCK_TRIANGLE_10X10_LEFT" shape="POLYGON">
+			<Vertex index="0" x="4.8" y="4.8" />
+			<Vertex index="1" x="-4.8" y="4.8" />
+			<Vertex index="2" x="-4.8" y="-4.8" />
+		</Shape>
+		
+		<Shape id="BLOCK_TRIANGLE_20X20_LEFT" shape="POLYGON">
+			<Vertex index="0" x="9.5" y="9.5" />
+			<Vertex index="1" x="-9.5" y="9.5" />
+			<Vertex index="2" x="-9.5" y="-9.5" />
+		</Shape>
+
+        <Shape id="BLOCK_TRIANGLE_5X5_EQUILATERAL" shape="POLYGON">
+            <Vertex index="0" x="2.4" y="2.4" />
+            <Vertex index="1" x="-2.4" y="2.4" />
+            <Vertex index="2" x="0.0" y="-2.4" />
+        </Shape>
+		
+		<Shape id="BLOCK_TRIANGLE_10X10_EQUILATERAL" shape="POLYGON">
+			<Vertex index="0" x="4.8" y="4.8" />
+			<Vertex index="1" x="-4.8" y="4.8" />
+			<Vertex index="2" x="0" y="-4.8" />
+		</Shape>
+		
+		<Shape id="BLOCK_TRIANGLE_20X20_EQUILATERAL" shape="POLYGON">
+			<Vertex index="0" x="9.5" y="9.5" />
+			<Vertex index="1" x="-9.5" y="9.5" />
+			<Vertex index="2" x="0" y="-9.5" />
+		</Shape>
+
+		<Shape id="SHAPE_TEMPORARY_BLOCK_4x4" shape="POLYGON">
+			<Vertex index="0" x="1.8859999" y="-1.8859999" />
+			<Vertex index="1" x="1.8859999" y="1.8859999" />
+			<Vertex index="2" x="-1.8859999" y="1.8859999" />
+			<Vertex index="3" x="-1.8859999" y="-1.8859999" />
+		</Shape>
+	</Item_Shapes>
+	
+   <Item_Resources_Sounds>
+		<Resource_Sound id="SILENT" channel="ChannelMisc" />
+		<Resource_Sound id="WOOD" channel="ChannelWood">
+			<collisionSound>
+				<item>wood_collision_a1</item>
+				<item>wood_collision_a2</item>
+				<item>wood_collision_a3</item>
+				<item>wood_collision_a4</item>
+				<item>wood_collision_a5</item>
+				<item>wood_collision_a6</item>
+			</collisionSound>
+			<damagedSound>
+				<item>wood_damage_a1</item>
+				<item>wood_damage_a2</item>
+				<item>wood_damage_a3</item>
+			</damagedSound>
+			<destroyedSound>
+				<item>wood_destroyed_a1</item>
+				<item>wood_destroyed_a2</item>
+				<item>wood_destroyed_a3</item>
+			</destroyedSound>
+			<rollingSound>
+				<item>wood_rolling</item>
+			</rollingSound>
+		</Resource_Sound>
+		<Resource_Sound id="STONE" channel="ChannelStone">
+			<collisionSound>
+				<item>rock_collision_a1</item>
+				<item>rock_collision_a2</item>
+				<item>rock_collision_a3</item>
+				<item>rock_collision_a4</item>
+				<item>rock_collision_a5</item>
+			</collisionSound>
+			<damagedSound>
+				<item>rock_damage_a1</item>
+				<item>rock_damage_a2</item>
+				<item>rock_damage_a3</item>
+			</damagedSound>
+			<destroyedSound>
+				<item>rock_destroyed_a1</item>
+				<item>rock_destroyed_a2</item>
+				<item>rock_destroyed_a3</item>
+			</destroyedSound>
+			<rollingSound>
+				<item>rock_rolling</item>
+			</rollingSound>
+		</Resource_Sound>
+		<Resource_Sound id="ICE" channel="ChannelIce">
+			<collisionSound>
+				<item>ice_light_collision_a1</item>
+				<item>ice_light_collision_a2</item>
+				<item>ice_light_collision_a3</item>
+				<item>ice_light_collision_a4</item>
+				<item>ice_light_collision_a5</item>
+				<item>ice_light_collision_a6</item>
+				<item>ice_light_collision_a7</item>
+				<item>ice_light_collision_a8</item>
+			</collisionSound>
+			<damagedSound>
+				<item>light_damage_a1</item>
+				<item>light_damage_a2</item>
+				<item>light_damage_a3</item>
+			</damagedSound>
+			<destroyedSound>
+				<item>light_destroyed_a1</item>
+				<item>light_destroyed_a2</item>
+				<item>light_destroyed_a3</item>
+			</destroyedSound>
+			<rollingSound>
+				<item>light_rolling</item>
+			</rollingSound>
+		</Resource_Sound>
+		<Resource_Sound id="RUBBER" channel="ChannelMisc">
+			<collisionSound>
+				<item>ball_bounce</item>
+			</collisionSound>
+			<damagedSound>
+				<item>ball_bounce</item>
+			</damagedSound>
+			<destroyedSound>
+				<item>balloon_pop</item>
+			</destroyedSound>
+		</Resource_Sound>
+		<Resource_Sound id="TRAMPOLINE" channel="ChannelMisc">
+			<collisionSound>
+				<item>trampoline</item>
+			</collisionSound>
+			<damagedSound>
+				<item>trampoline</item>
+			</damagedSound>
+			<destroyedSound>
+				<item>trampoline</item>
+			</destroyedSound>
+		</Resource_Sound>
+		<Resource_Sound id="PIG_SET" channel="ChannelPig">
+			<collisionSound>
+				<item>piglette_collision_a1</item>
+				<item>piglette_collision_a2</item>
+				<item>piglette_collision_a3</item>
+				<item>piglette_collision_a4</item>
+				<item>piglette_collision_a5</item>
+				<item>piglette_collision_a6</item>
+				<item>piglette_collision_a7</item>
+				<item>piglette_collision_a8</item>
+			</collisionSound>
+			<damagedSound>
+				<item>piglette_damage_a1</item>
+				<item>piglette_damage_a2</item>
+				<item>piglette_damage_a3</item>
+				<item>piglette_damage_a4</item>
+				<item>piglette_damage_a5</item>
+				<item>piglette_damage_a6</item>
+				<item>piglette_damage_a7</item>
+				<item>piglette_damage_a8</item>
+			</damagedSound>
+			<destroyedSound>
+				<item>piglette_destroyed</item>
+			</destroyedSound>
+			<screamSound>
+				<item>piglette_oink_a1</item>
+				<item>piglette_oink_a2</item>
+				<item>piglette_oink_a3</item>
+				<item>piglette_oink_a4</item>
+				<item>piglette_oink_a5</item>
+				<item>piglette_oink_a6</item>
+				<item>piglette_oink_a7</item>
+				<item>piglette_oink_a8</item>
+				<item>piglette_oink_a9</item>
+				<item>piglette_oink_a10</item>
+				<item>piglette_oink_a11</item>
+				<item>piglette_oink_a12</item>
+			</screamSound>
+			<specialSound>
+				<item>pig_snare_1</item>
+				<item>pig_snare_2</item>
+				<item>pig_snare_3</item>
+				<item>pig_snare_4</item>
+				<item>piglette_oink_story</item>
+			</specialSound>
+		</Resource_Sound>
+		<Resource_Sound id="BIRD_RED" channel="ChannelBird">
+			<collisionSound>
+				<item>bird_01_collision_a1</item>
+				<item>bird_01_collision_a2</item>
+				<item>bird_01_collision_a3</item>
+				<item>bird_01_collision_a4</item>
+			</collisionSound>
+			<launchSound>
+				<item>bird_01_flying</item>
+			</launchSound>
+			<specialSound>
+				<item>redbird_yell01</item>
+				<item>redbird_yell02</item>
+				<item>redbird_yell03</item>
+			</specialSound>
+			<selectionSound>
+				<item>bird_01_select</item>
+			</selectionSound>
+			<destroyedSound>
+				<item>bird_destroyed</item>
+			</destroyedSound>
+		</Resource_Sound>
+		<Resource_Sound id="BIRD_BLUE" channel="ChannelBird">
+			<collisionSound>
+				<item>bird_02_collision_a1</item>
+				<item>bird_02_collision_a2</item>
+				<item>bird_02_collision_a3</item>
+				<item>bird_02_collision_a4</item>
+				<item>bird_02_collision_a5</item>
+			</collisionSound>
+			<launchSound>
+				<item>bird_02_flying</item>
+			</launchSound>
+			<specialSound>
+				<item>special_group</item>
+			</specialSound>
+			<selectionSound>
+				<item>bird_02_select</item>
+			</selectionSound>
+			<destroyedSound>
+				<item>bird_destroyed</item>
+			</destroyedSound>
+		</Resource_Sound>
+		<Resource_Sound id="BIRD_YELLOW" channel="ChannelBird">
+			<collisionSound>
+				<item>bird_03_collision_a1</item>
+				<item>bird_03_collision_a2</item>
+				<item>bird_03_collision_a3</item>
+				<item>bird_03_collision_a4</item>
+				<item>bird_03_collision_a5</item>
+			</collisionSound>
+			<launchSound>
+				<item>bird_03_flying</item>
+			</launchSound>
+			<specialSound>
+				<item>special_boost</item>
+			</specialSound>
+			<selectionSound>
+				<item>bird_03_select</item>
+			</selectionSound>
+			<destroyedSound>
+				<item>bird_destroyed</item>
+			</destroyedSound>
+		</Resource_Sound>
+		<Resource_Sound id="BIRD_BLACK" channel="ChannelBird">
+			<collisionSound>
+				<item>bird_04_collision_a1</item>
+				<item>bird_04_collision_a2</item>
+				<item>bird_04_collision_a3</item>
+				<item>bird_04_collision_a4</item>
+			</collisionSound>
+			<launchSound>
+				<item>bird_04_flying</item>
+			</launchSound>
+			<specialSound>
+				<item>special_egg_explosion</item>
+			</specialSound>
+			<selectionSound>
+				<item>bird_04_select</item>
+			</selectionSound>
+			<destroyedSound>
+				<item>bird_destroyed</item>
+			</destroyedSound>
+		</Resource_Sound>
+		<Resource_Sound id="BIRD_WHITE" channel="ChannelBird">
+			<collisionSound>
+				<item>bird_05_collision_a1</item>
+				<item>bird_05_collision_a2</item>
+				<item>bird_05_collision_a3</item>
+				<item>bird_05_collision_a4</item>
+				<item>bird_05_collision_a5</item>
+			</collisionSound>
+			<launchSound>
+				<item>bird_05_flying</item>
+			</launchSound>
+			<specialSound>
+				<item>special_egg</item>
+			</specialSound>
+			<selectionSound>
+				<item>bird_05_select</item>
+			</selectionSound>
+			<destroyedSound>
+				<item>bird_destroyed</item>
+			</destroyedSound>
+		</Resource_Sound>
+		<Resource_Sound id="BIRD_GREEN" channel="ChannelBird">
+			<collisionSound>
+				<item>bird_03_collision_a1</item>
+				<item>bird_03_collision_a2</item>
+				<item>bird_03_collision_a3</item>
+				<item>bird_03_collision_a4</item>
+				<item>bird_03_collision_a5</item>
+			</collisionSound>
+			<launchSound>
+				<item>bird_06_flying</item>
+			</launchSound>
+			<specialSound>
+				<item>boomerang_activate</item>
+			</specialSound>
+			<selectionSound>
+				<item>boomerang_select</item>
+			</selectionSound>
+			<destroyedSound>
+				<item>bird_destroyed</item>
+			</destroyedSound>
+		</Resource_Sound>
+		<Resource_Sound id="BIRD_REDBIG" channel="ChannelBird">
+			<collisionSound>
+				<item>bird_01_collision_a1_low</item>
+				<item>bird_01_collision_a2_low</item>
+				<item>bird_01_collision_a3_low</item>
+				<item>bird_01_collision_a4_low</item>
+			</collisionSound>
+			<launchSound>
+				<item>bigbrother_fly</item>
+			</launchSound>
+			<specialSound>
+				<item>bigbrother_yell</item>
+			</specialSound>
+			<selectionSound>
+				<item>bigbrother_select</item>
+			</selectionSound>
+			<destroyedSound>
+				<item>bird_destroyed</item>
+			</destroyedSound>
+		</Resource_Sound>
+		<Resource_Sound id="BIRD_ORANGE" channel="ChannelBird">
+			<collisionSound>
+				<item>Globe_Bird_Hit_1</item>
+				<item>Globe_Bird_Hit_2</item>
+				<item>Globe_Bird_Hit_3</item>
+				<item>Globe_Bird_Hit_4</item>
+			</collisionSound>
+			<launchSound>
+				<item>Globe_Bird_Launch_3</item>
+			</launchSound>
+			<specialSound>
+				<item>Globe_Bird_Special_Activation_1</item>
+				<item>Globe_Bird_Special_Activation_2</item>
+				<item>Globe_Bird_Special_Activation_3</item>
+			</specialSound>
+			<selectionSound>
+				<item>Globe_Bird_Selection_1</item>
+			</selectionSound>
+			<destroyedSound>
+				<item>bird_destroyed</item>
+			</destroyedSound>
+			<idleSound>
+				<item>Globe_Bird_idle_01</item>
+				<item>Globe_Bird_idle_02</item>
+				<item>Globe_Bird_idle_03</item>
+			</idleSound>
+		</Resource_Sound>
+		<Resource_Sound id="BIRD_SARDINE" channel="ChannelBird">
+			<collisionSound>
+				<item>sardine_can_physics_a2</item>
+			</collisionSound>
+			<launchSound>
+				<item>sardine_can_shot</item>
+			</launchSound>
+		</Resource_Sound>
+		<Resource_Sound id="BIRD_MIGHTY_EAGLE" channel="ChannelBird">
+			<collisionSound>
+				<item>mighty_eagle_bounce</item>
+			</collisionSound>
+			<launchSound>
+				<item>mighty_eagle_fly</item>
+			</launchSound>
+		</Resource_Sound>
+	</Item_Resources_Sounds>
+   
+	<SoundChannels>
+			<!-- Total amount of "maxSound" count should not exceed 32!  4 is already reserved for default so 28 channels can be used for below list-->
+		<Channel name="ChannelWood"    maxSound="4" volume="0.2"/>
+		<Channel name="ChannelIce"     maxSound="4" volume="0.2"/>
+		<Channel name="ChannelStone"   maxSound="4" volume="0.2"/>
+		<Channel name="ChannelMisc"    maxSound="4" volume="0.5"/>
+		<Channel name="ChannelPig"     maxSound="8" volume="0.6"/>
+		<Channel name="ChannelBird"    maxSound="8" volume="0.6"/>
+		<Channel name="ChannelDestroyed"    maxSound="8" volume="0.5"/>
+		<Channel name="ChannelSlingshot"    maxSound="4" volume="0.2"/>
+		<Channel name="ChannelExplosions"   maxSound="8" volume="1.0"/>
+		<Channel name="ChannelPowerups"	    maxSound="10" volume="1.0" />
+		<Channel name="ChannelOrangeBird"    maxSound="2" volume="2.5"/>
+		<Channel name="ChannelExtras"    maxSound="32" volume="0.9"/>
+	</SoundChannels>
+	
+   	<Items>
+			
+			<Item id="GROUND_HILLS" material="Material_Ground_Hills" shape="RECT_FILLED_BORDER_GROUND" destroyedScoreInc="0" strength="-1.0" type="0" />
+			<Item id="GROUND_HILLS_SNOW" material="Material_Ground_Snow" shape="RECT_FILLED_BORDER_GROUND" destroyedScoreInc="0" strength="-1.0" type="0" />
+			<Item id="TERRAIN_TEXTURED_HILLS_1X1" material="Material_Texture_Hills" shape="Block_Rect_1x1_Static" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" />
+			<Item id="TERRAIN_TEXTURED_HILLS_5X2" material="Material_Texture_Hills" shape="Block_Rect_5x2_Static" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" />
+			<Item id="TERRAIN_TEXTURED_HILLS_5X5" material="Material_Texture_Hills" shape="Block_Rect_5x5_Static" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" />
+			<Item id="TERRAIN_TEXTURED_HILLS_10X2" material="Material_Texture_Hills" shape="Block_Rect_10x2_Static" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" />
+			<Item id="TERRAIN_TEXTURED_HILLS_10X10" material="Material_Texture_Hills" shape="Block_Rect_10x10_Static" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" />
+			<Item id="TERRAIN_TEXTURED_HILLS_32X2" material="Material_Texture_Hills" shape="Block_Rect_32x2_Static" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" />
+			<Item id="TERRAIN_TEXTURED_HILLS_2X2" material="Material_Texture_Hills" shape="Block_Rect_2x2_Static" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures"/>
+			
+			<!-- New static shapes! -->
+			<!-- Circle shapes -->
+			<Item id="TERRAIN_TEXTURED_HILLS_CIRCLE_5X5" material="Material_Texture_Hills" shape="Block_Circle_5x5" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" />
+			<Item id="TERRAIN_TEXTURED_HILLS_CIRCLE_10X10" material="Material_Texture_Hills" shape="Block_Circle_10x10" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" />
+			<Item id="TERRAIN_TEXTURED_HILLS_CIRCLE_20X20" material="Material_Texture_Hills" shape="Block_Circle_20x20" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" />
+			<!-- Triangle shapes -->
+			<Item id="TERRAIN_TEXTURED_HILLS_TRIANGLE_5X5" material="Material_Texture_Hills" shape="Block_Triangle_5x5_Left" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" />
+			<Item id="TERRAIN_TEXTURED_HILLS_TRIANGLE_10X10" material="Material_Texture_Hills" shape="Block_Triangle_10x10_Left" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" />
+			<Item id="TERRAIN_TEXTURED_HILLS_TRIANGLE_20X20" material="Material_Texture_Hills" shape="Block_Triangle_20x20_Left" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" />
+			<!-- Triangle equilateral shapes -->
+			<Item id="TERRAIN_TEXTURED_HILLS_TRIANGLE_EQUILATERAL_5X5" material="Material_Texture_Hills" shape="Block_Triangle_5x5_Equilateral" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" />
+			<Item id="TERRAIN_TEXTURED_HILLS_TRIANGLE_EQUILATERAL_10X10" material="Material_Texture_Hills" shape="Block_Triangle_10x10_Equilateral" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" />
+			<Item id="TERRAIN_TEXTURED_HILLS_TRIANGLE_EQUILATERAL_20X20" material="Material_Texture_Hills" shape="Block_Triangle_20x20_Equilateral" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" />
+			<!-- New rectangles shapes -->
+			<Item id="TERRAIN_TEXTURED_HILLS_4X1" material="Material_Texture_Hills" shape="Block_Rect_4x1_Static" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" />
+			<Item id="TERRAIN_TEXTURED_HILLS_2X1" material="Material_Texture_Hills" shape="Block_Rect_2x1_Static" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" />
+			<!-- End of new shapes -->
+
+            <Item id="TERRAIN_TEXTURED_HILLS_NON_COLLIDING_1X1" material="Material_Texture_Hills" shape="Block_Rect_1x1_Static" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" collision="false" textureType = "background"/>
+            <Item id="TERRAIN_TEXTURED_HILLS_NON_COLLIDING_5X2" material="Material_Texture_Hills" shape="Block_Rect_5x2_Static" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" collision="false" textureType = "background"/>
+            <Item id="TERRAIN_TEXTURED_HILLS_NON_COLLIDING_5X5" material="Material_Texture_Hills" shape="Block_Rect_5x5_Static" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" collision="false" textureType = "background"/>
+            <Item id="TERRAIN_TEXTURED_HILLS_NON_COLLIDING_10X2" material="Material_Texture_Hills" shape="Block_Rect_10x2_Static" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" collision="false" textureType = "background"/>
+            <Item id="TERRAIN_TEXTURED_HILLS_NON_COLLIDING_10X10" material="Material_Texture_Hills" shape="Block_Rect_10x10_Static" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" collision="false" textureType = "background"/>
+            <Item id="TERRAIN_TEXTURED_HILLS_NON_COLLIDING_32X2" material="Material_Texture_Hills" shape="Block_Rect_32x2_Static" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" collision="false" textureType = "background"/>
+            <Item id="TERRAIN_TEXTURED_HILLS_NON_COLLIDING_2X2" material="Material_Texture_Hills" shape="Block_Rect_2x2_Static" destroyedScoreInc="0" strength="-1.0" type="1" category="Textures" collision="false" textureType = "background"/>
+			
+			<Item id="CHROME_PLATFORM_TAB1" material="Material_Chrone_Platform" shape="Block_Rect_Chrome_Platform_Static" destroyedScoreInc="0" strength="-1.0" type="1" />
+			<Item id="CHROME_PLATFORM_TAB2" material="Material_Chrone_Platform" shape="Block_Rect_Chrome_Platform_Static" destroyedScoreInc="0" strength="-1.0" type="1" />
+			
+			<Item id="MISC_ESTRADE_7X2" material="Material_Estrade" shape="Misc_Estrade_7x2" destroyedScoreInc="0" strength="-1.0" type="2" />
+			<Item id="MISC_ESTRADE_9X3" material="Material_Estrade" shape="Misc_Estrade_9x3" destroyedScoreInc="0" strength="-1.0" type="2" />
+			<Item id="MISC_ESTRADE_11X3" material="Material_Estrade" shape="Misc_Estrade_11x3" destroyedScoreInc="0" strength="-1.0" type="2" />
+			<Item id="MISC_ESTRADE_1X2" material="Material_Estrade" shape="Misc_Estrade_1x2" destroyedScoreInc="0" strength="-1.0" type="2" />
+			<Item id="MISC_ESTRADE_2X2" material="Material_Block_Wood" shape="Misc_Estrade_2x2" destroyedScoreInc="500" strength="30.0" type="2" />
+			
+			<Item id="WOOD_BLOCK_1X1" material="Material_Block_Wood" shape="Block_Rect_1x1" sounds="WOOD" destroyedScoreInc="500" strength="20.0" type="3" category="Wood" />
+			<Item id="WOOD_BLOCK_2X1" material="Material_Block_Wood" shape="Block_Rect_2x1" sounds="WOOD" destroyedScoreInc="500" strength="40.0" type="3" category="Wood" />
+			<Item id="WOOD_BLOCK_2X2" material="Material_Block_Wood" shape="Block_Rect_2x2" sounds="WOOD" destroyedScoreInc="500" strength="60.0" type="3" category="Wood" />
+			<Item id="WOOD_BLOCK_4X1" material="Material_Block_Wood" shape="Block_Rect_4x1" sounds="WOOD" destroyedScoreInc="500" strength="50.0" type="3" category="Wood" />
+			<Item id="WOOD_BLOCK_4X2" material="Material_Block_Wood" shape="Block_Rect_4x2" sounds="WOOD" destroyedScoreInc="500" strength="80.0" type="3" category="Wood" />
+			<Item id="WOOD_BLOCK_4X4_HOLLOW" material="Material_Block_Wood" shape="Block_Rect_4x4" sounds="WOOD" destroyedScoreInc="500" strength="120.0" type="3" category="Wood" />
+			<Item id="WOOD_BLOCK_8X1" material="Material_Block_Wood" shape="Block_Rect_8x1" sounds="WOOD" destroyedScoreInc="500" strength="70.0" type="3" category="Wood" />
+			<Item id="WOOD_BLOCK_10X1" material="Material_Block_Wood" shape="Block_Rect_10x1" sounds="WOOD" destroyedScoreInc="500" strength="100.0" type="3" category="Wood" />
+			<Item id="WOOD_CIRCLE_2X2" material="Material_Block_Wood" shape="Block_Circle_2x2" sounds="WOOD" destroyedScoreInc="500" strength="150.0" type="3" category="Wood" />
+			<Item id="WOOD_CIRCLE_4X4" material="Material_Block_Wood" shape="Block_Circle_4x4" sounds="WOOD" destroyedScoreInc="500" strength="200.0" type="3" category="Wood" />
+			<Item id="WOOD_TRIANGLE_4X4" material="Material_Block_Wood" shape="Block_Triangle_4x4_Left" sounds="WOOD" destroyedScoreInc="500" strength="80.0" type="3" category="Wood" />
+			<Item id="WOOD_TRIANGLE_4X4_HOLLOW" material="Material_Block_Wood" shape="Block_Triangle_4x4_Equilateral" sounds="WOOD" destroyedScoreInc="500" strength="70.0" type="3" category="Wood" />
+			
+			<Item id="STONE_BLOCK_1X1" material="Material_Block_Stone" shape="Block_Rect_1x1" sounds="STONE" destroyedScoreInc="500" strength="30.0" type="3" category="Stone"/>
+			<Item id="STONE_BLOCK_2X1" material="Material_Block_Stone" shape="Block_Rect_2x1" sounds="STONE" destroyedScoreInc="500" strength="60.0" type="3" category="Stone" />
+			<Item id="STONE_BLOCK_2X2" material="Material_Block_Stone" shape="Block_Rect_2x2" sounds="STONE" destroyedScoreInc="500" strength="100.0" type="3" category="Stone" />
+			<Item id="STONE_BLOCK_4X1" material="Material_Block_Stone" shape="Block_Rect_4x1" sounds="STONE" destroyedScoreInc="500" strength="80.0" type="3" category="Stone" />
+			<Item id="STONE_BLOCK_4X2" material="Material_Block_Stone" shape="Block_Rect_4x2" sounds="STONE" destroyedScoreInc="500" strength="140.0" type="3" category="Stone" />
+			<Item id="STONE_BLOCK_4X4_HOLLOW" material="Material_Block_Stone" shape="Block_Rect_4x4" destroyedScoreInc="500" strength="160.0" type="3" category="Stone" />
+			<Item id="STONE_BLOCK_8X1" material="Material_Block_Stone" shape="Block_Rect_8x1" sounds="STONE" destroyedScoreInc="500" strength="120.0" type="3" category="Stone" />
+			<Item id="STONE_BLOCK_10X1" material="Material_Block_Stone" shape="Block_Rect_10x1" sounds="STONE" destroyedScoreInc="500" strength="140.0" type="3" category="Stone" />
+			<Item id="STONE_CIRCLE_2X2" material="Material_Block_Stone" shape="Block_Circle_2x2" sounds="STONE" destroyedScoreInc="500" strength="300.0" type="3" category="Stone" />
+			<Item id="STONE_CIRCLE_4X4" material="Material_Block_Stone" shape="Block_Circle_4x4" sounds="STONE" destroyedScoreInc="500" strength="600.0" type="3" category="Stone" />
+			<Item id="STONE_TRIANGLE_4X4" material="Material_Block_Stone" shape="Block_Triangle_4x4_Left" sounds="STONE" destroyedScoreInc="500" strength="140.0" type="3" category="Stone" />
+			<Item id="STONE_TRIANGLE_4X4_HOLLOW" material="Material_Block_Stone" shape="Block_Triangle_4x4_Equilateral" sounds="STONE" destroyedScoreInc="500" strength="140.0" type="3" category="Stone" />
+			
+			<Item id="ICE_BLOCK_1X1" material="Material_Block_Ice" shape="Block_Rect_1x1" sounds="ICE" destroyedScoreInc="500" strength="13.0" type="3" category="Ice" />
+			<Item id="ICE_BLOCK_2X1" material="Material_Block_Ice" shape="Block_Rect_2x1" sounds="ICE" destroyedScoreInc="500" strength="26.0" type="3" category="Ice" />
+			<Item id="ICE_BLOCK_2X2" material="Material_Block_Ice" shape="Block_Rect_2x2" sounds="ICE" destroyedScoreInc="500" strength="40.0" type="3" category="Ice" />
+			<Item id="ICE_BLOCK_4X1" material="Material_Block_Ice" shape="Block_Rect_4x1" sounds="ICE" destroyedScoreInc="500" strength="33.0" type="3" category="Ice" />
+			<Item id="ICE_BLOCK_4X2" material="Material_Block_Ice" shape="Block_Rect_4x2" sounds="ICE" destroyedScoreInc="500" strength="53.0" type="3" category="Ice" />
+			<Item id="ICE_BLOCK_4X4_HOLLOW" material="Material_Block_Ice" shape="Block_Rect_4x4" sounds="ICE" destroyedScoreInc="500" strength="70.0" type="3" category="Ice" />
+			<Item id="ICE_BLOCK_8X1" material="Material_Block_Ice" shape="Block_Rect_8x1" sounds="ICE" destroyedScoreInc="500" strength="47.0" type="3" category="Ice" />
+			<Item id="ICE_BLOCK_10X1" material="Material_Block_Ice" shape="Block_Rect_10x1" sounds="ICE" destroyedScoreInc="500" strength="65.0" type="3" category="Ice" />
+			<Item id="ICE_CIRCLE_2X2" material="Material_Block_Ice" shape="Block_Circle_2x2" sounds="ICE" destroyedScoreInc="500" strength="100.0" type="3" category="Ice" />
+			<Item id="ICE_CIRCLE_4X4" material="Material_Block_Ice" shape="Block_Circle_4x4" sounds="ICE" destroyedScoreInc="500" strength="125.0" type="3" category="Ice" />
+			<Item id="ICE_TRIANGLE_4X4" material="Material_Block_Ice" shape="Block_Triangle_4x4_Left" sounds="ICE" destroyedScoreInc="500" strength="53.0" type="3" category="Ice" />
+			<Item id="ICE_TRIANGLE_4X4_HOLLOW" material="Material_Block_Ice" shape="Block_Triangle_4x4_Equilateral" sounds="ICE" destroyedScoreInc="500" strength="48.0" type="3" category="Ice" />
+
+		    <Item id="SNOW_BLOCK_2X2" material="Material_Block_Snow" shape="Block_Rect_2x2" sounds="SNOW" destroyedScoreInc="500" strength="13.0" type="3" category="Snow" />
+		    <Item id="SNOW_BLOCK_4X2" material="Material_Block_Snow" shape="Block_Rect_4x2" sounds="SNOW" destroyedScoreInc="500" strength="13.0" type="3" category="Snow" />
+		    <Item id="SNOW_BLOCK_6X2" material="Material_Block_Snow" shape="Block_Rect_6x2" sounds="SNOW" destroyedScoreInc="500" strength="13.0" type="3" category="Snow" />
+		    <Item id="SNOW_BLOCK_4X4" material="Material_Block_Snow" shape="Block_Rect_4x4" sounds="SNOW" destroyedScoreInc="500" strength="13.0" type="3" category="Snow" />
+		    <Item id="SNOW_CIRCLE_4X4" material="Material_Block_Snow" shape="Block_Circle_4x4" sounds="SNOW" destroyedScoreInc="500" strength="13.0" type="3" category="Snow" />
+		    <Item id="SNOW_TRIANGLE_2X2" material="Material_Block_Snow" shape="Block_Triangle_2x2_Right" sounds="SNOW" destroyedScoreInc="500" strength="13.0" type="3" category="Snow" />
+		    <Item id="SNOW_TRIANGLE_4X4" material="Material_Block_Snow" shape="Block_Triangle_4x4_Right" sounds="SNOW" destroyedScoreInc="500" strength="13.0" type="3" category="Snow" />
+
+			<Item id="BREAKABLE_STATIC_BLOCK_1X1" material="Material_Misc_Balloon" shape="Block_Rect_1x1_Static" destroyedScoreInc="0" strength="-1.0" type="1" />
+			<Item id="BREAKABLE_STATIC_BLOCK_5X2" material="Material_Misc_Balloon" shape="Block_Rect_5x2_Static" destroyedScoreInc="0" strength="-1.0" type="1" />
+			<Item id="BREAKABLE_STATIC_BLOCK_10X2" material="Material_Misc_Balloon" shape="Block_Rect_10x2_Static" destroyedScoreInc="0" strength="-1.0" type="1" />
+			<Item id="BREAKABLE_STATIC_BLOCK_5X5" material="Material_Misc_Balloon" shape="Block_Rect_5x5_Static" destroyedScoreInc="0" strength="-1.0" type="1" />
+			<Item id="BREAKABLE_STATIC_BLOCK_10X10" material="Material_Misc_Balloon" shape="Block_Rect_10x10_Static" destroyedScoreInc="0" strength="-1.0" type="1" />
+			<Item id="BREAKABLE_STATIC_BLOCK_INVISIBLE" material="Material_Misc_Balloon" shape="Block_Rect_1x1_Static" destroyedScoreInc="0" strength="1.0" type="2" bubbleDamage="2" />
+			
+			<Item id="CHROME_STONE_BACK_4X4" material="Material_Block_Chrome_Stone" shape="Block_Rect_4x4" destroyedScoreInc="500" strength="15.0" type="4" />
+			<Item id="CHROME_STONE_FORWARD_4X4" material="Material_Block_Chrome_Stone" shape="Block_Rect_4x4" destroyedScoreInc="500" strength="15.0" type="4" />
+			<Item id="CHROME_STONE_RELOAD_4X4" material="Material_Block_Chrome_Stone" shape="Block_Rect_4x4" destroyedScoreInc="500" strength="15.0" type="4" />
+			<Item id="CHROME_STONE_STAR_4X4" material="Material_Block_Chrome_Stone" shape="Block_Rect_4x4" destroyedScoreInc="500" strength="15.0" type="4" />
+			<Item id="CHROME_STONE_WRENCH_4X4" material="Material_Block_Chrome_Stone" shape="Block_Rect_4x4" destroyedScoreInc="500" strength="15.0" type="4" />
+			<Item id="CHROME_STONE_INCOGNITO_4X4" material="Material_Block_Chrome_Stone" shape="Block_Rect_4x4" destroyedScoreInc="500" strength="15.0" type="4" />
+			<Item id="CHROME_STONE_CIRCLE_4X4" material="Material_Block_Chrome_Stone" shape="Block_Circle_4x4" destroyedScoreInc="500" strength="100.0" type="4" />
+			<Item id="CHROME_METAL_LOGO" material="Material_Misc_Chrome_Metal" shape="Block_Circle_4x4" destroyedScoreInc="3000" strength="10.0" type="4" />
+			<Item id="CHROME_GLASS_BALL" material="Material_Misc_Chrome_Glass" shape="Block_Circle_Glass_Ball" destroyedScoreInc="3000" strength="350.0" type="4" />
+			
+			<Item id="MISC_FOOD_APPLE" material="Material_Misc_Food" shape="Food_Apple" destroyedScoreInc="500" strength="22.0" type="2" category="Food" />
+			<Item id="MISC_FOOD_DONUT" material="Material_Misc_Food" shape="Food_Donut" destroyedScoreInc="500" strength="32.0" type="2" category="Food" />
+			<Item id="MISC_FOOD_EGG" material="White_Egg" shape="Food_Egg" destroyedScoreInc="0" strength="-1.0" type="2" />
+			<Item id="MISC_FOOD_WATERMELON" material="Material_Misc_Food" shape="Food_Watermellon" destroyedScoreInc="500" strength="42.0" type="2" category="Food" />
+			<Item id="MISC_FOOD_BANANA" material="Material_Misc_Food" shape="Food_Banana" destroyedScoreInc="500" strength="36.0" type="2" category="Food" />
+			<Item id="MISC_FOOD_STRAWBERRY" material="Material_Misc_Food" shape="Food_Strawberry" destroyedScoreInc="500" strength="24.0" type="2" category="Food" />
+			<Item id="MISC_FOOD_HAM" material="Material_Misc_Food" shape="Food_Ham" destroyedScoreInc="500" strength="41.0" type="2" category="Food" />
+			
+			<Item id="MISC_PROP_WHITE_EGG" material="Material_Misc_Metal" shape="Food_Egg" destroyedScoreInc="50" strength="-1.0" type="2" />
+			
+			<Item id="MISC_BALLOON_YELLOW" material="Material_Misc_Balloon" shape="Balloon_Normal" sounds="RUBBER" destroyedScoreInc="100" type="2" bubbleDamage="2" />
+			<Item id="MISC_BALLOON_RED" material="Material_Misc_Balloon" shape="Balloon_Normal" sounds="RUBBER" destroyedScoreInc="100" type="2" bubbleDamage="2" />
+			<Item id="MISC_BALLOON_BLUE" material="Material_Misc_Balloon" shape="Balloon_Normal" sounds="RUBBER" destroyedScoreInc="100" type="2" bubbleDamage="2" />
+			<Item id="MISC_BALLOON_GREEN" material="Material_Misc_Balloon" shape="Balloon_Pig" sounds="RUBBER" destroyedScoreInc="100" type="2" bubbleDamage="2" />
+			<Item id="MISC_BALLOON_PURPLE" material="Material_Misc_Balloon" shape="Balloon_Pig" sounds="RUBBER" destroyedScoreInc="100" type="2" bubbleDamage="2" />
+			
+			<Item id="MISC_RUBBER_BEACHBALL" material="Material_Misc_Plastic" shape="Rubber_BeachBall" destroyedScoreInc="500" strength="100.0" type="2" category="Misc" />
+			<Item id="MISC_RUBBER_DUCK" material="Material_Misc_Plastic" shape="Rubber_Duck" destroyedScoreInc="500" strength="10.0" type="2" category="Misc" />
+			<Item id="MISC_RUBBER_SMILEY" material="Material_Misc_Plastic" shape="Rubber_Smiley" destroyedScoreInc="500" strength="25.0" type="2" category="Misc" />
+			<Item id="MISC_RUBBER_DICE" material="Material_Misc_Plastic" shape="Rubber_Dice" destroyedScoreInc="500" strength="30.0" type="2" category="Misc" />
+			<Item id="MISC_RUBBER_TRAMPOLINE" material="Material_Misc_Rubber_Trampoline" shape="Rubber_Trampoline" sounds="TRAMPOLINE" destroyedScoreInc="500" strength="-1.0" type="2" category="Misc" />
+			
+			<Item id="MISC_METAL_FLAG_FINLAND" material="Material_Misc_Plastic" shape="METAL_FLAG" destroyedScoreInc="500" strength="-1.0" type="2" category="Misc" />
+			<Item id="MISC_METAL_FLAG_SWEDEN" material="Material_Misc_Plastic" shape="METAL_FLAG" destroyedScoreInc="500" strength="-1.0" type="2" category="Misc" />
+			<Item id="MISC_METAL_BALL_RED" material="Material_Misc_Rubber" shape="METAL_BALL" sounds="RUBBER" destroyedScoreInc="0" strength="-1.0" type="2" category="Misc" />
+			<Item id="MISC_METAL_BALL_GREY" material="Material_Misc_Metal" shape="METAL_BALL" sounds="STONE" destroyedScoreInc="500" strength="-1.0" type="2" category="Misc" />
+			<Item id="MISC_METAL_HOLYGRAIL" material="Material_Misc_Plastic" shape="METAL_HOLYGRAIL" destroyedScoreInc="500" strength="-1.0" type="2" category="Misc" />
+			<Item id="MISC_METAL_PILLAR" material="Material_Misc_Pillar" shape="METAL_PILLAR" sounds="RUBBER" destroyedScoreInc="500" strength="120.0" type="2" category="Misc" />
+			<Item id="MISC_METAL_DIAMOND" material="Material_Misc_Plastic" shape="METAL_DIAMOND" sounds="RUBBER" destroyedScoreInc="500" strength="-1.0" type="2" category="Misc" />
+			<Item id="MISC_METAL_TIRE_2X2" material="Material_Misc_Plastic" shape="METAL_TIRE_2x2" sounds="RUBBER" destroyedScoreInc="500" strength="48.0" type="2" category="Misc" />
+			<Item id="MISC_METAL_TIRE_3X3" material="Material_Misc_Plastic" shape="METAL_TIRE_3x3" sounds="RUBBER" destroyedScoreInc="500" strength="34.0" type="2" category="Misc" />
+			<Item id="MISC_METAL_TIRE_4X4" material="Material_Misc_Plastic" shape="METAL_TIRE_4x4" sounds="RUBBER" destroyedScoreInc="500" strength="22.0" type="2" category="Misc" />
+			<Item id="MISC_METAL_CHEST" material="Material_Block_Wood" shape="METAL_CHEST" sounds="RUBBER" destroyedScoreInc="500" strength="-1.0" type="2" category="Misc" />
+			
+			<Item id="MISC_EXPLOSIVE_TNT" material="TNT" shape="METAL_TNT" sounds="RUBBER" destroyedScoreInc="500" strength="8.0" type="2" category="Misc" />
+			<Item id="CHROME_BOMB" material="CHROME_BOMB" shape="METAL_CHROME_BOMB" destroyedScoreInc="500" strength="8.0" type="4" />
+			<Item id="CHROME_IMPLOSION_BOMB" material="Material_Misc_Chrome_Implosion_Bomb" shape="METAL_TNT" destroyedScoreInc="500" strength="1.0" type="4" />
+			<Item id="POWERUP_BOMB" material="POWERUP_BOMB" shape="POWERUP_BOMB" sounds="RUBBER" destroyedScoreInc="500" strength="8.0" type="2" category="Misc" />
+			
+			<Item id="PIG_BASIC_SMALL" material="Material_Pig_Basic_Small" shape="Pig_Circle_Small" sounds="PIG_SET" destroyedScoreInc="5000" strength="4.0" type="5" category="Pigs" />
+			<Item id="PIG_BASIC_MEDIUM" material="Material_Pig_Basic_Medium" shape="Pig_Circle_Medium" sounds="PIG_SET" destroyedScoreInc="5000" strength="10.0" type="5" category="Pigs" />
+			<Item id="PIG_BASIC_BIG" material="Material_Pig_Basic_Big" shape="Pig_Circle_Big" sounds="PIG_SET" destroyedScoreInc="5000" strength="20.0" type="5" category="Pigs" />
+			<Item id="PIG_HELMET" material="Material_Pig_Helmet" shape="Pig_Circle_Helmet" sounds="PIG_SET" destroyedScoreInc="5000" strength="15.0" type="5" category="Pigs" />
+			<Item id="PIG_KING" material="Material_Pig_King" shape="Pig_Circle_King" sounds="PIG_SET" destroyedScoreInc="5000" strength="100.0" type="5" category="Pigs" />
+			<Item id="PIG_MUSTACHE" material="Material_Pig_Mustache" shape="Pig_Circle_Mustache" sounds="PIG_SET" destroyedScoreInc="5000" strength="30.0" type="5" category="Pigs" />
+			
+			<Item id="BIRD_RED" material="Material_Bird_Red" shape="Bird_Circle_Red" sounds="BIRD_RED" destroyedScoreInc="10000" strength="60.0" type="6" category="Birds" />
+			<Item id="BIRD_YELLOW" material="Material_Bird_Yellow" shape="Bird_Circle_Yellow" sounds="BIRD_YELLOW" destroyedScoreInc="10000" strength="60.0" type="6" category="Birds" />
+			<Item id="BIRD_BLUE" material="Material_Bird_Blue" shape="Bird_Circle_Blue" sounds="BIRD_BLUE" destroyedScoreInc="10000" strength="60.0" type="6" category="Birds" />
+			<Item id="BIRD_BLACK" material="Material_Bird_Black" shape="Bird_Circle_Black" sounds="BIRD_BLACK" destroyedScoreInc="10000" strength="60.0" type="6" category="Birds" />
+			<Item id="BIRD_GREEN" material="Material_Bird_Green" shape="Bird_Circle_Green" sounds="BIRD_GREEN" destroyedScoreInc="10000" strength="60.0" type="6" category="Birds" />
+			<Item id="BIRD_WHITE" material="Material_Bird_White" shape="Bird_Circle_White" sounds="BIRD_WHITE" destroyedScoreInc="10000" strength="60.0" type="6" category="Birds" />
+			<Item id="BIRD_MIGHTY_EAGLE" material="Material_Bird_Mighty_Eagle" shape="MIGHTY_EAGLE_SHAPE" sounds="BIRD_MIGHTY_EAGLE" destroyedScoreInc="10000" strength="60.0" type="7" />
+			<Item id="BIRD_SARDINE" material="Material_Bird_Sardine" shape="SARDINE_SHAPE" sounds="BIRD_SARDINE" destroyedScoreInc="10000" strength="60.0" type="8" />
+			<Item id="BIRD_REDBIG" material="Material_Bird_RedBig" shape="Bird_Circle_RedBig" sounds="BIRD_REDBIG" destroyedScoreInc="10000" strength="60.0" type="6" category="Birds" />
+			
+			<Item id="BIRD_ORANGE" material="Material_Bird_Orange" shape="Bird_Circle_Orange" sounds="BIRD_ORANGE" destroyedScoreInc="10000" strength="60.0" type="6" category="Birds" />
+			<Item id="BIRD_ORANGE_BIG" material="Material_Bird_Orange_Big" shape="Bird_Circle_Orange" sounds="BIRD_ORANGE" destroyedScoreInc="10000" strength="60.0" type="6" category="Birds" />
+			
+			
+			<Item id="BIRD_BOOMERANG_STILL" material="Material_Misc_Metal" shape="Bird_Circle_Green" destroyedScoreInc="0" strength="-1.0" type="2" />
+			
+			<Item id="POWERUP_SUPERBALL" material="Material_Powerup_Superball" shape="Powerup_Superball" sounds="BIRD_RED" destroyedScoreInc="0" strength="0" type="6" category="Birds" />
+			
+			<Item id="BLOCK_ROPE_THIN" material="Material_Misc_Rope" shape="THIN_ROPE" destroyedScoreInc="100" strength="5.0" type="2" />
+			<Item id="BLOCK_ROPE_THIN_SHORT" material="Material_Misc_Rope" shape="THIN_ROPE_SHORT" destroyedScoreInc="100" strength="5.0" type="2" />
+			<Item id="BLOCK_ROPE_THICK" material="Material_Misc_Rope" shape="THICK_ROPE" destroyedScoreInc="100" strength="5.0" type="2" />
+			<Item id="BLOCK_CHAINS" material="Material_Misc_Chrome_Chain" shape="Metal_Chain" destroyedScoreInc="0" strength="8.0" type="4" />
+			<Item id="MISC_GOLDEN_EGG" material="Material_Misc_Golden_Egg" shape="Food_Egg" destroyedScoreInc="500" strength="5.0" type="2" />
+			
+			
+			<Item id="SLINGSHOT" material="Material_Slingshot" shape="SLINGSHOT_SHAPE" destroyedScoreInc="0" strength="-1.0" type="7" />
+			
+			<Item id="MISC_CARPET" material="Material_Misc_Plastic" shape="FLYING_CARPET" destroyedScoreInc="500" strength="-1.0" type="2" />
+			<Item id="MISC_GOLD_POT" material="Material_Misc_Metal" shape="Block_Rect_4x4" destroyedScoreInc="100" strength="5.0" type="2" />
+			<Item id="MISC_GOLD_PILE_2" material="Material_Misc_Metal" shape="SHAPE_GOLD_PILE" destroyedScoreInc="0" strength="-1.0" type="2" />
+			<Item id="MISC_BLACK_PUMPKIN" material="Material_Misc_Metal" shape="BLOCK_CIRCLE_PUMPKIN" destroyedScoreInc="500" strength="1.0" type="2" />
+			<Item id="MISC_SKELETON_HEAD" material="Material_Misc_Metal" shape="Block_Circle_2x2" destroyedScoreInc="3000" strength="350.0" type="4" />
+
+			<!-- Level editor's temporary item. This is used when a level has an item which can't be found from the existing packages. -->
+	        <Item id="TEMPORARY_BLOCK" shape="SHAPE_TEMPORARY_BLOCK_4x4" material="Material_Temporary_Block" score="0" health="-1" type="2" category="Misc" />
+   </Items>
+   
+   <Material_Damage_Multipliers>
+		<Material id="Material_Block_Wood" Material_Block_Wood="0.9" Material_Block_Stone="0.8" > </Material>
+		<Material id="Material_Ground_Hills" > </Material>
+	    <Material id="Material_Block_Stone" Material_Block_Ice="1.2"> </Material>
+	    <Material id="Material_Block_Ice" Material_Block_Stone="0.7" ></Material>
+		<Material id="Material_Texture_Hills" ></Material>
+	    <Material id="Material_Bird_Red"></Material>
+	    <Material id="Material_Bird_Blue" Material_Block_Ice="4" SNOW_BLOCK="4" ></Material>
+	    <Material id="Material_Bird_Yellow" Material_Block_Wood="2.4" Material_Block_Ice="1.2" ></Material>
+	  	<Material id="Material_Bird_Black" Material_Block_Wood="0.8" Material_Block_Stone="3.15" Material_Block_Ice="2" ></Material>
+	  	<Material id="Material_Bird_White" Material_Block_Wood="0.8" Material_Block_Ice="0.8" Material_Block_Stone="1" ></Material>
+		<Material id="Material_Bird_RedBig" Material_Block_Wood="0.3" Material_Block_Stone="0.3" Material_Block_Ice="0.3" ></Material>
+		<Material id="Material_Bird_Green" Material_Block_Wood="1.6" Material_Block_Stone="0.8" Material_Block_Ice="1.4" ></Material>
+		<Material id="Material_Bird_Sardine"></Material>
+		<Material id="Material_Bird_Mighty_Eagle" Material_Block_Wood="0.3" Material_Block_Stone="0.3" Material_Block_Ice="0.3" ></Material>
+		
+		<Material id="Material_Bird_Orange" Material_Block_Wood="3" Material_Block_Stone="1.5" Material_Block_Ice="1" Material_Misc_Balloon="3"></Material>
+		<Material id="Material_Bird_Orange_Big" Material_Block_Wood="0.0" Material_Block_Stone="0.0" Material_Block_Ice="0.0" Material_Pig_Basic_Small="0.0"
+			Material_Pig_Basic_Medium="0.0" Material_Pig_Basic_Big="0.0" Material_Pig_King="0.0" Material_Pig_Mustache="0.0" Material_Pig_Helmet="0.0"
+			Material_Misc_Balloon="0"></Material>
+		
+		
+		<Material id="Material_Powerup_Superball"></Material>
+	</Material_Damage_Multipliers>
+
+   <Material_Velocity_Multipliers>
+		<Material id="Material_Ground_Hills"> </Material>
+	    <Material id="Material_Block_Stone"></Material>
+	    <Material id="Material_Block_Ice"></Material>
+		<Material id="Material_Texture_Hills"></Material>
+	    <Material id="Material_Bird_Red" Material_Pig_Basic_Small="1.3" Material_Pig_Basic_Medium="1.3" Material_Pig_Basic_Big="1.3" Material_Pig_King="1.3" Material_Pig_Mustache="1.3" Material_Pig_Helmet="1.3" />
+	    <Material id="Material_Bird_Blue" Material_Block_Ice="1.6" SNOW_BLOCK="1.5" Material_Pig_Basic_Small="1.3" Material_Material_Pig_Basic_Medium="1.3" Material_Pig_Basic_Big="1.3" Material_Pig_King="1.3" Material_Pig_Mustache="1.3" Material_Pig_Helmet="1.3"></Material>
+	  	<Material id="Material_Bird_Yellow" Material_Block_Wood="1.4" Material_Pig_Basic_Small="1.3" Material_Pig_Basic_Medium="1.3" Material_Pig_Basic_Big="1.3" Material_Pig_King="1.3" Material_Pig_Mustache="1.3" Material_Pig_Helmet="1.3"></Material>
+ 	  	<Material id="Material_Bird_Black" Material_Block_Stone="1.1" Material_Pig_Basic_Small="1.3" Material_Pig_Basic_Medium="1.3" Material_Pig_Basic_Big="1.3" Material_Pig_King="1.3" Material_Pig_Mustache="1.3" Material_Pig_Helmet="1.3"></Material>
+	  	<Material id="Material_Bird_White" Material_Block_Wood="1.2" Material_Block_Stone="1.2" Material_Block_Ice="1.2" Material_Pig_Basic_Small="1.3" Material_Pig_Basic_Medium="1.3" Material_Pig_Basic_Big="1.3" Material_Pig_King="1.3" Material_Pig_Mustache="1.3" Material_Pig_Helmet="1.3"></Material>
+	  	<Material id="Material_Bird_RedBig" Material_Block_Wood="1.8" Material_Block_Stone="1.8" Material_Block_Ice="1.8" Material_Pig_Basic_Small="1.3" Material_Pig_Basic_Medium="1.3" Material_Pig_Basic_Big="1.3" Material_Pig_King="1.3" Material_Pig_Mustache="1.3" Material_Pig_Helmet="1.3"></Material>
+	  	<Material id="Material_Bird_Green" Material_Block_Wood="1.3" Material_Block_Ice="1.3" Material_Pig_Basic_Small="1.3" Material_Pig_Basic_Medium="1.3" Material_Pig_Basic_Big="1.3" Material_Pig_King="1.3" Material_Pig_Mustache="1.3" Material_Pig_Helmet="1.3"></Material>
+	  	<Material id="Material_Bird_Sardine"></Material>
+	  	<Material id="Material_Bird_Mighty_Eagle" Material_Block_Wood="1.3" Material_Block_Ice="1.3" Material_Pig_Basic_Small="1.3" Material_Pig_Basic_Medium="1.3" Material_Pig_Basic_Big="1.3" Material_Pig_King="1.3" Material_Pig_Mustache="1.3" Material_Pig_Helmet="1.3"></Material>
+	  	
+  		<Material id="Material_Bird_Orange" Material_Block_Wood="4" Material_Block_Stone="4" Material_Block_Ice="4" Material_Misc_Balloon="4"></Material>
+	  	<Material id="Material_Bird_Orange_Big" Material_Block_Wood="2" Material_Block_Stone="2" Material_Block_Ice="2" Material_Misc_Balloon="2"></Material>
+	  	
+	  	<Material id="Material_Powerup_Superball"/>
+	  </Material_Velocity_Multipliers>
+</tuner>

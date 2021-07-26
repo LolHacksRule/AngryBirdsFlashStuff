@@ -1,0 +1,53 @@
+<LevelBackgrounds game="AngryBirds" version="0.0.0">
+    <Backgrounds>
+		
+       <!--  The layer which will remain on front should be listed on top  -->
+	  <!--  Background id must be same with the export name of main movie clip. Also same id must be used to create a new ground material  -->
+      
+		<Background id="ThemeHills" sky="0x37b8f5" ground="0x41240a" sound="Sound_Ambient_DryForest" texture="TextureHills"  icon="IconHills" ttextureStrokeColor="0x2b231f" cost="20"> 
+			<Layers>
+				<Layer id="Hills_Ground"  speed="1000" foreground="1" static="true"></Layer>
+				<Layer id="Hills_Bushes"   speed="900" foreground="0" static="true"></Layer>	
+				<Layer id="Hills_HillsFront"   speed="700" foreground="0" static="true"></Layer>
+				<Layer id="Hills_HillsBack"   speed="550" foreground="0" static="true"></Layer>
+				<Layer id="Hills_Clouds"   speed="400" foreground="0" static="true"></Layer>		
+				<Layer id="Hills_Sky"   speed="0" foreground="0" static="true"></Layer>		
+			</Layers>
+		</Background>
+		
+		<Background id="ThemeForest" sky="0xa1d6e1" ground="0x1c142c" sound="Sound_Ambient_Jungle" texture="TextureForest"  icon="IconForest" ttextureStrokeColor="0x312843"  cost="100"> 
+			<Layers>			
+				<Layer id="Forest_Ground"  speed="1000" foreground="1" static="true"></Layer>				
+				<Layer id="Forest_TreesFront"   speed="800" foreground="0" static="true"></Layer>
+				<Layer id="Forest_TreesBack"   speed="700" foreground="0" static="true"></Layer>			
+				<Layer id="Forest_Sky"   speed="500" foreground="0" static="true"></Layer>				
+			</Layers>
+		</Background>		
+		
+		<Background id="ThemeVolcano" sky="0x016164" ground="0x01030a" sound="Sound_Ambient_DryForest" texture="TextureVolcano"  icon="IconVolcano" ttextureStrokeColor="0x0e121a"  cost="250"> 
+			<Layers>
+				<Layer id="VolcanoFloor"  speed="1000" foreground="1" static="true"></Layer>
+				<Layer id="VolcanoPalm"   speed="800" foreground="0" static="true"></Layer>
+				<Layer id="VolcanoMountains"   speed="300" foreground="0"></Layer>
+				<Layer id="VolcanoClouds"   speed="100" foreground="0" static="true"></Layer>
+				<Layer id="VolcanoMoon" speed="0" foreground="0" static="false" tileable="false" xOffset="630"></Layer>
+				<Layer id="VolcanoSky"   speed="0" foreground="0" static="true"></Layer>
+			</Layers>
+		</Background>		
+				
+       <Background id="ThemeIceCave" sky="0e0e1a" ground="0x16120b" sound="Sound_Ambient_RedSavannah"  texture="TextureIce" icon="IconIce" textureStrokeColor="0x2b231f" cost="500"> 
+			<Layers>
+				<Layer id="GroundIceWithWater"  speed="1000" foreground="1"></Layer>
+				<Layer id="IceCrystalsFront"   speed="600" foreground="0"></Layer>
+				<Layer id="IceWallBack"   speed="100" foreground="0"></Layer>
+				<Layer id="IceWallBack2"   speed="100" foreground="0"></Layer>
+			</Layers>
+		</Background>
+     
+
+		
+
+	
+  </Backgrounds>
+
+</LevelBackgrounds>

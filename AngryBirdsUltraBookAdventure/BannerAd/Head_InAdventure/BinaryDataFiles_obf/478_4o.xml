@@ -1,0 +1,26 @@
+<LevelBackgrounds game="AngryBirdsFacebook" version="0.0.0">
+    <Backgrounds>
+    	<!--  The layer which will remain on front should be listed on top  -->
+		<!--  Background id must be same with the export name of main movie clip. Also same id must be used to create a new ground material  -->
+
+		<!--  Facebook background -->
+		<Background id="INTEL_THEME" sky="0x002646" texture="THEME_GROUND_FBINTEL_TESTTHEME" ground="0x074d95" objectId="GROUND_HILLS" sound="Sound_Ambient_Jungle" >
+			<Layers>
+                <Layer id="THEME_FBINTEL_TESTTHEME_FG1" speed="1000" foreground="1" scale="2" bottomOffset="280"/>
+
+                <Layer id="THEME_FBINTEL_TESTTHEME_BG1" speed="800" foreground="0" scale="2" bottomOffset="-190"/>
+
+                <Layer id="THEME_FBINTEL_TESTTHEME_BG2" speed="600" foreground="0" scale="2" bottomOffset="-350"/>
+
+                <Layer id="THEME_FBINTEL_TESTTHEME_BG3" speed="400" foreground="0" scale="2" bottomOffset="-540"/>
+
+                <Layer id="THEME_FBINTEL_TESTTHEME_BG4" speed="200" foreground="0" scale="2" bottomOffset="-1490">
+                    <!-- BG 0,0 = -950,-2480-->
+                    <!--<ParticleEmitter id="stars" x="-950" y="-2480" scale="2"/>-->
+
+                    <!-- Stars -->
+                </Layer>
+			</Layers>
+		</Background>
+	</Backgrounds>
+</LevelBackgrounds>
