@@ -1,0 +1,29 @@
+package §#!8§
+{
+   public class JSONParseError extends Error
+   {
+       
+      
+      private var §&!a§:int;
+      
+      private var §[!j§:String;
+      
+      public function JSONParseError(param1:String = "", param2:int = 0, param3:String = "")
+      {
+         super(param1);
+         name = "JSONParseError";
+         this.§&!a§ = param2;
+         this.§[!j§ = param3;
+      }
+      
+      public function get §`!O§() : int
+      {
+         return this.§&!a§;
+      }
+      
+      public function get text() : String
+      {
+         return this.§[!j§;
+      }
+   }
+}
