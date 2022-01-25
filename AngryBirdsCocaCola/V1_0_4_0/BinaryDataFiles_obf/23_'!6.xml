@@ -1,0 +1,215 @@
+<UIDescription>
+	<Views>
+		<View_ChapterSelection name="ViewChapterSelection" width="1024" height="768">
+			<MovieClip name="MovieClip_BackGround" visible = "False"/>
+			<Container name="Container_NewChapterSelection">
+
+				<Button name="Button_VideoLink" MouseUp="VideoLink" scaleOnMouseOver="true"/>
+				
+				<Container name="Container_Chapter0">
+					<Button name="Button_Chapter0" MouseUp="Chapter0" scaleOnMouseOver="true"/>
+					<TextField name="Textfield_CollectedStars0" text="0" enabled="False"/>
+					<TextField name="Textfield_ME_Score0" text="0" enabled="False"/>
+				</Container>
+				
+				<Container name="Container_Chapter2">
+					<Button name="Button_Chapter2" MouseUp="Chapter2" scaleOnMouseOver="true"/>
+					<TextField name="Textfield_CollectedStars2" text="0" enabled="False"/>
+					<TextField name="Textfield_ME_Score2" text="0" enabled="False"/>
+				</Container>
+
+			</Container>
+		</View_ChapterSelection>
+		
+		<!-- VIEW LOGIN -->
+		<View_Login name="ViewLogin">
+			<MovieClip name="MovieClip_LoginBackGround" Enabled="False" visible="False"/>
+
+			<MovieClip name="MovieClip_LegalText"/>
+			
+			<Container name="Container_ErrorPane">
+				<TextField name="TextField_ErrorMessage" Enabled="False"/>
+			</Container>
+			
+			<Container name="Container_Login_Tab">
+				<Button name="Button_Tab_Login" MouseUp="TAB_LOGIN" scaleOnMouseOver="True"/>	
+
+				<TextField name="TextField_UserNameField"/>
+				<TextField name="TextField_PasswordField"/>
+				
+				<Button name="Button_Submit" MouseUp="SUBMIT"/>
+				
+				<Button name="Checkbox_RememberMe" MouseUp="CHECKBOX_CHANGE"/>
+				
+				<Button name="Button_ForgotPassword" MouseUp="FORGOT_PASSWORD" scaleOnMouseOver = "True"/>
+				
+				<MovieClip name="MovieClip_ErrorLoginMarkEmail" Enabled="False" visible="False"/>
+				<MovieClip name="MovieClip_ErrorLoginMarkPassword" Enabled="False" visible="False"/>
+			</Container>
+			
+			<Container name="Container_Register_Tab">
+				<Button name="Button_Tab_Register" MouseUp="TAB_REGISTER" scaleOnMouseOver = "True"/>	
+
+				<TextField name="TextField_EmailField_Register"/>
+				<TextField name="TextField_PasswordField_Register"/>
+				<TextField name="TextField_PasswordFieldRepeat_Register"/>
+				<TextField name="TextField_NickNameField_Register"/>
+				
+				<Button name="Checkbox_RememberMe_Register" MouseUp="CHECKBOX_CHANGE"/>
+				<Button name="Checkbox_CollectEmail_Register" MouseUp="CHECKBOX_CHANGE_EMAIL"/>
+				<Button name="Button_Submit_Register" MouseUp="SUBMIT_REGISTER"/>
+				
+				<MovieClip name="MovieClip_ErrorRegisterMarkEmail" Enabled="False" visible="False"/>
+				<MovieClip name="MovieClip_ErrorRegisterMarkPassword" Enabled="False" visible="False"/>
+				<MovieClip name="MovieClip_ErrorRegisterMarkPasswordRepeat" Enabled="False" visible="False"/>
+				<MovieClip name="MovieClip_ErrorRegisterMarkNick" Enabled="False" visible="False"/>
+			</Container>
+
+
+			
+			<MovieClip name="WaitingPopup" visible="false" />
+		</View_Login>
+		
+		<View_Register name="ViewRegister">
+			<TextField name="TextField_UserNameField" tabIndex="1" />
+			<TextField name="TextField_PasswordField" tabIndex="2" />
+			<TextField name="TextField_PasswordFieldRepeat" tabIndex="3" />
+			<TextField name="TextField_EmailField" tabIndex="4" />
+			
+			
+			<Button name="Button_Submit" MouseUp="SUBMIT"/>
+			
+			
+			<MovieClip name="WaitingPopup" visible="false" />
+		</View_Register>
+		
+		<View_Credits name="ViewCredits" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" width="1024" height="768">      
+			<Container name="Container_Credits">
+				<TextField name="TextField_Version_Number" text="1.0.0 placeholder" enabled="True" />
+			</Container>
+			
+			<Button name="Button_Back" MouseUp="CREDITS_CLOSE_BUTTON" />
+		</View_Credits>
+		
+		
+		<View_LevelSelection name="ViewLevelSelection" width="1024" height="768">
+			<MovieClip name="MovieClip_ColorFade" />
+			<MovieClip name="MovieClip_LevelSelectionBG" />
+
+
+			<Button name="Button_Back" MouseUp="Back" />
+
+
+			<Container name="Container_LevelSelection" width="1024" height="768">
+				<Button name="Button_Prev" MouseUp="Prev" scaleOnMouseOver="TRUE"/>
+				<Button name="Button_Next" MouseUp="Next" scaleOnMouseOver="TRUE"/>
+				<TextField name="TextField_LevelNumberSmall" text="1" enabled="True" />
+
+				<TextField name="TextField_LevelName" text="Poached Eggs" enabled="False" />
+				<TextField name="Textfield_CollectedStars" enabled="False" />
+				<TextField name="Textfield_ME_Score" enabled="False" />
+
+				<Container name="Container_LevelRepeaters">
+				</Container>
+			</Container>
+			<MovieClip name="MovieClip_ThemeLeft" visible="True" enabled="True"  />
+			<MovieClip name="MovieClip_ThemeRight" visible="True" enabled="True"  />
+		</View_LevelSelection>
+		
+		<View_LevelSelectionCola name="ViewLevelSelectionCola" width="1024" height="768">
+			<Button name="Button_Back" MouseUp="Back" />
+			
+			<Button name="Button_Coke1" MouseUp="Coke1" scaleOnMouseOver="TRUE"/>
+			<Button name="Button_Coke2" MouseUp="Coke2" scaleOnMouseOver="TRUE"/>
+			<Button name="Button_Coke3" MouseUp="Coke3" scaleOnMouseOver="TRUE"/>
+			<Button name="Button_Coke4" MouseUp="Coke4" scaleOnMouseOver="TRUE"/>
+			<Button name="Button_Coke5" MouseUp="Coke5" scaleOnMouseOver="TRUE"/>
+
+			<Button name="Button_Coke6" MouseUp="Coke6" scaleOnMouseOver="TRUE"/>
+			<Button name="Button_Coke7" MouseUp="Coke7" scaleOnMouseOver="TRUE"/>
+
+			<Button name="Button_Coke8" MouseUp="Coke8" scaleOnMouseOver="TRUE"/>
+			<Button name="Button_Coke9" MouseUp="Coke9" scaleOnMouseOver="TRUE"/>
+			<Button name="Button_Coke10" MouseUp="Coke10" scaleOnMouseOver="TRUE"/>							
+		</View_LevelSelectionCola>
+
+		<View_ChapterSelection name="ViewChapterSelection">
+			<Button name="Button_Back" MouseUp="Back" />
+			<Button name="Button_Prev" MouseUp="Prev" />
+			<Button name="Button_Next" MouseUp="Next" />
+		</View_ChapterSelection>
+		
+		
+		<!--  VIEW LEVEL PLAY     -->
+		<View_LevelPlay name="ViewLevelPlay">    
+				<Container name="Container_HiscoreContainer" enabled="False" >
+						<TextField name="TextField_Hiscore" text="0" enabled="False"/>
+						<TextField name="TextField_CurrentScore" text="0" enabled="False"/>
+				</Container>
+				
+				<!-- <Button name="MovieClip_FeedBar" MouseUp="OPEN_FEED_DIALOG" enabled="True" /> -->
+				
+				<!-- Zoom Buttons -->
+				<Container name="Container_ZoomButtons" enabled="False" scaleFunction="SQRT" aspectRatioFixed="TRUE" width="1024" height="768">
+					<Button name="Button_ZoomIn" MouseDown="ZOOM_IN"/>
+					<Button name="Button_ZoomOut" MouseDown="ZOOM_OUT"/>
+					<Button name="Button_Magnify"/>
+				</Container>
+				<Button name="Button_Pause" MouseUp="PAUSE" MouseOver="PLAY_VIEW_ROLLOVER" MouseOut="PLAY_VIEW_ROLLOUT"/>
+				<Button name="Button_Restart" MouseUp="RESTART_LEVEL" MouseOver="PAN_LEFT_OVER" MouseOut="PAN_LEFT_OUT" />
+		</View_LevelPlay> 
+				
+		<!--  VIEW LEVEL LOAD    -->				
+		<View_LevelLoad name="ViewLevelLoad">      <!--  name parameter must be identical(case sensitive) with export name of the main movie clip of this UI view      -->
+				<!-- <MovieClip name="" /> --> 
+		</View_LevelLoad>
+		
+		<!--  NEW LEVEL END VIEW    -->
+		<View_LevelEndRio name="ViewLevelEnd3" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0">
+			<Container name="Container_LevelEndStripe">
+
+				<Button name="Button_Menu"  MouseUp="MENU"/>
+				<Button name="Button_Replay"  MouseUp="REPLAY"/>
+				<Button name="Button_Next"  MouseUp="NEXT_LEVEL"/>
+				
+				<MovieClip name="MovieClip_StarLeft" />
+				<MovieClip name="MovieClip_StarCenter" />
+				<MovieClip name="MovieClip_StarRight" />
+				
+				<MovieClip name="MovieClip_Drum1" />
+				<MovieClip name="MovieClip_Drum2" />
+				<MovieClip name="MovieClip_Drum3" />
+				<MovieClip name="MovieClip_Drum4" />
+				
+				<MovieClip name="MovieClip_DrumBadge" />
+				
+				
+				<TextField name="TextField_LevelEndScore" enabled="True" />
+				
+				<MovieClip name="MovieClip_NewHighScore" enabled="True" visible="false" />
+
+				<TextField name="TextField_BestScore" enabled="True" visible="false" />
+				<MovieClip name="MovieClip_BestScoreText" enabled="True" visible="false" />
+				<MovieClip name="MovieClip_BestScoreStars" enabled="True" visible="false" />
+
+				
+				<MovieClip name="MovieClip_NewHighScoreBadge" visible="false"/>
+			</Container>
+			
+		</View_LevelEndRio>
+		<!--  NEW LEVEL END VIEW    -->				
+		
+		<View_LevelEndFail3 name="ViewLevelEndFail3" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0">      <!--  name parameter must be identical(case sensitive) with export name of the main movie clip of this UI view      -->
+			<Container name="Container_LevelEndStripe">
+				<Button name="Button_Menu"  MouseUp="MENU" />
+				<Button name="Button_Replay"  MouseUp="REPLAY" />
+				<Button name="Button_Next"  MouseUp="NEXT_LEVEL" /> 
+				
+				<MovieClip name="MovieClip_LevelEndFailedPig" visible="true"/>
+			</Container>
+		</View_LevelEndFail3>
+		
+		
+	</Views>
+	
+</UIDescription>

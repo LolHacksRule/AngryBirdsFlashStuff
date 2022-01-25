@@ -1,0 +1,4 @@
+	<Popup name="Popup_Logout" visible="False" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="1024" height="768">
+		<Button name="Button_Yes" MouseUp="LOGOUT_YES" scaleOnMouseOver="TRUE"/>
+		<Button name="Button_No" MouseUp="LOGOUT_NO" scaleOnMouseOver="TRUE"/>
+	</Popup>

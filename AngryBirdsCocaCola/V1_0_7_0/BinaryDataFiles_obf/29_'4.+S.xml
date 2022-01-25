@@ -1,0 +1,5 @@
+	<Popup name="Popup_Tutorial" visible="False" fromLibrary="True" overlay="True" width="1024" height="768">
+		<Container name="Container_Tutorial" visible="False">
+			<Button name="Button_CloseTutorial" MouseUp="CLOSE_TUTORIAL" scaleOnMouseOver="TRUE"/>
+		</Container>
+	</Popup>

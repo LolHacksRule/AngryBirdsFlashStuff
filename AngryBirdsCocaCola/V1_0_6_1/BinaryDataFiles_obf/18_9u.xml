@@ -1,0 +1,62 @@
+<LevelBackgrounds game="AngryBirds" version="0.0.0">
+    <Backgrounds>
+		
+       <!--  The layer which will remain on front should be listed on top  -->
+	  <!--  Background id must be same with the export name of main movie clip. Also same id must be used to create a new ground material  -->
+      
+      <Background id="INGAME_THEME_1" sky="0xedbec7"  texture="THEME1_STATIC_GROUND" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_Coca_Cola" >
+      	<Layers>      		      	
+      		<!-- Align the background in correct position with bottomOffset -->
+      		<!-- Track -->
+      		<Layer id="THEME1_BG3" speed="800" foreground="0" scale="2" bottomOffset="0" />      		
+      		<!-- Ribbon -->      		
+      		<Layer id="THEME1_BG2" speed="600" foreground="0"  scale="2" bottomOffset="0" />      		
+      		<!-- Background -->
+      		<Layer id="THEME1_BG1" speed="200" foreground="0" scale="2" bottomOffset="580" />
+      		<!-- Lower track-->
+      		<Layer id="THEME1_FG" speed="1000" foreground="1" scale="2" bottomOffset="0" />
+      	</Layers>
+      </Background>
+      
+     
+      <Background id="INGAME_THEME_2" sky="0xfff8df" texture="THEME2_STATIC_GROUND" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_Coca_Cola" >
+      	<Layers>      		      	
+      		<!-- Align the background in correct position with bottomOffset -->      		  
+      		<!-- Ice Castle Upper -->      		
+      		<Layer id="THEME2_BG2" speed="700" foreground="0" scale="1.5" bottomOffset="-510" />    	      			
+      		<!-- Background -->
+      		<Layer id="THEME2_BG1" speed="300" foreground="0" scale="3" bottomOffset="-210" />      		      
+      		<!-- Ice Castle Lower-->
+      		<Layer id="THEME2_FG" speed="1500" foreground="1" scale="1.5" bottomOffset="-540" />
+      	</Layers>
+      </Background>
+      
+       <Background id="INGAME_THEME_3" sky="0xffeed9" ground="0x880a00" texture="THEME1_STATIC_GROUND" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_Coca_Cola" >
+      	<Layers>      		      	
+      		<!-- Align the background in correct position with bottomOffset -->      		  
+      		<!-- Bubbles -->      		
+      		<Layer id="THEME3_BG2" speed="400" foreground="0" scale="2" bottomOffset="0" />    	      			
+      		<!-- Background -->
+      		<Layer id="THEME3_BG1" speed="200" foreground="0" scale="3" bottomOffset="600" />      		      
+      		<!-- Ground-->
+      		<Layer id="THEME3_FG" speed="1500" foreground="1" scale="1" bottomOffset="0" />
+      	</Layers>
+      </Background>
+      <!--   OLD STUFF   -->
+      
+      
+      <Background id="BACKGROUND_BLUE_GRASS" sky="0x94cede" texture="THEME_GROUND_TEXTURE_1" ground="0x0a1339" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_DryForest" >
+      	<Layers>
+      		<Layer id="FOREGROUND_1_LAYER_2" speed="1000" foreground="1" scale="1"/>
+      		<Layer id="FOREGROUND_1_LAYER_1" speed="1000" foreground="1" scale="1"/>
+      		<Layer id="BACKGROUND_1_LAYER_3" speed="1000" foreground="0" scale="1.5" />
+      		<Layer id="BACKGROUND_1_LAYER_2" speed="500" foreground="0" marginX="-5" scale="2" >
+				  <!--<ParticleEmitter id="leaf" x="302" y="-435" scale="2" rotation="3.1415" fastForwardsAfterAdd="40"  alpha="1.0" behindGraphic="true" />-->
+      		</Layer>
+      		<Layer id="BACKGROUND_1_LAYER_1" speed="125" foreground="0" marginX="-5" scale="2" />
+
+      	</Layers>
+      </Background>
+  </Backgrounds>
+
+</LevelBackgrounds>

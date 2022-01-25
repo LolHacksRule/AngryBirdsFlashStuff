@@ -1,0 +1,1417 @@
+package §4!O§
+{
+   import § !9§.§'!U§;
+   import §!!a§.§8=§;
+   import §#!a§.Texture;
+   import §#h§.§`0§;
+   import §,N§.§&;§;
+   import §,N§.§5-§;
+   import §,N§.§6!U§;
+   import §,N§.§@! §;
+   import §4N§.b2PrismaticJoint;
+   import §4N§.b2WeldJoint;
+   import §5!?§.§&%§;
+   import §5!?§.§2!K§;
+   import §5!?§.§;!T§;
+   import §5!?§.§>"§;
+   import §8r§.§-!$§;
+   import §;t§.§=_§;
+   import §;t§.Sprite;
+   import §@!>§.§<!J§;
+   import §@!>§.§=!R§;
+   import §[o§.§3!M§;
+   import §[o§.§4C§;
+   import §[o§.§4L§;
+   import §[o§.§9n§;
+   import §[o§.§@N§;
+   import flash.display.BitmapData;
+   import flash.display.BitmapDataChannel;
+   import flash.geom.Matrix;
+   import flash.geom.Point;
+   import flash.geom.Rectangle;
+   import §implements§.b2Vec2;
+   
+   public class §+K§
+   {
+       
+      
+      protected var §^!'§:Vector.<§&+§>;
+      
+      protected var §8!F§:int;
+      
+      public var mLevelMain:§>"§;
+      
+      public var §#!Y§:Vector.<§1!Q§>;
+      
+      protected var §,!,§:Sprite;
+      
+      protected var §42§:Sprite;
+      
+      private var §?_§:Sprite;
+      
+      private var §?d§:Sprite;
+      
+      private var §5!;§:Sprite;
+      
+      protected var §=!<§:Vector.<Texture>;
+      
+      protected var §9w§:Vector.<§6!U§>;
+      
+      protected var §0!R§:int = 1;
+      
+      public var mMightyEagleAdded:Boolean = false;
+      
+      public var mMightyEagleHasTouchedGround:Boolean = false;
+      
+      public var §35§:Boolean = false;
+      
+      public var mSardineCanAdded:Boolean = false;
+      
+      public var mMightyEagleTimer:Number = 0;
+      
+      protected var §+!Y§:Boolean = false;
+      
+      protected var § !!§:Number = 0.07;
+      
+      protected var §]h§:int;
+      
+      protected var §@U§:Vector.<§5-§>;
+      
+      protected var §5J§:int = 0;
+      
+      private var §&D§:int = 0;
+      
+      private var §[f§:int = 0;
+      
+      private var §7B§:int;
+      
+      private var §%§:Boolean = true;
+      
+      private var §?!6§:Boolean = true;
+      
+      public function §+K§(param1:§>"§, param2:§8=§, param3:Sprite)
+      {
+         var _loc5_:§6!U§ = null;
+         var _loc6_:§@! § = null;
+         var _loc7_:§&+§ = null;
+         var _loc8_:int = 0;
+         var _loc9_:int = 0;
+         var _loc10_:§&+§ = null;
+         var _loc11_:§&+§ = null;
+         this.§^!'§ = new Vector.<§&+§>();
+         this.§#!Y§ = new Vector.<§1!Q§>();
+         this.§=!<§ = new Vector.<Texture>();
+         this.§@U§ = new Vector.<§5-§>();
+         super();
+         this.mLevelMain = param1;
+         this.§8!F§ = 0;
+         this.§42§ = param3;
+         this.§42§.§]U§ = false;
+         this.§?!6§ = true;
+         this.§%§ = true;
+         this.§,!,§ = new Sprite();
+         this.§?_§ = new Sprite();
+         this.§?d§ = new Sprite();
+         this.§5!;§ = new Sprite();
+         this.§42§.addChild(this.§,!,§);
+         this.§42§.addChild(this.§?_§);
+         this.§42§.addChild(this.§?d§);
+         this.§42§.addChild(this.§5!;§);
+         this.§4§(§`0§.§0!H§(param2.theme).§3L§,(this.mLevelMain.§>!J§.§]!U§ + this.mLevelMain.§>!J§.§+!d§) / 2,this.mLevelMain.§>!J§.§09§ + §2!K§.§='§);
+         this.§7B§ = this.§^!'§.length;
+         var _loc4_:int = 0;
+         _loc4_ = 0;
+         while(_loc4_ < param2.§+!^§)
+         {
+            _loc6_ = param2.§2T§(_loc4_);
+            (_loc7_ = this.§4§(_loc6_.id,_loc6_.x,_loc6_.y,_loc6_.angle,false,false,false,1,_loc6_.front)).uniqueID = _loc6_.uniqueID;
+            _loc4_++;
+         }
+         this.§[y§();
+         this.§%!O§(true);
+         this.§9w§ = new Vector.<§6!U§>();
+         _loc4_ = 0;
+         while(_loc4_ < param2.§=!M§)
+         {
+            this.§9w§.push(§6!U§.§^8§(param2.§5<§(_loc4_)));
+            _loc4_++;
+         }
+         for each(_loc5_ in this.§9w§)
+         {
+            _loc8_ = _loc5_.index1 + this.§7B§;
+            _loc9_ = _loc5_.index2 + this.§7B§;
+            if(_loc8_ < this.§^!'§.length && _loc9_ < this.§^!'§.length)
+            {
+               _loc10_ = this.§^!'§[_loc8_];
+               _loc11_ = this.§^!'§[_loc9_];
+               if(!(_loc10_ && _loc11_))
+               {
+                  throw new Error("Joint index out of bounds [" + _loc8_ + ", " + _loc9_ + "]");
+               }
+               if(_loc5_.type != §&;§.§<v§)
+               {
+                  _loc5_.§2!F§ = this.mLevelMain.mLevelEngine.mWorld.§&#§(_loc5_.§9!V§(_loc10_,_loc11_));
+               }
+               else
+               {
+                  this.§@U§.push(new §5-§(_loc8_,_loc9_,_loc5_.§?G§));
+               }
+            }
+         }
+      }
+      
+      public function get §4T§() : Sprite
+      {
+         return this.§5!;§;
+      }
+      
+      public function get §#x§() : Sprite
+      {
+         return this.§42§;
+      }
+      
+      public function dispose() : void
+      {
+         var _loc1_:Texture = null;
+         while(this.§^!'§.length > 0)
+         {
+            this.removeObjectWithIndex(0);
+         }
+         this.§^!'§ = null;
+         this.§@U§ = null;
+         if(this.§42§)
+         {
+            this.§42§.dispose();
+            this.§42§ = null;
+            this.§,!,§ = null;
+            this.§5!;§ = null;
+            this.§?_§ = null;
+            this.§?d§ = null;
+         }
+         while(this.§=!<§.length > 0)
+         {
+            _loc1_ = this.§=!<§.pop();
+            this.mLevelMain.textureManager.§[!6§(_loc1_);
+         }
+      }
+      
+      private function §%!O§(param1:Boolean) : void
+      {
+         this.§,!,§.visible = param1;
+      }
+      
+      private function §[y§() : void
+      {
+         var _loc3_:§&+§ = null;
+         var _loc4_:Rectangle = null;
+         var _loc5_:Number = NaN;
+         var _loc6_:int = 0;
+         var _loc7_:int = 0;
+         var _loc8_:int = 0;
+         var _loc9_:int = 0;
+         var _loc10_:BitmapData = null;
+         var _loc11_:BitmapData = null;
+         var _loc12_:Texture = null;
+         var _loc13_:§=_§ = null;
+         var _loc1_:Rectangle = null;
+         var _loc2_:Vector.<§&+§> = new Vector.<§&+§>();
+         for each(_loc3_ in this.§^!'§)
+         {
+            if(_loc3_.isTexture())
+            {
+               _loc2_.push(_loc3_);
+               _loc4_ = _loc3_.sprite.getBounds(this.§42§);
+               if(_loc1_ == null)
+               {
+                  _loc1_ = new Rectangle(_loc4_.x,_loc4_.y,_loc4_.width,_loc4_.height);
+               }
+               else
+               {
+                  _loc1_ = _loc1_.union(_loc4_);
+               }
+            }
+         }
+         if(_loc1_)
+         {
+            _loc5_ = 1;
+            while(_loc1_.width > 2048 || _loc1_.height > 2048)
+            {
+               _loc1_.left /= 2;
+               _loc1_.top /= 2;
+               _loc1_.right /= 2;
+               _loc1_.bottom /= 2;
+               _loc5_ /= 2;
+            }
+            _loc6_ = _loc1_.width;
+            _loc7_ = _loc1_.height;
+            _loc8_ = _loc1_.left;
+            _loc9_ = _loc1_.top;
+            _loc10_ = new BitmapData(_loc6_,_loc7_,true,0);
+            this.§"!I§(_loc10_.rect,_loc10_,_loc5_);
+            _loc11_ = this.§'8§(_loc2_,_loc6_,_loc7_,_loc8_,_loc9_,_loc5_);
+            _loc10_.copyChannel(_loc11_,_loc11_.rect,new Point(0,0),BitmapDataChannel.ALPHA,BitmapDataChannel.ALPHA);
+            _loc12_ = this.mLevelMain.textureManager.§^c§(_loc10_);
+            this.§=!<§.push(_loc12_);
+            (_loc13_ = new §=_§(_loc12_)).x = _loc8_ / _loc5_;
+            _loc13_.y = _loc9_ / _loc5_;
+            _loc13_.scaleX = 1 / _loc5_;
+            _loc13_.scaleY = 1 / _loc5_;
+            this.§,!,§.addChild(_loc13_);
+            _loc11_.dispose();
+         }
+      }
+      
+      private function §'8§(param1:Vector.<§&+§>, param2:int, param3:int, param4:int, param5:int, param6:Number) : BitmapData
+      {
+         var _loc7_:§&+§ = null;
+         var _loc11_:§4C§ = null;
+         var _loc12_:Array = null;
+         var _loc13_:Rectangle = null;
+         var _loc8_:BitmapData = new BitmapData(param2,param3,true,0);
+         var _loc9_:BitmapData = new BitmapData(1,1,true,4294967295);
+         var _loc10_:Matrix = new Matrix();
+         for each(_loc7_ in param1)
+         {
+            _loc12_ = (_loc11_ = _loc7_.§false§.shape).§ a§();
+            _loc13_ = new Rectangle(_loc12_[0].x / §>"§.§'!S§ * param6,_loc12_[0].y / §>"§.§'!S§ * param6,(_loc12_[1].x - _loc12_[0].x) / §>"§.§'!S§ * param6,(_loc12_[1].y - _loc12_[0].y) / §>"§.§'!S§ * param6);
+            _loc10_.identity();
+            _loc10_.scale(_loc13_.width,_loc13_.height);
+            _loc10_.translate(-_loc13_.width / 2,-_loc13_.height / 2);
+            _loc10_.rotate((360 - _loc7_.§`!D§()) / 180 * Math.PI);
+            _loc10_.translate(_loc7_.sprite.x * param6 - param4,_loc7_.sprite.y * param6 - param5);
+            _loc8_.draw(_loc9_,_loc10_);
+         }
+         _loc9_.dispose();
+         return _loc8_;
+      }
+      
+      private function §"!I§(param1:Rectangle, param2:BitmapData, param3:Number) : void
+      {
+         var _loc6_:BitmapData = null;
+         var _loc7_:Matrix = null;
+         var _loc8_:int = 0;
+         var _loc9_:int = 0;
+         var _loc10_:int = 0;
+         var _loc11_:* = 0;
+         var _loc12_:int = 0;
+         var _loc13_:* = 0;
+         var _loc14_:int = 0;
+         var _loc15_:int = 0;
+         var _loc4_:String = this.mLevelMain.background.§`! §();
+         var _loc5_:§-!$§;
+         if(_loc5_ = this.mLevelMain.backgroundTextureManager.§1!I§(_loc4_))
+         {
+            _loc6_ = new BitmapData(_loc5_.bitmapData.width * param3,_loc5_.bitmapData.height * param3);
+            (_loc7_ = new Matrix()).scale(param3,param3);
+            _loc6_.draw(_loc5_.bitmapData,_loc7_);
+            _loc8_ = _loc6_.width - 2;
+            _loc9_ = _loc6_.height - 2;
+            _loc10_ = param1.top / _loc9_;
+            if(param1.top < 0)
+            {
+               _loc10_--;
+            }
+            _loc11_ = (_loc11_ = int(param1.bottom / _loc9_)) + 1;
+            _loc12_ = param1.left / _loc8_;
+            if(param1.left < 0)
+            {
+               _loc12_--;
+            }
+            _loc13_ = (_loc13_ = int(param1.right / _loc8_)) + 1;
+            _loc14_ = _loc12_;
+            while(_loc14_ < _loc13_)
+            {
+               _loc15_ = _loc10_;
+               while(_loc15_ < _loc11_)
+               {
+                  param2.copyPixels(_loc6_,_loc6_.rect,new Point(_loc14_ * _loc8_,_loc15_ * _loc9_));
+                  _loc15_++;
+               }
+               _loc14_++;
+            }
+            _loc6_.dispose();
+         }
+      }
+      
+      public function §;!3§(param1:Sprite, param2:String, param3:Number, param4:Number, param5:Number = 0, param6:Boolean = false, param7:Boolean = false, param8:Boolean = true, param9:Number = 1.0) : §&+§
+      {
+         var _loc10_:§&+§ = null;
+         switch(param2)
+         {
+            case "BIRD_BLACK":
+               _loc10_ = new §3!=§(this,param1,this.mLevelMain.mLevelEngine.mWorld,this.mLevelMain,this.§8!F§,param2,param3,param4,param5,param8,param9);
+               break;
+            case "BIRD_BLUE":
+               _loc10_ = new §?!@§(this,param1,this.mLevelMain.mLevelEngine.mWorld,this.mLevelMain,this.§8!F§,param2,param3,param4,param5,param8,param9);
+               break;
+            case "BIRD_GREEN":
+               _loc10_ = new §-^§(this,param1,this.mLevelMain.mLevelEngine.mWorld,this.mLevelMain,this.§8!F§,param2,param3,param4,param5,param8,param9);
+               break;
+            case "BIRD_WHITE":
+               _loc10_ = new §3!'§(this,param1,this.mLevelMain.mLevelEngine.mWorld,this.mLevelMain,this.§8!F§,param2,param3,param4,param5,param8,param9);
+               break;
+            case "BIRD_YELLOW":
+               _loc10_ = new §-7§(this,param1,this.mLevelMain.mLevelEngine.mWorld,this.mLevelMain,this.§8!F§,param2,param3,param4,param5,param8,param9);
+               break;
+            case "BIRD_RED":
+               _loc10_ = new §6^§(this,param1,this.mLevelMain.mLevelEngine.mWorld,this.mLevelMain,this.§8!F§,param2,param3,param4,param5,param8,param9);
+               break;
+            case "BIRD_REDBIG":
+               _loc10_ = new §5![§(this,param1,this.mLevelMain.mLevelEngine.mWorld,this.mLevelMain,this.§8!F§,param2,param3,param4,param5,param8,param9);
+               break;
+            default:
+               _loc10_ = new §9T§(this,param1,this.mLevelMain.mLevelEngine.mWorld,this.mLevelMain,this.§8!F§,param2,param3,param4,param5,param8,param9);
+         }
+         return _loc10_;
+      }
+      
+      public function hasBirds() : Boolean
+      {
+         return this.§5J§ > 0;
+      }
+      
+      public function §4§(param1:String, param2:Number, param3:Number, param4:Number = 0, param5:Boolean = false, param6:Boolean = false, param7:Boolean = true, param8:Number = 1.0, param9:Boolean = false) : §&+§
+      {
+         var _loc10_:Sprite;
+         (_loc10_ = new Sprite()).scaleX = param8;
+         _loc10_.scaleY = param8;
+         var _loc11_:§&+§;
+         if((_loc11_ = this.createObject(_loc10_,param1,param2,param3,param4,param5,param6,param7,param8)).isTexture())
+         {
+            _loc10_.visible = !this.§%§;
+            this.§^!'§[this.§^!'§.length] = _loc11_;
+         }
+         else
+         {
+            this.§^!'§[this.§^!'§.length] = _loc11_;
+         }
+         if(_loc11_ is §9T§ && !_loc11_.§`u§())
+         {
+            this.§?_§.addChild(_loc10_);
+            ++this.§5J§;
+         }
+         else if(_loc11_.front || param9)
+         {
+            this.§5!;§.addChild(_loc10_);
+         }
+         else
+         {
+            this.§?d§.addChild(_loc10_);
+         }
+         if(param5)
+         {
+            this.mLevelMain.§"!B§(_loc11_);
+         }
+         if(param6)
+         {
+            this.mLevelMain.activeObject = _loc11_;
+         }
+         return _loc11_;
+      }
+      
+      public function §^8§(param1:int, param2:§&+§, param3:§&+§) : §6!U§
+      {
+         var _loc6_:§6!U§ = null;
+         var _loc4_:int = this.§^!'§.indexOf(param2) - this.§7B§;
+         var _loc5_:int = this.§^!'§.indexOf(param3) - this.§7B§;
+         if(_loc4_ >= 0 && _loc5_ >= 0)
+         {
+            (_loc6_ = new §6!U§(§&;§.§1P§,_loc4_,_loc5_,new Point(0,0),new Point(0,0))).§2!F§ = this.mLevelMain.mLevelEngine.mWorld.§&#§(_loc6_.§9!V§(param2,param3));
+            this.§9w§.push(_loc6_);
+            return _loc6_;
+         }
+         return null;
+      }
+      
+      public function §6;§(param1:§6!U§) : void
+      {
+         if(!(param1.§2!F§ is b2WeldJoint))
+         {
+            return;
+         }
+         var _loc2_:§&+§ = this.§2T§(param1.index1 + this.§7B§);
+         var _loc3_:§&+§ = this.§2T§(param1.index2 + this.§7B§);
+         this.mLevelMain.mLevelEngine.mWorld.§=!@§(param1.§2!F§);
+         param1.§2!F§ = this.mLevelMain.mLevelEngine.mWorld.§&#§(param1.§9!V§(_loc2_,_loc3_));
+      }
+      
+      public function §^t§(param1:§&+§) : Vector.<§6!U§>
+      {
+         var _loc4_:§6!U§ = null;
+         var _loc2_:Vector.<§6!U§> = new Vector.<§6!U§>();
+         var _loc3_:int = this.§^!'§.indexOf(param1) - this.§7B§;
+         if(_loc3_ >= 0)
+         {
+            for each(_loc4_ in this.§9w§)
+            {
+               if(_loc4_.index1 == _loc3_ || _loc4_.index2 == _loc3_)
+               {
+                  _loc2_.push(_loc4_);
+               }
+            }
+         }
+         return _loc2_;
+      }
+      
+      public function §!@§() : Vector.<§6!U§>
+      {
+         return this.§9w§;
+      }
+      
+      public function §6!'§(param1:§&+§) : void
+      {
+         var _loc2_:int = this.§^!'§.indexOf(param1) - this.§7B§;
+         var _loc3_:int = this.§9w§.length - 1;
+         while(_loc3_ >= 0)
+         {
+            if(this.§9w§[_loc3_].index1 == _loc2_ || this.§9w§[_loc3_].index2 == _loc2_)
+            {
+               this.§9w§.splice(_loc3_,1);
+            }
+            _loc3_--;
+         }
+      }
+      
+      public function §-;§(param1:§&+§, param2:§&+§) : Boolean
+      {
+         var _loc3_:int = this.§^!'§.indexOf(param1) - this.§7B§;
+         var _loc4_:int = this.§^!'§.indexOf(param2) - this.§7B§;
+         var _loc5_:int = this.§9w§.length - 1;
+         while(_loc5_ >= 0)
+         {
+            if(this.§9w§[_loc5_].index1 == _loc3_ && this.§9w§[_loc5_].index2 == _loc4_ || this.§9w§[_loc5_].index1 == _loc4_ && this.§9w§[_loc5_].index2 == _loc3_)
+            {
+               return true;
+            }
+            _loc5_--;
+         }
+         return false;
+      }
+      
+      protected function createObject(param1:Sprite, param2:String, param3:Number, param4:Number, param5:Number = 0, param6:Boolean = false, param7:Boolean = false, param8:Boolean = true, param9:Number = 1.0) : §&+§
+      {
+         var _loc10_:§&+§ = null;
+         var _loc11_:§9n§ = null;
+         if(param2.indexOf("BIRD") == 0)
+         {
+            _loc10_ = this.§;!3§(param1,param2,param3,param4,param5,param6,param7,param8,param9);
+            ++this.§[f§;
+         }
+         else if(param2.indexOf("PIG") == 0)
+         {
+            _loc10_ = new §"!5§(this,param1,this.mLevelMain.mLevelEngine.mWorld,this.mLevelMain,this.§8!F§,param2,param3,param4,param5,param9);
+         }
+         else
+         {
+            if((_loc11_ = §4L§.§+6§(param2)) == null && param2.indexOf("MISC_") == 0)
+            {
+               param2 = "MISC_FOOD_" + param2.substring(5);
+               _loc11_ = §4L§.§+6§(param2);
+            }
+            if(_loc11_.§,d§ == §9n§.§5j§ || _loc11_.§,d§ == §9n§.dynamic)
+            {
+               _loc10_ = new § F§(this,param1,this.mLevelMain.mLevelEngine.mWorld,this.mLevelMain,this.§8!F§,param2,param3,param4,param5,param9,_loc11_.front);
+            }
+            else
+            {
+               _loc10_ = new §&+§(this,param1,this.mLevelMain.mLevelEngine.mWorld,this.mLevelMain,this.§8!F§,param2,param3,param4,param5,param9,_loc11_.front);
+            }
+         }
+         return _loc10_;
+      }
+      
+      public function §?! §(param1:Number) : void
+      {
+         var _loc3_:§&+§ = null;
+         var _loc2_:int = this.§^!'§.length - 1;
+         while(_loc2_ >= 0)
+         {
+            _loc3_ = this.§^!'§[_loc2_] as §&+§;
+            if(_loc3_)
+            {
+               if(_loc3_.§8!B§ <= 0)
+               {
+                  this.removeObjectWithIndex(_loc2_,true,true,true);
+               }
+               else
+               {
+                  _loc3_.§#>§();
+                  _loc3_.§>!4§();
+               }
+            }
+            _loc2_--;
+         }
+         this.§&!=§(param1);
+      }
+      
+      protected function §&!=§(param1:Number) : void
+      {
+         var _loc3_:§6!U§ = null;
+         var _loc4_:§5-§ = null;
+         var _loc5_:int = 0;
+         var _loc6_:Number = NaN;
+         var _loc7_:Number = NaN;
+         var _loc2_:int = this.§@U§.length - 1;
+         while(_loc2_ >= 0)
+         {
+            if((_loc4_ = this.§@U§[_loc2_]).§2!B§)
+            {
+               if((_loc5_ = _loc4_.update(param1)) != -1)
+               {
+                  if(_loc5_ < this.§^!'§.length && this.§^!'§[_loc5_] != null)
+                  {
+                     this.removeObjectWithIndex(_loc5_,true,true,true);
+                  }
+                  this.§@U§.splice(_loc2_,1);
+               }
+            }
+            _loc2_--;
+         }
+         for each(_loc3_ in this.§9w§)
+         {
+            if(_loc3_.type == §&;§.§]D§ && _loc3_.§#!=§)
+            {
+               _loc6_ = (_loc3_.§2!F§ as b2PrismaticJoint).§7e§();
+               _loc7_ = (_loc3_.§2!F§ as b2PrismaticJoint).§8%§();
+               if(_loc3_.§#i§ && _loc3_.§],§ && (_loc7_ > 0 && _loc6_ >= _loc3_.upperLimit || _loc7_ < 0 && _loc6_ <= _loc3_.lowerLimit))
+               {
+                  (_loc3_.§2!F§ as b2PrismaticJoint).§,o§(-_loc7_);
+               }
+            }
+         }
+      }
+      
+      public function addExplosions(param1:int, param2:Number, param3:Number) : void
+      {
+         this.§#!Y§.push(§1!Q§.createExplosion(param1,param2,param3));
+         §'!U§.playSound("TntExplosions","ChannelExplosions");
+      }
+      
+      public function §3'§(param1:Number, param2:Number) : int
+      {
+         var _loc4_:§&+§ = null;
+         var _loc3_:int = this.§^!'§.length - 1;
+         while(_loc3_ >= 0)
+         {
+            if(_loc4_ = this.§^!'§[_loc3_])
+            {
+               if(_loc4_.isInCoordinates(param1,param2))
+               {
+                  return _loc3_;
+               }
+            }
+            _loc3_--;
+         }
+         return -1;
+      }
+      
+      public function §6B§(param1:Number, param2:Number) : §&+§
+      {
+         var _loc4_:§&+§ = null;
+         var _loc3_:int = this.§^!'§.length - 1;
+         while(_loc3_ >= 0)
+         {
+            if(_loc4_ = this.§^!'§[_loc3_])
+            {
+               if(_loc4_.isInCoordinates(param1,param2))
+               {
+                  return _loc4_;
+               }
+            }
+            _loc3_--;
+         }
+         return null;
+      }
+      
+      public function §2T§(param1:int) : §&+§
+      {
+         return this.§^!'§[param1];
+      }
+      
+      public function §0q§(param1:Number, param2:Number) : void
+      {
+         var _loc4_:§&+§ = null;
+         var _loc3_:int = this.§^!'§.length - 1;
+         while(_loc3_ >= 0)
+         {
+            (_loc4_ = this.§^!'§[_loc3_] as §&+§).§0q§(param2,param1);
+            _loc3_--;
+         }
+      }
+      
+      private function §'!M§(param1:§&+§, param2:Number) : Boolean
+      {
+         var _loc4_:Number = NaN;
+         var _loc5_:Number = NaN;
+         var _loc6_:Number = NaN;
+         var _loc7_:§&+§ = null;
+         if(!this.mSardineCanAdded)
+         {
+            return true;
+         }
+         if(this.mMightyEagleAdded)
+         {
+            return false;
+         }
+         var _loc3_:Boolean = false;
+         if(param1.§8!B§ == param1.§6!N§)
+         {
+            if(this.§ !!§ < §;!T§.§!6§)
+            {
+               this.§ !!§ += param2 * §;!T§.§>d§;
+            }
+            param1.§?!7§().§0z§(param2 * this.§ !!§);
+            this.§]h§ = 0;
+         }
+         else if(this.§]h§ == 0)
+         {
+            this.§]h§ = this.mLevelMain.§!j§;
+         }
+         if(param1.§@T§() || this.§case§(param1) || this.§]h§ > 0 && this.mLevelMain.§!j§ > this.§]h§ + §;!T§.§&N§)
+         {
+            if(this.mMightyEagleTimer < §;!T§.§@!T§)
+            {
+               _loc4_ = this.mMightyEagleTimer + param2;
+               if(this.mMightyEagleTimer < §;!T§.§+!R§ && _loc4_ > §;!T§.§+!R§)
+               {
+                  §'!U§.playSound("Mighty_Eagle_Selected_1","ChannelBird");
+                  §'!U§.playSound("Mighty_Eagle_Flying_1","ChannelBird");
+               }
+               if(_loc4_ >= §;!T§.§@!T§)
+               {
+                  _loc5_ = param1.§?!7§().GetPosition().x - §;!T§.§5n§;
+                  _loc6_ = param1.§?!7§().GetPosition().y - §;!T§.§5n§ * §;!T§.§[L§ * 1.07;
+                  if(this.§case§(param1))
+                  {
+                     _loc3_ = true;
+                  }
+                  _loc7_ = this.§4§("BIRD_MIGHTY_EAGLE",_loc5_,_loc6_,§;!T§.§=!Z§ * 1.2);
+                  this.mMightyEagleAdded = true;
+                  this.§]h§ = 0;
+                  _loc7_.§^!M§.§3G§(1.82);
+               }
+               this.mMightyEagleTimer = _loc4_;
+            }
+         }
+         return _loc3_;
+      }
+      
+      private function §;Q§(param1:§&+§, param2:Number) : Boolean
+      {
+         var _loc5_:§&+§ = null;
+         if(!this.§+!Y§ && this.mMightyEagleTimer > §;!T§.§+A§)
+         {
+            this.§+!Y§ = true;
+            this.mLevelMain.§]!@§();
+         }
+         this.mMightyEagleTimer += param2;
+         this.mLevelMain.particles.§'!"§(§<!J§.§9s§,§=!R§.§4r§,§<!J§.§"@§,param1.§?!7§().GetPosition().x - 3 + Math.random() * (3 * 2),param1.§?!7§().GetPosition().y - 3 + Math.random() * (3 * 2),3500,"",§<!J§.§7D§(param1.§7!0§),0,0,1,0,4);
+         var _loc4_:int = 1;
+         if(this.mMightyEagleHasTouchedGround)
+         {
+            param1.§>!F§(§;!T§.§0^§ * param2);
+            _loc4_ = -1;
+            if(this.§35§)
+            {
+               this.§35§ = false;
+               this.mLevelMain.§08§();
+               param1.§>!_§(§3!M§.§ !G§);
+               this.mSardineCanAdded = false;
+               param1.§^!M§.§return§ = true;
+               param1.§^!M§.§2`§();
+               for each(_loc5_ in this.§^!'§)
+               {
+                  if(_loc5_ && _loc5_.§!!T§())
+                  {
+                     _loc5_.§?!7§().SetAwake(true);
+                     _loc5_.§?!7§().SetLinearVelocity(new b2Vec2(0,-18));
+                  }
+               }
+               this.§1a§();
+            }
+            if(this.mMightyEagleTimer > 6000 && this.isPigsAlive())
+            {
+               for each(_loc5_ in this.§^!'§)
+               {
+                  if(_loc5_ && _loc5_.§!!T§())
+                  {
+                     _loc5_.applyDamage(_loc5_.§6!N§ * 2,true,true,true);
+                  }
+               }
+            }
+         }
+         else
+         {
+            this.mMightyEagleHasTouchedGround = param1.§?!7§().GetPosition().y >= -5.5;
+            this.§35§ = this.mMightyEagleHasTouchedGround;
+         }
+         param1.§,!N§(param2,new Point(1,_loc4_ * §;!T§.§[L§),§;!T§.§<6§);
+         return false;
+      }
+      
+      private function §&G§() : void
+      {
+         var _loc1_:§1!Q§ = null;
+         var _loc2_:Number = NaN;
+         var _loc3_:Number = NaN;
+         var _loc4_:Number = NaN;
+         var _loc5_:Number = NaN;
+         var _loc6_:§&+§ = null;
+         var _loc7_:int = 0;
+         var _loc8_:Number = NaN;
+         var _loc9_:Number = NaN;
+         var _loc10_:Number = NaN;
+         var _loc11_:Number = NaN;
+         var _loc12_:Number = NaN;
+         var _loc13_:Number = NaN;
+         var _loc14_:Number = NaN;
+         var _loc15_:Number = NaN;
+         var _loc16_:Number = NaN;
+         var _loc17_:Number = NaN;
+         while(this.§#!Y§.length > 0)
+         {
+            _loc1_ = this.§#!Y§.shift();
+            _loc2_ = _loc1_.§8N§;
+            _loc3_ = _loc1_.x;
+            _loc4_ = _loc1_.y;
+            _loc5_ = _loc1_.damage;
+            for each(_loc6_ in this.§^!'§)
+            {
+               _loc8_ = _loc6_.§?!7§().GetPosition().x - _loc3_;
+               _loc9_ = _loc6_.§?!7§().GetPosition().y - _loc4_;
+               if((_loc10_ = Math.sqrt(_loc8_ * _loc8_ + _loc9_ * _loc9_)) <= _loc1_.§8N§)
+               {
+                  _loc11_ = _loc1_.push;
+                  if(_loc10_ > 1)
+                  {
+                     _loc11_ /= _loc10_;
+                  }
+                  if(_loc10_ > 0)
+                  {
+                     _loc12_ = _loc11_ * (_loc8_ / _loc10_);
+                     _loc13_ = _loc11_ * (_loc9_ / _loc10_);
+                     _loc6_.§?!7§().ApplyImpulse(new b2Vec2(_loc12_,_loc13_),new b2Vec2(_loc3_,_loc4_));
+                  }
+               }
+               if(_loc10_ <= _loc1_.§4?§)
+               {
+                  _loc14_ = _loc5_;
+                  if(_loc10_ > 1)
+                  {
+                     _loc14_ /= _loc10_;
+                  }
+                  _loc6_.applyDamage(_loc14_,false,false,false,true);
+               }
+            }
+            this.mLevelMain.particles.§'!"§(this.getMainExplosionCoreName(_loc1_.type),§=!R§.§4r§,§<!J§.§-E§,_loc3_,_loc4_,600,"",§<!J§.§2!_§,0,0,0,0,1,20,true);
+            _loc7_ = 30;
+            while(_loc7_ < 150)
+            {
+               _loc15_ = 0.75 * _loc2_ + Math.random() * _loc2_;
+               _loc16_ = 1250 + Math.random() * 750;
+               _loc17_ = _loc7_ / (180 / Math.PI);
+               this.mLevelMain.particles.§'!"§(§<!J§.§^!<§,§=!R§.§4r§,§<!J§.§"@§,_loc3_,_loc4_,_loc16_,"",§<!J§.§2!_§,_loc15_ * Math.cos(_loc17_),-_loc15_ * Math.sin(_loc17_),20,0);
+               _loc7_ += 5;
+            }
+         }
+      }
+      
+      protected function getMainExplosionCoreName(param1:int) : String
+      {
+         var _loc2_:* = param1;
+         switch(0)
+         {
+         }
+         return §<!J§.§%q§;
+      }
+      
+      public function §]_§(param1:Number) : void
+      {
+         var _loc2_:§&+§ = null;
+         var _loc3_:int = this.§^!'§.length - 1;
+         while(_loc3_ >= 0)
+         {
+            _loc2_ = this.§^!'§[_loc3_];
+            if(_loc2_.§,!-§())
+            {
+               if(this.§'!M§(_loc2_,param1))
+               {
+                  this.removeObjectWithIndex(_loc3_,false,false,false);
+               }
+            }
+            else if(_loc2_.§`u§())
+            {
+               this.§;Q§(_loc2_,param1);
+            }
+            else if(this.§case§(_loc2_))
+            {
+               _loc2_.§>!_§(§3!M§.§=0§);
+               this.removeObjectWithIndex(_loc3_,false,false,false);
+            }
+            else if(_loc2_.isReadyToBeRemoved(param1))
+            {
+               _loc2_.§>!_§(§3!M§.§=0§);
+               this.removeObjectWithIndex(_loc3_,false,true,true);
+            }
+            else if(_loc2_.§4!C§())
+            {
+               _loc2_.update(param1);
+            }
+            _loc3_--;
+         }
+         this.§&G§();
+      }
+      
+      private function §1a§() : void
+      {
+         var _loc1_:§6!U§ = null;
+         for each(_loc1_ in this.§9w§)
+         {
+            this.mLevelMain.mLevelEngine.mWorld.§=!@§(_loc1_.§2!F§);
+         }
+      }
+      
+      public function §5q§() : Boolean
+      {
+         var _loc2_:§&+§ = null;
+         var _loc1_:int = 0;
+         while(_loc1_ < this.§^!'§.length)
+         {
+            _loc2_ = this.§^!'§[_loc1_];
+            if(_loc2_.explode())
+            {
+               return true;
+            }
+            _loc1_++;
+         }
+         return false;
+      }
+      
+      public function §case§(param1:§&+§) : Boolean
+      {
+         if(param1 && param1.§false§.§8!#§() != §@N§.§5`§ && this.mLevelMain.§>!J§.§!!E§(param1.§?!7§().GetPosition().x,param1.§?!7§().GetPosition().y))
+         {
+            return true;
+         }
+         return false;
+      }
+      
+      public function removeObjectWithIndex(param1:int, param2:Boolean = false, param3:Boolean = false, param4:Boolean = false) : void
+      {
+         var _loc6_:§6!U§ = null;
+         var _loc7_:§5-§ = null;
+         if(param1 < 0)
+         {
+            return;
+         }
+         var _loc5_:§&+§;
+         if((_loc5_ = this.§^!'§[param1]).§!!T§())
+         {
+            ++this.§&D§;
+         }
+         else if(_loc5_.§4!C§())
+         {
+            --this.§5J§;
+         }
+         if(_loc5_ == this.mLevelMain.activeObject)
+         {
+            this.mLevelMain.activeObject = null;
+         }
+         if(param2)
+         {
+            this.mLevelMain.addScore(_loc5_.§false§.score,§&%§.§8w§,true,_loc5_.§?!7§().GetPosition().x,_loc5_.§?!7§().GetPosition().y - 3,§<!J§.§'!B§(_loc5_.§7!0§));
+         }
+         if(param3)
+         {
+            _loc5_.addDestructionParticles(this.mLevelMain.particles);
+         }
+         if(param4)
+         {
+            this.checkExplosions(_loc5_);
+         }
+         if(!_loc5_.isTexture())
+         {
+         }
+         this.§4!-§(_loc5_.sprite);
+         this.§6!'§(_loc5_);
+         for each(_loc6_ in this.§9w§)
+         {
+            if(_loc6_.index1 >= param1)
+            {
+               --_loc6_.index1;
+            }
+            if(_loc6_.index2 >= param1)
+            {
+               --_loc6_.index2;
+            }
+         }
+         for each(_loc7_ in this.§@U§)
+         {
+            if(_loc7_.id1 == param1)
+            {
+               _loc7_.§2!B§ = true;
+            }
+            if(_loc7_.id1 >= param1)
+            {
+               --_loc7_.id1;
+            }
+            if(_loc7_.id2 >= param1)
+            {
+               --_loc7_.id2;
+            }
+         }
+         _loc5_.dispose();
+         _loc5_ = null;
+         this.§^!'§[param1] = null;
+         this.§^!'§.splice(param1,1);
+      }
+      
+      private function §4!-§(param1:Sprite) : void
+      {
+         if(this.§?d§.contains(param1))
+         {
+            this.§?d§.removeChild(param1);
+            return;
+         }
+         if(this.§?_§.contains(param1))
+         {
+            this.§?_§.removeChild(param1);
+            return;
+         }
+         if(this.§,!,§.contains(param1))
+         {
+            this.§,!,§.removeChild(param1);
+            return;
+         }
+         if(this.§5!;§.contains(param1))
+         {
+            this.§5!;§.removeChild(param1);
+            return;
+         }
+      }
+      
+      protected function checkExplosions(param1:§&+§) : void
+      {
+         if(param1.§2!9§().toUpperCase() == "WHITE_EGG" || param1.§%!;§())
+         {
+            if(param1.§7!0§.toUpperCase() == §3!'§.§>1§)
+            {
+               this.addExplosions(§1!Q§.§6<§,param1.§?!7§().GetPosition().x,param1.§?!7§().GetPosition().y);
+            }
+            else
+            {
+               this.addExplosions(§1!Q§.§-!!§,param1.§?!7§().GetPosition().x,param1.§?!7§().GetPosition().y);
+            }
+         }
+      }
+      
+      public function §+4§(param1:Object, param2:Boolean = false, param3:Boolean = false, param4:Boolean = false) : void
+      {
+         this.removeObjectWithIndex(this.§^!'§.indexOf(param1),param2,param3,param4);
+      }
+      
+      public function §%!T§(param1:Number, param2:Number) : void
+      {
+         this.§42§.x = -param1;
+         this.§42§.y = -param2;
+      }
+      
+      public function isPigsAlive(param1:Boolean = false) : Boolean
+      {
+         var _loc3_:§&+§ = null;
+         var _loc2_:int = 0;
+         while(_loc2_ < this.§^!'§.length)
+         {
+            _loc3_ = this.§^!'§[_loc2_] as §&+§;
+            if(_loc3_ && _loc3_.§!!T§() && _loc3_.§8!B§ > 0)
+            {
+               if(!param1 || _loc3_.§^!M§.mTryToBlink <= 0 && _loc3_.§^!M§.mTryToScream <= 0)
+               {
+                  return true;
+               }
+            }
+            _loc2_++;
+         }
+         return false;
+      }
+      
+      public function §+1§(param1:Boolean = false) : int
+      {
+         var _loc4_:§&+§ = null;
+         var _loc2_:int = 0;
+         var _loc3_:int = this.§^!'§.length - 1;
+         while(_loc3_ >= 0)
+         {
+            if((_loc4_ = this.§^!'§[_loc3_] as §&+§) && _loc4_.§!!T§() && _loc4_.§8!B§ > 0)
+            {
+               if(!param1 || _loc4_.§^!M§.mTryToBlink <= 0 && _loc4_.§^!M§.mTryToScream <= 0)
+               {
+                  _loc2_++;
+               }
+            }
+            _loc3_--;
+         }
+         return _loc2_;
+      }
+      
+      public function §[[§() : int
+      {
+         var _loc2_:§&+§ = null;
+         var _loc1_:int = 0;
+         for each(_loc2_ in this.§^!'§)
+         {
+            if(_loc2_ && (_loc2_.§^p§() || _loc2_.§0!3§()))
+            {
+               _loc1_++;
+            }
+         }
+         return _loc1_;
+      }
+      
+      public function §"!a§() : int
+      {
+         var _loc2_:§&+§ = null;
+         var _loc1_:int = 0;
+         for each(_loc2_ in this.§^!'§)
+         {
+            if(_loc2_ && _loc2_.isTexture())
+            {
+               _loc1_++;
+            }
+         }
+         return _loc1_;
+      }
+      
+      public function makePigsSmile(param1:Number = 1) : void
+      {
+         var _loc3_:§&+§ = null;
+         var _loc2_:int = this.§^!'§.length - 1;
+         while(_loc2_ >= 0)
+         {
+            _loc3_ = this.§^!'§[_loc2_];
+            if(_loc3_ && _loc3_.§!!T§() && _loc3_.§8!B§ > 0)
+            {
+               _loc3_.§^!M§.mTryToScream = §^e§.§0!a§ * param1;
+            }
+            _loc2_--;
+         }
+      }
+      
+      public function §0!Q§() : Boolean
+      {
+         var _loc2_:§&+§ = null;
+         var _loc1_:int = this.§^!'§.length - 1;
+         while(_loc1_ >= 0)
+         {
+            _loc2_ = this.§^!'§[_loc1_] as §&+§;
+            if(_loc2_ && _loc2_.§4!C§() && _loc2_.§8!B§ > 0)
+            {
+               return true;
+            }
+            _loc1_--;
+         }
+         return false;
+      }
+      
+      public function isWorldAtSleep() : Boolean
+      {
+         var _loc2_:§&+§ = null;
+         var _loc1_:int = this.§^!'§.length - 1;
+         while(_loc1_ >= 0)
+         {
+            _loc2_ = this.§^!'§[_loc1_] as §&+§;
+            if(_loc2_ && _loc2_.§8!B§ > 0 && _loc2_.§,d§ != §9n§.§continue§)
+            {
+               if(_loc2_.§`7§() && !_loc2_.§@T§())
+               {
+                  return false;
+               }
+               if(_loc2_.§4!C§() && _loc2_.§8!B§ > 0)
+               {
+                  return false;
+               }
+            }
+            _loc1_--;
+         }
+         return true;
+      }
+      
+      public function §3T§(param1:Boolean = false) : §&+§
+      {
+         var _loc5_:int = 0;
+         var _loc6_:§&+§ = null;
+         if(!this.isPigsAlive())
+         {
+            return null;
+         }
+         var _loc2_:int = this.§^!'§.length;
+         var _loc3_:int = 1 + Math.random() * this.§+1§(param1);
+         var _loc4_:int = 0;
+         while(_loc4_ < _loc3_)
+         {
+            _loc5_ = 0;
+            while(_loc5_ < _loc2_)
+            {
+               if((_loc6_ = this.§^!'§[_loc5_]) && _loc6_.§!!T§() && _loc6_.§8!B§ > 0)
+               {
+                  if(!param1 || _loc6_.§^!M§.mTryToBlink <= 0 && _loc6_.§^!M§.mTryToScream <= 0)
+                  {
+                     _loc4_++;
+                     if(_loc4_ >= _loc3_)
+                     {
+                        return _loc6_;
+                     }
+                  }
+               }
+               _loc5_++;
+            }
+         }
+         return null;
+      }
+      
+      public function §[!I§() : int
+      {
+         var _loc1_:int = 0;
+         var _loc2_:int = this.§^!'§.length - 1;
+         while(_loc2_ >= 0)
+         {
+            _loc1_ += (this.§^!'§[_loc2_] as §&+§).§false§.score;
+            if((this.§^!'§[_loc2_] as §&+§).§`7§())
+            {
+               _loc1_ += §>"§.§'W§.getValue() * int((this.§^!'§[_loc2_] as §&+§).§6!N§);
+            }
+            _loc2_--;
+         }
+         return int(_loc1_ + this.mLevelMain.slingshot.§[!I§());
+      }
+      
+      public function §^b§(param1:§&+§, param2:§&+§) : Boolean
+      {
+         if(param1.§4!C§() && param2.§4!C§())
+         {
+            return true;
+         }
+         if(!param1.§0p§() && !param2.§0p§())
+         {
+            return true;
+         }
+         return false;
+      }
+      
+      public function §0_§() : void
+      {
+         this.mSardineCanAdded = true;
+         this.§5J§ = 0;
+      }
+      
+      public function §?!!§(param1:§&+§, param2:§&+§) : Boolean
+      {
+         var _loc18_:Number = NaN;
+         var _loc19_:Number = NaN;
+         if(this.mMightyEagleAdded)
+         {
+            if(param1.§`u§() || param2.§!!T§())
+            {
+               param2.applyDamage(param2.§6!N§ * 2,true,true,true,false);
+               return true;
+            }
+            if(param2.§`u§() || param1.§!!T§())
+            {
+               param1.applyDamage(param1.§6!N§ * 2,true,true,true,false);
+               return true;
+            }
+         }
+         else if(this.mSardineCanAdded && this.mMightyEagleTimer == §;!T§.§@!T§)
+         {
+            if(param1.§,!-§() || param2.§,!-§())
+            {
+               this.mMightyEagleTimer = 0;
+            }
+         }
+         if(this.§^b§(param1,param2))
+         {
+            return false;
+         }
+         var _loc4_:Number = param1.§-=§(param2.§2!9§());
+         var _loc5_:Number = param1.§-0§(param2.§2!9§());
+         var _loc6_:Number = param2.§-=§(param1.§2!9§());
+         var _loc7_:Number = param2.§-0§(param1.§2!9§());
+         var _loc8_:Number = param1.§?!7§().GetMass() * param1.§?!7§().GetLinearVelocity().x - param2.§?!7§().GetMass() * param2.§?!7§().GetLinearVelocity().x;
+         var _loc9_:Number = param1.§?!7§().GetMass() * param1.§?!7§().GetLinearVelocity().y - param2.§?!7§().GetMass() * param2.§?!7§().GetLinearVelocity().y;
+         var _loc10_:Number = Math.sqrt(_loc8_ * _loc8_ + _loc9_ * _loc9_) / 10;
+         var _loc11_:Number = _loc4_ * _loc10_;
+         var _loc12_:Number = _loc6_ * _loc10_;
+         var _loc13_:Number = Math.max(0,param1.§8!B§);
+         var _loc14_:Number = Math.max(0,param2.§8!B§);
+         var _loc15_:Number = param1.applyDamage(_loc12_,true,param2.§4!C§(),_loc14_ == param2.§6!N§);
+         var _loc16_:Number = param2.applyDamage(_loc11_,true,param1.§4!C§(),_loc13_ == param1.§6!N§);
+         if(_loc15_ <= 0 && _loc12_ != 0)
+         {
+            if((_loc18_ = (_loc18_ = (_loc12_ - _loc13_) / _loc12_) * _loc7_) > 1)
+            {
+               _loc18_ = 1;
+            }
+            param2.§9!C§(new b2Vec2(param2.§?!7§().GetLinearVelocity().x * _loc18_,param2.§?!7§().GetLinearVelocity().y * _loc18_));
+         }
+         if(_loc16_ <= 0 && _loc11_ != 0)
+         {
+            if((_loc19_ = (_loc19_ = (_loc11_ - _loc14_) / _loc11_) * _loc5_) > 1)
+            {
+               _loc19_ = 1;
+            }
+            param1.§9!C§(new b2Vec2(param1.§?!7§().GetLinearVelocity().x * _loc19_,param1.§?!7§().GetLinearVelocity().y * _loc19_));
+         }
+         return _loc15_ <= 0 && _loc16_ <= 0;
+      }
+      
+      public function §]!4§() : void
+      {
+         var _loc2_:§&+§ = null;
+         var _loc1_:int = this.§^!'§.length - 1;
+         while(_loc1_ >= 0)
+         {
+            _loc2_ = this.§^!'§[_loc1_] as §&+§;
+            if(_loc2_ != null && _loc2_.§!!T§())
+            {
+               this.removeObjectWithIndex(_loc1_,true,true,true);
+            }
+            _loc1_--;
+         }
+      }
+      
+      public function §,!+§() : void
+      {
+         var _loc2_:§&+§ = null;
+         var _loc1_:int = this.§^!'§.length - 1;
+         while(_loc1_ >= 0)
+         {
+            _loc2_ = this.§^!'§[_loc1_] as §&+§;
+            if(_loc2_ != null && _loc2_.§%!;§())
+            {
+               this.removeObjectWithIndex(_loc1_,true,true,true);
+            }
+            _loc1_--;
+         }
+      }
+      
+      public function §#a§() : int
+      {
+         return this.§^!'§.length;
+      }
+      
+      public function §#!N§(param1:§8=§) : void
+      {
+         var _loc4_:§&+§ = null;
+         var _loc5_:§@! § = null;
+         var _loc6_:§&;§ = null;
+         var _loc7_:§6!U§ = null;
+         var _loc2_:Number = 0;
+         while(_loc2_ < this.§^!'§.length)
+         {
+            if((_loc4_ = this.§^!'§[_loc2_]).§ !K§)
+            {
+               if(!_loc4_.isGround())
+               {
+                  (_loc5_ = new §@! §()).angle = _loc4_.§`!D§();
+                  _loc5_.id = _loc4_.§7!0§;
+                  _loc5_.x = _loc4_.§?!7§().GetPosition().x;
+                  _loc5_.y = _loc4_.§?!7§().GetPosition().y;
+                  _loc5_.uniqueID = _loc4_.uniqueID;
+                  param1.§4§(_loc5_);
+               }
+            }
+            _loc2_++;
+         }
+         var _loc3_:Number = 0;
+         while(_loc3_ < this.§9w§.length)
+         {
+            _loc7_ = this.§9w§[_loc3_];
+            _loc6_ = new §&;§(_loc7_.type,_loc7_.index1,_loc7_.index2,_loc7_.point1,_loc7_.point2,_loc7_.§!%§,_loc7_.§#i§,_loc7_.lowerLimit,_loc7_.upperLimit,_loc7_.§],§,_loc7_.motorSpeed,_loc7_.§#!=§,_loc7_.maxTorque);
+            param1.§&R§(_loc6_);
+            _loc3_++;
+         }
+      }
+      
+      public function §4F§() : void
+      {
+         var _loc1_:int = 0;
+         while(this.§^!'§.length > _loc1_)
+         {
+            if(this.§^!'§[_loc1_].isGround())
+            {
+               _loc1_++;
+            }
+            else
+            {
+               this.§+4§(this.§^!'§[_loc1_]);
+            }
+         }
+      }
+      
+      public function §&!W§(param1:Point, param2:Point) : Array
+      {
+         var _loc3_:Array = new Array();
+         var _loc4_:Number = 0;
+         while(_loc4_ < this.§^!'§.length)
+         {
+            if(this.§^!'§[_loc4_].isInsideRectangle(param1.y,param2.y,param1.x,param2.x))
+            {
+               _loc3_.push(this.§^!'§[_loc4_]);
+            }
+            _loc4_++;
+         }
+         return _loc3_;
+      }
+      
+      public function setGroundTextureEnabled(param1:Boolean) : void
+      {
+         this.§%§ = param1;
+         this.§%!O§(param1);
+         var _loc2_:Number = 0;
+         while(_loc2_ < this.§^!'§.length)
+         {
+            if(this.§^!'§[_loc2_].isTexture())
+            {
+               this.§^!'§[_loc2_].sprite.visible = !this.§%§;
+            }
+            _loc2_++;
+         }
+      }
+      
+      public function setDamageEnabled(param1:Boolean) : void
+      {
+         this.§?!6§ = param1;
+      }
+      
+      public function §]!V§() : Boolean
+      {
+         return this.§?!6§;
+      }
+      
+      public function §4!"§() : int
+      {
+         return this.§[f§;
+      }
+      
+      public function §5!<§() : int
+      {
+         return this.§&D§;
+      }
+      
+      public function §%!,§(param1:String) : §&+§
+      {
+         var _loc3_:§&+§ = null;
+         var _loc2_:int = 0;
+         while(_loc2_ < this.§^!'§.length)
+         {
+            _loc3_ = this.§^!'§[_loc2_] as §&+§;
+            if(_loc3_.uniqueID == param1)
+            {
+               return _loc3_;
+            }
+            _loc2_++;
+         }
+         return null;
+      }
+   }
+}
