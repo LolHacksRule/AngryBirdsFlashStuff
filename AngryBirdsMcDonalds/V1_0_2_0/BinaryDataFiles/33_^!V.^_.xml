@@ -1,0 +1,6 @@
+	<Popup name="Popup_CodeActivated" visible="False" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="1024" height="768">
+		<Button name="Button_OK" MouseUp="BUTTON_OK"/>
+		<TextField name="TextField_CodeActivatedCongrat" text="" enabled="False"/>
+		<TextField name="TextField_CodeActivated" text="" enabled="False"/>
+		<TextField name="TextField_CodeActivatedError" text="" enabled="False" visible="False"/>
+	</Popup>

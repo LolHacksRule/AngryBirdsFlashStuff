@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<font>
+		<language id="zh">AngryBirdsChin</language>
+	</font>
+	<group name="LevelSelectionStateCustom">
+		<automatic>
+			<text id="Text_EnterCode">
+				<language id="en">Buy Angry Birds toys from your nearest McDonalds restaurant. Give the birds a boost!</language>
+				<language id="zh">去麦当劳购买愤怒的小鸟公仔，&#10;获得强化道具激活码！</language>
+			</text>
+			<text id="Text_EnterCode_Input">
+				<language id="en">Code:</language>
+				<language id="zh">激活密码:</language>
+			</text>
+			<button id="Button_LS_Login">
+				<language id="en">LOGIN</language>
+				<language id="zh">登录</language>
+			</button>
+		</automatic>
+	</group>
+	
+	<group name="StatePlay">
+		<automatic>
+			<text id="TextField_Highscore_Label">
+				<language id="en">Highscore</language>
+				<language id="zh">分数</language>
+			</text>
+			<text id="TextField_Score_Label">
+				<language id="en">Score</language>
+				<language id="zh">最高分</language>	
+			</text>
+		</automatic>
+	</group>
+	
+	<group name="ServerError_Popup">
+		<automatic>
+			<text id="TextField_ServerError" isPopup="true">
+				<language id="en">Oops! The pigs are messing with our servers! If this happens again please reload the game.</language>
+				<language id="zh">不好了！捣蛋猪们正在骚扰我们的服务器！如您常见这段提示，请刷新游戏网站。</language>
+			</text>
+		</automatic>
+	</group>
+	
+	<group name="Logout_Popup">
+		<automatic>
+			<text id="TextField_LogoutQuestion" isPopup="true">
+				<language id="en">Are you sure you want to logout?</language>
+				<language id="zh">确定退出吗？</language>
+			</text>
+		</automatic>
+	</group>
+	
+	<group name="ForgotPassword_Popup">
+		<automatic>
+			<text id="TextField_ForgotPasswordPopup" isPopup="true">
+				<language id="en">Forgot password?&#10;&#10;Enter e-mail address:</language>
+				<language id="zh">忘记密码？&#10;&#10;请输入您的邮件地址：</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="CodeActivated_Popup">
+		<automatic>
+			<text id="TextField_CodeActivatedCongrat" isPopup="true">
+				<language id="en">Congratulations!</language>
+				<language id="zh">恭喜！</language>
+			</text>
+			<text id="TextField_CodeActivated" isPopup="true">
+				<language id="en">You have acquired a power-up bundle.</language>
+				<language id="zh">您已获得了一套强化道具。</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="ConfirmLogin_Popup">
+		<automatic>
+			<text id="TextField_LoginQuestion" isPopup="true">
+				<language id="en">Are you sure you want to login? The game in progress will end.</language>
+				<language id="zh">确认登录吗？需要重新闯关。</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="CodeEnter_Popup">
+		<automatic>
+			<text id="TextField_CodeEnterPopup" isPopup="true">
+				<language id="en">Buy Angry Birds toys from your nearest McDonald's restaurant. Give the birds a boost!</language>
+				<language id="zh">去麦当劳购买愤怒的小鸟公仔，获得强化道具激活码！</language>
+			</text>
+			<text id="Text_EnterCode_Input" isPopup="true">
+				<language id="en">Code:</language>
+				<language id="zh">激活密码:</language>
+			</text>
+		</automatic>
+	</group>
+
+
+
+
+	<group name="Login_Popup">
+		<automatic>
+			<text id="Text_Email">
+				<language id="en">Email</language>
+				<language id="zh">电子邮件</language>
+			</text>
+			<text id="Text_Email_Register">
+				<language id="en">Email</language>
+				<language id="zh">电子邮件</language>
+			</text>
+			<text id="Text_Password">
+				<language id="en">Password</language>
+				<language id="zh">密码</language>
+			</text>
+			<text id="Text_Password_Register">
+				<language id="en">Password</language>
+				<language id="zh">密码</language>
+			</text>
+			<text id="TextField_RememberMe">
+				<language id="en">Remember me</language>
+				<language id="zh">下次记住我</language>
+			</text>
+			<text id="TextField_RememberMe_Register">
+				<language id="en">Remember me</language>
+				<language id="zh">下次记住我</language>
+			</text>
+			<text id="TextField_PasswordAgain">
+				<language id="en">Password again</language>
+				<language id="zh">确认密码</language>
+			</text>
+			<text id="TextField_Nickname">
+				<language id="en">Nickname</language>
+				<language id="zh">昵称</language>
+			</text>
+			<text id="TextField_IWantToRecieveAds">
+				<language id="en">I want to receive information on Angry Birds and other Rovio products by e-mail. </language>
+				<language id="zh">我想订阅邮件，以便了解更多关于愤怒的小鸟和Rovio其它相关产品的最新动态。</language>
+			</text>			
+			<text id="TextField_Legal">
+				<language id="en">By registering you accept our &#10;Privacy Policy and Eula</language>
+				<language id="zh">点击免费注册表示您同意Rovio服务使用协议和隐私权申明。&#10;隐私权申明和服务使用协议</language>
+			</text>
+			<text id="TextField_Register_And">
+				<language id="en">and</language>
+				<language id="zh">和</language>
+			</text>
+			
+			
+			
+			<button id="Button_Tab_Login">
+				<language id="en">Login</language>
+				<language id="zh">登录</language>
+			</button>
+			<button id="Button_Tab_Register">
+				<language id="en">Register</language>
+				<language id="zh">注册</language>
+			</button>
+			
+			<button id="Button_ForgotPassword">
+				<language id="en">Forgot Password?</language>
+				<language id="zh">忘记密码</language>
+			</button>
+			<button id="Button_Login">
+				<language id="en">Login</language>
+				<language id="zh">登录</language>
+			</button>
+		</automatic>
+		<manual>
+			<text id="Button_PrivacyPolicy">
+					<language id="en">Privacy Policy</language>
+					<language id="zh">隐私权申明</language>
+			</text>
+			<text id="Button_Eula">
+					<language id="en">Eula</language>
+					<language id="zh">服务使用协议</language>
+			</text>
+		</manual>
+	</group>
+	
+	<group name="StateEnd">
+		<automatic>
+			<text id="TextField_PlayGround_Badge">
+				<language id="en">Login to play&#10;more levels!</language>
+				<language id="zh">想玩更多关卡&#10;吗？还不快登录！</language>
+			</text>
+			<text id="TextField_LevelCleared">
+				<language id="en">Level Cleared!</language>
+				<language id="zh">闯关成功！</language>
+			</text>
+			<text id="MovieClip_BestScoreText">
+				<language id="en">Best:</language>
+				<language id="zh">最高分</language>
+			</text>
+			<text id="MovieClip_NewHighScore">
+				<language id="en">New Highscore!</language>
+				<language id="zh"> 新纪录！</language>
+			</text>
+			<button id="Button_Redeem" isPopup="true">
+				<language id="en">Get a coupon!</language>
+				<language id="zh">领取优惠券！</language>
+			</button>
+		</automatic>
+	</group>
+	
+	<group name="StateEndFail">
+		<automatic>
+			<text id="TextField_LevelFailed">
+				<language id="en">Level Failed!</language>
+				<language id="zh">闯关失败！</language>
+			</text>
+		</automatic>
+	</group>
+	
+	<group name="HighscoreSidebar">
+		<automatic>
+			<button id="Button_Login">
+				<language id="en">Login</language>
+				<language id="zh">登录</language>
+			</button>
+			<button id="Button_Logout">
+				<language id="en">Logout</language>
+				<language id="zh">退出</language>
+			</button>
+			<text id="TextField_Leaderboards">
+				<language id="en">Leaderboards</language>
+				<language id="zh">高分榜</language>
+			</text>
+			<text id="TextField_MyScoreName">
+				<language id="en">My Score:</language>
+				<language id="zh">我的分数</language>
+			</text>
+			<text id="TextField_PracticeText">
+				<language id="en">This is a practice level.
+
+Power-ups are free to use in this level.
+				</language>
+				<language id="zh">这是实习关卡。
+
+您可以在本关卡免费使用&#10;强化道具。
+				</language>
+			</text>
+		</automatic>
+	</group>
+	
+	<group name="Error_Messages">
+		<manual>
+			<text id="NICKNAME_LENGTH">
+				<language id="en">Nickname is too short. Use at least 5 characters.</language>
+				<language id="zh">昵称太短，至少需要5个字母.</language>
+			</text>
+			<text id="PASSWORD_LENGTH">
+				<language id="en">Password is too short. Use at least 5 characters.</language>
+				<language id="zh">密码太短，至少需要5个字母.</language>
+			</text>
+			<text id="PASSWORDS_DONT_MATCH">
+				<language id="en">The passwords don't match.</language>
+				<language id="zh">前后密码不一致，请重新确认.</language>
+			</text>
+			<text id="INVALID_EMAIL">
+				<language id="en">The email you have provided is invalid.</language>
+				<language id="zh">对不起，该邮件地址不存在.</language>
+			</text>
+			<text id="PASSWORD_MISSING">
+				<language id="en">You need to fill in a password.</language>
+				<language id="zh">请输入密码.</language>
+			</text>
+			<text id="CONNECTION_ERROR_RETRY">
+				<language id="en">Connection error. Please retry.</language>
+				<language id="zh">对不起，暂时无法连接。请稍后再试.</language>
+			</text>
+			<text id="PLAYER_ID_USED">
+				<language id="en">The email you have provided is in use.</language>
+				<language id="zh">对不起，该邮件地址已存在.</language>
+			</text>
+			<text id="PLAYER_REQUIRED">
+				<language id="en">You need to specify an email.</language>
+				<language id="zh">您输入的邮箱地址或密码有误。</language>
+			</text>
+			<text id="PLAYER_INVALID_LOGIN">
+				<language id="en">The login credentials are not valid.</language>
+				<language id="zh">对不起，登录信息不一致，请重新确认。</language>
+			</text>
+			<text id="PLAYER_BANNED">
+				<language id="en">The email you provided has has been banned.</language>
+				<language id="zh">对不起，帐号已禁用.</language>
+			</text>
+			<text id="IP_BANNED">
+				<language id="en">The IP has been banned.</language>
+				<language id="zh"> 对不起，IP地址已禁用.</language>
+			</text>
+			<text id="FIELD_NOT_VALID">
+				<language id="en">The nickname is invalid.</language>
+				<language id="zh">对不起，该昵称不合格。</language>
+			</text>
+			<text id="FIELD_OBLIGATORY"></text>
+			<text id="FIELD_LENGTH">
+				<language id="en">Nickname invalid.</language>
+				<language id="zh">昵称需在12个字母以内。</language>
+			</text>	
+			<text id="SECURITY_ERROR">
+				<language id="en">Security violation.</language>
+				<language id="zh">对不起，该操作不允许。</language>
+			</text>
+			<text id="FORGOT_PASSWORD_EMAIL_SENT">
+				<language id="en">Email has been sent to the address you provided.</language>
+				<language id="zh">系统邮件已发送到您的邮箱。</language>
+			</text>
+			
+			<text id="CODE_NOT_EXIST">
+				<language id="en">Incorrect code</language>
+				<language id="zh">对不起，该激活码不存在。</language>
+			</text>
+			<text id="CODE_USED">
+				<language id="en">Code already used</language>
+				<language id="zh">对不起，该激活码已被使用。</language>
+				</text>	
+			</manual>
+		</group>
+</data>

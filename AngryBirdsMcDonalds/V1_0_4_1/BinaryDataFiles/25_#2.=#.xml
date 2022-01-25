@@ -1,0 +1,45 @@
+
+	<Container name="HighscoreSidebar" fromLibrary="True" isOverlay="true" >
+		<TextField name="TextField_Leaderboards" enabled="False"/>
+		
+		<Container name="Container_Sidebar_Buttons">
+				
+			<MovieClip name="MovieClip_Language_Selected_China" visible="true" enabled="false"/>
+			<MovieClip name="MovieClip_Language_Selected_English" visible="false" enabled="false"/>
+		
+			<Button name="Button_Language_English" MouseUp="ENGLISH"/>
+			<Button name="Button_Language_Chinese" MouseUp="CHINESE"/>
+			<Button name="Button_Mute" MouseUp="MUTE"/>
+			<Button name="Button_Logout" MouseUp="LOGOUT" visible = "False"/>
+			<Button name="Button_Login" MouseUp="LOGIN" visible = "False"/>
+			<Button name="Button_Credits" MouseUp="CREDITS"/>
+			<Button name="Button_Tutorial" MouseUp="TUTORIAL"/>	
+			<MovieClip name="MovieClip_SoundOff" visible="true"/>
+		</Container>
+
+		<Container name="Container_Sidebar_Tab_Scores">
+			<TextField name="TextField_Level_Num" text="" enabled="False"/>
+			<Button name="Button_ArrowLeft" MouseUp="LEFT"/>
+			<Button name="Button_ArrowRight" MouseUp="RIGHT"/>
+			<MovieClip name="MovieClip_Moon" enabled="False" visible="False"/>
+			<MovieClip name="MovieClip_Mc" enabled="False" visible="False"/>
+		</Container>
+		
+		<MovieClip name="MovieClip_LoadingHiScores" visible="False" enabled="False"/>
+
+		<Container name="Container_Highscores">
+			<TextField name="TextField_PracticeText" visible="False" enabled="False"/>
+			
+			<Container name="Container_MyScore">
+				<TextField name="TextField_MyScoreName" visible="True" enabled="False"/>
+	
+				<TextField name="TextField_MyScoreNumber" text="0" enabled="False"/>
+			</Container>
+		
+			<MovieClip name="Highscore_Holder"/>
+			<Button name="Button_ArrowUp" MouseUp="UP"/>
+			<Button name="Button_ArrowDown" MouseUp="DOWN"/>
+		</Container>
+		
+		<MovieClip name="MovieClip_Sidebar_BG" visible="True"/>
+	</Container>

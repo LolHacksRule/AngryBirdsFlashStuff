@@ -1,0 +1,54 @@
+		<Popup name="Popup_Login" visible="False" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="1024" height="768">
+
+			<Container name="Container_Login_Tab">
+				<Button name="Button_Tab_Login" MouseUp="TAB_LOGIN" scaleOnMouseOver="True"/>	
+
+				<TextField name="TextField_UserNameField"/>
+				<TextField name="TextField_PasswordField"/>
+				<TextField name="Text_Email"/>
+				<TextField name="Text_Password"/>
+				<TextField name="TextField_RememberMe"/>
+				
+				<Button name="Button_Submit" MouseUp="SUBMIT"/>
+				<Button name="Button_Cancel" MouseUp="CANCEL"/>
+				
+				<Button name="Checkbox_RememberMe" MouseUp="CHECKBOX_CHANGE"/>
+				
+				<Button name="Button_ForgotPassword" MouseUp="FORGOT_PASSWORD" scaleOnMouseOver = "True"/>
+				
+				<MovieClip name="MovieClip_ErrorLoginMarkEmail" Enabled="False" visible="False"/>
+				<MovieClip name="MovieClip_ErrorLoginMarkPassword" Enabled="False" visible="False"/>
+			</Container>
+			
+			<Container name="Container_Register_Tab">
+				<Button name="Button_Tab_Register" MouseUp="TAB_REGISTER" scaleOnMouseOver = "True"/>	
+
+				<TextField name="TextField_EmailField_Register"/>
+				<TextField name="TextField_PasswordField_Register"/>
+				<TextField name="TextField_PasswordFieldRepeat_Register"/>
+				<TextField name="TextField_NickNameField_Register"/>
+				<TextField name="Text_Email_Register"/>
+				<TextField name="Text_Password_Register"/>
+				<TextField name="TextField_RememberMe_Register"/>
+				<TextField name="TextField_PasswordAgain"/>
+				<TextField name="TextField_Nickname"/>
+				<TextField name="TextField_IWantToRecieveAds"/>
+				
+				
+				
+				<Button name="Checkbox_RememberMe_Register" MouseUp="CHECKBOX_CHANGE"/>
+				<Button name="Checkbox_Marketing" MouseUp="CHECKBOX_MARKETING_CHANGE"/>
+				<Button name="Button_Submit_Register" MouseUp="SUBMIT_REGISTER"/>
+				<Button name="Button_Cancel_Register" MouseUp="CANCEL_REGISTER"/>
+				
+				<TextField name="TextField_Legal"/>
+
+				
+				
+				<MovieClip name="MovieClip_ErrorRegisterMarkEmail" Enabled="False" visible="False"/>
+				<MovieClip name="MovieClip_ErrorRegisterMarkPassword" Enabled="False" visible="False"/>
+				<MovieClip name="MovieClip_ErrorRegisterMarkPasswordRepeat" Enabled="False" visible="False"/>
+				<MovieClip name="MovieClip_ErrorRegisterMarkNick" Enabled="False" visible="False"/>
+			</Container>
+			<MovieClip name="WaitingPopupLogin" visible="false" />
+		</Popup>

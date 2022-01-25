@@ -1,0 +1,159 @@
+<tuner game="AngryBirds" version="0.0.0">
+
+    <Item_Materials>
+	     <!-- bodyType: Acccepted values are dynamic for moving objects which can take damage such as birds /blocks / pigs   
+																			kinetic for moving objects which can not be damages such as moving ground platforms if we do  implement them later
+																			static for still objects which can not be damaged such as ground layers and terrains-->
+    	<!-- density: a number used to calculate object mass. Mass = density x volume
+							 Bigger mass means objects will fly less when they get hit and they will apply more damage to other objects when they hit them. -->
+
+    	<!-- friction: this number is used to calculate how much velocity loss will occur when they object hit each other 
+							 For example ice should have less friction than others so objects can slide on them without losing much velocity-->	
+
+    	<!-- restitution: this number is used to calculate how much objects will bounce from each other when they hit
+							 For example stone should have higher restitution than grass because objects can bounce better on stone-->
+
+   	    <!-- strenght: this number is used to calculate how much damage an object can take before being destroyed
+							 The final total energy value will be calculated based on strenght, volume and width/height ratio of the object-->
+
+   	    <!-- defense: This number will determine how much counter tolerance an object can show to damages
+							 If the damage is smaller than the defence then object will not lose any energy. This is useful to avoid constant damages in small impacts between blocks-->
+				
+		<Material id="Material_Block_Happymeal" bodyType="DYNAMIC" density="1.0" friction="0.7" restitution="0.4" strength="10.0" defence="2.0" />
+		
+		<Material id="Material_Block_Hamburger" bodyType="DYNAMIC" density="1" friction="4.0" restitution="0.2" defence="1.0" />		
+		<Material id="Material_Block_Fries" bodyType="DYNAMIC" density="1" friction="4.0" restitution="0.2" defence="1.0" />
+		<Material id="Material_Block_Soda" bodyType="DYNAMIC" density="1" friction="4.0" restitution="0.2" defence="1.0" />
+		<Material id="Material_Block_Lantern" bodyType="DYNAMIC" density="0.1" friction="4.0" restitution="0.1" defence="1.0" strenght="1"/>
+				
+
+		<Material id="Material_Misc_Balloon_Moving" bodyType="DYNAMIC" density="1.0" friction="0.3" restitution="0.45" strength="1.0" defence="0.5" />
+		<Material id="Material_Bird_Heikki" bodyType="DYNAMIC" density="20.0" friction="0.3" restitution="0.45" strength="20.0" defence="1.0" />
+		<Material id="Material_Misc_Heikki_Tire_4x4" bodyType="DYNAMIC" density="1.5" friction="10.0" strength="300.0" defence="1.0" restitution="0.6"/>
+	</Item_Materials>
+
+
+    <Item_Shapes>
+	   <Shape id="BLOCK_RECT_2X4" shape="POLYGON">
+			<Vertex index="0" x="1.0" y="-1.8859999" />
+			<Vertex index="1" x="1.0" y="1.8859999" />
+			<Vertex index="2" x="-1.0" y="1.8859999" />
+			<Vertex index="3" x="-1.0" y="-1.8859999" />
+		</Shape>
+
+		<Shape id="BIRD_CIRCLE_HEIKKI" shape="CIRCLE">
+			<Radius value="2.3"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+		
+		<Shape id="Happymeal_shape" shape="POLYGON">
+			<Vertex index="0" x="1.6" y="2.3859999" />
+			<Vertex index="1" x="-1.6" y="2.3859999" />
+			<Vertex index="2" x="-1.75" y="0" />
+			<Vertex index="3" x="-1.6" y="-1.3859999" />
+			<Vertex index="4" x="1.6" y="-1.3859999" />
+			<Vertex index="5" x="1.75" y="0" />
+		</Shape>
+		
+		<Shape id="Soda_shape" shape="POLYGON">
+			<Vertex index="0" x="0.94299996" y="-1.810" />
+			<Vertex index="1" x="0.54299996" y="1.909" />
+			<Vertex index="2" x="-0.54299996" y="1.909" />
+			<Vertex index="3" x="-0.94299996" y="-1.810" />
+		</Shape>
+		
+		<Shape id="Fries_shape" shape="POLYGON">
+			<Vertex index="0" x="0.8" y="1.609" />
+			<Vertex index="1" x="-0.8" y="1.609" />
+			<Vertex index="2" x="-1.243" y="-1.510" />
+			<Vertex index="3" x="-0.543" y="-1.650" />
+			<Vertex index="4" x="0.543" y="-1.650" />
+			<Vertex index="5" x="1.243" y="-1.510" />
+		</Shape>
+		
+		<Shape id="Hamburger_shape" shape="POLYGON">
+			<Vertex index="0" x="1.50" y="1.309" />
+			<Vertex index="1" x="-1.50" y="1.309" />
+			<Vertex index="2" x="-1.50" y="-1.010" />
+			<Vertex index="3" x="-0.8" y="-1.310" />
+			<Vertex index="4" x="0.8" y="-1.310" />
+			<Vertex index="5" x="1.50" y="-1.010" />
+		</Shape>
+		
+		<Shape id="Lantern_Round_Shape" shape="CIRCLE">
+			<Radius value="1.425"/>
+			<Vertex index="0" x="0" y="0" />
+		</Shape>
+		
+		<Shape id="Lantern_Rectangle_Shape" shape="POLYGON">
+			<Vertex index="0" x="0.9" y="-1" />
+			<Vertex index="1" x="0.9" y="1.625" />
+			<Vertex index="2" x="-0.9" y="1.625" />
+			<Vertex index="3" x="-0.9" y="-1" />
+		</Shape>
+		
+		<Shape id="Cookie_Round_Shape" shape="CIRCLE">
+			<Radius value="0.7"/>
+			<Vertex index="0" x="0" y="0" />
+		</Shape>
+		<Shape id="Cookie_Rectangle_Shape" shape="POLYGON">
+			<Vertex index="0" x="0.9" y="-0.5" />
+			<Vertex index="1" x="0.9" y="0.5" />
+			<Vertex index="2" x="-0.9" y="0.5" />
+			<Vertex index="3" x="-0.9" y="-0.5" />
+		</Shape>
+	</Item_Shapes>
+	
+   <Item_Resources_Sounds>
+		<Resource_Sound id="WOOD" channel="ChannelWood" Clicked="Wood_Clicked6" Damaged="Wood_Damaged3" Destroyed="Wood_Destroyed3" /> 
+		<Resource_Sound id="ICE" channel="ChannelIce" Clicked="Ice_Clicked8" Damaged="Ice_Damaged3" Destroyed="Ice_Destroyed3" Rolling="Ice_Rolling1"/> 	 
+   
+		<Resource_Sound id="HAPPY_MEAL_SOUND" channel="ChannelExplosions" Destroyed="HappyMeal_Destroyed1"/>
+		<Resource_Sound id="FRIES_SOUND" channel="ChannelExplosions" Destroyed="Fries_Destroyed1"/>
+		<Resource_Sound id="SODA_SOUND" channel="ChannelExplosions" Destroyed="Soda_Destroyed1"/>
+		<Resource_Sound id="BURGER_SOUND" channel="ChannelExplosions" Destroyed="Burger_Destroyed1"/>
+		<Resource_Sound id="COOKIE_SOUND" channel="ChannelExplosions" Destroyed="Cookie_Destroyed1"/>
+		<Resource_Sound id="LANTERN_SOUND" channel="ChannelExplosions" Destroyed="Lantern_Destroyed1"/>
+   </Item_Resources_Sounds>
+
+
+	
+	
+	<SoundChannels>
+		
+	</SoundChannels>
+	
+   	<Items>
+		<Item id="BLOCK_TIRE_4X4" material="Material_Misc_Heikki_Tire_4x4" sounds="TIRE_1" shape="BLOCK_CIRCLE_4X4" health="1000.0" score="2000" type="3"/>
+   	
+   		<Item id="BLOCK_HAPPYMEAL" material="Material_Block_Happymeal" shape="Happymeal_shape" sounds="HAPPY_MEAL_SOUND" score="4000" health="50.0" type="3" category="Wood"  front="true"/>
+		<Item id="BLOCK_FRIES" material="Material_Block_Fries" shape="Fries_shape" sounds="FRIES_SOUND" score="4000" type="2" health="5.0" category="Misc" front="true"/>
+		<Item id="BLOCK_SODA" material="Material_Block_Soda" shape="Soda_shape" sounds="SODA_SOUND" score="4000" type="2" health="5.0" category="Misc" front="true"/>
+		<Item id="BLOCK_HAMBURGER" material="Material_Block_Hamburger" shape="Hamburger_shape" sounds="BURGER_SOUND" score="4000" type="2" health="5.0" category="Misc" front="true"/>
+
+		<Item id="BLOCK_LANTERN_RECTANGLE" material="Material_Block_Lantern" shape="Lantern_Rectangle_Shape" sounds="LANTERN_SOUND" score="2000" type="2" health="5.0" category="Misc" front="true"/>
+		<Item id="BLOCK_LANTERN_ROUND" material="Material_Block_Lantern" shape="Lantern_Round_Shape" sounds="LANTERN_SOUND" score="2000" type="2" health="5.0" category="Misc" front="true"/>
+		
+		<Item id="BLOCK_LANTERN_RECTANGLE_2" material="Material_Block_Lantern" shape="Lantern_Rectangle_Shape" sounds="COOKIE_SOUND" score="500" type="2" health="10.0" category="Misc" front="true"/>
+		<Item id="BLOCK_LANTERN_ROUND_2" material="Material_Block_Lantern" shape="Lantern_Round_Shape" sounds="COOKIE_SOUND" score="500" type="2" health="10.0" category="Misc" front="true"/>
+		
+		<Item id="BLOCK_COOKIE_ROUND" material="Material_Block_Hamburger" shape="Cookie_Round_Shape" sounds="COOKIE_SOUND" score="2000" type="2" health="10.0" category="Misc" front="true"/>
+		<Item id="BLOCK_COOKIE_RECTANGLE" material="Material_Block_Hamburger" shape="Cookie_Rectangle_Shape" sounds="COOKIE_SOUND" score="2000" type="2" health="10.0" category="Misc" front="true"/>
+		
+
+		<Item id="BREAKABLE_STATIC_BLOCK_TRANSPARENT" material="Material_Misc_Balloon" shape="Block_Rect_1x1_Static" score="50" health="-1.0" type="3" />
+		<!-- Static one in the level selection -->
+		<Item id="BIRD_BIG_BROTHER" material="Material_Bird_Heikki" shape="Bird_Circle_RedBig" sounds="BIRD_RED_BIG" score="0" health="12000.0" type="2" />
+		<Item id="BLOCK_PIG_BALLOON_2" material="Material_Misc_Balloon_Moving" shape="Balloon_Pig" score="500" health="5.0" type="2" />
+		<Item id="BLOCK_PIG_BALLOON_1" material="Material_Misc_Balloon_Moving" shape="Balloon_Pig" score="500" health="5.0" type="2" />
+
+   </Items>
+   
+   
+	<Material_Damage_Multipliers>
+   		<Material id="Material_Block_Building" MATERIAL_BIRD_REDBIG="0" Material_Ground_Hills="0"></Material>
+		<Material id="Material_Ground_Hills" Material_Block_Building="0" > </Material>
+	</Material_Damage_Multipliers>
+
+   <Material_Velocity_Multipliers>
+   </Material_Velocity_Multipliers></tuner>

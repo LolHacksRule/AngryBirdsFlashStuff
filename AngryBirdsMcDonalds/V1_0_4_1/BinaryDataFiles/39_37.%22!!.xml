@@ -1,0 +1,5 @@
+	<Popup name="Popup_ConfirmLogin" visible="False" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="1024" height="768">
+		<Button name="Button_Yes" MouseUp="LOGIN_YES"/>
+		<Button name="Button_No" MouseUp="LOGIN_NO"/>
+		<TextField name="TextField_LoginQuestion" text="" enabled="False"/>
+	</Popup>

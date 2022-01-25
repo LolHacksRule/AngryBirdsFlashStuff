@@ -1,0 +1,8 @@
+	<Popup name="Popup_ForgotPassword" visible="False" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="1024" height="768">			
+			<TextField name="TextField_UserNameFieldForgotPassword" tabIndex="1"/>
+			<TextField name="TextField_ForgotPasswordPopup" enabled="False"/>
+
+			<MovieClip name="MovieClip_ErrorLoginMarkEmailForgotPassword" visible="False" enabled="False"/>
+			<Button name="Button_SendPassword" MouseUp="SEND_PASSWORD"/>
+			<Button name="Button_Cancel" MouseUp="CANCEL_SEND_PASSWORD"/>
+	</Popup>

@@ -1,0 +1,7 @@
+	<Popup name="Popup_CodeEnter" visible="False" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="1024" height="768">
+		<Button name="Button_Submit" MouseUp="SUBMIT_CODE"/>
+		<Button name="Button_Later" MouseUp="CANCEL_CODE"/>
+		<TextField name="TextField_CodeEnterPopup" text="" enabled="False"/>
+		<TextField name="TextField_CodeEnterInput" text="" enabled="True"/>
+		<TextField name="Text_EnterCode_Input" text="" enabled="True"/>
+	</Popup>

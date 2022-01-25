@@ -1,0 +1,19 @@
+<Assets>
+	<packages>
+		<pack url="packages/core.pak"/>
+		<pack url="packages/chapter_mc_donalds.pak"/>
+	</packages>
+
+	<Library swf="external_assets/AngryBirdsCredits.swf" startupLoad="true" name="GameCredits"> 
+		<Asset name="ViewCredits"/>
+	</Library>
+
+	<Library swf="external_assets/AngryBirdsFlashUI.swf" startupLoad="true" name="GameUiAssets"> 
+	</Library>
+	
+	
+	<Library swf="external_assets/SoundsNew.swf" startupLoad="true" name="Sounds">
+	</Library>
+	
+	
+</Assets>

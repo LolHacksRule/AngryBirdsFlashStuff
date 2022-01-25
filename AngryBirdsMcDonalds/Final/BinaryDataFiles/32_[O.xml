@@ -1,0 +1,32 @@
+<LevelBackgrounds game="AngryBirds" version="0.0.0">
+    <Backgrounds>
+		
+       <!--  The layer which will remain on front should be listed on top  -->
+	  <!--  Background id must be same with the export name of main movie clip. Also same id must be used to create a new ground material  -->
+      
+      <Background id="MCDONALDS_THEME_1" sky="0x3bb7f6" ground="0x52473d" texture="THEME_MCD_STATICGROUND" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_Mc" >
+      	<Layers>      		      	
+      		<!-- Align the background in correct position with bottomOffset -->
+       		<Layer id="MCDONALDS_THEME1_BG1" speed="800" foreground="0" scale="1.75" bottomOffset="30" /> 
+      		<Layer id="MCDONALDS_THEME1_BG2" speed="700" foreground="0" scale="1.75" bottomOffset="80" />
+      		<Layer id="MCDONALDS_THEME1_BG3" speed="600" foreground="0" scale="1.75" bottomOffset="-260" />
+      		<Layer id="MCDONALDS_THEME1_BREAKFAST" speed="800" foreground="0" scale="1.75" bottomOffset="-1100"/>
+      		<Layer id="MCDONALDS_THEME1_FG" speed="1400" foreground="1" scale="1.75" bottomOffset="0" />
+      		
+      	</Layers>
+      </Background>
+
+      <Background id="MOONCAKE_THEME" sky="0x5e1b71" ground="0x500000" texture="MOONCAKE_THEME1_STATIC" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_Moon">
+      	<Layers>      		      	
+      		<!-- Align the background in correct position with bottomOffset -->
+
+      		<Layer id="MOONCAKE_THEME1_MOON" speed="700" foreground="0" scale="2" bottomOffset="-1400" tileable="false" xOffset="1000"/>
+      		<Layer id="MOONCAKE_THEME1_BG1" speed="800" foreground="0" scale="2" bottomOffset="-25" />
+      		<Layer id="MOONCAKE_THEME1_BG2" speed="700" foreground="0" scale="2" bottomOffset="-450" />
+      		<Layer id="MOONCAKE_THEME1_BG3" speed="600" foreground="0" scale="2" bottomOffset="-900" />
+      		<Layer id="MOONCAKE_THEME1_FG" speed="1400" foreground="1" scale="2" bottomOffset="160" />
+      	</Layers>
+      </Background>
+  </Backgrounds>
+
+</LevelBackgrounds>

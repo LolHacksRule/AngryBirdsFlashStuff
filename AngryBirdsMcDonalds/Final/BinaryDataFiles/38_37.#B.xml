@@ -1,0 +1,4 @@
+	<Popup name="Popup_ServerError" visible="False" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="1024" height="768">
+		<Button name="Button_Close" MouseUp="BUTTON_CLOSE"/>
+		<TextField name="TextField_ServerError" text="" enabled="False"/>
+	</Popup>

@@ -1,0 +1,11 @@
+	<Popup name="Popup_Pause" visible="False" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="1024" height="768">
+		<Container name="Container_PauseMenu">
+			<TextField name="TextField_LevelName" text="22-22" enabled="false" />
+			<TextField name="TextField_ChapterName" text="" enabled="false" visible="False"/>
+			<Button name="Button_Resume" MouseUp="RESUME_LEVEL"/>
+			<Button name="Button_Replay" MouseUp="RESTART_LEVEL"/>
+			<Button name="Button_Menu" MouseUp="MENU"/>
+			<MovieClip name="MovieClip_PauseMoon" enabled="False" visible="False"/>
+			<MovieClip name="MovieClip_PauseMc" enabled="False" visible="False"/>
+		</Container>
+	</Popup>
