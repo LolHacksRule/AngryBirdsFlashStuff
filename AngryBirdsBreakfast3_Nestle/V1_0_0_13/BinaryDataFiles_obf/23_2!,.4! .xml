@@ -1,0 +1,11 @@
+<Popup_Info name="Popup_LevelEndFail" visible="True" fromLibrary="True"
+	width="980" height="570" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE">
+	<Container name="Container_LevelEndStripe">
+		<Button name="Button_Menu" MouseUp="MENU" />
+		<Button name="Button_Replay" MouseUp="REPLAY" />
+		<Button name="Button_NextLevel" MouseUp="NEXT_LEVEL" />
+
+		<TextField name="TextField_LevelFailed" enabled="True" />
+		<MovieClip name="MovieClip_LevelEndFailedPig" visible="true" />
+	</Container>
+</Popup_Info>

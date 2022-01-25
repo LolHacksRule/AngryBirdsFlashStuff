@@ -1,0 +1,1704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+
+	<!--
+
+	language id="en"	=>	English
+	language id="zh"	=>	Traditional Chinese (zh-hant is the correct language code, but since the server accepts only 2-letter language codes, we are using 'zh')
+	language id="in"	=>	Bahasa Indonesia
+	language id="th"	=>	Thai
+	language id="ex"	=> Latin American Spanish (es-419 is the correct language code (http://www.iana.org/assignments/lang-tags/es-419), but since the server accepts only 2-letter language codes, we are using 'ex')
+	language id="nl"	=>	Dutch
+	language id="fr"	=>	French
+	language id="el"	=>	Greek
+	language id="it"	=>	Italian
+	language id="pt"	=>	Portuguese
+	language id="es"	=>	Spanish
+	language id="pl"	=>	Polish
+	language id="sl"	=>	Slovenian
+	language id="hr"	=>	Croatian
+	language id="sr"	=>	Serbian
+	language id="sq"	=>	Albanian
+	language id="mk"	=>	Macedonian
+	language id="bg"	=>	Bulgarian
+	language id="iw"	=>	Hebrew
+	language id="tr"	=>	Turkish
+	language id="de"	=>	German
+	language id="da"	=>	Danish
+	language id="fi"	=>	Finnish
+	language id="no"	=>	Norwegian
+	language id="sv"	=>	Swedish
+	language id="ru"	=>	Russian
+	language id="kk"	=>	Kazakh
+	language id="uk"	=>	Ukrainian
+	language id="hu"	=>	Hungarian
+
+	#####################################
+
+	Please insert the translation between the <language> tags.
+
+	For example:
+
+	<language id="en">Score</language>
+	<language id="zh">INSERT HERE THE TRANSLATION FOR 'Score' IN TRADITIONAL CHINESE</language>
+	<language id="in">INSERT HERE THE TRANSLATION FOR 'Score' IN BAHASA INDONESIA</language>
+	...
+
+
+	#####################################
+
+	-->
+
+
+	<font>
+		<language id="zh">Arial Unicode MS 字體</language>
+		<language id="en">Arial Unicode MS</language>
+		<language id="es">Arial Unicode MS</language>
+		<language id="fin">Arial Unicode MS</language>
+		<language id="heb">Arial Unicode MS</language>
+		<language id="bg">Arial Unicode MS</language>
+		<language id="da">Arial Unicode MS</language>
+		<language id="de">Arial Unicode MS</language>
+		<language id="el">Arial Unicode MS</language>
+		<language id="ex">Arial Unicode MS</language>
+		<language id="fi">Arial Unicode MS</language>
+		<language id="fr">Arial Unicode MS</language>
+		<language id="iw">Arial Unicode MS</language>
+		<language id="hr">Arial Unicode MS</language>
+		<language id="hu">Arial Unicode MS</language>
+		<language id="in">Arial Unicode MS</language>
+		<language id="it">Arial Unicode MS</language>
+		<language id="kk">Arial Unicode MS</language>
+		<language id="mk">Arial Unicode MS</language>
+		<language id="nl">Arial Unicode MS</language>
+		<language id="no">Arial Unicode MS</language>
+		<language id="pl">Arial Unicode MS</language>
+		<language id="pt">Arial Unicode MS</language>
+		<language id="ru">Arial Unicode MS</language>
+		<language id="sl">Arial Unicode MS</language>
+		<language id="sq">Arial Unicode MS</language>
+		<language id="sr">Arial Unicode MS</language>
+		<language id="sv">Arial Unicode MS</language>
+		<language id="th">Arial Unicode MS</language>
+		<language id="tr">Arial Unicode MS</language>
+		<language id="uk">Arial Unicode MS</language>
+	</font>
+
+	<group name="CountrySelectionState">
+		<automatic>
+		</automatic>
+	</group>
+
+	<group name="StatePlay">
+		<automatic>
+			<text id="TextField_Highscore_Label" description="Visible when playing the game in the top right corner. It informs the player about his previous best score in this level.">
+				<language id="en">Highscore</language>
+				<language id="zh">高分</language>
+				<language id="in">Skor Tertinggi</language>
+				<language id="th">คะแนนสูงสุด</language>
+				<language id="ex">Récord</language>
+				<language id="nl">Hoogste Score</language>
+				<language id="fr">Record</language>
+				<language id="el">Υψηλή βαθμολογία</language>
+				<language id="it">Punteggio più alto</language>
+				<language id="pt">Pontuação mais alta </language>
+				<language id="es">Récord</language>
+				<language id="pl">Rekord</language>
+				<language id="sl">Rekord</language>
+				<language id="hr">Najbolji rezultat</language>
+				<language id="sr">Najbolji rezultat</language>
+				<language id="sq">Rezultat i lartë</language>
+				<language id="mk">Најдобар резултат</language>
+				<language id="bg">Топ резултат</language>
+				<language id="iw">תוצאת שיא</language>
+				<language id="tr">En Yüksek Skor</language>
+				<language id="de">Rekord</language>
+				<language id="da">Highscore</language>
+				<language id="fi">Huipputulos</language>
+				<language id="no">Toppscore</language>
+				<language id="sv">Maxpoäng</language>
+				<language id="ru">Рекорды</language>
+				<language id="kk">Жоғары ұпай</language>
+				<language id="uk">Рекорд</language>
+				<language id="hu">Legmagasabb pontszám</language>
+			</text>
+
+			<text id="TextField_Score_Label" description="Visible when playing the game in the top right corner. Informs the player about the score he is about to gain in this play.">
+				<language id="en">Score</language>
+				<language id="zh">分數</language>
+				<language id="in">Skor</language>
+				<language id="th">คะแนน</language>
+				<language id="ex">Puntuación</language>
+				<language id="nl">Score</language>
+				<language id="fr">Score</language>
+				<language id="el">Βαθμολογία</language>
+				<language id="it">Punteggio</language>
+				<language id="pt">Pontuação</language>
+				<language id="es">Puntuación</language>
+				<language id="pl">Wynik</language>
+				<language id="sl">Rezultat</language>
+				<language id="hr">Rezultat</language>
+				<language id="sr">Rezultat</language>
+				<language id="sq">Rezultati</language>
+				<language id="mk">Резултат</language>
+				<language id="bg">Точки</language>
+				<language id="iw">תוצאה</language>
+				<language id="tr">Skor</language>
+				<language id="de">Punktzahl</language>
+				<language id="da">Score</language>
+				<language id="fi">Tulos</language>
+				<language id="no">Poeng</language>
+				<language id="sv">Poäng</language>
+				<language id="ru">Очки</language>
+				<language id="kk">Ұпай</language>
+				<language id="uk">Рахунок</language>
+				<language id="hu">Pontszám</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="StateEpisodeSelection">
+		<automatic>
+			<text id="TextField_Description" description="The informative text on the code input box.">
+				<language id="en">Reveal all the levels with a special code!</language>
+				<language id="zh">以特殊密碼為所有级别解鎖！</language>
+				<language id="in">Buka semua level dengan kode spesial!</language>
+				<language id="th">ผ่านทุกด่านด้วยรหัสพิเศษ!</language>
+				<language id="ex">¡Revela todos los niveles con un código especial!</language>
+				<language id="nl">Toon alle levels met een speciale code!</language>
+				<language id="fr">Débloquez tous les niveaux avec un code spécial !</language>
+				<language id="el">Να εμφανιστούν όλα τα επίπεδα με ειδικό κωδικό!</language>
+				<language id="it">Sblocca tutti i livelli con un codice speciale!</language>
+				<language id="pt">Mostrar todos os níveis com um código especial!</language>
+				<language id="es">¡Desbloquea todos los niveles con un código especial!</language>
+				<language id="pl">Odkryj wszystkie poziomy dzięki specjalnemu kodowi</language>
+				<language id="sl">Odkrij vse nivoje s posebno kodo!</language>
+				<language id="hr">Prikaži sve razine s posebnim kodom!</language>
+				<language id="sr">Otkrijte sve nivoe pomoću posebnog koda!</language>
+				<language id="sq">Zbuloni të gjitha nivelet me një kod të veçantë!</language>
+				<language id="mk">Откриј ги сите нивоа со специјален код!</language>
+				<language id="bg">Открий всички нива със специален код!</language>
+				<language id="iw">פתח את כל הרמות עם קוד מיוחד&#x202b;!&#x202c;</language>
+				<language id="tr">Özel kodunuzla tüm seviyeleri oynama hakký kazanýn!</language>
+				<language id="de">Alle Levels mit speziellem Code anzeigen!</language>
+				<language id="da">Få adgang til alle baner med en specialkode!</language>
+				<language id="fi">Paljasta kaikki kentät erikoiskoodilla!</language>
+				<language id="no">Viser aller nivåer med en spesiell kode!</language>
+				<language id="sv">Visa alla nivåer med en speciell kod!</language>
+				<language id="ru">Открой все уровни специальным кодом!</language>
+				<language id="kk">Барлық деңгейлерді ерекше кодпен ашыңыз!</language>
+				<language id="uk">Відкрити всі рівні за допомогою спеціального коду!</language>
+				<language id="hu">Érj el minden szintet a promóciós Nestlé gabonapelyhedben található kóddal!</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="StateLevelLoading">
+		<automatic>
+		</automatic>
+	</group>
+
+	<group name="SelectCountry_Popup">
+		<automatic>
+			<button id="Button_Play" description="This is written on a button for starting the game. Should be in capital letters.">
+				<language id="en">PLAY</language>
+				<language id="zh">玩遊戲</language>
+				<language id="in">MAINKAN</language>
+				<language id="th">เริ่มเล่น</language>
+				<language id="ex">JUGAR</language>
+				<language id="nl">START</language>
+				<language id="fr">JOUER</language>
+				<language id="el">ΠΑΙΞΕ</language>
+				<language id="it">GIOCA</language>
+				<language id="pt">JOGAR</language>
+				<language id="es">JUGAR</language>
+				<language id="pl">GRAJ</language>
+				<language id="sl">IGRAJ</language>
+				<language id="hr">IGRAJ</language>
+				<language id="sr">IGRAJ</language>
+				<language id="sq">LUAJ</language>
+				<language id="mk">ИГРАЈ</language>
+				<language id="bg">ИГРАЙ</language>
+				<language id="iw">שחק</language>
+				<language id="tr">OYNA</language>
+				<language id="de">SPIELEN</language>
+				<language id="da">SPIL</language>
+				<language id="fi">PELAA</language>
+				<language id="no">SPILL</language>
+				<language id="sv">SPELA</language>
+				<language id="ru">ИГРАТЬ</language>
+				<language id="kk">ОЙНА</language>
+				<language id="uk">ГРАТИ</language>
+				<language id="hu">JÁTÉK</language>
+			</button>
+		</automatic>
+	</group>
+
+	<group name="ServerError_Popup">
+		<automatic>
+			<text id="TextField_ServerError" isPopup="true" description="This is a generic error message for nasty surprises.">
+				<language id="en">Oops! An error occurred. Please refresh the page.</language>
+				<language id="zh">糟了！發生錯誤。請更新頁面。</language>
+				<language id="in">Aduh! Terjadi kesalahan. Silakan muat ulang halaman.</language>
+				<language id="th">ระบบขัดข้อง กรุณา รีเฟรชเพจ</language>
+				<language id="ex">¡Atención! Se ha producido un error. Actualiza la página.</language>
+				<language id="nl">Oei! Daar ging iets mis. Ververs de pagina.</language>
+				<language id="fr">Oups ! Une erreur est survenue. Veuillez réactualiser la page.</language>
+				<language id="el">Ωχ! Παρουσιάστηκε σφάλμα. Παρακαλούμε ανανεώστε τη σελίδα.</language>
+				<language id="it">Oops! Si è verificato un errore. Aggiorna la pagina.</language>
+				<language id="pt">Ups! Ocorreu um erro. Atualiza a página.</language>
+				<language id="es">¡Vaya! Se ha producido un error. Actualiza la página.</language>
+				<language id="pl">Ojej! Pojawił się błąd. Odśwież stronę</language>
+				<language id="sl">Ups! Prišlo je do napake. Prosimo, osveži stran.</language>
+				<language id="hr">Ups! Pojavila se pogreška. Osvježi stranicu.</language>
+				<language id="sr">Ups! Pojavila se greška. Molimo vas, osvežite stranicu.</language>
+				<language id="sq">Ah! Ka ndodhur një defekt. Ju lutemi rifreskoni faqen</language>
+				<language id="mk">Извини! Настана грешка. Освежи ја страницата.</language>
+				<language id="bg">Опа! Нещо се обърка. Моля, зареди отново страницата.</language>
+				<language id="iw">אופס&#x202b;!&#x202c; אירעה שגיאה&#x202b;.&#x202c; רענן את הדף&#x202b;.&#x202c;</language>
+				<language id="tr">Hay aksi! Bir hata oluştu. Lütfen sayfayı yenileyin.</language>
+				<language id="de">Ups! Es ist ein Fehler aufgetreten. Bitte die Seite neu laden.</language>
+				<language id="da">Hovsa! Der er opstået en fejl. Prøv at opdatere siden.</language>
+				<language id="fi">Hups! Virhe tapahtui. Päivitä sivu.</language>
+				<language id="no">Oops! Det har oppstått en feil. Vennligst last inn siden på nytt.</language>
+				<language id="sv">Hoppsan! Ett fel uppstod. Uppdatera sidan.</language>
+				<language id="ru">Ой! Произошла ошибка. Пожалуйста, перезагрузи страницу.</language>
+				<language id="kk">Ой! Қате орын алды. Бетті жаңартыңыз.</language>
+				<language id="uk">Ой! Сталася помилка. Оновіть сторінку.</language>
+				<language id="hu">Hoppá! Hiba történt. Kérjük, frissítsd az oldalt.</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="Error_Popup">
+		<automatic>
+			<text id="TextField_Error" isPopup="true" description="This is a generic error message for nasty surprises.">
+				<language id="en">Oops! An error occurred. Please refresh the page.</language>
+				<language id="zh">糟了！發生錯誤。請更新頁面。</language>
+				<language id="in">Aduh! Terjadi kesalahan. Silakan muat ulang halaman.</language>
+				<language id="th">ระบบขัดข้อง กรุณา รีเฟรชเพจ</language>
+				<language id="ex">¡Atención! Se ha producido un error. Actualiza la página.</language>
+				<language id="nl">Oei! Daar ging iets mis. Ververs de pagina.</language>
+				<language id="fr">Oups ! Une erreur est survenue. Veuillez réactualiser la page.</language>
+				<language id="el">Ωχ! Παρουσιάστηκε σφάλμα. Παρακαλούμε ανανεώστε τη σελίδα.</language>
+				<language id="it">Oops! Si è verificato un errore. Aggiorna la pagina.</language>
+				<language id="pt">Ups! Ocorreu um erro. Atualiza a página.</language>
+				<language id="es">¡Vaya! Se ha producido un error. Actualiza la página.</language>
+				<language id="pl">Ojej! Pojawił się błąd. Odśwież stronę</language>
+				<language id="sl">Ups! Prišlo je do napake. Prosimo, osveži stran.</language>
+				<language id="hr">Ups! Pojavila se pogreška. Osvježi stranicu.</language>
+				<language id="sr">Ups! Pojavila se greška. Molimo vas, osvežite stranicu.</language>
+				<language id="sq">Ah! Ka ndodhur një defekt. Ju lutemi rifreskoni faqen</language>
+				<language id="mk">Извини! Настана грешка. Освежи ја страницата.</language>
+				<language id="bg">Опа! Нещо се обърка. Моля, зареди отново страницата.</language>
+				<language id="iw">אופס&#x202b;!&#x202c; אירעה שגיאה&#x202b;.&#x202c; רענן את הדף&#x202b;.&#x202c;</language>
+				<language id="tr">Hay aksi! Bir hata oluştu. Lütfen sayfayı yenileyin.</language>
+				<language id="de">Ups! Es ist ein Fehler aufgetreten. Bitte die Seite neu laden.</language>
+				<language id="da">Hovsa! Der er opstået en fejl. Prøv at opdatere siden.</language>
+				<language id="fi">Hups! Virhe tapahtui. Päivitä sivu.</language>
+				<language id="no">Oops! Det har oppstått en feil. Vennligst last inn siden på nytt.</language>
+				<language id="sv">Hoppsan! Ett fel uppstod. Uppdatera sidan.</language>
+				<language id="ru">Ой! Произошла ошибка. Пожалуйста, перезагрузи страницу.</language>
+				<language id="kk">Ой! Қате орын алды. Бетті жаңартыңыз.</language>
+				<language id="uk">Ой! Сталася помилка. Оновіть сторінку.</language>
+				<language id="hu">Hoppá! Hiba történt. Kérjük, frissítsd az oldalt.</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="Logout_Popup">
+		<automatic>
+			<text id="TextField_LogoutQuestion" isPopup="true" description="A confirmation text in the logout popup.">
+				<language id="en">Are you sure you want to log out?</language>
+				<language id="zh">您確定要退出嗎？</language>
+				<language id="in">Apakah Anda yakin ingin keluar?</language>
+				<language id="th">คุณแน่ใจหรือไม่ว่าต้องการ ออกจากเกมส์?</language>
+				<language id="ex">¿Estás seguro que quieres cerrar sesión?</language>
+				<language id="nl">Weet je zeker dat je wilt uitloggen?</language>
+				<language id="fr">Voulez-vous vraiment vous déconnecter ?</language>
+				<language id="el">Είστε σίγουροι ότι θέλετε να αποσυνδεθείτε;</language>
+				<language id="it">Sei sicuro di volerti disconnettere?</language>
+				<language id="pt">Queres mesmo sair?</language>
+				<language id="es">¿Seguro que quieres cerrar sesión?</language>
+				<language id="pl">Czy na pewno chcesz się wylogować?</language>
+				<language id="sl">Si prepričan, da se želiš odjaviti?</language>
+				<language id="hr">Jesi li siguran/-na da se želiš odjaviti?</language>
+				<language id="sr">Da li ste sigurni da želite da se odjavite?</language>
+				<language id="sq">Jeni të sigurt se doni të dilni?</language>
+				<language id="mk">Сигурно сакаш да се одјавиш?</language>
+				<language id="bg">Сигурен ли си, че искаш да излезеш?</language>
+				<language id="iw">האם אתה בטוח שברצונך לצאת&#x202b;?&#x202c;</language>
+				<language id="tr">Oturumu kapatmak istediğinize emin misiniz?</language>
+				<language id="de">Bist du sicher, dass du dich abmelden willst?</language>
+				<language id="da">Er du sikker på, at du vil logge ud?</language>
+				<language id="fi">Haluatko varmasti kirjautua ulos?</language>
+				<language id="no">Er du sikker på at du vil logge deg av?</language>
+				<language id="sv">Vill du logga ut?</language>
+				<language id="ru">Хочешь выйти, уверен?</language>
+				<language id="kk">Шығу керек пе?</language>
+				<language id="uk">Ви впевнені, що хочете вийти? </language>
+				<language id="hu">Biztosan szeretnél kijelentkezni?</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="Login_Popup">
+		<automatic>
+			<text id="TextField_Nickname_Login" description="A text field for entering a nickname.">
+				<language id="en">Nickname</language>
+				<language id="zh">用戶名</language>
+				<language id="in">Nama panggilan</language>
+				<language id="th">ชื่อเล่น</language>
+				<language id="ex">Apodo</language>
+				<language id="nl">Nickname</language>
+				<language id="fr">Pseudo</language>
+				<language id="el">Ψευδώνυμο</language>
+				<language id="it">Nickname</language>
+				<language id="pt">Alcunha</language>
+				<language id="es">Apodo</language>
+				<language id="pl">Nick</language>
+				<language id="sl">Vzdevek</language>
+				<language id="hr">Nadimak</language>
+				<language id="sr">Nadimak</language>
+				<language id="sq">Pseudonimi</language>
+				<language id="mk">Прекар</language>
+				<language id="bg">Прякор</language>
+				<language id="iw">כינוי</language>
+				<language id="tr">Takma Ad</language>
+				<language id="de">Benutzername</language>
+				<language id="da">Kaldenavn</language>
+				<language id="fi">Nimimerkki</language>
+				<language id="no">Kallenavn</language>
+				<language id="sv">Smeknamn</language>
+				<language id="ru">Никнейм</language>
+				<language id="kk">Лақап</language>
+				<language id="uk">Нік</language>
+				<language id="hu">Játékosnév</language>
+			</text>
+
+			<text id="Text_Password" description="A text field for entering a password.">
+				<language id="en">Password</language>
+				<language id="zh">密碼</language>
+				<language id="in">Kata sandi</language>
+				<language id="th">รหัสผ่าน</language>
+				<language id="ex">Contraseña</language>
+				<language id="nl">Wachtwoord</language>
+				<language id="fr">Mot de passe</language>
+				<language id="el">Κωδικός πρόσβασης</language>
+				<language id="it">Password</language>
+				<language id="pt">Palavra-passe</language>
+				<language id="es">Contraseña</language>
+				<language id="pl">Hasło</language>
+				<language id="sl">Geslo</language>
+				<language id="hr">Lozinka</language>
+				<language id="sr">Lozinka</language>
+				<language id="sq">Fjalëkalimi</language>
+				<language id="mk">Лозинка</language>
+				<language id="bg">Парола</language>
+				<language id="iw">סיסמה</language>
+				<language id="tr">Parola</language>
+				<language id="de">Passwort</language>
+				<language id="da">Adgangskode</language>
+				<language id="fi">Salasana</language>
+				<language id="no">Passord</language>
+				<language id="sv">Lösenord</language>
+				<language id="ru">Пароль</language>
+				<language id="kk">Құпия сөз</language>
+				<language id="uk">Пароль</language>
+				<language id="hu">Jelszó</language>
+			</text>
+
+			<text id="Text_Password_Register" description="A text field for entering a password.">
+				<language id="en">Password</language>
+				<language id="zh">密碼</language>
+				<language id="in">Kata sandi</language>
+				<language id="th">รหัสผ่าน</language>
+				<language id="ex">Contraseña</language>
+				<language id="nl">Wachtwoord</language>
+				<language id="fr">Mot de passe</language>
+				<language id="el">Κωδικός πρόσβασης</language>
+				<language id="it">Password</language>
+				<language id="pt">Palavra-passe</language>
+				<language id="es">Contraseña</language>
+				<language id="pl">Hasło</language>
+				<language id="sl">Geslo</language>
+				<language id="hr">Lozinka</language>
+				<language id="sr">Lozinka</language>
+				<language id="sq">Fjalëkalimi</language>
+				<language id="mk">Лозинка</language>
+				<language id="bg">Парола</language>
+				<language id="iw">סיסמה</language>
+				<language id="tr">Parola</language>
+				<language id="de">Passwort</language>
+				<language id="da">Adgangskode</language>
+				<language id="fi">Salasana</language>
+				<language id="no">Passord</language>
+				<language id="sv">Lösenord</language>
+				<language id="ru">Пароль</language>
+				<language id="kk">Құпия сөз</language>
+				<language id="uk">Пароль</language>
+				<language id="hu">Jelszó</language>
+			</text>
+
+			<text id="TextField_RememberMe" description="A checkbox for selecting the game to remember the player when they return to the game (logs in automatically).">
+				<language id="en">Remember me</language>
+				<language id="zh">記住我的登記信息</language>
+				<language id="in">Ingat saya</language>
+				<language id="th">จดจำข้อมูลของฉัน</language>
+				<language id="ex">Recordarme</language>
+				<language id="nl">Onthoud mij</language>
+				<language id="fr">Se souvenir de moi</language>
+				<language id="el">Απομνημόνευση στοιχείων</language>
+				<language id="it">Ricordami</language>
+				<language id="pt">Lembrar-me</language>
+				<language id="es">Recordarme</language>
+				<language id="pl">Pamiętaj mnie</language>
+				<language id="sl">Zapomni si me</language>
+				<language id="hr">Zapamti me</language>
+				<language id="sr">Zapamti me</language>
+				<language id="sq">Më mbaj mend</language>
+				<language id="mk">Запомни ме</language>
+				<language id="bg">Запомни ме</language>
+				<language id="iw">זכור אותי</language>
+				<language id="tr">Beni hatırla</language>
+				<language id="de">Angemeldet bleiben</language>
+				<language id="da">Husk mig</language>
+				<language id="fi">Muista minut</language>
+				<language id="no">Husk meg</language>
+				<language id="sv">Kom ihåg mig</language>
+				<language id="ru">Запомнить меня</language>
+				<language id="kk">Мені есте сақта</language>
+				<language id="uk">Запам'ятати мене</language>
+				<language id="hu">Emlékezz rám</language>
+			</text>
+
+			<text id="TextField_RememberMe_Register" description="A checkbox for selecting the game to remember the player when they return to the game (logs in automatically).">
+				<language id="en">Remember me</language>
+				<language id="zh">記住我的登記信息</language>
+				<language id="in">Ingat saya</language>
+				<language id="th">จดจำข้อมูลของฉัน</language>
+				<language id="ex">Recordarme</language>
+				<language id="nl">Onthoud mij</language>
+				<language id="fr">Se souvenir de moi</language>
+				<language id="el">Απομνημόνευση στοιχείων</language>
+				<language id="it">Ricordami</language>
+				<language id="pt">Lembrar-me</language>
+				<language id="es">Recordarme</language>
+				<language id="pl">Pamiętaj mnie</language>
+				<language id="sl">Zapomni si me</language>
+				<language id="hr">Zapamti me</language>
+				<language id="sr">Zapamti me</language>
+				<language id="sq">Më mbaj mend</language>
+				<language id="mk">Запомни ме</language>
+				<language id="bg">Запомни ме</language>
+				<language id="iw">זכור אותי</language>
+				<language id="tr">Beni hatırla</language>
+				<language id="de">Angemeldet bleiben</language>
+				<language id="da">Husk mig</language>
+				<language id="fi">Muista minut</language>
+				<language id="no">Husk meg</language>
+				<language id="sv">Kom ihåg mig</language>
+				<language id="ru">Запомнить меня</language>
+				<language id="kk">Мені есте сақта</language>
+				<language id="uk">Запам'ятати мене</language>
+				<language id="hu">Emlékezz rám</language>
+			</text>
+
+			<text id="TextField_PasswordAgain">
+				<language id="en">Repeat password</language>
+				<language id="zh">請再次輸入密碼</language>
+				<language id="in">Ulang kata sandi</language>
+				<language id="th">ใส่รหัสผ่านอีกครั้ง</language>
+				<language id="ex">Repetir contraseña</language>
+				<language id="nl">Herhaal wachtwoord</language>
+				<language id="fr">Répétez le mot de passe</language>
+				<language id="el">Επανάληψη κωδικού</language>
+				<language id="it">Ripeti password</language>
+				<language id="pt">Repetir palavra-passe</language>
+				<language id="es">Repetir contraseña</language>
+				<language id="pl">Powtórz hasło</language>
+				<language id="sl">Ponovi geslo</language>
+				<language id="hr">Ponovi lozinku</language>
+				<language id="sr">Ponovite lozinku</language>
+				<language id="sq">Përsërit fjalëkalimin</language>
+				<language id="mk">Повтори ја лозинката</language>
+				<language id="bg">Повтори паролата</language>
+				<language id="iw">חזור על הסיסמה</language>
+				<language id="tr">Parolayı yineleyin</language>
+				<language id="de">Passwort wiederholen</language>
+				<language id="da">Gentag adgangskode</language>
+				<language id="fi">Toista salasana</language>
+				<language id="no">Gjenta passord</language>
+				<language id="sv">Skriv lösenordet igen</language>
+				<language id="ru">Повтори пароль</language>
+				<language id="kk">Құпия сөзді қайталау</language>
+				<language id="uk">Введіть пароль ще раз</language>
+				<language id="hu">Add meg újra a jelszót</language>
+			</text>
+
+			<text id="TextField_Nickname" description="A text field for entering a nickname.">
+				<language id="en">Nickname</language>
+				<language id="zh">用戶名</language>
+				<language id="in">Nama panggilan</language>
+				<language id="th">ชื่อเล่น</language>
+				<language id="ex">Apodo</language>
+				<language id="nl">Nickname</language>
+				<language id="fr">Pseudo</language>
+				<language id="el">Ψευδώνυμο</language>
+				<language id="it">Nickname</language>
+				<language id="pt">Alcunha</language>
+				<language id="es">Apodo</language>
+				<language id="pl">Nick</language>
+				<language id="sl">Vzdevek</language>
+				<language id="hr">Nadimak</language>
+				<language id="sr">Nadimak</language>
+				<language id="sq">Pseudonimi</language>
+				<language id="mk">Прекар</language>
+				<language id="bg">Прякор</language>
+				<language id="iw">כינוי</language>
+				<language id="tr">Takma Ad</language>
+				<language id="de">Benutzername</language>
+				<language id="da">Kaldenavn</language>
+				<language id="fi">Nimimerkki</language>
+				<language id="no">Kallenavn</language>
+				<language id="sv">Smeknamn</language>
+				<language id="ru">Никнейм</language>
+				<language id="kk">Лақап</language>
+				<language id="uk">Нік</language>
+				<language id="hu">Játékosnév</language>
+			</text>
+
+			<text id="TextField_LoginUseSameCountry" description="A text in the login popup. The user accounts are related to a country and login with a different country will fail.">
+				<language id="en">Note! Always log in using the same country.</language>
+				<language id="zh">請注意！請用同一個國家名稱登錄</language>
+				<language id="in">Perhatikan! Selalu login menggunakan negara yang sama.</language>
+				<language id="th">หมายเหตุ! ล็อกอินโดยใช้ประเทศเดิมทุกครั้ง</language>
+				<language id="ex">¡Atención! Siempre inicia la sesión utilizando el mismo país.</language>
+				<language id="nl">Let op! Gebruik bij inloggen altijd hetzelfde land.</language>
+				<language id="fr">Attention ! Utilisez toujours le même pays pour vous connecter.</language>
+				<language id="el">Σημείωση! Να συνδέεστε πάντα στην ίδια χώρα.</language>
+				<language id="it">Attenzione! Accedi selezionando sempre lo stesso paese.</language>
+				<language id="pt">Atenção! Entra usando sempre o mesmo país.</language>
+				<language id="es">¡Atención! Inicia siempre sesión utilizando el mismo país.</language>
+				<language id="pl">Pamiętaj! Zawsze loguj się używając tego samego kraju</language>
+				<language id="sl">Opomba! Vedno se prijavi z uporabo iste države.</language>
+				<language id="hr">Napomena! Uvijek se prijavi s istom državom.</language>
+				<language id="sr">Napomena! Uvek se prijavljujte koristeći istu zemlju.</language>
+				<language id="sq">Vini re! Futuni gjithnjë duke përdorur të njëjtin shtet.</language>
+				<language id="mk">Забелешка! Секогаш најавувај се со истата земја.</language>
+				<language id="bg">Внимание! Винаги влизай като използваш една и съща държава.</language>
+				<language id="iw">שים לב&#x202b;!&#x202c; היכנס תמיד מאותה המדינה&#x202b;.&#x202c;</language>
+				<language id="tr">Unutmayın! Her zaman aynı ülke ile oturum açın.</language>
+				<language id="de">Achtung! Melde dich immer mit demselben Land an.</language>
+				<language id="da">Bemærk! Log altid på med samme land.</language>
+				<language id="fi">Huomaa! Kun kirjaudut sisään, käytä aina samaa maata.</language>
+				<language id="no">NB! Bruk alltid samme land når du logger deg på.</language>
+				<language id="sv">Obs! Logga alltid in via samma land.</language>
+				<language id="ru">Внимание! Всегда указывай страну, выбранную при регистрации.</language>
+				<language id="kk">Ескертпе! Үнемі бір ел арқылы кіріңіз.</language>
+				<language id="uk">Увага! Завжди заходьте в гру, вибираючи одну й ту саму країну.</language>
+				<language id="hu">Ne feledd! Mindig ugyanazon az országon keresztül jelentkezz be.</language>
+			</text>
+
+			<text id="TextField_RegisterNoServiceForLostPasswords" description="A text in the register screen. The players    cannot retrieve or reset their passwords later. &#10; mean line break - please add it in the translated text as well.">
+				<language id="en">Note! There is no service to retrieve lost passwords.&#10;Make sure you remember your password.</language>
+				<language id="zh">請注意！本遊戲未設有擷取密碼服務。請記住您的密碼。</language>
+				<language id="in">Perhatikan! Kata sandi yang hilang tidak bisa diperoleh kembali. Pastikan Anda mengingat kata sandi anda.</language>
+				<language id="th">หมายเหตุ! จะไม่มีบริการกู้คืนรหัสผ่านที่สูญหาย โปรดจดจำรหัสผ่านไว้ให้ดี</language>
+				<language id="ex">¡Atención! No hay ningún servicio de recuperación de contraseñas perdidas. Asegúrate de recordar tu contraseña.</language>
+				<language id="nl">Let op! Het is niet mogelijk je wachtwoord op te vragen. Zorg dat je je wachtwoord onthoudt.</language>
+				<language id="fr">Attention ! Il n'y a aucune solution pour récupérer les mots de passe perdus. Assurez-vous de bien vous en rappeler.</language>
+				<language id="el">Σημείωση! Δεν διατίθεται υπηρεσία για την ανάκτηση κωδικών πρόσβασης που έχουν χαθεί. Φροντίστε να θυμάστε τον κωδικό πρόσβασης.</language>
+				<language id="it">Attenzione! Non è possibile recuperare la password. Assicurati di ricordare la tua password.</language>
+				<language id="pt">Atenção! As palavra-passe perdidas não podem ser recuperadas. Não te esqueças da tua palavra-passe.</language>
+				<language id="es">¡Atención! No hay ningún servicio de recuperación de contraseñas perdidas. Asegúrate de recordar tu contraseña.</language>
+				<language id="pl">Pamiętaj! Nie istnieje usługa odzyskiwania utraconego hasła. Upewnij się, że zapamiętałeś swoje hasło.</language>
+				<language id="sl">Opomba! Ne nudimo storitve za iskanje izgubljenih gesel. Svoje geslo si moraš zapomniti.</language>
+				<language id="hr">Napomena! Nema usluge obnavljanja izgubljenih lozinki.&#10;Svakako zapamti lozinku.</language>
+				<language id="sr">Napomena! Ne postoji servis za vraćanje izgubljene lozinke.&#10;Zapamtite svoju lozinku.</language>
+				<language id="sq">Vini re! Nuk ka shërbim për të marrë fjalëkalimet e humbura.&#10;Sigurohuni që ta mbani mend fjalëkalimin tuaj.</language>
+				<language id="mk">Забелешка! Не постои услуга за повраќање на заборавените лозинки.&#10;Секако обиди се да ја запомниш лозинката.</language>
+				<language id="bg">Внимание! Не могат да се възстановяват изгубени пароли.&#10;Увери се, че помниш паролата си.</language>
+				<language id="iw">שים לב&#x202B;!&#x202C; אין אפשרות לשחזר סיסמאות אבודות&#x202B;.&#x202C; נא לוודא שאתה זוכר את ססמתך&#x202B;.&#x202C;</language>
+				<language id="tr">Unutmayın! Parolaları hatırlatma hizmeti yoktur. Parolanızı unutmayacağınızdan emin olun.</language>
+				<language id="de">Achtung! Vergessene Passwörter können nicht erneut angefordert werden. Also vergiss dein Passwort nicht.</language>
+				<language id="da">Bemærk! Vi har ingen tjeneste til gendannelse af mistede adgangskoder. Husk din adgangskode.</language>
+				<language id="fi">Huomaa! Hukattujen salasanojen palauttamiseen ei ole toimintoa. Varmista siis, että muistat salasanasi.</language>
+				<language id="no">NB! Du kan ikke gjenopprette tapte passord. Påse at du husker passordet ditt.</language>
+				<language id="sv">Obs! Om du glömmer lösenordet finns det ingen möjlighet att återfå det. Se till att komma ihåg lösenordet.</language>
+				<language id="ru">Внимание! Мы не сможем восстановить забытый пароль. Убедись, что ты запомнил свой пароль.</language>
+				<language id="kk">Ескертпе! Жоғалған құпия сөздерді шығарып алу қызметі жоқ. Құпия сөзді есте сақтаңыз.</language>
+				<language id="uk">Увага! Втрачені паролі не відновлюються. Переконайтеся, що пам'ятаєте пароль.</language>
+				<language id="hu">Ne feledd! Az elveszített jelszót nem tudod lekérni. Gondoskodj róla, hogy megjegyezd a jelszavadat.</language>
+			</text>
+
+			<button id="Button_Tab_Login" description="A link to the login popup, shown in the registration popup.">
+				<language id="en">Click here to login</language>
+				<language id="zh">點擊此處登錄</language>
+				<language id="in">Klik di sini untuk login.</language>
+				<language id="th">คลิกที่นี่เพื่อเข้าสู่เกมส์</language>
+				<language id="ex">Haz clic aquí para iniciar sesión</language>
+				<language id="nl">Klik hier om in te loggen</language>
+				<language id="fr">Cliquez ici pour vous connecter</language>
+				<language id="el">Κάντε κλικ εδώ για να συνδεθείτε</language>
+				<language id="it">Fai clic qui per accedere</language>
+				<language id="pt">Clica aqui para entrares</language>
+				<language id="es">Haz clic aquí para iniciar sesión</language>
+				<language id="pl">Kliknij tutaj, aby się zalogować</language>
+				<language id="sl">Za prijavo klikni tukaj</language>
+				<language id="hr">Klikni ovdje za prijavu</language>
+				<language id="sr">Kliknite ovde da se prijavite</language>
+				<language id="sq">Klikoni këtu për të hyrë.</language>
+				<language id="mk">Кликни овде за да се најавиш</language>
+				<language id="bg">Натисни тук, за да влезеш</language>
+				<language id="iw">לכניסה לחץ כאן</language>
+				<language id="tr">Oturum açmak için burayı tıklatın</language>
+				<language id="de">Zum Anmelden hier klicken</language>
+				<language id="da">Klik her for at logge på</language>
+				<language id="fi">Kirjaudu sisään tätä napsauttamalla</language>
+				<language id="no">Klikk her for å logge deg på</language>
+				<language id="sv">Klicka här för att logga in</language>
+				<language id="ru">Кликни, чтобы войти</language>
+				<language id="kk">Кіру үшін осында нұқыңыз</language>
+				<language id="uk">Щоб увійти, натисніть тут</language>
+				<language id="hu">Kattints ide a bejelentkezéshez</language>
+			</button>
+
+			<button id="Button_Tab_Register" description="A link to the register popup, shown in the login popup.">
+				<language id="en">Click here to register</language>
+				<language id="zh">點擊此處註冊帳戶</language>
+				<language id="in">Klik di sini untuk mendaftar.</language>
+				<language id="th">คลิกที่นี่เพื่อลงทะเบียน</language>
+				<language id="ex">Haz clic aquí para registrarte</language>
+				<language id="nl">Klik hier om je aan te melden</language>
+				<language id="fr">Cliquez ici pour vous inscrire</language>
+				<language id="el">Κάντε κλικ εδώ για να εγγραφείτε</language>
+				<language id="it">Fai clic qui per registrarti</language>
+				<language id="pt">Clica aqui para te registares</language>
+				<language id="es">Haz clic aquí para registrarte</language>
+				<language id="pl">Kliknij tutaj, aby się zarejestrować</language>
+				<language id="sl">Za registracijo klikni tukaj</language>
+				<language id="hr">Klikni ovdje za registraciju</language>
+				<language id="sr">Kliknite ovde da se registrujete</language>
+				<language id="sq">Klikoni këtu për t'u regjistruar.</language>
+				<language id="mk">Кликни овде за да се регистрираш</language>
+				<language id="bg">Натисни тук, за да се регистрираш</language>
+				<language id="iw">להרשמה לחץ כאן</language>
+				<language id="tr">Kaydolmak için burayı tıklatın</language>
+				<language id="de">Zum Registrieren hier klicken</language>
+				<language id="da">Klik her for at tilmelde dig</language>
+				<language id="fi">Rekisteröidy tätä napsauttamalla</language>
+				<language id="no">Klikk her for å melde deg på</language>
+				<language id="sv">Klicka här för att registrera dig</language>
+				<language id="ru">Кликни, чтобы зарегистрироваться</language>
+				<language id="kk">Тіркелу үшін осында нұқыңыз</language>
+				<language id="uk">Для реєстрації натисніть тут</language>
+				<language id="hu">Kattints ide a regisztráláshoz</language>
+			</button>
+
+			<text id="TextField_LoginTitle" description="The title of the login popup">
+				<language id="en">Login</language>
+				<language id="zh">登錄</language>
+				<language id="in">Login</language>
+				<language id="th">ล็อกอิน</language>
+				<language id="ex">Iniciar sesión</language>
+				<language id="nl">Inloggen</language>
+				<language id="fr">Connexion</language>
+				<language id="el">Σύνδεση</language>
+				<language id="it">Accedi</language>
+				<language id="pt">Entrar</language>
+				<language id="es">Iniciar sesión</language>
+				<language id="pl">Logowanie</language>
+				<language id="sl">Prijava</language>
+				<language id="hr">Prijavi se</language>
+				<language id="sr">Prijavite se</language>
+				<language id="sq">Hyni me emrin tuaj</language>
+				<language id="mk">Најави се</language>
+				<language id="bg">Влез</language>
+				<language id="iw">כניסה</language>
+				<language id="tr">Oturum Aç</language>
+				<language id="de">Anmelden</language>
+				<language id="da">Log på</language>
+				<language id="fi">Kirjaudu sisään</language>
+				<language id="no">Pålogging</language>
+				<language id="sv">Logga in</language>
+				<language id="ru">Вход</language>
+				<language id="kk">Кіру</language>
+				<language id="uk">Увійти</language>
+				<language id="hu">Bejelentkezés</language>
+			</text>
+
+			<text id="TextField_RegisterTitle" description="The title of the register popup">
+				<language id="en">Register</language>
+				<language id="zh">註冊帳戶</language>
+				<language id="in">Daftar</language>
+				<language id="th">ลงทะเบียน</language>
+				<language id="ex">Registrarse</language>
+				<language id="nl">Aanmelden</language>
+				<language id="fr">Inscription</language>
+				<language id="el">Εγγραφή</language>
+				<language id="it">Registrati</language>
+				<language id="pt">Registar</language>
+				<language id="es">Registrarse</language>
+				<language id="pl">Rejestracja</language>
+				<language id="sl">Registracija</language>
+				<language id="hr">Registriraj se</language>
+				<language id="sr">Registrujte se</language>
+				<language id="sq">Regjistrohu</language>
+				<language id="mk">Регистрирај се</language>
+				<language id="bg">Регистрирай се</language>
+				<language id="iw">הרשמה</language>
+				<language id="tr">Kaydol</language>
+				<language id="de">Registrieren</language>
+				<language id="da">Tilmeld</language>
+				<language id="fi">Rekisteröidy</language>
+				<language id="no">Påmelding</language>
+				<language id="sv">Registrera</language>
+				<language id="ru">Регистрация</language>
+				<language id="kk">Тіркелу</language>
+				<language id="uk">Реєстрація</language>
+				<language id="hu">Regisztrálás</language>
+			</text>
+
+			<button id="Button_Login" description="The title of the login popup">
+				<language id="en">Login</language>
+				<language id="zh">登錄</language>
+				<language id="in">Login</language>
+				<language id="th">ล็อกอิน</language>
+				<language id="ex">Iniciar sesión</language>
+				<language id="nl">Inloggen</language>
+				<language id="fr">Connexion</language>
+				<language id="el">Σύνδεση</language>
+				<language id="it">Accedi</language>
+				<language id="pt">Entrar</language>
+				<language id="es">Iniciar sesión</language>
+				<language id="pl">Logowanie</language>
+				<language id="sl">Prijava</language>
+				<language id="hr">Prijavi se</language>
+				<language id="sr">Prijavite se</language>
+				<language id="sq">Hyni me emrin tuaj</language>
+				<language id="mk">Најави се</language>
+				<language id="bg">Влез</language>
+				<language id="iw">כניסה</language>
+				<language id="tr">Oturum Aç</language>
+				<language id="de">Anmelden</language>
+				<language id="da">Log på</language>
+				<language id="fi">Kirjaudu sisään</language>
+				<language id="no">Pålogging</language>
+				<language id="sv">Logga in</language>
+				<language id="ru">Вход</language>
+				<language id="kk">Кіру</language>
+				<language id="uk">Увійти</language>
+				<language id="hu">Bejelentkezés</language>
+			</button>
+		</automatic>
+	</group>
+
+	<group name="StateEnd">
+		<automatic>
+			<text id="TextField_LevelCleared" description="Title of the level ending view when the player manages to pass the level.">
+				<language id="en">Level Cleared!</language>
+				<language id="zh">過關了！</language>
+				<language id="in">Level Dikosongkan!</language>
+				<language id="th">ผ่านด่านแล้ว</language>
+				<language id="ex">¡Nivel superado!</language>
+				<language id="nl">Level gehaald!</language>
+				<language id="fr">Niveau réussi !</language>
+				<language id="el">Τέλος επιπέδου!</language>
+				<language id="it">Livello completato!</language>
+				<language id="pt">Nível Concluído!</language>
+				<language id="es">¡Nivel superado!</language>
+				<language id="pl">Poziom ukończony!</language>
+				<language id="sl">Nivo zaključen!</language>
+				<language id="hr">Razina riješena!</language>
+				<language id="sr">Nivo rešen!</language>
+				<language id="sq">Niveli u plotësua!</language>
+				<language id="mk">Го помина нивото!</language>
+				<language id="bg">Завършено ниво!</language>
+				<language id="iw">!עלית רמה</language>
+				<language id="tr">Seviye Geçildi!</language>
+				<language id="de">Level geschafft!</language>
+				<language id="da">Bane gennemført!</language>
+				<language id="fi">Kenttä läpäisty!</language>
+				<language id="no">Nivå klarert!</language>
+				<language id="sv">Nivån är avklarad!</language>
+				<language id="ru">Уровень завершён!</language>
+				<language id="kk">Деңгейден өттіңіз!</language>
+				<language id="uk">Рівень пройдено!</language>
+				<language id="hu">Szint teljesítve!</language>
+			</text>
+
+			<text id="MovieClip_BestScoreText" description="Refers to the best score the player has made in this level before.">
+				<language id="en">Best:</language>
+				<language id="zh">最佳分數：</language>
+				<language id="in">Terbaik:</language>
+				<language id="th">ดีที่สุด:</language>
+				<language id="ex">Mejor:</language>
+				<language id="nl">Beste:</language>
+				<language id="fr">Meilleur :</language>
+				<language id="el">Καλύτερο:</language>
+				<language id="it">Record:</language>
+				<language id="pt">Melhor:</language>
+				<language id="es">Mejor:</language>
+				<language id="pl">Rekord:</language>
+				<language id="sl">Najboljši:</language>
+				<language id="hr">Najbolji:</language>
+				<language id="sr">Najbolji:</language>
+				<language id="sq">Më i miri:</language>
+				<language id="mk">Најдобро:</language>
+				<language id="bg">Рекорд:</language>
+				<language id="iw">הטוב ביותר&#x202b;:&#x202c;</language>
+				<language id="tr">En İyi Skor:</language>
+				<language id="de">Rekord:</language>
+				<language id="da">Rekord:</language>
+				<language id="fi">Paras:</language>
+				<language id="no">Beste:</language>
+				<language id="sv">Bästa:</language>
+				<language id="ru">Результат:</language>
+				<language id="kk">Үздік:</language>
+				<language id="uk">Найкращий:</language>
+				<language id="hu">Rekordod:</language>
+			</text>
+
+			<text id="TextField_NewHighScore" description="The player completes the level and makes his new best score.">
+				<language id="en">New Highscore!</language>
+				<language id="zh">新的最高分！</language>
+				<language id="in">Skor Tertinggi Baru!</language>
+				<language id="th">คุณได้คะแนนสุงสุด!</language>
+				<language id="ex">¡Nuevo récord!</language>
+				<language id="nl">Nieuwe Hoogste Score!</language>
+				<language id="fr">Nouveau record !</language>
+				<language id="el">Νέο ρεκόρ!</language>
+				<language id="it">Nuovo punteggio più alto!</language>
+				<language id="pt">Nova Pontuação Mais Alta!</language>
+				<language id="es">¡Nuevo récord!</language>
+				<language id="pl">Nowy rekord!</language>
+				<language id="sl">Nov rekord!</language>
+				<language id="hr">Novi najbolji rezultat!</language>
+				<language id="sr">Novi najbolji rezultat!</language>
+				<language id="sq">Rezultat i ri i lartë!</language>
+				<language id="mk">Нов најдобар резултат!</language>
+				<language id="bg">Нов рекорд!</language>
+				<language id="iw">!שיא חדש</language>
+				<language id="tr">Yeni En Yüksek Skor!</language>
+				<language id="de">Neuer Rekord!</language>
+				<language id="da">Ny highscore!</language>
+				<language id="fi">Uusi huipputulos!</language>
+				<language id="no">Ny toppscore!</language>
+				<language id="sv">Ny maxpoäng!</language>
+				<language id="ru">Новый рекорд!</language>
+				<language id="kk">Жаңа жоғары ұпай!</language>
+				<language id="uk">Новий рекорд!</language>
+				<language id="hu">Új rekord!</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="StateEndFail">
+		<automatic>
+			<text id="TextField_LevelFailed" description="Title of the level ending view when the player fails the level.">
+				<language id="en">Level Failed!</language>
+				<language id="zh">闖關失敗！</language>
+				<language id="in">Level Gagal!</language>
+				<language id="th">เสียใจด้วย คุณไม่ผ่านด่าน </language>
+				<language id="ex">¡Nivel no superado!</language>
+				<language id="nl">Level niet gehaald!</language>
+				<language id="fr">Niveau raté !</language>
+				<language id="el">Προσπάθησε ξανά!</language>
+				<language id="it">Livello non superato!</language>
+				<language id="pt">Nível Falhado!</language>
+				<language id="es">¡Nivel no superado!</language>
+				<language id="pl">Poziom przegrany!</language>
+				<language id="sl">Ni uspelo!</language>
+				<language id="hr">Neuspješno!</language>
+				<language id="sr">Neuspešno!</language>
+				<language id="sq">Niveli dështoi!</language>
+				<language id="mk">Не го помина нивото!</language>
+				<language id="bg">Незавършено ниво!</language>
+				<language id="iw">!נכשלת ברמה זו</language>
+				<language id="tr">Seviye Geçilemedi!</language>
+				<language id="de">Level verloren!</language>
+				<language id="da">Bane ikke gennemført!</language>
+				<language id="fi">Kenttä epäonnistui!</language>
+				<language id="no">Nivå mislykket!</language>
+				<language id="sv">Nivån misslyckades!</language>
+				<language id="ru">Попробуй еще!</language>
+				<language id="kk">Деңгейден өтпедіңіз!</language>
+				<language id="uk">Рівень не пройдено!</language>
+				<language id="hu">Nem sikerült teljesítened a szintet</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="Error_Messages">
+		<manual>
+			<text id="NICKNAME_LENGTH" description="This error message is shown in registration if the selected nick name is too short.">
+				<language id="en">Nickname is too short. Use at least 5 characters.</language>
+				<language id="zh">用戶名太短。必須有至少5個字母。</language>
+				<language id="in">Nama panggilan terlalu pendek. Gunakan setidaknya 5 karakter.</language>
+				<language id="th">ชื่อเล่นสั้นเกินไป ใส่อักขระอย่างน้อย 5 ตัว</language>
+				<language id="ex">El apodo es demasiado corto. Utiliza al menos 5 caracteres.</language>
+				<language id="nl">Nickname is te kort. Gebruik minstens 5 tekens.</language>
+				<language id="fr">Ce pseudo est trop court. Il doit faire au moins 5 caractères.</language>
+				<language id="el">Πολύ μικρό ψευδώνυμο. Χρησιμοποιήστε τουλάχιστον 5 χαρακτήρες.</language>
+				<language id="it">Il nickname è troppo corto. Utilizza almeno 5 caratteri.</language>
+				<language id="pt">Alcunha demasiado curta.  Usa, pelo menos, 5 carateres.</language>
+				<language id="es">El apodo es demasiado corto. Utiliza al menos 5 caracteres.</language>
+				<language id="pl">Nick jest za krótki. Użyj co najmniej 5 znaków.</language>
+				<language id="sl">Vzdevek je prekratek. Uporabi vsaj 5 znakov.</language>
+				<language id="hr">Nadimak je prekratak. Upotrijebi najmanje 5 znakova.</language>
+				<language id="sr">Nadimak je suviše kratak. Upotrebite najmanje 5 karaktera.</language>
+				<language id="sq">Pseudonimi është shumë i shkurtër. Përdorni të paktën 5 karaktere.</language>
+				<language id="mk">Прекарот е премногу краток. Користи најмалку 5 знаци.</language>
+				<language id="bg">Прякорът е прекалено къс. Използвай поне 5 символа.</language>
+				<language id="iw">הכינוי קצר מדי&#x202b;.&#x202c; השתמש ב-5 תווים לפחות&#x202b;.&#x202c;</language>
+				<language id="tr">Takma ad çok kısa. En az 5 karakter kullanın.</language>
+				<language id="de">Benutzername ist zu kurz. Es sind mindestens 5 Zeichen erforderlich.</language>
+				<language id="da">Kaldenavnet er for kort. Brug mindst fem tegn.</language>
+				<language id="fi">Nimimerkki on liian lyhyt. Käytä vähintään 5 merkkiä.</language>
+				<language id="no">Kallenavnet er for kort. Bruk minst 5 tegn.</language>
+				<language id="sv">Smeknamnet är för kort. Det måste vara minst fem tecken långt.</language>
+				<language id="ru">Никнейм слишком короткий. Должно быть более 5 символов.</language>
+				<language id="kk">Лақап тым қысқа. Кемінде 5 таңба пайдаланыңыз.</language>
+				<language id="uk">Нік занадто короткий. Використовуйте не менше 5 символів.</language>
+				<language id="hu">A játékosnév túl rövid. Legalább 5 karakter hosszúságúnak kell lennie.</language>
+			</text>
+
+			<text id="PASSWORD_LENGTH" description="This error message is shown if the selected password is too short.">
+				<language id="en">Password is too short. Use at least 5 characters.</language>
+				<language id="zh">密碼太短。必須有至少5個字母。</language>
+				<language id="in">Kata sandi terlalu pendek. Gunakan setidaknya 5 karakter.</language>
+				<language id="th">รหัสผ่านสั้นเกินไป ใส่อักขระอย่างน้อย 5 ตัว</language>
+				<language id="ex">La contraseña es demasiado corta. Utiliza al menos 5 caracteres.</language>
+				<language id="nl">Wachtwoord is te kort. Gebruik minstens 5 tekens.</language>
+				<language id="fr">Ce mot de passe est trop court. Il doit faire au moins 5 caractères.</language>
+				<language id="el">Πολύ μικρός κωδικός πρόσβασης. Χρησιμοποιήστε τουλάχιστον 5 χαρακτήρες.</language>
+				<language id="it">La password è troppo corta. Utilizza almeno 5 caratteri.</language>
+				<language id="pt">Palavra-passe demasiado curta. Usa, pelo menos, 5 carateres.</language>
+				<language id="es">La contraseña es demasiado corta. Utiliza al menos 5 caracteres.</language>
+				<language id="pl">Hasło jest za krótkie. Użyj co najmniej 5 znaków.</language>
+				<language id="sl">Geslo je prekratko. Uporabi vsaj 5 znakov.</language>
+				<language id="hr">Lozinka je prekratka. Upotrijebi najmanje 5 znakova.</language>
+				<language id="sr">Lozinka je suviše kratka. Upotrebite najmanje 5 karaktera.</language>
+				<language id="sq">Fjalëkalimi është shumë i shkurtër. Përdorni të paktën 5 karaktere.</language>
+				<language id="mk">Лозинката е прекратка. Користи најмалку 5 знаци.</language>
+				<language id="bg">Паролата е прекалено къса. Използвай поне 5 символа.</language>
+				<language id="iw">הסיסמה קצרה מדי&#x202b;.&#x202c; השתמש ב-5 תווים לפחות&#x202b;.&#x202c;</language>
+				<language id="tr">Parola çok kısa. En az 5 karakter kullanın.</language>
+				<language id="de">Passwort ist zu kurz. Es sind mindestens 5 Zeichen erforderlich.</language>
+				<language id="da">Adgangskoden er for kort. Brug mindst fem tegn.</language>
+				<language id="fi">Salasana on liian lyhyt. Käytä vähintään 5 merkkiä.</language>
+				<language id="no">Passordet er for kort. Bruk minst 5 tegn.</language>
+				<language id="sv">Lösenordet är för kort. Det måste vara minst fem tecken långt.</language>
+				<language id="ru">Пароль слишком короткий. Должно быть более 5 символов.</language>
+				<language id="kk">Құпия сөз тым қысқа. Кемінде 5 таңба пайдаланыңыз.</language>
+				<language id="uk">Пароль занадто короткий. Використовуйте не менше 5 символів.</language>
+				<language id="hu">A jelszó túl rövid. Legalább 5 karakter hosszúságúnak kell lennie.</language>
+			</text>
+
+			<text id="PASSWORDS_DONT_MATCH" description="This error message is shown in registration if the passwords do not match.">
+				<language id="en">The passwords don't match.</language>
+				<language id="zh">輸入的密碼不相符。</language>
+				<language id="in">kata sandi tidak cocok.</language>
+				<language id="th">รหัสผ่านไม่ตรงกัน</language>
+				<language id="ex">Las contraseñas no coinciden.</language>
+				<language id="nl">De wachtwoorden komen niet overeen.</language>
+				<language id="fr">Vous n'avez pas saisi le même mot de passe.</language>
+				<language id="el">Δεν είναι ίδιοι οι κωδικοί πρόσβασης.</language>
+				<language id="it">La password non corrisponde.</language>
+				<language id="pt">As palavras-passe não são iguais.</language>
+				<language id="es">Las contraseñas no coinciden.</language>
+				<language id="pl">Hasła się nie zgadzają.</language>
+				<language id="sl">Gesli se ne ujemata.</language>
+				<language id="hr">Lozinke se ne podudaraju.</language>
+				<language id="sr">Lozinke se ne podudaraju.</language>
+				<language id="sq">Fjalëkalimet nuk përputhen.</language>
+				<language id="mk">Лозинките не се совпаѓаат.</language>
+				<language id="bg">Паролата не съвпада.</language>
+				<language id="iw">הסיסמאות אינן תואמות&#x202b;.&#x202c;</language>
+				<language id="tr">Parolalar eşleşmiyor.</language>
+				<language id="de">Passwörter stimmen nicht überein.</language>
+				<language id="da">Adgangskoderne er ikke ens.</language>
+				<language id="fi">Salasanat eivät vastaa toisiaan.</language>
+				<language id="no">Passordet stemmer ikke.</language>
+				<language id="sv">Lösenorden överensstämmer inte.</language>
+				<language id="ru">Пароли не совпадают.</language>
+				<language id="kk">Құпия сөздер сәйкес емес.</language>
+				<language id="uk">Паролі не збігаються.</language>
+				<language id="hu">A két jelszó nem egyezik.</language>
+			</text>
+
+			<text id="PASSWORD_MISSING" description="Password is missing in the login or registration form.">
+				<language id="en">You need to enter a password.</language>
+				<language id="zh">請輸入密碼。</language>
+				<language id="in">Anda perlu mengisikan kata sandi.</language>
+				<language id="th">คุณต้องใส่รหัสผ่าน</language>
+				<language id="ex">Debes introducir una contraseña.</language>
+				<language id="nl">Je moet een wachtwoord invoeren.</language>
+				<language id="fr">Choisissez un mot de passe.</language>
+				<language id="el">Πρέπει να εισαγάγετε κωδικό πρόσβασης.</language>
+				<language id="it">Devi inserire una password.</language>
+				<language id="pt">Tens de inserir uma palavra-passe.</language>
+				<language id="es">Debes introducir una contraseña.</language>
+				<language id="pl">Musisz wprowadzić hasło.</language>
+				<language id="sl">Vnesti moraš geslo.</language>
+				<language id="hr">Trebaš unijeti lozinku.</language>
+				<language id="sr">Morate uneti lozinku.</language>
+				<language id="sq">Duhet të vendosni një fjalëkalim.</language>
+				<language id="mk">Треба да внесеш лозинка.</language>
+				<language id="bg">Трябва да напишеш парола.</language>
+				<language id="iw">עליך להזין ססמה&#x202b;.&#x202c;</language>
+				<language id="tr">Parola girmeniz gerekiyor.</language>
+				<language id="de">Du musst ein Passwort eingeben.</language>
+				<language id="da">Du skal indtaste en adgangskode.</language>
+				<language id="fi">Salasana on pakollinen tieto.</language>
+				<language id="no">Du må taste inn et passord.</language>
+				<language id="sv">Du måste ange ett lösenord.</language>
+				<language id="ru">Нужно ввести пароль.</language>
+				<language id="kk">Құпия сөзді енгізу қажет.</language>
+				<language id="uk">Необхідно ввести пароль.</language>
+				<language id="hu">Meg kell adnod egy jelszót.</language>
+			</text>
+
+			<text id="NICKNAME_MISSING" description="Nickname is missing in the login or registration form.">
+				<language id="en">You need to enter a nickname.</language>
+				<language id="zh">您必須輸入一個用戶名。</language>
+				<language id="in">Anda perlu mengisikan nama panggilan.</language>
+				<language id="th">คุณต้องใส่ชื่อเล่น</language>
+				<language id="ex">Debes introducir un apodo.</language>
+				<language id="nl">Je moet een nickname invoeren.</language>
+				<language id="fr">Choisissez un pseudo.</language>
+				<language id="el">Πρέπει να εισαγάγετε ψευδώνυμο.</language>
+				<language id="it">Devi inserire un nickname.</language>
+				<language id="pt">Tens de inserir uma alcunha.</language>
+				<language id="es">Debes introducir un apodo.</language>
+				<language id="pl">Musisz wprowadzić nick.</language>
+				<language id="sl">Vnesti moraš vzdevek.</language>
+				<language id="hr">Trebaš unijeti nadimak.</language>
+				<language id="sr">Morate uneti nadimak.</language>
+				<language id="sq">Duhet të vendosni një pseudonim.</language>
+				<language id="mk">Треба да внесеш прекар.</language>
+				<language id="bg">Трябва да напишеш прякор.</language>
+				<language id="iw">עליך להזין כינוי&#x202b;.&#x202c;</language>
+				<language id="tr">Bir takma ad girmelisiniz.</language>
+				<language id="de">Du musst einen Benutzernamen eingeben.</language>
+				<language id="da">Du skal indtaste et kaldenavn.</language>
+				<language id="fi">Nimimerkki on pakollinen tieto.</language>
+				<language id="no">Du må taste inn et kallenavn.</language>
+				<language id="sv">Du måste ange ett smeknamn.</language>
+				<language id="ru">Нужно ввести никнейм.</language>
+				<language id="kk">Лақапты енгізу қажет.</language>
+				<language id="uk">Необхідно ввести нік.</language>
+				<language id="hu">Meg kell adnod egy játékosnevet.</language>
+			</text>
+
+			<text id="CONNECTION_ERROR_RETRY" description="Network connection was lost.">
+				<language id="en">Oops! An error occurred. Please refresh the page.</language>
+				<language id="zh">糟了！發生錯誤。請更新頁面。</language>
+				<language id="in">Aduh! Terjadi kesalahan. Silakan muat ulang halaman.</language>
+				<language id="th">ระบบขัดข้อง กรุณา รีเฟรชเพจ</language>
+				<language id="ex">¡Atención! Se ha producido un error. Actualiza la página.</language>
+				<language id="nl">Oei! Daar ging iets mis. Ververs de pagina.</language>
+				<language id="fr">Oups ! Une erreur est survenue. Veuillez réactualiser la page.</language>
+				<language id="el">Ωχ! Παρουσιάστηκε σφάλμα. Παρακαλούμε ανανεώστε τη σελίδα.</language>
+				<language id="it">Oops! Si è verificato un errore. Aggiorna la pagina.</language>
+				<language id="pt">Ups! Ocorreu um erro. Atualiza a página.</language>
+				<language id="es">¡Vaya! Se ha producido un error. Actualiza la página.</language>
+				<language id="pl">Ojej! Pojawił się błąd. Odśwież stronę</language>
+				<language id="sl">Ups! Prišlo je do napake. Prosimo, osveži stran.</language>
+				<language id="hr">Ups! Pojavila se pogreška. Osvježi stranicu.</language>
+				<language id="sr">Ups! Pojavila se greška. Molimo vas, osvežite stranicu.</language>
+				<language id="sq">Ah! Ka ndodhur një defekt. Ju lutemi rifreskoni faqen</language>
+				<language id="mk">Извини! Настана грешка. Освежи ја страницата.</language>
+				<language id="bg">Опа! Нещо се обърка. Моля, зареди отново страницата.</language>
+				<language id="iw">אופס&#x202b;!&#x202c; אירעה שגיאה&#x202b;.&#x202c; רענן את הדף&#x202b;.&#x202c;</language>
+				<language id="tr">Hay aksi! Bir hata oluştu. Lütfen sayfayı yenileyin.</language>
+				<language id="de">Ups! Es ist ein Fehler aufgetreten. Bitte die Seite neu laden.</language>
+				<language id="da">Hovsa! Der er opstået en fejl. Prøv at opdatere siden.</language>
+				<language id="fi">Hups! Virhe tapahtui. Päivitä sivu.</language>
+				<language id="no">Oops! Det har oppstått en feil. Vennligst last inn siden på nytt.</language>
+				<language id="sv">Hoppsan! Ett fel uppstod. Uppdatera sidan.</language>
+				<language id="ru">Ой! Произошла ошибка. Пожалуйста, перезагрузи страницу.</language>
+				<language id="kk">Ой! Қате орын алды. Бетті жаңартыңыз.</language>
+				<language id="uk">Ой! Сталася помилка. Оновіть сторінку.</language>
+				<language id="hu">Hoppá! Hiba történt. Kérjük, frissítsd az oldalt.</language>
+			</text>
+
+			<text id="PLAYER_ID_USED" description="The nicknames are unique so if a nickname which is already in use was selected, this error message is shown if the server could NOT find a nickname suggestion.">
+				<language id="en">That nickname is already in use. Please select another nickname.</language>
+				<language id="zh">這個用戶名已被其他用戶使用。請選另一個用戶名。</language>
+				<language id="in">Nama panggilan itu sudah digunakan. Silakan pilih Nama panggilan lain.</language>
+				<language id="th">ชื่อเล่นนี้ถูกใช้แล้ว โปรดเลือกชื่อเล่นอื่น</language>
+				<language id="ex">Este apodo ya está en uso. Elige otro apodo.</language>
+				<language id="nl">Deze nickname wordt al gebruikt. Kies een andere naam.</language>
+				<language id="fr">Ce pseudo est déjà utilisé. Choisissez-en un autre.</language>
+				<language id="el">Αυτό το ψευδώνυμο χρησιμοποιείται ήδη. Παρακαλούμε επιλέξτε άλλο ψευδώνυμο.</language>
+				<language id="it">Il nickname scelto è già in uso. Selezionare un altro nickname.</language>
+				<language id="pt">A alcunha já está a ser usada. Escolhe outra alcunha.</language>
+				<language id="es">Este apodo ya está en uso. Elige otro apodo.</language>
+				<language id="pl">Ten nick został już użyty. Wybierz inny nick.</language>
+				<language id="sl">Ta vzdevek je že uporabljen. Prosimo, izberi si drug vzdevek.</language>
+				<language id="hr">Ovaj nadimak je već u upotrebi. Odaberi drugi nadimak.</language>
+				<language id="sr">Taj nadimak je već u upotrebi. Molimo vas da odaberete drugi nadimak.</language>
+				<language id="sq">Ky pseudonim është tashmë në përdorim. Ju lutemi zgjidhni një pseudonim tjetër.</language>
+				<language id="mk">Тој прекар е веќе во употреба. Избери друг прекар.</language>
+				<language id="bg">Този прякор вече съществува. Моля, избери друг прякор.</language>
+				<language id="iw">כינוי זה כבר תפוס&#x202b;.&#x202c; נא לבחור כינוי אחר&#x202b;.&#x202c;</language>
+				<language id="tr">Bu takma ad zaten kullanılıyor. Lütfen başka bir takma ad seçin.</language>
+				<language id="de">Den Benutzernamen gibt es schon. Bitte wähle einen anderen Benutzernamen.</language>
+				<language id="da">Dette kaldenavn er allerede i brug. Vælg et andet kaldenavn.</language>
+				<language id="fi">Tuo nimimerkki on jo käytössä. Valitse jokin muu nimimerkki.</language>
+				<language id="no">Det kallenavnet er allerede i bruk. Vennligst velg et annet kallenavn.</language>
+				<language id="sv">Detta smeknamn används redan. Skriv ett annat smeknamn.</language>
+				<language id="ru">Этот никнейм уже используется. Пожалуйста, выбери другой никнейм.</language>
+				<language id="kk">Бұл лақап бос емес. Басқа лақапты таңдаңыз.</language>
+				<language id="uk">Такий нік вже використовується. Виберіть інший нік. </language>
+				<language id="hu">Ez a játékosnév már foglalt. Kérjük, válassz másik játékosnevet.</language>
+			</text>
+
+			<text id="PLAYER_ID_USED_SUGGESTION" description="The nicknames are unique so if a nickname which is already in use was selected, this error message is shown if the server could find a nickname suggestion. The nickname suggestion appears in a new line after the question.">
+				<language id="en">That nickname is already in use. Perhaps you would like to use this nickname instead:</language>
+				<language id="zh">這個用戶名已有其他用戶使用。您可以參考以下用戶名：</language>
+				<language id="in">Nama panggilan itu sudah digunakan. Mungkin Anda mau menggunakan nama panggilan ini:</language>
+				<language id="th">ชื่อเล่นนี้ถูกใช้แล้ว บางทีคุณอาจจะชอบชื่อเล่นต่อไปนี้:</language>
+				<language id="ex">Este apodo ya está en uso. Tal vez podrías utilizar este otro apodo:</language>
+				<language id="nl">Deze nickname wordt al gebruikt. Misschien wil je deze naam gebruiken:</language>
+				<language id="fr">Ce pseudo est déjà utilisé. Mais pourquoi ne pas utiliser :</language>
+				<language id="el">Αυτό το ψευδώνυμο χρησιμοποιείται ήδη. Μπορεί να σας αρέσει το εξής ψευδώνυμο:</language>
+				<language id="it">Il nickname scelto è già in uso. Se vuoi, puoi utilizzare questo nickname:</language>
+				<language id="pt">A alcunha já está a ser usada. Queres usar esta alcunha?</language>
+				<language id="es">Este apodo ya está en uso. Tal vez podrías utilizar este otro apodo:</language>
+				<language id="pl">Ten nick został już użyty. Możesz użyć takiego nicka:</language>
+				<language id="sl">Ta vzdevek je že uporabljen. Morda bi lahko uporabil tale vzdevek:</language>
+				<language id="hr">Ovaj nadimak je već u upotrebi. Možda umjesto toga želiš ovaj nadimak:</language>
+				<language id="sr">Taj nadimak je već u upotrebi. Možda biste želeli da upotrebite ovaj nadimak umesto tog:</language>
+				<language id="sq">Ky pseudonim është tashmë në përdorim. Ndoshta mund tju pëlqejë të përdorni këtë pseudonim:</language>
+				<language id="mk">Тој прекар е веќе во употреба. Наместо прекарот што го наведе, можеби ќе сакаш да го користиш овој прекар:</language>
+				<language id="bg">Този прякор вече съществува. Вероятно искаш да използваш този този прякор вместо:</language>
+				<language id="iw">כינוי זה כבר תפוס&#x202b;.&#x202c; אולי תרצה להשתמש בכינוי זה במקום זאת&#x202b;:&#x202c;</language>
+				<language id="tr">Bu takma ad zaten kullanılıyor. Belki bu takma adı kullanmak istersiniz:</language>
+				<language id="de">Den Benutzernamen gibt es schon. Möchtest du vielleicht diesen Benutzernamen verwenden:</language>
+				<language id="da">Dette kaldenavn er allerede i brug. Overvej følgende kaldenavn i stedet:</language>
+				<language id="fi">Tuo nimimerkki on jo käytössä. Haluaisitko kenties käyttää tätä nimimerkkiä:</language>
+				<language id="no">Det kallenavnet er allerede i bruk. Kanskje du har lyst å bruke dette kallenavnet i stedet:</language>
+				<language id="sv">Detta smeknamn används redan. Du kan använda till exempel det här smeknamnet istället:</language>
+				<language id="ru">Этот никнейм уже используется. Можешь выбрать свободный никнейм: </language>
+				<language id="kk">Бұл лақап бос емес. Мүмкін орнына бұл лақапты пайдаланғыңыз келеді:</language>
+				<language id="uk">Такий нік вже використовується. Можливо, ви захочете використати цей нік:</language>
+				<language id="hu">Ez a játékosnév már foglalt. Hadd javasoljunk másik játékosnevet:</language>
+			</text>
+
+			<text id="PLAYER_INVALID_LOGIN" description="Nickname or password is wrong (login screen).">
+				<language id="en">The login credentials are not valid.</language>
+				<language id="zh">登錄信息無效。</language>
+				<language id="in">Kredensial login tidak valid.</language>
+				<language id="th">ข้อมูลการล็อกอินไม่ถูกต้อง</language>
+				<language id="ex">Las credenciales de acceso no son válidas.</language>
+				<language id="nl">De inloggegevens kloppen niet.</language>
+				<language id="fr">Les identifiants de connexion sont incorrects.</language>
+				<language id="el">Τα στοιχεία σύνδεσης δεν είναι έγκυρα.</language>
+				<language id="it">Le credenziali di accesso non sono valide.</language>
+				<language id="pt">As credenciais de início de sessão não são válidas.</language>
+				<language id="es">Las credenciales de acceso no son válidas.</language>
+				<language id="pl">Wprowadzone dane są nieprawidłowe</language>
+				<language id="sl">Dovoljenje za prijavo ni veljavno.</language>
+				<language id="hr">Podaci za prijavu nisu ispravni.</language>
+				<language id="sr">Podaci za prijavljivanje su nevažeći.</language>
+				<language id="sq">Kredencialet e hyrjes me emrin tuaj nuk janë të vlefshme.</language>
+				<language id="mk">Акредитивите за најава не се точни.</language>
+				<language id="bg">Данните за влизане са невалидни.</language>
+				<language id="iw">פרטי הכניסה אינם חוקיים&#x202b;.&#x202c;</language>
+				<language id="tr">Oturum açma kimlik bilgileri geçerli değil.</language>
+				<language id="de">Die Anmeldedaten sind ungültig.</language>
+				<language id="da">Logonoplysningerne er ikke gyldige.</language>
+				<language id="fi">Kirjautumistiedot eivät kelpaa.</language>
+				<language id="no">Ugyldig påloggings-ID.</language>
+				<language id="sv">Inloggningsuppgifterna är felaktiga.</language>
+				<language id="ru">Неверные данные для входа.</language>
+				<language id="kk">Кіру деректері жарамды емес.</language>
+				<language id="uk">Облікові дані для входу недійсні. </language>
+				<language id="hu">A bejelentkezési adatok nem érvényesek.</language>
+			</text>
+
+			<text id="PLAYER_BANNED" description="If the nickname the player uses is banned, this message is shown.">
+				<language id="en">The nickname you provided has been banned.</language>
+				<language id="zh">您提供的用戶名已被禁止。</language>
+				<language id="in">Nama panggilan yang Anda berikan sudah dilarang.</language>
+				<language id="th">ชื่อเล่นที่คุณใส่ถูกห้ามไม่ให้ไช้</language>
+				<language id="ex">El apodo proporcionado ha sido rechazado.</language>
+				<language id="nl">De nickname die je opgeeft is niet toegestaan.</language>
+				<language id="fr">Le pseudo que vous avez saisi a été interdit d'accès.</language>
+				<language id="el">Το ψευδώνυμο που εισαγάγατε έχει αποκλειστεί.</language>
+				<language id="it">Il nickname fornito è stato bannato.</language>
+				<language id="pt">A alcunha que escolheste foi proibida.</language>
+				<language id="es">El apodo proporcionado ha sido rechazado.</language>
+				<language id="pl">Wpisany przez Ciebie nick został zablokowany.</language>
+				<language id="sl">Vneseni vzdevek ima prepoved.</language>
+				<language id="hr">Uneseni nadimak je zabranjen.</language>
+				<language id="sr">Nadimak koji ste naveli je zabranjen.</language>
+				<language id="sq">Pseudonimi që dhatë është bllokuar.</language>
+				<language id="mk">Прекарот што го наведе е забранет.</language>
+				<language id="bg">Прякорът, който си посочил е забранен.</language>
+				<language id="iw">הכינוי שהזנת הוחרם&#x202b;.&#x202c;</language>
+				<language id="tr">Girdiğiniz takma ad yasaklanmış.</language>
+				<language id="de">Der von dir eingegebene Benutzername ist gesperrt.</language>
+				<language id="da">Det valgte kaldenavn er blevet udelukket.</language>
+				<language id="fi">Antamasi nimimerkki on estetty palvelusta.</language>
+				<language id="no">Kallenavnet du har oppgitt er sperret.</language>
+				<language id="sv">Smeknamnet är spärrat.</language>
+				<language id="ru">Этот никнейм заблокирован.</language>
+				<language id="kk">Берілген лақапқа тыйым салынған.</language>
+				<language id="uk">Вказаний нік заблоковано.</language>
+				<language id="hu">A megadott játékosnév letiltásra került.</language>
+			</text>
+
+			<text id="IP_BANNED" description="If the IP address the player uses is banned, this message is shown.">
+				<language id="en">Your IP has been banned.</language>
+				<language id="zh">您的IP號已被禁止。</language>
+				<language id="in">IP anda sudah dilarang.</language>
+				<language id="th">IP ของคุณถูกสั่งห้าม</language>
+				<language id="ex">Tu IP ha sido rechazada.</language>
+				<language id="nl">Jouw IP-adres krijgt geen toegang.</language>
+				<language id="fr">Votre adresse IP a été interdite d'accès.</language>
+				<language id="el">Το IP σας έχει αποκλειστεί.</language>
+				<language id="it">Il tuo IP è stato bannato.</language>
+				<language id="pt">O teu IP foi proibido.</language>
+				<language id="es">Tu IP ha sido rechazada.</language>
+				<language id="pl">Twój adres IP został zablokowany.</language>
+				<language id="sl">Tvoj IP ima prepoved.</language>
+				<language id="hr">Tvoj IP je zabranjen.</language>
+				<language id="sr">Vaša IP adresa je zabranjena.</language>
+				<language id="sq">IP-ja juaj është bllokuar.</language>
+				<language id="mk">Твојата IP адреса е забранета.</language>
+				<language id="bg">Твоят IP е забранен.</language>
+				<language id="iw">כתובת ה-IP שלך הוחרמה&#x202b;.&#x202c;</language>
+				<language id="tr">IP adresiniz yasaklanmış.</language>
+				<language id="de">Deine IP-Adresse wurde gesperrt.</language>
+				<language id="da">Din IP er blevet udelukket.</language>
+				<language id="fi">IP-osoitteesi on estetty palvelusta.</language>
+				<language id="no">Din IP er sperret.</language>
+				<language id="sv">Din IP-adress är spärrad.</language>
+				<language id="ru">Твой IP адрес заблокирован.</language>
+				<language id="kk">IP тыйым салынған.</language>
+				<language id="uk">Вашу IP-адресу заблоковано.</language>
+				<language id="hu">Az IP-címed letiltásra került.</language>
+			</text>
+
+			<text id="TOO_MANY_CODES" description="If the user inputs too many invalid codes this warning is showed to the user. The code input field will be locked for one hour.">
+				<language id="en">You have entered too many invalid codes, please try again later.</language>
+				<language id="zh">您已經多次輸入無效密碼登記，請稍後再試。</language>
+				<language id="in">Anda mengisikan terlalu banyak kode yang tidak valid, silakan coba lagi nanti. </language>
+				<language id="th">คุณใส่รหัสผิดหลายครั้งเกินไป โปรดลองใหม่ในภายหลัง</language>
+				<language id="ex">Has introducido demasiados códigos no válidos; inténtalo de nuevo más tarde.</language>
+				<language id="nl">Je hebt te veel ongeldige codes ingevoerd. Probeer het later nog eens.</language>
+				<language id="fr">Vous avez saisi trop de codes incorrects, réessayez plus tard.</language>
+				<language id="el">Εισαγάγατε πολλούς άκυρους κωδικούς, παρακαλούμε προσπαθήστε ξανά αργότερα.</language>
+				<language id="it">Hai inserito troppi codici non validi, riprova più tardi.</language>
+				<language id="pt">Inseriste demasiados códigos inválidos. Volta a tentar mais tarde.</language>
+				<language id="es">Has introducido demasiados códigos no válidos; inténtalo de nuevo más tarde.</language>
+				<language id="pl">Wprowadziłeś zbyt wiele nieprawidłowych kodów, spróbuj później. </language>
+				<language id="sl">Vnesel si preveč neveljavnih kod; prosimo, poskusi znova kasneje.</language>
+				<language id="hr">Uneseno je previše neispravnih kodova, pokušaj ponovo kasnije.</language>
+				<language id="sr">Uneli ste previše nevažećih kodova. Molimo vas da pokušate ponovo kasnije.</language>
+				<language id="sq">Keni vendosur shumë kode të pavlefshme, ju lutemi përpiquni sërish më vonë.</language>
+				<language id="mk">Имаш внесено премногу неважечки кодови, обиди се повторно.</language>
+				<language id="bg">Въвел си твърде много невалидни кодове, моля опитай отново по-късно.</language>
+				<language id="iw">הזנת קודים לא חוקיים רבים מדי&#x202b;.&#x202c; נסה שוב מאוחר יותר&#x202b;.&#x202c;</language>
+				<language id="tr">Çok fazla sayıda geçersiz kod girdiniz. Lütfen daha sonra yeniden deneyin.</language>
+				<language id="de">Du hast zu viele ungültige Codes eingegeben, bitte versuche es später erneut.</language>
+				<language id="da">Du har indtastet for mange ugyldige koder. Prøv igen senere.</language>
+				<language id="fi">Olet antanut liian monta virheellistä koodia. Yritä myöhemmin uudelleen.</language>
+				<language id="no">Du har oppgitt for mange ugyldige koder, prøv igjen senere.</language>
+				<language id="sv">Du har angett för många ogiltiga koder; försök igen om en stund.</language>
+				<language id="ru">Введено слишком много неправильных кодов. Пожалуйста, попробуй позднее.</language>
+				<language id="kk">Тым көп жарамсыз код енгіздіңіз, әрекетті кейін қайталаңыз.</language>
+				<language id="uk">Ви ввели занадто багато неправильних кодів, повторіть спробу пізніше.</language>
+				<language id="hu">Túl sok érvénytelen kódot adtál meg, kérjük, próbáld újra később.</language>
+			</text>
+
+			<text id="FIELD_NOT_VALID" description="If the server returns that the nick name is invalid, this message is shown. For example a nickname which contains a swear word.">
+				<language id="en">The nickname you have entered is invalid.</language>
+				<language id="zh">您所輸入的用戶名無效。</language>
+				<language id="in">Nama panggilan yang Anda isikan tidak valid.</language>
+				<language id="th">ชื่อเล่นที่คุณใส่ไม่ถูกต้อง</language>
+				<language id="ex">El apodo introducido no es válido.</language>
+				<language id="nl">De nickname die je invoert is ongeldig.</language>
+				<language id="fr">Le pseudo que vous avez choisi n'est pas valide.</language>
+				<language id="el">Το ψευδώνυμο που εισαγάγατε είναι άκυρο.</language>
+				<language id="it">Il nickname inserito non è valido.</language>
+				<language id="pt">A alcunha inserida é inválida.</language>
+				<language id="es">El apodo introducido no es válido.</language>
+				<language id="pl">Wprowadzony nick jest nieprawidłowy.</language>
+				<language id="sl">Vneseni vzdevek je neveljaven.</language>
+				<language id="hr">Uneseni nadimak nije ispravan.</language>
+				<language id="sr">Nadimak koji ste uneli je nevažeći.</language>
+				<language id="sq">Pseudonimi që keni vendosur është i pavlefshëm.</language>
+				<language id="mk">Лозинката што ја внесе е неважечка.</language>
+				<language id="bg">прякорът, който си въвел е невалиден.</language>
+				<language id="iw">הכינוי שהזנת אינו חוקי&#x202b;.&#x202c;</language>
+				<language id="tr">Girdiğiniz takma ad geçersiz.</language>
+				<language id="de">Der eingegebene Benutzername ist ungültig.</language>
+				<language id="da">Det indtastede kaldenavn er ugyldigt.</language>
+				<language id="fi">Annoit virheellisen nimimerkin.</language>
+				<language id="no">Kallenavnet du har oppgitt er ugyldig.</language>
+				<language id="sv">Smeknamnet är ogiltigt.</language>
+				<language id="ru">Введён неправильный никнейм.</language>
+				<language id="kk">Енгізілген лақап жарамсыз.</language>
+				<language id="uk">Уведений нік недійсний. </language>
+				<language id="hu">A megadott játékosnév érvénytelen.</language>
+			</text>
+
+			<text id="FIELD_OBLIGATORY" description="If a mandatory field was missing and the form was submitted to server. This should not happen, however, since the client checks the fields before the form is sent to the server.">
+				<language id="en">Please fill in all the fields.</language>
+				<language id="zh">請填寫所有的空格。</language>
+				<language id="in">Silakan isi semua kolom.</language>
+				<language id="th">โปรดกรอกข้อมูลให้ครบทุกช่อง</language>
+				<language id="ex">Completa todos los campos.</language>
+				<language id="nl">Vul ajb alle velden in.</language>
+				<language id="fr">Merci de remplir tous les champs.</language>
+				<language id="el">Παρακαλούμε συμπληρώστε όλα τα πεδία.</language>
+				<language id="it">Completa tutti i campi.</language>
+				<language id="pt">Preenche todos os campos.</language>
+				<language id="es">Rellena todos los campos.</language>
+				<language id="pl">Wypełnij wszystkie pola.</language>
+				<language id="sl">Prosimo, izpolni vsa polja.</language>
+				<language id="hr">Popuni sva polja.</language>
+				<language id="sr">Molimo vas da popunite sva polja.</language>
+				<language id="sq">Ju lutemi plotësoni të gjitha fushat.</language>
+				<language id="mk">Пополни ги сите полиња.</language>
+				<language id="bg">Моля, попълни всички полета.</language>
+				<language id="iw">נא למלא את כל השדות&#x202b;.&#x202c;</language>
+				<language id="tr">Lütfen tüm alanları doldurun.</language>
+				<language id="de">Bitte fülle alle Felder aus.</language>
+				<language id="da">Alle felter skal udfyldes.</language>
+				<language id="fi">Täytä kaikki kentät.</language>
+				<language id="no">Vennligst fyll ut alle feltene.</language>
+				<language id="sv">Fyll i alla fält.</language>
+				<language id="ru">Все поля необходимо заполнить.</language>
+				<language id="kk">Барлық өрістерді толтырыңыз.</language>
+				<language id="uk">Заповніть всі поля.</language>
+				<language id="hu">Minden mezőt ki kell tölteni.</language>
+			</text>
+
+			<text id="FIELD_LENGTH" description="If the server returns that the nick name is invalid, this message is shown. Not not happen though since the client is already checking the input.">
+				<language id="en">The nickname you have entered is invalid.</language>
+				<language id="zh">您所輸入的用戶名無效。</language>
+				<language id="in">Nama panggilan yang Anda isikan tidak valid.</language>
+				<language id="th">ชื่อเล่นที่คุณใส่ไม่ถูกต้อง</language>
+				<language id="ex">El apodo introducido no es válido.</language>
+				<language id="nl">De nickname die je invoert is ongeldig.</language>
+				<language id="fr">Le pseudo que vous avez choisi n'est pas valide.</language>
+				<language id="el">Το ψευδώνυμο που εισαγάγατε είναι άκυρο.</language>
+				<language id="it">Il nickname inserito non è valido.</language>
+				<language id="pt">A alcunha inserida é inválida.</language>
+				<language id="es">El apodo introducido no es válido.</language>
+				<language id="pl">Wprowadzony nick jest nieprawidłowy.</language>
+				<language id="sl">Vneseni vzdevek je neveljaven.</language>
+				<language id="hr">Uneseni nadimak nije ispravan.</language>
+				<language id="sr">Nadimak koji ste uneli je nevažeći.</language>
+				<language id="sq">Pseudonimi që keni vendosur është i pavlefshëm.</language>
+				<language id="mk">Лозинката што ја внесе е неважечка.</language>
+				<language id="bg">Прякорът, който си въвел е невалиден.</language>
+				<language id="iw">הכינוי שהזנת אינו חוקי&#x202b;.&#x202c;</language>
+				<language id="tr">Girdiğiniz takma ad geçersiz.</language>
+				<language id="de">Der eingegebene Benutzername ist ungültig.</language>
+				<language id="da">Det indtastede kaldenavn er for kort.</language>
+				<language id="fi">Annoit virheellisen nimimerkin.</language>
+				<language id="no">Kallenavnet du har oppgitt er ugyldig.</language>
+				<language id="sv">Smeknamnet är ogiltigt.</language>
+				<language id="ru">Введён неправильный никнейм.</language>
+				<language id="kk">Енгізілген лақап жарамсыз.</language>
+				<language id="uk">Уведений нік недійсний.</language>
+				<language id="hu">A megadott játékosnév érvénytelen.</language>
+			</text>
+
+			<text id="SECURITY_ERROR" description="This message is shown if the security hash the server sends and the client calculates do not match.">
+				<language id="en">Security violation.</language>
+				<language id="zh">安全違規。</language>
+				<language id="in">Pelanggaran keamanan.</language>
+				<language id="th">การฝ่าฝืนความปลอดภัย</language>
+				<language id="ex">Infracción de seguridad.</language>
+				<language id="nl">Veiligheidsovertreding.</language>
+				<language id="fr">Atteinte à la sécurité.</language>
+				<language id="el">Παράβαση ασφάλειας.</language>
+				<language id="it">Violazione della sicurezza.</language>
+				<language id="pt">Violação de segurança.</language>
+				<language id="es">Infracción de seguridad.</language>
+				<language id="pl">Zakłócenie bezpieczeństwa.</language>
+				<language id="sl">Kršitev zaščite.</language>
+				<language id="hr">Povreda sigurnosti.</language>
+				<language id="sr">Narušavanje bezbednosti.</language>
+				<language id="sq">Shkelje e sigurisë.</language>
+				<language id="mk">Непочитување на правилата за безбедност.</language>
+				<language id="bg">Нарушение на сигурността.</language>
+				<language id="iw">הפרת אבטחה&#x202b;.&#x202c;</language>
+				<language id="tr">Güvenlik ihlali.</language>
+				<language id="de">Sicherheitsverstoß.</language>
+				<language id="da">Sikkerhedsovertrædelse.</language>
+				<language id="fi">Tietoturvarikkomus.</language>
+				<language id="no">Brudd på sikkerheten.</language>
+				<language id="sv">Säkerhetsöverträdelse.</language>
+				<language id="ru">Нарушение безопасности.</language>
+				<language id="kk">Қауіпсіздік бұзушылығы.</language>
+				<language id="uk">Порушення безпеки.</language>
+				<language id="hu">Biztonságmegsértés történt.</language>
+			</text>
+
+			<text id="CODE_NOT_EXIST" description="The user tried to submit a code which was invalid.">
+				<language id="en">Invalid code. Please check that you've entered the code correctly.</language>
+				<language id="zh">密碼無效。請檢查您輸入的密碼是否正確。</language>
+				<language id="in">Kode tidak valid. Silakan cek Anda apakah sudah mengisikan kode dengan benar.</language>
+				<language id="th">รหัสไม่ถูกต้อง โปรดตรวจสอบว่าคุณได้ใส่รหัสอย่างถูกต้อง</language>
+				<language id="ex">Código no válido. Comprueba que has introducido el código correctamente.</language>
+				<language id="nl">Ongeldige code. Controleer of je de code juist hebt ingevoerd.</language>
+				<language id="fr">Code non valide. Vérifiez que vous avez saisi le bon code.</language>
+				<language id="el">Άκυρος κωδικός. Παρακαλούμε ελέγξτε αν εισαγάγατε σωστά τον κωδικό.</language>
+				<language id="it">Codice non valido. Verifica di aver inserito il codice correttamente.</language>
+				<language id="pt">Código inválido. Verifica se o código foi inserido corretamente.</language>
+				<language id="es">Código no válido. Comprueba que has introducido el código correctamente.</language>
+				<language id="pl">Nieprawidłowy kod. Sprawdź, czy poprawnie wprowadziłeś kod.</language>
+				<language id="sl">Neveljavna koda. Prosimo, preveri ali si pravilno vnesel kodo.</language>
+				<language id="hr">Neispravan kôd. Provjeri je li kôd pravilno unesen.</language>
+				<language id="sr">Nevažeći kod. Molimo vas da proverite da li ste pravilno uneli kod.</language>
+				<language id="sq">Kod i pavlefshëm. Lutemi kontrolloni që të keni vendosur kodin e saktë.</language>
+				<language id="mk">Неважечки код. Провери дали точно го внесе кодот.</language>
+				<language id="bg">Невалиден код. Моля, провери дали си въвел правилно кода.</language>
+				<language id="iw">קוד לא חוקי&#x202b;.&#x202c; נא בדוק שהזנת את הקוד בצורה נכונה&#x202b;.&#x202c;</language>
+				<language id="tr">Geçersiz kod. Lütfen kodu doğru biçimde girdiğinizden emin olun.</language>
+				<language id="de">Du hast einen ungültigen Code eingegeben.</language>
+				<language id="da">Ugyldig kode. Kontroller, at du har indtastet koden korrekt.</language>
+				<language id="fi">Virheellinen koodi. Tarkista, että annoit koodin oikein.</language>
+				<language id="no">Ugyldig kode. Vennligst kontroller at du har oppgitt riktig kode.</language>
+				<language id="sv">Ogiltig kod. Kontrollera att du har skrivit rätt kod.</language>
+				<language id="ru">Неправильный код. Пожалуйста, проверь правильность введённого кода.</language>
+				<language id="kk">Жарамсыз код. Кодтың дұрыс енгізілгенін тексеріңіз.</language>
+				<language id="uk">Недійсний код. Переконайтеся, що ви ввели правильний код.</language>
+				<language id="hu">Érvénytelen kód. Ellenőrizd, hogy helyesen adtad-e meg a kódot.</language>
+			</text>
+
+			<text id="CODE_NOT_EXIST_TOO_MANY_WARNING" description="A warning about too many invalid codes. If the user inputs too many invalid codes in a row, the code panel will lock and the player is not able to submit more codes.">
+				<language id="en">Invalid code. Please check that you have entered the code correctly; further invalid codes will lock the code panel.</language>
+				<language id="zh">密碼無效。請檢查您輸入的密碼是否正確；再次輸入錯誤密碼將加鎖密碼系統。</language>
+				<language id="in">Kode tidak valid. Silakan cek apakah kode yang Anda isikan sudah benar; kode tidak valid selanjutnya akan mengunci panel kode.</language>
+				<language id="th">รหัสไม่ถูกต้อง โปรดตรวจสอบว่าคุณได้ใส่รหัสอย่างถูกต้อง หากยังใส่รหัสผิดอีก ช่องใส่รหัสจะถูกล็อค</language>
+				<language id="ex">Código no válido. Comprueba que has introducido el código bien; si introduces más códigos inválidos, este panel se bloqueará.</language>
+				<language id="nl">Ongeldige code. Controleer of de code juist is ingevoerd; bij de volgende ongeldige poging wordt het codepaneel afgesloten.</language>
+				<language id="fr">Code non valide. Vérifiez que vous avez saisi le bon code. Si vous saisissez d'autres codes non valides, cette fonction sera bloquée.</language>
+				<language id="el">Άκυρος κωδικός. Ελέγξτε αν εισαγάγατε σωστά τον κωδικό. Επιπλέον άκυρες προσπάθειες θα κλειδώσουν την εφαρμογή.</language>
+				<language id="it">Codice non valido. Verifica di aver inserito il codice correttamente. In caso di inserimento di altri codici errati il pannello verrà bloccato.</language>
+				<language id="pt">Código inválido. Verifica se o código foi inserido corretamente; mais códigos inválidos bloquearão o painel de códigos.</language>
+				<language id="es">Código no válido. Comprueba que has introducido el código bien; si introduces más códigos inválidos, este panel se bloqueará.</language>
+				<language id="pl">Nieprawidłowy kod. Sprawdź, czy poprawnie wprowadziłeś kod; kolejne nieudane próby zablokują panel kodowania.</language>
+				<language id="sl">Neveljavna koda. Prosimo, preveri ali si pravilno vnesel kodo; nadaljnje neveljavne kode bodo zaklenile kodno ploščo.</language>
+				<language id="hr">Neispravan kôd. Provjeri jesu li svi kodovi pravilno uneseni; daljnji neispravni kodovi će zaključati ploču kodova.</language>
+				<language id="sr">Nevažeći kod. Molimo vas da proverite da li ste pravilno uneli kod. Ukoliko nastavite sa unosom nevažećih kodova, zaključaće se panel za kodove.</language>
+				<language id="sq">Kod i pavlefshëm. Lutemi kontrolloni që të keni vendosur kodin e saktë; kode të tjera të pavlefshëm do ta bllokojnë panelin.</language>
+				<language id="mk">Неважечки код. Провери дали точно го внесе кодот; понатамошни неважечки кодови, ќе ја заклучат таблата за кодови.</language>
+				<language id="bg">Невалиден код. Моля, провери дали си въвел правилно кода; следващи невалидни кодове ще заключат дисплея с кода.</language>
+				<language id="iw">קוד לא חוקי&#x202b;.&#x202c; נא בדוק שהזנת את הקוד בצורה נכונה; הזנת קודים לא חוקיים נוספים תגרום לנעילת הפאנל&#x202b;.&#x202c;</language>
+				<language id="tr">Geçersiz kod. Lütfen kodu doğru biçimde girdiğinizden emin olun. Daha fazla geçersiz kod girilirse kod paneli kilitlenecektir.</language>
+				<language id="de">Ungültiger Code. Hast du den Code richtig eingegeben? Weitere ungültige Codes sperren das Eingabefeld.</language>
+				<language id="da">Ugyldig kode. Kontroller, at du har indtastet koden korrekt. Indtastning af yderligere ugyldige koder låser kodepanelet.</language>
+				<language id="fi">Virheellinen koodi. Tarkista, että annoit koodin oikein. Koodiruutu lukittuu, jos annat vielä virheellisen koodin.</language>
+				<language id="no">Ugyldig kode. Vennligst kontroller at du har oppgitt riktig kode, flere ugyldige koder vil sperre kodepanelet.</language>
+				<language id="sv">Ogiltig kod. Kontrollera att du har skrivit rätt kod; om du skriver fel kod en gång till så spärras kodfunktionen.</language>
+				<language id="ru">Неправильный код. Пожалуйста, проверь введённый код; последующий ввод неправильных кодов заблокирует панель.</language>
+				<language id="kk">Жарамсыз код. Кодтың дұрыс енгізілгенін тексеріңіз; басқа жарамсыз кодтар код тақтасын құлыптайды.</language>
+				<language id="uk">Недійсний код. Переконайтеся, що ви ввели правильний код; подальші неправильні коди заблокують панель. </language>
+				<language id="hu">Érvénytelen kód. Ellenőrizd, hogy helyesen adtad-e meg a kódot; ha továbbra is érvénytelen kódot adsz meg, a kód panel lezárul.</language>
+			</text>
+
+			<text id="CODE_USED" description="The user tried to submit the same valid code twice.">
+				<language id="en">Code already used</language>
+				<language id="zh">密碼已被其他用戶使用</language>
+				<language id="in">Kode sudah digunakan</language>
+				<language id="th">รหัสถูกใช้งานแล้ว</language>
+				<language id="ex">Este código ya se ha utilizado</language>
+				<language id="nl">Code is al in gebruik.</language>
+				<language id="fr">Code déjà utilisé</language>
+				<language id="el">Ο κωδικός χρησιμοποιείται ήδη</language>
+				<language id="it">Codice già in uso</language>
+				<language id="pt">Código já usado</language>
+				<language id="es">Este código ya se ha utilizado</language>
+				<language id="pl">Ten kod został już użyty</language>
+				<language id="sl">Koda je bila že uporabljena</language>
+				<language id="hr">Kôd već upotrijebljen</language>
+				<language id="sr">Kod je već u upotrebi</language>
+				<language id="sq">Kodi është përdorur tashmë</language>
+				<language id="mk">Кодот е веќе во употреба</language>
+				<language id="bg">Кодът вече е използван</language>
+				<language id="iw">כבר השתמש בקוד זה</language>
+				<language id="tr">Kod zaten kullanıldı</language>
+				<language id="de">Code wurde bereits verwendet</language>
+				<language id="da">Kode allerede i brug</language>
+				<language id="fi">Koodi on jo käytössä.</language>
+				<language id="no">Koden brukes allerede</language>
+				<language id="sv">Denna kod har redan använts.</language>
+				<language id="ru">Этот код уже используется</language>
+				<language id="kk">Код бос емес</language>
+				<language id="uk">Код вже використовується</language>
+				<language id="hu">A kódot már felhasználták</language>
+			</text>
+
+			<text id="ENTER_CODE" description="If no code was written in the code text field and the player tries to submit it">
+				<language id="en">Enter a code</language>
+				<language id="zh">輸入密碼</language>
+				<language id="in">Isikan sebuah kode</language>
+				<language id="th">ใส่รหัส</language>
+				<language id="ex">Introduce un código</language>
+				<language id="nl">Voer een code in</language>
+				<language id="fr">Saisissez un code</language>
+				<language id="el">Εισαγάγετε κωδικό</language>
+				<language id="it">Inserisci un codice</language>
+				<language id="pt">Insere um código</language>
+				<language id="es">Introduce un código</language>
+				<language id="pl">Wprowadź kod</language>
+				<language id="sl">Vnesi kodo</language>
+				<language id="hr">Unesi kôd</language>
+				<language id="sr">Unesite kod</language>
+				<language id="sq">Vendosni një kod</language>
+				<language id="mk">Внеси код</language>
+				<language id="bg">Напиши код</language>
+				<language id="iw">הזן קוד</language>
+				<language id="tr">Bir kod girin</language>
+				<language id="de">Gib einen Code ein</language>
+				<language id="da">Indtast en kode</language>
+				<language id="fi">Anna koodi.</language>
+				<language id="no">Oppgi en kode</language>
+				<language id="sv">Skriv en kod</language>
+				<language id="ru">Введи код</language>
+				<language id="kk">Кодты енгізу</language>
+				<language id="uk">Введіть код</language>
+				<language id="hu">Adj meg egy kódot</language>
+			</text>
+
+			<text id="ONLY_LETTERS_AND_NUMBERS_ALLOWED" description="If the user tries to type other characters than letters or numbers, this error message is shown in the login/registration popup.">
+				<language id="en">Use only letters (a-z) and numbers (0-9).</language>
+				<language id="zh">您只能輸入字母 (a-z) 以及數字(0-9)。</language>
+				<language id="in">Hanya gunakan huruf (a-z) dan angka (0-9).</language>
+				<language id="th">ใช้เฉพาะตัวอักษร (a-z) และตัวเลข (0-9)</language>
+				<language id="ex">Utiliza solamente letras (a-z) y números (0-9).</language>
+				<language id="nl">Gebruik alleen letters (A t/m Z) en nummers (0-9).</language>
+				<language id="fr">Utilisez uniquement des lettres (a-z) et des chiffres (0-9).</language>
+				<language id="el">Χρησιμοποιήστε μόνο γράμματα (a-z) και αριθμούς (0-9).</language>
+				<language id="it">Utilizza solo lettere (a-z) e numeri (0-9).</language>
+				<language id="pt">Usa apenas letras (a-z) e números (0-9).</language>
+				<language id="es">Utiliza solamente letras (a-z) y números (0-9).</language>
+				<language id="pl">Używaj tylko liter (a-z) i cyfr (0-9).</language>
+				<language id="sl">Uporabi le črke (a-z) in številke (0-9).</language>
+				<language id="hr">Upotrijebi samo slova (a-z) i brojke (0-9).</language>
+				<language id="sr">Koristite samo slova (a-z) i brojeve (0-9).</language>
+				<language id="sq">Përdorni vetëm germat (a-z) dhe numrat (0-9).</language>
+				<language id="mk">Користи само букви (a-z) и бројки (0-9).</language>
+				<language id="bg">Използвай само букви (a-z) и цифри (0-9).</language>
+				<language id="iw">השתמש באותיות &#x202b;(a-z)&#x202c; ובמספרים &#x202b;(0-9)&#x202c; בלבד&#x202b;.&#x202c;</language>
+				<language id="tr">Yalnızca harfler (a-z) ve rakamlar (0-9) girin.</language>
+				<language id="de">Verwende nur Buchstaben (A-Z) und Zahlen (0-9).</language>
+				<language id="da">Brug kun bogstaver (a-z) og tal (0-9).</language>
+				<language id="fi">Käytä vain kirjaimia (a-z) ja numeroita (0-9).</language>
+				<language id="no">Bruk kun bokstaver (a-z) og tall (0-9).</language>
+				<language id="sv">Använd enbart bokstäver (a-z) och siffror (0-9).</language>
+				<language id="ru">Используй буквы (a-z) и цифры (0-9).</language>
+				<language id="kk">Тек әріптерді (a-z) және сандарды (0-9) пайдаланыңыз.</language>
+				<language id="uk">Використовуйте тільки літери (a-z) та цифри (0-9).</language>
+				<language id="hu">Csak betűket (a-z) és számokat (0-9) használj.</language>
+			</text>
+
+			<text id="NOT_ALLOWED_TO_PUT_ONLY_NUMBERS_IN_NICKNAME" description="If the provided nickname in registration popup contains only numbers and the user tries to submit the form, this error message is shown.">
+				<language id="en">The nickname must contain at least one letter (a-z).</language>
+				<language id="zh">用戶名必須包含最少一個字母 (a-z)。</language>
+				<language id="in">Nama panggilan harus berisi setidaknya satu huruf (a-z).</language>
+				<language id="th">ชื่อเล่นต้องมีอย่างน้อยหนึ่งตัวอักษร (a-z)</language>
+				<language id="ex">El apodo debe contener al menos una letra (a-z).</language>
+				<language id="nl">De gebruikersnaam moet minstens één letter (A t/m Z) bevatten.</language>
+				<language id="fr">Le pseudo doit contenir au moins une lettre (a-z).</language>
+				<language id="el">Το ψευδώνυμο πρέπει να περιλαμβάνει τουλάχιστον ένα γράμμα (a-z).</language>
+				<language id="it">Il nickname deve contenere almeno una lettera (a-z).</language>
+				<language id="pt">A alcunha tem de ter, pelo menos, uma letra (a-z).</language>
+				<language id="es">El apodo debe contener al menos una letra (a-z).</language>
+				<language id="pl">Twój nick musi zawierać przynajmniej jedną literę (a-z).</language>
+				<language id="sl">Vzdevek mora vsebovati vsaj eno črko (a-z).</language>
+				<language id="hr">Nadimak mora sadržavati barem jedno slovo (a-z).</language>
+				<language id="sr">Nadimak mora da sadrži najmanje jedno slovo (a-z).</language>
+				<language id="sq">Pseudonimi duhet të përmbajë të paktën një germë (a-z).</language>
+				<language id="mk">Прекарот мора да содржи најмалку една буква (a-z).</language>
+				<language id="bg">Прякорът трябва да съдържа поне една буква (a-z).</language>
+				<language id="iw">הכינוי חייב להכיל לפחות אות אחת &#x202b;(a-z)&#x202c;&#x202b;.&#x202c;</language>
+				<language id="tr">Takma ad en az bir harf (a-z) içermelidir.</language>
+				<language id="de">Der Benutzername muss mindestens einen Buchstaben (A-Z) enthalten.</language>
+				<language id="da">Kaldenavnet skal indeholde mindst ét bogstav (a-z).</language>
+				<language id="fi">Nimimerkissä on oltava ainakin yksi kirjain (a-z).</language>
+				<language id="no">Kallenavnet må inneholde minst en bokstav (a-z).</language>
+				<language id="sv">Smeknamnet måste innehålla minst en bokstav (a-z).</language>
+				<language id="ru">Никнейм должен содержать минимум одну букву (a-z).</language>
+				<language id="kk">Лақап кемінде бір әріптен (a-z) тұруы керек.</language>
+				<language id="uk">Нік повинен містити щонайменше одну літеру (a-z).</language>
+				<language id="hu">A játékosnévnek legalább egy betűt (a-z) kell tartalmaznia.</language>
+			</text>
+
+			<text id="NICKNAME_INFO" description="In the registration popup, there is a ? button next to the nickname field. When the button is pressed, a sliding pane appears and informs the player how the nickname should be like.">
+				<language id="en">This name will be publicly displayed on the leaderboard. It should be 5-10 characters long.</language>
+				<language id="zh">這個名字將在排行榜上公佈。它必須包含5到10個字母。</language>
+				<language id="in">Nama ini akan ditampilkan untuk umum di papan pemimpin. Harus terdiri dari 5-10 karakter.</language>
+				<language id="th">ชื่อนี้จะแสดงให้คนทั่วไปเห็นในทำเนียบแชมป์ ควรมีความยาว 5-10 อักขระ</language>
+				<language id="ex">Este nombre se mostrará públicamente en la clasificación. Debe tener entre 5 y 10 caracteres.</language>
+				<language id="nl">Deze naam komt voor iedereen zichtbaar op het leaderboard. Hij moet tussen de 5 en 10 tekens lang zijn.</language>
+				<language id="fr">Ce nom apparaîtra sur le tableau public des classements. Il doit contenir entre 5 et 10 caractères.</language>
+				<language id="el">Αυτό το όνομα θα εμφανίζεται δημόσια στον πίνακα υψηλής βαθμολογίας. Πρέπει να έχει 5-10 χαρακτήρες.</language>
+				<language id="it">Il nome sarà visibile pubblicamente nella classifica dei Migliori Giocatori. Deve essere di lunghezza compresa tra 5-10 caratteri.</language>
+				<language id="pt">Este nome será apresentado publicamente nas classificações. Tem de ter entre 5 e 10 carateres.</language>
+				<language id="es">Este nombre se mostrará públicamente en la clasificación. Debe tener entre 5 y 10 caracteres.</language>
+				<language id="pl">To imię będzie ogólnodostępne i widoczne w rankingu. Powinno mieć od 5 do 10 znaków.</language>
+				<language id="sl">To ime bo javno prikazano na seznamu najvišje uvrščenih tekmovalcev. Obsegati mora 5-10 znakov.</language>
+				<language id="hr">Ovo će ime biti javno prikazano u trablici poretka. Mora imati 5-10 znakova.</language>
+				<language id="sr">Ime će biti javno prikazano na rang listi. Treba da bude dugačko od 5-10 karaktera.</language>
+				<language id="sq">Ky emër do të afishohet publikisht në tabelën e më të mirëve. Duhet të jetë 5-10 karaktere i gjatë.</language>
+				<language id="mk">Ова име ќе биде јавно објавено во табелата со водечки резултати. Треба да содржи од 5 до 10 знаци.</language>
+				<language id="bg">Това име ще бъде публично оповестено в класирането. То трябва да е дълго 5-10 символа.</language>
+				<language id="iw">שם זה יוצג לכולם בטבלת המובילים&#x202b;.&#x202c; הוא צריך להיות באורך 5-10 תווים&#x202b;.&#x202c;</language>
+				<language id="tr">Lider tablosunda herkes tarafından görülebilecek takma adınızı gösterir. 5-10 karakter uzunluğunda olmalıdır.</language>
+				<language id="de">Dieser Name wird in der Rangliste angezeigt. Er sollte 5-10 Zeichen lang sein.</language>
+				<language id="da">Dette navn vises offentligt på pointtavlen. Det skal bestå af 5 til 10 tegn.</language>
+				<language id="fi">Tämä nimi näytetään julkisesti tulostaulussa. Siinä pitäisi olla 5 - 10 merkkiä.</language>
+				<language id="no">Kallenavnet vil bli vist offentlig på poengtavlen. Det må være på 5-10 tegn.</language>
+				<language id="sv">Smeknamnet visas för alla på poängtavlan. Det måste vara mellan 5 och 10 tecken långt.</language>
+				<language id="ru">Это имя появится в таблице лидеров и будет видно всем. Имя должно быть длиной от 5 до 10 символов.</language>
+				<language id="kk">Бұл атау жалпы рейтингте көрсетіледі. Ол 5-10 таңбадан тұруы қажет.</language>
+				<language id="uk">Ім'я відображатиметься в таблиці лідерів.  Воно має містити 5-10 символів. </language>
+				<language id="hu">Ezt a nevet mindenki láthatja majd az eredménytáblán. 5-10 karakter hosszúságú lehet.</language>
+			</text>
+
+			<text id="my_best_score_text" description="The player's all-time best score for the level.">
+				<language id="en">My best score</language>
+				<language id="zh">我的最高分數</language>
+				<language id="in">Skor terbaik saya</language>
+				<language id="th">คะแนนสูงสุดของฉัน</language>
+				<language id="ex">Mi mejor puntuación</language>
+				<language id="nl">Mijn hoogste score</language>
+				<language id="fr">Mon meilleur score</language>
+				<language id="el">Η καλύτερη βαθμολογία μου</language>
+				<language id="it">Il mio miglior punteggio</language>
+				<language id="pt">A minha melhor pontuação</language>
+				<language id="es">Mi mejor puntuación</language>
+				<language id="pl">Mój najlepszy wynik</language>
+				<language id="sl">Moj rekord</language>
+				<language id="hr">Moj najbolji rezultat</language>
+				<language id="sr">Moj najbolji rezultat</language>
+				<language id="sq">Rezultati im më i mirë</language>
+				<language id="mk">Мојот најдобар резултат</language>
+				<language id="bg">Моят най-добър резултат</language>
+				<language id="iw">התוצאה הטובה ביותר שלי</language>
+				<language id="tr">En iyi skorum</language>
+				<language id="de">Mein Rekord</language>
+				<language id="da">Min topscore</language>
+				<language id="fi">Oma paras tulos</language>
+				<language id="no">Mine høyeste poeng</language>
+				<language id="sv">Mitt poängrekord</language>
+				<language id="ru">Мой лучший результат</language>
+				<language id="kk">Менің үздік ұпайым</language>
+				<language id="uk">Мій найкращий результат</language>
+				<language id="hu">Legjobb pontszámom</language>
+			</text>
+		</manual>
+	</group>
+</data>

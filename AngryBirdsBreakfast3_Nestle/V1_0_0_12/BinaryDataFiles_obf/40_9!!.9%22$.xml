@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+==========================================================
+==			ISO 3166-1 COUNTRY CODES 					==
+==				  Alpha-2 code							==
+==	 http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2	==
+==========================================================
+
+==============================================================
+==			ISO 639-1 LANGUAGE CODES 						==
+==	 http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes	==
+==============================================================
+-->
+
+<data>
+
+	<country id ="HK" name ="Hong Kong" nativeName="香港" alphabeticName="香港" brand="koko_krunch">
+		<language id = "en" name = "English" nativeName = "English"></language>
+		<language id = "zh" name = "Traditional Chinese" nativeName = "繁體中文"></language>
+	</country>
+	
+	<country id ="ID" name ="Indonesia" nativeName="Indonesia" alphabeticName="Indonesia" brand="koko_krunch">
+		<language id = "in" name = "Bahasa Indonesia" nativeName = "Bahasa Indonesia"></language>
+	</country>
+	
+	<country id ="MY" name ="Malaysia" nativeName="Malaysia" alphabeticName="Malaysia" brand="koko_krunch">
+		<language id = "en" name = "English" nativeName = "English"></language>
+	</country>
+	
+	<country id ="MU" name ="Mauritius" nativeName="Mauritius" alphabeticName="Mauritius" brand="koko_krunch">
+		<language id = "en" name = "English" nativeName = "English"></language>
+	</country>
+	
+	<country id ="PK" name ="Pakistan" nativeName="Pakistan" alphabeticName="Pakistan" brand="koko_krunch">
+		<language id = "en" name = "English" nativeName = "English"></language>
+	</country>
+	
+	<country id ="PH" name ="Philippines" nativeName="Philippines" alphabeticName="Philippines" brand="koko_krunch">
+		<language id = "en" name = "English" nativeName = "English"></language>
+	</country>
+	
+	<country id ="SG" name ="Singapore" nativeName="Singapore" alphabeticName="Singapore" brand="koko_krunch">
+		<language id = "en" name = "English" nativeName = "English"></language>
+	</country>
+	
+	<country id ="LK" name ="Sri Lanka" nativeName="Sri Lanka" alphabeticName="Sri Lanka" brand="koko_krunch">
+		<language id = "en" name = "English" nativeName = "English"></language>
+	</country>
+	
+	<country id ="TW" name ="Taiwan" nativeName="台灣" alphabeticName="台灣" brand="koko_krunch">
+		<language id = "zh" name = "Traditional Chinese" nativeName = "繁體中文"></language>
+	</country>
+	
+	<country id ="TH" name ="Thailand" nativeName="ประเทศไทย" alphabeticName="ประเทศไทย" brand="koko_krunch">
+		<language id = "th" name = "Thai" nativeName = "ภาษาไทย"></language>
+	</country>
+
+	<country id ="XC" name ="Caribbean Spanish" nativeName="Caribe" alphabeticName="Caribe" brand="nesquik">
+		<language id="ex" name="Latin American Spanish" nativeName="Español de Latinoamérica"></language>
+	</country>
+
+	<country id ="XD" name ="Caribbean English" nativeName="Caribbean English" alphabeticName="Caribbean English" brand="nesquik">
+		<language id="en" name="English" nativeName="English"></language>
+	</country>
+
+	<country id ="XA" name ="Central America" nativeName="América Central" alphabeticName="América Central" brand="nesquik">
+		<language id="ex" name="Latin American Spanish" nativeName="Español de Latinoamérica"></language>
+	</country>
+	
+	<country id ="MX" name ="Mexico" nativeName="México" alphabeticName="México" brand="nesquik">
+		<language id="ex" name="Latin American Spanish" nativeName="Español de Latinoamérica"></language>
+	</country>
+	
+	<country id ="UY" name ="Uruguay" nativeName="Uruguay" alphabeticName="Uruguay" brand="nesquik">
+		<language id="ex" name="Latin American Spanish" nativeName="Español de Latinoamérica"></language>
+	</country>
+	
+	<country id ="BE" name ="Belgium" nativeName="België" alphabeticName="België" brand="nesquik">
+		<language id = "nl" name = "Dutch" nativeName = "Nederlands"></language>
+		<language id = "fr" name = "French" nativeName = "Français"></language>
+	</country>
+	
+	<country id ="FR" name ="France" nativeName="France" alphabeticName="France" brand="chocapic">
+		<language id = "fr" name = "French" nativeName = "Français"></language>
+	</country>
+	
+	<country id ="GR" name ="Greece" nativeName="Ελλάδα" alphabeticName="Ελλάδα" brand="na">
+		<language id = "el" name = "Greek" nativeName = "Ελληνικά"></language>
+	</country>
+	
+	<country id ="IT" name ="Italy" nativeName="Italia" alphabeticName="Italia" brand="nesquik">
+		<language id = "it" name = "Italian" nativeName = "Italiano"></language>
+	</country>
+	
+	<country id ="PT" name ="Portugal" nativeName="Portugal" alphabeticName="Portugal" brand="chocapic">
+		<language id = "pt" name = "Portuguese" nativeName = "Português"></language>
+	</country>
+	
+	<country id ="ES" name ="Spain" nativeName="España" alphabeticName="España" brand="chocapic">
+		<language id = "es" name = "Spanish" nativeName = "Español"></language>
+	</country>
+	
+	<country id ="PL" name ="Poland" nativeName="Polska" alphabeticName="Polska" brand="nesquik">
+		<language id = "pl" name = "Polish" nativeName = "polski"></language>
+	</country>
+	
+	<country id ="SI" name ="Slovenia" nativeName="Slovenija" alphabeticName="Slovenija" brand="nesquik">
+		<language id = "sl" name = "Slovenian" nativeName = "Slovenščina"></language>
+	</country>
+	
+	<country id ="HR" name ="Croatia" nativeName="Hrvatska" alphabeticName="Hrvatska" brand="nesquik">
+		<language id = "hr" name = "Croatian" nativeName = "Hrvatski"></language>
+	</country>
+	
+	<country id ="BA" name ="Bosnia and Herzegovina" nativeName="Bosna i Hercegovina" alphabeticName="Bosna i Hercegovina" brand="nesquik">
+		<language id = "hr" name = "Croatian" nativeName = "Hrvatski"></language>
+	</country>
+	
+	<country id ="RS" name ="Republic of Serbia" nativeName="Srbija" alphabeticName="Srbija" brand="nesquik">
+		<language id = "sr" name = "Serbian" nativeName = "Srpski"></language>
+	</country>
+	
+	<country id ="ME" name ="Republic of Montenegro" nativeName="Crna Gora" alphabeticName="Crna Gora" brand="nesquik">
+		<language id = "sr" name = "Serbian" nativeName = "Srpski"></language>
+	</country>
+
+	<country id="XK" name="Kosovo" nativeName="Kosovë" alphabeticName="Kosovë" brand="nesquik">
+		<language id = "sq" name = "Albanian" nativeName = "Shqip"></language>
+	</country>
+	
+	<country id ="AL" name ="Albania" nativeName="Shqipëri" alphabeticName="Shqipëri" brand="nesquik">
+		<language id = "sq" name = "Albanian" nativeName = "Shqip"></language>
+	</country>
+	
+	<country id ="MK" name ="FYROM" nativeName="ПЈРМ" alphabeticName="ПЈРМ" brand="nesquik">
+		<language id = "mk" name = "FYROM" nativeName = "ПЈРМ"></language>
+	</country>
+	
+	<country id ="BG" name ="Bulgaria" nativeName="България" alphabeticName="България" brand="nesquik">
+		<language id = "bg" name = "Bulgarian" nativeName = "Български"></language>
+	</country>
+	
+	<country id ="IL" name ="Israel" nativeName="ישראל" brand="na" alphabeticName="ישראל">
+		<language id = "iw" name = "Hebrew" nativeName = "עברית"></language>
+	</country>
+	
+	<country id ="TR" name ="Turkey" nativeName="Türkiye" alphabeticName="Türkiye" brand="nesquik">
+		<language id = "tr" name = "Turkish" nativeName = "Türkçe"></language>
+	</country>
+	
+	<country id ="DE" name ="Germany" nativeName="Deutschland" alphabeticName="Deutschland" brand="na">
+		<language id = "de" name = "German" nativeName = "Deutsch"></language>
+	</country>
+	
+	<country id ="AT" name ="Austria" nativeName="Österreich" alphabeticName="Osterreich" brand="na">
+		<language id = "de" name = "German" nativeName = "Deutsch"></language>
+	</country>
+	
+	<country id ="CH" name ="Switzerland" nativeName="Suisse" alphabeticName="Suisse" brand="nesquik">
+		<language id = "fr" name = "French" nativeName = "Français"></language>
+		<language id = "it" name = "Italian" nativeName = "Italiano"></language>
+		<language id = "de" name = "German" nativeName = "Deutsch"></language>
+	</country>
+	
+	<country id ="DK" name ="Denmark" nativeName="Danmark" alphabeticName="Danmark" brand="na">
+		<language id = "da" name = "Danish" nativeName = "Dansk"></language>
+	</country>
+	
+	<country id ="FI" name ="Finland" nativeName="Suomi" alphabeticName="Suomi" brand="na">
+		<language id = "fi" name = "Finnish" nativeName = "Suomi"></language>
+	</country>
+	
+	<country id ="NO" name ="Norway" nativeName="Norge" alphabeticName="Norge" brand="na">
+		<language id = "no" name = "Norwegian" nativeName = "Norsk"></language>
+	</country>
+	
+	<country id ="SE" name ="Sweden" nativeName="Sverige" alphabeticName="Sverige" brand="na">
+		<language id = "sv" name = "Swedish" nativeName = "Svenska"></language>
+	</country>
+	
+	<country id ="BY" name ="Belarus" nativeName="Белоруссия" alphabeticName="Белоруссия" brand="nesquik">
+		<language id = "ru" name = "Russian" nativeName = "Русский"></language>
+	</country>
+	
+	<country id ="KZ" name ="Kazakhstan" nativeName="Қазақстан" alphabeticName="Қазақстан" brand="nesquik">
+		<language id = "kk" name = "Kazakh" nativeName = "Қазақ"></language>
+	</country>
+	
+	<country id ="RU" name ="Russia" nativeName="Россия" alphabeticName="Россия" brand="nesquik">
+		<language id = "ru" name = "Russian" nativeName = "Русский"></language>
+	</country>
+	
+	<country id ="UA" name ="Ukraine" nativeName="Україна" alphabeticName="Україна" brand="nesquik">
+		<language id = "uk" name = "Ukrainian" nativeName = "Українська"></language>
+	</country>
+
+	<country id ="AU" name ="Australia" nativeName="Australia" alphabeticName="Australia" brand="na">
+		<language id = "en" name = "English" nativeName = "English"></language>
+	</country>
+
+	<country id ="NZ" name ="New Zealand" nativeName="New Zealand" alphabeticName="New Zealand" brand="na">
+		<language id = "en" name = "English" nativeName = "English"></language>
+	</country>
+
+	<country id="HU" name="Hungary" nativeName="Magyarország" alphabeticName="Magyarország" brand="nesquik">
+		<language id="hu" name="Hungarian" nativeName="Magyar"></language>
+	</country>
+
+	<country id="MT" name="Malta" nativeName="Malta" alphabeticName="Malta" brand="nesquik">
+		<language id="en" name="English" nativeName="English"></language>
+	</country>
+	
+</data>

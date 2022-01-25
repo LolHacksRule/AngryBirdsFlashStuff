@@ -1,0 +1,5 @@
+<Popup name="Popup_Waiting" visible="False" fromLibrary="True"
+	width="980" height="570" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE">
+	<MovieClip name="MovieClip_LevelLoadAnimation" enabled="True"
+		visible="true" />
+</Popup>
