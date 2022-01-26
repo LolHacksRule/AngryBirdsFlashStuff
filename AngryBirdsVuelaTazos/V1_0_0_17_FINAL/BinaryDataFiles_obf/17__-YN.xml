@@ -1,0 +1,187 @@
+<LevelBackgrounds game="AngryBirds" version="0.0.0">
+    <Backgrounds>
+		
+       <!--  The layer which will remain on front should be listed on top  -->
+	  <!--  Background id must be same with the export name of main movie clip. Also same id must be used to create a new ground material  -->
+      
+       <Background id="BACKGROUND_CLASSICO" sky="0x92CCDE" texture="THEME_GROUND_TEXTURE_1" ground="0x0a1339" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_RedSavannah" >
+      	<Layers>
+      		<Layer id="FOREGROUND_1_LAYER_2" speed="1000" foreground="1" scale="1"/>
+      		<Layer id="FOREGROUND_1_LAYER_1" speed="1000" foreground="1" scale="1"/>
+      		<Layer id="BACKGROUND_1_LAYER_3" speed="1000" foreground="0" scale="1.5" />
+      		<Layer id="CLASSICO_BG_3" speed="500" foreground="0" scale="2" marginX="-5" />
+      		<Layer id="CLASSICO_BG_2" speed="250" foreground="0" scale="2" />
+      		<Layer id="CLASSICO_BG_1" speed="125" foreground="0" scale="2" static="true" />
+      	</Layers>
+      </Background>
+      
+      
+      <Background id="BACKGROUND_SABRITAS" sky="0x410748" texture="SABRITAS_GROUNDTEXTURE" ground="0x42150D" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="PepsiWind" >
+      	<Layers>
+      		<Layer id="SABRITAS_FG_1" speed="1000" foreground="1" scale="1"/> 
+      		
+      		<Layer id="SABRITAS_BG_5_CHESTER" speed="1000" static="false" tileable="false" foreground="0"  xOffset="20" />
+      		
+      		<Layer id="SABRITAS_BG_4" speed="750" foreground="0" scale="2" marginX="-4" />
+      		<Layer id="SABRITAS_BG_3" speed="500" foreground="0" scale="2" marginX="-4" />
+      		<Layer id="SABRITAS_BG_2" speed="250" foreground="0" scale="2"/>
+      		<Layer id="SABRITAS_BG_1" speed="125" foreground="0" scale="2" static="true" />
+      	</Layers>
+      </Background>
+      
+      <Background id="BACKGROUND_GAMESA" sky="0x155CC2" texture="THEME_GROUND_TEXTURE_1" ground="0xdef2f5" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="PepsiWind" >
+      	<Layers>
+      		<Layer id="GAMESA_FG_1" speed="1000" foreground="1" scale="1"/>
+      		
+      		<Layer id="GAMESA_BG_4_MAMUT" speed="1000" static="false" tileable="false" foreground="0"  xOffset="0" bottomOffset="0" scale="1.3" />
+      		 
+      		<Layer id="GAMESA_BG_3" speed="500" foreground="0" scale="2" marginX="-5" />
+      		<Layer id="GAMESA_BG_2" speed="250" foreground="0" scale="2"/>
+      		<Layer id="GAMESA_BG_1" speed="125" foreground="0" scale="2" static="true" />
+      	</Layers>
+      </Background>
+      
+      <Background id="BACKGROUND_PEPSI" sky="0x000000" texture="PEPSI_GROUNDTEXTURE" ground="0x358DCD" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="PepsiWind" >
+      	<Layers>
+      		<Layer id="PEPSI_FG" speed="1000" foreground="1" scale="1.5"/>
+      	
+      		<Layer id="PEPSI_BG_5_MORRIS" speed="1000" scale="1.75" static="false" tileable="false" foreground="0"  xOffset="0" bottomOffset="0"/>
+      	
+      		<Layer id="PEPSI_BG_4" speed="750" foreground="0" scale="2" marginX="-5" />
+      		<Layer id="PEPSI_BG_3" speed="500" foreground="0" scale="2" marginX="-5" />
+      		<Layer id="PEPSI_BG_2" speed="250" foreground="0" scale="2"/>
+      		<Layer id="PEPSI_BG_1" speed="125" foreground="0" scale="2" static="true" />
+      		
+      	</Layers>
+      </Background>
+      
+      
+      <!--   OLD STUFF   -->
+      
+      
+      <Background id="BACKGROUND_BLUE_GRASS" sky="0x94cede" texture="THEME_GROUND_TEXTURE_1" ground="0x0a1339" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="PepsiWind" >
+      	<Layers>
+      		<Layer id="FOREGROUND_1_LAYER_2" speed="1000" foreground="1" scale="1"/>
+      		<Layer id="FOREGROUND_1_LAYER_1" speed="1000" foreground="1" scale="1"/>
+      		<Layer id="BACKGROUND_1_LAYER_3" speed="1000" foreground="0" scale="1.5" />
+      		<Layer id="BACKGROUND_1_LAYER_2" speed="500" foreground="0" marginX="-5" scale="2" >
+				  <!--<ParticleEmitter id="leaf" x="302" y="-435" scale="2" rotation="3.1415" fastForwardsAfterAdd="40"  alpha="1.0" behindGraphic="true" />-->
+      		</Layer>
+      		<Layer id="BACKGROUND_1_LAYER_1" speed="125" foreground="0" marginX="-5" scale="2" />
+
+      	</Layers>
+      </Background>
+
+		<Background id="BACKGROUND_GREEN_PLANTS" sky="0xc1e7ef" texture="THEME_GROUND_TEXTURE_2" ground="0x0a130f" objectId="GROUND_HILLS" sound="Sound_Ambient_DryForest" >
+			<Layers>
+				<Layer id="FOREGROUND_2_LAYER_2" speed="1000" foreground="1" scale="1"/>
+				<Layer id="FOREGROUND_2_LAYER_1" speed="1000" foreground="1" scale="1"/>
+				<Layer id="THEME_2_BG_LAYER_3" speed="1000" foreground="0" scale="1.5" />
+				<Layer id="THEME_2_BG_LAYER_2" speed="500" foreground="0" marginX="-5" scale="2" />
+				<Layer id="BACKGROUND_2_LAYER_1" speed="200" foreground="0" marginX="-5" scale="2" />
+			</Layers>
+		</Background>
+
+		<Background id="BACKGROUND_RED_FLOWERS" sky="0xefd673" texture="THEME_GROUND_TEXTURE_3" ground="0x2f170e" objectId="GROUND_HILLS" sound="Sound_Ambient_DryForest" >
+			<Layers>
+				<Layer id="FOREGROUND_3_LAYER_2" speed="1000" foreground="1" scale="1"/>
+				<Layer id="FOREGROUND_3_LAYER_1" speed="1000" foreground="1" scale="1"/>
+				<Layer id="THEME_3_BG_LAYER_3" speed="1000" foreground="0" scale="1.6" />
+				<Layer id="THEME_3_BG_LAYER_2" speed="500" foreground="0" marginX="-5" scale="2" />
+				<Layer id="BACKGROUND_3_LAYER_1" speed="125" foreground="0" marginX="-5" scale="2" />
+			</Layers>
+		</Background>
+
+		<Background id="BACKGROUND_BUSHES" sky="0x90cded" texture="THEME_GROUND_TEXTURE_4" ground="0x1c120c" objectId="GROUND_HILLS" sound="Sound_Ambient_DryForest" >
+			<Layers>
+				<Layer id="FOREGROUND_4_LAYER_2" speed="1000" foreground="1" scale="1"/>
+				<Layer id="FOREGROUND_4_LAYER_1" speed="1000" foreground="1" scale="1"/>
+				<Layer id="THEME_4_BG_LAYER_3" speed="1000" foreground="0" scale="1.85" />
+				<Layer id="THEME_4_BG_LAYER_2" speed="500" foreground="0" marginX="-5" scale="2" />
+				<Layer id="BACKGROUND_4_LAYER_1" speed="125" foreground="0" marginX="-5" scale="2" />
+			</Layers>
+		</Background>
+
+		<Background id="BACKGROUND_CACTUS_DESERT" sky="0xf1e28c" texture="THEME_GROUND_TEXTURE_5" ground="0x442702" objectId="GROUND_HILLS" sound="Sound_Ambient_DryForest" >
+			<Layers>
+				<Layer id="FOREGROUND_5_LAYER_2" speed="1000" foreground="1" scale="1"/>
+				<Layer id="FOREGROUND_5_LAYER_1" speed="1000" foreground="1" scale="1"/>
+				<Layer id="THEME_5_BG_LAYER_3" speed="1000" foreground="0" scale="1.8" />
+				<Layer id="THEME_5_BG_LAYER_2" speed="500" foreground="0" marginX="-5" scale="2"/>
+				<Layer id="BACKGROUND_5_LAYER_1" speed="125" foreground="0" marginX="-5" scale="2"/>
+			</Layers>
+		</Background>
+
+		<Background id="BACKGROUND_FOREST" sky="0x4a5a2c" texture="THEME_GROUND_TEXTURE_6" ground="0x181c0f" objectId="GROUND_HILLS" sound="Sound_Ambient_DryForest" >
+			<Layers>
+				<Layer id="FOREGROUND_6_LAYER_2" speed="1000" foreground="1" scale="1" bottomOffset="35"/>
+				<Layer id="FOREGROUND_6_LAYER_1" speed="1000" foreground="1" scale="1" bottomOffset="4"/>
+				<!--<Layer id="BACKGROUND_6_LAYER_3" speed="1000" foreground="0" scale="2" />
+				<Layer id="BACKGROUND_6_LAYER_2" speed="500" foreground="0" marginX="-5" scale="3.3" />-->
+				<Layer id="BACKGROUND_6_LAYER_1" speed="200" foreground="0" marginX="-5" scale="4.5" />
+			</Layers>
+		</Background>
+
+		<Background id="BACKGROUND_CITY" sky="0x000000" texture="THEME_GROUND_TEXTURE_7" ground="0x112245" objectId="GROUND_HILLS" sound="Sound_Ambient_DryForest" >
+			<Layers>
+				<Layer id="FOREGROUND_7_LAYER_2" speed="1000" foreground="1" scale="1" bottomOffset="35"/>
+				<Layer id="FOREGROUND_7_LAYER_1" speed="1000" foreground="1" scale="1" bottomOffset="4"/>
+				<!--<Layer id="BACKGROUND_7_LAYER_3" speed="1000" foreground="0" scale="2.8" />
+				<Layer id="BACKGROUND_7_LAYER_2" speed="500" foreground="0" marginX="-5" scale="3" />-->
+				<Layer id="BACKGROUND_7_LAYER_1" speed="200" foreground="0" marginX="-5" scale="3.5" />
+			</Layers>
+		</Background>
+
+		<Background id="BACKGROUND_CLOUDS" sky="0xf9f8eb" texture="THEME_GROUND_TEXTURE_8" ground="0xeeffff" objectId="GROUND_HILLS" sound="Sound_Ambient_DryForest" >
+			<Layers>
+				<Layer id="FOREGROUND_8_LAYER_2" speed="1300" foreground="1" scale="1" bottomOffset="-10"/>
+				<Layer id="FOREGROUND_8_LAYER_1" speed="1000" foreground="1" scale="1" bottomOffset="10"/>
+				<!--<Layer id="BACKGROUND_8_LAYER_3" speed="1000" foreground="0" scale="1.8" />
+				<Layer id="BACKGROUND_8_LAYER_2" speed="500" foreground="0" marginX="-5" scale="2.5" />-->
+				<Layer id="BACKGROUND_8_LAYER_1" speed="200" foreground="0" marginX="-5" scale="2.5" />
+			</Layers>
+		</Background>
+
+
+      <Background id="BACKGROUND_VOLCANO" sky="0x016164" ground="0x01030a" sound="Sound_Ambient_RedSavannah" texture="THEME_GROUND_TEXTURE_12"  icon="Icon_Theme_Volcano" ttextureStrokeColor="0x0e121a"  cost="250" objectId="GROUND_HILLS"> 
+		<Layers>
+				<Layer id="FOREGROUND_12_LAYER_1"  speed="1000" foreground="1" static="true" bottomOffset="-50"></Layer>
+				<Layer id="BACKGROUND_12_LAYER_1"   speed="800" foreground="0" static="true"></Layer>
+				<Layer id="BACKGROUND_12_LAYER_2"   speed="300" foreground="0" bottomOffset="45"></Layer>
+				
+				<!-- Smaller Front volcano -->
+				<Layer id="BACKGROUND_12_VOLCANO"   speed="200" foreground="0" static="false" bottomOffset="100" xOffset="800" scale="1" tileable="false">
+					<ParticleEmitter id="fire" x="178" y="-255" rotation="3.1415" fastForwardsAfterAdd="40" alpha="0.4" behindGraphic="true" />
+					<ParticleEmitter id="sparks" x="178" y="-265" rotation="3.1415" fastForwardsAfterAdd="40" behindGraphic="true" />
+				</Layer>
+				
+				<Layer id="BACKGROUND_12_LAYER_3"   speed="100" foreground="0" static="true" bottomOffset="85"></Layer>
+				
+				<!-- Big Back volcano -->
+				<Layer id="BACKGROUND_12_VOLCANO"   speed="50" foreground="0" static="true" bottomOffset="100" xOffset="100" tileable="false" scale="1.7">
+					<ParticleEmitter id="fire" x="302" y="-435" scale="2" rotation="3.1415" fastForwardsAfterAdd="40"  alpha="0.4" behindGraphic="true" />
+					<ParticleEmitter id="sparks" x="302" y="-445" scale="2" rotation="3.1415" fastForwardsAfterAdd="40" behindGraphic="true" />
+				</Layer>
+				
+				<!-- Moon -->
+				<Layer id="BACKGROUND_12_MOON_2" speed="0" foreground="0" static="false" tileable="false" xOffset="630" bottomOffset="400">
+					<!-- Stars -->
+					<ParticleEmitter id="stars" x="-800" y="-300" scale="1.5"/>
+					<ParticleEmitter id="stars" x="-280" y="-300" scale="1.5"/>
+					<ParticleEmitter id="stars" x="350" y="-300" scale="1.5"/>
+					<ParticleEmitter id="stars" x="900" y="-300" scale="1.5"/>
+					
+					<ParticleEmitter id="stars" x="-800" y="-900" scale="1.5"/>
+					<ParticleEmitter id="stars" x="-280" y="-900" scale="1.5"/>
+					<ParticleEmitter id="stars" x="350" y="-900" scale="1.5"/>
+					<ParticleEmitter id="stars" x="900" y="-900" scale="1.5"/>
+				</Layer>
+				
+				<Layer id="BACKGROUND_12_LAYER_4"   speed="0" foreground="0" static="true" bottomOffset="145"></Layer>
+			</Layers>
+		</Background>
+     
+	
+  </Backgrounds>
+
+</LevelBackgrounds>

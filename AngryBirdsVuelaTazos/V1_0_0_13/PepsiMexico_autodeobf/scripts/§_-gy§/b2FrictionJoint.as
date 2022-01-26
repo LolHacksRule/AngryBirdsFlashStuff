@@ -1,0 +1,220 @@
+package §_-gy§
+{
+   import §_-SM§.b2internal;
+   import §_-qW§.b2Body;
+   import §_-qW§.b2TimeStep;
+   import §var§.b2Mat22;
+   import §var§.b2Math;
+   import §var§.b2Vec2;
+   
+   use namespace b2internal;
+   
+   public class b2FrictionJoint extends b2Joint
+   {
+       
+      
+      private var §_-Sc§:b2Vec2;
+      
+      private var §_-zD§:b2Vec2;
+      
+      public var §_-C3§:b2Mat22;
+      
+      public var §_-MP§:Number;
+      
+      private var §_-ld§:b2Vec2;
+      
+      private var §_-iV§:Number;
+      
+      private var §_-8P§:Number;
+      
+      private var §_-bE§:Number;
+      
+      public function b2FrictionJoint(param1:b2FrictionJointDef)
+      {
+         this.§_-Sc§ = new b2Vec2();
+         this.§_-zD§ = new b2Vec2();
+         this.§_-C3§ = new b2Mat22();
+         this.§_-ld§ = new b2Vec2();
+         super(param1);
+         this.§_-Sc§.SetV(param1.§_-3r§);
+         this.§_-zD§.SetV(param1.§_-sR§);
+         this.§_-C3§.§_-pR§();
+         this.§_-MP§ = 0;
+         this.§_-ld§.§_-pR§();
+         this.§_-iV§ = 0;
+         this.§_-8P§ = param1.§_-Fz§;
+         this.§_-bE§ = param1.maxTorque;
+      }
+      
+      override public function GetAnchorA() : b2Vec2
+      {
+         return b2internal::_-do.GetWorldPoint(this.§_-Sc§);
+      }
+      
+      override public function GetAnchorB() : b2Vec2
+      {
+         return b2internal::_-Zw.GetWorldPoint(this.§_-zD§);
+      }
+      
+      override public function GetReactionForce(param1:Number) : b2Vec2
+      {
+         return new b2Vec2(param1 * this.§_-ld§.x,param1 * this.§_-ld§.y);
+      }
+      
+      override public function GetReactionTorque(param1:Number) : Number
+      {
+         return param1 * this.§_-iV§;
+      }
+      
+      public function override(param1:Number) : void
+      {
+         this.§_-8P§ = param1;
+      }
+      
+      public function §_-zP§() : Number
+      {
+         return this.§_-8P§;
+      }
+      
+      public function §_-z-§(param1:Number) : void
+      {
+         this.§_-bE§ = param1;
+      }
+      
+      public function §_-cC§() : Number
+      {
+         return this.§_-bE§;
+      }
+      
+      override b2internal function InitVelocityConstraints(param1:b2TimeStep) : void
+      {
+         var _loc2_:b2Mat22 = null;
+         var _loc3_:Number = NaN;
+         var _loc4_:b2Body = null;
+         var _loc5_:b2Body = null;
+         var _loc6_:Number = NaN;
+         var _loc8_:Number = NaN;
+         var _loc10_:Number = NaN;
+         var _loc12_:Number = NaN;
+         var _loc13_:Number = NaN;
+         var _loc14_:b2Mat22 = null;
+         var _loc15_:b2Vec2 = null;
+         _loc4_ = b2internal::_-do;
+         _loc5_ = b2internal::_-Zw;
+         _loc2_ = _loc4_.m_xf.R;
+         _loc6_ = this.§_-Sc§.x - _loc4_.m_sweep.localCenter.x;
+         var _loc7_:Number = this.§_-Sc§.y - _loc4_.m_sweep.localCenter.y;
+         _loc3_ = _loc2_.col1.x * _loc6_ + _loc2_.col2.x * _loc7_;
+         _loc7_ = _loc2_.col1.y * _loc6_ + _loc2_.col2.y * _loc7_;
+         _loc6_ = _loc3_;
+         _loc2_ = _loc5_.m_xf.R;
+         _loc8_ = this.§_-zD§.x - _loc5_.m_sweep.localCenter.x;
+         var _loc9_:Number = this.§_-zD§.y - _loc5_.m_sweep.localCenter.y;
+         _loc3_ = _loc2_.col1.x * _loc8_ + _loc2_.col2.x * _loc9_;
+         _loc9_ = _loc2_.col1.y * _loc8_ + _loc2_.col2.y * _loc9_;
+         _loc8_ = _loc3_;
+         _loc10_ = _loc4_.§_-Af§;
+         var _loc11_:Number = _loc5_.§_-Af§;
+         _loc12_ = _loc4_.§_-Yq§;
+         _loc13_ = _loc5_.§_-Yq§;
+         (_loc14_ = new b2Mat22()).col1.x = _loc10_ + _loc11_;
+         _loc14_.col2.x = 0;
+         _loc14_.col1.y = 0;
+         _loc14_.col2.y = _loc10_ + _loc11_;
+         _loc14_.col1.x += _loc12_ * _loc7_ * _loc7_;
+         _loc14_.col2.x += -_loc12_ * _loc6_ * _loc7_;
+         _loc14_.col1.y += -_loc12_ * _loc6_ * _loc7_;
+         _loc14_.col2.y += _loc12_ * _loc6_ * _loc6_;
+         _loc14_.col1.x += _loc13_ * _loc9_ * _loc9_;
+         _loc14_.col2.x += -_loc13_ * _loc8_ * _loc9_;
+         _loc14_.col1.y += -_loc13_ * _loc8_ * _loc9_;
+         _loc14_.col2.y += _loc13_ * _loc8_ * _loc8_;
+         _loc14_.§_-Ph§(this.§_-C3§);
+         this.§_-MP§ = _loc12_ + _loc13_;
+         if(this.§_-MP§ > 0)
+         {
+            this.§_-MP§ = 1 / this.§_-MP§;
+         }
+         if(param1.§_-bF§)
+         {
+            this.§_-ld§.x *= param1.§_-PA§;
+            this.§_-ld§.y *= param1.§_-PA§;
+            this.§_-iV§ *= param1.§_-PA§;
+            _loc15_ = this.§_-ld§;
+            _loc4_.§_-dS§.x -= _loc10_ * _loc15_.x;
+            _loc4_.§_-dS§.y -= _loc10_ * _loc15_.y;
+            _loc4_.m_angularVelocity -= _loc12_ * (_loc6_ * _loc15_.y - _loc7_ * _loc15_.x + this.§_-iV§);
+            _loc5_.§_-dS§.x += _loc11_ * _loc15_.x;
+            _loc5_.§_-dS§.y += _loc11_ * _loc15_.y;
+            _loc5_.m_angularVelocity += _loc13_ * (_loc8_ * _loc15_.y - _loc9_ * _loc15_.x + this.§_-iV§);
+         }
+         else
+         {
+            this.§_-ld§.§_-pR§();
+            this.§_-iV§ = 0;
+         }
+      }
+      
+      override b2internal function SolveVelocityConstraints(param1:b2TimeStep) : void
+      {
+         var _loc2_:b2Mat22 = null;
+         var _loc3_:Number = NaN;
+         var _loc18_:Number = NaN;
+         var _loc4_:b2Body = b2internal::_-do;
+         var _loc5_:b2Body = b2internal::_-Zw;
+         var _loc6_:b2Vec2 = _loc4_.§_-dS§;
+         var _loc7_:Number = _loc4_.m_angularVelocity;
+         var _loc8_:b2Vec2 = _loc5_.§_-dS§;
+         var _loc9_:Number = _loc5_.m_angularVelocity;
+         var _loc10_:Number = _loc4_.§_-Af§;
+         var _loc11_:Number = _loc5_.§_-Af§;
+         var _loc12_:Number = _loc4_.§_-Yq§;
+         var _loc13_:Number = _loc5_.§_-Yq§;
+         _loc2_ = _loc4_.m_xf.R;
+         var _loc14_:Number = this.§_-Sc§.x - _loc4_.m_sweep.localCenter.x;
+         var _loc15_:Number = this.§_-Sc§.y - _loc4_.m_sweep.localCenter.y;
+         _loc3_ = _loc2_.col1.x * _loc14_ + _loc2_.col2.x * _loc15_;
+         _loc15_ = _loc2_.col1.y * _loc14_ + _loc2_.col2.y * _loc15_;
+         _loc14_ = _loc3_;
+         _loc2_ = _loc5_.m_xf.R;
+         var _loc16_:Number = this.§_-zD§.x - _loc5_.m_sweep.localCenter.x;
+         var _loc17_:Number = this.§_-zD§.y - _loc5_.m_sweep.localCenter.y;
+         _loc3_ = _loc2_.col1.x * _loc16_ + _loc2_.col2.x * _loc17_;
+         _loc17_ = _loc2_.col1.y * _loc16_ + _loc2_.col2.y * _loc17_;
+         _loc16_ = _loc3_;
+         var _loc19_:Number = _loc9_ - _loc7_;
+         var _loc20_:Number = -this.§_-MP§ * _loc19_;
+         var _loc21_:Number = this.§_-iV§;
+         _loc18_ = param1.§_-sn§ * this.§_-bE§;
+         this.§_-iV§ = b2Math.§_-vw§(this.§_-iV§ + _loc20_,-_loc18_,_loc18_);
+         _loc20_ = this.§_-iV§ - _loc21_;
+         _loc7_ -= _loc12_ * _loc20_;
+         _loc9_ += _loc13_ * _loc20_;
+         var _loc22_:Number = _loc8_.x - _loc9_ * _loc17_ - _loc6_.x + _loc7_ * _loc15_;
+         var _loc23_:Number = _loc8_.y + _loc9_ * _loc16_ - _loc6_.y - _loc7_ * _loc14_;
+         var _loc24_:b2Vec2 = b2Math.§_-hb§(this.§_-C3§,new b2Vec2(-_loc22_,-_loc23_));
+         var _loc25_:b2Vec2 = this.§_-ld§.Copy();
+         this.§_-ld§.§default§(_loc24_);
+         _loc18_ = param1.§_-sn§ * this.§_-8P§;
+         if(this.§_-ld§.§_-0k§() > _loc18_ * _loc18_)
+         {
+            this.§_-ld§.Normalize();
+            this.§_-ld§.§_-ju§(_loc18_);
+         }
+         _loc24_ = b2Math.§_-MF§(this.§_-ld§,_loc25_);
+         _loc6_.x -= _loc10_ * _loc24_.x;
+         _loc6_.y -= _loc10_ * _loc24_.y;
+         _loc7_ -= _loc12_ * (_loc14_ * _loc24_.y - _loc15_ * _loc24_.x);
+         _loc8_.x += _loc11_ * _loc24_.x;
+         _loc8_.y += _loc11_ * _loc24_.y;
+         _loc9_ += _loc13_ * (_loc16_ * _loc24_.y - _loc17_ * _loc24_.x);
+         _loc4_.m_angularVelocity = _loc7_;
+         _loc5_.m_angularVelocity = _loc9_;
+      }
+      
+      override b2internal function SolvePositionConstraints(param1:Number) : Boolean
+      {
+         return true;
+      }
+   }
+}

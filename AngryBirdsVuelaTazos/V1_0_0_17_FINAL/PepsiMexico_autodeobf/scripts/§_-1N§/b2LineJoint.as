@@ -1,0 +1,558 @@
+package §_-1N§
+{
+   import §_-Iw§.b2Body;
+   import §_-Iw§.b2TimeStep;
+   import §_-Ja§.b2Mat22;
+   import §_-Ja§.b2Math;
+   import §_-Ja§.b2Transform;
+   import §_-Ja§.b2Vec2;
+   import §_-lh§.b2Settings;
+   import §_-lh§.b2internal;
+   
+   use namespace b2internal;
+   
+   public class b2LineJoint extends b2Joint
+   {
+       
+      
+      b2internal var m_localAnchor1:b2Vec2;
+      
+      b2internal var m_localAnchor2:b2Vec2;
+      
+      b2internal var §_-jM§:b2Vec2;
+      
+      private var §_-oV§:b2Vec2;
+      
+      private var §_-YX§:b2Vec2;
+      
+      private var §_-k1§:b2Vec2;
+      
+      private var m_s1:Number;
+      
+      private var m_s2:Number;
+      
+      private var m_a1:Number;
+      
+      private var m_a2:Number;
+      
+      private var §_-Zj§:b2Mat22;
+      
+      private var §_-tN§:b2Vec2;
+      
+      private var §_-5w§:Number;
+      
+      private var §_-3k§:Number;
+      
+      private var §_-OF§:Number;
+      
+      private var §_-AB§:Number;
+      
+      private var §_-oY§:Number;
+      
+      private var §_-bm§:Number;
+      
+      private var §_-b9§:Boolean;
+      
+      private var §_-2a§:Boolean;
+      
+      private var §_-0L§:int;
+      
+      public function b2LineJoint(param1:b2LineJointDef)
+      {
+         var _loc3_:Number = NaN;
+         var _loc4_:Number = NaN;
+         this.m_localAnchor1 = new b2Vec2();
+         this.m_localAnchor2 = new b2Vec2();
+         this.§_-jM§ = new b2Vec2();
+         this.§_-oV§ = new b2Vec2();
+         this.§_-YX§ = new b2Vec2();
+         this.§_-k1§ = new b2Vec2();
+         this.§_-Zj§ = new b2Mat22();
+         this.§_-tN§ = new b2Vec2();
+         super(param1);
+         this.m_localAnchor1.SetV(param1.§_-Kz§);
+         this.m_localAnchor2.SetV(param1.§_-Dq§);
+         this.§_-jM§.SetV(param1.§_-1u§);
+         this.§_-oV§.x = -this.§_-jM§.y;
+         this.§_-oV§.y = this.§_-jM§.x;
+         this.§_-tN§.§_-0a§();
+         this.§_-5w§ = 0;
+         this.§_-3k§ = 0;
+         this.§_-OF§ = param1.§_-AK§;
+         this.§_-AB§ = param1.§_-AX§;
+         this.§_-oY§ = param1.§_-W-§;
+         this.§_-bm§ = param1.motorSpeed;
+         this.§_-b9§ = param1.§_-3J§;
+         this.§_-2a§ = param1.§_-mY§;
+         this.§_-0L§ = b2internal::_-vv;
+         this.§_-YX§.§_-0a§();
+         this.§_-k1§.§_-0a§();
+      }
+      
+      override public function GetAnchorA() : b2Vec2
+      {
+         return b2internal::_-93.GetWorldPoint(this.m_localAnchor1);
+      }
+      
+      override public function GetAnchorB() : b2Vec2
+      {
+         return b2internal::_-9K.GetWorldPoint(this.m_localAnchor2);
+      }
+      
+      override public function GetReactionForce(param1:Number) : b2Vec2
+      {
+         return new b2Vec2(param1 * (this.§_-tN§.x * this.§_-k1§.x + (this.§_-3k§ + this.§_-tN§.y) * this.§_-YX§.x),param1 * (this.§_-tN§.x * this.§_-k1§.y + (this.§_-3k§ + this.§_-tN§.y) * this.§_-YX§.y));
+      }
+      
+      override public function GetReactionTorque(param1:Number) : Number
+      {
+         return param1 * this.§_-tN§.y;
+      }
+      
+      public function §_-ke§() : Number
+      {
+         var _loc1_:b2Body = b2internal::_-93;
+         var _loc2_:b2Body = b2internal::_-9K;
+         var _loc4_:b2Vec2 = _loc1_.GetWorldPoint(this.m_localAnchor1);
+         var _loc5_:b2Vec2;
+         var _loc6_:Number = (_loc5_ = _loc2_.GetWorldPoint(this.m_localAnchor2)).x - _loc4_.x;
+         var _loc7_:Number = _loc5_.y - _loc4_.y;
+         var _loc8_:b2Vec2;
+         return Number((_loc8_ = _loc1_.§_-Op§(this.§_-jM§)).x * _loc6_ + _loc8_.y * _loc7_);
+      }
+      
+      public function §_-A6§() : Number
+      {
+         var _loc3_:b2Mat22 = null;
+         var _loc1_:b2Body = b2internal::_-93;
+         var _loc2_:b2Body = b2internal::_-9K;
+         _loc3_ = _loc1_.m_xf.R;
+         var _loc4_:Number = this.m_localAnchor1.x - _loc1_.m_sweep.localCenter.x;
+         var _loc5_:Number = this.m_localAnchor1.y - _loc1_.m_sweep.localCenter.y;
+         var _loc6_:Number = _loc3_.col1.x * _loc4_ + _loc3_.col2.x * _loc5_;
+         _loc5_ = _loc3_.col1.y * _loc4_ + _loc3_.col2.y * _loc5_;
+         _loc4_ = _loc6_;
+         _loc3_ = _loc2_.m_xf.R;
+         var _loc7_:Number = this.m_localAnchor2.x - _loc2_.m_sweep.localCenter.x;
+         var _loc8_:Number = this.m_localAnchor2.y - _loc2_.m_sweep.localCenter.y;
+         _loc6_ = _loc3_.col1.x * _loc7_ + _loc3_.col2.x * _loc8_;
+         _loc8_ = _loc3_.col1.y * _loc7_ + _loc3_.col2.y * _loc8_;
+         _loc7_ = _loc6_;
+         var _loc9_:Number = _loc1_.m_sweep.c.x + _loc4_;
+         var _loc10_:Number = _loc1_.m_sweep.c.y + _loc5_;
+         var _loc11_:Number = _loc2_.m_sweep.c.x + _loc7_;
+         var _loc12_:Number = _loc2_.m_sweep.c.y + _loc8_;
+         var _loc13_:Number = _loc11_ - _loc9_;
+         var _loc14_:Number = _loc12_ - _loc10_;
+         var _loc15_:b2Vec2 = _loc1_.§_-Op§(this.§_-jM§);
+         var _loc16_:b2Vec2 = _loc1_.§_-ZZ§;
+         var _loc17_:b2Vec2 = _loc2_.§_-ZZ§;
+         var _loc18_:Number = _loc1_.m_angularVelocity;
+         var _loc19_:Number = _loc2_.m_angularVelocity;
+         return Number(_loc13_ * (-_loc18_ * _loc15_.y) + _loc14_ * (_loc18_ * _loc15_.x) + (_loc15_.x * (_loc17_.x + -_loc19_ * _loc8_ - _loc16_.x - -_loc18_ * _loc5_) + _loc15_.y * (_loc17_.y + _loc19_ * _loc7_ - _loc16_.y - _loc18_ * _loc4_)));
+      }
+      
+      public function §_-qL§() : Boolean
+      {
+         return this.§_-b9§;
+      }
+      
+      public function §_-M5§(param1:Boolean) : void
+      {
+         b2internal::_-93.SetAwake(true);
+         b2internal::_-9K.SetAwake(true);
+         this.§_-b9§ = param1;
+      }
+      
+      public function §_-3f§() : Number
+      {
+         return this.§_-OF§;
+      }
+      
+      public function §_-LG§() : Number
+      {
+         return this.§_-AB§;
+      }
+      
+      public function § get§(param1:Number, param2:Number) : void
+      {
+         b2internal::_-93.SetAwake(true);
+         b2internal::_-9K.SetAwake(true);
+         this.§_-OF§ = param1;
+         this.§_-AB§ = param2;
+      }
+      
+      public function §_-ur§() : Boolean
+      {
+         return this.§_-2a§;
+      }
+      
+      public function §_-HV§(param1:Boolean) : void
+      {
+         b2internal::_-93.SetAwake(true);
+         b2internal::_-9K.SetAwake(true);
+         this.§_-2a§ = param1;
+      }
+      
+      public function §_-BM§(param1:Number) : void
+      {
+         b2internal::_-93.SetAwake(true);
+         b2internal::_-9K.SetAwake(true);
+         this.§_-bm§ = param1;
+      }
+      
+      public function §_-wU§() : Number
+      {
+         return this.§_-bm§;
+      }
+      
+      public function §_-90§(param1:Number) : void
+      {
+         b2internal::_-93.SetAwake(true);
+         b2internal::_-9K.SetAwake(true);
+         this.§_-oY§ = param1;
+      }
+      
+      public function §_-N3§() : Number
+      {
+         return this.§_-oY§;
+      }
+      
+      public function §_-ug§() : Number
+      {
+         return this.§_-3k§;
+      }
+      
+      override b2internal function InitVelocityConstraints(param1:b2TimeStep) : void
+      {
+         var _loc4_:b2Mat22 = null;
+         var _loc5_:Number = NaN;
+         var _loc18_:Number = NaN;
+         var _loc19_:Number = NaN;
+         var _loc20_:Number = NaN;
+         var _loc21_:Number = NaN;
+         var _loc22_:Number = NaN;
+         var _loc2_:b2Body = b2internal::_-93;
+         var _loc3_:b2Body = b2internal::_-9K;
+         b2internal::_-Sc.SetV(_loc2_.§_-LI§());
+         b2internal::_-jk.SetV(_loc3_.§_-LI§());
+         var _loc6_:b2Transform = _loc2_.§_-ZO§();
+         var _loc7_:b2Transform = _loc3_.§_-ZO§();
+         _loc4_ = _loc2_.m_xf.R;
+         var _loc8_:Number = this.m_localAnchor1.x - b2internal::_-Sc.x;
+         var _loc9_:Number = this.m_localAnchor1.y - b2internal::_-Sc.y;
+         _loc5_ = _loc4_.col1.x * _loc8_ + _loc4_.col2.x * _loc9_;
+         _loc9_ = _loc4_.col1.y * _loc8_ + _loc4_.col2.y * _loc9_;
+         _loc8_ = _loc5_;
+         _loc4_ = _loc3_.m_xf.R;
+         var _loc10_:Number = this.m_localAnchor2.x - b2internal::_-jk.x;
+         var _loc11_:Number = this.m_localAnchor2.y - b2internal::_-jk.y;
+         _loc5_ = _loc4_.col1.x * _loc10_ + _loc4_.col2.x * _loc11_;
+         _loc11_ = _loc4_.col1.y * _loc10_ + _loc4_.col2.y * _loc11_;
+         _loc10_ = _loc5_;
+         var _loc12_:Number = _loc3_.m_sweep.c.x + _loc10_ - _loc2_.m_sweep.c.x - _loc8_;
+         var _loc13_:Number = _loc3_.m_sweep.c.y + _loc11_ - _loc2_.m_sweep.c.y - _loc9_;
+         §_-k9§ = _loc2_.§_-eZ§;
+         §_-s8§ = _loc3_.§_-eZ§;
+         §_-kg§ = _loc2_.§_-DZ§;
+         §_-GH§ = _loc3_.§_-DZ§;
+         this.§_-YX§.SetV(b2Math.§_-FP§(_loc6_.R,this.§_-jM§));
+         this.m_a1 = (_loc12_ + _loc8_) * this.§_-YX§.y - (_loc13_ + _loc9_) * this.§_-YX§.x;
+         this.m_a2 = _loc10_ * this.§_-YX§.y - _loc11_ * this.§_-YX§.x;
+         this.§_-5w§ = b2internal::_-k9 + b2internal::_-s8 + b2internal::_-kg * this.m_a1 * this.m_a1 + b2internal::_-GH * this.m_a2 * this.m_a2;
+         this.§_-5w§ = this.§_-5w§ > Number.MIN_VALUE ? Number(1 / this.§_-5w§) : Number(0);
+         this.§_-k1§.SetV(b2Math.§_-FP§(_loc6_.R,this.§_-oV§));
+         this.m_s1 = (_loc12_ + _loc8_) * this.§_-k1§.y - (_loc13_ + _loc9_) * this.§_-k1§.x;
+         this.m_s2 = _loc10_ * this.§_-k1§.y - _loc11_ * this.§_-k1§.x;
+         var _loc14_:Number = b2internal::_-k9;
+         var _loc15_:Number = b2internal::_-s8;
+         var _loc16_:Number = b2internal::_-kg;
+         var _loc17_:Number = b2internal::_-GH;
+         this.§_-Zj§.col1.x = _loc14_ + _loc15_ + _loc16_ * this.m_s1 * this.m_s1 + _loc17_ * this.m_s2 * this.m_s2;
+         this.§_-Zj§.col1.y = _loc16_ * this.m_s1 * this.m_a1 + _loc17_ * this.m_s2 * this.m_a2;
+         this.§_-Zj§.col2.x = this.§_-Zj§.col1.y;
+         this.§_-Zj§.col2.y = _loc14_ + _loc15_ + _loc16_ * this.m_a1 * this.m_a1 + _loc17_ * this.m_a2 * this.m_a2;
+         if(this.§_-b9§)
+         {
+            _loc18_ = this.§_-YX§.x * _loc12_ + this.§_-YX§.y * _loc13_;
+            if(b2Math.§_-xY§(this.§_-AB§ - this.§_-OF§) < 2 * b2Settings.b2_linearSlop)
+            {
+               this.§_-0L§ = b2internal::_-j9;
+            }
+            else if(_loc18_ <= this.§_-OF§)
+            {
+               if(this.§_-0L§ != b2internal::_-oP)
+               {
+                  this.§_-0L§ = b2internal::_-oP;
+                  this.§_-tN§.y = 0;
+               }
+            }
+            else if(_loc18_ >= this.§_-AB§)
+            {
+               if(this.§_-0L§ != b2internal::_-Hv)
+               {
+                  this.§_-0L§ = b2internal::_-Hv;
+                  this.§_-tN§.y = 0;
+               }
+            }
+            else
+            {
+               this.§_-0L§ = b2internal::_-vv;
+               this.§_-tN§.y = 0;
+            }
+         }
+         else
+         {
+            this.§_-0L§ = b2internal::_-vv;
+         }
+         if(this.§_-2a§ == false)
+         {
+            this.§_-3k§ = 0;
+         }
+         if(param1.§_-o-§)
+         {
+            this.§_-tN§.x *= param1.§break§;
+            this.§_-tN§.y *= param1.§break§;
+            this.§_-3k§ *= param1.§break§;
+            _loc19_ = this.§_-tN§.x * this.§_-k1§.x + (this.§_-3k§ + this.§_-tN§.y) * this.§_-YX§.x;
+            _loc20_ = this.§_-tN§.x * this.§_-k1§.y + (this.§_-3k§ + this.§_-tN§.y) * this.§_-YX§.y;
+            _loc21_ = this.§_-tN§.x * this.m_s1 + (this.§_-3k§ + this.§_-tN§.y) * this.m_a1;
+            _loc22_ = this.§_-tN§.x * this.m_s2 + (this.§_-3k§ + this.§_-tN§.y) * this.m_a2;
+            _loc2_.§_-ZZ§.x -= b2internal::_-k9 * _loc19_;
+            _loc2_.§_-ZZ§.y -= b2internal::_-k9 * _loc20_;
+            _loc2_.m_angularVelocity -= b2internal::_-kg * _loc21_;
+            _loc3_.§_-ZZ§.x += b2internal::_-s8 * _loc19_;
+            _loc3_.§_-ZZ§.y += b2internal::_-s8 * _loc20_;
+            _loc3_.m_angularVelocity += b2internal::_-GH * _loc22_;
+         }
+         else
+         {
+            this.§_-tN§.§_-0a§();
+            this.§_-3k§ = 0;
+         }
+      }
+      
+      override b2internal function SolveVelocityConstraints(param1:b2TimeStep) : void
+      {
+         var _loc8_:Number = NaN;
+         var _loc9_:Number = NaN;
+         var _loc10_:Number = NaN;
+         var _loc11_:Number = NaN;
+         var _loc13_:Number = NaN;
+         var _loc14_:Number = NaN;
+         var _loc15_:Number = NaN;
+         var _loc16_:Number = NaN;
+         var _loc17_:Number = NaN;
+         var _loc18_:b2Vec2 = null;
+         var _loc19_:b2Vec2 = null;
+         var _loc20_:Number = NaN;
+         var _loc21_:Number = NaN;
+         var _loc22_:Number = NaN;
+         var _loc2_:b2Body = b2internal::_-93;
+         var _loc3_:b2Body = b2internal::_-9K;
+         var _loc4_:b2Vec2 = _loc2_.§_-ZZ§;
+         var _loc5_:Number = _loc2_.m_angularVelocity;
+         var _loc6_:b2Vec2 = _loc3_.§_-ZZ§;
+         var _loc7_:Number = _loc3_.m_angularVelocity;
+         if(this.§_-2a§ && this.§_-0L§ != b2internal::_-j9)
+         {
+            _loc13_ = this.§_-YX§.x * (_loc6_.x - _loc4_.x) + this.§_-YX§.y * (_loc6_.y - _loc4_.y) + this.m_a2 * _loc7_ - this.m_a1 * _loc5_;
+            _loc14_ = this.§_-5w§ * (this.§_-bm§ - _loc13_);
+            _loc15_ = this.§_-3k§;
+            _loc16_ = param1.§_-h8§ * this.§_-oY§;
+            this.§_-3k§ = b2Math.§_-Gj§(this.§_-3k§ + _loc14_,-_loc16_,_loc16_);
+            _loc8_ = (_loc14_ = this.§_-3k§ - _loc15_) * this.§_-YX§.x;
+            _loc9_ = _loc14_ * this.§_-YX§.y;
+            _loc10_ = _loc14_ * this.m_a1;
+            _loc11_ = _loc14_ * this.m_a2;
+            _loc4_.x -= b2internal::_-k9 * _loc8_;
+            _loc4_.y -= b2internal::_-k9 * _loc9_;
+            _loc5_ -= b2internal::_-kg * _loc10_;
+            _loc6_.x += b2internal::_-s8 * _loc8_;
+            _loc6_.y += b2internal::_-s8 * _loc9_;
+            _loc7_ += b2internal::_-GH * _loc11_;
+         }
+         var _loc12_:Number = this.§_-k1§.x * (_loc6_.x - _loc4_.x) + this.§_-k1§.y * (_loc6_.y - _loc4_.y) + this.m_s2 * _loc7_ - this.m_s1 * _loc5_;
+         if(this.§_-b9§ && this.§_-0L§ != b2internal::_-vv)
+         {
+            _loc17_ = this.§_-YX§.x * (_loc6_.x - _loc4_.x) + this.§_-YX§.y * (_loc6_.y - _loc4_.y) + this.m_a2 * _loc7_ - this.m_a1 * _loc5_;
+            _loc18_ = this.§_-tN§.Copy();
+            _loc19_ = this.§_-Zj§.§_-B-§(new b2Vec2(),-_loc12_,-_loc17_);
+            this.§_-tN§.§_-Jv§(_loc19_);
+            if(this.§_-0L§ == b2internal::_-oP)
+            {
+               this.§_-tN§.y = b2Math.§_-YD§(this.§_-tN§.y,0);
+            }
+            else if(this.§_-0L§ == b2internal::_-Hv)
+            {
+               this.§_-tN§.y = b2Math.§_-cD§(this.§_-tN§.y,0);
+            }
+            _loc20_ = -_loc12_ - (this.§_-tN§.y - _loc18_.y) * this.§_-Zj§.col2.x;
+            if(this.§_-Zj§.col1.x != 0)
+            {
+               _loc21_ = _loc20_ / this.§_-Zj§.col1.x + _loc18_.x;
+            }
+            else
+            {
+               _loc21_ = _loc18_.x;
+            }
+            this.§_-tN§.x = _loc21_;
+            _loc19_.x = this.§_-tN§.x - _loc18_.x;
+            _loc19_.y = this.§_-tN§.y - _loc18_.y;
+            _loc8_ = _loc19_.x * this.§_-k1§.x + _loc19_.y * this.§_-YX§.x;
+            _loc9_ = _loc19_.x * this.§_-k1§.y + _loc19_.y * this.§_-YX§.y;
+            _loc10_ = _loc19_.x * this.m_s1 + _loc19_.y * this.m_a1;
+            _loc11_ = _loc19_.x * this.m_s2 + _loc19_.y * this.m_a2;
+            _loc4_.x -= b2internal::_-k9 * _loc8_;
+            _loc4_.y -= b2internal::_-k9 * _loc9_;
+            _loc5_ -= b2internal::_-kg * _loc10_;
+            _loc6_.x += b2internal::_-s8 * _loc8_;
+            _loc6_.y += b2internal::_-s8 * _loc9_;
+            _loc7_ += b2internal::_-GH * _loc11_;
+         }
+         else
+         {
+            if(this.§_-Zj§.col1.x != 0)
+            {
+               _loc22_ = -_loc12_ / this.§_-Zj§.col1.x;
+            }
+            else
+            {
+               _loc22_ = 0;
+            }
+            this.§_-tN§.x += _loc22_;
+            _loc8_ = _loc22_ * this.§_-k1§.x;
+            _loc9_ = _loc22_ * this.§_-k1§.y;
+            _loc10_ = _loc22_ * this.m_s1;
+            _loc11_ = _loc22_ * this.m_s2;
+            _loc4_.x -= b2internal::_-k9 * _loc8_;
+            _loc4_.y -= b2internal::_-k9 * _loc9_;
+            _loc5_ -= b2internal::_-kg * _loc10_;
+            _loc6_.x += b2internal::_-s8 * _loc8_;
+            _loc6_.y += b2internal::_-s8 * _loc9_;
+            _loc7_ += b2internal::_-GH * _loc11_;
+         }
+         _loc2_.§_-ZZ§.SetV(_loc4_);
+         _loc2_.m_angularVelocity = _loc5_;
+         _loc3_.§_-ZZ§.SetV(_loc6_);
+         _loc3_.m_angularVelocity = _loc7_;
+      }
+      
+      override b2internal function SolvePositionConstraints(param1:Number) : Boolean
+      {
+         var _loc2_:Number = NaN;
+         var _loc3_:Number = NaN;
+         var _loc10_:b2Mat22 = null;
+         var _loc11_:Number = NaN;
+         var _loc12_:Number = NaN;
+         var _loc13_:Number = NaN;
+         var _loc14_:Number = NaN;
+         var _loc15_:Number = NaN;
+         var _loc34_:Number = NaN;
+         var _loc35_:Number = NaN;
+         var _loc36_:Number = NaN;
+         var _loc4_:b2Body = b2internal::_-93;
+         var _loc5_:b2Body = b2internal::_-9K;
+         var _loc6_:b2Vec2 = _loc4_.m_sweep.c;
+         var _loc7_:Number = _loc4_.m_sweep.a;
+         var _loc8_:b2Vec2 = _loc5_.m_sweep.c;
+         var _loc9_:Number = _loc5_.m_sweep.a;
+         var _loc16_:Number = 0;
+         var _loc17_:Number = 0;
+         var _loc18_:Boolean = false;
+         var _loc19_:Number = 0;
+         var _loc20_:b2Mat22 = b2Mat22.§_-P§(_loc7_);
+         var _loc21_:b2Mat22 = b2Mat22.§_-P§(_loc9_);
+         _loc10_ = _loc20_;
+         var _loc22_:Number = this.m_localAnchor1.x - b2internal::_-Sc.x;
+         var _loc23_:Number = this.m_localAnchor1.y - b2internal::_-Sc.y;
+         _loc11_ = _loc10_.col1.x * _loc22_ + _loc10_.col2.x * _loc23_;
+         _loc23_ = _loc10_.col1.y * _loc22_ + _loc10_.col2.y * _loc23_;
+         _loc22_ = _loc11_;
+         _loc10_ = _loc21_;
+         var _loc24_:Number = this.m_localAnchor2.x - b2internal::_-jk.x;
+         var _loc25_:Number = this.m_localAnchor2.y - b2internal::_-jk.y;
+         _loc11_ = _loc10_.col1.x * _loc24_ + _loc10_.col2.x * _loc25_;
+         _loc25_ = _loc10_.col1.y * _loc24_ + _loc10_.col2.y * _loc25_;
+         _loc24_ = _loc11_;
+         var _loc26_:Number = _loc8_.x + _loc24_ - _loc6_.x - _loc22_;
+         var _loc27_:Number = _loc8_.y + _loc25_ - _loc6_.y - _loc23_;
+         if(this.§_-b9§)
+         {
+            this.§_-YX§ = b2Math.§_-FP§(_loc20_,this.§_-jM§);
+            this.m_a1 = (_loc26_ + _loc22_) * this.§_-YX§.y - (_loc27_ + _loc23_) * this.§_-YX§.x;
+            this.m_a2 = _loc24_ * this.§_-YX§.y - _loc25_ * this.§_-YX§.x;
+            _loc34_ = this.§_-YX§.x * _loc26_ + this.§_-YX§.y * _loc27_;
+            if(b2Math.§_-xY§(this.§_-AB§ - this.§_-OF§) < 2 * b2Settings.b2_linearSlop)
+            {
+               _loc19_ = b2Math.§_-Gj§(_loc34_,-b2Settings.b2_maxLinearCorrection,b2Settings.b2_maxLinearCorrection);
+               _loc16_ = b2Math.§_-xY§(_loc34_);
+               _loc18_ = true;
+            }
+            else if(_loc34_ <= this.§_-OF§)
+            {
+               _loc19_ = b2Math.§_-Gj§(_loc34_ - this.§_-OF§ + b2Settings.b2_linearSlop,-b2Settings.b2_maxLinearCorrection,0);
+               _loc16_ = this.§_-OF§ - _loc34_;
+               _loc18_ = true;
+            }
+            else if(_loc34_ >= this.§_-AB§)
+            {
+               _loc19_ = b2Math.§_-Gj§(_loc34_ - this.§_-AB§ + b2Settings.b2_linearSlop,0,b2Settings.b2_maxLinearCorrection);
+               _loc16_ = _loc34_ - this.§_-AB§;
+               _loc18_ = true;
+            }
+         }
+         this.§_-k1§ = b2Math.§_-FP§(_loc20_,this.§_-oV§);
+         this.m_s1 = (_loc26_ + _loc22_) * this.§_-k1§.y - (_loc27_ + _loc23_) * this.§_-k1§.x;
+         this.m_s2 = _loc24_ * this.§_-k1§.y - _loc25_ * this.§_-k1§.x;
+         var _loc28_:b2Vec2 = new b2Vec2();
+         var _loc29_:Number = this.§_-k1§.x * _loc26_ + this.§_-k1§.y * _loc27_;
+         _loc16_ = b2Math.§_-YD§(_loc16_,b2Math.§_-xY§(_loc29_));
+         _loc17_ = 0;
+         if(_loc18_)
+         {
+            _loc12_ = b2internal::_-k9;
+            _loc13_ = b2internal::_-s8;
+            _loc14_ = b2internal::_-kg;
+            _loc15_ = b2internal::_-GH;
+            this.§_-Zj§.col1.x = _loc12_ + _loc13_ + _loc14_ * this.m_s1 * this.m_s1 + _loc15_ * this.m_s2 * this.m_s2;
+            this.§_-Zj§.col1.y = _loc14_ * this.m_s1 * this.m_a1 + _loc15_ * this.m_s2 * this.m_a2;
+            this.§_-Zj§.col2.x = this.§_-Zj§.col1.y;
+            this.§_-Zj§.col2.y = _loc12_ + _loc13_ + _loc14_ * this.m_a1 * this.m_a1 + _loc15_ * this.m_a2 * this.m_a2;
+            this.§_-Zj§.§_-B-§(_loc28_,-_loc29_,-_loc19_);
+         }
+         else
+         {
+            _loc12_ = b2internal::_-k9;
+            _loc13_ = b2internal::_-s8;
+            _loc14_ = b2internal::_-kg;
+            _loc15_ = b2internal::_-GH;
+            if((_loc35_ = _loc12_ + _loc13_ + _loc14_ * this.m_s1 * this.m_s1 + _loc15_ * this.m_s2 * this.m_s2) != 0)
+            {
+               _loc36_ = -_loc29_ / _loc35_;
+            }
+            else
+            {
+               _loc36_ = 0;
+            }
+            _loc28_.x = _loc36_;
+            _loc28_.y = 0;
+         }
+         var _loc30_:Number = _loc28_.x * this.§_-k1§.x + _loc28_.y * this.§_-YX§.x;
+         var _loc31_:Number = _loc28_.x * this.§_-k1§.y + _loc28_.y * this.§_-YX§.y;
+         var _loc32_:Number = _loc28_.x * this.m_s1 + _loc28_.y * this.m_a1;
+         var _loc33_:Number = _loc28_.x * this.m_s2 + _loc28_.y * this.m_a2;
+         _loc6_.x -= b2internal::_-k9 * _loc30_;
+         _loc6_.y -= b2internal::_-k9 * _loc31_;
+         _loc7_ -= b2internal::_-kg * _loc32_;
+         _loc8_.x += b2internal::_-s8 * _loc30_;
+         _loc8_.y += b2internal::_-s8 * _loc31_;
+         _loc9_ += b2internal::_-GH * _loc33_;
+         _loc4_.m_sweep.a = _loc7_;
+         _loc5_.m_sweep.a = _loc9_;
+         _loc4_.§_-Z9§();
+         _loc5_.§_-Z9§();
+         return _loc16_ <= b2Settings.b2_linearSlop && _loc17_ <= b2Settings.b2_angularSlop;
+      }
+   }
+}
