@@ -1,5 +1,0 @@
-<Popup name="Popup_Error" visible="False" fromLibrary="True"
-	   width="980" height="570" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE">
-	<Button name="Button_Close" MouseUp="CLOSE" />
-	<TextField name="TextField_Error" text="" enabled="False" />
-</Popup>
