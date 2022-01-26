@@ -689,13 +689,16 @@ package flashx.textLayout.utils
                else
                {
                   _loc12_ = _loc8_;
-                  while(_loc12_ < _loc4_.flowComposer.numLines - 1)
+                  while(true)
                   {
-                     _loc12_++;
-                     _loc13_ = _loc4_.flowComposer.getLineAt(_loc12_);
-                     if(_loc9_.x - _loc13_.x >= _loc18_ - _loc19_)
+                     if(_loc12_ < _loc4_.flowComposer.numLines - 1)
                      {
-                        break;
+                        _loc12_++;
+                        _loc13_ = _loc4_.flowComposer.getLineAt(_loc12_);
+                        if(_loc9_.x - _loc13_.x < _loc18_ - _loc19_)
+                        {
+                           continue;
+                        }
                      }
                   }
                }
@@ -839,12 +842,11 @@ package flashx.textLayout.utils
                else
                {
                   _loc13_ = _loc9_;
-                  while(_loc13_ > 0)
+                  while(true)
                   {
-                     _loc13_--;
-                     if((_loc14_ = _loc3_.flowComposer.getLineAt(_loc13_)).x - _loc10_.x >= _loc19_ - _loc18_ || _loc14_.absoluteStart < _loc5_.absoluteStart)
+                     if(_loc13_ > 0)
                      {
-                        break;
+                        continue;
                      }
                   }
                }

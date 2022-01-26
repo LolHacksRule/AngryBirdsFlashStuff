@@ -246,11 +246,9 @@ package §+B§
                if(this.§ !M§)
                {
                   _loc4_.setComponentState(§^<§.COMPONENT_STATE_ACTIVE_DEFAULT);
+                  break;
                }
-               else
-               {
-                  _loc4_.setComponentState(§^<§.§0!b§);
-               }
+               _loc4_.setComponentState(§^<§.§0!b§);
                break;
             case "CHECKBOX_MARKETING_CHANGE":
                _loc4_ = § ,§.getItemByName("Checkbox_Marketing") as §^<§;

@@ -212,18 +212,18 @@ package §48§
          else
          {
             _loc6_ = this.§"x§.length - 1;
-            for(; _loc6_ >= 0; _loc6_--)
+            while(_loc6_ >= 0)
             {
                if(_loc5_ = this.§"x§[_loc6_])
                {
                   if(!param4)
                   {
                      this.§5H§(_loc5_,param2,param3);
+                     return;
                   }
                   this.§5H§(_loc5_,param2,false);
-                  continue;
-                  return;
                }
+               _loc6_--;
             }
          }
       }

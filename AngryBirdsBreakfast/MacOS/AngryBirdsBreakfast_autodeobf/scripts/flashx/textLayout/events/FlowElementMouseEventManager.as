@@ -342,6 +342,7 @@ package flashx.textLayout.events
                if(!this._blockInteraction)
                {
                   this.checkCtrlKeyState(param1.ctrlKey);
+                  break;
                }
                break;
             case MouseEvent.MOUSE_DOWN:

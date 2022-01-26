@@ -315,6 +315,7 @@ package flashx.textLayout.compose
                         continue;
                      }
                   }
+                  popInsideListItemMargins(_loc4_);
                }
                _parcelList.addTotalDepth(_loc8_ - _lineSlug.depth);
                if(!_parcelList.getLineSlug(_lineSlug,0,1,_textIndent,_curParaFormat.direction == Direction.LTR))
@@ -322,7 +323,6 @@ package flashx.textLayout.compose
                   return null;
                }
                continue;
-               popInsideListItemMargins(_loc4_);
                return null;
             }
             if(!_loc5_)

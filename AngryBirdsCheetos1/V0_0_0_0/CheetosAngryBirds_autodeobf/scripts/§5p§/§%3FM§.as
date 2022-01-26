@@ -273,7 +273,7 @@ package §5p§
             _loc8_ = _loc2_.x;
             _loc9_ = _loc2_.y;
             _loc10_ = §9!U§ / (_loc7_ - _loc6_);
-            _loc12_ = (_loc11_ = Number(§8u§ / (_loc5_ - _loc4_))) < _loc10_ ? Number(_loc11_) : Number(_loc10_);
+            _loc12_ = (_loc11_ = §8u§ / (_loc5_ - _loc4_)) < _loc10_ ? Number(_loc11_) : Number(_loc10_);
             if(_loc3_ == §7!6§)
             {
                this.§02§ = new § z§(_loc8_,_loc9_,_loc12_,true);

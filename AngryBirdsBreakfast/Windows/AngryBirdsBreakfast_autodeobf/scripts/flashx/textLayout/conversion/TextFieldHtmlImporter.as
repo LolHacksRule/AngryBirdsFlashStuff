@@ -298,6 +298,7 @@ package flashx.textLayout.conversion
          {
             return null;
          }
+         var _loc5_:String;
          return !!(_loc5_ = _loc3_.toString()) ? _loc5_ : "";
       }
       

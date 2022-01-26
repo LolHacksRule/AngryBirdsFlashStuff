@@ -1081,7 +1081,7 @@ package flashx.textLayout.container
                {
                   _loc3_ = !!this._measureWidth ? Number(this._contentWidth) : Number(this._compositionWidth);
                   _loc4_ = !!this._measureHeight ? Number(this._contentHeight) : Number(this._compositionHeight);
-                  _loc6_ = !!(_loc5_ = Boolean(this.effectiveBlockProgression == BlockProgression.RL && this._horizontalScrollPolicy != ScrollPolicy.OFF)) ? Number(this._xScroll - _loc3_) : Number(this._xScroll);
+                  _loc6_ = !!(_loc5_ = this.effectiveBlockProgression == BlockProgression.RL && this._horizontalScrollPolicy != ScrollPolicy.OFF) ? Number(this._xScroll - _loc3_) : Number(this._xScroll);
                   _loc7_ = this._yScroll;
                   if(_loc6_ != this._transparentBGX || _loc7_ != this._transparentBGY || _loc3_ != this._transparentBGWidth || _loc4_ != this._transparentBGHeight)
                   {
@@ -1288,8 +1288,29 @@ package flashx.textLayout.container
             }
             this._scrollTimer = null;
          }
-         else if(!this._container.stage)
+         else if(this._container.stage)
          {
+            containerPoint = new Point(this._container.stage.mouseX,this._container.stage.mouseY);
+            containerPoint = this._container.globalToLocal(containerPoint);
+            scrollChange = this.autoScrollIfNecessaryInternal(containerPoint);
+            if(scrollChange != 0 && this.interactionManager)
+            {
+               mouseEvent = new PsuedoMouseEvent(MouseEvent.MOUSE_MOVE,false,false,this._container.stage.mouseX,this._container.stage.mouseY,this._container.stage,false,false,false,true);
+               stashedScrollTimer = this._scrollTimer;
+               try
+               {
+                  this._scrollTimer = null;
+                  this.interactionManager.mouseMoveHandler(mouseEvent);
+               }
+               catch(e:Error)
+               {
+                  throw e;
+               }
+               finally
+               {
+                  this._scrollTimer = stashedScrollTimer;
+               }
+            }
          }
       }
       
@@ -2284,6 +2305,7 @@ package flashx.textLayout.container
          var _loc7_:TextFlowLine = this.getLastVisibleLine();
          var _loc8_:int = !!_loc6_ ? int(_loc6_.absoluteStart) : int(this.absoluteStart);
          var _loc9_:int = !!_loc7_ ? int(_loc7_.absoluteStart + _loc7_.textLength) : int(this.absoluteStart + this.textLength);
+         var _loc10_:TextFlowLine;
          var _loc11_:int = !!(_loc10_ = this.flowComposer.findLineAtPosition(_loc9_)) ? int(_loc10_.absoluteStart + _loc10_.textLength) : int(this.absoluteStart + this.textLength);
          _loc11_ = Math.min(_loc11_,this.absoluteStart + this.textLength);
          _loc11_ = Math.min(_loc11_,_loc9_ + 2000);

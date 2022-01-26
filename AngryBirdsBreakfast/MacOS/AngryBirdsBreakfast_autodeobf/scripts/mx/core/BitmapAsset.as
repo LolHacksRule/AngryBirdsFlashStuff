@@ -378,13 +378,16 @@ package mx.core
                   {
                      this.layoutFeatures.mirror = _loc2_;
                      this.validateTransformMatrix();
+                     break;
                   }
+                  break;
                }
-               else if(!_loc2_ && this.layoutFeatures)
+               if(!_loc2_ && this.layoutFeatures)
                {
                   this.layoutFeatures.mirror = _loc2_;
                   this.validateTransformMatrix();
                   this.layoutFeatures = null;
+                  break;
                }
                break;
             }

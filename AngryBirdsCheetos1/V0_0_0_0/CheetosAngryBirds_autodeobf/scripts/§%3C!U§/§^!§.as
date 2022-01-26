@@ -422,11 +422,9 @@ package §<!U§
                if(§,l§.§,?§.§+d§)
                {
                   checkBoxComponent.setComponentState(§<d§.COMPONENT_STATE_ACTIVE_DEFAULT);
+                  break;
                }
-               else
-               {
-                  checkBoxComponent.setComponentState(§<d§.§^#§);
-               }
+               checkBoxComponent.setComponentState(§<d§.§^#§);
                break;
             case "CLAIM_PRIZE":
                try

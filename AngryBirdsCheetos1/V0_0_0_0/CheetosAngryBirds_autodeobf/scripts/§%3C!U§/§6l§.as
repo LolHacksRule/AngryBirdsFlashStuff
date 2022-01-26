@@ -266,20 +266,20 @@ package §<!U§
                if(§,l§.§,?§.§+d§)
                {
                   checkBoxComponent.setComponentState(§<d§.COMPONENT_STATE_ACTIVE_DEFAULT);
+                  break;
                }
-               else
-               {
-                  checkBoxComponent.setComponentState(§<d§.§^#§);
-               }
+               checkBoxComponent.setComponentState(§<d§.§^#§);
                break;
             case "CREDIT_REDEEM":
                try
                {
                   §,Y§.§[[§("addCredits");
                   sCheetosPopups.hidePopup();
+                  break;
                }
                catch(e:Error)
                {
+                  break;
                }
                break;
             default:
@@ -292,33 +292,32 @@ package §<!U§
                {
                   buttonGotoFrame = eventNameSubstring.toLowerCase();
                   (component as §?6§).mClip.MovieClip_LevelSelectionLogos.LevelSelectionButton.gotoAndStop(buttonGotoFrame);
+                  break;
                }
-               else
+               this.§!=§(eventName);
+               if(eventName == "1-1" || eventName == "1-2" || eventName == "1-3")
                {
-                  this.§!=§(eventName);
-                  if(eventName == "1-1" || eventName == "1-2" || eventName == "1-3")
-                  {
-                     §]u§.sCheetosPopups.hidePopup();
-                     mNextState = StateCutScene.§`O§;
-                  }
-                  else if(eventName == "CREDIT_OK")
-                  {
-                     §]u§.sCheetosPopups.hidePopup();
-                  }
-                  else
-                  {
-                     if(§;!=§.credits <= 0 && !§[!!§.§+i§())
-                     {
-                        §]u§.sCheetosPopups.showPopup(§8!I§.NO_CREDIT,"NO_CREDIT");
-                        return;
-                     }
-                     if(!§]u§.sCheetosPopups.showPopup(§8!I§.§%!M§))
-                     {
-                        sCheetosPopups.hidePopup();
-                        mNextState = StateCutScene.§`O§;
-                     }
-                  }
+                  §]u§.sCheetosPopups.hidePopup();
+                  mNextState = StateCutScene.§`O§;
+                  break;
                }
+               if(eventName == "CREDIT_OK")
+               {
+                  §]u§.sCheetosPopups.hidePopup();
+                  break;
+               }
+               if(§;!=§.credits <= 0 && !§[!!§.§+i§())
+               {
+                  §]u§.sCheetosPopups.showPopup(§8!I§.NO_CREDIT,"NO_CREDIT");
+                  return;
+               }
+               if(!§]u§.sCheetosPopups.showPopup(§8!I§.§%!M§))
+               {
+                  sCheetosPopups.hidePopup();
+                  mNextState = StateCutScene.§`O§;
+                  break;
+               }
+               break;
          }
       }
       

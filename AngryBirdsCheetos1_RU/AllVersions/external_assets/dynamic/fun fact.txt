@@ -1,0 +1,1 @@
+Rovio put this directory in a flash directory inside the flash directory and the game reads them from there.

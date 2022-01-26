@@ -235,7 +235,8 @@ package § G§
             }
             _loc19_++;
          }
-         var _loc22_:int = (_loc21_ = int(_loc17_)) + 1 < _loc9_ ? int(_loc21_ + 1) : 0;
+         var _loc21_:int;
+         var _loc22_:int = (_loc21_ = _loc17_) + 1 < _loc9_ ? int(_loc21_ + 1) : 0;
          _loc20_ = param1[0];
          _loc13_ = _loc10_[_loc21_];
          _loc12_ = param6.R;
@@ -464,7 +465,8 @@ package § G§
             }
             _loc24_++;
          }
-         var _loc26_:int = (_loc25_ = int(_loc18_)) + 1 < _loc21_ ? int(_loc25_ + 1) : 0;
+         var _loc25_:int;
+         var _loc26_:int = (_loc25_ = _loc18_) + 1 < _loc21_ ? int(_loc25_ + 1) : 0;
          var _loc27_:b2Vec2 = _loc22_[_loc25_];
          var _loc28_:b2Vec2 = _loc22_[_loc26_];
          if(_loc19_ < Number.MIN_VALUE)

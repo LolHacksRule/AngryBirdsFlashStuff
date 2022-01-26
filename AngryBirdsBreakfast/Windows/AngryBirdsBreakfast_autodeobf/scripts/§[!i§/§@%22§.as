@@ -58,6 +58,7 @@ package §[!i§
                if(!(§6!!§.singleton as §4!=§).§&!N§())
                {
                   this.closePressed();
+                  break;
                }
          }
       }

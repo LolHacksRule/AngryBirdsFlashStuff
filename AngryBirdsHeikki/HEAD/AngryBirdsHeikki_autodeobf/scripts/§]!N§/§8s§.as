@@ -110,11 +110,9 @@ package §]!N§
                   _loc1_.type = §9o§.§+!A§;
                   _loc1_.value = NaN;
                   this.§@O§();
+                  break;
                }
-               else
-               {
-                  this.parseError("Expecting \'NaN\' but found " + _loc5_);
-               }
+               this.parseError("Expecting \'NaN\' but found " + _loc5_);
                break;
             case "\"":
                _loc1_ = this.§,!N§();
@@ -123,15 +121,14 @@ package §]!N§
                if(this.§=!B§(this.§0!=§) || this.§0!=§ == "-")
                {
                   _loc1_ = this.§<?§();
+                  break;
                }
-               else
+               if(this.§0!=§ == "")
                {
-                  if(this.§0!=§ == "")
-                  {
-                     return null;
-                  }
-                  this.parseError("Unexpected " + this.§0!=§ + " encountered");
+                  return null;
                }
+               this.parseError("Unexpected " + this.§0!=§ + " encountered");
+               break;
          }
          return _loc1_;
       }

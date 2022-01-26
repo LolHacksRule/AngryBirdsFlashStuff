@@ -877,6 +877,7 @@ package flashx.textLayout.compose
          var _loc14_:ListItemElement = null;
          var _loc4_:TextFlow;
          var _loc5_:String = (_loc4_ = this._para.getTextFlow()).computedFormat.blockProgression;
+         var _loc6_:IFlowComposer;
          var _loc7_:ISWFContext = !!(_loc6_ = _loc4_.flowComposer).swfContext ? _loc6_.swfContext : BaseCompose.globalSWFContext;
          var _loc9_:Number = this._lineOffset;
          if(this.hasNumberLine)
@@ -1159,7 +1160,7 @@ package flashx.textLayout.compose
             }
             else
             {
-               _loc16_ = (_loc15_ = int(_loc10_.textLength + _loc10_.getElementRelativeStart(this._para) - _loc9_)) + _loc9_ > param4 ? int(param4) : int(_loc15_ + _loc9_);
+               _loc16_ = (_loc15_ = _loc10_.textLength + _loc10_.getElementRelativeStart(this._para) - _loc9_) + _loc9_ > param4 ? int(param4) : int(_loc15_ + _loc9_);
                if(param5 != BlockProgression.RL || param1.getAtomTextRotation(param1.getAtomIndexAtCharIndex(_loc9_)) != TextRotation.ROTATE_0)
                {
                   _loc20_ = this.makeSelectionBlocks(param1,_loc9_,_loc16_,_loc8_,param5,_loc7_,param6);
@@ -1185,7 +1186,7 @@ package flashx.textLayout.compose
                   _loc27_ = new Array();
                   while(_loc9_ < _loc26_)
                   {
-                     _loc16_ = (_loc15_ = int((_loc10_ = this._para.findLeaf(_loc9_)).textLength + _loc10_.getElementRelativeStart(this._para) - _loc9_)) + _loc9_ > param4 ? int(param4) : int(_loc15_ + _loc9_);
+                     _loc16_ = (_loc15_ = (_loc10_ = this._para.findLeaf(_loc9_)).textLength + _loc10_.getElementRelativeStart(this._para) - _loc9_) + _loc9_ > param4 ? int(param4) : int(_loc15_ + _loc9_);
                      _loc28_ = this.makeSelectionBlocks(param1,_loc9_,_loc16_,_loc8_,param5,_loc7_,param6);
                      _loc29_ = 0;
                      while(_loc29_ < _loc28_.length)
@@ -1396,7 +1397,7 @@ package flashx.textLayout.compose
             do
             {
                _loc18_ += _loc19_;
-               _loc24_ = (_loc22_ = int(param1.getAtomIndexAtCharIndex(_loc18_))) != -1 ? Boolean(this.isAtomBidi(param1,_loc22_,param6)) : false;
+               _loc24_ = (_loc22_ = param1.getAtomIndexAtCharIndex(_loc18_)) != -1 ? Boolean(this.isAtomBidi(param1,_loc22_,param6)) : false;
                if(_loc22_ != -1 && _loc24_ != _loc23_)
                {
                   _loc9_ = this.makeBlock(param1,_loc18_,_loc20_,_loc21_,_loc11_,param5,param6,param7);
@@ -1678,7 +1679,7 @@ package flashx.textLayout.compose
          if(_loc12_ == BlockProgression.RL && _loc6_.getAtomTextRotation(_loc8_) != TextRotation.ROTATE_0)
          {
             _loc21_ = param2.localToGlobal(rlLocalOnePoint);
-            _loc19_ = (_loc19_ = Number(_loc18_.y - _loc21_.y)) == 0 ? Number(1) : Number(Math.abs(1 / _loc19_));
+            _loc19_ = (_loc19_ = _loc18_.y - _loc21_.y) == 0 ? Number(1) : Number(Math.abs(1 / _loc19_));
             if(!_loc17_)
             {
                setRectangleValues(_loc16_,_loc16_.x,!_loc9_ ? Number(_loc16_.y) : Number(_loc16_.y + _loc16_.height),_loc16_.width,_loc19_);
@@ -1691,7 +1692,7 @@ package flashx.textLayout.compose
          else
          {
             _loc22_ = param2.localToGlobal(localOnePoint);
-            _loc19_ = (_loc19_ = Number(_loc18_.x - _loc22_.x)) == 0 ? Number(1) : Number(Math.abs(1 / _loc19_));
+            _loc19_ = (_loc19_ = _loc18_.x - _loc22_.x) == 0 ? Number(1) : Number(Math.abs(1 / _loc19_));
             if(!_loc17_)
             {
                setRectangleValues(_loc16_,!_loc9_ ? Number(_loc16_.x) : Number(_loc16_.x + _loc16_.width),_loc16_.y,_loc19_,_loc16_.height);

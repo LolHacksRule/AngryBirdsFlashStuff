@@ -97,7 +97,7 @@ package fl.text.container
                   }
                   _loc3_ = !!tlf_internal::measureWidth ? Number(tlf_internal::contentWidth) : Number(compositionWidth);
                   _loc4_ = !!tlf_internal::measureHeight ? Number(tlf_internal::contentHeight) : Number(compositionHeight);
-                  _loc6_ = !!(_loc5_ = Boolean(tlf_internal::effectiveBlockProgression == BlockProgression.RL && horizontalScrollPolicy != ScrollPolicy.OFF)) ? Number(horizontalScrollPosition - _loc3_) : Number(horizontalScrollPosition);
+                  _loc6_ = !!(_loc5_ = tlf_internal::effectiveBlockProgression == BlockProgression.RL && horizontalScrollPolicy != ScrollPolicy.OFF) ? Number(horizontalScrollPosition - _loc3_) : Number(horizontalScrollPosition);
                   _loc7_ = verticalScrollPosition;
                   if(_loc6_ != this._transparentBGButtonX || _loc7_ != this._transparentBGButtonY || _loc3_ != this._transparentBGButtonWidth || _loc4_ != this._transparentBGButtonHeight)
                   {

@@ -233,7 +233,8 @@ package §?U§
          var _loc11_:Number = NaN;
          var _loc12_:Number = NaN;
          var _loc3_:PDParticle = param1 as PDParticle;
-         param2 = (_loc4_ = Number(_loc3_.§'"§ - _loc3_.§>!Y§)) > param2 ? Number(param2) : Number(_loc4_);
+         var _loc4_:Number;
+         param2 = (_loc4_ = _loc3_.§'"§ - _loc3_.§>!Y§) > param2 ? Number(param2) : Number(_loc4_);
          _loc3_.§>!Y§ += param2;
          if(this.§3!H§ == this.§"!F§)
          {

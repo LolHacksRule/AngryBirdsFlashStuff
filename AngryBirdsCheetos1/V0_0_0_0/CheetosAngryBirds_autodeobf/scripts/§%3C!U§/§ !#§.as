@@ -228,10 +228,12 @@ package §<!U§
                if(§]u§.sCheetosPopups.getCurrentPopupName() == §8!I§.RESTART_LEVEL)
                {
                   this.§;!F§();
+                  break;
                }
-               else if(§]u§.sCheetosPopups.getCurrentPopupName() == §8!I§.§-k§)
+               if(§]u§.sCheetosPopups.getCurrentPopupName() == §8!I§.§-k§)
                {
                   this.§5!!§();
+                  break;
                }
                break;
             case "CHECKBOX_CHANGE":
@@ -240,11 +242,10 @@ package §<!U§
                if(§,l§.§,?§.§+d§)
                {
                   _loc6_.setComponentState(§<d§.COMPONENT_STATE_ACTIVE_DEFAULT);
+                  break;
                }
-               else
-               {
-                  _loc6_.setComponentState(§<d§.§^#§);
-               }
+               _loc6_.setComponentState(§<d§.§^#§);
+               break;
          }
       }
       

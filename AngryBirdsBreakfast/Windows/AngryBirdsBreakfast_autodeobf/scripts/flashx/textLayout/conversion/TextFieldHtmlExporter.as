@@ -234,6 +234,7 @@ package flashx.textLayout.conversion
          this.exportSubParagraphChildren(param1,param2);
          var _loc5_:ITextLayoutFormat = param1.computedFormat;
          var _loc6_:ITextLayoutFormat = param1.parent.computedFormat;
+         var _loc7_:XML;
          var _loc8_:XML = !!(_loc7_ = this.exportFont(_loc5_,_loc6_)) ? nest(_loc7_,param2) : param2;
          if(param4 && param1.typeName != param1.defaultTypeName)
          {

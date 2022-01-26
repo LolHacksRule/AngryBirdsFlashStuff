@@ -1231,6 +1231,7 @@ package flashx.textLayout.compose
          var _loc6_:TextLine = null;
          var _loc7_:TextLine = null;
          var _loc3_:FlowGroupElement = param1.paragraph;
+         var _loc4_:ITextLayoutFormat;
          var _loc5_:Number = (_loc4_ = _loc3_.computedFormat).direction == Direction.RTL ? Number(_loc4_.paragraphStartIndent) : Number(_loc4_.paragraphEndIndent);
          if(_loc4_.direction == Direction.RTL && param1.location & TextFlowLineLocation.FIRST)
          {
@@ -1410,6 +1411,7 @@ package flashx.textLayout.compose
                if(Twips.to(this._lineSlug.width) == this._curLine.outerTargetWidthTW && this._lineSlug.depth != _loc4_)
                {
                   this.finishComposeLine(param1,param3);
+                  break;
                }
                break;
             }

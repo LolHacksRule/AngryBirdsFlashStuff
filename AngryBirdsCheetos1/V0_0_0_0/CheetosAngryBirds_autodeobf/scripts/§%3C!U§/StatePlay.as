@@ -321,12 +321,10 @@ package §<!U§
                         }
                         §,Y§.§[[§("levelComplete",§[!!§.§7!F§,true);
                         §;!=§.§%j§(§[!!§.§?I§());
-                        break;
                      }
                      catch(e:Error)
                      {
                         §<p§(e);
-                        break;
                      }
                      break;
                   case §4!E§.§9p§:
@@ -340,12 +338,12 @@ package §<!U§
                            {
                               §,l§.§,?§.§3C§(§6l§.§`O§);
                               §]u§.sCheetosPopups.showPopup(§8!I§.NO_CREDIT,"NO_CREDIT");
-                              break;
                            }
-                           this.§`K§();
-                           break;
+                           else
+                           {
+                              this.§`K§();
+                           }
                         }
-                        break;
                      }
                      break;
                   case §4!E§.§1!Q§:
@@ -376,20 +374,16 @@ package §<!U§
                         {
                            §]u§.sCheetosPopups.showPopup(§8!I§.SPOT_PRIZE_AVAILABLE,"SPOT_PRIZE_AVAILABLE");
                         }
-                        break;
                      }
-                     if(returnObject.credits >= §'!-§)
+                     else if(returnObject.credits >= §'!-§)
                      {
                         ((§[&§.§&!'§ as §!&§).§ !4§ as §?!6§).§"!0§();
-                        break;
                      }
-                     if(returnObject.credits < §'!-§)
+                     else if(returnObject.credits < §'!-§)
                      {
                         §,l§.§,?§.§3C§(§6l§.§`O§);
                         §]u§.sCheetosPopups.showPopup(§8!I§.NO_CREDIT,"NO_CREDIT");
-                        break;
                      }
-                     break;
                }
             }
          }
@@ -539,37 +533,37 @@ package §<!U§
                   {
                      checkBoxComponent.setComponentState(§<d§.§^#§);
                   }
+                  break;
                }
-               else
+               §,l§.§,?§.§+d§ = !§,l§.§,?§.§+d§;
+               if(§,l§.§,?§.§+d§)
                {
-                  §,l§.§,?§.§+d§ = !§,l§.§,?§.§+d§;
-                  if(§,l§.§,?§.§+d§)
-                  {
-                     checkBoxComponent.setComponentState(§<d§.COMPONENT_STATE_ACTIVE_DEFAULT);
-                  }
-                  else
-                  {
-                     checkBoxComponent.setComponentState(§<d§.§^#§);
-                  }
+                  checkBoxComponent.setComponentState(§<d§.COMPONENT_STATE_ACTIVE_DEFAULT);
+                  break;
                }
+               checkBoxComponent.setComponentState(§<d§.§^#§);
                break;
             case "CREDIT_REDEEM":
                try
                {
                   §,Y§.§[[§("addCredits");
                   sCheetosPopups.hidePopup();
+                  break;
                }
                catch(e:Error)
                {
+                  break;
                }
                break;
             case "CONFIRM_LEAVE":
                try
                {
                   this.navigationConfirmed();
+                  break;
                }
                catch(e:Error)
                {
+                  break;
                }
          }
       }

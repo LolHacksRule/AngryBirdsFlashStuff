@@ -120,6 +120,7 @@ package §<!U§
                if(§]u§.sCheetosPopups.getCurrentPopupName() == §8!I§.RESTART_LEVEL)
                {
                   this.§;!F§();
+                  break;
                }
                break;
             case "CHECKBOX_CHANGE":
@@ -128,11 +129,10 @@ package §<!U§
                if(§,l§.§,?§.§+d§)
                {
                   _loc4_.setComponentState(§<d§.COMPONENT_STATE_ACTIVE_DEFAULT);
+                  break;
                }
-               else
-               {
-                  _loc4_.setComponentState(§<d§.§^#§);
-               }
+               _loc4_.setComponentState(§<d§.§^#§);
+               break;
          }
       }
       

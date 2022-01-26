@@ -599,7 +599,9 @@ package flashx.textLayout.elements
                      if((_loc8_ = this.getChildAt(_loc3_ - 1)) is SubParagraphGroupElementBase && _loc8_.textLength == 1 && !_loc8_.bindableElement)
                      {
                         this.replaceChildren(_loc3_ - 1,_loc3_);
+                        break;
                      }
+                     break;
                   }
                   break;
                }

@@ -377,7 +377,7 @@ package flashx.textLayout.edit
          while(_loc7_)
          {
             _loc8_ = _loc7_.getAbsoluteStart() + _loc7_.textLength;
-            if((_loc10_ = (_loc9_ = int(Math.min(_loc8_,param3))) == _loc8_ ? int(_loc9_ - 1) : int(_loc9_)) > param2)
+            if((_loc10_ = (_loc9_ = Math.min(_loc8_,param3)) == _loc8_ ? int(_loc9_ - 1) : int(_loc9_)) > param2)
             {
                if(!canInsertSPBlock(param1,param2,_loc10_,LinkElement))
                {

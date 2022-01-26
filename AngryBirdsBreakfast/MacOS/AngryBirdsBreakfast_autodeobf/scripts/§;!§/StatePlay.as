@@ -225,6 +225,7 @@ package §;!§
                if(!§&!"§.isPaused)
                {
                   this.§=3§();
+                  break;
                }
          }
       }

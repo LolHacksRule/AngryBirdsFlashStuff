@@ -177,6 +177,7 @@ package §1"%§
                      if(_loc2_ < param1.length)
                      {
                         param1[_loc2_] = _loc6_;
+                        break;
                      }
                      break;
                   }

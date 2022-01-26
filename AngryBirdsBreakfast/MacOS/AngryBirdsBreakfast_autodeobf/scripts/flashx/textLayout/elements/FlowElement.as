@@ -1445,7 +1445,8 @@ package flashx.textLayout.elements
          {
             return null;
          }
-         return (_loc5_ = int(ContainerFormattedElement(_loc3_).flowComposer.findControllerIndexAtPosition(this.getAbsoluteStart() + param1,false))) != -1 ? _loc4_.getControllerAt(_loc5_) : null;
+         var _loc5_:int;
+         return (_loc5_ = ContainerFormattedElement(_loc3_).flowComposer.findControllerIndexAtPosition(this.getAbsoluteStart() + param1,false)) != -1 ? _loc4_.getControllerAt(_loc5_) : null;
       }
       
       tlf_internal function deleteContainerText(param1:int, param2:int) : void

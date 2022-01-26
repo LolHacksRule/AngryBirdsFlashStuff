@@ -356,16 +356,14 @@ package §?f§
                   _loc2_.scaleX = _loc2_.scaleY = 0.75;
                   _loc2_.color = _loc8_;
                   _loc2_.flatten();
+                  break;
                }
-               else
-               {
-                  _loc2_ = new Sprite();
-                  _loc3_ = this.§6N§.§2!'§("NUMBERS");
-                  this.§23§ = new §-!P§(_loc2_,_loc3_);
-                  this.§23§.§5!?§(parseInt(this.§[k§));
-                  this.§#U§.addChild(_loc2_);
-                  _loc2_.scaleX = _loc2_.scaleY = 0.75;
-               }
+               _loc2_ = new Sprite();
+               _loc3_ = this.§6N§.§2!'§("NUMBERS");
+               this.§23§ = new §-!P§(_loc2_,_loc3_);
+               this.§23§.§5!?§(parseInt(this.§[k§));
+               this.§#U§.addChild(_loc2_);
+               _loc2_.scaleX = _loc2_.scaleY = 0.75;
                break;
             case §2!K§:
                switch(this.§'l§)
@@ -425,6 +423,7 @@ package §?f§
                if(this.§#U§)
                {
                   this.§#U§.rotation = Math.random() * 360 / 180 * Math.PI;
+                  break;
                }
                break;
             default:

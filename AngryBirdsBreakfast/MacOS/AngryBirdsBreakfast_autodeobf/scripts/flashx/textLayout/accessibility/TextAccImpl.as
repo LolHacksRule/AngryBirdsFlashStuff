@@ -135,9 +135,11 @@ package flashx.textLayout.accessibility
                   Accessibility.sendEvent(this.textContainer,0,EVENT_OBJECT_NAMECHANGE);
                   Accessibility.sendEvent(this.textContainer,0,EVENT_OBJECT_VALUECHANGE);
                   Accessibility.updateProperties();
+                  break;
                }
                catch(e_err:Error)
                {
+                  break;
                }
          }
       }

@@ -110,11 +110,9 @@ package §;K§
                   _loc1_.type = §1"#§.§8!r§;
                   _loc1_.value = NaN;
                   this.§>!G§();
+                  break;
                }
-               else
-               {
-                  this.parseError("Expecting \'NaN\' but found " + _loc5_);
-               }
+               this.parseError("Expecting \'NaN\' but found " + _loc5_);
                break;
             case "\"":
                _loc1_ = this.§4! §();
@@ -123,15 +121,14 @@ package §;K§
                if(this.§8!h§(this.§8!$§) || this.§8!$§ == "-")
                {
                   _loc1_ = this.§%"0§();
+                  break;
                }
-               else
+               if(this.§8!$§ == "")
                {
-                  if(this.§8!$§ == "")
-                  {
-                     return null;
-                  }
-                  this.parseError("Unexpected " + this.§8!$§ + " encountered");
+                  return null;
                }
+               this.parseError("Unexpected " + this.§8!$§ + " encountered");
+               break;
          }
          return _loc1_;
       }

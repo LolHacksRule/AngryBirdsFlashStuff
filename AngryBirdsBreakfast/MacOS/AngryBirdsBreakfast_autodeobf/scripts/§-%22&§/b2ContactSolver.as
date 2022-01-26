@@ -381,7 +381,7 @@ package §-"&§
                _loc8_ = _loc31_.y + _loc29_ * _loc2_.§^6§.x - _loc30_.y - _loc28_ * _loc2_.§@B§.x;
                _loc9_ = _loc7_ * _loc36_ + _loc8_ * _loc37_;
                _loc11_ = -_loc2_.§?!!§ * (_loc9_ - _loc2_.§5h§);
-               _loc14_ = (_loc11_ = (_loc13_ = (_loc13_ = Number(_loc2_.normalImpulse + _loc11_)) > 0 ? Number(_loc13_) : Number(0)) - _loc2_.normalImpulse) * _loc36_;
+               _loc14_ = (_loc11_ = (_loc13_ = (_loc13_ = _loc2_.normalImpulse + _loc11_) > 0 ? Number(_loc13_) : Number(0)) - _loc2_.normalImpulse) * _loc36_;
                _loc15_ = _loc11_ * _loc37_;
                _loc30_.x -= _loc32_ * _loc14_;
                _loc30_.y -= _loc32_ * _loc15_;

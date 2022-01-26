@@ -233,7 +233,8 @@ package §5!C§
          var _loc11_:Number = NaN;
          var _loc12_:Number = NaN;
          var _loc3_:PDParticle = param1 as PDParticle;
-         param2 = (_loc4_ = Number(_loc3_.§1!M§ - _loc3_.§-v§)) > param2 ? Number(param2) : Number(_loc4_);
+         var _loc4_:Number;
+         param2 = (_loc4_ = _loc3_.§1!M§ - _loc3_.§-v§) > param2 ? Number(param2) : Number(_loc4_);
          _loc3_.§-v§ += param2;
          if(this.§<!O§ == this.§8!c§)
          {

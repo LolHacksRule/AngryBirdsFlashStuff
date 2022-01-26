@@ -174,12 +174,15 @@ package §=!§
                   {
                      _loc4_.§4!?§();
                      this.§']§(HighscoreSidebar.§!!2§,false);
+                     break;
                   }
+                  break;
                }
-               else if((_loc4_ = this.getScoreLoaderById(this.§9!_§)) != null)
+               if((_loc4_ = this.getScoreLoaderById(this.§9!_§)) != null)
                {
                   _loc4_.§4!?§();
                   this.§']§(this.§9!_§,false);
+                  break;
                }
                break;
             case "DOWN":
@@ -189,12 +192,15 @@ package §=!§
                   {
                      _loc4_.§1!E§();
                      this.§']§(HighscoreSidebar.§!!2§,false);
+                     break;
                   }
+                  break;
                }
-               else if(_loc4_ = this.getScoreLoaderById(this.§9!_§))
+               if(_loc4_ = this.getScoreLoaderById(this.§9!_§))
                {
                   _loc4_.§1!E§();
                   this.§']§(this.§9!_§,false);
+                  break;
                }
                break;
             case "TAB_DRUMS":

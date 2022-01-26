@@ -767,6 +767,7 @@ package flashx.textLayout.elements
          {
             _loc3_ = this.getParagraph().getEffectiveDominantBaseline();
          }
+         var _loc4_:ElementFormat;
          var _loc5_:String = (_loc4_ = !!_blockElement ? _blockElement.elementFormat : computeElementFormat()).alignmentBaseline == TextBaseline.USE_DOMINANT_BASELINE ? _loc3_ : _loc4_.alignmentBaseline;
          var _loc6_:Number = 0;
          if(_loc3_ == TextBaseline.IDEOGRAPHIC_CENTER)

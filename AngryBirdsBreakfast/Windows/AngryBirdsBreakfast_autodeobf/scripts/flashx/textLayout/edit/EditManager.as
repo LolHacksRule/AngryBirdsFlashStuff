@@ -129,6 +129,7 @@ package flashx.textLayout.edit
                      this.deleteText(null);
                   }
                   param1.preventDefault();
+                  break;
                }
                break;
             case Event.PASTE:
@@ -283,6 +284,7 @@ package flashx.textLayout.edit
                      }
                      param1.preventDefault();
                      param1.stopImmediatePropagation();
+                     break;
                   }
                   break;
                case Keyboard.TAB:
@@ -327,6 +329,7 @@ package flashx.textLayout.edit
                         this.insertText(String.fromCharCode(param1.charCode));
                      }
                      param1.preventDefault();
+                     break;
                   }
             }
          }

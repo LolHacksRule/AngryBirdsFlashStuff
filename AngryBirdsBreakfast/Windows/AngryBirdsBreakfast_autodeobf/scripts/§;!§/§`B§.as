@@ -148,6 +148,7 @@ package §;!§
                {
                   §6!!§.singleton.§%![§.openPopup(new §[!x§());
                   §'!c§.§3!f§("Menu_Confirm");
+                  break;
                }
          }
       }

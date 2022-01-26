@@ -348,6 +348,7 @@ package §;!§
                if(!§6!!§.singleton.§%![§.§%&§())
                {
                   this.§7L§();
+                  break;
                }
          }
          §&!"§.controller.keyDown(param1);

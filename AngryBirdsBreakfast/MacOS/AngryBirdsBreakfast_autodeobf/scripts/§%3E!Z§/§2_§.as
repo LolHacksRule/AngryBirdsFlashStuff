@@ -365,16 +365,14 @@ package §>!Z§
                   _loc2_.scaleX = _loc2_.scaleY = 0.75;
                   _loc2_.color = _loc9_;
                   _loc2_.flatten();
+                  break;
                }
-               else
-               {
-                  _loc2_ = new Sprite();
-                  _loc3_ = this.§^!f§.§#w§("NUMBERS");
-                  this.§!l§ = new §6^§(_loc2_,_loc3_);
-                  this.§!l§.§;!4§(parseInt(this.§5Y§));
-                  this.§;i§.addChild(_loc2_);
-                  _loc2_.scaleX = _loc2_.scaleY = 0.75;
-               }
+               _loc2_ = new Sprite();
+               _loc3_ = this.§^!f§.§#w§("NUMBERS");
+               this.§!l§ = new §6^§(_loc2_,_loc3_);
+               this.§!l§.§;!4§(parseInt(this.§5Y§));
+               this.§;i§.addChild(_loc2_);
+               _loc2_.scaleX = _loc2_.scaleY = 0.75;
                break;
             case §`!%§:
                switch(this.§!!i§)
@@ -434,6 +432,7 @@ package §>!Z§
                if(this.§;i§)
                {
                   this.§;i§.rotation = Math.random() * 360 / 180 * Math.PI;
+                  break;
                }
                break;
             default:

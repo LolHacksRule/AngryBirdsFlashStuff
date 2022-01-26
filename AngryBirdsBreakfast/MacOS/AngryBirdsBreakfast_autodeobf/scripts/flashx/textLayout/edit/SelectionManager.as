@@ -137,7 +137,7 @@ package flashx.textLayout.edit
                   }
                   if((_loc28_ = !!_loc9_ ? _loc26_ > _loc11_ : _loc26_ < _loc11_) || _loc18_ == 0)
                   {
-                     _loc5_ = (_loc30_ = Boolean(_loc27_ != -1 && (!!_loc9_ ? _loc11_ < _loc27_ : _loc11_ > _loc27_))) && _loc18_ != _loc15_ ? int(_loc18_ + 1) : int(_loc18_);
+                     _loc5_ = (_loc30_ = _loc27_ != -1 && (!!_loc9_ ? _loc11_ < _loc27_ : _loc11_ > _loc27_)) && _loc18_ != _loc15_ ? int(_loc18_ + 1) : int(_loc18_);
                      break;
                   }
                   _loc13_ = _loc25_;
@@ -223,7 +223,8 @@ package flashx.textLayout.edit
                param4 = _loc23_.y + _loc23_.height;
             }
          }
-         return (_loc24_ = int(computeSelectionIndexInLine(param1,_loc20_,param3,param4))) != -1 ? int(_loc24_) : int(_loc6_ + _loc7_);
+         var _loc24_:int;
+         return (_loc24_ = computeSelectionIndexInLine(param1,_loc20_,param3,param4)) != -1 ? int(_loc24_) : int(_loc6_ + _loc7_);
       }
       
       private static function locateNearestColumn(param1:ContainerController, param2:Number, param3:Number, param4:String, param5:String) : int
@@ -299,6 +300,7 @@ package flashx.textLayout.edit
             return -1;
          }
          param2 = _loc5_.getTextLine(true);
+         var _loc6_:*;
          var _loc7_:Number = !!(_loc6_ = param1.computedFormat.blockProgression == BlockProgression.RL) ? Number(param3) : Number(param4);
          var _loc8_:Point;
          (_loc8_ = new Point()).x = param3;

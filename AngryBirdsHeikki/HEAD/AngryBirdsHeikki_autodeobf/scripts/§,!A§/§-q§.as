@@ -373,16 +373,14 @@ package §,!A§
                   _loc2_.scaleX = _loc2_.scaleY = 0.75;
                   _loc2_.color = _loc8_;
                   _loc2_.flatten();
+                  break;
                }
-               else
-               {
-                  _loc2_ = new Sprite();
-                  _loc3_ = this.§[&§.§>n§("NUMBERS");
-                  this.§[u§ = new §;`§(_loc2_,_loc3_);
-                  this.§[u§.§4!,§(parseInt(this.§3p§));
-                  this.§9-§.addChild(_loc2_);
-                  _loc2_.scaleX = _loc2_.scaleY = 0.75;
-               }
+               _loc2_ = new Sprite();
+               _loc3_ = this.§[&§.§>n§("NUMBERS");
+               this.§[u§ = new §;`§(_loc2_,_loc3_);
+               this.§[u§.§4!,§(parseInt(this.§3p§));
+               this.§9-§.addChild(_loc2_);
+               _loc2_.scaleX = _loc2_.scaleY = 0.75;
                break;
             case §-,§:
                switch(this.§'!<§)
@@ -442,6 +440,7 @@ package §,!A§
                if(this.§9-§)
                {
                   this.§9-§.rotation = Math.random() * 360 / 180 * Math.PI;
+                  break;
                }
                break;
             default:
