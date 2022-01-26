@@ -1,0 +1,17 @@
+<LevelBackgrounds game="AngryBirdsFacebook" version="0.0.0">
+    <Backgrounds>
+    	<!--  The layer which will remain on front should be listed on top  -->
+		<!--  Background id must be same with the export name of main movie clip. Also same id must be used to create a new ground material  -->
+
+		<!--  Facebook background -->
+		<Background id="BACKGROUND_LOTUS" sky="0x000000" texture="LOTUS_GROUND" ground="0x000000" objectId="GROUND_HILLS" sound="Sound_Ambient_Jungle" >
+            <Layers>
+                <Layer id="LOTUS_FG_TIRES" speed="1200" foreground="1" scale="3" bottomOffset="75"/>
+                <Layer id="LOTUS_BG4_TRACK" speed="1000" foreground="0" scale="3" bottomOffset="-25"/>
+                <Layer id="LOTUS_BG3_MIDDLE" speed="700" foreground="0" scale="3" bottomOffset="-190"/>
+                <Layer id="LOTUS_BG2_SIGNS" speed="550" foreground="0" scale="3" bottomOffset="-640"  highQuality="true"/>
+                <Layer id="LOTUS_BG1_SKY" speed="400" foreground="0" scale="3" bottomOffset="-740"/>
+            </Layers>
+		</Background>
+    </Backgrounds>
+</LevelBackgrounds>

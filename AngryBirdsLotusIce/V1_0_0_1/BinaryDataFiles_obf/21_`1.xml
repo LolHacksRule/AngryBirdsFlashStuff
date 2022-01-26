@@ -1,0 +1,251 @@
+<Assets>
+	<packages>
+		<pack url="packages/core.pak"/>
+		<pack url="packages/birds.pak"/>
+		<pack url="packages/pigs.pak"/>
+		<pack url="packages/blocks.pak"/>
+	</packages>
+
+    <Library swf="external_assets/AngryBirdsEmbedCredits.swf" startupLoad="true" name="GameCredits">
+        <Asset name="ViewCredits"/>
+    </Library>
+
+	<Library swf="external_assets/AngryBirdsEmbedUI.swf" startupLoad="true" name="EmbedGameUiAssets">
+		<!--<Asset name="LevelSelectionCrown"/>-->
+		<Asset name="ViewFacebookLevelPause"/>
+		<Asset name="ViewFacebookLevelPlay"/>
+		<Asset name="ViewLevelEndRio"/>
+		<Asset name="ViewLevelEndFailRio"/>
+        <Asset name="ViewLevelSelection"/>
+		<Asset name="FullGameBox"/>
+        <Asset name="FullScreenBox"/>
+
+        <!--  Star splash effects for end screen -->
+		<Asset name="P_STAR_5"/>
+		<Asset name="P_STAR_4"/>
+		<Asset name="P_STAR_3"/>
+		<Asset name="P_STAR_2"/>
+		<Asset name="P_STAR_1"/>
+		<Asset name="P_SMOKE_3"/>
+		<Asset name="P_SMOKE_2"/>
+		<Asset name="P_SMOKE_1"/>
+
+		<Asset name="ThankYouForPlaying"/>
+
+	</Library>
+
+    <Library swf="external_assets/SoundsNew.swf" startupLoad="true" name="Sounds">
+        <Asset name="LevelStartsBirdsMilitary1"/>	<!-- DONE -->
+        <Asset name="LevelStartsBirdsMilitary2"/>	<!-- DONE -->
+        <Asset name="LevelCompletedBirdsMilitary1"/>	<!-- DONE -->
+        <Asset name="LevelCompletedBirdsMilitary2"/>	<!-- DONE -->
+        <Asset name="LevelCompletedTheme1"/>	<!-- DONE -->
+        <Asset name="LevelFailedPigs1"/>	<!-- DONE -->
+        <Asset name="LevelFailedPigs2"/>	<!-- DONE -->
+
+        <Asset name="Wood_Clicked1"/>	<!-- DONE -->
+        <Asset name="Wood_Clicked2"/>	<!-- DONE -->
+        <Asset name="Wood_Clicked3"/>	<!-- DONE -->
+        <Asset name="Wood_Clicked4"/>	<!-- DONE -->
+        <Asset name="Wood_Clicked5"/>	<!-- DONE -->
+        <Asset name="Wood_Clicked6"/>	<!-- DONE -->
+        <Asset name="Wood_Damaged1"/>	<!-- DONE -->
+        <Asset name="Wood_Damaged2"/>	<!-- DONE -->
+        <Asset name="Wood_Damaged3"/>	<!-- DONE -->
+        <Asset name="Wood_Destroyed1"/>	<!-- DONE -->
+        <Asset name="Wood_Destroyed2"/>	<!-- DONE -->
+        <Asset name="Wood_Destroyed3"/>	<!-- DONE -->
+        <Asset name="Wood_Rolling1"/>	<!-- DONE -->
+
+        <Asset name="Stone_Clicked1"/>	<!-- DONE -->
+        <Asset name="Stone_Clicked2"/>	<!-- DONE -->
+        <Asset name="Stone_Clicked3"/>	<!-- DONE -->
+        <Asset name="Stone_Clicked4"/>	<!-- DONE -->
+        <Asset name="Stone_Clicked5"/>	<!-- DONE -->
+        <Asset name="Stone_Damaged1"/>	<!-- DONE -->
+        <Asset name="Stone_Damaged2"/>	<!-- DONE -->
+        <Asset name="Stone_Damaged3"/>	<!-- DONE -->
+        <Asset name="Stone_Destroyed1"/>	<!-- DONE -->
+        <Asset name="Stone_Destroyed2"/>	<!-- DONE -->
+        <Asset name="Stone_Destroyed3"/>	<!-- DONE -->
+        <Asset name="Stone_Rolling1"/>	<!-- DONE -->
+
+        <Asset name="Ice_Clicked1"/>	<!-- DONE -->
+        <Asset name="Ice_Clicked2"/>	<!-- DONE -->
+        <Asset name="Ice_Clicked3"/>	<!-- DONE -->
+        <Asset name="Ice_Clicked4"/>	<!-- DONE -->
+        <Asset name="Ice_Clicked5"/>	<!-- DONE -->
+        <Asset name="Ice_Clicked6"/>	<!-- DONE -->
+        <Asset name="Ice_Clicked7"/>	<!-- DONE -->
+        <Asset name="Ice_Clicked8"/>	<!-- DONE -->
+        <Asset name="Ice_Damaged1"/>	<!-- DONE -->
+        <Asset name="Ice_Damaged2"/>	<!-- DONE -->
+        <Asset name="Ice_Damaged3"/>	<!-- DONE -->
+        <Asset name="Ice_Destroyed1"/>	<!-- DONE -->
+        <Asset name="Ice_Destroyed2"/>	<!-- DONE -->
+        <Asset name="Ice_Destroyed3"/>	<!-- DONE -->
+        <Asset name="Ice_Rolling1"/>	<!-- DONE -->
+
+        <Asset name="Bird_Red_Clicked1"/>	<!-- DONE -->
+        <Asset name="Bird_Red_Damaged1"/>	<!-- DONE -->
+        <Asset name="Bird_Red_Damaged2"/>	<!-- DONE -->
+        <Asset name="Bird_Red_Damaged3"/>	<!-- DONE -->
+        <Asset name="Bird_Red_Flying1"/>	<!-- DONE -->
+        <Asset name="Bird_Red_Talk1"/>	<!-- DONE -->
+        <Asset name="Bird_Red_Talk2"/>	<!-- DONE -->
+        <Asset name="Bird_Red_Special1"/>	<!-- DONE -->
+        <Asset name="Bird_Red_Special2"/>	<!-- DONE -->
+        <Asset name="Bird_Red_Special3"/>	<!-- DONE -->
+        <Asset name="Bird_Red_Selected1"/>	<!-- DONE -->
+        <Asset name="Bird_Red_Unselected1"/>	<!-- DONE 		Not found in PC game assets, used the same one as in flash project	-->
+        <Asset name="Bird_Red_Ready1"/>	<!-- DONE -->
+        <Asset name="Bird_Red_Destroyed1"/>	<!-- DONE -->
+
+        <Asset name="Bird_Blue_Clicked1"/>	<!-- DONE -->
+        <Asset name="Bird_Blue_Damaged1"/>	<!-- DONE -->
+        <Asset name="Bird_Blue_Damaged2"/>	<!-- DONE -->
+        <Asset name="Bird_Blue_Damaged3"/>	<!-- DONE -->
+        <Asset name="Bird_Blue_Damaged4"/>	<!-- DONE -->
+        <Asset name="Bird_Blue_Flying1"/>	<!-- DONE -->
+        <Asset name="Bird_Blue_Talk1"/>	<!-- DONE 		Not found in PC game assets, used the same one as in flash project	-->
+        <Asset name="Bird_Blue_Selected1"/>	<!-- DONE -->
+        <Asset name="Bird_Blue_Unselected1"/>	<!-- DONE 		Not found in PC game assets, used the same one as in flash project	-->
+        <Asset name="Bird_Blue_Ready1"/>	<!-- DONE 		Not found in PC game assets, used the same one as in flash project	-->
+        <Asset name="Bird_Blue_Destroyed1"/>	<!-- DONE -->
+        <Asset name="Bird_Blue_Special1"/>	<!-- DONE -->
+
+        <Asset name="Bird_Yellow_Clicked1"/>	<!-- DONE -->
+        <Asset name="Bird_Yellow_Damaged1"/>	<!-- DONE -->
+        <Asset name="Bird_Yellow_Damaged2"/>	<!-- DONE -->
+        <Asset name="Bird_Yellow_Damaged3"/>	<!-- DONE -->
+        <Asset name="Bird_Yellow_Damaged4"/>	<!-- DONE -->
+        <Asset name="Bird_Yellow_Flying1"/>	<!-- DONE -->
+        <Asset name="Bird_Yellow_Talk1"/>	<!-- DONE -->
+        <Asset name="Bird_Yellow_Special1"/>	<!-- DONE -->
+        <Asset name="Bird_Yellow_Selected1"/>	<!-- DONE -->
+        <Asset name="Bird_Yellow_Unselected1"/>	<!-- DONE -->
+        <Asset name="Bird_Yellow_Ready1"/>	<!-- DONE -->
+        <Asset name="Bird_Yellow_Destroyed1"/>	<!-- DONE -->
+
+        <Asset name="Bird_Black_Clicked1"/>	<!-- DONE -->
+        <Asset name="Bird_Black_Damaged1"/>	<!-- DONE -->
+        <Asset name="Bird_Black_Damaged2"/>	<!-- DONE -->
+        <Asset name="Bird_Black_Damaged3"/>	<!-- DONE -->
+        <Asset name="Bird_Black_Flying1"/>	<!-- DONE -->
+        <Asset name="Bird_Black_Flying2"/>	<!-- DONE -->
+        <Asset name="Bird_Black_Talk1"/>	<!-- DONE -->
+        <Asset name="Bird_Black_Special1"/>	<!-- DONE -->
+        <Asset name="Bird_Black_Selected1"/>	<!-- DONE -->
+        <Asset name="Bird_Black_Unselected1"/>	<!-- DONE -->
+        <Asset name="Bird_Black_Ready1"/>	<!-- DONE -->
+        <Asset name="Bird_Black_Destroyed1"/>	<!-- DONE -->
+
+        <Asset name="Bird_White_Clicked1"/>	<!-- DONE -->
+        <Asset name="Bird_White_Damaged1"/>	<!-- DONE -->
+        <Asset name="Bird_White_Damaged2"/>	<!-- DONE -->
+        <Asset name="Bird_White_Damaged3"/>	<!-- DONE -->
+        <Asset name="Bird_White_Damaged4"/>	<!-- DONE -->
+        <Asset name="Bird_White_Flying1"/>	<!-- DONE -->
+        <Asset name="Bird_White_Talk1"/>	<!-- DONE -->
+        <Asset name="Bird_White_Special1"/>	<!-- DONE -->
+        <Asset name="Bird_White_Selected1"/>	<!-- DONE -->
+        <Asset name="Bird_White_Unselected1"/>	<!-- DONE -->
+        <Asset name="Bird_White_Ready1"/>	<!-- DONE -->
+        <Asset name="Bird_White_Destroyed1"/>	<!-- DONE -->
+
+        <Asset name="Bird_Green_Clicked1"/>	<!-- DONE -->
+        <Asset name="Bird_Green_Damaged1"/>	<!-- DONE -->
+        <Asset name="Bird_Green_Damaged2"/>	<!-- DONE -->
+        <Asset name="Bird_Green_Damaged3"/>	<!-- DONE -->
+        <Asset name="Bird_Green_Flying1"/>	<!-- DONE -->
+        <Asset name="Bird_Green_Talk1"/>	<!-- DONE -->
+        <Asset name="Bird_Green_Special1"/>	<!-- DONE -->
+        <Asset name="Bird_Green_Special2"/>	<!-- DONE -->
+        <Asset name="Bird_Green_Selected1"/>	<!-- DONE -->
+        <Asset name="Bird_Green_Unselected1"/>	<!-- DONE -->
+        <Asset name="Bird_Green_Ready1"/>	<!-- DONE -->
+        <Asset name="Bird_Green_Destroyed1"/>	<!-- DONE -->
+
+
+
+        <Asset name="Bird_RedBig_Clicked1"/> <!--  DONE -->
+        <Asset name="Bird_RedBig_Damaged1"/> <!--  DONE -->
+        <Asset name="Bird_RedBig_Damaged2"/> <!--  DONE -->
+        <Asset name="Bird_RedBig_Damaged3"/> <!--  DONE -->
+        <Asset name="Bird_RedBig_Damaged4"/> <!--  DONE -->
+        <Asset name="Bird_RedBig_Flying1"/>  <!--  DONE -->
+        <Asset name="Bird_RedBig_Talk1"/>    <!--  DONE -->
+        <Asset name="Bird_RedBig_Selected1"/>	<!--  DONE -->
+        <Asset name="Bird_RedBig_Unselected1"/> <!--  DONE -->
+        <Asset name="Bird_RedBig_Ready1"/>     <!--  DONE -->
+        <Asset name="Bird_RedBig_Destroyed1"/> <!--  DONE -->
+
+        <Asset name="Pigs_Set1_Clicked1"/>	<!-- DONE -->
+        <Asset name="Pigs_Set1_Clicked2"/>	<!-- DONE -->
+        <Asset name="Pigs_Set1_Clicked3"/>	<!-- DONE -->
+        <Asset name="Pigs_Set1_Damaged1"/>	<!-- DONE -->
+        <Asset name="Pigs_Set1_Damaged2"/>	<!-- DONE -->
+        <Asset name="Pigs_Set1_Destroyed1"/>	<!-- DONE -->
+        <Asset name="Pigs_Set1_Talk1"/>	<!-- DONE -->
+        <Asset name="Pigs_Set1_Scream1"/>	<!-- DONE -->
+        <Asset name="Pigs_Set1_Scream2"/>	<!-- DONE -->
+        <Asset name="Pigs_Set1_Scream3"/>	<!-- DONE -->
+
+        <Asset name="Pigs_Set2_Clicked1"/>	<!-- DONE -->
+        <Asset name="Pigs_Set2_Clicked2"/>	<!-- DONE -->
+        <Asset name="Pigs_Set2_Clicked3"/>	<!-- DONE -->
+        <Asset name="Pigs_Set2_Damaged1"/>	<!-- DONE -->
+        <Asset name="Pigs_Set2_Damaged2"/>	<!-- DONE -->
+        <Asset name="Pigs_Set2_Damaged3"/>	<!-- DONE -->
+        <Asset name="Pigs_Set2_Destroyed1"/>	<!-- DONE -->
+        <Asset name="Pigs_Set2_Talk1"/>	<!-- DONE -->
+        <Asset name="Pigs_Set2_Talk2"/>	<!-- DONE -->
+        <Asset name="Pigs_Set2_Talk3"/>	<!-- DONE -->
+        <Asset name="Pigs_Set2_Scream1"/>	<!-- DONE -->
+        <Asset name="Pigs_Set2_Scream2"/>	<!-- DONE -->
+        <Asset name="Pigs_Set2_Scream3"/>	<!-- DONE -->
+        <Asset name="Pigs_Set2_Scream4"/>	<!-- DONE -->
+
+        <Asset name="Pigs_Set3_Clicked1"/>	<!-- DONE -->
+        <Asset name="Pigs_Set3_Clicked2"/>	<!-- DONE -->
+        <Asset name="Pigs_Set3_Clicked3"/>	<!-- DONE -->
+        <Asset name="Pigs_Set3_Damaged1"/>	<!-- DONE -->
+        <Asset name="Pigs_Set3_Damaged2"/>	<!-- DONE -->
+        <Asset name="Pigs_Set3_Damaged3"/>	<!-- DONE -->
+        <Asset name="Pigs_Set3_Destroyed1"/>	<!-- DONE -->
+        <Asset name="Pigs_Set3_Destroyed2"/>	<!-- DONE -->
+        <Asset name="Pigs_Set3_Talk1"/>	<!-- DONE -->
+        <Asset name="Pigs_Set3_Scream1"/>	<!-- DONE -->
+        <Asset name="Pigs_Set3_Scream2"/>	<!-- DONE -->
+        <Asset name="Pigs_Set3_Scream3"/>	<!-- DONE -->
+
+        <Asset name="Rubber_Damaged1"/>	<!-- DONE -->
+        <Asset name="Rubber_Destroyed1"/>	<!-- DONE -->
+
+
+        <Asset name="SlingshotStreched"/>	<!-- DONE -->
+        <Asset name="TntExplosions"/>	<!-- DONE -->
+
+        <Asset name="birds_boss"/>	<!-- DONE -->
+        <Asset name="birds_intro"/>	<!-- DONE -->
+        <Asset name="birds_outro"/>	<!-- DONE -->
+        <Asset name="piglette_oink_story"/>	<!-- DONE -->
+
+        <Asset name="CameraShutter" />	<!-- DONE -->
+
+        <Asset name="Hiscore_Count" />	<!-- DONE -->
+        <Asset name="Hiscore_Badge" />	<!-- DONE -->
+        <Asset name="Hiscore_Star_Splash1" />	<!-- DONE -->
+        <Asset name="Hiscore_Star_Splash2" />	<!-- DONE -->
+        <Asset name="Hiscore_Star_Splash3" />	<!-- DONE -->
+
+        <Asset name="BirdShot1" />	<!-- DONE -->
+        <Asset name="BirdShot2" />	<!-- DONE -->
+        <Asset name="BirdShot3" />	<!-- DONE -->
+
+        <Asset name="Menu_Confirm"/>	<!-- DONE -->
+        <Asset name="Menu_Back"/>	<!-- DONE -->
+    </Library>
+
+	
+</Assets>
