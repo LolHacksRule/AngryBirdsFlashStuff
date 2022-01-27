@@ -1,0 +1,6 @@
+	<Popup name="Popup_HeikkiCodeEnter" visible="False" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="1024" height="768">
+		<TextField name="TextField_HeikkiCodeEnter"/>
+		<Button name="Button_Visit" MouseUp="VISIT"/>
+		<Button name="Button_Later" MouseUp="LATER"/>
+		<Button name="Button_Submit" MouseUp="SUBMIT"/>
+	</Popup>
