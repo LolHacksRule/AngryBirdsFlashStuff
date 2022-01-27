@@ -1,0 +1,164 @@
+<UIDescription>
+	<Views>
+				
+		<View_Credits name="ViewCredits" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" width="1024" height="768">      
+			<Container name="Container_Credits" visible="False">
+				<TextField name="TextField_Version_Number" text="1.0.0 placeholder" enabled="True" />
+				<Button name="Button_Privacy" MouseUp="PRIVACY_BUTTON"/>
+				<Button name="Button_Eula" MouseUp="EULA_BUTTON"/>
+				<Button name="Button_FAQ" MouseUp="FAQ_BUTTON"/>
+			</Container>
+			
+			<Button name="Button_Back" MouseUp="CREDITS_CLOSE_BUTTON"/>
+		</View_Credits>
+		
+		<View_Connecting name="ViewConnecting">
+			
+		</View_Connecting>
+		
+		
+		<View_LevelSelection name="ViewLevelSelection">
+		
+			<Button name="Button_LeftMenuOpen"  MouseUp="OPEN_LEFT_MENU" />
+			<Button name="Button_RightMenuOpen" MouseUp="OPEN_RIGHT_MENU" />
+			
+			<Button name="LevelButton1" MouseUp="1-1"/>
+			<Button name="LevelButton2" MouseUp="1-2"/>
+			<Button name="LevelButton3" MouseUp="1-3"/>
+			<Button name="LevelButton4" MouseUp="1-4"/>
+			<Button name="LevelButton5" MouseUp="1-5"/>
+			<Button name="LevelButton6" MouseUp="1-6"/>
+			<Button name="LevelButton7" MouseUp="1-7"/>
+			<Button name="LevelButton8" MouseUp="1-8"/>
+			
+			<Container name="Container_MenuLeftButtons" visible="False">
+				<Button name="Button_MenuSound" MouseUp="SOUNDS_BUTTON"/>
+				<Button name="Button_MenuCredits" MouseUp="CREDITS_BUTTON"/>
+				<MovieClip name="MovieClip_SoundsOff" visible="False" enabled="False"/>
+			</Container>
+				
+			<Container name="Container_MenuRightButtons" visible="False">
+				<Button name="Button_MenuTwitter" MouseUp="TWITTER"/>
+				<Button name="Button_MenuFacebook" MouseUp="FACEBOOK"/>
+				<!--
+					Hide Chrome button in Turkish version, should be shown in Russian.
+					To enable later: 
+						AngryBirdsFlashUI.fla - Container_MenuRightButtons
+							- Display the Chrome layer
+					
+				<!-- <Button name="Button_Chrome" MouseUp="CHROME"/> -->
+			</Container>
+		
+		</View_LevelSelection>
+		
+		<!--  VIEW LEVEL PLAY     -->
+		<View_LevelPlay name="ViewLevelPlay">    
+				<Container name="Container_HiscoreContainer" enabled="False" >
+						<TextField name="TextField_Highscore_txt" text="Pекорд" enabled="False"/>
+						<TextField name="TextField_Score_txt" text="Счет" enabled="False"/>						
+						<TextField name="TextField_Hiscore" text="0" enabled="False"/>
+						<TextField name="TextField_CurrentScore" text="0" enabled="False"/>
+				</Container>
+				
+				
+				<Button name="Button_Pause" MouseUp="PAUSE" MouseOver="PLAY_VIEW_ROLLOVER" MouseOut="PLAY_VIEW_ROLLOUT"/>
+				<!-- Hide replay button in game play -->
+				<Button name="Button_Restart" MouseUp="RESTART_LEVEL" MouseOver="PAN_LEFT_OVER" MouseOut="PAN_LEFT_OUT" visible="False"  />
+				<Button name="Button_LaunchCheetos" MouseUp="LAUNCH_CHEETOS" >
+					<MovieClip name="MovieClip_CreditCoin"/>
+				</Button>
+				
+				
+				<!-- Zoom Buttons -->
+				<Container name="Container_ZoomButtons" enabled="False" scaleFunction="SQRT"  width="940" height="570">
+					<Button name="Button_ZoomIn" MouseUp="ZOOM_IN"/>
+					<Button name="Button_ZoomOut" MouseUp="ZOOM_OUT"/>
+					<Button name="Button_Magnify"/>
+				</Container>
+		</View_LevelPlay> 
+				
+		<!--  VIEW LEVEL LOAD    -->				
+		<View_LevelLoad name="ViewLevelLoad">      <!--  name parameter must be identical(case sensitive) with export name of the main movie clip of this UI view      -->
+				<!-- <MovieClip name="" /> --> 
+		</View_LevelLoad>
+		
+		
+		<!--  VIEW GAME PAUSE -->		
+		<View_LevelPause name="ViewLevelPause">
+			<MovieClip name="MovieClip_DarkBG"/>
+			<Container name="Container_PauseMenu">
+				<TextField name="TextField_LevelName" text="22-22" enabled="True" />
+				<Button name="Button_Resume" MouseUp="RESUME_LEVEL" />
+				<Button name="Button_Replay" MouseUp="RESTART_LEVEL" />
+				<Button name="Button_Menu" MouseUp="MENU"/>
+				<Button name="Button_Help" MouseUp="HELP"/>
+				<Button name="Button_Sound" MouseUp="TOGGLE_SOUNDS"/> 	
+				<MovieClip name="MovieClip_SoundsOff" visible="False" enabled="False" />
+			</Container>
+		</View_LevelPause>
+		
+		<!--  NEW LEVEL END VIEW    -->
+		<View_LevelEndRio name="ViewLevelEnd3" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0">
+			<Container name="Container_LevelEndStripe">
+				<TextField name="TextField_LevelCompleted" enabled="True" />
+				<Button name="Button_Menu"  MouseUp="MENU"/>
+				<Button name="Button_Replay"  MouseUp="REPLAY"/>
+				<Button name="Button_Next"  MouseUp="NEXT_LEVEL"/>
+				<Button name="Button_CutScene"  MouseUp="NEXT_LEVEL" visible="false"/>
+				
+				<MovieClip name="MovieClip_StarLeft" />
+				<MovieClip name="MovieClip_StarCenter" />
+				<MovieClip name="MovieClip_StarRight" />
+				
+				
+				<TextField name="TextField_LevelEndScore" enabled="True" />
+				
+				<TextField name="TextField_NewHighScore" enabled="True" visible="false" />
+
+
+				<TextField name="TextField_BestText" enabled="True" visible="false" />
+				<TextField name="TextField_BestScore" enabled="True" visible="false" />
+				<MovieClip name="MovieClip_BestScoreStars" enabled="True" visible="false" />
+
+				
+				<MovieClip name="MovieClip_NewHighScoreBadge" visible="false"/>
+				
+			</Container>
+			<MovieClip name="MovieClip_Chester_Win1" visible="false"/>
+			<MovieClip name="MovieClip_Chester_Win2" visible="false"/>
+			<MovieClip name="MovieClip_Chester_Win3" visible="false"/>
+			
+		</View_LevelEndRio>
+		<!--  NEW LEVEL END VIEW    -->				
+		
+		
+		<View_LevelEndFail3 name="ViewLevelEndFail3" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0">      <!--  name parameter must be identical(case sensitive) with export name of the main movie clip of this UI view      -->
+			<Container name="Container_LevelEndStripe">
+				<TextField name="TextField_LevelFailed" enabled="True" />
+				<Button name="Button_Menu"  MouseUp="MENU" />
+				<Button name="Button_Replay"  MouseUp="REPLAY" />
+<!--			<Button name="Button_NextLevel"  MouseUp="NEXT_LEVEL" />  -->
+							
+				<MovieClip name="MovieClip_LevelEndFailedPig" visible="true"/>
+			</Container>
+			<MovieClip name="MovieClip_Chester_Fail" visible="true"/>
+			
+		</View_LevelEndFail3>
+		
+		<View_CutScene name="ViewCutScene" width="1024" height="768">
+			<Button name="Button_Skip" visible="False" MouseUp="Skip" scaleOnMouseOver="False"/>
+			<Button name="Button_Menu" visible="False" MouseUp="Menu" scaleOnMouseOver="False"/>
+
+			<MovieClip name="MovieClip_CutScene" visible = "False"/>
+			<MovieClip name="MovieClip_Loading" visible = "False"/>
+		</View_CutScene> 
+		
+		
+	</Views>
+	
+	<Components>
+		<Container name="Component_LevelSelection">
+			<MovieClip name="MovieClip_LevelSelectionLogos"/>
+		</Container>
+	</Components>
+</UIDescription>
