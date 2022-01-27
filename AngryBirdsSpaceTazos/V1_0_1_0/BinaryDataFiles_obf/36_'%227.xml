@@ -1,0 +1,93 @@
+<UIDescription>
+	<Views>
+
+		<View_Credits name="ViewCredits" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" width="1024" height="768">
+			<Container name="Container_Credits" visible = "false">
+				<TextField name="TextField_Version_Number" text="1.0.0 placeholder" enabled="True" />
+				<TextField name="TextField_Version_Number_Server" text="1.0.0 placeholder server" enabled="True" />
+			</Container>
+
+			<Button name="Button_Back" MouseUp="CREDITS_CLOSE_BUTTON" />
+		</View_Credits>
+
+		<View_ChapterSelection name="ViewChapterSelectionBlack" width="1024" height="768">
+
+
+			<MovieClip name="MovieClip_Logo" alignH="CENTER"/>
+			<MovieClip name="MovieClip_ChapterSelectionBG"/>
+
+
+			<Container name="Container_ChapterSelection" >
+				<Button name="Button_Login0" MouseUp="LOGIN" visible = "false" />
+				<Button name="Button_Login1" MouseUp="LOGIN" visible = "false"/>
+				<Button name="Button_Login2" MouseUp="LOGIN" visible = "false"/>
+				
+				<MovieClip name="MovieClip_Star1" visible = "false"/>
+				<MovieClip name="MovieClip_Star2" visible = "false"/>
+				<MovieClip name="MovieClip_Star3" visible = "false"/>
+			</Container>
+			
+			<Button name="Button_Previous" MouseUp="PREVIOUS" />
+			<Button name="Button_Next" MouseUp="NEXT" />
+
+
+			<Container name="EnterCode">
+				<TextField name="TextField_PowerupPanelTitle" visible="true" />
+				<Button name="Button_CodeInstructions" MouseUp="CODE_FAQ" scaleOnMouseOver = "True" />
+				<TextField name="TextField_TazosCodeEnter" visible="true" />
+				<Button name="Button_SubmitCode" MouseUp="UNLOCK_POWER_UP" />
+			</Container>
+
+		</View_ChapterSelection>
+
+		<!--  VIEW LEVEL PLAY     -->
+		<View_LevelPlay name="ViewLevelPlayCustom">
+			<Container name="Container_HiscoreContainer" enabled="False" >
+				<TextField name="TextField_Score_Label" text="Score" enabled="False"/>
+				<TextField name="TextField_Highscore_Label" text="Highscore" enabled="False"/>
+				<TextField name="TextField_Hiscore" text="0" enabled="False"/>
+				<TextField name="TextField_CurrentScore" text="0" enabled="False"/>
+			</Container>
+
+			<!-- <Button name="MovieClip_FeedBar" MouseUp="OPEN_FEED_DIALOG" enabled="True" /> -->
+
+			<!-- Zoom Buttons -->
+			<Container name="Container_ZoomButtons" enabled="False" scaleFunction="SQRT" aspectRatioFixed="TRUE" width="1024" height="768">
+				<Button name="Button_ZoomIn" MouseDown="ZOOM_IN" MouseUp="ZOOM_IN_RELEASE" MouseOut="ZOOM_IN_RELEASE"/>
+				<Button name="Button_ZoomOut" MouseDown="ZOOM_OUT" MouseUp="ZOOM_OUT_RELEASE" MouseOut="ZOOM_OUT_RELEASE"/>
+				<Button name="Button_Magnify"/>
+			</Container>
+			<Button name="Button_Pause" MouseUp="PAUSE"/>
+			<Button name="Button_Restart" MouseUp="RESTART_LEVEL"/>
+
+			<Container name="Container_Powerup">
+				<Button name="Button_PowerUp" MouseUp="POWERUP_USE"/>
+				<TextField name="TextField_PowerupCounter" text="0" enabled = "false" />
+			</Container>
+			
+			<MovieClip name="MovieClip_WaterMarkSonrics" visible = "false"/>
+			<MovieClip name="MovieClip_WaterMarkGamesa" visible = "false"/>
+			<MovieClip name="MovieClip_WaterMarkSabritas" visible = "false"/>
+		</View_LevelPlay>
+
+		<!--  VIEW LEVEL LOAD    -->
+		<View_LevelLoad name="ViewLevelLoad"> 
+			<MovieClip name="MovieClip_ChapterSelectionBG"/>
+			<TextField name="TextField_LevelLoading" enabled="False"/>
+		</View_LevelLoad>
+
+
+		<!--  NEW LEVEL END VIEW    -->
+		<ViewLevelEndCustom name="ViewLevelEndCustom" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0">
+
+		</ViewLevelEndCustom>
+		<!--  NEW LEVEL END VIEW    -->
+
+		<ViewLevelEndFailCustom name="ViewLevelEndFailCustom" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0">      <!--  name parameter must be identical(case sensitive) with export name of the main movie clip of this UI view      -->
+
+		</ViewLevelEndFailCustom>
+
+
+	</Views>
+
+</UIDescription>

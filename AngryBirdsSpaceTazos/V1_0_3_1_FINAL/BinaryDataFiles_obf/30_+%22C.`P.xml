@@ -1,0 +1,5 @@
+	<Popup name="Popup_Logout" visible="False" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="0" height="0">
+		<Button name="Button_Yes" MouseUp="LOGOUT_YES"/>
+		<Button name="Button_No" MouseUp="LOGOUT_NO"/>
+		<TextField name="TextField_LogoutQuestion" text="" enabled="False"/>
+	</Popup>

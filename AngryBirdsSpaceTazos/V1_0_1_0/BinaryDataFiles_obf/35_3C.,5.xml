@@ -1,0 +1,5 @@
+	<Popup_Info name="Popup_ErrorPane" visible="True" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="0" height="0">
+		<Container name="Container_ErrorPane">
+			<TextField name="TextField_ErrorMessage" enabled="True" />
+		</Container>
+	</Popup_Info>

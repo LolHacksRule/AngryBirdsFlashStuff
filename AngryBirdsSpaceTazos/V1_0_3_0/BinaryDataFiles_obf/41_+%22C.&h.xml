@@ -1,0 +1,8 @@
+<Popup_Info name="Popup_EnterCode" visible="True" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="0" height="0">
+	<TextField name="TextField_EnterCode" enabled="False" visible="True" />
+	<TextField name="TextField_TypeCodeHere" enabled="True" visible="True" />
+
+	<Button name="Button_CodeInstructions" MouseUp="CODE_FAQ" scaleOnMouseOver = "True" />
+	<Button name="Button_Close" MouseUp="CLOSE" />
+	<Button name="Button_SubmitCode" MouseUp="SUBMIT_CODE" />
+</Popup_Info>

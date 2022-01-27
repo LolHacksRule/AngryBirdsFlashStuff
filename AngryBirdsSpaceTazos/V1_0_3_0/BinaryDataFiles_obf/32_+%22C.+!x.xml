@@ -1,0 +1,5 @@
+	<Popup name="Popup_Tutorial" visible="True" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="0" height="0">
+		<MovieClip name="MovieClip_Tutorial" visible="true" autoAlign = "false"/>
+		<MovieClip name="MovieClip_Avatar" visible="true" autoAlign = "false"/>
+		<Button name="Button_CloseTutorial" MouseDown="CLOSE_TUTORIAL" scaleOnMouseOver="FALSE"/>
+	</Popup>

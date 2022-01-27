@@ -1,0 +1,4 @@
+<Popup_Info name="Popup_VerificationEmailSent" visible="True" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="0" height="0">
+	<TextField name="TextField_VerificationEmailSent" enabled="True" visible="True" />
+	<Button name="Button_Close" MouseUp="CLOSE" />
+</Popup_Info>

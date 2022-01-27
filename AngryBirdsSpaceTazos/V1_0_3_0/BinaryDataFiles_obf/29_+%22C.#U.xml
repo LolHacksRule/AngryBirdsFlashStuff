@@ -1,0 +1,6 @@
+<Popup name="Popup_VerifyAccount" visible="False" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="0" height="0">
+	<Button name="Button_Close" MouseUp="VERIFY_CLOSE"/>
+	<Button name="Button_SendVerificationEmail" MouseUp="SEND_VERIFICATION_EMAIL" scaleOnMouseOver = "True"/>
+
+	<TextField name="TextField_VerifyAccount" text="" enabled="False"/>
+</Popup>

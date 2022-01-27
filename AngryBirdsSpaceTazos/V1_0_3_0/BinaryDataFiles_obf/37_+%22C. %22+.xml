@@ -1,0 +1,6 @@
+<Popup_Info name="Popup_CodeSubmissionSuccessful" visible="True" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="0" height="0">
+	<TextField name="TextField_Congratulations" enabled="True" visible="True" />
+	<Button name="Button_Close" MouseUp="CLOSE" />
+	<MovieClip name="MovieClip_Disc"/>
+	<MovieClip name="MovieClip_DiscSun"/>
+</Popup_Info>
