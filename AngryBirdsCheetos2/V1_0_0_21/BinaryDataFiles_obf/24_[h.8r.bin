@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<texts>
+	<!-- English -->
+	<text name="Text_Level_Failed" lang="en">Level Failed!</text>
+	<text name="Text_Level_Completed" lang="en">Level Completed!</text>
+	<text name="Text_New_Highscore" lang="en">New Highscore!</text>
+	<text name="Text_Score" lang="en">Score</text>
+	<text name="Text_Highscore" lang="en">Highscore</text>
+	<text name="Text_Best" lang="en">Best</text>
+	<text name="Popup_Session_Expired" lang="en">Your session has expired. Please login again.</text>
+	<text name="Popup_No_Credit_Text" lang="en">You need credits to play the premium levels.</text>
+	<text name="Popup_Use_Credit_Text" lang="en">Playing this level costs 1 credit. Do you want to continue?</text>
+	<text name="Popup_Leave_Level_Text" lang="en">Are you sure that you want to leave now? You will not get your credit back.</text>
+	<text name="Popup_Use_Credit_Cheetos_Text" lang="en">This special power-up costs 3 credits to use. It helps you to complete difficult levels and to get all three stars.</text>
+	<text name="Error" lang="en">An error occured. Refreshing the page may solve the problem.</text>
+	<text name="Popup_CheckBox_Use_Credits" lang="en">I don't want to see this pop-up again.</text>
+	<text name="Popup_CheckBox_Use_Cheetos_Bag" lang="en">I don't want to see this pop-up again.</text>
+	<text name="Popup_Confirm_Leave" lang="en">Are you sure you want to navigate away from this page? Your progress will be lost.</text>
+	<text name="Text_AchievementText" lang="en">Achievement unlocked:</text>
+	<text name="TextWarmUp" lang="en">Warm up</text>
+	<text name="TextAimHigh" lang="en">Aim high</text>
+	<text name="TextStarPlayer" lang="en">Star player</text>
+	<text name="TextGotTheSnacksBack" lang="en">Got the snacks back</text>
+	<text name="TextOnFire" lang="en">On fire</text>
+	<text name="TextAllStars" lang="en">All stars</text>
+	<!-- Russian -->
+	<text name="Text_Level_Failed" lang="ru">Уровень не пройден</text>
+	<text name="Text_Level_Completed" lang="ru">Уровень пройден</text>
+	<text name="Text_New_Highscore" lang="ru">Новый рекорд</text>
+	<text name="Text_Score" lang="ru">Счет</text>
+	<text name="Text_Highscore" lang="ru">Pекорд</text>
+	<text name="Text_Best" lang="ru">Рекорд</text>
+	<text name="Popup_Session_Expired" lang="ru">Время действия сессии истекло. Необходимо заново ввести логин.</text>
+	<text name="Popup_No_Credit_Text" lang="ru">Чтобы играть на призовых уровнях, нужны жизни.</text>
+	<text name="Popup_Use_Credit_Text" lang="ru">Чтобы играть на этом уровне, нужно потратить 1 жизнь. Продолжить?</text>
+	<text name="Popup_Leave_Level_Text" lang="ru">Ты уверен, что ты хочешь выйти сейчас? Ты не сможешь сохранить свои жизни. </text>
+	<text name="Popup_Use_Credit_Cheetos_Text" lang="ru">Чтобы получить бонус, нужно потратить 3 жизни. Бонус помогает пройти сложные уровни, а также получить все три звезды.</text>
+	<text name="Error" lang="ru">Произошла ошибка. Обнови страницу, чтобы решить проблему.</text>
+	<text name="Popup_CheckBox_Use_Credits" lang="ru">Не показывать больше это всплывающее окно.</text>
+	<text name="Popup_CheckBox_Use_Cheetos_Bag" lang="ru">Не показывать больше это всплывающее окно.</text>
+	<text name="Popup_Confirm_Leave" lang="ru">Ты уверен, что ты хочешь выйти сейчас? Ты не сможешь сохранить свои жизни.</text>
+	<text name="Text_AchievementText" lang="ru">Достижение открыто</text>
+	<text name="TextWarmUp" lang="ru">Разминка</text>
+	<text name="TextAimHigh" lang="ru">Стремись к большему</text>
+	<text name="TextStarPlayer" lang="ru">Звездный игрок</text>
+	<text name="TextGotTheSnacksBack" lang="ru">Миссия выполнена</text>
+	<text name="TextOnFire" lang="ru">В ударе</text>
+	<text name="TextAllStars" lang="ru">Все звезды получены</text>
+	<!-- Turkish -->
+	<text name="Text_Level_Failed" lang="tr">Bölümü tamamlayamadın!</text>
+	<text name="Text_Level_Completed" lang="tr">Bölümü tamamladın!</text>
+	<text name="Text_New_Highscore" lang="tr">Yeni Rekor!</text>
+	<text name="Text_Score" lang="tr">Puan</text>
+	<text name="Text_Highscore" lang="tr">Rekor</text>
+	<text name="Text_Best" lang="tr">En İyi</text>
+	<text name="Popup_Session_Expired" lang="tr">Üzgünüz! - Oturum süresi doldu. Lütfen sayfayı yenile.</text>
+	<text name="Popup_No_Credit_Text" lang="tr">Ödüllü oyun için krediye ihtiyacın var! Devam etmek için yeni bir şifre girmelisin.</text>
+	<text name="Popup_Use_Credit_Text" lang="tr">Bu bölümü oynamak için kredi kullanman gerekli, devam etmek istiyor musun?</text>
+	<text name="Popup_Leave_Level_Text" lang="tr">Eğer oyundan çıkarsan kredini kullanmış olacaksın.</text>
+	<text name="Popup_Use_Credit_Cheetos_Text" lang="tr">Bölümü tamamlayamadın mı? 3 kredi karşılığında Cheetos paketi alarak ekstra atış hakkı kazanmak ister misin?</text>
+	<text name="Error" lang="tr">Birşeyler ters gitti. Sayfayı yeniden yüklemeyi dene.</text>
+	<text name="Popup_CheckBox_Use_Credits" lang="tr">Kredi kullanmayla ilgili daha fazla açılır pencere görmek istemiyorsan bu kutucuğu tıkla.</text>	
+	<text name="Popup_CheckBox_Use_Cheetos_Bag" lang="tr">Kredi kullanmayla ilgili daha fazla açılır pencere görmek istemiyorsan bu kutucuğu tıkla.</text>
+	<text name="Popup_Confirm_Leave" lang="tr">Bu sayfadan ayrılmak istediğine emin misin? Değişikliklerin kaybolacak.</text>
+</texts>
