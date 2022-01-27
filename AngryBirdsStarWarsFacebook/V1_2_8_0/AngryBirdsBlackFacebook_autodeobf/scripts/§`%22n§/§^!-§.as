@@ -1,0 +1,286 @@
+package §`"n§
+{
+   import §+d§.§0#&§;
+   import flash.events.EventDispatcher;
+   import flash.events.TimerEvent;
+   import flash.utils.Dictionary;
+   import flash.utils.Timer;
+   import §null §.§5!K§;
+   import §null §.§5#§;
+   
+   public class §^!-§ extends EventDispatcher
+   {
+      
+      protected static const §""R§:Number = 1000;
+      
+      protected static const §?l§:Number = 60;
+       
+      
+      protected var § -§:Dictionary;
+      
+      protected var §<"%§:Dictionary;
+      
+      protected var §4[§:Dictionary;
+      
+      protected var §[!u§:Dictionary;
+      
+      protected var §>!§:Boolean = false;
+      
+      protected var §'!-§:String;
+      
+      protected var §!!-§:String;
+      
+      protected var §'""§:§5#§;
+      
+      protected var § #"§:Timer;
+      
+      public function §^!-§(param1:String, param2:§5#§)
+      {
+         super();
+         this.§!!-§ = param1;
+         this.§'""§ = param2;
+         this.§ -§ = new Dictionary();
+         this.§<"%§ = new Dictionary();
+         this.§4[§ = new Dictionary();
+         this.§[!u§ = new Dictionary();
+         this.§>!§ = false;
+      }
+      
+      private function §>!+§(param1:TimerEvent) : void
+      {
+         dispatchEvent(new UserProgressEvent(UserProgressEvent.§]n§));
+         this.§'!-§ = null;
+      }
+      
+      public function §9t§(param1:String) : Boolean
+      {
+         if(this.§'!-§ == param1)
+         {
+            return true;
+         }
+         if(this.§ #"§ && this.§ #"§.running)
+         {
+            return false;
+         }
+         return true;
+      }
+      
+      public function §;!#§() : String
+      {
+         var _loc1_:Number = §?l§ - this.§ #"§.currentCount;
+         var _loc2_:int = _loc1_ / §?l§;
+         var _loc3_:int = _loc1_ % §?l§;
+         if(_loc3_ < 10)
+         {
+            return "" + _loc2_ + ":0" + _loc3_;
+         }
+         return "" + _loc2_ + ":" + _loc3_;
+      }
+      
+      public function getScoreForLevel(param1:String) : int
+      {
+         var _loc2_:§0#&§ = null;
+         if(this.§ -§[param1])
+         {
+            _loc2_ = this.§ -§[param1];
+            return _loc2_.getValue();
+         }
+         return 0;
+      }
+      
+      public function getEagleScoreForLevel(param1:String) : int
+      {
+         var _loc2_:§0#&§ = null;
+         if(this.§<"%§[param1])
+         {
+            _loc2_ = this.§<"%§[param1];
+            return _loc2_.getValue();
+         }
+         return 0;
+      }
+      
+      public function isLevelPassed(param1:String) : Boolean
+      {
+         if(this.getScoreForLevel(param1) > 0 || this.getEagleScoreForLevel(param1) > 0)
+         {
+            return true;
+         }
+         return false;
+      }
+      
+      public function §-!m§(param1:String, param2:Boolean = true) : void
+      {
+         this.§4[§[param1] = param2;
+      }
+      
+      public function §4"a§(param1:String, param2:Boolean = true) : void
+      {
+         this.§4[§[param1] = param2;
+      }
+      
+      public function §>"t§(param1:String, param2:int) : void
+      {
+         var _loc3_:§0#&§ = new §0#&§(param2);
+         this.§ -§[param1] = _loc3_;
+      }
+      
+      public function §#!C§(param1:String, param2:int) : void
+      {
+         var _loc3_:§0#&§ = new §0#&§(param2);
+         this.§<"%§[param1] = _loc3_;
+      }
+      
+      public function getStarsForLevel(param1:String, param2:int = -1) : int
+      {
+         return this.§'""§.getNumStarsForLevel(param1,param2 != -1 ? int(param2) : int(this.getScoreForLevel(param1)));
+      }
+      
+      public function §?!X§(param1:§5!K§) : int
+      {
+         var _loc3_:String = null;
+         var _loc2_:int = 0;
+         for each(_loc3_ in param1.§"!d§())
+         {
+            _loc2_ += this.getScoreForLevel(_loc3_);
+         }
+         return _loc2_;
+      }
+      
+      public function §!!c§(param1:§5!K§) : int
+      {
+         var _loc3_:String = null;
+         var _loc2_:int = 0;
+         for each(_loc3_ in param1.§"!d§())
+         {
+            _loc2_ += this.getStarsForLevel(_loc3_);
+         }
+         return _loc2_;
+      }
+      
+      public function §3!S§() : int
+      {
+         var _loc3_:§5!K§ = null;
+         var _loc4_:int = 0;
+         var _loc1_:int = 0;
+         var _loc2_:int = 0;
+         while(_loc2_ < this.§'""§.getEpisodeCount())
+         {
+            _loc3_ = this.§'""§.getEpisode(_loc2_);
+            _loc4_ = this.§!!c§(_loc3_);
+            _loc1_ += _loc4_;
+            _loc2_++;
+         }
+         return _loc1_;
+      }
+      
+      public function §=#3§(param1:§5!K§) : int
+      {
+         return param1.§"!d§().length * 3;
+      }
+      
+      public function §&"^§(param1:§5!K§) : int
+      {
+         return param1.§"!d§().length;
+      }
+      
+      public function §`",§(param1:§5!K§) : int
+      {
+         var _loc3_:String = null;
+         var _loc2_:int = 0;
+         for each(_loc3_ in param1.§"!d§())
+         {
+            if(this.getEagleScoreForLevel(_loc3_) == 100)
+            {
+               _loc2_++;
+            }
+         }
+         return _loc2_;
+      }
+      
+      public function get §&"o§() : Dictionary
+      {
+         return this.§4[§;
+      }
+      
+      public function get §9!p§() : Dictionary
+      {
+         return this.§4[§;
+      }
+      
+      public function get §0#2§() : Boolean
+      {
+         return this.§>!§;
+      }
+      
+      public function set §0#2§(param1:Boolean) : void
+      {
+         this.§>!§ = param1;
+      }
+      
+      public function get §<Y§() : Timer
+      {
+         return this.§ #"§;
+      }
+      
+      public function get §0"S§() : String
+      {
+         return this.§'!-§;
+      }
+      
+      public function isLevelOpen(param1:String) : Boolean
+      {
+         var _loc2_:String = null;
+         if(param1 == null)
+         {
+            return false;
+         }
+         if(param1 == §5#§.§%!c§)
+         {
+            return true;
+         }
+         if(this.getScoreForLevel(param1) > 0)
+         {
+            return true;
+         }
+         if(this.getEagleScoreForLevel(param1) > 0)
+         {
+            return true;
+         }
+         var _loc3_:§5!K§ = this.§'""§.getEpisodeForLevel(param1);
+         var _loc4_:int;
+         if((_loc4_ = _loc3_.getLevelIndex(param1)) == 0)
+         {
+            return true;
+         }
+         if(_loc4_ > 0)
+         {
+            _loc2_ = _loc3_.getLevelName(_loc4_ - 1);
+         }
+         if(_loc2_)
+         {
+            if(this.getScoreForLevel(_loc2_) > 0)
+            {
+               return true;
+            }
+            if(this.getEagleScoreForLevel(_loc2_) > 0)
+            {
+               return true;
+            }
+         }
+         return false;
+      }
+      
+      public function saveLevelProgress(param1:String, param2:Boolean = false, param3:Boolean = false) : void
+      {
+      }
+      
+      public function saveTutorialSeen(param1:String) : void
+      {
+      }
+      
+      public function hasTutorialBeenSeen(param1:String) : Boolean
+      {
+         return false;
+      }
+   }
+}
