@@ -212,7 +212,9 @@ package §3!-§
                      this.§["9§.scaleX = this.§["9§.scaleY = 0;
                      _loc5_.play();
                      this.§3$,§ = false;
+                     break;
                   }
+                  break;
                }
                break;
             case §!"p§:
@@ -238,12 +240,12 @@ package §3!-§
                            "scaleY":this.§["9§.scaleY
                         },0.5,§-!w§.easeOut);
                         (_loc8_ = §"!&§.§`"H§.§?"§(_loc7_,_loc6_)).play();
+                        break;
                      }
-                     else
-                     {
-                        _loc6_.play();
-                     }
+                     _loc6_.play();
+                     break;
                   }
+                  break;
                }
          }
       }

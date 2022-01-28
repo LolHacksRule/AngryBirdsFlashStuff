@@ -116,7 +116,7 @@ package §6!3§
             {
                _loc3_ += Math.PI * 2;
             }
-            _loc4_ = (_loc4_ = Number((_loc4_ = Number(1 - param1 / 10)) < -0.01 ? Number(-0.01) : Number(_loc4_))) > 1 ? Number(1) : Number(_loc4_);
+            _loc4_ = (_loc4_ = (_loc4_ = 1 - param1 / 10) < -0.01 ? Number(-0.01) : Number(_loc4_)) > 1 ? Number(1) : Number(_loc4_);
             if(_loc3_ < Math.PI)
             {
                _loc3_ *= _loc4_;

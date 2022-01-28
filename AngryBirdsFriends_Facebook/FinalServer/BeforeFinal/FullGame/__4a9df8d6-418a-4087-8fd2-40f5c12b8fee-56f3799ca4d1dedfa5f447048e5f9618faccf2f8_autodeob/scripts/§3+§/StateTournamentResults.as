@@ -1273,6 +1273,7 @@ package §3+§
                if(this.mPromotionAnimation)
                {
                   this.mPromotionAnimation.onUIInteraction(param1,param2,param3);
+                  break;
                }
          }
       }

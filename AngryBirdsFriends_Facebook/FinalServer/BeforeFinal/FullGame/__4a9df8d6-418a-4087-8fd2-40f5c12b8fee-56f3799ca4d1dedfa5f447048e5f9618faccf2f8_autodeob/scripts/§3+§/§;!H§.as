@@ -1029,9 +1029,11 @@ package §3+§
                {
                   AngryBirdsBase.singleton.exitFullScreen();
                   navigateToURL(new URLRequest("http://www.rovio.com/games"),"_blank");
+                  break;
                }
                catch(e:Error)
                {
+                  break;
                }
          }
          if(§?!i§)

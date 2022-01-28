@@ -292,6 +292,7 @@ package §2";§
                {
                   --this.§5"A§;
                   this.§7"X§(this.§5"A§);
+                  break;
                }
                break;
             case "NEXT":
@@ -300,6 +301,7 @@ package §2";§
                {
                   ++this.§5"A§;
                   this.§7"X§(this.§5"A§);
+                  break;
                }
                break;
             case "FULLSCREEN_BUTTON":

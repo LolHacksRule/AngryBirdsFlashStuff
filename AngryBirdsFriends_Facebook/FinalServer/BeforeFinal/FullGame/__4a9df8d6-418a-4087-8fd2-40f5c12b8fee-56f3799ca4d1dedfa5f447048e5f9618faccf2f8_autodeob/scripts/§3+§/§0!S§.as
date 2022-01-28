@@ -234,15 +234,14 @@ package §3+§
                            § #v§.§%"W§ = true;
                            StateTournamentResults.§<#%§ = _loc4_.tournamentId;
                            this.§ !F§.§ $%§(_loc4_.tournamentId);
+                           break;
                         }
-                        else
-                        {
-                           §;!H§.§-3§(_loc4_.tournamentId,_loc4_.brand);
-                           §1!L§(§;!H§.STATE_NAME);
-                        }
+                        §;!H§.§-3§(_loc4_.tournamentId,_loc4_.brand);
+                        §1!L§(§;!H§.STATE_NAME);
                         break;
                      }
                   }
+                  break;
                }
          }
       }

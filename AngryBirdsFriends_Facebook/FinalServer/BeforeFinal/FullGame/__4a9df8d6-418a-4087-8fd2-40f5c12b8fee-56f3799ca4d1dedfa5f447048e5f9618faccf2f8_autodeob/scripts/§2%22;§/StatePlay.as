@@ -226,6 +226,7 @@ package §2";§
                if(!§7n§.isPaused)
                {
                   this.restartLevel();
+                  break;
                }
          }
       }

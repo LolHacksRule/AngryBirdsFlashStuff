@@ -268,6 +268,7 @@ package §2";§
                   this.video = new §2!E§("http://www.youtube.com/v/-eyig_V-_5o");
                   (§[$5§.getItemByName("MovieClip_YouTubeArea") as §'!`§).changeMovieClip(this.video);
                   (§[$5§.getItemByName("MovieClip_YouTubeArea") as §'!`§).setVisibility(true);
+                  break;
                }
          }
       }

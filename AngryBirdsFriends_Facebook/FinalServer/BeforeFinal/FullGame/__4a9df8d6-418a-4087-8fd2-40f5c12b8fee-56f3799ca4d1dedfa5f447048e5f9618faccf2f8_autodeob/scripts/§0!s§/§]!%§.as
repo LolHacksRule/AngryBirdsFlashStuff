@@ -212,18 +212,18 @@ package §0!s§
          else
          {
             _loc6_ = this.§<!u§.length - 1;
-            for(; _loc6_ >= 0; _loc6_--)
+            while(_loc6_ >= 0)
             {
                if(_loc5_ = this.§<!u§[_loc6_])
                {
                   if(!param4)
                   {
                      this.§%#0§(_loc5_,param2,param3);
+                     return;
                   }
                   this.§%#0§(_loc5_,param2,false);
-                  continue;
-                  return;
                }
+               _loc6_--;
             }
          }
       }

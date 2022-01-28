@@ -145,9 +145,11 @@ package §1!3§
                {
                   AngryBirdsBase.singleton.exitFullScreen();
                   navigateToURL(new URLRequest(this.§6$#§),"_blank");
+                  break;
                }
                catch(e:Error)
                {
+                  break;
                }
          }
          §!!K§.§%#S§().§#"^§(this.§;"!§,this.§;!f§);

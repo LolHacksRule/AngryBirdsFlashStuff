@@ -643,7 +643,7 @@ package §-;§
          var _loc2_:Number = (this.§&!Y§.§1$'§.camera as §6"s§).§=!#§() + §!!W§.§2G§ / 2;
          var _loc3_:Number = (this.§&!Y§.§1$'§.camera as §6"s§).§["N§() + §!!W§.§2G§ / 2;
          var _loc4_:Number = this.§&!Y§.§1$'§.screenToBox2D(0,0).y;
-         var _loc5_:Number = (_loc5_ = Number(-20)) < _loc4_ ? Number(_loc5_) : Number(_loc4_);
+         var _loc5_:Number = (_loc5_ = -20) < _loc4_ ? Number(_loc5_) : Number(_loc4_);
          var _loc6_:Vector.<§;!U§> = this.§>"!§().§0"t§(3);
          var _loc7_:int = 0;
          while(_loc7_ < 3)
@@ -672,7 +672,7 @@ package §-;§
          var _loc2_:Number = (this.§&!Y§.§1$'§.camera as §6"s§).§=!#§() + §!!W§.§2G§ / 2;
          var _loc3_:Number = (this.§&!Y§.§1$'§.camera as §6"s§).§["N§() + §!!W§.§2G§ / 2;
          var _loc4_:Number = this.§&!Y§.§1$'§.screenToBox2D(0,0).y;
-         var _loc5_:Number = (_loc5_ = Number(-20)) < _loc4_ ? Number(_loc5_) : Number(_loc4_);
+         var _loc5_:Number = (_loc5_ = -20) < _loc4_ ? Number(_loc5_) : Number(_loc4_);
          var _loc6_:Number;
          var _loc7_:Number = (_loc6_ = _loc3_ - _loc2_) / (5 + 1);
          var _loc8_:int = 0;
@@ -894,6 +894,7 @@ package §-;§
          {
             _loc3_ = String(§'##§.§`"H§.§6!D§(_loc2_));
          }
+         var _loc5_:§ T§;
          var _loc6_:String = !!(_loc5_ = this.mLevelManager.getEpisodeForLevel(_loc2_)) ? _loc5_.name : "unknownEpisode";
          var _loc7_:URLRequest = §;#&§.§ #G§(AngryBirdsBase.SERVER_ROOT + "/useItem");
          var _loc8_:Object = {

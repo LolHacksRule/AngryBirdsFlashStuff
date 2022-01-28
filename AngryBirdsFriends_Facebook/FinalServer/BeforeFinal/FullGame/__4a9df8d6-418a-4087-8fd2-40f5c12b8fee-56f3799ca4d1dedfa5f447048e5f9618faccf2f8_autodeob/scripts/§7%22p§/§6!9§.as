@@ -499,6 +499,7 @@ package §7"p§
                if(this.§&#W§)
                {
                   this.§&#W§.rotation = Math.random() * 360 / 180 * Math.PI;
+                  break;
                }
                break;
             default:

@@ -880,14 +880,12 @@ package §=!t§
                this.§,z§ -= param1;
                if(this.§,z§ < 0 || this.§^$6§)
                {
-                  if(this.§&!=§())
+                  if(!this.§&!=§())
                   {
-                     addr647:
                   }
                }
                §§goto(addr668);
             }
-            §§goto(addr647);
          }
          else if(AngryBirdsBase.singleton.§-j§().previousState == §3#[§.STATE_NAME)
          {

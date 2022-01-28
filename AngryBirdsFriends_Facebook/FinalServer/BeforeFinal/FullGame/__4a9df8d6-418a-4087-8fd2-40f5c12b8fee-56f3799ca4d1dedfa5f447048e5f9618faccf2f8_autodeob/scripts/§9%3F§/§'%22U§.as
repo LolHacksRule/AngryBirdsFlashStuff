@@ -205,13 +205,11 @@ package §9?§
                {
                   _loc4_.setComponentState(§+!2§.COMPONENT_STATE_ACTIVE_DEFAULT);
                   this.scroll(0);
+                  break;
                }
-               else
-               {
-                  _loc4_.setComponentState(§+!2§.§6v§);
-                  this.§[$5§.getItemByName("NewsArrowUp").setVisibility(false);
-                  this.§[$5§.getItemByName("NewsArrowDown").setVisibility(false);
-               }
+               _loc4_.setComponentState(§+!2§.§6v§);
+               this.§[$5§.getItemByName("NewsArrowUp").setVisibility(false);
+               this.§[$5§.getItemByName("NewsArrowDown").setVisibility(false);
                break;
             case "NEWS_UP":
                --this.§1"b§;

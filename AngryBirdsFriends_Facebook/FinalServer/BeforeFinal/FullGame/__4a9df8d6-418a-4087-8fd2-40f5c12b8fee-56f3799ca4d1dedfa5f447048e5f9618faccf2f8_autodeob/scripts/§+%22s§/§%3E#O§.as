@@ -133,6 +133,7 @@ package §+"s§
                if(this.§9"@§())
                {
                   this.§?B§.gotoAndPlay(1);
+                  break;
                }
          }
       }

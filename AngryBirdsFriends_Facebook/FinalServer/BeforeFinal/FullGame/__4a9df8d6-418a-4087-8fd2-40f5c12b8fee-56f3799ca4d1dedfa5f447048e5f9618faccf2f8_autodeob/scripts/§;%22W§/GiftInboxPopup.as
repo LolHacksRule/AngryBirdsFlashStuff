@@ -542,9 +542,8 @@ package §;"W§
                if(!_loc1_.lvl)
                {
                   this.§!!7§(true);
+                  break;
                }
-               continue;
-               break;
             }
          }
       }

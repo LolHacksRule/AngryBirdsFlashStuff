@@ -32,9 +32,11 @@ package §>z§
                   AngryBirdsBase.singleton.exitFullScreen();
                   navigateToURL(new URLRequest("http://rov.io/friendsmobile"),"_blank");
                   this.close();
+                  break;
                }
                catch(e:Error)
                {
+                  break;
                }
                break;
             default:

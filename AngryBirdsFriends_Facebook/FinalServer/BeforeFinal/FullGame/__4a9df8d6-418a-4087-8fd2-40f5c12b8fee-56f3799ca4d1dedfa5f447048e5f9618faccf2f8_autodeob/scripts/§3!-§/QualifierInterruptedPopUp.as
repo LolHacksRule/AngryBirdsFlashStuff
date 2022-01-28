@@ -379,6 +379,7 @@ package §3!-§
                      this.§8!,§.visible = true;
                      this.§1!L§(§5$2§,1000);
                   }
+                  break;
                }
                break;
             case §6"§:
@@ -403,7 +404,9 @@ package §3!-§
                      {
                         this.§?!W§ = true;
                      }
+                     break;
                   }
+                  break;
                }
                break;
             case §4Z§:
@@ -412,16 +415,16 @@ package §3!-§
                   if(this.§'$9§ > §;y§ - 1)
                   {
                      this.§4#z§ = true;
+                     break;
                   }
-                  else
+                  starMC = this.§0H§.getChildByName("QualifierStar" + (this.§'$9§ + 1));
+                  if(starMC && starMC.scaleX >= 0.5)
                   {
-                     starMC = this.§0H§.getChildByName("QualifierStar" + (this.§'$9§ + 1));
-                     if(starMC && starMC.scaleX >= 0.5)
-                     {
-                        §3Z§.playSound("league_promotion_star",§3Z§.§[!F§);
-                        ++this.§'$9§;
-                     }
+                     §3Z§.playSound("league_promotion_star",§3Z§.§[!F§);
+                     ++this.§'$9§;
+                     break;
                   }
+                  break;
                }
                break;
             case §7$5§:
@@ -430,17 +433,17 @@ package §3!-§
                   if(this.§%">§ > §1!R§ - 1)
                   {
                      this.§!"G§ = true;
+                     break;
                   }
-                  else
+                  leagueMC = this.§<"8§[this.§%">§];
+                  if(leagueMC && leagueMC.scaleX <= 2 && leagueMC.scaleX != 0)
                   {
-                     leagueMC = this.§<"8§[this.§%">§];
-                     if(leagueMC && leagueMC.scaleX <= 2 && leagueMC.scaleX != 0)
-                     {
-                        soundName = §'!m§[this.§%">§];
-                        §3Z§.playSound(soundName,"leagues_channel");
-                        ++this.§%">§;
-                     }
+                     soundName = §'!m§[this.§%">§];
+                     §3Z§.playSound(soundName,"leagues_channel");
+                     ++this.§%">§;
+                     break;
                   }
+                  break;
                }
          }
       }

@@ -170,7 +170,7 @@ package §>z§
             _loc3_ = _loc2_.campaignPrice > 0 ? Number(_loc2_.campaignPrice) : Number(_loc2_.price);
             if((AngryBirdsBase.singleton.dataModel as §4!Q§).§1W§.§<B§ < _loc3_)
             {
-               _loc6_ = (_loc5_ = int(_loc3_ - (AngryBirdsBase.singleton.dataModel as §4!Q§).§1W§.§<B§)) > 1 ? "coins" : "coin";
+               _loc6_ = (_loc5_ = _loc3_ - (AngryBirdsBase.singleton.dataModel as §4!Q§).§1W§.§<B§) > 1 ? "coins" : "coin";
                _loc7_ = new NotEnoughCoinsPopup(§&!M§.mClip,"Not enough coins!","You need " + _loc5_ + " more " + _loc6_ + " to buy this. \nVisit the Coin Shop now!",§#"l§.NORMAL,§]"Y§.TOP);
                if(AngryBirdsBase.singleton.popupManager.isPopupOpenById(_loc7_.id))
                {

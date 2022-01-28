@@ -829,11 +829,9 @@ package §"c§
                   this.§2!N§.addEventListener(SecurityErrorEvent.SECURITY_ERROR,this.§%"L§);
                   this.§2!N§.dataFormat = URLLoaderDataFormat.TEXT;
                   this.§2!N§.load(§;#&§.§ #G§(AngryBirdsBase.SERVER_ROOT + "/currencyConversionRate?from=" + _loc5_.currencyID + "&to=USD"));
+                  break;
                }
-               else
-               {
-                  this.buyItem();
-               }
+               this.buyItem();
                break;
             case this.§3#Y§:
                _loc6_ = this.§]"+§(§0!>§.§>!Z§);
@@ -847,11 +845,10 @@ package §"c§
                   this.§2!N§.addEventListener(SecurityErrorEvent.SECURITY_ERROR,this.§=!3§);
                   this.§2!N§.dataFormat = URLLoaderDataFormat.TEXT;
                   this.§2!N§.load(§;#&§.§ #G§(AngryBirdsBase.SERVER_ROOT + "/currencyConversionRate?from=" + _loc6_.currencyID + "&to=USD"));
+                  break;
                }
-               else
-               {
-                  this.§3$E§();
-               }
+               this.§3$E§();
+               break;
          }
          §0I§.trackPageView(this,_loc4_);
       }

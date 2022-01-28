@@ -110,11 +110,9 @@ package §=l§
                   _loc1_.type = §@#o§.§4H§;
                   _loc1_.value = NaN;
                   this.§>!C§();
+                  break;
                }
-               else
-               {
-                  this.parseError("Expecting \'NaN\' but found " + _loc5_);
-               }
+               this.parseError("Expecting \'NaN\' but found " + _loc5_);
                break;
             case "\"":
                _loc1_ = this.§,"_§();
@@ -123,15 +121,14 @@ package §=l§
                if(this.§2"y§(this.ch) || this.ch == "-")
                {
                   _loc1_ = this.§>"e§();
+                  break;
                }
-               else
+               if(this.ch == "")
                {
-                  if(this.ch == "")
-                  {
-                     return null;
-                  }
-                  this.parseError("Unexpected " + this.ch + " encountered");
+                  return null;
                }
+               this.parseError("Unexpected " + this.ch + " encountered");
+               break;
          }
          return _loc1_;
       }
