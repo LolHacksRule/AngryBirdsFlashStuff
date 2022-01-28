@@ -1,0 +1,39 @@
+
+	<Container name="HighscoreSidebar" fromLibrary="True" isOverlay="true" >
+			
+		<Container name="Container_Highscores">
+			<MovieClip name="Logo_Classico1" visible="false"/>
+			<MovieClip name="Logo_Classico2" visible="false"/>
+			<MovieClip name="Logo_Classico3" visible="false"/>
+			<MovieClip name="Logo_Pepsi" visible="false"/>
+			<MovieClip name="Logo_Cheetos" visible="false"/>
+			<MovieClip name="Logo_Mamut" visible="false"/>
+			
+			<Container name="HighscoreHolderControls">
+				<MovieClip name="Highscore_Holder"/>
+				
+				<Button name="Button_ArrowLeft" MouseUp="LEFT"/>
+				
+				<Button name="Button_Page1" MouseUp="PAGE1"/>
+				<Button name="Button_Page2" MouseUp="PAGE2"/>
+				<Button name="Button_Page3" MouseUp="PAGE3"/>
+				<Button name="Button_Page4" MouseUp="PAGE4"/>
+				<Button name="Button_Page5" MouseUp="PAGE5"/>
+				
+				<Button name="Button_ArrowRight" MouseUp="RIGHT"/>
+			</Container>
+		</Container>
+		
+		<Container name="Container_HighscoreLogin">
+			<TextField name="TextField_LoginHelper"/>
+		</Container>
+		
+		<Container name="Popup_NewHighscore" visible="False">
+			<Button name="Button_Resume" />
+		</Container>
+		
+		
+	</Container>
+
+	
+	
