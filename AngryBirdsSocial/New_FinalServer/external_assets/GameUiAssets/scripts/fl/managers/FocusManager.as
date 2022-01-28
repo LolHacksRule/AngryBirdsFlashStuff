@@ -64,6 +64,7 @@ package fl.managers
       
       private function removedHandler(param1:Event) : void
       {
+         var _loc2_:int = 0;
          var _loc4_:InteractiveObject = null;
          var _loc3_:DisplayObject = DisplayObject(param1.target);
          if(_loc3_ is IFocusManagerComponent && focusableObjects[_loc3_] == true)
@@ -694,13 +695,14 @@ package fl.managers
          var _loc7_:String = null;
          var _loc3_:String = "";
          var _loc4_:String = "";
+         var _loc8_:String = "0000";
          var _loc9_:DisplayObject = DisplayObject(param1);
          var _loc10_:DisplayObject = DisplayObject(param2);
          while(_loc9_ != DisplayObject(form) && _loc9_.parent)
          {
             if((_loc6_ = (_loc5_ = getChildIndex(_loc9_.parent,_loc9_)).toString(16)).length < 4)
             {
-               _loc7_ = "0000".substring(0,4 - _loc6_.length) + _loc6_;
+               _loc7_ = _loc8_.substring(0,4 - _loc6_.length) + _loc6_;
             }
             _loc3_ = _loc7_ + _loc3_;
             _loc9_ = _loc9_.parent;
@@ -709,7 +711,7 @@ package fl.managers
          {
             if((_loc6_ = (_loc5_ = getChildIndex(_loc10_.parent,_loc10_)).toString(16)).length < 4)
             {
-               _loc7_ = "0000".substring(0,4 - _loc6_.length) + _loc6_;
+               _loc7_ = _loc8_.substring(0,4 - _loc6_.length) + _loc6_;
             }
             _loc4_ = _loc7_ + _loc4_;
             _loc10_ = _loc10_.parent;

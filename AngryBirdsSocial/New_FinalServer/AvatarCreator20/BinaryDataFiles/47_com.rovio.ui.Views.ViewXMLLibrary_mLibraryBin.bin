@@ -1,0 +1,45 @@
+<UIDescription>
+	<Views>	
+		<View_AvatarCreator name="View_AvatarCreator">      <!--  name parameter must be identical(case sensitive) with export name of the main movie clip of this UI view      -->
+			<Button name="Button_RoundArrow2" MouseUp="NEXT_CHARACTER" /> 	
+			<Button name="Button_RoundArrow1" MouseUp="PREV_CHARACTER" />
+			<Button name="Button_SaveBig" MouseUp="SAVE_AVATAR" />
+			<Button name="Button_Random" MouseUp="RANDOMIZE_AVATAR" />
+			<Button name="Button_Close" MouseUp="CLOSE_EDITOR" />
+			<Container name="Container_Bottom" >
+				<Repeater name="Repeater_Tabs"  button="Repeater_Button_Editor_Tabs">
+				</Repeater>
+				<Repeater name="Repeater_Items"  button="Repeater_Button_Editor_Items">
+				</Repeater>
+			</Container>
+			
+			
+			
+			<Popup name="Popup_CharacterEditor_ProfilePicture" visible="False" enabled="True" isOverlay="False" fromLibrary="True">
+			
+			<!--	<TextField name="TextField_CharacterEditor_YourName" enabled="True" text="YourName"/> -->
+				<Container name="ProfilePicture_Guide" />
+			
+				<Button name="Button_Save" MouseUp="SAVE_AVATAR" />
+				<!--
+					<Button name="Button_ProfilePicture_FacebookPic" MouseUp="PUBLISH_TO_FACEBOOK_PROFILE" />
+					<Button name="Button_ProfilePicture_TwitterPic" MouseUp="PUBLISH_TO_TWITTER_PROFILE" />
+				-->
+				<Button name="Button_ProfilePicture_Close" MouseUp="CLOSE_SNAPSHOT" />
+			</Popup>
+			
+			<Popup name="Popup_CharacterEditor_BuyItem" visible="False" enabled="True" isOverlay="False" fromLibrary="True">
+				<TextField name="TextField_BuyItem_Cost" text="0" />
+				<Button name="Button_BuyItem_Buy" MouseUp="BUY_ITEM" />
+				<Button name="Button_BuyItem_Close" MouseUp="CLOSE_BUYITEM" />
+			</Popup>
+			
+	<!--		
+			<Container name="Container_PurchaceConfirm">
+				<Button name="Button_Buy" MouseUp="BUY"/>
+			</Container>
+-->
+		</View_AvatarCreator>
+
+	</Views>
+</UIDescription>

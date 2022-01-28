@@ -10,6 +10,8 @@ package
       
       public var MovieClip_FileDropdown_Hitarea:MovieClip;
       
+      public var Button_FileDropdown_LoadLevel:MovieClip;
+      
       public var Button_FileDropdown_NewLevel:MovieClip;
       
       public function Container_FileDropDown()

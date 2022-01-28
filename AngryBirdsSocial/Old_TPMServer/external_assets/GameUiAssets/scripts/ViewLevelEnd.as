@@ -8,8 +8,6 @@ package
       
       public var Button_LevelEnd_FriendsScores:MovieClip;
       
-      public var DropDown_LevelEnd_SortFriends:MovieClip;
-      
       public var Button_LevelEnd_PlayMore:MovieClip;
       
       public var TextField_GoldenEggs:MovieClip;
@@ -18,13 +16,7 @@ package
       
       public var TextField_Score:MovieClip;
       
-      public var Base:MovieClip;
-      
-      public var Button_InviteFriends:MovieClip;
-      
       public var MovieClip_LevelEnd_Loading:MovieClip;
-      
-      public var Button_Like:MovieClip;
       
       public var Button_LevelEnd_RateLevel:MovieClip;
       
@@ -34,13 +26,9 @@ package
       
       public var LoadingIconAnimation:MovieClip;
       
-      public var Repeater_MoreLevels:MovieClip;
-      
       public var Container_RateLevel:MovieClip;
       
-      public var MovieClip_LevelEnd_PiggyBank:MovieClip;
-      
-      public var Button_ThumbDown:MovieClip;
+      public var Repeater_MoreLevels:MovieClip;
       
       public var TextField_Coin:MovieClip;
       

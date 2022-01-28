@@ -10,6 +10,8 @@ package
       
       public var Button_Replay:MovieClip;
       
+      public var TextField_BetterLuck:MovieClip;
+      
       public function ViewLevelEndFail()
       {
          super();

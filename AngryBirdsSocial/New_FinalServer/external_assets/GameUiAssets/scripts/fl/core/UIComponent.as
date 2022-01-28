@@ -476,8 +476,7 @@ package fl.core
          rotation = 0;
          var _loc2_:Number = super.width;
          var _loc3_:Number = super.height;
-         super.scaleY = 1;
-         super.scaleX = 1;
+         super.scaleX = super.scaleY = 1;
          setSize(_loc2_,_loc3_);
          move(super.x,super.y);
          rotation = _loc1_;

@@ -6,9 +6,9 @@ package
    {
        
       
-      public var Repeater_TemplateSelection:MovieClip;
+      public var Button_LoadLevel_Close:MovieClip;
       
-      public var Button_LoadTemplate_Close:MovieClip;
+      public var Repeater_TemplateSelection:MovieClip;
       
       public function Popup_EditorStart_LoadTemplate()
       {

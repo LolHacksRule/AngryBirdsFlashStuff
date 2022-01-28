@@ -353,6 +353,7 @@ package fl.controls
       {
          var _loc4_:int = Math.max(Math.floor(calculateAvailableHeight() / rowHeight),1);
          var _loc5_:int = -1;
+         var _loc6_:int = 0;
          switch(param1)
          {
             case Keyboard.UP:

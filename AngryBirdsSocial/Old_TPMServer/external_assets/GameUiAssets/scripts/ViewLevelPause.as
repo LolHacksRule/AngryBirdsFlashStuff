@@ -6,13 +6,13 @@ package
    {
        
       
-      public var Pause_Slider:MovieClip;
+      public var Button_Resume:MovieClip;
       
       public var Container_Debug:MovieClip;
       
-      public var Button_LevelOfTheDay_Competition:MovieClip;
+      public var Button_Replay:MovieClip;
       
-      public var Button_Pause_Background:MovieClip;
+      public var Button_Help:MovieClip;
       
       public function ViewLevelPause()
       {

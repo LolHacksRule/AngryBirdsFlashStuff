@@ -133,6 +133,7 @@ package fl.managers
       public static function getComponentStyle(param1:Object, param2:String) : Object
       {
          var _loc3_:Class = getClassDef(param1);
+         var _loc4_:Object;
          return (_loc4_ = getInstance().classToStylesDict[_loc3_]) == null ? null : _loc4_[param2];
       }
       

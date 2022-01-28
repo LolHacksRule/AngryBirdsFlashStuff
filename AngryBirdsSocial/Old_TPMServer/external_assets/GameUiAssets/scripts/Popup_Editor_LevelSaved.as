@@ -6,6 +6,8 @@ package
    {
        
       
+      public var Button_LevelSaved_Close:MovieClip;
+      
       public var Button_LevelSaved_Ok:MovieClip;
       
       public function Popup_Editor_LevelSaved()

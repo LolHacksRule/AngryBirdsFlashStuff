@@ -640,7 +640,7 @@ package com.rovio.Box2D.Dynamics
          };
          if(transform == null)
          {
-            var transform:b2Transform = new b2Transform();
+            transform = new b2Transform();
             transform.SetIdentity();
          }
          broadPhase = this.m_contactManager.m_broadPhase;

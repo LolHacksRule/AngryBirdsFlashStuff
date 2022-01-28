@@ -6,8 +6,6 @@ package
    {
        
       
-      public var Animations:MovieClip;
-      
       public function Thumbnail_Misc()
       {
          super();

@@ -12,6 +12,8 @@ package
       
       public var TextField_LevelPublished_LevelName:MovieClip;
       
+      public var Button_LevelPublished_Share:MovieClip;
+      
       public function Popup_Editor_LevelPublished()
       {
          super();

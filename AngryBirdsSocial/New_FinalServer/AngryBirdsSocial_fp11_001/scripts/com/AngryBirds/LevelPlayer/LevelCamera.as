@@ -264,7 +264,7 @@ package com.AngryBirds.LevelPlayer
             _loc8_ = _loc4_ + (_loc5_ - _loc4_) / 2;
             _loc9_ = _loc6_ + (_loc7_ - _loc6_) / 2;
             _loc10_ = SCREEN_HEIGHT_B2 / (_loc7_ - _loc6_);
-            _loc12_ = (_loc11_ = Number(SCREEN_WIDTH_B2 / (_loc5_ - _loc4_))) < _loc10_ ? Number(_loc11_) : Number(_loc10_);
+            _loc12_ = (_loc11_ = SCREEN_WIDTH_B2 / (_loc5_ - _loc4_)) < _loc10_ ? Number(_loc11_) : Number(_loc10_);
             if(_loc3_ == "SLINGSHOT")
             {
                this.mSlingshotCameraX = _loc8_;
