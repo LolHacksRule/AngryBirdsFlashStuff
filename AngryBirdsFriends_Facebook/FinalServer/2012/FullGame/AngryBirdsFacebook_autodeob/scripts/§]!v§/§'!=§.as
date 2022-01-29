@@ -30,6 +30,7 @@ package §]!v§
       
       public function §'!=§(param1:Texture, param2:Boolean = false, param3:Boolean = true)
       {
+         var _loc4_:Rectangle;
          var _loc5_:Number = !!(_loc4_ = param1.frame) ? Number(_loc4_.width) : Number(param1.width);
          var _loc6_:Number = !!_loc4_ ? Number(_loc4_.height) : Number(param1.height);
          var _loc7_:Boolean = param1.premultipliedAlpha;

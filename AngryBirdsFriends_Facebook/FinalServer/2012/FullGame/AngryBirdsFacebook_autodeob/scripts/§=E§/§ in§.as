@@ -20,6 +20,8 @@ package §=E§
          var _loc11_:int = 0;
          var _loc5_:int = 0;
          var _loc6_:Number = Math.pow(10,param2);
+         var _loc8_:*;
+         var _loc7_:String;
          var _loc9_:int = !!(_loc8_ = (_loc7_ = String(Math.round(_loc6_ * Number(param1)) / _loc6_)).indexOf(".") == -1) ? int(_loc7_.length) : int(_loc7_.indexOf("."));
          var _loc10_:* = (_loc8_ && !param3 ? "" : (!!param4 ? "," : ".")) + _loc7_.substr(_loc9_ + 1);
          if(param3)

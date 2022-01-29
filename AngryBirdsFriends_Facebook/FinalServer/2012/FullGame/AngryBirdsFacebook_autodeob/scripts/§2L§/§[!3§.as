@@ -16,24 +16,21 @@ package §2L§
          var _loc6_:Object = null;
          var _loc4_:Boolean = false;
          var _loc5_:int = 0;
-         var _loc7_:int = 0;
-         var _loc8_:* = §3!1§;
-         for(; §§hasnext(_loc8_,_loc7_); _loc5_++)
+         for each(_loc6_ in §3!1§)
          {
-            _loc6_ = §§nextvalue(_loc7_,_loc8_);
             if(_loc6_.id == param1.id)
             {
                if(!param2)
                {
                   _loc4_ = true;
+                  return;
                }
                if(param1.avatarString != null && param1.avatarString != "" || param3)
                {
                   §3!1§[_loc5_] = param1;
                }
-               continue;
-               return;
             }
+            _loc5_++;
          }
          if(!_loc4_)
          {

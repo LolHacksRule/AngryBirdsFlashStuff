@@ -110,11 +110,9 @@ package §3I§
                   _loc1_.type = §!p§.§3!,§;
                   _loc1_.value = NaN;
                   this.§<"&§();
+                  break;
                }
-               else
-               {
-                  this.parseError("Expecting \'NaN\' but found " + _loc5_);
-               }
+               this.parseError("Expecting \'NaN\' but found " + _loc5_);
                break;
             case "\"":
                _loc1_ = this.§+-§();
@@ -123,15 +121,14 @@ package §3I§
                if(this.§@"4§(this.§1#§) || this.§1#§ == "-")
                {
                   _loc1_ = this.§2!+§();
+                  break;
                }
-               else
+               if(this.§1#§ == "")
                {
-                  if(this.§1#§ == "")
-                  {
-                     return null;
-                  }
-                  this.parseError("Unexpected " + this.§1#§ + " encountered");
+                  return null;
                }
+               this.parseError("Unexpected " + this.§1#§ + " encountered");
+               break;
          }
          return _loc1_;
       }

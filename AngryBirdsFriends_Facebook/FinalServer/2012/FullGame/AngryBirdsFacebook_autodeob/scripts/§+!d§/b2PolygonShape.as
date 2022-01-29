@@ -550,11 +550,10 @@ package §+!d§
                if(_loc9_ == -1)
                {
                   _loc9_ = this.§@!N§ - 1;
+                  break;
                }
-               else
-               {
-                  _loc10_ = this.§@!N§ - 1;
-               }
+               _loc10_ = this.§@!N§ - 1;
+               break;
          }
          var _loc13_:int = (_loc9_ + 1) % this.§@!N§;
          var _loc14_:int = (_loc10_ + 1) % this.§@!N§;

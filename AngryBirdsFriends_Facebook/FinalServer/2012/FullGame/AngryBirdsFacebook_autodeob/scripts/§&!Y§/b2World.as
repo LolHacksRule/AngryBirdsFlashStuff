@@ -964,7 +964,7 @@ package §&!Y§
             _loc12_ = null;
             _loc13_ = 1;
             _loc11_ = this.§;!o§;
-            for(; _loc11_; _loc11_ = _loc11_.§&!n§)
+            while(_loc11_)
             {
                if(!(_loc11_.§'"E§() == true || _loc11_.§+""§() == false || _loc11_.§0J§() == false))
                {
@@ -981,6 +981,8 @@ package §&!Y§
                      _loc6_ = _loc4_.m_body;
                      if((_loc5_.§;!w§() != b2Body.b2_dynamicBody || _loc5_.IsAwake() == false) && (_loc6_.§;!w§() != b2Body.b2_dynamicBody || _loc6_.IsAwake() == false))
                      {
+                        addr635:
+                        _loc11_ = _loc11_.§&!n§;
                         continue;
                      }
                      _loc20_ = _loc5_.m_sweep.§%M§;
@@ -1005,6 +1007,7 @@ package §&!Y§
                      }
                      _loc11_.§1!;§ = _loc19_;
                      _loc11_.§^Q§ |= b2Contact.§[!_§;
+                     §§goto(addr635);
                   }
                   if(Number.MIN_VALUE < _loc19_ && _loc19_ < _loc13_)
                   {
@@ -1012,6 +1015,7 @@ package §&!Y§
                      _loc13_ = _loc19_;
                   }
                }
+               §§goto(addr635);
             }
             if(_loc12_ == null || 1 - 100 * Number.MIN_VALUE < _loc13_)
             {
@@ -1196,6 +1200,7 @@ package §&!Y§
                if(_loc3_ != this.m_groundBody)
                {
                   this.§"!@§.§+!g§(_loc7_,_loc9_,_loc10_);
+                  break;
                }
          }
       }

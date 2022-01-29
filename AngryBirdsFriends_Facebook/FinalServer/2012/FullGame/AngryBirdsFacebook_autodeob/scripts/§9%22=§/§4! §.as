@@ -373,16 +373,14 @@ package §9"=§
                   _loc2_.scaleX = _loc2_.scaleY = 0.75;
                   _loc2_.color = _loc8_;
                   _loc2_.flatten();
+                  break;
                }
-               else
-               {
-                  _loc2_ = new Sprite();
-                  _loc3_ = this.§>1§.getAnimation("NUMBERS");
-                  this.§[6§ = new §3!0§(_loc2_,_loc3_);
-                  this.§[6§.§]<§(parseInt(this.§^!L§));
-                  this.§8+§.addChild(_loc2_);
-                  _loc2_.scaleX = _loc2_.scaleY = 0.75;
-               }
+               _loc2_ = new Sprite();
+               _loc3_ = this.§>1§.getAnimation("NUMBERS");
+               this.§[6§ = new §3!0§(_loc2_,_loc3_);
+               this.§[6§.§]<§(parseInt(this.§^!L§));
+               this.§8+§.addChild(_loc2_);
+               _loc2_.scaleX = _loc2_.scaleY = 0.75;
                break;
             case PARTICLE_NAME_BLOCK_DESTRUCTION_PARTICLES:
                switch(this.§@!f§)
@@ -442,6 +440,7 @@ package §9"=§
                if(this.§8+§)
                {
                   this.§8+§.rotation = Math.random() * 360 / 180 * Math.PI;
+                  break;
                }
                break;
             default:

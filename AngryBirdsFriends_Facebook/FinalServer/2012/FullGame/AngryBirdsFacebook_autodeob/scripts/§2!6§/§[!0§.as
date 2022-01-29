@@ -597,6 +597,7 @@ package §2!6§
          {
             _loc3_ = String(§=1§.§1[§.§7!B§(_loc2_));
          }
+         var _loc5_:§=!-§;
          var _loc6_:String = !!(_loc5_ = LevelManager.§0"§(_loc2_)) ? _loc5_.name : "unknownEpisode";
          var _loc7_:String = AngryBirdsFP11.§#"@§ + "/useitem/" + param1.§&"3§ + "/" + LevelManager.§`-§ + "/" + _loc6_ + "/" + _loc3_ + "/" + §-!V§.§#E§ + "/" + escape(JSON.stringify(param1.§4""§));
          var _loc8_:URLRequest = §?x§.§>t§(_loc7_);

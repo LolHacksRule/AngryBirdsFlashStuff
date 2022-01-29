@@ -304,6 +304,7 @@ package §@",§
                {
                   --this.§ !o§;
                   this.§'+§(this.§ !o§);
+                  break;
                }
                break;
             case "NEXT":
@@ -312,6 +313,7 @@ package §@",§
                {
                   ++this.§ !o§;
                   this.§'+§(this.§ !o§);
+                  break;
                }
                break;
             case "FULLSCREEN_BUTTON":

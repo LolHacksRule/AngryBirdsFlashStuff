@@ -289,7 +289,7 @@ package §`u§
             _loc9_ = _loc3_.x;
             _loc10_ = _loc3_.y;
             _loc11_ = §[!r§ / (_loc8_ - _loc7_);
-            _loc13_ = (_loc12_ = Number(§@!7§ / (_loc6_ - _loc5_))) < _loc11_ ? Number(_loc12_) : Number(_loc11_);
+            _loc13_ = (_loc12_ = §@!7§ / (_loc6_ - _loc5_)) < _loc11_ ? Number(_loc12_) : Number(_loc11_);
             if(_loc4_ == §4!y§)
             {
                this.§ "1§ = new §set §(_loc9_,_loc10_,_loc13_,true);

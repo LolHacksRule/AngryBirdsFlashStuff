@@ -289,6 +289,7 @@ package §@",§
                   this.§ O§ = new § n§("http://www.youtube.com/v/-eyig_V-_5o");
                   (§2!K§.getItemByName("MovieClip_YouTubeArea") as §="0§).changeMovieClip(this.§ O§);
                   (§2!K§.getItemByName("MovieClip_YouTubeArea") as §="0§).setVisibility(true);
+                  break;
                }
          }
       }

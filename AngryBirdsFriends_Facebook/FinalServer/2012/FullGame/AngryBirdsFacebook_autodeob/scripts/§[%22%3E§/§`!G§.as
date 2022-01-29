@@ -186,11 +186,10 @@ package §[">§
                {
                   this.§ t§.mcGiftCount.visible = true;
                   this.§ t§.mcGiftCount.txtCount.text = §=]§.receivedItems;
+                  break;
                }
-               else
-               {
-                  this.§ t§.mcGiftCount.visible = false;
-               }
+               this.§ t§.mcGiftCount.visible = false;
+               break;
          }
          this.§ t§.btnClose.visible = false;
       }
