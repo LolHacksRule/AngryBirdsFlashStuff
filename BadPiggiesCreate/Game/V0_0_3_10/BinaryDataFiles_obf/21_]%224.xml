@@ -1,0 +1,175 @@
+<LevelBackgrounds game="AngryBirds" version="0.0.0">
+    <Backgrounds>
+		
+       <!--  The layer which will remain on front should be listed on top  -->
+	  <!--  Background id must be same with the export name of main movie clip. Also same id must be used to create a new ground material  -->
+      
+		<Background id="BACKGROUND_BLUE_GRASS" sky="0x94cede" texture="THEME_GROUND_TEXTURE_1" ground="0x0a1339" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_DryForest" >
+			<Layers>
+				<Layer id="FOREGROUND_1_LAYER_2" speed="1000" foreground="1" scale="1"/>
+				<Layer id="FOREGROUND_1_LAYER_1" speed="1000" foreground="1" scale="1"/>
+				<Layer id="BACKGROUND_1_LAYER_3" speed="1000" foreground="0" scale="1.5" />
+				<Layer id="BACKGROUND_1_LAYER_2" speed="500" foreground="0" marginX="-5" scale="2" >
+				<!--<ParticleEmitter id="leaf" x="302" y="-435" scale="2" rotation="3.1415" fastForwardsAfterAdd="40"  alpha="1.0" behindGraphic="true" />-->
+				</Layer>
+				<Layer id="BACKGROUND_1_LAYER_1" speed="125" foreground="0" marginX="-5" scale="2" />
+		
+			</Layers>
+		</Background>
+		
+		<Background id="BACKGROUND_RED_FLOWERS" sky="0xefd673" texture="THEME_GROUND_TEXTURE_3" ground="0x2f170e" objectId="GROUND_HILLS" icon="Icon_Theme_RedFlowers" sound="Sound_Ambient_DryForest" >
+			<Layers>
+				<Layer id="FOREGROUND_3_LAYER_2" speed="1000" foreground="1" scale="1"/>
+				<Layer id="FOREGROUND_3_LAYER_1" speed="1000" foreground="1" scale="1"/>
+				<Layer id="THEME_3_BG_LAYER_3" speed="1000" foreground="0" scale="1.6" />
+				<Layer id="THEME_3_BG_LAYER_2" speed="500" foreground="0" marginX="-5" scale="2" />
+				<Layer id="BACKGROUND_3_LAYER_1" speed="125" foreground="0" marginX="-5" scale="2" />
+			</Layers>
+		</Background>
+
+		<Background id="BACKGROUND_BUSHES" sky="0x90cded" texture="THEME_GROUND_TEXTURE_4" ground="0x1c120c" objectId="GROUND_HILLS" icon="Icon_Theme_Bushes" sound="Sound_Ambient_DryForest" >
+			<Layers>
+				<Layer id="FOREGROUND_4_LAYER_2" speed="1000" foreground="1" scale="1"/>
+				<Layer id="FOREGROUND_4_LAYER_1" speed="1000" foreground="1" scale="1"/>
+				<Layer id="THEME_4_BG_LAYER_3" speed="1000" foreground="0" scale="1.85" />
+				<Layer id="THEME_4_BG_LAYER_2" speed="500" foreground="0" marginX="-5" scale="2" />
+				<Layer id="BACKGROUND_4_LAYER_1" speed="125" foreground="0" marginX="-5" scale="2" />
+			</Layers>
+		</Background>
+
+		<Background id="BACKGROUND_CACTUS_DESERT" sky="0xf1e28c" texture="THEME_GROUND_TEXTURE_5" ground="0x442702" objectId="GROUND_HILLS" sound="Sound_Ambient_DryForest" >
+			<Layers>
+				<Layer id="FOREGROUND_5_LAYER_2" speed="1000" foreground="1" scale="1"/>
+				<Layer id="FOREGROUND_5_LAYER_1" speed="1000" foreground="1" scale="1"/>
+				<Layer id="THEME_5_BG_LAYER_3" speed="1000" foreground="0" scale="1.8" />
+				<Layer id="THEME_5_BG_LAYER_2" speed="500" foreground="0" marginX="-5" scale="2"/>
+				<Layer id="BACKGROUND_5_LAYER_1" speed="125" foreground="0" marginX="-5" scale="2"/>
+			</Layers>
+		</Background>
+
+		<Background id="BACKGROUND_FOREST" sky="0x4a5a2c" texture="THEME_GROUND_TEXTURE_6" ground="0x181c0f" objectId="GROUND_HILLS" sound="Sound_Ambient_DryForest" >
+			<Layers>
+				<Layer id="FOREGROUND_6_LAYER_2" speed="1000" foreground="1" scale="1"/>
+				<Layer id="FOREGROUND_6_LAYER_1" speed="1000" foreground="1" scale="1"/>
+				<Layer id="THEME_6_BG_LAYER_3" speed="1000" foreground="0" scale="2" />
+				<Layer id="THEME_6_BG_LAYER_2" speed="500" foreground="0" marginX="-5" scale="3.3" />
+				<Layer id="BACKGROUND_6_LAYER_1" speed="200" foreground="0" marginX="-5" scale="4.5" />
+			</Layers>
+		</Background>
+
+		<Background id="BACKGROUND_CITY" sky="0x000000" texture="THEME_GROUND_TEXTURE_7" ground="0x112245" objectId="GROUND_HILLS" sound="Sound_Ambient_DryForest" >
+			<Layers>
+				<Layer id="FOREGROUND_7_LAYER_2" speed="1000" foreground="1" scale="1"/>
+				<Layer id="FOREGROUND_7_LAYER_1" speed="1000" foreground="1" scale="1"/>
+				<Layer id="THEME_7_BG_LAYER_3" speed="1000" foreground="0" scale="2.8" />
+				<Layer id="THEME_7_BG_LAYER_2" speed="500" foreground="0" marginX="-5" scale="3" />
+				<Layer id="BACKGROUND_7_LAYER_1" speed="200" foreground="0" marginX="-5" scale="3.5" />
+			</Layers>
+		</Background>
+
+		<Background id="BACKGROUND_CLOUDS" sky="0xf9f8eb" texture="THEME_GROUND_TEXTURE_8" ground="0xeeffff" objectId="GROUND_HILLS" sound="Sound_Ambient_DryForest" >
+			<Layers>
+				<Layer id="FOREGROUND_8_LAYER_2" speed="1300" foreground="1" scale="1"/>
+				<Layer id="FOREGROUND_8_LAYER_1" speed="1000" foreground="1" scale="1"/>
+				<Layer id="THEME_8_BG_LAYER_3" speed="1000" foreground="0" scale="1.8" />
+				<Layer id="THEME_8_BG_LAYER_2" speed="500" foreground="0" marginX="-5" scale="2.5" />
+				<Layer id="BACKGROUND_8_LAYER_1" speed="200" foreground="0" marginX="-5" scale="2.5" />
+			</Layers>
+		</Background>
+
+		<!-- Chrome uses theme 2 -->
+		<Background id="BACKGROUND_GREEN_PLANTS" sky="0xc1e7ef" texture="THEME_GROUND_TEXTURE_2" ground="0x0a130f" objectId="GROUND_HILLS" icon="Icon_Theme_GreenPlants" sound="Sound_Ambient_Jungle" >
+			<Layers>
+				<Layer id="FOREGROUND_2_LAYER_2" speed="1000" foreground="1" scale="1.5"/>
+				<Layer id="FOREGROUND_2_LAYER_1" speed="1000" foreground="1" marginX="-197" scale="1.5"/>
+				<Layer id="THEME_2_BG_LAYER_3" speed="1000" foreground="0" scale="1.5" />
+				<Layer id="THEME_2_BG_LAYER_2" speed="500" foreground="0" scale="2" >
+					<!-- <ParticleEmitter id="seed" x="12" y="-40" scale="2" rotation="0" fastForwardsAfterAdd="100" alpha="1.0" behindGraphic="true" /> -->
+				</Layer>
+				<Layer id="BACKGROUND_2_LAYER_1" speed="200" foreground="0" scale="2" optional="true" sky="0xE1F5F9"/>
+			</Layers>
+		</Background>
+		
+		
+      <Background id="BACKGROUND_VOLCANO" sky="0x016164" ground="0x01030a" sound="Sound_Ambient_RedSavannah" texture="THEME_GROUND_TEXTURE_12"  icon="Icon_Theme_Volcano" ttextureStrokeColor="0x0e121a"  cost="250" objectId="GROUND_HILLS"> 
+		<Layers>
+				<Layer id="FOREGROUND_12_LAYER_1"  speed="1000" foreground="1" static="true"></Layer>
+				<Layer id="BACKGROUND_12_LAYER_1"   speed="800" foreground="0" static="true"></Layer>
+				<Layer id="BACKGROUND_12_LAYER_2"   speed="300" foreground="0"></Layer>
+				
+				<!-- Smaller Front volcano -->
+				<Layer id="BACKGROUND_12_VOLCANO"   speed="200" foreground="0" static="false" xOffset="800" scale="1" tileable="false">
+					<ParticleEmitter id="fire" x="178" y="-255" rotation="3.1415" fastForwardsAfterAdd="40" alpha="0.4" behindGraphic="true" />
+					<ParticleEmitter id="sparks" x="178" y="-265" rotation="3.1415" fastForwardsAfterAdd="40" behindGraphic="true" />
+				</Layer>
+				
+				<Layer id="BACKGROUND_12_LAYER_3"   speed="100" foreground="0" static="true"></Layer>
+				
+				<!-- Big Back volcano -->
+				<Layer id="BACKGROUND_12_VOLCANO"   speed="50" foreground="0" static="true" xOffset="100" tileable="false" scale="1.7">
+					<ParticleEmitter id="fire" x="302" y="-435" scale="2" rotation="3.1415" fastForwardsAfterAdd="40"  alpha="0.4" behindGraphic="true" />
+					<ParticleEmitter id="sparks" x="302" y="-445" scale="2" rotation="3.1415" fastForwardsAfterAdd="40" behindGraphic="true" />
+				</Layer>
+				
+				<!-- Moon -->
+				<Layer id="BACKGROUND_12_MOON_2" speed="0" foreground="0" static="false" tileable="false" xOffset="630">
+					<!-- Stars -->
+					<ParticleEmitter id="stars" x="-800" y="-300" scale="1.5"/>
+					<ParticleEmitter id="stars" x="-280" y="-300" scale="1.5"/>
+					<ParticleEmitter id="stars" x="350" y="-300" scale="1.5"/>
+					<ParticleEmitter id="stars" x="900" y="-300" scale="1.5"/>
+					
+					<ParticleEmitter id="stars" x="-800" y="-900" scale="1.5"/>
+					<ParticleEmitter id="stars" x="-280" y="-900" scale="1.5"/>
+					<ParticleEmitter id="stars" x="350" y="-900" scale="1.5"/>
+					<ParticleEmitter id="stars" x="900" y="-900" scale="1.5"/>
+				</Layer>
+				
+				<Layer id="BACKGROUND_12_LAYER_4"   speed="0" foreground="0" static="true"></Layer>
+			</Layers>
+		</Background>     
+		<Background id="BACKGROUND_EAR_FOREST" sky="0x95d8ff" texture="EARFOREST_THEME_GROUND_TEXTURE_1" ground="0x935472" objectId="GROUND_HILLS" icon="Icon_Theme_Earforest" sound="Sound_Ambient_DryForest" >
+			<Layers>
+				<Layer id="FOREGROUND_EARFOREST_LAYER_1" speed="1000" bottomOffset="100" foreground="1" scale="1"/>
+				<Layer id="BACKGROUND_EARFOREST_LAYER_1" speed="900" bottomOffset="-430" foreground="0" scale="1"/>
+				<Layer id="BACKGROUND_EARFOREST_LAYER_2_ITEM_1" xOffset="200" bottomOffset="-300" speed="700" foreground="0" scale="1"  tileable="false"/>
+				<Layer id="BACKGROUND_EARFOREST_LAYER_2_ITEM_2" xOffset="1000" bottomOffset="-300" speed="700" foreground="0" scale="1"  tileable="false"/>
+				<Layer id="BACKGROUND_EARFOREST_LAYER_2" speed="700" bottomOffset="-480" foreground="0" scale="1"/>
+				<Layer id="BACKGROUND_EARFOREST_LAYER_3" speed="500" bottomOffset="-430" foreground="0" scale="1"/>
+				<Layer id="BACKGROUND_EARFOREST_LAYER_4" speed="300" bottomOffset="-450" foreground="0" scale="1"/>
+			</Layers>
+		</Background>
+		<Background id="BACKGROUND_GOLDEN_FIELDS" sky="0x0180a9" texture="THEME_GOLDEN_FIELDS_TEXTURE" ground="0x24510f" objectId="GROUND_HILLS" icon="Icon_Theme_GoldenFields" sound="Sound_Ambient_DryForest" >
+			<Layers>
+				<Layer id="THEME_GOLDEN_FIELDS_PARALLAX_1" speed="1000" bottomOffset="20" foreground="1" scale="1"/>
+				<Layer id="THEME_GOLDEN_FIELDS_PARALLAX_2" speed="800" bottomOffset="-180" foreground="0" scale="1"/>
+				<Layer id="THEME_GOLDEN_FIELDS_PARALLAX_3" speed="600" bottomOffset="-450" foreground="0" scale="1"/>
+				<Layer id="THEME_GOLDEN_FIELDS_PARALLAX_4" xOffset="1000" speed="400" bottomOffset="-650" foreground="0" scale="1" tileable="false"/>
+				<Layer id="THEME_GOLDEN_FIELDS_PARALLAX_5" speed="200" bottomOffset="-750" foreground="0" scale="1"/>
+			</Layers>
+		</Background>
+
+		<!--  Facebook background -->
+		<Background id="BACKGROUND_FB_BEACH" sky="0x00367b" texture="THEME_GROUND_FB_BEACH" ground="0xeaee84" objectId="GROUND_HILLS" icon="Icon_Theme_GoldenFields" sound="Sound_Ambient_Jungle" >
+			<Layers>
+				
+				<Layer id="THEME_FB_BEACH_BG4" speed="800" foreground="0" scale="2.5" tileable="false"/>
+				
+				<Layer id="THEME_FB_BEACH_BG3" speed="600" foreground="0" scale="2.5" tileable="false"/>
+				
+				<Layer id="THEME_FB_BEACH_BG2" speed="500" foreground="0" scale="2" >
+				  <ParticleEmitter id="wave-1" x="0" y="-115" scale="1.0" rotation="0" fastForwardsAfterAdd="32" alpha="1.0" />
+				  <ParticleEmitter id="wave-1" x="797" y="-115" scale="1.0" rotation="0" fastForwardsAfterAdd="32" alpha="1.0" />
+				  <ParticleEmitter id="wave-2" x="0" y="35" scale="1.0" rotation="0" fastForwardsAfterAdd="10" alpha="1.0" />
+				  <ParticleEmitter id="wave-2" x="797" y="35" scale="1.0" rotation="0" fastForwardsAfterAdd="10" alpha="1.0" />
+				  <ParticleEmitter id="wave-splash" x="0" y="-5" scale="1.0" rotation="0" fastForwardsAfterAdd="118" alpha="1.0" />
+				  <ParticleEmitter id="wave-splash" x="797" y="-5" scale="1.0" rotation="0" fastForwardsAfterAdd="118" alpha="1.0" />
+				</Layer>
+				
+				<Layer id="THEME_FB_BEACH_BG1" speed="200" foreground="0" scale="2" optional="true" sky="0x70CBFF"/>
+				
+				<Layer id="THEME_FB_BEACH_FG1" speed="1000" foreground="1" scale="2" />
+			</Layers>
+		</Background>
+	  </Backgrounds>
+</LevelBackgrounds>
