@@ -1,0 +1,60 @@
+<Popup_Info name="Popup_Login" visible="True" fromLibrary="True"
+	width="980" height="570" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE">
+	<Container name="Container_Login_Tab">
+		<Button name="Button_Tab_Register" MouseUp="TAB_REGISTER"
+			scaleOnMouseOver="True" />
+
+		<TextField name="TextField_LoginTitle" />
+
+		<TextField name="TextField_UserNameField" />
+		<TextField name="TextField_PasswordField" />
+		<TextField name="TextField_Nickname_Login" />
+		<TextField name="Text_Password" />
+		<TextField name="TextField_RememberMe" />
+
+		<TextField name="TextField_LoginUseSameCountry"/>
+
+		<Button name="Button_Submit" MouseUp="SUBMIT" />
+		<Button name="Button_Cancel" MouseUp="CANCEL" />
+
+		<Button name="Checkbox_RememberMe" MouseUp="CHECKBOX_CHANGE" />
+
+		<MovieClip name="MovieClip_ErrorLoginMarkEmail" Enabled="False"
+			visible="False" />
+		<MovieClip name="MovieClip_ErrorLoginMarkPassword" Enabled="False"
+			visible="False" />
+	</Container>
+
+	<Container name="Container_Register_Tab">
+		<Button name="Button_Tab_Login" MouseUp="TAB_LOGIN"
+			scaleOnMouseOver="True" />
+
+		<TextField name="TextField_RegisterTitle" />
+
+		<TextField name="TextField_PasswordField_Register" />
+		<TextField name="TextField_PasswordFieldRepeat_Register" />
+		<TextField name="TextField_NickNameField_Register" />
+		<TextField name="Text_Password_Register" />
+		<TextField name="TextField_RememberMe_Register" />
+		<TextField name="TextField_PasswordAgain" />
+		<TextField name="TextField_Nickname" />
+
+		<Button name="Checkbox_RememberMe_Register" MouseUp="CHECKBOX_CHANGE" />
+
+		<TextField name="TextField_RegisterNoServiceForLostPasswords" />
+
+		<Button name="Button_Submit_Register" MouseUp="SUBMIT_REGISTER" />
+		<Button name="Button_Cancel_Register" MouseUp="CANCEL_REGISTER" />
+
+		<MovieClip name="MovieClip_ErrorRegisterMarkPassword"
+			Enabled="False" visible="False" />
+		<MovieClip name="MovieClip_ErrorRegisterMarkPasswordRepeat"
+			Enabled="False" visible="False" />
+		<MovieClip name="MovieClip_ErrorRegisterMarkNick" Enabled="False"
+			visible="False" />
+
+		<Button name="Button_Question" MouseUp="NICKNAME_INFO" />
+	</Container>
+
+	<MovieClip name="MovieClip_BirdsAndCereals" visible="True" Enabled="False" />
+</Popup_Info>

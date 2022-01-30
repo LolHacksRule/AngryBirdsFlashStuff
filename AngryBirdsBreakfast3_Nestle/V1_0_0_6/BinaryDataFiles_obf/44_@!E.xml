@@ -1,0 +1,135 @@
+<tuner game="AngryBirds" version="0.0.0">
+
+    <Item_Materials>
+	     <!-- bodyType: Acccepted values are dynamic for moving objects which can take damage such as birds /blocks / pigs   
+																			kinetic for moving objects which can not be damages such as moving ground platforms if we do  implement them later
+																			static for still objects which can not be damaged such as ground layers and terrains-->
+    	<!-- density: a number used to calculate object mass. Mass = density x volume
+							 Bigger mass means objects will fly less when they get hit and they will apply more damage to other objects when they hit them. -->
+
+    	<!-- friction: this number is used to calculate how much velocity loss will occur when they object hit each other 
+							 For example ice should have less friction than others so objects can slide on them without losing much velocity-->	
+
+    	<!-- restitution: this number is used to calculate how much objects will bounce from each other when they hit
+							 For example stone should have higher restitution than grass because objects can bounce better on stone-->
+
+   	    <!-- strenght: this number is used to calculate how much damage an object can take before being destroyed
+							 The final total energy value will be calculated based on strenght, volume and width/height ratio of the object-->
+
+   	    <!-- defense: This number will determine how much counter tolerance an object can show to damages
+							 If the damage is smaller than the defence then object will not lose any energy. This is useful to avoid constant damages in small impacts between blocks-->
+							 
+		<Material id="Material_Misc_Food" bodyType="DYNAMIC" density="0.75" friction="0.7" restitution="0.4" strength="5.0" defence="1.0" />
+		<Material id="Material_Cereal_Items" bodyType="DYNAMIC" density="1" friction="0.7" restitution="0.2" strength="4.0" defence="0.5" />
+		<Material id="Material_Indestructible" bodyType="DYNAMIC" density="1" friction="1" restitution="0.2" strength="-1.0" defence="-1.0" />
+		<Material id="Material_Balloon_Dynamic" bodyType="DYNAMIC" density="0.1" friction="0.7" restitution="0.8" strength="1.0" defence="0.5" />
+		<Material id="Material_Car_Tire_4x4" bodyType="DYNAMIC" density="1.5" friction="10.0" strength="300.0" defence="1.0" restitution="0.6"/>
+		
+	</Item_Materials>
+
+
+    <Item_Shapes>
+	
+		<Shape id="Mug_Cereal" shape="POLYGON">
+			<Vertex index="0" x="0.85" y="-0.94" />
+			<Vertex index="1" x="0.85" y="1.0" />
+			<Vertex index="2" x="-0.94" y="1.0" />
+			<Vertex index="3" x="-0.94" y="-0.94" />
+		</Shape>
+		<Shape id="Bowl_Cereal" shape="POLYGON">
+			<Vertex index="0" x="1.9" y="-0.94" />
+			<Vertex index="1" x="1.7" y="0.94" />
+			<Vertex index="2" x="-1.7" y="0.94" />
+			<Vertex index="3" x="-1.9" y="-0.94" />
+		</Shape>
+		<Shape id="Box_Cereal" shape="POLYGON">
+			<Vertex index="0" x="2.01" y="-2.72" />
+			<Vertex index="1" x="2.01" y="2.72" />
+			<Vertex index="2" x="-2.01" y="2.72" />
+			<Vertex index="3" x="-2.01" y="-2.72" />
+		</Shape>
+		<Shape id="Spoon_Cereal" shape="POLYGON">
+			<Vertex index="0" x="0.5" y="-1.7" />
+			<Vertex index="1" x="0.2" y="1.8" />
+			<Vertex index="2" x="-0.2" y="1.8" />
+			<Vertex index="3" x="-0.5" y="-1.7" />
+			<Vertex index="4" x="0.0" y="-1.9" />
+		</Shape>
+	
+		<Shape id="Balloon_Dynamic" shape="CIRCLE">
+			<Radius value="1.9"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+		<Shape id="Remake_Apple" shape="CIRCLE">
+			<Radius value="1.1"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+		<Shape id="Remake_Banana" shape="POLYGON">
+			<Vertex index="0" x="0.8" y="0.8" />
+			<Vertex index="1" x="-0.8" y="0.8" />
+			<Vertex index="2" x="-1.8" y="-0.4" />
+			<Vertex index="3" x="1.8" y="-0.4" />
+		</Shape>
+		<Shape id="Remake_Strawberry" shape="POLYGON">
+			<Vertex index="0" x="0.4" y="1.0" />  <!-- y ="0.9" works at least) -->
+			<Vertex index="1" x="-0.4" y="1.0" /> <!-- y ="0.9" works at least) -->
+			<Vertex index="4" x="-0.9" y="-0.6" />
+			<Vertex index="4" x="0.9" y="-0.6" />
+		</Shape>
+		<Shape id="Remake_Watermelon" shape="CIRCLE">
+			<Radius value="1.5"/>
+			<Vertex index="0" x="0.0" y="0.0" />
+		</Shape>
+		
+		
+	</Item_Shapes>
+	
+   <Item_Resources_Sounds>
+   </Item_Resources_Sounds>
+
+
+	
+	
+	<SoundChannels>
+		
+	</SoundChannels>
+	
+   	<Items>
+			<Item id="BLOCK_MUG_BLUE" material="Material_Cereal_Items" shape="Mug_Cereal" score="300" health="-1.0" type="2" />
+			<Item id="BLOCK_MUG_RED" material="Material_Cereal_Items" shape="Mug_Cereal" score="300" health="-1.0" type="2" />
+			<Item id="BLOCK_BOWL_GREEN" material="Material_Cereal_Items" shape="Bowl_Cereal" score="300" health="-1.0" type="2" />
+			<Item id="BLOCK_BOWL_BLUE" material="Material_Cereal_Items" shape="Bowl_Cereal" score="300" health="-1.0" type="2" />
+			<Item id="BLOCK_CEREAL_BOX" material="Material_Indestructible" shape="Box_Cereal" score="300" health="-1.0" type="2" />
+			<Item id="BLOCK_SPOON" material="Material_Cereal_Items" shape="Spoon_Cereal" score="300" health="-1.0" type="2" />
+	
+			<Item id="DYNAMIC_BALLOON_PURPLE" material="Material_Balloon_Dynamic" shape="Balloon_Dynamic" score="300" health="1.0" type="2" />
+			<Item id="DYNAMIC_BALLOON_GREEN" material="Material_Balloon_Dynamic" shape="Balloon_Dynamic" score="300" health="-1.0" type="2" />
+			<Item id="BLOCK_REMAKE_EXTRA_WATERMELON" material="Material_Misc_Food" shape="Remake_Watermelon" score="300" health="-1.0" type="2" />
+			<Item id="BLOCK_REMAKE_EXTRA_APPLE" material="Material_Misc_Food" shape="Remake_Apple" score="300" health="-1.0" type="2" />
+			<Item id="BLOCK_REMAKE_EXTRA_STRAWBERRY" material="Material_Misc_Food" shape="Remake_Strawberry" score="300" health="-1.0" type="2" />
+			<Item id="BLOCK_REMAKE_EXTRA_BANANA" material="Material_Misc_Food" shape="Remake_Banana" score="300" health="-1.0" type="2" />
+			<Item id="BREAKABLE_STATIC_BLOCK_TRANSPARENT" material="Material_Misc_Balloon" shape="Block_Rect_1x1_Static" score="50" health="-1.0" type="3" />
+			
+			<Item id="BLOCK_TIRE_4X4" material="Material_Car_Tire_4x4" sounds="TIRE_1" shape="BLOCK_CIRCLE_4X4" health="1000.0" score="2000" type="3"/>
+			
+<!--Dynamic_Balloon_Purple = {
+     type = "circle",
+  radius = 2.0,
+     sprite = "BLOCK_PIG_BALLOON_2",
+  controllable = false,
+  material = "extras",
+  group = "extras",
+  groupIndex = 35,
+  strength = 5,
+  defence = 1,
+  density = 0.1,
+ },	
+--> 
+   </Items>
+   
+   
+   <Material_Damage_Multipliers>
+	</Material_Damage_Multipliers>
+
+   <Material_Velocity_Multipliers>
+  </Material_Velocity_Multipliers></tuner>

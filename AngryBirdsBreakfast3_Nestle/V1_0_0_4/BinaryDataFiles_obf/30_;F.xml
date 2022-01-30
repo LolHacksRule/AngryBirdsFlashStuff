@@ -1,0 +1,40 @@
+<LevelBackgrounds game="AngryBirds" version="0.0.0">
+    <Backgrounds>
+       <!--  The layer which will remain on front should be listed on top  -->
+	  <!--  Background id must be same with the export name of main movie clip. Also same id must be used to create a new ground material  -->
+
+      <Background id="THEME_GENERIC_NESTLE" sky="0x18c6ff" texture="THEME_GENERIC_STATIC" ground="0x321e0d" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_DryForest" >
+      	<Layers>
+      		<Layer id="THEME_GENERIC_BG1" speed="900" foreground="0" scale="1" yOffset="-60"/>
+       		<Layer id="THEME_GENERIC_BG2" speed="750" foreground="0" yOffset="-350" scale="1"/>
+      		<Layer id="THEME_GENERIC_FG" speed="1000" foreground="1" scale="1" yOffset="70"/>
+      	</Layers>
+      </Background>
+      
+      <Background id="THEME_NESQUIK" sky="0x4aa8ff" texture="NESQUIK_THEME_STATIC" ground="0x5f3611" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_DryForest" >
+      	<Layers>
+      		<Layer id="NESQUIK_THEME_BACKGROUND" speed="900" foreground="0" scale="1" yOffset="-300"/>
+       		<Layer id="NESQUIK_THEME_FRONT1" speed="750" foreground="1" yOffset="150" scale="1.5"/>
+      		<Layer id="NESQUIK_THEME_FRONT2" speed="1000" foreground="1" scale="1.5" yOffset="100"/>
+      	</Layers>
+      </Background>
+      
+      <Background id="THEME_CHOCAPIC" sky="0x4aa8ff" texture="CHOCAPIC_THEME_STATIC" ground="0x49280a" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_DryForest" >
+      	<Layers>
+      		<Layer id="CHOCAPIC_THEME_BACKGROUND2" speed="900" foreground="0" scale="1" yOffset="-25"/>
+      		<Layer id="CHOCAPIC_THEME_BACKGROUND1" speed="800" foreground="0" scale="1" yOffset="-300"/>
+      		<Layer id="CHOCAPIC_THEME_FOREGROUND" speed="1000" foreground="1" scale="1" yOffset="105"/>
+      	</Layers>
+      </Background>
+      <Background id="THEME_KOKOKRUNCH" sky="0x4aa8ff" texture="KOKOKRUNCH_STATIC" ground="0x341a06" objectId="GROUND_HILLS" icon="Icon_Theme_Bluegrass" sound="Sound_Ambient_DryForest" >
+      	<Layers>
+      		<Layer id="KOKOKRUNCH_MIDDLE" speed="900" foreground="0" scale="2" yOffset="0"/>
+      		<Layer id="KOKOKRUNCH_BG" speed="800" foreground="0" scale="1.8" yOffset="-550"/>
+      		<Layer id="KOKOKRUNCH_FG" speed="1000" foreground="1" scale="1" yOffset="86"/>
+      	</Layers>
+      </Background>
+      
+      
+  </Backgrounds>
+
+</LevelBackgrounds>

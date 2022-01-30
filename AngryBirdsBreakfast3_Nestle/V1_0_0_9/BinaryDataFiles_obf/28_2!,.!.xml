@@ -1,0 +1,24 @@
+<Popup name="Popup_SelectCountry" visible="True" fromLibrary="True"
+	width="980" height="570" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE">
+		<Container name="Container_CountrySelection">
+		</Container>
+		
+		<Button name="Button_Country_ArrowDown" MouseUp="SCROLL_COUNTRY_DOWN" visible="false"/>
+		<Button name="Button_Country_ArrowUp" MouseUp="SCROLL_COUNTRY_UP" visible="false"/>
+		
+		
+
+		<Container name="Container_SelectLanguageWindow" visible = "false">
+
+			<Container name="Container_LanguageSelection" visible = "true">
+			</Container>
+
+			<Button name="Button_Language_ArrowDown" MouseUp="SCROLL_LANGUAGE_DOWN" visible="false"/>
+			<Button name="Button_Language_ArrowUp" MouseUp="SCROLL_LANGUAGE_UP" visible="false"/>
+		</Container>
+
+		<Button name="Button_Play" MouseUp="BUTTON_PLAY"/>
+
+	<MovieClip name="MovieClip_SoundOff" visible="true" enabled="False" />
+	<Button name="Button_Mute" MouseUp="TOGGLE_SOUNDS" />
+</Popup>

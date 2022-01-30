@@ -1,0 +1,35 @@
+
+<Popup_Info name="Popup_LevelEnd" visible="True" fromLibrary="True"
+	width="980" height="570" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE">
+	<Container name="Container_LevelEndStripe">
+
+		<Button name="Button_Menu" MouseUp="MENU" />
+		<Button name="Button_Replay" MouseUp="REPLAY" />
+		<Button name="Button_NextLevel" MouseUp="NEXT_LEVEL" />
+		<Button name="Button_CutScene" MouseUp="CUTSCENE" visible="False" />
+
+		<MovieClip name="MovieClip_StarLeft" />
+		<MovieClip name="MovieClip_StarCenter" />
+		<MovieClip name="MovieClip_StarRight" />
+
+		<TextField name="TextField_LevelCleared" enabled="True" />
+
+		<TextField name="TextField_LevelEndScore" enabled="True" />
+
+		<TextField name="TextField_NewHighScore" enabled="True"
+			visible="False" />
+
+		<TextField name="TextField_BestScore" enabled="True"
+			visible="False" />
+		<TextField name="MovieClip_BestScoreText" enabled="True"
+			visible="False" />
+		<MovieClip name="MovieClip_BestScoreStars" enabled="True"
+			visible="False" />
+
+		<MovieClip name="MovieClip_Nesquik" visible="False" />
+		<MovieClip name="MovieClip_Chocapic" visible="False" />
+		<MovieClip name="MovieClip_KokoKrunch" visible="False" />
+
+		<MovieClip name="MovieClip_NewHighScoreBadge" visible="False" />
+	</Container>
+</Popup_Info>

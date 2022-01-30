@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<font>
+		<language id="zh">Arial Unicode MS</language>
+		<language id="en">Arial Unicode MS</language>
+		<language id="es">Arial Unicode MS</language>
+		<language id="fin">Arial Unicode MS</language>
+		<language id="heb">Arial Unicode MS</language>
+	</font>
+
+	<group name="CountrySelectionState">
+		<automatic>
+		</automatic>
+	</group>
+	
+	<group name="StatePlay">
+		<automatic>
+			<text id="TextField_Highscore_Label">
+				<language id="en">Highscore</language>
+			</text>
+			<text id="TextField_Score_Label">
+				<language id="en">Score</language>
+				<language id="es">Puntuación</language>
+				<language id="zh">最高分</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="StateEpisodeSelection">
+		<automatic>
+			<text id="TextField_Description">
+				<language id="en">Reveal all the levels with a Nestlé code!</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="StateLevelLoading">
+		<automatic>
+		</automatic>
+	</group>
+
+	<group name="SelectCountry_Popup">
+		<automatic>
+			<button id="Button_Play">
+				<language id="en">Play</language>
+				<language id="id">id</language>
+				<language id="th">th</language>
+				<language id="es">es</language>
+				<language id="fr">fr</language>
+				<language id="nl">nl</language>
+				<language id="el">el</language>
+				<language id="it">it</language>
+				<language id="pt">pt</language>
+				<language id="cs">cs</language>
+				<language id="hu">hu</language>
+				<language id="pl">pl</language>
+				<language id="ro">ro</language>
+				<language id="sk">sk</language>
+				<language id="et">et</language>
+				<language id="lv">lv</language>
+				<language id="lt">lt</language>
+				<language id="sl">sl</language>
+				<language id="hr">hr</language>
+				<language id="bs">bs</language>
+				<language id="sr">sr</language>
+				<language id="sq">sq</language>
+				<language id="mk">mk</language>
+				<language id="bg">bg</language>
+				<language id="he">he</language>
+				<language id="ar">ar</language>
+				<language id="tr">tr</language>
+				<language id="de">de</language>
+				<language id="da">da</language>
+				<language id="fi">fi</language>
+				<language id="no">no</language>
+				<language id="sv">sv</language>
+				<language id="ru">ru</language>
+				<language id="kk">kk</language>
+				<language id="uk">uk</language>
+			</button>
+		</automatic>
+	</group>
+
+	<group name="ServerError_Popup">
+		<automatic>
+			<text id="TextField_ServerError" isPopup="true">
+				<language id="en">Oops! An error occured. Please refresh the page.</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="Error_Popup">
+		<automatic>
+			<text id="TextField_Error" isPopup="true">
+				<language id="en">Oops! An error occured. Please refresh the page.</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="Logout_Popup">
+		<automatic>
+			<text id="TextField_LogoutQuestion" isPopup="true">
+				<language id="en">Are you sure you want to log out?</language>
+				<language id="es">¿Seguro que quiere finalizar la sesión?</language>
+				<language id="zh">确定退出吗？</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="Login_Popup">
+		<automatic>
+			<text id="TextField_Nickname_Login">
+				<language id="en">Nickname</language>
+				<language id="es">Nombre de usuario</language>
+				<language id="zh">昵称</language>
+			</text>
+			<text id="Text_Password">
+				<language id="en">Password</language>
+				<language id="es">Contraseña</language>
+				<language id="zh">密码</language>
+			</text>
+			<text id="Text_Password_Register">
+				<language id="en">Password</language>
+				<language id="es">Contraseña</language>
+				<language id="zh">密码</language>
+			</text>
+			<text id="TextField_RememberMe">
+				<language id="en">Remember me</language>
+				<language id="es">Recordar contraseña</language>
+				<language id="zh">下次记住我</language>
+			</text>
+			<text id="TextField_RememberMe_Register">
+				<language id="en">Remember me</language>
+				<language id="es">Recordar contraseña</language>
+				<language id="zh">下次记住我</language>
+			</text>
+			<text id="TextField_PasswordAgain">
+				<language id="en">Repeat password</language>
+				<language id="es">Repita su contraseña</language>
+				<language id="zh">确认密码</language>
+			</text>
+			<text id="TextField_Nickname">
+				<language id="en">Nickname</language>
+				<language id="es">Nombre de usuario</language>
+				<language id="zh">昵称</language>
+			</text>
+			<text id="TextField_LoginUseSameCountry">
+				<language id="en">Note! Always log in using the same country.</language>
+			</text>
+			<text id="TextField_RegisterNoServiceForLostPasswords">
+				<language id="en">Note! There is no service to retrieve lost passwords.&#10;Make sure you remember your password.</language>
+			</text>
+			<button id="Button_Tab_Login">
+				<language id="en">Click here to login</language>
+			</button>
+			<button id="Button_Tab_Register">
+				<language id="en">Click here to register</language>
+			</button>
+
+			<text id="TextField_LoginTitle">
+				<language id="en">Login</language>
+			</text>
+
+			<text id="TextField_RegisterTitle">
+				<language id="en">Register</language>
+			</text>
+
+			<button id="Button_Login">
+				<language id="en">Login</language>
+				<language id="es">Iniciar sesión</language>
+				<language id="zh">登录</language>
+			</button>
+		</automatic>
+	</group>
+
+	<group name="StateEnd">
+		<automatic>
+			<text id="TextField_LevelCleared">
+				<language id="en">Level Cleared!</language>
+				<language id="es">¡Nivel terminado!</language>
+				<language id="zh">闯关成功！</language>
+			</text>
+			<text id="MovieClip_BestScoreText">
+				<language id="en">Best:</language>
+				<language id="es">Mejor:</language>
+				<language id="zh">最高分</language>
+			</text>
+			<text id="TextField_NewHighScore">
+				<language id="en">New Highscore!</language>
+				<language id="es">¡Nuevo puntaje alto!</language>
+				<language id="zh"> 新纪录！</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="StateEndFail">
+		<automatic>
+			<text id="TextField_LevelFailed">
+				<language id="en">Level Failed!</language>
+				<language id="es">¡Nivel fallado!</language>
+				<language id="zh">闯关失败！</language>
+			</text>
+		</automatic>
+	</group>
+
+	<group name="Error_Messages">
+		<manual>
+			<text id="NICKNAME_LENGTH">
+				<language id="en">Nickname is too short. Use at least 5 characters.</language>
+				<language id="es">Su nombre de usuario es demasiado corto.
+					Utilice al menos 5 caracteres.</language>
+				<language id="zh">昵称太短，至少需要5个字母.</language>
+			</text>
+			<text id="PASSWORD_LENGTH">
+				<language id="en">Password is too short. Use at least 5 characters.</language>
+				<language id="es">La contraseña es demasiado corta. Utilice al
+					menos 5 caracteres.</language>
+				<language id="zh">密码太短，至少需要5个字母.</language>
+			</text>
+			<text id="PASSWORDS_DONT_MATCH">
+				<language id="en">The passwords don't match.</language>
+				<language id="es">Las contraseñas no coinciden.</language>
+				<language id="zh">前后密码不一致，请重新确认.</language>
+			</text>
+			<text id="PASSWORD_MISSING">
+				<language id="en">You need to enter a password.</language>
+				<language id="es">Es necesario introducir una contraseña.</language>
+				<language id="zh">请输入密码.</language>
+			</text>
+			<text id="NICKNAME_MISSING">
+				<language id="en">You need to enter a nickname.</language>
+				<language id="es">You need to enter a nickname ES.</language>
+				<language id="zh">You need to enter a nickname ZH.</language>
+			</text>
+			<text id="CONNECTION_ERROR_RETRY">
+				<language id="en">Connection error. Please retry.</language>
+				<language id="es">Error de conexión. Por favor, inténtelo de
+					nuevo.</language>
+				<language id="zh">对不起，暂时无法连接。请稍后再试.</language>
+			</text>
+			<text id="PLAYER_ID_USED">
+				<language id="en">That nickname is already in use. Please select another nickname.</language>
+			</text>
+			<text id="PLAYER_ID_USED_SUGGESTION">
+				<language id="en">That nickname is already in use. Perhaps you would like to use this nickname instead:</language>
+			</text>
+			<text id="PLAYER_INVALID_LOGIN">
+				<language id="en">The login credentials are not valid.</language>
+				<language id="es">Las credenciales de acceso no son válidas.</language>
+				<language id="zh">对不起，登录信息不一致，请重新确认。</language>
+			</text>
+			<text id="PLAYER_BANNED">
+				<language id="en">The nickname you provided has been banned.</language>
+			</text>
+			<text id="IP_BANNED">
+				<language id="en">Your IP has been banned.</language>
+				<language id="es">La IP ha sido bloqueada.</language>
+				<language id="zh"> 对不起，IP地址已禁用.</language>
+			</text>
+			<text id="TOO_MANY_CODES">
+				<language id="en">You have entered too many invalid codes, please try again later.</language>
+			</text>
+			<text id="FIELD_NOT_VALID">
+				<language id="en">The nickname you have entered is invalid.</language>
+				<language id="es">El nombre de usuario que ha introducido no es
+					válido.</language>
+				<language id="zh">对不起，该昵称不合格。</language>
+			</text>
+			<text id="FIELD_OBLIGATORY">
+				<language id="en">Please fill in all the fields.</language>
+			</text>
+			<text id="FIELD_LENGTH">
+				<language id="en">The nickname you have entered is invalid.</language>
+				<language id="es">El nombre de usario que ha introducido no es
+					válido.</language>
+				<language id="zh">昵称需在12个字母以内。</language>
+			</text>
+			<text id="SECURITY_ERROR">
+				<language id="en">Security violation.</language>
+				<language id="es">Violación de Seguridad.</language>
+				<language id="zh">对不起，该操作不允许。</language>
+			</text>
+
+			<text id="CODE_NOT_EXIST">
+				<language id="en">Invalid code. Please double-check that you've entered the code correctly. </language>
+			</text>
+			<text id="CODE_NOT_EXIST_TOO_MANY_WARNING">
+				<language id="en">Invalid code. Please check that you have entered the code correctly; further invalid codes will lock the code panel.</language>
+			</text>
+			<text id="CODE_USED">
+				<language id="en">Code already used</language>
+				<language id="es">Código ya utilizado</language>
+				<language id="zh">对不起，该激活码已被使用。</language>
+			</text>
+			<text id="ENTER_CODE">
+				<language id="en">Enter a code</language>
+				<language id="es">Introducir código</language>
+			</text>
+			<text id="ONLY_LETTERS_AND_NUMBERS_ALLOWED">
+				<language id="en">Use only letters (a-z) and numbers (0-9).</language>
+				<language id="es">Usar sólo letras (a-z) y números (0-9).</language>
+			</text>
+			<text id="NOT_ALLOWED_TO_PUT_ONLY_NUMBERS_IN_NICKNAME">
+				<language id="en">The nickname must contain at least one letter (a-z).</language>
+			</text>
+			<text id="NICKNAME_INFO">
+				<language id="en">This name will be publicly displayed on the leaderboard. It should be 5-10 characters long.</language>
+			</text>
+		</manual>
+	</group>
+</data>

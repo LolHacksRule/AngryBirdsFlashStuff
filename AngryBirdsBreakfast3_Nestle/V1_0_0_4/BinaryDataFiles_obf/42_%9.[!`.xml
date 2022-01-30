@@ -1,0 +1,7 @@
+<Popup_Info name="Popup_ErrorPane" visible="True" fromLibrary="True"
+	width="980" height="570" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE">
+	<Container name="Container_ErrorPane">
+		<TextField name="TextField_ErrorMessage" enabled="True" />
+		<TextField name="TextField_NicknameSuggestion" visible="False" />
+	</Container>
+</Popup_Info>

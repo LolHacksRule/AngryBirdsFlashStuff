@@ -1,0 +1,190 @@
+<UIDescription>
+	<Views>
+		<ViewCountrySelection name="ViewCountrySelection" width="980" height="570" scaleV="True" scaleH="True" aspectRatioFixed="True">
+			<MovieClip name="MovieClip_BackGround" />
+		</ViewCountrySelection>
+		
+		<ViewLevelSelectionCustom name="ViewLevelSelectionCustom" width="980" height="570" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" aspectRatioFixed="TRUE" alignV="CENTER" alignH="CENTER" scaleV="True" scaleH="True">
+			<Container name="Container_Chapter1">
+				<Button name="Button_Level1" MouseUp="C1_LEVEL_1" />
+				<Button name="Button_Level2" MouseUp="C1_LEVEL_2" />
+				<Button name="Button_Level3" MouseUp="C1_LEVEL_3" />
+				<Button name="Button_Level4" MouseUp="C1_LEVEL_4" />
+				<Button name="Button_Level5" MouseUp="C1_LEVEL_5" />
+			</Container>
+
+			<Container name="Container_Chapter2">
+				<Button name="Button_Level6" MouseUp="C2_LEVEL_1" />
+				<Button name="Button_Level7" MouseUp="C2_LEVEL_2" />
+				<Button name="Button_Level8" MouseUp="C2_LEVEL_3" />
+				<Button name="Button_Level9" MouseUp="C2_LEVEL_4" />
+				<Button name="Button_Level10" MouseUp="C2_LEVEL_5" />
+			</Container>
+
+			<Container name="Container_CodeInputBox" enabled="TRUE">
+				<TextField name="TextField_InputCode"/>
+				<TextField name="TextField_Description"/>
+				<Button name="Button_SubmitCode" MouseUp="SUBMIT_CODE" />
+				<Button name="Button_Question" MouseUp="OPEN_FAQ" />
+			</Container>
+		</ViewLevelSelectionCustom>
+
+		<ViewLevelSelectionCustomNesquik name="ViewLevelSelectionCustomNesquik" width="980" height="570" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" aspectRatioFixed="TRUE" alignV="CENTER" alignH="CENTER" scaleV="True" scaleH="True">
+			<Container name="Container_Chapter1">
+				<Button name="Button_Level1" MouseUp="C1_LEVEL_1" />
+				<Button name="Button_Level2" MouseUp="C1_LEVEL_2" />
+				<Button name="Button_Level3" MouseUp="C1_LEVEL_3" />
+				<Button name="Button_Level4" MouseUp="C1_LEVEL_4" />
+				<Button name="Button_Level5" MouseUp="C1_LEVEL_5" />
+			</Container>
+
+			<Container name="Container_Chapter2">
+				<Button name="Button_Level6" MouseUp="C2_LEVEL_1" />
+				<Button name="Button_Level7" MouseUp="C2_LEVEL_2" />
+				<Button name="Button_Level8" MouseUp="C2_LEVEL_3" />
+				<Button name="Button_Level9" MouseUp="C2_LEVEL_4" />
+				<Button name="Button_Level10" MouseUp="C2_LEVEL_5" />
+			</Container>
+
+			<Container name="Container_CodeInputBox" enabled="TRUE">
+				<TextField name="TextField_InputCode"/>
+				<TextField name="TextField_Description"/>
+				<Button name="Button_SubmitCode" MouseUp="SUBMIT_CODE" />
+				<Button name="Button_Question" MouseUp="OPEN_FAQ" />
+			</Container>
+		</ViewLevelSelectionCustomNesquik>
+
+		<ViewLevelSelectionCustomChocapic name="ViewLevelSelectionCustomChocapic" width="980" height="570" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" aspectRatioFixed="TRUE" alignV="CENTER" alignH="CENTER" scaleV="True" scaleH="True">
+			<Container name="Container_Chapter1">
+				<Button name="Button_Level1" MouseUp="C1_LEVEL_1" />
+				<Button name="Button_Level2" MouseUp="C1_LEVEL_2" />
+				<Button name="Button_Level3" MouseUp="C1_LEVEL_3" />
+				<Button name="Button_Level4" MouseUp="C1_LEVEL_4" />
+				<Button name="Button_Level5" MouseUp="C1_LEVEL_5" />
+			</Container>
+
+			<Container name="Container_Chapter2">
+				<Button name="Button_Level6" MouseUp="C2_LEVEL_1" />
+				<Button name="Button_Level7" MouseUp="C2_LEVEL_2" />
+				<Button name="Button_Level8" MouseUp="C2_LEVEL_3" />
+				<Button name="Button_Level9" MouseUp="C2_LEVEL_4" />
+				<Button name="Button_Level10" MouseUp="C2_LEVEL_5" />
+			</Container>
+
+			<Container name="Container_CodeInputBox" enabled="TRUE">
+				<TextField name="TextField_InputCode"/>
+				<TextField name="TextField_Description"/>
+				<Button name="Button_SubmitCode" MouseUp="SUBMIT_CODE" />
+				<Button name="Button_Question" MouseUp="OPEN_FAQ" />
+			</Container>
+		</ViewLevelSelectionCustomChocapic>
+
+		<ViewLevelSelectionCustomKokoKrunch name="ViewLevelSelectionCustomKokoKrunch" width="980" height="570" isOverlay="True" overlayColor="0xFF0000" overlayAlpha="0" aspectRatioFixed="TRUE" alignV="CENTER" alignH="CENTER" scaleV="True" scaleH="True">
+			<Container name="Container_Chapter1">
+				<Button name="Button_Level1" MouseUp="C1_LEVEL_1" />
+				<Button name="Button_Level2" MouseUp="C1_LEVEL_2" />
+				<Button name="Button_Level3" MouseUp="C1_LEVEL_3" />
+				<Button name="Button_Level4" MouseUp="C1_LEVEL_4" />
+				<Button name="Button_Level5" MouseUp="C1_LEVEL_5" />
+			</Container>
+
+			<Container name="Container_Chapter2">
+				<Button name="Button_Level6" MouseUp="C2_LEVEL_1" />
+				<Button name="Button_Level7" MouseUp="C2_LEVEL_2" />
+				<Button name="Button_Level8" MouseUp="C2_LEVEL_3" />
+				<Button name="Button_Level9" MouseUp="C2_LEVEL_4" />
+				<Button name="Button_Level10" MouseUp="C2_LEVEL_5" />
+			</Container>
+
+			<Container name="Container_CodeInputBox" enabled="TRUE">
+				<TextField name="TextField_InputCode"/>
+				<TextField name="TextField_Description"/>
+				<Button name="Button_SubmitCode" MouseUp="SUBMIT_CODE" />
+				<Button name="Button_Question" MouseUp="OPEN_FAQ" />
+			</Container>
+		</ViewLevelSelectionCustomKokoKrunch>
+
+		<ViewLogin name="ViewLogin" width="980" height="570" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE">
+			<Button name="Button_Back" MouseUp="BACK" alignH="RIGHT"/>
+		</ViewLogin>
+		
+		<!-- VIEW CUT SCENE -->
+		<View_CutScene name="ViewCutSceneCustom" width="760" height="570" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE">
+			<Container name="Container_Cutscene">
+			</Container>
+			<Button name="Button_Skip" visible="False" MouseUp="Skip"/>
+			
+			<MovieClip name="MovieClip_Loading" visible="true" alignH="CENTER" alignV="CENTER" />
+			<!-- <Button name="Button_FullScreen" MouseUp="FULLSCREEN_BUTTON" alignH="RIGHT" alignV="BOTTOM"/>-->
+		</View_CutScene> 
+
+		<View_Credits name="ViewCredits" width="980" height="570" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE">
+			<Container name="Container_Credits" visible="false">
+				<TextField name="TextField_Version_Number" text="1.0.0 placeholder"
+					enabled="True" />
+				<TextField name="TextField_Version_Number_Server" text="1.0.0 placeholder server"
+					enabled="True" />
+			</Container>
+			<Button name="Button_Back" MouseUp="CREDITS_CLOSE_BUTTON" />
+		</View_Credits>
+
+		<View_ChapterSelection name="ViewChapterSelectionBlack" width="980" height="570" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE">
+			<MovieClip name="MovieClip_Logo" alignH="CENTER" />
+			<MovieClip name="MovieClip_ChapterSelectionBG" />
+			<Container name="Container_ChapterSelection">
+				<Button name="Button_Login0" MouseUp="LOGIN" visible="false" />
+				<Button name="Button_Login1" MouseUp="LOGIN" visible="false" />
+				<Button name="Button_Login2" MouseUp="LOGIN" visible="false" />
+
+				<MovieClip name="MovieClip_Star1" visible="false" />
+				<MovieClip name="MovieClip_Star2" visible="false" />
+				<MovieClip name="MovieClip_Star3" visible="false" />
+			</Container>
+			<Button name="Button_Previous" MouseUp="PREVIOUS" />
+			<Button name="Button_Next" MouseUp="NEXT" />
+			<Container name="EnterCode">
+				<TextField name="TextField_PowerupPanelTitle" visible="true" />
+				<Button name="Button_CodeInstructions" MouseUp="CODE_FAQ" scaleOnMouseOver="True" />
+				<TextField name="TextField_TazosCodeEnter" visible="true" />
+				<Button name="Button_SubmitCode" MouseUp="UNLOCK_POWER_UP" />
+			</Container>
+
+		</View_ChapterSelection>
+
+		<!-- VIEW LEVEL PLAY -->
+		<View_LevelPlay name="ViewLevelPlayCustom" width="980" height="570">
+			<Container name="Container_HiscoreContainer" enabled="False" alignH="RIGHT">
+				<TextField name="TextField_Score_Label" text="Score" enabled="False" />
+				<TextField name="TextField_Highscore_Label" text="Highscore" enabled="False" />
+				<TextField name="TextField_Hiscore" text="0" enabled="False" />
+				<TextField name="TextField_CurrentScore" text="0" enabled="False" />
+			</Container>
+			<!-- Zoom Buttons -->
+			<Container name="Container_ZoomButtons" enabled="False" scaleFunction="SQRT" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE" alignV="BOTTOM" alignH="LEFT">
+				<Button name="Button_ZoomIn" MouseDown="ZOOM_IN" MouseUp="ZOOM_IN_RELEASE"
+					MouseOut="ZOOM_IN_RELEASE" />
+				<Button name="Button_ZoomOut" MouseDown="ZOOM_OUT" MouseUp="ZOOM_OUT_RELEASE"
+					MouseOut="ZOOM_OUT_RELEASE" />
+				<Button name="Button_Magnify" />
+			</Container>
+			<Button name="Button_Pause" MouseUp="PAUSE" scaleFunction="SQRT" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE"/>
+			<Button name="Button_Restart" MouseUp="RESTART_LEVEL" scaleFunction="SQRT" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE"/>
+		</View_LevelPlay>
+
+		<!-- VIEW LEVEL LOAD -->
+		<View_LevelLoad name="ViewLevelLoad" width="760" height="570" scaleH="TRUE" scaleV="TRUE" aspectRatioFixed="TRUE">
+			<MovieClip name="MovieClip_BackGround" />
+			<MovieClip name="MovieClip_Loading" enabled="False" />
+		</View_LevelLoad>
+
+
+		<!-- NEW LEVEL END VIEW -->
+		<ViewLevelEndCustom name="ViewLevelEndCustom" aspectRatioFixed="TRUE" width="980" height="570">
+		</ViewLevelEndCustom>
+		<!-- NEW LEVEL END VIEW -->
+
+		<ViewLevelEndFailCustom name="ViewLevelEndFailCustom" aspectRatioFixed="TRUE" width="980" height="570"> 
+		</ViewLevelEndFailCustom>
+	</Views>
+
+</UIDescription>
