@@ -76,8 +76,8 @@ package com.rovio.Box2D.Dynamics.Joints
          this.m_localAnchor2.SetV(param1.localAnchorB);
          this.m_ratio = param1.ratio;
          this.m_constant = param1.lengthA + this.m_ratio * param1.lengthB;
-         this.m_maxLength1 = b2Math.Min(param1.maxLengthA,this.m_constant - this.m_ratio * b2internal::9!2);
-         this.m_maxLength2 = b2Math.Min(param1.maxLengthB,(this.m_constant - b2internal::9!2) / this.m_ratio);
+         this.m_maxLength1 = b2Math.Min(param1.maxLengthA,this.m_constant - this.m_ratio * b2internal::b2_minPulleyLength);
+         this.m_maxLength2 = b2Math.Min(param1.maxLengthB,(this.m_constant - b2internal::b2_minPulleyLength) / this.m_ratio);
          this.m_impulse = 0;
          this.m_limitImpulse1 = 0;
          this.m_limitImpulse2 = 0;
