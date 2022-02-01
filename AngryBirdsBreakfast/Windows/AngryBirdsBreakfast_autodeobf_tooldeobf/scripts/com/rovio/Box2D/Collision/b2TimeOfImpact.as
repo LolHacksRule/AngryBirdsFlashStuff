@@ -69,7 +69,7 @@ package com.rovio.Box2D.Collision
             s_distanceInput.proxyB = _loc3_;
             s_distanceInput.transformA = s_xfA;
             s_distanceInput.transformB = s_xfB;
-            b2Distance.Distance(s_distanceOutput,s_cache,SetVV);
+            b2Distance.Distance(s_distanceOutput,s_cache,s_distanceInput);
             if(s_distanceOutput.distance <= 0)
             {
                _loc8_ = 1;
