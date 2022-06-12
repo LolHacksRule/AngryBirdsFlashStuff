@@ -1,0 +1,182 @@
+<LevelBackgrounds game="AngryBirdsFacebook" version="0.0.0">
+    <Backgrounds>
+    	<!--  The layer which will remain on front should be listed on top  -->
+		<!--  Background id must be same with the export name of main movie clip. Also same id must be used to create a new ground material  -->
+	
+	
+		<!--  Facebook background -->
+		<Background id="BACKGROUND_FB_TOURNAMENT" sky="0x0e172b" texture="THEME_GROUND_FB_TOURNAMENT" ground="0x0d1925" objectId="GROUND_HILLS" sound="Sound_Ambient_Tournament" >
+			<Layers>
+				<Layer id="THEME_FB_TOURNAMENT_BG2" speed="100" foreground="0" scale="2" bottomOffset="-1260" xOffset="500" tileable="false"/>
+				
+				<Layer id="THEME_FB_TOURNAMENT_BG5" speed="500" foreground="0" scale="2" bottomOffset="-455"/>
+				<Layer id="THEME_FB_TOURNAMENT_BG4" speed="600" foreground="0" scale="2" bottomOffset="-90"/>
+				
+				<Layer id="THEME_FB_TOURNAMENT_BG3" speed="400" foreground="0" scale="2" bottomOffset="-620"/>
+				<Layer id="THEME_FB_TOURNAMENT_BG1" speed="200" foreground="0" scale="2" bottomOffset="-785"/>
+				
+				<Layer id="THEME_FB_TOURNAMENT_FG3" speed="1450" foreground="1" scale="2" bottomOffset="215"/>
+				<Layer id="THEME_FB_TOURNAMENT_FG2" speed="1200" foreground="1" scale="2" bottomOffset="170"/>
+				<Layer id="THEME_FB_TOURNAMENT_FG1" speed="1000" foreground="1" scale="2" bottomOffset="80"/>
+				
+			</Layers>
+		</Background>
+		
+			<!--  Facebook background -->
+		<Background id="BACKGROUND_FB_PIGINIBEACH" sky="0xff7e4b" texture="THEME_GROUND_FB_PIGINIBEACH" ground="0xfad789" objectId="GROUND_HILLS" sound="Sound_Ambient_Jungle" >
+			<Layers>
+				
+				<Layer id="THEME_FB_PIGINIBEACH_BG4" speed="800" foreground="0" scale="2.5" tileable="false"/>
+				
+				<Layer id="THEME_FB_PIGINIBEACH_BG3" speed="600" foreground="0" scale="2.5" tileable="false"/>
+				
+				<Layer id="THEME_FB_PIGINIBEACH_BG2" speed="500" foreground="0" scale="2" tileable="true">
+				  <ParticleEmitter id="wave_red-1" x="0" y="-115" scale="1.0" rotation="0" fastForwardsAfterAdd="32" alpha="1.0" />
+				  <ParticleEmitter id="wave_red-1" x="797" y="-115" scale="1.0" rotation="0" fastForwardsAfterAdd="32" alpha="1.0" />
+				  <ParticleEmitter id="wave-2" x="0" y="35" scale="1.0" rotation="0" fastForwardsAfterAdd="10" alpha="1.0" />
+				  <ParticleEmitter id="wave-2" x="797" y="35" scale="1.0" rotation="0" fastForwardsAfterAdd="10" alpha="1.0" />
+				  <ParticleEmitter id="wave-splash" x="0" y="-5" scale="1.0" rotation="0" fastForwardsAfterAdd="118" alpha="1.0" />
+				  <ParticleEmitter id="wave-splash" x="797" y="-5" scale="1.0" rotation="0" fastForwardsAfterAdd="118" alpha="1.0" />
+				</Layer>
+				
+				<Layer id="THEME_FB_PIGINIBEACH_BG1" speed="200" foreground="0" scale="2" optional="true"/>
+				
+				<Layer id="THEME_FB_PIGINIBEACH_FG1" speed="1000" foreground="1" scale="2" />
+			</Layers>
+		</Background>
+		
+		<!--  Greenday background -->
+		<Background id="BACKGROUND_FB_GREENDAY" sky="0x002a0f" texture="THEME_GROUND_FB_GREENDAY" ground="0x060c00" objectId="GROUND_HILLS" sound="Sound_Ambient_Greenday" >
+			<Layers>
+				
+				<Layer id="THEME_FB_GREENDAY_BG3" speed="900" foreground="0" scale="2"  bottomOffset="-175" optional="true"/>
+				<Layer id="THEME_FB_GREENDAY_BG4" speed="800" foreground="0" scale="2"  bottomOffset="-175"/>
+				<Layer id="THEME_FB_GREENDAY_BG2" speed="700"  foreground="0" scale="2" tileable="false" xOffset="3500" bottomOffset="-527"/>
+				<Layer id="THEME_FB_GREENDAY_BG1" speed="600"  foreground="0" scale="2"  bottomOffset="-555"/>
+				
+				<Layer id="THEME_FB_GREENDAY_FG3" speed="1450" foreground="1" scale="2" bottomOffset="265"/>
+				<Layer id="THEME_FB_GREENDAY_FG2" speed="1200" foreground="1" scale="2" bottomOffset="210"/>
+				<Layer id="THEME_FB_GREENDAY_FG1" speed="1000" foreground="1" scale="2" bottomOffset="-30" optional="true"/>
+				
+			</Layers>
+		</Background>
+	
+		<!--  Facebook background -->
+		<Background id="BACKGROUND_FB_BEACH" sky="0x00367b" texture="THEME_GROUND_FB_BEACH" ground="0xeaee84" objectId="GROUND_HILLS" sound="Sound_Ambient_Jungle" >
+			<Layers>
+				
+				<Layer id="THEME_FB_BEACH_BG4" speed="800" foreground="0" scale="2.5" tileable="false"/>
+				
+				<Layer id="THEME_FB_BEACH_BG3" speed="600" foreground="0" scale="2.5" tileable="false"/>
+				
+				<Layer id="THEME_FB_BEACH_BG2" speed="500" foreground="0" scale="2" tileable="true">
+				  <ParticleEmitter id="wave-1" x="0" y="-115" scale="1.0" rotation="0" fastForwardsAfterAdd="32" alpha="1.0" />
+				  <ParticleEmitter id="wave-1" x="797" y="-115" scale="1.0" rotation="0" fastForwardsAfterAdd="32" alpha="1.0" />
+				  <ParticleEmitter id="wave-2" x="0" y="35" scale="1.0" rotation="0" fastForwardsAfterAdd="10" alpha="1.0" />
+				  <ParticleEmitter id="wave-2" x="797" y="35" scale="1.0" rotation="0" fastForwardsAfterAdd="10" alpha="1.0" />
+				  <ParticleEmitter id="wave-splash" x="0" y="-5" scale="1.0" rotation="0" fastForwardsAfterAdd="118" alpha="1.0" />
+				  <ParticleEmitter id="wave-splash" x="797" y="-5" scale="1.0" rotation="0" fastForwardsAfterAdd="118" alpha="1.0" />
+				</Layer>
+				
+				<Layer id="THEME_FB_BEACH_BG1" speed="200" foreground="0" scale="2" optional="true" sky="0x70CBFF"/>
+				
+				<Layer id="THEME_FB_BEACH_FG1" speed="1000" foreground="1" scale="2" />
+			</Layers>
+		</Background>
+	
+	
+    	<!--  Facebook background -->
+		<Background id="BACKGROUND_FB_MOUNTAINS" sky="0x221157" texture="THEME_GROUND_FB_MOUNTAINS" ground="0x16121F" objectId="GROUND_HILLS" sound="Sound_Ambient_Rain" >
+			<Layers>
+				<Layer id="THEME_FB_MOUNTAINS_FG1" speed="1000" bottomOffset="190" foreground="1" scale="2" />
+				<!--<Layer id="THEME_FB_MOUNTAINS_FG2" speed="1000" foreground="1" scale="2" />-->
+				
+				<Layer id="THEME_FB_LAYER_4" speed="900" foreground="0" scale="2" />
+				
+				<Layer id="THEME_FB_LAYER_3" speed="700" foreground="0" scale="2.5" >
+					<ParticleEmitter id="rain" x="0" y="-1685" scale="2.5" rotation="0" behindGraphic="true" fastForwardsAfterAdd="15" alpha="0.6" />
+				  <ParticleEmitter id="rain" x="0" y="-1685" scale="2.5" rotation="0" fastForwardsAfterAdd="15" alpha="1.0" />
+				</Layer>
+				<Layer id="THEME_FB_LAYER_2" xOffset="2860" speed="300" foreground="0" scale="2.5" tileable="false">
+				  <!--<ParticleEmitter id="rain" x="0" y="-1685" scale="2.0" rotation="0" fastForwardsAfterAdd="15" alpha="0.6" />-->
+				</Layer>
+				
+				<Layer id="THEME_FB_LAYER_1" speed="200" foreground="0" scale="2.5" />
+			</Layers>
+		</Background>
+		
+		<Background id="BACKGROUND_FB_HALLOWEEN2012" sky="0x22172b" texture="THEME_FB_HALLOWEEN2012_GROUND" ground="0x25351b" objectId="GROUND_HILLS" sound="Sound_Ambient_Halloween2012" >
+			<Layers>
+				<Layer id="THEME_FB_HALLOWEEN2012_FG1" speed="1000" bottomOffset="180" foreground="1" scale="1.0" />
+				<!--<Layer id="THEME_FB_MOUNTAINS_FG2" speed="1000" foreground="1" scale="2" />-->
+				<Layer id="THEME_FB_HALLOWEEN2012_MG3" speed="900" bottomOffset="-500" foreground="0" scale="2.5" />
+				
+				<Layer id="THEME_FB_HALLOWEEN2012_MG2" speed="800" bottomOffset="-300" foreground="0" scale="2" />
+				
+				<Layer id="THEME_FB_HALLOWEEN2012_MG1" speed="500" bottomOffset="-400" foreground="0"  scale="2.5" ></Layer>
+				
+				
+				<Layer id="THEME_FB_HALLOWEEN2012_BG1" speed="200" bottomOffset="-600" foreground="0" scale="2.0" />
+			</Layers>
+		</Background>
+
+		<Background id="BACKGROUND_FB_WATERFALL" sky="0xF87363" texture="THEME_GROUND_FB_WATERFALL" ground="0x204c00" objectId="GROUND_HILLS" sound="Sound_Ambient_Waterfall" >
+			<Layers>
+			 
+				<Layer id="THEME_FB_WATERFALL_GROUND" speed="1200" foreground="1" scale="2" bottomOffset="150"/>
+				
+				<Layer id="THEME_FB_WATERFALL_WATERFALL" speed="750" foreground="0" scale="2" bottomOffset="-172" xOffset="2450" tileable="false">
+					<ParticleEmitter id="waterfall" x="190" y="-760" scale="2" rotation="0" fastForwardsAfterAdd="100" alpha="1.0" />
+					<ParticleEmitter id="waterfall-steam" x="75" y="-230" scale="2" rotation="0" fastForwardsAfterAdd="100" alpha="1.0" />
+					<ParticleEmitter id="waterfall-steam" x="125" y="-240" scale="2.3" rotation="0" fastForwardsAfterAdd="100" alpha="1.0" />
+					<ParticleEmitter id="waterfall-steam" x="175" y="-245" scale="2.5" rotation="0" fastForwardsAfterAdd="100" alpha="1.0" />
+					<ParticleEmitter id="waterfall-steam" x="225" y="-245" scale="2.5" rotation="0" fastForwardsAfterAdd="100" alpha="1.0" />
+					<ParticleEmitter id="waterfall-steam" x="275" y="-240" scale="2.3" rotation="0" fastForwardsAfterAdd="100" alpha="1.0" />
+					<ParticleEmitter id="waterfall-steam" x="325" y="-230" scale="2" rotation="0" fastForwardsAfterAdd="100" alpha="1.0" />
+					<ParticleEmitter id="waterfall-steam-2" x="120" y="-250" scale="2" rotation="0" fastForwardsAfterAdd="100" alpha="1.0" />
+					<ParticleEmitter id="waterfall-steam-2" x="210" y="-265" scale="2.5" rotation="0" fastForwardsAfterAdd="100" alpha="1.0" />
+					<ParticleEmitter id="waterfall-steam-2" x="300" y="-250" scale="2" rotation="0" fastForwardsAfterAdd="100" alpha="1.0" />
+				</Layer>
+				<Layer id="THEME_FB_WATERFALL_RIVER" speed="700" foreground="0" scale="2" bottomOffset="0">
+					<!-- <ParticleEmitter id="water" x="315" y="-215" scale="2.5" rotation="0" fastForwardsAfterAdd="100" alpha="1.0" /> -->
+					<!--  <ParticleEmitter id="water" x="1545" y="-195" scale="2.5" rotation="0" fastForwardsAfterAdd="100" alpha="1.0" /> -->
+				</Layer>
+				<Layer id="THEME_FB_WATERFALL_TREES" speed="350" foreground="0" scale="2.5" bottomOffset="-820" optional="true"/>
+				<Layer id="THEME_FB_WATERFALL_MOUNTAIN" speed="200" foreground="0" bottomOffset="-870" xOffset="3000" scale="2.5" tileable="false">
+					<ParticleEmitter id="cloud" x="-2500" y="-1200" scale="2" rotation="0" fastForwardsAfterAdd="8000" alpha="1.0" behindGraphic="true"/>
+				</Layer>
+				<Layer id="THEME_FB_WATERFALL_SKY" speed="200" foreground="0" bottomOffset="-750" scale="2.5" optional="true"/>
+				
+			</Layers>
+		</Background>
+		
+		<Background id="BACKGROUND_SPACE" sky="0x001327" texture="THEME_GROUND_FB_SPACE" ground="0x012c57" objectId="GROUND_HILLS" colorOnly="true">
+			<Layers>
+				<Layer id="THEME_FB_SPACE" speed="200" foreground="0" bottomOffset="-1250" scale="2"/>
+			</Layers>
+		</Background>
+		
+		<Background id="BACKGROUND_LOTUS" sky="0x000000" texture="THEME_LOTUS_GROUND" ground="0x000000" objectId="GROUND_HILLS" sound="Sound_Ambient_Jungle" >
+            <Layers>
+                <Layer id="THEME_LOTUS_FG1" speed="1200" foreground="1" scale="2" bottomOffset="220"/>
+                <Layer id="THEME_LOTUS_FG2" speed="1000" foreground="0" scale="2" bottomOffset="-25"/>
+                <Layer id="THEME_LOTUS_BG3" speed="700" foreground="0" scale="2" bottomOffset="-250"/>
+                <Layer id="THEME_LOTUS_BG2" speed="550" foreground="0" scale="2" bottomOffset="-650"  highQuality="true"/>
+                <Layer id="THEME_LOTUS_BG1" speed="400" foreground="0" scale="2" bottomOffset="-850"/>
+            </Layers>
+		</Background>
+		
+		
+		<Background id="BACKGROUND_LOTUS_STARWARS" sky="0x5347c7" texture="THEME_SW_LOTUS_GROUND" ground="0x915717" objectId="GROUND_HILLS" sound="Sound_Ambient_Jungle" >
+            <Layers>
+                <Layer id="THEME_SW_LOTUS_FG1" speed="1000" foreground="1" scale="2" bottomOffset="135"/>
+                <Layer id="THEME_SW_LOTUS_FG2" speed="1000" foreground="0" scale="2" bottomOffset="-90"/>
+                <Layer id="THEME_SW_LOTUS_BG3" speed="700" foreground="0" scale="1" bottomOffset="-300"  highQuality="true"/>
+                <Layer id="THEME_SW_LOTUS_BG2" speed="550" foreground="0" scale="2" bottomOffset="-250"/>
+                <Layer id="THEME_SW_LOTUS_CLOUDS" speed="300" foreground="0" scale="2" bottomOffset="-600" xOffset="500"/>
+                <Layer id="THEME_SW_LOTUS_BG1" speed="105" foreground="0" scale="2" bottomOffset="-600" xOffset="500"/>
+            </Layers>
+		</Background>
+		
+	</Backgrounds>
+</LevelBackgrounds>

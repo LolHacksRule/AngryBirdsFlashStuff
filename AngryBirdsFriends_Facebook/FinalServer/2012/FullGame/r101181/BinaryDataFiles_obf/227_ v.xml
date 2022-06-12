@@ -1,0 +1,59 @@
+<assets>
+	<packages>
+		<pack url="packages/core.pak"/>
+		<pack url="packages/birds.pak"/>
+		<pack url="packages/pigs.pak"/>
+		<pack url="packages/blocks.pak"/>
+		<pack url="packages/chapter1.pak"/>
+		<pack url="packages/chapter2.pak"/>
+		<pack url="packages/chapterfacebook.pak"/>
+		<pack url="packages/chaptertournament.pak"/>
+		<pack url="packages/chapterlotus.pak"/>
+		<pack url="packages/chaptergreenday.pak"/>
+		<pack url="packages/tournament_halloween.pak"/>
+	</packages>
+
+	<libraries>
+		<library swf="external_assets/AngryBirdsFacebookCredits.swf" startupLoad="true" name="GameCredits"> 
+		</library>
+	
+		<library swf="external_assets/Tournaments.swf" startupLoad="true" name="Tournaments"> 
+		</library>
+		
+		<library swf="external_assets/TournamentBranded.swf" startupLoad="true" name="Tournaments"> 
+		</library>
+	
+		<library swf="external_assets/AngryBirdsFlashBaseUI.swf" startupLoad="true" name="GameUiAssets"> 
+		</library>
+	
+		<library swf="external_assets/AngryBirdsFacebookSounds.swf" startupLoad="true" name="Sounds">
+		</library>
+		
+		<library swf="external_assets/SoundsTournament.swf" startupLoad="true" name="Sounds">
+		</library>
+	
+	    <library swf="external_assets/SoundsGreenday.swf" startupLoad="true" name="Sounds">
+		</library>
+		
+		<library swf="external_assets/SoundsNew.swf" startupLoad="true" name="Sounds">
+		</library>
+		
+		<library swf="external_assets/SoundsBrandedTournament.swf" startupLoad="true" name="Sounds">
+		</library>
+		
+		<library swf="external_assets/AngryBirdsFacebookFlashUI.swf" startupLoad="true" name="FacebookGameUiAssets"> 
+		</library>
+		
+		<library swf="external_assets/RewardsAndGiftInboxPopups.swf" startupLoad="true" name="RewardsAndGiftInboxPopups"> 
+		</library>
+	
+		<library swf="external_assets/AvatarCreator_UiAssets.swf" startupLoad="true" name="GameUiAssets">
+		</library>
+		
+		<library swf="external_assets/AvatarCreator_Animations.swf" startupLoad="true" name="AnimationAssets">
+		</library>
+		
+		<library swf="external_assets/PowerupTutorialPopups.swf" startupLoad="true" name="PowerupPopupAssets">
+		</library>
+	</libraries>
+</assets>

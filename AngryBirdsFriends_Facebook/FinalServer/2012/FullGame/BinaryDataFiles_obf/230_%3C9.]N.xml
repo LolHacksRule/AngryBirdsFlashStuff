@@ -1,9 +1,0 @@
-	<Popup name="Popup_AngryShop" visible="False" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="1024" height="768">
-		<Container name="Container_Popup" visible="False">
-		
-			<MovieClip name="AngryBirdLoader" visible="True"/>
-			<Container name="Container_BrandedElements" visible="True"/>
-		
-			<Button name="Button_ShopClose" MouseUp="SHOP_POPUP_CLOSE" scaleOnMouseOver="False"/>
-		</Container>
-	</Popup>
