@@ -19,54 +19,29 @@ package § " §
       
       public function §9c§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            this.§4U§ = [];
-            do
-            {
-               super();
-            }
-            while(!(_loc1_ || _loc1_));
-            
-         }
+         this.§4U§ = [];
+         super();
       }
       
       public function §5!?§() : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
          var object:Object = null;
-         if(_loc6_)
+         this.§ J§ = true;
+         for each(object in this.§4U§)
          {
-            this.§ J§ = true;
-         }
-         var _loc3_:* = this.§4U§;
-         for each(object in _loc3_)
-         {
-            if(_loc6_ || _loc3_)
+            try
             {
-               try
-               {
-                  this.render(object.avatarString,object.callBack,object.imageSize,object.ignoreBackground);
-               }
-               catch(e:Error)
-               {
-                  continue;
-               }
+               this.render(object.avatarString,object.callBack,object.imageSize,object.ignoreBackground);
+            }
+            catch(e:Error)
+            {
             }
          }
       }
       
       public function §0"C§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            this.§ J§ = true;
-         }
+         this.§ J§ = true;
       }
       
       public function §-@§(param1:§8S§) : void
@@ -75,9 +50,7 @@ package § " §
       
       public function render(param1:String, param2:Function, param3:int = 50, param4:Boolean = false, param5:Object = null, param6:§8S§ = null, param7:int = 0) : BitmapData
       {
-         var _loc19_:Boolean = true;
-         var _loc20_:Boolean = false;
-         var _loc8_:* = NaN;
+         var _loc8_:Number = NaN;
          var _loc9_:Number = NaN;
          var _loc10_:Array = null;
          var _loc11_:§&!J§ = null;
@@ -86,38 +59,65 @@ package § " §
          var _loc14_:§]q§ = null;
          var _loc15_:Item = null;
          var _loc16_:Matrix = null;
-         if(!_loc20_)
+         if(!this.§ J§)
          {
-            if(this.§ J§)
+            this.§4U§.push({
+               "avatarString":param1,
+               "callBack":param2,
+               "imageSize":param3,
+               "ignoreBackground":param4
+            });
+            return null;
+         }
+         _loc8_ = param3 * 0.4;
+         _loc9_ = param3 / 100 / 2;
+         _loc10_ = §3!D§.§!!@§(param1);
+         _loc11_ = new §&!J§();
+         if(!param6)
+         {
+            for each(_loc13_ in _loc10_)
             {
-               §§push(param3);
-               loop0:
-               while(true)
+               if(_loc13_.§[C§ == "CategoryBirds")
                {
-                  §§push(§§pop() * 0.4);
-                  addr104:
-                  while(true)
-                  {
-                     §§push(Number(§§pop()));
-                     addr105:
-                     while(true)
-                     {
-                        _loc8_ = §§pop();
-                        addr106:
-                        addr126:
-                        while(!_loc20_)
-                        {
-                           continue loop0;
-                        }
-                        addr98:
-                        return null;
-                     }
-                  }
+                  _loc14_ = §=!F§.§;"§.characters.§4"3§(_loc13_.§;!Y§);
+                  param6 = new §8S§(_loc14_);
                }
             }
-            §§goto(addr112);
          }
-         §§goto(addr108);
+         _loc11_.§%!A§(param6,100,170 + param7,true);
+         _loc12_ = new BitmapData(param3 + _loc8_,param3 + _loc8_ + param7,true,16777215);
+         if(param6)
+         {
+            if(param4)
+            {
+               param6.§#!K§();
+            }
+            for each(_loc15_ in _loc10_)
+            {
+               if(_loc15_.§[C§ != "CategoryBirds" && _loc15_.§[C§ != "CategoryBackgrounds")
+               {
+                  param6.§0!L§(_loc15_);
+               }
+               if(_loc15_.§[C§ == "CategoryBackgrounds")
+               {
+                  param6.§6!9§(_loc15_.§;!Y§);
+               }
+            }
+            if(param5)
+            {
+               param6.§^"!§().gotoAndStop(param5);
+            }
+            (_loc16_ = new Matrix()).scale(_loc9_,_loc9_);
+            _loc16_.translate(_loc8_ / 2,_loc8_ / 2);
+            _loc12_.draw(_loc11_,_loc16_,null,null,null,true);
+         }
+         _loc11_.dispose();
+         _loc11_ = null;
+         if(param2 != null)
+         {
+            param2(_loc12_);
+         }
+         return _loc12_;
       }
    }
 }

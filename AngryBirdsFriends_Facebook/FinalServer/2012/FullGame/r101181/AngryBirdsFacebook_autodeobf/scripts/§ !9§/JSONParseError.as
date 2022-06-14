@@ -10,37 +10,10 @@ package § !9§
       
       public function JSONParseError(param1:String = "", param2:int = 0, param3:String = "")
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(!(_loc5_ && param2))
-         {
-            super(param1);
-            loop0:
-            while(true)
-            {
-               name = "JSONParseError";
-               while(true)
-               {
-                  this.§%"F§ = param2;
-                  loop2:
-                  while(!_loc5_)
-                  {
-                     continue loop0;
-                     while(true)
-                     {
-                        this.§'!B§ = param3;
-                        if(!_loc5_)
-                        {
-                           break;
-                        }
-                        continue loop2;
-                     }
-                     return;
-                  }
-               }
-            }
-         }
-         §§goto(addr68);
+         super(param1);
+         name = "JSONParseError";
+         this.§%"F§ = param2;
+         this.§'!B§ = param3;
       }
       
       public function get location() : int

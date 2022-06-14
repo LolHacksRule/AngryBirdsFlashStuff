@@ -16,30 +16,9 @@ package §55§
       
       public function b2DistanceOutput()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            this.§,!Z§ = new b2Vec2();
-            while(true)
-            {
-               this.§2&§ = new b2Vec2();
-               §§goto(addr51);
-            }
-         }
-         addr51:
-         while(true)
-         {
-            super();
-            if(_loc1_ || this)
-            {
-               if(!_loc2_)
-               {
-                  break;
-               }
-               continue loop0;
-            }
-         }
+         this.§,!Z§ = new b2Vec2();
+         this.§2&§ = new b2Vec2();
+         super();
       }
    }
 }

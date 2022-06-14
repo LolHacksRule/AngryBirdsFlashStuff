@@ -25,28 +25,13 @@ package §6!D§
       
       public function §3!K§(param1:Texture, param2:BitmapData, param3:Rectangle, param4:int, param5:int, param6:Number)
       {
-         var _loc7_:Boolean = true;
-         var _loc8_:Boolean = false;
-         if(!(_loc8_ && param1))
-         {
-            super();
-            loop0:
-            while(true)
-            {
-               this.§&M§ = param1;
-               addr105:
-               while(true)
-               {
-                  this.§,!a§ = param2;
-                  continue loop0;
-               }
-            }
-         }
-         while(true)
-         {
-            this.§4!^§ = param4;
-            §§goto(addr80);
-         }
+         super();
+         this.§&M§ = param1;
+         this.§,!a§ = param2;
+         this.§5""§ = param3.clone();
+         this.§4!^§ = param4;
+         this.§'?§ = param5;
+         this.§[!q§ = param6;
       }
       
       public function get scale() : Number
@@ -71,133 +56,46 @@ package §6!D§
       
       public function get width() : Number
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         §§push(this.§&M§.width);
-         if(_loc1_)
-         {
-            return §§pop() * this.scale;
-         }
+         return this.§&M§.width * this.scale;
       }
       
       public function get height() : Number
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         §§push(this.§&M§.height);
-         if(_loc1_)
-         {
-            return §§pop() * this.scale;
-         }
+         return this.§&M§.height * this.scale;
       }
       
       public function get bitmapData() : BitmapData
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && this))
+         if(!this.§#!b§)
          {
-            if(!this.§#!b§)
-            {
-               if(_loc1_ || _loc1_)
-               {
-                  addr80:
-                  this.§#!b§ = new BitmapData(this.§5""§.width,this.§5""§.height);
-               }
-               do
-               {
-                  this.§#!b§.copyPixels(this.§,!a§,this.§5""§,new Point(0,0));
-               }
-               while(_loc2_ && this);
-               
-            }
-            return this.§#!b§;
+            this.§#!b§ = new BitmapData(this.§5""§.width,this.§5""§.height);
+            this.§#!b§.copyPixels(this.§,!a§,this.§5""§,new Point(0,0));
          }
-         §§goto(addr80);
+         return this.§#!b§;
       }
       
       public function set pivotX(param1:int) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§4!^§ = param1;
-         }
+         this.§4!^§ = param1;
       }
       
       public function set pivotY(param1:int) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || param1)
-         {
-            this.§'?§ = param1;
-         }
+         this.§'?§ = param1;
       }
       
       public function dispose() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && this))
+         if(this.§&M§)
          {
-            §§push(this.§&M§);
-            if(_loc2_)
-            {
-               if(§§pop())
-               {
-                  while(true)
-                  {
-                     §§push(this.§&M§);
-                     addr94:
-                     while(true)
-                     {
-                        §§pop().dispose();
-                        addr95:
-                        while(true)
-                        {
-                           this.§&M§ = null;
-                           addr86:
-                           while(true)
-                           {
-                           }
-                        }
-                     }
-                     addr74:
-                     while(!(_loc1_ && _loc2_))
-                     {
-                        this.§,!a§ = null;
-                        if(!_loc2_)
-                        {
-                           continue;
-                        }
-                        §§goto(addr25);
-                     }
-                  }
-               }
-               for(; this.§,!a§; §§goto(addr86))
-               {
-                  if(!_loc1_)
-                  {
-                     if(_loc1_ && _loc2_)
-                     {
-                        continue;
-                     }
-                     if(!_loc1_)
-                     {
-                        this.§,!a§.dispose();
-                     }
-                     §§goto(addr95);
-                  }
-                  §§goto(addr74);
-               }
-               addr25:
-               return;
-            }
-            §§goto(addr94);
+            this.§&M§.dispose();
+            this.§&M§ = null;
          }
-         §§goto(addr95);
+         if(this.§,!a§)
+         {
+            this.§,!a§.dispose();
+            this.§,!a§ = null;
+         }
       }
    }
 }

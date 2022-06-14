@@ -22,49 +22,7 @@ package §48§
       public static var §8o§:uint = 16;
       
       public static var §<"3§:uint = 32;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc2_))
-         {
-            §6!e§ = 1;
-         }
-         while(true)
-         {
-            §]!L§ = 2;
-            loop1:
-            for(; _loc2_; if(_loc2_ || _loc2_)
-            {
-               return;
-            })
-            {
-               §8!I§ = 4;
-               loop2:
-               while(true)
-               {
-                  §?!J§ = 8;
-                  loop3:
-                  do
-                  {
-                     §8o§ = 16;
-                     while(_loc2_)
-                     {
-                        §<"3§ = 32;
-                        if(_loc2_)
-                        {
-                           continue loop3;
-                        }
-                     }
-                     continue loop2;
-                  }
-                  while(_loc1_);
-                  
-                  continue loop1;
-               }
-            }
-         }
-      }
+       
       
       private var §'$§:uint;
       
@@ -82,28 +40,13 @@ package §48§
       
       public function b2DebugDraw()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            super();
-         }
-         do
-         {
-            this.§'$§ = 0;
-         }
-         while(_loc1_ && _loc2_);
-         
+         super();
+         this.§'$§ = 0;
       }
       
       public function §<!;§(param1:uint) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            this.§'$§ = param1;
-         }
+         this.§'$§ = param1;
       }
       
       public function §&K§() : uint
@@ -113,32 +56,17 @@ package §48§
       
       public function §9N§(param1:uint) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§'$§ |= param1;
-         }
+         this.§'$§ |= param1;
       }
       
       public function §#!;§(param1:uint) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && param1))
-         {
-            this.§'$§ &= ~param1;
-         }
+         this.§'$§ &= ~param1;
       }
       
       public function §=B§(param1:Sprite) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            this.§0`§ = param1;
-         }
+         this.§0`§ = param1;
       }
       
       public function §8!^§() : Sprite
@@ -148,12 +76,7 @@ package §48§
       
       public function §`!m§(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§%j§ = param1;
-         }
+         this.§%j§ = param1;
       }
       
       public function §]7§() : Number
@@ -163,12 +86,7 @@ package §48§
       
       public function §!!1§(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§!g§ = param1;
-         }
+         this.§!g§ = param1;
       }
       
       public function §99§() : Number
@@ -178,12 +96,7 @@ package §48§
       
       public function §9!g§(param1:Number) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc2_))
-         {
-            this.§;"=§ = param1;
-         }
+         this.§;"=§ = param1;
       }
       
       public function §,"+§() : Number
@@ -193,12 +106,7 @@ package §48§
       
       public function §=o§(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§[G§ = param1;
-         }
+         this.§[G§ = param1;
       }
       
       public function §^>§() : Number
@@ -208,12 +116,7 @@ package §48§
       
       public function §4]§(param1:Number) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            this.§3r§ = param1;
-         }
+         this.§3r§ = param1;
       }
       
       public function §>?§() : Number
@@ -223,248 +126,64 @@ package §48§
       
       public function §98§(param1:Array, param2:int, param3:b2Color) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(_loc6_)
-         {
-            this.§0`§.graphics.lineStyle(this.§!g§,param3.color,this.§;"=§);
-            if(!(_loc5_ && this))
-            {
-               this.§0`§.graphics.moveTo(param1[0].x * this.§%j§,param1[0].y * this.§%j§);
-            }
-         }
+         this.§0`§.graphics.lineStyle(this.§!g§,param3.color,this.§;"=§);
+         this.§0`§.graphics.moveTo(param1[0].x * this.§%j§,param1[0].y * this.§%j§);
          var _loc4_:int = 1;
-         while(true)
+         while(_loc4_ < param2)
          {
-            if(_loc4_ >= param2)
-            {
-               if(_loc6_ || this)
-               {
-                  this.§0`§.graphics.lineTo(param1[0].x * this.§%j§,param1[0].y * this.§%j§);
-               }
-               if(_loc6_)
-               {
-                  break;
-               }
-            }
-            else
-            {
-               this.§0`§.graphics.lineTo(param1[_loc4_].x * this.§%j§,param1[_loc4_].y * this.§%j§);
-               while(true)
-               {
-                  _loc4_++;
-               }
-               addr138:
-            }
-            while(!_loc6_)
-            {
-               §§goto(addr138);
-            }
+            this.§0`§.graphics.lineTo(param1[_loc4_].x * this.§%j§,param1[_loc4_].y * this.§%j§);
+            _loc4_++;
          }
+         this.§0`§.graphics.lineTo(param1[0].x * this.§%j§,param1[0].y * this.§%j§);
       }
       
       public function §-"!§(param1:Vector.<b2Vec2>, param2:int, param3:b2Color) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(_loc6_ || param2)
-         {
-            this.§0`§.graphics.lineStyle(this.§!g§,param3.color,this.§;"=§);
-            loop0:
-            while(true)
-            {
-               addr38:
-               while(true)
-               {
-                  this.§0`§.graphics.moveTo(param1[0].x * this.§%j§,param1[0].y * this.§%j§);
-                  addr57:
-                  while(!_loc5_)
-                  {
-                  }
-                  continue loop0;
-               }
-            }
-         }
-         while(true)
-         {
-            this.§0`§.graphics.beginFill(param3.color,this.§[G§);
-            if(!_loc5_)
-            {
-               if(true)
-               {
-                  break;
-               }
-               §§goto(addr38);
-            }
-            §§goto(addr57);
-         }
+         this.§0`§.graphics.lineStyle(this.§!g§,param3.color,this.§;"=§);
+         this.§0`§.graphics.moveTo(param1[0].x * this.§%j§,param1[0].y * this.§%j§);
+         this.§0`§.graphics.beginFill(param3.color,this.§[G§);
          var _loc4_:int = 1;
-         while(true)
+         while(_loc4_ < param2)
          {
-            if(_loc4_ >= param2)
-            {
-               if(_loc6_ || param1)
-               {
-                  if(!_loc5_)
-                  {
-                     this.§0`§.graphics.lineTo(param1[0].x * this.§%j§,param1[0].y * this.§%j§);
-                     break;
-                  }
-                  loop5:
-                  while(!_loc6_)
-                  {
-                     while(true)
-                     {
-                        _loc4_++;
-                        continue loop5;
-                     }
-                  }
-                  continue;
-                  addr140:
-               }
-               break;
-            }
             this.§0`§.graphics.lineTo(param1[_loc4_].x * this.§%j§,param1[_loc4_].y * this.§%j§);
-            §§goto(addr163);
-            §§goto(addr140);
+            _loc4_++;
          }
-         do
-         {
-            this.§0`§.graphics.endFill();
-         }
-         while(!_loc6_);
-         
+         this.§0`§.graphics.lineTo(param1[0].x * this.§%j§,param1[0].y * this.§%j§);
+         this.§0`§.graphics.endFill();
       }
       
       public function §^"6§(param1:b2Vec2, param2:Number, param3:b2Color) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(_loc5_)
-         {
-            this.§0`§.graphics.lineStyle(this.§!g§,param3.color,this.§;"=§);
-            do
-            {
-               this.§0`§.graphics.drawCircle(param1.x * this.§%j§,param1.y * this.§%j§,param2 * this.§%j§);
-            }
-            while(!_loc5_);
-            
-         }
+         this.§0`§.graphics.lineStyle(this.§!g§,param3.color,this.§;"=§);
+         this.§0`§.graphics.drawCircle(param1.x * this.§%j§,param1.y * this.§%j§,param2 * this.§%j§);
       }
       
       public function §3B§(param1:b2Vec2, param2:Number, param3:b2Vec2, param4:b2Color) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(!_loc5_)
-         {
-            this.§0`§.graphics.lineStyle(this.§!g§,param4.color,this.§;"=§);
-         }
-         loop0:
-         while(true)
-         {
-            this.§0`§.graphics.moveTo(0,0);
-            loop1:
-            while(true)
-            {
-               this.§0`§.graphics.beginFill(param4.color,this.§[G§);
-               while(true)
-               {
-                  this.§0`§.graphics.drawCircle(param1.x * this.§%j§,param1.y * this.§%j§,param2 * this.§%j§);
-                  loop3:
-                  while(!_loc5_)
-                  {
-                     this.§0`§.graphics.endFill();
-                     while(!_loc5_)
-                     {
-                        this.§0`§.graphics.moveTo(param1.x * this.§%j§,param1.y * this.§%j§);
-                        continue loop1;
-                        if(!(_loc5_ && param2))
-                        {
-                           if(!(_loc5_ && param3))
-                           {
-                              return;
-                           }
-                           continue loop3;
-                           continue loop3;
-                        }
-                     }
-                     continue loop0;
-                  }
-               }
-            }
-         }
+         this.§0`§.graphics.lineStyle(this.§!g§,param4.color,this.§;"=§);
+         this.§0`§.graphics.moveTo(0,0);
+         this.§0`§.graphics.beginFill(param4.color,this.§[G§);
+         this.§0`§.graphics.drawCircle(param1.x * this.§%j§,param1.y * this.§%j§,param2 * this.§%j§);
+         this.§0`§.graphics.endFill();
+         this.§0`§.graphics.moveTo(param1.x * this.§%j§,param1.y * this.§%j§);
+         this.§0`§.graphics.lineTo((param1.x + param3.x * param2) * this.§%j§,(param1.y + param3.y * param2) * this.§%j§);
       }
       
       public function § !L§(param1:b2Vec2, param2:b2Vec2, param3:b2Color) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(_loc5_ || param3)
-         {
-            this.§0`§.graphics.lineStyle(this.§!g§,param3.color,this.§;"=§);
-            while(true)
-            {
-               this.§0`§.graphics.moveTo(param1.x * this.§%j§,param1.y * this.§%j§);
-               while(_loc5_)
-               {
-                  this.§0`§.graphics.lineTo(param2.x * this.§%j§,param2.y * this.§%j§);
-                  if(!(_loc4_ && param1))
-                  {
-                     return;
-                     addr71:
-                  }
-               }
-            }
-         }
-         §§goto(addr71);
+         this.§0`§.graphics.lineStyle(this.§!g§,param3.color,this.§;"=§);
+         this.§0`§.graphics.moveTo(param1.x * this.§%j§,param1.y * this.§%j§);
+         this.§0`§.graphics.lineTo(param2.x * this.§%j§,param2.y * this.§%j§);
       }
       
       public function §#b§(param1:b2Transform) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || param1)
-         {
-            this.§0`§.graphics.lineStyle(this.§!g§,16711680,this.§;"=§);
-            while(true)
-            {
-               this.§0`§.graphics.moveTo(param1.position.x * this.§%j§,param1.position.y * this.§%j§);
-               while(!_loc2_)
-               {
-                  this.§0`§.graphics.lineTo((param1.position.x + this.§3r§ * param1.R.col1.x) * this.§%j§,(param1.position.y + this.§3r§ * param1.R.col1.y) * this.§%j§);
-                  loop2:
-                  for(; !_loc2_; if(_loc3_ || this)
-                  {
-                     addr78:
-                     return;
-                  })
-                  {
-                     this.§0`§.graphics.lineStyle(this.§!g§,65280,this.§;"=§);
-                     loop3:
-                     while(true)
-                     {
-                        this.§0`§.graphics.moveTo(param1.position.x * this.§%j§,param1.position.y * this.§%j§);
-                        addr106:
-                        while(true)
-                        {
-                           this.§0`§.graphics.lineTo((param1.position.x + this.§3r§ * param1.R.col2.x) * this.§%j§,(param1.position.y + this.§3r§ * param1.R.col2.y) * this.§%j§);
-                           if(_loc3_ || _loc2_)
-                           {
-                              if(!_loc2_)
-                              {
-                                 continue loop2;
-                              }
-                              continue loop3;
-                           }
-                        }
-                        §§goto(addr78);
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr106);
+         this.§0`§.graphics.lineStyle(this.§!g§,16711680,this.§;"=§);
+         this.§0`§.graphics.moveTo(param1.position.x * this.§%j§,param1.position.y * this.§%j§);
+         this.§0`§.graphics.lineTo((param1.position.x + this.§3r§ * param1.R.col1.x) * this.§%j§,(param1.position.y + this.§3r§ * param1.R.col1.y) * this.§%j§);
+         this.§0`§.graphics.lineStyle(this.§!g§,65280,this.§;"=§);
+         this.§0`§.graphics.moveTo(param1.position.x * this.§%j§,param1.position.y * this.§%j§);
+         this.§0`§.graphics.lineTo((param1.position.x + this.§3r§ * param1.R.col2.x) * this.§%j§,(param1.position.y + this.§3r§ * param1.R.col2.y) * this.§%j§);
       }
    }
 }

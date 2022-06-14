@@ -13,52 +13,17 @@ package §'!s§
       
       public function §`!w§(param1:§7!A§, param2:StatePopupManager)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!(_loc3_ && param1))
-         {
-            super(§ "A§.§4[§.Views.PopupServerUpdated_Error[0],param1);
-            while(true)
-            {
-               mClip.btnReload.addEventListener(MouseEvent.CLICK,this.§`!a§);
-               loop1:
-               for(; _loc4_; while(_loc4_ || this)
-               {
-                  AngryBirdsFP11.§@<§.§#m§();
-                  if(!_loc4_)
-                  {
-                     continue;
-                  }
-                  §§goto(addr35);
-               })
-               {
-                  §]"5§ = §97§;
-                  do
-                  {
-                     §#6§.pause();
-                     continue loop1;
-                  }
-                  while(_loc3_ && this);
-                  
-               }
-            }
-         }
+         super(§ "A§.§4[§.Views.PopupServerUpdated_Error[0],param1);
+         mClip.btnReload.addEventListener(MouseEvent.CLICK,this.§`!a§);
+         §]"5§ = §97§;
+         §#6§.pause();
+         AngryBirdsFP11.§@<§.§#m§();
       }
       
       private function §`!a§(param1:MouseEvent) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc2_))
-         {
-            AngryBirdsFP11.§@<§.stage.displayState = StageDisplayState.NORMAL;
-         }
-         do
-         {
-            §@!]§.§9"'§("window.location.reload");
-         }
-         while(!(_loc2_ || param1));
-         
+         AngryBirdsFP11.§@<§.stage.displayState = StageDisplayState.NORMAL;
+         §@!]§.§9"'§("window.location.reload");
       }
    }
 }

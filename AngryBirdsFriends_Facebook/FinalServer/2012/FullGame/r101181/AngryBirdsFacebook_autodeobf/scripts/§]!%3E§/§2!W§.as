@@ -17,37 +17,10 @@ package §]!>§
       
       public function §2!W§(param1:String, param2:String, param3:String, param4:int, param5:int, param6:int, param7:int)
       {
-         var _loc8_:Boolean = false;
-         var _loc9_:Boolean = true;
-         if(_loc9_)
-         {
-            this.§ "3§ = param4;
-            while(true)
-            {
-               this.stars = param5;
-               loop2:
-               while(!(_loc8_ && param2))
-               {
-                  super(param1,param2,param3,param7);
-                  if(_loc9_)
-                  {
-                     addr53:
-                     if(!(_loc9_ || param2))
-                     {
-                        while(true)
-                        {
-                           this.§69§ = param6;
-                           continue loop2;
-                           §§goto(addr53);
-                        }
-                        addr77:
-                     }
-                     return;
-                  }
-               }
-            }
-         }
-         §§goto(addr77);
+         this.§ "3§ = param4;
+         this.stars = param5;
+         this.§69§ = param6;
+         super(param1,param2,param3,param7);
       }
       
       public static function §!!t§(param1:Object) : §2!W§

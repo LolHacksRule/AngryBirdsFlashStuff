@@ -18,12 +18,7 @@ package §8g§
       
       public function §3"6§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            super();
-         }
+         super();
       }
    }
 }

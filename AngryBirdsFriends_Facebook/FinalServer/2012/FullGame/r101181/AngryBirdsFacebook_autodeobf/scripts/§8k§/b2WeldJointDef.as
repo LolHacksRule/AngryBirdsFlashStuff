@@ -18,77 +18,20 @@ package §8k§
       
       public function b2WeldJointDef()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc1_))
-         {
-            this.§#C§ = new b2Vec2();
-            while(true)
-            {
-               this.§^!J§ = new b2Vec2();
-               while(_loc2_ || _loc2_)
-               {
-                  super();
-                  do
-                  {
-                     type = b2Joint.§`"8§;
-                     do
-                     {
-                        this.§ var§ = 0;
-                     }
-                     while(_loc1_ && this);
-                     
-                  }
-                  while(!(_loc2_ || this));
-                  
-                  if(_loc1_)
-                  {
-                     continue;
-                  }
-                  return;
-                  addr69:
-               }
-            }
-         }
-         §§goto(addr69);
+         this.§#C§ = new b2Vec2();
+         this.§^!J§ = new b2Vec2();
+         super();
+         type = b2Joint.§`"8§;
+         this.§ var§ = 0;
       }
       
       public function §`!r§(param1:b2Body, param2:b2Body, param3:b2Vec2) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!_loc4_)
-         {
-            §!!v§ = param1;
-         }
-         loop0:
-         while(true)
-         {
-            §'!4§ = param2;
-            loop1:
-            while(true)
-            {
-               this.§#C§.SetV(§!!v§.GetLocalPoint(param3));
-               while(true)
-               {
-                  this.§^!J§.SetV(§'!4§.GetLocalPoint(param3));
-                  while(!_loc4_)
-                  {
-                     if(_loc5_)
-                     {
-                        this.§ var§ = §'!4§.GetAngle() - §!!v§.GetAngle();
-                        if(_loc5_)
-                        {
-                           continue loop0;
-                        }
-                        continue;
-                        continue;
-                     }
-                     continue loop1;
-                  }
-               }
-            }
-         }
+         §!!v§ = param1;
+         §'!4§ = param2;
+         this.§#C§.SetV(§!!v§.GetLocalPoint(param3));
+         this.§^!J§.SetV(§'!4§.GetLocalPoint(param3));
+         this.§ var§ = §'!4§.GetAngle() - §!!v§.GetAngle();
       }
    }
 }

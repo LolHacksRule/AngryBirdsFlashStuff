@@ -30,123 +30,27 @@ package §8k§
       
       public function b2LineJointDef()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc1_)
-         {
-            this.§#C§ = new b2Vec2();
-            while(true)
-            {
-               this.§^!J§ = new b2Vec2();
-               addr164:
-               while(true)
-               {
-                  this.§8"C§ = new b2Vec2();
-               }
-            }
-            addr169:
-         }
-         while(true)
-         {
-            super();
-            while(true)
-            {
-               type = b2Joint.§7"<§;
-               loop4:
-               while(true)
-               {
-                  this.§8"C§.Set(1,0);
-                  loop5:
-                  while(true)
-                  {
-                     this.§3"%§ = false;
-                     loop6:
-                     while(true)
-                     {
-                        this.§[!7§ = 0;
-                        while(true)
-                        {
-                           if(!_loc1_)
-                           {
-                              continue loop4;
-                           }
-                           continue loop6;
-                           addr88:
-                           while(_loc2_ || _loc2_)
-                           {
-                              this.§[!c§ = false;
-                              while(!(_loc1_ && this))
-                              {
-                                 if(_loc2_)
-                                 {
-                                    this.§22§ = 0;
-                                    continue loop5;
-                                 }
-                                 §§goto(addr169);
-                                 if(_loc2_ || this)
-                                 {
-                                    return;
-                                 }
-                              }
-                           }
-                        }
-                        §§goto(addr164);
-                     }
-                  }
-               }
-            }
-            if(!(_loc2_ || _loc1_))
-            {
-               continue;
-            }
-            if(_loc2_)
-            {
-               this.§<!T§ = 0;
-               §§goto(addr88);
-            }
-            §§goto(addr164);
-         }
+         this.§#C§ = new b2Vec2();
+         this.§^!J§ = new b2Vec2();
+         this.§8"C§ = new b2Vec2();
+         super();
+         type = b2Joint.§7"<§;
+         this.§8"C§.Set(1,0);
+         this.§3"%§ = false;
+         this.§[!7§ = 0;
+         this.§<!T§ = 0;
+         this.§[!c§ = false;
+         this.§22§ = 0;
+         this.motorSpeed = 0;
       }
       
       public function §`!r§(param1:b2Body, param2:b2Body, param3:b2Vec2, param4:b2Vec2) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(!(_loc5_ && param1))
-         {
-            §!!v§ = param1;
-            while(true)
-            {
-               §'!4§ = param2;
-               loop1:
-               while(_loc6_ || param2)
-               {
-                  while(true)
-                  {
-                     this.§#C§ = §!!v§.GetLocalPoint(param3);
-                     do
-                     {
-                        this.§^!J§ = §'!4§.GetLocalPoint(param3);
-                        do
-                        {
-                           this.§8"C§ = §!!v§.GetLocalVector(param4);
-                        }
-                        while(_loc5_);
-                        
-                     }
-                     while(!_loc6_);
-                     
-                     if(!_loc5_)
-                     {
-                        break;
-                     }
-                     continue loop1;
-                  }
-                  return;
-               }
-            }
-         }
-         §§goto(addr87);
+         §!!v§ = param1;
+         §'!4§ = param2;
+         this.§#C§ = §!!v§.GetLocalPoint(param3);
+         this.§^!J§ = §'!4§.GetLocalPoint(param3);
+         this.§8"C§ = §!!v§.GetLocalVector(param4);
       }
    }
 }

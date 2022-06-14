@@ -20,165 +20,59 @@ package §-!h§
       
       public function § ?§()
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            super();
-         }
+         super();
          var _loc1_:Class = §8B§.§6"C§("FriendSelecterCheckbox");
-         if(_loc3_ || this)
-         {
-            this.§?u§ = new _loc1_();
-            loop0:
-            while(true)
-            {
-               this.§3"1§ = new §6Y§(this.§?u§,true);
-               while(true)
-               {
-                  this.§3"1§.§[%§.addEventListener(Event.CHANGE,this.§6"@§);
-                  loop2:
-                  while(!_loc2_)
-                  {
-                     while(true)
-                     {
-                        addChild(this.§3"1§.§[%§);
-                        if(!_loc2_)
-                        {
-                           continue loop0;
-                        }
-                        continue loop2;
-                     }
-                     return;
-                  }
-               }
-            }
-         }
-         §§goto(addr85);
+         this.§?u§ = new _loc1_();
+         this.§3"1§ = new §6Y§(this.§?u§,true);
+         this.§3"1§.§[%§.addEventListener(Event.CHANGE,this.§6"@§);
+         addChild(this.§3"1§.§[%§);
       }
       
       private function §6"@§(param1:Event) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
+         if(§>">§)
          {
-            if(§>">§)
-            {
-               if(!_loc2_)
-               {
-                  §>">§.selected = this.§3"1§.selected;
-               }
-            }
+            §>">§.selected = this.§3"1§.selected;
          }
       }
       
       override public function set data(param1:Object) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && param1))
+         cacheAsBitmap = true;
+         if(this.§=m§)
          {
-            cacheAsBitmap = true;
-            while(true)
+            if(this.§?u§.contains(this.§=m§))
             {
-               §§push(this.§=m§);
-               while(true)
-               {
-                  if(§§pop())
-                  {
-                     while(true)
-                     {
-                        if(this.§?u§.contains(this.§=m§))
-                        {
-                           while(true)
-                           {
-                              this.§?u§.removeChild(this.§=m§);
-                              addr403:
-                              while(true)
-                              {
-                              }
-                           }
-                           addr398:
-                        }
-                        while(true)
-                        {
-                           §§push(this.§=m§);
-                           addr386:
-                           while(true)
-                           {
-                              §§pop().dispose();
-                              addr387:
-                              while(true)
-                              {
-                              }
-                           }
-                        }
-                     }
-                     addr392:
-                  }
-                  while(true)
-                  {
-                     this.§?u§.PlayernameTextfield.text = "";
-                     while(true)
-                     {
-                        §§push(this.§3"1§);
-                        loop10:
-                        while(true)
-                        {
-                           §§pop().§[%§.visible = false;
-                           addr358:
-                           while(_loc3_ || _loc3_)
-                           {
-                              if(param1 == null)
-                              {
-                                 addr350:
-                                 return;
-                              }
-                              while(true)
-                              {
-                                 §>">§ = param1;
-                                 addr338:
-                                 while(_loc3_ || this)
-                                 {
-                                    this.§?u§.PlayernameTextfield.text = param1.name;
-                                    while(true)
-                                    {
-                                       §§push(this.§3"1§);
-                                       continue loop10;
-                                    }
-                                 }
-                                 addr351:
-                                 §§goto(addr398);
-                              }
-                           }
-                           §§goto(addr403);
-                        }
-                     }
-                  }
-                  if(_loc2_ && _loc3_)
-                  {
-                     continue;
-                  }
-                  §§push(35);
-                  if(_loc3_)
-                  {
-                     if(!_loc2_)
-                     {
-                        if(!(_loc2_ && _loc2_))
-                        {
-                           §§pop().height = §§pop();
-                           §§goto(addr88);
-                        }
-                        §§goto(addr273);
-                     }
-                     §§goto(addr212);
-                  }
-                  §§goto(addr118);
-               }
+               this.§?u§.removeChild(this.§=m§);
             }
+            this.§=m§.dispose();
          }
-         §§goto(addr276);
+         this.§?u§.PlayernameTextfield.text = "";
+         this.§3"1§.§[%§.visible = false;
+         if(param1 == null)
+         {
+            return;
+         }
+         §>">§ = param1;
+         this.§?u§.PlayernameTextfield.text = param1.name;
+         this.§3"1§.selected = param1.selected;
+         this.§3"1§.§[%§.visible = true;
+         this.§=m§ = new §2!!§(param1.id,"",false,§+!p§.§'"6§);
+         if(this.§=m§.§+"5§)
+         {
+            this.§=m§.x = 41;
+            this.§=m§.y = 7;
+            this.§=m§.width = 50;
+            this.§=m§.height = 50;
+         }
+         else
+         {
+            this.§=m§.x = 41;
+            this.§=m§.y = 7;
+            this.§=m§.width = 35;
+            this.§=m§.height = 35;
+         }
+         this.§?u§.addChild(this.§=m§);
       }
    }
 }

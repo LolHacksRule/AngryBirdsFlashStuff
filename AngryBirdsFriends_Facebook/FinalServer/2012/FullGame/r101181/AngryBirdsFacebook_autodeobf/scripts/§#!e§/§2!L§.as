@@ -22,12 +22,7 @@ package §#!e§
       
       public function §2!L§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            super();
-         }
+         super();
       }
    }
 }

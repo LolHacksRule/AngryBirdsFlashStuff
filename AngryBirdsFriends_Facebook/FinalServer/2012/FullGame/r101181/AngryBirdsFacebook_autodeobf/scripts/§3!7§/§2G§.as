@@ -18,55 +18,13 @@ package §3!7§
       
       public function §2G§(param1:String, param2:String, param3:String, param4:String, param5:String, param6:String = "")
       {
-         var _loc7_:Boolean = false;
-         var _loc8_:Boolean = true;
-         if(_loc8_ || param2)
-         {
-            super();
-            loop0:
-            while(true)
-            {
-               this.§,C§ = param1;
-               loop1:
-               while(true)
-               {
-                  this.§44§ = param2;
-                  loop2:
-                  while(true)
-                  {
-                     this.§<[§ = param3;
-                     while(true)
-                     {
-                        this.§[Y§ = param4;
-                        while(_loc8_)
-                        {
-                           if(!_loc7_)
-                           {
-                              this.§=!G§ = param5;
-                              while(!_loc7_)
-                              {
-                                 continue loop1;
-                                 this.§&!P§ = param6;
-                                 if(_loc8_)
-                                 {
-                                    if(!_loc7_)
-                                    {
-                                       return;
-                                       addr47:
-                                    }
-                                    continue loop0;
-                                 }
-                              }
-                              continue;
-                           }
-                           continue loop2;
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr47);
+         super();
+         this.§,C§ = param1;
+         this.§44§ = param2;
+         this.§<[§ = param3;
+         this.§[Y§ = param4;
+         this.§=!G§ = param5;
+         this.§&!P§ = param6;
       }
       
       public function get §7!5§() : String

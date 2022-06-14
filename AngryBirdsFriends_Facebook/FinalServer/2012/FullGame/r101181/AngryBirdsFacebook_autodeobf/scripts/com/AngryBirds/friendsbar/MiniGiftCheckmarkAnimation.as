@@ -8,28 +8,7 @@ package com.angrybirds.friendsbar
       
       public function MiniGiftCheckmarkAnimation()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            super();
-         }
-         do
-         {
-            addFrameScript(69,this.§^"§);
-         }
-         while(_loc2_ && _loc1_);
-         
-      }
-      
-      function §^"§() : *
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            stop();
-         }
+         super();
       }
    }
 }

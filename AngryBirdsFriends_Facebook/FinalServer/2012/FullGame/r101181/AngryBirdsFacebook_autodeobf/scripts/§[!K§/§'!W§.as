@@ -9,125 +9,42 @@ package §[!K§
    {
       
       public static const STATE_NAME:String = "stateTournamentPlay";
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            STATE_NAME = "stateTournamentPlay";
-         }
-      }
+       
       
       public function §'!W§(param1:Boolean = true, param2:String = "stateTournamentPlay")
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_)
-         {
-            super(param1,param2);
-         }
+         super(param1,param2);
       }
       
       override protected function levelStarted() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            super.levelStarted();
-            loop0:
-            while(true)
-            {
-               §6w§.getItemByName("Button_MightyEagle").setVisibility(false);
-               loop1:
-               while(true)
-               {
-                  §6w§.getItemByName("TextField_PowerUpCountME").setVisibility(false);
-                  loop2:
-                  while(_loc2_)
-                  {
-                     while(true)
-                     {
-                        §6w§.getItemByName("PowerUpCountME_BG").setVisibility(false);
-                        if(!(_loc1_ && _loc1_))
-                        {
-                           continue loop1;
-                        }
-                        continue loop2;
-                     }
-                     return;
-                  }
-                  continue loop0;
-               }
-            }
-         }
-         §§goto(addr73);
+         super.levelStarted();
+         §6w§.getItemByName("Button_MightyEagle").setVisibility(false);
+         §6w§.getItemByName("TextField_PowerUpCountME").setVisibility(false);
+         §6w§.getItemByName("PowerUpCountME_BG").setVisibility(false);
       }
       
       override public function activate() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            super.activate();
-            while(true)
-            {
-               §6w§.getItemByName("Button_PowerUpMenuOpenWhole").x = 115;
-               loop1:
-               while(_loc1_ || this)
-               {
-                  while(true)
-                  {
-                     §6w§.getItemByName("Container_PowerUpButtons").x = 115;
-                     if(_loc1_ || _loc1_)
-                     {
-                        break;
-                     }
-                     continue loop1;
-                  }
-                  return;
-               }
-            }
-         }
-         §§goto(addr70);
+         super.activate();
+         §6w§.getItemByName("Button_PowerUpMenuOpenWhole").x = 115;
+         §6w§.getItemByName("Container_PowerUpButtons").x = 115;
       }
       
       override protected function disablePowerupMenu() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            super.disablePowerupMenu();
-         }
-         do
-         {
-            §`-§.setPowerupActive(§>,§.§," §.§[2§,false);
-         }
-         while(_loc2_ && _loc2_);
-         
+         super.disablePowerupMenu();
+         §`-§.setPowerupActive(§>,§.§," §.§[2§,false);
       }
       
       override protected function fetchScoresForLevel() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || this)
-         {
-            §3s§ = §3T§.§if §.§#!7§(LevelManager.§^_§(LevelManager.§'!O§).name,LevelManager.§'!O§,true);
-         }
+         §3s§ = §3T§.§if §.§#!7§(LevelManager.§^_§(LevelManager.§'!O§).name,LevelManager.§'!O§,true);
       }
       
       override protected function showScoresForLevel() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc2_)
-         {
-            (§#6§.§ q§ as §3T§).§?D§(LevelManager.§'!O§,§3s§,true);
-         }
+         (§#6§.§ q§ as §3T§).§?D§(LevelManager.§'!O§,§3s§,true);
       }
       
       override protected function hideMightyEagleButton() : void

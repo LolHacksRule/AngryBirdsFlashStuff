@@ -8,18 +8,8 @@ package §]!>§
       
       public function §[Q§(param1:String, param2:String, param3:String, param4:int, param5:int)
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
-         if(!(_loc7_ && param2))
-         {
-            this.§@I§ = param5;
-            do
-            {
-               super(param1,param2,param3,param4);
-            }
-            while(!_loc6_);
-            
-         }
+         this.§@I§ = param5;
+         super(param1,param2,param3,param4);
       }
       
       public static function §!!t§(param1:Object) : §[Q§

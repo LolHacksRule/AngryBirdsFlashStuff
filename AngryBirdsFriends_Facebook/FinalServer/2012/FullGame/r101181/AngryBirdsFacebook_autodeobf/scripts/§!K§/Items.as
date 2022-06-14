@@ -16,18 +16,8 @@ package §!K§
       
       public function Items()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            super();
-         }
-         do
-         {
-            this.§%!e§();
-         }
-         while(_loc2_ && this);
-         
+         super();
+         this.§%!e§();
       }
       
       public function get §1!2§() : Vector.<String>
@@ -42,128 +32,32 @@ package §!K§
       
       private function §%!e§() : void
       {
-         var _loc9_:Boolean = true;
-         var _loc10_:Boolean = false;
          var _loc1_:XML = null;
          var _loc2_:String = null;
          var _loc3_:XML = null;
          var _loc4_:Item = null;
-         if(_loc9_ || this)
+         this.§]!z§ = new Vector.<§use §>();
+         this.§&!Z§ = new Array();
+         this.§ !S§ = new Vector.<String>();
+         §!i§ = §5!C§.§9G§(§<=§.§]!=§);
+         for each(_loc1_ in §!i§.items.category)
          {
-            this.§]!z§ = new Vector.<§use §>();
-            while(true)
+            _loc2_ = _loc1_.@id;
+            this.§]!z§.push(new §use §(_loc2_,_loc1_.@sid));
+            this.§&!Z§[_loc2_] = new Array();
+            for each(_loc3_ in _loc1_.item)
             {
-               this.§&!Z§ = new Array();
-            }
-            addr81:
-         }
-         loop1:
-         while(true)
-         {
-            addr54:
-            addr82:
-            while(true)
-            {
-               this.§ !S§ = new Vector.<String>();
-               continue loop1;
-            }
-            addr266:
-            loop4:
-            for each(_loc1_ in §!i§.items.category)
-            {
-               if(_loc9_ || _loc2_)
+               (_loc4_ = new Item()).§;!Y§ = _loc3_.@id;
+               _loc4_.sId = _loc3_.@sid;
+               _loc4_.mName = _loc3_.@name;
+               _loc4_.§=!q§ = _loc3_.@anchor;
+               _loc4_.§[C§ = _loc2_;
+               if(this.§ !S§.indexOf(_loc4_.§=!q§) == -1)
                {
-                  _loc2_ = _loc1_.@id;
-                  loop5:
-                  while(true)
-                  {
-                     addr115:
-                     while(true)
-                     {
-                        this.§]!z§.push(new §use §(_loc2_,_loc1_.@sid));
-                        if(!(_loc9_ || this))
-                        {
-                           break;
-                        }
-                        continue loop5;
-                     }
-                     continue loop4;
-                  }
+                  this.§ !S§.push(_loc4_.§=!q§);
                }
-               while(false)
-               {
-                  §§goto(addr115);
-               }
-               var _loc7_:int = 0;
-               if(_loc9_)
-               {
-                  loop8:
-                  for each(_loc3_ in _loc1_.item)
-                  {
-                     (_loc4_ = new Item()).§;!Y§ = _loc3_.@id;
-                     if(!(_loc10_ && _loc2_))
-                     {
-                        _loc4_.sId = _loc3_.@sid;
-                        loop9:
-                        while(true)
-                        {
-                           _loc4_.mName = _loc3_.@name;
-                           while(true)
-                           {
-                              _loc4_.§=!q§ = _loc3_.@anchor;
-                              loop11:
-                              for(; !_loc10_; if(_loc10_ && _loc3_)
-                              {
-                                 continue;
-                              },if(!_loc9_)
-                              {
-                                 continue loop9;
-                              },this.§ !S§.push(_loc4_.§=!q§))
-                              {
-                                 _loc4_.§[C§ = _loc2_;
-                                 loop12:
-                                 while(true)
-                                 {
-                                    while(true)
-                                    {
-                                       if(this.§ !S§.indexOf(_loc4_.§=!q§) == -1)
-                                       {
-                                          if(_loc9_)
-                                          {
-                                             continue loop11;
-                                          }
-                                          addr227:
-                                          while(true)
-                                          {
-                                          }
-                                       }
-                                       do
-                                       {
-                                          this.§&!Z§[_loc2_].push(_loc4_);
-                                       }
-                                       while(_loc10_ && _loc1_);
-                                       
-                                       if(_loc9_)
-                                       {
-                                          if(true)
-                                          {
-                                             break;
-                                          }
-                                          continue;
-                                       }
-                                       continue loop12;
-                                    }
-                                    continue loop8;
-                                 }
-                              }
-                           }
-                        }
-                     }
-                     §§goto(addr227);
-                  }
-               }
+               this.§&!Z§[_loc2_].push(_loc4_);
             }
-            return;
          }
       }
       
@@ -179,38 +73,17 @@ package §!K§
       
       public function §1!P§(param1:String) : Item
       {
-         var _loc9_:Boolean = false;
-         var _loc10_:Boolean = true;
          var _loc2_:§use § = null;
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc4_:Item = null;
          for each(_loc2_ in this.§]!z§)
          {
-            if(_loc10_)
+            _loc3_ = _loc2_.name;
+            for each(_loc4_ in this.§&!Z§[_loc3_])
             {
-               §§push(_loc2_.name);
-               if(!(_loc9_ && this))
+               if(_loc4_.§;!Y§.toUpperCase() == param1.toUpperCase())
                {
-                  §§push(§§pop());
-               }
-               _loc3_ = §§pop();
-               if(!(_loc10_ || param1))
-               {
-                  continue;
-               }
-            }
-            var _loc7_:int = 0;
-            if(!_loc9_)
-            {
-               for each(_loc4_ in this.§&!Z§[_loc3_])
-               {
-                  if(_loc4_.§;!Y§.toUpperCase() == param1.toUpperCase())
-                  {
-                     if(!(_loc9_ && param1))
-                     {
-                        return _loc4_;
-                     }
-                  }
+                  return _loc4_;
                }
             }
          }

@@ -24,89 +24,7 @@ package §%Q§
       public static const §-!x§:int = 9;
       
       public static const §5!V§:int = 10;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            §]W§ = 0;
-            while(true)
-            {
-               §#!w§ = 1;
-               addr148:
-               while(true)
-               {
-                  §@v§ = 2;
-                  addr143:
-                  while(true)
-                  {
-                     §#j§ = 3;
-                  }
-               }
-            }
-            addr152:
-         }
-         while(true)
-         {
-            §@!H§ = 4;
-            loop4:
-            while(true)
-            {
-               §2O§ = 5;
-               loop5:
-               while(true)
-               {
-                  if(!_loc1_)
-                  {
-                     § y§ = 6;
-                     loop6:
-                     while(true)
-                     {
-                        §<x§ = 7;
-                        continue loop4;
-                        addr73:
-                        loop8:
-                        while(true)
-                        {
-                           if(_loc2_ || _loc1_)
-                           {
-                              continue loop5;
-                           }
-                           continue loop6;
-                           addr49:
-                           while(true)
-                           {
-                              if(_loc2_ || §;!y§)
-                              {
-                                 if(!_loc2_)
-                                 {
-                                    break;
-                                 }
-                                 continue;
-                              }
-                              continue loop8;
-                           }
-                           §§goto(addr143);
-                        }
-                        continue loop5;
-                     }
-                  }
-                  else
-                  {
-                     §§goto(addr152);
-                  }
-               }
-               §§goto(addr148);
-            }
-            if(_loc1_ && _loc1_)
-            {
-               continue;
-            }
-            §4>§ = 8;
-            §§goto(addr73);
-         }
-      }
+       
       
       public var mName:String;
       
@@ -116,64 +34,21 @@ package §%Q§
       
       public function §;!y§(param1:String, param2:String, param3:String, param4:String, param5:String, param6:String, param7:String, param8:String, param9:String, param10:String, param11:String, param12:String, param13:String)
       {
-         var _loc14_:Boolean = false;
-         var _loc15_:Boolean = true;
-         if(_loc15_)
-         {
-            super();
-            while(true)
-            {
-               this.mName = param1;
-               addr347:
-               while(!_loc14_)
-               {
-               }
-            }
-         }
-         while(true)
-         {
-            this.§7!u§ = param2;
-            while(_loc15_)
-            {
-               this.§1!u§ = new Array();
-               while(true)
-               {
-                  §§push(this.§1!u§);
-                  loop5:
-                  while(true)
-                  {
-                     §§push(§]W§);
-                     addr327:
-                     while(true)
-                     {
-                        §§push(param3);
-                        addr328:
-                        while(true)
-                        {
-                           §§pop()[§§pop()] = §§pop();
-                           addr329:
-                           while(true)
-                           {
-                              §§push(this.§1!u§);
-                              continue loop5;
-                           }
-                        }
-                     }
-                  }
-                  if(_loc14_ && param3)
-                  {
-                     continue;
-                  }
-                  §§goto(addr197);
-                  §§push(this.§1!u§);
-               }
-               if(!(_loc14_ && param3))
-               {
-                  return;
-               }
-            }
-            §§goto(addr347);
-         }
+         super();
+         this.mName = param1;
+         this.§7!u§ = param2;
+         this.§1!u§ = new Array();
+         this.§1!u§[§]W§] = param3;
+         this.§1!u§[§#!w§] = param4;
+         this.§1!u§[§@v§] = param5;
+         this.§1!u§[§#j§] = param6;
+         this.§1!u§[§@!H§] = param7;
+         this.§1!u§[§2O§] = param8;
+         this.§1!u§[§ y§] = param9;
+         this.§1!u§[§<x§] = param10;
+         this.§1!u§[§4>§] = param11;
+         this.§1!u§[§-!x§] = param12;
+         this.§1!u§[§5!V§] = param13;
       }
    }
 }

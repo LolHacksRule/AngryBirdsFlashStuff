@@ -12,18 +12,8 @@ package §55§
       
       public function b2RayCastOutput()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || this)
-         {
-            this.normal = new b2Vec2();
-         }
-         do
-         {
-            super();
-         }
-         while(!_loc2_);
-         
+         this.normal = new b2Vec2();
+         super();
       }
    }
 }

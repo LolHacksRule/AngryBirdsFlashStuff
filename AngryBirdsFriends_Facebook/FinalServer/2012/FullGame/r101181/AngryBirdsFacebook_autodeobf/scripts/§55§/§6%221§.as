@@ -12,47 +12,15 @@ package §55§
       
       public function §6"1§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            this.v = new b2Vec2();
-            while(true)
-            {
-               this.id = new b2ContactID();
-               loop1:
-               while(_loc2_)
-               {
-                  while(true)
-                  {
-                     super();
-                     if(_loc2_ || _loc2_)
-                     {
-                        break;
-                     }
-                     continue loop1;
-                  }
-                  return;
-               }
-            }
-         }
-         §§goto(addr52);
+         this.v = new b2Vec2();
+         this.id = new b2ContactID();
+         super();
       }
       
       public function Set(param1:§6"1§) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.v.SetV(param1.v);
-         }
-         do
-         {
-            this.id.Set(param1.id);
-         }
-         while(_loc2_ && _loc2_);
-         
+         this.v.SetV(param1.v);
+         this.id.Set(param1.id);
       }
    }
 }

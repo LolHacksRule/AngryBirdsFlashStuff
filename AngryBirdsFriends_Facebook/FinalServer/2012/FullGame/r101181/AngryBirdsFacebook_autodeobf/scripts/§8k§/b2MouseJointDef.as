@@ -19,40 +19,12 @@ package §8k§
       
       public function b2MouseJointDef()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            this.target = new b2Vec2();
-            while(true)
-            {
-               super();
-            }
-            addr92:
-         }
-         loop1:
-         while(true)
-         {
-            type = b2Joint.§ !0§;
-            loop2:
-            while(true)
-            {
-               this.§"#§ = 0;
-               while(true)
-               {
-                  if(!_loc2_)
-                  {
-                     if(_loc2_)
-                     {
-                        break;
-                     }
-                     continue;
-                  }
-                  continue loop2;
-               }
-               continue loop1;
-            }
-         }
+         this.target = new b2Vec2();
+         super();
+         type = b2Joint.§ !0§;
+         this.§"#§ = 0;
+         this.§>"9§ = 5;
+         this.§""2§ = 0.7;
       }
    }
 }

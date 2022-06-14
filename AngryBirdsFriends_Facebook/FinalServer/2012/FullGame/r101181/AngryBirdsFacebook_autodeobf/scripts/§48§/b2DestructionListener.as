@@ -8,12 +8,7 @@ package §48§
       
       public function b2DestructionListener()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && this))
-         {
-            super();
-         }
+         super();
       }
       
       public function §8X§(param1:b2Joint) : void

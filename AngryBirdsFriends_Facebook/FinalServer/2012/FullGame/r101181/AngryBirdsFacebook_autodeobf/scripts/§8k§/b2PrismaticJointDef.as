@@ -32,142 +32,29 @@ package §8k§
       
       public function b2PrismaticJointDef()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            this.§#C§ = new b2Vec2();
-            while(true)
-            {
-               this.§^!J§ = new b2Vec2();
-            }
-            addr160:
-         }
-         loop1:
-         while(true)
-         {
-            this.§8"C§ = new b2Vec2();
-            loop2:
-            while(true)
-            {
-               super();
-               loop3:
-               while(true)
-               {
-                  if(!_loc1_)
-                  {
-                     continue loop1;
-                  }
-                  type = b2Joint.§#i§;
-                  loop4:
-                  while(_loc1_)
-                  {
-                     this.§8"C§.Set(1,0);
-                     loop5:
-                     while(true)
-                     {
-                        this.§ var§ = 0;
-                        while(true)
-                        {
-                           this.§3"%§ = false;
-                           while(true)
-                           {
-                              this.§[!7§ = 0;
-                              addr93:
-                              while(true)
-                              {
-                                 if(!_loc2_)
-                                 {
-                                    continue loop2;
-                                 }
-                                 continue loop4;
-                              }
-                              continue loop2;
-                              addr76:
-                              if(_loc1_ || _loc1_)
-                              {
-                                 this.§22§ = 0;
-                                 loop11:
-                                 while(true)
-                                 {
-                                    if(!(_loc2_ && _loc2_))
-                                    {
-                                       continue loop3;
-                                    }
-                                    addr88:
-                                    while(true)
-                                    {
-                                       this.§[!c§ = false;
-                                       addr74:
-                                       while(!_loc2_)
-                                       {
-                                          §§goto(addr76);
-                                       }
-                                       §§goto(addr93);
-                                       continue loop11;
-                                    }
-                                 }
-                                 continue loop3;
-                              }
-                           }
-                           if(!(_loc2_ && _loc1_))
-                           {
-                              if(!_loc2_)
-                              {
-                                 return;
-                              }
-                              continue loop5;
-                           }
-                        }
-                     }
-                  }
-                  §§goto(addr160);
-               }
-            }
-         }
+         this.§#C§ = new b2Vec2();
+         this.§^!J§ = new b2Vec2();
+         this.§8"C§ = new b2Vec2();
+         super();
+         type = b2Joint.§#i§;
+         this.§8"C§.Set(1,0);
+         this.§ var§ = 0;
+         this.§3"%§ = false;
+         this.§[!7§ = 0;
+         this.§<!T§ = 0;
+         this.§[!c§ = false;
+         this.§22§ = 0;
+         this.motorSpeed = 0;
       }
       
       public function §`!r§(param1:b2Body, param2:b2Body, param3:b2Vec2, param4:b2Vec2) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(!(_loc5_ && param3))
-         {
-            §!!v§ = param1;
-            while(true)
-            {
-               §'!4§ = param2;
-            }
-            addr107:
-         }
-         loop1:
-         while(true)
-         {
-            this.§#C§ = §!!v§.GetLocalPoint(param3);
-            while(_loc6_ || param3)
-            {
-               this.§^!J§ = §'!4§.GetLocalPoint(param3);
-               while(_loc6_)
-               {
-                  this.§8"C§ = §!!v§.GetLocalVector(param4);
-                  do
-                  {
-                     this.§ var§ = §'!4§.GetAngle() - §!!v§.GetAngle();
-                  }
-                  while(!(_loc6_ || this));
-                  
-                  if(!_loc6_)
-                  {
-                     continue;
-                  }
-                  if(!_loc5_)
-                  {
-                     break loop1;
-                  }
-                  §§goto(addr107);
-               }
-            }
-         }
+         §!!v§ = param1;
+         §'!4§ = param2;
+         this.§#C§ = §!!v§.GetLocalPoint(param3);
+         this.§^!J§ = §'!4§.GetLocalPoint(param3);
+         this.§8"C§ = §!!v§.GetLocalVector(param4);
+         this.§ var§ = §'!4§.GetAngle() - §!!v§.GetAngle();
       }
    }
 }

@@ -8,12 +8,7 @@ package §6o§
       
       public function §5!C§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function §9G§(param1:Class) : XML

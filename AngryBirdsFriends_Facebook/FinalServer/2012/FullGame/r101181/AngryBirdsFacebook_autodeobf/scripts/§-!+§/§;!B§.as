@@ -14,12 +14,7 @@ package §-!+§
       
       public function §;!B§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public function get data() : Object
@@ -29,12 +24,7 @@ package §-!+§
       
       public function set data(param1:Object) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            this.§>">§ = param1;
-         }
+         this.§>">§ = param1;
       }
       
       public function get index() : int
@@ -44,22 +34,12 @@ package §-!+§
       
       public function set index(param1:int) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc3_))
-         {
-            this.§<!g§ = param1;
-         }
+         this.§<!g§ = param1;
       }
       
       public function set §-r§(param1:§<i§) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            this.§10§ = param1;
-         }
+         this.§10§ = param1;
       }
    }
 }

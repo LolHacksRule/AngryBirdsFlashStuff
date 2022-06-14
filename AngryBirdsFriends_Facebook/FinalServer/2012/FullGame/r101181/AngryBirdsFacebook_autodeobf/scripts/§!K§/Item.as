@@ -19,12 +19,7 @@ package §!K§
       
       public function Item()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            super();
-         }
+         super();
       }
       
       public function get category() : String
@@ -34,15 +29,7 @@ package §!K§
       
       public function §@!j§() : MovieClip
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         §§push(§8B§);
-         §§push("Inventory_Item_");
-         if(!(_loc3_ && _loc2_))
-         {
-            §§push(§§pop() + this.§;!Y§);
-         }
-         var _loc1_:Class = §§pop().§6"C§(§§pop());
+         var _loc1_:Class = §8B§.§6"C§("Inventory_Item_" + this.§;!Y§);
          return new _loc1_();
       }
    }

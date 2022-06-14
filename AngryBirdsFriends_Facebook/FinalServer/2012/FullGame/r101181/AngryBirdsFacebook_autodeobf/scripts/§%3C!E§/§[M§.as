@@ -28,75 +28,12 @@ package §<!E§
       
       public function §[M§()
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            super();
-            if(!_loc3_)
-            {
-               §§push(this);
-               §§push(this);
-               §§push(this);
-               §§push(this.§^#§ = 0);
-               if(_loc2_ || this)
-               {
-                  var _loc1_:*;
-                  §§push(_loc1_ = §§pop());
-               }
-               §§pop().rotation = §§pop();
-               §§push(_loc1_);
-               if(_loc2_ || this)
-               {
-                  §§push(_loc1_ = §§pop());
-               }
-               §§pop().y = §§pop();
-               §§pop().x = _loc1_;
-               if(_loc2_ || _loc1_)
-               {
-                  addr74:
-                  §§push(this);
-                  §§push(this);
-                  §§push(this);
-                  §§push(this.scaleY = 1);
-                  if(!_loc3_)
-                  {
-                     §§push(_loc1_ = §§pop());
-                  }
-                  §§pop().scaleX = §§pop();
-                  §§push(_loc1_);
-                  if(_loc2_ || _loc3_)
-                  {
-                     §§push(_loc1_ = §§pop());
-                  }
-                  §§pop().alpha = §§pop();
-                  §§pop().§ B§ = _loc1_;
-                  if(_loc3_)
-                  {
-                  }
-                  return;
-                  addr132:
-               }
-               this.red = 1;
-               loop0:
-               while(true)
-               {
-                  this.green = 1;
-                  do
-                  {
-                     if(!_loc3_)
-                     {
-                        continue;
-                     }
-                     continue loop0;
-                  }
-                  while(this.blue = 1, !(_loc2_ || _loc2_));
-                  
-                  §§goto(addr132);
-               }
-            }
-         }
-         §§goto(addr74);
+         super();
+         this.x = this.y = this.rotation = this.§^#§ = 0;
+         this.§ B§ = this.alpha = this.scaleX = this.scaleY = 1;
+         this.red = 1;
+         this.green = 1;
+         this.blue = 1;
       }
    }
 }

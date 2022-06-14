@@ -32,18 +32,8 @@ package §#!e§
       
       public function §>x§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            this.§7z§ = new Dictionary();
-            do
-            {
-               super();
-            }
-            while(!(_loc1_ || _loc1_));
-            
-         }
+         this.§7z§ = new Dictionary();
+         super();
       }
       
       public function §@>§() : int
@@ -53,77 +43,14 @@ package §#!e§
       
       public function §<6§(param1:String) : Array
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc2_:Array = new Array();
          var _loc3_:Number = 0;
-         while(true)
+         while(_loc3_ < this.levelsPerPage)
          {
-            §§push(_loc3_);
-            if(_loc5_ || _loc3_)
-            {
-               if(_loc5_ || _loc2_)
-               {
-                  if(§§pop() >= this.levelsPerPage)
-                  {
-                     if(!_loc6_)
-                     {
-                        break;
-                     }
-                     loop1:
-                     while(true)
-                     {
-                        if(!(_loc6_ && param1))
-                        {
-                           if(_loc5_)
-                           {
-                              break;
-                           }
-                           addr126:
-                           while(true)
-                           {
-                              _loc2_.push(_loc4_);
-                           }
-                        }
-                        while(true)
-                        {
-                           §§push(_loc3_);
-                           if(!(_loc5_ || _loc3_))
-                           {
-                              continue loop1;
-                           }
-                           §§push(§§pop() + 1);
-                           while(true)
-                           {
-                              §§push(Number(§§pop()));
-                              continue loop1;
-                           }
-                        }
-                     }
-                     continue;
-                  }
-                  §§push(param1);
-                  if(_loc5_ || _loc3_)
-                  {
-                     §§push(§§pop() + "-");
-                     if(!_loc6_)
-                     {
-                        §§push(_loc3_);
-                        if(!(_loc6_ && _loc3_))
-                        {
-                           §§push(§§pop() + 1);
-                        }
-                        §§push(§§pop() + §§pop());
-                     }
-                     §§push(§§pop());
-                  }
-                  _loc4_ = §§pop();
-                  §§goto(addr126);
-               }
-               §§goto(addr72);
-            }
-            §§goto(addr73);
+            _loc4_ = param1 + "-" + (_loc3_ + 1);
+            _loc2_.push(_loc4_);
+            _loc3_++;
          }
          return _loc2_;
       }
@@ -140,249 +67,71 @@ package §#!e§
       
       public function §2"C§(param1:String) : Boolean
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         §§push(this.§&<§().indexOf(param1) == -1);
-         if(!_loc2_)
-         {
-            return !§§pop();
-         }
+         return this.§&<§().indexOf(param1) != -1;
       }
       
       public function §&<§() : Array
       {
-         var _loc9_:Boolean = true;
-         var _loc10_:Boolean = false;
          var _loc1_:Array = null;
          var _loc2_:String = null;
          var _loc3_:Array = null;
          var _loc4_:String = null;
-         if(_loc9_ || _loc3_)
+         if(this.§=!J§ == null)
          {
-            if(this.§=!J§ == null)
+            _loc1_ = new Array();
+            for each(_loc2_ in this.pageIndexes)
             {
-               §§goto(addr39);
-            }
-            §§goto(addr141);
-         }
-         addr39:
-         _loc1_ = new Array();
-         for each(_loc2_ in this.pageIndexes)
-         {
-            _loc3_ = this.§<6§(_loc2_);
-            if(!_loc9_)
-            {
-               continue;
-            }
-            var _loc7_:int = 0;
-            if(_loc9_ || _loc3_)
-            {
-               var _loc8_:* = _loc3_;
-               if(!(_loc10_ && _loc1_))
-               {
-                  for each(_loc4_ in _loc8_)
-                  {
-                     if(!(_loc9_ || _loc3_))
-                     {
-                        continue;
-                     }
-                  }
-                  addr122:
-                  continue;
-                  addr119:
-               }
-               while(true)
+               _loc3_ = this.§<6§(_loc2_);
+               for each(_loc4_ in _loc3_)
                {
                   _loc1_.push(_loc4_);
-                  §§goto(addr119);
                }
             }
-            §§goto(addr122);
-         }
-         if(_loc9_ || this)
-         {
             this.§=!J§ = _loc1_;
-            if(_loc10_)
-            {
-               addr141:
-               return this.§=!J§;
-            }
+            return _loc1_;
          }
-         return _loc1_;
+         return this.§=!J§;
       }
       
       public function §3"0§(param1:String) : int
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc2_:int = 0;
-         while(true)
+         while(_loc2_ < this.pageIndexes.length)
          {
-            §§push(_loc2_);
-            if(!_loc4_)
+            _loc3_ = this.pageIndexes[_loc2_];
+            if(param1.indexOf(_loc3_ + "-") == 0)
             {
-               if(!_loc4_)
-               {
-                  if(§§pop() >= this.pageIndexes.length)
-                  {
-                     if(!(_loc4_ && param1))
-                     {
-                        if(!_loc4_)
-                        {
-                           break;
-                        }
-                        while(_loc4_ && _loc2_)
-                        {
-                           loop2:
-                           while(true)
-                           {
-                              §§push(param1);
-                              if(_loc5_ || _loc2_)
-                              {
-                                 break;
-                              }
-                              addr103:
-                              while(true)
-                              {
-                                 _loc3_ = §§pop();
-                                 continue loop2;
-                              }
-                           }
-                           if(§§pop().indexOf(_loc3_ + "-") != 0)
-                           {
-                              break;
-                           }
-                           if(!_loc4_)
-                           {
-                              §§goto(addr87);
-                           }
-                        }
-                        _loc2_++;
-                     }
-                     continue;
-                  }
-                  §§push(this.pageIndexes[_loc2_]);
-                  §§goto(addr103);
-               }
-               addr87:
                return _loc2_;
             }
-            break;
+            _loc2_++;
          }
-         return §§pop();
+         return -1;
       }
       
       public function §6!M§(param1:String) : String
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         var _loc4_:* = 0;
-         §§push(param1);
-         if(!(_loc6_ && this))
-         {
-            §§push(§§pop().substring(0,param1.indexOf("-")));
-         }
-         var _loc2_:* = §§pop();
+         var _loc4_:int = 0;
+         var _loc2_:String = param1.substring(0,param1.indexOf("-"));
          var _loc3_:int = parseInt(param1.substring(param1.indexOf("-") + 1));
-         if(!_loc6_)
+         if(_loc3_ < this.levelsPerPage)
          {
-            §§push(_loc3_);
-            loop0:
-            while(§§pop() >= this.levelsPerPage)
-            {
-               loop1:
-               while(true)
-               {
-                  §§push(0);
-                  if(_loc6_ && this)
-                  {
-                     break;
-                  }
-                  _loc4_ = §§pop();
-                  if(_loc5_ || param1)
-                  {
-                     if(!(_loc5_ || _loc2_))
-                     {
-                        break loop0;
-                     }
-                     while(true)
-                     {
-                        §§push(_loc4_);
-                        if(!_loc6_)
-                        {
-                           if(§§pop() >= this.pageIndexes.length)
-                           {
-                              if(!(_loc6_ && param1))
-                              {
-                                 if(!_loc5_)
-                                 {
-                                    §§goto(addr111);
-                                 }
-                              }
-                              else
-                              {
-                                 addr73:
-                                 if(!_loc6_)
-                                 {
-                                    if(_loc6_)
-                                    {
-                                       addr101:
-                                       §§push(_loc4_);
-                                    }
-                                    continue;
-                                    break;
-                                 }
-                                 addr69:
-                              }
-                              return null;
-                           }
-                           §§push(this.pageIndexes);
-                           if(_loc5_)
-                           {
-                              §§push(_loc4_);
-                              if(_loc5_)
-                              {
-                                 if(§§pop()[§§pop()] != _loc2_)
-                                 {
-                                    _loc4_++;
-                                    §§goto(addr73);
-                                 }
-                                 §§goto(addr101);
-                              }
-                           }
-                           §§goto(addr111);
-                        }
-                        break;
-                     }
-                     if(§§pop() + 1 < this.pageIndexes.length)
-                     {
-                        addr111:
-                        §§push(this.pageIndexes[_loc4_ + 1] + "-");
-                        if(!_loc6_)
-                        {
-                           return §§pop() + 1;
-                        }
-                     }
-                     §§goto(addr69);
-                  }
-                  else
-                  {
-                     while(true)
-                     {
-                        continue loop1;
-                     }
-                     addr176:
-                  }
-               }
-            }
-            §§push(_loc2_ + "-");
-            if(!(_loc6_ && _loc3_))
-            {
-               return §§pop() + (_loc3_ + 1);
-            }
+            return _loc2_ + "-" + (_loc3_ + 1);
          }
-         §§goto(addr176);
+         _loc4_ = 0;
+         while(_loc4_ < this.pageIndexes.length)
+         {
+            if(this.pageIndexes[_loc4_] == _loc2_)
+            {
+               if(_loc4_ + 1 < this.pageIndexes.length)
+               {
+                  return this.pageIndexes[_loc4_ + 1] + "-" + 1;
+               }
+               break;
+            }
+            _loc4_++;
+         }
+         return null;
       }
       
       public function get name() : String
@@ -392,12 +141,7 @@ package §#!e§
       
       public function set name(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc2_))
-         {
-            this.mName = param1;
-         }
+         this.mName = param1;
       }
       
       public function get menuImage() : String
@@ -407,12 +151,7 @@ package §#!e§
       
       public function set menuImage(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§>@§ = param1;
-         }
+         this.§>@§ = param1;
       }
       
       public function get levelsPerPage() : int
@@ -422,12 +161,7 @@ package §#!e§
       
       public function set levelsPerPage(param1:int) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§7H§ = param1;
-         }
+         this.§7H§ = param1;
       }
       
       public function get levels() : Array
@@ -442,12 +176,7 @@ package §#!e§
       
       public function set §7f§(param1:Array) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || _loc3_)
-         {
-            this.§^!l§ = param1;
-         }
+         this.§^!l§ = param1;
       }
       
       public function get §9!f§() : int
@@ -457,63 +186,10 @@ package §#!e§
       
       public function set §9!f§(param1:int) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
+         if(param1 >= 0 && param1 < this.pageIndexes.length)
          {
-            §§push(param1);
-            loop0:
-            while(true)
-            {
-               §§push(§§pop() >= 0);
-               if(!_loc2_)
-               {
-                  if(!§§pop())
-                  {
-                     loop1:
-                     while(true)
-                     {
-                        if(§§pop())
-                        {
-                           if(_loc3_ || _loc3_)
-                           {
-                              while(true)
-                              {
-                                 this.§`&§ = param1;
-                              }
-                              addr68:
-                           }
-                           while(true)
-                           {
-                              if(_loc3_)
-                              {
-                                 break loop1;
-                              }
-                              continue loop0;
-                           }
-                        }
-                        §§push(§§pop() < this.pageIndexes.length);
-                        addr38:
-                        break;
-                        if(_loc3_ || param1)
-                        {
-                           continue;
-                        }
-                        addr81:
-                        while(true)
-                        {
-                           §§pop();
-                           continue loop0;
-                        }
-                        addr81:
-                     }
-                     return;
-                  }
-               }
-               §§goto(addr81);
-            }
+            this.§`&§ = param1;
          }
-         §§goto(addr68);
       }
       
       public function get pageIndexes() : Array
@@ -523,22 +199,12 @@ package §#!e§
       
       public function set pageIndexes(param1:Array) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§7"$§ = param1;
-         }
+         this.§7"$§ = param1;
       }
       
       public function §9!j§(param1:String, param2:String) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_ || this)
-         {
-            this.§7z§[param1] = param2;
-         }
+         this.§7z§[param1] = param2;
       }
       
       public function §<!5§(param1:String) : String
@@ -553,12 +219,7 @@ package §#!e§
       
       public function set levelButtons(param1:Array) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§@H§ = param1;
-         }
+         this.§@H§ = param1;
       }
       
       public function get §return§() : String
@@ -568,12 +229,7 @@ package §#!e§
       
       public function set §return§(param1:String) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc2_))
-         {
-            this.§1Q§ = param1;
-         }
+         this.§1Q§ = param1;
       }
       
       public function get §!!u§() : String
@@ -583,12 +239,7 @@ package §#!e§
       
       public function set §!!u§(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || param1)
-         {
-            this.§2!a§ = param1;
-         }
+         this.§2!a§ = param1;
       }
       
       public function get writtenName() : String
@@ -598,12 +249,7 @@ package §#!e§
       
       public function set writtenName(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || _loc2_)
-         {
-            this.§+,§ = param1;
-         }
+         this.§+,§ = param1;
       }
    }
 }

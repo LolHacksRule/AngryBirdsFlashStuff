@@ -36,45 +36,23 @@ package §48§
       
       public function b2BodyDef()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && this))
-         {
-            this.position = new b2Vec2();
-            loop0:
-            while(true)
-            {
-               this.§5"0§ = new b2Vec2();
-               loop1:
-               while(true)
-               {
-                  super();
-                  addr203:
-                  while(true)
-                  {
-                     this.§6"&§ = null;
-                     while(true)
-                     {
-                        this.position.Set(0,0);
-                        while(_loc1_ || _loc2_)
-                        {
-                           this.angle = 0;
-                           while(true)
-                           {
-                              this.§5"0§.Set(0,0);
-                              continue loop1;
-                           }
-                           if(!(_loc2_ && _loc1_))
-                           {
-                              continue loop0;
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr139);
+         this.position = new b2Vec2();
+         this.§5"0§ = new b2Vec2();
+         super();
+         this.§6"&§ = null;
+         this.position.Set(0,0);
+         this.angle = 0;
+         this.§5"0§.Set(0,0);
+         this.§!!a§ = 0;
+         this.§,!;§ = 0;
+         this.§'!k§ = 0;
+         this.§'"@§ = true;
+         this.§<_§ = true;
+         this.§1?§ = false;
+         this.§=-§ = false;
+         this.type = b2Body.b2_staticBody;
+         this.§'a§ = true;
+         this.§-0§ = 1;
       }
    }
 }

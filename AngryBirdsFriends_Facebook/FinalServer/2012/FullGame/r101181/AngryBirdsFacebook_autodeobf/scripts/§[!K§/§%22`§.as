@@ -7,24 +7,11 @@ package §[!K§
    {
       
       public static const STATE_NAME:String = "stateTournamentPause";
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            STATE_NAME = "stateTournamentPause";
-         }
-      }
+       
       
       public function §"`§(param1:Boolean = false, param2:String = "stateTournamentPause")
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!_loc3_)
-         {
-            super(param1,param2);
-         }
+         super(param1,param2);
       }
       
       override protected function getLevelNameToDisplay(param1:String) : String

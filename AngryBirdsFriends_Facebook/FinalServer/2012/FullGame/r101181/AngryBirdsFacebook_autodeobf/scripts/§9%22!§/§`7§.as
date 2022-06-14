@@ -9,22 +9,8 @@ package §9"!§
       
       private static const §&!=§:Number = 10;
       
-      public static const §-U§:Number = 1.0;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc2_))
-         {
-            §&!=§ = 10;
-         }
-         do
-         {
-            §-U§ = 1;
-         }
-         while(_loc1_);
-         
-      }
+      public static const §-U§:Number = 1;
+       
       
       private var §9!'§:§"m§ = null;
       
@@ -32,185 +18,73 @@ package §9"!§
       
       public function §`7§(param1:§2a§, param2:Sprite, param3:String, param4:Number, param5:Number)
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
-         if(_loc6_ || param1)
-         {
-            this.§0b§ = new Object();
-            do
-            {
-               super(param1,param2,param3,param4,param5);
-            }
-            while(_loc7_);
-            
-         }
+         this.§0b§ = new Object();
+         super(param1,param2,param3,param4,param5);
       }
       
       public function §4!]§(param1:Number, param2:Number, param3:Boolean = true) : §"m§
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(!_loc5_)
+         §]!b§ = false;
+         §'V§ = -1;
+         this.§0b§.x = §,!k§;
+         this.§0b§.y = §!Q§;
+         this.§0b§.rotation = §@P§;
+         if(param3)
          {
-            §]!b§ = false;
-            loop0:
-            while(true)
-            {
-               §'V§ = -1;
-               addr202:
-               while(true)
-               {
-                  this.§0b§.x = §,!k§;
-                  continue loop0;
-               }
-            }
+            this.§9!'§ = §>!+§.§;"§.§2!z§(§>!+§.§;"§.§^!K§(this.§0b§,{
+               "x":param1,
+               "rotation":-360
+            },null,§-U§),§>!+§.§;"§.§%!p§(§>!+§.§;"§.§^!K§(this.§0b§,{"y":this.§0b§.y - §&!=§},null,§-U§ / 2,§>!+§.§;U§),§>!+§.§;"§.§^!K§(this.§0b§,{"y":param2},{"y":this.§0b§.y - §&!=§},§-U§ / 2,§>!+§.§19§)));
          }
-         §§goto(addr162);
+         else
+         {
+            this.§9!'§ = §>!+§.§;"§.§^!K§(null,null,null,§`7§.§-U§);
+         }
+         this.§9!'§.play();
+         this.§9!'§.onComplete = this.§3!i§;
+         return this.§9!'§;
       }
       
       private function §3!i§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && this))
-         {
-            this.§9!'§ = null;
-            loop0:
-            while(true)
-            {
-               §@P§ = this.§0b§.rotation;
-               while(true)
-               {
-                  setPosition(this.§0b§.x,this.§0b§.y);
-                  addr44:
-                  if(!(_loc2_ && this))
-                  {
-                     continue loop0;
-                  }
-               }
-            }
-         }
-         while(true)
-         {
-            §]!b§ = false;
-            while(!_loc2_)
-            {
-               §'V§ = -1;
-               if(_loc2_)
-               {
-                  continue;
-               }
-               §§goto(addr44);
-            }
-         }
-         §§goto(addr68);
+         this.§9!'§ = null;
+         §@P§ = this.§0b§.rotation;
+         setPosition(this.§0b§.x,this.§0b§.y);
+         §]!b§ = false;
+         §'V§ = -1;
       }
       
       override public function update(param1:Number, param2:Boolean = false, param3:Boolean = true) : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(_loc4_ || param2)
+         if(this.§9!'§ != null)
          {
-            §§push(this.§9!'§);
-            while(true)
-            {
-               if(§§pop() == null)
-               {
-                  super.update(param1,param2,param3);
-                  if(_loc5_)
-                  {
-                     break;
-                  }
-                  if(!_loc5_)
-                  {
-                     if(_loc4_ || param1)
-                     {
-                        §§goto(addr24);
-                     }
-                     loop1:
-                     while(true)
-                     {
-                        if(_loc4_ || this)
-                        {
-                           while(true)
-                           {
-                              §,!7§();
-                           }
-                           addr107:
-                        }
-                        else
-                        {
-                           while(true)
-                           {
-                              §@P§ = this.§0b§.rotation;
-                              continue loop1;
-                           }
-                           addr112:
-                        }
-                     }
-                  }
-                  while(_loc5_ && param1)
-                  {
-                     §§goto(addr117);
-                  }
-                  continue;
-               }
-               §§goto(addr112);
-            }
-            addr24:
-            return;
+            §@P§ = this.§0b§.rotation;
+            setPosition(this.§0b§.x,this.§0b§.y);
+            §,!7§();
+            this.§9!'§.play();
          }
-         §§goto(addr107);
+         else
+         {
+            super.update(param1,param2,param3);
+         }
       }
       
       override public function applyGravity(param1:Number) : Boolean
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && this))
+         if(this.§9!'§ != null)
          {
-            if(this.§9!'§ != null)
-            {
-               if(!_loc2_)
-               {
-                  §§push(false);
-                  if(_loc3_)
-                  {
-                     return §§pop();
-                  }
-               }
-               else
-               {
-                  addr44:
-                  return super.applyGravity(param1);
-               }
-               return §§pop();
-            }
+            return false;
          }
-         §§goto(addr44);
+         return super.applyGravity(param1);
       }
       
       override public function updateGroundControl(param1:Number) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && param1))
+         if(this.§9!'§ != null)
          {
-            if(this.§9!'§ == null)
-            {
-               do
-               {
-                  super.updateGroundControl(param1);
-               }
-               while(_loc3_ && _loc2_);
-               
-               if(_loc2_)
-               {
-                  return;
-               }
-            }
+            return;
          }
+         super.updateGroundControl(param1);
       }
    }
 }
