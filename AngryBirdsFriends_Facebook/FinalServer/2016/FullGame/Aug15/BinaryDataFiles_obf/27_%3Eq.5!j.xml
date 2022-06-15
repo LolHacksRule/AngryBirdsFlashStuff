@@ -1,0 +1,24 @@
+		<Popup name="Popup_CoinShop" visible="False" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="1024" height="768">
+			<Container name="Container_CoinShopPopup" visible="False">
+			
+				<MovieClip name="AngryBirdLoader" visible="True"/>
+				
+				 <Container name="Container_Tab_PayByMobile" visible="False">
+				 	<TextField name="TextField_ChooseCountry"></TextField>
+				 
+				 	<Button name="Button_ActiveCountry"></Button>
+				 	
+				 	<Container name="Container_Country">
+                    	<Button name="Button_CountryDropDown" MouseDown="COUNTRY_DROPDOWN"/>
+                    </Container>            		 
+                 </Container>                 
+				 				                  
+				 <Button name="Button_Pay0" />
+				 <Button name="Button_Pay1" />
+				 <Button name="Button_Pay2" />	
+				 <Button name="Button_Redeem" />
+				 <Button name="Button_Code" />
+				<MovieClip name="ContentUpperRow"/>
+				<MovieClip name="ContentLowerRow"/>
+			</Container>
+		</Popup>
