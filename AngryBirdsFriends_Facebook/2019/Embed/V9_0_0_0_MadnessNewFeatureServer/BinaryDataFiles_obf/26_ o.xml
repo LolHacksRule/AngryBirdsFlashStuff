@@ -1,0 +1,36 @@
+<Assets>
+	<packages>
+		<pack url="packages/core.pak"/>
+		<pack url="packages/birds.pak"/>
+		<pack url="packages/pigs.pak"/>
+		<pack url="packages/blocks.pak"/>
+		<pack url="packages/facebook.pak"/>
+		<pack url="packages/chapterwonderland.pak"/>		
+	</packages>
+
+	<Library swf="external_assets/AngryBirdsEmbedUI.swf" startupLoad="true" name="EmbedGameUiAssets">
+		<!--<Asset name="LevelSelectionCrown"/>-->
+		<Asset name="ViewFacebookLevelPause"/>
+		<Asset name="ViewFacebookLevelPlay"/>
+		<Asset name="ViewLevelEndRio"/>
+		<Asset name="ViewLevelEndFailRio"/>
+		<Asset name="FullGameBox"/>
+        <Asset name="FullScreenBox"/>
+
+        <!--  Star splash effects for end screen -->
+		<Asset name="P_STAR_5"/>
+		<Asset name="P_STAR_4"/>
+		<Asset name="P_STAR_3"/>
+		<Asset name="P_STAR_2"/>
+		<Asset name="P_STAR_1"/>
+		<Asset name="P_SMOKE_3"/>
+		<Asset name="P_SMOKE_2"/>
+		<Asset name="P_SMOKE_1"/>
+
+		<Asset name="ThankYouForPlaying"/>
+
+	</Library>
+
+
+	
+</Assets>

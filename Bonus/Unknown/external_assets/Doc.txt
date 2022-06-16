@@ -1,1 +1,1 @@
-LoadTest: Seems to be an empty test asset for ABFP11 games to load. For that it's not provided.
+LoadTest/Blank: Seems to be an empty test asset for ABFP11 games to load. For that it's not provided.

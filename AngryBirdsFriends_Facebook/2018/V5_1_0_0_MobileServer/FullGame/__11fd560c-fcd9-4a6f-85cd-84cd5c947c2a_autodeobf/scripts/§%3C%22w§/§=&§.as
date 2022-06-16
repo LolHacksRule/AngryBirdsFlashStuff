@@ -1,0 +1,7 @@
+package §<"w§
+{
+   public interface §=&§
+   {
+       
+   }
+}

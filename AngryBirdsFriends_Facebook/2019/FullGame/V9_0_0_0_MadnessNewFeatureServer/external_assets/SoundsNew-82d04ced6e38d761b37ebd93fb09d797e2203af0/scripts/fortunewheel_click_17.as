@@ -1,0 +1,14 @@
+package
+{
+   import flash.media.Sound;
+   
+   public dynamic class fortunewheel_click_17 extends Sound
+   {
+       
+      
+      public function fortunewheel_click_17()
+      {
+         super();
+      }
+   }
+}
