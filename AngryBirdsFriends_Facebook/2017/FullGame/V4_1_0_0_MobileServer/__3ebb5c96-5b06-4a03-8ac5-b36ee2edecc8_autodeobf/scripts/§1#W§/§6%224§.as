@@ -1,0 +1,20 @@
+package §1#W§
+{
+   public class §6"4§ extends §9#1§
+   {
+      
+      public static const §7$"§:String = "stream_error";
+       
+      
+      public var error:String;
+      
+      public var errorID:int;
+      
+      public function §6"4§(param1:String, param2:String = "", param3:int = 0, param4:Boolean = false, param5:Boolean = false)
+      {
+         super(param1,"","",param4,param5);
+         this.error = param2;
+         this.errorID = param3;
+      }
+   }
+}
