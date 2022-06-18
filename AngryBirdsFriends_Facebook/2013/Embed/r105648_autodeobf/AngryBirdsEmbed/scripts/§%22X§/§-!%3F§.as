@@ -1,0 +1,151 @@
+package §"X§
+{
+   import §??§.§5!@§;
+   import flash.display.BitmapData;
+   import flash.display3D.Context3D;
+   import flash.display3D.Context3DTextureFormat;
+   import flash.display3D.textures.Texture;
+   import flash.display3D.textures.TextureBase;
+   import flash.utils.ByteArray;
+   import starling.events.Event;
+   
+   public class §-!?§ extends §"X§.Texture
+   {
+       
+      
+      private var §2!5§:TextureBase;
+      
+      private var §<w§:int;
+      
+      private var §"!?§:int;
+      
+      private var §9!B§:Boolean;
+      
+      private var §+i§:Boolean;
+      
+      private var §'!8§:Boolean;
+      
+      private var §80§:Object;
+      
+      private var §<!=§:Boolean = false;
+      
+      public function §-!?§(param1:TextureBase, param2:int, param3:int, param4:Boolean, param5:Boolean, param6:Boolean = false)
+      {
+         super();
+         this.§2!5§ = param1;
+         this.§<w§ = param2;
+         this.§"!?§ = param3;
+         this.§9!B§ = param4;
+         this.§+i§ = param5;
+         this.§'!8§ = param6;
+      }
+      
+      override public function dispose() : void
+      {
+         if(this.§2!5§)
+         {
+            this.§2!5§.dispose();
+         }
+         this.§+f§(null);
+         super.dispose();
+      }
+      
+      public function §+f§(param1:Object) : void
+      {
+         if(this.§80§ == null && param1 != null)
+         {
+            §5!@§.§8%§.addEventListener(Event.CONTEXT3D_CREATE,this.§5f§);
+         }
+         if(param1 == null)
+         {
+            §5!@§.§8%§.removeEventListener(Event.CONTEXT3D_CREATE,this.§5f§);
+         }
+         this.§80§ = param1;
+      }
+      
+      private function §5f§(param1:Event) : void
+      {
+         this.requestBaseTextureUpdate(null);
+      }
+      
+      override public function requestBaseTextureUpdate(param1:Object) : void
+      {
+         this.§<!=§ = true;
+         if(param1 != null)
+         {
+            this.§+f§(param1);
+         }
+      }
+      
+      public function get §6! §() : Boolean
+      {
+         return this.§'!8§;
+      }
+      
+      override public function getBase(param1:Context3D) : TextureBase
+      {
+         this.§"j§(param1);
+         return this.§2!5§;
+      }
+      
+      override public function get root() : §"X§.Texture
+      {
+         return this;
+      }
+      
+      private function §"j§(param1:Context3D) : void
+      {
+         var _loc4_:flash.display3D.textures.Texture = null;
+         var _loc5_:String = null;
+         if(!this.§<!=§)
+         {
+            return;
+         }
+         var _loc2_:BitmapData = this.§80§ as BitmapData;
+         var _loc3_:ByteArray = this.§80§ as ByteArray;
+         if(_loc2_)
+         {
+            _loc4_ = param1.createTexture(this.§<w§,this.§"!?§,Context3DTextureFormat.BGRA,this.§'!8§);
+            §"X§.Texture.uploadBitmapData(_loc4_,_loc2_,this.§9!B§);
+         }
+         else if(_loc3_)
+         {
+            _loc5_ = _loc3_[6] == 2 ? Context3DTextureFormat.COMPRESSED : Context3DTextureFormat.BGRA;
+            _loc4_ = param1.createTexture(this.§<w§,this.§"!?§,_loc5_,this.§'!8§);
+            §"X§.Texture.uploadAtfData(_loc4_,_loc3_);
+         }
+         this.§2!5§ = _loc4_;
+         this.§<!=§ = false;
+      }
+      
+      override public function get width() : Number
+      {
+         return this.§<w§;
+      }
+      
+      override public function get height() : Number
+      {
+         return this.§"!?§;
+      }
+      
+      override public function get mipMapping() : Boolean
+      {
+         return this.§9!B§;
+      }
+      
+      override public function get premultipliedAlpha() : Boolean
+      {
+         return this.§+i§;
+      }
+      
+      override public function get bitmapData() : BitmapData
+      {
+         return this.§80§ as BitmapData;
+      }
+      
+      override public function get clippedBitmapData() : BitmapData
+      {
+         return this.bitmapData;
+      }
+   }
+}

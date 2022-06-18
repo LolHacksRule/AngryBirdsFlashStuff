@@ -1,0 +1,7 @@
+package §;J§
+{
+   public interface §"#`§
+   {
+       
+   }
+}
