@@ -1,1 +1,0 @@
-Game reads this in flash/flash/ but let's use a better directory
