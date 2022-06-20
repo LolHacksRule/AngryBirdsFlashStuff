@@ -1,0 +1,64 @@
+	<Popup name="Popup_AngryShop" visible="False" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="1024" height="768">
+		<Container name="Container_Popup" visible="False">
+		
+			<MovieClip name="AngryBirdLoader" visible="True"/>
+
+		
+			<Button name="Button_ShopClose" MouseDown="SHOP_POPUP_CLOSE" scaleOnMouseOver="TRUE"/>
+			
+			<Button name="Button_PowerUps" MouseDown="SHOP_POPUP_TAB_POWERUPS" MouseOver="SHOP_POPUP_TAB_POWERUPS_OVER" MouseOut="SHOP_POPUP_TAB_POWERUPS_OUT" visible="False"/>
+			<Button name="Button_Avatars" MouseDown="SHOP_POPUP_TAB_AVATARS" MouseOver="SHOP_POPUP_TAB_AVATARS_OVER" MouseOut="SHOP_POPUP_TAB_AVATARS_OUT" visible="False"/>
+			<Button name="Button_LevelPacks" MouseDown="SHOP_POPUP_TAB_LEVELPACKS" MouseOver="SHOP_POPUP_TAB_LEVELPACKS_OVER" MouseOut="SHOP_POPUP_TAB_LEVELPACKS_OUT" visible="False"/>
+
+
+			<MovieClip name="MovieClip_HotStuff" visible="False"/>
+
+			<Container name="Container_HotStuff1" visible="False">
+				<MovieClip name="MovieClip_HotStuffBG1"/>
+				<MovieClip name="MovieClip_HotStuffAsset1"/>
+				<TextField name="TextField_HotStuff1"/>
+				<Button name="Button_HotStuffBuy1" MouseDown="SHOP_POPUP_HOTSTUFF1_BUY" />
+			</Container>
+			<Container name="Container_HotStuff2" visible="False">
+				<MovieClip name="MovieClip_HotStuffBG2"/>
+				<MovieClip name="MovieClip_HotStuffAsset2"/>
+				<TextField name="TextField_HotStuff2"/>
+				<Button name="Button_HotStuffBuy2" MouseDown="SHOP_POPUP_HOTSTUFF2_BUY" />
+			</Container>
+			<Container name="Container_HotStuff3" visible="False">
+				<MovieClip name="MovieClip_HotStuffBG3"/>
+				<MovieClip name="MovieClip_HotStuffAsset3"/>
+				<TextField name="TextField_HotStuff3"/>
+				<Button name="Button_HotStuffBuy3" MouseDown="SHOP_POPUP_HOTSTUFF3_BUY" />
+			</Container>
+			<Container name="Container_HotStuff4" visible="False">
+				<MovieClip name="MovieClip_HotStuffBG4"/>
+				<MovieClip name="MovieClip_HotStuffAsset4"/>
+				<TextField name="TextField_HotStuff4"/>
+				<Button name="Button_HotStuffBuy4" MouseDown="SHOP_POPUP_HOTSTUFF4_BUY" />
+			</Container>
+
+			<Container name="Container_PowerUps" visible="False">
+			</Container>
+			
+			<Container name="Container_Avatars" visible="False">
+			<!-- 
+				<Button name="Button_AvatarsTab1" MouseDown="SHOP_POPUP_AVATARS_TAB1" />
+				<Button name="Button_AvatarsTab2" MouseDown="SHOP_POPUP_AVATARS_TAB2" />
+				<Button name="Button_AvatarsTab3" MouseDown="SHOP_POPUP_AVATARS_TAB3" />
+				<Button name="Button_AvatarsTab4" MouseDown="SHOP_POPUP_AVATARS_TAB4" />
+				<Button name="Button_AvatarsTab5" MouseDown="SHOP_POPUP_AVATARS_TAB5" />
+				
+				<MovieClip name="MovieClip_AvatarsTabOff1" enabled="False" visible="False"/>
+				<MovieClip name="MovieClip_AvatarsTabOff2" enabled="False"/>
+				<MovieClip name="MovieClip_AvatarsTabOff3" enabled="False"/>
+				<MovieClip name="MovieClip_AvatarsTabOff4" enabled="False"/>
+				<MovieClip name="MovieClip_AvatarsTabOff5" enabled="False"/>
+				 -->
+			</Container>
+			
+			<Container name="Container_LevelPacks" visible="False">
+			</Container>
+			
+		</Container>
+	</Popup>

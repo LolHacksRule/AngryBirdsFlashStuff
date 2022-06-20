@@ -1,0 +1,256 @@
+<avatar_data game="AngryBirds" version="0.0.0">
+	<!-- 
+	
+	
+	This contains the client-side data for avatar animations and avatar items.
+	The server only knows the sID (server ID) for the items.
+	Item Id is used to match the item with a frame inside a avatars hats for example and its used to search
+	for an icon by searching for: "Inventory_"+itemId from the AvatarCreatorUI.swf
+	
+	
+	
+	
+	
+	Characters
+		Values: id = id of character
+		activeScale: Character scale when character is active. Default = 1.0
+		inactiveScale: Character scale when character is not active. Default = 0.5
+		snapshotScale: Avatar scale when user is taking snapshot. Default = 1.0
+		
+		
+		
+		 BACKGROUND("B"),
+		 CHARACTER("C"),
+		 HAIR("H"),
+		 EYES("E"),
+		 MOUTH("M"),
+		 WEAR("W");
+		
+		
+		
+	-->
+   <characters>
+   		<character id="BlackBird" activeScale="0.9"/>
+   		<character id="YellowBird" activeScale="1.2"/>
+   		<character id="RedBird"/>
+   		<character id="SpaceRedBird"/>
+   		<character id="WhiteBird" activeScale="0.8"/>
+   		<character id="BlueBird" activeScale="1.7" />
+   		<character id="GreenBird" activeScale="1"/>
+   		<character id="BigBrotherBird" activeScale="0.9"/>
+ 		<character id="Piggy"/>
+   		<character id="FemaleBird"/>
+ 		<character id="MightyEagle" activeScale="0.9"/>
+ 		<character id="Egg" activeScale="0.8"/>
+       	<character id="PinkBird"/>
+ 		<character id="OrangeBird"/>
+ 		<character id="GreenDay_TreCool"/>
+ 		<character id="GreenDay_BillieJoe"/>
+ 		<character id="GreenDay_Mike"/>
+   </characters>
+   
+   
+	<!-- Items for avatar  server id: C10001 etc... -->
+   <items>
+   	
+    	 <category id="CategoryBirds" 							sid="C">
+   			<item id="RedBird" name="C10001 - Character - Bird - Red Male" 					sid="10001"/>
+   			<item id="YellowBird" name="C10002 - Character - Bird - Yellow Male" 			sid="10002"/>
+   			<item id="BlueBird" name="C10003 - Character - Bird - Blue Male" 				sid="10003"/>
+   			<item id="FemaleBird" name="C10004 - Character - Bird - Red Female" 			sid="10004"/>
+  			<item id="GreenBird" name="C10005 - Character - Bird - Green Male" 				sid="10005"/>
+   			<item id="Piggy" name="C10006 - Character - Pig - Minion Male" 					sid="10006"/>
+  			<item id="BlackBird" name="C10007 - Character - Bird - Black Male" 				sid="10007"/>
+   			<item id="BigBrotherBird" name="C10008 - Character - Bird - Terence Male" 		sid="10008"/>
+   			<item id="MightyEagle" name="C10009 - Character - Bird - Mighty Eagle Male" 	sid="10009"/>
+   			<item id="WhiteBird" name="C10010 - Character - Bird - White Female" 			sid="10010"/>
+   			<item id="SpaceRedBird" name="C10011 - Character - Bird - Space Red Male" 		sid="10011"/>
+   			<item id="Egg" name="C10012 - Character - Bird - Egg" 							sid="10012"/>
+            <item id="PinkBird" name="C10013 - Character - Bird - Pink Female" 				sid="10013"/>
+   			<item id="OrangeBird" name="C10014 - Character - Bird - Orange Male" 			sid="10014"/>
+   			
+   			<item id="GreenDay_TreCool" name="C10015 - Character - Pig - Green Day Tre Cool" sid="10015"/>
+            <item id="GreenDay_BillieJoe" name="C10016 - Character - Pig - Green Day Billie Joe" sid="10016"/>
+   			<item id="GreenDay_Mike" name="C10017 - Character - Pig - Green Day Mike Dirnt" sid="10017"/>
+   		</category>
+   
+   
+		 <!-- Category top  server id: T30001 etc... -->
+         <category id="CategoryTop"								sid="H">
+	       	<item id="PirateCaptainHat" name="H30001 - Head - Pirate - Black Captain Hat"	sid="30001"
+         				anchor="Hats"/> 	        
+ 	        <item id="CowboyHat" name="H30002 - Head - Wild West - Brown Cowboy Hat"		sid="30002"
+	        		 	anchor="Hats"/>
+	        <item id="Sombrero" name="H30003 - Head - Wild West - Sombrero"					sid="30003"
+	        		 	anchor="Hats"/> 
+	        <item id="Crown" name="H30004 - Head - Medieval - Golden Crown"					sid="30004"
+	        		 	anchor="Hats"/>  
+	        <item id="BrownHat" name="H30005 - Head - Basic - Brown Fedora"					sid="30005"
+	        		 	anchor="Hats"/>  
+	        <item id="GreyHat" name="H30006 - Head - Basic - Old Fashioned Hat"				sid="30006"
+	        		 	anchor="Hats"/>
+	        <item id="RedBow" name="H30007 - Head - Basic - Red Bow"						sid="30007"
+	        		 	anchor="Hats"/>
+	        <item id="BlackTopHat" name="H30008 - Head - Rich - Black Top Hat"				sid="30008"
+	        		 	anchor="Hats"/>
+	        <item id="IndianFeathers" name="H30009 - Head - Native American - Feathers"		sid="30009"
+	        		 	anchor="Hats"/>
+	        <item id="CrazyScientistHair" name="H30010 - Head - Crazy Scientist - White Hair" sid="30010"
+	        		 	anchor="Hats"/>
+	        <item id="FishermanHat" name="H30011 - Head - Fishing - Green Hat"				sid="30011"
+	        		 	anchor="Hats"/>
+	        <item id="BanditoHat" name="H30012 - Head - Wild West - Bandito Hat"			sid="30012"
+	        		 	anchor="Hats"/>
+	        <item id="ClownHat" name="H30013 - Head - Clown - Hat"							sid="30013"
+	        		 	anchor="Hats"/>
+	        <item id="VikingHelmet" name="H30014 - Head - Viking - Horned Helmet"			sid="30014"
+	        		 	anchor="Hats"/>
+	        <item id="LeprechaunHat" name="H30015 - Head - Leprechaun - Hat"				sid="30015"
+	        		 	anchor="Hats"/>
+	        <item id="PunkHair" name="H30016 - Head - Punk - Green Mohawk"					sid="30016"
+	        		 	anchor="Hats"/>
+    		<item id="WhiteBunnyEars" name="H30017 - Head - Easter 2012 - White Bunny Ears"	sid="30017"
+	        		 	anchor="Hats"/>
+	        <item id="FluffyBunnyEars" name="H30018 - Head - Easter 2012 - Pink Bunny Ears"	sid="30018"
+	        		 	anchor="Hats"/>
+	        <item id="GraduationHat" name="H30019 - Head - Education - Black Graduate"		sid="30019"
+	        		 	anchor="Hats"/>
+	        		 	
+	        <!-- halloween hat -->
+	        <item id="HunterHat" name="H30020 - Head - Halloween 2012 - Hunter’s Hat"		sid="30020"
+	        		 	anchor="Hats"/>
+
+	        <!-- 3 chrismtas hats -->
+	        <item id="Beanie" 		name="H30021 - Head - Christmas 2012 - Beanie"			sid="30021"		anchor="Hats"/>
+	        <item id="TrooperHat" 	name="H30022 - Head - Christmas 2012 - Trooper Hat"		sid="30022"		anchor="Hats"/>
+	        <item id="SantaHat" 	name="H30023 - Head - Christmas 2012 - Santa Hat"		sid="30023"		anchor="Hats"/>
+	        		 	  
+			<!-- easter hats added -->
+			
+			<item id="FungiHat" 	name="H30024 - Head - Easter 2013 - Mushroom Hat"		sid="30024"		anchor="Hats"/>
+			<item id="MagicHat" 	name="H30025 - Head - Wizard - Star Hat"				sid="30025"		anchor="Hats"/>
+	        		 	  
+         </category>
+         
+         <!--     server id: G40001 -->
+         
+         <category id="CategoryGlasses"										sid="E">
+         	<item id="SheriffGlasses" name="E40001 - Eyes - Wild West - Sheriff Glasses"	sid="40001"
+        		anchor="Glasses"/>	
+         	<item id="PirateEyepatch" name="E40002 - Eyes - Pirate - Black Eyepatch"		sid="40002"
+        		anchor="Glasses"/>	
+         	<item id="TrendyGlasses" name="E40003 - Eyes - Hippy - Round Purple Glasses"	sid="40003"
+        		anchor="Glasses"/>	
+         	<item id="SunGlasses" name="E40004 - Eyes - Basic - Black Sunglasses"			sid="40004"
+        		anchor="Glasses"/>	
+         	<item id="ScientistGoggles" name="E40005 - Eyes - Crazy Scientist - Goggles"	sid="40005"
+        		anchor="Glasses"/>	
+         	<item id="ProfessorGlasses" name="E40006 - Eyes - Education - Professor Glasses" sid="40006"
+        		anchor="Glasses"/>	
+         	<item id="IndianWarPaint" name="E40007 - Eyes - Native American - Yellow War Paint"	sid="40007"
+        		anchor="Glasses"/>	
+        	<item id="WhiteRimmedSunglasses" name="E40008 - Eyes - Basic - White Rimmed Glasses" sid="40008"
+        		anchor="Glasses"/>
+       		<item id="BlueRimmedSunglasses" name="E40009 - Eyes - Basic - Blue Rimmed Glasses" sid="40009"
+        		anchor="Glasses"/>
+             <item id="Pencil" name="E40010 - Eyes - Education - Pencil" 					sid="40010"
+        		anchor="Glasses"/>
+        		
+        	<!-- 2 christmas glasses -->
+        	<item id="Snowball" 	name="E40011 - Eyes - Christmas 2012 - Snowball" 		sid = "40011" 	anchor = "Glasses"/>
+        	<item id="SkiGoggles" 	name="E40012 - Eyes - Christmas 2012 - Ski Goggles" 	sid = "40012" 	anchor = "Glasses"/>
+        	
+         </category>
+
+         
+         <!--     server id: M50001 -->
+         <category id="CategoryDetail"										sid="M">
+			<item id="LightBrownMustache" name="M50001 - Mouth - Basic - Brown Moustache"	sid="50001"
+			 	anchor="Mustache"/>  
+			<item id="Lipstick" name="M50003 - Mouth - Lipstick - Red"						sid="50003"
+				anchor="Mustache"/>
+			<item id="Beard" name="M50004 - Mouth - Pirate - Brown Beard"					sid="50004"
+				anchor="Beards"/>
+			<item id="DaliMoustache" name="M50005 - Mouth - Rich - Dali Moustache"			sid="50005"
+				anchor="Mustache"/>
+			<item id="Piercing" name="M50006 - Mouth - Punk - Piercing"						sid="50006"
+				anchor="Mustache"/>
+			<item id="ClownNose" name="M50007 - Mouth - Clown - Red Nose"					sid="50007"
+				anchor="Mustache"/>
+			<item id="VikingBeard" name="M50008 - Mouth - Viking - Black Beard"				sid="50008"
+				anchor="Beards"/>
+			<item id="BunnyTeeth" name="M50009 - Mouth - Easter 2012 - Bunny Teeth"			sid="50009"
+				anchor="Mustache"/>
+				
+			<!-- 1 christmas beard -->
+			<item id="SantaBeard" name="M50010 - Mouth - Christmas 2012 - Santa Beard"		sid="50010"		anchor="Mustache"/>
+			
+         </category>
+         
+         <!-- Category bottom(PANTS) server id: P60001 -->
+         <category id="CategoryBottom"										sid="W">
+			<item id="AmmoBelt" name="W60001 - Worn - Wild West - Ammo Belt"				sid="60001"
+						anchor="Belts"/>						
+          	<item id="TieRedStripes" name="W60002 - Worn - Basic - Red Striped Tie"			sid="60002"
+          				anchor="Ties"/>
+			<item id="BlueKarateBelt" name="W60005 - Worn - Martial Arts - Karate Belt"		sid="60005"
+						anchor="Belts"/>				
+			<item id="Revolver" name="W60006 - Worn - Wild West - Revolver"					sid="60006"
+						anchor="Belts"/>
+			<item id="SheriffStar" name="W60007 - Worn - Wild West - Sheriff Star"			sid="60007"
+						anchor="Belts"/>		
+			<item id="IndianArrows" name="W60008 - Worn - Native American - Arrows"			sid="60008"
+						anchor="Belts"/>		
+			<item id="HookArm" name="W60009 - Worn - Pirate - Hook Arm"						sid="60009"
+						anchor="Belts"/>		
+			<item id="WoodenLeg" name="W60010 - Worn - Pirate - Wooden Leg"					sid="60010"
+						anchor="Belts"/>		
+			<item id="MoneyPouch" name="W60011 - Worn - Rich - Money Bag"					sid="60011"
+						anchor="Belts"/>
+			<item id="EggBasket" name="W60012 - Worn - Easter 2012 - Egg Basket"			sid="60012"
+						anchor="Belts"/>
+             <item id="RedBook" name="W60013 - Worn - Education - Red Book"				    sid="60013"
+						anchor="Belts"/>
+             <item id="YellowBook" name="W60014 - Worn - Education - Yellow Book"		    sid="60014"
+						anchor="Belts"/>
+             <item id="Guitar" name="W60015 - Worn - Green Day - Guitar"				    sid="60015"
+						anchor="Backs"/>
+	
+			 <!-- 2 halloween items -->
+             <item id="HunterGear" name="W60016 - Worn - Halloween 2012 - Hunter’s Toolbelt" sid="60016"
+						anchor="Belts"/>
+             <item id="PetZombie" name="W60017 - Worn - Halloween 2012 - Pet Zombie Pig"	sid="60017"
+						anchor="Belts"/>
+						
+			<!-- 2 christmas items -->
+			<item id="Scarf" 		name="W60018 - Worn - Christmas 2012 - Yellow Scarf" 	sid="60018" 	anchor="Belts"/>
+			<item id="SantaCoat" 	name="W60019 - Worn - Christmas 2012 - Santa’s Coat" 	sid="60019" 	anchor="Belts"/>
+			
+			<!-- valentine's -->
+			<item id="RoseBouquet" 	name="W60020 - Worn - Valentines 2013 - Rose Bouquet" 	sid="60020" 	anchor="Belts"/>
+			<item id="Bow" 	name="W60021 - Worn - Valentines 2013 - White Bow Tie" 			sid="60021" 	anchor="Belts"/>
+																					
+			<!-- easter worn item added -->					
+								
+			<item id="MagicWand" 		name="W60022 - Worn - Wizard - Magic Wand" 		sid="60022" 	anchor="Belts"/>
+			<item id="Axe" 		name="W60023 - Worn - Viking - Battle Axe" 				sid="60023" 	anchor="Belts"/>
+			<item id="SwordShield" 	name="W60024 - Worn - Medieval - Sword and Shield" 	sid="60024" 	anchor="Belts"/>			
+								
+         </category>
+         
+       	<category id="CategoryBackgrounds" 									sid="B">
+	        <item id="Backgrounds1" name="B20001 - Background - Basic - Forest"				sid="20001"/>
+	   		<item id="Backgrounds2" name="B20002 - Background - Basic - Canyon"				sid="20002"/>
+	   		<item id="Backgrounds3" name="B20003 - Background - Basic - Jungle"				sid="20003"/>
+	   		<item id="Backgrounds4" name="B20004 - Background - Basic - Winter"				sid="20004"/>
+	   		<item id="Backgrounds5" name="B20005 - Background - Basic - Beach"				sid="20005"/>
+	   		<item id="Backgrounds6" name="B20006 - Background - Basic - Cherry Trees"		sid="20006"/>
+	   		<item id="BackgroundsBronze" name="B20007 - Background - Achievement - 100 Stars Bronze" 		  sid="20007"/>
+	   		<item id="BackgroundsSilver" name="B20008 - Background - Achievement - 200 Stars Silver"		  sid="20008"/>
+	   		<item id="BackgroundsGold"	 name="B20009 - Background - Achievement - 400 Stars Gold" 			sid="20009"/>
+	   		<item id="BackgroundsDiamond" name="B20010 - Background - Achievement - 600 Stars Diamond"			sid="20010"/>
+	   		<item id="Backgrounds7" name="B20011 - Background - Basic - Space"				sid="20011"/>
+	   		
+   		</category>
+   </items>
+</avatar_data>

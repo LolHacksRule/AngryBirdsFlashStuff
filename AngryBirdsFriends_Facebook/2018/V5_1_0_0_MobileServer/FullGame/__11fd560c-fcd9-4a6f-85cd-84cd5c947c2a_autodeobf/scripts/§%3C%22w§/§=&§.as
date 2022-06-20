@@ -1,7 +1,0 @@
-package §<"w§
-{
-   public interface §=&§
-   {
-       
-   }
-}
