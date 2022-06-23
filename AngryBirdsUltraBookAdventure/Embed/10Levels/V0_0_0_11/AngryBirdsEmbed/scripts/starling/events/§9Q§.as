@@ -1,0 +1,51 @@
+package starling.events
+{
+   public class §9Q§ extends Event
+   {
+      
+      public static const RESIZE:String = "resize";
+      
+      {
+         var _loc1_:Boolean = true;
+         var _loc2_:Boolean = false;
+         if(_loc1_ || _loc2_)
+         {
+            RESIZE = "resize";
+         }
+      }
+      
+      private var §9p§:int;
+      
+      private var §9`§:int;
+      
+      public function §9Q§(param1:String, param2:int, param3:int, param4:Boolean = false)
+      {
+         var _loc5_:Boolean = false;
+         var _loc6_:Boolean = true;
+         if(_loc6_)
+         {
+            super(param1,param4);
+            if(_loc6_ || param3)
+            {
+               this.§9p§ = param2;
+               if(!_loc6_)
+               {
+               }
+               §§goto(addr48);
+            }
+            this.§9`§ = param3;
+         }
+         addr48:
+      }
+      
+      public function get width() : int
+      {
+         return this.§9p§;
+      }
+      
+      public function get height() : int
+      {
+         return this.§9`§;
+      }
+   }
+}
