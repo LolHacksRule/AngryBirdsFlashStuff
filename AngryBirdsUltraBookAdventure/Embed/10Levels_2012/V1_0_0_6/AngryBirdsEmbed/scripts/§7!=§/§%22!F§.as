@@ -31,145 +31,50 @@ package §7!=§
       
       public function §"!F§(param1:TextureBase, param2:int, param3:int, param4:Boolean, param5:Boolean, param6:Boolean = false)
       {
-         var _loc7_:Boolean = false;
-         var _loc8_:Boolean = true;
          super();
          this.§[!,§ = param1;
          this.§5;§ = param2;
-         if(_loc8_ || param1)
-         {
-            this.§>!'§ = param3;
-            this.§^s§ = param4;
-            if(_loc8_ || this)
-            {
-               addr65:
-               this.§7M§ = param5;
-               if(!_loc7_)
-               {
-                  this.§3h§ = param6;
-               }
-            }
-            return;
-         }
-         §§goto(addr65);
+         this.§>!'§ = param3;
+         this.§^s§ = param4;
+         this.§7M§ = param5;
+         this.§3h§ = param6;
       }
       
       override public function dispose() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
+         if(this.§[!,§)
          {
-            if(this.§[!,§)
-            {
-               if(!(_loc2_ && this))
-               {
-                  this.§[!,§.dispose();
-                  if(!(_loc2_ && _loc2_))
-                  {
-                     addr48:
-                     this.§<f§(null);
-                     if(_loc1_)
-                     {
-                        addr53:
-                        super.dispose();
-                     }
-                  }
-                  return;
-               }
-               §§goto(addr53);
-            }
+            this.§[!,§.dispose();
          }
-         §§goto(addr48);
+         this.§<f§(null);
+         super.dispose();
       }
       
       public function §<f§(param1:Object) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         §§push(this.§#6§ == null);
-         if(!(_loc3_ && this))
+         if(this.§#6§ == null && param1 != null)
          {
-            if(§§pop())
-            {
-               if(_loc2_ || param1)
-               {
-                  §§pop();
-                  if(!_loc3_)
-                  {
-                     §§push(param1 == null);
-                     if(!_loc3_)
-                     {
-                        §§goto(addr55);
-                     }
-                     addr55:
-                     if(!§§pop())
-                     {
-                        §§push(§4@§.§0W§);
-                        if(_loc2_)
-                        {
-                           §§push(Event.CONTEXT3D_CREATE);
-                           if(_loc2_)
-                           {
-                              §§pop().addEventListener(§§pop(),this.§]B§);
-                              §§goto(addr94);
-                           }
-                           §§pop().removeEventListener(§§pop(),this.§]B§);
-                           if(_loc2_ || param1)
-                           {
-                           }
-                           §§goto(addr94);
-                        }
-                        §§goto(addr82);
-                     }
-                     §§goto(addr94);
-                  }
-                  addr94:
-                  if(param1 == null)
-                  {
-                     addr82:
-                     §§push(§4@§.§0W§);
-                     §§push(Event.CONTEXT3D_CREATE);
-                  }
-                  this.§#6§ = param1;
-                  return;
-               }
-            }
+            §4@§.§0W§.addEventListener(Event.CONTEXT3D_CREATE,this.§]B§);
          }
-         §§goto(addr55);
+         if(param1 == null)
+         {
+            §4@§.§0W§.removeEventListener(Event.CONTEXT3D_CREATE,this.§]B§);
+         }
+         this.§#6§ = param1;
       }
       
       private function §]B§(param1:Event) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && this))
-         {
-            this.requestBaseTextureUpdate(null);
-         }
+         this.requestBaseTextureUpdate(null);
       }
       
       override public function requestBaseTextureUpdate(param1:Object) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
+         this.§>r§ = true;
+         if(param1 != null)
          {
-            this.§>r§ = true;
-            if(_loc2_)
-            {
-               addr23:
-               if(param1 != null)
-               {
-                  if(_loc2_)
-                  {
-                     this.§<f§(param1);
-                  }
-               }
-            }
-            return;
+            this.§<f§(param1);
          }
-         §§goto(addr23);
       }
       
       public function get §3k§() : Boolean
@@ -179,12 +84,7 @@ package §7!=§
       
       override public function getBase(param1:Context3D) : TextureBase
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && param1))
-         {
-            this.§3&§(param1);
-         }
+         this.§3&§(param1);
          return this.§[!,§;
       }
       
@@ -195,85 +95,27 @@ package §7!=§
       
       private function §3&§(param1:Context3D) : void
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
          var _loc4_:flash.display3D.textures.Texture = null;
          var _loc5_:String = null;
-         if(!(_loc7_ && this))
+         if(!this.§>r§)
          {
-            if(!this.§>r§)
-            {
-               if(_loc6_ || _loc2_)
-               {
-                  return;
-               }
-            }
+            return;
          }
          var _loc2_:BitmapData = this.§#6§ as BitmapData;
          var _loc3_:ByteArray = this.§#6§ as ByteArray;
-         if(_loc6_ || _loc3_)
+         if(_loc2_)
          {
-            if(_loc2_)
-            {
-               if(!(_loc7_ && this))
-               {
-                  _loc4_ = param1.createTexture(this.§5;§,this.§>!'§,Context3DTextureFormat.BGRA,this.§3h§);
-                  if(_loc6_ || param1)
-                  {
-                     §7!=§.Texture.uploadBitmapData(_loc4_,_loc2_,this.§^s§);
-                     if(_loc6_ || this)
-                     {
-                        addr178:
-                        this.§[!,§ = _loc4_;
-                        if(!_loc7_)
-                        {
-                           this.§>r§ = false;
-                        }
-                     }
-                  }
-                  return;
-               }
-               addr128:
-               §§push(Context3DTextureFormat.COMPRESSED);
-               if(_loc6_ || this)
-               {
-               }
-               addr160:
-               _loc5_ = §§pop();
-               _loc4_ = param1.createTexture(this.§5;§,this.§>!'§,_loc5_,this.§3h§);
-               if(_loc6_)
-               {
-                  §7!=§.Texture.uploadAtfData(_loc4_,_loc3_);
-               }
-               addr159:
-            }
-            else if(_loc3_)
-            {
-               if(!(_loc7_ && _loc3_))
-               {
-                  addr120:
-                  if(_loc3_[6] == 2)
-                  {
-                     if(!_loc6_)
-                     {
-                     }
-                     §§goto(addr128);
-                  }
-                  else
-                  {
-                     §§push(Context3DTextureFormat.BGRA);
-                     if(!(_loc7_ && _loc2_))
-                     {
-                        §§goto(addr159);
-                     }
-                  }
-                  §§goto(addr160);
-               }
-               §§goto(addr128);
-            }
-            §§goto(addr178);
+            _loc4_ = param1.createTexture(this.§5;§,this.§>!'§,Context3DTextureFormat.BGRA,this.§3h§);
+            §7!=§.Texture.uploadBitmapData(_loc4_,_loc2_,this.§^s§);
          }
-         §§goto(addr120);
+         else if(_loc3_)
+         {
+            _loc5_ = _loc3_[6] == 2 ? Context3DTextureFormat.COMPRESSED : Context3DTextureFormat.BGRA;
+            _loc4_ = param1.createTexture(this.§5;§,this.§>!'§,_loc5_,this.§3h§);
+            §7!=§.Texture.uploadAtfData(_loc4_,_loc3_);
+         }
+         this.§[!,§ = _loc4_;
+         this.§>r§ = false;
       }
       
       override public function get width() : Number

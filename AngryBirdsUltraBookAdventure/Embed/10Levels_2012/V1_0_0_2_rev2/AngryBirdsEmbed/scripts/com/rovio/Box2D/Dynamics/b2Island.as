@@ -299,11 +299,10 @@ package com.rovio.Box2D.Dynamics
             }
             _loc2_++;
          }
-         var _loc5_:Number = 0.75;
          _loc2_ = 0;
          while(_loc2_ < param1.positionIterations)
          {
-            _loc10_ = _loc4_.SolvePositionConstraints(_loc5_);
+            _loc10_ = _loc4_.SolvePositionConstraints(0.75);
             _loc11_ = true;
             _loc3_ = 0;
             while(_loc3_ < this.m_jointCount)

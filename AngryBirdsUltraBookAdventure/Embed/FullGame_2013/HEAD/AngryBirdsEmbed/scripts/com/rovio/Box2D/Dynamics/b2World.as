@@ -498,7 +498,6 @@ package com.rovio.Box2D.Dynamics
       
       public function DrawDebugData() : void
       {
-         var _loc2_:int = 0;
          var _loc3_:b2Body = null;
          var _loc4_:b2Fixture = null;
          var _loc5_:b2Shape = null;
@@ -965,7 +964,7 @@ package com.rovio.Box2D.Dynamics
             _loc12_ = null;
             _loc13_ = 1;
             _loc11_ = this.m_contactList;
-            for(; _loc11_; _loc11_ = _loc11_.m_next)
+            while(_loc11_)
             {
                if(!(_loc11_.IsSensor() == true || _loc11_.IsEnabled() == false || _loc11_.IsContinuous() == false))
                {
@@ -982,6 +981,8 @@ package com.rovio.Box2D.Dynamics
                      _loc6_ = _loc4_.m_body;
                      if((_loc5_.GetType() != b2Body.b2_dynamicBody || _loc5_.IsAwake() == false) && (_loc6_.GetType() != b2Body.b2_dynamicBody || _loc6_.IsAwake() == false))
                      {
+                        addr339:
+                        _loc11_ = _loc11_.m_next;
                         continue;
                      }
                      _loc20_ = _loc5_.m_sweep.t0;
@@ -1006,6 +1007,7 @@ package com.rovio.Box2D.Dynamics
                      }
                      _loc11_.m_toi = _loc19_;
                      _loc11_.m_flags |= b2Contact.e_toiFlag;
+                     §§goto(addr339);
                   }
                   if(Number.MIN_VALUE < _loc19_ && _loc19_ < _loc13_)
                   {
@@ -1013,6 +1015,7 @@ package com.rovio.Box2D.Dynamics
                      _loc13_ = _loc19_;
                   }
                }
+               §§goto(addr339);
             }
             if(_loc12_ == null || 1 - 100 * Number.MIN_VALUE < _loc13_)
             {
@@ -1197,6 +1200,7 @@ package com.rovio.Box2D.Dynamics
                if(_loc3_ != this.m_groundBody)
                {
                   this.m_debugDraw.DrawSegment(_loc7_,_loc9_,_loc10_);
+                  break;
                }
          }
       }

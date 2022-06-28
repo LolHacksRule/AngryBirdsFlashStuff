@@ -13,7 +13,8 @@ package com.rovio.Box2D.Common.Math
          this.col1 = new b2Vec2();
          this.col2 = new b2Vec2();
          super();
-         this.col1.x = this.col2.y = 1;
+         this.col2.y = 1;
+         this.col1.x = 1;
       }
       
       public static function FromAngle(param1:Number) : b2Mat22

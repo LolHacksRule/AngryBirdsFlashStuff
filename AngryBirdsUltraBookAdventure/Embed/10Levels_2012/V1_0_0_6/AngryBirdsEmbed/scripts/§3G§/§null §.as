@@ -22,72 +22,22 @@ package §3G§
       
       public function §null §(param1:Stage)
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            this.§?$§ = param1;
-            if(_loc2_)
-            {
-               super(param1);
-            }
-         }
+         this.§?$§ = param1;
+         super(param1);
       }
       
       override protected function initThemeGraphicsManager() : §@B§
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         §§push(§§findproperty(§@B§));
-         if(!(_loc2_ && this))
-         {
-            §§push(this.§?$§.loaderInfo.parameters.assetsUrl);
-            if(!(_loc2_ && _loc1_))
-            {
-               §§push(§§pop());
-               if(!_loc2_)
-               {
-                  if(!§§pop())
-                  {
-                     if(!(_loc2_ && _loc1_))
-                     {
-                        addr68:
-                        §§pop();
-                        addr70:
-                        §§push("");
-                        §§push(this.§?$§.loaderInfo.parameters.buildNumber);
-                        if(_loc1_ || _loc1_)
-                        {
-                           return new §§pop().§@B§(§§pop(),§§pop() || "");
-                        }
-                     }
-                     §§goto(addr85);
-                  }
-                  §§goto(addr70);
-               }
-               §§goto(addr85);
-            }
-         }
-         §§goto(addr68);
+         return new §@B§(this.§?$§.loaderInfo.parameters.assetsUrl || "",this.§?$§.loaderInfo.parameters.buildNumber || "");
       }
       
       override public function get backgroundTextureManager() : §?y§
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc2_))
+         if(§<!?§)
          {
-            if(§<!?§)
-            {
-               if(_loc2_)
-               {
-                  §§goto(addr28);
-               }
-            }
-            return null;
+            return §<!?§.textureManager;
          }
-         addr28:
-         return §<!?§.textureManager;
+         return null;
       }
       
       override protected function initAnimationManager(param1:§?y§) : §+q§
@@ -97,17 +47,9 @@ package §3G§
       
       override protected function initLevelBackground(param1:String, param2:Number, param3:§?y§, param4:Number) : §5r§
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         if(!_loc6_)
+         if(param1 == "BACKGROUND_FB_MOUNTAINS")
          {
-            if(param1 == "BACKGROUND_FB_MOUNTAINS")
-            {
-               if(_loc5_ || param3)
-               {
-                  return new § f§(param1,param2,param3,param4);
-               }
-            }
+            return new § f§(param1,param2,param3,param4);
          }
          return new §5r§(param1,param2,param3,param4);
       }
@@ -124,46 +66,14 @@ package §3G§
       
       override protected function initLevelCamera(param1:§^!9§) : §^z§
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         §§push(§59§.§%j§);
-         if(!_loc6_)
-         {
-            §§push(§§pop());
-         }
-         var _loc2_:* = §§pop();
+         var _loc2_:String = §59§.§%j§;
          var _loc3_:Array = _loc2_.split("-");
          var _loc4_:int;
-         §§push((_loc4_ = parseInt(_loc3_[0])) < 9);
-         if(!_loc6_)
+         if((_loc4_ = parseInt(_loc3_[0])) < 9 && _loc2_ != "3-2")
          {
-            if(§§pop())
-            {
-               if(_loc5_ || this)
-               {
-                  §§pop();
-                  if(_loc5_)
-                  {
-                     §§push(_loc2_ == "3-2");
-                     if(!_loc6_)
-                     {
-                        addr77:
-                        if(!§§pop())
-                        {
-                           if(_loc5_ || param1)
-                           {
-                              return new §^z§(this,param1,1.1);
-                           }
-                        }
-                     }
-                     §§goto(addr77);
-                  }
-                  return new §^z§(this,param1,1);
-               }
-               §§goto(addr77);
-            }
+            return new §^z§(this,param1,1.1);
          }
-         §§goto(addr77);
+         return new §^z§(this,param1,1);
       }
    }
 }

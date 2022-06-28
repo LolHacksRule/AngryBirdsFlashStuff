@@ -18,24 +18,13 @@ package §0!5§
       
       public function §<Z§(param1:int, param2:int, param3:int, param4:int, param5:int, param6:int)
       {
-         var _loc7_:Boolean = false;
-         var _loc8_:Boolean = true;
          super();
          this.§39§ = param1;
-         if(_loc8_)
-         {
-            this.§'4§ = param2;
-            if(!(_loc7_ && param1))
-            {
-               this.§['§ = param3;
-               this._height = param4;
-            }
-            this.§86§ = param5;
-            if(_loc8_)
-            {
-               this.§[w§ = param6;
-            }
-         }
+         this.§'4§ = param2;
+         this.§['§ = param3;
+         this._height = param4;
+         this.§86§ = param5;
+         this.§[w§ = param6;
       }
       
       public function get x() : int

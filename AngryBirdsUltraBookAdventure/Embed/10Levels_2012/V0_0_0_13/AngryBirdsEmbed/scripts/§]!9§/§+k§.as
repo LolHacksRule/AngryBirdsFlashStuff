@@ -14,366 +14,107 @@ package §]!9§
       
       public function §+k§(param1:§]!H§, param2:Sprite, param3:b2World, param4:§#;§, param5:int, param6:String, param7:Number, param8:Number, param9:Number, param10:Boolean = true, param11:Number = 1.0)
       {
-         var _loc12_:Boolean = true;
-         var _loc13_:Boolean = false;
-         if(_loc12_ || param1)
-         {
-            super(param1,param2,param3,param4,param5,param6,param7,param8,param9,param10,param11);
-         }
+         super(param1,param2,param3,param4,param5,param6,param7,param8,param9,param10,param11);
       }
       
       override public function activateSpecialPower(param1:§]!H§) : Boolean
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc3_))
+         if(!super.activateSpecialPower(param1))
          {
-            §§push(super.activateSpecialPower(param1));
-            if(!(_loc3_ && param1))
-            {
-               if(!§§pop())
-               {
-                  if(_loc2_)
-                  {
-                     addr56:
-                     §§push(false);
-                     if(!(_loc3_ && _loc2_))
-                     {
-                        return §§pop();
-                     }
-                     §§goto(addr71);
-                  }
-                  §§goto(addr71);
-               }
-               this.§9u§(0);
-               §§push(false);
-            }
-            addr71:
-            return §§pop();
+            return false;
          }
-         §§goto(addr56);
+         this.§9u§(0);
+         return false;
       }
       
       override public function explode() : Boolean
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         var _loc1_:* = NaN;
+         var _loc1_:Number = NaN;
          if(!§?-§)
          {
-            if(!(_loc2_ && this))
-            {
-               this.§9u§(0);
-               if(_loc2_)
-               {
-                  addr78:
-                  §§push(this);
-                  §§push(this.§?$§);
-                  if(!_loc2_)
-                  {
-                     §§push(§§pop() * _loc1_);
-                  }
-                  §§pop().§`T§ = §§pop();
-               }
-            }
-            §§goto(addr86);
+            this.§9u§(0);
          }
-         else
+         else if(this.§`T§ > 0)
          {
-            §§push(this.§`T§);
-            if(_loc3_)
-            {
-               if(§§pop() > 0)
-               {
-                  if(_loc3_)
-                  {
-                     §§push(this.§`T§);
-                     if(_loc3_)
-                     {
-                        addr66:
-                        §§push(§§pop() / this.§?$§);
-                        if(_loc3_)
-                        {
-                           §§push(Number(§§pop()));
-                        }
-                     }
-                     _loc1_ = §§pop();
-                     if(_loc3_)
-                     {
-                        this.§?$§ = 0;
-                     }
-                     §§goto(addr78);
-                  }
-               }
-               addr86:
-               return true;
-            }
-            §§goto(addr66);
+            _loc1_ = this.§`T§ / this.§?$§;
+            this.§?$§ = 0;
+            this.§`T§ = this.§?$§ * _loc1_;
          }
+         return true;
       }
       
       override public function applyDamage(param1:Number, param2:Boolean = true, param3:Boolean = false, param4:Boolean = false, param5:Boolean = false, param6:Boolean = false) : Number
       {
-         var _loc8_:Boolean = false;
-         var _loc9_:Boolean = true;
          var _loc7_:Number = super.applyDamage(param1,param2,param3,param4,param5,param6);
-         if(!_loc8_)
+         if(!§?-§)
          {
-            if(!§?-§)
-            {
-               if(!(_loc8_ && this))
-               {
-                  super.activateSpecialPower(null);
-                  if(_loc9_ || param1)
-                  {
-                     addr68:
-                     this.§9u§();
-                  }
-               }
-            }
-            return _loc7_;
+            super.activateSpecialPower(null);
+            this.§9u§();
          }
-         §§goto(addr68);
+         return _loc7_;
       }
       
       public function §9u§(param1:Number = -1) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
          this.§`T§ = 0;
-         if(!(_loc3_ && this))
+         if(param1 == 0)
          {
-            §§push(param1);
-            if(!_loc3_)
-            {
-               §§push(0);
-               if(!_loc3_)
-               {
-                  if(§§pop() == §§pop())
-                  {
-                     if(_loc2_ || this)
-                     {
-                        this.§?$§ = 0;
-                        addr50:
-                        if(_loc2_ || param1)
-                        {
-                           this.update(0);
-                           if(!(_loc3_ && this))
-                           {
-                              addr91:
-                              return;
-                              addr80:
-                           }
-                           §§goto(addr91);
-                        }
-                        addr87:
-                        §§goto(addr91);
-                     }
-                     §§goto(addr80);
-                  }
-                  else
-                  {
-                     addr83:
-                     if(param1 > 0)
-                     {
-                        this.§?$§ = param1;
-                        §§goto(addr87);
-                     }
-                     else
-                     {
-                        this.§?$§ = 2000;
-                     }
-                  }
-                  §§goto(addr91);
-               }
-            }
-            §§goto(addr83);
+            this.§?$§ = 0;
+            this.update(0);
          }
-         §§goto(addr50);
+         else if(param1 > 0)
+         {
+            this.§?$§ = param1;
+         }
+         else
+         {
+            this.§?$§ = 2000;
+         }
       }
       
       override public function update(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
+         if(this.§`T§ >= 0)
          {
-            §§push(this.§`T§);
-            if(_loc3_)
+            this.§`T§ += param1;
+            if(this.§`T§ >= this.§?$§)
             {
-               if(§§pop() >= 0)
-               {
-                  addr60:
-                  addr25:
-                  §§push(this);
-                  §§push(this.§`T§);
-                  if(!(_loc2_ && _loc3_))
-                  {
-                     §§push(§§pop() + param1);
-                  }
-                  §§pop().§`T§ = §§pop();
-                  if(this.§`T§ >= this.§?$§)
-                  {
-                     if(!_loc2_)
-                     {
-                        container.addExplosions(§5V§.§<m§,§%;§().GetPosition().x,§%;§().GetPosition().y);
-                        if(!_loc3_)
-                        {
-                        }
-                        §§goto(addr85);
-                     }
-                     this.§`T§ = -1;
-                  }
-                  §"0§ = true;
-               }
-               addr85:
-               return;
+               container.addExplosions(§5V§.§<m§,§%;§().GetPosition().x,§%;§().GetPosition().y);
+               this.§`T§ = -1;
             }
-            §§goto(addr60);
+            §"0§ = true;
          }
-         §§goto(addr25);
       }
       
       override public function isReadyToBeRemoved(param1:Number) : Boolean
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
+         if(§?-§ && this.§`T§ < 0)
          {
-            §§push(Boolean(§?-§));
-            if(_loc2_ || _loc2_)
-            {
-               if(§§pop())
-               {
-                  if(_loc2_ || this)
-                  {
-                     §§pop();
-                     if(!_loc3_)
-                     {
-                        §§push(this.§`T§);
-                        if(_loc2_ || _loc2_)
-                        {
-                           §§push(0);
-                           if(!(_loc3_ && _loc3_))
-                           {
-                              §§push(§§pop() < §§pop());
-                              if(_loc2_)
-                              {
-                                 addr69:
-                                 if(§§pop())
-                                 {
-                                    if(_loc2_ || _loc2_)
-                                    {
-                                       §§push(true);
-                                       if(!(_loc2_ || _loc3_))
-                                       {
-                                          §§goto(addr121);
-                                       }
-                                    }
-                                    else
-                                    {
-                                       addr109:
-                                       §§push(false);
-                                       if(!(_loc3_ && _loc3_))
-                                       {
-                                          return §§pop();
-                                       }
-                                       §§goto(addr121);
-                                    }
-                                    §§goto(addr121);
-                                 }
-                                 else
-                                 {
-                                    addr106:
-                                    if(this.§`T§ >= 0)
-                                    {
-                                       if(_loc2_)
-                                       {
-                                          §§goto(addr109);
-                                       }
-                                       else
-                                       {
-                                          addr118:
-                                          addr121:
-                                          return §§pop();
-                                          §§push(super.isReadyToBeRemoved(param1));
-                                       }
-                                       §§goto(addr121);
-                                    }
-                                    §§goto(addr118);
-                                 }
-                              }
-                              return §§pop();
-                           }
-                        }
-                        §§goto(addr106);
-                     }
-                     §§goto(addr118);
-                  }
-               }
-               §§goto(addr69);
-            }
-            §§goto(addr121);
+            return true;
          }
-         §§goto(addr109);
+         if(this.§`T§ >= 0)
+         {
+            return false;
+         }
+         return super.isReadyToBeRemoved(param1);
       }
       
       override public function getSpecialAnimationProgress() : Number
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || this)
+         if(this.§`T§ > 0)
          {
-            §§push(this.§`T§);
-            if(_loc2_)
-            {
-               if(§§pop() > 0)
-               {
-                  if(_loc2_ || this)
-                  {
-                     §§goto(addr47);
-                  }
-               }
-               return -1;
-            }
-            §§goto(addr51);
+            return this.§`T§ / this.§?$§;
          }
-         addr47:
-         §§push(this.§`T§);
-         if(_loc2_)
-         {
-            addr51:
-            return §§pop() / this.§?$§;
-         }
+         return -1;
       }
       
       override public function getSpecialAnimationTimeLeft() : Number
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc2_))
+         if(this.§`T§ > 0)
          {
-            §§push(this.§`T§);
-            if(_loc2_ || _loc2_)
-            {
-               if(§§pop() > 0)
-               {
-                  if(_loc2_)
-                  {
-                     §§goto(addr57);
-                  }
-               }
-               return 0;
-            }
-            §§goto(addr66);
+            return this.§?$§ - this.§`T§;
          }
-         addr57:
-         §§push(this.§?$§);
-         if(_loc2_ || _loc1_)
-         {
-            addr66:
-            return §§pop() - this.§`T§;
-         }
+         return 0;
       }
    }
 }

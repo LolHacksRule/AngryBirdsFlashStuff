@@ -17,38 +17,14 @@ package §6A§
       
       public function §%!E§()
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
          super();
          addChild(this.§ !J§ = new Sprite());
          this.§ !J§.addChild(this.§!#§ = new Sprite());
          this.§24§ = new §<3§(2,2,0);
-         if(_loc2_)
-         {
-            §§push(this.§24§);
-            if(_loc2_)
-            {
-               §§push(§=w§.§9!#§);
-               if(_loc2_)
-               {
-                  §§pop().width = §§pop();
-                  §§push(this.§24§);
-                  if(_loc2_)
-                  {
-                     addr83:
-                     §§pop().height = §=w§.§0i§;
-                     addChild(this.§24§);
-                     §§push(this.§24§);
-                     addr81:
-                  }
-                  §§pop().alpha = 0.5;
-                  return;
-               }
-               §§goto(addr83);
-            }
-            §§goto(addr81);
-         }
-         §§goto(addr83);
+         this.§24§.width = §=w§.§9!#§;
+         this.§24§.height = §=w§.§0i§;
+         addChild(this.§24§);
+         this.§24§.alpha = 0.5;
       }
       
       public function get §1-§() : Sprite
@@ -68,63 +44,9 @@ package §6A§
       
       public function §#U§(param1:Number, param2:Number) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         §§push(this.§24§.width);
-         if(_loc5_ || param2)
-         {
-            §§push(§§pop() / this.§24§.height);
-            if(_loc5_)
-            {
-               addr33:
-               §§push(Number(§§pop()));
-            }
-            var _loc3_:* = §§pop();
-            if(_loc5_ || _loc3_)
-            {
-               §§push(this.§24§);
-               if(!_loc4_)
-               {
-                  §§push(param1);
-                  if(!_loc4_)
-                  {
-                     §§push(600);
-                     if(!_loc4_)
-                     {
-                        §§push(_loc3_);
-                        if(!(_loc4_ && param1))
-                        {
-                           §§push(§§pop() / §§pop());
-                           if(!(_loc4_ && this))
-                           {
-                              §§push(§§pop() + §§pop());
-                              if(_loc5_)
-                              {
-                                 §§pop().width = §§pop();
-                                 if(_loc5_ || param2)
-                                 {
-                                    addr101:
-                                    §§push(this.§24§);
-                                    §§push(param2);
-                                    if(_loc5_ || _loc3_)
-                                    {
-                                       addr113:
-                                       §§pop().height = §§pop() + 600 / _loc3_;
-                                    }
-                                    §§goto(addr113);
-                                 }
-                                 return;
-                              }
-                           }
-                        }
-                     }
-                  }
-                  §§goto(addr113);
-               }
-            }
-            §§goto(addr101);
-         }
-         §§goto(addr33);
+         var _loc3_:Number = this.§24§.width / this.§24§.height;
+         this.§24§.width = param1 + 600 / _loc3_;
+         this.§24§.height = param2 + 600 / _loc3_;
       }
    }
 }

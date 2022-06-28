@@ -22,35 +22,7 @@ package §'!E§
       public static const §8J§:uint = 4;
       
       public static const §3=§:uint = 5;
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            §;j§ = 1;
-            if(!(_loc2_ && _loc1_))
-            {
-               §83§ = 2;
-               if(!(_loc2_ && _loc1_))
-               {
-                  §#S§ = 3;
-                  if(!_loc2_)
-                  {
-                     §8J§ = 4;
-                     if(_loc1_)
-                     {
-                        addr68:
-                        §3=§ = 5;
-                     }
-                  }
-                  §§goto(addr68);
-               }
-            }
-            return;
-         }
-         §§goto(addr68);
-      }
+       
       
       private var §1i§:int;
       
@@ -86,65 +58,22 @@ package §'!E§
       
       public function §9!§(param1:int, param2:int, param3:int, param4:Point, param5:Point, param6:Boolean = false, param7:Boolean = false, param8:Number = 0.0, param9:Number = 0.0, param10:Boolean = false, param11:Number = 0.0, param12:Boolean = false, param13:Number = 0.0)
       {
-         var _loc14_:Boolean = false;
-         var _loc15_:Boolean = true;
-         if(_loc15_)
-         {
-            this.mPoint1 = new Point();
-            this.mPoint2 = new Point();
-            if(_loc15_)
-            {
-               super();
-               this.§1i§ = param1;
-               if(!_loc14_)
-               {
-                  this.mIndex1 = param2;
-                  if(!_loc14_)
-                  {
-                     addr41:
-                     this.mIndex2 = param3;
-                     if(_loc15_)
-                     {
-                        this.mPoint1 = param4.clone();
-                        this.mPoint2 = param5.clone();
-                        this.§%1§ = param7;
-                        addr67:
-                        this.§=!!§ = param8;
-                        if(!(_loc14_ && param1))
-                        {
-                           §§goto(addr77);
-                        }
-                        §§goto(addr102);
-                     }
-                     §§goto(addr122);
-                  }
-               }
-               addr77:
-               this.§+e§ = param9;
-               if(!(_loc14_ && param1))
-               {
-                  this.§ u§ = param10;
-                  if(!_loc14_)
-                  {
-                     addr102:
-                     this.§^x§ = param11;
-                     if(!(_loc14_ && param2))
-                     {
-                        this.§,F§ = param12;
-                        if(!(_loc14_ && param3))
-                        {
-                           addr122:
-                           this.§8A§ = param6;
-                        }
-                     }
-                  }
-                  this.§@X§ = param13;
-               }
-               return;
-            }
-            §§goto(addr67);
-         }
-         §§goto(addr41);
+         this.mPoint1 = new Point();
+         this.mPoint2 = new Point();
+         super();
+         this.§1i§ = param1;
+         this.mIndex1 = param2;
+         this.mIndex2 = param3;
+         this.mPoint1 = param4.clone();
+         this.mPoint2 = param5.clone();
+         this.§%1§ = param7;
+         this.§=!!§ = param8;
+         this.§+e§ = param9;
+         this.§ u§ = param10;
+         this.§^x§ = param11;
+         this.§,F§ = param12;
+         this.§8A§ = param6;
+         this.§@X§ = param13;
       }
       
       public function get type() : int
@@ -219,12 +148,7 @@ package §'!E§
       
       public function set axisX(param1:Number) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc2_))
-         {
-            this.§?9§ = param1;
-         }
+         this.§?9§ = param1;
       }
       
       public function get axisY() : Number
@@ -234,12 +158,7 @@ package §'!E§
       
       public function set axisY(param1:Number) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc3_))
-         {
-            this.§[q§ = param1;
-         }
+         this.§[q§ = param1;
       }
       
       public function get §=w§() : Number
@@ -249,272 +168,52 @@ package §'!E§
       
       public function set §=w§(param1:Number) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§<E§ = param1;
-         }
+         this.§<E§ = param1;
       }
       
       public function § !=§(param1:§>G§, param2:§>G§) : b2JointDef
       {
-         var _loc8_:Boolean = true;
-         var _loc9_:Boolean = false;
          var _loc3_:b2DistanceJointDef = null;
          var _loc4_:b2WeldJointDef = null;
          var _loc5_:b2RevoluteJointDef = null;
          var _loc6_:b2PrismaticJointDef = null;
-         §§push(this.§1i§);
-         if(!_loc9_)
+         switch(this.§1i§)
          {
-            var _loc7_:* = §§pop();
-            if(_loc8_)
-            {
-               §§push(§;j§);
-               if(!(_loc9_ && this))
-               {
-                  §§push(_loc7_);
-                  if(!(_loc9_ && this))
-                  {
-                     if(§§pop() === §§pop())
-                     {
-                        if(!(_loc9_ && param2))
-                        {
-                           addr305:
-                           §§push(0);
-                           if(_loc9_ && param2)
-                           {
-                              addr391:
-                           }
-                        }
-                        else
-                        {
-                           addr333:
-                           §§push(1);
-                           if(!(_loc8_ || this))
-                           {
-                              addr379:
-                           }
-                        }
-                     }
-                     else
-                     {
-                        §§push(§83§);
-                        if(!(_loc9_ && this))
-                        {
-                           §§push(_loc7_);
-                           if(_loc8_)
-                           {
-                              if(§§pop() === §§pop())
-                              {
-                                 if(!(_loc9_ && param2))
-                                 {
-                                    §§goto(addr333);
-                                 }
-                                 else
-                                 {
-                                    addr371:
-                                    §§push(2);
-                                    if(_loc8_ || param1)
-                                    {
-                                       §§goto(addr379);
-                                    }
-                                    addr397:
-                                    switch(§§pop())
-                                    {
-                                       case 0:
-                                          _loc3_ = new b2DistanceJointDef();
-                                          if(!(_loc9_ && this))
-                                          {
-                                             _loc3_.collideConnected = this.§8A§;
-                                             if(!_loc9_)
-                                             {
-                                                _loc3_.frequencyHz = 4;
-                                                _loc3_.dampingRatio = 0.5;
-                                                if(!(_loc9_ && _loc3_))
-                                                {
-                                                   addr60:
-                                                   _loc3_.length = §7!,§.§1-§(param1,param2);
-                                                   addr66:
-                                                   _loc3_.Initialize(param1.§`t§(),param2.§`t§(),param1.§`t§().GetPosition(),param2.§`t§().GetPosition());
-                                                }
-                                                return _loc3_;
-                                             }
-                                             §§goto(addr66);
-                                          }
-                                          §§goto(addr60);
-                                       case 1:
-                                          (_loc4_ = new b2WeldJointDef()).collideConnected = this.§8A§;
-                                          if(_loc8_)
-                                          {
-                                             _loc4_.Initialize(param1.§`t§(),param2.§`t§(),param1.§`t§().GetWorldCenter());
-                                             if(_loc8_ || param2)
-                                             {
-                                                return _loc4_;
-                                             }
-                                          }
-                                       case 2:
-                                          (_loc5_ = new b2RevoluteJointDef()).collideConnected = this.§8A§;
-                                          _loc5_.Initialize(param1.§`t§(),param2.§`t§(),param1.§`t§().GetWorldPoint(new b2Vec2(this.mPoint1.x,this.mPoint1.y)));
-                                          if(!_loc9_)
-                                          {
-                                             _loc5_.enableLimit = this.§%1§;
-                                             if(_loc8_)
-                                             {
-                                                addr143:
-                                                _loc5_.enableMotor = this.§ u§;
-                                                if(!(_loc9_ && this))
-                                                {
-                                                   _loc5_.motorSpeed = this.§^x§;
-                                                }
-                                                addr176:
-                                                (_loc6_ = new b2PrismaticJointDef()).collideConnected = this.§8A§;
-                                                if(!_loc9_)
-                                                {
-                                                   _loc6_.Initialize(param1.§`t§(),param2.§`t§(),param1.§`t§().GetWorldCenter(),new b2Vec2(this.§?9§,this.§[q§));
-                                                   if(!(_loc9_ && this))
-                                                   {
-                                                      §§push(_loc6_);
-                                                      if(_loc8_)
-                                                      {
-                                                         §§push(this.§,F§);
-                                                         if(!_loc9_)
-                                                         {
-                                                            if(§§pop())
-                                                            {
-                                                               addr227:
-                                                               §§push(false);
-                                                               if(!(_loc8_ || _loc3_))
-                                                               {
-                                                                  addr240:
-                                                                  §§push(Boolean(§§pop()));
-                                                               }
-                                                               else
-                                                               {
-                                                                  addr235:
-                                                               }
-                                                            }
-                                                            else
-                                                            {
-                                                               §§push(this.§%1§);
-                                                               if(_loc8_)
-                                                               {
-                                                                  §§goto(addr240);
-                                                               }
-                                                            }
-                                                            §§pop().enableLimit = §§pop();
-                                                            if(!_loc9_)
-                                                            {
-                                                               addr244:
-                                                               _loc6_.lowerTranslation = this.§=!!§;
-                                                               if(!_loc9_)
-                                                               {
-                                                                  _loc6_.upperTranslation = this.§+e§;
-                                                                  _loc6_.enableMotor = this.§ u§;
-                                                                  if(_loc8_)
-                                                                  {
-                                                                     addr260:
-                                                                     _loc6_.maxMotorForce = this.§@X§;
-                                                                     if(_loc9_)
-                                                                     {
-                                                                        break;
-                                                                     }
-                                                                     _loc6_.motorSpeed = this.§^x§;
-                                                                  }
-                                                                  return _loc6_;
-                                                               }
-                                                               §§goto(addr260);
-                                                            }
-                                                            break;
-                                                         }
-                                                         §§goto(addr235);
-                                                      }
-                                                      §§goto(addr227);
-                                                   }
-                                                }
-                                                §§goto(addr244);
-                                             }
-                                             _loc5_.upperAngle = this.§+e§;
-                                             if(!_loc9_)
-                                             {
-                                                _loc5_.lowerAngle = this.§=!!§;
-                                             }
-                                             _loc5_.maxMotorTorque = this.§@X§;
-                                             if(_loc8_)
-                                             {
-                                                return _loc5_;
-                                             }
-                                             §§goto(addr176);
-                                          }
-                                          §§goto(addr143);
-                                       case 3:
-                                          §§goto(addr143);
-                                    }
-                                    return null;
-                                    addr396:
-                                 }
-                                 §§goto(addr396);
-                              }
-                              else
-                              {
-                                 §§push(§#S§);
-                                 if(_loc8_)
-                                 {
-                                    addr345:
-                                    §§push(_loc7_);
-                                    if(_loc9_ && _loc3_)
-                                    {
-                                    }
-                                    addr382:
-                                    if(§§pop() === §§pop())
-                                    {
-                                       addr383:
-                                       §§push(3);
-                                       if(_loc8_ || param2)
-                                       {
-                                          §§goto(addr391);
-                                       }
-                                       §§goto(addr396);
-                                    }
-                                    else
-                                    {
-                                       §§goto(addr396);
-                                       §§push(4);
-                                    }
-                                    §§goto(addr396);
-                                 }
-                                 addr381:
-                                 §§goto(addr382);
-                                 §§push(_loc7_);
-                              }
-                              §§goto(addr396);
-                           }
-                           if(§§pop() === §§pop())
-                           {
-                              if(_loc8_ || _loc3_)
-                              {
-                              }
-                              §§goto(addr371);
-                           }
-                           else
-                           {
-                              §§goto(addr381);
-                              §§push(§8J§);
-                           }
-                           §§goto(addr383);
-                        }
-                        §§goto(addr381);
-                     }
-                     §§goto(addr371);
-                  }
-                  §§goto(addr382);
-               }
-               §§goto(addr345);
-            }
-            §§goto(addr305);
+            case §;j§:
+               _loc3_ = new b2DistanceJointDef();
+               _loc3_.collideConnected = this.§8A§;
+               _loc3_.frequencyHz = 4;
+               _loc3_.dampingRatio = 0.5;
+               _loc3_.length = §7!,§.§1-§(param1,param2);
+               _loc3_.Initialize(param1.§`t§(),param2.§`t§(),param1.§`t§().GetPosition(),param2.§`t§().GetPosition());
+               return _loc3_;
+            case §83§:
+               (_loc4_ = new b2WeldJointDef()).collideConnected = this.§8A§;
+               _loc4_.Initialize(param1.§`t§(),param2.§`t§(),param1.§`t§().GetWorldCenter());
+               return _loc4_;
+            case §#S§:
+               (_loc5_ = new b2RevoluteJointDef()).collideConnected = this.§8A§;
+               _loc5_.Initialize(param1.§`t§(),param2.§`t§(),param1.§`t§().GetWorldPoint(new b2Vec2(this.mPoint1.x,this.mPoint1.y)));
+               _loc5_.enableLimit = this.§%1§;
+               _loc5_.enableMotor = this.§ u§;
+               _loc5_.motorSpeed = this.§^x§;
+               _loc5_.upperAngle = this.§+e§;
+               _loc5_.lowerAngle = this.§=!!§;
+               _loc5_.maxMotorTorque = this.§@X§;
+               return _loc5_;
+            case §8J§:
+               (_loc6_ = new b2PrismaticJointDef()).collideConnected = this.§8A§;
+               _loc6_.Initialize(param1.§`t§(),param2.§`t§(),param1.§`t§().GetWorldCenter(),new b2Vec2(this.§?9§,this.§[q§));
+               _loc6_.enableLimit = !!this.§,F§ ? false : Boolean(this.§%1§);
+               _loc6_.lowerTranslation = this.§=!!§;
+               _loc6_.upperTranslation = this.§+e§;
+               _loc6_.enableMotor = this.§ u§;
+               _loc6_.maxMotorForce = this.§@X§;
+               _loc6_.motorSpeed = this.§^x§;
+               return _loc6_;
+            default:
+               return null;
          }
-         §§goto(addr397);
       }
    }
 }

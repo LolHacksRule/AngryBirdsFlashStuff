@@ -45,7 +45,6 @@ package com.rovio.Box2D.Collision
          var _loc8_:b2Simplex;
          (_loc8_ = s_simplex).ReadCache(param2,_loc4_,_loc6_,_loc5_,_loc7_);
          var _loc9_:Vector.<b2SimplexVertex> = _loc8_.m_vertices;
-         var _loc10_:int = 20;
          var _loc11_:Vector.<int> = s_saveA;
          var _loc12_:Vector.<int> = s_saveB;
          var _loc13_:int = 0;
@@ -53,7 +52,7 @@ package com.rovio.Box2D.Collision
          var _loc14_:b2Vec2;
          var _loc16_:Number = _loc15_ = (_loc14_ = _loc8_.GetClosestPoint()).LengthSquared();
          var _loc19_:int = 0;
-         while(_loc19_ < _loc10_)
+         while(_loc19_ < 20)
          {
             _loc13_ = _loc8_.m_count;
             _loc17_ = 0;

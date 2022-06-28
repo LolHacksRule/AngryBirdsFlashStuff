@@ -18,35 +18,13 @@ package §>k§
       
       public function §[!M§(param1:int, param2:int, param3:int, param4:int, param5:int, param6:int)
       {
-         var _loc7_:Boolean = true;
-         var _loc8_:Boolean = false;
-         if(!(_loc8_ && param2))
-         {
-            super();
-            this.§?!-§ = param1;
-            if(!(_loc8_ && this))
-            {
-               this.§&6§ = param2;
-               this.§?F§ = param3;
-               if(!_loc8_)
-               {
-                  this._height = param4;
-                  if(_loc7_)
-                  {
-                     addr68:
-                     this.§3!M§ = param5;
-                     if(!_loc7_)
-                     {
-                     }
-                     §§goto(addr76);
-                  }
-                  this.§2!5§ = param6;
-                  addr76:
-                  return;
-               }
-            }
-         }
-         §§goto(addr68);
+         super();
+         this.§?!-§ = param1;
+         this.§&6§ = param2;
+         this.§?F§ = param3;
+         this._height = param4;
+         this.§3!M§ = param5;
+         this.§2!5§ = param6;
       }
       
       public function get x() : int

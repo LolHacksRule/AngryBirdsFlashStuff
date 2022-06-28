@@ -19,45 +19,21 @@ package §#h§
       
       public function §@b§(param1:SoundChannel, param2:String)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
          super();
-         if(_loc4_)
-         {
-            this.§8r§ = param1;
-            if(_loc4_)
-            {
-               this.§]v§ = param2;
-               this.§8r§.addEventListener(Event.SOUND_COMPLETE,this.§,F§);
-               this.§&x§ = param1.soundTransform.volume;
-               if(!(_loc3_ && param2))
-               {
-                  this.§+S§ = false;
-               }
-            }
-         }
+         this.§8r§ = param1;
+         this.§]v§ = param2;
+         this.§8r§.addEventListener(Event.SOUND_COMPLETE,this.§,F§);
+         this.§&x§ = param1.soundTransform.volume;
+         this.§+S§ = false;
       }
       
       public function set volume(param1:Number) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && param1))
+         this.§&x§ = param1;
+         if(!this.§+S§)
          {
-            this.§&x§ = param1;
-            if(_loc2_ || _loc2_)
-            {
-               if(!this.§+S§)
-               {
-                  if(!_loc2_)
-                  {
-                  }
-               }
-               §§goto(addr52);
-            }
             this.§-6§(this.§&x§);
          }
-         addr52:
       }
       
       public function get volume() : Number
@@ -77,126 +53,53 @@ package §#h§
       
       private function §,F§(param1:Event) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§8r§.removeEventListener(Event.SOUND_COMPLETE,this.§,F§);
-            if(!(_loc3_ && this))
-            {
-               dispatchEvent(param1);
-            }
-         }
+         this.§8r§.removeEventListener(Event.SOUND_COMPLETE,this.§,F§);
+         dispatchEvent(param1);
       }
       
       private function §-6§(param1:Number) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
          var _loc2_:SoundTransform = this.§8r§.soundTransform;
-         if(!_loc3_)
-         {
-            _loc2_.volume = param1;
-            if(!_loc3_)
-            {
-               addr29:
-               this.§8r§.soundTransform = _loc2_;
-            }
-            return;
-         }
-         §§goto(addr29);
+         _loc2_.volume = param1;
+         this.§8r§.soundTransform = _loc2_;
       }
       
       public function §`C§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc2_)
-         {
-            this.§,F§(new Event(Event.SOUND_COMPLETE));
-         }
+         this.§,F§(new Event(Event.SOUND_COMPLETE));
       }
       
       public function stop() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc2_)
+         if(this.§8r§)
          {
-            if(this.§8r§)
-            {
-               if(!(_loc2_ && _loc2_))
-               {
-                  this.§8r§.stop();
-               }
-            }
+            this.§8r§.stop();
          }
       }
       
       public function destroy() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc1_)
-         {
-            this.stop();
-            if(!_loc2_)
-            {
-               addr37:
-               this.§8r§.removeEventListener(Event.SOUND_COMPLETE,this.§,F§);
-               if(!(_loc2_ && _loc2_))
-               {
-                  this.§8r§ = null;
-               }
-            }
-            return;
-         }
-         §§goto(addr37);
+         this.stop();
+         this.§8r§.removeEventListener(Event.SOUND_COMPLETE,this.§,F§);
+         this.§8r§ = null;
       }
       
       public function §5!H§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
+         if(this.§8r§)
          {
-            if(this.§8r§)
-            {
-               if(_loc1_ || _loc2_)
-               {
-                  this.§-6§(0);
-                  if(_loc1_)
-                  {
-                     addr43:
-                     this.§+S§ = true;
-                  }
-               }
-            }
-            return;
+            this.§-6§(0);
+            this.§+S§ = true;
          }
-         §§goto(addr43);
       }
       
       public function §6c§() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc1_))
+         if(this.§8r§)
          {
-            if(this.§8r§)
-            {
-               if(!(_loc1_ && this))
-               {
-                  this.§-6§(this.§&x§);
-                  if(_loc1_ && _loc1_)
-                  {
-                  }
-                  §§goto(addr58);
-               }
-               this.§+S§ = false;
-            }
+            this.§-6§(this.§&x§);
+            this.§+S§ = false;
          }
-         addr58:
       }
    }
 }

@@ -30,153 +30,25 @@ package §9W§
       
       public function §6!0§(param1:Texture, param2:Boolean = false, param3:Boolean = true)
       {
-         var _loc8_:Boolean = true;
-         var _loc9_:Boolean = false;
          var _loc4_:Rectangle;
-         if(_loc4_ = param1.§`! §)
+         var _loc5_:Number = !!(_loc4_ = param1.§`! §) ? Number(_loc4_.width) : Number(param1.width);
+         var _loc6_:Number = !!_loc4_ ? Number(_loc4_.height) : Number(param1.height);
+         var _loc7_:Boolean = param1.premultipliedAlpha;
+         super(_loc5_,_loc6_,16777215,_loc7_);
+         this.§7#§ = param1;
+         if(!param3)
          {
-            §§push(Number(_loc4_.width));
-            if(!(_loc9_ && param1))
-            {
-               addr40:
-               §§push(Number(§§pop()));
-            }
+            this.§@n§ = !!§;T§.§>!,§ ? §7!=§.NONE : §7!=§.§1%§;
          }
          else
          {
-            §§push(param1.width);
-            if(!_loc9_)
-            {
-               §§push(Number(§§pop()));
-               if(!_loc9_)
-               {
-                  §§goto(addr40);
-               }
-            }
+            this.§@n§ = !!§;T§.§>!,§ ? §7!=§.§1%§ : §7!=§.§"V§;
+            this.§&%§ = true;
          }
-         var _loc5_:* = §§pop();
-         if(_loc8_ || param2)
-         {
-            if(_loc4_)
-            {
-               addr70:
-               addr51:
-               §§push(Number(_loc4_.height));
-               if(!(_loc9_ && param1))
-               {
-                  addr69:
-                  §§push(Number(§§pop()));
-               }
-               var _loc6_:* = §§pop();
-               §§push(param1.premultipliedAlpha);
-               if(!(_loc9_ && param1))
-               {
-                  §§push(Boolean(§§pop()));
-               }
-               var _loc7_:* = §§pop();
-               super(_loc5_,_loc6_,16777215,_loc7_);
-               this.§7#§ = param1;
-               if(_loc8_ || this)
-               {
-                  if(!param3)
-                  {
-                     §§push(this);
-                     if(!(_loc9_ && param1))
-                     {
-                        if(§;T§.§>!,§)
-                        {
-                           addr121:
-                           §§push(§7!=§.NONE);
-                           if(!_loc9_)
-                           {
-                              §§push(§§pop());
-                              if(_loc9_ && param3)
-                              {
-                              }
-                              §§goto(addr144);
-                           }
-                        }
-                        else
-                        {
-                           §§push(§7!=§.§1%§);
-                           if(!(_loc9_ && param2))
-                           {
-                              §§push(§§pop());
-                           }
-                        }
-                        §§goto(addr144);
-                     }
-                     §§goto(addr121);
-                  }
-                  else
-                  {
-                     §§push(this);
-                     if(!_loc9_)
-                     {
-                        if(§;T§.§>!,§)
-                        {
-                           addr154:
-                           §§push(§7!=§.§1%§);
-                           if(!_loc9_)
-                           {
-                              §§push(§§pop());
-                              if(_loc9_)
-                              {
-                              }
-                              §§goto(addr182);
-                           }
-                           addr171:
-                           §§push(§§pop());
-                        }
-                        else
-                        {
-                           §§push(§7!=§.§"V§);
-                           if(_loc8_ || param1)
-                           {
-                              §§goto(addr171);
-                           }
-                        }
-                        addr182:
-                        §§pop().§@n§ = §§pop();
-                        this.§&%§ = true;
-                        if(_loc8_ || param2)
-                        {
-                           addr144:
-                           §§pop().§@n§ = §§pop();
-                           if(!_loc8_)
-                           {
-                           }
-                           this.§36§ = param2;
-                           this.§?E§ = this.§36§;
-                           this.§-0§ = new §;2§(4,_loc7_);
-                           if(_loc8_)
-                           {
-                              this.§,R§(true);
-                           }
-                        }
-                        §§goto(addr211);
-                     }
-                     §§goto(addr154);
-                  }
-               }
-               §§goto(addr182);
-            }
-            else
-            {
-               §§push(param1.height);
-               if(!_loc9_)
-               {
-                  §§push(Number(§§pop()));
-                  if(!_loc9_)
-                  {
-                     §§goto(addr69);
-                  }
-                  §§goto(addr70);
-               }
-            }
-            §§goto(addr69);
-         }
-         §§goto(addr51);
+         this.§36§ = param2;
+         this.§?E§ = this.§36§;
+         this.§-0§ = new §;2§(4,_loc7_);
+         this.§,R§(true);
       }
       
       public static function §?g§(param1:Context3D, param2:Bitmap) : §6!0§
@@ -191,178 +63,47 @@ package §9W§
       
       override protected function updateVertexData(param1:Number, param2:Number, param3:uint, param4:Boolean) : void
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         if(!_loc6_)
-         {
-            super.updateVertexData(param1,param2,param3,param4);
-            if(_loc5_)
-            {
-               §5J§.setTexCoords(0,0,0);
-               if(!(_loc6_ && param3))
-               {
-                  addr58:
-                  §5J§.setTexCoords(1,1,0);
-                  if(!_loc5_)
-                  {
-                  }
-                  §§goto(addr77);
-               }
-               §5J§.setTexCoords(2,0,1);
-               if(_loc5_ || this)
-               {
-               }
-               §§goto(addr77);
-            }
-            addr77:
-            §5J§.setTexCoords(3,1,1);
-            return;
-         }
-         §§goto(addr58);
+         super.updateVertexData(param1,param2,param3,param4);
+         §5J§.setTexCoords(0,0,0);
+         §5J§.setTexCoords(1,1,0);
+         §5J§.setTexCoords(2,0,1);
+         §5J§.setTexCoords(3,1,1);
       }
       
       private function §,R§(param1:Boolean = false) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            §5J§.copyTo(this.§-0§,0,1,this.§36§ || param1,null);
-            if(!(_loc3_ && param1))
-            {
-               this.§7#§.adjustVertexData(this.§-0§,0,4);
-            }
-         }
+         §5J§.copyTo(this.§-0§,0,1,this.§36§ || param1,null);
+         this.§7#§.adjustVertexData(this.§-0§,0,4);
       }
       
       public function §8!=§() : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
          var _loc1_:Rectangle = this.texture.§`! §;
-         if(_loc4_)
-         {
-            if(_loc1_)
-            {
-               addr50:
-               §§push(Number(_loc1_.width));
-               if(_loc4_ || this)
-               {
-                  addr49:
-                  §§push(Number(§§pop()));
-               }
-               var _loc2_:* = §§pop();
-               if(!_loc5_)
-               {
-                  if(_loc1_)
-                  {
-                     addr65:
-                     §§push(Number(_loc1_.height));
-                     if(!(_loc5_ && this))
-                     {
-                        addr89:
-                        §§push(Number(§§pop()));
-                     }
-                     else
-                     {
-                        addr81:
-                        §§push(Number(§§pop()));
-                        if(_loc4_ || _loc3_)
-                        {
-                           §§goto(addr89);
-                        }
-                     }
-                  }
-                  else
-                  {
-                     §§push(this.texture.height);
-                     if(_loc4_)
-                     {
-                        §§goto(addr81);
-                     }
-                  }
-                  var _loc3_:* = §§pop();
-                  if(!_loc5_)
-                  {
-                     §5J§.setPosition(0,0,0);
-                     if(!(_loc5_ && _loc2_))
-                     {
-                        §5J§.setPosition(1,_loc2_,0);
-                        if(_loc4_)
-                        {
-                           §5J§.setPosition(2,0,_loc3_);
-                           if(_loc4_)
-                           {
-                              §5J§.setPosition(3,_loc2_,_loc3_);
-                              if(!_loc5_)
-                              {
-                                 addr136:
-                                 this.§,R§();
-                              }
-                           }
-                        }
-                        return;
-                     }
-                  }
-                  §§goto(addr136);
-               }
-               §§goto(addr65);
-            }
-            else
-            {
-               §§push(this.texture.width);
-               if(!_loc5_)
-               {
-                  §§push(Number(§§pop()));
-                  if(!(_loc5_ && _loc3_))
-                  {
-                     §§goto(addr49);
-                  }
-                  §§goto(addr50);
-               }
-            }
-            §§goto(addr49);
-         }
-         §§goto(addr50);
+         var _loc2_:Number = !!_loc1_ ? Number(_loc1_.width) : Number(this.texture.width);
+         var _loc3_:Number = !!_loc1_ ? Number(_loc1_.height) : Number(this.texture.height);
+         §5J§.setPosition(0,0,0);
+         §5J§.setPosition(1,_loc2_,0);
+         §5J§.setPosition(2,0,_loc3_);
+         §5J§.setPosition(3,_loc2_,_loc3_);
+         this.§,R§();
       }
       
       public function setTexCoords(param1:int, param2:Point) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_)
-         {
-            §5J§.setTexCoords(param1,param2.x,param2.y);
-            if(!(_loc3_ && param2))
-            {
-               addr43:
-               this.§,R§();
-            }
-            return;
-         }
-         §§goto(addr43);
+         §5J§.setTexCoords(param1,param2.x,param2.y);
+         this.§,R§();
       }
       
       public function getTexCoords(param1:int) : Point
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
          var _loc2_:Point = new Point();
-         if(_loc4_)
-         {
-            §5J§.getTexCoords(param1,_loc2_);
-         }
+         §5J§.getTexCoords(param1,_loc2_);
          return _loc2_;
       }
       
       override public function copyVertexDataTo(param1:§;2§, param2:int = 0, param3:Number = 1.0, param4:Matrix3D = null) : void
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         if(!_loc6_)
-         {
-            this.§-0§.copyTo(param1,param2,param3,this.§36§,param4);
-         }
+         this.§-0§.copyTo(param1,param2,param3,this.§36§,param4);
       }
       
       public function get texture() : Texture
@@ -372,8 +113,6 @@ package §9W§
       
       public function set texture(param1:Texture) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
          if(param1 == null)
          {
             throw new ArgumentError("Texture cannot be null");
@@ -381,10 +120,7 @@ package §9W§
          if(param1 != this.§7#§)
          {
             this.§7#§ = param1;
-            if(!(_loc2_ && _loc3_))
-            {
-               §5J§.setPremultipliedAlpha(this.§7#§.premultipliedAlpha);
-            }
+            §5J§.setPremultipliedAlpha(this.§7#§.premultipliedAlpha);
             this.§,R§();
          }
       }
@@ -396,69 +132,29 @@ package §9W§
       
       public function set smoothing(param1:String) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
+         if(§7!=§.isValid(param1))
          {
-            if(§7!=§.isValid(param1))
-            {
-               if(_loc2_ || _loc2_)
-               {
-                  addr39:
-                  this.§@n§ = param1;
-                  if(_loc3_ && this)
-                  {
-                  }
-               }
-               return;
-            }
-            throw new ArgumentError("Invalid smoothing mode: " + this.smoothing);
+            this.§@n§ = param1;
+            return;
          }
-         §§goto(addr39);
+         throw new ArgumentError("Invalid smoothing mode: " + this.smoothing);
       }
       
       override public function setVertexColor(param1:int, param2:uint) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_)
-         {
-            super.setVertexColor(param1,param2);
-            if(!(_loc4_ && param2))
-            {
-               addr29:
-               this.§,R§();
-            }
-            return;
-         }
-         §§goto(addr29);
+         super.setVertexColor(param1,param2);
+         this.§,R§();
       }
       
       override public function setVertexAlpha(param1:int, param2:Number) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!_loc3_)
-         {
-            super.setVertexAlpha(param1,param2);
-            if(!(_loc3_ && _loc3_))
-            {
-               addr30:
-               this.§,R§();
-            }
-            return;
-         }
-         §§goto(addr30);
+         super.setVertexAlpha(param1,param2);
+         this.§,R§();
       }
       
       override public function render(param1:§?h§, param2:Number) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_ || param1)
-         {
-            param1.batchQuad(this,param2,this.§7#§,this.§@n§);
-         }
+         param1.batchQuad(this,param2,this.§7#§,this.§@n§);
       }
       
       override public function get useColor() : Boolean
@@ -468,38 +164,16 @@ package §9W§
       
       override public function set color(param1:uint) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || _loc3_)
+         if((param1 & 16777215) == 16777215)
          {
-            if((param1 & 16777215) == 16777215)
-            {
-               if(_loc2_ || _loc2_)
-               {
-                  addr55:
-                  this.§36§ = this.§?E§;
-                  if(!_loc3_)
-                  {
-                     addr72:
-                     super.color = param1;
-                     if(!_loc3_)
-                     {
-                        addr77:
-                        this.§,R§();
-                     }
-                  }
-                  §§goto(addr77);
-               }
-               return;
-            }
-            this.§36§ = true;
-            if(_loc2_ || _loc2_)
-            {
-               §§goto(addr72);
-            }
-            §§goto(addr77);
+            this.§36§ = this.§?E§;
          }
-         §§goto(addr55);
+         else
+         {
+            this.§36§ = true;
+         }
+         super.color = param1;
+         this.§,R§();
       }
       
       override public function get clippedBitmapData() : BitmapData

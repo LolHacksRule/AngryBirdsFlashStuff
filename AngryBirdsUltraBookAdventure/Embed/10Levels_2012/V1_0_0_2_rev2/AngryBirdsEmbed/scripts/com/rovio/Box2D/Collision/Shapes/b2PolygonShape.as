@@ -80,22 +80,20 @@ package com.rovio.Box2D.Collision.Shapes
          var _loc16_:Number = NaN;
          _loc3_ = new b2Vec2();
          var _loc4_:Number = 0;
-         var _loc5_:Number = 0;
-         var _loc6_:Number = 0;
          var _loc7_:Number = 1 / 3;
          var _loc8_:int = 0;
          while(_loc8_ < param2)
          {
             _loc9_ = param1[_loc8_];
             _loc10_ = _loc8_ + 1 < param2 ? param1[int(_loc8_ + 1)] : param1[0];
-            _loc11_ = _loc9_.x - _loc5_;
-            _loc12_ = _loc9_.y - _loc6_;
-            _loc13_ = _loc10_.x - _loc5_;
-            _loc14_ = _loc10_.y - _loc6_;
+            _loc11_ = _loc9_.x - 0;
+            _loc12_ = _loc9_.y - 0;
+            _loc13_ = _loc10_.x - 0;
+            _loc14_ = _loc10_.y - 0;
             _loc15_ = _loc11_ * _loc14_ - _loc12_ * _loc13_;
             _loc16_ = 0.5 * _loc15_;
             _loc4_ += _loc16_;
-            _loc3_.Add(new b2Vec2(_loc5_,_loc6_));
+            _loc3_.Add(new b2Vec2(0,0));
             _loc3_.Add(_loc9_);
             _loc3_.Add(_loc10_);
             _loc3_.Multiply(_loc16_ * _loc7_);
@@ -467,25 +465,23 @@ package com.rovio.Box2D.Collision.Shapes
          var _loc4_:Number = 0;
          var _loc5_:Number = 0;
          var _loc6_:Number = 0;
-         var _loc7_:Number = 0;
-         var _loc8_:Number = 0;
          var _loc9_:Number = 1 / 3;
          var _loc10_:int = 0;
          while(_loc10_ < this.m_vertexCount)
          {
             _loc11_ = this.m_vertices[_loc10_];
             _loc12_ = _loc10_ + 1 < this.m_vertexCount ? this.m_vertices[int(_loc10_ + 1)] : this.m_vertices[0];
-            _loc13_ = _loc11_.x - _loc7_;
-            _loc14_ = _loc11_.y - _loc8_;
-            _loc15_ = _loc12_.x - _loc7_;
-            _loc16_ = _loc12_.y - _loc8_;
+            _loc13_ = _loc11_.x - 0;
+            _loc14_ = _loc11_.y - 0;
+            _loc15_ = _loc12_.x - 0;
+            _loc16_ = _loc12_.y - 0;
             _loc17_ = _loc13_ * _loc16_ - _loc14_ * _loc15_;
             _loc18_ = 0.5 * _loc17_;
             _loc5_ += _loc18_;
-            _loc3_ += _loc18_ * _loc9_ * (_loc7_ + _loc11_.x + _loc12_.x);
-            _loc4_ += _loc18_ * _loc9_ * (_loc8_ + _loc11_.y + _loc12_.y);
-            _loc19_ = _loc7_;
-            _loc20_ = _loc8_;
+            _loc3_ += _loc18_ * _loc9_ * (0 + _loc11_.x + _loc12_.x);
+            _loc4_ += _loc18_ * _loc9_ * (0 + _loc11_.y + _loc12_.y);
+            _loc19_ = 0;
+            _loc20_ = 0;
             _loc21_ = _loc13_;
             _loc22_ = _loc14_;
             _loc23_ = _loc15_;
@@ -556,11 +552,10 @@ package com.rovio.Box2D.Collision.Shapes
                if(_loc9_ == -1)
                {
                   _loc9_ = this.m_vertexCount - 1;
+                  break;
                }
-               else
-               {
-                  _loc10_ = this.m_vertexCount - 1;
-               }
+               _loc10_ = this.m_vertexCount - 1;
+               break;
          }
          var _loc13_:int = (_loc9_ + 1) % this.m_vertexCount;
          var _loc14_:int = (_loc10_ + 1) % this.m_vertexCount;

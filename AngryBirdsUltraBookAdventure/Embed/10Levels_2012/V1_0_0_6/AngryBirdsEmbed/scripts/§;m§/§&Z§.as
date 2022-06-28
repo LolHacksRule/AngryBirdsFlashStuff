@@ -20,22 +20,10 @@ package §;m§
    public class §&Z§ extends StatePlay
    {
       
-      private static const §[!H§:Number = -5000.0;
+      private static const §[!H§:Number = -5 * 1000;
       
-      private static const §2y§:Number = 10000.0;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            §[!H§ = -5 * 1000;
-            if(_loc2_ || _loc2_)
-            {
-               §2y§ = 10 * 1000;
-            }
-         }
-      }
+      private static const §2y§:Number = 10 * 1000;
+       
       
       private var §>,§:int = 0;
       
@@ -49,19 +37,8 @@ package §;m§
       
       public function §&Z§(param1:Boolean = true, param2:int = 0, param3:String = "StatePlay")
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!(_loc4_ && param1))
-         {
-            super(param1,param3);
-            if(!_loc4_)
-            {
-               addr30:
-               this.§>,§ = param2;
-            }
-            return;
-         }
-         §§goto(addr30);
+         super(param1,param3);
+         this.§>,§ = param2;
       }
       
       override protected function getGameLogicController(param1:§!E§) : §1!$§
@@ -71,291 +48,81 @@ package §;m§
       
       override protected function levelStarted() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc2_)
-         {
-            super.levelStarted();
-            if(!(_loc1_ && _loc2_))
-            {
-               §+9§.§]c§(§5!A§.§]x§,§59§.§%j§);
-            }
-         }
+         super.levelStarted();
+         §+9§.§]c§(§5!A§.§]x§,§59§.§%j§);
       }
       
       override public function init() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && this))
-         {
-            §?z§ = true;
-            if(_loc2_)
-            {
-               addr39:
-               §-f§ = new §0#§(this);
-               if(!_loc1_)
-               {
-                  §-f§.init(§06§.§-`§.Views.View_FacebookLevelPlay[0]);
-               }
-            }
-            return;
-         }
-         §§goto(addr39);
+         §?z§ = true;
+         §-f§ = new §0#§(this);
+         §-f§.init(§06§.§-`§.Views.View_FacebookLevelPlay[0]);
       }
       
       override public function activate() : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         var _loc2_:* = 0;
-         if(_loc4_ || _loc2_)
+         var _loc2_:int = 0;
+         super.activate();
+         this.§7;§();
+         var _loc1_:§^!9§ = §59§.§'Y§(§59§.§%j§);
+         if(_loc1_)
          {
-            super.activate();
-            if(_loc4_ || this)
+            _loc2_ = _loc1_.§#f§();
+            if(§"h§.§1C§.slingshot)
             {
-               addr35:
-               this.§7;§();
+               _loc2_ += §"h§.§1C§.slingshot.§<w§();
             }
-            var _loc1_:§^!9§ = §59§.§'Y§(§59§.§%j§);
-            if(_loc1_)
-            {
-               if(!_loc3_)
-               {
-                  §§push(_loc1_.§#f§());
-                  if(_loc4_)
-                  {
-                     §§push(int(§§pop()));
-                     if(!_loc3_)
-                     {
-                        _loc2_ = §§pop();
-                        if(§"h§.§1C§.slingshot)
-                        {
-                           §§push(_loc2_);
-                           if(_loc4_ || _loc2_)
-                           {
-                              §§push(§"h§.§1C§.slingshot.§<w§());
-                              if(!(_loc3_ && _loc2_))
-                              {
-                                 §§push(int(§§pop() + §§pop()));
-                                 if(_loc4_)
-                                 {
-                                    addr92:
-                                    _loc2_ = §§pop();
-                                    this.§>,§ = Math.min(this.§>,§,_loc2_);
-                                    if(_loc4_ || _loc1_)
-                                    {
-                                       addr109:
-                                       addr110:
-                                       addr107:
-                                       if(this.§>,§ > 0)
-                                       {
-                                          (§-f§.getItemByName("TextField_HighScore") as §<k§).setText(this.§>,§.toString());
-                                          if(!(_loc3_ && _loc1_))
-                                          {
-                                             addr151:
-                                             return;
-                                             addr137:
-                                          }
-                                          §§goto(addr151);
-                                       }
-                                       else
-                                       {
-                                          §-f§.getItemByName("Container_HiscoreContainer").setVisibility(false);
-                                       }
-                                       §-f§.getItemByName("Container_LevelscoreContainer").y = §-f§.getItemByName("Container_HiscoreContainer").y;
-                                    }
-                                    §§goto(addr151);
-                                 }
-                                 §§goto(addr109);
-                              }
-                              §§goto(addr110);
-                           }
-                        }
-                        §§goto(addr92);
-                     }
-                  }
-                  §§goto(addr109);
-               }
-               §§goto(addr137);
-            }
-            §§goto(addr107);
+            this.§>,§ = Math.min(this.§>,§,_loc2_);
          }
-         §§goto(addr35);
+         if(this.§>,§ > 0)
+         {
+            (§-f§.getItemByName("TextField_HighScore") as §<k§).setText(this.§>,§.toString());
+         }
+         else
+         {
+            §-f§.getItemByName("Container_HiscoreContainer").setVisibility(false);
+            §-f§.getItemByName("Container_LevelscoreContainer").y = §-f§.getItemByName("Container_HiscoreContainer").y;
+         }
       }
       
       override public function deActivate() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc2_))
-         {
-            super.deActivate();
-            if(!(_loc2_ && _loc2_))
-            {
-               this.§@p§();
-               if(_loc1_ || _loc1_)
-               {
-                  this.§7;§();
-               }
-            }
-         }
+         super.deActivate();
+         this.§@p§();
+         this.§7;§();
       }
       
       private function §@p§() : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
          var _loc1_:int = 0;
-         var _loc2_:* = null;
-         if(_loc4_)
+         var _loc2_:String = null;
+         if(this.§@!F§ > §2y§)
          {
-            if(this.§@!F§ > §2y§)
-            {
-               if(!(_loc3_ && _loc3_))
-               {
-                  _loc1_ = Math.round(1000 / this.§@!F§ * this.§`!&§);
-                  if(!(_loc3_ && _loc3_))
-                  {
-                     §§push(§59§.§%j§);
-                     if(!_loc3_)
-                     {
-                        §§push(§§pop());
-                     }
-                     _loc2_ = §§pop();
-                     if(_loc4_)
-                     {
-                        addr81:
-                        §+9§.§=+§(_loc1_,_loc2_,§4@§.§?!A§);
-                     }
-                  }
-               }
-               §§goto(addr81);
-            }
-            return;
+            _loc1_ = Math.round(1000 / this.§@!F§ * this.§`!&§);
+            _loc2_ = §59§.§%j§;
+            §+9§.§=+§(_loc1_,_loc2_,§4@§.§?!A§);
          }
-         §§goto(addr81);
       }
       
       private function §2G§(param1:Number) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(_loc5_ || this)
+         this.§@!F§ += param1;
+         if(this.§@!F§ > 0)
          {
-            §§push(this);
-            §§push(this.§@!F§);
-            if(_loc5_)
-            {
-               §§push(§§pop() + param1);
-            }
-            §§pop().§@!F§ = §§pop();
-            §§push(this.§@!F§);
-            if(_loc5_ || _loc3_)
-            {
-               §§push(0);
-               if(!_loc4_)
-               {
-                  if(§§pop() > §§pop())
-                  {
-                     if(!(_loc4_ && this))
-                     {
-                        var _loc2_:*;
-                        §§push((_loc2_ = this).§`!&§);
-                        if(_loc5_ || _loc3_)
-                        {
-                           §§push(§§pop() + 1);
-                        }
-                        var _loc3_:* = §§pop();
-                        if(_loc5_ || this)
-                        {
-                           _loc2_.§`!&§ = _loc3_;
-                        }
-                        if(!_loc4_)
-                        {
-                           addr89:
-                           §§push(this.§2a§);
-                           if(!(_loc4_ && param1))
-                           {
-                              addr98:
-                              §§push(§"h§.§=[§());
-                              if(_loc5_ || _loc3_)
-                              {
-                                 §§goto(addr117);
-                              }
-                              §§goto(addr139);
-                           }
-                           §§goto(addr137);
-                        }
-                        §§goto(addr144);
-                     }
-                  }
-                  §§goto(addr89);
-               }
-               addr117:
-               §§push(§§pop() == §§pop());
-               if(!(_loc4_ && _loc2_))
-               {
-                  §§push(!§§pop());
-                  if(!_loc4_)
-                  {
-                     if(!§§pop())
-                     {
-                        if(!_loc4_)
-                        {
-                           §§pop();
-                           if(_loc5_)
-                           {
-                              addr139:
-                              addr137:
-                              §§push(this.§!!B§ == §"h§.§+_§());
-                              if(_loc4_)
-                              {
-                              }
-                              §§goto(addr143);
-                           }
-                           §§goto(addr144);
-                        }
-                        §§push(!§§pop());
-                     }
-                  }
-               }
-               addr143:
-               if(§§pop())
-               {
-                  addr144:
-                  this.§7;§();
-               }
-               return;
-            }
-            §§goto(addr98);
+            ++this.§`!&§;
          }
-         §§goto(addr89);
+         if(this.§2a§ != §"h§.§=[§() || this.§!!B§ != §"h§.§+_§())
+         {
+            this.§7;§();
+         }
       }
       
       private function §7;§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc1_)
-         {
-            this.§@!F§ = §[!H§;
-            if(_loc1_)
-            {
-               this.§`!&§ = 0;
-               if(!(_loc2_ && _loc2_))
-               {
-                  this.§2a§ = §"h§.§=[§();
-                  if(!(_loc2_ && _loc2_))
-                  {
-                     addr69:
-                     this.§!!B§ = §"h§.§+_§();
-                  }
-               }
-            }
-            return;
-         }
-         §§goto(addr69);
+         this.§@!F§ = §[!H§;
+         this.§`!&§ = 0;
+         this.§2a§ = §"h§.§=[§();
+         this.§!!B§ = §"h§.§+_§();
       }
       
       override protected function initMightyEagleButton() : void
@@ -372,276 +139,57 @@ package §;m§
       
       override protected function levelCompleted() : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!(_loc3_ && this))
-         {
-            super.levelCompleted();
-         }
-         §§push(§59§.§%j§);
-         if(_loc4_)
-         {
-            §§push(§§pop());
-         }
-         var _loc1_:* = §§pop();
+         super.levelCompleted();
+         var _loc1_:String = §59§.§%j§;
          var _loc2_:int = §^R§.getScore();
-         if(!(_loc3_ && _loc2_))
-         {
-            §+9§.§]c§(§5!A§.§9!C§,_loc1_,_loc2_);
-         }
+         §+9§.§]c§(§5!A§.§9!C§,_loc1_,_loc2_);
       }
       
       override public function uiInteractionHandler(param1:int, param2:String, param3:§"?§) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         var _loc4_:* = param2;
-         if(!_loc5_)
+         switch(param2)
          {
-            §§push("CLOSE_TUTORIAL_POWERUP");
-            if(!(_loc5_ && param1))
-            {
-               §§push(_loc4_);
-               if(_loc6_)
-               {
-                  if(§§pop() === §§pop())
-                  {
-                     if(!(_loc5_ && param1))
-                     {
-                        §§push(0);
-                        if(_loc5_)
-                        {
-                        }
-                     }
-                     else
-                     {
-                        addr139:
-                        §§push(2);
-                        if(_loc6_ || param3)
-                        {
-                        }
-                     }
-                     §§goto(addr182);
-                  }
-                  else
-                  {
-                     §§push("POWERUP");
-                     if(!(_loc5_ && param1))
-                     {
-                        §§push(_loc4_);
-                        if(_loc6_)
-                        {
-                           if(§§pop() === §§pop())
-                           {
-                              if(!(_loc5_ && param1))
-                              {
-                                 addr121:
-                                 §§push(1);
-                                 if(!_loc6_)
-                                 {
-                                 }
-                                 §§goto(addr182);
-                              }
-                              else
-                              {
-                                 §§goto(addr139);
-                              }
-                           }
-                           else
-                           {
-                              §§push("FULLSCREEN_BUTTON");
-                              if(!_loc5_)
-                              {
-                                 addr128:
-                                 §§push(_loc4_);
-                                 if(!_loc5_)
-                                 {
-                                    if(§§pop() === §§pop())
-                                    {
-                                       if(_loc6_ || param1)
-                                       {
-                                          §§goto(addr139);
-                                       }
-                                       else
-                                       {
-                                          addr167:
-                                          §§push(3);
-                                          if(_loc5_)
-                                          {
-                                             addr177:
-                                          }
-                                          §§goto(addr182);
-                                       }
-                                    }
-                                    else
-                                    {
-                                       §§push("ZOOM_IN");
-                                       if(!_loc5_)
-                                       {
-                                          addr161:
-                                          §§push(_loc4_);
-                                          if(_loc5_)
-                                          {
-                                          }
-                                          addr173:
-                                          if(§§pop() === §§pop())
-                                          {
-                                             addr174:
-                                             §§push(4);
-                                             if(_loc6_)
-                                             {
-                                                §§goto(addr177);
-                                             }
-                                             §§goto(addr182);
-                                          }
-                                          else
-                                          {
-                                             addr182:
-                                             switch(§§pop())
-                                             {
-                                                case 0:
-                                                   §&h§.§`a§();
-                                                   if(!_loc5_)
-                                                   {
-                                                      break;
-                                                   }
-                                                   addr47:
-                                                   break;
-                                                case 1:
-                                                   §3!#§.§?!!§(true);
-                                                   if(_loc6_ || param1)
-                                                   {
-                                                      break;
-                                                   }
-                                                   addr52:
-                                                   break;
-                                                case 2:
-                                                   §3!#§.§?!!§(false);
-                                                   if(_loc5_ && param1)
-                                                   {
-                                                      addr64:
-                                                      break;
-                                                   }
-                                                   §§goto(addr47);
-                                                   break;
-                                                case 3:
-                                                   §^R§.doUserZoom(true);
-                                                   §§goto(addr52);
-                                                case 4:
-                                                   §^R§.doUserZoom(false);
-                                                   break;
-                                                default:
-                                                   super.uiInteractionHandler(param1,param2,param3);
-                                                   §§goto(addr64);
-                                             }
-                                             return;
-                                             §§push(5);
-                                          }
-                                          §§goto(addr182);
-                                       }
-                                       addr172:
-                                       §§goto(addr173);
-                                       §§push(_loc4_);
-                                    }
-                                    §§goto(addr182);
-                                 }
-                                 if(§§pop() === §§pop())
-                                 {
-                                    if(_loc6_)
-                                    {
-                                       §§goto(addr167);
-                                    }
-                                    §§goto(addr182);
-                                 }
-                                 else
-                                 {
-                                    §§goto(addr172);
-                                    §§push("ZOOM_OUT");
-                                 }
-                                 §§goto(addr174);
-                              }
-                              §§goto(addr172);
-                           }
-                           §§goto(addr182);
-                        }
-                        §§goto(addr173);
-                     }
-                     §§goto(addr128);
-                  }
-               }
-               §§goto(addr173);
-            }
-            §§goto(addr161);
+            case "CLOSE_TUTORIAL_POWERUP":
+               §&h§.§`a§();
+               break;
+            case "POWERUP":
+               §3!#§.§?!!§(true);
+               break;
+            case "FULLSCREEN_BUTTON":
+               §3!#§.§?!!§(false);
+               break;
+            case "ZOOM_IN":
+               §^R§.doUserZoom(true);
+               break;
+            case "ZOOM_OUT":
+               §^R§.doUserZoom(false);
+               break;
+            default:
+               super.uiInteractionHandler(param1,param2,param3);
          }
-         §§goto(addr121);
       }
       
       override protected function updateCurrentScore(param1:Number) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
          var _loc2_:int = §^R§.getScore();
          var _loc3_:int = §6?§.getValue();
-         if(_loc5_)
+         if(_loc3_ < _loc2_)
          {
-            §§push(_loc3_);
-            if(!_loc4_)
-            {
-               if(§§pop() < _loc2_)
-               {
-                  if(_loc5_ || _loc2_)
-                  {
-                     addr69:
-                     _loc3_ = Math.min(_loc2_,§6?§.getValue() + param1 * §>!A§);
-                     if(_loc4_)
-                     {
-                     }
-                     addr77:
-                     (§-f§.getItemByName("TextField_CurrentScore") as §<k§).setText(_loc3_.toString());
-                     §§goto(addr85);
-                  }
-                  §6?§.assign(_loc3_);
-                  if(!_loc5_)
-                  {
-                  }
-                  addr85:
-                  return;
-               }
-               §§goto(addr77);
-            }
+            _loc3_ = Math.min(_loc2_,§6?§.getValue() + param1 * §>!A§);
+            §6?§.assign(_loc3_);
          }
-         §§goto(addr69);
+         (§-f§.getItemByName("TextField_CurrentScore") as §<k§).setText(_loc3_.toString());
       }
       
       override public function run(param1:Number) : int
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
+         super.run(param1);
+         this.§2G§(param1);
+         if(mNextState.length > 0)
          {
-            super.run(param1);
-            if(!(_loc3_ && param1))
-            {
-               addr38:
-               this.§2G§(param1);
-               if(_loc2_)
-               {
-                  §§goto(addr43);
-               }
-               §§goto(addr54);
-            }
-            addr43:
-            if(mNextState.length > 0)
-            {
-               if(_loc2_ || this)
-               {
-                  addr54:
-                  return §>3§.STATE_STATUS_COMPLETED;
-               }
-            }
-            return §>3§.STATE_STATUS_RUNNING;
+            return §>3§.STATE_STATUS_COMPLETED;
          }
-         §§goto(addr38);
+         return §>3§.STATE_STATUS_RUNNING;
       }
    }
 }

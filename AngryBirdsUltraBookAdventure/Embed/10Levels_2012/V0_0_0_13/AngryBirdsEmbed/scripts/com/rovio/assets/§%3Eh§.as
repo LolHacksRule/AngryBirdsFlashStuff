@@ -10,20 +10,9 @@ package com.rovio.assets
       
       public function §>h§(param1:String, param2:Class)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_ || param2)
-         {
-            super();
-            if(_loc4_)
-            {
-               this.§9!;§ = param1;
-               if(!_loc3_)
-               {
-                  this.§7;§ = param2;
-               }
-            }
-         }
+         super();
+         this.§9!;§ = param1;
+         this.§7;§ = param2;
       }
       
       public function get §#!=§() : String
@@ -33,12 +22,7 @@ package com.rovio.assets
       
       public function set §#!=§(param1:String) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && param1))
-         {
-            this.§9!;§ = param1;
-         }
+         this.§9!;§ = param1;
       }
       
       public function get §^§() : Class
@@ -48,12 +32,7 @@ package com.rovio.assets
       
       public function set §^§(param1:Class) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§7;§ = param1;
-         }
+         this.§7;§ = param1;
       }
    }
 }

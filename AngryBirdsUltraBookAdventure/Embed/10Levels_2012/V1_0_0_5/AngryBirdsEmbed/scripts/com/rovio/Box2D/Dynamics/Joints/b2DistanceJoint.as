@@ -36,7 +36,6 @@ package com.rovio.Box2D.Dynamics.Joints
       
       public function b2DistanceJoint(param1:b2DistanceJointDef)
       {
-         var _loc2_:b2Mat22 = null;
          var _loc3_:Number = NaN;
          var _loc4_:Number = NaN;
          this.m_localAnchor1 = new b2Vec2();

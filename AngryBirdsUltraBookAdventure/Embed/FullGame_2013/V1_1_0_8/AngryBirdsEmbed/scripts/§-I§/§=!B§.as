@@ -8,12 +8,7 @@ package §-I§
       
       public function §=!B§(param1:String)
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            super(param1);
-         }
+         super(param1);
       }
       
       override public function isLevelPassed(param1:String) : Boolean

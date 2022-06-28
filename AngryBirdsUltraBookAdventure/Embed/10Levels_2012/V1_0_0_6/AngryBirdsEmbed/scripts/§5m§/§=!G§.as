@@ -14,21 +14,13 @@ package §5m§
       
       public function §=!G§(param1:String, param2:Function, param3:Boolean = true)
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(_loc4_ || param2)
-         {
-            super();
-         }
+         super();
          this.§#!B§ = param1;
          this.§&!6§ = param3;
          if(param2 != null)
          {
-            if(!(_loc5_ && param3))
-            {
-               §9X§.log("[ServerCommand] Callback in constructor is not null. Adding to command callbacks.");
-               this.addCallback(param2);
-            }
+            §9X§.log("[ServerCommand] Callback in constructor is not null. Adding to command callbacks.");
+            this.addCallback(param2);
          }
       }
       
@@ -39,12 +31,7 @@ package §5m§
       
       public function §[u§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§&!6§ = param1;
-         }
+         this.§&!6§ = param1;
       }
       
       public function §"M§() : Boolean
@@ -54,52 +41,22 @@ package §5m§
       
       public function addCallback(param1:Function) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc3_))
+         if(this.§1-§ == null)
          {
-            if(this.§1-§ == null)
-            {
-               if(_loc3_ || param1)
-               {
-                  addr55:
-                  this.§1-§ = new Vector.<Function>();
-                  if(!(_loc2_ && _loc2_))
-                  {
-                     addr68:
-                     if(this.§1-§.indexOf(param1) == -1)
-                     {
-                        if(_loc3_)
-                        {
-                           this.§1-§.push(param1);
-                        }
-                     }
-                  }
-               }
-               return;
-            }
-            §§goto(addr68);
+            this.§1-§ = new Vector.<Function>();
          }
-         §§goto(addr55);
+         if(this.§1-§.indexOf(param1) == -1)
+         {
+            this.§1-§.push(param1);
+         }
       }
       
       public function §"!!§(param1:Function) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && param1))
+         if(this.§1-§.indexOf(param1) > -1)
          {
-            if(this.§1-§.indexOf(param1) > -1)
-            {
-               if(!_loc3_)
-               {
-                  addr41:
-                  this.§1-§.splice(this.§1-§.indexOf(param1),1);
-               }
-            }
-            return;
+            this.§1-§.splice(this.§1-§.indexOf(param1),1);
          }
-         §§goto(addr41);
       }
       
       public function §]a§() : Vector.<Function>

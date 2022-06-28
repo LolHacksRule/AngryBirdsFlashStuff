@@ -9,12 +9,7 @@ package §-5§
       
       public function §;s§(param1:§!E§)
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            super(param1);
-         }
+         super(param1);
       }
    }
 }

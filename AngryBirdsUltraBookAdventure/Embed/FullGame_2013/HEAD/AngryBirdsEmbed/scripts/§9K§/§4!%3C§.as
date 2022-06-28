@@ -13,67 +13,33 @@ package §9K§
       
       private static const §-!M§:String = "sprite";
       
-      private static var §8!8§:Dictionary;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc2_))
-         {
-            §@!6§ = "compositeSprite";
-            if(!(_loc1_ && _loc2_))
-            {
-               addr44:
-               §-!M§ = "sprite";
-               if(_loc2_)
-               {
-                  §8!8§ = new Dictionary();
-               }
-            }
-            return;
-         }
-         §§goto(addr44);
-      }
+      private static var §8!8§:Dictionary = new Dictionary();
+       
       
       public function §4!<§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc2_))
-         {
-            super();
-         }
+         super();
       }
       
       public static function §0!1§(param1:XML) : void
       {
-         var _loc6_:Boolean = false;
-         var _loc7_:Boolean = true;
          var _loc3_:XML = null;
          var _loc2_:XMLList = param1.child(§@!6§);
          for each(_loc3_ in _loc2_)
          {
-            if(!_loc6_)
-            {
-               §8!8§[String(_loc3_.@name)] = _loc3_;
-            }
+            §8!8§[String(_loc3_.@name)] = _loc3_;
          }
       }
       
       public static function §6!<§(param1:String, param2:§5!H§, param3:Boolean = true) : §&o§.Sprite
       {
-         var _loc12_:Boolean = true;
-         var _loc13_:Boolean = false;
          var _loc7_:XML = null;
          var _loc8_:§,z§ = null;
          var _loc9_:§?T§ = null;
          var _loc4_:XML;
          if(!(_loc4_ = §8!8§[param1]))
          {
-            if(_loc12_ || §4!<§)
-            {
-               return null;
-            }
+            return null;
          }
          var _loc5_:§&o§.Sprite = new §&o§.Sprite();
          var _loc6_:XMLList = _loc4_.child(§-!M§);
@@ -83,21 +49,11 @@ package §9K§
             {
                _loc9_ = new §?T§(_loc8_.texture,false,param3);
                _loc5_.addChildAt(_loc9_,0);
-               if(_loc12_)
-               {
-                  _loc9_.x = parseInt(_loc7_.@x) - _loc8_.pivotX;
-                  _loc9_.y = parseInt(_loc7_.@y) - _loc8_.pivotY;
-                  if(_loc13_)
-                  {
-                     continue;
-                  }
-               }
+               _loc9_.x = parseInt(_loc7_.@x) - _loc8_.pivotX;
+               _loc9_.y = parseInt(_loc7_.@y) - _loc8_.pivotY;
                _loc9_.scaleX = _loc8_.scale;
-               if(_loc12_)
-               {
-                  _loc9_.scaleY = _loc8_.scale;
-                  _loc9_.name = _loc7_.@tag;
-               }
+               _loc9_.scaleY = _loc8_.scale;
+               _loc9_.name = _loc7_.@tag;
             }
          }
          return _loc5_;
@@ -105,8 +61,6 @@ package §9K§
       
       public static function §?+§(param1:String, param2:§5!H§) : flash.display.Sprite
       {
-         var _loc11_:Boolean = true;
-         var _loc12_:Boolean = false;
          var _loc6_:XML = null;
          var _loc7_:§,z§ = null;
          var _loc8_:Bitmap = null;
@@ -118,23 +72,9 @@ package §9K§
             if(_loc7_ = param2.§3!'§(_loc6_.@name))
             {
                _loc8_ = new Bitmap(_loc7_.bitmapData);
-               if(_loc11_)
-               {
-                  _loc3_.addChildAt(_loc8_,0);
-                  if(!(_loc12_ && §4!<§))
-                  {
-                     _loc8_.x = parseInt(_loc6_.@x) - _loc7_.pivotX;
-                     if(!_loc11_)
-                     {
-                        continue;
-                     }
-                  }
-                  _loc8_.y = parseInt(_loc6_.@y) - _loc7_.pivotY;
-                  if(!(_loc11_ || §4!<§))
-                  {
-                     continue;
-                  }
-               }
+               _loc3_.addChildAt(_loc8_,0);
+               _loc8_.x = parseInt(_loc6_.@x) - _loc7_.pivotX;
+               _loc8_.y = parseInt(_loc6_.@y) - _loc7_.pivotY;
                _loc8_.smoothing = true;
             }
          }

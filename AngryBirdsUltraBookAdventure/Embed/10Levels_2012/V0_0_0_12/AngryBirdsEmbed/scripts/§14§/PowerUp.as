@@ -8,19 +8,8 @@ package §14§
       
       public function PowerUp(param1:int)
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            super();
-            if(!_loc2_)
-            {
-               addr23:
-               this.step = param1;
-            }
-            return;
-         }
-         §§goto(addr23);
+         super();
+         this.step = param1;
       }
       
       public static function initialize(param1:String) : PowerUp

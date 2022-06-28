@@ -14,119 +14,39 @@ package §>!A§
       
       public function §+=§(param1:Boolean = false, param2:int = 0, param3:String = "LevelEndStateRio")
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(_loc4_ || param2)
-         {
-            super(param1,param3);
-            if(!_loc5_)
-            {
-               this.§3Z§ = param2;
-            }
-         }
+         super(param1,param3);
+         this.§3Z§ = param2;
       }
       
       override public function init() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc2_))
-         {
-            super.init();
-         }
+         super.init();
       }
       
       override public function activate() : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         var _loc2_:* = 0;
-         if(!(_loc3_ && _loc2_))
+         var _loc2_:int = 0;
+         super.activate();
+         §[k§.§&@§.background.§]I§();
+         var _loc1_:§&!;§ = §5j§.§%!I§(§5j§.§%V§);
+         if(_loc1_)
          {
-            super.activate();
-            if(!_loc3_)
+            _loc2_ = _loc1_.§="§();
+            if(§[k§.§&@§.slingshot)
             {
-               addr30:
-               §[k§.§&@§.background.§]I§();
+               _loc2_ += §[k§.§&@§.slingshot.§,!G§();
             }
-            var _loc1_:§&!;§ = §5j§.§%!I§(§5j§.§%V§);
-            if(_loc1_)
-            {
-               §§push(_loc1_.§="§());
-               if(!_loc3_)
-               {
-                  §§push(int(§§pop()));
-                  if(!(_loc3_ && _loc3_))
-                  {
-                     addr54:
-                     _loc2_ = §§pop();
-                     if(§[k§.§&@§.slingshot)
-                     {
-                        if(_loc4_)
-                        {
-                           §§push(_loc2_);
-                           if(_loc4_ || _loc2_)
-                           {
-                              §§push(§[k§.§&@§.slingshot.§,!G§());
-                              if(!_loc3_)
-                              {
-                                 §§push(int(§§pop() + §§pop()));
-                                 if(!(_loc3_ && _loc2_))
-                                 {
-                                    _loc2_ = §§pop();
-                                    if(_loc4_ || _loc2_)
-                                    {
-                                       addr102:
-                                       this.§3Z§ = Math.min(this.§3Z§,_loc2_);
-                                       if(_loc4_)
-                                       {
-                                          §§goto(addr123);
-                                       }
-                                       §§goto(addr133);
-                                    }
-                                    §§goto(addr146);
-                                 }
-                                 addr123:
-                                 §§goto(addr124);
-                              }
-                              addr124:
-                              §§goto(addr111);
-                           }
-                           §§goto(addr123);
-                        }
-                        §§goto(addr146);
-                     }
-                     §§goto(addr102);
-                  }
-                  §§goto(addr123);
-               }
-               §§goto(addr54);
-            }
-            addr111:
-            if(this.§3Z§ > 0)
-            {
-               §[=§.setText(this.§3Z§.toString(),"TextField_ScoreToBeat");
-               if(!_loc4_)
-               {
-                  addr146:
-                  §[=§.getItemByName("TextField_ScoreToBeat").setVisibility(false);
-               }
-               else
-               {
-                  addr133:
-               }
-            }
-            else
-            {
-               §[=§.getItemByName("MovieClip_ScoreToBeatTitle").setVisibility(false);
-               if(_loc4_ || _loc3_)
-               {
-                  §§goto(addr146);
-               }
-            }
-            return;
+            this.§3Z§ = Math.min(this.§3Z§,_loc2_);
          }
-         §§goto(addr30);
+         if(this.§3Z§ > 0)
+         {
+            §[=§.setText(this.§3Z§.toString(),"TextField_ScoreToBeat");
+         }
+         else
+         {
+            §[=§.getItemByName("MovieClip_ScoreToBeatTitle").setVisibility(false);
+            §[=§.getItemByName("TextField_ScoreToBeat").setVisibility(false);
+         }
       }
       
       override protected function initButtonDefaultPositions() : void
@@ -140,12 +60,7 @@ package §>!A§
       
       override public function deActivate() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || this)
-         {
-            super.deActivate();
-         }
+         super.deActivate();
       }
       
       override protected function showButtonsCutScene() : void
@@ -166,58 +81,22 @@ package §>!A§
       
       override protected function onBadgeLanded() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || this)
+         if(§>!<§)
          {
-            if(§>!<§)
-            {
-               if(_loc1_ || _loc2_)
-               {
-                  §[D§();
-               }
-            }
+            §[D§();
          }
       }
       
       override public function uiInteractionHandler(param1:int, param2:String, param3:§^h§) : void
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         var _loc4_:* = param2;
-         if(!_loc6_)
+         switch(param2)
          {
-            if("FULL_GAME" === _loc4_)
-            {
-               addr67:
-               §§push(0);
-               if(_loc6_)
-               {
-               }
-            }
-            else
-            {
-               §§push(1);
-            }
-            switch(§§pop())
-            {
-               case 0:
-                  §#W§.§[G§.§=K§("LevelWin");
-                  if(!_loc6_)
-                  {
-                     break;
-                  }
-                  break;
-               default:
-                  super.uiInteractionHandler(param1,param2,param3);
-                  if(!(_loc6_ && param3))
-                  {
-                     break;
-                  }
-            }
-            return;
+            case "FULL_GAME":
+               §#W§.§[G§.§=K§("LevelWin");
+               break;
+            default:
+               super.uiInteractionHandler(param1,param2,param3);
          }
-         §§goto(addr67);
       }
       
       override protected function setButtonStates(param1:String) : void
@@ -230,43 +109,15 @@ package §>!A§
       
       override protected function setScoreData() : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         §§push(AngryBirdsFP11.sUserProgress.§@!%§());
-         if(_loc3_)
-         {
-            §§push(int(§§pop()));
-         }
-         var _loc1_:* = §§pop();
-         if(!_loc4_)
-         {
-            super.setScoreData();
-            if(!_loc4_)
-            {
-               §§goto(addr49);
-            }
-            §§goto(addr53);
-         }
-         addr49:
+         var _loc1_:int = AngryBirdsFP11.sUserProgress.§@!%§();
+         super.setScoreData();
          if(§>!<§)
          {
-            if(!_loc4_)
-            {
-               addr53:
-               (§[k§.§;!+§ as §#W§).§0p§(§5j§.§%V§);
-            }
+            (§[k§.§;!+§ as §#W§).§0p§(§5j§.§%V§);
          }
-         §§push(AngryBirdsFP11.sUserProgress.§@!%§());
-         if(!_loc4_)
+         var _loc2_:int = AngryBirdsFP11.sUserProgress.§@!%§();
+         if(_loc2_ > _loc1_)
          {
-            §§push(int(§§pop()));
-         }
-         var _loc2_:* = §§pop();
-         if(!(_loc4_ && _loc1_))
-         {
-            if(_loc2_ > _loc1_)
-            {
-            }
          }
       }
    }

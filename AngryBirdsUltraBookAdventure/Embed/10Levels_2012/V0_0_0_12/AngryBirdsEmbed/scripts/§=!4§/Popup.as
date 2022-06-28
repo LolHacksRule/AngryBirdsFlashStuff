@@ -21,28 +21,10 @@ package §=!4§
       
       public function Popup(param1:XML, param2:§!!1§)
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(!_loc4_)
-         {
-            super(param1,param2.container);
-            if(_loc3_ || param1)
-            {
-               §§goto(addr50);
-            }
-            §§goto(addr60);
-         }
-         addr50:
+         super(param1,param2.container);
          this.§>!;§ = new §-!$§(0,0,0,0);
-         if(_loc3_)
-         {
-            addr60:
-            param2.container.§?b§(this);
-            if(!(_loc4_ && param2))
-            {
-               this.§,§ = param2;
-            }
-         }
+         param2.container.§?b§(this);
+         this.§,§ = param2;
       }
       
       public function deActivate() : void
@@ -51,196 +33,60 @@ package §=!4§
       
       override public function open(param1:Boolean = true) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
          super.open(param1);
          §,!!§.pause();
          mClip.addChildAt(this.§>!;§,0);
          if(param1)
          {
-            if(_loc2_ || param1)
-            {
-               §§push(this.§>!;§);
-               if(!(_loc3_ && param1))
-               {
-                  §§push(0.7);
-                  if(_loc2_)
-                  {
-                     §§pop().§0C§(§§pop(),this.§`!G§);
-                     addr70:
-                  }
-                  else
-                  {
-                     addr74:
-                     §§pop().§`!'§(§§pop());
-                  }
-                  return;
-               }
-               addr73:
-               §§push(0.7);
-               §§goto(addr74);
-            }
-            §§goto(addr70);
+            this.§>!;§.§0C§(0.7,this.§`!G§);
          }
          else
          {
-            §§push(this.§>!;§);
+            this.§>!;§.§`!'§(0.7);
          }
-         §§goto(addr73);
       }
       
       public function preClose(param1:Boolean = true) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && param1))
+         if(!param1 || this.§>!;§ == null)
          {
-            §§push(param1);
-            if(_loc3_)
-            {
-               §§push(!§§pop());
-               if(_loc3_ || param1)
-               {
-                  if(!§§pop())
-                  {
-                     if(!(_loc2_ && this))
-                     {
-                        §§goto(addr54);
-                     }
-                  }
-                  §§goto(addr61);
-               }
-            }
-            addr54:
-            §§pop();
-            §§push(this.§>!;§);
-            if(_loc3_)
-            {
-               addr61:
-               if(§§pop() == null)
-               {
-                  if(_loc3_ || this)
-                  {
-                     this.close();
-                  }
-                  return;
-               }
-               §§push(this.§>!;§);
-               if(_loc3_)
-               {
-                  §§pop().§0C§(0,this.§`!G§);
-                  §§goto(addr106);
-               }
-            }
-            §§pop().addEventListener(ColorFadeLayerEvent.§"%§,this.§00§);
-            §§goto(addr106);
+            this.close();
+            return;
          }
-         addr106:
-         if(_loc3_ || _loc2_)
-         {
-            §§push(this.§>!;§);
-         }
+         this.§>!;§.§0C§(0,this.§`!G§);
+         this.§>!;§.addEventListener(ColorFadeLayerEvent.§"%§,this.§00§);
       }
       
       protected function §00§(param1:ColorFadeLayerEvent) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.close();
-         }
+         this.close();
       }
       
       override public function close() : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
          if(this.§-=§)
          {
             return;
          }
-         §§push(this.§>!;§);
-         if(_loc3_ || _loc3_)
+         if(this.§>!;§)
          {
-            if(§§pop())
-            {
-               if(!(_loc2_ && _loc1_))
-               {
-                  §§push(this.§>!;§);
-                  if(_loc3_ || _loc2_)
-                  {
-                     §§pop().removeEventListener(ColorFadeLayerEvent.§"%§,this.§00§);
-                     if(_loc3_)
-                     {
-                        §§goto(addr61);
-                     }
-                     §§goto(addr82);
-                  }
-                  §§goto(addr84);
-               }
-               addr61:
-               mClip.removeChild(this.§>!;§);
-               if(!(_loc2_ && _loc3_))
-               {
-                  addr84:
-                  this.§>!;§.clean();
-                  addr82:
-                  if(_loc2_ && _loc3_)
-                  {
-                  }
-                  §§goto(addr95);
-               }
-               this.§>!;§ = null;
-               addr95:
-               var _loc1_:§3!?§ = this.§,§.getItemByName("Container_Popup");
-               if(_loc3_)
-               {
-                  if(_loc1_ != null)
-                  {
-                     _loc1_.setVisibility(false);
-                     if(_loc3_ || this)
-                     {
-                        addr116:
-                        §§push(this.§,§);
-                        if(_loc3_)
-                        {
-                           §§push(§§pop().container);
-                           if(_loc3_)
-                           {
-                              if(§§pop())
-                              {
-                                 addr137:
-                                 this.§,§.container.§ '§(this);
-                                 addr136:
-                                 if(_loc3_ || _loc2_)
-                                 {
-                                 }
-                                 §§goto(addr158);
-                              }
-                              this.§-=§ = true;
-                              §§goto(addr149);
-                           }
-                           §§goto(addr137);
-                        }
-                        §§goto(addr136);
-                     }
-                     §§goto(addr137);
-                  }
-                  §§goto(addr116);
-               }
-               addr149:
-               §,!!§.resume();
-               if(!(_loc2_ && _loc1_))
-               {
-                  §§goto(addr158);
-               }
-               addr158:
-               mClip.dispatchEvent(new §;=§(§;=§.§"!G§,this));
-               return;
-            }
+            this.§>!;§.removeEventListener(ColorFadeLayerEvent.§"%§,this.§00§);
+            mClip.removeChild(this.§>!;§);
+            this.§>!;§.clean();
+            this.§>!;§ = null;
          }
-         §§goto(addr84);
+         var _loc1_:§3!?§ = this.§,§.getItemByName("Container_Popup");
+         if(_loc1_ != null)
+         {
+            _loc1_.setVisibility(false);
+         }
+         if(this.§,§.container)
+         {
+            this.§,§.container.§ '§(this);
+         }
+         this.§-=§ = true;
+         §,!!§.resume();
+         mClip.dispatchEvent(new §;=§(§;=§.§"!G§,this));
       }
    }
 }

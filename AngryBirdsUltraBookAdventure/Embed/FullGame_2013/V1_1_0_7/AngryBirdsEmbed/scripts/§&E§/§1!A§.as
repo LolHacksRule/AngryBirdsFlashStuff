@@ -7,15 +7,7 @@ package §&E§
    {
       
       public static const §@!&§:String = "onUiInteraction";
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            §@!&§ = "onUiInteraction";
-         }
-      }
+       
       
       public var §`<§:int;
       
@@ -25,24 +17,10 @@ package §&E§
       
       public function §1!A§(param1:String, param2:int, param3:String, param4:§-P§, param5:Boolean = false, param6:Boolean = false)
       {
-         var _loc7_:Boolean = true;
-         var _loc8_:Boolean = false;
-         if(_loc7_)
-         {
-            super(param1,param5,param6);
-            if(!_loc8_)
-            {
-               this.§`<§ = param2;
-               if(_loc7_ || param1)
-               {
-                  this.§ !6§ = param3;
-                  if(!_loc8_)
-                  {
-                     this.§]!F§ = param4;
-                  }
-               }
-            }
-         }
+         super(param1,param5,param6);
+         this.§`<§ = param2;
+         this.§ !6§ = param3;
+         this.§]!F§ = param4;
       }
       
       override public function clone() : Event

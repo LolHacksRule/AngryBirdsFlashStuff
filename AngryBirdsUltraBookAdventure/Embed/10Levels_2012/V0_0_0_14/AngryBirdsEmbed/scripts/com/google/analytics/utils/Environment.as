@@ -165,6 +165,7 @@ package com.google.analytics.utils
                   if(_loc4_.charAt(5) == ":")
                   {
                      _loc1_ = Protocols.HTTPS;
+                     break;
                   }
                   break;
                default:

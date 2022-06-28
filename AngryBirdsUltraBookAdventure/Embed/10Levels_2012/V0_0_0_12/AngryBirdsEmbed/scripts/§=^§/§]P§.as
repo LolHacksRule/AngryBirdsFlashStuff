@@ -13,241 +13,88 @@ package §=^§
       
       public function §]P§(param1:XML, param2:§`f§, param3:MovieClip = null)
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(_loc4_ || param3)
+         super(param1,param2,param3);
+         if(mClip)
          {
-            super(param1,param2,param3);
-            if(mClip)
-            {
-               mClip.buttonMode = true;
-               mClip.mouseChildren = false;
-               if(!_loc5_)
-               {
-                  mClip.tabEnabled = false;
-                  §§goto(addr61);
-               }
-               §§goto(addr83);
-            }
-            addr61:
-            § [§(LISTENER_EVENT_MOUSE_DOWN,param1.@MouseDown);
-            if(_loc4_ || param3)
-            {
-               § [§(LISTENER_EVENT_MOUSE_UP,param1.@MouseUp);
-               addr78:
-               § [§(§3]§,param1.@MouseOver);
-               addr83:
-               § [§(§#H§,param1.@MouseOut);
-            }
-            return;
+            mClip.buttonMode = true;
+            mClip.mouseChildren = false;
+            mClip.tabEnabled = false;
          }
-         §§goto(addr78);
+         § [§(LISTENER_EVENT_MOUSE_DOWN,param1.@MouseDown);
+         § [§(LISTENER_EVENT_MOUSE_UP,param1.@MouseUp);
+         § [§(§3]§,param1.@MouseOver);
+         § [§(§#H§,param1.@MouseOut);
       }
       
       override public function listenerEventOccured(param1:int, param2:String) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_ || param1)
-         {
-            super.listenerEventOccured(param1,param2);
-         }
+         super.listenerEventOccured(param1,param2);
       }
       
       override public function setComponentState(param1:String) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
+         if(param1 == §^8§)
          {
-            if(param1 == §^8§)
-            {
-               if(_loc2_)
-               {
-                  mClip.useHandCursor = false;
-                  mClip.buttonMode = false;
-                  if(!_loc3_)
-                  {
-                     addr53:
-                     super.setComponentState(param1);
-                  }
-               }
-               else
-               {
-                  addr45:
-                  mClip.buttonMode = true;
-                  if(!_loc3_)
-                  {
-                     mClip.mouseChildren = false;
-                     §§goto(addr53);
-                  }
-               }
-               return;
-            }
-            mClip.useHandCursor = true;
+            mClip.useHandCursor = false;
+            mClip.buttonMode = false;
          }
-         §§goto(addr45);
+         else
+         {
+            mClip.useHandCursor = true;
+            mClip.buttonMode = true;
+            mClip.mouseChildren = false;
+         }
+         super.setComponentState(param1);
       }
       
       override public function setComponentVisualState(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && param1))
+         if(§0J§)
          {
-            if(§0J§)
+            if(param1 == §!!C§)
             {
-               §§push(param1);
-               if(_loc3_ || _loc3_)
+               if(this.§2q§ != null)
                {
-                  if(§§pop() == §!!C§)
-                  {
-                     §§push(this.§2q§);
-                     if(!(_loc2_ && _loc2_))
-                     {
-                        §§push(null);
-                        if(_loc3_)
-                        {
-                           if(§§pop() != §§pop())
-                           {
-                              addr49:
-                              §§push(this.§2q§);
-                              if(!(_loc2_ && this))
-                              {
-                                 §§pop().stop();
-                                 if(_loc3_ || this)
-                                 {
-                                    addr76:
-                                    this.§2q§ = §%!>§.§-]§.§?U§(mClip,{
-                                       "scaleX":1.1,
-                                       "scaleY":1.1
-                                    },null,0.1);
-                                    §§push(this.§2q§);
-                                    if(!_loc2_)
-                                    {
-                                       §§pop().play();
-                                       if(!_loc2_)
-                                       {
-                                          addr144:
-                                          super.setComponentVisualState(param1);
-                                          return;
-                                          addr96:
-                                       }
-                                       §§goto(addr144);
-                                    }
-                                    else
-                                    {
-                                       addr105:
-                                       if(§§pop() != null)
-                                       {
-                                          §§push(this.§2q§);
-                                          if(_loc3_)
-                                          {
-                                             addr120:
-                                             §§pop().stop();
-                                             if(_loc2_ && param1)
-                                             {
-                                             }
-                                             §§goto(addr144);
-                                          }
-                                          addr143:
-                                          §§pop().play();
-                                          §§goto(addr144);
-                                       }
-                                    }
-                                    this.§2q§ = §%!>§.§-]§.§?U§(mClip,{
-                                       "scaleX":1,
-                                       "scaleY":1
-                                    },null,0.1);
-                                    §§goto(addr143);
-                                    §§push(this.§2q§);
-                                 }
-                                 §§goto(addr96);
-                              }
-                              §§goto(addr143);
-                           }
-                           §§goto(addr76);
-                        }
-                     }
-                     §§goto(addr105);
-                  }
-                  else
-                  {
-                     §§push(param1);
-                  }
-                  §§goto(addr144);
+                  this.§2q§.stop();
                }
-               if(§§pop() == §%e§)
-               {
-                  §§push(this.§2q§);
-                  if(_loc3_)
-                  {
-                     §§goto(addr105);
-                  }
-                  §§goto(addr120);
-               }
+               this.§2q§ = §%!>§.§-]§.§?U§(mClip,{
+                  "scaleX":1.1,
+                  "scaleY":1.1
+               },null,0.1);
+               this.§2q§.play();
             }
-            §§goto(addr144);
+            else if(param1 == §%e§)
+            {
+               if(this.§2q§ != null)
+               {
+                  this.§2q§.stop();
+               }
+               this.§2q§ = §%!>§.§-]§.§?U§(mClip,{
+                  "scaleX":1,
+                  "scaleY":1
+               },null,0.1);
+               this.§2q§.play();
+            }
          }
-         §§goto(addr49);
+         super.setComponentVisualState(param1);
       }
       
       override public function set viewWidth(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && this))
+         if(this.§2q§)
          {
-            §§push(this.§2q§);
-            if(_loc3_)
-            {
-               if(§§pop())
-               {
-                  if(_loc3_)
-                  {
-                     addr43:
-                     this.§2q§.stop();
-                     if(!(_loc2_ && _loc3_))
-                     {
-                        addr51:
-                        super.viewWidth = param1;
-                     }
-                  }
-                  return;
-               }
-               §§goto(addr51);
-            }
+            this.§2q§.stop();
          }
-         §§goto(addr43);
+         super.viewWidth = param1;
       }
       
       override public function set viewHeight(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && this))
+         if(this.§2q§)
          {
-            §§push(this.§2q§);
-            if(_loc3_)
-            {
-               if(§§pop())
-               {
-                  if(!_loc2_)
-                  {
-                     addr43:
-                     this.§2q§.stop();
-                     if(_loc3_ || _loc2_)
-                     {
-                     }
-                     §§goto(addr54);
-                  }
-               }
-               super.viewHeight = param1;
-               addr54:
-               return;
-            }
+            this.§2q§.stop();
          }
-         §§goto(addr43);
+         super.viewHeight = param1;
       }
    }
 }

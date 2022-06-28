@@ -10,92 +10,40 @@ package §>k§
       
       public function §2&§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            this.§?!#§ = [];
-            if(!(_loc1_ && _loc2_))
-            {
-               addr29:
-               super();
-            }
-            return;
-         }
-         §§goto(addr29);
+         this.§?!#§ = [];
+         super();
       }
       
       public function §2%§(param1:§`z§) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§?!#§.push(param1);
-            if(_loc3_)
-            {
-               this.§]9§ = false;
-            }
-         }
+         this.§?!#§.push(param1);
+         this.§]9§ = false;
       }
       
       public function dispose() : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
          var _loc1_:§`z§ = null;
          for each(_loc1_ in this.§?!#§)
          {
-            if(_loc4_)
-            {
-               _loc1_.dispose();
-            }
+            _loc1_.dispose();
          }
-         if(!_loc5_)
-         {
-            this.§?!#§ = [];
-         }
+         this.§?!#§ = [];
       }
       
       public function §^L§(param1:String) : §`-§
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
          var _loc2_:§`-§ = null;
-         var _loc3_:* = Number(0);
-         while(true)
+         var _loc3_:Number = 0;
+         while(_loc3_ < this.§?!#§.length)
          {
-            if(_loc3_ >= this.§?!#§.length)
-            {
-               return null;
-            }
             _loc2_ = (this.§?!#§[_loc3_] as §`z§).§^L§(param1);
-            if(_loc5_)
-            {
-               break;
-            }
             if(_loc2_ != null)
             {
-               if(_loc4_)
-               {
-                  break;
-               }
+               return _loc2_;
             }
-            else
-            {
-               §§push(_loc3_);
-               if(!_loc5_)
-               {
-                  §§push(§§pop() + 1);
-                  if(_loc4_ || this)
-                  {
-                     §§push(Number(§§pop()));
-                  }
-               }
-               _loc3_ = §§pop();
-            }
+            _loc3_++;
          }
-         return _loc2_;
+         return null;
       }
       
       public function get §'!2§() : int
@@ -105,64 +53,16 @@ package §>k§
       
       public function §"&§(param1:int) : §`z§
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         §§push(param1);
-         if(_loc3_ || param1)
+         if(param1 < 0 || param1 >= this.§'!2§)
          {
-            §§push(0);
-            if(_loc3_)
-            {
-               §§push(§§pop() < §§pop());
-               if(_loc3_)
-               {
-                  if(!§§pop())
-                  {
-                     if(_loc3_ || param1)
-                     {
-                        §§pop();
-                        if(!_loc2_)
-                        {
-                           addr56:
-                           §§push(param1 >= this.§'!2§);
-                           if(!(_loc2_ && _loc3_))
-                           {
-                              addr74:
-                              if(§§pop())
-                              {
-                                 §§goto(addr75);
-                              }
-                              else
-                              {
-                                 §§push(this.§]9§);
-                              }
-                           }
-                           if(!§§pop())
-                           {
-                              if(_loc3_)
-                              {
-                                 §§push(this.§?!#§);
-                                 if(!_loc2_)
-                                 {
-                                    §§pop().sortOn("name");
-                                    this.§]9§ = true;
-                                    addr93:
-                                    §§push(this.§?!#§);
-                                 }
-                                 return §§pop()[param1];
-                              }
-                           }
-                           §§goto(addr93);
-                        }
-                        addr75:
-                        return null;
-                     }
-                  }
-               }
-               §§goto(addr74);
-            }
+            return null;
          }
-         §§goto(addr56);
+         if(!this.§]9§)
+         {
+            this.§?!#§.sortOn("name");
+            this.§]9§ = true;
+         }
+         return this.§?!#§[param1];
       }
    }
 }

@@ -18,24 +18,13 @@ package §<!B§
       
       public function § !!§(param1:int, param2:int, param3:int, param4:int, param5:int, param6:int)
       {
-         var _loc7_:Boolean = false;
-         var _loc8_:Boolean = true;
          super();
          this.§ f§ = param1;
-         if(_loc8_)
-         {
-            this.§,$§ = param2;
-            if(!(_loc7_ && param1))
-            {
-               this.§!!+§ = param3;
-               this._height = param4;
-            }
-            this.§@!F§ = param5;
-            if(_loc8_)
-            {
-               this.§9!G§ = param6;
-            }
-         }
+         this.§,$§ = param2;
+         this.§!!+§ = param3;
+         this._height = param4;
+         this.§@!F§ = param5;
+         this.§9!G§ = param6;
       }
       
       public function get x() : int

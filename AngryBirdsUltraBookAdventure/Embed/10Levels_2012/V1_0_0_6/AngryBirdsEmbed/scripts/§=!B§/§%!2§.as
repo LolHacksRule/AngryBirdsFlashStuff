@@ -26,12 +26,7 @@ package §=!B§
       
       public function §%!2§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc2_))
-         {
-            super();
-         }
+         super();
       }
       
       public function get §6`§() : String
@@ -41,12 +36,7 @@ package §=!B§
       
       public function set §6`§(param1:String) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || param1)
-         {
-            this.§9^§ = param1;
-         }
+         this.§9^§ = param1;
       }
       
       public function get §8!#§() : String
@@ -56,12 +46,7 @@ package §=!B§
       
       public function set §8!#§(param1:String) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            this.§extends§ = param1;
-         }
+         this.§extends§ = param1;
       }
       
       public function get §4!>§() : String
@@ -71,12 +56,7 @@ package §=!B§
       
       public function set §4!>§(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc2_))
-         {
-            this.§>g§ = param1;
-         }
+         this.§>g§ = param1;
       }
       
       public function get §!h§() : String
@@ -86,12 +66,7 @@ package §=!B§
       
       public function set §!h§(param1:String) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc3_))
-         {
-            this.§^!4§ = param1;
-         }
+         this.§^!4§ = param1;
       }
       
       public function get §>t§() : String
@@ -101,12 +76,7 @@ package §=!B§
       
       public function set §>t§(param1:String) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc2_))
-         {
-            this.§[5§ = param1;
-         }
+         this.§[5§ = param1;
       }
       
       public function get §2;§() : String
@@ -116,12 +86,7 @@ package §=!B§
       
       public function set §2;§(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§`5§ = param1;
-         }
+         this.§`5§ = param1;
       }
       
       public function get §"l§() : int
@@ -131,12 +96,7 @@ package §=!B§
       
       public function set §"l§(param1:int) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || _loc2_)
-         {
-            this.§^T§ = param1;
-         }
+         this.§^T§ = param1;
       }
       
       public function get §;z§() : int
@@ -146,12 +106,7 @@ package §=!B§
       
       public function set §;z§(param1:int) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && this))
-         {
-            this.§9!<§ = param1;
-         }
+         this.§9!<§ = param1;
       }
       
       public function get §#=§() : int
@@ -161,12 +116,7 @@ package §=!B§
       
       public function set §#=§(param1:int) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§8!<§ = param1;
-         }
+         this.§8!<§ = param1;
       }
       
       public function get §-j§() : int
@@ -176,12 +126,7 @@ package §=!B§
       
       public function set §-j§(param1:int) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§=`§ = param1;
-         }
+         this.§=`§ = param1;
       }
    }
 }

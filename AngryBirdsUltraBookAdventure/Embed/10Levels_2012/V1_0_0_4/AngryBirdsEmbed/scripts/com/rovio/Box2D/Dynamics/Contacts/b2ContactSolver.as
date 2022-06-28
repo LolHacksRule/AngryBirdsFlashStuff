@@ -35,8 +35,6 @@ package com.rovio.Box2D.Dynamics.Contacts
       {
          var _loc5_:b2Contact = null;
          var _loc6_:int = 0;
-         var _loc7_:b2Vec2 = null;
-         var _loc8_:b2Mat22 = null;
          var _loc9_:b2Fixture = null;
          var _loc10_:b2Fixture = null;
          var _loc11_:b2Shape = null;
@@ -204,9 +202,6 @@ package com.rovio.Box2D.Dynamics.Contacts
       
       public function InitVelocityConstraints(param1:b2TimeStep) : void
       {
-         var _loc2_:b2Vec2 = null;
-         var _loc3_:b2Vec2 = null;
-         var _loc4_:b2Mat22 = null;
          var _loc6_:b2ContactConstraint = null;
          var _loc7_:b2Body = null;
          var _loc8_:b2Body = null;
@@ -296,7 +291,6 @@ package com.rovio.Box2D.Dynamics.Contacts
          var _loc20_:Number = NaN;
          var _loc21_:Number = NaN;
          var _loc22_:b2Mat22 = null;
-         var _loc23_:b2Vec2 = null;
          var _loc25_:b2ContactConstraint = null;
          var _loc26_:b2Body = null;
          var _loc27_:b2Body = null;

@@ -9,16 +9,8 @@ package starling.events
    class §='§ extends Sprite
    {
       
-      private static var §!c§:Class;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            §!c§ = TouchMarker_TouchMarkerBmp;
-         }
-      }
+      private static var §!c§:Class = TouchMarker_TouchMarkerBmp;
+       
       
       private var §'l§:Point;
       
@@ -26,167 +18,46 @@ package starling.events
       
       function §='§(param1:Context3D)
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
          var _loc3_:§8!?§ = null;
-         if(!(_loc5_ && param1))
+         super();
+         this.§'l§ = new Point();
+         this.§]s§ = Texture.§ !3§(param1,new §!c§());
+         var _loc2_:int = 0;
+         while(_loc2_ < 2)
          {
-            super();
-            if(_loc4_)
-            {
-               addr30:
-               this.§'l§ = new Point();
-               if(!_loc5_)
-               {
-                  this.§]s§ = Texture.§ !3§(param1,new §!c§());
-               }
-            }
-            var _loc2_:int = 0;
-            while(_loc2_ < 2)
-            {
-               _loc3_ = new §8!?§(this.§]s§);
-               if(_loc4_)
-               {
-                  §§push(_loc3_);
-                  §§push(this.§]s§.width);
-                  if(_loc4_ || param1)
-                  {
-                     §§push(§§pop() / 2);
-                  }
-                  §§pop().pivotX = §§pop();
-                  if(!_loc5_)
-                  {
-                     §§push(_loc3_);
-                     §§push(this.§]s§.height);
-                     if(!_loc5_)
-                     {
-                        §§push(§§pop() / 2);
-                     }
-                     §§pop().pivotY = §§pop();
-                     if(_loc4_)
-                     {
-                        _loc3_.§-j§ = false;
-                        if(!_loc4_)
-                        {
-                           continue;
-                        }
-                     }
-                  }
-                  addChild(_loc3_);
-                  if(_loc5_ && this)
-                  {
-                     continue;
-                  }
-               }
-               _loc2_++;
-            }
-            return;
+            _loc3_ = new §8!?§(this.§]s§);
+            _loc3_.pivotX = this.§]s§.width / 2;
+            _loc3_.pivotY = this.§]s§.height / 2;
+            _loc3_.§-j§ = false;
+            addChild(_loc3_);
+            _loc2_++;
          }
-         §§goto(addr30);
       }
       
       override public function dispose() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc1_))
-         {
-            this.§]s§.dispose();
-            if(!(_loc1_ && _loc1_))
-            {
-               super.dispose();
-            }
-         }
+         this.§]s§.dispose();
+         super.dispose();
       }
       
       public function §08§(param1:Number, param2:Number, param3:Boolean = false) : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(!_loc5_)
+         if(param3)
          {
-            if(param3)
-            {
-               if(_loc4_ || this)
-               {
-                  this.§'l§.x += param1 - this.§'!%§.x;
-                  this.§'l§.y += param2 - this.§'!%§.y;
-                  addr51:
-                  §§push(this.§'!%§);
-                  if(!(_loc5_ && this))
-                  {
-                     §§push(param1);
-                     if(_loc4_)
-                     {
-                        §§pop().x = §§pop();
-                        addr76:
-                        §§push(this.§'!%§);
-                        §§push(param2);
-                     }
-                     §§pop().y = §§pop();
-                     if(!(_loc5_ && this))
-                     {
-                        §§push(this.§47§);
-                        if(_loc4_)
-                        {
-                           §§push(2);
-                           if(_loc4_ || this)
-                           {
-                              §§push(§§pop() * this.§'l§.x);
-                              if(_loc4_)
-                              {
-                                 §§push(param1);
-                                 if(_loc4_ || this)
-                                 {
-                                    §§push(§§pop() - §§pop());
-                                    if(_loc4_)
-                                    {
-                                       §§pop().x = §§pop();
-                                       addr128:
-                                       §§push(this.§47§);
-                                       §§push(2 * this.§'l§.y);
-                                       if(!(_loc5_ && param3))
-                                       {
-                                          addr140:
-                                          §§push(§§pop() - param2);
-                                       }
-                                    }
-                                    §§pop().y = §§pop();
-                                    §§goto(addr142);
-                                 }
-                              }
-                              §§goto(addr140);
-                           }
-                        }
-                     }
-                     §§goto(addr128);
-                  }
-               }
-               §§goto(addr76);
-            }
-            §§goto(addr51);
+            this.§'l§.x += param1 - this.§'!%§.x;
+            this.§'l§.y += param2 - this.§'!%§.y;
          }
-         addr142:
+         this.§'!%§.x = param1;
+         this.§'!%§.y = param2;
+         this.§47§.x = 2 * this.§'l§.x - param1;
+         this.§47§.y = 2 * this.§'l§.y - param2;
       }
       
       public function §[n§(param1:Number, param2:Number) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_ || param2)
-         {
-            this.§'l§.x = param1;
-            if(!(_loc4_ && this))
-            {
-               this.§'l§.y = param2;
-               if(!_loc3_)
-               {
-               }
-               §§goto(addr56);
-            }
-            this.§08§(this.§7I§,this.§>>§);
-         }
-         addr56:
+         this.§'l§.x = param1;
+         this.§'l§.y = param2;
+         this.§08§(this.§7I§,this.§>>§);
       }
       
       private function get §'!%§() : §8!?§

@@ -19,12 +19,7 @@ package §0!5§
       
       public function §5!D§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && this))
-         {
-            super();
-         }
+         super();
       }
    }
 }

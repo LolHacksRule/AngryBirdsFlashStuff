@@ -6,123 +6,33 @@ package §9K§
       
       public function §9!E§(param1:§5!H§)
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            super(param1);
-         }
+         super(param1);
       }
       
       override public function initializeAnimations(param1:Array) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || _loc2_)
-         {
-            super.initializeAnimations(param1);
-            if(_loc3_ || _loc2_)
-            {
-               §]! §("POWERUP_BOMB",["POWERUP_DROP_01"]);
-               if(!_loc2_)
-               {
-                  §§goto(addr51);
-               }
-               §§goto(addr86);
-            }
-            §§goto(addr68);
-         }
-         addr51:
+         super.initializeAnimations(param1);
+         §]! §("POWERUP_BOMB",["POWERUP_DROP_01"]);
          §]! §("POWERUP_BOMB_PARACHUTE",["POWERUP_DROP_02"]);
-         if(!_loc2_)
-         {
-            addr68:
-            §]! §("SUPER_SLINGSHOT",["SLING_SHOT_02_BACK","SLING_SHOT_02_FRONT"]);
-            if(!(_loc2_ && _loc2_))
-            {
-               §]! §("LASER_DOT",["LASER_DOT"]);
-               addr86:
-               §]! §("INTEL_SMOKE_CLOUD",["INTEL_SMOKE_CLOUD_1","INTEL_SMOKE_CLOUD_2","INTEL_SMOKE_CLOUD_3","INTEL_SMOKE_CLOUD_4","INTEL_SMOKE_CLOUD_5","INTEL_SMOKE_CLOUD_6"]);
-            }
-            §§goto(addr86);
-         }
+         §]! §("SUPER_SLINGSHOT",["SLING_SHOT_02_BACK","SLING_SHOT_02_FRONT"]);
+         §]! §("LASER_DOT",["LASER_DOT"]);
+         §]! §("INTEL_SMOKE_CLOUD",["INTEL_SMOKE_CLOUD_1","INTEL_SMOKE_CLOUD_2","INTEL_SMOKE_CLOUD_3","INTEL_SMOKE_CLOUD_4","INTEL_SMOKE_CLOUD_5","INTEL_SMOKE_CLOUD_6"]);
       }
       
       override protected function initializeBirdAnimations() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            super.initializeBirdAnimations();
-         }
+         super.initializeBirdAnimations();
       }
       
       override protected function initializePigAnimations() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            super.initializePigAnimations();
-            §§push(§§findproperty(§2]§));
-            §§push("PIG_INTEL_PIGLETTE_SMALL");
-            §§push(["normal",["PIG_INTEL_PIGLETTE_SMALL_01","PIG_INTEL_PIGLETTE_SMALL_02","PIG_INTEL_PIGLETTE_SMALL_03"]]);
-            if(_loc2_ || this)
-            {
-               §§push(null);
-            }
-            §§pop().§2]§(§§pop(),§§pop());
-            §§push(§§findproperty(§2]§));
-            §§push("PIG_INTEL_PIGLETTE_MEDIUM");
-            §§push(["normal",["PIG_INTEL_PIGLETTE_MEDIUM_01","PIG_INTEL_PIGLETTE_MEDIUM_02","PIG_INTEL_PIGLETTE_MEDIUM_03"]]);
-            if(_loc2_ || this)
-            {
-               §§push(null);
-            }
-            §§pop().§2]§(§§pop(),§§pop());
-            §§push(§§findproperty(§2]§));
-            §§push("PIG_INTEL_PIGLETTE_BIG");
-            §§push(["normal",["PIG_INTEL_PIGLETTE_BIG_01","PIG_INTEL_PIGLETTE_BIG_02","PIG_INTEL_PIGLETTE_BIG_03"]]);
-            if(_loc2_)
-            {
-               §§push(null);
-            }
-            §§pop().§2]§(§§pop(),§§pop());
-            if(!_loc1_)
-            {
-               §§push(§§findproperty(§2]§));
-               §§push("PIG_INTEL_PIGLETTE_HELMET");
-               §§push(["normal",["PIG_INTEL_PIGLETTE_HELMET_01","PIG_INTEL_PIGLETTE_HELMET_02","PIG_INTEL_PIGLETTE_HELMET_03"]]);
-               if(!_loc1_)
-               {
-                  §§push(null);
-               }
-               §§pop().§2]§(§§pop(),§§pop());
-               if(!(_loc1_ && _loc2_))
-               {
-                  addr146:
-                  §§push(§§findproperty(§2]§));
-                  §§push("PIG_INTEL_PIGLETTE_GRANDPA");
-                  §§push(["normal",["PIG_INTEL_PIGLETTE_GRANDPA_01","PIG_INTEL_PIGLETTE_GRANDPA_02","PIG_INTEL_PIGLETTE_GRANDPA_03"]]);
-                  if(!_loc1_)
-                  {
-                     §§push(null);
-                  }
-                  §§pop().§2]§(§§pop(),§§pop());
-                  §§push(§§findproperty(§2]§));
-                  §§push("PIG_INTEL_PIGLETTE_KING");
-                  §§push(["normal",["PIG_INTEL_PIGLETTE_KING_01","PIG_INTEL_PIGLETTE_KING_02","PIG_INTEL_PIGLETTE_KING_03"]]);
-                  if(!(_loc1_ && this))
-                  {
-                     §§push(null);
-                  }
-                  §§pop().§2]§(§§pop(),§§pop());
-               }
-               return;
-            }
-         }
-         §§goto(addr146);
+         super.initializePigAnimations();
+         §2]§("PIG_INTEL_PIGLETTE_SMALL",[["normal",["PIG_INTEL_PIGLETTE_SMALL_01","PIG_INTEL_PIGLETTE_SMALL_02","PIG_INTEL_PIGLETTE_SMALL_03"]],["blink",["PIG_INTEL_PIGLETTE_SMALL_01_BLINK","PIG_INTEL_PIGLETTE_SMALL_02_BLINK","PIG_INTEL_PIGLETTE_SMALL_02_BLINK"]],["yell",["PIG_INTEL_PIGLETTE_SMALL_01_SMILE","PIG_INTEL_PIGLETTE_SMALL_02_SMILE","PIG_INTEL_PIGLETTE_SMALL_03_SMILE"]]]);
+         §2]§("PIG_INTEL_PIGLETTE_MEDIUM",[["normal",["PIG_INTEL_PIGLETTE_MEDIUM_01","PIG_INTEL_PIGLETTE_MEDIUM_02","PIG_INTEL_PIGLETTE_MEDIUM_03"]],["blink",["PIG_INTEL_PIGLETTE_MEDIUM_01_BLINK","PIG_INTEL_PIGLETTE_MEDIUM_02_BLINK","PIG_INTEL_PIGLETTE_MEDIUM_03_BLINK"]],["yell",["PIG_INTEL_PIGLETTE_MEDIUM_01_SMILE","PIG_INTEL_PIGLETTE_MEDIUM_02_SMILE","PIG_INTEL_PIGLETTE_MEDIUM_03_SMILE"]]]);
+         §2]§("PIG_INTEL_PIGLETTE_BIG",[["normal",["PIG_INTEL_PIGLETTE_BIG_01","PIG_INTEL_PIGLETTE_BIG_02","PIG_INTEL_PIGLETTE_BIG_03"]],["blink",["PIG_INTEL_PIGLETTE_BIG_01_BLINK","PIG_INTEL_PIGLETTE_BIG_02_BLINK","PIG_INTEL_PIGLETTE_BIG_03_BLINK"]],["yell",["PIG_INTEL_PIGLETTE_BIG_01_SMILE","PIG_INTEL_PIGLETTE_BIG_02_SMILE","PIG_INTEL_PIGLETTE_BIG_03_SMILE"]]]);
+         §2]§("PIG_INTEL_PIGLETTE_HELMET",[["normal",["PIG_INTEL_PIGLETTE_HELMET_01","PIG_INTEL_PIGLETTE_HELMET_02","PIG_INTEL_PIGLETTE_HELMET_03"]],["blink",["PIG_INTEL_PIGLETTE_HELMET_01_BLINK","PIG_INTEL_PIGLETTE_HELMET_02_BLINK","PIG_INTEL_PIGLETTE_HELMET_03_BLINK"]],["yell",["PIG_INTEL_PIGLETTE_HELMET_01_SMILE","PIG_INTEL_PIGLETTE_HELMET_02_SMILE","PIG_INTEL_PIGLETTE_HELMET_03_SMILE"]]]);
+         §2]§("PIG_INTEL_PIGLETTE_GRANDPA",[["normal",["PIG_INTEL_PIGLETTE_GRANDPA_01","PIG_INTEL_PIGLETTE_GRANDPA_02","PIG_INTEL_PIGLETTE_GRANDPA_03"]],["blink",["PIG_INTEL_PIGLETTE_GRANDPA_01_BLINK","PIG_INTEL_PIGLETTE_GRANDPA_02_BLINK","PIG_INTEL_PIGLETTE_GRANDPA_03_BLINK"]],["yell",["PIG_INTEL_PIGLETTE_GRANDPA_01_SMILE","PIG_INTEL_PIGLETTE_GRANDPA_02_SMILE","PIG_INTEL_PIGLETTE_GRANDPA_03_SMILE"]]]);
+         §2]§("PIG_INTEL_PIGLETTE_KING",[["normal",["PIG_INTEL_PIGLETTE_KING_01","PIG_INTEL_PIGLETTE_KING_02","PIG_INTEL_PIGLETTE_KING_03"]],["blink",["PIG_INTEL_PIGLETTE_KING_01_BLINK","PIG_INTEL_PIGLETTE_KING_02_BLINK","PIG_INTEL_PIGLETTE_KING_03_BLINK"]],["yell",["PIG_INTEL_PIGLETTE_KING_01_SMILE","PIG_INTEL_PIGLETTE_KING_02_SMILE","PIG_INTEL_PIGLETTE_KING_03_SMILE"]]]);
       }
    }
 }

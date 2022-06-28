@@ -228,7 +228,6 @@ package com.rovio.Box2D.Dynamics.Joints
       {
          var _loc5_:Number = NaN;
          var _loc6_:Number = NaN;
-         var _loc2_:Number = 0;
          var _loc3_:b2Body = b2internal::m_bodyA;
          var _loc4_:b2Body = b2internal::m_bodyB;
          if(this.m_revolute1)
@@ -257,7 +256,7 @@ package com.rovio.Box2D.Dynamics.Joints
          _loc4_.m_sweep.a += _loc4_.m_invI * _loc8_ * this.m_J.angularB;
          _loc3_.SynchronizeTransform();
          _loc4_.SynchronizeTransform();
-         return _loc2_ < b2Settings.b2_linearSlop;
+         return 0 < b2Settings.b2_linearSlop;
       }
    }
 }

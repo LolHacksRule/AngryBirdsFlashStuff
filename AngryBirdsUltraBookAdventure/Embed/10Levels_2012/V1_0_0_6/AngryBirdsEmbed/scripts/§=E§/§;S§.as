@@ -14,40 +14,15 @@ package §=E§
       
       public function §;S§(param1:§!E§, param2:String = null, param3:Boolean = true)
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!_loc4_)
-         {
-            super(param1);
-            if(_loc5_)
-            {
-               this.§`!'§ = param2;
-               if(!_loc4_)
-               {
-                  addr29:
-                  this.§;`§ = param3;
-               }
-            }
-            return;
-         }
-         §§goto(addr29);
+         super(param1);
+         this.§`!'§ = param2;
+         this.§;`§ = param3;
       }
       
       override public function init() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            §33§.initEmptyEnvironment(this.§`!'§,this.§;`§);
-            if(_loc2_)
-            {
-               addr27:
-               §33§.camera.initSlowScroll(this.§=D§);
-            }
-            return;
-         }
-         §§goto(addr27);
+         §33§.initEmptyEnvironment(this.§`!'§,this.§;`§);
+         §33§.camera.initSlowScroll(this.§=D§);
       }
    }
 }

@@ -38,42 +38,11 @@ package §5H§
       private static var §+1§:§!!1§ = null;
       
       private static var §[!B§:Boolean = false;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            §%i§ = 0;
-            if(!_loc1_)
-            {
-               §,#§ = false;
-               §?T§ = null;
-               §9!-§ = true;
-               §§goto(addr40);
-            }
-            §§goto(addr77);
-         }
-         addr40:
-         if(!_loc1_)
-         {
-            §9U§ = 1;
-         }
-         if(_loc2_ || _loc1_)
-         {
-            addr77:
-            §[!B§ = false;
-         }
-      }
+       
       
       public function §[k§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function §>!2§() : Number
@@ -88,82 +57,34 @@ package §5H§
       
       public static function pause() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
          if(!§[!B§)
          {
             §[!B§ = true;
-            §§push(§;T§.§1I§);
-            if(_loc1_ || §[k§)
+            if(§;T§.§1I§)
             {
-               if(§§pop())
-               {
-                  addr43:
-                  §;T§.§1I§.isPaused = true;
-               }
-               §§push(§;T§.§,H§);
-               if(!(_loc2_ && _loc2_))
-               {
-                  §§goto(addr59);
-               }
-               §§pop().§4-§(false);
-               §§goto(addr59);
+               §;T§.§1I§.isPaused = true;
             }
-            §§goto(addr43);
-         }
-         addr59:
-         if(§§pop())
-         {
-            §§push(§;T§.§,H§);
+            if(§;T§.§,H§)
+            {
+               §;T§.§,H§.§4-§(false);
+            }
          }
       }
       
       public static function resume() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
          if(§[!B§)
          {
             §[!B§ = false;
-            if(!(_loc2_ && _loc1_))
+            if(§;T§.§1I§)
             {
-               §§push(§;T§.§1I§);
-               if(_loc1_ || §[k§)
-               {
-                  if(§§pop())
-                  {
-                     if(!_loc2_)
-                     {
-                        addr62:
-                        §;T§.§1I§.isPaused = false;
-                        if(_loc2_)
-                        {
-                        }
-                        §§goto(addr87);
-                     }
-                  }
-                  §§push(§;T§.§,H§);
-                  if(_loc1_ || §[k§)
-                  {
-                     if(§§pop())
-                     {
-                        if(!(_loc2_ && §[k§))
-                        {
-                           addr83:
-                           §§push(§;T§.§,H§);
-                        }
-                     }
-                     §§goto(addr87);
-                  }
-                  §§pop().§4-§(true);
-                  addr87:
-                  return;
-               }
-               §§goto(addr62);
+               §;T§.§1I§.isPaused = false;
             }
-            §§goto(addr83);
+            if(§;T§.§,H§)
+            {
+               §;T§.§,H§.§4-§(true);
+            }
          }
-         §§goto(addr62);
       }
       
       public static function get isPaused() : Boolean
@@ -173,71 +94,31 @@ package §5H§
       
       public static function init(param1:§0X§, param2:int, param3:int) : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(!(_loc5_ && param2))
-         {
-            §;!+§ = param1;
-            if(_loc4_ || param1)
-            {
-               §>§ = param2;
-               if(!_loc4_)
-               {
-               }
-               §§goto(addr63);
-            }
-            §%i§ = param3;
-            if(!_loc4_)
-            {
-            }
-            §§goto(addr63);
-         }
-         addr63:
+         §;!+§ = param1;
+         §>§ = param2;
+         §%i§ = param3;
          §+S§ = new §3<§(true,param1.canvas);
       }
       
       public static function §2!F§(param1:XML, param2:XML) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!(_loc3_ && _loc3_))
-         {
-            §9!0§.§2!F§(param1,param2);
-         }
+         §9!0§.§2!F§(param1,param2);
       }
       
       public static function § <§(param1:include, param2:Array, param3:Function = null) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(_loc5_ || param2)
-         {
-            §&@§.§ <§(param1,param2,param3);
-         }
+         §&@§.§ <§(param1,param2,param3);
       }
       
       public static function §#8§(param1:§&!;§) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc3_))
-         {
-            §&@§.init(param1);
-         }
+         §&@§.init(param1);
       }
       
       public static function §^L§(param1:§!!1§) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            §+1§ = param1;
-            if(!(_loc2_ && §[k§))
-            {
-               §&@§.§^L§(param1);
-            }
-         }
+         §+1§ = param1;
+         §&@§.§^L§(param1);
       }
       
       public static function get controller() : §!!1§
@@ -247,16 +128,8 @@ package §5H§
       
       public static function §^v§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc2_))
-         {
-            §9!-§ = param1;
-            if(_loc2_)
-            {
-               §&@§.background.§^v§(param1);
-            }
-         }
+         §9!-§ = param1;
+         §&@§.background.§^v§(param1);
       }
       
       public static function §,V§() : Boolean
@@ -266,95 +139,23 @@ package §5H§
       
       public static function §%e§(param1:Number, param2:Number, param3:Number, param4:Number) : void
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         §§push(param4);
-         if(!_loc6_)
+         if(param4 < 32)
          {
-            §§push(32);
-            if(!_loc6_)
-            {
-               if(§§pop() < §§pop())
-               {
-                  if(!_loc6_)
-                  {
-                     §§push(32);
-                     if(_loc5_)
-                     {
-                        §§push(Number(§§pop()));
-                        if(_loc5_ || param2)
-                        {
-                           param4 = §§pop();
-                           if(!_loc6_)
-                           {
-                              addr39:
-                              §§push(param3);
-                              if(!_loc6_)
-                              {
-                                 addr43:
-                                 if(§§pop() < 32)
-                                 {
-                                    if(!(_loc6_ && param2))
-                                    {
-                                       addr53:
-                                       param3 = 32;
-                                       §§push(§;T§.§,H§);
-                                       if(_loc5_ || §[k§)
-                                       {
-                                          if(§§pop())
-                                          {
-                                             if(!_loc6_)
-                                             {
-                                                addr76:
-                                                §§push(§;T§.§,H§);
-                                                if(!_loc6_)
-                                                {
-                                                   §§pop().§2!&§ = new Rectangle(param1,param2,param3,param4);
-                                                }
-                                                §§goto(addr89);
-                                             }
-                                             addr89:
-                                             §§pop().setCanvasSize(param3,param4);
-                                             §9U§ = Math.min(param3 / §>§,param4 / §%i§);
-                                             addr92:
-                                             §§push(§§findproperty(§3!5§));
-                                             §§push(param3);
-                                             if(_loc5_ || param3)
-                                             {
-                                                §§push(§§pop() / §>§);
-                                             }
-                                             §§pop().§3!5§ = §§pop();
-                                             §§push(§§findproperty(§@$§));
-                                             §§push(param4);
-                                             if(!(_loc6_ && param2))
-                                             {
-                                                §§push(§§pop() / §%i§);
-                                             }
-                                             §§pop().§@$§ = §§pop();
-                                             §&@§.§"&§(param3,param4);
-                                             return;
-                                             §§push(§;T§.§,H§);
-                                          }
-                                          §§goto(addr92);
-                                       }
-                                       §§goto(addr89);
-                                       addr52:
-                                    }
-                                    §§goto(addr76);
-                                 }
-                              }
-                           }
-                        }
-                        §§goto(addr53);
-                     }
-                     §§goto(addr52);
-                  }
-                  §§goto(addr76);
-               }
-               §§goto(addr39);
-            }
+            param4 = 32;
          }
-         §§goto(addr43);
+         if(param3 < 32)
+         {
+            param3 = 32;
+         }
+         if(§;T§.§,H§)
+         {
+            §;T§.§,H§.§2!&§ = new Rectangle(param1,param2,param3,param4);
+            §;T§.§,H§.setCanvasSize(param3,param4);
+         }
+         §9U§ = Math.min(param3 / §>§,param4 / §%i§);
+         §3!5§ = param3 / §>§;
+         §@$§ = param4 / §%i§;
+         §&@§.§"&§(param3,param4);
       }
    }
 }

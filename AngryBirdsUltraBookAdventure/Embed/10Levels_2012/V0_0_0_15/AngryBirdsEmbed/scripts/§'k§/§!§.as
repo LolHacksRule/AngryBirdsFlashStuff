@@ -12,64 +12,26 @@ package §'k§
       
       public function §!§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            this.§!6§ = new Dictionary();
-            if(_loc2_)
-            {
-               addr25:
-               super();
-            }
-            return;
-         }
-         §§goto(addr25);
+         this.§!6§ = new Dictionary();
+         super();
       }
       
       public function §<y§(param1:String, param2:§7x§) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(!(_loc4_ && param2))
+         if(param2 == null)
          {
-            if(param2 == null)
-            {
-               if(_loc3_ || param1)
-               {
-                  throw new Error("Trying to add a null animation");
-               }
-            }
-            else
-            {
-               addr59:
-               if(!this.§-`§)
-               {
-                  if(_loc3_ || _loc3_)
-                  {
-                     this.§-`§ = param2;
-                     if(_loc4_)
-                     {
-                     }
-                     §§goto(addr79);
-                  }
-               }
-               this.§!6§[param1] = param2;
-            }
-            addr79:
-            return;
+            throw new Error("Trying to add a null animation");
          }
-         §§goto(addr59);
+         if(!this.§-`§)
+         {
+            this.§-`§ = param2;
+         }
+         this.§!6§[param1] = param2;
       }
       
       override public function addFrame(param1:§2v§) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§-`§.addFrame(param1);
-         }
+         this.§-`§.addFrame(param1);
       }
       
       override public function getFrame(param1:int) : §2v§
@@ -84,21 +46,11 @@ package §'k§
       
       override public function getSubAnimation(param1:String) : §7x§
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || _loc3_)
+         if(this.§!6§[param1])
          {
-            if(this.§!6§[param1])
-            {
-               if(!_loc2_)
-               {
-                  §§goto(addr41);
-               }
-            }
-            return this.§-`§;
+            return this.§!6§[param1];
          }
-         addr41:
-         return this.§!6§[param1];
+         return this.§-`§;
       }
    }
 }

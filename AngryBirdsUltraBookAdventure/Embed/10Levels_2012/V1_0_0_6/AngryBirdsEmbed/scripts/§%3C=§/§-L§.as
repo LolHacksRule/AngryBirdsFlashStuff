@@ -18,27 +18,13 @@ package §<=§
       
       public function §-L§(param1:int, param2:int, param3:int, param4:int, param5:int, param6:int)
       {
-         var _loc7_:Boolean = true;
-         var _loc8_:Boolean = false;
          super();
          this.§,!"§ = param1;
-         if(_loc7_ || this)
-         {
-            this.§?G§ = param2;
-            if(_loc7_ || param2)
-            {
-               this.§-,§ = param3;
-               if(_loc7_)
-               {
-                  this._height = param4;
-                  if(_loc7_ || param2)
-                  {
-                     this.§<Y§ = param5;
-                  }
-               }
-            }
-            this.§']§ = param6;
-         }
+         this.§?G§ = param2;
+         this.§-,§ = param3;
+         this._height = param4;
+         this.§<Y§ = param5;
+         this.§']§ = param6;
       }
       
       public function get x() : int

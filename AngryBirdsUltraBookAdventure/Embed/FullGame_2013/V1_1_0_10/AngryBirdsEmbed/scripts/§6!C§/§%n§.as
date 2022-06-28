@@ -6,33 +6,14 @@ package §6!C§
    {
       
       public static const §<6§:String = "OnCloseComplete";
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            §<6§ = "OnCloseComplete";
-         }
-      }
+       
       
       private var § X§:Popup;
       
       public function §%n§(param1:String, param2:Popup, param3:Boolean = false, param4:Boolean = false)
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         if(_loc5_ || param3)
-         {
-            super(param1,param3,param4);
-            if(_loc5_ || this)
-            {
-               addr45:
-               this.§ X§ = param2;
-            }
-            return;
-         }
-         §§goto(addr45);
+         super(param1,param3,param4);
+         this.§ X§ = param2;
       }
       
       public function get §]`§() : Popup

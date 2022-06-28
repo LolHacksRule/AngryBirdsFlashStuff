@@ -13,23 +13,9 @@ package §?b§
       
       public function §;]§(param1:Texture, param2:Number)
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(!_loc4_)
-         {
-            super();
-            if(!(_loc4_ && this))
-            {
-               this.§15§ = new §6!0§(param1);
-               if(_loc3_ || this)
-               {
-                  addr49:
-                  this.§0^§ = param2;
-               }
-               return;
-            }
-         }
-         §§goto(addr49);
+         super();
+         this.§15§ = new §6!0§(param1);
+         this.§0^§ = param2;
       }
       
       public function get image() : §6!0§
@@ -44,67 +30,26 @@ package §?b§
       
       public function dispose() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
+         if(this.§15§)
          {
-            §§push(this.§15§);
-            if(_loc2_)
-            {
-               if(§§pop())
-               {
-                  if(_loc2_ || _loc1_)
-                  {
-                     addr43:
-                     this.§15§.dispose();
-                     if(!_loc1_)
-                     {
-                        addr46:
-                        this.§15§ = null;
-                     }
-                  }
-               }
-               return;
-            }
-            §§goto(addr43);
+            this.§15§.dispose();
+            this.§15§ = null;
          }
-         §§goto(addr46);
       }
       
       public function updateLifeTime(param1:Number) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            §§push(this);
-            §§push(this.§0^§);
-            if(!_loc3_)
-            {
-               §§push(§§pop() - param1);
-            }
-            §§pop().§0^§ = §§pop();
-         }
+         this.§0^§ -= param1;
       }
       
       public function §6!#§(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || this)
-         {
-            this.§0^§ = param1;
-         }
+         this.§0^§ = param1;
       }
       
       public function §;a§(param1:Texture) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            this.§15§.texture = param1;
-         }
+         this.§15§.texture = param1;
       }
    }
 }

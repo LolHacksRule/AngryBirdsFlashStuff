@@ -6,33 +6,14 @@ package §2?§
    {
       
       public static const §'A§:String = "OnCloseComplete";
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            §'A§ = "OnCloseComplete";
-         }
-      }
+       
       
       private var §'5§:Popup;
       
       public function §;!#§(param1:String, param2:Popup, param3:Boolean = false, param4:Boolean = false)
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(_loc6_ || this)
-         {
-            super(param1,param3,param4);
-            if(!(_loc5_ && param2))
-            {
-               addr46:
-               this.§'5§ = param2;
-            }
-            return;
-         }
-         §§goto(addr46);
+         super(param1,param3,param4);
+         this.§'5§ = param2;
       }
       
       public function get §case§() : Popup

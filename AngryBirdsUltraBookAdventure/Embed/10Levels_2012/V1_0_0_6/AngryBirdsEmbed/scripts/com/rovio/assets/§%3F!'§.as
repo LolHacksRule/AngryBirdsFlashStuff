@@ -10,22 +10,9 @@ package com.rovio.assets
       
       public function §?!'§(param1:String, param2:Class)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!_loc3_)
-         {
-            super();
-            if(!_loc3_)
-            {
-               this.§[b§ = param1;
-               if(_loc3_)
-               {
-               }
-               §§goto(addr31);
-            }
-            this.§]!G§ = param2;
-         }
-         addr31:
+         super();
+         this.§[b§ = param1;
+         this.§]!G§ = param2;
       }
       
       public function get §-!5§() : String
@@ -35,12 +22,7 @@ package com.rovio.assets
       
       public function set §-!5§(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§[b§ = param1;
-         }
+         this.§[b§ = param1;
       }
       
       public function get § W§() : Class
@@ -50,12 +32,7 @@ package com.rovio.assets
       
       public function set § W§(param1:Class) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || this)
-         {
-            this.§]!G§ = param1;
-         }
+         this.§]!G§ = param1;
       }
    }
 }

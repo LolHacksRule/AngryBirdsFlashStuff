@@ -101,11 +101,10 @@ package com.google.analytics.debug
       protected function spaces(param1:int) : String
       {
          var _loc2_:String = "";
-         var _loc3_:String = "          ";
          var _loc4_:int = 0;
          while(_loc4_ < param1 + 1)
          {
-            _loc2_ += _loc3_;
+            _loc2_ += "          ";
             _loc4_++;
          }
          return _loc2_;

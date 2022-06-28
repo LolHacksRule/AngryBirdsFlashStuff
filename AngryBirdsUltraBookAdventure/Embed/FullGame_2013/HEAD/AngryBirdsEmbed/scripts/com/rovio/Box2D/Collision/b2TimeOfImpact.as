@@ -57,7 +57,6 @@ package com.rovio.Box2D.Collision
          var _loc6_:Number = _loc2_.m_radius + _loc3_.m_radius;
          var _loc7_:Number = param1.tolerance;
          var _loc8_:Number = 0;
-         var _loc9_:int = 1000;
          var _loc10_:int = 0;
          var _loc11_:Number = 0;
          s_cache.count = 0;
@@ -156,7 +155,7 @@ package com.rovio.Box2D.Collision
             _loc10_++;
             ++b2_toiIters;
          }
-         while(_loc10_ != _loc9_);
+         while(_loc10_ != 1000);
          
          b2_toiMaxIters = b2Math.Max(b2_toiMaxIters,_loc10_);
          return _loc8_;

@@ -23,39 +23,7 @@ package §`K§
       public static const §+^§:int = 2;
       
       public static const §5!+§:int = 1;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            §35§ = 6;
-            if(!(_loc1_ && §+i§))
-            {
-               §'+§ = 7;
-               § k§ = 8;
-               if(_loc2_)
-               {
-                  addr60:
-                  §]D§ = 3;
-                  if(!_loc1_)
-                  {
-                     §try§ = 5;
-                     addr68:
-                     §+^§ = 2;
-                     if(_loc2_ || _loc2_)
-                     {
-                        §5!+§ = 1;
-                     }
-                  }
-                  §§goto(addr68);
-               }
-               return;
-            }
-            §§goto(addr60);
-         }
-         §§goto(addr68);
-      }
+       
       
       public var §'!,§:String;
       
@@ -85,52 +53,24 @@ package §`K§
       
       public function §+i§(param1:String, param2:int, param3:§7g§, param4:§0r§, param5:§2z§, param6:int, param7:String, param8:Number, param9:Number, param10:Number, param11:Boolean = false, param12:String = "", param13:int = 1)
       {
-         var _loc14_:Boolean = true;
-         var _loc15_:Boolean = false;
          super();
          this.§'!,§ = param1;
          this.§'F§ = param2;
          this.§!1§ = param3;
-         if(_loc14_ || param2)
+         this.§32§ = param12;
+         this.§ !B§ = param13;
+         this.§2!1§ = param11;
+         this.§``§ = param4;
+         this.§;!3§ = param5;
+         this.§';§ = new §`! §(param6);
+         this.§,m§ = param7;
+         this.§`9§ = param8;
+         if(this.§`9§ <= 0)
          {
-            this.§32§ = param12;
-            if(!(_loc15_ && param1))
-            {
-               this.§ !B§ = param13;
-               if(!_loc15_)
-               {
-                  this.§2!1§ = param11;
-                  this.§``§ = param4;
-                  if(_loc14_ || param1)
-                  {
-                     this.§;!3§ = param5;
-                     if(!_loc15_)
-                     {
-                        addr87:
-                        this.§';§ = new §`! §(param6);
-                        this.§,m§ = param7;
-                        this.§`9§ = param8;
-                        if(this.§`9§ <= 0)
-                        {
-                           addr102:
-                           this.§`9§ = 1;
-                        }
-                        this.§8!,§ = param9;
-                        if(_loc14_)
-                        {
-                           addr110:
-                           this.§22§ = param10;
-                        }
-                     }
-                     §§goto(addr102);
-                  }
-                  return;
-               }
-               §§goto(addr87);
-            }
-            §§goto(addr102);
+            this.§`9§ = 1;
          }
-         §§goto(addr110);
+         this.§8!,§ = param9;
+         this.§22§ = param10;
       }
       
       public function get front() : Boolean
@@ -210,61 +150,13 @@ package §`K§
       
       public function get shape() : §2z§
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
          var _loc1_:Texture = null;
-         if(_loc3_)
+         if(!this.§;!3§)
          {
-            §§push(this.§;!3§);
-            if(_loc3_ || _loc1_)
-            {
-               if(!§§pop())
-               {
-                  _loc1_ = §,!!§.§;4§.§+!!§.§,V§(this.§'!,§).getFrame(0).texture;
-                  addr32:
-                  if(!_loc2_)
-                  {
-                     §§push(this);
-                     §§push(§§findproperty(§2z§));
-                     §§push(this.§'!,§);
-                     §§push("Rectangle");
-                     §§push(_loc1_.width);
-                     if(_loc3_)
-                     {
-                        §§push(§#;§.§`!2§);
-                        if(_loc3_)
-                        {
-                           §§push(§§pop() * §§pop());
-                           if(_loc3_ || _loc2_)
-                           {
-                              addr86:
-                              §§push(§§pop() / 2);
-                           }
-                           §§push(_loc1_.height);
-                           if(!(_loc2_ && _loc2_))
-                           {
-                              addr97:
-                              §§push(§§pop() * §#;§.§`!2§);
-                              if(!(_loc2_ && this))
-                              {
-                                 §§push(§§pop() / 2);
-                              }
-                           }
-                           §§pop().§;!3§ = new §§pop().§2z§(§§pop(),§§pop(),§§pop(),§§pop());
-                           addr113:
-                           return this.§;!3§;
-                           addr111:
-                        }
-                        §§goto(addr97);
-                     }
-                     §§goto(addr86);
-                  }
-               }
-               §§goto(addr111);
-            }
-            §§goto(addr113);
+            _loc1_ = §,!!§.§;4§.§+!!§.§,V§(this.§'!,§).getFrame(0).texture;
+            this.§;!3§ = new §2z§(this.§'!,§,"Rectangle",_loc1_.width * §#;§.§`!2§ / 2,_loc1_.height * §#;§.§`!2§ / 2);
          }
-         §§goto(addr32);
+         return this.§;!3§;
       }
       
       public function get §6!6§() : §0r§

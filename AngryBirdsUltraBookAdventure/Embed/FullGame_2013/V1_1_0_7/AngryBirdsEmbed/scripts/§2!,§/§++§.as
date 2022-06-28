@@ -40,88 +40,24 @@ package §2!,§
       
       public function §++§(param1:String, param2:Number, param3:Number, param4:Number, param5:Number, param6:Boolean, param7:Boolean, param8:Number, param9:Boolean, param10:Number, param11:Number, param12:Number, param13:Array, param14:Boolean, param15:String, param16:String, param17:Boolean = false)
       {
-         var _loc18_:Boolean = false;
-         var _loc19_:Boolean = true;
          super();
          this.mName = param1;
          this.§]j§ = param4;
          this.§+$§ = param5;
          this.§2!;§ = param3;
-         §§push(this);
-         §§push(param2);
-         if(!_loc18_)
-         {
-            §§push(§§pop() / 1000);
-         }
-         §§pop().§5!G§ = §§pop();
-         if(!(_loc18_ && param3))
-         {
-            this.§^!5§ = param6;
-            if(!(_loc18_ && param2))
-            {
-               this.§^!7§ = param7;
-               §§push(this);
-               if(!_loc18_)
-               {
-                  §§push(param8);
-                  if(_loc19_)
-                  {
-                     if(§§pop() != 0)
-                     {
-                        addr76:
-                        §§push(param8);
-                        if(!_loc18_)
-                        {
-                           §§push(Number(§§pop()));
-                           if(_loc18_)
-                           {
-                           }
-                           §§goto(addr85);
-                        }
-                     }
-                     else
-                     {
-                        §§push(Number(1));
-                     }
-                  }
-                  §§goto(addr85);
-               }
-               §§goto(addr76);
-            }
-            addr85:
-            §§pop().§-_§ = §§pop();
-            this.§&g§ = param9;
-            if(_loc19_)
-            {
-               this.§%#§ = param10;
-               if(_loc19_)
-               {
-                  §§goto(addr96);
-               }
-               §§goto(addr116);
-            }
-            addr96:
-            this.§]@§ = param11;
-            if(!(_loc18_ && param2))
-            {
-               addr116:
-               this.§3"§ = param12;
-            }
-            this.§0x§ = param13;
-            if(!_loc18_)
-            {
-               this.§&!6§ = param14;
-               if(_loc19_ || param1)
-               {
-                  this.§1?§ = param15;
-               }
-               §§goto(addr143);
-            }
-            this.§ for§ = param16;
-            this.§2X§ = param17;
-            §§goto(addr143);
-         }
-         addr143:
+         this.§5!G§ = param2 / 1000;
+         this.§^!5§ = param6;
+         this.§^!7§ = param7;
+         this.§-_§ = param8 != 0 ? Number(param8) : Number(1);
+         this.§&g§ = param9;
+         this.§%#§ = param10;
+         this.§]@§ = param11;
+         this.§3"§ = param12;
+         this.§0x§ = param13;
+         this.§&!6§ = param14;
+         this.§1?§ = param15;
+         this.§ for§ = param16;
+         this.§2X§ = param17;
       }
       
       public function §=x§() : String

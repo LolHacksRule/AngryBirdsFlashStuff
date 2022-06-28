@@ -25,13 +25,13 @@ package §0!<§
       
       private static var §&s§:Number = 0;
       
-      public static var §?Y§:int = 112;
+      public static var §?Y§:int = Keyboard.F1;
       
-      public static var §<!H§:int = 114;
+      public static var §<!H§:int = Keyboard.F3;
       
-      public static var §]W§:int = 113;
+      public static var §]W§:int = Keyboard.F2;
       
-      public static var §'2§:int = 115;
+      public static var §'2§:int = Keyboard.F4;
       
       public static var §=?§:Boolean = false;
       
@@ -52,749 +52,192 @@ package §0!<§
       public static var §@!G§:String = "";
       
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || §#y§)
-         {
-            §+<§ = true;
-            if(_loc1_)
-            {
-               addr31:
-               §@&§ = 0;
-               §?1§ = 1;
-               if(_loc1_)
-               {
-                  §5@§ = 500;
-                  if(_loc1_)
-                  {
-                     § `§ = null;
-                  }
-                  §&s§ = 0;
-                  if(_loc1_)
-                  {
-                     §?Y§ = Keyboard.F1;
-                     §<!H§ = Keyboard.F3;
-                     if(!(_loc2_ && §#y§))
-                     {
-                        §]W§ = Keyboard.F2;
-                        §'2§ = Keyboard.F4;
-                        §=?§ = false;
-                        if(!(_loc2_ && _loc1_))
-                        {
-                           §^1§ = null;
-                           if(!(_loc2_ && §#y§))
-                           {
-                              § !@§ = null;
-                              §!s§ = null;
-                              §§goto(addr108);
-                           }
-                           §§goto(addr147);
-                        }
-                     }
-                     §§goto(addr144);
-                  }
-                  addr108:
-                  if(_loc1_)
-                  {
-                     §-!B§ = null;
-                     §'L§ = null;
-                  }
-                  §>K§ = -1;
-                  if(!_loc2_)
-                  {
-                     addr134:
-                     §?[§ = "version: Unknown";
-                     if(_loc1_ || _loc1_)
-                     {
-                        addr144:
-                        §@!G§ = "";
-                        addr147:
-                        init();
-                     }
-                     §§goto(addr147);
-                  }
-                  return;
-               }
-               §§goto(addr134);
-            }
-            §§goto(addr144);
-         }
-         §§goto(addr31);
+         init();
       }
       
       public function §#y§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            super();
-         }
+         super();
       }
       
       public static function init() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc2_)
+         if(!§!&§)
          {
-            if(!§!&§)
-            {
-               if(!_loc1_)
-               {
-                  §§goto(addr38);
-               }
-            }
-            § `§ = new Array(§5@§);
             return;
          }
-         addr38:
+         § `§ = new Array(§5@§);
       }
       
       public static function log(param1:Object, param2:int = 1) : void
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
-         var _loc3_:* = NaN;
-         §§push(§!&§);
-         if(!_loc7_)
+         var _loc3_:Number = NaN;
+         if(§!&§)
          {
-            if(§§pop())
+            _loc3_ = §&s§++ % §5@§;
+            § `§[_loc3_] = [param1,param2];
+            if(param2 == §>K§ || §>K§ < 0)
             {
-               if(_loc6_)
-               {
-                  var _loc4_:*;
-                  §§push((_loc4_ = §§findproperty(§&s§)).§&s§);
-                  if(!_loc7_)
-                  {
-                     §§push(Number(§§pop()));
-                     if(!(_loc7_ && param2))
-                     {
-                        addr38:
-                        §§push(§§pop());
-                        if(_loc6_)
-                        {
-                           §§push(§§pop() + 1);
-                        }
-                        var _loc5_:* = §§pop();
-                        if(_loc6_ || §#y§)
-                        {
-                           _loc4_.§&s§ = _loc5_;
-                        }
-                     }
-                     if(!(_loc7_ && param2))
-                     {
-                        §§push(§§pop() % §5@§);
-                        if(_loc6_)
-                        {
-                           addr76:
-                           §§push(Number(§§pop()));
-                        }
-                        _loc3_ = §§pop();
-                        if(_loc6_)
-                        {
-                           addr80:
-                           § `§[_loc3_] = [param1,param2];
-                           if(!_loc7_)
-                           {
-                              §§push(param2);
-                              if(!_loc7_)
-                              {
-                                 §§push(§>K§);
-                                 if(_loc6_ || param2)
-                                 {
-                                    §§push(§§pop() == §§pop());
-                                    if(!_loc7_)
-                                    {
-                                       if(!§§pop())
-                                       {
-                                          if(!_loc7_)
-                                          {
-                                             addr116:
-                                             §§pop();
-                                             §§push(§>K§ < 0);
-                                             if(!(_loc7_ && param1))
-                                             {
-                                                addr127:
-                                                if(§§pop())
-                                                {
-                                                   if(!_loc7_)
-                                                   {
-                                                      addr130:
-                                                      §2!&§();
-                                                      §§goto(addr132);
-                                                   }
-                                                   §§goto(addr134);
-                                                }
-                                                addr132:
-                                                §§goto(addr133);
-                                             }
-                                          }
-                                          addr133:
-                                          if(§+<§)
-                                          {
-                                             addr134:
-                                             if(!param1)
-                                             {
-                                             }
-                                          }
-                                          return;
-                                       }
-                                       §§goto(addr127);
-                                    }
-                                 }
-                              }
-                              §§goto(addr116);
-                           }
-                           §§goto(addr132);
-                        }
-                        §§goto(addr130);
-                     }
-                     §§goto(addr76);
-                  }
-                  §§goto(addr38);
-               }
-               §§goto(addr80);
+               §2!&§();
             }
-            §§goto(addr130);
          }
-         §§goto(addr127);
+         if(§+<§)
+         {
+            if(!param1)
+            {
+            }
+         }
       }
       
       public static function §7!0§(param1:Object, param2:int = 1) : void
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
          var _loc3_:* = undefined;
-         if(_loc6_)
-         {
-            §§push(§§findproperty(log));
-            §§push("Object:");
-            if(_loc6_)
-            {
-               §§push(§§pop() + getQualifiedClassName(param1));
-            }
-            §§pop().log(§§pop());
-         }
+         log("Object:" + getQualifiedClassName(param1));
          for(_loc3_ in param1)
          {
-            if(_loc7_)
-            {
-               continue;
-            }
-            §§push(§§findproperty(log));
-            §§push("-[");
-            if(!_loc7_)
-            {
-               §§push(§§pop() + _loc3_);
-               if(!_loc7_)
-               {
-                  addr72:
-                  §§push(§§pop() + "]: ");
-                  if(_loc6_)
-                  {
-                     addr76:
-                     §§push(§§pop() + param1[_loc3_]);
-                  }
-                  §§pop().log(§§pop());
-                  continue;
-               }
-               §§goto(addr76);
-            }
-            §§goto(addr72);
+            log("-[" + _loc3_ + "]: " + param1[_loc3_]);
          }
       }
       
       private static function §2!&§() : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         var _loc1_:* = false;
-         var _loc2_:* = null;
-         var _loc3_:* = NaN;
+         var _loc1_:Boolean = false;
+         var _loc2_:String = null;
+         var _loc3_:Number = NaN;
          var _loc4_:Number = NaN;
-         if(!_loc5_)
+         if(!§!&§)
          {
-            §§push(§!&§);
-            if(!(_loc5_ && §#y§))
-            {
-               if(!§§pop())
-               {
-                  if(_loc6_ || _loc2_)
-                  {
-                     return;
-                  }
-                  addr93:
-                  §'L§.text = §?[§;
-                  §§push(true);
-                  if(_loc6_)
-                  {
-                     addr99:
-                     _loc1_ = §§pop();
-                     if(§ !@§.scrollV != § !@§.numLines - int(§ !@§.height / (§ !@§.textHeight / § !@§.numLines)))
-                     {
-                        if(!(_loc5_ && §#y§))
-                        {
-                           addr125:
-                           _loc1_ = false;
-                           addr124:
-                           if(_loc6_ || _loc3_)
-                           {
-                              addr133:
-                              _loc2_ = "";
-                              _loc3_ = Number(0);
-                           }
-                           addr148:
-                           loop0:
-                           while(true)
-                           {
-                              §§push(_loc3_);
-                              loop1:
-                              while(true)
-                              {
-                                 §§push(§5@§);
-                                 while(true)
-                                 {
-                                    if(§§pop() >= §§pop())
-                                    {
-                                       break loop0;
-                                    }
-                                    §§push(§&s§ + _loc3_);
-                                    §§push(1);
-                                    if(!_loc6_)
-                                    {
-                                       continue;
-                                    }
-                                    §§push(§§pop() + §§pop());
-                                    §§push(500);
-                                    if(_loc5_)
-                                    {
-                                       continue;
-                                    }
-                                    §§push(§§pop() % §§pop());
-                                    if(!_loc5_)
-                                    {
-                                       _loc4_ = §§pop();
-                                       if(_loc6_ || _loc1_)
-                                       {
-                                          §§push(§ `§);
-                                          if(!(_loc5_ && _loc1_))
-                                          {
-                                             §§push(_loc4_);
-                                             if(_loc6_)
-                                             {
-                                                if(§§pop()[§§pop()] != null)
-                                                {
-                                                   if(!(_loc5_ && _loc3_))
-                                                   {
-                                                      §§push(§>K§ < 0);
-                                                      if(!(_loc5_ && _loc1_))
-                                                      {
-                                                         if(!§§pop())
-                                                         {
-                                                            if(_loc6_ || §#y§)
-                                                            {
-                                                               §§pop();
-                                                               if(!(_loc5_ && §#y§))
-                                                               {
-                                                                  addr222:
-                                                                  §§push(§ `§[_loc4_][1] == §>K§);
-                                                                  if(!(_loc5_ && _loc3_))
-                                                                  {
-                                                                     addr234:
-                                                                     if(§§pop())
-                                                                     {
-                                                                        §§push(_loc2_);
-                                                                        if(!(_loc5_ && §#y§))
-                                                                        {
-                                                                           §§push(§§pop() + (§ `§[_loc4_][0] + "\n"));
-                                                                        }
-                                                                        _loc2_ = §§pop();
-                                                                        if(!_loc5_)
-                                                                        {
-                                                                           addr255:
-                                                                           §§push(_loc3_);
-                                                                           if(!_loc5_)
-                                                                           {
-                                                                              addr259:
-                                                                              §§push(Number(§§pop() + 1));
-                                                                              if(_loc6_ || _loc2_)
-                                                                              {
-                                                                                 break loop1;
-                                                                              }
-                                                                              continue loop1;
-                                                                           }
-                                                                           §§goto(addr259);
-                                                                        }
-                                                                        else
-                                                                        {
-                                                                           addr283:
-                                                                           § !@§.text = _loc2_;
-                                                                           §§goto(addr301);
-                                                                        }
-                                                                     }
-                                                                     §§goto(addr255);
-                                                                  }
-                                                                  break;
-                                                               }
-                                                               §§goto(addr293);
-                                                            }
-                                                            break;
-                                                         }
-                                                      }
-                                                      §§goto(addr234);
-                                                   }
-                                                   §§goto(addr297);
-                                                }
-                                                §§goto(addr255);
-                                             }
-                                          }
-                                          §§goto(addr222);
-                                       }
-                                       §§goto(addr255);
-                                    }
-                                    §§goto(addr259);
-                                 }
-                                 if(§§pop())
-                                 {
-                                    if(_loc6_)
-                                    {
-                                       addr297:
-                                       § !@§.scrollV = § !@§.numLines;
-                                       §§goto(addr301);
-                                    }
-                                 }
-                                 addr301:
-                                 if(!(_loc5_ && §#y§))
-                                 {
-                                    addr293:
-                                    §§push(_loc1_);
-                                    break loop2;
-                                 }
-                                 return;
-                              }
-                              _loc3_ = §§pop();
-                           }
-                           if(_loc6_)
-                           {
-                              §§goto(addr283);
-                           }
-                           §§goto(addr297);
-                        }
-                     }
-                     §§goto(addr133);
-                  }
-                  §§goto(addr125);
-               }
-               else
-               {
-                  §§push(Boolean(§^1§));
-                  if(_loc6_)
-                  {
-                     addr49:
-                     if(§§pop())
-                     {
-                        if(_loc6_)
-                        {
-                           §§pop();
-                           §§push(Boolean(§^1§.visible));
-                           if(!_loc6_)
-                           {
-                           }
-                           §§goto(addr99);
-                        }
-                     }
-                     if(§§pop())
-                     {
-                        if(!(_loc5_ && _loc1_))
-                        {
-                           addr67:
-                           §§push(§>K§);
-                           if(!_loc5_)
-                           {
-                              if(§§pop() < 0)
-                              {
-                                 if(_loc6_ || _loc3_)
-                                 {
-                                    §-!B§.text = "Current channel: ALL";
-                                    if(_loc6_)
-                                    {
-                                       addr90:
-                                       if(§?[§ != null)
-                                       {
-                                       }
-                                       §§goto(addr93);
-                                    }
-                                    §§goto(addr124);
-                                 }
-                                 §§goto(addr133);
-                              }
-                              else
-                              {
-                                 §-!B§.text = "Current channel: " + §>K§;
-                              }
-                              §§goto(addr90);
-                           }
-                           §§goto(addr133);
-                        }
-                        §§goto(addr148);
-                     }
-                     §§goto(addr283);
-                  }
-               }
-               §§goto(addr99);
-            }
-            §§goto(addr49);
+            return;
          }
-         §§goto(addr67);
+         if(§^1§ && §^1§.visible)
+         {
+            if(§>K§ < 0)
+            {
+               §-!B§.text = "Current channel: ALL";
+            }
+            else
+            {
+               §-!B§.text = "Current channel: " + §>K§;
+            }
+            if(§?[§ != null)
+            {
+               §'L§.text = §?[§;
+            }
+            _loc1_ = true;
+            if(§ !@§.scrollV != § !@§.numLines - int(§ !@§.height / (§ !@§.textHeight / § !@§.numLines)))
+            {
+               _loc1_ = false;
+            }
+            _loc2_ = "";
+            _loc3_ = 0;
+            while(_loc3_ < §5@§)
+            {
+               _loc4_ = (§&s§ + _loc3_ + 1) % 500;
+               if(§ `§[_loc4_] != null)
+               {
+                  if(§>K§ < 0 || § `§[_loc4_][1] == §>K§)
+                  {
+                     _loc2_ += § `§[_loc4_][0] + "\n";
+                  }
+               }
+               _loc3_++;
+            }
+            § !@§.text = _loc2_;
+            if(_loc1_)
+            {
+               § !@§.scrollV = § !@§.numLines;
+            }
+         }
       }
       
       public static function §-A§(param1:DisplayObjectContainer, param2:int = 40, param3:int = 40, param4:int = 540, param5:int = 360, param6:int = -1) : void
       {
-         var _loc8_:Boolean = false;
-         var _loc9_:Boolean = true;
-         if(_loc9_)
+         if(!§!&§)
          {
-            if(!§!&§)
-            {
-               if(!(_loc8_ && param2))
-               {
-                  return;
-               }
-            }
+            return;
          }
          §^1§ = new Sprite();
-         if(!(_loc8_ && §#y§))
-         {
-            §^1§.visible = false;
-            if(_loc9_)
-            {
-               param1.addChild(§^1§);
-            }
-         }
+         §^1§.visible = false;
+         param1.addChild(§^1§);
          var _loc7_:Graphics;
          (_loc7_ = §^1§.graphics).beginFill(16777215,0);
-         if(!(_loc8_ && param1))
+         _loc7_.drawRect(0,0,1000,1000);
+         _loc7_.endFill();
+         _loc7_.beginFill(16777215,0.4);
+         _loc7_.drawRect(param2,param3,param4,param5);
+         _loc7_.endFill();
+         § !@§ = new TextField();
+         § !@§.width = param4;
+         § !@§.height = param5 - 40;
+         § !@§.x = param2;
+         § !@§.y = param3 + 40;
+         § !@§.wordWrap = true;
+         §^1§.addChild(§ !@§);
+         §!s§ = new TextField();
+         §!s§.x = param2 + param4 / 2;
+         §!s§.y = param3;
+         §!s§.width = param4 / 2;
+         §!s§.height = 20;
+         §!s§.text = "LOGGER CAPTURING INPUT, F4";
+         §!s§.border = true;
+         §!s§.borderColor = 16711680;
+         §^1§.addChild(§!s§);
+         §-!B§ = new TextField();
+         §-!B§.width = param4;
+         §-!B§.height = 20;
+         §-!B§.x = param2;
+         §-!B§.y = param3;
+         §^1§.addChild(§-!B§);
+         §'L§ = new TextField();
+         §'L§.width = param4;
+         §'L§.height = 20;
+         §'L§.x = param2;
+         §'L§.y = param3 + 20;
+         §^1§.addChild(§'L§);
+         §;!!§(§=?§);
+         if(param6 >= 0)
          {
-            _loc7_.drawRect(0,0,1000,1000);
-            _loc7_.endFill();
-            _loc7_.beginFill(16777215,0.4);
-            if(_loc9_ || param1)
-            {
-               _loc7_.drawRect(param2,param3,param4,param5);
-               if(_loc9_)
-               {
-                  _loc7_.endFill();
-                  if(!_loc8_)
-                  {
-                     § !@§ = new TextField();
-                     if(_loc9_)
-                     {
-                        § !@§.width = param4;
-                        if(!(_loc8_ && §#y§))
-                        {
-                           § !@§.height = param5 - 40;
-                           if(!_loc9_)
-                           {
-                           }
-                           addr253:
-                           §'L§.x = param2;
-                           if(!_loc8_)
-                           {
-                              addr258:
-                              §'L§.y = param3 + 20;
-                              §^1§.addChild(§'L§);
-                              if(_loc9_)
-                              {
-                                 §;!!§(§=?§);
-                                 if(!(_loc8_ && §#y§))
-                                 {
-                                    addr288:
-                                    if(param6 >= 0)
-                                    {
-                                       if(!_loc8_)
-                                       {
-                                          addr293:
-                                          param1.addChildAt(§^1§,param6);
-                                          if(_loc9_ || param1)
-                                          {
-                                          }
-                                          §§goto(addr308);
-                                       }
-                                    }
-                                    else
-                                    {
-                                       param1.addChild(§^1§);
-                                    }
-                                 }
-                                 addr308:
-                                 return;
-                              }
-                           }
-                           §§goto(addr288);
-                        }
-                        § !@§.x = param2;
-                        § !@§.y = param3 + 40;
-                        § !@§.wordWrap = true;
-                        if(_loc9_)
-                        {
-                           §^1§.addChild(§ !@§);
-                           addr150:
-                           §!s§ = new TextField();
-                           §!s§.x = param2 + param4 / 2;
-                           §!s§.y = param3;
-                           if(!_loc8_)
-                           {
-                              §!s§.width = param4 / 2;
-                              if(!(_loc8_ && param2))
-                              {
-                                 §!s§.height = 20;
-                                 if(_loc9_)
-                                 {
-                                    §!s§.text = "LOGGER CAPTURING INPUT, F4";
-                                    §!s§.border = true;
-                                    addr189:
-                                    §!s§.borderColor = 16711680;
-                                    §^1§.addChild(§!s§);
-                                    if(!(_loc8_ && param2))
-                                    {
-                                       §-!B§ = new TextField();
-                                       addr206:
-                                       §-!B§.width = param4;
-                                       §-!B§.height = 20;
-                                       §-!B§.x = param2;
-                                       if(_loc9_ || param2)
-                                       {
-                                          §-!B§.y = param3;
-                                          if(!_loc8_)
-                                          {
-                                             §^1§.addChild(§-!B§);
-                                             if(_loc9_)
-                                             {
-                                                addr232:
-                                                §'L§ = new TextField();
-                                                if(_loc9_)
-                                                {
-                                                   §'L§.width = param4;
-                                                   if(!_loc8_)
-                                                   {
-                                                      addr243:
-                                                      §'L§.height = 20;
-                                                      if(_loc9_ || param2)
-                                                      {
-                                                         §§goto(addr253);
-                                                      }
-                                                   }
-                                                }
-                                                §§goto(addr293);
-                                             }
-                                          }
-                                          §§goto(addr288);
-                                       }
-                                       §§goto(addr258);
-                                    }
-                                    §§goto(addr288);
-                                 }
-                                 §§goto(addr243);
-                              }
-                              §§goto(addr232);
-                           }
-                           §§goto(addr206);
-                        }
-                        §§goto(addr189);
-                     }
-                     §§goto(addr253);
-                  }
-                  §§goto(addr150);
-               }
-               §§goto(addr206);
-            }
+            param1.addChildAt(§^1§,param6);
          }
-         §§goto(addr150);
+         else
+         {
+            param1.addChild(§^1§);
+         }
       }
       
       public static function §;!!§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
+         if(!§!&§)
          {
-            if(!§!&§)
-            {
-               return;
-            }
-            §=?§ = param1;
-            if(!_loc3_)
-            {
-               §^1§.mouseChildren = §=?§;
-               if(!(_loc3_ && _loc3_))
-               {
-                  §^1§.mouseEnabled = §=?§;
-                  if(_loc2_)
-                  {
-                     addr68:
-                     §-!B§.mouseEnabled = §=?§;
-                     if(!(_loc3_ && §#y§))
-                     {
-                        §'L§.mouseEnabled = §=?§;
-                        if(!_loc2_)
-                        {
-                        }
-                        §§goto(addr91);
-                     }
-                  }
-               }
-               § !@§.mouseEnabled = §=?§;
-               if(_loc2_)
-               {
-                  §!s§.visible = §=?§;
-               }
-               §§goto(addr91);
-            }
-            §§goto(addr68);
+            return;
          }
-         addr91:
+         §=?§ = param1;
+         §^1§.mouseChildren = §=?§;
+         §^1§.mouseEnabled = §=?§;
+         §-!B§.mouseEnabled = §=?§;
+         §'L§.mouseEnabled = §=?§;
+         § !@§.mouseEnabled = §=?§;
+         §!s§.visible = §=?§;
       }
       
       public static function keyDown(param1:KeyboardEvent) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && param1))
+         if(!§!&§)
          {
-            if(§!&§)
-            {
-               return;
-            }
+            return;
          }
       }
       
       public static function §"3§(param1:int = 113, param2:int = 115, param3:int = 114, param4:int = 117) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(!_loc5_)
-         {
-            §?Y§ = param1;
-            if(!_loc5_)
-            {
-               §]W§ = param2;
-               if(!(_loc5_ && param1))
-               {
-                  §<!H§ = param3;
-               }
-            }
-         }
+         §?Y§ = param1;
+         §]W§ = param2;
+         §<!H§ = param3;
       }
       
       public static function §=h§(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            §?[§ = param1;
-         }
+         §?[§ = param1;
       }
    }
 }

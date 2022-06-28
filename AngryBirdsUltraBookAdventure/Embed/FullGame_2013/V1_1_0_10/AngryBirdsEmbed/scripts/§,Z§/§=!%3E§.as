@@ -9,12 +9,7 @@ package §,Z§
       
       public function §=!>§(param1:§ !§)
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && this))
-         {
-            super(param1);
-         }
+         super(param1);
       }
    }
 }

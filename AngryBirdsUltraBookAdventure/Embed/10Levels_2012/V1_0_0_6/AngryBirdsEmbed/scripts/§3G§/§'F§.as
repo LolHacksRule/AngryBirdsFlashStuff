@@ -11,30 +11,12 @@ package §3G§
    public class §'F§
    {
       
-      public static const §=!+§:Number = 0.03333333333333333;
+      public static const §=!+§:Number = 1 / 30;
       
       public static const §'H§:int = 10;
       
       public static const §=!A§:Boolean = true;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            §=!+§ = 1 / 30;
-            if(!(_loc1_ && §'F§))
-            {
-               §'H§ = 10;
-               if(!_loc2_)
-               {
-               }
-               §§goto(addr49);
-            }
-            §=!A§ = true;
-         }
-         addr49:
-      }
+       
       
       public var §<!F§:b2World;
       
@@ -58,23 +40,9 @@ package §3G§
       
       public function §'F§(param1:§!E§)
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            super();
-            if(_loc3_ || param1)
-            {
-               this.§33§ = param1;
-               if(!(_loc2_ && _loc3_))
-               {
-                  addr48:
-                  this.§"Y§();
-               }
-            }
-            return;
-         }
-         §§goto(addr48);
+         super();
+         this.§33§ = param1;
+         this.§"Y§();
       }
       
       public function get §>! §() : int
@@ -89,506 +57,124 @@ package §3G§
       
       private function §"Y§() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc2_))
-         {
-            this.§1q§ = new §4]§(this);
-            if(_loc2_ || this)
-            {
-               addr56:
-               this.§<!F§ = new b2World(new b2Vec2(0,20),this.§%4§);
-               if(_loc2_)
-               {
-                  this.§<!F§.SetContactListener(this.§1q§);
-               }
-            }
-            return;
-         }
-         §§goto(addr56);
+         this.§1q§ = new §4]§(this);
+         this.§<!F§ = new b2World(new b2Vec2(0,20),this.§%4§);
+         this.§<!F§.SetContactListener(this.§1q§);
       }
       
       public function clear() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
+         this.§<!F§.SetContactListener(null);
+         this.§1q§ = null;
+         if(this.§&! §)
          {
-            §§push(this.§<!F§);
-            if(!_loc2_)
-            {
-               §§pop().SetContactListener(null);
-               addr24:
-               this.§1q§ = null;
-               if(_loc1_)
-               {
-                  if(this.§&! §)
-                  {
-                     if(!(_loc2_ && _loc1_))
-                     {
-                        this.§=!5§.graphics.clear();
-                        addr63:
-                        this.§=!5§ = null;
-                        if(_loc1_ || _loc2_)
-                        {
-                           addr75:
-                           this.§<!F§.ClearForces();
-                           §§goto(addr73);
-                        }
-                        §§goto(addr83);
-                     }
-                     addr73:
-                     if(_loc1_ || this)
-                     {
-                        addr83:
-                        this.§<!F§ = null;
-                     }
-                     return;
-                  }
-               }
-               §§goto(addr63);
-            }
-            §§goto(addr75);
+            this.§=!5§.graphics.clear();
          }
-         §§goto(addr24);
+         this.§=!5§ = null;
+         this.§<!F§.ClearForces();
+         this.§<!F§ = null;
       }
       
       public function §'L§() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
+         if(this.§&! §)
          {
-            if(this.§&! §)
-            {
-               if(_loc2_)
-               {
-                  addr34:
-                  this.§<!F§.DrawDebugData();
-                  if(_loc2_)
-                  {
-                     this.§=!5§.parent.setChildIndex(this.§=!5§,this.§=!5§.parent.numChildren - 1);
-                  }
-               }
-            }
-            return;
+            this.§<!F§.DrawDebugData();
+            this.§=!5§.parent.setChildIndex(this.§=!5§,this.§=!5§.parent.numChildren - 1);
          }
-         §§goto(addr34);
       }
       
       public function §+C§(param1:Number, param2:Number, param3:Number) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
          var _loc4_:Point = null;
-         if(_loc6_)
+         if(this.§&! §)
          {
-            if(this.§&! §)
-            {
-               _loc4_ = §"h§.§1C§.§>9§(0,0);
-               addr25:
-               if(!_loc5_)
-               {
-                  this.§=!5§.x = _loc4_.x;
-                  if(!(_loc5_ && this))
-                  {
-                     this.§=!5§.y = _loc4_.y;
-                     if(_loc5_)
-                     {
-                     }
-                     §§goto(addr89);
-                  }
-                  §§push(this.§]1§);
-                  §§push(1 / §!E§.§#N§);
-                  if(!(_loc5_ && param3))
-                  {
-                     §§push(§§pop() * param3);
-                  }
-                  §§pop().SetDrawScale(§§pop());
-               }
-            }
-            addr89:
-            return;
+            _loc4_ = §"h§.§1C§.§>9§(0,0);
+            this.§=!5§.x = _loc4_.x;
+            this.§=!5§.y = _loc4_.y;
+            this.§]1§.SetDrawScale(1 / §!E§.§#N§ * param3);
          }
-         §§goto(addr25);
       }
       
       public function §5N§(param1:Number) : Number
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!(_loc3_ && _loc2_))
+         this.§60§ = §=!+§;
+         var _loc2_:int = this.§#J§(param1);
+         if(_loc2_ > §'H§)
          {
-            this.§60§ = §=!+§;
+            _loc2_ = §'H§;
          }
-         §§push(this.§#J§(param1));
-         if(!_loc3_)
+         this.§2!@§(_loc2_);
+         while(param1 > 0)
          {
-            §§push(int(§§pop()));
+            param1 -= this.§60§ * 1000;
          }
-         var _loc2_:* = §§pop();
-         if(!(_loc3_ && _loc2_))
-         {
-            §§push(_loc2_);
-            if(!_loc3_)
-            {
-               if(§§pop() > §'H§)
-               {
-                  if(!(_loc3_ && _loc2_))
-                  {
-                     addr63:
-                     §§push(§'H§);
-                     if(_loc4_)
-                     {
-                        addr66:
-                        §§push(int(§§pop()));
-                     }
-                     _loc2_ = §§pop();
-                     if(_loc4_ || this)
-                     {
-                        addr75:
-                        this.§2!@§(_loc2_);
-                     }
-                  }
-                  loop0:
-                  while(true)
-                  {
-                     §§push(param1);
-                     if(!(_loc3_ && _loc3_))
-                     {
-                        §§push(0);
-                        while(§§pop() > §§pop())
-                        {
-                           §§push(param1);
-                           if(_loc4_)
-                           {
-                              §§push(this.§60§);
-                              if(_loc4_ || this)
-                              {
-                                 §§push(§§pop() * 1000);
-                                 if(!(_loc3_ && _loc2_))
-                                 {
-                                    §§push(§§pop() - §§pop());
-                                    if(_loc3_)
-                                    {
-                                       break loop0;
-                                    }
-                                    §§push(Number(§§pop()));
-                                    if(!_loc4_)
-                                    {
-                                       break loop0;
-                                    }
-                                    continue loop0;
-                                 }
-                              }
-                              continue;
-                           }
-                           continue loop0;
-                        }
-                        addr135:
-                        §§push(param1);
-                        break;
-                     }
-                     break;
-                  }
-                  return §§pop();
-               }
-               §§goto(addr75);
-            }
-            §§goto(addr66);
-         }
-         §§goto(addr63);
+         return param1;
       }
       
       public function §2!@§(param1:int) : void
       {
-         var _loc8_:Boolean = true;
-         var _loc9_:Boolean = false;
-         var _loc5_:* = NaN;
-         if(!(_loc9_ && this))
-         {
-            this.§^b§ = 0;
-         }
-         var _loc2_:int = 10;
-         var _loc3_:int = 10;
+         var _loc5_:Number = NaN;
+         this.§^b§ = 0;
          var _loc4_:int = 0;
-         loop0:
-         while(true)
+         while(_loc4_ < param1)
          {
-            §§push(_loc4_);
-            while(true)
+            ++this.§!0§;
+            _loc5_ = 0;
+            if(§=!A§)
             {
-               if(§§pop() < param1)
-               {
-                  var _loc6_:*;
-                  §§push((_loc6_ = this).§!0§);
-                  if(_loc8_ || _loc2_)
-                  {
-                     §§push(§§pop() + 1);
-                  }
-                  var _loc7_:* = §§pop();
-                  if(_loc8_ || param1)
-                  {
-                     _loc6_.§!0§ = _loc7_;
-                  }
-                  if(!_loc9_)
-                  {
-                     §§push(0);
-                     if(_loc9_)
-                     {
-                        continue;
-                     }
-                     §§push(Number(§§pop()));
-                     if(!_loc9_)
-                     {
-                        _loc5_ = §§pop();
-                        §§push(§=!A§);
-                        if(_loc8_ || this)
-                        {
-                           if(§§pop())
-                           {
-                              if(_loc8_)
-                              {
-                                 addr94:
-                                 _loc5_ = Number(getTimer());
-                                 §§goto(addr95);
-                              }
-                              addr183:
-                              _loc4_++;
-                              continue loop0;
-                           }
-                           addr95:
-                           §§push(this.§<!F§);
-                           if(!(_loc9_ && param1))
-                           {
-                              §§pop().Step(this.§60§,_loc2_,_loc3_);
-                              if(_loc8_ || this)
-                              {
-                                 §§push(this.§<!F§);
-                              }
-                              break;
-                           }
-                           §§pop().ClearForces();
-                           §§push(this);
-                           §§push(this.§^b§);
-                           if(_loc8_ || param1)
-                           {
-                              §§push(this.§60§);
-                              if(_loc8_ || param1)
-                              {
-                                 §§push(§§pop() * 1000);
-                              }
-                              §§push(§§pop() + §§pop());
-                           }
-                           §§pop().§^b§ = §§pop();
-                           if(!(_loc9_ && _loc2_))
-                           {
-                              break;
-                           }
-                           §§goto(addr187);
-                        }
-                        addr160:
-                        if(§§pop())
-                        {
-                           if(!(_loc8_ || _loc3_))
-                           {
-                              continue loop0;
-                           }
-                           §"h§.§73§.§false§("Box2D",getTimer() - _loc5_);
-                        }
-                        this.§33§.§&'§(this.§60§);
-                        if(_loc9_)
-                        {
-                           continue loop0;
-                        }
-                        §§goto(addr183);
-                     }
-                     §§goto(addr94);
-                  }
-                  break;
-               }
-               addr187:
-               return;
+               _loc5_ = getTimer();
             }
-            §§goto(addr160);
+            this.§<!F§.Step(this.§60§,10,10);
+            this.§<!F§.ClearForces();
+            this.§^b§ += this.§60§ * 1000;
+            if(§=!A§)
+            {
+               §"h§.§73§.§false§("Box2D",getTimer() - _loc5_);
+            }
+            this.§33§.§&'§(this.§60§);
+            _loc4_++;
          }
       }
       
       private function §#J§(param1:Number) : int
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
          var _loc2_:int = 0;
-         loop0:
-         while(true)
+         while(param1 > 0)
          {
-            §§push(param1);
-            loop1:
-            while(true)
-            {
-               §§push(0);
-               while(§§pop() > §§pop())
-               {
-                  _loc2_++;
-                  if(_loc4_)
-                  {
-                     §§push(param1);
-                     if(_loc4_)
-                     {
-                        §§push(this.§60§);
-                        if(_loc4_)
-                        {
-                           §§push(§§pop() * 1000);
-                           if(!_loc4_)
-                           {
-                              continue;
-                           }
-                        }
-                        §§push(§§pop() - §§pop());
-                        if(_loc3_)
-                        {
-                           continue loop1;
-                        }
-                        §§push(Number(§§pop()));
-                        if(!_loc4_)
-                        {
-                           continue loop1;
-                        }
-                     }
-                     param1 = §§pop();
-                     if(!(_loc4_ || param1))
-                     {
-                        break;
-                     }
-                  }
-                  continue loop0;
-               }
-               return _loc2_;
-            }
+            _loc2_++;
+            param1 -= this.§60§ * 1000;
          }
+         return _loc2_;
       }
       
       public function set §5!6§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         §§push(this.§<!F§);
-         if(!_loc2_)
+         if(this.§<!F§ == null)
          {
-            if(§§pop() == null)
-            {
-               if(!(_loc2_ && _loc3_))
-               {
-                  return;
-               }
-               addr102:
-               §§push(this.§]1§);
-               if(!(_loc2_ && param1))
-               {
-                  addr125:
-                  §§push(b2DebugDraw.e_centerOfMassBit);
-                  if(_loc3_ || _loc2_)
-                  {
-                     §§pop().AppendFlags(§§pop());
-                     §§push(this.§]1§);
-                     §§push(b2DebugDraw.e_jointBit);
-                  }
-                  §§pop().AppendFlags(§§pop());
-                  if(!(_loc2_ && _loc3_))
-                  {
-                     this.§]1§.SetFillAlpha(0.3);
-                     §§goto(addr171);
-                  }
-                  §§goto(addr155);
-               }
-               §§goto(addr146);
-            }
-            else
-            {
-               §§push(param1);
-               if(!_loc2_)
-               {
-                  if(§§pop())
-                  {
-                     §§push(this.§&! §);
-                     if(!_loc2_)
-                     {
-                        if(!§§pop())
-                        {
-                           if(!(_loc2_ && param1))
-                           {
-                              §§push(!this.§=!5§);
-                              if(!_loc2_)
-                              {
-                                 addr59:
-                                 if(§§pop())
-                                 {
-                                    if(!_loc3_)
-                                    {
-                                    }
-                                 }
-                                 §§goto(addr67);
-                              }
-                              §§pop();
-                              addr67:
-                              if(§§pop())
-                              {
-                                 this.§=!5§ = new Sprite();
-                                 this.§]1§ = new b2DebugDraw();
-                                 if(!_loc2_)
-                                 {
-                                    §§push(this.§]1§);
-                                    if(!(_loc2_ && _loc3_))
-                                    {
-                                       §§push(b2DebugDraw.e_shapeBit);
-                                       if(!_loc2_)
-                                       {
-                                          §§pop().AppendFlags(§§pop());
-                                          §§goto(addr102);
-                                       }
-                                       §§goto(addr125);
-                                    }
-                                    §§goto(addr171);
-                                 }
-                                 addr171:
-                                 §§push(this.§]1§);
-                                 if(_loc3_ || _loc3_)
-                                 {
-                                    addr146:
-                                    §§pop().SetLineThickness(1);
-                                    if(_loc3_ || _loc3_)
-                                    {
-                                       this.§=!5§.mouseEnabled = false;
-                                       addr155:
-                                    }
-                                    §§push(this.§]1§);
-                                 }
-                                 §§pop().SetSprite(this.§=!5§);
-                                 this.§33§.stage.addChild(this.§=!5§);
-                                 if(_loc3_ || _loc2_)
-                                 {
-                                    addr189:
-                                    this.§<!F§.SetDebugDraw(this.§]1§);
-                                 }
-                                 §§goto(addr192);
-                              }
-                              addr192:
-                              this.§&! § = param1;
-                              return;
-                              §§push(!this.§]1§);
-                           }
-                        }
-                        §§goto(addr192);
-                     }
-                     §§goto(addr59);
-                  }
-                  §§goto(addr192);
-               }
-               §§goto(addr67);
-            }
-            §§goto(addr192);
+            return;
          }
-         §§goto(addr189);
+         if(param1)
+         {
+            if(!this.§&! §)
+            {
+               if(!this.§=!5§ && !this.§]1§)
+               {
+                  this.§=!5§ = new Sprite();
+                  this.§]1§ = new b2DebugDraw();
+                  this.§]1§.AppendFlags(b2DebugDraw.e_shapeBit);
+                  this.§]1§.AppendFlags(b2DebugDraw.e_centerOfMassBit);
+                  this.§]1§.AppendFlags(b2DebugDraw.e_jointBit);
+                  this.§]1§.SetFillAlpha(0.3);
+                  this.§]1§.SetLineThickness(1);
+                  this.§=!5§.mouseEnabled = false;
+                  this.§]1§.SetSprite(this.§=!5§);
+                  this.§33§.stage.addChild(this.§=!5§);
+                  this.§<!F§.SetDebugDraw(this.§]1§);
+               }
+            }
+         }
+         this.§&! § = param1;
       }
       
       public function get §5!6§() : Boolean
@@ -603,21 +189,10 @@ package §3G§
       
       public function §`y§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
+         if(this.§]1§)
          {
-            if(this.§]1§)
-            {
-               if(!_loc2_)
-               {
-                  addr23:
-                  this.§=!5§.graphics.clear();
-               }
-            }
-            return;
+            this.§=!5§.graphics.clear();
          }
-         §§goto(addr23);
       }
    }
 }

@@ -23,46 +23,7 @@ package §9!7§
       public static const §&J§:String = "set_bg_colour";
       
       public static const END:String = "end";
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            §'l§ = "setreferencesize";
-            if(!_loc2_)
-            {
-               §#r§ = "createsprite";
-               if(!_loc2_)
-               {
-                  §#p§ = "scroll";
-                  §8,§ = "zoom";
-                  if(_loc1_ || _loc2_)
-                  {
-                     §'V§ = "playsound";
-                     addr64:
-                     §-!&§ = "fitwidth";
-                  }
-                  §[t§ = "fitheight";
-                  if(!_loc2_)
-                  {
-                     addr72:
-                     §&J§ = "set_bg_colour";
-                     if(!_loc1_)
-                     {
-                     }
-                     §§goto(addr80);
-                  }
-                  END = "end";
-                  addr80:
-                  return;
-               }
-               §§goto(addr72);
-            }
-            §§goto(addr64);
-         }
-         §§goto(addr72);
-      }
+       
       
       private var §9!8§:Number;
       
@@ -70,33 +31,13 @@ package §9!7§
       
       public function §`E§(param1:Number, param2:Number)
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_ || this)
+         super();
+         this.§9!8§ = param1;
+         this.§@z§ = param2;
+         if(isNaN(this.§@z§))
          {
-            super();
-            if(!(_loc4_ && this))
-            {
-               addr52:
-               this.§9!8§ = param1;
-               if(_loc3_)
-               {
-                  this.§@z§ = param2;
-                  if(_loc3_)
-                  {
-                     if(isNaN(this.§@z§))
-                     {
-                        if(_loc3_ || param1)
-                        {
-                           this.§@z§ = 0;
-                        }
-                     }
-                  }
-               }
-            }
-            return;
+            this.§@z§ = 0;
          }
-         §§goto(addr52);
       }
       
       public function get time() : Number
@@ -111,35 +52,11 @@ package §9!7§
       
       public function update(param1:Number, param2:Sprite, param3:§?y§) : Boolean
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(_loc5_)
+         if(param1 >= this.time + this.duration)
          {
-            §§push(param1);
-            §§push(this.time);
-            if(_loc5_)
-            {
-               §§push(§§pop() + this.duration);
-            }
-            if(§§pop() >= §§pop())
-            {
-               if(_loc5_ || param3)
-               {
-                  §§push(false);
-                  if(_loc5_ || this)
-                  {
-                     return §§pop();
-                  }
-               }
-               else
-               {
-                  addr54:
-                  §§push(true);
-               }
-               return §§pop();
-            }
+            return false;
          }
-         §§goto(addr54);
+         return true;
       }
       
       public function clone() : §`E§

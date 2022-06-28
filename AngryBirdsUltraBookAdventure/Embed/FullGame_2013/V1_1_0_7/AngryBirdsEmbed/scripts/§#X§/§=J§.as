@@ -19,49 +19,21 @@ package §#X§
       
       public function §=J§(param1:SoundChannel, param2:String)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
          super();
-         if(_loc4_ || _loc3_)
-         {
-            this.§]!'§ = param1;
-            if(!_loc3_)
-            {
-               this.§3!8§ = param2;
-               addr54:
-               this.§]!'§.addEventListener(Event.SOUND_COMPLETE,this.§<+§);
-               if(_loc4_ || this)
-               {
-                  this.§"!4§ = param1.soundTransform.volume;
-               }
-               this.§,!B§ = false;
-            }
-            return;
-         }
-         §§goto(addr54);
+         this.§]!'§ = param1;
+         this.§3!8§ = param2;
+         this.§]!'§.addEventListener(Event.SOUND_COMPLETE,this.§<+§);
+         this.§"!4§ = param1.soundTransform.volume;
+         this.§,!B§ = false;
       }
       
       public function set volume(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc2_))
+         this.§"!4§ = param1;
+         if(!this.§,!B§)
          {
-            this.§"!4§ = param1;
-            if(_loc3_)
-            {
-               addr39:
-               if(!this.§,!B§)
-               {
-                  if(_loc3_)
-                  {
-                     this.§'M§(this.§"!4§);
-                  }
-               }
-            }
-            return;
+            this.§'M§(this.§"!4§);
          }
-         §§goto(addr39);
       }
       
       public function get volume() : Number
@@ -81,156 +53,61 @@ package §#X§
       
       private function §<+§(param1:Event) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§]!'§.removeEventListener(Event.SOUND_COMPLETE,this.§<+§);
-            if(!(_loc2_ && this))
-            {
-               dispatchEvent(param1);
-            }
-         }
+         this.§]!'§.removeEventListener(Event.SOUND_COMPLETE,this.§<+§);
+         dispatchEvent(param1);
       }
       
       private function §'M§(param1:Number) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_ || _loc3_)
+         if(this.§]!'§ == null)
          {
-            if(this.§]!'§ == null)
-            {
-               if(!_loc3_)
-               {
-                  return;
-               }
-            }
-         }
-         var _loc2_:SoundTransform = this.§]!'§.soundTransform;
-         if(_loc4_ || param1)
-         {
-            if(_loc2_)
-            {
-               if(_loc4_)
-               {
-                  _loc2_.volume = param1;
-                  if(_loc4_ || _loc2_)
-                  {
-                     addr77:
-                     this.§]!'§.soundTransform = _loc2_;
-                  }
-               }
-               §§goto(addr77);
-            }
             return;
          }
-         §§goto(addr77);
+         var _loc2_:SoundTransform = this.§]!'§.soundTransform;
+         if(_loc2_)
+         {
+            _loc2_.volume = param1;
+            this.§]!'§.soundTransform = _loc2_;
+         }
       }
       
       public function §3'§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc2_)
-         {
-            this.stop();
-            if(_loc1_)
-            {
-               addr27:
-               this.§<+§(new Event(Event.SOUND_COMPLETE));
-            }
-            return;
-         }
-         §§goto(addr27);
+         this.stop();
+         this.§<+§(new Event(Event.SOUND_COMPLETE));
       }
       
       public function stop() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
+         if(this.§]!'§)
          {
-            if(this.§]!'§)
-            {
-               if(!(_loc2_ && _loc2_))
-               {
-                  addr28:
-                  this.§]!'§.stop();
-               }
-            }
-            return;
+            this.§]!'§.stop();
          }
-         §§goto(addr28);
       }
       
       public function destroy() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            this.stop();
-            if(_loc1_ || _loc1_)
-            {
-               §§goto(addr42);
-            }
-            §§goto(addr51);
-         }
-         addr42:
+         this.stop();
          this.§]!'§.removeEventListener(Event.SOUND_COMPLETE,this.§<+§);
-         if(!_loc2_)
-         {
-            addr51:
-            this.§]!'§ = null;
-         }
+         this.§]!'§ = null;
       }
       
       public function §!h§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
+         if(this.§]!'§)
          {
-            if(this.§]!'§)
-            {
-               if(_loc1_ || _loc1_)
-               {
-                  addr38:
-                  this.§'M§(0);
-                  if(!(_loc2_ && _loc2_))
-                  {
-                     this.§,!B§ = true;
-                  }
-               }
-            }
-            return;
+            this.§'M§(0);
+            this.§,!B§ = true;
          }
-         §§goto(addr38);
       }
       
       public function §1J§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
+         if(this.§]!'§)
          {
-            if(this.§]!'§)
-            {
-               if(_loc1_ || _loc1_)
-               {
-                  this.§'M§(this.§"!4§);
-                  if(!(_loc2_ && _loc1_))
-                  {
-                     addr49:
-                     this.§,!B§ = false;
-                  }
-               }
-               §§goto(addr49);
-            }
-            return;
+            this.§'M§(this.§"!4§);
+            this.§,!B§ = false;
          }
-         §§goto(addr49);
       }
    }
 }

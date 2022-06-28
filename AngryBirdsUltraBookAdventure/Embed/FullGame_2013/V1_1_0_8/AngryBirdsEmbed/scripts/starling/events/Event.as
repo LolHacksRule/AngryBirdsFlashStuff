@@ -27,49 +27,7 @@ package starling.events
       public static const CONTEXT3D_CREATE:String = "context3DCreate";
       
       public static const §'D§:String = "removeFromJuggler";
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            ADDED = "added";
-            if(_loc2_)
-            {
-               ADDED_TO_STAGE = "addedToStage";
-               ENTER_FRAME = "enterFrame";
-               §,6§ = "removed";
-               REMOVED_FROM_STAGE = "removedFromStage";
-               if(!_loc1_)
-               {
-                  §>Y§ = "triggered";
-                  if(_loc2_ || _loc2_)
-                  {
-                     §0@§ = "flatten";
-                     addr58:
-                     if(_loc2_ || Event)
-                     {
-                        RESIZE = "resize";
-                        if(_loc2_ || _loc1_)
-                        {
-                           addr88:
-                           COMPLETE = "complete";
-                        }
-                     }
-                     CONTEXT3D_CREATE = "context3DCreate";
-                     if(!_loc1_)
-                     {
-                        §'D§ = "removeFromJuggler";
-                     }
-                  }
-                  return;
-               }
-               §§goto(addr58);
-            }
-            §§goto(addr88);
-         }
-         §§goto(addr58);
-      }
+       
       
       private var §@N§:EventDispatcher;
       
@@ -85,42 +43,20 @@ package starling.events
       
       public function Event(param1:String, param2:Boolean = false)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_ || param2)
-         {
-            super();
-            if(!(_loc3_ && param1))
-            {
-               this.§<"§ = param1;
-               if(_loc3_)
-               {
-               }
-               §§goto(addr51);
-            }
-            this.§4z§ = param2;
-         }
-         addr51:
+         super();
+         this.§<"§ = param1;
+         this.§4z§ = param2;
       }
       
       public function stopPropagation() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            this.§+=§ = true;
-         }
+         this.§+=§ = true;
       }
       
       public function §&!H§() : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || this)
-         {
-            this.§+=§ = this.§9J§ = true;
-         }
+         this.§9J§ = true;
+         this.§+=§ = true;
       }
       
       public function toString() : String
@@ -130,22 +66,12 @@ package starling.events
       
       function §'^§(param1:EventDispatcher) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§@N§ = param1;
-         }
+         this.§@N§ = param1;
       }
       
       function §8!I§(param1:EventDispatcher) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || _loc2_)
-         {
-            this.§'!I§ = param1;
-         }
+         this.§'!I§ = param1;
       }
       
       function get §2S§() : Boolean

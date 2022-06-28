@@ -22,101 +22,32 @@ package §;m§
       
       public function §6!C§(param1:Boolean, param2:String)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_)
-         {
-            super(param1,param2);
-         }
+         super(param1,param2);
       }
       
       protected function levelStarted() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && this))
-         {
-            this.§^R§.init();
-            if(!_loc2_)
-            {
-               this.§-_§ = false;
-            }
-         }
+         this.§^R§.init();
+         this.§-_§ = false;
       }
       
       override public function activate() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
          super.activate();
-         if(!_loc2_)
+         §59§.§]s§ = false;
+         §"h§.§1C§.§]!!§(true);
+         §"h§.§1C§.§`M§(true);
+         §"h§.resume();
+         if(this.§^R§ == null)
          {
-            §59§.§]s§ = false;
+            this.§^R§ = this.getGameLogicController(§"h§.§1C§);
          }
-         §§push(§"h§.§1C§);
-         if(!_loc2_)
+         if(§"h§.§1C§.§["§ == 0)
          {
-            §§push(true);
-            if(!(_loc2_ && this))
-            {
-               §§pop().§]!!§(§§pop());
-               if(!_loc2_)
-               {
-                  §§push(§"h§.§1C§);
-                  if(_loc1_ || _loc2_)
-                  {
-                     addr48:
-                     §§pop().§`M§(true);
-                     if(!_loc2_)
-                     {
-                        §"h§.resume();
-                        if(!_loc2_)
-                        {
-                           addr65:
-                           if(this.§^R§ == null)
-                           {
-                              if(_loc1_ || this)
-                              {
-                                 this.§^R§ = this.getGameLogicController(§"h§.§1C§);
-                                 if(_loc1_ || _loc1_)
-                                 {
-                                 }
-                                 addr126:
-                                 §"h§.§1C§.background.§>s§();
-                                 addr128:
-                                 return;
-                                 addr124:
-                              }
-                           }
-                           §§push(§"h§.§1C§);
-                           if(_loc1_ || _loc2_)
-                           {
-                              if(§§pop().§["§ == 0)
-                              {
-                                 this.levelStarted();
-                                 if(!(_loc2_ && _loc2_))
-                                 {
-                                    addr120:
-                                    §"h§.§;j§(this.§^R§);
-                                    §§goto(addr124);
-                                 }
-                                 §§goto(addr128);
-                              }
-                              §§goto(addr120);
-                           }
-                        }
-                        §§goto(addr126);
-                     }
-                     §§goto(addr65);
-                     addr47:
-                  }
-                  §§goto(addr126);
-               }
-               §§goto(addr120);
-            }
-            §§goto(addr48);
+            this.levelStarted();
          }
-         §§goto(addr47);
+         §"h§.§;j§(this.§^R§);
+         §"h§.§1C§.background.§>s§();
       }
       
       protected function getGameLogicController(param1:§!E§) : §1!$§
@@ -126,162 +57,42 @@ package §;m§
       
       override public function run(param1:Number) : int
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         §§push(super.run(param1));
-         if(_loc4_ || this)
+         var _loc2_:int = super.run(param1);
+         if(_loc2_ != §>3§.STATE_STATUS_RUNNING)
          {
-            §§push(int(§§pop()));
+            return _loc2_;
          }
-         var _loc2_:* = §§pop();
-         if(!(_loc3_ && param1))
+         if(this.§3,§)
          {
-            §§push(_loc2_);
-            if(!_loc3_)
+            this.§3,§ = false;
+            mNextState = §6e§.§-!A§;
+         }
+         else
+         {
+            if(!§"h§.isPaused)
             {
-               if(§§pop() != §>3§.STATE_STATUS_RUNNING)
+               this.§^R§.update(param1);
+            }
+            if(this.§^R§.§,Y§() || this.§^8§)
+            {
+               this.§^8§ = false;
+               if(this.§^R§.§>!!§ == §1!$§.LEVEL_STATE_VICTORY2_END)
                {
-                  if(!(_loc3_ && this))
+                  if(!this.§-_§)
                   {
-                     addr49:
-                     §§push(_loc2_);
-                     if(!_loc3_)
-                     {
-                        return §§pop();
-                     }
-                  }
-                  else
-                  {
-                     addr137:
                      this.§-_§ = true;
                      this.levelCompleted();
-                     if(!_loc3_)
-                     {
-                        addr144:
-                        mNextState = this.getVictoryState();
-                        if(_loc4_ || _loc2_)
-                        {
-                           §59§.§]s§ = true;
-                           §§goto(addr155);
-                        }
-                        §§goto(addr191);
-                     }
-                     §§goto(addr155);
                   }
-                  §§goto(addr155);
+                  mNextState = this.getVictoryState();
+                  §59§.§]s§ = true;
                }
-               else
+               else if(this.§^R§.§>!!§ == §1!$§.§]J§)
                {
-                  if(this.§3,§)
-                  {
-                     this.§3,§ = false;
-                     mNextState = §6e§.§-!A§;
-                  }
-                  else
-                  {
-                     §§push(§"h§.isPaused);
-                     if(!(_loc3_ && _loc3_))
-                     {
-                        if(!§§pop())
-                        {
-                           §§push(this.§^R§);
-                           if(_loc4_)
-                           {
-                              §§pop().update(param1);
-                              addr80:
-                              §§push(this.§^R§);
-                              if(_loc4_)
-                              {
-                                 addr94:
-                                 §§push(Boolean(§§pop().§,Y§()));
-                                 if(!(_loc3_ && _loc3_))
-                                 {
-                                    if(!§§pop())
-                                    {
-                                       §§pop();
-                                       §§push(Boolean(this.§^8§));
-                                       if(!_loc4_)
-                                       {
-                                       }
-                                       addr136:
-                                       if(!§§pop())
-                                       {
-                                          §§goto(addr137);
-                                       }
-                                       §§goto(addr144);
-                                    }
-                                    if(§§pop())
-                                    {
-                                       this.§^8§ = false;
-                                       §§push(this.§^R§);
-                                       if(!_loc3_)
-                                       {
-                                          addr119:
-                                          §§push(§§pop().§>!!§);
-                                          if(!_loc3_)
-                                          {
-                                             addr122:
-                                             §§push(§1!$§.LEVEL_STATE_VICTORY2_END);
-                                             if(_loc4_)
-                                             {
-                                                if(§§pop() == §§pop())
-                                                {
-                                                   if(!(_loc3_ && _loc2_))
-                                                   {
-                                                      §§goto(addr136);
-                                                      §§push(this.§-_§);
-                                                   }
-                                                   §§goto(addr191);
-                                                }
-                                                else
-                                                {
-                                                   addr178:
-                                                   §§push(this.§^R§.§>!!§);
-                                                   if(!(_loc3_ && param1))
-                                                   {
-                                                      addr188:
-                                                      if(§§pop() == §1!$§.§]J§)
-                                                      {
-                                                         if(!_loc3_)
-                                                         {
-                                                            §§goto(addr191);
-                                                         }
-                                                      }
-                                                      §§goto(addr155);
-                                                   }
-                                                }
-                                                §§goto(addr155);
-                                             }
-                                          }
-                                          §§goto(addr188);
-                                       }
-                                       §§goto(addr178);
-                                    }
-                                    §§goto(addr155);
-                                 }
-                                 §§goto(addr136);
-                              }
-                              §§goto(addr119);
-                           }
-                           §§goto(addr94);
-                        }
-                        §§goto(addr80);
-                     }
-                     §§goto(addr136);
-                  }
-                  addr155:
-                  if(_loc3_ && param1)
-                  {
-                     addr191:
-                     mNextState = this.getLoserState();
-                  }
-                  return _loc2_;
+                  mNextState = this.getLoserState();
                }
-               §§goto(addr144);
             }
-            §§goto(addr122);
          }
-         §§goto(addr49);
+         return _loc2_;
       }
       
       protected function levelCompleted() : void
@@ -300,187 +111,49 @@ package §;m§
       
       override public function deActivate() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            super.deActivate();
-         }
+         super.deActivate();
       }
       
       override public function cleanup() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            super.cleanup();
-         }
+         super.cleanup();
       }
       
       override public function keyDown(param1:KeyboardEvent) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(!(_loc4_ && this))
+         super.keyDown(param1);
+         if(§"h§.§0b§)
          {
-            super.keyDown(param1);
-            if(!_loc4_)
+            switch(param1.keyCode)
             {
-               if(§"h§.§0b§)
-               {
-                  var _loc2_:* = param1.keyCode;
-                  if(_loc3_ || this)
-                  {
-                     §§push(87);
-                     if(_loc3_ || _loc2_)
-                     {
-                        if(§§pop() === _loc2_)
-                        {
-                           if(_loc3_ || param1)
-                           {
-                              §§push(0);
-                              if(_loc4_)
-                              {
-                                 addr114:
-                                 if(§§pop() === _loc2_)
-                                 {
-                                    addr116:
-                                    §§push(1);
-                                    if(!(_loc4_ && _loc2_))
-                                    {
-                                       addr124:
-                                    }
-                                 }
-                                 else
-                                 {
-                                    §§push(2);
-                                 }
-                              }
-                              switch(§§pop())
-                              {
-                                 case 0:
-                                    §§push(§"h§.§1C§);
-                                    if(!(_loc3_ || param1))
-                                    {
-                                       addr49:
-                                       §§pop().§&T§();
-                                       if(_loc4_ && _loc2_)
-                                       {
-                                       }
-                                       break;
-                                    }
-                                    §§pop().§%!1§();
-                                    if(_loc3_)
-                                    {
-                                       addr133:
-                                       §"h§.controller.keyDown(param1);
-                                       break;
-                                    }
-                                    §§goto(addr133);
-                                    §§goto(addr133);
-                                 case 1:
-                                    §§goto(addr49);
-                                 default:
-                                    §§goto(addr133);
-                              }
-                              §"h§.§1C§;
-                              return;
-                           }
-                           §§goto(addr116);
-                        }
-                        else
-                        {
-                           §§push(66);
-                           if(_loc3_)
-                           {
-                              §§goto(addr114);
-                           }
-                        }
-                        §§goto(addr124);
-                     }
-                     §§goto(addr114);
-                  }
-                  §§goto(addr116);
-                  addr31:
-               }
-               §§goto(addr133);
+               case 87:
+                  §"h§.§1C§.§%!1§();
+                  break;
+               case 66:
+                  §"h§.§1C§.§&T§();
             }
          }
-         §§goto(addr31);
+         §"h§.controller.keyDown(param1);
       }
       
       override public function keyUp(param1:KeyboardEvent) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            super.keyUp(param1);
-            if(!(_loc2_ && this))
-            {
-               addr29:
-               §"h§.controller.keyUp(param1);
-            }
-            return;
-         }
-         §§goto(addr29);
+         super.keyUp(param1);
+         §"h§.controller.keyUp(param1);
       }
       
       public function §8!&§() : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         §§push(§"h§.§1C§.camera.§"Q§);
-         if(!(_loc3_ && _loc3_))
+         var _loc1_:Number = §"h§.§1C§.camera.§"Q§ - §"h§.§1C§.camera.§2!#§;
+         var _loc2_:Number = (§"h§.§1C§.camera.§7y§ - §"h§.§1C§.camera.§2!#§) / 2;
+         if(_loc1_ > _loc2_)
          {
-            §§push(§§pop() - §"h§.§1C§.camera.§2!#§);
-            if(!_loc3_)
-            {
-               addr35:
-               §§push(Number(§§pop()));
-            }
-            var _loc1_:* = §§pop();
-            §§push(§"h§.§1C§.camera.§7y§);
-            if(_loc4_ || _loc1_)
-            {
-               §§push(§§pop() - §"h§.§1C§.camera.§2!#§);
-               if(!(_loc3_ && _loc1_))
-               {
-                  addr80:
-                  §§push(§§pop() / 2);
-                  if(_loc4_ || _loc1_)
-                  {
-                     addr89:
-                     §§push(Number(§§pop()));
-                  }
-                  var _loc2_:* = §§pop();
-                  if(_loc4_)
-                  {
-                     if(_loc1_ > _loc2_)
-                     {
-                        if(_loc4_)
-                        {
-                           §7R§.§-"§("Cursor_Zoom_Out");
-                           if(!_loc3_)
-                           {
-                              addr103:
-                           }
-                        }
-                     }
-                     else
-                     {
-                        §7R§.§-"§("Cursor_Zoom_In");
-                     }
-                     return;
-                  }
-                  §§goto(addr103);
-               }
-               §§goto(addr89);
-            }
-            §§goto(addr80);
+            §7R§.§-"§("Cursor_Zoom_Out");
          }
-         §§goto(addr35);
+         else
+         {
+            §7R§.§-"§("Cursor_Zoom_In");
+         }
       }
    }
 }

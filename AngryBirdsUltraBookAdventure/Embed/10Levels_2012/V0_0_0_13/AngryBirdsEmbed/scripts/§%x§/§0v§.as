@@ -13,16 +13,8 @@ package §%x§
       
       public function §0v§(param1:§2N§)
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            super();
-            if(_loc2_)
-            {
-               this.§[N§ = param1;
-            }
-         }
+         super();
+         this.§[N§ = param1;
       }
       
       override public function EndContact(param1:b2Contact) : void
@@ -39,23 +31,10 @@ package §%x§
       
       override public function BeginContact(param1:b2Contact) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         §§push(this.§[N§.§7C§.objects.objectCollision(param1.GetFixtureA().GetBody().GetUserData(),param1.GetFixtureB().GetBody().GetUserData()));
-         if(_loc3_)
+         var _loc2_:Boolean = this.§[N§.§7C§.objects.objectCollision(param1.GetFixtureA().GetBody().GetUserData(),param1.GetFixtureB().GetBody().GetUserData());
+         if(_loc2_)
          {
-            §§push(Boolean(§§pop()));
-         }
-         var _loc2_:* = §§pop();
-         if(!(_loc4_ && _loc3_))
-         {
-            if(_loc2_)
-            {
-               if(!_loc4_)
-               {
-                  param1.SetEnabled(false);
-               }
-            }
+            param1.SetEnabled(false);
          }
       }
    }

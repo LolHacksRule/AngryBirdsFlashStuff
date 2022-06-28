@@ -59,7 +59,6 @@ package com.rovio.Box2D.Dynamics.Joints
       
       public function b2LineJoint(param1:b2LineJointDef)
       {
-         var _loc2_:b2Mat22 = null;
          var _loc3_:Number = NaN;
          var _loc4_:Number = NaN;
          this.m_localAnchor1 = new b2Vec2();
@@ -112,7 +111,6 @@ package com.rovio.Box2D.Dynamics.Joints
       
       public function GetJointTranslation() : Number
       {
-         var _loc3_:b2Mat22 = null;
          var _loc1_:b2Body = b2internal::m_bodyA;
          var _loc2_:b2Body = b2internal::m_bodyB;
          var _loc4_:b2Vec2 = _loc1_.GetWorldPoint(this.m_localAnchor1);

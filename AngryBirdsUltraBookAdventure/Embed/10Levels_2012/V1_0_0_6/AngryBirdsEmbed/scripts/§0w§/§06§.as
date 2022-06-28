@@ -8,22 +8,12 @@ package §0w§
       
       public function §06§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || this)
-         {
-            super();
-         }
+         super();
       }
       
       public static function init(param1:XML) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc3_))
-         {
-            §-`§ = param1;
-         }
+         §-`§ = param1;
       }
    }
 }

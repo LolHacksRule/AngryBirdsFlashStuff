@@ -13,19 +13,8 @@ package §3G§
       
       public function §4]§(param1:§'F§)
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            super();
-            if(!_loc2_)
-            {
-               addr23:
-               this.§<!F§ = param1;
-            }
-            return;
-         }
-         §§goto(addr23);
+         super();
+         this.§<!F§ = param1;
       }
       
       override public function EndContact(param1:b2Contact) : void
@@ -42,27 +31,11 @@ package §3G§
       
       override public function BeginContact(param1:b2Contact) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         §§push(this.§<!F§.§33§.objects.objectCollision(param1.GetFixtureA().GetBody().GetUserData(),param1.GetFixtureB().GetBody().GetUserData()));
-         if(_loc3_ || this)
+         var _loc2_:Boolean = this.§<!F§.§33§.objects.objectCollision(param1.GetFixtureA().GetBody().GetUserData(),param1.GetFixtureB().GetBody().GetUserData());
+         if(_loc2_)
          {
-            §§push(Boolean(§§pop()));
+            param1.SetEnabled(false);
          }
-         var _loc2_:* = §§pop();
-         if(!_loc4_)
-         {
-            if(_loc2_)
-            {
-               if(_loc3_ || this)
-               {
-                  addr69:
-                  param1.SetEnabled(false);
-               }
-            }
-            return;
-         }
-         §§goto(addr69);
       }
    }
 }

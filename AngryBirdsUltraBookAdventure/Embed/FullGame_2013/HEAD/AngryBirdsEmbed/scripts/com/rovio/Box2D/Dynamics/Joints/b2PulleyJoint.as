@@ -58,7 +58,6 @@ package com.rovio.Box2D.Dynamics.Joints
       
       public function b2PulleyJoint(param1:b2PulleyJointDef)
       {
-         var _loc2_:b2Mat22 = null;
          var _loc3_:Number = NaN;
          var _loc4_:Number = NaN;
          this.m_groundAnchor1 = new b2Vec2();

@@ -21,228 +21,71 @@ package § !@§
       public static const LOAD_STATE_STEP_2:int = 2;
       
       public static var §0J§:Number = -1;
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc1_)
-         {
-            §@!=§ = false;
-         }
-         if(!_loc2_)
-         {
-            §`!2§ = 0;
-         }
-         if(!_loc2_)
-         {
-            LOAD_STATE_STEP_2 = 2;
-            if(_loc1_)
-            {
-               addr54:
-               §0J§ = -1;
-            }
-            return;
-         }
-         §§goto(addr54);
-      }
+       
       
       private var §6§:Number = 0;
       
       public function §<v§(param1:Boolean, param2:String)
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_ || this)
-         {
-            super(param1,param2);
-         }
+         super(param1,param2);
       }
       
       override public function init() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && this))
-         {
-            super.init();
-            if(_loc2_ || _loc2_)
-            {
-               addr43:
-               this.initLoadingView();
-            }
-            return;
-         }
-         §§goto(addr43);
+         super.init();
+         this.initLoadingView();
       }
       
       protected function initLoadingView() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && this))
-         {
-            this.§]F§ = new §4!,§(this);
-            if(!(_loc1_ && _loc2_))
-            {
-               §]F§.init(§5A§.§;L§.Views.View_LevelLoad[0]);
-            }
-         }
+         this.§]F§ = new §4!,§(this);
+         §]F§.init(§5A§.§;L§.Views.View_LevelLoad[0]);
       }
       
       override public function activate() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            super.activate();
-            if(!(_loc1_ && _loc2_))
-            {
-               §+?§ = LOAD_STATE_STEP_1;
-               if(_loc2_)
-               {
-                  this.setLoadingText();
-               }
-            }
-         }
+         super.activate();
+         §+?§ = LOAD_STATE_STEP_1;
+         this.setLoadingText();
       }
       
       protected function setLoadingText() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc1_)
+         if(§[4§.§"!>§ != null && §]F§)
          {
-            §§push(§[4§.§"!>§ == null);
-            if(!(_loc2_ && this))
-            {
-               §§push(!§§pop());
-               if(_loc1_)
-               {
-                  if(§§pop())
-                  {
-                     if(_loc2_ && this)
-                     {
-                     }
-                  }
-                  §§goto(addr71);
-               }
-               §§pop();
-               if(!_loc2_)
-               {
-                  §§push(Boolean(§]F§));
-               }
-               §§goto(addr79);
-            }
-            addr71:
-            if(§§pop())
-            {
-               if(_loc1_ || _loc1_)
-               {
-                  addr79:
-                  §]F§.setText("LOADING " + §[4§.§"!>§.replace("-"," - "),"TextField_LevelLoading");
-               }
-            }
-            return;
+            §]F§.setText("LOADING " + §[4§.§"!>§.replace("-"," - "),"TextField_LevelLoading");
          }
-         §§goto(addr79);
       }
       
       override public function run(param1:Number) : int
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         §§push(super.run(param1));
-         if(_loc3_ || param1)
+         var _loc2_:int = super.run(param1);
+         if(_loc2_ != §1Q§.STATE_STATUS_RUNNING)
          {
-            §§push(int(§§pop()));
+            return _loc2_;
          }
-         var _loc2_:* = §§pop();
-         §§push(_loc2_);
-         if(_loc3_)
+         if(§+?§ == LOAD_STATE_STEP_1)
          {
-            if(§§pop() != §1Q§.STATE_STATUS_RUNNING)
+            §=w§.§ o§.clearLevel();
+            this.initLevelLoad();
+            §+?§ = LOAD_STATE_STEP_2;
+         }
+         else if(§+?§ == LOAD_STATE_STEP_2)
+         {
+            if(this.isReady())
             {
-               §§push(_loc2_);
-               if(!(_loc4_ && _loc2_))
-               {
-                  return §§pop();
-               }
-               addr53:
-               §§push(LOAD_STATE_STEP_1);
-               if(_loc3_ || _loc2_)
-               {
-                  if(§§pop() == §§pop())
-                  {
-                     if(!(_loc4_ && param1))
-                     {
-                        §=w§.§ o§.clearLevel();
-                        this.initLevelLoad();
-                        §+?§ = LOAD_STATE_STEP_2;
-                        if(_loc3_)
-                        {
-                           addr132:
-                           if(mNextState.length > 0)
-                           {
-                              if(!_loc4_)
-                              {
-                                 §§goto(addr138);
-                              }
-                           }
-                        }
-                        §§goto(addr132);
-                     }
-                     return §1Q§.STATE_STATUS_RUNNING;
-                  }
-                  addr92:
-                  if(§+?§ == LOAD_STATE_STEP_2)
-                  {
-                     §§push(this.isReady());
-                     if(_loc3_)
-                     {
-                        if(§§pop())
-                        {
-                           if(!(_loc4_ && _loc3_))
-                           {
-                              this.onLevelLoadReady();
-                              if(!_loc4_)
-                              {
-                                 addr119:
-                                 §§goto(addr132);
-                              }
-                              addr138:
-                              return §1Q§.STATE_STATUS_COMPLETED;
-                           }
-                           §§goto(addr119);
-                        }
-                        else
-                        {
-                           §§push(this.hasError());
-                        }
-                        §§goto(addr132);
-                     }
-                     if(§§pop())
-                     {
-                        if(_loc3_ || this)
-                        {
-                           this.onLevelLoadError();
-                        }
-                     }
-                  }
-                  §§goto(addr132);
-               }
-               §§goto(addr92);
+               this.onLevelLoadReady();
             }
-            else
+            else if(this.hasError())
             {
-               §§push(§+?§);
-               if(_loc3_)
-               {
-                  §§goto(addr53);
-               }
+               this.onLevelLoadError();
             }
          }
-         §§goto(addr92);
+         if(mNextState.length > 0)
+         {
+            return §1Q§.STATE_STATUS_COMPLETED;
+         }
+         return §1Q§.STATE_STATUS_RUNNING;
       }
       
       protected function initLevelLoad() : void
@@ -269,12 +112,7 @@ package § !@§
       
       protected function initLevelMain(param1:§@Z§) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            §=w§.§]a§(param1);
-         }
+         §=w§.§]a§(param1);
       }
    }
 }

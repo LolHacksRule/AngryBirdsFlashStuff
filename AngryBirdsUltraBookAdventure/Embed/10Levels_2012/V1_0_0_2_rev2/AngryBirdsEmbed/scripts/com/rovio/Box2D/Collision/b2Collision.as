@@ -297,9 +297,7 @@ package com.rovio.Box2D.Collision
          {
             return;
          }
-         var _loc18_:Number = 0.98;
-         var _loc19_:Number = 0.001;
-         if(_loc11_ > _loc18_ * _loc9_ + _loc19_)
+         if(_loc11_ > 0.98 * _loc9_ + 0.001)
          {
             _loc12_ = param4;
             _loc13_ = param2;
@@ -424,7 +422,6 @@ package com.rovio.Box2D.Collision
       
       public static function CollidePolygonAndCircle(param1:b2Manifold, param2:b2PolygonShape, param3:b2Transform, param4:b2CircleShape, param5:b2Transform) : void
       {
-         var _loc6_:b2ManifoldPoint = null;
          var _loc7_:Number = NaN;
          var _loc8_:Number = NaN;
          var _loc9_:Number = NaN;

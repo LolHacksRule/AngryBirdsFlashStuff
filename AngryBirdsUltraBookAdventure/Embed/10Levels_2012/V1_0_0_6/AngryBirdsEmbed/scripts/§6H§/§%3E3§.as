@@ -23,26 +23,7 @@ package §6H§
       public static const STATE_STATUS_COMPLETED:int = 3;
       
       public static var §,n§:Object = null;
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && §>3§))
-         {
-            §0s§ = "dummyState";
-            §&,§ = 0;
-            if(!_loc2_)
-            {
-               addr44:
-               §8! § = 1;
-               STATE_STATUS_RUNNING = 2;
-               STATE_STATUS_COMPLETED = 3;
-               §,n§ = null;
-            }
-            return;
-         }
-         §§goto(addr44);
-      }
+       
       
       public var §?z§:Boolean = false;
       
@@ -66,123 +47,49 @@ package §6H§
       
       public function §>3§(param1:Boolean, param2:String)
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
          super();
-         if(_loc3_)
+         this.mName = param2;
+         this.§^A§ = new Array();
+         this.§62§ = new Sprite();
+         if(param1)
          {
-            this.mName = param2;
-            if(!(_loc4_ && _loc3_))
-            {
-               this.§^A§ = new Array();
-               if(_loc3_)
-               {
-                  this.§62§ = new Sprite();
-                  if(param1)
-                  {
-                     if(_loc3_)
-                     {
-                        this.init();
-                     }
-                  }
-               }
-            }
+            this.init();
          }
       }
       
       public static function §&A§(param1:String) : String
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
+         if(§,n§)
          {
-            if(§,n§)
-            {
-               if(_loc3_ || param1)
-               {
-                  return §,n§[param1];
-               }
-            }
+            return §,n§[param1];
          }
          return null;
       }
       
       public function init() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            this.§?z§ = true;
-         }
+         this.§?z§ = true;
       }
       
       public function activate() : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
          var _loc1_:§0#§ = null;
-         if(_loc4_)
+         if(!this.§?z§)
          {
-            if(!this.§?z§)
-            {
-               if(!_loc5_)
-               {
-                  this.init();
-                  if(_loc4_)
-                  {
-                     addr30:
-                     §§push(this.§-f§);
-                     if(_loc4_ || _loc3_)
-                     {
-                        if(§§pop())
-                        {
-                           if(!_loc5_)
-                           {
-                              this.§62§.addChild(this.§-f§);
-                              addr42:
-                              if(_loc4_)
-                              {
-                                 addr61:
-                                 this.§-f§.§@`§();
-                                 addr59:
-                              }
-                           }
-                           §§goto(addr59);
-                        }
-                        var _loc2_:int = 0;
-                        var _loc3_:* = this.§^A§;
-                        for each(_loc1_ in _loc3_)
-                        {
-                           if(!(_loc5_ && _loc3_))
-                           {
-                              this.§62§.addChild(_loc1_);
-                              if(_loc4_ || _loc2_)
-                              {
-                                 _loc1_.§2!"§();
-                              }
-                           }
-                        }
-                        if(!_loc5_)
-                        {
-                           this.mNextState = "";
-                           if(_loc4_)
-                           {
-                              addr116:
-                              this.§>U§ = true;
-                           }
-                           return;
-                        }
-                        §§goto(addr116);
-                     }
-                     §§goto(addr61);
-                  }
-                  §§goto(addr42);
-               }
-               §§goto(addr61);
-            }
+            this.init();
          }
-         §§goto(addr30);
+         if(this.§-f§)
+         {
+            this.§62§.addChild(this.§-f§);
+            this.§-f§.§@`§();
+         }
+         for each(_loc1_ in this.§^A§)
+         {
+            this.§62§.addChild(_loc1_);
+            _loc1_.§2!"§();
+         }
+         this.mNextState = "";
+         this.§>U§ = true;
       }
       
       public function § Z§() : void
@@ -191,67 +98,27 @@ package §6H§
       
       public function deActivate() : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
          var _loc1_:§0#§ = null;
-         if(_loc5_)
+         if(this.§-f§)
          {
-            §§push(this.§-f§);
-            if(!(_loc4_ && _loc2_))
-            {
-               if(!§§pop())
-               {
-               }
-               §§goto(addr59);
-            }
-            §§pop().§2!"§();
-            if(_loc5_ || _loc2_)
-            {
-               this.§62§.removeChild(this.§-f§);
-            }
+            this.§-f§.§2!"§();
+            this.§62§.removeChild(this.§-f§);
          }
-         addr59:
-         if(!_loc4_)
+         for each(_loc1_ in this.§^A§)
          {
-            §§push(this.§-f§);
-         }
-         var _loc3_:* = this.§^A§;
-         for each(_loc1_ in _loc3_)
-         {
-            if(_loc5_)
-            {
-               _loc1_.§2!"§();
-               if(_loc4_)
-               {
-                  continue;
-               }
-            }
+            _loc1_.§2!"§();
             this.§62§.removeChild(_loc1_);
          }
-         §§push(this.§>U§);
-         if(!_loc4_)
+         if(!this.§>U§)
          {
-            if(!§§pop())
-            {
-               §§push(this.§#t§);
-               if(!(_loc4_ && _loc3_))
-               {
-                  §§goto(addr110);
-               }
-            }
-            else
-            {
-               this.§>U§ = false;
-               §§push(this.§#t§);
-            }
-            if(§§pop())
+            if(this.§#t§)
             {
                this.cleanup();
             }
             return;
          }
-         addr110:
-         if(§§pop())
+         this.§>U§ = false;
+         if(this.§#t§)
          {
             this.cleanup();
          }
@@ -259,159 +126,44 @@ package §6H§
       
       public function §9"§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc3_))
-         {
-            this.§#t§ = param1;
-         }
+         this.§#t§ = param1;
       }
       
       public function cleanup() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
+         if(!this.§?z§)
          {
-            if(!this.§?z§)
-            {
-               if(!_loc1_)
-               {
-                  return;
-               }
-               addr49:
-               §§push(this.§-f§);
-            }
-            else
-            {
-               §§push(this.§-f§);
-               if(!(_loc1_ && _loc2_))
-               {
-                  if(§§pop())
-                  {
-                     if(_loc2_)
-                     {
-                        §§goto(addr49);
-                     }
-                  }
-                  addr57:
-                  loop0:
-                  while(true)
-                  {
-                     §§push(this.§^A§);
-                     while(true)
-                     {
-                        if(§§pop().length <= 0)
-                        {
-                           if(_loc2_ || _loc1_)
-                           {
-                              break;
-                           }
-                           §§goto(addr101);
-                        }
-                        §§push(this.§^A§);
-                        if(_loc2_)
-                        {
-                           (§§pop().pop() as §0#§).clear();
-                           if(!_loc2_)
-                           {
-                              break;
-                           }
-                           continue loop0;
-                        }
-                     }
-                     if(this.§>U§)
-                     {
-                        if(_loc2_ || _loc1_)
-                        {
-                           §§goto(addr101);
-                        }
-                        addr101:
-                        this.deActivate();
-                        if(_loc2_)
-                        {
-                           addr105:
-                           this.§?z§ = false;
-                        }
-                        return;
-                     }
-                     §§goto(addr105);
-                  }
-               }
-            }
-            §§pop().clear();
-            if(!_loc1_)
-            {
-               addr54:
-               this.§-f§ = null;
-            }
-            §§goto(addr57);
+            return;
          }
-         §§goto(addr54);
+         if(this.§-f§)
+         {
+            this.§-f§.clear();
+            this.§-f§ = null;
+         }
+         while(this.§^A§.length > 0)
+         {
+            (this.§^A§.pop() as §0#§).clear();
+         }
+         if(this.§>U§)
+         {
+            this.deActivate();
+         }
+         this.§?z§ = false;
       }
       
       public function run(param1:Number) : int
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
+         if(!this.§?z§)
          {
-            §§push(this.§?z§);
-            if(!(_loc2_ && param1))
-            {
-               if(!§§pop())
-               {
-                  §§push(§9X§);
-                  §§push("WARNING: State -> run() method is called when state is not ready: ");
-                  if(_loc3_)
-                  {
-                     §§push(§§pop() + this.mName);
-                  }
-                  §§pop().log(§§pop());
-                  if(_loc3_ || this)
-                  {
-                     §§push(§&,§);
-                     if(_loc3_)
-                     {
-                        return §§pop();
-                     }
-                  }
-                  else
-                  {
-                     addr83:
-                     §§push(§8! §);
-                     if(_loc2_)
-                     {
-                        §§goto(addr88);
-                     }
-                  }
-                  return §§pop();
-               }
-               addr72:
-               if(!this.§>U§)
-               {
-                  if(!_loc2_)
-                  {
-                     §§push(§9X§);
-                     §§push("WARNING: State -> run() method is called when state is not active: ");
-                     if(!_loc2_)
-                     {
-                        §§push(§§pop() + this.mName);
-                     }
-                     §§pop().log(§§pop());
-                  }
-                  §§goto(addr83);
-               }
-               else
-               {
-                  §§push(STATE_STATUS_RUNNING);
-               }
-               addr88:
-               return §§pop();
-            }
-            §§goto(addr72);
+            §9X§.log("WARNING: State -> run() method is called when state is not ready: " + this.mName);
+            return §&,§;
          }
-         §§goto(addr83);
+         if(!this.§>U§)
+         {
+            §9X§.log("WARNING: State -> run() method is called when state is not active: " + this.mName);
+            return §8! §;
+         }
+         return STATE_STATUS_RUNNING;
       }
       
       public function isGenericState() : Boolean
@@ -437,32 +189,17 @@ package §6H§
       
       public function §%u§(param1:§0#§) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§^A§.push(param1);
-         }
+         this.§^A§.push(param1);
       }
       
       public function addChildAt(param1:DisplayObject, param2:Number) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(!_loc4_)
-         {
-            this.§62§.addChildAt(param1,param2);
-         }
+         this.§62§.addChildAt(param1,param2);
       }
       
       public function removeChild(param1:DisplayObject) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || param1)
-         {
-            this.§62§.removeChild(param1);
-         }
+         this.§62§.removeChild(param1);
       }
       
       public function contains(param1:DisplayObject) : Boolean
@@ -472,101 +209,29 @@ package §6H§
       
       public function getAppWidth() : int
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc2_)
+         if(this.§'X§)
          {
-            §§push(this.§'X§);
-            if(!(_loc1_ && this))
-            {
-               if(§§pop())
-               {
-                  if(_loc2_ || _loc1_)
-                  {
-                     §§push(this.§'X§);
-                  }
-                  else
-                  {
-                     §§goto(addr55);
-                  }
-               }
-               §§goto(addr55);
-            }
-            return §§pop().getAppWidth();
+            return this.§'X§.getAppWidth();
          }
-         addr55:
          return 0;
       }
       
       public function getAppHeight() : int
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
+         if(this.§'X§)
          {
-            §§push(this.§'X§);
-            if(!_loc2_)
-            {
-               if(§§pop())
-               {
-                  if(_loc1_ || _loc2_)
-                  {
-                     §§push(this.§'X§);
-                  }
-                  else
-                  {
-                     §§goto(addr49);
-                  }
-               }
-               §§goto(addr49);
-            }
-            return §§pop().getAppHeight();
+            return this.§'X§.getAppHeight();
          }
-         addr49:
          return 0;
       }
       
       public function setViewSize(param1:Number, param2:Number) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_ || this)
+         if(this.§-f§)
          {
-            §§push(this.§-f§);
-            if(_loc3_ || _loc3_)
-            {
-               if(§§pop())
-               {
-                  if(!_loc4_)
-                  {
-                     addr55:
-                     §§push(this.§-f§);
-                     if(_loc3_)
-                     {
-                        §§push(param1);
-                        if(_loc3_)
-                        {
-                           §§pop().viewWidth = §§pop();
-                           §§goto(addr74);
-                        }
-                        §§pop().viewHeight = §§pop();
-                        §§goto(addr74);
-                     }
-                  }
-                  §§goto(addr72);
-               }
-               addr74:
-               if(_loc3_ || _loc3_)
-               {
-                  addr72:
-                  §§push(this.§-f§);
-                  §§push(param2);
-               }
-               return;
-            }
-            §§goto(addr72);
+            this.§-f§.viewWidth = param1;
+            this.§-f§.viewHeight = param2;
          }
-         §§goto(addr55);
       }
       
       public function §'!6§() : int

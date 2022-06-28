@@ -8,12 +8,7 @@ package §3a§
       
       public function §"X§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function §,@§(param1:Class) : XML
