@@ -20,82 +20,20 @@ package §[!N§
       
       public function b2FrictionJointDef()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            this.§9!9§ = new b2Vec2();
-            while(true)
-            {
-               this.§^G§ = new b2Vec2();
-               while(!_loc2_)
-               {
-                  super();
-                  loop2:
-                  while(!(_loc2_ && _loc2_))
-                  {
-                     type = b2Joint.§8b§;
-                     while(true)
-                     {
-                        this.§4!G§ = 0;
-                        do
-                        {
-                           this.maxTorque = 0;
-                        }
-                        while(!(_loc1_ || _loc1_));
-                        
-                        if(!_loc2_)
-                        {
-                           if(!(_loc2_ && this))
-                           {
-                              break;
-                           }
-                           continue loop2;
-                        }
-                     }
-                     return;
-                  }
-               }
-            }
-         }
-         §§goto(addr74);
+         this.§9!9§ = new b2Vec2();
+         this.§^G§ = new b2Vec2();
+         super();
+         type = b2Joint.§8b§;
+         this.§4!G§ = 0;
+         this.maxTorque = 0;
       }
       
       public function §7R§(param1:b2Body, param2:b2Body, param3:b2Vec2) : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(!_loc5_)
-         {
-            §-!O§ = param1;
-            loop0:
-            while(true)
-            {
-               §3!u§ = param2;
-               while(true)
-               {
-                  this.§9!9§.SetV(§-!O§.GetLocalPoint(param3));
-                  addr60:
-                  while(!_loc5_)
-                  {
-                     if(_loc4_)
-                     {
-                        continue;
-                     }
-                     continue loop0;
-                  }
-               }
-            }
-         }
-         while(true)
-         {
-            this.§^G§.SetV(§3!u§.GetLocalPoint(param3));
-            if(_loc4_)
-            {
-               break;
-            }
-            §§goto(addr60);
-         }
+         §-!O§ = param1;
+         §3!u§ = param2;
+         this.§9!9§.SetV(§-!O§.GetLocalPoint(param3));
+         this.§^G§.SetV(§3!u§.GetLocalPoint(param3));
       }
    }
 }

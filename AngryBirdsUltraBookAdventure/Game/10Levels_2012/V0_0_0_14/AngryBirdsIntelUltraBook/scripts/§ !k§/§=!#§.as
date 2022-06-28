@@ -22,843 +22,166 @@ package § !k§
       public static const OFFSCREEN_X:Number = -250;
       
       public static const §3F§:String = "PauseState";
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc1_))
-         {
-            OFFSCREEN_X = -250;
-            do
-            {
-               §3F§ = "PauseState";
-            }
-            while(_loc1_);
-            
-         }
-      }
+       
       
       protected var §'!N§:§4F§ = null;
       
       public function §=!#§(param1:Boolean = false, param2:String = "PauseState")
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_ || _loc3_)
-         {
-            super(param1,param2);
-         }
+         super(param1,param2);
       }
       
       override public function init() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            super.init();
-         }
-         while(true)
-         {
-            §`-§ = new § C§(this);
-            while(!(_loc2_ && this))
-            {
-               §`-§.init(dynamic.§[6§.Views.View_LevelPause[0]);
-               if(!_loc2_)
-               {
-                  return;
-               }
-            }
-         }
+         super.init();
+         §`-§ = new § C§(this);
+         §`-§.init(dynamic.§[6§.Views.View_LevelPause[0]);
       }
       
       override public function activate() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc2_))
-         {
-            super.activate();
-         }
-         loop0:
-         do
-         {
-            this.openPauseMenu();
-            while(true)
-            {
-               §4!]§.§8C§.background.§&[§();
-               while(!_loc2_)
-               {
-                  this.setInitialButtonVisibilities();
-                  if(!(_loc2_ && this))
-                  {
-                     continue loop0;
-                  }
-               }
-            }
-         }
-         while(_loc2_ && _loc1_);
-         
+         super.activate();
+         this.openPauseMenu();
+         §4!]§.§8C§.background.§&[§();
+         this.setInitialButtonVisibilities();
       }
       
       protected function setInitialButtonVisibilities() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && this))
-         {
-            §`-§.getItemByName("Button_Help").setVisibility(false);
-            do
-            {
-               §`-§.getItemByName("Button_Sound").setVisibility(false);
-               do
-               {
-                  §`-§.getItemByName("MovieClip_SoundsOff").setVisibility(false);
-               }
-               while(_loc2_);
-               
-            }
-            while(_loc2_ && _loc2_);
-            
-         }
+         §`-§.getItemByName("Button_Help").setVisibility(false);
+         §`-§.getItemByName("Button_Sound").setVisibility(false);
+         §`-§.getItemByName("MovieClip_SoundsOff").setVisibility(false);
       }
       
       private function §?6§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc2_)
+         if(this.§'!N§)
          {
-            §§push(this.§'!N§);
-            if(_loc1_)
-            {
-               if(§§pop())
-               {
-                  if(_loc1_ || _loc2_)
-                  {
-                     addr74:
-                     this.§'!N§.stop();
-                  }
-                  do
-                  {
-                     this.§'!N§ = null;
-                  }
-                  while(_loc2_ && _loc1_);
-                  
-                  addr59:
-               }
-               return;
-            }
-            §§goto(addr74);
+            this.§'!N§.stop();
+            this.§'!N§ = null;
          }
-         §§goto(addr59);
       }
       
       protected function openPauseMenu() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc2_)
+         if(LevelManager.§^!F§ != null)
          {
-            if(LevelManager.§^!F§ != null)
-            {
-               while(true)
-               {
-                  (§`-§.getItemByName("TextField_LevelName") as §3!@§).§!!2§.text = LevelManager.§^!F§;
-                  addr180:
-                  while(true)
-                  {
-                  }
-                  addr59:
-                  if(_loc1_ || _loc1_)
-                  {
-                     return;
-                  }
-               }
-            }
-            loop2:
-            while(true)
-            {
-               (§`-§.getItemByName("Container_PauseMenu") as §9!#§).x = OFFSCREEN_X;
-               addr166:
-               while(true)
-               {
-                  this.§"!f§(false);
-                  while(!_loc2_)
-                  {
-                     §4!]§.pause();
-                     if(!(_loc1_ || _loc1_))
-                     {
-                        continue;
-                     }
-                     §§goto(addr59);
-                  }
-                  continue loop2;
-               }
-            }
+            (§`-§.getItemByName("TextField_LevelName") as §3!@§).§!!2§.text = LevelManager.§^!F§;
          }
-         while(true)
-         {
-            §`-§.getItemByName("MovieClip_SoundsOff").setVisibility(!AngryBirdsFP11.§`;§());
-            loop6:
-            while(true)
-            {
-               this.§?6§();
-               loop7:
-               while(true)
-               {
-                  this.§'!N§ = §5+§.§^Z§.§>Y§(§5+§.§^Z§.§=!a§(§`-§.getItemByName("Container_PauseMenu") as §9!#§,{"x":0},null,0.25),§5+§.§^Z§.§=!a§((§`-§.getItemByName("MovieClip_DarkBG") as §&!G§).mClip,{"alpha":1},{"alpha":0},0.25));
-                  loop8:
-                  while(true)
-                  {
-                     §§push(this.§'!N§);
-                     while(true)
-                     {
-                        §§pop().onComplete = this.§"4§;
-                        §§push(this.§'!N§);
-                        addr87:
-                        continue loop6;
-                        if(!_loc2_)
-                        {
-                           §§pop().play();
-                           if(_loc1_ || _loc2_)
-                           {
-                              if(_loc1_)
-                              {
-                                 continue loop7;
-                              }
-                              continue loop8;
-                           }
-                           continue loop6;
-                        }
-                     }
-                  }
-               }
-            }
-         }
+         (§`-§.getItemByName("Container_PauseMenu") as §9!#§).x = OFFSCREEN_X;
+         this.§"!f§(false);
+         §4!]§.pause();
+         §`-§.getItemByName("MovieClip_SoundsOff").setVisibility(!AngryBirdsFP11.§`;§());
+         this.§?6§();
+         this.§'!N§ = §5+§.§^Z§.§>Y§(§5+§.§^Z§.§=!a§(§`-§.getItemByName("Container_PauseMenu") as §9!#§,{"x":0},null,0.25),§5+§.§^Z§.§=!a§((§`-§.getItemByName("MovieClip_DarkBG") as §&!G§).mClip,{"alpha":1},{"alpha":0},0.25));
+         this.§'!N§.onComplete = this.§"4§;
+         this.§'!N§.play();
       }
       
       protected function §"4§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || this)
-         {
-            this.§"!f§(true);
-         }
-         do
-         {
-            this.§?6§();
-         }
-         while(_loc2_);
-         
+         this.§"!f§(true);
+         this.§?6§();
       }
       
       protected function §"!f§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            (§`-§.getItemByName("Button_Resume") as §,c§).setEnabled(param1);
-            while(true)
-            {
-               (§`-§.getItemByName("Button_Replay") as §,c§).setEnabled(param1);
-               while(_loc2_)
-               {
-                  (§`-§.getItemByName("Button_Menu") as §,c§).setEnabled(param1);
-                  loop3:
-                  while(!(_loc3_ && _loc2_))
-                  {
-                     (§`-§.getItemByName("Button_Sound") as §,c§).setEnabled(param1);
-                     if(_loc2_ || this)
-                     {
-                        addr48:
-                        if(_loc3_)
-                        {
-                           while(true)
-                           {
-                              (§`-§.getItemByName("Button_Help") as §,c§).setEnabled(param1);
-                              continue loop3;
-                              §§goto(addr48);
-                           }
-                           addr85:
-                        }
-                        return;
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr85);
+         (§`-§.getItemByName("Button_Resume") as §,c§).setEnabled(param1);
+         (§`-§.getItemByName("Button_Replay") as §,c§).setEnabled(param1);
+         (§`-§.getItemByName("Button_Menu") as §,c§).setEnabled(param1);
+         (§`-§.getItemByName("Button_Help") as §,c§).setEnabled(param1);
+         (§`-§.getItemByName("Button_Sound") as §,c§).setEnabled(param1);
       }
       
       protected function §6!h§(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc2_))
-         {
-            (§`-§.getItemByName("Button_Resume") as §,c§).setComponentVisualState(param1);
-            while(true)
-            {
-               (§`-§.getItemByName("Button_Replay") as §,c§).setComponentVisualState(param1);
-               while(true)
-               {
-                  (§`-§.getItemByName("Button_Menu") as §,c§).setComponentVisualState(param1);
-                  §§goto(addr93);
-               }
-            }
-         }
-         addr93:
-         while(true)
-         {
-            (§`-§.getItemByName("Button_Help") as §,c§).setComponentVisualState(param1);
-            do
-            {
-               (§`-§.getItemByName("Button_Sound") as §,c§).setComponentVisualState(param1);
-            }
-            while(_loc2_ && _loc3_);
-            
-            if(!_loc2_)
-            {
-               if(!(_loc2_ && _loc3_))
-               {
-                  if(_loc3_)
-                  {
-                     break;
-                  }
-                  continue loop0;
-               }
-               continue loop1;
-            }
-         }
+         (§`-§.getItemByName("Button_Resume") as §,c§).setComponentVisualState(param1);
+         (§`-§.getItemByName("Button_Replay") as §,c§).setComponentVisualState(param1);
+         (§`-§.getItemByName("Button_Menu") as §,c§).setComponentVisualState(param1);
+         (§`-§.getItemByName("Button_Help") as §,c§).setComponentVisualState(param1);
+         (§`-§.getItemByName("Button_Sound") as §,c§).setComponentVisualState(param1);
       }
       
       protected function closePauseMenu() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            this.§?6§();
-            while(true)
-            {
-               this.§'!N§ = §5+§.§^Z§.§>Y§(§5+§.§^Z§.§=!a§(§`-§.getItemByName("Container_PauseMenu") as §9!#§,{"x":OFFSCREEN_X},null,0.25),§5+§.§^Z§.§=!a§((§`-§.getItemByName("MovieClip_DarkBG") as §&!G§).mClip,{"alpha":0},{"alpha":1},0.25));
-               loop1:
-               for(; !(_loc2_ && _loc2_); while(!(_loc2_ && _loc2_))
-               {
-                  §§goto(addr60);
-               })
-               {
-                  §§push(this.§'!N§);
-                  while(true)
-                  {
-                     §§pop().onComplete = this.§91§;
-                     continue loop1;
-                     §§goto(addr60);
-                  }
-               }
-            }
-         }
-         addr60:
-         while(true)
-         {
-            §§push(this.§'!N§);
-            if(_loc1_ || _loc2_)
-            {
-               §§pop().play();
-               if(!_loc2_)
-               {
-                  break;
-               }
-               continue loop1;
-            }
-            continue loop2;
-         }
+         this.§?6§();
+         this.§'!N§ = §5+§.§^Z§.§>Y§(§5+§.§^Z§.§=!a§(§`-§.getItemByName("Container_PauseMenu") as §9!#§,{"x":OFFSCREEN_X},null,0.25),§5+§.§^Z§.§=!a§((§`-§.getItemByName("MovieClip_DarkBG") as §&!G§).mClip,{"alpha":0},{"alpha":1},0.25));
+         this.§'!N§.onComplete = this.§91§;
+         this.§'!N§.play();
       }
       
       protected function §91§() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc1_)
-         {
-            mNextState = this.§^Q§();
-         }
-         do
-         {
-            this.§?6§();
-         }
-         while(_loc1_ && this);
-         
+         mNextState = this.§^Q§();
+         this.§?6§();
       }
       
       override public function run(param1:Number) : int
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         §§push(super.run(param1));
-         if(!_loc4_)
+         var _loc2_:int = super.run(param1);
+         if(_loc2_ != §+_§.STATE_STATUS_RUNNING)
          {
-            §§push(int(§§pop()));
+            return _loc2_;
          }
-         var _loc2_:* = §§pop();
-         if(!(_loc4_ && param1))
+         if(mNextState.length > 0)
          {
-            §§push(_loc2_);
-            if(!_loc4_)
-            {
-               if(§§pop() == §+_§.STATE_STATUS_RUNNING)
-               {
-                  while(mNextState.length > 0)
-                  {
-                     if(!_loc3_)
-                     {
-                        if(!(_loc4_ && _loc2_))
-                        {
-                           break;
-                        }
-                        addr88:
-                        return _loc2_;
-                     }
-                     if(_loc3_ || _loc2_)
-                     {
-                        return §+_§.STATE_STATUS_COMPLETED;
-                     }
-                  }
-                  return §+_§.STATE_STATUS_RUNNING;
-               }
-            }
+            return §+_§.STATE_STATUS_COMPLETED;
          }
-         §§goto(addr88);
+         return §+_§.STATE_STATUS_RUNNING;
       }
       
       override public function deActivate() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            super.deActivate();
-         }
-         do
-         {
-            this.§?6§();
-            do
-            {
-               this.§6!h§(§5!a§.COMPONENT_STATE_ACTIVE_DEFAULT);
-            }
-            while(_loc1_);
-            
-         }
-         while(!(_loc2_ || this));
-         
+         super.deActivate();
+         this.§?6§();
+         this.§6!h§(§5!a§.COMPONENT_STATE_ACTIVE_DEFAULT);
       }
       
       override public function cleanup() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            super.cleanup();
-         }
+         super.cleanup();
       }
       
       override public function uiInteractionHandler(param1:int, param2:String, param3:§7!"§) : void
       {
-         var _loc9_:Boolean = true;
-         var _loc10_:Boolean = false;
          var _loc4_:* = false;
          var _loc5_:* = false;
          var _loc6_:§`o§ = null;
-         var _loc7_:* = param2;
-         if(_loc9_)
+         switch(param2)
          {
-            §§push("HELP");
-            if(_loc9_)
-            {
-               §§push(_loc7_);
-               if(!(_loc10_ && param2))
+            case "HELP":
+               this.closePauseMenu();
+               for each(_loc6_ in §4!]§.§8C§.slingshot.§9q§)
                {
-                  if(§§pop() === §§pop())
-                  {
-                     if(!_loc10_)
-                     {
-                        §§push(0);
-                        if(_loc10_ && param3)
-                        {
-                        }
-                     }
-                     else
-                     {
-                        addr319:
-                        §§push(3);
-                        if(_loc10_)
-                        {
-                           addr413:
-                        }
-                     }
-                  }
-                  else
-                  {
-                     §§push("RESTART_LEVEL");
-                     if(!(_loc10_ && param1))
-                     {
-                        §§push(_loc7_);
-                        if(_loc9_ || param3)
-                        {
-                           addr270:
-                           if(§§pop() === §§pop())
-                           {
-                              if(!(_loc10_ && param3))
-                              {
-                                 §§push(1);
-                                 if(_loc9_ || param1)
-                                 {
-                                 }
-                              }
-                              else
-                              {
-                                 addr360:
-                                 §§push(5);
-                                 if(_loc10_ && param1)
-                                 {
-                                 }
-                              }
-                              §§goto(addr418);
-                           }
-                           else
-                           {
-                              §§push("RESUME_LEVEL");
-                              if(_loc9_ || param2)
-                              {
-                                 addr295:
-                                 §§push(_loc7_);
-                                 if(_loc9_)
-                                 {
-                                    if(§§pop() === §§pop())
-                                    {
-                                       if(_loc9_ || param1)
-                                       {
-                                          §§push(2);
-                                          if(_loc10_)
-                                          {
-                                             addr340:
-                                          }
-                                          §§goto(addr418);
-                                       }
-                                       else
-                                       {
-                                          §§goto(addr319);
-                                       }
-                                    }
-                                    else
-                                    {
-                                       §§push("END_LEVEL");
-                                       if(!_loc10_)
-                                       {
-                                          §§push(_loc7_);
-                                          if(!_loc10_)
-                                          {
-                                             if(§§pop() === §§pop())
-                                             {
-                                                if(!_loc10_)
-                                                {
-                                                   §§goto(addr319);
-                                                }
-                                                else
-                                                {
-                                                   §§goto(addr360);
-                                                }
-                                             }
-                                             else
-                                             {
-                                                §§push("MENU");
-                                                if(!_loc10_)
-                                                {
-                                                   §§push(_loc7_);
-                                                   if(!_loc10_)
-                                                   {
-                                                      addr329:
-                                                      if(§§pop() === §§pop())
-                                                      {
-                                                         if(_loc9_ || param2)
-                                                         {
-                                                            addr337:
-                                                            §§push(4);
-                                                            if(_loc9_)
-                                                            {
-                                                               §§goto(addr340);
-                                                            }
-                                                            else
-                                                            {
-                                                               addr406:
-                                                               §§goto(addr418);
-                                                            }
-                                                         }
-                                                         §§goto(addr418);
-                                                      }
-                                                      else
-                                                      {
-                                                         §§push("TOGGLE_SOUNDS");
-                                                         if(_loc9_ || param2)
-                                                         {
-                                                            §§push(_loc7_);
-                                                            if(!_loc10_)
-                                                            {
-                                                               addr352:
-                                                               if(§§pop() === §§pop())
-                                                               {
-                                                                  if(!(_loc10_ && this))
-                                                                  {
-                                                                     §§goto(addr360);
-                                                                  }
-                                                                  else
-                                                                  {
-                                                                     addr410:
-                                                                     §§push(7);
-                                                                     if(!_loc10_)
-                                                                     {
-                                                                        §§goto(addr413);
-                                                                     }
-                                                                     §§goto(addr418);
-                                                                  }
-                                                               }
-                                                               else
-                                                               {
-                                                                  §§push("TOGGLE_PARTICLES");
-                                                                  if(_loc9_ || this)
-                                                                  {
-                                                                  }
-                                                                  addr408:
-                                                                  if(§§pop() === _loc7_)
-                                                                  {
-                                                                     §§goto(addr410);
-                                                                  }
-                                                                  else
-                                                                  {
-                                                                     addr418:
-                                                                     loop0:
-                                                                     while(true)
-                                                                     {
-                                                                        switch(§§pop())
-                                                                        {
-                                                                           case 0:
-                                                                              this.closePauseMenu();
-                                                                              if(_loc9_)
-                                                                              {
-                                                                                 §§push(0);
-                                                                                 if(_loc10_)
-                                                                                 {
-                                                                                    continue;
-                                                                                 }
-                                                                                 _loc7_ = §§pop();
-                                                                                 if(_loc9_)
-                                                                                 {
-                                                                                    for each(_loc6_ in §4!]§.§8C§.slingshot.§9q§)
-                                                                                    {
-                                                                                       if(_loc9_)
-                                                                                       {
-                                                                                          AngryBirdsFP11.sUserProgress.§`!I§(_loc6_.name,false);
-                                                                                       }
-                                                                                    }
-                                                                                 }
-                                                                                 if(!(_loc10_ && this))
-                                                                                 {
-                                                                                    break loop0;
-                                                                                 }
-                                                                                 addr83:
-                                                                                 if(true)
-                                                                                 {
-                                                                                    break loop0;
-                                                                                 }
-                                                                              }
-                                                                              else
-                                                                              {
-                                                                                 addr131:
-                                                                              }
-                                                                              §`-§.getItemByName("MovieClip_ParticlesOff").setVisibility(!_loc5_);
-                                                                              if(!_loc10_)
-                                                                              {
-                                                                                 if(_loc9_)
-                                                                                 {
-                                                                                    if(_loc9_)
-                                                                                    {
-                                                                                       break loop0;
-                                                                                    }
-                                                                                    break;
-                                                                                 }
-                                                                                 §`-§.getItemByName("MovieClip_SoundsOff").setVisibility(!_loc4_);
-                                                                                 addr165:
-                                                                                 break loop0;
-                                                                                 addr165:
-                                                                                 addr160:
-                                                                              }
-                                                                              break loop0;
-                                                                           case 1:
-                                                                              mNextState = this.set();
-                                                                              §%]§.§=>§();
-                                                                              break loop0;
-                                                                              addr223:
-                                                                              addr216:
-                                                                           case 2:
-                                                                              this.closePauseMenu();
-                                                                              break;
-                                                                           case 3:
-                                                                              break loop0;
-                                                                           case 4:
-                                                                              §6!H§.§[!W§();
-                                                                              mNextState = this.§"q§();
-                                                                              if(_loc9_)
-                                                                              {
-                                                                                 break loop0;
-                                                                              }
-                                                                              break loop0;
-                                                                              addr196:
-                                                                           case 5:
-                                                                              addr179:
-                                                                              §§push(AngryBirdsFP11.§`;§());
-                                                                              if(!(_loc10_ && param2))
-                                                                              {
-                                                                                 §§push(!§§pop());
-                                                                              }
-                                                                              _loc4_ = §§pop();
-                                                                              AngryBirdsFP11.§0S§(_loc4_);
-                                                                              §§goto(addr165);
-                                                                              addr180:
-                                                                           case 6:
-                                                                              §§push(§4!]§.§;!;§());
-                                                                              if(_loc9_)
-                                                                              {
-                                                                                 if(!_loc10_)
-                                                                                 {
-                                                                                    addr142:
-                                                                                    _loc5_ = !§§pop();
-                                                                                    if(_loc9_ || param2)
-                                                                                    {
-                                                                                       if(!_loc10_)
-                                                                                       {
-                                                                                          §4!]§.§0g§(_loc5_);
-                                                                                          if(_loc9_ || this)
-                                                                                          {
-                                                                                             if(!(_loc10_ && param2))
-                                                                                             {
-                                                                                                if(_loc9_ || param1)
-                                                                                                {
-                                                                                                   if(!(_loc10_ && param3))
-                                                                                                   {
-                                                                                                      §§goto(addr131);
-                                                                                                   }
-                                                                                                   else
-                                                                                                   {
-                                                                                                      §§goto(addr223);
-                                                                                                   }
-                                                                                                }
-                                                                                                §§goto(addr216);
-                                                                                             }
-                                                                                             §§goto(addr160);
-                                                                                          }
-                                                                                          break loop0;
-                                                                                       }
-                                                                                       §§goto(addr196);
-                                                                                    }
-                                                                                    else
-                                                                                    {
-                                                                                       §§goto(addr180);
-                                                                                    }
-                                                                                 }
-                                                                                 else
-                                                                                 {
-                                                                                    §§goto(addr179);
-                                                                                 }
-                                                                                 §§goto(addr179);
-                                                                              }
-                                                                              §§goto(addr142);
-                                                                           case 7:
-                                                                              AngryBirdsFP11.§`!c§.§catch§();
-                                                                              if(!(_loc10_ && param2))
-                                                                              {
-                                                                                 if(!_loc10_)
-                                                                                 {
-                                                                                    §§goto(addr83);
-                                                                                 }
-                                                                                 else
-                                                                                 {
-                                                                                    §§goto(addr142);
-                                                                                 }
-                                                                              }
-                                                                        }
-                                                                        break;
-                                                                     }
-                                                                     return;
-                                                                     §§push(8);
-                                                                  }
-                                                                  §§goto(addr418);
-                                                               }
-                                                               §§goto(addr410);
-                                                            }
-                                                            addr380:
-                                                            if(§§pop() === §§pop())
-                                                            {
-                                                               if(!(_loc10_ && this))
-                                                               {
-                                                                  §§push(6);
-                                                                  if(!(_loc10_ && param3))
-                                                                  {
-                                                                     §§goto(addr406);
-                                                                  }
-                                                                  §§goto(addr418);
-                                                               }
-                                                               else
-                                                               {
-                                                                  §§goto(addr410);
-                                                               }
-                                                            }
-                                                            else
-                                                            {
-                                                               §§goto(addr408);
-                                                               §§push("FULLSCREEN_BUTTON");
-                                                            }
-                                                            §§goto(addr410);
-                                                         }
-                                                         §§push(_loc7_);
-                                                         if(!_loc10_)
-                                                         {
-                                                            §§goto(addr380);
-                                                         }
-                                                         §§goto(addr408);
-                                                      }
-                                                   }
-                                                   §§goto(addr380);
-                                                }
-                                                §§goto(addr408);
-                                             }
-                                             §§goto(addr418);
-                                          }
-                                          §§goto(addr352);
-                                       }
-                                       §§goto(addr408);
-                                    }
-                                    §§goto(addr418);
-                                 }
-                                 §§goto(addr329);
-                              }
-                              §§goto(addr408);
-                           }
-                        }
-                        §§goto(addr380);
-                     }
-                     §§goto(addr295);
-                  }
-                  §§goto(addr418);
+                  AngryBirdsFP11.sUserProgress.§`!I§(_loc6_.name,false);
                }
-               §§goto(addr270);
-            }
-            §§goto(addr295);
+               break;
+            case "RESTART_LEVEL":
+               mNextState = this.set();
+               §%]§.§=>§();
+               break;
+            case "RESUME_LEVEL":
+               this.closePauseMenu();
+               break;
+            case "END_LEVEL":
+               break;
+            case "MENU":
+               §6!H§.§[!W§();
+               mNextState = this.§"q§();
+               break;
+            case "TOGGLE_SOUNDS":
+               _loc4_ = !AngryBirdsFP11.§`;§();
+               AngryBirdsFP11.§0S§(_loc4_);
+               §`-§.getItemByName("MovieClip_SoundsOff").setVisibility(!_loc4_);
+               break;
+            case "TOGGLE_PARTICLES":
+               _loc5_ = !§4!]§.§;!;§();
+               §4!]§.§0g§(_loc5_);
+               §`-§.getItemByName("MovieClip_ParticlesOff").setVisibility(!_loc5_);
+               break;
+            case "FULLSCREEN_BUTTON":
+               AngryBirdsFP11.§`!c§.§catch§();
          }
-         §§goto(addr337);
       }
       
       protected function §^Q§() : String

@@ -36,112 +36,12 @@ package §<-§
       
       public static var enabled:Boolean = false;
       
-      private static var §=N§:Vector.<§#z§>;
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc2_))
-         {
-            §``§ = "trackEvent";
-            loop0:
-            while(true)
-            {
-               TRACKING_FUNCTION_10_PERCENT = "trackEvent10Percent";
-               loop1:
-               while(true)
-               {
-                  TRACKING_FUNCTION_1_PERCENT = "trackEvent1Percent";
-                  loop2:
-                  while(true)
-                  {
-                     §^!u§ = "flash";
-                     addr170:
-                     while(true)
-                     {
-                        §+!q§ = "initialized";
-                        loop4:
-                        while(true)
-                        {
-                           §@!<§ = "loaded";
-                           loop5:
-                           while(true)
-                           {
-                              §[@§ = "level-started";
-                              addr155:
-                              while(true)
-                              {
-                                 §0O§ = "level-completed";
-                                 while(true)
-                                 {
-                                    ACTION_GPU_FPS_REPORT = "gpu-rendering";
-                                    while(_loc1_)
-                                    {
-                                       if(!_loc2_)
-                                       {
-                                          if(_loc1_)
-                                          {
-                                             ACTION_CPU_FPS_REPORT = "cpu-rendering";
-                                             continue loop4;
-                                          }
-                                          continue loop0;
-                                       }
-                                       continue loop2;
-                                       if(_loc2_ && _loc1_)
-                                       {
-                                          continue;
-                                       }
-                                       if(!_loc1_)
-                                       {
-                                          continue loop5;
-                                       }
-                                       §<!q§ = "crash-trace";
-                                       while(true)
-                                       {
-                                          §8!D§ = "mem-edit";
-                                          addr55:
-                                          while(!_loc2_)
-                                          {
-                                             continue loop1;
-                                          }
-                                       }
-                                    }
-                                 }
-                              }
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         while(true)
-         {
-            §=N§ = new Vector.<§#z§>();
-            if(!_loc2_)
-            {
-               if(_loc1_)
-               {
-                  if(_loc1_)
-                  {
-                     break;
-                  }
-                  §§goto(addr170);
-               }
-               §§goto(addr55);
-            }
-            §§goto(addr46);
-         }
-      }
+      private static var §=N§:Vector.<§#z§> = new Vector.<§#z§>();
+       
       
       public function §5Z§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function § !j§(param1:DisplayObject, param2:String) : void
@@ -150,37 +50,19 @@ package §<-§
       
       public static function §&!v§(param1:String, param2:String = null, param3:int = 0) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!(_loc4_ && param2))
-         {
-            trackEvent(§^!u§,param1,param2,param3);
-         }
+         trackEvent(§^!u§,param1,param2,param3);
       }
       
       private static function trackEvent(param1:String, param2:String, param3:String, param4:int = 0) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(_loc6_)
-         {
-            trackSampledEvent(§``§,param1,param2,param3,param4);
-         }
+         trackSampledEvent(§``§,param1,param2,param3,param4);
       }
       
       protected static function trackSampledEvent(param1:String, param2:String, param3:String, param4:String, param5:int = 0) : void
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
-         if(!(_loc7_ && param1))
+         if(enabled)
          {
-            if(enabled)
-            {
-               if(!(_loc7_ && param3))
-               {
-                  §+!i§.§>!y§(param1,param2,param3,param4,param5);
-               }
-            }
+            §+!i§.§>!y§(param1,param2,param3,param4,param5);
          }
       }
    }

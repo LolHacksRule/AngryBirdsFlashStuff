@@ -9,25 +9,12 @@ package §`w§
    public class b2ContactListener
    {
       
-      b2internal static var §8=§:b2ContactListener;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || b2ContactListener)
-         {
-            §8=§ = new b2ContactListener();
-         }
-      }
+      b2internal static var §8=§:b2ContactListener = new b2ContactListener();
+       
       
       public function b2ContactListener()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc2_)
-         {
-            super();
-         }
+         super();
       }
       
       public function BeginContact(param1:b2Contact) : void

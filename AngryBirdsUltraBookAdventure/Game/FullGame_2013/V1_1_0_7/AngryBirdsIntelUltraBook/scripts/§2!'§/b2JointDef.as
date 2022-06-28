@@ -21,46 +21,12 @@ package §2!'§
       
       public function b2JointDef()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            super();
-            loop0:
-            while(true)
-            {
-               this.type = b2Joint.§'2§;
-               loop1:
-               while(true)
-               {
-                  this.§]!=§ = null;
-                  while(true)
-                  {
-                     this.§19§ = null;
-                     while(_loc2_ || this)
-                     {
-                        continue loop1;
-                        loop4:
-                        while(_loc2_ || _loc2_)
-                        {
-                           continue loop0;
-                           while(true)
-                           {
-                              this.collideConnected = false;
-                              if(!(_loc1_ && _loc2_))
-                              {
-                                 break;
-                              }
-                              continue loop4;
-                           }
-                           return;
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr64);
+         super();
+         this.type = b2Joint.§'2§;
+         this.§]!=§ = null;
+         this.§19§ = null;
+         this.§"@§ = null;
+         this.collideConnected = false;
       }
    }
 }

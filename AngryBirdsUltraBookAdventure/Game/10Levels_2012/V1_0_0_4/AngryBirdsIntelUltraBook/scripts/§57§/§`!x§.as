@@ -18,57 +18,17 @@ package §57§
       
       public function §`!x§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public function set delay(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc3_))
+         this.§1!o§ = param1;
+         if(param1 < 0)
          {
-            this.§1!o§ = param1;
+            this.§1!o§ = 0;
          }
-         loop0:
-         while(true)
-         {
-            if(param1 >= 0)
-            {
-               do
-               {
-                  §§push(this);
-                  §§push(this.§1!o§);
-                  if(_loc3_)
-                  {
-                     §§push(-§§pop());
-                     if(!_loc2_)
-                     {
-                        §§push(§§pop() * 1000);
-                     }
-                  }
-                  §§pop().§=U§ = §§pop();
-                  if(!_loc3_)
-                  {
-                     continue loop0;
-                  }
-               }
-               while(!(_loc3_ || _loc2_));
-               
-               return;
-               addr29:
-            }
-            while(true)
-            {
-               this.§1!o§ = 0;
-               continue loop0;
-               §§goto(addr63);
-            }
-         }
+         this.§=U§ = -this.§1!o§ * 1000;
       }
       
       public function get isCompleted() : Boolean
@@ -83,22 +43,12 @@ package §57§
       
       public function set §^!K§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§+!p§ = param1;
-         }
+         this.§+!p§ = param1;
       }
       
       public function set §-3§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§]!^§ = param1;
-         }
+         this.§]!^§ = param1;
       }
       
       public function get §-3§() : Boolean
@@ -108,28 +58,15 @@ package §57§
       
       public function set onComplete(param1:Function) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc2_))
+         if(!this.isCompleted)
          {
-            if(!this.isCompleted)
-            {
-               if(_loc3_)
-               {
-                  this.§@V§ = param1;
-               }
-            }
+            this.§@V§ = param1;
          }
       }
       
       public function set §3!9§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && this))
-         {
-            this.§5u§ = param1;
-         }
+         this.§5u§ = param1;
       }
       
       public function get §3!9§() : Boolean

@@ -20,23 +20,7 @@ package §^B§
       
       public function §[_§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc1_)
-         {
-         }
-         if(_loc2_ || _loc2_)
-         {
-            do
-            {
-               super();
-               while(_loc1_ && _loc1_)
-               {
-               }
-            }
-            while(_loc1_ && this);
-            
-         }
+         super();
       }
    }
 }

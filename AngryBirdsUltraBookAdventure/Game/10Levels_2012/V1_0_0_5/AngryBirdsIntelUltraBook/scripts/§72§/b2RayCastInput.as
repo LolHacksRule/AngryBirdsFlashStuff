@@ -14,68 +14,18 @@ package §72§
       
       public function b2RayCastInput(param1:b2Vec2 = null, param2:b2Vec2 = null, param3:Number = 1)
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!_loc4_)
+         this.p1 = new b2Vec2();
+         this.p2 = new b2Vec2();
+         super();
+         if(param1)
          {
-            this.p1 = new b2Vec2();
-            loop0:
-            while(true)
-            {
-               this.p2 = new b2Vec2();
-               loop1:
-               while(true)
-               {
-                  super();
-                  loop2:
-                  while(true)
-                  {
-                     if(param1)
-                     {
-                        while(true)
-                        {
-                           this.p1.SetV(param1);
-                           addr98:
-                           while(true)
-                           {
-                           }
-                           addr71:
-                           if(!_loc4_)
-                           {
-                              continue loop1;
-                           }
-                        }
-                     }
-                     while(true)
-                     {
-                        if(!param2)
-                        {
-                           do
-                           {
-                              this.§&y§ = param3;
-                           }
-                           while(!_loc5_);
-                           
-                           return;
-                           addr24:
-                        }
-                        addr64:
-                        if(_loc5_ || param2)
-                        {
-                           continue loop2;
-                        }
-                        while(!(_loc4_ && param3))
-                        {
-                           §§goto(addr71);
-                        }
-                        §§goto(addr98);
-                     }
-                     continue loop0;
-                  }
-               }
-            }
+            this.p1.SetV(param1);
          }
-         §§goto(addr98);
+         if(param2)
+         {
+            this.p2.SetV(param2);
+         }
+         this.§&y§ = param3;
       }
    }
 }

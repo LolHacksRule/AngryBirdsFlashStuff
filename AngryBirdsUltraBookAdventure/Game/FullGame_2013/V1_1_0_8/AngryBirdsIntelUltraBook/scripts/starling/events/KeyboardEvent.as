@@ -6,21 +6,7 @@ package starling.events
       public static const KEY_UP:String = "keyUp";
       
       public static const KEY_DOWN:String = "keyDown";
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc1_)
-         {
-            KEY_UP = "keyUp";
-         }
-         do
-         {
-            KEY_DOWN = "keyDown";
-         }
-         while(_loc2_);
-         
-      }
+       
       
       private var §6&§:uint;
       
@@ -36,52 +22,13 @@ package starling.events
       
       public function KeyboardEvent(param1:String, param2:uint = 0, param3:uint = 0, param4:uint = 0, param5:Boolean = false, param6:Boolean = false, param7:Boolean = false)
       {
-         var _loc8_:Boolean = true;
-         var _loc9_:Boolean = false;
-         if(_loc8_)
-         {
-            super(param1,false);
-            loop0:
-            while(true)
-            {
-               this.§6&§ = param2;
-               while(true)
-               {
-                  this.§?h§ = param3;
-                  while(!(_loc9_ && param1))
-                  {
-                     this.§2-§ = param5;
-                     loop4:
-                     while(!(_loc9_ && param1))
-                     {
-                        this.§,q§ = param6;
-                        while(true)
-                        {
-                           if(_loc8_)
-                           {
-                              if(!_loc8_)
-                              {
-                                 break;
-                              }
-                              if(!_loc9_)
-                              {
-                                 continue;
-                              }
-                              continue loop0;
-                           }
-                           continue loop4;
-                        }
-                        while(true)
-                        {
-                           this.§@j§ = param4;
-                           break loop4;
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr94);
+         super(param1,false);
+         this.§6&§ = param2;
+         this.§?h§ = param3;
+         this.§@j§ = param4;
+         this.§2-§ = param5;
+         this.§,q§ = param6;
+         this.§+!Q§ = param7;
       }
       
       public function get charCode() : uint

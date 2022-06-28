@@ -15,16 +15,8 @@ package §&a§
    public class b2RevoluteJoint extends b2Joint
    {
       
-      private static var §[U§:b2Vec2;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            §[U§ = new b2Vec2();
-         }
-      }
+      private static var §[U§:b2Vec2 = new b2Vec2();
+       
       
       private var §&+§:b2Mat22;
       
@@ -70,194 +62,30 @@ package §&a§
       
       public function b2RevoluteJoint(param1:b2RevoluteJointDef)
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc2_))
-         {
-            this.§&+§ = new b2Mat22();
-            loop0:
-            while(true)
-            {
-               this.K1 = new b2Mat22();
-               loop1:
-               while(true)
-               {
-                  this.K2 = new b2Mat22();
-                  loop2:
-                  while(true)
-                  {
-                     this.K3 = new b2Mat22();
-                     loop3:
-                     while(true)
-                     {
-                        this.impulse3 = new b2Vec3();
-                        loop4:
-                        while(true)
-                        {
-                           this.impulse2 = new b2Vec2();
-                           loop5:
-                           while(true)
-                           {
-                              this.§0c§ = new b2Vec2();
-                              while(true)
-                              {
-                                 this.m_localAnchor1 = new b2Vec2();
-                                 addr238:
-                                 addr179:
-                                 while(true)
-                                 {
-                                    this.m_localAnchor2 = new b2Vec2();
-                                    continue loop4;
-                                 }
-                                 addr179:
-                                 while(!(_loc3_ && _loc3_))
-                                 {
-                                    continue loop3;
-                                 }
-                              }
-                              addr84:
-                              if(_loc2_ || this)
-                              {
-                                 this.§2'§ = param1.§2!s§;
-                                 while(true)
-                                 {
-                                    if(!(_loc3_ && _loc2_))
-                                    {
-                                       if(_loc3_)
-                                       {
-                                          break;
-                                       }
-                                       continue;
-                                    }
-                                    loop16:
-                                    while(true)
-                                    {
-                                       if(!_loc3_)
-                                       {
-                                          if(!_loc3_)
-                                          {
-                                             this.§1!'§ = 0;
-                                             loop17:
-                                             for(; !_loc3_; if(!(_loc2_ || this))
-                                             {
-                                                continue;
-                                             },if(_loc3_ && this)
-                                             {
-                                                continue loop1;
-                                             },§§goto(addr84))
-                                             {
-                                                this.§ !6§ = param1.§#!I§;
-                                                loop18:
-                                                while(true)
-                                                {
-                                                   this.§>!j§ = param1.§06§;
-                                                   loop19:
-                                                   while(true)
-                                                   {
-                                                      this.§0&§ = param1.§2I§;
-                                                      loop20:
-                                                      while(true)
-                                                      {
-                                                         this.§0i§ = param1.motorSpeed;
-                                                         addr97:
-                                                         addr172:
-                                                         loop21:
-                                                         while(!(_loc3_ && this))
-                                                         {
-                                                            if(!_loc3_)
-                                                            {
-                                                               this.§;!m§ = param1.§-Q§;
-                                                               while(true)
-                                                               {
-                                                                  if(!_loc3_)
-                                                                  {
-                                                                     if(!_loc3_)
-                                                                     {
-                                                                        if(!_loc3_)
-                                                                        {
-                                                                           if(_loc2_)
-                                                                           {
-                                                                              continue loop17;
-                                                                           }
-                                                                           continue loop18;
-                                                                        }
-                                                                        continue loop19;
-                                                                     }
-                                                                     continue loop20;
-                                                                  }
-                                                                  continue loop21;
-                                                                  addr34:
-                                                                  if(!(_loc3_ && param1))
-                                                                  {
-                                                                     return;
-                                                                  }
-                                                               }
-                                                               continue loop5;
-                                                            }
-                                                            continue loop2;
-                                                         }
-                                                         while(true)
-                                                         {
-                                                            this.§0!$§ = param1.§<?§;
-                                                            addr156:
-                                                            addr217:
-                                                            while(true)
-                                                            {
-                                                               if(!_loc3_)
-                                                               {
-                                                                  addr158:
-                                                                  if(_loc3_ && param1)
-                                                                  {
-                                                                     break;
-                                                                  }
-                                                                  this.§<<§.§&!K§();
-                                                                  continue loop16;
-                                                               }
-                                                               addr211:
-                                                               while(true)
-                                                               {
-                                                                  super(param1);
-                                                                  continue loop1;
-                                                               }
-                                                            }
-                                                            while(true)
-                                                            {
-                                                               if(!_loc2_)
-                                                               {
-                                                                  continue loop0;
-                                                               }
-                                                               this.§ ,§ = new b2Mat33();
-                                                               §§goto(addr211);
-                                                               §§goto(addr158);
-                                                            }
-                                                            §§goto(addr97);
-                                                         }
-                                                      }
-                                                   }
-                                                }
-                                             }
-                                             §§goto(addr179);
-                                          }
-                                          break;
-                                       }
-                                       §§goto(addr156);
-                                    }
-                                    §§goto(addr238);
-                                 }
-                                 continue loop4;
-                              }
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         while(true)
-         {
-            this.§<<§ = new b2Vec3();
-            §§goto(addr217);
-         }
+         this.§&+§ = new b2Mat22();
+         this.K1 = new b2Mat22();
+         this.K2 = new b2Mat22();
+         this.K3 = new b2Mat22();
+         this.impulse3 = new b2Vec3();
+         this.impulse2 = new b2Vec2();
+         this.§0c§ = new b2Vec2();
+         this.m_localAnchor1 = new b2Vec2();
+         this.m_localAnchor2 = new b2Vec2();
+         this.§<<§ = new b2Vec3();
+         this.§ ,§ = new b2Mat33();
+         super(param1);
+         this.m_localAnchor1.SetV(param1.§4!%§);
+         this.m_localAnchor2.SetV(param1.§=!I§);
+         this.§0!$§ = param1.§<?§;
+         this.§<<§.§&!K§();
+         this.§1!'§ = 0;
+         this.§ !6§ = param1.§#!I§;
+         this.§>!j§ = param1.§06§;
+         this.§0&§ = param1.§2I§;
+         this.§0i§ = param1.motorSpeed;
+         this.§;!m§ = param1.§-Q§;
+         this.§2'§ = param1.§2!s§;
+         this.§"!"§ = b2internal::#!?;
       }
       
       override public function GetAnchorA() : b2Vec2
@@ -272,48 +100,17 @@ package §&a§
       
       override public function GetReactionForce(param1:Number) : b2Vec2
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         §§push(§§findproperty(b2Vec2));
-         §§push(param1);
-         if(!_loc3_)
-         {
-            §§push(this.§<<§.x);
-            if(_loc2_ || _loc2_)
-            {
-               addr41:
-               §§push(§§pop() * §§pop());
-               §§push(param1);
-               if(!_loc3_)
-               {
-                  §§push(§§pop() * this.§<<§.y);
-               }
-            }
-            return new §§pop().b2Vec2(§§pop(),§§pop());
-         }
-         §§goto(addr41);
+         return new b2Vec2(param1 * this.§<<§.x,param1 * this.§<<§.y);
       }
       
       override public function GetReactionTorque(param1:Number) : Number
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         §§push(param1);
-         if(!_loc3_)
-         {
-            return §§pop() * this.§<<§.z;
-         }
+         return param1 * this.§<<§.z;
       }
       
       public function §?O§() : Number
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         §§push(b2internal::[=.m_sweep.a - b2internal::>0.m_sweep.a);
-         if(!(_loc1_ && _loc2_))
-         {
-            return §§pop() - this.§0!$§;
-         }
+         return b2internal::[=.m_sweep.a - b2internal::>0.m_sweep.a - this.§0!$§;
       }
       
       public function §#!d§() : Number
@@ -328,12 +125,7 @@ package §&a§
       
       public function §5!m§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || _loc3_)
-         {
-            this.§;!m§ = param1;
-         }
+         this.§;!m§ = param1;
       }
       
       public function §-J§() : Number
@@ -348,67 +140,27 @@ package §&a§
       
       public function §1!L§(param1:Number, param2:Number) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(!_loc4_)
-         {
-            this.§ !6§ = param1;
-            do
-            {
-               this.§>!j§ = param2;
-            }
-            while(!(_loc3_ || param1));
-            
-         }
+         this.§ !6§ = param1;
+         this.§>!j§ = param2;
       }
       
       public function §[!k§() : Boolean
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && this))
-         {
-            b2internal::>0.SetAwake(true);
-         }
-         do
-         {
-            b2internal::[=.SetAwake(true);
-         }
-         while(_loc1_);
-         
+         b2internal::>0.SetAwake(true);
+         b2internal::[=.SetAwake(true);
          return this.§2'§;
       }
       
       public function §5!x§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§2'§ = param1;
-         }
+         this.§2'§ = param1;
       }
       
       public function §4!K§(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && this))
-         {
-            b2internal::>0.SetAwake(true);
-         }
-         while(true)
-         {
-            b2internal::[=.SetAwake(true);
-            while(!(_loc2_ && param1))
-            {
-               this.§0i§ = param1;
-               if(!_loc2_)
-               {
-                  return;
-               }
-            }
-         }
+         b2internal::>0.SetAwake(true);
+         b2internal::[=.SetAwake(true);
+         this.§0i§ = param1;
       }
       
       public function §@!+§() : Number
@@ -418,12 +170,7 @@ package §&a§
       
       public function §`!b§(param1:Number) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || param1)
-         {
-            this.§0&§ = param1;
-         }
+         this.§0&§ = param1;
       }
       
       public function §=+§() : Number
@@ -433,35 +180,341 @@ package §&a§
       
       override b2internal function InitVelocityConstraints(param1:b2TimeStep) : void
       {
-         /*
-          * Decompilation error
-          * Code may be obfuscated
-          * Tip: You can try enabling "Automatic deobfuscation" in Settings
-          * Error type: ExecutionException (java.lang.StackOverflowError)
-          */
-         throw new flash.errors.IllegalOperationError("Not decompiled due to error");
+         var _loc2_:b2Body = null;
+         var _loc3_:b2Body = null;
+         var _loc4_:b2Mat22 = null;
+         var _loc5_:Number = NaN;
+         var _loc7_:Number = NaN;
+         var _loc14_:Number = NaN;
+         var _loc15_:Number = NaN;
+         var _loc16_:Number = NaN;
+         _loc2_ = b2internal::>0;
+         _loc3_ = b2internal::[=;
+         if(this.§2'§ || this.§;!m§)
+         {
+         }
+         _loc4_ = _loc2_.m_xf.R;
+         var _loc6_:Number = this.m_localAnchor1.x - _loc2_.m_sweep.localCenter.x;
+         _loc7_ = this.m_localAnchor1.y - _loc2_.m_sweep.localCenter.y;
+         _loc5_ = _loc4_.col1.x * _loc6_ + _loc4_.col2.x * _loc7_;
+         _loc7_ = _loc4_.col1.y * _loc6_ + _loc4_.col2.y * _loc7_;
+         _loc6_ = _loc5_;
+         _loc4_ = _loc3_.m_xf.R;
+         var _loc8_:Number = this.m_localAnchor2.x - _loc3_.m_sweep.localCenter.x;
+         var _loc9_:Number = this.m_localAnchor2.y - _loc3_.m_sweep.localCenter.y;
+         _loc5_ = _loc4_.col1.x * _loc8_ + _loc4_.col2.x * _loc9_;
+         _loc9_ = _loc4_.col1.y * _loc8_ + _loc4_.col2.y * _loc9_;
+         _loc8_ = _loc5_;
+         var _loc10_:Number = _loc2_.§-7§;
+         var _loc11_:Number = _loc3_.§-7§;
+         var _loc12_:Number = _loc2_.§,!o§;
+         var _loc13_:Number = _loc3_.§,!o§;
+         this.§ ,§.col1.x = _loc10_ + _loc11_ + _loc7_ * _loc7_ * _loc12_ + _loc9_ * _loc9_ * _loc13_;
+         this.§ ,§.col2.x = -_loc7_ * _loc6_ * _loc12_ - _loc9_ * _loc8_ * _loc13_;
+         this.§ ,§.col3.x = -_loc7_ * _loc12_ - _loc9_ * _loc13_;
+         this.§ ,§.col1.y = this.§ ,§.col2.x;
+         this.§ ,§.col2.y = _loc10_ + _loc11_ + _loc6_ * _loc6_ * _loc12_ + _loc8_ * _loc8_ * _loc13_;
+         this.§ ,§.col3.y = _loc6_ * _loc12_ + _loc8_ * _loc13_;
+         this.§ ,§.col1.z = this.§ ,§.col3.x;
+         this.§ ,§.col2.z = this.§ ,§.col3.y;
+         this.§ ,§.col3.z = _loc12_ + _loc13_;
+         this.§&!w§ = 1 / (_loc12_ + _loc13_);
+         if(this.§2'§ == false)
+         {
+            this.§1!'§ = 0;
+         }
+         if(this.§;!m§)
+         {
+            _loc14_ = _loc3_.m_sweep.a - _loc2_.m_sweep.a - this.§0!$§;
+            if(b2Math.§`c§(this.§>!j§ - this.§ !6§) < 2 * b2Settings.b2_angularSlop)
+            {
+               this.§"!"§ = b2internal::`C;
+            }
+            else if(_loc14_ <= this.§ !6§)
+            {
+               if(this.§"!"§ != b2internal::'`)
+               {
+                  this.§<<§.z = 0;
+               }
+               this.§"!"§ = b2internal::'`;
+            }
+            else if(_loc14_ >= this.§>!j§)
+            {
+               if(this.§"!"§ != b2internal::>6)
+               {
+                  this.§<<§.z = 0;
+               }
+               this.§"!"§ = b2internal::>6;
+            }
+            else
+            {
+               this.§"!"§ = b2internal::#!?;
+               this.§<<§.z = 0;
+            }
+         }
+         else
+         {
+            this.§"!"§ = b2internal::#!?;
+         }
+         if(param1.§#!P§)
+         {
+            this.§<<§.x *= param1.§ !o§;
+            this.§<<§.y *= param1.§ !o§;
+            this.§1!'§ *= param1.§ !o§;
+            _loc15_ = this.§<<§.x;
+            _loc16_ = this.§<<§.y;
+            _loc2_.§%!V§.x -= _loc10_ * _loc15_;
+            _loc2_.§%!V§.y -= _loc10_ * _loc16_;
+            _loc2_.m_angularVelocity -= _loc12_ * (_loc6_ * _loc16_ - _loc7_ * _loc15_ + this.§1!'§ + this.§<<§.z);
+            _loc3_.§%!V§.x += _loc11_ * _loc15_;
+            _loc3_.§%!V§.y += _loc11_ * _loc16_;
+            _loc3_.m_angularVelocity += _loc13_ * (_loc8_ * _loc16_ - _loc9_ * _loc15_ + this.§1!'§ + this.§<<§.z);
+         }
+         else
+         {
+            this.§<<§.§&!K§();
+            this.§1!'§ = 0;
+         }
       }
       
       override b2internal function SolveVelocityConstraints(param1:b2TimeStep) : void
       {
-         /*
-          * Decompilation error
-          * Code may be obfuscated
-          * Tip: You can try enabling "Automatic deobfuscation" in Settings
-          * Error type: ExecutionException (java.lang.StackOverflowError)
-          */
-         throw new flash.errors.IllegalOperationError("Not decompiled due to error");
+         var _loc4_:b2Mat22 = null;
+         var _loc5_:Number = NaN;
+         var _loc6_:Number = NaN;
+         var _loc7_:Number = NaN;
+         var _loc8_:Number = NaN;
+         var _loc9_:Number = NaN;
+         var _loc10_:Number = NaN;
+         var _loc19_:Number = NaN;
+         var _loc20_:Number = NaN;
+         var _loc21_:Number = NaN;
+         var _loc22_:Number = NaN;
+         var _loc23_:Number = NaN;
+         var _loc24_:Number = NaN;
+         var _loc25_:Number = NaN;
+         var _loc26_:Number = NaN;
+         var _loc27_:Number = NaN;
+         var _loc2_:b2Body = b2internal::>0;
+         var _loc3_:b2Body = b2internal::[=;
+         var _loc11_:b2Vec2 = _loc2_.§%!V§;
+         var _loc12_:Number = _loc2_.m_angularVelocity;
+         var _loc13_:b2Vec2 = _loc3_.§%!V§;
+         var _loc14_:Number = _loc3_.m_angularVelocity;
+         var _loc15_:Number = _loc2_.§-7§;
+         var _loc16_:Number = _loc3_.§-7§;
+         var _loc17_:Number = _loc2_.§,!o§;
+         var _loc18_:Number = _loc3_.§,!o§;
+         if(this.§2'§ && this.§"!"§ != b2internal::`C)
+         {
+            _loc19_ = _loc14_ - _loc12_ - this.§0i§;
+            _loc20_ = this.§&!w§ * -_loc19_;
+            _loc21_ = this.§1!'§;
+            _loc22_ = param1.§&!'§ * this.§0&§;
+            this.§1!'§ = b2Math.§]!M§(this.§1!'§ + _loc20_,-_loc22_,_loc22_);
+            _loc20_ = this.§1!'§ - _loc21_;
+            _loc12_ -= _loc17_ * _loc20_;
+            _loc14_ += _loc18_ * _loc20_;
+         }
+         if(this.§;!m§ && this.§"!"§ != b2internal::#!?)
+         {
+            _loc4_ = _loc2_.m_xf.R;
+            _loc7_ = this.m_localAnchor1.x - _loc2_.m_sweep.localCenter.x;
+            _loc8_ = this.m_localAnchor1.y - _loc2_.m_sweep.localCenter.y;
+            _loc5_ = _loc4_.col1.x * _loc7_ + _loc4_.col2.x * _loc8_;
+            _loc8_ = _loc4_.col1.y * _loc7_ + _loc4_.col2.y * _loc8_;
+            _loc7_ = _loc5_;
+            _loc4_ = _loc3_.m_xf.R;
+            _loc9_ = this.m_localAnchor2.x - _loc3_.m_sweep.localCenter.x;
+            _loc10_ = this.m_localAnchor2.y - _loc3_.m_sweep.localCenter.y;
+            _loc5_ = _loc4_.col1.x * _loc9_ + _loc4_.col2.x * _loc10_;
+            _loc10_ = _loc4_.col1.y * _loc9_ + _loc4_.col2.y * _loc10_;
+            _loc9_ = _loc5_;
+            _loc23_ = _loc13_.x + -_loc14_ * _loc10_ - _loc11_.x - -_loc12_ * _loc8_;
+            _loc24_ = _loc13_.y + _loc14_ * _loc9_ - _loc11_.y - _loc12_ * _loc7_;
+            _loc25_ = _loc14_ - _loc12_;
+            this.§ ,§.Solve33(this.impulse3,-_loc23_,-_loc24_,-_loc25_);
+            if(this.§"!"§ == b2internal::`C)
+            {
+               this.§<<§.§'!<§(this.impulse3);
+            }
+            else if(this.§"!"§ == b2internal::'`)
+            {
+               if((_loc6_ = this.§<<§.z + this.impulse3.z) < 0)
+               {
+                  this.§ ,§.Solve22(this.§0c§,-_loc23_,-_loc24_);
+                  this.impulse3.x = this.§0c§.x;
+                  this.impulse3.y = this.§0c§.y;
+                  this.impulse3.z = -this.§<<§.z;
+                  this.§<<§.x += this.§0c§.x;
+                  this.§<<§.y += this.§0c§.y;
+                  this.§<<§.z = 0;
+               }
+            }
+            else if(this.§"!"§ == b2internal::>6)
+            {
+               if((_loc6_ = this.§<<§.z + this.impulse3.z) > 0)
+               {
+                  this.§ ,§.Solve22(this.§0c§,-_loc23_,-_loc24_);
+                  this.impulse3.x = this.§0c§.x;
+                  this.impulse3.y = this.§0c§.y;
+                  this.impulse3.z = -this.§<<§.z;
+                  this.§<<§.x += this.§0c§.x;
+                  this.§<<§.y += this.§0c§.y;
+                  this.§<<§.z = 0;
+               }
+            }
+            _loc11_.x -= _loc15_ * this.impulse3.x;
+            _loc11_.y -= _loc15_ * this.impulse3.y;
+            _loc12_ -= _loc17_ * (_loc7_ * this.impulse3.y - _loc8_ * this.impulse3.x + this.impulse3.z);
+            _loc13_.x += _loc16_ * this.impulse3.x;
+            _loc13_.y += _loc16_ * this.impulse3.y;
+            _loc14_ += _loc18_ * (_loc9_ * this.impulse3.y - _loc10_ * this.impulse3.x + this.impulse3.z);
+         }
+         else
+         {
+            _loc4_ = _loc2_.m_xf.R;
+            _loc7_ = this.m_localAnchor1.x - _loc2_.m_sweep.localCenter.x;
+            _loc8_ = this.m_localAnchor1.y - _loc2_.m_sweep.localCenter.y;
+            _loc5_ = _loc4_.col1.x * _loc7_ + _loc4_.col2.x * _loc8_;
+            _loc8_ = _loc4_.col1.y * _loc7_ + _loc4_.col2.y * _loc8_;
+            _loc7_ = _loc5_;
+            _loc4_ = _loc3_.m_xf.R;
+            _loc9_ = this.m_localAnchor2.x - _loc3_.m_sweep.localCenter.x;
+            _loc10_ = this.m_localAnchor2.y - _loc3_.m_sweep.localCenter.y;
+            _loc5_ = _loc4_.col1.x * _loc9_ + _loc4_.col2.x * _loc10_;
+            _loc10_ = _loc4_.col1.y * _loc9_ + _loc4_.col2.y * _loc10_;
+            _loc9_ = _loc5_;
+            _loc26_ = _loc13_.x + -_loc14_ * _loc10_ - _loc11_.x - -_loc12_ * _loc8_;
+            _loc27_ = _loc13_.y + _loc14_ * _loc9_ - _loc11_.y - _loc12_ * _loc7_;
+            this.§ ,§.Solve22(this.impulse2,-_loc26_,-_loc27_);
+            this.§<<§.x += this.impulse2.x;
+            this.§<<§.y += this.impulse2.y;
+            _loc11_.x -= _loc15_ * this.impulse2.x;
+            _loc11_.y -= _loc15_ * this.impulse2.y;
+            _loc12_ -= _loc17_ * (_loc7_ * this.impulse2.y - _loc8_ * this.impulse2.x);
+            _loc13_.x += _loc16_ * this.impulse2.x;
+            _loc13_.y += _loc16_ * this.impulse2.y;
+            _loc14_ += _loc18_ * (_loc9_ * this.impulse2.y - _loc10_ * this.impulse2.x);
+         }
+         _loc2_.§%!V§.SetV(_loc11_);
+         _loc2_.m_angularVelocity = _loc12_;
+         _loc3_.§%!V§.SetV(_loc13_);
+         _loc3_.m_angularVelocity = _loc14_;
       }
       
       override b2internal function SolvePositionConstraints(param1:Number) : Boolean
       {
-         /*
-          * Decompilation error
-          * Code may be obfuscated
-          * Tip: You can try enabling "Automatic deobfuscation" in Settings
-          * Error type: ExecutionException (java.lang.StackOverflowError)
-          */
-         throw new flash.errors.IllegalOperationError("Not decompiled due to error");
+         var _loc2_:Number = NaN;
+         var _loc3_:Number = NaN;
+         var _loc4_:b2Mat22 = null;
+         var _loc9_:Number = NaN;
+         var _loc10_:Number = NaN;
+         var _loc11_:Number = NaN;
+         var _loc25_:Number = NaN;
+         var _loc26_:Number = NaN;
+         var _loc27_:Number = NaN;
+         var _loc28_:Number = NaN;
+         var _loc29_:Number = NaN;
+         var _loc30_:Number = NaN;
+         var _loc31_:Number = NaN;
+         var _loc5_:b2Body = b2internal::>0;
+         var _loc6_:b2Body = b2internal::[=;
+         var _loc7_:Number = 0;
+         var _loc8_:Number = 0;
+         if(this.§;!m§ && this.§"!"§ != b2internal::#!?)
+         {
+            _loc25_ = _loc6_.m_sweep.a - _loc5_.m_sweep.a - this.§0!$§;
+            _loc26_ = 0;
+            if(this.§"!"§ == b2internal::`C)
+            {
+               _loc3_ = b2Math.§]!M§(_loc25_ - this.§ !6§,-b2Settings.b2_maxAngularCorrection,b2Settings.b2_maxAngularCorrection);
+               _loc26_ = -this.§&!w§ * _loc3_;
+               _loc7_ = b2Math.§`c§(_loc3_);
+            }
+            else if(this.§"!"§ == b2internal::'`)
+            {
+               _loc3_ = _loc25_ - this.§ !6§;
+               _loc7_ = -_loc3_;
+               _loc3_ = b2Math.§]!M§(_loc3_ + b2Settings.b2_angularSlop,-b2Settings.b2_maxAngularCorrection,0);
+               _loc26_ = -this.§&!w§ * _loc3_;
+            }
+            else if(this.§"!"§ == b2internal::>6)
+            {
+               _loc3_ = _loc25_ - this.§>!j§;
+               _loc7_ = _loc3_;
+               _loc3_ = b2Math.§]!M§(_loc3_ - b2Settings.b2_angularSlop,0,b2Settings.b2_maxAngularCorrection);
+               _loc26_ = -this.§&!w§ * _loc3_;
+            }
+            _loc5_.m_sweep.a -= _loc5_.§,!o§ * _loc26_;
+            _loc6_.m_sweep.a += _loc6_.§,!o§ * _loc26_;
+            _loc5_.§#3§();
+            _loc6_.§#3§();
+         }
+         _loc4_ = _loc5_.m_xf.R;
+         var _loc12_:Number = this.m_localAnchor1.x - _loc5_.m_sweep.localCenter.x;
+         var _loc13_:Number = this.m_localAnchor1.y - _loc5_.m_sweep.localCenter.y;
+         _loc9_ = _loc4_.col1.x * _loc12_ + _loc4_.col2.x * _loc13_;
+         _loc13_ = _loc4_.col1.y * _loc12_ + _loc4_.col2.y * _loc13_;
+         _loc12_ = _loc9_;
+         _loc4_ = _loc6_.m_xf.R;
+         var _loc14_:Number = this.m_localAnchor2.x - _loc6_.m_sweep.localCenter.x;
+         var _loc15_:Number = this.m_localAnchor2.y - _loc6_.m_sweep.localCenter.y;
+         _loc9_ = _loc4_.col1.x * _loc14_ + _loc4_.col2.x * _loc15_;
+         _loc15_ = _loc4_.col1.y * _loc14_ + _loc4_.col2.y * _loc15_;
+         _loc14_ = _loc9_;
+         var _loc16_:Number = _loc6_.m_sweep.c.x + _loc14_ - _loc5_.m_sweep.c.x - _loc12_;
+         var _loc17_:Number = _loc6_.m_sweep.c.y + _loc15_ - _loc5_.m_sweep.c.y - _loc13_;
+         var _loc18_:Number = _loc16_ * _loc16_ + _loc17_ * _loc17_;
+         var _loc19_:Number;
+         _loc8_ = _loc19_ = Math.sqrt(_loc18_);
+         var _loc20_:Number = _loc5_.§-7§;
+         var _loc21_:Number = _loc6_.§-7§;
+         var _loc22_:Number = _loc5_.§,!o§;
+         var _loc23_:Number = _loc6_.§,!o§;
+         var _loc24_:Number = 10 * b2Settings.b2_linearSlop;
+         if(_loc18_ > _loc24_ * _loc24_)
+         {
+            _loc27_ = _loc16_ / _loc19_;
+            _loc28_ = _loc17_ / _loc19_;
+            _loc29_ = _loc20_ + _loc21_;
+            _loc10_ = (_loc30_ = 1 / _loc29_) * -_loc16_;
+            _loc11_ = _loc30_ * -_loc17_;
+            _loc31_ = 0.5;
+            _loc5_.m_sweep.c.x -= _loc31_ * _loc20_ * _loc10_;
+            _loc5_.m_sweep.c.y -= _loc31_ * _loc20_ * _loc11_;
+            _loc6_.m_sweep.c.x += _loc31_ * _loc21_ * _loc10_;
+            _loc6_.m_sweep.c.y += _loc31_ * _loc21_ * _loc11_;
+            _loc16_ = _loc6_.m_sweep.c.x + _loc14_ - _loc5_.m_sweep.c.x - _loc12_;
+            _loc17_ = _loc6_.m_sweep.c.y + _loc15_ - _loc5_.m_sweep.c.y - _loc13_;
+         }
+         this.K1.col1.x = _loc20_ + _loc21_;
+         this.K1.col2.x = 0;
+         this.K1.col1.y = 0;
+         this.K1.col2.y = _loc20_ + _loc21_;
+         this.K2.col1.x = _loc22_ * _loc13_ * _loc13_;
+         this.K2.col2.x = -_loc22_ * _loc12_ * _loc13_;
+         this.K2.col1.y = -_loc22_ * _loc12_ * _loc13_;
+         this.K2.col2.y = _loc22_ * _loc12_ * _loc12_;
+         this.K3.col1.x = _loc23_ * _loc15_ * _loc15_;
+         this.K3.col2.x = -_loc23_ * _loc14_ * _loc15_;
+         this.K3.col1.y = -_loc23_ * _loc14_ * _loc15_;
+         this.K3.col2.y = _loc23_ * _loc14_ * _loc14_;
+         this.§&+§.§^p§(this.K1);
+         this.§&+§.§%!3§(this.K2);
+         this.§&+§.§%!3§(this.K3);
+         this.§&+§.§-,§(§[U§,-_loc16_,-_loc17_);
+         _loc10_ = §[U§.x;
+         _loc11_ = §[U§.y;
+         _loc5_.m_sweep.c.x -= _loc5_.§-7§ * _loc10_;
+         _loc5_.m_sweep.c.y -= _loc5_.§-7§ * _loc11_;
+         _loc5_.m_sweep.a -= _loc5_.§,!o§ * (_loc12_ * _loc11_ - _loc13_ * _loc10_);
+         _loc6_.m_sweep.c.x += _loc6_.§-7§ * _loc10_;
+         _loc6_.m_sweep.c.y += _loc6_.§-7§ * _loc11_;
+         _loc6_.m_sweep.a += _loc6_.§,!o§ * (_loc14_ * _loc11_ - _loc15_ * _loc10_);
+         _loc5_.§#3§();
+         _loc6_.§#3§();
+         return _loc8_ <= b2Settings.b2_linearSlop && _loc7_ <= b2Settings.b2_angularSlop;
       }
    }
 }

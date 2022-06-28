@@ -13,12 +13,7 @@ package §_-8d§
       
       public function §_-wr§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            super();
-         }
+         super();
       }
    }
 }

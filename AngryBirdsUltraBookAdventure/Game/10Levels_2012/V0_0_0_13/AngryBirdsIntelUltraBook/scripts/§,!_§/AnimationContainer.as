@@ -12,79 +12,26 @@ package §,!_§
       
       public function AnimationContainer()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            this.§3!I§ = new Dictionary();
-            do
-            {
-               super();
-            }
-            while(_loc2_);
-            
-         }
+         this.§3!I§ = new Dictionary();
+         super();
       }
       
       public function §+b§(param1:String, param2:Animation) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!(_loc3_ && param2))
+         if(param2 == null)
          {
-            if(param2 != null)
-            {
-               loop0:
-               while(true)
-               {
-                  if(!this.§-!8§)
-                  {
-                     while(true)
-                     {
-                        this.§-!8§ = param2;
-                        addr85:
-                        while(!_loc3_)
-                        {
-                           while(true)
-                           {
-                           }
-                        }
-                        continue loop0;
-                     }
-                     addr82:
-                  }
-                  while(true)
-                  {
-                     this.§3!I§[param1] = param2;
-                     if(!(_loc3_ && param2))
-                     {
-                        if(!(_loc3_ && this))
-                        {
-                           break;
-                        }
-                        §§goto(addr82);
-                     }
-                     §§goto(addr85);
-                  }
-                  if(_loc4_ || param2)
-                  {
-                     return;
-                  }
-               }
-            }
             throw new Error("Trying to add a null animation");
          }
-         §§goto(addr87);
+         if(!this.§-!8§)
+         {
+            this.§-!8§ = param2;
+         }
+         this.§3!I§[param1] = param2;
       }
       
       override public function addFrame(param1:§;K§) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || param1)
-         {
-            this.§-!8§.addFrame(param1);
-         }
+         this.§-!8§.addFrame(param1);
       }
       
       override public function getFrame(param1:int) : §;K§
@@ -99,21 +46,11 @@ package §,!_§
       
       override public function getSubAnimation(param1:String) : Animation
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
+         if(this.§3!I§[param1])
          {
-            if(this.§3!I§[param1])
-            {
-               if(_loc3_ || _loc2_)
-               {
-                  §§goto(addr42);
-               }
-            }
-            return this.§-!8§;
+            return this.§3!I§[param1];
          }
-         addr42:
-         return this.§3!I§[param1];
+         return this.§-!8§;
       }
    }
 }

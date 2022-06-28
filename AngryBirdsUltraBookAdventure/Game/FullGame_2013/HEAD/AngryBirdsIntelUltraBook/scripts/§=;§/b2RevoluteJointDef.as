@@ -30,57 +30,28 @@ package §=;§
       
       public function b2RevoluteJointDef()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && this))
-         {
-            this.§>!g§ = new b2Vec2();
-            loop0:
-            while(true)
-            {
-               this.§&1§ = new b2Vec2();
-               addr180:
-               while(true)
-               {
-                  super();
-                  continue loop0;
-               }
-            }
-         }
-         §§goto(addr61);
+         this.§>!g§ = new b2Vec2();
+         this.§&1§ = new b2Vec2();
+         super();
+         type = b2Joint.e_revoluteJoint;
+         this.§>!g§.Set(0,0);
+         this.§&1§.Set(0,0);
+         this.§6![§ = 0;
+         this.§!!e§ = 0;
+         this.§+!9§ = 0;
+         this.§`!?§ = 0;
+         this.motorSpeed = 0;
+         this.§0$§ = false;
+         this.§ in§ = false;
       }
       
       public function §2@§(param1:b2Body, param2:b2Body, param3:b2Vec2) : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(!_loc5_)
-         {
-            §7l§ = param1;
-         }
-         loop0:
-         do
-         {
-            §<H§ = param2;
-            while(true)
-            {
-               this.§>!g§ = §7l§.GetLocalPoint(param3);
-               while(_loc4_)
-               {
-                  this.§&1§ = §<H§.GetLocalPoint(param3);
-                  while(_loc4_)
-                  {
-                     this.§6![§ = §<H§.GetAngle() - §7l§.GetAngle();
-                     if(!_loc5_)
-                     {
-                        continue loop0;
-                     }
-                  }
-               }
-            }
-         }
-         while(!_loc4_);
-         
+         §7l§ = param1;
+         §<H§ = param2;
+         this.§>!g§ = §7l§.GetLocalPoint(param3);
+         this.§&1§ = §<H§.GetLocalPoint(param3);
+         this.§6![§ = §<H§.GetAngle() - §7l§.GetAngle();
       }
    }
 }

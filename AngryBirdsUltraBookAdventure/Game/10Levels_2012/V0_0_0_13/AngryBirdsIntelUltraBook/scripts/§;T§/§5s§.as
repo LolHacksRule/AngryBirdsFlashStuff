@@ -23,70 +23,7 @@ package §;T§
       public static const §'!W§:int = 2;
       
       public static const §`!J§:int = 1;
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && §5s§))
-         {
-            §#z§ = 0;
-            while(true)
-            {
-               §-"§ = 6;
-               addr63:
-               if(_loc2_ && _loc2_)
-               {
-                  continue;
-               }
-               §`!J§ = 1;
-               addr70:
-               if(!_loc2_)
-               {
-                  addr34:
-                  if(_loc2_ && _loc1_)
-                  {
-                     while(!(_loc2_ && §5s§))
-                     {
-                        §4!T§ = 5;
-                        while(true)
-                        {
-                           §'!W§ = 2;
-                           addr46:
-                           while(_loc1_ || §5s§)
-                           {
-                              §§goto(addr63);
-                              §§goto(addr70);
-                           }
-                        }
-                        §§goto(addr34);
-                     }
-                     while(!(_loc2_ && §5s§))
-                     {
-                        §"!W§ = 3;
-                        §§goto(addr80);
-                     }
-                     addr80:
-                     while(!(_loc2_ && _loc1_))
-                     {
-                        §3!h§ = 8;
-                        §§goto(addr102);
-                     }
-                     addr102:
-                     while(true)
-                     {
-                        §2!I§ = 7;
-                        §§goto(addr114);
-                     }
-                     addr114:
-                     addr126:
-                  }
-                  return;
-               }
-               §§goto(addr46);
-            }
-         }
-         §§goto(addr126);
-      }
+       
       
       public var §#>§:String;
       
@@ -116,143 +53,24 @@ package §;T§
       
       public function §5s§(param1:String, param2:int, param3:LevelItemMaterial, param4:LevelItemSoundResource, param5:LevelItemShape, param6:int, param7:String, param8:Number, param9:Number, param10:Number, param11:Boolean = false, param12:String = "", param13:int = 1)
       {
-         var _loc14_:Boolean = true;
-         var _loc15_:Boolean = false;
-         if(_loc14_)
-         {
-            super();
-            loop0:
-            while(true)
-            {
-               this.§#>§ = param1;
-               loop1:
-               while(true)
-               {
-                  this.§17§ = param2;
-                  loop2:
-                  while(true)
-                  {
-                     this.§69§ = param3;
-                     while(true)
-                     {
-                        this.§!!<§ = param12;
-                        addr183:
-                        while(true)
-                        {
-                           this.§0!§ = param13;
-                           continue loop2;
-                        }
-                        loop11:
-                        for(; !(_loc15_ && param3); while(true)
-                        {
-                           if(!(_loc14_ || this))
-                           {
-                              continue loop11;
-                           }
-                           §§goto(addr35);
-                        })
-                        {
-                           if(this.§9§ > 0)
-                           {
-                              loop13:
-                              while(true)
-                              {
-                                 this.§]!3§ = param9;
-                                 while(_loc14_)
-                                 {
-                                    if(!_loc15_)
-                                    {
-                                       addr43:
-                                       if(_loc15_ && this)
-                                       {
-                                          loop9:
-                                          while(true)
-                                          {
-                                             if(!(_loc15_ && param3))
-                                             {
-                                                if(!_loc14_)
-                                                {
-                                                   break;
-                                                }
-                                                this.§-!@§ = param7;
-                                             }
-                                             else
-                                             {
-                                                while(!(_loc15_ && this))
-                                                {
-                                                   this.§while§ = new Integer(param6);
-                                                   continue loop9;
-                                                }
-                                                while(!(_loc15_ && param2))
-                                                {
-                                                   this.§"!5§ = param5;
-                                                   §§goto(addr132);
-                                                }
-                                                addr132:
-                                                while(true)
-                                                {
-                                                   this.§'!i§ = param4;
-                                                   §§goto(addr144);
-                                                }
-                                                addr144:
-                                                addr156:
-                                             }
-                                          }
-                                          continue loop2;
-                                       }
-                                       if(!_loc15_)
-                                       {
-                                          this.§9Y§ = param10;
-                                          if(_loc14_ || param2)
-                                          {
-                                             return;
-                                          }
-                                          continue;
-                                       }
-                                       §§goto(addr183);
-                                    }
-                                    else
-                                    {
-                                       addr58:
-                                       while(true)
-                                       {
-                                          if(_loc14_ || param2)
-                                          {
-                                             continue loop0;
-                                          }
-                                       }
-                                       continue loop0;
-                                       addr58:
-                                    }
-                                    while(true)
-                                    {
-                                       if(!_loc15_)
-                                       {
-                                          this.§9§ = param8;
-                                          break loop13;
-                                       }
-                                       break;
-                                       §§goto(addr58);
-                                    }
-                                    continue loop1;
-                                 }
-                                 continue loop11;
-                              }
-                              continue;
-                              addr35:
-                           }
-                           §§goto(addr58);
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         while(true)
+         super();
+         this.§#>§ = param1;
+         this.§17§ = param2;
+         this.§69§ = param3;
+         this.§!!<§ = param12;
+         this.§0!§ = param13;
+         this.§]G§ = param11;
+         this.§'!i§ = param4;
+         this.§"!5§ = param5;
+         this.§while§ = new Integer(param6);
+         this.§-!@§ = param7;
+         this.§9§ = param8;
+         if(this.§9§ <= 0)
          {
             this.§9§ = 1;
-            §§goto(addr75);
          }
+         this.§]!3§ = param9;
+         this.§9Y§ = param10;
       }
       
       public function get front() : Boolean
@@ -332,60 +150,13 @@ package §;T§
       
       public function get shape() : LevelItemShape
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
          var _loc1_:Texture = null;
-         if(_loc2_ || _loc1_)
+         if(!this.§"!5§)
          {
-            §§push(this.§"!5§);
-            if(!_loc3_)
-            {
-               if(!§§pop())
-               {
-                  addr32:
-                  _loc1_ = §]!B§.§>F§.animationManager.getAnimation(this.§#>§).getFrame(0).texture;
-                  if(_loc2_ || this)
-                  {
-                     §§push(this);
-                     §§push(§§findproperty(LevelItemShape));
-                     §§push(this.§#>§);
-                     §§push("Rectangle");
-                     §§push(_loc1_.width);
-                     if(!_loc3_)
-                     {
-                        §§push(LevelMain.§8N§);
-                        if(!(_loc3_ && _loc2_))
-                        {
-                           §§push(§§pop() * §§pop());
-                           if(!(_loc3_ && this))
-                           {
-                              addr100:
-                              §§push(§§pop() / 2);
-                              §§push(_loc1_.height);
-                              if(_loc2_ || this)
-                              {
-                                 §§push(§§pop() * LevelMain.§8N§);
-                                 if(!(_loc3_ && _loc2_))
-                                 {
-                                    §§push(§§pop() / 2);
-                                 }
-                              }
-                           }
-                           §§goto(addr100);
-                        }
-                        §§pop().§"!5§ = new §§pop().LevelItemShape(§§pop(),§§pop(),§§pop(),§§pop());
-                        addr126:
-                        return this.§"!5§;
-                        addr124:
-                     }
-                     §§goto(addr100);
-                  }
-               }
-               §§goto(addr124);
-            }
-            §§goto(addr126);
+            _loc1_ = §]!B§.§>F§.animationManager.getAnimation(this.§#>§).getFrame(0).texture;
+            this.§"!5§ = new LevelItemShape(this.§#>§,"Rectangle",_loc1_.width * LevelMain.§8N§ / 2,_loc1_.height * LevelMain.§8N§ / 2);
          }
-         §§goto(addr32);
+         return this.§"!5§;
       }
       
       public function get §,!9§() : LevelItemSoundResource

@@ -40,49 +40,20 @@ package §?A§
       
       private static const §6b§:int = 20;
       
-      public static const §>7§:Number;
+      public static const §>7§:Number = §4!T§.SCREEN_WIDTH;
       
-      public static const §=q§:Number;
+      public static const §=q§:Number = §4!T§.SCREEN_HEIGHT;
       
-      public static const §!5§:Number = 0.05;
+      public static const §!5§:Number = 1 / 20;
       
-      public static const §9t§:Number;
+      public static const §9t§:Number = §4!T§.SCREEN_HEIGHT * §!5§;
       
-      public static const §6Y§:Number;
+      public static const §6Y§:Number = §>7§ * §!5§;
       
-      public static const §<a§:Integer;
+      public static const §<a§:Integer = new Integer(13 - 3);
       
-      protected static var §@!G§:String = "BACKGROUND_BLUE_GRASS";
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && LevelMain))
-         {
-            §6b§ = 20;
-            loop0:
-            while(true)
-            {
-               §>7§ = §4!T§.SCREEN_WIDTH;
-               loop1:
-               while(true)
-               {
-                  §=q§ = §4!T§.SCREEN_HEIGHT;
-                  while(true)
-                  {
-                     §!5§ = 1 / 20;
-                     continue loop0;
-                     addr57:
-                     if(_loc2_ || LevelMain)
-                     {
-                        continue loop1;
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr81);
-      }
+      protected static var §@!G§:String = LevelModel.§!Z§;
+       
       
       protected var §^^§:LevelObjectManager;
       
@@ -176,188 +147,31 @@ package §?A§
       
       public function LevelMain(param1:Stage)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_)
-         {
-            this.§6h§ = [];
-            loop0:
-            while(true)
-            {
-               super();
-               loop1:
-               while(true)
-               {
-                  this.§`!b§ = new EventDispatcher();
-                  loop2:
-                  while(true)
-                  {
-                     this.§ G§ = new §2J§();
-                     while(true)
-                     {
-                        this.§?_§ = param1;
-                        while(_loc4_ || _loc3_)
-                        {
-                           this.§`_§ = TextureManager.§&!'§;
-                           continue loop2;
-                           addr53:
-                           if(!(_loc3_ && _loc2_))
-                           {
-                              loop8:
-                              while(true)
-                              {
-                                 this.§^l§ = this.initThemeSoundsManager();
-                                 do
-                                 {
-                                    this.§;!,§ = this.initCutSceneManager();
-                                 }
-                                 while(_loc3_);
-                                 
-                                 if(!_loc4_)
-                                 {
-                                    break;
-                                 }
-                                 if(_loc3_)
-                                 {
-                                    continue loop1;
-                                 }
-                                 while(false)
-                                 {
-                                    continue loop8;
-                                 }
-                                 var _loc2_:Stage3D = param1.stage3Ds[0];
-                                 if(_loc4_ || this)
-                                 {
-                                    this.§,!8§ = new Starling(§;I§,param1,new Rectangle(0,0,§4!T§.SCREEN_WIDTH,§4!T§.SCREEN_HEIGHT),_loc2_);
-                                    loop11:
-                                    while(true)
-                                    {
-                                       §4!T§.§%!K§.addEventListener(Event.ENTER_FRAME,this.§,!8§.onEnterFrame);
-                                       while(true)
-                                       {
-                                          _loc2_.addEventListener(Event.CONTEXT3D_CREATE,this.§>!R§,false,0,true);
-                                          while(!(_loc3_ && _loc2_))
-                                          {
-                                             §§push(this.§,!8§);
-                                             loop14:
-                                             while(true)
-                                             {
-                                                §§push(false);
-                                                loop15:
-                                                while(true)
-                                                {
-                                                   §§pop().§]<§ = §§pop();
-                                                   loop16:
-                                                   while(_loc4_)
-                                                   {
-                                                      §§push(this.§,!8§);
-                                                      loop17:
-                                                      while(true)
-                                                      {
-                                                         §§push(false);
-                                                         if(_loc3_)
-                                                         {
-                                                            break;
-                                                            addr191:
-                                                         }
-                                                         §§pop().enableErrorChecking = §§pop();
-                                                         while(!(_loc3_ && _loc2_))
-                                                         {
-                                                            §§push(this.§,!8§);
-                                                            loop19:
-                                                            while(true)
-                                                            {
-                                                               §§pop().§=6§ = 2;
-                                                               addr183:
-                                                               while(true)
-                                                               {
-                                                                  §§push(this.§,!8§);
-                                                                  if(_loc4_ || _loc2_)
-                                                                  {
-                                                                     if(_loc4_)
-                                                                     {
-                                                                        continue loop14;
-                                                                     }
-                                                                     continue loop17;
-                                                                  }
-                                                                  continue loop19;
-                                                               }
-                                                               continue loop14;
-                                                            }
-                                                         }
-                                                         continue loop16;
-                                                      }
-                                                      continue loop15;
-                                                   }
-                                                   continue loop11;
-                                                }
-                                             }
-                                             if(_loc4_ || this)
-                                             {
-                                                return;
-                                                addr177:
-                                             }
-                                          }
-                                       }
-                                    }
-                                 }
-                                 §§goto(addr177);
-                              }
-                              while(_loc4_)
-                              {
-                                 if(!(_loc4_ || param1))
-                                 {
-                                    continue loop2;
-                                 }
-                                 §§goto(addr53);
-                                 §§goto(addr33);
-                              }
-                              addr33:
-                              while(_loc4_)
-                              {
-                                 this.§,E§ = this.initThemeGraphicsManager();
-                                 §§goto(addr44);
-                              }
-                              addr44:
-                              continue loop0;
-                              addr68:
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr31);
+         this.§6h§ = [];
+         super();
+         this.§`!b§ = new EventDispatcher();
+         this.§ G§ = new §2J§();
+         this.§?_§ = param1;
+         this.§`_§ = TextureManager.§&!'§;
+         this.§[6§ = this.initAnimationManager(this.§`_§);
+         this.§,E§ = this.initThemeGraphicsManager();
+         this.§^l§ = this.initThemeSoundsManager();
+         this.§;!,§ = this.initCutSceneManager();
+         var _loc2_:Stage3D = param1.stage3Ds[0];
+         this.§,!8§ = new Starling(§;I§,param1,new Rectangle(0,0,§4!T§.SCREEN_WIDTH,§4!T§.SCREEN_HEIGHT),_loc2_);
+         §4!T§.§%!K§.addEventListener(Event.ENTER_FRAME,this.§,!8§.onEnterFrame);
+         _loc2_.addEventListener(Event.CONTEXT3D_CREATE,this.§>!R§,false,0,true);
+         this.§,!8§.§]<§ = false;
+         this.§,!8§.enableErrorChecking = false;
+         this.§,!8§.§=6§ = 2;
+         this.§,!8§.§ Z§();
       }
       
       public static function §4!U§(param1:LevelObject, param2:LevelObject) : Number
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         §§push(param1.§-! §);
-         if(!(_loc6_ && _loc3_))
-         {
-            §§push(§§pop() - param2.§-! §);
-            if(_loc5_ || param1)
-            {
-               addr55:
-               §§push(Number(§§pop()));
-            }
-            var _loc3_:* = §§pop();
-            §§push(param1.§<s§);
-            if(_loc5_)
-            {
-               §§push(§§pop() - param2.§<s§);
-               if(!(_loc6_ && _loc3_))
-               {
-                  §§push(Number(§§pop()));
-               }
-            }
-            var _loc4_:* = §§pop();
-            return §%!?§(_loc3_,_loc4_);
-         }
-         §§goto(addr55);
+         var _loc3_:Number = param1.§-! § - param2.§-! §;
+         var _loc4_:Number = param1.§<s§ - param2.§<s§;
+         return §%!?§(_loc3_,_loc4_);
       }
       
       public static function §%!?§(param1:Number, param2:Number) : Number
@@ -367,165 +181,29 @@ package §?A§
       
       public function get sprite() : Sprite
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
+         if(!this.§<!,§ && this.§7B§)
          {
-            §§push(this.§<!,§);
-            loop0:
-            while(true)
-            {
-               §§push(!§§pop());
-               loop1:
-               while(true)
-               {
-                  §§push(Boolean(§§pop()));
-                  if(!_loc2_)
-                  {
-                     §§push(§§pop());
-                     if(_loc1_)
-                     {
-                        §§push(Boolean(§§pop()));
-                     }
-                     if(!§§pop())
-                     {
-                        loop2:
-                        while(§§pop())
-                        {
-                           if(_loc1_ || this)
-                           {
-                              if(!_loc1_)
-                              {
-                                 loop3:
-                                 while(true)
-                                 {
-                                    §§push(Boolean(this.§7B§));
-                                    if(!(_loc2_ && _loc2_))
-                                    {
-                                       break;
-                                    }
-                                    addr93:
-                                    while(true)
-                                    {
-                                       §§pop();
-                                       continue loop3;
-                                    }
-                                 }
-                                 if(_loc1_ || this)
-                                 {
-                                    continue;
-                                 }
-                                 continue loop1;
-                              }
-                              this.§<!,§ = this.§+!0§.§#!B§;
-                              while(true)
-                              {
-                                 break loop2;
-                              }
-                              addr81:
-                           }
-                           §§goto(addr81);
-                        }
-                        while(true)
-                        {
-                           §§push(this.§<!,§);
-                           if(_loc1_)
-                           {
-                              break;
-                           }
-                           continue loop0;
-                        }
-                        return §§pop();
-                     }
-                  }
-                  §§goto(addr93);
-               }
-            }
+            this.§<!,§ = this.§+!0§.§#!B§;
          }
-         §§goto(addr81);
+         return this.§<!,§;
       }
       
       public function get §7B§() : Sprite
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && this))
+         if(!this.§+!0§)
          {
-            §§push(this.§+!0§);
-            do
-            {
-               if(!§§pop())
-               {
-                  loop1:
-                  while(true)
-                  {
-                     this.§+!0§ = this.§,!8§.set as §;I§;
-                     while(true)
-                     {
-                        §§push(this.§+!0§);
-                        addr57:
-                        loop3:
-                        while(true)
-                        {
-                           §§pop().§9@§ = false;
-                           if(!_loc1_)
-                           {
-                              break;
-                           }
-                           if(!_loc1_)
-                           {
-                              continue loop1;
-                           }
-                           while(true)
-                           {
-                              continue loop3;
-                           }
-                        }
-                     }
-                  }
-               }
-               while(true)
-               {
-                  §§push(this.§+!0§);
-                  if(_loc1_)
-                  {
-                     break;
-                  }
-                  §§goto(addr57);
-               }
-            }
-            while(!_loc1_);
-            
-            return §§pop();
+            this.§+!0§ = this.§,!8§.set as §;I§;
+            this.§+!0§.§9@§ = false;
          }
-         §§goto(addr63);
+         return this.§+!0§;
       }
       
       private function get §>L§() : DisplayObject
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || this)
+         if(this.§7B§)
          {
-            §§push(this.§7B§);
-            if(!(_loc1_ && _loc1_))
-            {
-               if(§§pop())
-               {
-                  if(!(_loc1_ && _loc1_))
-                  {
-                     §§push(this.§7B§);
-                  }
-                  else
-                  {
-                     §§goto(addr69);
-                  }
-               }
-               §§goto(addr69);
-            }
-            return (§§pop() as §;I§).§>L§;
+            return (this.§7B§ as §;I§).§>L§;
          }
-         addr69:
          return null;
       }
       
@@ -591,337 +269,36 @@ package §?A§
       
       public function set activeObject(param1:LevelObject) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§'Z§ = param1;
-         }
+         this.§'Z§ = param1;
       }
       
       public function set §#G§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§!!O§ = param1;
-         }
+         this.§!!O§ = param1;
       }
       
       public function clear() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc2_)
+         if(this.§^3§)
          {
-            §§push(this.§^3§);
-            if(_loc2_ || _loc1_)
-            {
-               §§push(Boolean(§§pop()));
-               loop0:
-               while(true)
-               {
-                  if(§§pop())
-                  {
-                     if(!_loc1_)
-                     {
-                        §§push(this.§^3§);
-                        while(true)
-                        {
-                           §§pop().dispose();
-                           addr245:
-                           while(true)
-                           {
-                           }
-                        }
-                        addr243:
-                     }
-                     §§goto(addr245);
-                  }
-                  while(true)
-                  {
-                     §§push(this.§`_§);
-                     if(_loc2_)
-                     {
-                        §§push(Boolean(§§pop()));
-                        loop2:
-                        while(true)
-                        {
-                           if(§§pop())
-                           {
-                              while(true)
-                              {
-                                 §§push(this.§`_§);
-                                 addr225:
-                                 while(true)
-                                 {
-                                    §§pop().dispose();
-                                    addr227:
-                                    while(true)
-                                    {
-                                    }
-                                 }
-                              }
-                              addr223:
-                           }
-                           while(true)
-                           {
-                              §§push(this.§,E§);
-                              loop5:
-                              while(true)
-                              {
-                                 §§push(Boolean(§§pop()));
-                                 loop6:
-                                 while(true)
-                                 {
-                                    §§push(§§pop());
-                                    addr202:
-                                    while(true)
-                                    {
-                                       §§push(Boolean(§§pop()));
-                                       addr203:
-                                       while(true)
-                                       {
-                                          if(§§pop())
-                                          {
-                                             loop9:
-                                             while(true)
-                                             {
-                                                §§pop();
-                                                loop10:
-                                                while(true)
-                                                {
-                                                   §§push(this.§,E§);
-                                                   if(_loc2_)
-                                                   {
-                                                      §§push(§§pop().textureManager);
-                                                      loop11:
-                                                      while(true)
-                                                      {
-                                                         §§push(Boolean(§§pop()));
-                                                         addr176:
-                                                         while(true)
-                                                         {
-                                                            loop28:
-                                                            while(true)
-                                                            {
-                                                               if(§§pop())
-                                                               {
-                                                                  if(!_loc1_)
-                                                                  {
-                                                                     addr180:
-                                                                     §§push(this.§,E§);
-                                                                     while(!_loc1_)
-                                                                     {
-                                                                        §§push(§§pop().textureManager);
-                                                                        while(true)
-                                                                        {
-                                                                           §§pop().dispose();
-                                                                           addr83:
-                                                                           if(_loc2_ || this)
-                                                                           {
-                                                                              if(_loc2_)
-                                                                              {
-                                                                                 §§push(Boolean(§§pop()));
-                                                                                 loop20:
-                                                                                 while(true)
-                                                                                 {
-                                                                                    if(_loc1_)
-                                                                                    {
-                                                                                       continue loop2;
-                                                                                    }
-                                                                                    if(_loc1_)
-                                                                                    {
-                                                                                       continue loop9;
-                                                                                    }
-                                                                                    if(_loc1_ && this)
-                                                                                    {
-                                                                                       break;
-                                                                                    }
-                                                                                    while(true)
-                                                                                    {
-                                                                                       if(§§pop())
-                                                                                       {
-                                                                                          loop26:
-                                                                                          while(true)
-                                                                                          {
-                                                                                             if(!_loc1_)
-                                                                                             {
-                                                                                                §§push(this.§;!,§);
-                                                                                                loop24:
-                                                                                                while(true)
-                                                                                                {
-                                                                                                   §§push(§§pop().textureManager);
-                                                                                                   loop21:
-                                                                                                   while(true)
-                                                                                                   {
-                                                                                                      §§pop().dispose();
-                                                                                                      loop22:
-                                                                                                      while(true)
-                                                                                                      {
-                                                                                                         if(!_loc1_)
-                                                                                                         {
-                                                                                                            while(true)
-                                                                                                            {
-                                                                                                               §§push(this.§,!8§);
-                                                                                                               if(_loc1_)
-                                                                                                               {
-                                                                                                                  break;
-                                                                                                               }
-                                                                                                               §§push(Boolean(§§pop()));
-                                                                                                               if(_loc2_)
-                                                                                                               {
-                                                                                                                  if(!_loc1_)
-                                                                                                                  {
-                                                                                                                     if(§§pop())
-                                                                                                                     {
-                                                                                                                        if(_loc2_)
-                                                                                                                        {
-                                                                                                                           if(_loc2_ || _loc2_)
-                                                                                                                           {
-                                                                                                                              §§push(this.§,!8§);
-                                                                                                                              break;
-                                                                                                                           }
-                                                                                                                           continue loop22;
-                                                                                                                        }
-                                                                                                                        addr53:
-                                                                                                                        if(_loc1_)
-                                                                                                                        {
-                                                                                                                           continue loop26;
-                                                                                                                        }
-                                                                                                                        addr55:
-                                                                                                                        if(!(_loc2_ || this))
-                                                                                                                        {
-                                                                                                                           while(true)
-                                                                                                                           {
-                                                                                                                              if(!(_loc1_ && _loc2_))
-                                                                                                                              {
-                                                                                                                                 §§push(this.§;!,§);
-                                                                                                                                 if(!(_loc2_ || this))
-                                                                                                                                 {
-                                                                                                                                    continue loop24;
-                                                                                                                                 }
-                                                                                                                                 if(_loc2_ || this)
-                                                                                                                                 {
-                                                                                                                                    §§push(§§pop().textureManager);
-                                                                                                                                    if(_loc1_)
-                                                                                                                                    {
-                                                                                                                                       continue loop21;
-                                                                                                                                    }
-                                                                                                                                    §§goto(addr83);
-                                                                                                                                 }
-                                                                                                                                 else
-                                                                                                                                 {
-                                                                                                                                    while(true)
-                                                                                                                                    {
-                                                                                                                                       §§push(Boolean(§§pop()));
-                                                                                                                                       continue loop2;
-                                                                                                                                    }
-                                                                                                                                    addr129:
-                                                                                                                                 }
-                                                                                                                              }
-                                                                                                                              else
-                                                                                                                              {
-                                                                                                                                 §§goto(addr245);
-                                                                                                                              }
-                                                                                                                              §§goto(addr55);
-                                                                                                                           }
-                                                                                                                           addr161:
-                                                                                                                        }
-                                                                                                                     }
-                                                                                                                     return;
-                                                                                                                  }
-                                                                                                                  break loop22;
-                                                                                                               }
-                                                                                                               continue loop20;
-                                                                                                            }
-                                                                                                            §§pop().dispose();
-                                                                                                            §§goto(addr53);
-                                                                                                            addr29:
-                                                                                                         }
-                                                                                                         else
-                                                                                                         {
-                                                                                                            while(true)
-                                                                                                            {
-                                                                                                               if(_loc1_ && this)
-                                                                                                               {
-                                                                                                                  continue loop10;
-                                                                                                               }
-                                                                                                               if(_loc1_)
-                                                                                                               {
-                                                                                                                  break;
-                                                                                                               }
-                                                                                                               while(true)
-                                                                                                               {
-                                                                                                               }
-                                                                                                            }
-                                                                                                            §§goto(addr227);
-                                                                                                            addr187:
-                                                                                                         }
-                                                                                                         §§goto(addr129);
-                                                                                                      }
-                                                                                                      addr156:
-                                                                                                      while(true)
-                                                                                                      {
-                                                                                                         if(!_loc2_)
-                                                                                                         {
-                                                                                                            continue loop28;
-                                                                                                         }
-                                                                                                         if(!_loc2_)
-                                                                                                         {
-                                                                                                            continue loop0;
-                                                                                                         }
-                                                                                                         §§pop();
-                                                                                                         §§goto(addr161);
-                                                                                                      }
-                                                                                                      continue loop28;
-                                                                                                   }
-                                                                                                }
-                                                                                             }
-                                                                                             §§goto(addr223);
-                                                                                          }
-                                                                                          §§goto(addr225);
-                                                                                       }
-                                                                                       §§goto(addr29);
-                                                                                    }
-                                                                                 }
-                                                                                 continue loop6;
-                                                                              }
-                                                                              continue loop11;
-                                                                           }
-                                                                        }
-                                                                        §§goto(addr180);
-                                                                     }
-                                                                     continue loop5;
-                                                                     addr182:
-                                                                  }
-                                                                  §§goto(addr187);
-                                                               }
-                                                               §§goto(addr126);
-                                                            }
-                                                         }
-                                                      }
-                                                   }
-                                                   §§goto(addr182);
-                                                }
-                                             }
-                                          }
-                                          §§goto(addr176);
-                                       }
-                                    }
-                                 }
-                              }
-                           }
-                        }
-                     }
-                     §§goto(addr225);
-                  }
-               }
-            }
-            §§goto(addr243);
+            this.§^3§.dispose();
          }
-         §§goto(addr245);
+         if(this.§`_§)
+         {
+            this.§`_§.dispose();
+         }
+         if(this.§,E§ && this.§,E§.textureManager)
+         {
+            this.§,E§.textureManager.dispose();
+         }
+         if(this.§;!,§ && this.§;!,§.textureManager)
+         {
+            this.§;!,§.textureManager.dispose();
+         }
+         if(this.§,!8§)
+         {
+            this.§,!8§.dispose();
+         }
       }
       
       protected function initThemeGraphicsManager() : DynamicContentManager
@@ -946,153 +323,39 @@ package §?A§
       
       public function §@!F§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc3_))
+         if(Starling.§'!A§)
          {
-            §§push(Starling.§'!A§);
-            loop0:
-            while(true)
+            if(param1)
             {
-               §§push(Boolean(§§pop()));
-               if(!(_loc2_ && _loc2_))
-               {
-                  if(§§pop())
-                  {
-                     loop1:
-                     while(true)
-                     {
-                        §§push(param1);
-                        addr102:
-                        loop2:
-                        while(!§§pop())
-                        {
-                           §§push(Starling.§'!A§);
-                           while(_loc3_)
-                           {
-                              §§pop().stop();
-                              while(_loc3_)
-                              {
-                                 continue loop1;
-                                 §§pop().color = 0;
-                                 if(!_loc2_)
-                                 {
-                                    if(!(_loc2_ && param1))
-                                    {
-                                       §§goto(addr25);
-                                    }
-                                    break loop2;
-                                 }
-                              }
-                              §§push(Starling.§'!A§);
-                              if(_loc2_)
-                              {
-                                 continue;
-                              }
-                              if(!_loc3_)
-                              {
-                                 continue loop0;
-                              }
-                              §§goto(addr37);
-                           }
-                           §§pop().start();
-                           §§goto(addr108);
-                           continue loop1;
-                        }
-                        §§goto(addr106);
-                     }
-                  }
-                  addr25:
-                  return;
-               }
-               §§goto(addr102);
+               Starling.§'!A§.start();
+            }
+            else
+            {
+               Starling.§'!A§.stop();
+               Starling.§'!A§.color = 0;
             }
          }
-         §§goto(addr108);
       }
       
       public function §;!1§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc3_))
+         if(this.sprite)
          {
-            §§push(this.sprite);
-            if(_loc3_ || _loc3_)
-            {
-               if(§§pop())
-               {
-                  if(_loc3_ || _loc2_)
-                  {
-                     addr54:
-                     this.sprite.visible = param1;
-                  }
-               }
-               return;
-            }
+            this.sprite.visible = param1;
          }
-         §§goto(addr54);
       }
       
       public function setController(param1:§"!L§) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
+         if(this.§^!I§ != null)
          {
-            §§push(this.§^!I§);
-            loop0:
-            while(true)
-            {
-               if(§§pop() != null)
-               {
-                  if(_loc3_ || _loc2_)
-                  {
-                     §§push(this.§^!I§);
-                     while(true)
-                     {
-                        §§pop().removeEventListeners();
-                     }
-                     addr86:
-                  }
-                  while(true)
-                  {
-                  }
-                  addr88:
-               }
-               while(true)
-               {
-                  this.§^!I§ = param1;
-                  for(; this.mReadyToRun; if(_loc2_ && _loc2_)
-                  {
-                     continue;
-                  })
-                  {
-                     if(_loc2_)
-                     {
-                        continue;
-                     }
-                     if(!_loc2_)
-                     {
-                        §§push(this.§^!I§);
-                        if(!_loc2_)
-                        {
-                           if(!_loc2_)
-                           {
-                              §§pop().addEventListeners();
-                              continue;
-                           }
-                           continue loop0;
-                        }
-                        §§goto(addr86);
-                     }
-                     §§goto(addr88);
-                  }
-                  §§goto(addr20);
-               }
-            }
+            this.§^!I§.removeEventListeners();
          }
-         addr20:
+         this.§^!I§ = param1;
+         if(this.mReadyToRun)
+         {
+            this.§^!I§.addEventListeners();
+         }
       }
       
       public function §7;§() : Replay
@@ -1102,1559 +365,223 @@ package §?A§
       
       public function §'!>§(param1:§<'§, param2:Array, param3:Function) : void
       {
-         var _loc6_:Boolean = false;
-         var _loc7_:Boolean = true;
-         if(!(_loc6_ && param2))
+         this.§^3§ = param1;
+         var _loc4_:int = this.§^3§.§56§;
+         var _loc5_:int = 0;
+         while(_loc5_ < _loc4_)
          {
-            this.§^3§ = param1;
+            this.§`_§.§2!M§(this.§^3§.§!w§(_loc5_));
+            _loc5_++;
          }
-         §§push(this.§^3§.§56§);
-         if(!_loc6_)
+         if(param3 != null)
          {
-            §§push(int(§§pop()));
+            this.§`!b§.addEventListener(Event.INIT,param3);
+            this.§6h§.push(param3);
          }
-         var _loc4_:* = §§pop();
-         §§push(0);
-         if(_loc7_)
+         if(this.§4!Y§(param2))
          {
-            §§push(int(§§pop()));
-         }
-         var _loc5_:* = §§pop();
-         loop0:
-         while(true)
-         {
-            §§push(_loc5_);
-            if(_loc7_ || param1)
-            {
-               if(_loc7_ || param3)
-               {
-                  if(_loc7_ || param1)
-                  {
-                     if(§§pop() >= _loc4_)
-                     {
-                        loop1:
-                        while(true)
-                        {
-                           if(!(_loc6_ && param2))
-                           {
-                              if(param3 != null)
-                              {
-                                 while(_loc7_)
-                                 {
-                                    this.§`!b§.addEventListener(Event.INIT,param3);
-                                    while(true)
-                                    {
-                                       this.§6h§.push(param3);
-                                       addr94:
-                                       while(true)
-                                       {
-                                          addr80:
-                                          if(_loc7_ || param1)
-                                          {
-                                             §§goto(addr40);
-                                          }
-                                       }
-                                    }
-                                 }
-                                 continue loop0;
-                                 addr140:
-                              }
-                              while(true)
-                              {
-                                 if(this.§4!Y§(param2))
-                                 {
-                                    if(_loc7_ || param3)
-                                    {
-                                       if(!_loc6_)
-                                       {
-                                          if(!_loc6_)
-                                          {
-                                             continue loop1;
-                                          }
-                                          §§goto(addr140);
-                                       }
-                                       §§goto(addr150);
-                                    }
-                                    else
-                                    {
-                                       §§goto(addr80);
-                                    }
-                                 }
-                                 break;
-                                 §§goto(addr94);
-                              }
-                              addr40:
-                              return;
-                           }
-                        }
-                     }
-                     else
-                     {
-                        this.§`_§.§2!M§(this.§^3§.§!w§(_loc5_));
-                     }
-                     §§push(_loc5_);
-                  }
-                  §§push(§§pop() + 1);
-               }
-               §§push(int(§§pop()));
-            }
-            _loc5_ = §§pop();
+            this.§2K§();
          }
       }
       
       private function §4!Y§(param1:Array) : Boolean
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
          var _loc2_:int = 0;
-         var _loc3_:* = 0;
-         if(!_loc4_)
+         var _loc3_:int = 0;
+         if(this.§`_§.§-t§())
          {
-            §§push(this.§`_§);
-            if(!(_loc4_ && param1))
-            {
-               §§push(§§pop().§-t§());
-               loop0:
-               while(true)
-               {
-                  if(!§§pop())
-                  {
-                     loop1:
-                     while(true)
-                     {
-                        this.§;"§ = param1.concat();
-                        if(_loc4_ && _loc2_)
-                        {
-                           if(!(_loc4_ && this))
-                           {
-                              if(!(_loc4_ && param1))
-                              {
-                                 continue;
-                              }
-                              §§goto(addr208);
-                           }
-                           break;
-                        }
-                        if(_loc5_ || _loc3_)
-                        {
-                           if(_loc5_ || _loc2_)
-                           {
-                              while(true)
-                              {
-                                 §§push(false);
-                                 if(!(_loc4_ && param1))
-                                 {
-                                    break;
-                                 }
-                                 continue loop0;
-                              }
-                              return §§pop();
-                              addr62:
-                           }
-                           loop3:
-                           while(true)
-                           {
-                              §§push(this.§`_§);
-                              if(!_loc4_)
-                              {
-                                 §§push(§§pop().§+2§);
-                                 if(!(_loc4_ && _loc3_))
-                                 {
-                                    §§push(1000);
-                                    if(!(_loc4_ && param1))
-                                    {
-                                       §§push(§§pop() / §§pop());
-                                       if(!(_loc4_ && _loc2_))
-                                       {
-                                          addr188:
-                                          §§push(int(§§pop()));
-                                          if(!(_loc5_ || param1))
-                                          {
-                                             continue;
-                                          }
-                                          if(_loc5_)
-                                          {
-                                             addr207:
-                                             _loc3_ = §§pop();
-                                             while(true)
-                                             {
-                                                §§push(Log);
-                                                §§push("\n\nMain texture manager memory usage:\n   textures ");
-                                                if(!(_loc4_ && param1))
-                                                {
-                                                   §§push(_loc2_);
-                                                   if(!(_loc4_ && this))
-                                                   {
-                                                      §§push(§§pop() + §§pop());
-                                                      if(!_loc4_)
-                                                      {
-                                                         §§push(" kilobytes\n   bitmaps ");
-                                                         if(_loc5_ || _loc2_)
-                                                         {
-                                                            §§push(§§pop() + §§pop());
-                                                            if(!_loc4_)
-                                                            {
-                                                               addr145:
-                                                               §§push(§§pop() + _loc3_);
-                                                               if(_loc5_ || _loc3_)
-                                                               {
-                                                                  addr154:
-                                                                  §§push(§§pop() + " kilobytes\n\n");
-                                                               }
-                                                            }
-                                                            §§pop().log(§§pop());
-                                                            break loop1;
-                                                         }
-                                                      }
-                                                      §§goto(addr154);
-                                                   }
-                                                   §§goto(addr145);
-                                                }
-                                                §§goto(addr154);
-                                                §§goto(addr207);
-                                             }
-                                             addr208:
-                                             §§push(true);
-                                             continue loop0;
-                                             addr100:
-                                             addr208:
-                                          }
-                                          while(true)
-                                          {
-                                             §§push(1000);
-                                             addr224:
-                                             while(true)
-                                             {
-                                                §§push(§§pop() / §§pop());
-                                             }
-                                          }
-                                          addr223:
-                                       }
-                                       while(true)
-                                       {
-                                          §§push(int(§§pop()));
-                                          continue loop3;
-                                       }
-                                    }
-                                    §§goto(addr224);
-                                 }
-                                 §§goto(addr188);
-                              }
-                              addr222:
-                              while(true)
-                              {
-                                 §§goto(addr223);
-                              }
-                           }
-                        }
-                        while(true)
-                        {
-                           if(_loc4_ && _loc2_)
-                           {
-                              while(true)
-                              {
-                                 §§goto(addr222);
-                              }
-                              addr220:
-                           }
-                           §§goto(addr100);
-                        }
-                        §§goto(addr208);
-                     }
-                     while(true)
-                     {
-                        this.initializeAnimations(param1);
-                        §§goto(addr93);
-                     }
-                  }
-                  §§goto(addr220);
-               }
-               return §§pop();
-            }
-            §§goto(addr222);
+            _loc2_ = this.§`_§.§3^§ / 1000;
+            _loc3_ = this.§`_§.§+2§ / 1000;
+            Log.log("\n\nMain texture manager memory usage:\n   textures " + _loc2_ + " kilobytes\n   bitmaps " + _loc3_ + " kilobytes\n\n");
+            this.initializeAnimations(param1);
+            return true;
          }
-         §§goto(addr62);
+         this.§;"§ = param1.concat();
+         return false;
       }
       
       private function initializeAnimations(param1:Array) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && this))
-         {
-            this.§[6§.initializeAnimations(param1);
-         }
+         this.§[6§.initializeAnimations(param1);
       }
       
       private function §>!R§(param1:Event) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
+         this.§`_§.§-h§();
+         if(this.§9L§ && this.§9L§.textureManager)
          {
-            this.§`_§.§-h§();
-            loop0:
-            while(true)
+            this.§9L§.textureManager.§-h§();
+         }
+         if(this.§6J§ && this.§6J§.textureManager)
+         {
+            this.§6J§.textureManager.§-h§();
+         }
+         if(this.§;"§)
+         {
+            this.§4!Y§(this.§;"§);
+            this.§;"§ = null;
+            this.§2K§();
+         }
+         if(this.§^!I§ != null && this.mReadyToRun)
+         {
+            this.§^!I§.addEventListeners();
+         }
+         if(this.§,E§)
+         {
+            this.§,E§.§-t§();
+         }
+         if(this.§;!,§)
+         {
+            if(this.§;!,§.textureManager)
             {
-               §§push(this.§9L§);
-               loop1:
-               while(true)
-               {
-                  §§push(Boolean(§§pop()));
-                  loop2:
-                  while(true)
-                  {
-                     §§push(§§pop());
-                     loop3:
-                     while(true)
-                     {
-                        §§push(Boolean(§§pop()));
-                        loop4:
-                        while(true)
-                        {
-                           if(§§pop())
-                           {
-                              while(true)
-                              {
-                                 §§pop();
-                                 loop6:
-                                 while(true)
-                                 {
-                                    §§push(this.§9L§);
-                                    if(!_loc3_)
-                                    {
-                                       continue loop1;
-                                    }
-                                    §§push(§§pop().textureManager);
-                                    loop7:
-                                    while(true)
-                                    {
-                                       §§push(Boolean(§§pop()));
-                                       addr153:
-                                       if(!(_loc3_ || param1))
-                                       {
-                                          continue;
-                                       }
-                                       §§pop().§-h§();
-                                       loop47:
-                                       for(; _loc3_ || _loc3_; §§pop().§-t§(),if(_loc2_ && _loc2_)
-                                       {
-                                          continue;
-                                       },if(!(_loc2_ && _loc2_))
-                                       {
-                                          if(_loc3_)
-                                          {
-                                             if(!_loc3_)
-                                             {
-                                                §§goto(addr360);
-                                             }
-                                             addr20:
-                                             return;
-                                          }
-                                          §§goto(addr83);
-                                       },§§goto(addr136))
-                                       {
-                                          if(_loc3_ || param1)
-                                          {
-                                             §§push(this.§;!,§);
-                                             if(_loc3_ || this)
-                                             {
-                                                continue;
-                                             }
-                                             loop50:
-                                             while(true)
-                                             {
-                                                §§push(§§pop().textureManager);
-                                                loop46:
-                                                while(true)
-                                                {
-                                                   if(!(_loc2_ && _loc3_))
-                                                   {
-                                                      §§goto(addr153);
-                                                   }
-                                                   else
-                                                   {
-                                                      loop22:
-                                                      while(true)
-                                                      {
-                                                         §§pop().§-h§();
-                                                         while(true)
-                                                         {
-                                                            loop24:
-                                                            while(true)
-                                                            {
-                                                               §§push(Boolean(this.§;"§));
-                                                               loop25:
-                                                               while(true)
-                                                               {
-                                                                  if(§§pop())
-                                                                  {
-                                                                     loop26:
-                                                                     while(true)
-                                                                     {
-                                                                        §§push(this.§4!Y§(this.§;"§));
-                                                                        loop27:
-                                                                        while(true)
-                                                                        {
-                                                                           §§pop();
-                                                                           loop28:
-                                                                           while(true)
-                                                                           {
-                                                                              this.§;"§ = null;
-                                                                              loop29:
-                                                                              for(; !_loc2_; if(!(_loc3_ || param1))
-                                                                              {
-                                                                                 continue;
-                                                                              },if(!(_loc3_ || this))
-                                                                              {
-                                                                                 continue loop28;
-                                                                              },if(_loc2_)
-                                                                              {
-                                                                                 continue loop24;
-                                                                              },§§push(this.§;!,§),if(!_loc3_)
-                                                                              {
-                                                                                 continue loop50;
-                                                                              },§§push(§§pop().textureManager),if(_loc2_)
-                                                                              {
-                                                                                 continue loop46;
-                                                                              },addr113:,if(!(_loc2_ && this))
-                                                                              {
-                                                                                 §§goto(addr121);
-                                                                                 §§push(Boolean(§§pop()));
-                                                                              },while(!(_loc2_ && param1))
-                                                                              {
-                                                                                 §§goto(addr356);
-                                                                                 §§push(Boolean(§§pop()));
-                                                                                 §§goto(addr113);
-                                                                              },while(true)
-                                                                              {
-                                                                                 §§pop().§-h§();
-                                                                                 break loop47;
-                                                                                 §§goto(addr348);
-                                                                              },addr348:)
-                                                                              {
-                                                                                 this.§2K§();
-                                                                                 loop30:
-                                                                                 while(true)
-                                                                                 {
-                                                                                    addr271:
-                                                                                    while(true)
-                                                                                    {
-                                                                                       §§push(this.§^!I§);
-                                                                                       loop32:
-                                                                                       while(true)
-                                                                                       {
-                                                                                          §§push(§§pop() == null);
-                                                                                          loop33:
-                                                                                          while(true)
-                                                                                          {
-                                                                                             §§push(!§§pop());
-                                                                                             if(_loc3_)
-                                                                                             {
-                                                                                                if(_loc3_)
-                                                                                                {
-                                                                                                   §§push(Boolean(§§pop()));
-                                                                                                   loop34:
-                                                                                                   while(true)
-                                                                                                   {
-                                                                                                      §§push(§§pop());
-                                                                                                      if(_loc3_)
-                                                                                                      {
-                                                                                                         if(_loc2_)
-                                                                                                         {
-                                                                                                            continue loop4;
-                                                                                                         }
-                                                                                                         §§push(Boolean(§§pop()));
-                                                                                                      }
-                                                                                                      if(_loc2_ && _loc3_)
-                                                                                                      {
-                                                                                                         break;
-                                                                                                      }
-                                                                                                      if(!(_loc2_ && _loc2_))
-                                                                                                      {
-                                                                                                         if(§§pop())
-                                                                                                         {
-                                                                                                            continue loop25;
-                                                                                                         }
-                                                                                                         loop39:
-                                                                                                         while(true)
-                                                                                                         {
-                                                                                                            if(§§pop())
-                                                                                                            {
-                                                                                                               if(!(_loc2_ && param1))
-                                                                                                               {
-                                                                                                                  if(!_loc3_)
-                                                                                                                  {
-                                                                                                                     continue loop0;
-                                                                                                                  }
-                                                                                                                  §§push(this.§^!I§);
-                                                                                                                  if(_loc2_)
-                                                                                                                  {
-                                                                                                                     break;
-                                                                                                                  }
-                                                                                                                  §§pop().addEventListeners();
-                                                                                                               }
-                                                                                                               loop40:
-                                                                                                               while(true)
-                                                                                                               {
-                                                                                                                  if(!_loc3_)
-                                                                                                                  {
-                                                                                                                     continue loop6;
-                                                                                                                  }
-                                                                                                                  addr83:
-                                                                                                                  while(true)
-                                                                                                                  {
-                                                                                                                     if(!(_loc2_ && _loc2_))
-                                                                                                                     {
-                                                                                                                        continue loop29;
-                                                                                                                     }
-                                                                                                                     continue loop40;
-                                                                                                                  }
-                                                                                                                  continue loop1;
-                                                                                                               }
-                                                                                                            }
-                                                                                                            while(true)
-                                                                                                            {
-                                                                                                               §§push(this.§,E§);
-                                                                                                               if(_loc3_ || _loc3_)
-                                                                                                               {
-                                                                                                                  §§push(Boolean(§§pop()));
-                                                                                                                  loop42:
-                                                                                                                  while(!_loc2_)
-                                                                                                                  {
-                                                                                                                     addr190:
-                                                                                                                     if(_loc3_ || param1)
-                                                                                                                     {
-                                                                                                                        if(§§pop())
-                                                                                                                        {
-                                                                                                                           if(!(_loc2_ && param1))
-                                                                                                                           {
-                                                                                                                              if(_loc3_)
-                                                                                                                              {
-                                                                                                                                 if(!_loc3_)
-                                                                                                                                 {
-                                                                                                                                    continue loop30;
-                                                                                                                                 }
-                                                                                                                                 if(!(_loc3_ || this))
-                                                                                                                                 {
-                                                                                                                                    continue loop26;
-                                                                                                                                 }
-                                                                                                                                 §§push(this.§,E§);
-                                                                                                                                 while(true)
-                                                                                                                                 {
-                                                                                                                                    §§pop().§-t§();
-                                                                                                                                    addr230:
-                                                                                                                                    loop43:
-                                                                                                                                    while(true)
-                                                                                                                                    {
-                                                                                                                                       addr55:
-                                                                                                                                       while(true)
-                                                                                                                                       {
-                                                                                                                                          §§push(this.§;!,§);
-                                                                                                                                          if(_loc2_ && _loc2_)
-                                                                                                                                          {
-                                                                                                                                             continue loop50;
-                                                                                                                                          }
-                                                                                                                                          §§push(Boolean(§§pop()));
-                                                                                                                                          if(_loc2_)
-                                                                                                                                          {
-                                                                                                                                             while(true)
-                                                                                                                                             {
-                                                                                                                                                if(!(_loc3_ || param1))
-                                                                                                                                                {
-                                                                                                                                                   continue loop42;
-                                                                                                                                                }
-                                                                                                                                                if(!(_loc3_ || param1))
-                                                                                                                                                {
-                                                                                                                                                   break;
-                                                                                                                                                }
-                                                                                                                                                if(§§pop())
-                                                                                                                                                {
-                                                                                                                                                   §§goto(addr136);
-                                                                                                                                                }
-                                                                                                                                                §§goto(addr20);
-                                                                                                                                             }
-                                                                                                                                             continue loop34;
-                                                                                                                                             continue loop42;
-                                                                                                                                          }
-                                                                                                                                          if(_loc3_ || param1)
-                                                                                                                                          {
-                                                                                                                                             if(!(_loc3_ || _loc3_))
-                                                                                                                                             {
-                                                                                                                                                continue loop27;
-                                                                                                                                             }
-                                                                                                                                             if(!§§pop())
-                                                                                                                                             {
-                                                                                                                                                §§goto(addr20);
-                                                                                                                                             }
-                                                                                                                                             §§goto(addr83);
-                                                                                                                                          }
-                                                                                                                                          continue loop43;
-                                                                                                                                       }
-                                                                                                                                       continue loop28;
-                                                                                                                                    }
-                                                                                                                                 }
-                                                                                                                              }
-                                                                                                                              else
-                                                                                                                              {
-                                                                                                                                 while(true)
-                                                                                                                                 {
-                                                                                                                                    §§push(this.mReadyToRun);
-                                                                                                                                 }
-                                                                                                                                 addr318:
-                                                                                                                              }
-                                                                                                                              while(true)
-                                                                                                                              {
-                                                                                                                                 §§push(Boolean(§§pop()));
-                                                                                                                                 break loop42;
-                                                                                                                                 §§goto(addr68);
-                                                                                                                              }
-                                                                                                                           }
-                                                                                                                           §§goto(addr230);
-                                                                                                                        }
-                                                                                                                        §§goto(addr55);
-                                                                                                                     }
-                                                                                                                     while(_loc3_)
-                                                                                                                     {
-                                                                                                                        while(true)
-                                                                                                                        {
-                                                                                                                           if(!§§pop())
-                                                                                                                           {
-                                                                                                                              continue loop24;
-                                                                                                                           }
-                                                                                                                           while(true)
-                                                                                                                           {
-                                                                                                                              §§push(this.§6J§);
-                                                                                                                              addr362:
-                                                                                                                              while(_loc3_ || param1)
-                                                                                                                              {
-                                                                                                                                 §§push(§§pop().textureManager);
-                                                                                                                                 continue loop22;
-                                                                                                                              }
-                                                                                                                              addr376:
-                                                                                                                              while(true)
-                                                                                                                              {
-                                                                                                                                 §§push(Boolean(§§pop()));
-                                                                                                                                 addr377:
-                                                                                                                                 while(true)
-                                                                                                                                 {
-                                                                                                                                    §§push(§§pop());
-                                                                                                                                    if(_loc3_)
-                                                                                                                                    {
-                                                                                                                                       §§push(Boolean(§§pop()));
-                                                                                                                                       break loop34;
-                                                                                                                                    }
-                                                                                                                                    break loop34;
-                                                                                                                                 }
-                                                                                                                              }
-                                                                                                                           }
-                                                                                                                        }
-                                                                                                                        §§goto(addr190);
-                                                                                                                     }
-                                                                                                                     continue loop2;
-                                                                                                                  }
-                                                                                                                  while(true)
-                                                                                                                  {
-                                                                                                                     if(!(_loc2_ && this))
-                                                                                                                     {
-                                                                                                                        if(_loc3_)
-                                                                                                                        {
-                                                                                                                           if(_loc2_ && param1)
-                                                                                                                           {
-                                                                                                                              break;
-                                                                                                                           }
-                                                                                                                           continue loop39;
-                                                                                                                        }
-                                                                                                                        continue loop33;
-                                                                                                                     }
-                                                                                                                     continue loop25;
-                                                                                                                  }
-                                                                                                                  §§goto(addr377);
-                                                                                                                  addr235:
-                                                                                                               }
-                                                                                                               §§goto(addr228);
-                                                                                                            }
-                                                                                                         }
-                                                                                                         continue loop32;
-                                                                                                      }
-                                                                                                      continue loop3;
-                                                                                                   }
-                                                                                                   while(true)
-                                                                                                   {
-                                                                                                      if(§§pop())
-                                                                                                      {
-                                                                                                         break loop33;
-                                                                                                      }
-                                                                                                      §§goto(addr358);
-                                                                                                   }
-                                                                                                   addr282:
-                                                                                                }
-                                                                                                break;
-                                                                                             }
-                                                                                             §§goto(addr282);
-                                                                                          }
-                                                                                          while(_loc3_)
-                                                                                          {
-                                                                                             §§pop();
-                                                                                             break loop29;
-                                                                                          }
-                                                                                          addr404:
-                                                                                          while(true)
-                                                                                          {
-                                                                                             if(§§pop())
-                                                                                             {
-                                                                                                addr405:
-                                                                                                while(true)
-                                                                                                {
-                                                                                                   §§push(this.§9L§);
-                                                                                                   continue loop1;
-                                                                                                }
-                                                                                                addr405:
-                                                                                             }
-                                                                                             else
-                                                                                             {
-                                                                                                while(true)
-                                                                                                {
-                                                                                                   §§goto(addr376);
-                                                                                                }
-                                                                                                addr373:
-                                                                                             }
-                                                                                          }
-                                                                                       }
-                                                                                    }
-                                                                                 }
-                                                                              }
-                                                                              while(true)
-                                                                              {
-                                                                                 §§push(this.§6J§);
-                                                                                 if(_loc3_)
-                                                                                 {
-                                                                                    §§goto(addr113);
-                                                                                    §§push(§§pop().textureManager);
-                                                                                 }
-                                                                                 §§goto(addr362);
-                                                                              }
-                                                                           }
-                                                                        }
-                                                                     }
-                                                                  }
-                                                                  §§goto(addr271);
-                                                               }
-                                                            }
-                                                         }
-                                                      }
-                                                   }
-                                                   continue loop50;
-                                                }
-                                                continue loop7;
-                                             }
-                                          }
-                                          §§goto(addr405);
-                                       }
-                                       while(true)
-                                       {
-                                          §§goto(addr373);
-                                       }
-                                    }
-                                 }
-                              }
-                           }
-                           while(true)
-                           {
-                              §§goto(addr404);
-                           }
-                        }
-                     }
-                  }
-               }
+               this.§;!,§.textureManager.§-h§();
+               this.§;!,§.§-t§();
             }
          }
-         §§goto(addr417);
       }
       
       private function §2K§() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            this.§`!b§.dispatchEvent(new Event(Event.INIT));
-         }
-         do
-         {
-            this.§@!g§();
-         }
-         while(_loc1_);
-         
+         this.§`!b§.dispatchEvent(new Event(Event.INIT));
+         this.§@!g§();
       }
       
       private function §@!g§() : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
          var _loc1_:Function = null;
-         var _loc3_:* = this.§6h§;
-         for each(_loc1_ in _loc3_)
+         for each(_loc1_ in this.§6h§)
          {
-            if(!_loc5_)
-            {
-               this.§`!b§.removeEventListener(Event.INIT,_loc1_);
-            }
+            this.§`!b§.removeEventListener(Event.INIT,_loc1_);
          }
-         if(_loc4_ || _loc3_)
-         {
-            this.§6h§ = [];
-         }
+         this.§6h§ = [];
       }
       
       public function init(param1:LevelModel) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc2_))
+         if(this.mReadyToRun)
          {
-            §§push(this.mReadyToRun);
-            while(true)
-            {
-               if(§§pop())
-               {
-                  while(true)
-                  {
-                     this.clearLevel();
-                     addr290:
-                     while(true)
-                     {
-                     }
-                  }
-                  addr287:
-               }
-               while(true)
-               {
-                  this.§ "§ = new §'K§(this,param1);
-                  loop4:
-                  while(true)
-                  {
-                     this.§6!V§ = this.§8Y§(param1);
-                     while(true)
-                     {
-                        this.§<!b§ = 0;
-                        addr268:
-                        while(true)
-                        {
-                           this.§"!-§ = 0;
-                           addr263:
-                           while(true)
-                           {
-                              this.§,!%§ = 0;
-                              addr258:
-                              while(true)
-                              {
-                                 this.§0v§ = false;
-                                 continue loop4;
-                              }
-                           }
-                        }
-                        addr43:
-                        if(_loc2_ || this)
-                        {
-                           return;
-                        }
-                     }
-                  }
-               }
-            }
+            this.clearLevel();
          }
-         while(true)
+         this.§ "§ = new §'K§(this,param1);
+         this.§6!V§ = this.§8Y§(param1);
+         this.§<!b§ = 0;
+         this.§"!-§ = 0;
+         this.§,!%§ = 0;
+         this.§0v§ = false;
+         this.mReadyToRun = false;
+         this.§2§ = false;
+         this.mPigsAnimationTimer1 = 2000;
+         this.mPigsAnimationTimer2 = 1000;
+         §@!G§ = param1.theme;
+         this.§0!?§ = param1;
+         this.§=!X§ = this.§]!8§(param1.theme);
+         this.§,!^§ = this.§"]§(param1.theme);
+         if(this.§=!X§ && this.§,!^§)
          {
-            this.§=!X§ = this.§]!8§(param1.theme);
-            §§goto(addr184);
+            this.initialize(param1);
          }
+         else
+         {
+            this.§7$§(param1.theme);
+         }
+         this.§5!'§();
+         ScoreCollector.init();
       }
       
       protected function §5!'§() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            this.§,z§ = new Replay(LevelManager.§!=§);
-         }
+         this.§,z§ = new Replay(LevelManager.§!=§);
       }
       
       protected function §]!8§(param1:String) : Boolean
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && param1))
+         if(this.§,E§)
          {
-            §§push(Boolean(this.§,E§));
-            if(_loc3_ || this)
-            {
-               if(§§pop())
-               {
-                  if(_loc3_ || _loc3_)
-                  {
-                     §§push(false);
-                     if(!(_loc2_ && this))
-                     {
-                        §§goto(addr70);
-                     }
-                  }
-                  else
-                  {
-                     addr71:
-                     return true;
-                  }
-                  return §§pop();
-               }
-               §§goto(addr71);
-            }
-            addr70:
-            return §§pop();
+            return false;
          }
-         §§goto(addr71);
+         return true;
       }
       
       protected function §"]§(param1:String) : Boolean
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
          var _loc2_:LevelThemeBackground = null;
-         if(_loc4_ || param1)
+         if(this.§^l§)
          {
-            §§push(Boolean(this.§^l§));
-            if(!(_loc3_ && this))
+            _loc2_ = LevelThemeBackgroundManager.§"!f§(param1);
+            if(_loc2_)
             {
-               if(§§pop())
+               if(_loc2_.§2!"§ && !this.§^l§.§43§(_loc2_.§2!"§))
                {
-                  addr38:
-                  _loc2_ = LevelThemeBackgroundManager.§"!f§(param1);
-                  if(_loc4_)
-                  {
-                     §§push(Boolean(_loc2_));
-                     if(_loc4_ || _loc2_)
-                     {
-                        if(§§pop())
-                        {
-                           if(!(_loc3_ && param1))
-                           {
-                              addr73:
-                              §§push(Boolean(_loc2_.§2!"§));
-                              if(_loc4_ || param1)
-                              {
-                                 §§push(§§pop());
-                                 if(_loc4_)
-                                 {
-                                    §§push(Boolean(§§pop()));
-                                 }
-                                 if(§§pop())
-                                 {
-                                    if(!_loc3_)
-                                    {
-                                       §§pop();
-                                       if(_loc4_ || _loc3_)
-                                       {
-                                          §§push(this.§^l§.§43§(_loc2_.§2!"§));
-                                          if(!_loc4_)
-                                          {
-                                          }
-                                          addr126:
-                                          if(§§pop())
-                                          {
-                                             if(_loc4_)
-                                             {
-                                                §§goto(addr130);
-                                             }
-                                             else
-                                             {
-                                                addr132:
-                                                return true;
-                                                addr131:
-                                             }
-                                          }
-                                       }
-                                       §§goto(addr131);
-                                    }
-                                    §§push(!§§pop());
-                                    if(_loc4_)
-                                    {
-                                       addr118:
-                                       §§push(Boolean(§§pop()));
-                                       if(_loc3_ && _loc3_)
-                                       {
-                                       }
-                                    }
-                                    §§goto(addr130);
-                                 }
-                                 §§goto(addr126);
-                              }
-                              §§goto(addr118);
-                           }
-                        }
-                        §§goto(addr131);
-                     }
-                     addr130:
-                     return false;
-                  }
-                  §§goto(addr73);
+                  return false;
                }
-               §§goto(addr131);
             }
-            §§goto(addr132);
          }
-         §§goto(addr38);
+         return true;
       }
       
       protected function §7$§(param1:String) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
          var _loc2_:LevelThemeBackground = null;
-         if(_loc4_)
+         if(this.§,E§ && !this.§]!8§(param1))
          {
-            §§push(this.§,E§);
-            loop0:
-            while(true)
+            this.§,E§.removeEventListener(Event.COMPLETE,this.§-@§);
+            this.§,E§.removeEventListener(Event.CANCEL,this.§"!B§);
+            this.§,E§.addEventListener(Event.COMPLETE,this.§-@§);
+            this.§,E§.addEventListener(Event.CANCEL,this.§"!B§);
+            this.§,E§.§'!9§(param1);
+         }
+         if(this.§^l§ && !this.§"]§(param1))
+         {
+            this.§^l§.removeEventListener(Event.COMPLETE,this.§[Q§);
+            this.§^l§.removeEventListener(Event.CANCEL,this.§5!G§);
+            this.§^l§.addEventListener(Event.COMPLETE,this.§[Q§);
+            this.§^l§.addEventListener(Event.CANCEL,this.§5!G§);
+            _loc2_ = LevelThemeBackgroundManager.§"!f§(param1);
+            if(_loc2_)
             {
-               §§push(Boolean(§§pop()));
-               loop1:
-               while(true)
-               {
-                  §§push(§§pop());
-                  loop2:
-                  while(true)
-                  {
-                     §§push(Boolean(§§pop()));
-                     loop3:
-                     while(true)
-                     {
-                        if(§§pop())
-                        {
-                           loop4:
-                           while(true)
-                           {
-                              §§pop();
-                              addr330:
-                              loop32:
-                              while(true)
-                              {
-                                 §§push(this.§]!8§(param1));
-                                 if(_loc4_ || _loc3_)
-                                 {
-                                    addr310:
-                                    §§push(!§§pop());
-                                    while(true)
-                                    {
-                                       §§push(Boolean(§§pop()));
-                                       addr311:
-                                       while(true)
-                                       {
-                                       }
-                                    }
-                                    addr310:
-                                 }
-                                 loop6:
-                                 while(true)
-                                 {
-                                    if(§§pop())
-                                    {
-                                       loop7:
-                                       while(true)
-                                       {
-                                          §§push(this.§,E§);
-                                          loop8:
-                                          while(true)
-                                          {
-                                             §§pop().removeEventListener(Event.COMPLETE,this.§-@§);
-                                             while(true)
-                                             {
-                                                §§push(this.§,E§);
-                                                loop10:
-                                                while(true)
-                                                {
-                                                   §§pop().removeEventListener(Event.CANCEL,this.§"!B§);
-                                                   loop11:
-                                                   while(true)
-                                                   {
-                                                      if(!(_loc3_ && param1))
-                                                      {
-                                                         §§push(this.§,E§);
-                                                         loop12:
-                                                         for(; _loc4_; while(true)
-                                                         {
-                                                            if(!(_loc3_ && this))
-                                                            {
-                                                               continue loop10;
-                                                            }
-                                                            continue loop12;
-                                                            §§goto(addr266);
-                                                         },continue loop10)
-                                                         {
-                                                            §§pop().addEventListener(Event.COMPLETE,this.§-@§);
-                                                            while(true)
-                                                            {
-                                                               §§push(this.§,E§);
-                                                               continue loop12;
-                                                               addr259:
-                                                               while(!(_loc3_ && this))
-                                                               {
-                                                                  §§push(this.§,E§);
-                                                                  if(_loc4_ || this)
-                                                                  {
-                                                                     §§pop().§'!9§(param1);
-                                                                     while(!(_loc3_ && _loc2_))
-                                                                     {
-                                                                        while(true)
-                                                                        {
-                                                                           §§push(this.§^l§);
-                                                                           while(true)
-                                                                           {
-                                                                              §§push(Boolean(§§pop()));
-                                                                              while(true)
-                                                                              {
-                                                                                 §§push(§§pop());
-                                                                                 if(_loc4_ || this)
-                                                                                 {
-                                                                                    if(_loc3_)
-                                                                                    {
-                                                                                       break;
-                                                                                    }
-                                                                                    §§push(Boolean(§§pop()));
-                                                                                 }
-                                                                                 if(_loc3_)
-                                                                                 {
-                                                                                    continue loop2;
-                                                                                 }
-                                                                                 if(§§pop())
-                                                                                 {
-                                                                                    loop20:
-                                                                                    while(true)
-                                                                                    {
-                                                                                       if(_loc3_ && this)
-                                                                                       {
-                                                                                          continue loop6;
-                                                                                       }
-                                                                                       if(_loc3_)
-                                                                                       {
-                                                                                          continue loop4;
-                                                                                       }
-                                                                                       if(!(_loc4_ || _loc2_))
-                                                                                       {
-                                                                                          break;
-                                                                                       }
-                                                                                       §§pop();
-                                                                                       while(true)
-                                                                                       {
-                                                                                          §§push(this.§"]§(param1));
-                                                                                          if(_loc4_ || this)
-                                                                                          {
-                                                                                             continue loop20;
-                                                                                          }
-                                                                                          addr137:
-                                                                                          §§push(Boolean(§§pop()));
-                                                                                       }
-                                                                                       §§goto(addr310);
-                                                                                    }
-                                                                                    continue loop1;
-                                                                                 }
-                                                                                 while(true)
-                                                                                 {
-                                                                                    §§goto(addr139);
-                                                                                 }
-                                                                              }
-                                                                              continue loop3;
-                                                                              if(_loc3_ && _loc2_)
-                                                                              {
-                                                                                 continue;
-                                                                              }
-                                                                              §§goto(addr37);
-                                                                           }
-                                                                        }
-                                                                        if(!(_loc4_ || _loc3_))
-                                                                        {
-                                                                           continue;
-                                                                        }
-                                                                        if(_loc3_ && _loc3_)
-                                                                        {
-                                                                           continue loop11;
-                                                                        }
-                                                                        §§goto(addr158);
-                                                                        §§push(this.§^l§);
-                                                                     }
-                                                                     continue loop7;
-                                                                  }
-                                                                  continue loop12;
-                                                               }
-                                                            }
-                                                         }
-                                                         continue loop8;
-                                                      }
-                                                      continue loop32;
-                                                   }
-                                                   continue loop32;
-                                                   if(_loc3_ && this)
-                                                   {
-                                                      continue;
-                                                   }
-                                                   if(!_loc4_)
-                                                   {
-                                                      continue loop0;
-                                                   }
-                                                   §§pop().addEventListener(Event.CANCEL,this.§"!B§);
-                                                   §§goto(addr259);
-                                                }
-                                             }
-                                          }
-                                       }
-                                    }
-                                    §§goto(addr166);
-                                 }
-                              }
-                           }
-                        }
-                        §§goto(addr311);
-                     }
-                  }
-               }
+               this.§^l§.§'!9§(_loc2_.§2!"§);
             }
          }
-         §§goto(addr330);
       }
       
       private function §-@§(param1:Event) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
+         this.§,E§.removeEventListener(Event.COMPLETE,this.§-@§);
+         this.§,E§.removeEventListener(Event.CANCEL,this.§"!B§);
+         this.§=!X§ = true;
+         if(this.§=!X§ && this.§,!^§)
          {
-            §§push(this.§,E§);
-            while(true)
-            {
-               §§pop().removeEventListener(Event.COMPLETE,this.§-@§);
-               loop1:
-               while(true)
-               {
-                  §§push(this.§,E§);
-                  if(_loc2_)
-                  {
-                     break;
-                  }
-                  §§pop().removeEventListener(Event.CANCEL,this.§"!B§);
-                  while(true)
-                  {
-                     this.§=!X§ = true;
-                     loop3:
-                     while(true)
-                     {
-                        §§push(this.§=!X§);
-                        loop4:
-                        while(true)
-                        {
-                           §§push(Boolean(§§pop()));
-                           if(_loc3_)
-                           {
-                              §§push(§§pop());
-                              if(_loc3_)
-                              {
-                                 §§push(Boolean(§§pop()));
-                              }
-                              if(!§§pop())
-                              {
-                                 loop5:
-                                 for(; §§pop(); continue loop4)
-                                 {
-                                    if(!_loc2_)
-                                    {
-                                       if(!(_loc3_ || _loc3_))
-                                       {
-                                          continue loop1;
-                                       }
-                                       while(true)
-                                       {
-                                          this.initialize(this.§0!?§);
-                                       }
-                                    }
-                                    while(true)
-                                    {
-                                       if(!_loc2_)
-                                       {
-                                          continue loop3;
-                                       }
-                                       loop6:
-                                       while(true)
-                                       {
-                                          §§push(this.§,!^§);
-                                          if(_loc3_)
-                                          {
-                                             §§push(Boolean(§§pop()));
-                                          }
-                                          if(_loc3_ || this)
-                                          {
-                                             break;
-                                          }
-                                          addr108:
-                                          while(true)
-                                          {
-                                             §§pop();
-                                             continue loop6;
-                                          }
-                                       }
-                                       continue loop5;
-                                    }
-                                 }
-                                 addr20:
-                                 return;
-                                 addr44:
-                              }
-                           }
-                           §§goto(addr108);
-                           if(!(_loc3_ || _loc2_))
-                           {
-                              continue;
-                           }
-                           §§goto(addr44);
-                        }
-                     }
-                     if(_loc2_ && _loc3_)
-                     {
-                        continue;
-                     }
-                     §§goto(addr20);
-                  }
-               }
-            }
+            this.initialize(this.§0!?§);
          }
-         §§goto(addr65);
       }
       
       private function §"!B§(param1:Event) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && param1))
-         {
-            §§push(this.§,E§);
-            while(true)
-            {
-               §§pop().removeEventListener(Event.COMPLETE,this.§-@§);
-               while(true)
-               {
-                  §§push(this.§,E§);
-                  if(_loc2_)
-                  {
-                     break;
-                  }
-                  §§pop().removeEventListener(Event.CANCEL,this.§"!B§);
-                  while(!(_loc2_ && _loc3_))
-                  {
-                     this.§2§ = true;
-                     if(!_loc2_)
-                     {
-                        return;
-                        addr45:
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr45);
+         this.§,E§.removeEventListener(Event.COMPLETE,this.§-@§);
+         this.§,E§.removeEventListener(Event.CANCEL,this.§"!B§);
+         this.§2§ = true;
       }
       
       private function §[Q§(param1:Event) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
+         this.§,E§.removeEventListener(Event.COMPLETE,this.§[Q§);
+         this.§,E§.removeEventListener(Event.CANCEL,this.§5!G§);
+         this.§,!^§ = true;
+         if(this.§=!X§ && this.§,!^§)
          {
-            §§push(this.§,E§);
-            while(true)
-            {
-               §§pop().removeEventListener(Event.COMPLETE,this.§[Q§);
-               loop1:
-               while(true)
-               {
-                  §§push(this.§,E§);
-                  if(!(_loc3_ || this))
-                  {
-                     break;
-                  }
-                  §§pop().removeEventListener(Event.CANCEL,this.§5!G§);
-                  while(true)
-                  {
-                     this.§,!^§ = true;
-                     addr119:
-                     loop3:
-                     while(true)
-                     {
-                        §§push(this.§=!X§);
-                        loop4:
-                        while(true)
-                        {
-                           §§push(Boolean(§§pop()));
-                           if(!_loc2_)
-                           {
-                              §§push(§§pop());
-                              if(_loc3_ || this)
-                              {
-                                 §§push(Boolean(§§pop()));
-                              }
-                              if(!§§pop())
-                              {
-                                 while(true)
-                                 {
-                                    addr45:
-                                    while(§§pop())
-                                    {
-                                       if(!(_loc2_ && this))
-                                       {
-                                          if(_loc2_)
-                                          {
-                                             continue loop3;
-                                          }
-                                          this.initialize(this.§0!?§);
-                                       }
-                                       if(_loc3_)
-                                       {
-                                          break;
-                                       }
-                                       continue loop1;
-                                    }
-                                    return;
-                                    continue loop4;
-                                 }
-                                 continue;
-                                 addr44:
-                              }
-                           }
-                           addr89:
-                           while(true)
-                           {
-                              §§pop();
-                              continue loop3;
-                           }
-                        }
-                     }
-                     if(_loc2_ && this)
-                     {
-                        continue;
-                     }
-                     §§push(this.§,!^§);
-                     if(!(_loc2_ && _loc3_))
-                     {
-                        if(!_loc2_)
-                        {
-                           §§goto(addr36);
-                        }
-                        §§goto(addr89);
-                     }
-                     §§goto(addr45);
-                  }
-               }
-            }
+            this.initialize(this.§0!?§);
          }
-         §§goto(addr119);
       }
       
       private function §5!G§(param1:Event) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || _loc2_)
+         this.§,E§.removeEventListener(Event.COMPLETE,this.§[Q§);
+         this.§,E§.removeEventListener(Event.CANCEL,this.§5!G§);
+         this.§,!^§ = true;
+         if(this.§=!X§ && this.§,!^§)
          {
-            §§push(this.§,E§);
-            while(true)
-            {
-               §§pop().removeEventListener(Event.COMPLETE,this.§[Q§);
-               loop1:
-               while(true)
-               {
-                  §§push(this.§,E§);
-                  if(!_loc2_)
-                  {
-                     break;
-                  }
-                  §§pop().removeEventListener(Event.CANCEL,this.§5!G§);
-                  while(true)
-                  {
-                     this.§,!^§ = true;
-                     loop3:
-                     while(_loc2_ || param1)
-                     {
-                        §§push(this.§=!X§);
-                        loop4:
-                        while(true)
-                        {
-                           §§push(Boolean(§§pop()));
-                           loop5:
-                           while(true)
-                           {
-                              §§push(§§pop());
-                              if(_loc2_ || param1)
-                              {
-                                 §§push(Boolean(§§pop()));
-                              }
-                              if(§§pop())
-                              {
-                                 loop6:
-                                 while(true)
-                                 {
-                                    §§pop();
-                                    addr101:
-                                    while(true)
-                                    {
-                                       §§push(this.§,!^§);
-                                       if(!_loc3_)
-                                       {
-                                          if(!(_loc2_ || _loc3_))
-                                          {
-                                             break;
-                                          }
-                                          §§push(Boolean(§§pop()));
-                                       }
-                                       if(_loc3_)
-                                       {
-                                          continue loop6;
-                                       }
-                                       if(!_loc2_)
-                                       {
-                                          continue loop4;
-                                       }
-                                    }
-                                    continue loop5;
-                                 }
-                              }
-                              while(§§pop())
-                              {
-                                 if(!(_loc3_ && _loc3_))
-                                 {
-                                    if(!(_loc3_ && _loc2_))
-                                    {
-                                       if(!_loc2_)
-                                       {
-                                          continue loop3;
-                                       }
-                                       if(!(_loc2_ || _loc2_))
-                                       {
-                                          continue loop1;
-                                       }
-                                       this.initialize(this.§0!?§);
-                                    }
-                                    else
-                                    {
-                                       §§goto(addr101);
-                                    }
-                                 }
-                                 break;
-                              }
-                              return;
-                           }
-                        }
-                     }
-                  }
-               }
-            }
+            this.initialize(this.§0!?§);
          }
-         §§goto(addr80);
       }
       
       public function get backgroundTextureManager() : TextureManager
@@ -2664,304 +591,71 @@ package §?A§
       
       protected function initialize(param1:LevelModel) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
+         this.§!!O§ = false;
+         this.§!!b§ = false;
+         if(Starling.§@7§)
          {
-            this.§!!O§ = false;
-            loop0:
-            while(true)
-            {
-               this.§!!b§ = false;
-               loop1:
-               while(true)
-               {
-                  §§push(Starling.§@7§);
-                  if(!(_loc2_ && _loc3_))
-                  {
-                     §§push(Boolean(§§pop()));
-                     while(true)
-                     {
-                        if(§§pop())
-                        {
-                           while(true)
-                           {
-                              §§push(Starling.§@7§);
-                              addr231:
-                              while(true)
-                              {
-                                 §§pop().speed = 1;
-                                 addr233:
-                                 while(true)
-                                 {
-                                 }
-                              }
-                           }
-                           addr228:
-                        }
-                        while(true)
-                        {
-                           this.mLevelEngine = new §6c§(this);
-                           addr214:
-                           while(true)
-                           {
-                              §§push(this);
-                              §§push(this);
-                              §§push(param1.theme);
-                              §§push(this.§ "§.§7!5§);
-                              if(!(_loc2_ && _loc3_))
-                              {
-                                 §§push(§§pop() / §!5§);
-                              }
-                              §§pop().§&^§ = §§pop().initLevelBackground(§§pop(),§§pop(),this.backgroundTextureManager,this.§6!V§.§7!7§());
-                              addr197:
-                              while(true)
-                              {
-                                 this.§&^§.§]z§(§4!T§.§>!>§());
-                                 continue loop1;
-                              }
-                           }
-                        }
-                        addr29:
-                        §§push(Boolean(§§pop()));
-                        if(!(_loc2_ && this))
-                        {
-                           if(§§pop())
-                           {
-                              if(_loc3_ || param1)
-                              {
-                                 if(_loc3_)
-                                 {
-                                    addr49:
-                                    this.§^!I§.addEventListeners();
-                                    if(!_loc2_)
-                                    {
-                                       addr53:
-                                       if(_loc3_ || param1)
-                                       {
-                                          addr60:
-                                          if(_loc3_ || param1)
-                                          {
-                                             if(!_loc3_)
-                                             {
-                                                loop10:
-                                                while(true)
-                                                {
-                                                   this.§6!V§.init();
-                                                   loop11:
-                                                   for(; !_loc2_; while(true)
-                                                   {
-                                                      if(!(_loc2_ && param1))
-                                                      {
-                                                         this.mReadyToRun = true;
-                                                         addr76:
-                                                         while(true)
-                                                         {
-                                                            if(!(_loc3_ || param1))
-                                                            {
-                                                               continue loop1;
-                                                            }
-                                                            §§push(this.§^!I§);
-                                                            if(!_loc2_)
-                                                            {
-                                                               §§goto(addr29);
-                                                            }
-                                                            §§goto(addr49);
-                                                            §§goto(addr49);
-                                                         }
-                                                         continue;
-                                                         addr76:
-                                                      }
-                                                      continue loop11;
-                                                   },§§goto(addr60))
-                                                   {
-                                                      this.§>C§();
-                                                      while(true)
-                                                      {
-                                                         if(_loc3_)
-                                                         {
-                                                            if(_loc3_)
-                                                            {
-                                                               this.§68§();
-                                                               continue loop11;
-                                                            }
-                                                            §§goto(addr228);
-                                                         }
-                                                         §§goto(addr214);
-                                                         §§goto(addr60);
-                                                      }
-                                                      §§goto(addr233);
-                                                   }
-                                                   addr139:
-                                                   addr153:
-                                                   while(!(_loc2_ && _loc2_))
-                                                   {
-                                                      this.§`!$§ = this.§&!%§(this.§[6§,this.§`_§);
-                                                      continue loop10;
-                                                   }
-                                                   while(_loc3_)
-                                                   {
-                                                      this.§]!A§ = this.initLevelSlingshot(param1);
-                                                      §§goto(addr139);
-                                                   }
-                                                   continue loop0;
-                                                }
-                                                §§goto(addr20);
-                                             }
-                                             if(!_loc2_)
-                                             {
-                                                §§goto(addr20);
-                                             }
-                                             else
-                                             {
-                                                §§goto(addr233);
-                                             }
-                                          }
-                                          §§goto(addr100);
-                                       }
-                                       §§goto(addr88);
-                                    }
-                                    §§goto(addr76);
-                                 }
-                                 §§goto(addr197);
-                              }
-                              §§goto(addr49);
-                           }
-                           addr20:
-                        }
-                        continue;
-                        return;
-                     }
-                  }
-                  §§goto(addr231);
-               }
-            }
+            Starling.§@7§.speed = 1;
          }
-         §§goto(addr233);
+         this.mLevelEngine = new §6c§(this);
+         this.§&^§ = this.initLevelBackground(param1.theme,this.§ "§.§7!5§ / §!5§,this.backgroundTextureManager,this.§6!V§.§7!7§());
+         this.§&^§.§]z§(§4!T§.§>!>§());
+         this.§^^§ = this.initLevelObjectManager(param1);
+         this.§]!A§ = this.initLevelSlingshot(param1);
+         this.§`!$§ = this.§&!%§(this.§[6§,this.§`_§);
+         this.§6!V§.init();
+         this.§>C§();
+         this.§68§();
+         this.mReadyToRun = true;
+         if(this.§^!I§)
+         {
+            this.§^!I§.addEventListeners();
+         }
       }
       
       protected function §68§() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
+         if(this.§,!F§)
          {
-            if(this.§,!F§)
-            {
-               loop0:
-               while(true)
-               {
-                  this.§=,§ = Replay.initialize(this.§,!F§);
-                  loop1:
-                  while(true)
-                  {
-                     §§push(this.§=,§);
-                     loop2:
-                     while(true)
-                     {
-                        §§pop().speed = 1;
-                        addr93:
-                        while(_loc2_ || _loc2_)
-                        {
-                           if(!_loc1_)
-                           {
-                              continue loop2;
-                           }
-                           continue loop0;
-                        }
-                        continue loop1;
-                     }
-                  }
-               }
-            }
-            return;
+            this.§=,§ = Replay.initialize(this.§,!F§);
+            this.§=,§.speed = 1;
+            this.§=,§.play();
+            this.§8z§ = -1000;
+            this.§,!F§ = null;
          }
-         §§goto(addr102);
       }
       
       public function §'>§(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§,!F§ = param1;
-         }
+         this.§,!F§ = param1;
       }
       
       public function isPlayingReplay() : Boolean
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         §§push(this.§=,§ == null);
-         if(_loc1_ || _loc1_)
-         {
-            return !§§pop();
-         }
+         return this.§=,§ != null;
       }
       
       public function changeReplaySpeed(param1:Boolean) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || _loc3_)
+         if(this.§=,§)
          {
-            §§push(this.§=,§);
-            while(true)
+            if(param1)
             {
-               §§push(Boolean(§§pop()));
-               if(_loc3_ || param1)
-               {
-                  if(§§pop())
-                  {
-                     if(_loc3_)
-                     {
-                        addr103:
-                        if(param1)
-                        {
-                           break;
-                        }
-                        §§push(this.§=,§);
-                        if(_loc3_ || _loc2_)
-                        {
-                           continue;
-                        }
-                        addr106:
-                        §§pop().speed = Math.min(this.§=,§.speed * 1.25,Math.pow(1.25,2));
-                     }
-                     addr120:
-                  }
-                  addr25:
-                  return;
-               }
-               §§goto(addr103);
+               this.§=,§.speed = Math.min(this.§=,§.speed * 1.25,Math.pow(1.25,2));
+            }
+            else
+            {
+               this.§=,§.speed = Math.max(this.§=,§.speed / 1.25,Math.pow(1 / 1.25,10));
             }
          }
-         §§goto(addr106);
-         §§push(this.§=,§);
       }
       
       public function resetReplaySpeed() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
+         if(this.§=,§)
          {
-            §§push(this.§=,§);
-            if(_loc1_ || this)
-            {
-               if(§§pop())
-               {
-                  if(_loc1_)
-                  {
-                     addr43:
-                     this.§=,§.speed = 1;
-                  }
-               }
-               return;
-            }
+            this.§=,§.speed = 1;
          }
-         §§goto(addr43);
       }
       
       protected function initLevelObjectManager(param1:LevelModel) : LevelObjectManager
@@ -2991,880 +685,115 @@ package §?A§
       
       public function initEmptyEnvironment(param1:String = null, param2:Boolean = false) : void
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
-         if(_loc6_ || this)
+         if(this.mReadyToRun)
          {
-            if(this.mReadyToRun)
-            {
-               if(_loc6_)
-               {
-                  addr28:
-                  this.clearLevel();
-               }
-            }
-            var _loc3_:LevelModel = this.§,!Z§();
-            var _loc4_:§7!1§ = new §7!1§();
-            if(_loc6_ || param1)
-            {
-               _loc4_.left = 0;
-               loop0:
-               while(true)
-               {
-                  §§push(_loc4_);
-                  §§push(§0!D§.§@k§);
-                  if(_loc6_)
-                  {
-                     §§push(-§§pop());
-                     if(_loc6_)
-                     {
-                        §§push(10);
-                        if(!(_loc7_ && param1))
-                        {
-                           addr159:
-                           §§push(§§pop() / §§pop());
-                           if(!(_loc7_ && this))
-                           {
-                              addr157:
-                              §§push(8);
-                           }
-                           §§pop().top = §§pop();
-                           loop1:
-                           while(true)
-                           {
-                              §§push(_loc4_);
-                              §§push(_loc4_.top);
-                              if(!_loc7_)
-                              {
-                                 §§push(§§pop() + §0!D§.§@k§);
-                              }
-                              §§pop().bottom = §§pop();
-                              while(true)
-                              {
-                                 §§push(_loc4_);
-                                 §§push(_loc4_.left);
-                                 if(!(_loc7_ && param2))
-                                 {
-                                    §§push(§§pop() + §0!D§.§0j§);
-                                 }
-                                 §§pop().right = §§pop();
-                                 addr118:
-                                 loop3:
-                                 while(true)
-                                 {
-                                    _loc4_.y = -13.929;
-                                    addr90:
-                                    while(true)
-                                    {
-                                       if(!_loc7_)
-                                       {
-                                          if(_loc7_)
-                                          {
-                                             break;
-                                          }
-                                          continue loop0;
-                                       }
-                                       continue loop3;
-                                    }
-                                    continue loop1;
-                                 }
-                                 addr56:
-                                 if(_loc7_ && this)
-                                 {
-                                    continue;
-                                 }
-                                 if(false)
-                                 {
-                                    loop6:
-                                    while(true)
-                                    {
-                                       _loc4_.id = §0!D§.§'!Q§;
-                                       addr71:
-                                       addr85:
-                                       while(!(_loc7_ && param1))
-                                       {
-                                          _loc3_.§ ![§(_loc4_);
-                                          if(_loc7_)
-                                          {
-                                             continue;
-                                          }
-                                          if(_loc7_)
-                                          {
-                                             break loop6;
-                                          }
-                                          §§goto(addr56);
-                                       }
-                                       while(true)
-                                       {
-                                          continue loop6;
-                                          §§goto(addr71);
-                                       }
-                                    }
-                                    §§goto(addr90);
-                                 }
-                                 var _loc5_:§7!1§ = new §7!1§();
-                                 if(!(_loc7_ && param1))
-                                 {
-                                    _loc5_.top = _loc4_.top;
-                                    _loc5_.bottom = _loc4_.bottom;
-                                    _loc5_.left = 150;
-                                    addr385:
-                                    addr390:
-                                 }
-                                 §§push(_loc5_);
-                                 §§push(_loc5_.left);
-                                 if(_loc6_)
-                                 {
-                                    §§push(§§pop() + §0!D§.§0j§);
-                                 }
-                                 §§pop().right = §§pop();
-                                 §§push(_loc5_);
-                                 §§push(_loc5_.top);
-                                 if(_loc6_)
-                                 {
-                                    §§push(§§pop() + §0!D§.§@k§);
-                                 }
-                                 §§pop().bottom = §§pop();
-                                 _loc5_.y = _loc4_.y;
-                                 addr362:
-                                 addr379:
-                                 addr374:
-                                 if(_loc6_)
-                                 {
-                                    §§push(_loc5_);
-                                    §§push(_loc5_.left);
-                                    if(_loc6_)
-                                    {
-                                       §§push(§0!D§.§0j§);
-                                       if(_loc6_ || _loc3_)
-                                       {
-                                          §§push(§§pop() / 2);
-                                       }
-                                       §§push(§§pop() + §§pop());
-                                    }
-                                    §§pop().x = §§pop();
-                                    _loc5_.id = §0!D§.§]w§;
-                                    _loc3_.§ ![§(_loc5_);
-                                    addr332:
-                                    addr311:
-                                    if(!_loc7_)
-                                    {
-                                       this.§ ,§(_loc3_,param2);
-                                       addr292:
-                                       if(!_loc7_)
-                                       {
-                                          if(_loc6_)
-                                          {
-                                             addr260:
-                                             addr259:
-                                             if(param1 != null)
-                                             {
-                                                addr261:
-                                                if(_loc6_ || _loc3_)
-                                                {
-                                                   if(_loc6_ || _loc3_)
-                                                   {
-                                                      _loc3_.theme = param1;
-                                                      addr278:
-                                                      if(_loc6_ || param1)
-                                                      {
-                                                         addr191:
-                                                         this.init(_loc3_);
-                                                         if(_loc6_)
-                                                         {
-                                                            if(!_loc7_)
-                                                            {
-                                                               if(_loc6_ || param1)
-                                                               {
-                                                                  if(_loc6_ || param2)
-                                                                  {
-                                                                     if(_loc7_)
-                                                                     {
-                                                                        §§goto(addr332);
-                                                                     }
-                                                                     return;
-                                                                  }
-                                                                  §§goto(addr332);
-                                                               }
-                                                               §§goto(addr278);
-                                                            }
-                                                            addr238:
-                                                            _loc3_.theme = §@!G§;
-                                                         }
-                                                         if(_loc6_ || param1)
-                                                         {
-                                                            if(!(_loc7_ && param2))
-                                                            {
-                                                               §§goto(addr191);
-                                                            }
-                                                            §§goto(addr362);
-                                                         }
-                                                         §§goto(addr261);
-                                                      }
-                                                      §§goto(addr385);
-                                                   }
-                                                   §§goto(addr379);
-                                                }
-                                                §§goto(addr292);
-                                             }
-                                             §§push(§@!G§);
-                                             if(!(_loc7_ && param1))
-                                             {
-                                                §§push(null);
-                                                if(!(_loc7_ && _loc3_))
-                                                {
-                                                   if(§§pop() != §§pop())
-                                                   {
-                                                      §§goto(addr238);
-                                                   }
-                                                   §§goto(addr191);
-                                                }
-                                                §§goto(addr260);
-                                             }
-                                             §§goto(addr259);
-                                          }
-                                          §§goto(addr362);
-                                       }
-                                       §§goto(addr311);
-                                    }
-                                    §§goto(addr374);
-                                 }
-                                 §§goto(addr390);
-                              }
-                           }
-                        }
-                        §§push(§§pop() * §§pop());
-                     }
-                     §§goto(addr159);
-                  }
-                  §§goto(addr157);
-               }
-            }
-            §§goto(addr118);
+            this.clearLevel();
          }
-         §§goto(addr28);
+         var _loc3_:LevelModel = this.§,!Z§();
+         var _loc4_:§7!1§ = new §7!1§();
+         _loc4_.left = 0;
+         _loc4_.top = -§0!D§.§@k§ / 10 * 8;
+         _loc4_.bottom = _loc4_.top + §0!D§.§@k§;
+         _loc4_.right = _loc4_.left + §0!D§.§0j§;
+         _loc4_.y = -13.929;
+         _loc4_.x = §0!D§.§0j§;
+         _loc4_.id = §0!D§.§'!Q§;
+         _loc3_.§ ![§(_loc4_);
+         var _loc5_:§7!1§ = new §7!1§();
+         _loc5_.top = _loc4_.top;
+         _loc5_.bottom = _loc4_.bottom;
+         _loc5_.left = 150;
+         _loc5_.right = _loc5_.left + §0!D§.§0j§;
+         _loc5_.bottom = _loc5_.top + §0!D§.§@k§;
+         _loc5_.y = _loc4_.y;
+         _loc5_.x = _loc5_.left + §0!D§.§0j§ / 2;
+         _loc5_.id = §0!D§.§]w§;
+         _loc3_.§ ![§(_loc5_);
+         this.§ ,§(_loc3_,param2);
+         if(param1 != null)
+         {
+            _loc3_.theme = param1;
+         }
+         else if(§@!G§ != null)
+         {
+            _loc3_.theme = §@!G§;
+         }
+         this.init(_loc3_);
       }
       
       protected function § ,§(param1:LevelModel, param2:Boolean) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_)
+         if(param2)
          {
-            if(param2)
-            {
-               if(!_loc3_)
-               {
-                  this.§`L§(param1);
-               }
-            }
+            this.§`L§(param1);
          }
       }
       
       protected function §,!Z§() : LevelModel
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
          var _loc1_:LevelModel = new LevelModel();
-         if(_loc3_ || this)
-         {
-            _loc1_.§]!1§ = -12;
-         }
+         _loc1_.§]!1§ = -12;
          return new LevelModel();
       }
       
       protected function §[!X§() : Number
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            this.§&A§ ^= this.§&A§ << 21;
-            do
-            {
-               §§push(this);
-               §§push(this.§&A§);
-               §§push(this.§&A§);
-               if(!_loc2_)
-               {
-                  §§push(§§pop() >>> 35);
-               }
-               §§pop().§&A§ = §§pop() ^ §§pop();
-               do
-               {
-                  this.§&A§ ^= this.§&A§ << 4;
-               }
-               while(!_loc1_);
-               
-            }
-            while(!_loc1_);
-            
-         }
+         this.§&A§ ^= this.§&A§ << 21;
+         this.§&A§ ^= this.§&A§ >>> 35;
+         this.§&A§ ^= this.§&A§ << 4;
          return this.§&A§ * (1 / uint.MAX_VALUE);
       }
       
       protected function §`L§(param1:LevelModel) : void
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
-         var _loc3_:* = 0;
-         var _loc4_:* = 0;
+         var _loc3_:int = 0;
+         var _loc4_:int = 0;
          var _loc5_:§^!g§ = null;
-         if(!_loc7_)
+         this.§&A§ = 0.33 * uint.MAX_VALUE;
+         var _loc2_:int = 0;
+         while(_loc2_ < 10)
          {
-            §§push(this);
-            §§push(0.33);
-            if(!_loc7_)
+            _loc3_ = 0;
+            while(_loc3_ < 5)
             {
-               §§push(§§pop() * uint.MAX_VALUE);
-            }
-            §§pop().§&A§ = §§pop();
-         }
-         §§push(0);
-         if(!_loc7_)
-         {
-            §§push(int(§§pop()));
-         }
-         var _loc2_:* = §§pop();
-         loop0:
-         while(true)
-         {
-            §§push(_loc2_);
-            loop1:
-            while(true)
-            {
-               §§push(10);
-               loop2:
-               while(§§pop() < §§pop())
+               _loc4_ = this.§[!X§() * 5;
+               _loc5_ = new §^!g§();
+               _loc5_.x = 30 + _loc3_ * 10 + this.§[!X§() * 9;
+               if(_loc2_ == 0)
                {
-                  §§push(0);
-                  if(!(_loc6_ || _loc2_))
+                  _loc5_.y = 0;
+                  if(_loc3_ == 1 || _loc3_ == 2 || _loc3_ == 4)
                   {
-                     continue loop0;
+                     _loc5_.id = "PIG_MUSTACHE";
                   }
-                  §§push(int(§§pop()));
-                  if(!_loc7_)
+                  else
                   {
-                     _loc3_ = §§pop();
-                     if(!(_loc7_ && param1))
-                     {
-                        loop3:
-                        while(true)
-                        {
-                           §§push(_loc3_);
-                           if(_loc6_ || param1)
-                           {
-                              §§push(5);
-                              if(_loc7_ && param1)
-                              {
-                                 continue loop2;
-                              }
-                              if(§§pop() >= §§pop())
-                              {
-                                 if(_loc7_)
-                                 {
-                                    addr556:
-                                    break loop2;
-                                 }
-                                 addr530:
-                                 §§push(_loc2_);
-                                 if(_loc6_ || param1)
-                                 {
-                                    break;
-                                 }
-                                 §§push(int(§§pop()));
-                                 if(!_loc7_)
-                                 {
-                                    continue loop0;
-                                 }
-                                 continue loop1;
-                              }
-                              §§push(this.§[!X§());
-                              if(!(_loc7_ && this))
-                              {
-                                 §§push(§§pop() * 5);
-                              }
-                              §§push(int(§§pop()));
-                              if(!_loc7_)
-                              {
-                                 _loc4_ = §§pop();
-                                 if(_loc6_ || _loc3_)
-                                 {
-                                    while(true)
-                                    {
-                                       _loc5_ = new §^!g§();
-                                       if(!(_loc7_ && _loc3_))
-                                       {
-                                          §§push(_loc5_);
-                                          §§push(30 + _loc3_ * 10);
-                                          if(_loc6_ || _loc2_)
-                                          {
-                                             §§push(this.§[!X§());
-                                             if(!_loc7_)
-                                             {
-                                                §§push(§§pop() * 9);
-                                             }
-                                             §§push(§§pop() + §§pop());
-                                          }
-                                          §§pop().x = §§pop();
-                                          loop5:
-                                          while(true)
-                                          {
-                                             §§push(_loc2_);
-                                             loop6:
-                                             while(true)
-                                             {
-                                                §§push(0);
-                                                loop7:
-                                                while(true)
-                                                {
-                                                   if(§§pop() != §§pop())
-                                                   {
-                                                      §§push(_loc5_);
-                                                      §§push(-100 + _loc2_ * 6);
-                                                      if(_loc6_ || this)
-                                                      {
-                                                         §§push(this.§[!X§());
-                                                         if(!(_loc7_ && this))
-                                                         {
-                                                            §§push(§§pop() * 3);
-                                                            if(_loc6_)
-                                                            {
-                                                               addr362:
-                                                               §§push(§§pop() - §§pop());
-                                                               if(!(_loc7_ && param1))
-                                                               {
-                                                                  §§push(_loc3_ * 8);
-                                                               }
-                                                               §§pop().y = §§pop();
-                                                               loop8:
-                                                               while(true)
-                                                               {
-                                                                  §§push(_loc3_);
-                                                                  if(_loc7_)
-                                                                  {
-                                                                     continue loop6;
-                                                                  }
-                                                                  if(!_loc7_)
-                                                                  {
-                                                                     §§push(_loc3_);
-                                                                     loop9:
-                                                                     while(true)
-                                                                     {
-                                                                        if(!_loc7_)
-                                                                        {
-                                                                           if(_loc7_)
-                                                                           {
-                                                                              break;
-                                                                           }
-                                                                           §§push(§§pop() * §§pop());
-                                                                           if(!_loc7_)
-                                                                           {
-                                                                              §§push(_loc2_);
-                                                                              if(_loc6_)
-                                                                              {
-                                                                                 §§push(§§pop() + §§pop() * _loc3_);
-                                                                                 if(!(_loc7_ && this))
-                                                                                 {
-                                                                                    §§push(_loc2_);
-                                                                                    if(_loc6_)
-                                                                                    {
-                                                                                       addr288:
-                                                                                       §§push(§§pop() + §§pop());
-                                                                                       if(_loc6_)
-                                                                                       {
-                                                                                          addr286:
-                                                                                          §§push(5);
-                                                                                       }
-                                                                                       §§push(int(§§pop()));
-                                                                                       continue loop6;
-                                                                                    }
-                                                                                    §§goto(addr288);
-                                                                                    §§push(§§pop() % §§pop());
-                                                                                 }
-                                                                                 §§goto(addr286);
-                                                                              }
-                                                                           }
-                                                                           §§goto(addr288);
-                                                                        }
-                                                                        else
-                                                                        {
-                                                                           loop10:
-                                                                           while(true)
-                                                                           {
-                                                                              if(_loc6_ || param1)
-                                                                              {
-                                                                                 §§push(§§pop() == §§pop());
-                                                                                 if(!(_loc7_ && _loc3_))
-                                                                                 {
-                                                                                    if(_loc6_ || this)
-                                                                                    {
-                                                                                       if(_loc6_ || _loc3_)
-                                                                                       {
-                                                                                          addr430:
-                                                                                          §§push(Boolean(§§pop()));
-                                                                                          if(_loc6_)
-                                                                                          {
-                                                                                             loop28:
-                                                                                             while(true)
-                                                                                             {
-                                                                                                if(!§§pop())
-                                                                                                {
-                                                                                                   _loc5_.id = "PIG_HELMET";
-                                                                                                   loop12:
-                                                                                                   for(; _loc6_ || this; if(_loc7_ && this)
-                                                                                                   {
-                                                                                                      continue;
-                                                                                                   },if(_loc6_ || _loc3_)
-                                                                                                   {
-                                                                                                      if(true)
-                                                                                                      {
-                                                                                                         continue loop3;
-                                                                                                      }
-                                                                                                      §§goto(addr153);
-                                                                                                   },§§goto(addr488))
-                                                                                                   {
-                                                                                                      loop13:
-                                                                                                      while(true)
-                                                                                                      {
-                                                                                                         §§push(_loc5_);
-                                                                                                         §§push(45);
-                                                                                                         §§push(this.§[!X§());
-                                                                                                         if(!_loc7_)
-                                                                                                         {
-                                                                                                            §§push(§§pop() * 90);
-                                                                                                         }
-                                                                                                         §§pop().angle = §§pop() - §§pop();
-                                                                                                         loop14:
-                                                                                                         while(true)
-                                                                                                         {
-                                                                                                            if(_loc6_ || this)
-                                                                                                            {
-                                                                                                               loop15:
-                                                                                                               while(true)
-                                                                                                               {
-                                                                                                                  param1.addObject(_loc5_);
-                                                                                                                  loop16:
-                                                                                                                  while(_loc6_)
-                                                                                                                  {
-                                                                                                                     if(!_loc6_)
-                                                                                                                     {
-                                                                                                                        continue loop5;
-                                                                                                                     }
-                                                                                                                     §§push(_loc3_);
-                                                                                                                     if(_loc6_ || param1)
-                                                                                                                     {
-                                                                                                                        if(_loc6_ || this)
-                                                                                                                        {
-                                                                                                                           §§push(§§pop() + 1);
-                                                                                                                           if(_loc6_)
-                                                                                                                           {
-                                                                                                                              addr115:
-                                                                                                                              if(!(_loc7_ && param1))
-                                                                                                                              {
-                                                                                                                                 addr123:
-                                                                                                                                 §§push(int(§§pop()));
-                                                                                                                                 if(!_loc6_)
-                                                                                                                                 {
-                                                                                                                                    loop23:
-                                                                                                                                    while(true)
-                                                                                                                                    {
-                                                                                                                                       if(_loc7_)
-                                                                                                                                       {
-                                                                                                                                          continue loop6;
-                                                                                                                                       }
-                                                                                                                                       §§push(3);
-                                                                                                                                       if(!_loc7_)
-                                                                                                                                       {
-                                                                                                                                          if(!_loc7_)
-                                                                                                                                          {
-                                                                                                                                             if(§§pop() != §§pop())
-                                                                                                                                             {
-                                                                                                                                                _loc5_.id = "BIRD_BLUE";
-                                                                                                                                                addr198:
-                                                                                                                                                if(_loc6_)
-                                                                                                                                                {
-                                                                                                                                                   while(true)
-                                                                                                                                                   {
-                                                                                                                                                      addr163:
-                                                                                                                                                      addr184:
-                                                                                                                                                      loop20:
-                                                                                                                                                      while(true)
-                                                                                                                                                      {
-                                                                                                                                                         §§push(_loc5_);
-                                                                                                                                                         §§push(this.§[!X§());
-                                                                                                                                                         if(_loc6_ || _loc2_)
-                                                                                                                                                         {
-                                                                                                                                                            §§push(§§pop() * 360);
-                                                                                                                                                         }
-                                                                                                                                                         §§pop().angle = §§pop();
-                                                                                                                                                         break loop16;
-                                                                                                                                                         addr216:
-                                                                                                                                                         while(true)
-                                                                                                                                                         {
-                                                                                                                                                            continue loop20;
-                                                                                                                                                         }
-                                                                                                                                                      }
-                                                                                                                                                      addr184:
-                                                                                                                                                      if(!(_loc6_ || _loc3_))
-                                                                                                                                                      {
-                                                                                                                                                         addr191:
-                                                                                                                                                         break loop23;
-                                                                                                                                                      }
-                                                                                                                                                      continue loop15;
-                                                                                                                                                   }
-                                                                                                                                                   addr200:
-                                                                                                                                                }
-                                                                                                                                                §§goto(addr216);
-                                                                                                                                             }
-                                                                                                                                             while(true)
-                                                                                                                                             {
-                                                                                                                                                _loc5_.id = "BIRD_YELLOW";
-                                                                                                                                                §§goto(addr216);
-                                                                                                                                             }
-                                                                                                                                             addr213:
-                                                                                                                                          }
-                                                                                                                                          else
-                                                                                                                                          {
-                                                                                                                                             while(true)
-                                                                                                                                             {
-                                                                                                                                                §§push(§§pop() == §§pop());
-                                                                                                                                                if(!_loc7_)
-                                                                                                                                                {
-                                                                                                                                                   §§push(Boolean(§§pop()));
-                                                                                                                                                   if(_loc6_)
-                                                                                                                                                   {
-                                                                                                                                                      §§push(§§pop());
-                                                                                                                                                      loop36:
-                                                                                                                                                      while(true)
-                                                                                                                                                      {
-                                                                                                                                                         §§push(Boolean(§§pop()));
-                                                                                                                                                         loop37:
-                                                                                                                                                         while(true)
-                                                                                                                                                         {
-                                                                                                                                                            if(!§§pop())
-                                                                                                                                                            {
-                                                                                                                                                               addr479:
-                                                                                                                                                               while(true)
-                                                                                                                                                               {
-                                                                                                                                                                  §§pop();
-                                                                                                                                                                  addr480:
-                                                                                                                                                                  while(true)
-                                                                                                                                                                  {
-                                                                                                                                                                     §§push(_loc3_);
-                                                                                                                                                                     addr440:
-                                                                                                                                                                     while(true)
-                                                                                                                                                                     {
-                                                                                                                                                                        §§push(2);
-                                                                                                                                                                        addr441:
-                                                                                                                                                                        while(true)
-                                                                                                                                                                        {
-                                                                                                                                                                           §§push(§§pop() == §§pop());
-                                                                                                                                                                           if(!(_loc7_ && _loc2_))
-                                                                                                                                                                           {
-                                                                                                                                                                              §§push(Boolean(§§pop()));
-                                                                                                                                                                           }
-                                                                                                                                                                           addr465:
-                                                                                                                                                                           §§pop();
-                                                                                                                                                                           break loop12;
-                                                                                                                                                                        }
-                                                                                                                                                                     }
-                                                                                                                                                                  }
-                                                                                                                                                               }
-                                                                                                                                                               addr479:
-                                                                                                                                                            }
-                                                                                                                                                            while(true)
-                                                                                                                                                            {
-                                                                                                                                                               addr451:
-                                                                                                                                                               while(true)
-                                                                                                                                                               {
-                                                                                                                                                                  §§push(§§pop());
-                                                                                                                                                                  if(_loc6_ || param1)
-                                                                                                                                                                  {
-                                                                                                                                                                     if(!_loc6_)
-                                                                                                                                                                     {
-                                                                                                                                                                        continue loop36;
-                                                                                                                                                                     }
-                                                                                                                                                                     §§push(Boolean(§§pop()));
-                                                                                                                                                                  }
-                                                                                                                                                                  if(!_loc7_)
-                                                                                                                                                                  {
-                                                                                                                                                                     if(!§§pop())
-                                                                                                                                                                     {
-                                                                                                                                                                        break;
-                                                                                                                                                                     }
-                                                                                                                                                                     continue loop28;
-                                                                                                                                                                  }
-                                                                                                                                                                  continue loop37;
-                                                                                                                                                               }
-                                                                                                                                                               §§goto(addr465);
-                                                                                                                                                            }
-                                                                                                                                                         }
-                                                                                                                                                      }
-                                                                                                                                                   }
-                                                                                                                                                }
-                                                                                                                                                §§goto(addr479);
-                                                                                                                                             }
-                                                                                                                                             addr470:
-                                                                                                                                          }
-                                                                                                                                       }
-                                                                                                                                       else
-                                                                                                                                       {
-                                                                                                                                          addr222:
-                                                                                                                                          while(true)
-                                                                                                                                          {
-                                                                                                                                             if(_loc6_)
-                                                                                                                                             {
-                                                                                                                                                if(§§pop() < §§pop())
-                                                                                                                                                {
-                                                                                                                                                   if(_loc6_ || _loc2_)
-                                                                                                                                                   {
-                                                                                                                                                      _loc5_.id = "BIRD_RED";
-                                                                                                                                                      break loop23;
-                                                                                                                                                   }
-                                                                                                                                                   break loop23;
-                                                                                                                                                }
-                                                                                                                                                §§push(_loc4_);
-                                                                                                                                                continue loop23;
-                                                                                                                                             }
-                                                                                                                                             continue loop9;
-                                                                                                                                          }
-                                                                                                                                          addr222:
-                                                                                                                                       }
-                                                                                                                                       §§goto(addr480);
-                                                                                                                                    }
-                                                                                                                                    continue loop8;
-                                                                                                                                 }
-                                                                                                                                 _loc3_ = §§pop();
-                                                                                                                                 if(_loc7_)
-                                                                                                                                 {
-                                                                                                                                    continue;
-                                                                                                                                 }
-                                                                                                                                 if(!(_loc7_ && this))
-                                                                                                                                 {
-                                                                                                                                    if(_loc6_)
-                                                                                                                                    {
-                                                                                                                                       continue loop12;
-                                                                                                                                    }
-                                                                                                                                    continue loop14;
-                                                                                                                                 }
-                                                                                                                                 §§goto(addr198);
-                                                                                                                              }
-                                                                                                                              else
-                                                                                                                              {
-                                                                                                                                 while(!_loc7_)
-                                                                                                                                 {
-                                                                                                                                    §§goto(addr222);
-                                                                                                                                    §§push(2);
-                                                                                                                                 }
-                                                                                                                                 §§goto(addr440);
-                                                                                                                              }
-                                                                                                                           }
-                                                                                                                           §§goto(addr123);
-                                                                                                                        }
-                                                                                                                        addr399:
-                                                                                                                        continue loop10;
-                                                                                                                     }
-                                                                                                                     §§goto(addr115);
-                                                                                                                  }
-                                                                                                                  while(true)
-                                                                                                                  {
-                                                                                                                     if(_loc7_ && _loc3_)
-                                                                                                                     {
-                                                                                                                        §§goto(addr213);
-                                                                                                                     }
-                                                                                                                     §§goto(addr184);
-                                                                                                                  }
-                                                                                                               }
-                                                                                                               continue loop12;
-                                                                                                               addr153:
-                                                                                                            }
-                                                                                                            else
-                                                                                                            {
-                                                                                                               addr485:
-                                                                                                            }
-                                                                                                            while(true)
-                                                                                                            {
-                                                                                                               _loc5_.y = 0;
-                                                                                                               addr488:
-                                                                                                               while(true)
-                                                                                                               {
-                                                                                                                  §§push(_loc3_);
-                                                                                                                  addr469:
-                                                                                                                  while(true)
-                                                                                                                  {
-                                                                                                                  }
-                                                                                                               }
-                                                                                                            }
-                                                                                                            §§goto(addr470);
-                                                                                                         }
-                                                                                                         while(true)
-                                                                                                         {
-                                                                                                            continue loop13;
-                                                                                                         }
-                                                                                                      }
-                                                                                                   }
-                                                                                                   §§goto(addr399);
-                                                                                                   §§push(_loc3_);
-                                                                                                }
-                                                                                                §§goto(addr434);
-                                                                                             }
-                                                                                          }
-                                                                                          §§goto(addr479);
-                                                                                       }
-                                                                                       §§goto(addr451);
-                                                                                    }
-                                                                                    §§goto(addr465);
-                                                                                 }
-                                                                                 §§goto(addr430);
-                                                                              }
-                                                                              §§goto(addr441);
-                                                                           }
-                                                                        }
-                                                                     }
-                                                                     continue loop7;
-                                                                  }
-                                                                  §§goto(addr469);
-                                                               }
-                                                            }
-                                                         }
-                                                         §§push(§§pop() - §§pop());
-                                                      }
-                                                      §§goto(addr362);
-                                                   }
-                                                   §§goto(addr485);
-                                                }
-                                             }
-                                          }
-                                       }
-                                       §§goto(addr200);
-                                    }
-                                    addr84:
-                                 }
-                                 else
-                                 {
-                                    §§goto(addr530);
-                                 }
-                              }
-                              §§goto(addr530);
-                              §§goto(addr530);
-                           }
-                           break;
-                        }
-                        §§push(§§pop() + 1);
-                        if(_loc7_ && param1)
-                        {
-                           continue loop0;
-                        }
-                        §§goto(addr556);
-                     }
-                     §§goto(addr84);
+                     _loc5_.id = "PIG_HELMET";
                   }
-                  §§goto(addr556);
+                  _loc5_.angle = 45 - this.§[!X§() * 90;
                }
-               addr570:
-               return;
+               else
+               {
+                  _loc5_.y = -100 + _loc2_ * 6 - this.§[!X§() * 3 - _loc3_ * 8;
+                  _loc4_ = (_loc3_ * _loc3_ + _loc2_ * _loc3_ + _loc2_) % 5;
+                  if(_loc4_ < 2)
+                  {
+                     _loc5_.id = "BIRD_RED";
+                  }
+                  else if(_loc4_ == 3)
+                  {
+                     _loc5_.id = "BIRD_YELLOW";
+                  }
+                  else
+                  {
+                     _loc5_.id = "BIRD_BLUE";
+                  }
+                  _loc5_.angle = this.§[!X§() * 360;
+               }
+               param1.addObject(_loc5_);
+               _loc3_++;
             }
+            _loc2_++;
          }
       }
       
@@ -3874,1032 +803,165 @@ package §?A§
       
       public function §>C§() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
+         if(LevelBackground.§[!j§)
          {
-            §§push(LevelBackground.§[!j§);
-            while(true)
-            {
-               if(§§pop())
-               {
-                  while(true)
-                  {
-                     this.§4!O§(this.§&^§.§+!I§,false);
-                     addr202:
-                     while(true)
-                     {
-                     }
-                  }
-                  addr195:
-               }
-               while(true)
-               {
-                  this.§4!O§(this.§`!$§.§7!M§(LevelParticleManager.§1!5§),false);
-                  loop4:
-                  while(true)
-                  {
-                     this.§4!O§(this.§`!$§.§7!M§(LevelParticleManager.§`v§),true);
-                     loop5:
-                     while(true)
-                     {
-                        this.§4!O§(this.§`!$§.§7!M§(LevelParticleManager.§#!1§),true);
-                        loop6:
-                        while(true)
-                        {
-                           this.§4!O§(this.§^^§.§>r§,true);
-                           loop7:
-                           while(true)
-                           {
-                              if(!_loc1_)
-                              {
-                                 this.§4!O§(this.§]!A§.sprite,true);
-                                 loop8:
-                                 while(_loc2_)
-                                 {
-                                    this.§4!O§(this.§`!$§.§7!M§(LevelParticleManager.§1!'§),true);
-                                    while(true)
-                                    {
-                                       this.§4!O§(this.§&^§.§0I§,false);
-                                       loop10:
-                                       while(_loc2_ || _loc2_)
-                                       {
-                                          while(true)
-                                          {
-                                             §§push(LevelBackground.§[!j§);
-                                             loop12:
-                                             while(true)
-                                             {
-                                                if(!§§pop())
-                                                {
-                                                   loop15:
-                                                   while(true)
-                                                   {
-                                                      this.§4!O§(this.§`!$§.§7!M§(LevelParticleManager.§<i§),true);
-                                                      while(!_loc1_)
-                                                      {
-                                                         if(_loc1_)
-                                                         {
-                                                            break loop15;
-                                                         }
-                                                         continue loop12;
-                                                         if(_loc1_ && _loc1_)
-                                                         {
-                                                            continue;
-                                                         }
-                                                         if(!_loc1_)
-                                                         {
-                                                            if(!_loc1_)
-                                                            {
-                                                               if(_loc2_)
-                                                               {
-                                                                  addr42:
-                                                                  return;
-                                                               }
-                                                               break loop7;
-                                                            }
-                                                            continue loop5;
-                                                         }
-                                                         §§goto(addr66);
-                                                      }
-                                                   }
-                                                   continue loop8;
-                                                   addr45:
-                                                }
-                                                while(!_loc1_)
-                                                {
-                                                   this.§4!O§(this.§&^§.§ -§,false);
-                                                }
-                                                continue loop10;
-                                                addr66:
-                                                while(!_loc1_)
-                                                {
-                                                   continue loop4;
-                                                }
-                                                continue loop7;
-                                             }
-                                          }
-                                       }
-                                    }
-                                 }
-                                 continue loop6;
-                              }
-                              §§goto(addr195);
-                           }
-                           §§goto(addr202);
-                        }
-                     }
-                  }
-               }
-            }
+            this.§4!O§(this.§&^§.§+!I§,false);
          }
-         §§goto(addr110);
+         this.§4!O§(this.§`!$§.§7!M§(LevelParticleManager.§1!5§),false);
+         this.§4!O§(this.§`!$§.§7!M§(LevelParticleManager.§`v§),true);
+         this.§4!O§(this.§`!$§.§7!M§(LevelParticleManager.§#!1§),true);
+         this.§4!O§(this.§^^§.§>r§,true);
+         this.§4!O§(this.§]!A§.sprite,true);
+         this.§4!O§(this.§`!$§.§7!M§(LevelParticleManager.§1!'§),true);
+         this.§4!O§(this.§&^§.§0I§,false);
+         if(LevelBackground.§[!j§)
+         {
+            this.§4!O§(this.§&^§.§ -§,false);
+         }
+         this.§4!O§(this.§`!$§.§7!M§(LevelParticleManager.§<i§),true);
+         if(!§6c§.§+s§)
+         {
+         }
       }
       
       private function §4!O§(param1:Sprite, param2:Boolean) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_)
+         if(this.sprite)
          {
-            §§push(this.sprite);
-            if(!(_loc4_ && _loc3_))
-            {
-               if(§§pop())
-               {
-               }
-               §§goto(addr51);
-            }
-            §§pop().addChild(param1);
-         }
-         addr51:
-         if(!(_loc4_ && param2))
-         {
-            §§push(this.sprite);
+            this.sprite.addChild(param1);
          }
       }
       
       public function screenToBox2D(param1:Number, param2:Number) : Point
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
          var _loc3_:Point = new Point();
-         if(!_loc4_)
-         {
-            §§push(param1);
-            while(true)
-            {
-               §§push(§4!T§.§`!Y§);
-               addr148:
-               while(true)
-               {
-                  §§push(§§pop() / §§pop());
-                  addr149:
-                  while(true)
-                  {
-                     §§push(Number(§§pop()));
-                     addr150:
-                     while(true)
-                     {
-                        param1 = §§pop();
-                     }
-                  }
-               }
-            }
-            addr145:
-         }
-         while(true)
-         {
-            §§push(param2);
-            if(_loc5_)
-            {
-               if(_loc5_ || this)
-               {
-                  if(!_loc4_)
-                  {
-                     §§push(§4!T§.§`!Y§);
-                     if(!_loc4_)
-                     {
-                        §§push(§§pop() / §§pop());
-                        if(_loc5_ || param1)
-                        {
-                           addr139:
-                           §§push(Number(§§pop()));
-                        }
-                        if(!_loc4_)
-                        {
-                           param2 = §§pop();
-                           do
-                           {
-                              _loc3_.x = (param1 / §0!D§.§4M§ + this.§6!V§.§&8§ - §0!D§.§#`§ / §0!D§.§4M§) * §!5§;
-                              do
-                              {
-                                 _loc3_.y = (param2 / §0!D§.§4M§ + this.§6!V§.§%c§ - §0!D§.§'r§ / §0!D§.§4M§) * §!5§;
-                              }
-                              while(_loc4_);
-                              
-                           }
-                           while(!(_loc5_ || param1));
-                           
-                           if(_loc5_ || this)
-                           {
-                              break;
-                           }
-                           continue;
-                        }
-                     }
-                     else
-                     {
-                        §§goto(addr148);
-                     }
-                     §§goto(addr149);
-                  }
-                  else
-                  {
-                     §§goto(addr145);
-                  }
-               }
-               §§goto(addr150);
-            }
-            §§goto(addr139);
-         }
+         param1 /= §4!T§.§`!Y§;
+         param2 /= §4!T§.§`!Y§;
+         _loc3_.x = (param1 / §0!D§.§4M§ + this.§6!V§.§&8§ - §0!D§.§#`§ / §0!D§.§4M§) * §!5§;
+         _loc3_.y = (param2 / §0!D§.§4M§ + this.§6!V§.§%c§ - §0!D§.§'r§ / §0!D§.§4M§) * §!5§;
          return _loc3_;
       }
       
       public function §3J§(param1:Number, param2:Number) : Point
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
          var _loc3_:Point = new Point();
-         if(_loc6_)
-         {
-            _loc3_.x = (param1 / §!5§ + §0!D§.§#`§ / §0!D§.§4M§ - this.§6!V§.§&8§) * §0!D§.§4M§;
-            if(_loc6_)
-            {
-               _loc3_.y = (param2 / §!5§ + §0!D§.§'r§ / §0!D§.§4M§ - this.§6!V§.§%c§) * §0!D§.§4M§;
-            }
-         }
+         _loc3_.x = (param1 / §!5§ + §0!D§.§#`§ / §0!D§.§4M§ - this.§6!V§.§&8§) * §0!D§.§4M§;
+         _loc3_.y = (param2 / §!5§ + §0!D§.§'r§ / §0!D§.§4M§ - this.§6!V§.§%c§) * §0!D§.§4M§;
          var _loc4_:Number = Math.max(§4!T§.§`!Y§,§4!T§.§=!_§);
-         if(_loc6_)
-         {
-            _loc3_.x *= _loc4_;
-            do
-            {
-               _loc3_.y *= _loc4_;
-            }
-            while(_loc5_ && _loc3_);
-            
-         }
+         _loc3_.x *= _loc4_;
+         _loc3_.y *= _loc4_;
          return _loc3_;
       }
       
       public function §3!8§(param1:String, param2:Number, param3:Number) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!(_loc4_ && param1))
-         {
-            this.§^^§.addObject(param1,param2,param3);
-         }
+         this.§^^§.addObject(param1,param2,param3);
       }
       
       public function §]a§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && this))
+         if(this.§>L§)
          {
-            §§push(this.§>L§);
-            loop0:
-            while(true)
-            {
-               if(!§§pop())
-               {
-                  while(true)
-                  {
-                     this.§?y§ = 0;
-                     if(!_loc2_)
-                     {
-                        if(_loc1_)
-                        {
-                           if(!_loc2_)
-                           {
-                              return;
-                           }
-                           addr78:
-                           while(true)
-                           {
-                              §§push(this.§>L§);
-                              addr80:
-                              while(true)
-                              {
-                                 §§pop().visible = true;
-                              }
-                           }
-                        }
-                        while(true)
-                        {
-                           §§push(this.§>L§);
-                           if(_loc1_)
-                           {
-                              break;
-                           }
-                           §§goto(addr80);
-                        }
-                        continue loop0;
-                     }
-                     addr73:
-                  }
-                  continue;
-               }
-            }
+            this.§>L§.visible = true;
+            this.§>L§.alpha = 0;
          }
-         §§goto(addr78);
+         this.§?y§ = 0;
       }
       
       public function §8-§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc1_)
-         {
-            this.§7^§ = new §?V§(§5a§.§<f§,§5a§.§'B§);
-         }
+         this.§7^§ = new §?V§(§5a§.§<f§,§5a§.§'B§);
       }
       
       public function §2$§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc2_))
-         {
-            this.§7^§ = null;
-         }
+         this.§7^§ = null;
       }
       
       public function clearLevel() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
+         if(this.§&^§)
          {
-            §§push(this.§&^§);
-            if(!_loc1_)
-            {
-               §§push(Boolean(§§pop()));
-               loop0:
-               while(true)
-               {
-                  if(§§pop())
-                  {
-                     while(true)
-                     {
-                        §§push(this.§&^§);
-                        addr717:
-                        while(true)
-                        {
-                           §§pop().dispose();
-                           addr719:
-                           while(true)
-                           {
-                              this.§&^§ = null;
-                              addr708:
-                              while(true)
-                              {
-                              }
-                           }
-                        }
-                     }
-                     addr715:
-                  }
-                  while(true)
-                  {
-                     §§push(this.§^^§);
-                     if(!_loc1_)
-                     {
-                        §§push(Boolean(§§pop()));
-                        continue loop0;
-                     }
-                     loop37:
-                     while(true)
-                     {
-                        §§pop().dispose();
-                        loop38:
-                        while(true)
-                        {
-                           this.§^^§ = null;
-                           loop39:
-                           while(true)
-                           {
-                              this.§'Z§ = null;
-                              loop40:
-                              while(true)
-                              {
-                                 addr629:
-                                 while(true)
-                                 {
-                                    §§push(this.mLevelEngine);
-                                    if(!(_loc1_ && this))
-                                    {
-                                       §§push(Boolean(§§pop()));
-                                       loop6:
-                                       while(true)
-                                       {
-                                          if(§§pop())
-                                          {
-                                             loop7:
-                                             while(true)
-                                             {
-                                                §§push(this.mLevelEngine);
-                                                if(_loc2_ || this)
-                                                {
-                                                   §§push(Boolean(§§pop().§`!U§));
-                                                   loop8:
-                                                   while(true)
-                                                   {
-                                                      if(!§§pop())
-                                                      {
-                                                      }
-                                                      addr653:
-                                                      loop44:
-                                                      while(true)
-                                                      {
-                                                         §§push(this.mLevelEngine);
-                                                         addr655:
-                                                         while(true)
-                                                         {
-                                                            §§pop().clear();
-                                                            addr657:
-                                                            while(true)
-                                                            {
-                                                               this.mLevelEngine = null;
-                                                               addr619:
-                                                               while(true)
-                                                               {
-                                                                  if(_loc1_)
-                                                                  {
-                                                                     continue loop44;
-                                                                  }
-                                                                  if(!(_loc2_ || _loc1_))
-                                                                  {
-                                                                     continue loop39;
-                                                                  }
-                                                               }
-                                                               continue loop44;
-                                                            }
-                                                            continue loop44;
-                                                         }
-                                                      }
-                                                      addr416:
-                                                      if(!(_loc2_ || _loc2_))
-                                                      {
-                                                         continue;
-                                                      }
-                                                      if(§§pop())
-                                                      {
-                                                         if(!_loc1_)
-                                                         {
-                                                            if(_loc2_)
-                                                            {
-                                                               if(!(_loc1_ && _loc2_))
-                                                               {
-                                                                  if(_loc1_)
-                                                                  {
-                                                                     loop14:
-                                                                     while(true)
-                                                                     {
-                                                                        §§push(this.§]!A§);
-                                                                        loop28:
-                                                                        while(true)
-                                                                        {
-                                                                           §§pop().dispose();
-                                                                           addr569:
-                                                                           while(true)
-                                                                           {
-                                                                              this.§]!A§ = null;
-                                                                              loop30:
-                                                                              while(true)
-                                                                              {
-                                                                                 loop15:
-                                                                                 while(true)
-                                                                                 {
-                                                                                    §§push(this.§6!V§);
-                                                                                    if(!(_loc1_ && this))
-                                                                                    {
-                                                                                       §§push(Boolean(§§pop()));
-                                                                                       loop16:
-                                                                                       for(; _loc2_; if(!(_loc2_ || _loc2_))
-                                                                                       {
-                                                                                          continue;
-                                                                                       },§§goto(addr402))
-                                                                                       {
-                                                                                          if(§§pop())
-                                                                                          {
-                                                                                             loop17:
-                                                                                             while(true)
-                                                                                             {
-                                                                                                if(_loc1_ && _loc2_)
-                                                                                                {
-                                                                                                   continue loop7;
-                                                                                                }
-                                                                                                §§push(this.§6!V§);
-                                                                                                while(true)
-                                                                                                {
-                                                                                                   §§pop().clear();
-                                                                                                   loop27:
-                                                                                                   while(true)
-                                                                                                   {
-                                                                                                      if(_loc2_)
-                                                                                                      {
-                                                                                                         this.§6!V§ = null;
-                                                                                                         loop25:
-                                                                                                         while(true)
-                                                                                                         {
-                                                                                                            if(!(_loc2_ || _loc1_))
-                                                                                                            {
-                                                                                                               continue loop27;
-                                                                                                            }
-                                                                                                            if(_loc1_)
-                                                                                                            {
-                                                                                                               continue loop17;
-                                                                                                            }
-                                                                                                            if(_loc2_)
-                                                                                                            {
-                                                                                                               if(!(_loc1_ && _loc1_))
-                                                                                                               {
-                                                                                                                  addr512:
-                                                                                                                  loop18:
-                                                                                                                  while(true)
-                                                                                                                  {
-                                                                                                                     §§push(this.§`!$§);
-                                                                                                                     if(!_loc1_)
-                                                                                                                     {
-                                                                                                                        §§push(Boolean(§§pop()));
-                                                                                                                        loop19:
-                                                                                                                        while(true)
-                                                                                                                        {
-                                                                                                                           if(§§pop())
-                                                                                                                           {
-                                                                                                                              while(true)
-                                                                                                                              {
-                                                                                                                                 if(_loc1_ && _loc2_)
-                                                                                                                                 {
-                                                                                                                                    continue loop30;
-                                                                                                                                 }
-                                                                                                                                 if(_loc1_)
-                                                                                                                                 {
-                                                                                                                                    break;
-                                                                                                                                 }
-                                                                                                                                 §§push(this.§`!$§);
-                                                                                                                                 while(true)
-                                                                                                                                 {
-                                                                                                                                    §§pop().dispose();
-                                                                                                                                    loop24:
-                                                                                                                                    while(true)
-                                                                                                                                    {
-                                                                                                                                       if(_loc1_ && _loc2_)
-                                                                                                                                       {
-                                                                                                                                          continue loop25;
-                                                                                                                                       }
-                                                                                                                                       this.§`!$§ = null;
-                                                                                                                                       while(true)
-                                                                                                                                       {
-                                                                                                                                          if(_loc1_ && _loc1_)
-                                                                                                                                          {
-                                                                                                                                             continue loop24;
-                                                                                                                                          }
-                                                                                                                                          if(_loc1_)
-                                                                                                                                          {
-                                                                                                                                             §§goto(addr719);
-                                                                                                                                          }
-                                                                                                                                          §§goto(addr489);
-                                                                                                                                       }
-                                                                                                                                       addr489:
-                                                                                                                                    }
-                                                                                                                                    §§goto(addr657);
-                                                                                                                                 }
-                                                                                                                              }
-                                                                                                                              while(true)
-                                                                                                                              {
-                                                                                                                                 if(!(_loc1_ && _loc1_))
-                                                                                                                                 {
-                                                                                                                                    if(!(_loc1_ && this))
-                                                                                                                                    {
-                                                                                                                                       if(!_loc1_)
-                                                                                                                                       {
-                                                                                                                                          this.§ "§ = null;
-                                                                                                                                          break loop18;
-                                                                                                                                       }
-                                                                                                                                       break;
-                                                                                                                                    }
-                                                                                                                                    continue loop40;
-                                                                                                                                 }
-                                                                                                                                 §§goto(addr619);
-                                                                                                                              }
-                                                                                                                              §§goto(addr708);
-                                                                                                                              addr598:
-                                                                                                                              addr469:
-                                                                                                                           }
-                                                                                                                           while(true)
-                                                                                                                           {
-                                                                                                                              §§push(Boolean(this.sprite));
-                                                                                                                              if(_loc2_)
-                                                                                                                              {
-                                                                                                                                 continue loop16;
-                                                                                                                              }
-                                                                                                                              continue loop19;
-                                                                                                                           }
-                                                                                                                           continue loop8;
-                                                                                                                        }
-                                                                                                                     }
-                                                                                                                     §§goto(addr480);
-                                                                                                                     §§goto(addr512);
-                                                                                                                  }
-                                                                                                                  loop33:
-                                                                                                                  while(true)
-                                                                                                                  {
-                                                                                                                     if(_loc2_ || _loc1_)
-                                                                                                                     {
-                                                                                                                        loop12:
-                                                                                                                        while(true)
-                                                                                                                        {
-                                                                                                                           §§push(this.§]!A§);
-                                                                                                                           if(_loc2_ || this)
-                                                                                                                           {
-                                                                                                                              §§push(Boolean(§§pop()));
-                                                                                                                              while(!(_loc1_ && _loc1_))
-                                                                                                                              {
-                                                                                                                                 if(§§pop())
-                                                                                                                                 {
-                                                                                                                                    continue loop14;
-                                                                                                                                 }
-                                                                                                                                 continue loop15;
-                                                                                                                                 if(!(_loc2_ || _loc1_))
-                                                                                                                                 {
-                                                                                                                                    continue;
-                                                                                                                                 }
-                                                                                                                                 addr409:
-                                                                                                                                 if(_loc2_ || _loc2_)
-                                                                                                                                 {
-                                                                                                                                    §§goto(addr416);
-                                                                                                                                 }
-                                                                                                                                 while(true)
-                                                                                                                                 {
-                                                                                                                                    if(!§§pop())
-                                                                                                                                    {
-                                                                                                                                       continue loop12;
-                                                                                                                                    }
-                                                                                                                                    while(true)
-                                                                                                                                    {
-                                                                                                                                       §§push(this.§ "§);
-                                                                                                                                       addr596:
-                                                                                                                                       while(true)
-                                                                                                                                       {
-                                                                                                                                          §§pop().clear();
-                                                                                                                                          §§goto(addr598);
-                                                                                                                                       }
-                                                                                                                                    }
-                                                                                                                                    §§goto(addr409);
-                                                                                                                                 }
-                                                                                                                              }
-                                                                                                                              continue loop0;
-                                                                                                                              addr557:
-                                                                                                                           }
-                                                                                                                           continue loop28;
-                                                                                                                        }
-                                                                                                                     }
-                                                                                                                     else
-                                                                                                                     {
-                                                                                                                        while(true)
-                                                                                                                        {
-                                                                                                                           if(!(_loc1_ && _loc1_))
-                                                                                                                           {
-                                                                                                                              §§push(this.§^^§);
-                                                                                                                              continue loop37;
-                                                                                                                           }
-                                                                                                                           §§goto(addr715);
-                                                                                                                           continue loop33;
-                                                                                                                        }
-                                                                                                                        §§goto(addr719);
-                                                                                                                        addr692:
-                                                                                                                     }
-                                                                                                                  }
-                                                                                                                  addr574:
-                                                                                                                  addr462:
-                                                                                                               }
-                                                                                                               §§goto(addr594);
-                                                                                                            }
-                                                                                                            §§goto(addr574);
-                                                                                                         }
-                                                                                                         addr540:
-                                                                                                      }
-                                                                                                      §§goto(addr657);
-                                                                                                   }
-                                                                                                }
-                                                                                             }
-                                                                                             §§goto(addr655);
-                                                                                          }
-                                                                                          §§goto(addr462);
-                                                                                       }
-                                                                                       continue loop6;
-                                                                                    }
-                                                                                    §§goto(addr536);
-                                                                                 }
-                                                                              }
-                                                                           }
-                                                                        }
-                                                                     }
-                                                                  }
-                                                                  if(_loc1_)
-                                                                  {
-                                                                     continue loop38;
-                                                                  }
-                                                                  addr371:
-                                                                  §§push(this.sprite);
-                                                                  if(!(_loc1_ && this))
-                                                                  {
-                                                                     if(§§pop().numChildren <= 0)
-                                                                     {
-                                                                        addr385:
-                                                                        this.§<!b§ = 0;
-                                                                        this.§"!-§ = 0;
-                                                                        this.mReadyToRun = false;
-                                                                        this.§0v§ = false;
-                                                                        this.§?y§ = §5a§.§ !j§;
-                                                                        addr388:
-                                                                        addr360:
-                                                                        addr355:
-                                                                        addr365:
-                                                                        addr370:
-                                                                        if(this.§7B§)
-                                                                        {
-                                                                           if(!_loc1_)
-                                                                           {
-                                                                              if(!_loc1_)
-                                                                              {
-                                                                                 addr337:
-                                                                                 (this.§7B§ as §;I§).§"!$§.x = 0;
-                                                                                 addr338:
-                                                                                 addr336:
-                                                                                 §§push(this.§7B§);
-                                                                                 if(!_loc1_)
-                                                                                 {
-                                                                                    if(_loc2_)
-                                                                                    {
-                                                                                       §§push((§§pop() as §;I§).§"!$§);
-                                                                                       if(!_loc1_)
-                                                                                       {
-                                                                                          §§push(0);
-                                                                                          if(_loc2_)
-                                                                                          {
-                                                                                             §§pop().y = §§pop();
-                                                                                             addr320:
-                                                                                             §§push(this.§>L§);
-                                                                                             if(!_loc1_)
-                                                                                             {
-                                                                                                addr283:
-                                                                                                §§push(Boolean(§§pop()));
-                                                                                                if(!(_loc1_ && _loc2_))
-                                                                                                {
-                                                                                                   if(§§pop())
-                                                                                                   {
-                                                                                                      addr293:
-                                                                                                      this.§>L§.visible = false;
-                                                                                                      addr291:
-                                                                                                      if(!(_loc1_ && _loc1_))
-                                                                                                      {
-                                                                                                         addr272:
-                                                                                                         this.§=,§ = null;
-                                                                                                         this.§,z§ = null;
-                                                                                                         addr269:
-                                                                                                         if(_loc2_)
-                                                                                                         {
-                                                                                                            addr254:
-                                                                                                            if(this.§,E§)
-                                                                                                            {
-                                                                                                               addr257:
-                                                                                                               this.§,E§.removeEventListener(Event.COMPLETE,this.§-@§);
-                                                                                                               addr255:
-                                                                                                               addr264:
-                                                                                                               §§push(this.§,E§);
-                                                                                                               if(_loc2_ || _loc2_)
-                                                                                                               {
-                                                                                                                  if(!_loc1_)
-                                                                                                                  {
-                                                                                                                     §§pop().removeEventListener(Event.CANCEL,this.§"!B§);
-                                                                                                                     addr242:
-                                                                                                                     if(!(_loc1_ && _loc2_))
-                                                                                                                     {
-                                                                                                                        addr189:
-                                                                                                                        if(this.§^l§)
-                                                                                                                        {
-                                                                                                                           addr190:
-                                                                                                                           if(!(_loc1_ && _loc1_))
-                                                                                                                           {
-                                                                                                                              if(!_loc1_)
-                                                                                                                              {
-                                                                                                                                 addr201:
-                                                                                                                                 this.§^l§.removeEventListener(Event.COMPLETE,this.§[Q§);
-                                                                                                                                 addr208:
-                                                                                                                                 if(!(_loc1_ && _loc1_))
-                                                                                                                                 {
-                                                                                                                                    if(_loc2_ || _loc1_)
-                                                                                                                                    {
-                                                                                                                                       §§push(this.§^l§);
-                                                                                                                                       if(!(_loc1_ && _loc1_))
-                                                                                                                                       {
-                                                                                                                                          if(_loc2_ || _loc2_)
-                                                                                                                                          {
-                                                                                                                                             §§pop().removeEventListener(Event.CANCEL,this.§5!G§);
-                                                                                                                                             addr182:
-                                                                                                                                             if(_loc2_)
-                                                                                                                                             {
-                                                                                                                                                addr153:
-                                                                                                                                                this.§@!g§();
-                                                                                                                                                addr157:
-                                                                                                                                                §§push(Starling.§'!A§);
-                                                                                                                                                if(!_loc1_)
-                                                                                                                                                {
-                                                                                                                                                   addr116:
-                                                                                                                                                   §§push(Boolean(§§pop()));
-                                                                                                                                                   if(_loc2_)
-                                                                                                                                                   {
-                                                                                                                                                      if(!(_loc1_ && _loc2_))
-                                                                                                                                                      {
-                                                                                                                                                         if(§§pop())
-                                                                                                                                                         {
-                                                                                                                                                            addr126:
-                                                                                                                                                            if(!(_loc1_ && _loc2_))
-                                                                                                                                                            {
-                                                                                                                                                               if(!(_loc1_ && this))
-                                                                                                                                                               {
-                                                                                                                                                                  addr143:
-                                                                                                                                                                  Starling.§'!A§.color = 0;
-                                                                                                                                                                  addr145:
-                                                                                                                                                                  if(!(_loc1_ && this))
-                                                                                                                                                                  {
-                                                                                                                                                                     addr56:
-                                                                                                                                                                     §§push(this.§^!I§);
-                                                                                                                                                                     if(_loc2_)
-                                                                                                                                                                     {
-                                                                                                                                                                        §§push(Boolean(§§pop()));
-                                                                                                                                                                        if(!(_loc1_ && _loc1_))
-                                                                                                                                                                        {
-                                                                                                                                                                           if(_loc2_ || _loc1_)
-                                                                                                                                                                           {
-                                                                                                                                                                              if(§§pop())
-                                                                                                                                                                              {
-                                                                                                                                                                                 if(_loc2_ || _loc2_)
-                                                                                                                                                                                 {
-                                                                                                                                                                                    if(_loc2_ || _loc2_)
-                                                                                                                                                                                    {
-                                                                                                                                                                                       if(_loc2_ || _loc1_)
-                                                                                                                                                                                       {
-                                                                                                                                                                                          if(!_loc1_)
-                                                                                                                                                                                          {
-                                                                                                                                                                                             addr102:
-                                                                                                                                                                                             this.§^!I§.removeEventListeners();
-                                                                                                                                                                                             addr104:
-                                                                                                                                                                                             if(!_loc1_)
-                                                                                                                                                                                             {
-                                                                                                                                                                                                if(_loc2_)
-                                                                                                                                                                                                {
-                                                                                                                                                                                                   addr24:
-                                                                                                                                                                                                   this.mReadyToRun = false;
-                                                                                                                                                                                                   if(_loc2_ || _loc2_)
-                                                                                                                                                                                                   {
-                                                                                                                                                                                                      if(!_loc1_)
-                                                                                                                                                                                                      {
-                                                                                                                                                                                                         if(_loc2_ || _loc2_)
-                                                                                                                                                                                                         {
-                                                                                                                                                                                                            if(_loc2_ || _loc2_)
-                                                                                                                                                                                                            {
-                                                                                                                                                                                                               if(!_loc1_)
-                                                                                                                                                                                                               {
-                                                                                                                                                                                                                  if(_loc1_)
-                                                                                                                                                                                                                  {
-                                                                                                                                                                                                                     §§goto(addr388);
-                                                                                                                                                                                                                  }
-                                                                                                                                                                                                                  return;
-                                                                                                                                                                                                               }
-                                                                                                                                                                                                               §§goto(addr320);
-                                                                                                                                                                                                            }
-                                                                                                                                                                                                            §§goto(addr291);
-                                                                                                                                                                                                         }
-                                                                                                                                                                                                         §§goto(addr190);
-                                                                                                                                                                                                      }
-                                                                                                                                                                                                      §§goto(addr145);
-                                                                                                                                                                                                   }
-                                                                                                                                                                                                   §§goto(addr104);
-                                                                                                                                                                                                }
-                                                                                                                                                                                                §§goto(addr182);
-                                                                                                                                                                                             }
-                                                                                                                                                                                             §§goto(addr126);
-                                                                                                                                                                                          }
-                                                                                                                                                                                          addr447:
-                                                                                                                                                                                          §§goto(addr371);
-                                                                                                                                                                                       }
-                                                                                                                                                                                       §§goto(addr385);
-                                                                                                                                                                                    }
-                                                                                                                                                                                    §§goto(addr255);
-                                                                                                                                                                                 }
-                                                                                                                                                                                 §§goto(addr104);
-                                                                                                                                                                              }
-                                                                                                                                                                              §§goto(addr24);
-                                                                                                                                                                           }
-                                                                                                                                                                           §§goto(addr254);
-                                                                                                                                                                        }
-                                                                                                                                                                        §§goto(addr116);
-                                                                                                                                                                     }
-                                                                                                                                                                     §§goto(addr102);
-                                                                                                                                                                  }
-                                                                                                                                                                  §§goto(addr157);
-                                                                                                                                                               }
-                                                                                                                                                               §§goto(addr338);
-                                                                                                                                                            }
-                                                                                                                                                            §§goto(addr242);
-                                                                                                                                                         }
-                                                                                                                                                         §§goto(addr56);
-                                                                                                                                                      }
-                                                                                                                                                      §§goto(addr283);
-                                                                                                                                                   }
-                                                                                                                                                   §§goto(addr189);
-                                                                                                                                                }
-                                                                                                                                                §§goto(addr143);
-                                                                                                                                             }
-                                                                                                                                             §§goto(addr208);
-                                                                                                                                          }
-                                                                                                                                          §§goto(addr189);
-                                                                                                                                       }
-                                                                                                                                       §§goto(addr201);
-                                                                                                                                    }
-                                                                                                                                    §§goto(addr360);
-                                                                                                                                 }
-                                                                                                                                 §§goto(addr269);
-                                                                                                                              }
-                                                                                                                              §§goto(addr355);
-                                                                                                                           }
-                                                                                                                           §§goto(addr291);
-                                                                                                                        }
-                                                                                                                        §§goto(addr153);
-                                                                                                                     }
-                                                                                                                     §§goto(addr264);
-                                                                                                                  }
-                                                                                                                  §§goto(addr254);
-                                                                                                               }
-                                                                                                               §§goto(addr257);
-                                                                                                            }
-                                                                                                            §§goto(addr189);
-                                                                                                         }
-                                                                                                         addr276:
-                                                                                                         §§goto(addr276);
-                                                                                                      }
-                                                                                                      §§goto(addr365);
-                                                                                                   }
-                                                                                                   §§goto(addr272);
-                                                                                                }
-                                                                                                §§goto(addr385);
-                                                                                             }
-                                                                                             §§goto(addr293);
-                                                                                          }
-                                                                                          §§goto(addr337);
-                                                                                       }
-                                                                                       §§goto(addr336);
-                                                                                    }
-                                                                                    §§goto(addr385);
-                                                                                 }
-                                                                                 addr332:
-                                                                                 §§goto(addr332);
-                                                                              }
-                                                                              §§goto(addr370);
-                                                                           }
-                                                                           §§goto(addr337);
-                                                                        }
-                                                                        §§goto(addr320);
-                                                                        addr384:
-                                                                     }
-                                                                     §§push(this.sprite);
-                                                                  }
-                                                                  §§pop().removeChildAt(0,true);
-                                                                  §§goto(addr447);
-                                                               }
-                                                               §§goto(addr569);
-                                                            }
-                                                            §§goto(addr469);
-                                                         }
-                                                         §§goto(addr452);
-                                                      }
-                                                      §§goto(addr384);
-                                                   }
-                                                }
-                                                §§goto(addr655);
-                                             }
-                                          }
-                                          while(true)
-                                          {
-                                             §§push(this.§ "§);
-                                             if(!(_loc1_ && _loc2_))
-                                             {
-                                                §§goto(addr593);
-                                                §§push(Boolean(§§pop()));
-                                             }
-                                             §§goto(addr596);
-                                          }
-                                       }
-                                    }
-                                    §§goto(addr655);
-                                    continue loop40;
-                                 }
-                              }
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-            §§goto(addr717);
+            this.§&^§.dispose();
+            this.§&^§ = null;
          }
-         §§goto(addr653);
+         if(this.§^^§)
+         {
+            this.§^^§.dispose();
+            this.§^^§ = null;
+            this.§'Z§ = null;
+         }
+         if(this.mLevelEngine)
+         {
+            if(this.mLevelEngine.§`!U§)
+            {
+            }
+            this.mLevelEngine.clear();
+            this.mLevelEngine = null;
+         }
+         if(this.§ "§)
+         {
+            this.§ "§.clear();
+            this.§ "§ = null;
+         }
+         if(this.§]!A§)
+         {
+            this.§]!A§.dispose();
+            this.§]!A§ = null;
+         }
+         if(this.§6!V§)
+         {
+            this.§6!V§.clear();
+            this.§6!V§ = null;
+         }
+         if(this.§`!$§)
+         {
+            this.§`!$§.dispose();
+            this.§`!$§ = null;
+         }
+         if(this.sprite)
+         {
+            while(this.sprite.numChildren > 0)
+            {
+               this.sprite.removeChildAt(0,true);
+            }
+         }
+         this.§<!b§ = 0;
+         this.§"!-§ = 0;
+         this.mReadyToRun = false;
+         this.§0v§ = false;
+         this.§?y§ = §5a§.§ !j§;
+         if(this.§7B§)
+         {
+            (this.§7B§ as §;I§).§"!$§.x = 0;
+            (this.§7B§ as §;I§).§"!$§.y = 0;
+         }
+         if(this.§>L§)
+         {
+            this.§>L§.visible = false;
+         }
+         this.§=,§ = null;
+         this.§,z§ = null;
+         if(this.§,E§)
+         {
+            this.§,E§.removeEventListener(Event.COMPLETE,this.§-@§);
+            this.§,E§.removeEventListener(Event.CANCEL,this.§"!B§);
+         }
+         if(this.§^l§)
+         {
+            this.§^l§.removeEventListener(Event.COMPLETE,this.§[Q§);
+            this.§^l§.removeEventListener(Event.CANCEL,this.§5!G§);
+         }
+         this.§@!g§();
+         if(Starling.§'!A§)
+         {
+            Starling.§'!A§.color = 0;
+         }
+         if(this.§^!I§)
+         {
+            this.§^!I§.removeEventListeners();
+         }
+         this.mReadyToRun = false;
       }
       
       public function gameOver() : void
@@ -4908,1989 +970,293 @@ package §?A§
       
       public function §0!1§() : String
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && this))
+         if(this.§,z§)
          {
-            §§push(this.§,z§);
-            if(!(_loc2_ && _loc1_))
-            {
-               if(§§pop())
-               {
-                  if(!(_loc2_ && this))
-                  {
-                     §§push(this.§,z§);
-                  }
-                  else
-                  {
-                     §§goto(addr55);
-                  }
-               }
-               §§goto(addr55);
-            }
-            return §§pop().toString();
+            return this.§,z§.toString();
          }
-         addr55:
          return null;
       }
       
       public function update(param1:Number, param2:Boolean = true, param3:Boolean = true) : Number
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(!_loc5_)
+         if(!this.mReadyToRun || !Starling.§]c§())
          {
-            §§push(this.mReadyToRun);
-            loop0:
-            while(true)
-            {
-               §§push(!§§pop());
-               if(!(_loc5_ && param2))
-               {
-                  §§push(Boolean(§§pop()));
-                  loop1:
-                  while(true)
-                  {
-                     §§push(§§pop());
-                     loop2:
-                     while(true)
-                     {
-                        §§push(Boolean(§§pop()));
-                        loop3:
-                        while(true)
-                        {
-                           if(§§pop())
-                           {
-                              while(true)
-                              {
-                                 loop5:
-                                 while(!§§pop())
-                                 {
-                                    loop6:
-                                    while(true)
-                                    {
-                                       §§push(this.§=,§);
-                                       loop7:
-                                       while(true)
-                                       {
-                                          §§push(Boolean(§§pop()));
-                                          loop8:
-                                          while(true)
-                                          {
-                                             if(_loc4_)
-                                             {
-                                                if(!(_loc5_ && param3))
-                                                {
-                                                   §§push(§§pop());
-                                                   if(!(_loc5_ && param1))
-                                                   {
-                                                      if(!_loc4_)
-                                                      {
-                                                         continue loop2;
-                                                      }
-                                                      §§push(Boolean(§§pop()));
-                                                   }
-                                                   if(_loc5_ && param1)
-                                                   {
-                                                      continue loop3;
-                                                   }
-                                                   if(§§pop())
-                                                   {
-                                                      loop9:
-                                                      while(true)
-                                                      {
-                                                         §§pop();
-                                                         loop10:
-                                                         while(true)
-                                                         {
-                                                            §§push(this.§=,§);
-                                                            if(_loc5_ && param2)
-                                                            {
-                                                               continue loop7;
-                                                            }
-                                                            §§push(§§pop().§9X§);
-                                                            if(!_loc5_)
-                                                            {
-                                                               if(!(_loc4_ || this))
-                                                               {
-                                                                  continue loop8;
-                                                               }
-                                                               §§push(Boolean(§§pop()));
-                                                            }
-                                                            if(!_loc4_)
-                                                            {
-                                                               continue loop9;
-                                                            }
-                                                            if(_loc5_)
-                                                            {
-                                                               break;
-                                                            }
-                                                            if(_loc4_)
-                                                            {
-                                                               if(_loc4_)
-                                                               {
-                                                                  while(§§pop())
-                                                                  {
-                                                                     if(!_loc5_)
-                                                                     {
-                                                                        if(_loc4_ || param3)
-                                                                        {
-                                                                           §§goto(addr98);
-                                                                        }
-                                                                        continue loop10;
-                                                                     }
-                                                                     if(_loc4_)
-                                                                     {
-                                                                        if(!_loc5_)
-                                                                        {
-                                                                           break;
-                                                                        }
-                                                                        break loop5;
-                                                                     }
-                                                                     if(!_loc5_)
-                                                                     {
-                                                                        while(true)
-                                                                        {
-                                                                           continue loop6;
-                                                                        }
-                                                                        addr167:
-                                                                     }
-                                                                     else
-                                                                     {
-                                                                        while(true)
-                                                                        {
-                                                                           §§push(Starling.§]c§());
-                                                                           break loop8;
-                                                                        }
-                                                                        addr183:
-                                                                     }
-                                                                  }
-                                                                  §§push(this.updateWithTime(param1,true,param2,param3));
-                                                                  if(_loc4_ || this)
-                                                                  {
-                                                                     if(!(_loc5_ && param3))
-                                                                     {
-                                                                        return §§pop();
-                                                                     }
-                                                                     §§goto(addr164);
-                                                                  }
-                                                               }
-                                                               continue loop1;
-                                                               addr98:
-                                                               return this.§[p§(param1,param2,param3);
-                                                            }
-                                                            while(true)
-                                                            {
-                                                               §§pop();
-                                                            }
-                                                            addr182:
-                                                            §§goto(addr183);
-                                                         }
-                                                         continue loop0;
-                                                      }
-                                                   }
-                                                   §§goto(addr72);
-                                                }
-                                                break;
-                                             }
-                                             continue loop5;
-                                          }
-                                          while(true)
-                                          {
-                                             §§push(!§§pop());
-                                             continue loop0;
-                                          }
-                                       }
-                                    }
-                                 }
-                                 addr164:
-                                 return §§pop();
-                              }
-                              addr161:
-                           }
-                        }
-                     }
-                  }
-               }
-               §§goto(addr182);
-            }
+            return 0;
          }
-         §§goto(addr167);
+         if(this.§=,§ && this.§=,§.§9X§)
+         {
+            return this.§[p§(param1,param2,param3);
+         }
+         return this.updateWithTime(param1,true,param2,param3);
       }
       
       protected function updateWithTime(param1:Number, param2:Boolean, param3:Boolean, param4:Boolean) : Number
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
-         if(_loc6_)
+         if(this.§!!O§)
          {
-            §§push(this.§!!O§);
-            if(_loc6_ || param1)
+            param1 *= 0.2;
+            if(Starling.§@7§)
             {
-               if(§§pop())
-               {
-                  if(!_loc7_)
-                  {
-                     §§push(param1);
-                     if(_loc6_)
-                     {
-                        §§push(§§pop() * 0.2);
-                        if(_loc6_ || this)
-                        {
-                           addr42:
-                           §§push(Number(§§pop()));
-                           if(_loc6_)
-                           {
-                              param1 = §§pop();
-                              if(_loc6_)
-                              {
-                                 addr48:
-                                 §§push(Starling.§@7§);
-                                 if(!(_loc7_ && param2))
-                                 {
-                                    addr59:
-                                    if(§§pop())
-                                    {
-                                       addr67:
-                                       if(!_loc7_)
-                                       {
-                                          addr62:
-                                          §§push(Starling.§@7§);
-                                       }
-                                       var _loc5_:* = Number(0);
-                                       if(!(_loc7_ && this))
-                                       {
-                                          §§push(this);
-                                          §§push(this.§"!-§);
-                                          if(!(_loc7_ && param2))
-                                          {
-                                             §§push(§§pop() + param1);
-                                          }
-                                          §§pop().§"!-§ = §§pop();
-                                          loop0:
-                                          while(true)
-                                          {
-                                             §§push(param3);
-                                             loop1:
-                                             while(true)
-                                             {
-                                                if(§§pop())
-                                                {
-                                                   continue loop0;
-                                                }
-                                                this.§^^§.§ U§(param1);
-                                                loop2:
-                                                while(true)
-                                                {
-                                                   this.§<!b§ = 0;
-                                                   loop3:
-                                                   while(true)
-                                                   {
-                                                      if(_loc6_ || this)
-                                                      {
-                                                         if(!(_loc7_ && param1))
-                                                         {
-                                                            if(_loc6_)
-                                                            {
-                                                               loop4:
-                                                               while(true)
-                                                               {
-                                                                  §§push(param2);
-                                                                  if(!_loc6_)
-                                                                  {
-                                                                     break;
-                                                                  }
-                                                                  if(§§pop())
-                                                                  {
-                                                                     if(_loc6_)
-                                                                     {
-                                                                        if(!_loc6_)
-                                                                        {
-                                                                           continue loop3;
-                                                                        }
-                                                                        if(_loc7_)
-                                                                        {
-                                                                           continue loop2;
-                                                                        }
-                                                                        this.§4!$§(param1,_loc5_);
-                                                                     }
-                                                                  }
-                                                                  §§push(param1);
-                                                                  if(!_loc7_)
-                                                                  {
-                                                                     return §§pop();
-                                                                  }
-                                                                  addr146:
-                                                                  while(true)
-                                                                  {
-                                                                     continue loop4;
-                                                                  }
-                                                               }
-                                                               continue loop1;
-                                                            }
-                                                            addr213:
-                                                            while(true)
-                                                            {
-                                                               §§push(this.mLevelEngine.§>!?§(this.§<!b§));
-                                                               if(_loc6_ || param3)
-                                                               {
-                                                                  §§push(Number(§§pop()));
-                                                               }
-                                                            }
-                                                            while(true)
-                                                            {
-                                                               _loc5_ = §§pop();
-                                                               addr179:
-                                                               while(true)
-                                                               {
-                                                                  this.§]!A§.update(param1,param4);
-                                                               }
-                                                            }
-                                                         }
-                                                         while(true)
-                                                         {
-                                                            if(_loc6_)
-                                                            {
-                                                               if(!(_loc6_ || param2))
-                                                               {
-                                                                  continue loop0;
-                                                               }
-                                                               this.§<!b§ = _loc5_;
-                                                               §§goto(addr146);
-                                                            }
-                                                            §§goto(addr179);
-                                                         }
-                                                      }
-                                                      §§goto(addr146);
-                                                   }
-                                                }
-                                             }
-                                          }
-                                       }
-                                       while(true)
-                                       {
-                                          §§push(this);
-                                          §§push(this.§<!b§);
-                                          if(!(_loc7_ && param3))
-                                          {
-                                             §§push(§§pop() + param1);
-                                          }
-                                          §§pop().§<!b§ = §§pop();
-                                          §§goto(addr213);
-                                       }
-                                    }
-                                    §§goto(addr67);
-                                 }
-                                 §§pop().speed = 0.2;
-                              }
-                              §§goto(addr67);
-                           }
-                        }
-                        §§goto(addr67);
-                     }
-                     §§goto(addr42);
-                  }
-                  §§goto(addr48);
-               }
-               §§goto(addr67);
+               Starling.§@7§.speed = 0.2;
             }
-            §§goto(addr59);
          }
-         §§goto(addr62);
+         var _loc5_:Number = 0;
+         this.§"!-§ += param1;
+         if(param3)
+         {
+            this.§<!b§ += param1;
+            _loc5_ = this.mLevelEngine.§>!?§(this.§<!b§);
+            this.§]!A§.update(param1,param4);
+            this.§<!b§ = _loc5_;
+         }
+         else
+         {
+            this.§^^§.§ U§(param1);
+            this.§<!b§ = 0;
+         }
+         if(param2)
+         {
+            this.§4!$§(param1,_loc5_);
+         }
+         return param1;
       }
       
       private function §[p§(param1:Number, param2:Boolean, param3:Boolean) : Number
       {
-         var _loc6_:Boolean = false;
-         var _loc7_:Boolean = true;
-         var _loc5_:* = NaN;
-         §§push(§6c§.§6!Y§);
-         if(_loc7_)
+         var _loc5_:Number = NaN;
+         var _loc4_:Number = §6c§.§6!Y§ * 1000;
+         if(this.§=,§)
          {
-            §§push(§§pop() * 1000);
-            if(_loc7_ || this)
+            param1 *= this.§=,§.speed;
+            _loc5_ = this.§"!-§ + param1;
+            while(this.§"!-§ + _loc4_ < _loc5_)
             {
-               §§push(Number(§§pop()));
+               if(this.§"!-§ + _loc4_ > this.§8z§)
+               {
+                  this.§=,§.step(this);
+                  this.§8z§ += _loc4_;
+               }
+               this.updateWithTime(_loc4_,false,param2,param3);
             }
+            if(_loc5_ > this.§8z§ + _loc4_)
+            {
+               this.§=,§.step(this);
+               this.§8z§ += _loc4_;
+            }
+            if(this.§"!-§ < _loc5_)
+            {
+               this.updateWithTime(_loc5_ - this.§"!-§,true,param2,param3);
+            }
+            return param1;
          }
-         var _loc4_:* = §§pop();
-         if(_loc7_)
-         {
-            if(this.§=,§)
-            {
-               if(_loc7_)
-               {
-                  §§push(param1);
-                  while(true)
-                  {
-                     §§push(this.§=,§.speed);
-                     addr309:
-                     while(true)
-                     {
-                        §§push(§§pop() * §§pop());
-                        addr310:
-                        while(true)
-                        {
-                           §§push(Number(§§pop()));
-                           addr311:
-                           while(true)
-                           {
-                              param1 = §§pop();
-                           }
-                        }
-                     }
-                  }
-                  addr306:
-               }
-               while(true)
-               {
-                  §§push(this.§"!-§);
-                  if(!_loc6_)
-                  {
-                     §§push(param1);
-                     if(_loc7_)
-                     {
-                        §§push(§§pop() + §§pop());
-                        if(_loc7_ || param2)
-                        {
-                           addr268:
-                           if(_loc7_ || this)
-                           {
-                              addr286:
-                              §§push(Number(§§pop()));
-                              if(_loc7_ || this)
-                              {
-                                 if(!_loc6_)
-                                 {
-                                    _loc5_ = §§pop();
-                                    if(_loc7_)
-                                    {
-                                       break;
-                                    }
-                                    continue;
-                                 }
-                                 §§goto(addr306);
-                              }
-                              §§goto(addr310);
-                           }
-                           §§goto(addr311);
-                        }
-                        §§goto(addr286);
-                     }
-                     §§goto(addr309);
-                  }
-                  §§goto(addr268);
-               }
-               while(true)
-               {
-                  §§push(this.§"!-§);
-                  loop11:
-                  while(true)
-                  {
-                     if(_loc7_)
-                     {
-                        §§push(_loc4_);
-                        if(_loc7_ || param2)
-                        {
-                           if(_loc7_)
-                           {
-                              §§push(§§pop() + §§pop());
-                              while(true)
-                              {
-                                 §§push(_loc5_);
-                                 if(_loc7_)
-                                 {
-                                    while(§§pop() >= §§pop())
-                                    {
-                                       if(_loc7_)
-                                       {
-                                          addr180:
-                                          if(!(_loc6_ && this))
-                                          {
-                                             §§push(_loc5_);
-                                             loop18:
-                                             while(!_loc6_)
-                                             {
-                                                §§push(this.§8z§);
-                                                while(true)
-                                                {
-                                                   §§push(§§pop() + _loc4_);
-                                                   addr194:
-                                                   loop13:
-                                                   while(true)
-                                                   {
-                                                      if(_loc7_)
-                                                      {
-                                                         if(§§pop() > §§pop())
-                                                         {
-                                                            while(true)
-                                                            {
-                                                               §§push(this.§=,§);
-                                                               if(!_loc6_)
-                                                               {
-                                                                  §§pop().step(this);
-                                                                  while(true)
-                                                                  {
-                                                                     if(!(_loc6_ && param2))
-                                                                     {
-                                                                        continue;
-                                                                     }
-                                                                     addr246:
-                                                                     while(true)
-                                                                     {
-                                                                        §§push(this.§=,§);
-                                                                        break loop13;
-                                                                     }
-                                                                  }
-                                                                  while(true)
-                                                                  {
-                                                                     §§push(this);
-                                                                     §§push(this.§8z§);
-                                                                     if(!(_loc6_ && param2))
-                                                                     {
-                                                                        §§push(§§pop() + _loc4_);
-                                                                     }
-                                                                     §§pop().§8z§ = §§pop();
-                                                                     addr235:
-                                                                     while(true)
-                                                                     {
-                                                                        addr212:
-                                                                        while(true)
-                                                                        {
-                                                                           §§push(this.updateWithTime(_loc4_,false,param2,param3));
-                                                                           break loop18;
-                                                                        }
-                                                                        §§goto(addr180);
-                                                                     }
-                                                                  }
-                                                                  addr251:
-                                                               }
-                                                               break loop13;
-                                                            }
-                                                            addr197:
-                                                         }
-                                                         §§goto(addr88);
-                                                      }
-                                                      else
-                                                      {
-                                                         while(true)
-                                                         {
-                                                            §§push(§§pop() + §§pop());
-                                                            break loop11;
-                                                         }
-                                                         addr242:
-                                                      }
-                                                   }
-                                                   while(true)
-                                                   {
-                                                      §§pop().step(this);
-                                                      §§goto(addr251);
-                                                   }
-                                                }
-                                             }
-                                             while(true)
-                                             {
-                                                §§pop();
-                                                §§goto(addr220);
-                                             }
-                                          }
-                                          §§goto(addr235);
-                                       }
-                                       §§goto(addr197);
-                                    }
-                                    addr238:
-                                    §§push(this.§"!-§);
-                                    while(true)
-                                    {
-                                       §§goto(addr242);
-                                       §§goto(addr238);
-                                    }
-                                    addr177:
-                                    addr241:
-                                 }
-                                 §§goto(addr194);
-                              }
-                           }
-                           while(true)
-                           {
-                              if(§§pop() > §§pop())
-                              {
-                                 §§goto(addr246);
-                              }
-                              §§goto(addr212);
-                           }
-                           addr245:
-                        }
-                        §§goto(addr177);
-                     }
-                     break;
-                     if(!(_loc7_ || param2))
-                     {
-                        continue;
-                     }
-                     §§goto(addr73);
-                  }
-                  while(true)
-                  {
-                     §§goto(addr245);
-                  }
-               }
-               addr298:
-            }
-            else
-            {
-               §§push(this.updateWithTime(_loc4_,true,param2,param3));
-               if(_loc7_)
-               {
-                  if(!_loc6_)
-                  {
-                     return §§pop();
-                  }
-                  §§goto(addr241);
-               }
-            }
-            §§goto(addr55);
-         }
-         §§goto(addr298);
+         return this.updateWithTime(_loc4_,true,param2,param3);
       }
       
       private function §4!$§(param1:Number, param2:Number) : void
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         var _loc3_:* = NaN;
-         var _loc4_:* = NaN;
-         if(_loc5_ || param1)
+         var _loc3_:Number = NaN;
+         var _loc4_:Number = NaN;
+         this.§&^§.update(param1);
+         this.§^^§.§,9§(param1,param2);
+         this.§1!?§();
+         if(this.§?y§ < §5a§.§ !j§)
          {
-            this.§&^§.update(param1);
-            while(true)
+            this.§?y§ += param1;
+            _loc3_ = §5a§.§ !j§ / 2;
+            _loc4_ = (-Math.abs(this.§?y§ - _loc3_) + _loc3_) * (§5a§.§3!Y§ / _loc3_);
+            if(this.§>L§)
             {
-               this.§^^§.§,9§(param1,param2);
-               addr265:
-               if(!(_loc5_ || param1))
-               {
-                  continue;
-               }
-               §§push(-Math.abs(this.§?y§ - _loc3_));
-               if(_loc5_)
-               {
-                  §§push(_loc3_);
-                  if(!(_loc6_ && this))
-                  {
-                     §§push(§§pop() + §§pop());
-                     if(!_loc6_)
-                     {
-                        §§push(§5a§.§3!Y§);
-                        if(!_loc6_)
-                        {
-                           addr215:
-                           §§push(§§pop() / _loc3_);
-                        }
-                        if(!(_loc6_ && _loc3_))
-                        {
-                           §§push(§§pop() * §§pop());
-                           if(!_loc6_)
-                           {
-                              addr227:
-                              if(_loc5_ || this)
-                              {
-                                 addr234:
-                                 if(_loc5_ || this)
-                                 {
-                                    addr242:
-                                    §§push(Number(§§pop()));
-                                    if(!(_loc6_ && this))
-                                    {
-                                       if(_loc5_)
-                                       {
-                                          _loc4_ = §§pop();
-                                          loop9:
-                                          while(!_loc6_)
-                                          {
-                                             §§push(this.§>L§);
-                                             loop22:
-                                             while(true)
-                                             {
-                                                §§push(Boolean(§§pop()));
-                                                loop18:
-                                                while(true)
-                                                {
-                                                   if(§§pop())
-                                                   {
-                                                      loop7:
-                                                      while(true)
-                                                      {
-                                                         if(_loc5_)
-                                                         {
-                                                            §§push(this.§>L§);
-                                                            loop19:
-                                                            while(true)
-                                                            {
-                                                               §§pop().alpha = _loc4_;
-                                                               loop10:
-                                                               while(true)
-                                                               {
-                                                                  addr132:
-                                                                  while(true)
-                                                                  {
-                                                                     loop12:
-                                                                     while(true)
-                                                                     {
-                                                                        §§push(this.§7^§);
-                                                                        if(_loc5_ || this)
-                                                                        {
-                                                                           §§push(Boolean(§§pop()));
-                                                                           if(!_loc6_)
-                                                                           {
-                                                                              if(§§pop())
-                                                                              {
-                                                                                 if(!_loc6_)
-                                                                                 {
-                                                                                    addr118:
-                                                                                    §§push(this.§7^§.§ !K§(this.§6!V§,param1));
-                                                                                    if(_loc5_)
-                                                                                    {
-                                                                                       if(!_loc6_)
-                                                                                       {
-                                                                                          addr127:
-                                                                                          if(!§§pop())
-                                                                                          {
-                                                                                             loop17:
-                                                                                             while(true)
-                                                                                             {
-                                                                                                this.§2$§();
-                                                                                                addr131:
-                                                                                                while(true)
-                                                                                                {
-                                                                                                   addr91:
-                                                                                                   loop14:
-                                                                                                   while(true)
-                                                                                                   {
-                                                                                                      this.§6!V§.§?J§(param1);
-                                                                                                      loop15:
-                                                                                                      while(_loc5_)
-                                                                                                      {
-                                                                                                         this.mLevelEngine.§`!?§();
-                                                                                                         while(!(_loc6_ && param1))
-                                                                                                         {
-                                                                                                            if(!(_loc6_ && _loc3_))
-                                                                                                            {
-                                                                                                               if(_loc5_)
-                                                                                                               {
-                                                                                                                  addr83:
-                                                                                                                  if(!(_loc5_ || _loc3_))
-                                                                                                                  {
-                                                                                                                     break loop12;
-                                                                                                                  }
-                                                                                                                  this.§`!$§.update(param1);
-                                                                                                                  if(!(_loc6_ && _loc3_))
-                                                                                                                  {
-                                                                                                                     if(_loc6_ && this)
-                                                                                                                     {
-                                                                                                                        continue loop15;
-                                                                                                                     }
-                                                                                                                     if(_loc5_)
-                                                                                                                     {
-                                                                                                                        addr54:
-                                                                                                                        if(!(_loc6_ && _loc3_))
-                                                                                                                        {
-                                                                                                                           return;
-                                                                                                                        }
-                                                                                                                        addr308:
-                                                                                                                        while(true)
-                                                                                                                        {
-                                                                                                                           §§push(this.§?y§);
-                                                                                                                           addr276:
-                                                                                                                           while(true)
-                                                                                                                           {
-                                                                                                                              §§push(§5a§.§ !j§);
-                                                                                                                              addr279:
-                                                                                                                              while(true)
-                                                                                                                              {
-                                                                                                                                 if(§§pop() < §§pop())
-                                                                                                                                 {
-                                                                                                                                    break loop9;
-                                                                                                                                 }
-                                                                                                                                 §§push(this.§>L§);
-                                                                                                                                 if(!_loc6_)
-                                                                                                                                 {
-                                                                                                                                    if(_loc6_ && _loc3_)
-                                                                                                                                    {
-                                                                                                                                       continue loop19;
-                                                                                                                                    }
-                                                                                                                                    §§push(Boolean(§§pop()));
-                                                                                                                                    while(true)
-                                                                                                                                    {
-                                                                                                                                       if(_loc6_)
-                                                                                                                                       {
-                                                                                                                                          continue loop18;
-                                                                                                                                       }
-                                                                                                                                       if(!§§pop())
-                                                                                                                                       {
-                                                                                                                                          continue loop12;
-                                                                                                                                       }
-                                                                                                                                       while(true)
-                                                                                                                                       {
-                                                                                                                                          if(!_loc5_)
-                                                                                                                                          {
-                                                                                                                                             continue loop10;
-                                                                                                                                          }
-                                                                                                                                          if(!_loc5_)
-                                                                                                                                          {
-                                                                                                                                             continue loop7;
-                                                                                                                                          }
-                                                                                                                                          §§push(this.§>L§);
-                                                                                                                                       }
-                                                                                                                                    }
-                                                                                                                                 }
-                                                                                                                                 while(true)
-                                                                                                                                 {
-                                                                                                                                    if(_loc5_ || param1)
-                                                                                                                                    {
-                                                                                                                                       §§pop().visible = false;
-                                                                                                                                       break loop15;
-                                                                                                                                    }
-                                                                                                                                    continue loop22;
-                                                                                                                                 }
-                                                                                                                              }
-                                                                                                                              §§goto(addr234);
-                                                                                                                           }
-                                                                                                                           §§goto(addr54);
-                                                                                                                        }
-                                                                                                                     }
-                                                                                                                     §§goto(addr160);
-                                                                                                                     continue loop15;
-                                                                                                                  }
-                                                                                                                  continue;
-                                                                                                                  continue;
-                                                                                                               }
-                                                                                                               continue loop9;
-                                                                                                            }
-                                                                                                            continue loop17;
-                                                                                                         }
-                                                                                                         continue loop14;
-                                                                                                      }
-                                                                                                      continue loop12;
-                                                                                                   }
-                                                                                                }
-                                                                                             }
-                                                                                          }
-                                                                                          §§goto(addr91);
-                                                                                       }
-                                                                                       §§goto(addr157);
-                                                                                    }
-                                                                                    §§goto(addr127);
-                                                                                 }
-                                                                                 §§goto(addr131);
-                                                                              }
-                                                                              §§goto(addr91);
-                                                                           }
-                                                                           §§goto(addr127);
-                                                                        }
-                                                                        §§goto(addr118);
-                                                                     }
-                                                                     addr316:
-                                                                     while(true)
-                                                                     {
-                                                                        this.§1!?§();
-                                                                        §§goto(addr308);
-                                                                        §§goto(addr83);
-                                                                     }
-                                                                  }
-                                                               }
-                                                            }
-                                                         }
-                                                         loop8:
-                                                         while(true)
-                                                         {
-                                                            if(!_loc6_)
-                                                            {
-                                                               §§goto(addr265);
-                                                            }
-                                                            addr303:
-                                                            while(true)
-                                                            {
-                                                               §§push(§5a§.§ !j§);
-                                                               addr259:
-                                                               while(true)
-                                                               {
-                                                                  §§push(§§pop() / 2);
-                                                                  addr261:
-                                                                  while(true)
-                                                                  {
-                                                                     §§push(Number(§§pop()));
-                                                                     addr262:
-                                                                     while(true)
-                                                                     {
-                                                                        _loc3_ = §§pop();
-                                                                        continue loop8;
-                                                                     }
-                                                                  }
-                                                               }
-                                                            }
-                                                         }
-                                                         §§goto(addr279);
-                                                      }
-                                                   }
-                                                   §§goto(addr132);
-                                                }
-                                             }
-                                          }
-                                          while(true)
-                                          {
-                                             §§push(this);
-                                             §§push(this.§?y§);
-                                             if(_loc5_ || param2)
-                                             {
-                                                §§push(§§pop() + param1);
-                                             }
-                                             §§pop().§?y§ = §§pop();
-                                             §§goto(addr303);
-                                          }
-                                       }
-                                       §§goto(addr259);
-                                    }
-                                    §§goto(addr262);
-                                 }
-                                 §§goto(addr276);
-                              }
-                              §§goto(addr261);
-                           }
-                           §§goto(addr242);
-                        }
-                        §§goto(addr279);
-                     }
-                     §§goto(addr227);
-                  }
-                  §§goto(addr215);
-               }
-               §§goto(addr242);
+               this.§>L§.alpha = _loc4_;
             }
          }
-         §§goto(addr316);
+         else if(this.§>L§)
+         {
+            this.§>L§.visible = false;
+         }
+         if(this.§7^§)
+         {
+            if(!this.§7^§.§ !K§(this.§6!V§,param1))
+            {
+               this.§2$§();
+            }
+         }
+         this.§6!V§.§?J§(param1);
+         this.mLevelEngine.§`!?§();
+         this.§`!$§.update(param1);
       }
       
       public function handleEngineUpdateStep(param1:Number) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc3_))
-         {
-            §§push(this.objects);
-            loop0:
-            while(true)
-            {
-               §§push(param1);
-               addr104:
-               while(true)
-               {
-                  §§push(1000);
-                  addr105:
-                  while(true)
-                  {
-                     §§push(§§pop() * §§pop());
-                     addr106:
-                     while(true)
-                     {
-                        §§pop().§ U§(§§pop());
-                        continue loop0;
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr100);
+         this.objects.§ U§(param1 * 1000);
+         this.objects.§7O§(param1 * 1000);
+         this.§47§();
       }
       
       public function §1!?§() : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
          var _loc1_:LevelObject = null;
-         if(_loc4_)
+         if(this.§"!-§ > this.§,!%§ + 1000 / 30)
          {
-            §§push(this.§"!-§);
-            §§push(this.§,!%§);
-            if(_loc4_ || this)
+            if(this.§`W§ != null)
             {
-               §§push(§§pop() + 1000 / 30);
-            }
-            if(§§pop() > §§pop())
-            {
-               if(!(_loc5_ && _loc3_))
-               {
-                  §§goto(addr54);
-               }
-            }
-            §§goto(addr58);
-         }
-         addr54:
-         if(this.§`W§ != null)
-         {
-            addr58:
-            for each(_loc1_ in this.§`W§)
-            {
-               if(!(_loc5_ && _loc1_))
+               for each(_loc1_ in this.§`W§)
                {
                   _loc1_.addTrail();
                }
             }
-            if(!_loc4_)
-            {
-            }
-            §§goto(addr101);
+            this.§,!%§ = this.§"!-§;
          }
-         this.§,!%§ = this.§"!-§;
-         addr101:
       }
       
       public function updatePigAnimations(param1:Number) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
          var _loc2_:LevelObject = null;
-         if(!(_loc4_ && this))
+         this.mPigsAnimationTimer1 -= param1;
+         if(this.mPigsAnimationTimer1 <= 0)
          {
-            §§push(this);
-            §§push(this.mPigsAnimationTimer1);
-            if(!_loc4_)
+            if(this.§^^§.isPigsAlive(true))
             {
-               §§push(§§pop() - param1);
+               _loc2_ = this.§^^§.§>!$§(true);
+               _loc2_.§ get§.mTryToScream = LevelObjectRenderer.§6!H§;
+               this.mPigsAnimationTimer1 = 500 + Math.random() * 1000 + 4000 / (3 + this.§^^§.§^9§());
             }
-            §§pop().mPigsAnimationTimer1 = §§pop();
-            if(_loc3_)
-            {
-               §§push(this.mPigsAnimationTimer1);
-               if(_loc3_)
-               {
-                  §§push(0);
-                  if(!_loc4_)
-                  {
-                     if(§§pop() <= §§pop())
-                     {
-                        if(!(_loc4_ && this))
-                        {
-                           addr51:
-                           §§push(this.§^^§);
-                           if(!_loc4_)
-                           {
-                              §§push(true);
-                              if(_loc3_)
-                              {
-                                 §§push(§§pop().isPigsAlive(§§pop()));
-                                 if(_loc3_)
-                                 {
-                                    if(§§pop())
-                                    {
-                                       if(_loc3_)
-                                       {
-                                          addr64:
-                                          §§push(this.§^^§);
-                                          if(_loc3_ || _loc3_)
-                                          {
-                                             §§push(true);
-                                             if(!(_loc4_ && this))
-                                             {
-                                                §§push(§§pop().§>!$§(§§pop()));
-                                                if(!(_loc4_ && this))
-                                                {
-                                                   _loc2_ = §§pop();
-                                                   if(_loc3_)
-                                                   {
-                                                      _loc2_.§ get§.mTryToScream = LevelObjectRenderer.§6!H§;
-                                                      if(!_loc4_)
-                                                      {
-                                                         §§push(this);
-                                                         §§push(500 + Math.random() * 1000);
-                                                         if(!_loc4_)
-                                                         {
-                                                            §§push(§§pop() + 4000 / (3 + this.§^^§.§^9§()));
-                                                         }
-                                                         §§pop().mPigsAnimationTimer1 = §§pop();
-                                                         addr130:
-                                                         §§push(this);
-                                                         §§push(this.mPigsAnimationTimer2);
-                                                         if(_loc3_)
-                                                         {
-                                                            §§push(§§pop() - param1);
-                                                         }
-                                                         §§pop().mPigsAnimationTimer2 = §§pop();
-                                                         if(!(_loc4_ && _loc3_))
-                                                         {
-                                                            addr148:
-                                                            if(this.mPigsAnimationTimer2 <= 0)
-                                                            {
-                                                               if(!_loc4_)
-                                                               {
-                                                                  addr151:
-                                                                  §§push(this.§^^§);
-                                                                  if(_loc3_ || param1)
-                                                                  {
-                                                                     addr160:
-                                                                     §§push(true);
-                                                                     if(!(_loc4_ && this))
-                                                                     {
-                                                                        §§goto(addr225);
-                                                                     }
-                                                                     addr174:
-                                                                     _loc2_ = §§pop().§>!$§(§§pop());
-                                                                     §§goto(addr173);
-                                                                  }
-                                                                  addr173:
-                                                                  if(!_loc4_)
-                                                                  {
-                                                                     _loc2_.§ get§.mTryToBlink = LevelObjectRenderer.§&3§;
-                                                                     if(_loc4_ && _loc2_)
-                                                                     {
-                                                                     }
-                                                                     §§goto(addr225);
-                                                                  }
-                                                                  §§push(this);
-                                                                  §§push(250 + Math.random() * 500);
-                                                                  if(!(_loc4_ && _loc2_))
-                                                                  {
-                                                                     §§push(§§pop() + 2000 / (3 + this.§^^§.§^9§()));
-                                                                  }
-                                                                  §§pop().mPigsAnimationTimer2 = §§pop();
-                                                                  addr225:
-                                                                  if(§§pop().isPigsAlive(§§pop()))
-                                                                  {
-                                                                     addr170:
-                                                                     §§push(this.§^^§);
-                                                                  }
-                                                                  return;
-                                                                  §§push(true);
-                                                               }
-                                                               §§goto(addr170);
-                                                            }
-                                                            §§goto(addr225);
-                                                         }
-                                                         §§goto(addr151);
-                                                      }
-                                                   }
-                                                   §§goto(addr130);
-                                                }
-                                                §§goto(addr174);
-                                             }
-                                             §§goto(addr225);
-                                          }
-                                          §§goto(addr160);
-                                       }
-                                       §§goto(addr151);
-                                    }
-                                    §§goto(addr130);
-                                 }
-                                 §§goto(addr225);
-                              }
-                           }
-                           §§goto(addr160);
-                        }
-                        §§goto(addr170);
-                     }
-                     §§goto(addr130);
-                  }
-               }
-               §§goto(addr148);
-            }
-            §§goto(addr51);
          }
-         §§goto(addr64);
+         this.mPigsAnimationTimer2 -= param1;
+         if(this.mPigsAnimationTimer2 <= 0)
+         {
+            if(this.§^^§.isPigsAlive(true))
+            {
+               _loc2_ = this.§^^§.§>!$§(true);
+               _loc2_.§ get§.mTryToBlink = LevelObjectRenderer.§&3§;
+               this.mPigsAnimationTimer2 = 250 + Math.random() * 500 + 2000 / (3 + this.§^^§.§^9§());
+            }
+         }
       }
       
       public function addScore(param1:int, param2:String, param3:Boolean = false, param4:Number = 0, param5:Number = 0, param6:int = -9999) : void
       {
-         var _loc7_:Boolean = false;
-         var _loc8_:Boolean = true;
-         if(_loc8_ || param1)
+         if(param6 == -9999)
          {
-            §§push(param6);
-            if(!_loc7_)
-            {
-               §§push(-9999);
-               loop0:
-               while(true)
-               {
-                  if(§§pop() == §§pop())
-                  {
-                     if(!_loc7_)
-                     {
-                        §§push(§8!;§.§"L§);
-                        while(true)
-                        {
-                           §§push(int(§§pop()));
-                           addr208:
-                           while(true)
-                           {
-                              param6 = §§pop();
-                              addr209:
-                              while(true)
-                              {
-                              }
-                           }
-                        }
-                        addr207:
-                     }
-                     §§goto(addr209);
-                  }
-                  while(true)
-                  {
-                     ScoreCollector.addScore(param1,param2);
-                     loop3:
-                     while(true)
-                     {
-                        this.§^!I§.addScore(param1);
-                        loop4:
-                        while(true)
-                        {
-                           §§push(param3);
-                           if(!(_loc7_ && param2))
-                           {
-                              §§push(Boolean(§§pop()));
-                           }
-                           loop5:
-                           while(true)
-                           {
-                              §§push(§§pop());
-                              if(!(_loc7_ && param1))
-                              {
-                                 §§push(Boolean(§§pop()));
-                              }
-                              loop6:
-                              while(true)
-                              {
-                                 if(!§§pop())
-                                 {
-                                    while(true)
-                                    {
-                                       §§push(§§pop());
-                                       if(!_loc7_)
-                                       {
-                                          continue loop6;
-                                       }
-                                       addr133:
-                                       if(§§pop())
-                                       {
-                                          addr134:
-                                          while(true)
-                                          {
-                                             §§pop();
-                                             §§goto(addr135);
-                                          }
-                                          addr134:
-                                       }
-                                       while(true)
-                                       {
-                                          if(§§pop())
-                                          {
-                                             if(_loc8_ || param1)
-                                             {
-                                                if(!(_loc7_ && this))
-                                                {
-                                                   this.§7![§(param1.toString(),param4,param5,800,param6,0,0);
-                                                }
-                                                §§goto(addr209);
-                                             }
-                                             if(!_loc7_)
-                                             {
-                                                continue loop4;
-                                             }
-                                             addr135:
-                                             §§goto(addr25);
-                                          }
-                                          addr25:
-                                          while(true)
-                                          {
-                                             if(_loc8_ || param3)
-                                             {
-                                                §§push(this.§!!b§);
-                                                if(_loc8_)
-                                                {
-                                                   §§push(!§§pop());
-                                                   if(!_loc7_)
-                                                   {
-                                                      if(!_loc8_)
-                                                      {
-                                                         continue loop9;
-                                                      }
-                                                      §§push(Boolean(§§pop()));
-                                                   }
-                                                }
-                                                if(_loc7_)
-                                                {
-                                                   continue loop5;
-                                                }
-                                             }
-                                             else
-                                             {
-                                                while(true)
-                                                {
-                                                   if(!(_loc7_ && param1))
-                                                   {
-                                                      §§push(param1);
-                                                      if(_loc8_)
-                                                      {
-                                                         if(_loc8_)
-                                                         {
-                                                            continue loop0;
-                                                         }
-                                                         §§goto(addr207);
-                                                      }
-                                                      break;
-                                                   }
-                                                   continue loop3;
-                                                }
-                                                §§goto(addr208);
-                                                addr164:
-                                             }
-                                             §§goto(addr209);
-                                          }
-                                          return;
-                                       }
-                                    }
-                                    continue;
-                                    addr121:
-                                 }
-                                 while(true)
-                                 {
-                                    §§pop();
-                                 }
-                                 §§goto(addr164);
-                              }
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-            §§goto(addr208);
+            param6 = §8!;§.§"L§;
          }
-         §§goto(addr209);
+         ScoreCollector.addScore(param1,param2);
+         this.§^!I§.addScore(param1);
+         if(param3 && param1 > 0 && !this.§!!b§)
+         {
+            this.§7![§(param1.toString(),param4,param5,800,param6,0,0);
+         }
       }
       
       public function §7![§(param1:String, param2:Number = 0, param3:Number = 0, param4:Number = 1000, param5:int = -9999, param6:Number = 0, param7:Number = -3) : void
       {
-         var _loc8_:Boolean = false;
-         var _loc9_:Boolean = true;
-         if(_loc9_)
+         if(param5 == -9999)
          {
-            §§push(param5);
-            if(!(_loc8_ && this))
-            {
-               if(§§pop() == -9999)
-               {
-                  while(true)
-                  {
-                     §§push(§8!;§.§?`§);
-                     if(!(_loc8_ && param1))
-                     {
-                        addr96:
-                        §§push(int(§§pop()));
-                        while(true)
-                        {
-                           param5 = §§pop();
-                           addr97:
-                           while(true)
-                           {
-                           }
-                        }
-                        addr96:
-                     }
-                     §§goto(addr96);
-                  }
-                  addr85:
-               }
-               while(true)
-               {
-                  this.§`!$§.§%!!§(§8!;§.§ !U§,LevelParticleManager.§<i§,§8!;§.§'v§,param2,param3,param4,param1,param5,param6,param7);
-                  if(!(_loc9_ || this))
-                  {
-                     continue;
-                  }
-                  if(!_loc8_)
-                  {
-                     break;
-                  }
-                  §§goto(addr85);
-               }
-               return;
-               addr74:
-            }
-            §§goto(addr96);
+            param5 = §8!;§.§?`§;
          }
-         §§goto(addr74);
+         this.§`!$§.§%!!§(§8!;§.§ !U§,LevelParticleManager.§<i§,§8!;§.§'v§,param2,param3,param4,param1,param5,param6,param7);
       }
       
       public function §8I§(param1:LevelObject) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || param1)
+         if(this.§`W§ == null)
          {
-            §§push(this.§`W§);
-            while(true)
-            {
-               if(§§pop() != null)
-               {
-                  continue;
-               }
-            }
+            this.§`W§ = new Array();
          }
-         §§goto(addr75);
+         this.§`W§.push(param1);
       }
       
       public function useMightyEagle() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            this.§]!A§.useMightyEagle();
-         }
-         while(true)
-         {
-            this.§^^§.§9e§();
-            while(!(_loc2_ && _loc2_))
-            {
-               this.§!!b§ = true;
-               if(!_loc2_)
-               {
-                  return;
-               }
-            }
-         }
+         this.§]!A§.useMightyEagle();
+         this.§^^§.§9e§();
+         this.§!!b§ = true;
       }
       
       public function §^#§(param1:LevelObject) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && this))
+         this.§`!$§.§^Z§(LevelParticleManager.§1!5§);
+         if(this.§`W§.indexOf(param1) >= 0)
          {
-            this.§`!$§.§^Z§(LevelParticleManager.§1!5§);
-            loop0:
-            while(true)
-            {
-               §§push(this.§`W§);
-               if(!_loc3_)
-               {
-                  if(§§pop().indexOf(param1) >= 0)
-                  {
-                     while(true)
-                     {
-                        §§push(this.§`W§);
-                        addr94:
-                        while(true)
-                        {
-                           §§pop().splice(this.§`W§.indexOf(param1),1);
-                           addr101:
-                           while(true)
-                           {
-                           }
-                        }
-                     }
-                     addr92:
-                  }
-                  while(true)
-                  {
-                     §§push(this.§`W§);
-                     if(!(_loc3_ && _loc2_))
-                     {
-                        if(§§pop().length != 0)
-                        {
-                           break;
-                        }
-                        if(_loc2_ || this)
-                        {
-                           if(!_loc3_)
-                           {
-                              this.§`W§ = null;
-                           }
-                           else
-                           {
-                              §§goto(addr92);
-                           }
-                        }
-                        if(_loc2_)
-                        {
-                           continue loop0;
-                        }
-                        continue;
-                     }
-                  }
-                  §§goto(addr24);
-               }
-               §§goto(addr94);
-            }
+            this.§`W§.splice(this.§`W§.indexOf(param1),1);
          }
-         addr24:
+         if(this.§`W§.length == 0)
+         {
+            this.§`W§ = null;
+         }
       }
       
       public function §]!O§(param1:LevelSlingshotObject, param2:Number, param3:Number) : void
       {
-         var _loc7_:Boolean = true;
-         var _loc8_:Boolean = false;
-         if(!_loc8_)
+         this.§'Z§ = this.§^^§.addObject(param1.name,param1.x,param1.y,0,true,false,true,param1.scale);
+         var _loc4_:Number = param1.name.toUpperCase() == "BIRD_GREEN" ? Number(LevelSlingshot.BIRD_LAUNCH_FORCE_GREEN) : Number(LevelSlingshot.BIRD_LAUNCH_FORCE);
+         if(param1.§-!9§ > 1)
          {
-            this.§'Z§ = this.§^^§.addObject(param1.name,param1.x,param1.y,0,true,false,true,param1.scale);
-            if(!_loc8_)
-            {
-               if(param1.name.toUpperCase() == "BIRD_GREEN")
-               {
-                  addr42:
-                  §§push(LevelSlingshot.BIRD_LAUNCH_FORCE_GREEN);
-                  if(_loc7_ || this)
-                  {
-                     §§push(Number(§§pop()));
-                     if(_loc7_)
-                     {
-                        addr75:
-                        var _loc4_:* = Number(§§pop());
-                        if(!(_loc8_ && param2))
-                        {
-                           §§push(param1.§-!9§);
-                           if(_loc7_)
-                           {
-                              §§push(1);
-                              loop0:
-                              while(true)
-                              {
-                                 if(§§pop() > §§pop())
-                                 {
-                                    loop1:
-                                    while(true)
-                                    {
-                                       §§push(this.§'Z§);
-                                       loop2:
-                                       while(true)
-                                       {
-                                          §§pop().§?D§(param1.§-!9§);
-                                          loop3:
-                                          while(true)
-                                          {
-                                             loop4:
-                                             while(true)
-                                             {
-                                                §§push(this.§'Z§);
-                                                if(!_loc7_)
-                                                {
-                                                   break;
-                                                }
-                                                §§pop().§ get§.§]s§();
-                                                while(!(_loc8_ && param2))
-                                                {
-                                                   while(true)
-                                                   {
-                                                   }
-                                                   if(!(_loc7_ || this))
-                                                   {
-                                                      continue;
-                                                   }
-                                                   if(_loc8_)
-                                                   {
-                                                      continue loop3;
-                                                   }
-                                                   §§push(param1.§!i§);
-                                                   if(_loc7_ || this)
-                                                   {
-                                                      addr123:
-                                                      §§push(Number(§§pop()));
-                                                      if(_loc7_)
-                                                      {
-                                                         addr126:
-                                                         _loc4_ = §§pop();
-                                                         if(false)
-                                                         {
-                                                            continue loop4;
-                                                         }
-                                                         addr168:
-                                                         §§push(_loc4_);
-                                                         if(!(_loc8_ && param2))
-                                                         {
-                                                            addr176:
-                                                            §§push(-§§pop());
-                                                            if(_loc8_ && param1)
-                                                            {
-                                                            }
-                                                            addr193:
-                                                            §§push(§§pop() * Math.cos(param3 / (180 / Math.PI)));
-                                                            if(_loc7_ || param1)
-                                                            {
-                                                               §§push(Number(§§pop()));
-                                                            }
-                                                            var _loc5_:* = §§pop();
-                                                            §§push(_loc4_);
-                                                            if(_loc7_)
-                                                            {
-                                                               §§push(§§pop() * param2);
-                                                               if(_loc7_ || param3)
-                                                               {
-                                                                  §§push(§§pop() * Math.sin(param3 / (180 / Math.PI)));
-                                                                  if(!_loc8_)
-                                                                  {
-                                                                     addr238:
-                                                                     §§push(Number(§§pop()));
-                                                                  }
-                                                               }
-                                                               var _loc6_:* = §§pop();
-                                                               if(_loc7_ || this)
-                                                               {
-                                                                  this.§'Z§.§#!Z§(new b2Vec2(_loc5_,_loc6_),false,true);
-                                                               }
-                                                               loop7:
-                                                               do
-                                                               {
-                                                                  this.camera.§5!B§(§0!D§.§'!-§);
-                                                                  while(true)
-                                                                  {
-                                                                     §§push(this.§,z§);
-                                                                     if(_loc8_)
-                                                                     {
-                                                                        break;
-                                                                     }
-                                                                     if(!§§pop())
-                                                                     {
-                                                                        return;
-                                                                     }
-                                                                     addr248:
-                                                                     if(!(_loc8_ && param3))
-                                                                     {
-                                                                        continue;
-                                                                     }
-                                                                     continue loop7;
-                                                                  }
-                                                                  §§pop().§]!O§(this.mLevelEngine.§,6§,param1.x,param1.y,param2,param3);
-                                                               }
-                                                               while(!_loc7_);
-                                                               
-                                                               §§goto(addr248);
-                                                            }
-                                                            §§goto(addr238);
-                                                         }
-                                                         §§push(§§pop() * param2);
-                                                         if(_loc8_ && param3)
-                                                         {
-                                                         }
-                                                      }
-                                                      §§goto(addr193);
-                                                   }
-                                                   §§goto(addr126);
-                                                }
-                                                continue loop1;
-                                             }
-                                             continue loop2;
-                                          }
-                                       }
-                                    }
-                                 }
-                                 while(true)
-                                 {
-                                    §§push(param1.§!i§);
-                                    if(!_loc8_)
-                                    {
-                                       continue loop0;
-                                    }
-                                    §§goto(addr123);
-                                 }
-                                 §§goto(addr193);
-                              }
-                           }
-                           §§goto(addr176);
-                        }
-                        §§goto(addr154);
-                     }
-                     §§goto(addr75);
-                  }
-                  addr66:
-                  §§push(Number(§§pop()));
-                  if(!(_loc8_ && param3))
-                  {
-                     §§goto(addr75);
-                  }
-               }
-               else
-               {
-                  §§push(LevelSlingshot.BIRD_LAUNCH_FORCE);
-                  if(_loc7_ || param3)
-                  {
-                     §§goto(addr66);
-                  }
-               }
-               §§goto(addr75);
-            }
+            this.§'Z§.§?D§(param1.§-!9§);
+            this.§'Z§.§ get§.§]s§();
          }
-         §§goto(addr42);
+         if(param1.§!i§ != 0)
+         {
+            _loc4_ = param1.§!i§;
+         }
+         var _loc5_:Number = -_loc4_ * param2 * Math.cos(param3 / (180 / Math.PI));
+         var _loc6_:Number = _loc4_ * param2 * Math.sin(param3 / (180 / Math.PI));
+         this.§'Z§.§#!Z§(new b2Vec2(_loc5_,_loc6_),false,true);
+         this.camera.§5!B§(§0!D§.§'!-§);
+         if(this.§,z§)
+         {
+            this.§,z§.§]!O§(this.mLevelEngine.§,6§,param1.x,param1.y,param2,param3);
+         }
       }
       
       public function activatePowerup() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && this))
-         {
-            this.§0v§ = true;
-         }
+         this.§0v§ = true;
       }
       
       private function §47§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
+         if(!this.§0v§)
          {
-            §§push(this.§0v§);
-            loop0:
-            while(true)
+            return;
+         }
+         this.§0v§ = false;
+         if(this.activeObject is §[r§ && !(this.activeObject as §[r§).§6!9§)
+         {
+            if(this.activeObject.activateSpecialPower(this.§5![§))
             {
-               §§push(!§§pop());
-               while(true)
-               {
-                  if(!§§pop())
-                  {
-                     loop2:
-                     while(true)
-                     {
-                        this.§0v§ = false;
-                        loop3:
-                        while(true)
-                        {
-                           §§push(this.activeObject);
-                           loop4:
-                           while(true)
-                           {
-                              §§push(§§pop() is §[r§);
-                              loop5:
-                              while(true)
-                              {
-                                 §§push(Boolean(§§pop()));
-                                 addr189:
-                                 while(true)
-                                 {
-                                    §§push(§§pop());
-                                    if(!(_loc2_ && _loc1_))
-                                    {
-                                       §§push(Boolean(§§pop()));
-                                    }
-                                    if(§§pop())
-                                    {
-                                       while(true)
-                                       {
-                                          §§pop();
-                                          loop8:
-                                          while(true)
-                                          {
-                                             if(_loc2_ && this)
-                                             {
-                                                §§goto(addr217);
-                                             }
-                                             §§push(this.activeObject);
-                                             if(!_loc2_)
-                                             {
-                                                continue loop4;
-                                             }
-                                             loop18:
-                                             while(true)
-                                             {
-                                                §§push(§§pop().activateSpecialPower(this.§5![§));
-                                                addr156:
-                                                loop16:
-                                                while(!_loc2_)
-                                                {
-                                                   if(§§pop())
-                                                   {
-                                                      while(_loc1_)
-                                                      {
-                                                         this.§4-§ = true;
-                                                         while(!(_loc2_ && this))
-                                                         {
-                                                            while(true)
-                                                            {
-                                                            }
-                                                         }
-                                                         continue loop2;
-                                                      }
-                                                      continue loop8;
-                                                      addr159:
-                                                   }
-                                                   while(true)
-                                                   {
-                                                      loop12:
-                                                      while(true)
-                                                      {
-                                                         §§push(this.§,z§);
-                                                         if(_loc1_)
-                                                         {
-                                                            §§push(Boolean(§§pop()));
-                                                            if(!_loc2_)
-                                                            {
-                                                               if(!_loc2_)
-                                                               {
-                                                                  if(§§pop())
-                                                                  {
-                                                                     if(!(_loc2_ && this))
-                                                                     {
-                                                                        addr41:
-                                                                        if(_loc1_ || _loc2_)
-                                                                        {
-                                                                           if(_loc1_)
-                                                                           {
-                                                                              §§push(this.§,z§);
-                                                                              break;
-                                                                           }
-                                                                           while(true)
-                                                                           {
-                                                                              continue loop18;
-                                                                           }
-                                                                           addr151:
-                                                                        }
-                                                                        else
-                                                                        {
-                                                                           while(true)
-                                                                           {
-                                                                              if(_loc1_ || this)
-                                                                              {
-                                                                                 if(_loc1_ || _loc2_)
-                                                                                 {
-                                                                                    continue loop12;
-                                                                                 }
-                                                                                 §§goto(addr159);
-                                                                              }
-                                                                              §§goto(addr164);
-                                                                              §§goto(addr41);
-                                                                           }
-                                                                           addr81:
-                                                                        }
-                                                                     }
-                                                                     addr57:
-                                                                     if(_loc2_ && this)
-                                                                     {
-                                                                        continue loop3;
-                                                                     }
-                                                                  }
-                                                                  return;
-                                                               }
-                                                               addr150:
-                                                               addr150:
-                                                               while(true)
-                                                               {
-                                                                  if(!§§pop())
-                                                                  {
-                                                                     §§push(this.§^^§.§[z§());
-                                                                     while(true)
-                                                                     {
-                                                                        if(_loc2_ && _loc2_)
-                                                                        {
-                                                                           continue loop16;
-                                                                        }
-                                                                        if(_loc2_)
-                                                                        {
-                                                                           break;
-                                                                        }
-                                                                        §§pop();
-                                                                        §§goto(addr81);
-                                                                     }
-                                                                     continue loop0;
-                                                                     addr71:
-                                                                  }
-                                                               }
-                                                               §§goto(addr151);
-                                                            }
-                                                            §§goto(addr71);
-                                                         }
-                                                         break;
-                                                      }
-                                                      §§pop().§0!L§(this.mLevelEngine.§,6§);
-                                                      §§goto(addr57);
-                                                   }
-                                                }
-                                                continue loop5;
-                                             }
-                                          }
-                                          continue loop4;
-                                       }
-                                       addr199:
-                                    }
-                                    else
-                                    {
-                                       while(true)
-                                       {
-                                       }
-                                       addr149:
-                                    }
-                                    §§goto(addr150);
-                                 }
-                              }
-                           }
-                        }
-                     }
-                  }
-                  addr217:
-                  return;
-               }
+               this.§4-§ = true;
             }
          }
-         §§goto(addr171);
+         else
+         {
+            this.§^^§.§[z§();
+         }
+         if(this.§,z§)
+         {
+            this.§,z§.§0!L§(this.mLevelEngine.§,6§);
+         }
       }
       
       public function §"!b§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            this.§^^§.§"!b§();
-         }
+         this.§^^§.§"!b§();
       }
       
       public function §=-§() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            this.§^^§.§"! §();
-         }
+         this.§^^§.§"! §();
       }
       
       public function §45§() : LevelModel
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
          var _loc1_:LevelModel = new LevelModel();
-         if(_loc2_ || this)
-         {
-            _loc1_.§&X§ = this.§0!?§.§&X§;
-         }
-         loop0:
-         while(true)
-         {
-            _loc1_.§;!>§ = this.§0!?§.§;!>§;
-            while(true)
-            {
-               this.§6!V§.§7K§(_loc1_);
-               loop2:
-               while(!_loc3_)
-               {
-                  this.§^^§.§+!C§(_loc1_);
-                  while(!_loc3_)
-                  {
-                     this.§]!A§.§"t§(_loc1_);
-                     while(_loc2_)
-                     {
-                        _loc1_.theme = this.§&^§.§-!^§();
-                        if(_loc2_ || _loc3_)
-                        {
-                           if(!_loc3_)
-                           {
-                              return _loc1_;
-                           }
-                           continue loop2;
-                        }
-                     }
-                  }
-                  continue loop0;
-               }
-            }
-         }
+         _loc1_.§&X§ = this.§0!?§.§&X§;
+         _loc1_.§;!>§ = this.§0!?§.§;!>§;
+         this.§6!V§.§7K§(_loc1_);
+         this.§^^§.§+!C§(_loc1_);
+         this.§]!A§.§"t§(_loc1_);
+         _loc1_.theme = this.§&^§.§-!^§();
+         return _loc1_;
       }
       
       public function §8!c§() : int
@@ -6905,92 +1271,24 @@ package §?A§
       
       public function §2Q§(param1:int) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            this.§0!?§.§;!>§ = param1;
-         }
+         this.§0!?§.§;!>§ = param1;
       }
       
       public function §+!h§(param1:int) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§0!?§.§&X§ = param1;
-         }
+         this.§0!?§.§&X§ = param1;
       }
       
       public function §6!^§(param1:Number, param2:Number) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_ || this)
+         if(this.§+!0§)
          {
-            §§push(this.§+!0§);
-            if(_loc3_ || param1)
-            {
-               §§push(Boolean(§§pop()));
-               loop0:
-               while(true)
-               {
-                  if(§§pop())
-                  {
-                     while(true)
-                     {
-                        §§push(this.§+!0§);
-                        addr87:
-                        while(true)
-                        {
-                           §§pop().§1'§(param1,param2);
-                           addr91:
-                           while(true)
-                           {
-                           }
-                        }
-                     }
-                     addr85:
-                  }
-                  while(true)
-                  {
-                     §§push(this.§6!V§);
-                     if(_loc3_)
-                     {
-                        §§push(Boolean(§§pop()));
-                        if(_loc3_)
-                        {
-                           if(§§pop())
-                           {
-                              if(_loc3_ || _loc3_)
-                              {
-                                 if(!_loc4_)
-                                 {
-                                    addr68:
-                                    this.§6!V§.§?J§(0);
-                                 }
-                                 §§goto(addr91);
-                              }
-                              if(!_loc4_)
-                              {
-                                 break;
-                              }
-                              §§goto(addr85);
-                           }
-                           §§goto(addr24);
-                        }
-                        continue loop0;
-                     }
-                     §§goto(addr68);
-                  }
-                  addr24:
-                  return;
-               }
-            }
-            §§goto(addr87);
+            this.§+!0§.§1'§(param1,param2);
          }
-         §§goto(addr91);
+         if(this.§6!V§)
+         {
+            this.§6!V§.§?J§(0);
+         }
       }
       
       public function get currentLevel() : LevelModel

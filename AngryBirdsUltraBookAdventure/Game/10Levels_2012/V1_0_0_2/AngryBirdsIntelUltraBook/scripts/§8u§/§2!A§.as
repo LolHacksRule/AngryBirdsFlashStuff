@@ -10,24 +10,9 @@ package §8u§
       
       public function §2!A§(param1:String, param2:String)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!_loc3_)
-         {
-            super();
-            do
-            {
-               this.§-!Z§ = param1;
-               do
-               {
-                  this.§&!X§ = param2;
-               }
-               while(_loc3_);
-               
-            }
-            while(_loc3_);
-            
-         }
+         super();
+         this.§-!Z§ = param1;
+         this.§&!X§ = param2;
       }
       
       public function get avatarString() : String

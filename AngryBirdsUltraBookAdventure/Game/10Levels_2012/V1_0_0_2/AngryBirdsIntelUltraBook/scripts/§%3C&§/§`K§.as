@@ -16,16 +16,8 @@ package §<&§
       
       private static var §#n§:Program3D;
       
-      private static var §88§:Vector.<Number>;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && §`K§))
-         {
-            §88§ = new Vector.<Number>(16,true);
-         }
-      }
+      private static var §88§:Vector.<Number> = new Vector.<Number>(16,true);
+       
       
       private var §9z§:Matrix3D;
       
@@ -47,160 +39,38 @@ package §<&§
       
       public function §`K§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || this)
+         super();
+         this.§9z§ = new Matrix3D();
+         this.§8!M§ = new Matrix3D();
+         this.§7K§ = new Matrix3D();
+         this.§"F§ = new Vector.<Matrix3D>(0);
+         this.§'H§ = 0;
+         this.§!!!§ = 0;
+         this.§^!r§ = new Vector.<§!j§>();
+         if(§19§ == null)
          {
-            super();
-            while(true)
-            {
-               this.§9z§ = new Matrix3D();
-               loop1:
-               while(_loc1_ || this)
-               {
-                  this.§8!M§ = new Matrix3D();
-                  loop2:
-                  while(true)
-                  {
-                     this.§7K§ = new Matrix3D();
-                     loop3:
-                     while(true)
-                     {
-                        this.§"F§ = new Vector.<Matrix3D>(0);
-                        loop4:
-                        while(true)
-                        {
-                           this.§'H§ = 0;
-                           while(true)
-                           {
-                              this.§!!!§ = 0;
-                              while(_loc1_ || _loc2_)
-                              {
-                                 if(!_loc2_)
-                                 {
-                                    this.§^!r§ = new Vector.<§!j§>();
-                                    continue loop3;
-                                 }
-                                 continue loop2;
-                                 addr55:
-                                 if(!(_loc1_ || this))
-                                 {
-                                    continue;
-                                 }
-                                 §^b§.§9E§.addEventListener(Event.CONTEXT3D_CREATE,this.§!!X§);
-                                 addr62:
-                                 if(!(_loc1_ || _loc2_))
-                                 {
-                                    loop13:
-                                    while(true)
-                                    {
-                                       if(!_loc2_)
-                                       {
-                                          if(_loc2_)
-                                          {
-                                             while(!_loc2_)
-                                             {
-                                                §19§ = [];
-                                                while(_loc1_ || _loc1_)
-                                                {
-                                                   while(true)
-                                                   {
-                                                      this.§4z§();
-                                                      break loop13;
-                                                   }
-                                                   break loop13;
-                                                }
-                                                continue loop3;
-                                             }
-                                             continue loop4;
-                                             addr88:
-                                          }
-                                          §§goto(addr55);
-                                       }
-                                       break;
-                                       §§goto(addr62);
-                                    }
-                                    while(_loc1_ || _loc2_)
-                                    {
-                                       while(true)
-                                       {
-                                          this.§ !T§(400,300);
-                                          §§goto(addr51);
-                                       }
-                                       return;
-                                    }
-                                    addr51:
-                                    §§goto(addr93);
-                                 }
-                                 if(!_loc1_)
-                                 {
-                                    continue loop1;
-                                 }
-                                 §§goto(addr45);
-                              }
-                           }
-                        }
-                     }
-                  }
-               }
-            }
+            §19§ = [];
          }
-         §§goto(addr73);
+         this.§4z§();
+         this.§ !T§(400,300);
+         §^b§.§9E§.addEventListener(Event.CONTEXT3D_CREATE,this.§!!X§);
       }
       
       public static function §&N§(param1:Matrix3D, param2:DisplayObject) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_)
-         {
-            param2.§0! §(param1);
-         }
+         param2.§0! §(param1);
       }
       
       public static function §&!m§(param1:Context3D, param2:Boolean) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
          var _loc3_:String = Context3DBlendFactor.ONE_MINUS_SOURCE_ALPHA;
-         if(_loc6_)
-         {
-            if(param2)
-            {
-               addr45:
-               §§push(Context3DBlendFactor.ONE);
-               if(_loc5_ && param1)
-               {
-               }
-               addr61:
-               §§push(§§pop());
-            }
-            else
-            {
-               §§push(Context3DBlendFactor.SOURCE_ALPHA);
-               if(!_loc5_)
-               {
-                  §§goto(addr61);
-               }
-            }
-            var _loc4_:* = §§pop();
-            if(!_loc5_)
-            {
-               param1.setBlendFactors(_loc4_,_loc3_);
-            }
-            return;
-         }
-         §§goto(addr45);
+         var _loc4_:String = !!param2 ? Context3DBlendFactor.ONE : Context3DBlendFactor.SOURCE_ALPHA;
+         param1.setBlendFactors(_loc4_,_loc3_);
       }
       
       public static function clear(param1:Context3D, param2:uint = 0, param3:Number = 0.0) : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(!(_loc5_ && param3))
-         {
-            param1.clear(§ z§.§6!q§(param2) / 255,§ z§.§"5§(param2) / 255,§ z§.§9!,§(param2) / 255,param3);
-         }
+         param1.clear(§ z§.§6!q§(param2) / 255,§ z§.§"5§(param2) / 255,§ z§.§9!,§(param2) / 255,param3);
       }
       
       protected function get §[V§() : Matrix3D
@@ -215,18 +85,8 @@ package §<&§
       
       public function §6#§(param1:Context3D, param2:int) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!_loc3_)
-         {
-            this.§9"§ = param1;
-         }
-         do
-         {
-            this.§<Q§ = param2;
-         }
-         while(!(_loc4_ || param1));
-         
+         this.§9"§ = param1;
+         this.§<Q§ = param2;
       }
       
       public function get §8"§() : Context3D
@@ -241,408 +101,127 @@ package §<&§
       
       public function dispose() : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
          var _loc1_:§!j§ = null;
-         var _loc2_:int = 0;
          for each(_loc1_ in this.§^!r§)
          {
-            if(_loc4_ || _loc1_)
-            {
-               _loc1_.dispose();
-            }
+            _loc1_.dispose();
          }
-         if(!_loc5_)
+         if(§^b§.§9E§)
          {
-            §§push(§^b§.§9E§);
-            if(!(_loc5_ && _loc2_))
-            {
-               if(§§pop())
-               {
-                  if(!(_loc5_ && _loc2_))
-                  {
-                     addr86:
-                     §^b§.§9E§.removeEventListener(Event.CONTEXT3D_CREATE,this.§!!X§);
-                  }
-               }
-               return;
-            }
+            §^b§.§9E§.removeEventListener(Event.CONTEXT3D_CREATE,this.§!!X§);
          }
-         §§goto(addr86);
       }
       
       public function clear(param1:Context3D, param2:uint = 0, param3:Number = 0.0) : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(!_loc5_)
-         {
-            param1.clear(§ z§.§6!q§(param2) / 255,§ z§.§"5§(param2) / 255,§ z§.§9!,§(param2) / 255,param3);
-         }
+         param1.clear(§ z§.§6!q§(param2) / 255,§ z§.§"5§(param2) / 255,§ z§.§9!,§(param2) / 255,param3);
       }
       
       private function §!!X§(param1:Event) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && this))
-         {
-            this.§^!r§ = new <§!j§>[new §!j§()];
-         }
+         this.§^!r§ = new <§!j§>[new §!j§()];
       }
       
       public function § !T§(param1:Number, param2:Number, param3:Number = -1.0, param4:Number = 1.0) : void
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
-         if(_loc6_)
-         {
-            §88§[0] = 2 / param1;
-            if(!(_loc7_ && param1))
-            {
-               §88§[1] = §88§[2] = §88§[3] = §88§[4] = 0;
-               if(!_loc7_)
-               {
-                  §88§[5] = -2 / param2;
-                  if(!(_loc7_ && param3))
-                  {
-                     §88§[6] = §88§[7] = §88§[8] = §88§[9] = 0;
-                     if(_loc6_)
-                     {
-                        §88§[10] = -2 / (param4 - param3);
-                        loop4:
-                        while(true)
-                        {
-                           §88§[11] = 0;
-                           addr197:
-                           loop3:
-                           while(true)
-                           {
-                              §88§[12] = -1;
-                              addr191:
-                              while(true)
-                              {
-                                 §88§[13] = 1;
-                                 addr178:
-                                 while(!(_loc6_ || param3))
-                                 {
-                                    continue loop3;
-                                 }
-                                 addr162:
-                                 §88§[14] = -(param4 + param3) / (param4 - param3);
-                                 loop6:
-                                 while(true)
-                                 {
-                                    §88§[15] = 1;
-                                    addr138:
-                                    while(true)
-                                    {
-                                       if(_loc7_)
-                                       {
-                                          continue loop6;
-                                       }
-                                       if(!_loc7_)
-                                       {
-                                          addr142:
-                                          if(_loc6_ || param3)
-                                          {
-                                             break;
-                                          }
-                                          continue loop4;
-                                       }
-                                       §§goto(addr178);
-                                       continue loop6;
-                                    }
-                                 }
-                              }
-                           }
-                        }
-                        addr206:
-                     }
-                     while(true)
-                     {
-                        this.§9z§.copyRawDataFrom(§88§);
-                        if(!(_loc7_ && param3))
-                        {
-                           if(!(_loc7_ && param2))
-                           {
-                              break;
-                           }
-                           §§goto(addr191);
-                        }
-                        §§goto(addr138);
-                        §§goto(addr142);
-                     }
-                     return;
-                  }
-                  §§goto(addr197);
-               }
-               §§goto(addr206);
-            }
-            §§goto(addr191);
-         }
-         §§goto(addr162);
+         §88§[0] = 2 / param1;
+         §88§[1] = §88§[2] = §88§[3] = §88§[4] = 0;
+         §88§[5] = -2 / param2;
+         §88§[6] = §88§[7] = §88§[8] = §88§[9] = 0;
+         §88§[10] = -2 / (param4 - param3);
+         §88§[11] = 0;
+         §88§[12] = -1;
+         §88§[13] = 1;
+         §88§[14] = -(param4 + param3) / (param4 - param3);
+         §88§[15] = 1;
+         this.§9z§.copyRawDataFrom(§88§);
       }
       
       public function §4z§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            this.§8!M§.identity();
-         }
+         this.§8!M§.identity();
       }
       
       public function §-W§(param1:Number, param2:Number, param3:Number = 0) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!(_loc4_ && this))
-         {
-            this.§8!M§.prependTranslation(param1,param2,param3);
-         }
+         this.§8!M§.prependTranslation(param1,param2,param3);
       }
       
       public function § !V§(param1:Number, param2:Vector3D = null) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_ || param2)
-         {
-            this.§8!M§.prependRotation(param1 / Math.PI * 180,param2 == null ? Vector3D.Z_AXIS : param2);
-         }
+         this.§8!M§.prependRotation(param1 / Math.PI * 180,param2 == null ? Vector3D.Z_AXIS : param2);
       }
       
       public function §[!!§(param1:Number, param2:Number, param3:Number = 1.0) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(_loc5_ || this)
-         {
-            this.§8!M§.prependScale(param1,param2,param3);
-         }
+         this.§8!M§.prependScale(param1,param2,param3);
       }
       
       public function §0! §(param1:DisplayObject) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && this))
-         {
-            param1.§0! §(this.§8!M§);
-         }
+         param1.§0! §(this.§8!M§);
       }
       
       public function §<!C§() : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_)
+         if(this.§"F§.length < this.§'H§ + 1)
          {
-            if(this.§"F§.length < this.§'H§ + 1)
-            {
-               if(!(_loc4_ && _loc3_))
-               {
-                  this.§"F§.push(new Matrix3D());
-                  if(_loc3_ || this)
-                  {
-                     addr65:
-                     this.§"F§[this.§'H§++].copyFrom(this.§8!M§);
-                  }
-                  return;
-               }
-            }
+            this.§"F§.push(new Matrix3D());
          }
-         §§goto(addr65);
+         this.§"F§[this.§'H§++].copyFrom(this.§8!M§);
       }
       
       public function §%!Q§() : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_)
-         {
-            this.§8!M§.copyFrom(this.§"F§[--this.§'H§]);
-         }
+         this.§8!M§.copyFrom(this.§"F§[--this.§'H§]);
       }
       
       public function §=!5§() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            this.§'H§ = 0;
-         }
-         do
-         {
-            this.§4z§();
-         }
-         while(!(_loc2_ || this));
-         
+         this.§'H§ = 0;
+         this.§4z§();
       }
       
       public function get §7!Y§() : Matrix3D
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            this.§7K§.identity();
-            while(true)
-            {
-               this.§7K§.append(this.§8!M§);
-               loop1:
-               while(_loc2_ || _loc1_)
-               {
-                  while(true)
-                  {
-                     this.§7K§.append(this.§9z§);
-                     if(!_loc1_)
-                     {
-                        break;
-                     }
-                     continue loop1;
-                  }
-                  return this.§7K§;
-               }
-            }
-         }
-         §§goto(addr68);
+         this.§7K§.identity();
+         this.§7K§.append(this.§8!M§);
+         this.§7K§.append(this.§9z§);
+         return this.§7K§;
       }
       
       public function batchQuad(param1:§%!g§, param2:Number, param3:Texture = null, param4:String = null) : void
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         if(!(_loc6_ && param3))
+         if(this.§2!3§.§#2§(param1,param3,param4))
          {
-            §§push(this.§2!3§);
-            while(true)
-            {
-               if(§§pop().§#2§(param1,param3,param4))
-               {
-                  addr82:
-                  while(true)
-                  {
-                     this.§!r§();
-                     addr84:
-                     while(true)
-                     {
-                     }
-                  }
-                  addr82:
-               }
-               while(true)
-               {
-                  §§push(this.§2!3§);
-                  if(!_loc5_)
-                  {
-                     break;
-                  }
-                  §§pop().§ §(param1,param2,param3,param4,this.§8!M§);
-                  if(!(_loc6_ && param2))
-                  {
-                     if(!(_loc6_ && param1))
-                     {
-                        return;
-                     }
-                     §§goto(addr82);
-                  }
-                  §§goto(addr84);
-               }
-            }
+            this.§!r§();
          }
-         §§goto(addr82);
+         this.§2!3§.§ §(param1,param2,param3,param4,this.§8!M§);
       }
       
       public function §!r§() : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_)
+         if(this.§2!3§.§4!y§ > 0)
          {
-            §§push(this.§2!3§);
-            if(_loc3_)
+            this.§2!3§.render(this.§8"§,this.§9z§);
+            this.§2!3§.reset();
+            ++this.§!!!§;
+            if(this.§^!r§.length <= this.§!!!§)
             {
-               if(§§pop().§4!y§ > 0)
-               {
-                  if(!(_loc4_ && _loc2_))
-                  {
-                     §§push(this.§2!3§);
-                     if(_loc3_ || _loc1_)
-                     {
-                        addr51:
-                        §§pop().render(this.§8"§,this.§9z§);
-                        if(_loc3_)
-                        {
-                           addr60:
-                           this.§2!3§.reset();
-                           if(_loc3_)
-                           {
-                              var _loc1_:*;
-                              §§push((_loc1_ = this).§!!!§);
-                              if(_loc3_)
-                              {
-                                 §§push(§§pop() + 1);
-                              }
-                              var _loc2_:* = §§pop();
-                              if(_loc3_)
-                              {
-                                 _loc1_.§!!!§ = _loc2_;
-                              }
-                              if(_loc3_ || _loc3_)
-                              {
-                              }
-                           }
-                           §§goto(addr108);
-                        }
-                        if(this.§^!r§.length <= this.§!!!§)
-                        {
-                           if(!_loc4_)
-                           {
-                              addr103:
-                              this.§^!r§.push(new §!j§());
-                           }
-                        }
-                        §§goto(addr108);
-                     }
-                     §§goto(addr60);
-                  }
-                  §§goto(addr103);
-               }
-               §§goto(addr108);
+               this.§^!r§.push(new §!j§());
             }
-            §§goto(addr51);
          }
-         addr108:
       }
       
       public function §[!P§() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc1_)
-         {
-            this.§=!5§();
-         }
-         do
-         {
-            this.§!!!§ = 0;
-         }
-         while(!(_loc2_ || this));
-         
+         this.§=!5§();
+         this.§!!!§ = 0;
       }
       
       public function finishRendering(param1:Context3D) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc2_))
-         {
-            param1.present();
-         }
+         param1.present();
       }
       
       private function get §2!3§() : §!j§
@@ -652,53 +231,20 @@ package §<&§
       
       public function setTextureAt(param1:Context3D, param2:int, param3:TextureBase) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(_loc5_)
+         if(param3 != §19§[param2])
          {
-            if(param3 != §19§[param2])
-            {
-               if(!_loc4_)
-               {
-                  §19§[param2] = param3;
-                  do
-                  {
-                     param1.setTextureAt(param2,param3);
-                  }
-                  while(_loc4_);
-                  
-                  addr53:
-               }
-               §§goto(addr53);
-            }
-            return;
+            §19§[param2] = param3;
+            param1.setTextureAt(param2,param3);
          }
-         §§goto(addr53);
       }
       
       public function setProgram(param1:Context3D, param2:Program3D) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_)
+         if(param2 != §#n§)
          {
-            if(param2 != §#n§)
-            {
-               if(_loc3_)
-               {
-                  §#n§ = param2;
-               }
-               do
-               {
-                  param1.setProgram(param2);
-               }
-               while(_loc4_ && param2);
-               
-               addr44:
-            }
-            return;
+            §#n§ = param2;
+            param1.setProgram(param2);
          }
-         §§goto(addr44);
       }
       
       public function setCanvasSize(param1:int, param2:int, param3:Number, param4:Number) : void

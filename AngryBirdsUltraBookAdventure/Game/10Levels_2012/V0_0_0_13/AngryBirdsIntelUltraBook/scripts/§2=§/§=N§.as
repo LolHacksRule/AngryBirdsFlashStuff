@@ -18,62 +18,17 @@ package §2=§
       
       public function §=N§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public function set delay(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
+         this.§'r§ = param1;
+         if(param1 < 0)
          {
-            this.§'r§ = param1;
-            while(true)
-            {
-               if(param1 < 0)
-               {
-                  while(_loc3_)
-                  {
-                     this.§'r§ = 0;
-                     while(true)
-                     {
-                     }
-                  }
-                  continue;
-                  addr70:
-               }
-               while(true)
-               {
-                  §§push(this);
-                  §§push(this.§'r§);
-                  if(!_loc2_)
-                  {
-                     §§push(-§§pop());
-                     if(!(_loc2_ && param1))
-                     {
-                        §§push(§§pop() * 1000);
-                     }
-                  }
-                  §§pop().§2+§ = §§pop();
-                  if(_loc2_)
-                  {
-                     continue;
-                  }
-                  if(_loc3_)
-                  {
-                     break;
-                  }
-                  §§goto(addr70);
-               }
-               return;
-            }
+            this.§'r§ = 0;
          }
-         §§goto(addr75);
+         this.§2+§ = -this.§'r§ * 1000;
       }
       
       public function get isCompleted() : Boolean
@@ -88,22 +43,12 @@ package §2=§
       
       public function set §8!,§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§+j§ = param1;
-         }
+         this.§+j§ = param1;
       }
       
       public function set §2!_§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || _loc2_)
-         {
-            this.§+D§ = param1;
-         }
+         this.§+D§ = param1;
       }
       
       public function get §2!_§() : Boolean
@@ -113,36 +58,15 @@ package §2=§
       
       public function set onComplete(param1:Function) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
+         if(!this.isCompleted)
          {
-            §§push(this.isCompleted);
-            if(_loc2_ || param1)
-            {
-               §§push(!§§pop());
-            }
-            if(§§pop())
-            {
-               if(_loc2_ || param1)
-               {
-                  addr46:
-                  this.§>!@§ = param1;
-               }
-            }
-            return;
+            this.§>!@§ = param1;
          }
-         §§goto(addr46);
       }
       
       public function set §-b§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && param1))
-         {
-            this.§""§ = param1;
-         }
+         this.§""§ = param1;
       }
       
       public function get §-b§() : Boolean

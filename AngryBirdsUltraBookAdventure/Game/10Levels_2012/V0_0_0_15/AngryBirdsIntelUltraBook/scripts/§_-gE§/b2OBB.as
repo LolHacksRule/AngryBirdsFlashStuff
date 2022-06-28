@@ -15,40 +15,10 @@ package §_-gE§
       
       public function b2OBB()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            this.R = new b2Mat22();
-            loop0:
-            while(true)
-            {
-               this.center = new b2Vec2();
-               while(true)
-               {
-                  this.§_-0FC§ = new b2Vec2();
-                  loop2:
-                  while(!(_loc1_ && _loc1_))
-                  {
-                     while(true)
-                     {
-                        super();
-                        if(_loc2_ || _loc2_)
-                        {
-                           if(_loc2_)
-                           {
-                              break;
-                           }
-                           continue loop0;
-                        }
-                        continue loop2;
-                     }
-                     return;
-                  }
-               }
-            }
-         }
-         §§goto(addr69);
+         this.R = new b2Mat22();
+         this.center = new b2Vec2();
+         this.§_-0FC§ = new b2Vec2();
+         super();
       }
    }
 }

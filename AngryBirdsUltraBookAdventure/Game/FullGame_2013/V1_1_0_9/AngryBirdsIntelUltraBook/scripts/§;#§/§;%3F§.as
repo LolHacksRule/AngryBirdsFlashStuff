@@ -14,47 +14,11 @@ package §;#§
       private static var §"!M§:Items = null;
       
       private static var §1U§:§>!M§ = null;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && §;?§))
-         {
-            §6!+§ = "Tue 04/26";
-            while(true)
-            {
-               §]R§ = null;
-               loop1:
-               while(_loc2_ || _loc2_)
-               {
-                  §"!M§ = null;
-                  while(true)
-                  {
-                     §1U§ = null;
-                     if(_loc2_)
-                     {
-                        if(!_loc1_)
-                        {
-                           break;
-                        }
-                        continue loop1;
-                     }
-                  }
-                  return;
-               }
-            }
-         }
-         §§goto(addr62);
-      }
+       
       
       public function §;?§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && this))
-         {
-            super();
-         }
+         super();
       }
       
       public static function get §,K§() : §!I§
@@ -64,60 +28,25 @@ package §;#§
       
       public static function set §,K§(param1:§!I§) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && param1))
-         {
-            §]R§ = param1;
-         }
+         §]R§ = param1;
       }
       
       public static function §]0§() : Items
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc2_)
+         if(§"!M§ == null)
          {
-            §§push(§"!M§);
-            if(!(_loc1_ && _loc1_))
-            {
-               if(§§pop() == null)
-               {
-                  if(!(_loc1_ && _loc1_))
-                  {
-                     addr51:
-                     §"!M§ = new Items();
-                  }
-               }
-               return §"!M§;
-            }
+            §"!M§ = new Items();
          }
-         §§goto(addr51);
+         return §"!M§;
       }
       
       public static function §6!V§() : §>!M§
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
+         if(§1U§ == null)
          {
-            §§push(§1U§);
-            if(_loc1_ || _loc1_)
-            {
-               if(§§pop() == null)
-               {
-                  if(_loc1_)
-                  {
-                     §1U§ = new §>!M§();
-                     addr44:
-                     §§push(§1U§);
-                  }
-               }
-               §§goto(addr44);
-            }
-            return §§pop();
+            §1U§ = new §>!M§();
          }
-         §§goto(addr44);
+         return §1U§;
       }
    }
 }

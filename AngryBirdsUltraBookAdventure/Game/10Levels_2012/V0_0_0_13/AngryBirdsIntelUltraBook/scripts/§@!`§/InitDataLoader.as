@@ -21,253 +21,101 @@ package §@!`§
       private static var sError:String = "";
       
       private static var sErrorCode:int = 0;
-      
-      {
-         var sLoader:Boolean = false;
-         var sData:Boolean = true;
-         if(!sLoader)
-         {
-            loop0:
-            while(true)
-            {
-               while(true)
-               {
-                  loop2:
-                  for(; sData || InitDataLoader; if(sData || sLoader)
-                  {
-                     addr59:
-                     return;
-                  })
-                  {
-                     if(!sData)
-                     {
-                        continue loop0;
-                     }
-                     sError = "";
-                     loop3:
-                     while(true)
-                     {
-                        addr62:
-                        while(true)
-                        {
-                           sErrorCode = 0;
-                           if(!sLoader)
-                           {
-                              if(sData)
-                              {
-                                 continue loop2;
-                              }
-                              continue loop3;
-                           }
-                        }
-                        §§goto(addr59);
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr62);
-      }
+       
       
       public function InitDataLoader()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc2_))
-         {
-            super();
-         }
-         do
-         {
-            while(!(_loc2_ || this))
-            {
-            }
-         }
-         while(_loc1_);
-         
+         super();
       }
       
       public static function load(facebookUserId:String, accessToken:String, expiresInSeconds:String) : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(!_loc4_)
+         sLoader = new §>!K§();
+         sLoader.dataFormat = URLLoaderDataFormat.TEXT;
+         sLoader.addEventListener(Event.COMPLETE,§^!d§);
+         sLoader.addEventListener(IOErrorEvent.IO_ERROR,§@!F§);
+         sLoader.addEventListener(SecurityErrorEvent.SECURITY_ERROR,§@!F§);
+         if(facebookUserId)
          {
+            sLoader.load(§"!F§.§=i§(AngryBirdsFP11.SERVER_ROOT + "/init/" + facebookUserId + "/" + accessToken + "/" + expiresInSeconds + "/" + (new Date().timezoneOffset / 60).toString()));
          }
-         if(!_loc5_)
+         else
          {
-            loop0:
-            while(true)
-            {
-               loop1:
-               while(true)
-               {
-                  while(true)
-                  {
-                     addr309:
-                     while(!_loc5_)
-                     {
-                        continue loop1;
-                     }
-                  }
-               }
-               while(true)
-               {
-                  if(_loc5_ && InitDataLoader)
-                  {
-                     continue loop0;
-                  }
-                  §§goto(addr256);
-               }
-            }
+            sLoader.load(§"!F§.§=i§(AngryBirdsFP11.SERVER_ROOT + "/init"));
          }
-         §§goto(addr297);
       }
       
       protected static function §@!F§(e:Event) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc2_ && e)
-         {
-         }
-         if(!_loc2_)
-         {
-            loop0:
-            while(true)
-            {
-               while(true)
-               {
-                  §§push(§§findproperty(sError));
-                  §§push("Can\'t contact server.\n");
-                  if(_loc3_)
-                  {
-                     §§push(§§pop() + e.toString());
-                  }
-                  §§pop().sError = §§pop();
-                  loop2:
-                  while(_loc3_ || _loc2_)
-                  {
-                     loop3:
-                     while(true)
-                     {
-                        while(true)
-                        {
-                           sLoader = null;
-                           while(!_loc2_)
-                           {
-                              if(!_loc2_)
-                              {
-                                 if(!_loc2_)
-                                 {
-                                    if(_loc3_)
-                                    {
-                                       break loop3;
-                                    }
-                                    continue loop2;
-                                 }
-                                 continue;
-                                 continue;
-                              }
-                              continue loop0;
-                           }
-                        }
-                     }
-                     return;
-                  }
-               }
-            }
-         }
-         §§goto(addr88);
+         sError = "Can\'t contact server.\n" + e.toString();
+         sLoader = null;
       }
       
       private static function §^!d§(e:Event) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(_loc5_)
+         var serverResponse:String = null;
+         var bragObject:Object = null;
+         var threwError:Boolean = false;
+         serverResponse = String(sLoader.data);
+         try
          {
-         }
-         if(_loc5_ && _loc3_)
-         {
-         }
-         §§push(§§newactivation());
-         loop0:
-         while(true)
-         {
-            §§push(null);
-            addr156:
-            while(true)
+            sData = JSON.parse(serverResponse);
+            if(sData.error)
             {
-               §§push(§§pop());
-               addr157:
-               while(true)
+               sError = "Server error of type \'" + sData.type + "\':\n" + sData.message;
+               if(sData.type == "OAuthException")
                {
-                  §§pop().§§slot[3] = §§pop();
-                  addr158:
-                  while(true)
-                  {
-                     §§push(§§newactivation());
-                     continue loop0;
-                  }
+                  sErrorCode = §]E§.§=X§;
                }
+               threwError = true;
             }
          }
+         catch(e:Error)
+         {
+            sError = "Invalid server response. Expected a json string but got this:\n" + serverResponse;
+            sErrorCode = §]E§.§'-§;
+            threwError = true;
+         }
+         if(!threwError)
+         {
+            FriendsDataCache.§2!$§(sData.friends);
+            (AngryBirdsFP11.sUserProgress as FacebookUserProgress).§=d§(sData.state as Array,sData.user.name,sData.user.avatar,sData.user.userId,sData.eggs,sData.user.tutorials);
+            §&!D§.§8!X§.§@!c§(sData.excludedUserIds);
+            §&!D§.§8!X§.§'!c§(sData.deauthorizedUserIds);
+            if(sData.user.name == null)
+            {
+               throw new Error("User name cannot be null");
+            }
+            if(sData.user.ap == true)
+            {
+               ExternalInterfaceHandler.§>!2§("doAdParlorConversion");
+            }
+            AngryBirdsUltraBook.§7r§(sData.friends);
+            for each(bragObject in sData.requests.brags)
+            {
+               ExternalInterfaceHandler.§>!2§("flashDeleteRequest",bragObject.r);
+            }
+         }
+         sLoader = null;
       }
       
       public static function get §5!W§() : Boolean
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc1_)
-         {
-         }
-         if(_loc2_)
-         {
-         }
-         §§push(sLoader == null);
-         if(_loc1_ || InitDataLoader)
-         {
-            return !§§pop();
-         }
+         return sLoader != null;
       }
       
       private static function get data() : Object
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc2_)
-         {
-         }
-         if(_loc1_ && _loc2_)
-         {
-         }
          return sData;
       }
       
       public static function §1!9§() : String
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc2_ && _loc2_)
-         {
-         }
-         if(_loc2_)
-         {
-         }
          return sError;
       }
       
       public static function §3!D§() : int
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc1_)
-         {
-         }
-         if(_loc2_)
-         {
-         }
          return sErrorCode;
       }
    }

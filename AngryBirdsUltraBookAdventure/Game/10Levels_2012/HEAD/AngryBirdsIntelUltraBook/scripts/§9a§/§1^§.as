@@ -8,18 +8,8 @@ package §9a§
       
       public function §1^§(param1:int)
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc2_))
-         {
-            super();
-            do
-            {
-               this.step = param1;
-            }
-            while(!(_loc3_ || this));
-            
-         }
+         super();
+         this.step = param1;
       }
       
       public static function initialize(param1:String) : §1^§

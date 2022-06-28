@@ -16,24 +16,9 @@ package §?2§
       
       public function §]!'§(param1:BitmapData)
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            super();
-         }
-         do
-         {
-            this.§#n§ = param1;
-            do
-            {
-               this.§"s§ = new Vector.<§=!L§>();
-            }
-            while(!_loc3_);
-            
-         }
-         while(_loc2_);
-         
+         super();
+         this.§#n§ = param1;
+         this.§"s§ = new Vector.<§=!L§>();
       }
       
       public function get §%9§() : int
@@ -68,160 +53,50 @@ package §?2§
       
       public function set scale(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§!+§ = param1;
-         }
+         this.§!+§ = param1;
       }
       
       public function dispose() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
+         if(this.§#n§)
          {
-            if(this.§#n§)
-            {
-               loop0:
-               while(true)
-               {
-                  this.§#n§.dispose();
-                  while(true)
-                  {
-                     this.§#n§ = null;
-                     loop2:
-                     while(_loc1_)
-                     {
-                        continue loop0;
-                        while(true)
-                        {
-                           this.§"s§ = new Vector.<§=!L§>();
-                           if(!(_loc2_ && this))
-                           {
-                              break;
-                           }
-                           continue loop2;
-                        }
-                        return;
-                     }
-                  }
-               }
-            }
-            §§goto(addr23);
+            this.§#n§.dispose();
+            this.§#n§ = null;
          }
-         §§goto(addr71);
+         this.§"s§ = new Vector.<§=!L§>();
       }
       
       public function §;P§(param1:BitmapData) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§#n§ = param1;
-         }
+         this.§#n§ = param1;
       }
       
       public function §6!P§(param1:§=!L§) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || this)
-         {
-            this.§"s§.push(param1);
-         }
+         this.§"s§.push(param1);
       }
       
       public function §4T§(param1:String) : §=!L§
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         var _loc2_:* = Number(0);
-         while(true)
+         var _loc2_:Number = 0;
+         while(_loc2_ < this.§"s§.length)
          {
-            §§push(_loc2_);
-            if(_loc4_ || _loc2_)
+            if(this.§"s§[_loc2_].mName == param1)
             {
-               if(§§pop() >= this.§"s§.length)
-               {
-                  if(_loc3_)
-                  {
-                     continue;
-                  }
-                  if(_loc4_)
-                  {
-                     if(_loc4_ || param1)
-                     {
-                        return null;
-                     }
-                     break;
-                  }
-               }
-               else if(this.§"s§[_loc2_].mName == param1)
-               {
-                  break;
-               }
-               §§push(_loc2_);
-               if(!_loc3_)
-               {
-                  §§push(§§pop() + 1);
-                  if(_loc4_ || param1)
-                  {
-                  }
-                  addr82:
-                  _loc2_ = §§pop();
-                  continue;
-               }
-               §§push(Number(§§pop()));
+               return this.§"s§[_loc2_];
             }
-            §§goto(addr82);
+            _loc2_++;
          }
-         return this.§"s§[_loc2_];
+         return null;
       }
       
       public function §%y§(param1:int) : §=!L§
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || param1)
+         if(param1 < 0 || param1 >= this.§"s§.length)
          {
-            §§push(param1);
-            loop0:
-            while(true)
-            {
-               §§push(§§pop() < 0);
-               addr91:
-               while(true)
-               {
-                  if(§§pop())
-                  {
-                     while(§§pop())
-                     {
-                        if(!_loc2_)
-                        {
-                           break;
-                        }
-                        addr87:
-                        if(_loc2_ || _loc3_)
-                        {
-                           return null;
-                        }
-                        continue loop0;
-                     }
-                     return this.§"s§[param1];
-                     addr74:
-                  }
-                  while(true)
-                  {
-                     §§pop();
-                     continue loop0;
-                  }
-               }
-            }
+            return null;
          }
-         §§goto(addr87);
+         return this.§"s§[param1];
       }
    }
 }

@@ -28,71 +28,12 @@ package §^s§
       
       public function §#-§()
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc1_))
-         {
-            super();
-            if(_loc3_ || _loc3_)
-            {
-               §§push(this);
-               §§push(this);
-               §§push(this);
-               §§push(this.§,b§ = 0);
-               if(!_loc2_)
-               {
-                  var _loc1_:*;
-                  §§push(_loc1_ = §§pop());
-               }
-               §§pop().rotation = §§pop();
-               §§push(_loc1_);
-               if(!_loc2_)
-               {
-                  §§push(_loc1_ = §§pop());
-               }
-               §§pop().y = §§pop();
-               §§pop().x = _loc1_;
-               if(_loc3_ || _loc1_)
-               {
-                  §§goto(addr75);
-               }
-               §§goto(addr107);
-            }
-         }
-         addr75:
-         §§push(this);
-         §§push(this);
-         §§push(this);
-         §§push(this.scaleY = 1);
-         if(!(_loc2_ && this))
-         {
-            §§push(_loc1_ = §§pop());
-         }
-         §§pop().scaleX = §§pop();
-         §§push(_loc1_);
-         if(_loc3_)
-         {
-            §§push(_loc1_ = §§pop());
-         }
-         §§pop().alpha = §§pop();
-         §§pop().§%!2§ = _loc1_;
-         if(_loc3_)
-         {
-            this.red = 1;
-            addr107:
-         }
-         do
-         {
-            this.green = 1;
-            do
-            {
-               this.blue = 1;
-            }
-            while(!(_loc3_ || _loc3_));
-            
-         }
-         while(_loc2_ && _loc2_);
-         
+         super();
+         this.x = this.y = this.rotation = this.§,b§ = 0;
+         this.§%!2§ = this.alpha = this.scaleX = this.scaleY = 1;
+         this.red = 1;
+         this.green = 1;
+         this.blue = 1;
       }
    }
 }

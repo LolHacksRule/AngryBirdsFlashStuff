@@ -19,125 +19,35 @@ package §<!o§
       
       public function §!!Z§(param1:Function, param2:Number, param3:Array = null)
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!(_loc4_ && param1))
-         {
-            super();
-            while(true)
-            {
-               this.§1L§ = param1;
-               while(!_loc4_)
-               {
-                  this.§[!F§ = Math.max(param2,0.0001);
-                  while(_loc5_ || param3)
-                  {
-                     this.§ C§ = param3;
-                     if(_loc5_ || param1)
-                     {
-                        return;
-                        addr60:
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr60);
+         super();
+         this.§1L§ = param1;
+         this.§[!F§ = Math.max(param2,0.0001);
+         this.§ C§ = param3;
       }
       
       public function advanceTime(param1:Number) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         §§push(this.§0t§);
-         if(_loc3_ || _loc2_)
+         var _loc2_:Number = this.§0t§;
+         this.§0t§ = Math.min(this.§[!F§,this.§0t§ + param1);
+         if(_loc2_ < this.§[!F§ && this.§0t§ >= this.§[!F§)
          {
-            §§push(Number(§§pop()));
-         }
-         var _loc2_:* = §§pop();
-         if(!(_loc4_ && _loc2_))
-         {
-            this.§0t§ = Math.min(this.§[!F§,this.§0t§ + param1);
-            loop0:
-            while(true)
+            this.§1L§.apply(null,this.§ C§);
+            if(this.§?2§ > 1)
             {
-               §§push(_loc2_);
-               loop1:
-               while(true)
-               {
-                  §§push(this.§[!F§);
-                  addr184:
-                  while(true)
-                  {
-                     §§push(§§pop() < §§pop());
-                     addr185:
-                     while(true)
-                     {
-                        if(§§pop())
-                        {
-                           while(true)
-                           {
-                              §§pop();
-                              continue loop1;
-                           }
-                           addr187:
-                        }
-                        else
-                        {
-                           while(true)
-                           {
-                              if(§§pop())
-                              {
-                                 loop7:
-                                 while(true)
-                                 {
-                                    this.§1L§.apply(null,this.§ C§);
-                                    continue loop0;
-                                    addr102:
-                                    while(true)
-                                    {
-                                       if(!(_loc4_ && _loc3_))
-                                       {
-                                          break loop7;
-                                       }
-                                       continue loop7;
-                                    }
-                                 }
-                              }
-                              addr35:
-                              return;
-                           }
-                           addr154:
-                        }
-                     }
-                  }
-               }
+               this.§?2§ = this.§?2§ - 1;
+               this.§0t§ = 0;
+               this.advanceTime(_loc2_ + param1 - this.§[!F§);
+            }
+            else
+            {
+               dispatchEvent(new Event(Event.§]!%§));
             }
          }
-         §§goto(addr116);
       }
       
       public function get §1!Y§() : Boolean
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            §§push(this.§?2§ == 1);
-            if(_loc1_)
-            {
-               if(§§pop())
-               {
-                  if(_loc1_ || _loc2_)
-                  {
-                     addr43:
-                     §§pop();
-                     return this.§0t§ >= this.§[!F§;
-                  }
-               }
-            }
-         }
-         §§goto(addr43);
+         return this.§?2§ == 1 && this.§0t§ >= this.§[!F§;
       }
       
       public function get §with§() : Number
@@ -157,12 +67,7 @@ package §<!o§
       
       public function set §]!p§(param1:int) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || this)
-         {
-            this.§?2§ = param1;
-         }
+         this.§?2§ = param1;
       }
    }
 }

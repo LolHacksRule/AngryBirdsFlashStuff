@@ -25,13 +25,13 @@ package §6b§
       
       private static var § 4§:Number = 0;
       
-      public static var §^M§:int = 112;
+      public static var §^M§:int = Keyboard.F1;
       
-      public static var §%a§:int = 114;
+      public static var §%a§:int = Keyboard.F3;
       
-      public static var §?C§:int = 113;
+      public static var §?C§:int = Keyboard.F2;
       
-      public static var §>!7§:int = 115;
+      public static var §>!7§:int = Keyboard.F4;
       
       public static var §;+§:Boolean = false;
       
@@ -52,648 +52,192 @@ package §6b§
       public static var §5!§:String = "";
       
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || Log)
-         {
-            §%!_§ = true;
-            loop0:
-            while(true)
-            {
-               §#l§ = true;
-               loop1:
-               while(true)
-               {
-                  §1o§ = 0;
-                  while(true)
-                  {
-                     §?J§ = 1;
-                     loop3:
-                     while(true)
-                     {
-                        §`d§ = 500;
-                        loop4:
-                        while(true)
-                        {
-                           §[G§ = null;
-                           addr169:
-                           if(_loc2_ && Log)
-                           {
-                              continue;
-                           }
-                           if(!_loc1_)
-                           {
-                              continue loop1;
-                           }
-                           §;+§ = false;
-                           loop11:
-                           while(true)
-                           {
-                              §'!M§ = null;
-                              while(true)
-                              {
-                                 §+!O§ = null;
-                                 loop13:
-                                 while(true)
-                                 {
-                                    § in§ = null;
-                                    loop14:
-                                    while(true)
-                                    {
-                                       if(!_loc2_)
-                                       {
-                                          if(_loc2_)
-                                          {
-                                             break;
-                                             addr107:
-                                          }
-                                          §#§ = null;
-                                          loop15:
-                                          while(_loc1_ || _loc2_)
-                                          {
-                                             §#o§ = null;
-                                             while(true)
-                                             {
-                                                if(_loc1_ || _loc1_)
-                                                {
-                                                   if(_loc2_)
-                                                   {
-                                                      break;
-                                                      addr86:
-                                                   }
-                                                   §^!=§ = -1;
-                                                   while(!_loc2_)
-                                                   {
-                                                      §@!=§ = "version: Unknown";
-                                                      continue loop14;
-                                                   }
-                                                   continue loop3;
-                                                }
-                                                continue loop15;
-                                                addr43:
-                                                if(_loc1_ || Log)
-                                                {
-                                                   continue loop11;
-                                                }
-                                             }
-                                             while(true)
-                                             {
-                                                if(!(_loc2_ && _loc2_))
-                                                {
-                                                   addr162:
-                                                   if(!(_loc2_ && _loc2_))
-                                                   {
-                                                      §§goto(addr169);
-                                                   }
-                                                   else
-                                                   {
-                                                      while(true)
-                                                      {
-                                                         §^M§ = Keyboard.F1;
-                                                         break loop15;
-                                                         §§goto(addr162);
-                                                      }
-                                                      addr235:
-                                                   }
-                                                }
-                                                else
-                                                {
-                                                   while(true)
-                                                   {
-                                                      §?C§ = Keyboard.F2;
-                                                      continue loop3;
-                                                   }
-                                                   addr206:
-                                                }
-                                             }
-                                             continue loop4;
-                                          }
-                                          continue loop0;
-                                       }
-                                       continue loop13;
-                                    }
-                                    addr240:
-                                    while(true)
-                                    {
-                                       § 4§ = 0;
-                                       §§goto(addr235);
-                                    }
-                                 }
-                                 if(!(_loc1_ || _loc1_))
-                                 {
-                                    continue;
-                                 }
-                                 §§goto(addr81);
-                              }
-                           }
-                        }
-                     }
-                     if(!(_loc1_ || Log))
-                     {
-                        continue;
-                     }
-                     §>!7§ = Keyboard.F4;
-                     §§goto(addr155);
-                  }
-               }
-            }
-         }
-         §§goto(addr240);
+         init();
       }
       
       public function Log()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function init() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc2_))
+         if(!§%!_§)
          {
-            §§push(§%!_§);
-            if(!(_loc1_ && Log))
-            {
-               §§push(!§§pop());
-            }
-            if(§§pop())
-            {
-               if(!(_loc1_ && _loc2_))
-               {
-                  §§goto(addr77);
-               }
-               else
-               {
-                  while(true)
-                  {
-                  }
-                  addr78:
-               }
-            }
-            while(true)
-            {
-               §[G§ = new Array(§`d§);
-               if(_loc2_)
-               {
-                  break;
-               }
-               §§goto(addr78);
-            }
             return;
          }
-         addr77:
+         §[G§ = new Array(§`d§);
       }
       
       public static function log(param1:Object, param2:int = 1) : void
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
-         var _loc3_:* = NaN;
-         if(!_loc7_)
+         var _loc3_:Number = NaN;
+         if(§%!_§)
          {
-            §§push(§%!_§);
-            if(_loc6_ || Log)
+            _loc3_ = § 4§++ % §`d§;
+            §[G§[_loc3_] = [param1,param2];
+            if(param2 == §^!=§ || §^!=§ < 0)
             {
-               if(§§pop())
-               {
-                  if(!_loc7_)
-                  {
-                     var _loc4_:*;
-                     §§push((_loc4_ = §§findproperty(§ 4§)).§ 4§);
-                     if(_loc6_)
-                     {
-                        §§push(Number(§§pop()));
-                        if(_loc6_)
-                        {
-                           §§push(§§pop());
-                           if(_loc6_ || _loc3_)
-                           {
-                              §§push(§§pop() + 1);
-                           }
-                           var _loc5_:* = §§pop();
-                           if(!(_loc7_ && _loc3_))
-                           {
-                              _loc4_.§ 4§ = _loc5_;
-                           }
-                        }
-                     }
-                     if(_loc6_ || param1)
-                     {
-                        §§push(§§pop() % §`d§);
-                        if(!(_loc7_ && param1))
-                        {
-                           addr80:
-                           §§push(Number(§§pop()));
-                        }
-                        _loc3_ = §§pop();
-                        if(!_loc7_)
-                        {
-                           §[G§[_loc3_] = [param1,param2];
-                           while(true)
-                           {
-                              §§push(param2);
-                              loop1:
-                              while(true)
-                              {
-                                 §§push(§^!=§);
-                                 addr188:
-                                 while(true)
-                                 {
-                                    §§push(§§pop() == §§pop());
-                                    addr189:
-                                    while(true)
-                                    {
-                                       §§push(Boolean(§§pop()));
-                                       while(true)
-                                       {
-                                          §§push(§§pop());
-                                          if(_loc6_)
-                                          {
-                                             §§push(Boolean(§§pop()));
-                                          }
-                                          if(§§pop())
-                                          {
-                                             while(true)
-                                             {
-                                                while(true)
-                                                {
-                                                   if(§§pop())
-                                                   {
-                                                      while(_loc6_ || _loc3_)
-                                                      {
-                                                         while(true)
-                                                         {
-                                                            §2,§();
-                                                            addr183:
-                                                            while(true)
-                                                            {
-                                                            }
-                                                         }
-                                                      }
-                                                      continue loop1;
-                                                      addr163:
-                                                   }
-                                                   while(true)
-                                                   {
-                                                      §§goto(addr86);
-                                                   }
-                                                }
-                                             }
-                                          }
-                                          §§goto(addr195);
-                                       }
-                                    }
-                                 }
-                              }
-                           }
-                        }
-                        while(true)
-                        {
-                           §§goto(addr131);
-                        }
-                     }
-                     §§goto(addr80);
-                  }
-                  §§goto(addr147);
-               }
-               addr86:
-               loop14:
-               while(true)
-               {
-                  §§push(§#l§);
-                  if(!(_loc7_ && param2))
-                  {
-                     addr105:
-                     if(_loc6_ || param1)
-                     {
-                        if(§§pop())
-                        {
-                           if(!_loc7_)
-                           {
-                              if(!(_loc7_ && Log))
-                              {
-                                 continue loop0;
-                              }
-                              §§goto(addr163);
-                           }
-                           else
-                           {
-                              addr140:
-                              while(true)
-                              {
-                                 if(!(_loc7_ && param2))
-                                 {
-                                    addr147:
-                                    break loop14;
-                                 }
-                              }
-                              addr140:
-                           }
-                           §§goto(addr183);
-                        }
-                        break;
-                     }
-                     continue loop8;
-                  }
-                  addr131:
-                  while(true)
-                  {
-                     if(_loc7_)
-                     {
-                        continue loop9;
-                     }
-                     if(_loc6_)
-                     {
-                        if(!_loc7_)
-                        {
-                           if(_loc6_)
-                           {
-                              while(§§pop())
-                              {
-                                 §§goto(addr140);
-                              }
-                              break loop14;
-                              addr139:
-                           }
-                           continue loop3;
-                        }
-                        continue loop4;
-                     }
-                     addr195:
-                     while(true)
-                     {
-                        §§pop();
-                        continue loop1;
-                     }
-                  }
-                  §§goto(addr140);
-                  continue loop11;
-               }
-               return;
+               §2,§();
             }
-            §§goto(addr139);
          }
-         §§goto(addr180);
+         if(§#l§)
+         {
+            if(param1)
+            {
+            }
+         }
       }
       
       public static function §;!C§(param1:Object, param2:int = 1) : void
       {
-         var _loc6_:Boolean = false;
-         var _loc7_:Boolean = true;
          var _loc3_:* = undefined;
-         if(!(_loc6_ && param2))
-         {
-            §§push(§§findproperty(log));
-            §§push("Object:");
-            if(!_loc6_)
-            {
-               §§push(§§pop() + getQualifiedClassName(param1));
-            }
-            §§pop().log(§§pop());
-         }
+         log("Object:" + getQualifiedClassName(param1));
          for(_loc3_ in param1)
          {
-            if(!(_loc7_ || param1))
-            {
-               continue;
-            }
-            §§push(§§findproperty(log));
-            §§push("-[");
-            if(_loc7_)
-            {
-               §§push(§§pop() + _loc3_);
-               if(_loc7_ || Log)
-               {
-                  addr89:
-                  §§push(§§pop() + "]: ");
-                  if(!_loc6_)
-                  {
-                     §§push(§§pop() + param1[_loc3_]);
-                  }
-               }
-               §§pop().log(§§pop());
-               continue;
-            }
-            §§goto(addr89);
+            log("-[" + _loc3_ + "]: " + param1[_loc3_]);
          }
       }
       
       private static function §2,§() : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
          var _loc1_:Boolean = false;
          var _loc2_:String = null;
          var _loc3_:Number = NaN;
          var _loc4_:Number = NaN;
-         if(_loc6_ || Log)
+         if(!§%!_§)
          {
-            §§push(§%!_§);
-            while(true)
+            return;
+         }
+         if(§'!M§ && §'!M§.visible)
+         {
+            if(§^!=§ < 0)
             {
-               §§push(!§§pop());
-               while(true)
+               §#§.text = "Current channel: ALL";
+            }
+            else
+            {
+               §#§.text = "Current channel: " + §^!=§;
+            }
+            if(§@!=§ != null)
+            {
+               §#o§.text = §@!=§;
+            }
+            _loc1_ = true;
+            if(§+!O§.scrollV != §+!O§.numLines - int(§+!O§.height / (§+!O§.textHeight / §+!O§.numLines)))
+            {
+               _loc1_ = false;
+            }
+            _loc2_ = "";
+            _loc3_ = 0;
+            while(_loc3_ < §`d§)
+            {
+               _loc4_ = (§ 4§ + _loc3_ + 1) % 500;
+               if(§[G§[_loc4_] != null)
                {
-                  if(!§§pop())
+                  if(§^!=§ < 0 || §[G§[_loc4_][1] == §^!=§)
                   {
-                     while(true)
-                     {
-                        §§push(Boolean(§'!M§));
-                        while(true)
-                        {
-                           §§push(§§pop());
-                           if(_loc6_)
-                           {
-                              §§push(Boolean(§§pop()));
-                           }
-                           if(§§pop())
-                           {
-                              loop4:
-                              while(true)
-                              {
-                                 §§pop();
-                                 addr474:
-                                 while(true)
-                                 {
-                                    §§push(Boolean(§'!M§.visible));
-                                    continue loop4;
-                                 }
-                              }
-                           }
-                           while(§§pop())
-                           {
-                              §§goto(addr453);
-                           }
-                           §§goto(addr34);
-                        }
-                     }
+                     _loc2_ += §[G§[_loc4_][0] + "\n";
                   }
-                  §§goto(addr479);
                }
+               _loc3_++;
+            }
+            §+!O§.text = _loc2_;
+            if(_loc1_)
+            {
+               §+!O§.scrollV = §+!O§.numLines;
             }
          }
-         §§goto(addr428);
       }
       
       public static function §0!=§(param1:DisplayObjectContainer, param2:int = 40, param3:int = 40, param4:int = 540, param5:int = 360, param6:int = -1) : void
       {
-         var _loc8_:Boolean = false;
-         var _loc9_:Boolean = true;
-         if(_loc9_ || param3)
+         if(!§%!_§)
          {
-            §§push(§%!_§);
-            if(_loc9_)
-            {
-               §§push(!§§pop());
-            }
-            if(!§§pop())
-            {
-               loop0:
-               while(true)
-               {
-                  §'!M§ = new Sprite();
-                  while(!(_loc8_ && param1))
-                  {
-                     loop2:
-                     while(true)
-                     {
-                        §'!M§.visible = false;
-                        while(!(_loc8_ && param2))
-                        {
-                           param1.addChild(§'!M§);
-                           if(_loc9_ || param2)
-                           {
-                              continue loop2;
-                           }
-                        }
-                        continue loop0;
-                     }
-                  }
-               }
-            }
+            return;
+         }
+         §'!M§ = new Sprite();
+         §'!M§.visible = false;
+         param1.addChild(§'!M§);
+         var _loc7_:Graphics = §'!M§.graphics;
+         _loc7_.beginFill(16777215,0);
+         _loc7_.drawRect(0,0,1000,1000);
+         _loc7_.endFill();
+         _loc7_.beginFill(16777215,0.4);
+         _loc7_.drawRect(param2,param3,param4,param5);
+         _loc7_.endFill();
+         §+!O§ = new TextField();
+         §+!O§.width = param4;
+         §+!O§.height = param5 - 40;
+         §+!O§.x = param2;
+         §+!O§.y = param3 + 40;
+         §+!O§.wordWrap = true;
+         §'!M§.addChild(§+!O§);
+         § in§ = new TextField();
+         § in§.x = param2 + param4 / 2;
+         § in§.y = param3;
+         § in§.width = param4 / 2;
+         § in§.height = 20;
+         § in§.text = "LOGGER CAPTURING INPUT, F4";
+         § in§.border = true;
+         § in§.borderColor = 16711680;
+         §'!M§.addChild(§ in§);
+         §#§ = new TextField();
+         §#§.width = param4;
+         §#§.height = 20;
+         §#§.x = param2;
+         §#§.y = param3;
+         §'!M§.addChild(§#§);
+         §#o§ = new TextField();
+         §#o§.width = param4;
+         §#o§.height = 20;
+         §#o§.x = param2;
+         §#o§.y = param3 + 20;
+         §'!M§.addChild(§#o§);
+         §0!H§(§;+§);
+         if(param6 >= 0)
+         {
+            param1.addChildAt(§'!M§,param6);
+         }
+         else
+         {
+            param1.addChild(§'!M§);
          }
       }
       
       public static function §0!H§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || Log)
+         if(!§%!_§)
          {
-            §§push(§%!_§);
-            if(_loc2_ || Log)
-            {
-               §§push(!§§pop());
-            }
-            if(!§§pop())
-            {
-               while(true)
-               {
-                  §;+§ = param1;
-                  while(!(_loc3_ && Log))
-                  {
-                     §'!M§.mouseChildren = §;+§;
-                     while(true)
-                     {
-                        §'!M§.mouseEnabled = §;+§;
-                        while(true)
-                        {
-                           §#§.mouseEnabled = §;+§;
-                           §§goto(addr94);
-                        }
-                     }
-                  }
-               }
-            }
             return;
          }
-         addr94:
-         loop4:
-         while(true)
-         {
-            §#o§.mouseEnabled = §;+§;
-            while(!_loc3_)
-            {
-               if(!(_loc3_ && param1))
-               {
-                  §+!O§.mouseEnabled = §;+§;
-                  continue loop4;
-               }
-               continue loop1;
-               if(_loc2_ || _loc2_)
-               {
-                  if(!_loc3_)
-                  {
-                     break loop4;
-                  }
-                  continue loop2;
-               }
-            }
-            continue loop3;
-         }
+         §;+§ = param1;
+         §'!M§.mouseChildren = §;+§;
+         §'!M§.mouseEnabled = §;+§;
+         §#§.mouseEnabled = §;+§;
+         §#o§.mouseEnabled = §;+§;
+         §+!O§.mouseEnabled = §;+§;
+         § in§.visible = §;+§;
       }
       
       public static function keyDown(param1:KeyboardEvent) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
+         if(!§%!_§)
          {
-            §§push(§%!_§);
-            if(_loc3_)
-            {
-               §§push(!§§pop());
-            }
-            if(!§§pop())
-            {
-               return;
-            }
+            return;
          }
       }
       
       public static function §8s§(param1:int = 113, param2:int = 115, param3:int = 114, param4:int = 117) : void
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         if(_loc5_ || param3)
-         {
-            §^M§ = param1;
-            while(true)
-            {
-               §?C§ = param2;
-               loop1:
-               while(_loc5_ || param3)
-               {
-                  while(true)
-                  {
-                     §%a§ = param3;
-                     if(!_loc6_)
-                     {
-                        break;
-                     }
-                     continue loop1;
-                  }
-                  return;
-               }
-            }
-         }
-         §§goto(addr56);
+         §^M§ = param1;
+         §?C§ = param2;
+         §%a§ = param3;
       }
       
       public static function §%x§(param1:String) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || param1)
-         {
-            §@!=§ = param1;
-         }
+         §@!=§ = param1;
       }
    }
 }

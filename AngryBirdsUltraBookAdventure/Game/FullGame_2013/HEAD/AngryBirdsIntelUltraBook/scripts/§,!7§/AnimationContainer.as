@@ -12,79 +12,26 @@ package §,!7§
       
       public function AnimationContainer()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc2_)
-         {
-            this.§%!?§ = new Dictionary();
-         }
-         do
-         {
-            super();
-         }
-         while(_loc1_ && this);
-         
+         this.§%!?§ = new Dictionary();
+         super();
       }
       
       public function §`,§(param1:String, param2:Animation) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(!_loc4_)
+         if(param2 == null)
          {
-            if(param2 == null)
-            {
-               if(!_loc4_)
-               {
-                  throw new Error("Trying to add a null animation");
-               }
-               while(true)
-               {
-               }
-               addr84:
-            }
-            while(true)
-            {
-               if(!this.§00§)
-               {
-                  while(!_loc4_)
-                  {
-                     this.§00§ = param2;
-                     while(true)
-                     {
-                     }
-                     if(_loc4_ && param2)
-                     {
-                        continue;
-                     }
-                     return;
-                     addr63:
-                  }
-                  continue;
-               }
-               while(true)
-               {
-                  this.§%!?§[param1] = param2;
-                  if(!(_loc3_ || this))
-                  {
-                     continue;
-                  }
-                  §§goto(addr56);
-               }
-               §§goto(addr63);
-            }
+            throw new Error("Trying to add a null animation");
          }
-         §§goto(addr74);
+         if(!this.§00§)
+         {
+            this.§00§ = param2;
+         }
+         this.§%!?§[param1] = param2;
       }
       
       override public function addFrame(param1:§ H§) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§00§.addFrame(param1);
-         }
+         this.§00§.addFrame(param1);
       }
       
       override public function getFrame(param1:int) : § H§
@@ -99,17 +46,9 @@ package §,!7§
       
       override public function getSubAnimation(param1:String) : Animation
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || this)
+         if(this.§%!?§[param1])
          {
-            if(this.§%!?§[param1])
-            {
-               if(_loc2_ || this)
-               {
-                  return this.§%!?§[param1];
-               }
-            }
+            return this.§%!?§[param1];
          }
          return this.§00§;
       }

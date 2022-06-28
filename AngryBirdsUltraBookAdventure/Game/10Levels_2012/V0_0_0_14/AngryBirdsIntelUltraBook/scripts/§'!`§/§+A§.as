@@ -28,78 +28,12 @@ package §'!`§
       
       public function §+A§()
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            super();
-            if(!(_loc3_ && _loc3_))
-            {
-               §§push(this);
-               §§push(this);
-               §§push(this);
-               §§push(this.§&a§ = 0);
-               if(!(_loc3_ && _loc1_))
-               {
-                  var _loc1_:*;
-                  §§push(_loc1_ = §§pop());
-               }
-               §§pop().rotation = §§pop();
-               §§push(_loc1_);
-               if(!_loc3_)
-               {
-                  §§push(_loc1_ = §§pop());
-               }
-               §§pop().y = §§pop();
-               §§pop().x = _loc1_;
-               if(!_loc3_)
-               {
-                  addr69:
-                  §§push(this);
-                  §§push(this);
-                  §§push(this);
-                  §§push(this.scaleY = 1);
-                  if(!_loc3_)
-                  {
-                     §§push(_loc1_ = §§pop());
-                  }
-                  §§pop().scaleX = §§pop();
-                  §§push(_loc1_);
-                  if(!_loc3_)
-                  {
-                     §§push(_loc1_ = §§pop());
-                  }
-                  §§pop().alpha = §§pop();
-                  §§pop().§9!t§ = _loc1_;
-                  if(_loc2_)
-                  {
-                     this.red = 1;
-                     addr96:
-                  }
-                  while(true)
-                  {
-                     this.green = 1;
-                  }
-                  addr138:
-               }
-               while(true)
-               {
-                  this.blue = 1;
-                  if(_loc3_ && this)
-                  {
-                     continue;
-                  }
-                  if(_loc2_ || this)
-                  {
-                     break;
-                  }
-                  §§goto(addr138);
-               }
-               return;
-            }
-            §§goto(addr96);
-         }
-         §§goto(addr69);
+         super();
+         this.x = this.y = this.rotation = this.§&a§ = 0;
+         this.§9!t§ = this.alpha = this.scaleX = this.scaleY = 1;
+         this.red = 1;
+         this.green = 1;
+         this.blue = 1;
       }
    }
 }

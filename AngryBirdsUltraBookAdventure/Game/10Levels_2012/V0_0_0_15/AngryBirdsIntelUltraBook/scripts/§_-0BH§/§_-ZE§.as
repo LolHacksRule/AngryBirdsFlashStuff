@@ -8,12 +8,7 @@ package §_-0BH§
       
       public function §_-ZE§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function §_-ve§(param1:Class) : XML

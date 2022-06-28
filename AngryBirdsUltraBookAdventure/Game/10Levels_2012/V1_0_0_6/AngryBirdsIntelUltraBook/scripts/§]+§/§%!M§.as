@@ -36,86 +36,12 @@ package §]+§
       
       public static var enabled:Boolean = false;
       
-      private static var §8W§:Vector.<§2![§>;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            §2!6§ = "trackEvent";
-            while(true)
-            {
-               TRACKING_FUNCTION_10_PERCENT = "trackEvent10Percent";
-               while(true)
-               {
-                  TRACKING_FUNCTION_1_PERCENT = "trackEvent1Percent";
-                  while(true)
-                  {
-                     §4i§ = "flash";
-                     loop3:
-                     while(true)
-                     {
-                        §%!?§ = "initialized";
-                        while(true)
-                        {
-                           §%6§ = "loaded";
-                           loop5:
-                           while(true)
-                           {
-                              §4U§ = "level-started";
-                              loop6:
-                              while(true)
-                              {
-                                 §]-§ = "level-completed";
-                                 loop7:
-                                 while(true)
-                                 {
-                                    ACTION_GPU_FPS_REPORT = "gpu-rendering";
-                                    while(_loc2_)
-                                    {
-                                       ACTION_CPU_FPS_REPORT = "cpu-rendering";
-                                       continue loop5;
-                                       if(!(_loc1_ && _loc2_))
-                                       {
-                                          if(!_loc1_)
-                                          {
-                                             continue loop6;
-                                          }
-                                          continue loop7;
-                                       }
-                                    }
-                                    continue loop3;
-                                 }
-                              }
-                           }
-                        }
-                     }
-                     while(_loc2_ || _loc1_)
-                     {
-                        §&!9§ = "mem-edit";
-                        §§goto(addr89);
-                     }
-                  }
-                  if(_loc1_ && _loc2_)
-                  {
-                     continue;
-                  }
-                  §§goto(addr47);
-               }
-            }
-         }
-         §§goto(addr115);
-      }
+      private static var §8W§:Vector.<§2![§> = new Vector.<§2![§>();
+       
       
       public function §%!M§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            super();
-         }
+         super();
       }
       
       public static function §7o§(param1:DisplayObject, param2:String) : void
@@ -124,41 +50,20 @@ package §]+§
       
       public static function §[!G§(param1:String, param2:String = null, param3:int = 0) : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(!_loc5_)
-         {
-            trackEvent(§4i§,param1,param2,param3);
-         }
+         trackEvent(§4i§,param1,param2,param3);
       }
       
       private static function trackEvent(param1:String, param2:String, param3:String, param4:int = 0) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(_loc6_)
-         {
-            trackSampledEvent(§2!6§,param1,param2,param3,param4);
-         }
+         trackSampledEvent(§2!6§,param1,param2,param3,param4);
       }
       
       protected static function trackSampledEvent(param1:String, param2:String, param3:String, param4:String, param5:int = 0) : void
       {
-         var _loc6_:Boolean = false;
-         var _loc7_:Boolean = true;
-         if(!(_loc6_ && §%!M§))
+         if(enabled)
          {
-            if(enabled)
-            {
-               if(!_loc6_)
-               {
-                  addr38:
-                  §>!l§.§ a§(param1,param2,param3,param4,param5);
-               }
-            }
-            return;
+            §>!l§.§ a§(param1,param2,param3,param4,param5);
          }
-         §§goto(addr38);
       }
    }
 }

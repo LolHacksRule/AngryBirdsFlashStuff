@@ -16,12 +16,7 @@ package §_-09-§
       
       public function b2JointEdge()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            super();
-         }
+         super();
       }
    }
 }

@@ -25,87 +25,14 @@ package §_-AZ§
       public static const §_-zs§:String = "brag";
       
       public static const PLAY_LEVEL:String = "playLevel";
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && §_-07C§))
-         {
-            §_-S1§ = "inviteFriendsRequested";
-            while(true)
-            {
-               §_-061§ = "shopRequested";
-               while(!(_loc1_ && _loc1_))
-               {
-                  §_-Yr§ = "fullscreenToggleRequested";
-                  loop2:
-                  for(; !(_loc1_ && §_-07C§); loop5:
-                  while(!(_loc1_ && _loc1_))
-                  {
-                     §_-H7§ = "infoRequested";
-                     while(true)
-                     {
-                        §_-MU§ = "avatarEditorRequested";
-                        loop7:
-                        while(!_loc1_)
-                        {
-                           §_-Uq§ = "giftPopupRequested";
-                           loop8:
-                           while(true)
-                           {
-                              §_-zs§ = "brag";
-                              while(true)
-                              {
-                                 if(_loc2_)
-                                 {
-                                    if(!_loc2_)
-                                    {
-                                       break;
-                                    }
-                                    continue;
-                                 }
-                                 continue loop8;
-                              }
-                              continue loop7;
-                           }
-                        }
-                        continue loop5;
-                     }
-                  })
-                  {
-                     while(true)
-                     {
-                        §_-K8§ = "muteToggleRequested";
-                        addr102:
-                        while(true)
-                        {
-                           §_-099§ = "tutorialRequested";
-                           continue loop2;
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr114);
-      }
+       
       
       public var data:§_-M3§;
       
       public function §_-07C§(param1:String, param2:§_-M3§ = null, param3:Boolean = false, param4:Boolean = false)
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         if(!_loc6_)
-         {
-            super(param1,param3,param4);
-         }
-         do
-         {
-            this.data = param2;
-         }
-         while(_loc6_);
-         
+         super(param1,param3,param4);
+         this.data = param2;
       }
       
       override public function clone() : Event

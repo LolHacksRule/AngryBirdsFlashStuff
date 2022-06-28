@@ -32,101 +32,29 @@ package §_-09-§
       
       public function b2PrismaticJointDef()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            this.§_-F6§ = new b2Vec2();
-            while(true)
-            {
-               this.§_-0Bf§ = new b2Vec2();
-               loop1:
-               while(true)
-               {
-                  this.§_-v5§ = new b2Vec2();
-                  loop2:
-                  while(true)
-                  {
-                     super();
-                     loop3:
-                     while(true)
-                     {
-                        type = b2Joint.§_-CL§;
-                        while(true)
-                        {
-                           this.§_-v5§.Set(1,0);
-                           while(!(_loc2_ && _loc2_))
-                           {
-                              if(_loc1_)
-                              {
-                                 this.§_-IW§ = 0;
-                                 while(!(_loc2_ && _loc2_))
-                                 {
-                                    continue loop1;
-                                    if(!(_loc2_ && this))
-                                    {
-                                       continue loop3;
-                                    }
-                                 }
-                                 continue;
-                              }
-                              continue loop2;
-                           }
-                        }
-                     }
-                  }
-               }
-               while(_loc1_ || this)
-               {
-                  this.§_-7p§ = 0;
-                  §§goto(addr81);
-               }
-            }
-         }
-         §§goto(addr81);
+         this.§_-F6§ = new b2Vec2();
+         this.§_-0Bf§ = new b2Vec2();
+         this.§_-v5§ = new b2Vec2();
+         super();
+         type = b2Joint.§_-CL§;
+         this.§_-v5§.Set(1,0);
+         this.§_-IW§ = 0;
+         this.§_-6W§ = false;
+         this.§_-7p§ = 0;
+         this.§_-1F§ = 0;
+         this.§_-1g§ = false;
+         this.§_-2E§ = 0;
+         this.motorSpeed = 0;
       }
       
       public function §_-bL§(param1:b2Body, param2:b2Body, param3:b2Vec2, param4:b2Vec2) : void
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         if(_loc5_)
-         {
-            §_-ZR§ = param1;
-            while(true)
-            {
-               §_-7b§ = param2;
-               loop1:
-               while(!_loc6_)
-               {
-                  this.§_-F6§ = §_-ZR§.GetLocalPoint(param3);
-                  loop2:
-                  while(true)
-                  {
-                     this.§_-0Bf§ = §_-7b§.GetLocalPoint(param3);
-                     do
-                     {
-                        this.§_-v5§ = §_-ZR§.GetLocalVector(param4);
-                        while(true)
-                        {
-                           if(!_loc6_)
-                           {
-                              if(!_loc5_)
-                              {
-                                 break;
-                              }
-                              continue;
-                           }
-                           continue loop2;
-                        }
-                        continue loop1;
-                     }
-                     while(!(_loc5_ || param2));
-                     
-                  }
-               }
-            }
-         }
+         §_-ZR§ = param1;
+         §_-7b§ = param2;
+         this.§_-F6§ = §_-ZR§.GetLocalPoint(param3);
+         this.§_-0Bf§ = §_-7b§.GetLocalPoint(param3);
+         this.§_-v5§ = §_-ZR§.GetLocalVector(param4);
+         this.§_-IW§ = §_-7b§.GetAngle() - §_-ZR§.GetAngle();
       }
    }
 }

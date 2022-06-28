@@ -16,12 +16,7 @@ package §6!9§
       
       public function b2ContactRegister()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && this))
-         {
-            super();
-         }
+         super();
       }
    }
 }

@@ -16,30 +16,9 @@ package § $§
       
       public function §]E§(param1:String, param2:Number)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!(_loc3_ && _loc3_))
-         {
-            super();
-            while(true)
-            {
-               this.§&L§ = param1;
-               §§goto(addr57);
-            }
-         }
-         addr57:
-         while(true)
-         {
-            this.§4!d§ = param2;
-            if(!(_loc3_ && _loc3_))
-            {
-               if(!_loc3_)
-               {
-                  break;
-               }
-               continue loop0;
-            }
-         }
+         super();
+         this.§&L§ = param1;
+         this.§4!d§ = param2;
       }
       
       public function sendRequest(param1:String, param2:Object) : void
@@ -67,73 +46,34 @@ package § $§
       
       public function §!!>§(param1:Object) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && param1))
+         if(this.§>0§)
          {
-            if(this.§>0§)
-            {
-               if(_loc3_ || _loc3_)
-               {
-                  this.§96§.call(null,param1);
-               }
-            }
+            this.§96§.call(null,param1);
          }
       }
       
       public function §5!d§(param1:Object) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
+         if(this.§>0§)
          {
-            if(this.§>0§)
-            {
-               if(_loc3_)
-               {
-                  addr24:
-                  this.§"!Y§.call(null,param1);
-               }
-            }
-            return;
+            this.§"!Y§.call(null,param1);
          }
-         §§goto(addr24);
       }
       
       public function §%l§(param1:Function, param2:Function = null) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_ || _loc3_)
-         {
-            this.§96§ = param1;
-            do
-            {
-               this.§"!Y§ = param2;
-            }
-            while(!(_loc4_ || _loc3_));
-            
-         }
+         this.§96§ = param1;
+         this.§"!Y§ = param2;
       }
       
       public function §65§() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            this.§>0§ = false;
-         }
+         this.§>0§ = false;
       }
       
       public function §@y§() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc2_))
-         {
-            this.§>0§ = true;
-         }
+         this.§>0§ = true;
       }
    }
 }

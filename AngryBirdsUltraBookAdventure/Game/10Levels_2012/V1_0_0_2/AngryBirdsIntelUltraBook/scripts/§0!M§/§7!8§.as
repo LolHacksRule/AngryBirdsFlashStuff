@@ -18,56 +18,13 @@ package §0!M§
       
       public function §7!8§(param1:int, param2:int, param3:int, param4:int, param5:int, param6:int)
       {
-         var _loc7_:Boolean = false;
-         var _loc8_:Boolean = true;
-         if(_loc8_)
-         {
-            super();
-            loop0:
-            while(true)
-            {
-               this.§&>§ = param1;
-               while(true)
-               {
-                  this.§^!a§ = param2;
-                  loop3:
-                  while(!(_loc7_ && param2))
-                  {
-                     this._height = param4;
-                     while(true)
-                     {
-                        this.§;!Y§ = param5;
-                        while(_loc8_)
-                        {
-                           continue loop0;
-                           this.§+S§ = param6;
-                           if(_loc7_)
-                           {
-                              continue;
-                           }
-                           if(_loc7_)
-                           {
-                              continue loop3;
-                           }
-                           addr32:
-                           if(_loc8_)
-                           {
-                              return;
-                           }
-                           addr90:
-                           while(true)
-                           {
-                              this.§`!q§ = param3;
-                              continue loop3;
-                              §§goto(addr32);
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr90);
+         super();
+         this.§&>§ = param1;
+         this.§^!a§ = param2;
+         this.§`!q§ = param3;
+         this._height = param4;
+         this.§;!Y§ = param5;
+         this.§+S§ = param6;
       }
       
       public function get x() : int

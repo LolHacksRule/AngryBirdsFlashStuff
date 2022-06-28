@@ -19,81 +19,21 @@ package §5!c§
       
       public function §try§(param1:SoundChannel, param2:String)
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_)
-         {
-            super();
-            loop0:
-            while(true)
-            {
-               this.§[o§ = param1;
-               loop1:
-               while(true)
-               {
-                  this.§@H§ = param2;
-                  while(!_loc4_)
-                  {
-                     this.§[o§.addEventListener(Event.SOUND_COMPLETE,this.§,,§);
-                     loop4:
-                     while(!(_loc4_ && param1))
-                     {
-                        continue loop1;
-                        this.§6!B§ = false;
-                        if(!(_loc4_ && _loc3_))
-                        {
-                           addr34:
-                           if(_loc4_ && this)
-                           {
-                              while(true)
-                              {
-                                 this.§7m§ = param1.soundTransform.volume;
-                                 continue loop4;
-                                 §§goto(addr34);
-                              }
-                              addr91:
-                           }
-                           return;
-                        }
-                     }
-                  }
-                  continue loop0;
-               }
-            }
-         }
-         §§goto(addr91);
+         super();
+         this.§[o§ = param1;
+         this.§@H§ = param2;
+         this.§[o§.addEventListener(Event.SOUND_COMPLETE,this.§,,§);
+         this.§7m§ = param1.soundTransform.volume;
+         this.§6!B§ = false;
       }
       
       public function set volume(param1:Number) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
+         this.§7m§ = param1;
+         if(!this.§6!B§)
          {
-            this.§7m§ = param1;
-            loop0:
-            while(!this.§6!B§)
-            {
-               if(!(_loc3_ && this))
-               {
-                  while(true)
-                  {
-                     this.§]9§(this.§7m§);
-                  }
-                  addr44:
-               }
-               while(true)
-               {
-                  if(_loc2_)
-                  {
-                     break loop0;
-                  }
-                  continue loop0;
-               }
-            }
-            return;
+            this.§]9§(this.§7m§);
          }
-         §§goto(addr44);
       }
       
       public function get volume() : Number
@@ -113,138 +53,53 @@ package §5!c§
       
       private function §,,§(param1:Event) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || this)
-         {
-            this.§[o§.removeEventListener(Event.SOUND_COMPLETE,this.§,,§);
-         }
-         do
-         {
-            dispatchEvent(param1);
-         }
-         while(_loc3_);
-         
+         this.§[o§.removeEventListener(Event.SOUND_COMPLETE,this.§,,§);
+         dispatchEvent(param1);
       }
       
       private function §]9§(param1:Number) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
          var _loc2_:SoundTransform = this.§[o§.soundTransform;
-         if(_loc3_ || _loc3_)
-         {
-            _loc2_.volume = param1;
-            do
-            {
-               this.§[o§.soundTransform = _loc2_;
-            }
-            while(_loc4_);
-            
-         }
+         _loc2_.volume = param1;
+         this.§[o§.soundTransform = _loc2_;
       }
       
       public function §#!e§() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            this.§,,§(new Event(Event.SOUND_COMPLETE));
-         }
+         this.§,,§(new Event(Event.SOUND_COMPLETE));
       }
       
       public function stop() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc1_))
+         if(this.§[o§)
          {
-            if(this.§[o§)
-            {
-               if(_loc2_)
-               {
-                  addr29:
-                  this.§[o§.stop();
-               }
-            }
-            return;
+            this.§[o§.stop();
          }
-         §§goto(addr29);
       }
       
       public function destroy() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            this.stop();
-         }
-         do
-         {
-            this.§[o§.removeEventListener(Event.SOUND_COMPLETE,this.§,,§);
-            do
-            {
-               this.§[o§ = null;
-            }
-            while(_loc2_);
-            
-         }
-         while(_loc2_ && _loc2_);
-         
+         this.stop();
+         this.§[o§.removeEventListener(Event.SOUND_COMPLETE,this.§,,§);
+         this.§[o§ = null;
       }
       
       public function §`d§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || this)
+         if(this.§[o§)
          {
-            if(this.§[o§)
-            {
-               do
-               {
-                  this.§]9§(0);
-                  do
-                  {
-                     this.§6!B§ = true;
-                  }
-                  while(!_loc1_);
-                  
-               }
-               while(!(_loc1_ || _loc2_));
-               
-               addr55:
-            }
-            return;
+            this.§]9§(0);
+            this.§6!B§ = true;
          }
-         §§goto(addr55);
       }
       
       public function §5!'§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
+         if(this.§[o§)
          {
-            if(this.§[o§)
-            {
-               if(!_loc2_)
-               {
-                  this.§]9§(this.§7m§);
-               }
-               do
-               {
-                  this.§6!B§ = false;
-               }
-               while(_loc2_);
-               
-               addr39:
-            }
-            return;
+            this.§]9§(this.§7m§);
+            this.§6!B§ = false;
          }
-         §§goto(addr39);
       }
    }
 }

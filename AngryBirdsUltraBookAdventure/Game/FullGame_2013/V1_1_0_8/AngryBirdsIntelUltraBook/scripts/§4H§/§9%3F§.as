@@ -17,30 +17,10 @@ package §4H§
       
       public function §9?§(param1:String, param2:String, param3:String, param4:int, param5:int, param6:int, param7:int)
       {
-         var _loc8_:Boolean = true;
-         var _loc9_:Boolean = false;
-         if(_loc8_)
-         {
-            this.§;!u§ = param4;
-         }
-         while(true)
-         {
-            this.stars = param5;
-            while(_loc8_ || this)
-            {
-               this.§1t§ = param6;
-               do
-               {
-                  super(param1,param2,param3,param7);
-               }
-               while(!(_loc8_ || this));
-               
-               if(!_loc9_)
-               {
-                  return;
-               }
-            }
-         }
+         this.§;!u§ = param4;
+         this.stars = param5;
+         this.§1t§ = param6;
+         super(param1,param2,param3,param7);
       }
       
       public static function §+!7§(param1:Object) : §9?§

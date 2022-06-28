@@ -379,13 +379,16 @@ package mx.core
                   {
                      this.layoutFeatures.mirror = mirror;
                      this.validateTransformMatrix();
+                     break;
                   }
+                  break;
                }
-               else if(!mirror && this.layoutFeatures)
+               if(!mirror && this.layoutFeatures)
                {
                   this.layoutFeatures.mirror = mirror;
                   this.validateTransformMatrix();
                   this.layoutFeatures = null;
+                  break;
                }
                break;
             }

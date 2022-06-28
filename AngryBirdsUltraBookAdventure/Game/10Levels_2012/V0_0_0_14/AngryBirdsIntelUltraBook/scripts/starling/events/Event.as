@@ -27,32 +27,7 @@ package starling.events
       public static const CONTEXT3D_CREATE:String = "context3DCreate";
       
       public static const §"!_§:String = "removeFromJuggler";
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc2_)
-         {
-            ADDED = "added";
-            loop0:
-            while(true)
-            {
-               ADDED_TO_STAGE = "addedToStage";
-               addr132:
-               while(true)
-               {
-                  ENTER_FRAME = "enterFrame";
-                  addr127:
-                  while(true)
-                  {
-                     §@!!§ = "removed";
-                     continue loop0;
-                  }
-               }
-            }
-         }
-         §§goto(addr81);
-      }
+       
       
       private var §,t§:EventDispatcher;
       
@@ -68,46 +43,20 @@ package starling.events
       
       public function Event(param1:String, param2:Boolean = false)
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(!_loc4_)
-         {
-            super();
-            while(true)
-            {
-               this.§2§ = param1;
-               while(_loc3_)
-               {
-                  this.§+r§ = param2;
-                  if(!_loc4_)
-                  {
-                     return;
-                     addr39:
-                  }
-               }
-            }
-         }
-         §§goto(addr39);
+         super();
+         this.§2§ = param1;
+         this.§+r§ = param2;
       }
       
       public function stopPropagation() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            this.§>Q§ = true;
-         }
+         this.§>Q§ = true;
       }
       
       public function §[!+§() : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc1_))
-         {
-            this.§>Q§ = this.§;!Q§ = true;
-         }
+         this.§;!Q§ = true;
+         this.§>Q§ = true;
       }
       
       public function toString() : String
@@ -117,22 +66,12 @@ package starling.events
       
       function § 7§(param1:EventDispatcher) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§,t§ = param1;
-         }
+         this.§,t§ = param1;
       }
       
       function §2!N§(param1:EventDispatcher) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            this.§`!k§ = param1;
-         }
+         this.§`!k§ = param1;
       }
       
       function get §]A§() : Boolean

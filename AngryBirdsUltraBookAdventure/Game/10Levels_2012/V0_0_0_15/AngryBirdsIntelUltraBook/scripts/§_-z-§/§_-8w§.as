@@ -8,18 +8,8 @@ package §_-z-§
       
       public function §_-8w§(param1:int)
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && this))
-         {
-            super();
-         }
-         do
-         {
-            this.step = param1;
-         }
-         while(!_loc3_);
-         
+         super();
+         this.step = param1;
       }
       
       public static function initialize(param1:String) : §_-8w§

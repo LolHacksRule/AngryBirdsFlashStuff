@@ -17,12 +17,7 @@ package §_-0DM§
       
       public function b2PolyAndCircleContact()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function §_-xb§(param1:*) : b2Contact
@@ -36,43 +31,16 @@ package §_-0DM§
       
       public function §_-8Y§(param1:b2Fixture, param2:b2Fixture) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(!(_loc4_ && _loc3_))
-         {
-            super.§_-8Y§(param1,param2);
-            while(true)
-            {
-               b2Settings.b2Assert(param1.§_-oF§() == b2Shape.§_-04L§);
-               loop1:
-               while(_loc3_ || this)
-               {
-                  while(true)
-                  {
-                     b2Settings.b2Assert(param2.§_-oF§() == b2Shape.§_-rv§);
-                     if(!(_loc4_ && this))
-                     {
-                        break;
-                     }
-                     continue loop1;
-                  }
-                  return;
-               }
-            }
-         }
-         §§goto(addr79);
+         super.§_-8Y§(param1,param2);
+         b2Settings.b2Assert(param1.§_-oF§() == b2Shape.§_-04L§);
+         b2Settings.b2Assert(param2.§_-oF§() == b2Shape.§_-rv§);
       }
       
       override b2internal function Evaluate() : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
          var _loc1_:b2Body = b2internal::_-f-.m_body;
          var _loc2_:b2Body = b2internal::_-N-.m_body;
-         if(_loc4_)
-         {
-            b2Collision.§_-Wb§(b2internal::_-07u,b2internal::_-f-.GetShape() as b2PolygonShape,_loc1_.m_xf,b2internal::_-N-.GetShape() as b2CircleShape,_loc2_.m_xf);
-         }
+         b2Collision.§_-Wb§(b2internal::_-07u,b2internal::_-f-.GetShape() as b2PolygonShape,_loc1_.m_xf,b2internal::_-N-.GetShape() as b2CircleShape,_loc2_.m_xf);
       }
    }
 }

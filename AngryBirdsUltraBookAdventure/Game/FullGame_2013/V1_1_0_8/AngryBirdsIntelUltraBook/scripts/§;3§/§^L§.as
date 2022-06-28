@@ -13,50 +13,17 @@ package §;3§
       
       public function §^L§(param1:§ 4§, param2:Sprite, param3:b2World, param4:§5G§, param5:int, param6:String, param7:Number, param8:Number, param9:Number, param10:Number, param11:Boolean = false)
       {
-         var _loc12_:Boolean = true;
-         var _loc13_:Boolean = false;
-         if(_loc12_ || param3)
-         {
-            super(param1,param2,param3,param4,param5,param6,param7,param8,param9,param10,param11);
-         }
+         super(param1,param2,param3,param4,param5,param6,param7,param8,param9,param10,param11);
       }
       
       override public function applyDamage(param1:Number, param2:Boolean = true, param3:Boolean = false, param4:Boolean = false, param5:Boolean = false, param6:Boolean = false) : Number
       {
-         var _loc7_:Boolean = false;
-         var _loc8_:Boolean = true;
-         if(_loc8_)
+         super.applyDamage(param1,param2,param3,param4,param5,param6);
+         if(§0M§ <= 0)
          {
-            super.applyDamage(param1,param2,param3,param4,param5,param6);
-            loop0:
-            while(§0M§ <= 0)
-            {
-               if(_loc8_)
-               {
-                  while(true)
-                  {
-                     §§push(AngryBirdsFP11.sUserProgress as §#!6§);
-                     §§push("1000-");
-                     if(!_loc7_)
-                     {
-                        §§push(§§pop() + §-!>§.split("_")[3]);
-                     }
-                     §§pop().§<!_§(§§pop());
-                  }
-                  addr51:
-               }
-               while(true)
-               {
-                  if(!_loc7_)
-                  {
-                     break loop0;
-                  }
-                  continue loop0;
-               }
-            }
-            return §0M§;
+            (AngryBirdsFP11.sUserProgress as §#!6§).§<!_§("1000-" + §-!>§.split("_")[3]);
          }
-         §§goto(addr51);
+         return §0M§;
       }
    }
 }

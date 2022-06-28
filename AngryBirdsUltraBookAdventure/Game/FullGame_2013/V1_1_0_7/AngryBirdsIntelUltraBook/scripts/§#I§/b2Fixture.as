@@ -45,85 +45,16 @@ package §#I§
       
       public function b2Fixture()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || this)
-         {
-            this.§,!E§ = new b2FilterData();
-            loop0:
-            while(true)
-            {
-               super();
-               loop1:
-               while(true)
-               {
-                  this.§9v§ = new b2AABB();
-                  while(true)
-                  {
-                     this.§>g§ = null;
-                     while(_loc2_)
-                     {
-                        continue loop1;
-                        addr73:
-                        if(!(_loc2_ || _loc1_))
-                        {
-                           continue;
-                        }
-                        this.§=!F§ = 0;
-                        addr80:
-                        if(!_loc1_)
-                        {
-                           if(_loc2_)
-                           {
-                              addr37:
-                              if(_loc1_ && _loc1_)
-                              {
-                                 while(true)
-                                 {
-                                    this.§=!8§ = null;
-                                    addr95:
-                                    while(!_loc1_)
-                                    {
-                                       this.§'!K§ = null;
-                                       loop6:
-                                       while(true)
-                                       {
-                                          this.§`!k§ = 0;
-                                          addr85:
-                                          loop7:
-                                          while(true)
-                                          {
-                                             this.§9G§ = 0;
-                                             addr49:
-                                             while(true)
-                                             {
-                                                if(!(_loc1_ && _loc1_))
-                                                {
-                                                   continue loop6;
-                                                }
-                                                continue loop7;
-                                                §§goto(addr80);
-                                             }
-                                             continue loop6;
-                                          }
-                                       }
-                                    }
-                                    continue loop0;
-                                    §§goto(addr37);
-                                 }
-                                 addr112:
-                              }
-                              return;
-                           }
-                           §§goto(addr95);
-                        }
-                        §§goto(addr49);
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr85);
+         this.§,!E§ = new b2FilterData();
+         super();
+         this.§9v§ = new b2AABB();
+         this.§>g§ = null;
+         this.m_body = null;
+         this.§=!8§ = null;
+         this.§'!K§ = null;
+         this.§`!k§ = 0;
+         this.§9G§ = 0;
+         this.§=!F§ = 0;
       }
       
       public function § 5§() : int
@@ -138,118 +69,29 @@ package §#I§
       
       public function §,!d§(param1:Boolean) : void
       {
-         var _loc6_:Boolean = false;
-         var _loc7_:Boolean = true;
          var _loc3_:b2Contact = null;
          var _loc4_:b2Fixture = null;
          var _loc5_:b2Fixture = null;
-         if(_loc7_ || this)
+         if(this.§"!L§ == param1)
          {
-            if(this.§"!L§ != param1)
+            return;
+         }
+         this.§"!L§ = param1;
+         if(this.m_body == null)
+         {
+            return;
+         }
+         var _loc2_:b2ContactEdge = this.m_body.§>!3§();
+         while(_loc2_)
+         {
+            _loc3_ = _loc2_.§8!m§;
+            _loc4_ = _loc3_.§`!a§();
+            _loc5_ = _loc3_.§2!s§();
+            if(_loc4_ == this || _loc5_ == this)
             {
-               loop0:
-               while(true)
-               {
-                  this.§"!L§ = param1;
-                  while(true)
-                  {
-                     §§push(this.m_body);
-                     if(!(_loc6_ && param1))
-                     {
-                        if(§§pop() == null)
-                        {
-                           if(_loc7_)
-                           {
-                              if(!_loc6_)
-                              {
-                                 return;
-                              }
-                              continue loop0;
-                           }
-                           if(_loc6_ && _loc3_)
-                           {
-                              continue;
-                           }
-                           if(_loc6_)
-                           {
-                              break loop0;
-                           }
-                           if(false)
-                           {
-                              continue loop0;
-                           }
-                        }
-                        §§push(this.m_body);
-                        break;
-                     }
-                     break;
-                  }
-                  var _loc2_:b2ContactEdge = §§pop().§>!3§();
-                  for(; _loc2_; _loc2_ = _loc2_.§`!w§)
-                  {
-                     _loc3_ = _loc2_.§8!m§;
-                     _loc4_ = _loc3_.§`!a§();
-                     _loc5_ = _loc3_.§2!s§();
-                     if(_loc6_)
-                     {
-                        continue;
-                     }
-                     §§push(_loc4_ == this);
-                     if(_loc7_ || this)
-                     {
-                        if(!§§pop())
-                        {
-                           if(_loc7_ || param1)
-                           {
-                              §§pop();
-                              if(_loc7_ || param1)
-                              {
-                                 addr134:
-                                 if(_loc5_ != this)
-                                 {
-                                    continue;
-                                 }
-                                 if(!(_loc7_ || _loc2_))
-                                 {
-                                    continue;
-                                 }
-                              }
-                              §§push(_loc3_);
-                              if(_loc7_ || param1)
-                              {
-                                 §§push(_loc4_.§%u§());
-                                 if(_loc7_)
-                                 {
-                                    §§push(Boolean(§§pop()));
-                                    if(_loc7_ || this)
-                                    {
-                                       if(!§§pop())
-                                       {
-                                          if(!(_loc6_ && _loc3_))
-                                          {
-                                             addr181:
-                                             §§pop();
-                                             §§push(_loc5_.§%u§());
-                                             if(_loc7_ || this)
-                                             {
-                                                §§push(Boolean(§§pop()));
-                                             }
-                                          }
-                                       }
-                                       §§pop().§,!d§(§§pop());
-                                       continue;
-                                    }
-                                 }
-                              }
-                              §§goto(addr181);
-                           }
-                        }
-                     }
-                     §§goto(addr134);
-                  }
-                  return;
-               }
+               _loc3_.§,!d§(_loc4_.§%u§() || _loc5_.§%u§());
             }
+            _loc2_ = _loc2_.§`!w§;
          }
       }
       
@@ -260,70 +102,25 @@ package §#I§
       
       public function §?!o§(param1:b2FilterData) : void
       {
-         var _loc6_:Boolean = false;
-         var _loc7_:Boolean = true;
          var _loc3_:b2Contact = null;
          var _loc4_:b2Fixture = null;
          var _loc5_:b2Fixture = null;
-         if(_loc7_)
+         this.§,!E§ = param1.Copy();
+         if(this.m_body)
          {
-            this.§,!E§ = param1.Copy();
-            if(!_loc6_)
-            {
-               §§goto(addr34);
-            }
-            §§goto(addr46);
+            return;
          }
-         addr34:
-         §§push(this.m_body);
-         if(_loc7_ || this)
-         {
-            if(§§pop())
-            {
-               if(!_loc6_)
-               {
-                  addr46:
-                  return;
-               }
-            }
-            §§push(this.m_body);
-         }
-         var _loc2_:b2ContactEdge = §§pop().§>!3§();
-         for(; _loc2_; _loc2_ = _loc2_.§`!w§)
+         var _loc2_:b2ContactEdge = this.m_body.§>!3§();
+         while(_loc2_)
          {
             _loc3_ = _loc2_.§8!m§;
             _loc4_ = _loc3_.§`!a§();
             _loc5_ = _loc3_.§2!s§();
-            if(_loc7_ || param1)
+            if(_loc4_ == this || _loc5_ == this)
             {
-               §§push(_loc4_ == this);
-               if(_loc7_)
-               {
-                  if(!§§pop())
-                  {
-                     if(!_loc6_)
-                     {
-                        §§pop();
-                        addr121:
-                        if(_loc7_ || _loc3_)
-                        {
-                           §§push(_loc5_ == this);
-                        }
-                        _loc3_.§+q§();
-                        continue;
-                     }
-                  }
-               }
-               if(!§§pop())
-               {
-                  continue;
-               }
-               if(_loc6_ && _loc3_)
-               {
-                  continue;
-               }
+               _loc3_.§+q§();
             }
-            §§goto(addr121);
+            _loc2_ = _loc2_.§`!w§;
          }
       }
       
@@ -349,12 +146,7 @@ package §#I§
       
       public function §%V§(param1:*) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§>g§ = param1;
-         }
+         this.§>g§ = param1;
       }
       
       public function TestPoint(param1:b2Vec2) : Boolean
@@ -369,32 +161,17 @@ package §#I§
       
       public function §&K§(param1:b2MassData = null) : b2MassData
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || _loc2_)
+         if(param1 == null)
          {
-            if(param1 == null)
-            {
-               if(!(_loc3_ && _loc2_))
-               {
-                  param1 = new b2MassData();
-               }
-               §§goto(addr53);
-            }
-            this.§'!K§.ComputeMass(param1,this.§`!k§);
+            param1 = new b2MassData();
          }
-         addr53:
+         this.§'!K§.ComputeMass(param1,this.§`!k§);
          return param1;
       }
       
       public function §!!F§(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§`!k§ = param1;
-         }
+         this.§`!k§ = param1;
       }
       
       public function §1!v§() : Number
@@ -409,12 +186,7 @@ package §#I§
       
       public function §+k§(param1:Number) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§9G§ = param1;
-         }
+         this.§9G§ = param1;
       }
       
       public function §^_§() : Number
@@ -424,12 +196,7 @@ package §#I§
       
       public function §5!,§(param1:Number) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || param1)
-         {
-            this.§=!F§ = param1;
-         }
+         this.§=!F§ = param1;
       }
       
       public function §<!-§() : b2AABB
@@ -439,195 +206,51 @@ package §#I§
       
       b2internal function §1!Y§(param1:b2Body, param2:b2Transform, param3:b2FixtureDef) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!(_loc4_ && this))
-         {
-            this.§>g§ = param3.§]!=§;
-         }
-         loop0:
-         while(true)
-         {
-            this.§9G§ = param3.friction;
-            while(true)
-            {
-               this.§=!F§ = param3.restitution;
-               while(!_loc4_)
-               {
-                  continue loop0;
-                  loop4:
-                  while(_loc5_ || param1)
-                  {
-                     this.§,!E§ = param3.filter.Copy();
-                     loop5:
-                     do
-                     {
-                        this.§"!L§ = param3.§^$§;
-                        while(true)
-                        {
-                           this.§'!K§ = param3.shape.Copy();
-                           while(!_loc4_)
-                           {
-                              this.§`!k§ = param3.density;
-                              if(_loc5_)
-                              {
-                                 continue loop5;
-                              }
-                           }
-                        }
-                     }
-                     while(_loc4_);
-                     
-                     if(_loc4_)
-                     {
-                        continue;
-                     }
-                     if(_loc5_)
-                     {
-                        return;
-                     }
-                     addr101:
-                     while(true)
-                     {
-                        this.§=!8§ = null;
-                        continue loop4;
-                     }
-                  }
-               }
-            }
-         }
+         this.§>g§ = param3.§]!=§;
+         this.§9G§ = param3.friction;
+         this.§=!F§ = param3.restitution;
+         this.m_body = param1;
+         this.§=!8§ = null;
+         this.§,!E§ = param3.filter.Copy();
+         this.§"!L§ = param3.§^$§;
+         this.§'!K§ = param3.shape.Copy();
+         this.§`!k§ = param3.density;
       }
       
       b2internal function §=_§() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc2_)
-         {
-            this.§'!K§ = null;
-         }
+         this.§'!K§ = null;
       }
       
       b2internal function §[E§(param1:§<P§, param2:b2Transform) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_ || param2)
-         {
-            this.§'!K§.ComputeAABB(this.§9v§,param2);
-         }
-         do
-         {
-            this.§8""§ = param1.§[E§(this.§9v§,this);
-         }
-         while(!_loc4_);
-         
+         this.§'!K§.ComputeAABB(this.§9v§,param2);
+         this.§8""§ = param1.§[E§(this.§9v§,this);
       }
       
       b2internal function §#i§(param1:§<P§) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
+         if(this.§8""§ == null)
          {
-            if(this.§8""§ == null)
-            {
-               if(!_loc3_)
-               {
-                  return;
-               }
-               while(true)
-               {
-                  §§goto(addr47);
-               }
-            }
-            addr47:
-            §§goto(addr46);
+            return;
          }
-         addr46:
-         while(true)
-         {
-            param1.§#i§(this.§8""§);
-            do
-            {
-               this.§8""§ = null;
-            }
-            while(_loc3_ && _loc2_);
-            
-            if(!_loc3_)
-            {
-               break;
-            }
-            continue loop0;
-         }
+         param1.§#i§(this.§8""§);
+         this.§8""§ = null;
       }
       
       b2internal function §0!H§(param1:§<P§, param2:b2Transform, param3:b2Transform) : void
       {
-         var _loc7_:Boolean = true;
-         var _loc8_:Boolean = false;
-         if(!(_loc8_ && param1))
+         if(!this.§8""§)
          {
-            if(!this.§8""§)
-            {
-               if(!_loc8_)
-               {
-                  §§goto(addr28);
-               }
-            }
-            var _loc4_:b2AABB = new b2AABB();
-            var _loc5_:b2AABB = new b2AABB();
-            if(_loc7_ || this)
-            {
-               §§push(this.§'!K§);
-               loop0:
-               while(true)
-               {
-                  §§pop().ComputeAABB(_loc4_,param2);
-                  loop1:
-                  while(true)
-                  {
-                     loop2:
-                     while(true)
-                     {
-                        §§push(this.§'!K§);
-                        if(_loc8_)
-                        {
-                           break;
-                        }
-                        §§pop().ComputeAABB(_loc5_,param3);
-                        loop3:
-                        while(_loc7_ || this)
-                        {
-                           while(true)
-                           {
-                              this.§9v§.§5"$§(_loc4_,_loc5_);
-                              if(!(_loc8_ && param2))
-                              {
-                                 if(true)
-                                 {
-                                    break;
-                                 }
-                                 continue loop2;
-                              }
-                              continue loop3;
-                           }
-                           var _loc6_:b2Vec2 = b2Math.§%M§(param3.position,param2.position);
-                           if(!(_loc8_ && param2))
-                           {
-                              param1.§"d§(this.§8""§,this.§9v§,_loc6_);
-                           }
-                           return;
-                        }
-                        continue loop1;
-                     }
-                     continue loop0;
-                  }
-               }
-            }
-            §§goto(addr85);
+            return;
          }
-         addr28:
+         var _loc4_:b2AABB = new b2AABB();
+         var _loc5_:b2AABB = new b2AABB();
+         this.§'!K§.ComputeAABB(_loc4_,param2);
+         this.§'!K§.ComputeAABB(_loc5_,param3);
+         this.§9v§.§5"$§(_loc4_,_loc5_);
+         var _loc6_:b2Vec2 = b2Math.§%M§(param3.position,param2.position);
+         param1.§"d§(this.§8""§,this.§9v§,_loc6_);
       }
    }
 }

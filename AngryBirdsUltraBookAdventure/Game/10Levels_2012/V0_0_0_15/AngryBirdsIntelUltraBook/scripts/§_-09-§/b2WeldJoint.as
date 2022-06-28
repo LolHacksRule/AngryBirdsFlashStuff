@@ -28,60 +28,16 @@ package §_-09-§
       
       public function b2WeldJoint(param1:b2WeldJointDef)
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§_-06g§ = new b2Vec2();
-            loop0:
-            while(true)
-            {
-               this.§_-uv§ = new b2Vec2();
-               loop1:
-               while(true)
-               {
-                  this.§_-MK§ = new b2Vec3();
-                  addr134:
-                  addr93:
-                  while(true)
-                  {
-                     this.§_-5W§ = new b2Mat33();
-                  }
-                  addr38:
-                  do
-                  {
-                     if(_loc2_ && _loc2_)
-                     {
-                        continue loop1;
-                     }
-                     this.§_-uv§.SetV(param1.§_-0Bf§);
-                     while(true)
-                     {
-                        if(_loc3_ || param1)
-                        {
-                           this.§_-nt§ = param1.§_-IW§;
-                           continue;
-                        }
-                        addr128:
-                        while(true)
-                        {
-                           super(param1);
-                           continue loop0;
-                        }
-                     }
-                  }
-                  while(!(_loc3_ || _loc2_));
-                  
-                  if(_loc3_)
-                  {
-                     return;
-                     addr40:
-                  }
-                  continue loop0;
-               }
-            }
-         }
-         §§goto(addr128);
+         this.§_-06g§ = new b2Vec2();
+         this.§_-uv§ = new b2Vec2();
+         this.§_-MK§ = new b2Vec3();
+         this.§_-5W§ = new b2Mat33();
+         super(param1);
+         this.§_-06g§.SetV(param1.§_-F6§);
+         this.§_-uv§.SetV(param1.§_-0Bf§);
+         this.§_-nt§ = param1.§_-IW§;
+         this.§_-MK§.§_-el§();
+         this.§_-5W§ = new b2Mat33();
       }
       
       override public function GetAnchorA() : b2Vec2
@@ -96,193 +52,168 @@ package §_-09-§
       
       override public function GetReactionForce(param1:Number) : b2Vec2
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         §§push(§§findproperty(b2Vec2));
-         §§push(param1);
-         if(!_loc2_)
-         {
-            §§push(this.§_-MK§.x);
-            if(_loc3_)
-            {
-               addr37:
-               §§push(§§pop() * §§pop());
-               §§push(param1);
-               if(_loc3_)
-               {
-                  §§push(§§pop() * this.§_-MK§.y);
-               }
-            }
-            return new §§pop().b2Vec2(§§pop(),§§pop());
-         }
-         §§goto(addr37);
+         return new b2Vec2(param1 * this.§_-MK§.x,param1 * this.§_-MK§.y);
       }
       
       override public function GetReactionTorque(param1:Number) : Number
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         §§push(param1);
-         if(!(_loc3_ && _loc2_))
-         {
-            return §§pop() * this.§_-MK§.z;
-         }
+         return param1 * this.§_-MK§.z;
       }
       
       override b2internal function InitVelocityConstraints(param1:b2TimeStep) : void
       {
-         /*
-          * Decompilation error
-          * Code may be obfuscated
-          * Tip: You can try enabling "Automatic deobfuscation" in Settings
-          * Error type: ExecutionException (java.lang.StackOverflowError)
-          */
-         throw new flash.errors.IllegalOperationError("Not decompiled due to error");
+         var _loc2_:b2Mat22 = null;
+         var _loc3_:Number = NaN;
+         var _loc4_:b2Body = null;
+         var _loc5_:b2Body = null;
+         var _loc6_:Number = NaN;
+         var _loc7_:Number = NaN;
+         var _loc8_:Number = NaN;
+         var _loc9_:Number = NaN;
+         var _loc10_:Number = NaN;
+         var _loc11_:Number = NaN;
+         var _loc12_:Number = NaN;
+         var _loc13_:Number = NaN;
+         _loc4_ = b2internal::_-0FB;
+         _loc5_ = b2internal::_-c9;
+         _loc2_ = _loc4_.m_xf.R;
+         _loc6_ = this.§_-06g§.x - _loc4_.m_sweep.localCenter.x;
+         _loc7_ = this.§_-06g§.y - _loc4_.m_sweep.localCenter.y;
+         _loc3_ = _loc2_.col1.x * _loc6_ + _loc2_.col2.x * _loc7_;
+         _loc7_ = _loc2_.col1.y * _loc6_ + _loc2_.col2.y * _loc7_;
+         _loc6_ = _loc3_;
+         _loc2_ = _loc5_.m_xf.R;
+         _loc8_ = this.§_-uv§.x - _loc5_.m_sweep.localCenter.x;
+         _loc9_ = this.§_-uv§.y - _loc5_.m_sweep.localCenter.y;
+         _loc3_ = _loc2_.col1.x * _loc8_ + _loc2_.col2.x * _loc9_;
+         _loc9_ = _loc2_.col1.y * _loc8_ + _loc2_.col2.y * _loc9_;
+         _loc8_ = _loc3_;
+         _loc10_ = _loc4_.§_-03A§;
+         _loc11_ = _loc5_.§_-03A§;
+         _loc12_ = _loc4_.§_-Dz§;
+         _loc13_ = _loc5_.§_-Dz§;
+         this.§_-5W§.col1.x = _loc10_ + _loc11_ + _loc7_ * _loc7_ * _loc12_ + _loc9_ * _loc9_ * _loc13_;
+         this.§_-5W§.col2.x = -_loc7_ * _loc6_ * _loc12_ - _loc9_ * _loc8_ * _loc13_;
+         this.§_-5W§.col3.x = -_loc7_ * _loc12_ - _loc9_ * _loc13_;
+         this.§_-5W§.col1.y = this.§_-5W§.col2.x;
+         this.§_-5W§.col2.y = _loc10_ + _loc11_ + _loc6_ * _loc6_ * _loc12_ + _loc8_ * _loc8_ * _loc13_;
+         this.§_-5W§.col3.y = _loc6_ * _loc12_ + _loc8_ * _loc13_;
+         this.§_-5W§.col1.z = this.§_-5W§.col3.x;
+         this.§_-5W§.col2.z = this.§_-5W§.col3.y;
+         this.§_-5W§.col3.z = _loc12_ + _loc13_;
+         if(param1.§_-0F7§)
+         {
+            this.§_-MK§.x *= param1.§_-b8§;
+            this.§_-MK§.y *= param1.§_-b8§;
+            this.§_-MK§.z *= param1.§_-b8§;
+            _loc4_.§_-kZ§.x -= _loc10_ * this.§_-MK§.x;
+            _loc4_.§_-kZ§.y -= _loc10_ * this.§_-MK§.y;
+            _loc4_.m_angularVelocity -= _loc12_ * (_loc6_ * this.§_-MK§.y - _loc7_ * this.§_-MK§.x + this.§_-MK§.z);
+            _loc5_.§_-kZ§.x += _loc11_ * this.§_-MK§.x;
+            _loc5_.§_-kZ§.y += _loc11_ * this.§_-MK§.y;
+            _loc5_.m_angularVelocity += _loc13_ * (_loc8_ * this.§_-MK§.y - _loc9_ * this.§_-MK§.x + this.§_-MK§.z);
+         }
+         else
+         {
+            this.§_-MK§.§_-el§();
+         }
       }
       
       override b2internal function SolveVelocityConstraints(param1:b2TimeStep) : void
       {
-         var _loc22_:Boolean = true;
-         var _loc23_:Boolean = false;
          var _loc2_:b2Mat22 = null;
-         var _loc3_:* = NaN;
+         var _loc3_:Number = NaN;
          var _loc4_:b2Body = b2internal::_-0FB;
          var _loc5_:b2Body = b2internal::_-c9;
          var _loc6_:b2Vec2 = _loc4_.§_-kZ§;
-         §§push(_loc4_.m_angularVelocity);
-         if(!_loc23_)
-         {
-            §§push(Number(§§pop()));
-         }
-         var _loc7_:* = §§pop();
+         var _loc7_:Number = _loc4_.m_angularVelocity;
          var _loc8_:b2Vec2 = _loc5_.§_-kZ§;
-         §§push(_loc5_.m_angularVelocity);
-         if(_loc22_)
-         {
-            §§push(Number(§§pop()));
-         }
-         var _loc9_:* = §§pop();
-         §§push(_loc4_.§_-03A§);
-         if(_loc22_)
-         {
-            §§push(Number(§§pop()));
-         }
-         var _loc10_:* = §§pop();
-         §§push(_loc5_.§_-03A§);
-         if(_loc22_ || _loc2_)
-         {
-            §§push(Number(§§pop()));
-         }
-         var _loc11_:* = §§pop();
-         §§push(_loc4_.§_-Dz§);
-         if(!_loc23_)
-         {
-            §§push(Number(§§pop()));
-         }
-         var _loc12_:* = §§pop();
-         §§push(_loc5_.§_-Dz§);
-         if(!(_loc23_ && this))
-         {
-            §§push(Number(§§pop()));
-         }
-         var _loc13_:* = §§pop();
+         var _loc9_:Number = _loc5_.m_angularVelocity;
+         var _loc10_:Number = _loc4_.§_-03A§;
+         var _loc11_:Number = _loc5_.§_-03A§;
+         var _loc12_:Number = _loc4_.§_-Dz§;
+         var _loc13_:Number = _loc5_.§_-Dz§;
          _loc2_ = _loc4_.m_xf.R;
-         §§push(this.§_-06g§.x);
-         if(_loc22_)
-         {
-            §§push(§§pop() - _loc4_.m_sweep.localCenter.x);
-            if(!(_loc23_ && _loc3_))
-            {
-               addr103:
-               §§push(Number(§§pop()));
-            }
-            var _loc14_:* = §§pop();
-            §§push(this.§_-06g§.y);
-            if(_loc22_ || this)
-            {
-               §§push(§§pop() - _loc4_.m_sweep.localCenter.y);
-               if(!(_loc23_ && _loc2_))
-               {
-                  §§push(Number(§§pop()));
-               }
-            }
-            var _loc15_:* = §§pop();
-            if(!(_loc23_ && _loc2_))
-            {
-               §§push(_loc2_.col1);
-               loop0:
-               while(true)
-               {
-                  §§push(§§pop().x);
-                  if(!_loc23_)
-                  {
-                     §§push(_loc14_);
-                     if(_loc22_ || _loc3_)
-                     {
-                        §§push(§§pop() * §§pop());
-                        if(!(_loc23_ && _loc3_))
-                        {
-                           §§push(_loc2_.col2);
-                           while(true)
-                           {
-                              §§push(§§pop().x);
-                              if(!_loc23_)
-                              {
-                                 while(true)
-                                 {
-                                    §§push(_loc15_);
-                                    addr220:
-                                    while(true)
-                                    {
-                                       §§push(§§pop() * §§pop());
-                                    }
-                                 }
-                                 addr219:
-                              }
-                              addr221:
-                              while(true)
-                              {
-                                 §§push(§§pop() + §§pop());
-                                 addr222:
-                                 while(true)
-                                 {
-                                    §§push(Number(§§pop()));
-                                    addr223:
-                                    while(true)
-                                    {
-                                       _loc3_ = §§pop();
-                                       addr224:
-                                       while(true)
-                                       {
-                                          continue loop0;
-                                       }
-                                    }
-                                 }
-                              }
-                           }
-                           addr216:
-                        }
-                        §§goto(addr223);
-                     }
-                     §§goto(addr219);
-                  }
-                  §§goto(addr223);
-               }
-            }
-            §§goto(addr224);
-         }
-         §§goto(addr103);
+         var _loc14_:Number = this.§_-06g§.x - _loc4_.m_sweep.localCenter.x;
+         var _loc15_:Number = this.§_-06g§.y - _loc4_.m_sweep.localCenter.y;
+         _loc3_ = _loc2_.col1.x * _loc14_ + _loc2_.col2.x * _loc15_;
+         _loc15_ = _loc2_.col1.y * _loc14_ + _loc2_.col2.y * _loc15_;
+         _loc14_ = _loc3_;
+         _loc2_ = _loc5_.m_xf.R;
+         var _loc16_:Number = this.§_-uv§.x - _loc5_.m_sweep.localCenter.x;
+         var _loc17_:Number = this.§_-uv§.y - _loc5_.m_sweep.localCenter.y;
+         _loc3_ = _loc2_.col1.x * _loc16_ + _loc2_.col2.x * _loc17_;
+         _loc17_ = _loc2_.col1.y * _loc16_ + _loc2_.col2.y * _loc17_;
+         _loc16_ = _loc3_;
+         var _loc18_:Number = _loc8_.x - _loc9_ * _loc17_ - _loc6_.x + _loc7_ * _loc15_;
+         var _loc19_:Number = _loc8_.y + _loc9_ * _loc16_ - _loc6_.y - _loc7_ * _loc14_;
+         var _loc20_:Number = _loc9_ - _loc7_;
+         var _loc21_:b2Vec3 = new b2Vec3();
+         this.§_-5W§.Solve33(_loc21_,-_loc18_,-_loc19_,-_loc20_);
+         this.§_-MK§.§_-M6§(_loc21_);
+         _loc6_.x -= _loc10_ * _loc21_.x;
+         _loc6_.y -= _loc10_ * _loc21_.y;
+         _loc7_ -= _loc12_ * (_loc14_ * _loc21_.y - _loc15_ * _loc21_.x + _loc21_.z);
+         _loc8_.x += _loc11_ * _loc21_.x;
+         _loc8_.y += _loc11_ * _loc21_.y;
+         _loc9_ += _loc13_ * (_loc16_ * _loc21_.y - _loc17_ * _loc21_.x + _loc21_.z);
+         _loc4_.m_angularVelocity = _loc7_;
+         _loc5_.m_angularVelocity = _loc9_;
       }
       
       override b2internal function SolvePositionConstraints(param1:Number) : Boolean
       {
-         /*
-          * Decompilation error
-          * Code may be obfuscated
-          * Tip: You can try enabling "Automatic deobfuscation" in Settings
-          * Error type: ExecutionException (java.lang.StackOverflowError)
-          */
-         throw new flash.errors.IllegalOperationError("Not decompiled due to error");
+         var _loc2_:b2Mat22 = null;
+         var _loc3_:Number = NaN;
+         var _loc4_:b2Body = b2internal::_-0FB;
+         var _loc5_:b2Body = b2internal::_-c9;
+         _loc2_ = _loc4_.m_xf.R;
+         var _loc6_:Number = this.§_-06g§.x - _loc4_.m_sweep.localCenter.x;
+         var _loc7_:Number = this.§_-06g§.y - _loc4_.m_sweep.localCenter.y;
+         _loc3_ = _loc2_.col1.x * _loc6_ + _loc2_.col2.x * _loc7_;
+         _loc7_ = _loc2_.col1.y * _loc6_ + _loc2_.col2.y * _loc7_;
+         _loc6_ = _loc3_;
+         _loc2_ = _loc5_.m_xf.R;
+         var _loc8_:Number = this.§_-uv§.x - _loc5_.m_sweep.localCenter.x;
+         var _loc9_:Number = this.§_-uv§.y - _loc5_.m_sweep.localCenter.y;
+         _loc3_ = _loc2_.col1.x * _loc8_ + _loc2_.col2.x * _loc9_;
+         _loc9_ = _loc2_.col1.y * _loc8_ + _loc2_.col2.y * _loc9_;
+         _loc8_ = _loc3_;
+         var _loc10_:Number = _loc4_.§_-03A§;
+         var _loc11_:Number = _loc5_.§_-03A§;
+         var _loc12_:Number = _loc4_.§_-Dz§;
+         var _loc13_:Number = _loc5_.§_-Dz§;
+         var _loc14_:Number = _loc5_.m_sweep.c.x + _loc8_ - _loc4_.m_sweep.c.x - _loc6_;
+         var _loc15_:Number = _loc5_.m_sweep.c.y + _loc9_ - _loc4_.m_sweep.c.y - _loc7_;
+         var _loc16_:Number = _loc5_.m_sweep.a - _loc4_.m_sweep.a - this.§_-nt§;
+         var _loc17_:Number = 10 * b2Settings.b2_linearSlop;
+         var _loc18_:Number = Math.sqrt(_loc14_ * _loc14_ + _loc15_ * _loc15_);
+         var _loc19_:Number = b2Math.§_-010§(_loc16_);
+         if(_loc18_ > _loc17_)
+         {
+            _loc12_ *= 1;
+            _loc13_ *= 1;
+         }
+         this.§_-5W§.col1.x = _loc10_ + _loc11_ + _loc7_ * _loc7_ * _loc12_ + _loc9_ * _loc9_ * _loc13_;
+         this.§_-5W§.col2.x = -_loc7_ * _loc6_ * _loc12_ - _loc9_ * _loc8_ * _loc13_;
+         this.§_-5W§.col3.x = -_loc7_ * _loc12_ - _loc9_ * _loc13_;
+         this.§_-5W§.col1.y = this.§_-5W§.col2.x;
+         this.§_-5W§.col2.y = _loc10_ + _loc11_ + _loc6_ * _loc6_ * _loc12_ + _loc8_ * _loc8_ * _loc13_;
+         this.§_-5W§.col3.y = _loc6_ * _loc12_ + _loc8_ * _loc13_;
+         this.§_-5W§.col1.z = this.§_-5W§.col3.x;
+         this.§_-5W§.col2.z = this.§_-5W§.col3.y;
+         this.§_-5W§.col3.z = _loc12_ + _loc13_;
+         var _loc20_:b2Vec3 = new b2Vec3();
+         this.§_-5W§.Solve33(_loc20_,-_loc14_,-_loc15_,-_loc16_);
+         _loc4_.m_sweep.c.x -= _loc10_ * _loc20_.x;
+         _loc4_.m_sweep.c.y -= _loc10_ * _loc20_.y;
+         _loc4_.m_sweep.a -= _loc12_ * (_loc6_ * _loc20_.y - _loc7_ * _loc20_.x + _loc20_.z);
+         _loc5_.m_sweep.c.x += _loc11_ * _loc20_.x;
+         _loc5_.m_sweep.c.y += _loc11_ * _loc20_.y;
+         _loc5_.m_sweep.a += _loc13_ * (_loc8_ * _loc20_.y - _loc9_ * _loc20_.x + _loc20_.z);
+         _loc4_.§_-da§();
+         _loc5_.§_-da§();
+         return _loc18_ <= b2Settings.b2_linearSlop && _loc19_ <= b2Settings.b2_angularSlop;
       }
    }
 }

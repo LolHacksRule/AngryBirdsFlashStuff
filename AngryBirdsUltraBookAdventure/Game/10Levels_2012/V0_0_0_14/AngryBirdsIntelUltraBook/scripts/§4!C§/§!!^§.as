@@ -14,40 +14,14 @@ package §4!C§
       
       public function §!!^§(param1:String, param2:Function, param3:Boolean = true)
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!_loc4_)
+         super();
+         this.§1#§ = param1;
+         this.§<!X§ = param3;
+         if(param2 != null)
          {
-            super();
-            loop0:
-            while(true)
-            {
-               this.§1#§ = param1;
-               while(true)
-               {
-                  this.§<!X§ = param3;
-                  loop2:
-                  while(_loc5_ || this)
-                  {
-                     while(param2 != null)
-                     {
-                        if(!(_loc4_ && param3))
-                        {
-                           if(!_loc4_)
-                           {
-                              §[g§.log("[ServerCommand] Callback in constructor is not null. Adding to command callbacks.");
-                              continue loop0;
-                           }
-                           continue loop2;
-                        }
-                        continue loop0;
-                     }
-                     return;
-                  }
-               }
-            }
+            §[g§.log("[ServerCommand] Callback in constructor is not null. Adding to command callbacks.");
+            this.addCallback(param2);
          }
-         §§goto(addr86);
       }
       
       public function §>3§() : String
@@ -57,12 +31,7 @@ package §4!C§
       
       public function §]Q§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            this.§<!X§ = param1;
-         }
+         this.§<!X§ = param1;
       }
       
       public function §>%§() : Boolean
@@ -72,65 +41,22 @@ package §4!C§
       
       public function addCallback(param1:Function) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
+         if(this.§]O§ == null)
          {
-            if(this.§]O§ == null)
-            {
-               addr76:
-               while(true)
-               {
-                  this.§]O§ = new Vector.<Function>();
-                  addr82:
-                  while(true)
-                  {
-                  }
-               }
-               addr76:
-            }
-            while(this.§]O§.indexOf(param1) == -1)
-            {
-               if(!(_loc2_ && param1))
-               {
-                  if(!_loc3_)
-                  {
-                     §§goto(addr82);
-                     continue;
-                  }
-                  if(_loc3_ || _loc3_)
-                  {
-                     this.§]O§.push(param1);
-                  }
-                  else
-                  {
-                     §§goto(addr76);
-                  }
-               }
-               break;
-            }
-            return;
+            this.§]O§ = new Vector.<Function>();
          }
-         §§goto(addr76);
+         if(this.§]O§.indexOf(param1) == -1)
+         {
+            this.§]O§.push(param1);
+         }
       }
       
       public function §^!D§(param1:Function) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || _loc2_)
+         if(this.§]O§.indexOf(param1) > -1)
          {
-            if(this.§]O§.indexOf(param1) > -1)
-            {
-               if(_loc2_)
-               {
-                  addr41:
-                  this.§]O§.splice(this.§]O§.indexOf(param1),1);
-               }
-            }
-            return;
+            this.§]O§.splice(this.§]O§.indexOf(param1),1);
          }
-         §§goto(addr41);
       }
       
       public function §]9§() : Vector.<Function>

@@ -20,12 +20,7 @@ package §_-4§
       
       public function §_-nq§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc1_))
-         {
-            super();
-         }
+         super();
       }
    }
 }

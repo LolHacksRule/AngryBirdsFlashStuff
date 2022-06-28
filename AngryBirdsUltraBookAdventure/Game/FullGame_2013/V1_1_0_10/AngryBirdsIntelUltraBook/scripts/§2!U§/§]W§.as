@@ -12,312 +12,80 @@ package §2!U§
       
       public static const §>!Q§:Boolean = false;
       
-      public static var §77§:int;
-      
       public static const §#O§:int = 0;
+      
+      public static var §77§:int = §#O§;
       
       public static const LOAD_STATE_STEP_1:int = 1;
       
       public static const LOAD_STATE_STEP_2:int = 2;
       
       public static var §>a§:Number = -1;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc1_)
-         {
-            §>!Q§ = false;
-            while(true)
-            {
-               §77§ = §#O§;
-               while(true)
-               {
-                  §#O§ = 0;
-                  §§goto(addr98);
-               }
-            }
-         }
-         addr98:
-         while(true)
-         {
-            LOAD_STATE_STEP_1 = 1;
-            do
-            {
-               LOAD_STATE_STEP_2 = 2;
-               do
-               {
-                  §>a§ = -1;
-               }
-               while(_loc1_ && _loc2_);
-               
-            }
-            while(!(_loc2_ || _loc2_));
-            
-            if(!(_loc1_ && §]W§))
-            {
-               if(_loc2_ || _loc2_)
-               {
-                  if(!_loc1_)
-                  {
-                     break;
-                  }
-                  continue loop0;
-               }
-               continue loop1;
-            }
-         }
-      }
+       
       
       private var §-!H§:Number = 0;
       
       public function §]W§(param1:Boolean, param2:String)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!(_loc3_ && param2))
-         {
-            super(param1,param2);
-         }
+         super(param1,param2);
       }
       
       override public function init() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc1_))
-         {
-            super.init();
-            do
-            {
-               this.§!q§();
-            }
-            while(!_loc2_);
-            
-         }
+         super.init();
+         this.§!q§();
       }
       
       protected function §!q§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            this.§'!Q§ = new §&!G§(this);
-            do
-            {
-               §'!Q§.init(§2!z§.§ _§.Views.View_LevelLoad[0]);
-            }
-            while(!(_loc1_ || this));
-            
-         }
+         this.§'!Q§ = new §&!G§(this);
+         §'!Q§.init(§2!z§.§ _§.Views.View_LevelLoad[0]);
       }
       
       override public function activate() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            super.activate();
-         }
-         while(true)
-         {
-            §77§ = LOAD_STATE_STEP_1;
-            while(_loc2_ || this)
-            {
-               this.§6b§();
-               if(_loc2_ || _loc2_)
-               {
-                  return;
-               }
-            }
-         }
+         super.activate();
+         §77§ = LOAD_STATE_STEP_1;
+         this.§6b§();
       }
       
       protected function §6b§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
+         if(LevelManager.§"L§ != null && §'!Q§)
          {
-            §§push(LevelManager.§"L§ == null);
-            loop0:
-            while(true)
-            {
-               §§push(!§§pop());
-               if(!(_loc2_ && _loc1_))
-               {
-                  if(!§§pop())
-                  {
-                     loop1:
-                     while(§§pop())
-                     {
-                        if(!(_loc2_ && _loc1_))
-                        {
-                           if(_loc1_)
-                           {
-                              §'!Q§.setText("LOADING " + LevelManager.§"L§.replace("-"," - "),"TextField_LevelLoading");
-                           }
-                           else
-                           {
-                              loop3:
-                              while(true)
-                              {
-                                 §§push(Boolean(§'!Q§));
-                                 if(_loc1_ || _loc2_)
-                                 {
-                                    continue loop0;
-                                    continue loop1;
-                                 }
-                                 addr96:
-                                 while(true)
-                                 {
-                                    §§pop();
-                                    continue loop3;
-                                 }
-                              }
-                              addr97:
-                           }
-                        }
-                        break;
-                     }
-                     return;
-                     addr50:
-                  }
-               }
-               §§goto(addr96);
-            }
+            §'!Q§.setText("LOADING " + LevelManager.§"L§.replace("-"," - "),"TextField_LevelLoading");
          }
-         §§goto(addr97);
       }
       
       override public function run(param1:Number) : int
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         §§push(super.run(param1));
-         if(!_loc3_)
+         var _loc2_:int = super.run(param1);
+         if(_loc2_ != §9![§.STATE_STATUS_RUNNING)
          {
-            §§push(int(§§pop()));
+            return _loc2_;
          }
-         var _loc2_:* = §§pop();
-         if(!_loc3_)
+         if(§77§ == LOAD_STATE_STEP_1)
          {
-            §§push(_loc2_);
-            loop0:
-            while(true)
+            §,!s§.§=!I§.clearLevel();
+            this.initLevelLoad();
+            §77§ = LOAD_STATE_STEP_2;
+         }
+         else if(§77§ == LOAD_STATE_STEP_2)
+         {
+            if(this.isReady())
             {
-               if(§§pop() == §9![§.STATE_STATUS_RUNNING)
-               {
-                  loop1:
-                  while(true)
-                  {
-                     §§push(§77§);
-                     loop2:
-                     while(true)
-                     {
-                        §§push(LOAD_STATE_STEP_1);
-                        addr174:
-                        while(§§pop() != §§pop())
-                        {
-                           §§push(§77§);
-                           if(_loc4_)
-                           {
-                              if(_loc3_ && _loc2_)
-                              {
-                                 break loop1;
-                              }
-                              continue loop0;
-                           }
-                           continue loop2;
-                        }
-                        loop12:
-                        while(true)
-                        {
-                           §,!s§.§=!I§.clearLevel();
-                           addr178:
-                           while(true)
-                           {
-                              this.initLevelLoad();
-                              addr170:
-                              while(true)
-                              {
-                                 §77§ = LOAD_STATE_STEP_2;
-                                 loop8:
-                                 while(true)
-                                 {
-                                    if(_loc4_ || _loc2_)
-                                    {
-                                       while(true)
-                                       {
-                                          addr33:
-                                          loop11:
-                                          while(mNextState.length > 0)
-                                          {
-                                             if(_loc4_ || this)
-                                             {
-                                                return §9![§.STATE_STATUS_COMPLETED;
-                                             }
-                                             if(!_loc3_)
-                                             {
-                                                break;
-                                             }
-                                             addr70:
-                                             addr185:
-                                             while(true)
-                                             {
-                                                if(!(_loc3_ && param1))
-                                                {
-                                                   if(_loc4_)
-                                                   {
-                                                      if(_loc3_)
-                                                      {
-                                                         §§push(_loc2_);
-                                                         break loop1;
-                                                      }
-                                                      addr183:
-                                                      continue loop11;
-                                                   }
-                                                   addr128:
-                                                   while(true)
-                                                   {
-                                                      this.onLevelLoadReady();
-                                                   }
-                                                }
-                                                while(true)
-                                                {
-                                                   if(_loc4_ || this)
-                                                   {
-                                                      if(_loc4_ || _loc3_)
-                                                      {
-                                                         continue loop11;
-                                                      }
-                                                      continue loop12;
-                                                   }
-                                                   continue loop8;
-                                                }
-                                             }
-                                             continue loop1;
-                                          }
-                                          return §9![§.STATE_STATUS_RUNNING;
-                                       }
-                                       addr166:
-                                    }
-                                    §§goto(addr185);
-                                 }
-                              }
-                              continue loop12;
-                           }
-                        }
-                     }
-                  }
-                  return §§pop();
-               }
-               §§goto(addr183);
+               this.onLevelLoadReady();
+            }
+            else if(this.hasError())
+            {
+               this.onLevelLoadError();
             }
          }
-         §§goto(addr166);
+         if(mNextState.length > 0)
+         {
+            return §9![§.STATE_STATUS_COMPLETED;
+         }
+         return §9![§.STATE_STATUS_RUNNING;
       }
       
       protected function initLevelLoad() : void
@@ -344,12 +112,7 @@ package §2!U§
       
       protected function initLevelMain(param1:§"!'§) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            §,!s§.§`!O§(param1);
-         }
+         §,!s§.§`!O§(param1);
       }
    }
 }

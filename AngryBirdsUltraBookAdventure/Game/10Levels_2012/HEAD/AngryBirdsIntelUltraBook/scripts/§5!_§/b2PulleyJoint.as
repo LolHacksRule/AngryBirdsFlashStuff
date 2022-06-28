@@ -13,16 +13,8 @@ package §5!_§
    public class b2PulleyJoint extends b2Joint
    {
       
-      b2internal static const §7!C§:Number = 2.0;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            §7!C§ = 2;
-         }
-      }
+      b2internal static const §7!C§:Number = 2;
+       
       
       private var §[!"§:b2Body;
       
@@ -66,214 +58,29 @@ package §5!_§
       
       public function b2PulleyJoint(param1:b2PulleyJointDef)
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         var _loc2_:b2Mat22 = null;
          var _loc3_:Number = NaN;
          var _loc4_:Number = NaN;
-         if(_loc5_ || this)
-         {
-            this.m_groundAnchor1 = new b2Vec2();
-            while(true)
-            {
-               this.m_groundAnchor2 = new b2Vec2();
-               while(true)
-               {
-                  this.m_localAnchor1 = new b2Vec2();
-                  while(_loc5_ || _loc2_)
-                  {
-                     this.m_localAnchor2 = new b2Vec2();
-                     while(true)
-                     {
-                        this.m_u1 = new b2Vec2();
-                        loop4:
-                        while(true)
-                        {
-                           this.m_u2 = new b2Vec2();
-                           addr390:
-                           while(true)
-                           {
-                              super(param1);
-                              addr384:
-                              loop6:
-                              while(true)
-                              {
-                                 this.§[!"§ = §,^§.m_world.m_groundBody;
-                                 while(true)
-                                 {
-                                    §§push(this.m_groundAnchor1);
-                                    while(true)
-                                    {
-                                       §§push(param1.§7v§);
-                                       addr354:
-                                       addr371:
-                                       while(true)
-                                       {
-                                          §§push(§§pop().x);
-                                          addr355:
-                                          while(true)
-                                          {
-                                             §§push(this.§[!"§);
-                                             addr357:
-                                             while(true)
-                                             {
-                                                §§push(§§pop().m_xf);
-                                                addr358:
-                                                while(true)
-                                                {
-                                                   §§push(§§pop().position);
-                                                   addr359:
-                                                   while(true)
-                                                   {
-                                                      §§push(§§pop().x);
-                                                      addr360:
-                                                      while(true)
-                                                      {
-                                                         §§push(§§pop() - §§pop());
-                                                         addr361:
-                                                         while(true)
-                                                         {
-                                                            §§pop().x = §§pop();
-                                                            continue loop6;
-                                                         }
-                                                      }
-                                                   }
-                                                }
-                                             }
-                                          }
-                                       }
-                                       §§push(this.m_groundAnchor1);
-                                       if(!(_loc5_ || param1))
-                                       {
-                                          continue;
-                                       }
-                                       §§push(param1.§7v§);
-                                       if(_loc5_)
-                                       {
-                                          §§push(§§pop().y);
-                                          if(!(_loc6_ && this))
-                                          {
-                                             if(_loc5_)
-                                             {
-                                                §§push(this.§[!"§);
-                                                if(_loc5_)
-                                                {
-                                                   §§push(§§pop().m_xf);
-                                                   if(!_loc6_)
-                                                   {
-                                                      §§push(§§pop().position);
-                                                      if(!(_loc6_ && _loc2_))
-                                                      {
-                                                         §§push(§§pop().y);
-                                                         if(_loc5_ || _loc3_)
-                                                         {
-                                                            addr333:
-                                                            §§push(§§pop() - §§pop());
-                                                            if(!(_loc6_ && this))
-                                                            {
-                                                               §§pop().y = §§pop();
-                                                               while(_loc5_ || this)
-                                                               {
-                                                                  §§push(this.m_groundAnchor2);
-                                                                  loop18:
-                                                                  while(true)
-                                                                  {
-                                                                     §§push(param1.§5!F§);
-                                                                     addr276:
-                                                                     while(true)
-                                                                     {
-                                                                        §§push(§§pop().x);
-                                                                        addr277:
-                                                                        while(true)
-                                                                        {
-                                                                           §§push(this.§[!"§);
-                                                                           addr279:
-                                                                           while(true)
-                                                                           {
-                                                                              §§push(§§pop().m_xf);
-                                                                              addr280:
-                                                                              while(true)
-                                                                              {
-                                                                                 §§push(§§pop().position);
-                                                                                 addr281:
-                                                                                 while(true)
-                                                                                 {
-                                                                                    §§push(§§pop().x);
-                                                                                    addr282:
-                                                                                    while(true)
-                                                                                    {
-                                                                                       §§push(§§pop() - §§pop());
-                                                                                       addr283:
-                                                                                       while(true)
-                                                                                       {
-                                                                                          §§pop().x = §§pop();
-                                                                                          continue loop18;
-                                                                                       }
-                                                                                    }
-                                                                                 }
-                                                                              }
-                                                                           }
-                                                                        }
-                                                                     }
-                                                                  }
-                                                               }
-                                                               continue loop6;
-                                                            }
-                                                         }
-                                                         else
-                                                         {
-                                                            §§goto(addr360);
-                                                         }
-                                                         §§goto(addr361);
-                                                      }
-                                                      else
-                                                      {
-                                                         §§goto(addr359);
-                                                      }
-                                                   }
-                                                   else
-                                                   {
-                                                      §§goto(addr358);
-                                                   }
-                                                   §§goto(addr359);
-                                                }
-                                                else
-                                                {
-                                                   §§goto(addr357);
-                                                }
-                                             }
-                                             else
-                                             {
-                                                §§goto(addr355);
-                                             }
-                                             §§goto(addr357);
-                                          }
-                                          §§goto(addr333);
-                                       }
-                                       else
-                                       {
-                                          §§goto(addr354);
-                                       }
-                                    }
-                                    addr144:
-                                    while(!(_loc6_ && _loc3_))
-                                    {
-                                       continue loop4;
-                                    }
-                                 }
-                              }
-                           }
-                        }
-                     }
-                     if(!(_loc6_ && this))
-                     {
-                        return;
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr270);
+         this.m_groundAnchor1 = new b2Vec2();
+         this.m_groundAnchor2 = new b2Vec2();
+         this.m_localAnchor1 = new b2Vec2();
+         this.m_localAnchor2 = new b2Vec2();
+         this.m_u1 = new b2Vec2();
+         this.m_u2 = new b2Vec2();
+         super(param1);
+         this.§[!"§ = §,^§.m_world.m_groundBody;
+         this.m_groundAnchor1.x = param1.§7v§.x - this.§[!"§.m_xf.position.x;
+         this.m_groundAnchor1.y = param1.§7v§.y - this.§[!"§.m_xf.position.y;
+         this.m_groundAnchor2.x = param1.§5!F§.x - this.§[!"§.m_xf.position.x;
+         this.m_groundAnchor2.y = param1.§5!F§.y - this.§[!"§.m_xf.position.y;
+         this.m_localAnchor1.SetV(param1.§'!<§);
+         this.m_localAnchor2.SetV(param1.§1!0§);
+         this.§[f§ = param1.§"b§;
+         this.§>i§ = param1.§]!g§ + this.§[f§ * param1.§?u§;
+         this.m_maxLength1 = b2Math.§3G§(param1.§1$§,this.§>i§ - this.§[f§ * §7!C§);
+         this.m_maxLength2 = b2Math.§3G§(param1.§>§,(this.§>i§ - §7!C§) / this.§[f§);
+         this.§>!C§ = 0;
+         this.m_limitImpulse1 = 0;
+         this.m_limitImpulse2 = 0;
       }
       
       override public function GetAnchorA() : b2Vec2
@@ -288,50 +95,7 @@ package §5!_§
       
       override public function GetReactionForce(param1:Number) : b2Vec2
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         §§push(§§findproperty(b2Vec2));
-         §§push(param1);
-         if(_loc2_ || param1)
-         {
-            §§push(this.§>!C§);
-            if(!_loc3_)
-            {
-               §§push(§§pop() * §§pop());
-               if(!(_loc3_ && param1))
-               {
-                  addr47:
-                  §§push(this.m_u2.x);
-                  if(_loc2_)
-                  {
-                     §§goto(addr53);
-                  }
-                  §§goto(addr71);
-               }
-               §§goto(addr53);
-            }
-            addr53:
-            §§push(§§pop() * §§pop());
-            §§push(param1);
-            if(!(_loc3_ && param1))
-            {
-               addr71:
-               §§push(this.§>!C§);
-               if(!(_loc3_ && this))
-               {
-                  §§goto(addr92);
-               }
-               §§push(§§pop() * §§pop());
-            }
-            addr92:
-            §§push(§§pop() * §§pop());
-            if(_loc2_ || _loc2_)
-            {
-               §§push(this.m_u2.y);
-            }
-            return new §§pop().b2Vec2(§§pop(),§§pop());
-         }
-         §§goto(addr47);
+         return new b2Vec2(param1 * this.§>!C§ * this.m_u2.x,param1 * this.§>!C§ * this.m_u2.y);
       }
       
       override public function GetReactionTorque(param1:Number) : Number
@@ -341,132 +105,36 @@ package §5!_§
       
       public function §&!&§() : b2Vec2
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
          var _loc1_:b2Vec2 = this.§[!"§.m_xf.position.Copy();
-         if(!_loc3_)
-         {
-            _loc1_.§1"§(this.m_groundAnchor1);
-         }
+         _loc1_.§1"§(this.m_groundAnchor1);
          return _loc1_;
       }
       
       public function §2G§() : b2Vec2
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
          var _loc1_:b2Vec2 = this.§[!"§.m_xf.position.Copy();
-         if(!_loc3_)
-         {
-            _loc1_.§1"§(this.m_groundAnchor2);
-         }
+         _loc1_.§1"§(this.m_groundAnchor2);
          return _loc1_;
       }
       
       public function GetLength1() : Number
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
          var _loc1_:b2Vec2 = §,^§.GetWorldPoint(this.m_localAnchor1);
-         §§push(this.§[!"§.m_xf.position.x);
-         if(_loc6_ || _loc1_)
-         {
-            §§push(§§pop() + this.m_groundAnchor1.x);
-            if(!_loc7_)
-            {
-               addr41:
-               §§push(Number(§§pop()));
-            }
-            var _loc2_:* = §§pop();
-            §§push(this.§[!"§.m_xf.position.y);
-            if(!(_loc7_ && _loc1_))
-            {
-               §§push(§§pop() + this.m_groundAnchor1.y);
-               if(!(_loc7_ && this))
-               {
-                  §§push(Number(§§pop()));
-               }
-            }
-            var _loc3_:* = §§pop();
-            §§push(_loc1_.x);
-            if(_loc6_ || _loc1_)
-            {
-               §§push(§§pop() - _loc2_);
-               if(_loc6_)
-               {
-                  addr101:
-                  §§push(Number(§§pop()));
-               }
-               var _loc4_:* = §§pop();
-               §§push(_loc1_.y);
-               if(!_loc7_)
-               {
-                  §§push(§§pop() - _loc3_);
-                  if(!(_loc7_ && _loc2_))
-                  {
-                     §§push(Number(§§pop()));
-                  }
-               }
-               var _loc5_:* = §§pop();
-               return Math.sqrt(_loc4_ * _loc4_ + _loc5_ * _loc5_);
-            }
-            §§goto(addr101);
-         }
-         §§goto(addr41);
+         var _loc2_:Number = this.§[!"§.m_xf.position.x + this.m_groundAnchor1.x;
+         var _loc3_:Number = this.§[!"§.m_xf.position.y + this.m_groundAnchor1.y;
+         var _loc4_:Number = _loc1_.x - _loc2_;
+         var _loc5_:Number = _loc1_.y - _loc3_;
+         return Math.sqrt(_loc4_ * _loc4_ + _loc5_ * _loc5_);
       }
       
       public function GetLength2() : Number
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
          var _loc1_:b2Vec2 = § X§.GetWorldPoint(this.m_localAnchor2);
-         §§push(this.§[!"§.m_xf.position.x);
-         if(!(_loc7_ && _loc3_))
-         {
-            §§push(§§pop() + this.m_groundAnchor2.x);
-            if(_loc6_ || _loc1_)
-            {
-               addr46:
-               §§push(Number(§§pop()));
-            }
-            var _loc2_:* = §§pop();
-            §§push(this.§[!"§.m_xf.position.y);
-            if(_loc6_ || _loc3_)
-            {
-               §§push(§§pop() + this.m_groundAnchor2.y);
-               if(_loc6_ || _loc2_)
-               {
-                  addr81:
-                  §§push(Number(§§pop()));
-               }
-               var _loc3_:* = §§pop();
-               §§push(_loc1_.x);
-               if(!(_loc7_ && this))
-               {
-                  §§push(§§pop() - _loc2_);
-                  if(_loc6_)
-                  {
-                     addr106:
-                     §§push(Number(§§pop()));
-                  }
-                  var _loc4_:* = §§pop();
-                  §§push(_loc1_.y);
-                  if(_loc6_)
-                  {
-                     §§push(§§pop() - _loc3_);
-                     if(_loc6_ || _loc3_)
-                     {
-                        §§push(Number(§§pop()));
-                     }
-                  }
-                  var _loc5_:* = §§pop();
-                  return Math.sqrt(_loc4_ * _loc4_ + _loc5_ * _loc5_);
-               }
-               §§goto(addr106);
-            }
-            §§goto(addr81);
-         }
-         §§goto(addr46);
+         var _loc2_:Number = this.§[!"§.m_xf.position.x + this.m_groundAnchor2.x;
+         var _loc3_:Number = this.§[!"§.m_xf.position.y + this.m_groundAnchor2.y;
+         var _loc4_:Number = _loc1_.x - _loc2_;
+         var _loc5_:Number = _loc1_.y - _loc3_;
+         return Math.sqrt(_loc4_ * _loc4_ + _loc5_ * _loc5_);
       }
       
       public function §,!3§() : Number
@@ -476,12 +144,10 @@ package §5!_§
       
       override b2internal function InitVelocityConstraints(param1:b2TimeStep) : void
       {
-         var _loc27_:Boolean = false;
-         var _loc28_:Boolean = true;
          var _loc2_:b2Body = null;
          var _loc3_:b2Body = null;
          var _loc4_:b2Mat22 = null;
-         var _loc6_:* = NaN;
+         var _loc6_:Number = NaN;
          var _loc23_:Number = NaN;
          var _loc24_:Number = NaN;
          var _loc25_:Number = NaN;
@@ -489,300 +155,107 @@ package §5!_§
          _loc2_ = §,^§;
          _loc3_ = § X§;
          _loc4_ = _loc2_.m_xf.R;
-         §§push(this.m_localAnchor1.x);
-         if(_loc28_ || this)
+         var _loc5_:Number = this.m_localAnchor1.x - _loc2_.m_sweep.localCenter.x;
+         _loc6_ = this.m_localAnchor1.y - _loc2_.m_sweep.localCenter.y;
+         var _loc7_:Number = _loc4_.col1.x * _loc5_ + _loc4_.col2.x * _loc6_;
+         _loc6_ = _loc4_.col1.y * _loc5_ + _loc4_.col2.y * _loc6_;
+         _loc5_ = _loc7_;
+         _loc4_ = _loc3_.m_xf.R;
+         var _loc8_:Number = this.m_localAnchor2.x - _loc3_.m_sweep.localCenter.x;
+         var _loc9_:Number = this.m_localAnchor2.y - _loc3_.m_sweep.localCenter.y;
+         _loc7_ = _loc4_.col1.x * _loc8_ + _loc4_.col2.x * _loc9_;
+         _loc9_ = _loc4_.col1.y * _loc8_ + _loc4_.col2.y * _loc9_;
+         _loc8_ = _loc7_;
+         var _loc10_:Number = _loc2_.m_sweep.c.x + _loc5_;
+         var _loc11_:Number = _loc2_.m_sweep.c.y + _loc6_;
+         var _loc12_:Number = _loc3_.m_sweep.c.x + _loc8_;
+         var _loc13_:Number = _loc3_.m_sweep.c.y + _loc9_;
+         var _loc14_:Number = this.§[!"§.m_xf.position.x + this.m_groundAnchor1.x;
+         var _loc15_:Number = this.§[!"§.m_xf.position.y + this.m_groundAnchor1.y;
+         var _loc16_:Number = this.§[!"§.m_xf.position.x + this.m_groundAnchor2.x;
+         var _loc17_:Number = this.§[!"§.m_xf.position.y + this.m_groundAnchor2.y;
+         this.m_u1.Set(_loc10_ - _loc14_,_loc11_ - _loc15_);
+         this.m_u2.Set(_loc12_ - _loc16_,_loc13_ - _loc17_);
+         var _loc18_:Number = this.m_u1.§2o§();
+         var _loc19_:Number = this.m_u2.§2o§();
+         if(_loc18_ > b2Settings.b2_linearSlop)
          {
-            §§push(§§pop() - _loc2_.m_sweep.localCenter.x);
-            if(_loc28_ || this)
-            {
-               §§push(Number(§§pop()));
-            }
+            this.m_u1.§49§(1 / _loc18_);
          }
-         var _loc5_:* = §§pop();
-         if(_loc28_)
+         else
          {
-            §§push(this.m_localAnchor1.y);
-            if(_loc28_)
-            {
-               §§push(_loc2_.m_sweep.localCenter.y);
-               if(_loc28_)
-               {
-                  §§push(§§pop() - §§pop());
-                  if(!(_loc27_ && _loc3_))
-                  {
-                     §§push(Number(§§pop()));
-                     if(!_loc27_)
-                     {
-                        addr97:
-                        _loc6_ = §§pop();
-                        §§push(_loc4_.col1.x);
-                        if(!_loc27_)
-                        {
-                           §§push(_loc5_);
-                           if(_loc28_)
-                           {
-                              §§push(§§pop() * §§pop());
-                              if(_loc28_)
-                              {
-                                 §§push(_loc4_.col2.x);
-                                 if(_loc28_ || param1)
-                                 {
-                                    addr119:
-                                    §§push(§§pop() * _loc6_);
-                                 }
-                                 §§push(§§pop() + §§pop());
-                                 if(_loc27_ && _loc2_)
-                                 {
-                                 }
-                                 addr130:
-                                 var _loc7_:* = §§pop();
-                                 if(!_loc27_)
-                                 {
-                                    §§push(_loc4_.col1.y);
-                                    if(!_loc27_)
-                                    {
-                                       §§push(_loc5_);
-                                       if(!_loc27_)
-                                       {
-                                          §§push(§§pop() * §§pop());
-                                          if(!(_loc27_ && this))
-                                          {
-                                             addr149:
-                                             §§push(_loc4_.col2.y);
-                                             if(!_loc27_)
-                                             {
-                                                addr156:
-                                                §§push(§§pop() + §§pop() * _loc6_);
-                                                if(_loc28_ || param1)
-                                                {
-                                                   §§push(Number(§§pop()));
-                                                   if(_loc28_ || this)
-                                                   {
-                                                      _loc6_ = §§pop();
-                                                      if(!_loc27_)
-                                                      {
-                                                         addr175:
-                                                         §§push(_loc7_);
-                                                         if(!(_loc27_ && param1))
-                                                         {
-                                                            addr184:
-                                                            _loc5_ = Number(§§pop());
-                                                         }
-                                                         §§goto(addr184);
-                                                      }
-                                                      _loc4_ = _loc3_.m_xf.R;
-                                                      §§push(this.m_localAnchor2.x);
-                                                      if(_loc28_ || this)
-                                                      {
-                                                         §§push(§§pop() - _loc3_.m_sweep.localCenter.x);
-                                                         if(_loc28_)
-                                                         {
-                                                            addr207:
-                                                            §§push(Number(§§pop()));
-                                                         }
-                                                         var _loc8_:* = §§pop();
-                                                         §§push(this.m_localAnchor2.y);
-                                                         if(!(_loc27_ && param1))
-                                                         {
-                                                            §§push(§§pop() - _loc3_.m_sweep.localCenter.y);
-                                                            if(_loc28_)
-                                                            {
-                                                               §§push(Number(§§pop()));
-                                                            }
-                                                         }
-                                                         var _loc9_:* = §§pop();
-                                                         if(_loc28_ || this)
-                                                         {
-                                                            §§push(_loc4_.col1);
-                                                            loop0:
-                                                            while(true)
-                                                            {
-                                                               §§push(§§pop().x);
-                                                               if(_loc28_)
-                                                               {
-                                                                  §§push(_loc8_);
-                                                                  loop1:
-                                                                  while(true)
-                                                                  {
-                                                                     §§push(§§pop() * §§pop());
-                                                                     loop2:
-                                                                     while(true)
-                                                                     {
-                                                                        §§push(_loc4_.col2);
-                                                                        loop3:
-                                                                        while(true)
-                                                                        {
-                                                                           §§push(§§pop().x);
-                                                                           loop4:
-                                                                           while(true)
-                                                                           {
-                                                                              §§push(_loc9_);
-                                                                              loop5:
-                                                                              while(true)
-                                                                              {
-                                                                                 §§push(§§pop() * §§pop());
-                                                                                 loop6:
-                                                                                 while(true)
-                                                                                 {
-                                                                                    §§push(§§pop() + §§pop());
-                                                                                    if(!_loc27_)
-                                                                                    {
-                                                                                       §§push(Number(§§pop()));
-                                                                                       if(_loc28_ || _loc3_)
-                                                                                       {
-                                                                                          _loc7_ = §§pop();
-                                                                                          loop7:
-                                                                                          while(true)
-                                                                                          {
-                                                                                             addr267:
-                                                                                             while(true)
-                                                                                             {
-                                                                                                §§push(_loc4_.col1);
-                                                                                                if(_loc27_)
-                                                                                                {
-                                                                                                   continue loop0;
-                                                                                                }
-                                                                                                §§push(§§pop().y);
-                                                                                                if(!(_loc27_ && this))
-                                                                                                {
-                                                                                                   if(_loc28_ || this)
-                                                                                                   {
-                                                                                                      §§push(_loc8_);
-                                                                                                      if(!(_loc27_ && _loc2_))
-                                                                                                      {
-                                                                                                         §§push(§§pop() * §§pop());
-                                                                                                         if(_loc28_)
-                                                                                                         {
-                                                                                                            addr298:
-                                                                                                            §§push(_loc4_.col2);
-                                                                                                            if(!(_loc27_ && this))
-                                                                                                            {
-                                                                                                               §§push(§§pop().y);
-                                                                                                               if(!_loc28_)
-                                                                                                               {
-                                                                                                                  break;
-                                                                                                               }
-                                                                                                               if(_loc28_ || param1)
-                                                                                                               {
-                                                                                                                  §§push(_loc9_);
-                                                                                                                  if(!_loc27_)
-                                                                                                                  {
-                                                                                                                     §§push(§§pop() * §§pop());
-                                                                                                                     if(_loc27_ && _loc3_)
-                                                                                                                     {
-                                                                                                                        break;
-                                                                                                                     }
-                                                                                                                     if(!_loc27_)
-                                                                                                                     {
-                                                                                                                        if(_loc28_)
-                                                                                                                        {
-                                                                                                                           §§push(§§pop() + §§pop());
-                                                                                                                           loop9:
-                                                                                                                           while(true)
-                                                                                                                           {
-                                                                                                                              §§push(Number(§§pop()));
-                                                                                                                              if(!(_loc28_ || param1))
-                                                                                                                              {
-                                                                                                                                 break;
-                                                                                                                              }
-                                                                                                                              _loc9_ = §§pop();
-                                                                                                                              while(true)
-                                                                                                                              {
-                                                                                                                                 §§push(_loc7_);
-                                                                                                                                 if(_loc28_)
-                                                                                                                                 {
-                                                                                                                                    continue loop9;
-                                                                                                                                 }
-                                                                                                                                 addr250:
-                                                                                                                                 _loc8_ = §§pop();
-                                                                                                                                 if(!(_loc27_ && param1))
-                                                                                                                                 {
-                                                                                                                                    continue loop7;
-                                                                                                                                 }
-                                                                                                                              }
-                                                                                                                           }
-                                                                                                                           addr374:
-                                                                                                                           §§push(_loc5_);
-                                                                                                                           break;
-                                                                                                                        }
-                                                                                                                        continue loop1;
-                                                                                                                     }
-                                                                                                                     continue loop4;
-                                                                                                                  }
-                                                                                                                  continue loop5;
-                                                                                                               }
-                                                                                                               continue loop6;
-                                                                                                            }
-                                                                                                            continue loop3;
-                                                                                                         }
-                                                                                                         §§goto(addr379);
-                                                                                                      }
-                                                                                                      break;
-                                                                                                   }
-                                                                                                   continue loop2;
-                                                                                                }
-                                                                                                §§goto(addr298);
-                                                                                             }
-                                                                                             §§push(§§pop() + §§pop());
-                                                                                             if(!_loc27_)
-                                                                                             {
-                                                                                                §§goto(addr379);
-                                                                                                §§push(Number(§§pop()));
-                                                                                             }
-                                                                                             §§goto(addr379);
-                                                                                          }
-                                                                                       }
-                                                                                       §§goto(addr379);
-                                                                                    }
-                                                                                    §§goto(addr374);
-                                                                                 }
-                                                                              }
-                                                                           }
-                                                                        }
-                                                                     }
-                                                                  }
-                                                               }
-                                                               §§goto(addr379);
-                                                            }
-                                                         }
-                                                         §§goto(addr342);
-                                                      }
-                                                      §§goto(addr207);
-                                                   }
-                                                   §§goto(addr184);
-                                                }
-                                             }
-                                             §§goto(addr156);
-                                          }
-                                          §§goto(addr184);
-                                       }
-                                       §§goto(addr156);
-                                    }
-                                    §§goto(addr149);
-                                 }
-                                 §§goto(addr175);
-                              }
-                              §§goto(addr130);
-                           }
-                           §§goto(addr119);
-                        }
-                     }
-                     §§goto(addr130);
-                     §§push(Number(§§pop()));
-                  }
-                  §§goto(addr97);
-               }
-               §§goto(addr119);
-            }
-            §§goto(addr130);
+            this.m_u1.§@l§();
          }
-         §§goto(addr97);
+         if(_loc19_ > b2Settings.b2_linearSlop)
+         {
+            this.m_u2.§49§(1 / _loc19_);
+         }
+         else
+         {
+            this.m_u2.§@l§();
+         }
+         var _loc20_:Number = this.§>i§ - _loc18_ - this.§[f§ * _loc19_;
+         if(_loc20_ > 0)
+         {
+            this.§#@§ = §1P§;
+            this.§>!C§ = 0;
+         }
+         else
+         {
+            this.§#@§ = §5'§;
+         }
+         if(_loc18_ < this.m_maxLength1)
+         {
+            this.m_limitState1 = §1P§;
+            this.m_limitImpulse1 = 0;
+         }
+         else
+         {
+            this.m_limitState1 = §5'§;
+         }
+         if(_loc19_ < this.m_maxLength2)
+         {
+            this.m_limitState2 = §1P§;
+            this.m_limitImpulse2 = 0;
+         }
+         else
+         {
+            this.m_limitState2 = §5'§;
+         }
+         var _loc21_:Number = _loc5_ * this.m_u1.y - _loc6_ * this.m_u1.x;
+         var _loc22_:Number = _loc8_ * this.m_u2.y - _loc9_ * this.m_u2.x;
+         this.m_limitMass1 = _loc2_.§4s§ + _loc2_.§[!F§ * _loc21_ * _loc21_;
+         this.m_limitMass2 = _loc3_.§4s§ + _loc3_.§[!F§ * _loc22_ * _loc22_;
+         this.§6!W§ = this.m_limitMass1 + this.§[f§ * this.§[f§ * this.m_limitMass2;
+         this.m_limitMass1 = 1 / this.m_limitMass1;
+         this.m_limitMass2 = 1 / this.m_limitMass2;
+         this.§6!W§ = 1 / this.§6!W§;
+         if(param1.§3!=§)
+         {
+            this.§>!C§ *= param1.§&l§;
+            this.m_limitImpulse1 *= param1.§&l§;
+            this.m_limitImpulse2 *= param1.§&l§;
+            _loc23_ = (-this.§>!C§ - this.m_limitImpulse1) * this.m_u1.x;
+            _loc24_ = (-this.§>!C§ - this.m_limitImpulse1) * this.m_u1.y;
+            _loc25_ = (-this.§[f§ * this.§>!C§ - this.m_limitImpulse2) * this.m_u2.x;
+            _loc26_ = (-this.§[f§ * this.§>!C§ - this.m_limitImpulse2) * this.m_u2.y;
+            _loc2_.§69§.x += _loc2_.§4s§ * _loc23_;
+            _loc2_.§69§.y += _loc2_.§4s§ * _loc24_;
+            _loc2_.m_angularVelocity += _loc2_.§[!F§ * (_loc5_ * _loc24_ - _loc6_ * _loc23_);
+            _loc3_.§69§.x += _loc3_.§4s§ * _loc25_;
+            _loc3_.§69§.y += _loc3_.§4s§ * _loc26_;
+            _loc3_.m_angularVelocity += _loc3_.§[!F§ * (_loc8_ * _loc26_ - _loc9_ * _loc25_);
+         }
+         else
+         {
+            this.§>!C§ = 0;
+            this.m_limitImpulse1 = 0;
+            this.m_limitImpulse2 = 0;
+         }
       }
       
       override b2internal function SolveVelocityConstraints(param1:b2TimeStep) : void
       {
-         var _loc21_:Boolean = true;
-         var _loc22_:Boolean = false;
          var _loc4_:b2Mat22 = null;
          var _loc10_:Number = NaN;
          var _loc11_:Number = NaN;
@@ -798,189 +271,216 @@ package §5!_§
          var _loc2_:b2Body = §,^§;
          var _loc3_:b2Body = § X§;
          _loc4_ = _loc2_.m_xf.R;
-         §§push(this.m_localAnchor1.x);
-         if(_loc21_ || _loc3_)
+         var _loc5_:Number = this.m_localAnchor1.x - _loc2_.m_sweep.localCenter.x;
+         var _loc6_:Number = this.m_localAnchor1.y - _loc2_.m_sweep.localCenter.y;
+         var _loc7_:Number = _loc4_.col1.x * _loc5_ + _loc4_.col2.x * _loc6_;
+         _loc6_ = _loc4_.col1.y * _loc5_ + _loc4_.col2.y * _loc6_;
+         _loc5_ = _loc7_;
+         _loc4_ = _loc3_.m_xf.R;
+         var _loc8_:Number = this.m_localAnchor2.x - _loc3_.m_sweep.localCenter.x;
+         var _loc9_:Number = this.m_localAnchor2.y - _loc3_.m_sweep.localCenter.y;
+         _loc7_ = _loc4_.col1.x * _loc8_ + _loc4_.col2.x * _loc9_;
+         _loc9_ = _loc4_.col1.y * _loc8_ + _loc4_.col2.y * _loc9_;
+         _loc8_ = _loc7_;
+         if(this.§#@§ == §5'§)
          {
-            §§push(§§pop() - _loc2_.m_sweep.localCenter.x);
-            if(_loc21_)
-            {
-               addr71:
-               §§push(Number(§§pop()));
-            }
-            var _loc5_:* = §§pop();
-            §§push(this.m_localAnchor1.y);
-            if(_loc21_ || _loc3_)
-            {
-               §§push(§§pop() - _loc2_.m_sweep.localCenter.y);
-               if(_loc21_ || _loc2_)
-               {
-                  §§push(Number(§§pop()));
-               }
-            }
-            var _loc6_:* = §§pop();
-            §§push(_loc4_.col1.x);
-            if(!_loc22_)
-            {
-               §§push(_loc5_);
-               if(_loc21_)
-               {
-                  §§push(§§pop() * §§pop());
-                  if(!(_loc22_ && param1))
-                  {
-                     addr113:
-                     §§push(_loc4_.col2.x);
-                     if(_loc21_ || _loc3_)
-                     {
-                        addr123:
-                        §§push(§§pop() * _loc6_);
-                     }
-                     §§push(§§pop() + §§pop());
-                     if(_loc21_)
-                     {
-                        §§push(Number(§§pop()));
-                     }
-                  }
-                  var _loc7_:* = §§pop();
-                  if(!(_loc22_ && _loc3_))
-                  {
-                     §§push(_loc4_.col1.y);
-                     if(!_loc22_)
-                     {
-                        §§push(_loc5_);
-                        if(_loc21_ || param1)
-                        {
-                           §§push(§§pop() * §§pop());
-                           if(!(_loc22_ && this))
-                           {
-                              §§push(_loc4_.col2.y);
-                              if(!_loc22_)
-                              {
-                                 addr165:
-                                 §§push(§§pop() + §§pop() * _loc6_);
-                                 if(!_loc21_)
-                                 {
-                                 }
-                                 addr193:
-                                 _loc5_ = §§pop();
-                                 _loc4_ = _loc3_.m_xf.R;
-                                 §§push(this.m_localAnchor2.x);
-                                 if(_loc21_ || _loc2_)
-                                 {
-                                    §§push(§§pop() - _loc3_.m_sweep.localCenter.x);
-                                    if(!(_loc22_ && _loc2_))
-                                    {
-                                       addr221:
-                                       §§push(Number(§§pop()));
-                                    }
-                                    var _loc8_:* = §§pop();
-                                    §§push(this.m_localAnchor2.y);
-                                    if(!(_loc22_ && _loc3_))
-                                    {
-                                       §§push(§§pop() - _loc3_.m_sweep.localCenter.y);
-                                       if(_loc21_ || _loc3_)
-                                       {
-                                          §§push(Number(§§pop()));
-                                       }
-                                    }
-                                    var _loc9_:* = §§pop();
-                                    if(_loc21_)
-                                    {
-                                       §§push(_loc4_.col1);
-                                       loop0:
-                                       while(true)
-                                       {
-                                          §§push(§§pop().x);
-                                          addr2322:
-                                          while(true)
-                                          {
-                                             §§push(_loc8_);
-                                             addr2323:
-                                             while(true)
-                                             {
-                                                §§push(§§pop() * §§pop());
-                                                addr2324:
-                                                while(true)
-                                                {
-                                                   §§push(_loc4_.col2);
-                                                   addr2326:
-                                                   while(true)
-                                                   {
-                                                      §§push(§§pop().x);
-                                                      addr2327:
-                                                      while(true)
-                                                      {
-                                                         §§push(_loc9_);
-                                                         addr2328:
-                                                         while(true)
-                                                         {
-                                                            §§push(§§pop() * §§pop());
-                                                            addr2329:
-                                                            while(true)
-                                                            {
-                                                               §§push(§§pop() + §§pop());
-                                                               addr2330:
-                                                               while(true)
-                                                               {
-                                                                  §§push(Number(§§pop()));
-                                                                  addr2331:
-                                                                  while(true)
-                                                                  {
-                                                                     _loc7_ = §§pop();
-                                                                     continue loop0;
-                                                                  }
-                                                               }
-                                                            }
-                                                         }
-                                                      }
-                                                   }
-                                                }
-                                             }
-                                          }
-                                       }
-                                    }
-                                    §§goto(addr867);
-                                 }
-                                 §§goto(addr221);
-                              }
-                              §§goto(addr165);
-                           }
-                           §§push(Number(§§pop()));
-                           if(!(_loc22_ && this))
-                           {
-                              _loc6_ = §§pop();
-                              if(!(_loc22_ && param1))
-                              {
-                                 addr184:
-                                 §§push(_loc7_);
-                                 if(_loc21_ || _loc3_)
-                                 {
-                                    §§goto(addr193);
-                                    §§push(Number(§§pop()));
-                                 }
-                              }
-                           }
-                        }
-                     }
-                     §§goto(addr165);
-                  }
-                  §§goto(addr184);
-               }
-               §§goto(addr123);
-            }
-            §§goto(addr113);
+            _loc10_ = _loc2_.§69§.x + -_loc2_.m_angularVelocity * _loc6_;
+            _loc11_ = _loc2_.§69§.y + _loc2_.m_angularVelocity * _loc5_;
+            _loc12_ = _loc3_.§69§.x + -_loc3_.m_angularVelocity * _loc9_;
+            _loc13_ = _loc3_.§69§.y + _loc3_.m_angularVelocity * _loc8_;
+            _loc18_ = -(this.m_u1.x * _loc10_ + this.m_u1.y * _loc11_) - this.§[f§ * (this.m_u2.x * _loc12_ + this.m_u2.y * _loc13_);
+            _loc19_ = this.§6!W§ * -_loc18_;
+            _loc20_ = this.§>!C§;
+            this.§>!C§ = b2Math.§,C§(0,this.§>!C§ + _loc19_);
+            _loc19_ = this.§>!C§ - _loc20_;
+            _loc14_ = -_loc19_ * this.m_u1.x;
+            _loc15_ = -_loc19_ * this.m_u1.y;
+            _loc16_ = -this.§[f§ * _loc19_ * this.m_u2.x;
+            _loc17_ = -this.§[f§ * _loc19_ * this.m_u2.y;
+            _loc2_.§69§.x += _loc2_.§4s§ * _loc14_;
+            _loc2_.§69§.y += _loc2_.§4s§ * _loc15_;
+            _loc2_.m_angularVelocity += _loc2_.§[!F§ * (_loc5_ * _loc15_ - _loc6_ * _loc14_);
+            _loc3_.§69§.x += _loc3_.§4s§ * _loc16_;
+            _loc3_.§69§.y += _loc3_.§4s§ * _loc17_;
+            _loc3_.m_angularVelocity += _loc3_.§[!F§ * (_loc8_ * _loc17_ - _loc9_ * _loc16_);
          }
-         §§goto(addr71);
+         if(this.m_limitState1 == §5'§)
+         {
+            _loc10_ = _loc2_.§69§.x + -_loc2_.m_angularVelocity * _loc6_;
+            _loc11_ = _loc2_.§69§.y + _loc2_.m_angularVelocity * _loc5_;
+            _loc18_ = -(this.m_u1.x * _loc10_ + this.m_u1.y * _loc11_);
+            _loc19_ = -this.m_limitMass1 * _loc18_;
+            _loc20_ = this.m_limitImpulse1;
+            this.m_limitImpulse1 = b2Math.§,C§(0,this.m_limitImpulse1 + _loc19_);
+            _loc19_ = this.m_limitImpulse1 - _loc20_;
+            _loc14_ = -_loc19_ * this.m_u1.x;
+            _loc15_ = -_loc19_ * this.m_u1.y;
+            _loc2_.§69§.x += _loc2_.§4s§ * _loc14_;
+            _loc2_.§69§.y += _loc2_.§4s§ * _loc15_;
+            _loc2_.m_angularVelocity += _loc2_.§[!F§ * (_loc5_ * _loc15_ - _loc6_ * _loc14_);
+         }
+         if(this.m_limitState2 == §5'§)
+         {
+            _loc12_ = _loc3_.§69§.x + -_loc3_.m_angularVelocity * _loc9_;
+            _loc13_ = _loc3_.§69§.y + _loc3_.m_angularVelocity * _loc8_;
+            _loc18_ = -(this.m_u2.x * _loc12_ + this.m_u2.y * _loc13_);
+            _loc19_ = -this.m_limitMass2 * _loc18_;
+            _loc20_ = this.m_limitImpulse2;
+            this.m_limitImpulse2 = b2Math.§,C§(0,this.m_limitImpulse2 + _loc19_);
+            _loc19_ = this.m_limitImpulse2 - _loc20_;
+            _loc16_ = -_loc19_ * this.m_u2.x;
+            _loc17_ = -_loc19_ * this.m_u2.y;
+            _loc3_.§69§.x += _loc3_.§4s§ * _loc16_;
+            _loc3_.§69§.y += _loc3_.§4s§ * _loc17_;
+            _loc3_.m_angularVelocity += _loc3_.§[!F§ * (_loc8_ * _loc17_ - _loc9_ * _loc16_);
+         }
       }
       
       override b2internal function SolvePositionConstraints(param1:Number) : Boolean
       {
-         /*
-          * Decompilation error
-          * Code may be obfuscated
-          * Tip: You can try enabling "Automatic deobfuscation" in Settings
-          * Error type: ExecutionException (java.lang.StackOverflowError)
-          */
-         throw new flash.errors.IllegalOperationError("Not decompiled due to error");
+         var _loc4_:b2Mat22 = null;
+         var _loc9_:Number = NaN;
+         var _loc10_:Number = NaN;
+         var _loc11_:Number = NaN;
+         var _loc12_:Number = NaN;
+         var _loc13_:Number = NaN;
+         var _loc14_:Number = NaN;
+         var _loc15_:Number = NaN;
+         var _loc16_:Number = NaN;
+         var _loc17_:Number = NaN;
+         var _loc18_:Number = NaN;
+         var _loc19_:Number = NaN;
+         var _loc20_:Number = NaN;
+         var _loc21_:Number = NaN;
+         var _loc22_:Number = NaN;
+         var _loc23_:Number = NaN;
+         var _loc2_:b2Body = §,^§;
+         var _loc3_:b2Body = § X§;
+         var _loc5_:Number = this.§[!"§.m_xf.position.x + this.m_groundAnchor1.x;
+         var _loc6_:Number = this.§[!"§.m_xf.position.y + this.m_groundAnchor1.y;
+         var _loc7_:Number = this.§[!"§.m_xf.position.x + this.m_groundAnchor2.x;
+         var _loc8_:Number = this.§[!"§.m_xf.position.y + this.m_groundAnchor2.y;
+         var _loc24_:Number = 0;
+         if(this.§#@§ == §5'§)
+         {
+            _loc4_ = _loc2_.m_xf.R;
+            _loc9_ = this.m_localAnchor1.x - _loc2_.m_sweep.localCenter.x;
+            _loc10_ = this.m_localAnchor1.y - _loc2_.m_sweep.localCenter.y;
+            _loc23_ = _loc4_.col1.x * _loc9_ + _loc4_.col2.x * _loc10_;
+            _loc10_ = _loc4_.col1.y * _loc9_ + _loc4_.col2.y * _loc10_;
+            _loc9_ = _loc23_;
+            _loc4_ = _loc3_.m_xf.R;
+            _loc11_ = this.m_localAnchor2.x - _loc3_.m_sweep.localCenter.x;
+            _loc12_ = this.m_localAnchor2.y - _loc3_.m_sweep.localCenter.y;
+            _loc23_ = _loc4_.col1.x * _loc11_ + _loc4_.col2.x * _loc12_;
+            _loc12_ = _loc4_.col1.y * _loc11_ + _loc4_.col2.y * _loc12_;
+            _loc11_ = _loc23_;
+            _loc13_ = _loc2_.m_sweep.c.x + _loc9_;
+            _loc14_ = _loc2_.m_sweep.c.y + _loc10_;
+            _loc15_ = _loc3_.m_sweep.c.x + _loc11_;
+            _loc16_ = _loc3_.m_sweep.c.y + _loc12_;
+            this.m_u1.Set(_loc13_ - _loc5_,_loc14_ - _loc6_);
+            this.m_u2.Set(_loc15_ - _loc7_,_loc16_ - _loc8_);
+            _loc17_ = this.m_u1.§2o§();
+            _loc18_ = this.m_u2.§2o§();
+            if(_loc17_ > b2Settings.b2_linearSlop)
+            {
+               this.m_u1.§49§(1 / _loc17_);
+            }
+            else
+            {
+               this.m_u1.§@l§();
+            }
+            if(_loc18_ > b2Settings.b2_linearSlop)
+            {
+               this.m_u2.§49§(1 / _loc18_);
+            }
+            else
+            {
+               this.m_u2.§@l§();
+            }
+            _loc19_ = this.§>i§ - _loc17_ - this.§[f§ * _loc18_;
+            _loc24_ = b2Math.§,C§(_loc24_,-_loc19_);
+            _loc19_ = b2Math.§"J§(_loc19_ + b2Settings.b2_linearSlop,-b2Settings.b2_maxLinearCorrection,0);
+            _loc20_ = -this.§6!W§ * _loc19_;
+            _loc13_ = -_loc20_ * this.m_u1.x;
+            _loc14_ = -_loc20_ * this.m_u1.y;
+            _loc15_ = -this.§[f§ * _loc20_ * this.m_u2.x;
+            _loc16_ = -this.§[f§ * _loc20_ * this.m_u2.y;
+            _loc2_.m_sweep.c.x += _loc2_.§4s§ * _loc13_;
+            _loc2_.m_sweep.c.y += _loc2_.§4s§ * _loc14_;
+            _loc2_.m_sweep.a += _loc2_.§[!F§ * (_loc9_ * _loc14_ - _loc10_ * _loc13_);
+            _loc3_.m_sweep.c.x += _loc3_.§4s§ * _loc15_;
+            _loc3_.m_sweep.c.y += _loc3_.§4s§ * _loc16_;
+            _loc3_.m_sweep.a += _loc3_.§[!F§ * (_loc11_ * _loc16_ - _loc12_ * _loc15_);
+            _loc2_.§`! §();
+            _loc3_.§`! §();
+         }
+         if(this.m_limitState1 == §5'§)
+         {
+            _loc4_ = _loc2_.m_xf.R;
+            _loc9_ = this.m_localAnchor1.x - _loc2_.m_sweep.localCenter.x;
+            _loc10_ = this.m_localAnchor1.y - _loc2_.m_sweep.localCenter.y;
+            _loc23_ = _loc4_.col1.x * _loc9_ + _loc4_.col2.x * _loc10_;
+            _loc10_ = _loc4_.col1.y * _loc9_ + _loc4_.col2.y * _loc10_;
+            _loc9_ = _loc23_;
+            _loc13_ = _loc2_.m_sweep.c.x + _loc9_;
+            _loc14_ = _loc2_.m_sweep.c.y + _loc10_;
+            this.m_u1.Set(_loc13_ - _loc5_,_loc14_ - _loc6_);
+            _loc17_ = this.m_u1.§2o§();
+            if(_loc17_ > b2Settings.b2_linearSlop)
+            {
+               this.m_u1.x *= 1 / _loc17_;
+               this.m_u1.y *= 1 / _loc17_;
+            }
+            else
+            {
+               this.m_u1.§@l§();
+            }
+            _loc19_ = this.m_maxLength1 - _loc17_;
+            _loc24_ = b2Math.§,C§(_loc24_,-_loc19_);
+            _loc19_ = b2Math.§"J§(_loc19_ + b2Settings.b2_linearSlop,-b2Settings.b2_maxLinearCorrection,0);
+            _loc20_ = -this.m_limitMass1 * _loc19_;
+            _loc13_ = -_loc20_ * this.m_u1.x;
+            _loc14_ = -_loc20_ * this.m_u1.y;
+            _loc2_.m_sweep.c.x += _loc2_.§4s§ * _loc13_;
+            _loc2_.m_sweep.c.y += _loc2_.§4s§ * _loc14_;
+            _loc2_.m_sweep.a += _loc2_.§[!F§ * (_loc9_ * _loc14_ - _loc10_ * _loc13_);
+            _loc2_.§`! §();
+         }
+         if(this.m_limitState2 == §5'§)
+         {
+            _loc4_ = _loc3_.m_xf.R;
+            _loc11_ = this.m_localAnchor2.x - _loc3_.m_sweep.localCenter.x;
+            _loc12_ = this.m_localAnchor2.y - _loc3_.m_sweep.localCenter.y;
+            _loc23_ = _loc4_.col1.x * _loc11_ + _loc4_.col2.x * _loc12_;
+            _loc12_ = _loc4_.col1.y * _loc11_ + _loc4_.col2.y * _loc12_;
+            _loc11_ = _loc23_;
+            _loc15_ = _loc3_.m_sweep.c.x + _loc11_;
+            _loc16_ = _loc3_.m_sweep.c.y + _loc12_;
+            this.m_u2.Set(_loc15_ - _loc7_,_loc16_ - _loc8_);
+            _loc18_ = this.m_u2.§2o§();
+            if(_loc18_ > b2Settings.b2_linearSlop)
+            {
+               this.m_u2.x *= 1 / _loc18_;
+               this.m_u2.y *= 1 / _loc18_;
+            }
+            else
+            {
+               this.m_u2.§@l§();
+            }
+            _loc19_ = this.m_maxLength2 - _loc18_;
+            _loc24_ = b2Math.§,C§(_loc24_,-_loc19_);
+            _loc19_ = b2Math.§"J§(_loc19_ + b2Settings.b2_linearSlop,-b2Settings.b2_maxLinearCorrection,0);
+            _loc20_ = -this.m_limitMass2 * _loc19_;
+            _loc15_ = -_loc20_ * this.m_u2.x;
+            _loc16_ = -_loc20_ * this.m_u2.y;
+            _loc3_.m_sweep.c.x += _loc3_.§4s§ * _loc15_;
+            _loc3_.m_sweep.c.y += _loc3_.§4s§ * _loc16_;
+            _loc3_.m_sweep.a += _loc3_.§[!F§ * (_loc11_ * _loc16_ - _loc12_ * _loc15_);
+            _loc3_.§`! §();
+         }
+         return _loc24_ < b2Settings.b2_linearSlop;
       }
    }
 }

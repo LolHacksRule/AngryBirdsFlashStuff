@@ -10,12 +10,7 @@ package §;e§
       
       public function §1i§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            super();
-         }
+         super();
       }
    }
 }

@@ -8,126 +8,47 @@ package com.rovio.assets
       
       public function AssetCache()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function §@§(param1:String, param2:Class) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_)
+         param1 = param1.toUpperCase();
+         if(§5!`§ == null)
          {
-            §§push(param1);
-            if(_loc3_)
-            {
-               §§push(§§pop().toUpperCase());
-            }
-            param1 = §§pop();
-            if(§5!`§ == null)
-            {
-               addr90:
-               while(true)
-               {
-                  §5!`§ = new Object();
-               }
-               addr90:
-            }
-            while(true)
-            {
-               §§push(§+c§(param1));
-               if(_loc3_)
-               {
-                  §§push(!§§pop());
-               }
-               if(!§§pop())
-               {
-                  break;
-               }
-               §§goto(addr90);
-            }
-            throw new Error("Trying to add a duplicate asset: " + param1);
+            §5!`§ = new Object();
          }
-         while(true)
+         if(!§+c§(param1))
          {
             §5!`§[param1] = new §8u§(param1,param2);
-            if(_loc3_)
-            {
-               break;
-            }
-            §§goto(addr90);
+            return;
          }
+         throw new Error("Trying to add a duplicate asset: " + param1);
       }
       
       public static function §+c§(param1:String) : Boolean
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc3_))
+         param1 = param1.toUpperCase();
+         if(§5!`§[param1] != null)
          {
-            §§push(param1);
-            if(_loc3_)
-            {
-               §§push(§§pop().toUpperCase());
-            }
-            param1 = §§pop();
-            while(§5!`§[param1] != null)
-            {
-               if(!(_loc2_ && _loc2_))
-               {
-                  §§goto(addr72);
-               }
-               if(_loc3_)
-               {
-                  break;
-               }
-            }
-            §§push(false);
-            if(!(_loc2_ && param1))
-            {
-               return §§pop();
-            }
-            §§goto(addr72);
+            return true;
          }
-         addr72:
-         return true;
+         return false;
       }
       
       public static function §%p§(param1:String, param2:Boolean = true) : Class
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(!(_loc5_ && _loc3_))
-         {
-            §§push(param1);
-            if(_loc4_)
-            {
-               §§push(§§pop().toUpperCase());
-            }
-            param1 = §§pop();
-         }
+         param1 = param1.toUpperCase();
          var _loc3_:§8u§ = §5!`§[param1];
-         if(!_loc5_)
+         if(_loc3_ == null)
          {
-            if(_loc3_ == null)
+            if(param2)
             {
-               if(param2)
-               {
-                  if(!(_loc5_ && param2))
-                  {
-                     throw new Error("Asset not in cache: " + param1);
-                  }
-                  addr95:
-               }
-               return null;
+               throw new Error("Asset not in cache: " + param1);
             }
-            return _loc3_.§%J§;
+            return null;
          }
-         §§goto(addr95);
+         return _loc3_.§%J§;
       }
    }
 }

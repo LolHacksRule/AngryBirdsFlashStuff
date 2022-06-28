@@ -18,32 +18,13 @@ package §<8§
       
       public function §5J§(param1:int, param2:int, param3:int, param4:int, param5:int, param6:int)
       {
-         var _loc7_:Boolean = true;
-         var _loc8_:Boolean = false;
-         if(!(_loc8_ && this))
-         {
-            super();
-            loop0:
-            while(true)
-            {
-               this.§+5§ = param1;
-               while(true)
-               {
-                  this.§;^§ = param2;
-                  addr109:
-                  while(true)
-                  {
-                     this.§+n§ = param3;
-                  }
-                  addr70:
-                  if(!(_loc8_ && this))
-                  {
-                     continue loop0;
-                  }
-               }
-            }
-         }
-         §§goto(addr104);
+         super();
+         this.§+5§ = param1;
+         this.§;^§ = param2;
+         this.§+n§ = param3;
+         this._height = param4;
+         this.§[S§ = param5;
+         this.§11§ = param6;
       }
       
       public function get x() : int

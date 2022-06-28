@@ -10,24 +10,9 @@ package §>o§
       
       public function §8!8§(param1:int = -1, param2:Object = null)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_)
-         {
-            super();
-         }
-         while(true)
-         {
-            this.§[!7§ = param1;
-            while(_loc4_)
-            {
-               this.§2D§ = param2;
-               if(!_loc3_)
-               {
-                  return;
-               }
-            }
-         }
+         super();
+         this.§[!7§ = param1;
+         this.§2D§ = param2;
       }
       
       public function get type() : int
@@ -37,12 +22,7 @@ package §>o§
       
       public function set type(param1:int) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§[!7§ = param1;
-         }
+         this.§[!7§ = param1;
       }
       
       public function get value() : Object
@@ -52,12 +32,7 @@ package §>o§
       
       public function set value(param1:Object) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§2D§ = param1;
-         }
+         this.§2D§ = param1;
       }
    }
 }

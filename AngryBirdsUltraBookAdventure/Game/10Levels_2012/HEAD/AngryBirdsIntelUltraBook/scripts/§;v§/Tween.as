@@ -39,333 +39,100 @@ package §;v§
       
       public function Tween(param1:Object, param2:Number, param3:String = "linear")
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(_loc5_ || param2)
-         {
-            super();
-         }
-         loop0:
-         while(true)
-         {
-            this.§`N§ = param1;
-            loop1:
-            while(true)
-            {
-               this.§'D§ = 0;
-               while(true)
-               {
-                  this.§`!j§ = Math.max(0.0001,param2);
-                  while(true)
-                  {
-                     this.§=8§ = 0;
-                     addr132:
-                     while(_loc5_)
-                     {
-                        this.§`f§ = param3;
-                        continue loop0;
-                     }
-                  }
-                  while(!(_loc4_ && param2))
-                  {
-                     this.§+!L§ = new Vector.<Number>(0);
-                     loop8:
-                     while(_loc5_)
-                     {
-                        this.§4!a§ = new Vector.<Number>(0);
-                        if(!(_loc5_ || this))
-                        {
-                           continue;
-                        }
-                        addr46:
-                        if(!_loc5_)
-                        {
-                           while(true)
-                           {
-                              this.§#e§ = new Vector.<String>(0);
-                              break loop8;
-                              §§goto(addr46);
-                           }
-                           addr105:
-                        }
-                        if(_loc4_ && param2)
-                        {
-                           continue loop0;
-                        }
-                        if(!_loc4_)
-                        {
-                           if(_loc5_)
-                           {
-                              return;
-                           }
-                           continue loop1;
-                        }
-                        §§goto(addr132);
-                     }
-                  }
-               }
-            }
-         }
+         super();
+         this.§`N§ = param1;
+         this.§'D§ = 0;
+         this.§`!j§ = Math.max(0.0001,param2);
+         this.§=8§ = 0;
+         this.§`f§ = param3;
+         this.§?q§ = false;
+         this.§#e§ = new Vector.<String>(0);
+         this.§+!L§ = new Vector.<Number>(0);
+         this.§4!a§ = new Vector.<Number>(0);
       }
       
       public function animate(param1:String, param2:Number) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_)
+         if(this.§`N§ == null)
          {
-            if(this.§`N§ != null)
-            {
-               do
-               {
-                  this.§#e§.push(param1);
-                  loop1:
-                  while(true)
-                  {
-                     this.§+!L§.push(Number.NaN);
-                     while(true)
-                     {
-                        if(!(_loc3_ && this))
-                        {
-                           if(!_loc4_)
-                           {
-                              break;
-                           }
-                           continue;
-                        }
-                        continue loop1;
-                     }
-                  }
-               }
-               while(!(_loc4_ || _loc3_));
-               
-               return;
-            }
+            return;
          }
+         this.§#e§.push(param1);
+         this.§+!L§.push(Number.NaN);
+         this.§4!a§.push(param2);
       }
       
       public function §8k§(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.animate("scaleX",param1);
-         }
-         do
-         {
-            this.animate("scaleY",param1);
-         }
-         while(_loc2_ && this);
-         
+         this.animate("scaleX",param1);
+         this.animate("scaleY",param1);
       }
       
       public function moveTo(param1:Number, param2:Number) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(!(_loc4_ && param2))
-         {
-            this.animate("x",param1);
-         }
-         do
-         {
-            this.animate("y",param2);
-         }
-         while(_loc4_ && param1);
-         
+         this.animate("x",param1);
+         this.animate("y",param2);
       }
       
       public function §&`§(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || _loc2_)
-         {
-            this.animate("alpha",param1);
-         }
+         this.animate("alpha",param1);
       }
       
       public function advanceTime(param1:Number) : void
       {
-         var _loc11_:Boolean = false;
-         var _loc12_:Boolean = true;
          var _loc6_:Number = NaN;
          var _loc7_:Number = NaN;
          var _loc8_:Number = NaN;
          var _loc9_:Function = null;
          var _loc10_:Number = NaN;
-         if(_loc12_ || _loc2_)
+         if(param1 == 0)
          {
-            §§push(param1);
-            if(_loc12_)
+            return;
+         }
+         var _loc2_:Number = this.§'D§;
+         this.§'D§ += param1;
+         if(this.§'D§ < 0 || _loc2_ >= this.§`!j§)
+         {
+            return;
+         }
+         if(this.§`7§ != null && _loc2_ <= 0 && this.§'D§ >= 0)
+         {
+            this.§`7§.apply(null,this.§3,§);
+         }
+         var _loc3_:Number = Math.min(this.§`!j§,this.§'D§) / this.§`!j§;
+         var _loc4_:int = this.§+!L§.length;
+         var _loc5_:int = 0;
+         while(_loc5_ < _loc4_)
+         {
+            if(isNaN(this.§+!L§[_loc5_]))
             {
-               if(§§pop() == 0)
-               {
-                  if(_loc12_ || this)
-                  {
-                     §§goto(addr47);
-                  }
-               }
-               §§push(this.§'D§);
-               if(!_loc11_)
-               {
-                  §§push(Number(§§pop()));
-               }
+               this.§+!L§[_loc5_] = this.§`N§[this.§#e§[_loc5_]] as Number;
             }
-            var _loc2_:* = §§pop();
-            if(!_loc11_)
+            _loc6_ = this.§+!L§[_loc5_];
+            _loc7_ = this.§4!a§[_loc5_];
+            _loc8_ = _loc7_ - _loc6_;
+            _loc9_ = Transitions.§]S§(this.§`f§);
+            _loc10_ = _loc6_ + _loc9_(_loc3_) * _loc8_;
+            if(this.§?q§)
             {
-               §§push(this);
-               §§push(this.§'D§);
-               if(!_loc11_)
-               {
-                  §§push(§§pop() + param1);
-               }
-               §§pop().§'D§ = §§pop();
+               _loc10_ = Math.round(_loc10_);
             }
-            while(true)
+            this.§`N§[this.§#e§[_loc5_]] = _loc10_;
+            _loc5_++;
+         }
+         if(this.§0>§ != null)
+         {
+            this.§0>§.apply(null,this.§!<§);
+         }
+         if(_loc2_ < this.§`!j§ && this.§'D§ >= this.§`!j§)
+         {
+            dispatchEvent(new Event(Event.§4P§));
+            if(this.onComplete != null)
             {
-               §§push(this.§'D§);
-               if(!(_loc11_ && _loc3_))
-               {
-                  §§push(0);
-                  loop1:
-                  while(true)
-                  {
-                     §§push(§§pop() < §§pop());
-                     while(true)
-                     {
-                        §§push(Boolean(§§pop()));
-                        if(!_loc11_)
-                        {
-                           §§push(§§pop());
-                           if(!(_loc11_ && _loc2_))
-                           {
-                              §§push(Boolean(§§pop()));
-                           }
-                           loop3:
-                           while(true)
-                           {
-                              if(!§§pop())
-                              {
-                                 addr287:
-                                 while(true)
-                                 {
-                                    §§pop();
-                                    addr288:
-                                    while(true)
-                                    {
-                                       §§push(_loc2_);
-                                       addr254:
-                                       while(true)
-                                       {
-                                          §§push(§§pop() >= this.§`!j§);
-                                          addr257:
-                                          while(true)
-                                          {
-                                             §§push(Boolean(§§pop()));
-                                          }
-                                       }
-                                    }
-                                 }
-                                 addr287:
-                              }
-                              while(true)
-                              {
-                                 while(true)
-                                 {
-                                    if(!§§pop())
-                                    {
-                                       while(true)
-                                       {
-                                          §§push(this.§`7§);
-                                          while(true)
-                                          {
-                                             §§push(null);
-                                             while(true)
-                                             {
-                                                §§push(§§pop() == §§pop());
-                                                while(!_loc11_)
-                                                {
-                                                   §§push(!§§pop());
-                                                   while(true)
-                                                   {
-                                                      §§push(Boolean(§§pop()));
-                                                      if(_loc12_ || _loc3_)
-                                                      {
-                                                         §§push(§§pop());
-                                                         if(_loc12_ || this)
-                                                         {
-                                                            if(_loc11_)
-                                                            {
-                                                               break;
-                                                            }
-                                                            §§push(Boolean(§§pop()));
-                                                         }
-                                                         while(true)
-                                                         {
-                                                            if(!§§pop())
-                                                            {
-                                                               continue;
-                                                            }
-                                                         }
-                                                      }
-                                                      §§goto(addr236);
-                                                   }
-                                                   continue loop3;
-                                                }
-                                                §§goto(addr257);
-                                             }
-                                          }
-                                       }
-                                    }
-                                    §§goto(addr260);
-                                 }
-                              }
-                           }
-                        }
-                        §§goto(addr287);
-                     }
-                     addr147:
-                     while(true)
-                     {
-                        if(_loc11_ && this)
-                        {
-                           continue loop1;
-                        }
-                        §§goto(addr154);
-                     }
-                  }
-               }
-               §§goto(addr315);
-               if(!(_loc12_ || _loc3_))
-               {
-                  continue;
-               }
-               §§push(this.§'D§);
-               if(_loc12_)
-               {
-                  if(_loc12_ || _loc2_)
-                  {
-                     §§push(0);
-                     if(!(_loc11_ && this))
-                     {
-                        §§push(§§pop() >= §§pop());
-                        if(!(_loc11_ && this))
-                        {
-                           §§goto(addr85);
-                        }
-                        §§goto(addr95);
-                     }
-                     §§goto(addr147);
-                  }
-                  §§goto(addr139);
-               }
-               §§goto(addr315);
+               this.onComplete.apply(null,this.§+!-§);
             }
          }
-         addr47:
       }
       
       public function get §8&§() : Boolean
@@ -400,37 +167,8 @@ package §;v§
       
       public function set delay(param1:Number) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || this)
-         {
-            §§push(this);
-            §§push(this.§'D§);
-            if(!(_loc3_ && this))
-            {
-               §§push(this.§=8§);
-               if(!_loc3_)
-               {
-                  §§push(§§pop() + §§pop());
-                  if(!_loc3_)
-                  {
-                     addr78:
-                     §§push(§§pop() - param1);
-                  }
-                  §§pop().§'D§ = §§pop();
-                  do
-                  {
-                     this.§=8§ = param1;
-                  }
-                  while(!(_loc2_ || _loc2_));
-                  
-                  return;
-                  addr80:
-               }
-            }
-            §§goto(addr78);
-         }
-         §§goto(addr80);
+         this.§'D§ = this.§'D§ + this.§=8§ - param1;
+         this.§=8§ = param1;
       }
       
       public function get §0n§() : Boolean
@@ -440,12 +178,7 @@ package §;v§
       
       public function set §0n§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc3_))
-         {
-            this.§?q§ = param1;
-         }
+         this.§?q§ = param1;
       }
       
       public function get §`7§() : Function
@@ -455,12 +188,7 @@ package §;v§
       
       public function set §`7§(param1:Function) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§%4§ = param1;
-         }
+         this.§%4§ = param1;
       }
       
       public function get §0>§() : Function
@@ -470,12 +198,7 @@ package §;v§
       
       public function set §0>§(param1:Function) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || param1)
-         {
-            this.§#0§ = param1;
-         }
+         this.§#0§ = param1;
       }
       
       public function get onComplete() : Function
@@ -485,12 +208,7 @@ package §;v§
       
       public function set onComplete(param1:Function) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§1!1§ = param1;
-         }
+         this.§1!1§ = param1;
       }
       
       public function get §7!4§() : Array
@@ -500,12 +218,7 @@ package §;v§
       
       public function set §7!4§(param1:Array) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            this.§3,§ = param1;
-         }
+         this.§3,§ = param1;
       }
       
       public function get §]!X§() : Array
@@ -515,12 +228,7 @@ package §;v§
       
       public function set §]!X§(param1:Array) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§!<§ = param1;
-         }
+         this.§!<§ = param1;
       }
       
       public function get §%M§() : Array
@@ -530,12 +238,7 @@ package §;v§
       
       public function set §%M§(param1:Array) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            this.§+!-§ = param1;
-         }
+         this.§+!-§ = param1;
       }
    }
 }

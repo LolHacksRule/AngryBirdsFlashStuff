@@ -30,151 +30,27 @@ package §%t§
       
       public function b2LineJointDef()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc1_)
-         {
-            this.§`!V§ = new b2Vec2();
-            while(true)
-            {
-               this.§6$§ = new b2Vec2();
-               loop1:
-               while(true)
-               {
-                  this.§"$§ = new b2Vec2();
-                  while(true)
-                  {
-                     super();
-                     while(true)
-                     {
-                        type = b2Joint.§^!L§;
-                        addr147:
-                        while(!_loc2_)
-                        {
-                        }
-                     }
-                     addr67:
-                     if(_loc2_ && _loc1_)
-                     {
-                        continue;
-                     }
-                     this.motorSpeed = 0;
-                     addr84:
-                     if(_loc1_ || this)
-                     {
-                        addr39:
-                        if(_loc1_ || _loc1_)
-                        {
-                           addr46:
-                           if(!(_loc1_ || _loc2_))
-                           {
-                              while(true)
-                              {
-                                 this.§8!`§ = 0;
-                                 loop8:
-                                 while(true)
-                                 {
-                                    this.§?7§ = 0;
-                                    addr94:
-                                    while(true)
-                                    {
-                                       if(!(_loc1_ || this))
-                                       {
-                                          continue loop8;
-                                       }
-                                       if(_loc2_)
-                                       {
-                                          break;
-                                       }
-                                       this.§"!<§ = false;
-                                       loop10:
-                                       while(true)
-                                       {
-                                          this.§;!9§ = 0;
-                                          addr58:
-                                          while(true)
-                                          {
-                                             if(!_loc1_)
-                                             {
-                                                continue loop10;
-                                             }
-                                             if(_loc2_ && _loc2_)
-                                             {
-                                                break;
-                                             }
-                                             §§goto(addr67);
-                                             §§goto(addr84);
-                                          }
-                                          continue loop1;
-                                       }
-                                       §§goto(addr39);
-                                    }
-                                    §§goto(addr147);
-                                 }
-                                 §§goto(addr46);
-                              }
-                              addr113:
-                           }
-                           return;
-                        }
-                        §§goto(addr94);
-                     }
-                     §§goto(addr58);
-                  }
-               }
-               if(_loc2_)
-               {
-                  continue;
-               }
-               this.§?P§ = false;
-               §§goto(addr113);
-            }
-         }
-         while(true)
-         {
-            this.§"$§.Set(1,0);
-            §§goto(addr121);
-         }
+         this.§`!V§ = new b2Vec2();
+         this.§6$§ = new b2Vec2();
+         this.§"$§ = new b2Vec2();
+         super();
+         type = b2Joint.§^!L§;
+         this.§"$§.Set(1,0);
+         this.§?P§ = false;
+         this.§8!`§ = 0;
+         this.§?7§ = 0;
+         this.§"!<§ = false;
+         this.§;!9§ = 0;
+         this.motorSpeed = 0;
       }
       
       public function §;o§(param1:b2Body, param2:b2Body, param3:b2Vec2, param4:b2Vec2) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(_loc6_ || this)
-         {
-            §^!G§ = param1;
-            loop0:
-            while(true)
-            {
-               §-z§ = param2;
-               while(true)
-               {
-                  this.§`!V§ = §^!G§.GetLocalPoint(param3);
-                  loop2:
-                  while(_loc6_ || param1)
-                  {
-                     while(true)
-                     {
-                        this.§6$§ = §-z§.GetLocalPoint(param3);
-                        do
-                        {
-                           this.§"$§ = §^!G§.GetLocalVector(param4);
-                        }
-                        while(!_loc6_);
-                        
-                        if(!_loc5_)
-                        {
-                           continue loop0;
-                        }
-                        continue loop2;
-                     }
-                     return;
-                  }
-               }
-            }
-         }
-         §§goto(addr90);
+         §^!G§ = param1;
+         §-z§ = param2;
+         this.§`!V§ = §^!G§.GetLocalPoint(param3);
+         this.§6$§ = §-z§.GetLocalPoint(param3);
+         this.§"$§ = §^!G§.GetLocalVector(param4);
       }
    }
 }

@@ -6,32 +6,14 @@ package §_-gU§
    {
       
       public static const §_-C9§:String = "OnCloseComplete";
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            §_-C9§ = "OnCloseComplete";
-         }
-      }
+       
       
       private var §_-8L§:Popup;
       
       public function §_-tk§(param1:String, param2:Popup, param3:Boolean = false, param4:Boolean = false)
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(_loc6_ || this)
-         {
-            super(param1,param3,param4);
-         }
-         do
-         {
-            this.§_-8L§ = param2;
-         }
-         while(_loc5_);
-         
+         super(param1,param3,param4);
+         this.§_-8L§ = param2;
       }
       
       public function get §_-l-§() : Popup

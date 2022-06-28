@@ -8,21 +8,7 @@ package §<e§
       public static const §<!s§:String = "dataLoaded";
       
       public static const §-I§:String = "totalItemCountUpdated";
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && §;!L§))
-         {
-            §<!s§ = "dataLoaded";
-            do
-            {
-               §-I§ = "totalItemCountUpdated";
-            }
-            while(!(_loc1_ || §;!L§));
-            
-         }
-      }
+       
       
       public var index:int;
       
@@ -30,12 +16,7 @@ package §<e§
       
       public function §;!L§(param1:String, param2:int = -1, param3:int = -1, param4:Boolean = false, param5:Boolean = false)
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
-         if(!_loc7_)
-         {
-            super(param1,param4,param5);
-         }
+         super(param1,param4,param5);
       }
       
       override public function clone() : Event

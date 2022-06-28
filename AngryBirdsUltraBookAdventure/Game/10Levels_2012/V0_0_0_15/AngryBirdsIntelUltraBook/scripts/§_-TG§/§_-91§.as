@@ -13,18 +13,8 @@ package §_-TG§
       
       public function §_-91§(param1:§_-O0§)
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            super();
-         }
-         do
-         {
-            this.mWorld = param1;
-         }
-         while(_loc2_);
-         
+         super();
+         this.mWorld = param1;
       }
       
       override public function EndContact(param1:b2Contact) : void
@@ -41,23 +31,10 @@ package §_-TG§
       
       override public function BeginContact(param1:b2Contact) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         §§push(this.mWorld.§_-6A§.objects.§_-ra§(param1.§_-k-§().GetBody().GetUserData(),param1.§_-7G§().GetBody().GetUserData()));
-         if(!(_loc4_ && this))
+         var _loc2_:Boolean = this.mWorld.§_-6A§.objects.§_-ra§(param1.§_-k-§().GetBody().GetUserData(),param1.§_-7G§().GetBody().GetUserData());
+         if(_loc2_)
          {
-            §§push(Boolean(§§pop()));
-         }
-         var _loc2_:* = §§pop();
-         if(!(_loc4_ && this))
-         {
-            if(_loc2_)
-            {
-               if(!_loc4_)
-               {
-                  param1.§_-lG§(false);
-               }
-            }
+            param1.§_-lG§(false);
          }
       }
    }

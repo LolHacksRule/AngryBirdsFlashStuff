@@ -7,24 +7,11 @@ package §,m§
    {
       
       public static const § set§:Number = 10000;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            § set§ = 10000;
-         }
-      }
+       
       
       public function §'=§(param1:§^g§)
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            super(param1);
-         }
+         super(param1);
       }
    }
 }

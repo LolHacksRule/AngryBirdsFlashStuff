@@ -23,78 +23,7 @@ package §`!i§
       public static const §`J§:String = "set_bg_colour";
       
       public static const END:String = "end";
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            §^!$§ = "setreferencesize";
-            while(true)
-            {
-               §>!Y§ = "createsprite";
-               loop7:
-               while(!(_loc2_ && §8d§))
-               {
-                  END = "end";
-                  if(_loc2_)
-                  {
-                     continue;
-                  }
-                  if(!_loc2_)
-                  {
-                     addr36:
-                     if(_loc1_ || _loc2_)
-                     {
-                        return;
-                     }
-                     loop5:
-                     while(true)
-                     {
-                        if(!(_loc2_ && _loc1_))
-                        {
-                           if(!_loc1_)
-                           {
-                              break;
-                           }
-                           §else § = "fitheight";
-                           while(!(_loc2_ && §8d§))
-                           {
-                              §`J§ = "set_bg_colour";
-                              continue loop7;
-                           }
-                           while(true)
-                           {
-                              §!n§ = "zoom";
-                              addr113:
-                              while(true)
-                              {
-                                 §`!F§ = "playsound";
-                              }
-                              §§goto(addr70);
-                           }
-                           addr70:
-                        }
-                        while(_loc1_)
-                        {
-                           §>%§ = "fitwidth";
-                           continue loop5;
-                        }
-                        §§goto(addr113);
-                     }
-                     while(true)
-                     {
-                        §4'§ = "scroll";
-                        §§goto(addr118);
-                     }
-                     addr123:
-                  }
-                  §§goto(addr70);
-               }
-            }
-         }
-         §§goto(addr123);
-      }
+       
       
       private var §=U§:Number;
       
@@ -102,51 +31,13 @@ package §`!i§
       
       public function §8d§(param1:Number, param2:Number)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!_loc3_)
+         super();
+         this.§=U§ = param1;
+         this.§[1§ = param2;
+         if(isNaN(this.§[1§))
          {
-            super();
-            while(true)
-            {
-               this.§=U§ = param1;
-               loop1:
-               while(_loc4_)
-               {
-                  this.§[1§ = param2;
-                  loop2:
-                  while(true)
-                  {
-                     if(!(_loc3_ && this))
-                     {
-                        if(isNaN(this.§[1§))
-                        {
-                           if(!(_loc3_ && _loc3_))
-                           {
-                              while(true)
-                              {
-                                 this.§[1§ = 0;
-                              }
-                              addr57:
-                           }
-                           while(true)
-                           {
-                              if(_loc4_)
-                              {
-                                 break loop2;
-                              }
-                              continue loop2;
-                           }
-                        }
-                        break;
-                     }
-                     continue loop1;
-                  }
-                  return;
-               }
-            }
+            this.§[1§ = 0;
          }
-         §§goto(addr57);
       }
       
       public function get time() : Number
@@ -161,37 +52,11 @@ package §`!i§
       
       public function update(param1:Number, param2:Sprite, param3:§,Q§) : Boolean
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!(_loc4_ && param2))
+         if(param1 >= this.time + this.duration)
          {
-            §§push(param1);
-            §§push(this.time);
-            if(_loc5_)
-            {
-               §§push(§§pop() + this.duration);
-            }
-            if(§§pop() >= §§pop())
-            {
-               if(_loc5_ || param2)
-               {
-                  addr50:
-                  §§push(false);
-                  if(_loc5_)
-                  {
-                     return §§pop();
-                  }
-               }
-               else
-               {
-                  addr54:
-                  return true;
-               }
-               return §§pop();
-            }
-            §§goto(addr54);
+            return false;
          }
-         §§goto(addr50);
+         return true;
       }
       
       public function clone() : §8d§

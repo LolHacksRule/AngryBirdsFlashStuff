@@ -25,57 +25,13 @@ package §,!_§
       
       public function §;K§(param1:Texture, param2:BitmapData, param3:Rectangle, param4:int, param5:int, param6:Number)
       {
-         var _loc7_:Boolean = true;
-         var _loc8_:Boolean = false;
-         if(_loc7_)
-         {
-            super();
-            while(true)
-            {
-               this.§5@§ = param1;
-               loop1:
-               while(!_loc8_)
-               {
-                  this.§"!_§ = param2;
-                  while(true)
-                  {
-                     this.§1!i§ = param3.clone();
-                     loop3:
-                     while(_loc7_ || param3)
-                     {
-                        if(_loc8_)
-                        {
-                           continue loop1;
-                        }
-                        this.§0!>§ = param4;
-                        while(true)
-                        {
-                           this.§+<§ = param5;
-                           loop5:
-                           while(!(_loc8_ && param1))
-                           {
-                              while(true)
-                              {
-                                 this.§7!H§ = param6;
-                                 if(!_loc8_)
-                                 {
-                                    if(!_loc8_)
-                                    {
-                                       break;
-                                    }
-                                    continue loop3;
-                                 }
-                                 continue loop5;
-                              }
-                              return;
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr53);
+         super();
+         this.§5@§ = param1;
+         this.§"!_§ = param2;
+         this.§1!i§ = param3.clone();
+         this.§0!>§ = param4;
+         this.§+<§ = param5;
+         this.§7!H§ = param6;
       }
       
       public function get scale() : Number
@@ -100,102 +56,46 @@ package §,!_§
       
       public function get width() : Number
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         §§push(this.§5@§.width);
-         if(_loc1_)
-         {
-            return §§pop() * this.scale;
-         }
+         return this.§5@§.width * this.scale;
       }
       
       public function get height() : Number
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         §§push(this.§5@§.height);
-         if(_loc1_ || this)
-         {
-            return §§pop() * this.scale;
-         }
+         return this.§5@§.height * this.scale;
       }
       
       public function get bitmapData() : BitmapData
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
+         if(!this.§ §)
          {
-            if(!this.§ §)
-            {
-               do
-               {
-                  this.§ § = new BitmapData(this.§1!i§.width,this.§1!i§.height);
-                  do
-                  {
-                     this.§ §.copyPixels(this.§"!_§,this.§1!i§,new Point(0,0));
-                  }
-                  while(!(_loc1_ || this));
-                  
-               }
-               while(!_loc1_);
-               
-               addr72:
-            }
-            return this.§ §;
+            this.§ § = new BitmapData(this.§1!i§.width,this.§1!i§.height);
+            this.§ §.copyPixels(this.§"!_§,this.§1!i§,new Point(0,0));
          }
-         §§goto(addr72);
+         return this.§ §;
       }
       
       public function set pivotX(param1:int) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc2_))
-         {
-            this.§0!>§ = param1;
-         }
+         this.§0!>§ = param1;
       }
       
       public function set pivotY(param1:int) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§+<§ = param1;
-         }
+         this.§+<§ = param1;
       }
       
       public function dispose() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
+         if(this.§5@§)
          {
-            §§push(this.§5@§);
-            if(!(_loc1_ && _loc2_))
-            {
-               §§push(Boolean(§§pop()));
-               while(true)
-               {
-                  if(!§§pop())
-                  {
-                     continue;
-                  }
-                  while(true)
-                  {
-                     §§push(this.§5@§);
-                  }
-               }
-            }
-            while(true)
-            {
-               §§pop().dispose();
-               §§goto(addr106);
-            }
+            this.§5@§.dispose();
+            this.§5@§ = null;
          }
-         §§goto(addr64);
+         if(this.§"!_§)
+         {
+            this.§"!_§.dispose();
+            this.§"!_§ = null;
+         }
       }
    }
 }

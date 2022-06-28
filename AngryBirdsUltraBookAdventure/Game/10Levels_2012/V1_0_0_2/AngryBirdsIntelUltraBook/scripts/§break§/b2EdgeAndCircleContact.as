@@ -16,12 +16,7 @@ package §break§
       
       public function b2EdgeAndCircleContact()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc2_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function §`4§(param1:*) : b2Contact
@@ -35,24 +30,14 @@ package §break§
       
       public function §<!e§(param1:b2Fixture, param2:b2Fixture) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_)
-         {
-            super.§<!e§(param1,param2);
-         }
+         super.§<!e§(param1,param2);
       }
       
       override b2internal function Evaluate() : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
          var _loc1_:b2Body = b2internal::50.GetBody();
          var _loc2_:b2Body = b2internal::'z.GetBody();
-         if(!_loc4_)
-         {
-            this.§8!8§(b2internal::"!m,b2internal::50.GetShape() as b2EdgeShape,_loc1_.m_xf,b2internal::'z.GetShape() as b2CircleShape,_loc2_.m_xf);
-         }
+         this.§8!8§(b2internal::"!m,b2internal::50.GetShape() as b2EdgeShape,_loc1_.m_xf,b2internal::'z.GetShape() as b2CircleShape,_loc2_.m_xf);
       }
       
       private function §8!8§(param1:b2Manifold, param2:b2EdgeShape, param3:b2Transform, param4:b2CircleShape, param5:b2Transform) : void

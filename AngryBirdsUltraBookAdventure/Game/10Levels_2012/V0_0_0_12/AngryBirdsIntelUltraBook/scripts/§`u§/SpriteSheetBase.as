@@ -16,24 +16,9 @@ package §`u§
       
       public function SpriteSheetBase(param1:BitmapData)
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            super();
-         }
-         while(true)
-         {
-            this.§%!J§ = param1;
-            while(!_loc3_)
-            {
-               this.include = new Vector.<§#!7§>();
-               if(_loc2_)
-               {
-                  return;
-               }
-            }
-         }
+         super();
+         this.§%!J§ = param1;
+         this.include = new Vector.<§#!7§>();
       }
       
       public function get §^h§() : int
@@ -68,185 +53,50 @@ package §`u§
       
       public function set scale(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§7!H§ = param1;
-         }
+         this.§7!H§ = param1;
       }
       
       public function dispose() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
+         if(this.§%!J§)
          {
-            if(this.§%!J§)
-            {
-               while(true)
-               {
-                  this.§%!J§.dispose();
-                  addr72:
-                  while(true)
-                  {
-                     this.§%!J§ = null;
-                     addr63:
-                     while(true)
-                     {
-                     }
-                  }
-               }
-               addr68:
-            }
-            while(true)
-            {
-               this.include = new Vector.<§#!7§>();
-               if(!_loc1_)
-               {
-                  continue;
-               }
-               if(_loc1_)
-               {
-                  if(_loc1_)
-                  {
-                     break;
-                  }
-                  §§goto(addr68);
-               }
-            }
-            return;
+            this.§%!J§.dispose();
+            this.§%!J§ = null;
          }
-         §§goto(addr72);
+         this.include = new Vector.<§#!7§>();
       }
       
       public function §"I§(param1:BitmapData) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§%!J§ = param1;
-         }
+         this.§%!J§ = param1;
       }
       
       public function §^!E§(param1:§#!7§) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.include.push(param1);
-         }
+         this.include.push(param1);
       }
       
       public function §?_§(param1:String) : §#!7§
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         var _loc2_:* = Number(0);
-         do
+         var _loc2_:Number = 0;
+         while(_loc2_ < this.include.length)
          {
-            §§push(_loc2_);
-            if(!(_loc3_ && this))
+            if(this.include[_loc2_].mName == param1)
             {
-               if(!_loc3_)
-               {
-                  if(§§pop() >= this.include.length)
-                  {
-                     if(_loc4_ || _loc3_)
-                     {
-                        return null;
-                     }
-                     loop1:
-                     while(!_loc4_)
-                     {
-                        while(true)
-                        {
-                           _loc2_ = §§pop();
-                           continue loop1;
-                        }
-                     }
-                     continue;
-                  }
-                  if(this.include[_loc2_].mName == param1)
-                  {
-                     break;
-                  }
-                  while(true)
-                  {
-                     §§push(_loc2_);
-                     if(!(_loc3_ && _loc3_))
-                     {
-                        §§push(§§pop() + 1);
-                     }
-                  }
-               }
-               while(true)
-               {
-               }
+               return this.include[_loc2_];
             }
-            §§goto(addr78);
+            _loc2_++;
          }
-         while(!(_loc3_ && _loc3_));
-         
-         return this.include[_loc2_];
+         return null;
       }
       
       public function §-!k§(param1:int) : §#!7§
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && param1))
+         if(param1 < 0 || param1 >= this.include.length)
          {
-            §§push(param1);
-            loop0:
-            while(true)
-            {
-               §§push(§§pop() < 0);
-               if(!_loc3_)
-               {
-                  §§push(Boolean(§§pop()));
-                  if(_loc2_ || param1)
-                  {
-                     §§push(§§pop());
-                     if(_loc2_ || param1)
-                     {
-                        §§push(Boolean(§§pop()));
-                     }
-                     if(§§pop())
-                     {
-                        while(true)
-                        {
-                           addr56:
-                           while(§§pop())
-                           {
-                              if(_loc3_ && _loc3_)
-                              {
-                                 break;
-                              }
-                              addr78:
-                              if(!_loc3_)
-                              {
-                                 return null;
-                              }
-                              continue loop0;
-                           }
-                           return this.include[param1];
-                           addr54:
-                        }
-                     }
-                  }
-               }
-               addr102:
-               while(true)
-               {
-                  §§pop();
-                  continue loop0;
-               }
-            }
+            return null;
          }
-         §§goto(addr78);
+         return this.include[param1];
       }
    }
 }

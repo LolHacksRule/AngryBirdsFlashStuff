@@ -16,12 +16,7 @@ package §>s§
       
       public function b2ContactEdge()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            super();
-         }
+         super();
       }
    }
 }

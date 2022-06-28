@@ -26,35 +26,10 @@ package §break§
       
       public function b2ContactConstraintPoint()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            this.localPoint = new b2Vec2();
-            while(true)
-            {
-               this.§ c§ = new b2Vec2();
-            }
-            addr74:
-         }
-         loop1:
-         while(true)
-         {
-            this.§%[§ = new b2Vec2();
-            while(_loc1_)
-            {
-               super();
-               if(!(_loc1_ || this))
-               {
-                  continue;
-               }
-               if(!_loc2_)
-               {
-                  break loop1;
-               }
-               §§goto(addr74);
-            }
-         }
+         this.localPoint = new b2Vec2();
+         this.§ c§ = new b2Vec2();
+         this.§%[§ = new b2Vec2();
+         super();
       }
    }
 }

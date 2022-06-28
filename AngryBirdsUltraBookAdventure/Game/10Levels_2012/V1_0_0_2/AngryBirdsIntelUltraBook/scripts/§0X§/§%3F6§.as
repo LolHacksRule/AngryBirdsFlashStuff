@@ -23,138 +23,43 @@ package §0X§
       
       public function §?6§(param1:String, param2:Boolean = false, param3:Boolean = false)
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(_loc5_ || param2)
+         super();
+         this.§1U§ = new LoaderContext();
+         this.§1U§.checkPolicyFile = true;
+         this.§1U§.securityDomain = SecurityDomain.currentDomain;
+         this.§1U§.applicationDomain = ApplicationDomain.currentDomain;
+         this.§`!u§ = new Loader();
+         this.§`!u§.contentLoaderInfo.addEventListener(Event.INIT,this.§ P§);
+         Security.allowDomain("www.youtube.com");
+         if(param2)
          {
-            super();
-            loop0:
-            while(true)
-            {
-               this.§1U§ = new LoaderContext();
-               while(true)
-               {
-                  this.§1U§.checkPolicyFile = true;
-                  while(true)
-                  {
-                     this.§1U§.securityDomain = SecurityDomain.currentDomain;
-                     loop3:
-                     while(true)
-                     {
-                        this.§1U§.applicationDomain = ApplicationDomain.currentDomain;
-                        while(true)
-                        {
-                           this.§`!u§ = new Loader();
-                           loop5:
-                           while(true)
-                           {
-                              this.§`!u§.contentLoaderInfo.addEventListener(Event.INIT,this.§ P§);
-                              addr148:
-                              while(true)
-                              {
-                                 Security.allowDomain("www.youtube.com");
-                                 continue loop5;
-                              }
-                           }
-                           if(!(_loc4_ && param3))
-                           {
-                              continue loop3;
-                           }
-                        }
-                     }
-                  }
-               }
-               while(true)
-               {
-                  if(!(_loc5_ || param1))
-                  {
-                     continue loop0;
-                  }
-                  while(true)
-                  {
-                     §§goto(addr29);
-                  }
-               }
-            }
+            this.§`!u§.load(new URLRequest(param1 + "?version=3&autoplay=1"));
          }
-         §§goto(addr126);
+         else
+         {
+            this.§`!u§.load(new URLRequest(param1 + "?version=3&autoplay=1" + "&controls=0&showinfo=0"));
+         }
+         if(!param3)
+         {
+            this.§`!u§.mouseChildren = false;
+         }
       }
       
       private function § P§(param1:Event) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && this))
-         {
-            addChild(this.§`!u§);
-            loop0:
-            while(true)
-            {
-               this.§`!u§.content.addEventListener("onReady",this.§ q§);
-               while(true)
-               {
-                  this.§`!u§.content.addEventListener("onError",this.§`r§);
-                  while(!(_loc3_ && this))
-                  {
-                     if(_loc2_)
-                     {
-                        this.§`!u§.content.addEventListener("onStateChange",this.§"!n§);
-                        loop3:
-                        while(!(_loc3_ && param1))
-                        {
-                           while(true)
-                           {
-                              this.§`!u§.content.addEventListener("onPlaybackQualityChange",this.§ !C§);
-                              if(!(_loc3_ && _loc2_))
-                              {
-                                 break;
-                              }
-                              continue loop3;
-                           }
-                           return;
-                        }
-                        continue;
-                     }
-                     continue loop0;
-                  }
-               }
-            }
-         }
-         §§goto(addr69);
+         addChild(this.§`!u§);
+         this.§`!u§.content.addEventListener("onReady",this.§ q§);
+         this.§`!u§.content.addEventListener("onError",this.§`r§);
+         this.§`!u§.content.addEventListener("onStateChange",this.§"!n§);
+         this.§`!u§.content.addEventListener("onPlaybackQualityChange",this.§ !C§);
       }
       
       private function § q§(param1:Event) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc3_))
-         {
-            this.§7%§ = this.§`!u§.content;
-            while(true)
-            {
-               this.§7%§.setSize(480,360);
-               §§goto(addr79);
-            }
-         }
-         addr79:
-         while(true)
-         {
-            this.§7%§.removeEventListener("onReady",this.§ q§);
-            do
-            {
-               this.isReady = true;
-            }
-            while(_loc2_);
-            
-            if(_loc3_ || param1)
-            {
-               if(_loc3_)
-               {
-                  break;
-               }
-               continue loop0;
-            }
-         }
+         this.§7%§ = this.§`!u§.content;
+         this.§7%§.setSize(480,360);
+         this.§7%§.removeEventListener("onReady",this.§ q§);
+         this.isReady = true;
       }
       
       private function §`r§(param1:Event) : void
@@ -163,90 +68,18 @@ package §0X§
       
       private function §"!n§(param1:Event) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         var _loc2_:* = Object(param1).data;
-         if(_loc4_)
+         switch(Object(param1).data)
          {
-            §§push(1);
-            if(!(_loc3_ && param1))
-            {
-               if(§§pop() === _loc2_)
+            case 1:
+               if(this.isReady == false)
                {
-                  if(!(_loc3_ && this))
-                  {
-                     addr110:
-                     §§push(0);
-                     if(!_loc3_)
-                     {
-                        addr113:
-                     }
-                  }
-                  else
-                  {
-                     addr119:
-                     §§push(1);
-                     if(!_loc3_)
-                     {
-                        addr122:
-                     }
-                  }
-                  §§goto(addr127);
+                  this.dispose();
                }
-               else
-               {
-                  §§push(0);
-                  if(!_loc3_)
-                  {
-                     if(§§pop() === _loc2_)
-                     {
-                        §§goto(addr119);
-                     }
-                     else
-                     {
-                        §§push(2);
-                     }
-                     addr127:
-                     loop1:
-                     switch(§§pop())
-                     {
-                        case 0:
-                           if(this.isReady == false)
-                           {
-                              if(!(_loc3_ && param1))
-                              {
-                                 this.dispose();
-                                 addr72:
-                              }
-                              break;
-                           }
-                           addr33:
-                           break;
-                        case 1:
-                           this.isReady = false;
-                           while(true)
-                           {
-                              if(_loc4_ || this)
-                              {
-                                 this.§7%§.playVideo();
-                                 if(!_loc4_)
-                                 {
-                                    break loop1;
-                                 }
-                                 continue;
-                              }
-                              §§goto(addr72);
-                           }
-                           §§goto(addr33);
-                     }
-                     return;
-                  }
-               }
-               §§goto(addr122);
-            }
-            §§goto(addr113);
+               break;
+            case 0:
+               this.isReady = false;
+               this.§7%§.playVideo();
          }
-         §§goto(addr110);
       }
       
       private function § !C§(param1:Event) : void
@@ -255,55 +88,19 @@ package §0X§
       
       public function dispose() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc1_)
+         if(this.§7%§ != null)
          {
-            if(this.§7%§ != null)
-            {
-               loop0:
-               while(true)
-               {
-                  this.isReady = false;
-                  addr165:
-                  while(true)
-                  {
-                     removeChild(this.§`!u§);
-                     loop2:
-                     while(true)
-                     {
-                        this.§7%§.removeEventListener("onError",this.§`r§);
-                        loop3:
-                        while(true)
-                        {
-                           this.§7%§.removeEventListener("onStateChange",this.§"!n§);
-                           addr141:
-                           while(_loc1_)
-                           {
-                              while(true)
-                              {
-                                 this.§7%§.removeEventListener("onPlaybackQualityChange",this.§ !C§);
-                                 while(!_loc2_)
-                                 {
-                                    continue loop0;
-                                    if(!(_loc2_ && this))
-                                    {
-                                       §§goto(addr24);
-                                    }
-                                 }
-                                 continue loop3;
-                              }
-                           }
-                           continue loop2;
-                        }
-                     }
-                  }
-               }
-            }
-            addr24:
-            return;
+            this.isReady = false;
+            removeChild(this.§`!u§);
+            this.§7%§.removeEventListener("onError",this.§`r§);
+            this.§7%§.removeEventListener("onStateChange",this.§"!n§);
+            this.§7%§.removeEventListener("onPlaybackQualityChange",this.§ !C§);
+            this.§7%§.destroy();
+            this.§`!u§.contentLoaderInfo.removeEventListener(Event.INIT,this.§ P§);
+            this.§`!u§ = null;
+            this.§1U§ = null;
+            this.§7%§ = null;
          }
-         §§goto(addr143);
       }
    }
 }

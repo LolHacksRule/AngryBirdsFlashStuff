@@ -23,218 +23,95 @@ package §0o§
       
       public function § L§(param1:Boolean = true, param2:String = "LevelLoadStateClassic")
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_)
-         {
-            super(param1,param2);
-         }
+         super(param1,param2);
       }
       
       override public function init() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            super.init();
-         }
-         loop0:
-         do
-         {
-            §`-§.movieClip.graphics.beginFill(0);
-            while(true)
-            {
-               §`-§.movieClip.graphics.drawRect(0,0,4000,4000);
-               while(_loc1_)
-               {
-                  §`-§.movieClip.graphics.endFill();
-                  if(!(_loc2_ && _loc1_))
-                  {
-                     continue loop0;
-                  }
-               }
-            }
-         }
-         while(_loc2_);
-         
+         super.init();
+         §`-§.movieClip.graphics.beginFill(0);
+         §`-§.movieClip.graphics.drawRect(0,0,4000,4000);
+         §`-§.movieClip.graphics.endFill();
       }
       
       override public function activate() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
+         super.activate();
+         if(LevelManager.§^!F§ != null)
          {
-            super.activate();
-            while(LevelManager.§^!F§ != null)
-            {
-               if(!(_loc2_ || _loc2_))
-               {
-                  break;
-               }
-               addr68:
-               if(_loc1_ && _loc2_)
-               {
-                  continue;
-               }
-               addr63:
-               §`-§.setText(this.§#!S§(),"TextField_LevelLoading");
-               §§goto(addr68);
-            }
-            return;
+            §`-§.setText(this.§#!S§(),"TextField_LevelLoading");
          }
-         §§goto(addr63);
       }
       
       protected function §#!S§() : String
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         §§push(" - ");
-         if(!_loc1_)
-         {
-            return §§pop() + §+!g§.§,!X§(LevelManager.§^!F§);
-         }
+         return " - " + §+!g§.§,!X§(LevelManager.§^!F§);
       }
       
       override protected function initLevelMain(param1:§>4§) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc2_))
-         {
-            super.initLevelMain(param1);
-         }
+         super.initLevelMain(param1);
       }
       
       override protected function initLevelLoad() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
+         (§4!]§.§7!G§ as §[!m§).§7!6§.§?0§ = false;
+         (§4!]§.§7!G§ as §[!m§).§7!6§.§?0§ = true;
+         if(this.§13§)
          {
-            §§push(§4!]§.§7!G§);
-            loop0:
-            while(true)
-            {
-               §§push((§§pop() as §[!m§).§7!6§);
-               addr248:
-               while(true)
-               {
-                  §§push(false);
-                  addr249:
-                  while(true)
-                  {
-                     §§pop().§?0§ = §§pop();
-                     continue loop0;
-                  }
-               }
-            }
+            this.§13§.removeEventListener(Event.COMPLETE,this.§]>§);
+            this.§13§ = null;
          }
-         §§goto(addr207);
+         if(LevelManager.§^!F§)
+         {
+            this.§13§ = new §"!m§();
+            this.§13§.addEventListener(Event.COMPLETE,this.§]>§);
+            this.§13§.addEventListener(IOErrorEvent.IO_ERROR,this.§8!j§);
+            this.§13§.addEventListener(SecurityErrorEvent.SECURITY_ERROR,this.§8!j§);
+            this.§13§.addEventListener(§^!g§.§]P§,this.§8!j§);
+            this.§13§.load(§]!X§.§#l§(AngryBirdsFP11.§6S§ + "/startlevel/" + LevelManager.§^!F§));
+            super.initLevelLoad();
+            return;
+         }
+         §7o§.§-Y§();
+         throw new Error("LevelManager.smCurrentLevel was null in initLevelLoad() in StateFacebookLevelLoad.");
       }
       
       protected function §8!j§(param1:Event) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && param1))
+         if(param1.type == §^!g§.§]P§)
          {
-            if(param1.type != §^!g§.§]P§)
-            {
-               §7o§.§ "§();
-               while(true)
-               {
-                  if(_loc3_ || param1)
-                  {
-                     continue;
-                  }
-               }
-            }
-            while(true)
-            {
-               §7o§.§-Y§(§2!S§.§2u§);
-            }
+            §7o§.§-Y§(§2!S§.§2u§);
          }
-         §§goto(addr90);
+         else
+         {
+            §7o§.§ "§();
+         }
+         this.§13§ = null;
       }
       
       protected function §]>§(param1:Event) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            §>Z§.§[!1§ = this.§13§.data;
-         }
-         do
-         {
-            this.§13§ = null;
-         }
-         while(_loc2_ && this);
-         
+         §>Z§.§[!1§ = this.§13§.data;
+         this.§13§ = null;
       }
       
       override public function isReady() : Boolean
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc1_))
+         if(this.§13§)
          {
-            if(this.§13§)
-            {
-               if(!(_loc1_ && _loc1_))
-               {
-                  addr44:
-                  §§push(false);
-                  if(_loc2_ || _loc2_)
-                  {
-                     return §§pop();
-                  }
-               }
-               else
-               {
-                  addr53:
-                  return super.isReady();
-               }
-               return §§pop();
-            }
-            §§goto(addr53);
+            return false;
          }
-         §§goto(addr44);
+         return super.isReady();
       }
       
       override public function onLevelLoadError() : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || _loc2_)
-         {
-            super.onLevelLoadError();
-         }
-         §§push("level-");
-         if(!(_loc3_ && _loc3_))
-         {
-            §§push(§§pop() + LevelManager.§^!F§);
-         }
-         var _loc1_:String = §§pop();
-         if(!_loc3_)
-         {
-            §]V§.§4!^§(_loc1_);
-         }
-         while(true)
-         {
-            §7o§.§ "§();
-            while(!_loc3_)
-            {
-               (§4!]§.§7!G§ as §[!m§).§`!w§();
-               if(_loc2_ || _loc3_)
-               {
-                  return;
-               }
-            }
-         }
+         super.onLevelLoadError();
+         var _loc1_:String = "level-" + LevelManager.§^!F§;
+         §]V§.§4!^§(_loc1_);
+         §7o§.§ "§();
+         (§4!]§.§7!G§ as §[!m§).§`!w§();
       }
    }
 }

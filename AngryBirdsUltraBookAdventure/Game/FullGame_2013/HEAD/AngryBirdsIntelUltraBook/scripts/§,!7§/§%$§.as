@@ -6,229 +6,34 @@ package §,!7§
       
       public function §%$§(textureManager:TextureManager)
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc2_)
-         {
-         }
-         if(!_loc3_)
-         {
-            while(true)
-            {
-               while(!_loc3_)
-               {
-                  while(!(_loc3_ && this))
-                  {
-                     if(!_loc3_)
-                     {
-                        return;
-                     }
-                  }
-               }
-            }
-         }
-         while(true)
-         {
-            super(textureManager);
-            §§goto(addr46);
-         }
+         super(textureManager);
       }
       
       override public function initializeAnimations(itemNames:Array) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc3_)
-         {
-         }
-         if(!_loc2_)
-         {
-            loop0:
-            while(true)
-            {
-               while(true)
-               {
-                  super.initializeAnimations(itemNames);
-                  addr165:
-                  if(_loc2_ && _loc3_)
-                  {
-                     continue;
-                  }
-                  while(true)
-                  {
-                     §`,§("SUPER_SLINGSHOT",["SLING_SHOT_02_BACK","SLING_SHOT_02_FRONT"]);
-                     continue loop0;
-                     addr39:
-                     if(_loc3_ || _loc2_)
-                     {
-                        return;
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr204);
+         super.initializeAnimations(itemNames);
+         §`,§("POWERUP_BOMB",["POWERUP_DROP_01"]);
+         §`,§("POWERUP_BOMB_PARACHUTE",["POWERUP_DROP_02"]);
+         §`,§("SUPER_SLINGSHOT",["SLING_SHOT_02_BACK","SLING_SHOT_02_FRONT"]);
+         §`,§("INTEL_SLINGSHOT",["INTEL_SLING_SHOT_01_BACK","INTEL_SLING_SHOT_01_FRONT"]);
+         §`,§("LASER_DOT",["LASER_DOT"]);
+         §`,§("INTEL_SMOKE_CLOUD",["INTEL_SMOKE_CLOUD_1","INTEL_SMOKE_CLOUD_2","INTEL_SMOKE_CLOUD_3","INTEL_SMOKE_CLOUD_4","INTEL_SMOKE_CLOUD_5","INTEL_SMOKE_CLOUD_6"]);
       }
       
       override protected function initializeBirdAnimations() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc2_ && _loc2_)
-         {
-         }
-         if(_loc1_)
-         {
-            while(true)
-            {
-               super.initializeBirdAnimations();
-               while(!_loc2_)
-               {
-                  if(!_loc2_)
-                  {
-                     return;
-                     addr46:
-                  }
-               }
-            }
-         }
-         §§goto(addr46);
+         super.initializeBirdAnimations();
       }
       
       override protected function initializePigAnimations() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc2_)
-         {
-         }
-         if(_loc2_ || _loc1_)
-         {
-            loop0:
-            while(true)
-            {
-               super.initializePigAnimations();
-               addr407:
-               while(true)
-               {
-                  while(true)
-                  {
-                     §§push(§§findproperty(§"!O§));
-                     §§push("PIG_INTEL_PIGLETTE_SMALL");
-                     §§push("normal");
-                     §§push("PIG_INTEL_PIGLETTE_SMALL_01");
-                     §§push("PIG_INTEL_PIGLETTE_SMALL_02");
-                     §§push("PIG_INTEL_PIGLETTE_SMALL_03");
-                     if(!_loc2_)
-                     {
-                     }
-                     §§push(null);
-                     if(_loc2_)
-                     {
-                        §§push("blink");
-                        §§push("PIG_INTEL_PIGLETTE_SMALL_01_BLINK");
-                        §§push("PIG_INTEL_PIGLETTE_SMALL_02_BLINK");
-                        §§push("PIG_INTEL_PIGLETTE_SMALL_02_BLINK");
-                        if(_loc1_)
-                        {
-                        }
-                        §§push(null);
-                        §§push("yell");
-                        §§push("PIG_INTEL_PIGLETTE_SMALL_01_SMILE");
-                        §§push("PIG_INTEL_PIGLETTE_SMALL_02_SMILE");
-                        §§push("PIG_INTEL_PIGLETTE_SMALL_03_SMILE");
-                        if(!_loc2_)
-                        {
-                        }
-                        §§push(null);
-                     }
-                     §§pop().§"!O§(§§pop(),§§pop());
-                     addr399:
-                     addr56:
-                     while(true)
-                     {
-                        continue loop0;
-                     }
-                     if(_loc2_ || _loc2_)
-                     {
-                        return;
-                     }
-                  }
-               }
-            }
-         }
-         while(true)
-         {
-            §§push(§§findproperty(§"!O§));
-            §§push("PIG_INTEL_PIGLETTE_MEDIUM");
-            §§push("normal");
-            §§push("PIG_INTEL_PIGLETTE_MEDIUM_01");
-            §§push("PIG_INTEL_PIGLETTE_MEDIUM_02");
-            §§push("PIG_INTEL_PIGLETTE_MEDIUM_03");
-            if(!_loc2_)
-            {
-            }
-            §§push(null);
-            if(!_loc1_)
-            {
-               §§push("blink");
-               §§push("PIG_INTEL_PIGLETTE_MEDIUM_01_BLINK");
-               §§push("PIG_INTEL_PIGLETTE_MEDIUM_02_BLINK");
-               §§push("PIG_INTEL_PIGLETTE_MEDIUM_03_BLINK");
-               if(_loc1_)
-               {
-               }
-               §§push(null);
-               §§push("yell");
-               §§push("PIG_INTEL_PIGLETTE_MEDIUM_01_SMILE");
-               §§push("PIG_INTEL_PIGLETTE_MEDIUM_02_SMILE");
-               §§push("PIG_INTEL_PIGLETTE_MEDIUM_03_SMILE");
-               if(!_loc2_)
-               {
-               }
-               §§push(null);
-            }
-            §§pop().§"!O§(§§pop(),§§pop());
-            loop6:
-            while(true)
-            {
-               addr307:
-               while(true)
-               {
-                  §§push(§§findproperty(§"!O§));
-                  §§push("PIG_INTEL_PIGLETTE_BIG");
-                  §§push("normal");
-                  §§push("PIG_INTEL_PIGLETTE_BIG_01");
-                  §§push("PIG_INTEL_PIGLETTE_BIG_02");
-                  §§push("PIG_INTEL_PIGLETTE_BIG_03");
-                  if(_loc1_)
-                  {
-                  }
-                  §§push(null);
-                  if(!(_loc1_ && _loc2_))
-                  {
-                     §§push("blink");
-                     §§push("PIG_INTEL_PIGLETTE_BIG_01_BLINK");
-                     §§push("PIG_INTEL_PIGLETTE_BIG_02_BLINK");
-                     §§push("PIG_INTEL_PIGLETTE_BIG_03_BLINK");
-                     if(_loc2_ || this)
-                     {
-                     }
-                     §§push(null);
-                     §§push("yell");
-                     §§push("PIG_INTEL_PIGLETTE_BIG_01_SMILE");
-                     §§push("PIG_INTEL_PIGLETTE_BIG_02_SMILE");
-                     §§push("PIG_INTEL_PIGLETTE_BIG_03_SMILE");
-                     if(_loc2_ || this)
-                     {
-                     }
-                     §§push(null);
-                  }
-                  §§pop().§"!O§(§§pop(),§§pop());
-                  continue loop6;
-               }
-            }
-         }
+         super.initializePigAnimations();
+         §"!O§("PIG_INTEL_PIGLETTE_SMALL",[["normal",["PIG_INTEL_PIGLETTE_SMALL_01","PIG_INTEL_PIGLETTE_SMALL_02","PIG_INTEL_PIGLETTE_SMALL_03"]],["blink",["PIG_INTEL_PIGLETTE_SMALL_01_BLINK","PIG_INTEL_PIGLETTE_SMALL_02_BLINK","PIG_INTEL_PIGLETTE_SMALL_02_BLINK"]],["yell",["PIG_INTEL_PIGLETTE_SMALL_01_SMILE","PIG_INTEL_PIGLETTE_SMALL_02_SMILE","PIG_INTEL_PIGLETTE_SMALL_03_SMILE"]]]);
+         §"!O§("PIG_INTEL_PIGLETTE_MEDIUM",[["normal",["PIG_INTEL_PIGLETTE_MEDIUM_01","PIG_INTEL_PIGLETTE_MEDIUM_02","PIG_INTEL_PIGLETTE_MEDIUM_03"]],["blink",["PIG_INTEL_PIGLETTE_MEDIUM_01_BLINK","PIG_INTEL_PIGLETTE_MEDIUM_02_BLINK","PIG_INTEL_PIGLETTE_MEDIUM_03_BLINK"]],["yell",["PIG_INTEL_PIGLETTE_MEDIUM_01_SMILE","PIG_INTEL_PIGLETTE_MEDIUM_02_SMILE","PIG_INTEL_PIGLETTE_MEDIUM_03_SMILE"]]]);
+         §"!O§("PIG_INTEL_PIGLETTE_BIG",[["normal",["PIG_INTEL_PIGLETTE_BIG_01","PIG_INTEL_PIGLETTE_BIG_02","PIG_INTEL_PIGLETTE_BIG_03"]],["blink",["PIG_INTEL_PIGLETTE_BIG_01_BLINK","PIG_INTEL_PIGLETTE_BIG_02_BLINK","PIG_INTEL_PIGLETTE_BIG_03_BLINK"]],["yell",["PIG_INTEL_PIGLETTE_BIG_01_SMILE","PIG_INTEL_PIGLETTE_BIG_02_SMILE","PIG_INTEL_PIGLETTE_BIG_03_SMILE"]]]);
+         §"!O§("PIG_INTEL_PIGLETTE_HELMET",[["normal",["PIG_INTEL_PIGLETTE_HELMET_01","PIG_INTEL_PIGLETTE_HELMET_02","PIG_INTEL_PIGLETTE_HELMET_03"]],["blink",["PIG_INTEL_PIGLETTE_HELMET_01_BLINK","PIG_INTEL_PIGLETTE_HELMET_02_BLINK","PIG_INTEL_PIGLETTE_HELMET_03_BLINK"]],["yell",["PIG_INTEL_PIGLETTE_HELMET_01_SMILE","PIG_INTEL_PIGLETTE_HELMET_02_SMILE","PIG_INTEL_PIGLETTE_HELMET_03_SMILE"]]]);
+         §"!O§("PIG_INTEL_PIGLETTE_GRANDPA",[["normal",["PIG_INTEL_PIGLETTE_GRANDPA_01","PIG_INTEL_PIGLETTE_GRANDPA_02","PIG_INTEL_PIGLETTE_GRANDPA_03"]],["blink",["PIG_INTEL_PIGLETTE_GRANDPA_01_BLINK","PIG_INTEL_PIGLETTE_GRANDPA_02_BLINK","PIG_INTEL_PIGLETTE_GRANDPA_03_BLINK"]],["yell",["PIG_INTEL_PIGLETTE_GRANDPA_01_SMILE","PIG_INTEL_PIGLETTE_GRANDPA_02_SMILE","PIG_INTEL_PIGLETTE_GRANDPA_03_SMILE"]]]);
+         §"!O§("PIG_INTEL_PIGLETTE_KING",[["normal",["PIG_INTEL_PIGLETTE_KING_01","PIG_INTEL_PIGLETTE_KING_02","PIG_INTEL_PIGLETTE_KING_03"]],["blink",["PIG_INTEL_PIGLETTE_KING_01_BLINK","PIG_INTEL_PIGLETTE_KING_02_BLINK","PIG_INTEL_PIGLETTE_KING_03_BLINK"]],["yell",["PIG_INTEL_PIGLETTE_KING_01_SMILE","PIG_INTEL_PIGLETTE_KING_02_SMILE","PIG_INTEL_PIGLETTE_KING_03_SMILE"]]]);
       }
    }
 }

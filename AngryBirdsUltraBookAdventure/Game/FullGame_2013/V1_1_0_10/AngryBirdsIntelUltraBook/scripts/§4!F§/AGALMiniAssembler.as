@@ -10,11 +10,11 @@ package §4!F§
       
       private static var initialized:Boolean = false;
       
-      private static const §%@§:Dictionary;
+      private static const §%@§:Dictionary = new Dictionary();
       
-      private static const §@A§:Dictionary;
+      private static const §@A§:Dictionary = new Dictionary();
       
-      private static const §;!z§:Dictionary;
+      private static const §;!z§:Dictionary = new Dictionary();
       
       private static const §=M§:int = 4;
       
@@ -191,758 +191,7 @@ package §4!F§
       private static const §?<§:String = "wrap";
       
       private static const §8!B§:String = "clamp";
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            initialized = false;
-            loop0:
-            while(true)
-            {
-               §%@§ = new Dictionary();
-               loop1:
-               while(true)
-               {
-                  §@A§ = new Dictionary();
-                  loop2:
-                  while(true)
-                  {
-                     §;!z§ = new Dictionary();
-                     loop3:
-                     while(true)
-                     {
-                        §=M§ = 4;
-                        while(true)
-                        {
-                           §#!"§ = 256;
-                           addr865:
-                           loop25:
-                           for(; _loc2_ || _loc1_; while(_loc2_ || _loc2_)
-                           {
-                              if(!_loc1_)
-                              {
-                                 §4!N§ = "max";
-                                 §§goto(addr693);
-                              }
-                              else
-                              {
-                                 §§goto(addr865);
-                              }
-                           })
-                           {
-                              §1!J§ = "sub";
-                              loop26:
-                              while(true)
-                              {
-                                 §,!l§ = "mul";
-                                 loop27:
-                                 while(true)
-                                 {
-                                    §@C§ = "div";
-                                    addr717:
-                                    while(_loc2_ || AGALMiniAssembler)
-                                    {
-                                       §27§ = "rcp";
-                                       while(true)
-                                       {
-                                          §<U§ = "min";
-                                          continue loop25;
-                                       }
-                                    }
-                                    loop16:
-                                    while(true)
-                                    {
-                                       §4=§ = 1;
-                                       loop17:
-                                       while(true)
-                                       {
-                                          §,S§ = 2;
-                                          addr781:
-                                          loop18:
-                                          while(!(_loc1_ && _loc2_))
-                                          {
-                                             §-!q§ = 4;
-                                             loop19:
-                                             while(true)
-                                             {
-                                                §49§ = 8;
-                                                loop20:
-                                                while(true)
-                                                {
-                                                   §#H§ = 16;
-                                                   loop21:
-                                                   while(true)
-                                                   {
-                                                      §+!9§ = 32;
-                                                      loop22:
-                                                      while(true)
-                                                      {
-                                                         §"!@§ = 128;
-                                                         while(true)
-                                                         {
-                                                            §15§ = "mov";
-                                                            addr751:
-                                                            while(true)
-                                                            {
-                                                               §"k§ = "add";
-                                                               continue loop25;
-                                                            }
-                                                            loop55:
-                                                            for(; _loc2_ || AGALMiniAssembler; if(_loc1_ && _loc1_)
-                                                            {
-                                                               continue;
-                                                            },if(_loc2_)
-                                                            {
-                                                               if(!_loc1_)
-                                                               {
-                                                                  continue loop20;
-                                                               }
-                                                               §§goto(addr659);
-                                                            },§§goto(addr549))
-                                                            {
-                                                               §3c§ = "ieg";
-                                                               loop56:
-                                                               while(_loc2_ || _loc2_)
-                                                               {
-                                                                  §=" § = "iel";
-                                                                  continue loop3;
-                                                                  addr155:
-                                                                  if(!(_loc2_ || _loc2_))
-                                                                  {
-                                                                     continue;
-                                                                  }
-                                                                  if(!_loc2_)
-                                                                  {
-                                                                     continue loop21;
-                                                                  }
-                                                                  §?n§ = "linear";
-                                                                  loop85:
-                                                                  for(; !(_loc1_ && AGALMiniAssembler); while(true)
-                                                                  {
-                                                                     if(!(_loc2_ || _loc1_))
-                                                                     {
-                                                                        continue loop85;
-                                                                     }
-                                                                     if(!_loc1_)
-                                                                     {
-                                                                        if(_loc2_)
-                                                                        {
-                                                                           §§goto(addr88);
-                                                                        }
-                                                                        else
-                                                                        {
-                                                                           while(true)
-                                                                           {
-                                                                              §-!D§ = "cube";
-                                                                              §§goto(addr232);
-                                                                           }
-                                                                           addr246:
-                                                                        }
-                                                                        §§goto(addr256);
-                                                                     }
-                                                                     §§goto(addr225);
-                                                                     §§goto(addr35);
-                                                                  },continue loop18)
-                                                                  {
-                                                                     §+![§ = "centroid";
-                                                                     loop86:
-                                                                     while(true)
-                                                                     {
-                                                                        if(_loc2_ || _loc2_)
-                                                                        {
-                                                                           if(!_loc2_)
-                                                                           {
-                                                                              break;
-                                                                           }
-                                                                           §#Q§ = "single";
-                                                                           loop87:
-                                                                           while(true)
-                                                                           {
-                                                                              if(!_loc1_)
-                                                                              {
-                                                                                 if(!_loc1_)
-                                                                                 {
-                                                                                    if(!_loc2_)
-                                                                                    {
-                                                                                       break;
-                                                                                    }
-                                                                                    §=V§ = "depth";
-                                                                                    while(true)
-                                                                                    {
-                                                                                       if(_loc2_)
-                                                                                       {
-                                                                                          addr104:
-                                                                                          if(_loc1_ && AGALMiniAssembler)
-                                                                                          {
-                                                                                             break;
-                                                                                          }
-                                                                                          §-!l§ = "repeat";
-                                                                                          continue loop85;
-                                                                                       }
-                                                                                       continue loop86;
-                                                                                       addr42:
-                                                                                       if(!(_loc2_ || _loc2_))
-                                                                                       {
-                                                                                          continue;
-                                                                                       }
-                                                                                       if(_loc2_)
-                                                                                       {
-                                                                                          addr51:
-                                                                                          if(!(_loc1_ && AGALMiniAssembler))
-                                                                                          {
-                                                                                             if(!_loc1_)
-                                                                                             {
-                                                                                                return;
-                                                                                             }
-                                                                                          }
-                                                                                          else
-                                                                                          {
-                                                                                             loop47:
-                                                                                             while(_loc2_)
-                                                                                             {
-                                                                                                M44 = "m44";
-                                                                                                while(!_loc1_)
-                                                                                                {
-                                                                                                   M34 = "m34";
-                                                                                                   loop49:
-                                                                                                   while(true)
-                                                                                                   {
-                                                                                                      §#!^§ = "ifz";
-                                                                                                      loop50:
-                                                                                                      while(true)
-                                                                                                      {
-                                                                                                         §=!e§ = "inz";
-                                                                                                         addr563:
-                                                                                                         while(true)
-                                                                                                         {
-                                                                                                            §1!=§ = "ife";
-                                                                                                            addr549:
-                                                                                                            while(true)
-                                                                                                            {
-                                                                                                               if(!_loc1_)
-                                                                                                               {
-                                                                                                                  addr551:
-                                                                                                                  if(!(_loc1_ && AGALMiniAssembler))
-                                                                                                                  {
-                                                                                                                     §8!l§ = "ine";
-                                                                                                                     loop53:
-                                                                                                                     while(true)
-                                                                                                                     {
-                                                                                                                        if(_loc2_ || _loc1_)
-                                                                                                                        {
-                                                                                                                           §`0§ = "ifg";
-                                                                                                                           while(_loc2_)
-                                                                                                                           {
-                                                                                                                              §!&§ = "ifl";
-                                                                                                                              continue loop55;
-                                                                                                                           }
-                                                                                                                           while(!(_loc1_ && _loc2_))
-                                                                                                                           {
-                                                                                                                              §,%§ = "cos";
-                                                                                                                              while(true)
-                                                                                                                              {
-                                                                                                                                 §9!T§ = "crs";
-                                                                                                                                 loop41:
-                                                                                                                                 while(!_loc1_)
-                                                                                                                                 {
-                                                                                                                                    DP3 = "dp3";
-                                                                                                                                    while(true)
-                                                                                                                                    {
-                                                                                                                                       if(!_loc1_)
-                                                                                                                                       {
-                                                                                                                                          if(_loc2_)
-                                                                                                                                          {
-                                                                                                                                             DP4 = "dp4";
-                                                                                                                                             break loop86;
-                                                                                                                                          }
-                                                                                                                                          break;
-                                                                                                                                       }
-                                                                                                                                       continue loop41;
-                                                                                                                                    }
-                                                                                                                                    while(true)
-                                                                                                                                    {
-                                                                                                                                       §!!C§ = 24;
-                                                                                                                                       break loop47;
-                                                                                                                                    }
-                                                                                                                                 }
-                                                                                                                                 §§goto(addr751);
-                                                                                                                                 addr213:
-                                                                                                                                 if(_loc2_ || AGALMiniAssembler)
-                                                                                                                                 {
-                                                                                                                                    §1!V§ = "mipnone";
-                                                                                                                                    break loop85;
-                                                                                                                                 }
-                                                                                                                              }
-                                                                                                                           }
-                                                                                                                           loop36:
-                                                                                                                           while(true)
-                                                                                                                           {
-                                                                                                                              § T§ = "exp";
-                                                                                                                              addr659:
-                                                                                                                              while(_loc2_)
-                                                                                                                              {
-                                                                                                                                 §-&§ = "nrm";
-                                                                                                                                 while(true)
-                                                                                                                                 {
-                                                                                                                                    §>!G§ = "sin";
-                                                                                                                                    continue loop36;
-                                                                                                                                 }
-                                                                                                                              }
-                                                                                                                              addr686:
-                                                                                                                              while(_loc2_)
-                                                                                                                              {
-                                                                                                                                 §'!!§ = "sqt";
-                                                                                                                                 while(true)
-                                                                                                                                 {
-                                                                                                                                    §>X§ = "rsq";
-                                                                                                                                    addr676:
-                                                                                                                                    while(true)
-                                                                                                                                    {
-                                                                                                                                       § !F§ = "pow";
-                                                                                                                                       break loop53;
-                                                                                                                                    }
-                                                                                                                                 }
-                                                                                                                              }
-                                                                                                                              continue loop16;
-                                                                                                                           }
-                                                                                                                           addr642:
-                                                                                                                           addr666:
-                                                                                                                           addr530:
-                                                                                                                        }
-                                                                                                                        break;
-                                                                                                                        addr399:
-                                                                                                                        if(!(_loc2_ || _loc1_))
-                                                                                                                        {
-                                                                                                                           continue;
-                                                                                                                        }
-                                                                                                                        if(!_loc2_)
-                                                                                                                        {
-                                                                                                                           continue loop50;
-                                                                                                                        }
-                                                                                                                        §67§ = "sge";
-                                                                                                                        loop65:
-                                                                                                                        while(true)
-                                                                                                                        {
-                                                                                                                           §1""§ = "slt";
-                                                                                                                           while(true)
-                                                                                                                           {
-                                                                                                                              if(!_loc1_)
-                                                                                                                              {
-                                                                                                                                 addr375:
-                                                                                                                                 if(!(_loc2_ || _loc2_))
-                                                                                                                                 {
-                                                                                                                                    break;
-                                                                                                                                    addr355:
-                                                                                                                                 }
-                                                                                                                                 §8!+§ = "sgn";
-                                                                                                                                 while(true)
-                                                                                                                                 {
-                                                                                                                                    if(!_loc2_)
-                                                                                                                                    {
-                                                                                                                                       continue loop65;
-                                                                                                                                    }
-                                                                                                                                    if(_loc1_)
-                                                                                                                                    {
-                                                                                                                                       continue loop19;
-                                                                                                                                    }
-                                                                                                                                    if(!_loc1_)
-                                                                                                                                    {
-                                                                                                                                       continue loop22;
-                                                                                                                                    }
-                                                                                                                                    addr604:
-                                                                                                                                    while(_loc2_)
-                                                                                                                                    {
-                                                                                                                                       §;" § = "sat";
-                                                                                                                                       while(!(_loc1_ && _loc1_))
-                                                                                                                                       {
-                                                                                                                                          M33 = "m33";
-                                                                                                                                          §§goto(addr51);
-                                                                                                                                          continue loop47;
-                                                                                                                                       }
-                                                                                                                                       while(true)
-                                                                                                                                       {
-                                                                                                                                          §%n§ = 20;
-                                                                                                                                          §§goto(addr828);
-                                                                                                                                          §§goto(addr592);
-                                                                                                                                       }
-                                                                                                                                       addr592:
-                                                                                                                                    }
-                                                                                                                                    §§goto(addr621);
-                                                                                                                                 }
-                                                                                                                                 continue loop22;
-                                                                                                                              }
-                                                                                                                              continue loop49;
-                                                                                                                              addr88:
-                                                                                                                              if(!(_loc1_ && _loc1_))
-                                                                                                                              {
-                                                                                                                                 if(!_loc1_)
-                                                                                                                                 {
-                                                                                                                                    §?<§ = "wrap";
-                                                                                                                                    continue loop87;
-                                                                                                                                 }
-                                                                                                                                 continue loop18;
-                                                                                                                              }
-                                                                                                                           }
-                                                                                                                           addr838:
-                                                                                                                           while(true)
-                                                                                                                           {
-                                                                                                                              §9U§ = 16;
-                                                                                                                              §§goto(addr833);
-                                                                                                                              §§goto(addr375);
-                                                                                                                           }
-                                                                                                                        }
-                                                                                                                     }
-                                                                                                                     while(true)
-                                                                                                                     {
-                                                                                                                        §"!c§ = "log";
-                                                                                                                        §§goto(addr666);
-                                                                                                                        §§goto(addr537);
-                                                                                                                     }
-                                                                                                                     addr537:
-                                                                                                                  }
-                                                                                                                  break;
-                                                                                                               }
-                                                                                                               continue loop27;
-                                                                                                            }
-                                                                                                            addr813:
-                                                                                                            while(true)
-                                                                                                            {
-                                                                                                               §=-§ = 2;
-                                                                                                               addr808:
-                                                                                                               while(true)
-                                                                                                               {
-                                                                                                                  §+!s§ = 32;
-                                                                                                                  addr803:
-                                                                                                                  while(true)
-                                                                                                                  {
-                                                                                                                     §8Q§ = 64;
-                                                                                                                     continue loop16;
-                                                                                                                     addr468:
-                                                                                                                     if(!(_loc2_ || _loc1_))
-                                                                                                                     {
-                                                                                                                        continue;
-                                                                                                                     }
-                                                                                                                     §%!h§ = "erp";
-                                                                                                                     while(!_loc1_)
-                                                                                                                     {
-                                                                                                                        §=!h§ = "brk";
-                                                                                                                        loop62:
-                                                                                                                        while(true)
-                                                                                                                        {
-                                                                                                                           if(!(_loc1_ && _loc2_))
-                                                                                                                           {
-                                                                                                                              continue loop26;
-                                                                                                                           }
-                                                                                                                           addr611:
-                                                                                                                           while(true)
-                                                                                                                           {
-                                                                                                                              §[!W§ = "neg";
-                                                                                                                              §§goto(addr604);
-                                                                                                                              continue loop62;
-                                                                                                                           }
-                                                                                                                        }
-                                                                                                                        continue loop26;
-                                                                                                                     }
-                                                                                                                     §§goto(addr654);
-                                                                                                                  }
-                                                                                                               }
-                                                                                                               §§goto(addr551);
-                                                                                                            }
-                                                                                                         }
-                                                                                                      }
-                                                                                                   }
-                                                                                                   while(_loc2_ || _loc1_)
-                                                                                                   {
-                                                                                                      §4[§ = "tex";
-                                                                                                      §§goto(addr392);
-                                                                                                   }
-                                                                                                }
-                                                                                                continue loop2;
-                                                                                             }
-                                                                                             while(true)
-                                                                                             {
-                                                                                                §3a§ = 28;
-                                                                                                break loop56;
-                                                                                             }
-                                                                                          }
-                                                                                          §§goto(addr808);
-                                                                                       }
-                                                                                       else
-                                                                                       {
-                                                                                          §§goto(addr413);
-                                                                                       }
-                                                                                    }
-                                                                                    loop83:
-                                                                                    while(true)
-                                                                                    {
-                                                                                       if(_loc2_ || _loc2_)
-                                                                                       {
-                                                                                          if(_loc1_)
-                                                                                          {
-                                                                                             break;
-                                                                                             addr153:
-                                                                                          }
-                                                                                          §9!s§ = "nearest";
-                                                                                          while(true)
-                                                                                          {
-                                                                                             if(_loc2_)
-                                                                                             {
-                                                                                                §§goto(addr155);
-                                                                                             }
-                                                                                             else
-                                                                                             {
-                                                                                                loop75:
-                                                                                                while(_loc2_)
-                                                                                                {
-                                                                                                   §7!+§ = "oc";
-                                                                                                   loop76:
-                                                                                                   while(true)
-                                                                                                   {
-                                                                                                      if(!(_loc1_ && _loc1_))
-                                                                                                      {
-                                                                                                         continue loop55;
-                                                                                                      }
-                                                                                                      addr843:
-                                                                                                      addr485:
-                                                                                                      addr339:
-                                                                                                      while(_loc2_)
-                                                                                                      {
-                                                                                                         §#!i§ = "vt";
-                                                                                                         while(true)
-                                                                                                         {
-                                                                                                            if(!_loc1_)
-                                                                                                            {
-                                                                                                               if(!_loc1_)
-                                                                                                               {
-                                                                                                                  §]_§ = "op";
-                                                                                                                  loop71:
-                                                                                                                  while(true)
-                                                                                                                  {
-                                                                                                                     if(_loc2_)
-                                                                                                                     {
-                                                                                                                        if(!_loc2_)
-                                                                                                                        {
-                                                                                                                           break;
-                                                                                                                        }
-                                                                                                                        §4S§ = "v";
-                                                                                                                        loop72:
-                                                                                                                        while(true)
-                                                                                                                        {
-                                                                                                                           §^!Y§ = "fc";
-                                                                                                                           while(_loc2_)
-                                                                                                                           {
-                                                                                                                              §"!$§ = "ft";
-                                                                                                                              while(true)
-                                                                                                                              {
-                                                                                                                                 if(_loc2_)
-                                                                                                                                 {
-                                                                                                                                    addr297:
-                                                                                                                                    if(!(_loc2_ || _loc1_))
-                                                                                                                                    {
-                                                                                                                                       break;
-                                                                                                                                    }
-                                                                                                                                    §0!5§ = "fs";
-                                                                                                                                    continue loop75;
-                                                                                                                                 }
-                                                                                                                                 §§goto(addr454);
-                                                                                                                                 addr197:
-                                                                                                                                 if(_loc2_ || _loc1_)
-                                                                                                                                 {
-                                                                                                                                    §+!;§ = "nomip";
-                                                                                                                                    continue loop83;
-                                                                                                                                 }
-                                                                                                                              }
-                                                                                                                              while(true)
-                                                                                                                              {
-                                                                                                                                 §9!Q§ = "rep";
-                                                                                                                                 continue loop19;
-                                                                                                                                 §§goto(addr297);
-                                                                                                                              }
-                                                                                                                              addr234:
-                                                                                                                              if(_loc2_ || AGALMiniAssembler)
-                                                                                                                              {
-                                                                                                                                 §,I§ = "mipnearest";
-                                                                                                                                 while(_loc2_)
-                                                                                                                                 {
-                                                                                                                                    §%!f§ = "miplinear";
-                                                                                                                                    while(true)
-                                                                                                                                    {
-                                                                                                                                       if(!_loc1_)
-                                                                                                                                       {
-                                                                                                                                          if(!_loc2_)
-                                                                                                                                          {
-                                                                                                                                             continue loop71;
-                                                                                                                                          }
-                                                                                                                                          §§goto(addr213);
-                                                                                                                                       }
-                                                                                                                                       continue loop72;
-                                                                                                                                    }
-                                                                                                                                    §§goto(addr637);
-                                                                                                                                 }
-                                                                                                                                 while(true)
-                                                                                                                                 {
-                                                                                                                                    if(!_loc2_)
-                                                                                                                                    {
-                                                                                                                                       continue loop76;
-                                                                                                                                    }
-                                                                                                                                    §§goto(addr234);
-                                                                                                                                 }
-                                                                                                                                 addr232:
-                                                                                                                                 addr225:
-                                                                                                                              }
-                                                                                                                           }
-                                                                                                                           §§goto(addr355);
-                                                                                                                        }
-                                                                                                                     }
-                                                                                                                     §§goto(addr563);
-                                                                                                                  }
-                                                                                                                  while(true)
-                                                                                                                  {
-                                                                                                                     §0!$§ = "frc";
-                                                                                                                     §§goto(addr686);
-                                                                                                                  }
-                                                                                                                  addr693:
-                                                                                                               }
-                                                                                                               break;
-                                                                                                            }
-                                                                                                            continue loop3;
-                                                                                                         }
-                                                                                                         §§goto(addr530);
-                                                                                                         continue loop76;
-                                                                                                      }
-                                                                                                      while(true)
-                                                                                                      {
-                                                                                                         if(_loc2_)
-                                                                                                         {
-                                                                                                            if(_loc1_)
-                                                                                                            {
-                                                                                                               break;
-                                                                                                            }
-                                                                                                            §',§ = "eif";
-                                                                                                            §§goto(addr480);
-                                                                                                         }
-                                                                                                         else
-                                                                                                         {
-                                                                                                            §§goto(addr592);
-                                                                                                         }
-                                                                                                      }
-                                                                                                      while(true)
-                                                                                                      {
-                                                                                                         §09§ = 12;
-                                                                                                         §§goto(addr838);
-                                                                                                      }
-                                                                                                   }
-                                                                                                   continue loop17;
-                                                                                                }
-                                                                                                §§goto(addr676);
-                                                                                             }
-                                                                                          }
-                                                                                          continue loop21;
-                                                                                       }
-                                                                                       addr346:
-                                                                                       while(_loc2_)
-                                                                                       {
-                                                                                          if(_loc2_)
-                                                                                          {
-                                                                                             §+!n§ = "vc";
-                                                                                          }
-                                                                                          else
-                                                                                          {
-                                                                                             §§goto(addr712);
-                                                                                          }
-                                                                                          continue loop83;
-                                                                                       }
-                                                                                       continue loop25;
-                                                                                       §§goto(addr339);
-                                                                                    }
-                                                                                    §§goto(addr392);
-                                                                                 }
-                                                                                 §§goto(addr681);
-                                                                              }
-                                                                              §§goto(addr153);
-                                                                           }
-                                                                           continue loop1;
-                                                                        }
-                                                                        §§goto(addr330);
-                                                                     }
-                                                                     while(true)
-                                                                     {
-                                                                        §`x§ = "abs";
-                                                                        §§goto(addr611);
-                                                                     }
-                                                                  }
-                                                                  while(true)
-                                                                  {
-                                                                     if(!(_loc1_ && AGALMiniAssembler))
-                                                                     {
-                                                                        addr190:
-                                                                        if(!(_loc1_ && AGALMiniAssembler))
-                                                                        {
-                                                                           §§goto(addr197);
-                                                                        }
-                                                                        else
-                                                                        {
-                                                                           while(true)
-                                                                           {
-                                                                              D3 = "3d";
-                                                                              §§goto(addr246);
-                                                                              §§goto(addr190);
-                                                                           }
-                                                                           addr251:
-                                                                        }
-                                                                        §§goto(addr256);
-                                                                     }
-                                                                     §§goto(addr209);
-                                                                     §§goto(addr141);
-                                                                  }
-                                                                  addr141:
-                                                                  §§goto(addr295);
-                                                               }
-                                                               while(true)
-                                                               {
-                                                                  §8!u§ = 1;
-                                                                  §§goto(addr813);
-                                                                  §§goto(addr506);
-                                                               }
-                                                               addr506:
-                                                            }
-                                                         }
-                                                      }
-                                                   }
-                                                   if(!(_loc2_ || AGALMiniAssembler))
-                                                   {
-                                                      continue;
-                                                   }
-                                                   if(!_loc2_)
-                                                   {
-                                                      continue loop17;
-                                                   }
-                                                   D2 = "2d";
-                                                   §§goto(addr251);
-                                                }
-                                             }
-                                          }
-                                          continue loop0;
-                                       }
-                                    }
-                                 }
-                              }
-                           }
-                           while(true)
-                           {
-                              FRAGMENT = "fragment";
-                              continue loop0;
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr843);
-      }
+       
       
       private var §5c§:ByteArray = null;
       
@@ -952,106 +201,85 @@ package §4!F§
       
       public function AGALMiniAssembler(param1:Boolean = false)
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
+         super();
+         this.§"!6§ = param1;
+         if(!initialized)
          {
-            super();
-         }
-         loop0:
-         while(true)
-         {
-            this.§"!6§ = param1;
-            while(true)
-            {
-               if(_loc2_)
-               {
-                  if(!initialized)
-                  {
-                     if(_loc2_)
-                     {
-                        if(!_loc2_)
-                        {
-                           continue;
-                        }
-                        init();
-                     }
-                     break;
-                  }
-                  break;
-               }
-               continue loop0;
-            }
-            return;
+            init();
          }
       }
       
       private static function init() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc2_))
-         {
-            initialized = true;
-            while(true)
-            {
-               §%@§[§15§] = new OpCode(§15§,2,0,0);
-               while(true)
-               {
-                  §%@§[§"k§] = new OpCode(§"k§,3,1,0);
-                  while(true)
-                  {
-                     §%@§[§1!J§] = new OpCode(§1!J§,3,2,0);
-                     while(true)
-                     {
-                        §%@§[§,!l§] = new OpCode(§,!l§,3,3,0);
-                        while(true)
-                        {
-                           §%@§[§@C§] = new OpCode(§@C§,3,4,0);
-                           while(true)
-                           {
-                              §%@§[§27§] = new OpCode(§27§,2,5,0);
-                              loop6:
-                              while(true)
-                              {
-                                 §%@§[§<U§] = new OpCode(§<U§,3,6,0);
-                                 addr1094:
-                                 while(true)
-                                 {
-                                    §%@§[§4!N§] = new OpCode(§4!N§,3,7,0);
-                                    addr1083:
-                                    while(true)
-                                    {
-                                       §%@§[§0!$§] = new OpCode(§0!$§,2,8,0);
-                                       continue loop6;
-                                    }
-                                 }
-                              }
-                              if(!(_loc1_ || AGALMiniAssembler))
-                              {
-                                 continue;
-                              }
-                              §;!z§[§,I§] = new Sampler(§,I§,§!!C§,1);
-                              §§goto(addr303);
-                           }
-                           while(!(_loc2_ && _loc2_))
-                           {
-                              §@A§[§^!Y§] = new Register(§^!Y§,"fragment constant",1,27,§+!s§ | §=-§);
-                              §§goto(addr457);
-                           }
-                        }
-                        while(!(_loc2_ && _loc2_))
-                        {
-                           §%@§[§"!c§] = new OpCode(§"!c§,2,12,0);
-                           §§goto(addr1005);
-                           §§goto(addr390);
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr605);
+         initialized = true;
+         §%@§[§15§] = new OpCode(§15§,2,0,0);
+         §%@§[§"k§] = new OpCode(§"k§,3,1,0);
+         §%@§[§1!J§] = new OpCode(§1!J§,3,2,0);
+         §%@§[§,!l§] = new OpCode(§,!l§,3,3,0);
+         §%@§[§@C§] = new OpCode(§@C§,3,4,0);
+         §%@§[§27§] = new OpCode(§27§,2,5,0);
+         §%@§[§<U§] = new OpCode(§<U§,3,6,0);
+         §%@§[§4!N§] = new OpCode(§4!N§,3,7,0);
+         §%@§[§0!$§] = new OpCode(§0!$§,2,8,0);
+         §%@§[§'!!§] = new OpCode(§'!!§,2,9,0);
+         §%@§[§>X§] = new OpCode(§>X§,2,10,0);
+         §%@§[§ !F§] = new OpCode(§ !F§,3,11,0);
+         §%@§[§"!c§] = new OpCode(§"!c§,2,12,0);
+         §%@§[§ T§] = new OpCode(§ T§,2,13,0);
+         §%@§[§-&§] = new OpCode(§-&§,2,14,0);
+         §%@§[§>!G§] = new OpCode(§>!G§,2,15,0);
+         §%@§[§,%§] = new OpCode(§,%§,2,16,0);
+         §%@§[§9!T§] = new OpCode(§9!T§,3,17,0);
+         §%@§[DP3] = new OpCode(DP3,3,18,0);
+         §%@§[DP4] = new OpCode(DP4,3,19,0);
+         §%@§[§`x§] = new OpCode(§`x§,2,20,0);
+         §%@§[§[!W§] = new OpCode(§[!W§,2,21,0);
+         §%@§[§;" §] = new OpCode(§;" §,2,22,0);
+         §%@§[M33] = new OpCode(M33,3,23,§#H§);
+         §%@§[M44] = new OpCode(M44,3,24,§#H§);
+         §%@§[M34] = new OpCode(M34,3,25,§#H§);
+         §%@§[§#!^§] = new OpCode(§#!^§,1,26,§"!@§ | §,S§ | §4=§);
+         §%@§[§=!e§] = new OpCode(§=!e§,1,27,§"!@§ | §,S§ | §4=§);
+         §%@§[§1!=§] = new OpCode(§1!=§,2,28,§"!@§ | §,S§ | §4=§);
+         §%@§[§8!l§] = new OpCode(§8!l§,2,29,§"!@§ | §,S§ | §4=§);
+         §%@§[§`0§] = new OpCode(§`0§,2,30,§"!@§ | §,S§ | §4=§);
+         §%@§[§!&§] = new OpCode(§!&§,2,31,§"!@§ | §,S§ | §4=§);
+         §%@§[§3c§] = new OpCode(§3c§,2,32,§"!@§ | §,S§ | §4=§);
+         §%@§[§=" §] = new OpCode(§=" §,2,33,§"!@§ | §,S§ | §4=§);
+         §%@§[§8!§] = new OpCode(§8!§,0,34,§"!@§ | §,S§ | §-!q§);
+         §%@§[§',§] = new OpCode(§',§,0,35,§"!@§ | §-!q§);
+         §%@§[§9!Q§] = new OpCode(§9!Q§,1,36,§"!@§ | §,S§ | §4=§);
+         §%@§[§%!h§] = new OpCode(§%!h§,0,37,§"!@§ | §-!q§);
+         §%@§[§=!h§] = new OpCode(§=!h§,0,38,§"!@§);
+         §%@§[§>T§] = new OpCode(§>T§,1,39,§"!@§ | §+!9§);
+         §%@§[§4[§] = new OpCode(§4[§,3,40,§+!9§ | §49§);
+         §%@§[§67§] = new OpCode(§67§,3,41,0);
+         §%@§[§1""§] = new OpCode(§1""§,3,42,0);
+         §%@§[§8!+§] = new OpCode(§8!+§,2,43,0);
+         §@A§[§`i§] = new Register(§`i§,"vertex attribute",0,7,§8Q§ | §=-§);
+         §@A§[§+!n§] = new Register(§+!n§,"vertex constant",1,127,§8Q§ | §=-§);
+         §@A§[§#!i§] = new Register(§#!i§,"vertex temporary",2,7,§8Q§ | §8!u§ | §=-§);
+         §@A§[§]_§] = new Register(§]_§,"vertex output",3,0,§8Q§ | §8!u§);
+         §@A§[§4S§] = new Register(§4S§,"varying",4,7,§8Q§ | §+!s§ | §=-§ | §8!u§);
+         §@A§[§^!Y§] = new Register(§^!Y§,"fragment constant",1,27,§+!s§ | §=-§);
+         §@A§[§"!$§] = new Register(§"!$§,"fragment temporary",2,7,§+!s§ | §8!u§ | §=-§);
+         §@A§[§0!5§] = new Register(§0!5§,"texture sampler",5,7,§+!s§ | §=-§);
+         §@A§[§7!+§] = new Register(§7!+§,"fragment output",3,0,§+!s§ | §8!u§);
+         §;!z§[D2] = new Sampler(D2,§09§,0);
+         §;!z§[D3] = new Sampler(D3,§09§,2);
+         §;!z§[§-!D§] = new Sampler(§-!D§,§09§,1);
+         §;!z§[§,I§] = new Sampler(§,I§,§!!C§,1);
+         §;!z§[§%!f§] = new Sampler(§%!f§,§!!C§,2);
+         §;!z§[§1!V§] = new Sampler(§1!V§,§!!C§,0);
+         §;!z§[§+!;§] = new Sampler(§+!;§,§!!C§,0);
+         §;!z§[§9!s§] = new Sampler(§9!s§,§3a§,0);
+         §;!z§[§?n§] = new Sampler(§?n§,§3a§,1);
+         §;!z§[§+![§] = new Sampler(§+![§,§9U§,1 << 0);
+         §;!z§[§#Q§] = new Sampler(§#Q§,§9U§,1 << 1);
+         §;!z§[§=V§] = new Sampler(§=V§,§9U§,1 << 2);
+         §;!z§[§-!l§] = new Sampler(§-!l§,§%n§,1);
+         §;!z§[§?<§] = new Sampler(§?<§,§%n§,1);
+         §;!z§[§8!B§] = new Sampler(§8!B§,§%n§,0);
       }
       
       public function get error() : String
@@ -1066,8 +294,6 @@ package §4!F§
       
       public function §9!+§(param1:String, param2:String, param3:Boolean = false) : ByteArray
       {
-         var _loc50_:Boolean = true;
-         var _loc51_:Boolean = false;
          var _loc9_:int = 0;
          var _loc11_:String = null;
          var _loc12_:int = 0;
@@ -1104,140 +330,347 @@ package §4!F§
          var _loc43_:uint = 0;
          var _loc44_:Number = NaN;
          var _loc45_:Sampler = null;
-         var _loc46_:String = null;
+         var _loc46_:* = null;
          var _loc47_:uint = 0;
          var _loc48_:uint = 0;
          var _loc49_:String = null;
          var _loc4_:uint = getTimer();
-         if(_loc50_)
-         {
-            this.§5c§ = new ByteArray();
-            if(!_loc51_)
-            {
-               this.§"!S§ = "";
-            }
-         }
+         this.§5c§ = new ByteArray();
+         this.§"!S§ = "";
          var _loc5_:Boolean = false;
-         if(_loc50_)
+         if(param1 == FRAGMENT)
          {
-            §§push(param1);
-            if(!_loc51_)
+            _loc5_ = true;
+         }
+         else if(param1 != VERTEX)
+         {
+            this.§"!S§ = "ERROR: mode needs to be \"" + FRAGMENT + "\" or \"" + VERTEX + "\" but is \"" + param1 + "\".";
+         }
+         this.§;!M§.endian = Endian.LITTLE_ENDIAN;
+         this.§;!M§.writeByte(160);
+         this.§;!M§.writeUnsignedInt(1);
+         this.§;!M§.writeByte(161);
+         this.§;!M§.writeByte(!!_loc5_ ? 1 : 0);
+         var _loc6_:Array = param2.replace(/[\f\n\r\v]+/g,"\n").split("\n");
+         var _loc7_:int = 0;
+         var _loc8_:int = 0;
+         var _loc10_:int = _loc6_.length;
+         _loc9_ = 0;
+         while(_loc9_ < _loc10_ && this.§"!S§ == "")
+         {
+            if((_loc12_ = (_loc11_ = new String(_loc6_[_loc9_])).search("//")) != -1)
             {
-               §§push(FRAGMENT);
-               loop0:
-               while(§§pop() != §§pop())
+               _loc11_ = _loc11_.slice(0,_loc12_);
+            }
+            if((_loc13_ = _loc11_.search(/<.*>/g)) != -1)
+            {
+               _loc14_ = _loc11_.slice(_loc13_).match(/([\w\.\-\+]+)/gi);
+               _loc11_ = _loc11_.slice(0,_loc13_);
+            }
+            _loc15_ = _loc11_.match(/^\w{3}/ig);
+            _loc16_ = §%@§[_loc15_[0]];
+            if(!this.§"!6§)
+            {
+            }
+            if(_loc16_ == null)
+            {
+               if(_loc11_.length >= 3)
                {
-                  §§push(param1);
-                  if(!(_loc51_ && param3))
+               }
+            }
+            else
+            {
+               _loc11_ = _loc11_.slice(_loc11_.search(_loc16_.name) + _loc16_.name.length);
+               if(_loc16_.flags & §-!q§)
+               {
+                  if(--_loc7_ < 0)
                   {
-                     §§push(VERTEX);
-                     if(!_loc50_)
+                     this.§"!S§ = "error: conditional closes without open.";
+                     break;
+                  }
+               }
+               if(_loc16_.flags & §,S§)
+               {
+                  _loc7_++;
+                  if(_loc7_ > §=M§)
+                  {
+                     this.§"!S§ = "error: nesting to deep, maximum allowed is " + §=M§ + ".";
+                     break;
+                  }
+               }
+               if(_loc16_.flags & §+!9§ && !_loc5_)
+               {
+                  this.§"!S§ = "error: opcode is only allowed in fragment programs.";
+                  break;
+               }
+               if(!param3)
+               {
+               }
+               this.§;!M§.writeUnsignedInt(_loc16_.emitCode);
+               _loc8_++;
+               if(_loc8_ > §#!"§)
+               {
+                  this.§"!S§ = "error: too many opcodes. maximum is " + §#!"§ + ".";
+                  break;
+               }
+               if((_loc17_ = _loc11_.match(/vc\[([vof][actps]?)(\d*)?(\.[xyzw](\+\d{1,3})?)?\](\.[xyzw]{1,4})?|([vof][actps]?)(\d*)?(\.[xyzw]{1,4})?/gi)).length != _loc16_.numRegister)
+               {
+                  this.§"!S§ = "error: wrong number of operands. found " + _loc17_.length + " but expected " + _loc16_.numRegister + ".";
+                  break;
+               }
+               _loc18_ = false;
+               _loc19_ = 64 + 64 + 32;
+               _loc20_ = _loc17_.length;
+               _loc21_ = 0;
+               while(_loc21_ < _loc20_)
+               {
+                  _loc22_ = false;
+                  if((_loc23_ = _loc17_[_loc21_].match(/\[.*\]/ig)).length > 0)
+                  {
+                     _loc17_[_loc21_] = _loc17_[_loc21_].replace(_loc23_[0],"0");
+                     if(!param3)
                      {
-                        continue;
                      }
-                     if(§§pop() != §§pop())
+                     _loc22_ = true;
+                  }
+                  _loc24_ = _loc17_[_loc21_].match(/^\b[A-Za-z]{1,2}/ig);
+                  _loc25_ = §@A§[_loc24_[0]];
+                  if(!this.§"!6§)
+                  {
+                  }
+                  if(_loc25_ == null)
+                  {
+                     this.§"!S§ = "error: could not parse operand " + _loc21_ + " (" + _loc17_[_loc21_] + ").";
+                     _loc18_ = true;
+                     break;
+                  }
+                  if(_loc5_)
+                  {
+                     if(!(_loc25_.flags & §+!s§))
                      {
-                        while(true)
+                        this.§"!S§ = "error: register operand " + _loc21_ + " (" + _loc17_[_loc21_] + ") only allowed in vertex programs.";
+                        _loc18_ = true;
+                        break;
+                     }
+                     if(_loc22_)
+                     {
+                        this.§"!S§ = "error: register operand " + _loc21_ + " (" + _loc17_[_loc21_] + ") relative adressing not allowed in fragment programs.";
+                        _loc18_ = true;
+                        break;
+                     }
+                  }
+                  else if(!(_loc25_.flags & §8Q§))
+                  {
+                     this.§"!S§ = "error: register operand " + _loc21_ + " (" + _loc17_[_loc21_] + ") only allowed in fragment programs.";
+                     _loc18_ = true;
+                     break;
+                  }
+                  _loc17_[_loc21_] = _loc17_[_loc21_].slice(_loc17_[_loc21_].search(_loc25_.name) + _loc25_.name.length);
+                  _loc26_ = !!_loc22_ ? _loc23_[0].match(/\d+/) : _loc17_[_loc21_].match(/\d+/);
+                  _loc27_ = 0;
+                  if(_loc26_)
+                  {
+                     _loc27_ = uint(_loc26_[0]);
+                  }
+                  if(_loc25_.range < _loc27_)
+                  {
+                     this.§"!S§ = "error: register operand " + _loc21_ + " (" + _loc17_[_loc21_] + ") index exceeds limit of " + (_loc25_.range + 1) + ".";
+                     _loc18_ = true;
+                     break;
+                  }
+                  _loc28_ = 0;
+                  _loc29_ = _loc17_[_loc21_].match(/(\.[xyzw]{1,4})/);
+                  _loc30_ = _loc21_ == 0 && !(_loc16_.flags & §"!@§);
+                  _loc31_ = _loc21_ == 2 && _loc16_.flags & §49§;
+                  _loc32_ = 0;
+                  _loc33_ = 0;
+                  _loc34_ = 0;
+                  if(_loc30_ && _loc22_)
+                  {
+                     this.§"!S§ = "error: relative can not be destination";
+                     _loc18_ = true;
+                     break;
+                  }
+                  if(_loc29_)
+                  {
+                     _loc28_ = 0;
+                     _loc36_ = _loc29_[0].length;
+                     _loc37_ = 1;
+                     while(_loc37_ < _loc36_)
+                     {
+                        if((_loc35_ = _loc29_[0].charCodeAt(_loc37_) - "x".charCodeAt(0)) > 2)
                         {
-                           §§push(this);
-                           §§push("ERROR: mode needs to be \"");
-                           if(_loc50_ || param2)
-                           {
-                              §§push(FRAGMENT);
-                              if(_loc50_ || param3)
-                              {
-                                 §§push(§§pop() + §§pop());
-                                 if(!_loc51_)
-                                 {
-                                    §§push("\" or \"");
-                                    if(_loc50_ || param2)
-                                    {
-                                       §§push(§§pop() + §§pop());
-                                       if(_loc50_)
-                                       {
-                                          §§push(VERTEX);
-                                          if(_loc50_)
-                                          {
-                                             addr254:
-                                             §§push(§§pop() + §§pop());
-                                             if(!_loc51_)
-                                             {
-                                                addr257:
-                                                §§push("\" but is \"");
-                                                if(_loc50_ || param2)
-                                                {
-                                                   addr265:
-                                                   §§push(§§pop() + §§pop());
-                                                   if(_loc50_ || param1)
-                                                   {
-                                                      addr279:
-                                                      §§push(§§pop() + param1);
-                                                      if(_loc50_)
-                                                      {
-                                                         addr277:
-                                                         §§push("\".");
-                                                      }
-                                                      §§pop().§"!S§ = §§pop();
-                                                      loop2:
-                                                      while(true)
-                                                      {
-                                                         if(!(_loc51_ && param3))
-                                                         {
-                                                            while(true)
-                                                            {
-                                                               addr191:
-                                                               while(true)
-                                                               {
-                                                                  this.§;!M§.endian = Endian.LITTLE_ENDIAN;
-                                                                  continue loop2;
-                                                               }
-                                                            }
-                                                            addr287:
-                                                         }
-                                                         else
-                                                         {
-                                                            addr295:
-                                                            while(true)
-                                                            {
-                                                               §§goto(addr191);
-                                                               break loop0;
-                                                            }
-                                                            addr295:
-                                                         }
-                                                         §§goto(addr191);
-                                                      }
-                                                   }
-                                                }
-                                                §§goto(addr279);
-                                                §§push(§§pop() + §§pop());
-                                             }
-                                          }
-                                          §§goto(addr279);
-                                       }
-                                       §§goto(addr257);
-                                    }
-                                    §§goto(addr265);
-                                 }
-                                 §§goto(addr277);
-                              }
-                              §§goto(addr254);
-                           }
-                           §§goto(addr279);
+                           _loc35_ = 3;
+                        }
+                        if(_loc30_)
+                        {
+                           _loc28_ |= 1 << _loc35_;
+                        }
+                        else
+                        {
+                           _loc28_ |= _loc35_ << (_loc37_ - 1 << 1);
+                        }
+                        _loc37_++;
+                     }
+                     if(!_loc30_)
+                     {
+                        while(_loc37_ <= 4)
+                        {
+                           _loc28_ |= _loc35_ << (_loc37_ - 1 << 1);
+                           _loc37_++;
                         }
                      }
-                     §§goto(addr191);
                   }
-                  §§goto(addr297);
+                  else
+                  {
+                     _loc28_ = !!_loc30_ ? uint(15) : uint(228);
+                  }
+                  if(_loc22_)
+                  {
+                     _loc38_ = _loc23_[0].match(/[A-Za-z]{1,2}/ig);
+                     if((_loc39_ = §@A§[_loc38_[0]]) == null)
+                     {
+                        this.§"!S§ = "error: bad index register";
+                        _loc18_ = true;
+                        break;
+                     }
+                     _loc32_ = _loc39_.emitCode;
+                     if((_loc40_ = _loc23_[0].match(/(\.[xyzw]{1,1})/)).length == 0)
+                     {
+                        this.§"!S§ = "error: bad index register select";
+                        _loc18_ = true;
+                        break;
+                     }
+                     if((_loc33_ = _loc40_[0].charCodeAt(1) - "x".charCodeAt(0)) > 2)
+                     {
+                        _loc33_ = 3;
+                     }
+                     if((_loc41_ = _loc23_[0].match(/\+\d{1,3}/ig)).length > 0)
+                     {
+                        _loc34_ = _loc41_[0];
+                     }
+                     if(_loc34_ < 0 || _loc34_ > 255)
+                     {
+                        this.§"!S§ = "error: index offset " + _loc34_ + " out of bounds. [0..255]";
+                        _loc18_ = true;
+                        break;
+                     }
+                     if(!param3)
+                     {
+                     }
+                  }
+                  if(!param3)
+                  {
+                  }
+                  if(_loc30_)
+                  {
+                     this.§;!M§.writeShort(_loc27_);
+                     this.§;!M§.writeByte(_loc28_);
+                     this.§;!M§.writeByte(_loc25_.emitCode);
+                     _loc19_ -= 32;
+                  }
+                  else if(_loc31_)
+                  {
+                     if(!param3)
+                     {
+                     }
+                     _loc42_ = 5;
+                     _loc43_ = _loc14_.length;
+                     _loc44_ = 0;
+                     _loc37_ = 0;
+                     while(_loc37_ < _loc43_)
+                     {
+                        if(!param3)
+                        {
+                        }
+                        if((_loc45_ = §;!z§[_loc14_[_loc37_]]) == null)
+                        {
+                           _loc44_ = Number(_loc14_[_loc37_]);
+                           if(!param3)
+                           {
+                           }
+                        }
+                        else
+                        {
+                           if(_loc45_.flag != §9U§)
+                           {
+                              _loc42_ &= ~(15 << _loc45_.flag);
+                           }
+                           _loc42_ |= uint(_loc45_.mask) << uint(_loc45_.flag);
+                        }
+                        _loc37_++;
+                     }
+                     this.§;!M§.writeShort(_loc27_);
+                     this.§;!M§.writeByte(int(_loc44_ * 8));
+                     this.§;!M§.writeByte(0);
+                     this.§;!M§.writeUnsignedInt(_loc42_);
+                     if(!param3)
+                     {
+                     }
+                     _loc19_ -= 64;
+                  }
+                  else
+                  {
+                     if(_loc21_ == 0)
+                     {
+                        this.§;!M§.writeUnsignedInt(0);
+                        _loc19_ -= 32;
+                     }
+                     this.§;!M§.writeShort(_loc27_);
+                     this.§;!M§.writeByte(_loc34_);
+                     this.§;!M§.writeByte(_loc28_);
+                     this.§;!M§.writeByte(_loc25_.emitCode);
+                     this.§;!M§.writeByte(_loc32_);
+                     this.§;!M§.writeShort(!!_loc22_ ? _loc33_ | 1 << 15 : 0);
+                     _loc19_ -= 64;
+                  }
+                  _loc21_++;
                }
-               while(true)
+               _loc21_ = 0;
+               while(_loc21_ < _loc19_)
                {
-                  _loc5_ = true;
-                  §§goto(addr295);
+                  this.§;!M§.writeByte(0);
+                  _loc21_ += 8;
+               }
+               if(_loc18_)
+               {
+                  break;
                }
             }
-            §§goto(addr297);
+            _loc9_++;
          }
-         §§goto(addr287);
+         if(this.§"!S§ != "")
+         {
+            this.§"!S§ += "\n  at line " + _loc9_ + " " + _loc6_[_loc9_];
+            this.§;!M§.length = 0;
+         }
+         if(this.§"!6§)
+         {
+            _loc46_ = "generated bytecode:";
+            _loc47_ = this.§;!M§.length;
+            _loc48_ = 0;
+            while(_loc48_ < _loc47_)
+            {
+               if(!(_loc48_ % 16))
+               {
+                  _loc46_ += "\n";
+               }
+               if(!(_loc48_ % 4))
+               {
+                  _loc46_ += " ";
+               }
+               if((_loc49_ = this.§;!M§[_loc48_].toString(16)).length < 2)
+               {
+                  _loc49_ = "0" + _loc49_;
+               }
+               _loc46_ += _loc49_;
+               _loc48_++;
+            }
+         }
+         if(!param3)
+         {
+         }
+         return this.§;!M§;
       }
    }
 }

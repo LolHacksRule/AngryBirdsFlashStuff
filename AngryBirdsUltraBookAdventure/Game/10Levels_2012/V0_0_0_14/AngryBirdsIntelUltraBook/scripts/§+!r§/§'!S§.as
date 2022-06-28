@@ -40,188 +40,24 @@ package §+!r§
       
       public function §'!S§(param1:String, param2:Number, param3:Number, param4:Number, param5:Number, param6:Boolean, param7:Boolean, param8:Number, param9:Boolean, param10:Number, param11:Number, param12:Number, param13:Array, param14:Boolean, param15:String, param16:String, param17:Boolean = false)
       {
-         var _loc18_:Boolean = true;
-         var _loc19_:Boolean = false;
-         if(!_loc19_)
-         {
-            super();
-            loop0:
-            while(true)
-            {
-               this.mName = param1;
-               loop1:
-               while(true)
-               {
-                  this.§2!h§ = param4;
-                  loop2:
-                  while(true)
-                  {
-                     this.§"U§ = param5;
-                     addr87:
-                     if(_loc19_ && param3)
-                     {
-                        continue;
-                     }
-                     this.§'5§ = param15;
-                     do
-                     {
-                        this.§'t§ = param16;
-                        loop16:
-                        while(true)
-                        {
-                           if(_loc18_ || param1)
-                           {
-                              if(!_loc18_)
-                              {
-                                 break;
-                              }
-                              if(!_loc19_)
-                              {
-                                 continue;
-                              }
-                              continue loop0;
-                           }
-                           loop13:
-                           while(!_loc19_)
-                           {
-                              this.§,!"§ = param14;
-                              while(true)
-                              {
-                                 if(_loc18_)
-                                 {
-                                    addr73:
-                                    if(_loc18_ || param2)
-                                    {
-                                       addr80:
-                                       if(!(_loc19_ && param1))
-                                       {
-                                          §§goto(addr87);
-                                       }
-                                       else
-                                       {
-                                          while(true)
-                                          {
-                                             this.§]K§ = param6;
-                                             break loop13;
-                                             §§goto(addr80);
-                                          }
-                                          addr205:
-                                       }
-                                    }
-                                    while(true)
-                                    {
-                                       this.§5!B§ = param12;
-                                       §§goto(addr73);
-                                    }
-                                    addr123:
-                                 }
-                                 while(_loc18_)
-                                 {
-                                    this.§ !N§ = param13;
-                                    continue loop16;
-                                 }
-                                 addr128:
-                                 addr174:
-                                 while(_loc18_ || this)
-                                 {
-                                    this.§#!;§ = param11;
-                                    §§goto(addr123);
-                                 }
-                                 while(true)
-                                 {
-                                    §§push(this);
-                                    if(_loc18_ || param1)
-                                    {
-                                       §§push(param8);
-                                       if(_loc18_)
-                                       {
-                                          if(§§pop() != 0)
-                                          {
-                                             addr159:
-                                             §§push(param8);
-                                             if(_loc18_)
-                                             {
-                                                addr162:
-                                                §§push(Number(§§pop()));
-                                                if(_loc19_)
-                                                {
-                                                }
-                                                addr168:
-                                                §§pop().§!+§ = §§pop();
-                                                while(true)
-                                                {
-                                                   this.§5!=§ = param9;
-                                                   break loop16;
-                                                   addr38:
-                                                   if(_loc18_ || param3)
-                                                   {
-                                                      return;
-                                                   }
-                                                }
-                                             }
-                                          }
-                                          else
-                                          {
-                                             §§push(Number(1));
-                                          }
-                                          §§goto(addr168);
-                                       }
-                                       §§goto(addr162);
-                                    }
-                                    §§goto(addr159);
-                                    §§goto(addr128);
-                                 }
-                              }
-                              continue loop2;
-                           }
-                           addr179:
-                           addr215:
-                           while(_loc18_ || param2)
-                           {
-                              this.§+P§ = param7;
-                              §§goto(addr174);
-                           }
-                           while(true)
-                           {
-                              this.§'!k§ = param3;
-                              addr210:
-                              while(true)
-                              {
-                                 §§push(this);
-                                 §§push(param2);
-                                 if(_loc18_)
-                                 {
-                                    §§push(§§pop() / 1000);
-                                 }
-                                 §§pop().§9j§ = §§pop();
-                                 §§goto(addr205);
-                              }
-                              §§goto(addr179);
-                           }
-                        }
-                        while(!_loc19_)
-                        {
-                           if(!_loc18_)
-                           {
-                              continue loop1;
-                           }
-                           this.§+5§ = param10;
-                           §§goto(addr128);
-                        }
-                        §§goto(addr210);
-                     }
-                     while(_loc19_);
-                     
-                     if(_loc18_)
-                     {
-                        §§goto(addr38);
-                     }
-                     §§goto(addr71);
-                  }
-               }
-            }
-         }
-         §§goto(addr215);
+         super();
+         this.mName = param1;
+         this.§2!h§ = param4;
+         this.§"U§ = param5;
+         this.§'!k§ = param3;
+         this.§9j§ = param2 / 1000;
+         this.§]K§ = param6;
+         this.§+P§ = param7;
+         this.§!+§ = param8 != 0 ? Number(param8) : Number(1);
+         this.§5!=§ = param9;
+         this.§+5§ = param10;
+         this.§#!;§ = param11;
+         this.§5!B§ = param12;
+         this.§ !N§ = param13;
+         this.§,!"§ = param14;
+         this.§'5§ = param15;
+         this.§'t§ = param16;
+         this.§"2§ = param17;
       }
       
       public function §?!M§() : String

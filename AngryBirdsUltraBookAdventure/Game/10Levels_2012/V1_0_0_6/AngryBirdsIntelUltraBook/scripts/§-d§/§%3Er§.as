@@ -23,64 +23,7 @@ package §-d§
       public static const §@!g§:int = 2;
       
       public static const §>t§:int = 1;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            §&"§ = 0;
-            while(true)
-            {
-               §;!?§ = 6;
-               while(_loc2_)
-               {
-                  §+P§ = 7;
-                  while(true)
-                  {
-                     §0=§ = 8;
-                  }
-                  if(_loc2_ || §>r§)
-                  {
-                     return;
-                     addr61:
-                  }
-               }
-            }
-         }
-         loop3:
-         while(true)
-         {
-            §7b§ = 3;
-            while(true)
-            {
-               §`!s§ = 5;
-               loop5:
-               for(; !_loc1_; if(_loc2_ || _loc2_)
-               {
-                  continue loop3;
-               })
-               {
-                  §@!g§ = 2;
-                  while(_loc2_)
-                  {
-                     §>t§ = 1;
-                     if(_loc2_)
-                     {
-                        continue loop5;
-                     }
-                  }
-                  §§goto(addr100);
-               }
-            }
-            if(!(_loc2_ || _loc2_))
-            {
-               continue;
-            }
-            §§goto(addr54);
-         }
-         §§goto(addr61);
-      }
+       
       
       public var §^r§:String;
       
@@ -110,117 +53,24 @@ package §-d§
       
       public function §>r§(param1:String, param2:int, param3:§3!F§, param4:§-C§, param5:§7]§, param6:int, param7:String, param8:Number, param9:Number, param10:Number, param11:Boolean = false, param12:String = "", param13:int = 1)
       {
-         var _loc14_:Boolean = true;
-         var _loc15_:Boolean = false;
-         if(_loc14_)
+         super();
+         this.§^r§ = param1;
+         this.§]!g§ = param2;
+         this.§]!l§ = param3;
+         this.§&;§ = param12;
+         this.§7#§ = param13;
+         this.§,!p§ = param11;
+         this.§[!K§ = param4;
+         this.§]n§ = param5;
+         this.§>!X§ = new §=E§(param6);
+         this.§0!R§ = param7;
+         this.§7!N§ = param8;
+         if(this.§7!N§ <= 0)
          {
-            super();
-            while(true)
-            {
-               this.§^r§ = param1;
-               while(true)
-               {
-                  this.§]!g§ = param2;
-                  addr176:
-                  while(!_loc15_)
-                  {
-                     this.§]!l§ = param3;
-                     while(true)
-                     {
-                        this.§&;§ = param12;
-                     }
-                  }
-               }
-            }
-            addr186:
+            this.§7!N§ = 1;
          }
-         loop4:
-         while(true)
-         {
-            this.§7#§ = param13;
-            loop5:
-            while(true)
-            {
-               if(_loc14_)
-               {
-                  this.§,!p§ = param11;
-                  while(true)
-                  {
-                     this.§[!K§ = param4;
-                     while(true)
-                     {
-                        this.§]n§ = param5;
-                        loop8:
-                        for(; !(_loc15_ && param3); while(_loc14_ || this)
-                        {
-                           this.§7!N§ = param8;
-                           continue loop5;
-                           if(_loc14_ || param3)
-                           {
-                              return;
-                           }
-                        })
-                        {
-                           this.§>!X§ = new §=E§(param6);
-                           while(_loc14_)
-                           {
-                              this.§0!R§ = param7;
-                              continue loop8;
-                           }
-                           §§goto(addr171);
-                        }
-                     }
-                     loop13:
-                     for(; _loc14_ || param2; if(!(_loc14_ || param2))
-                     {
-                        continue;
-                     },§§goto(addr36))
-                     {
-                        while(true)
-                        {
-                           this.§]l§ = param9;
-                           loop15:
-                           while(true)
-                           {
-                              if(_loc14_)
-                              {
-                                 continue loop4;
-                              }
-                              addr63:
-                              while(true)
-                              {
-                                 if(_loc14_)
-                                 {
-                                    if(!_loc15_)
-                                    {
-                                       this.§7!N§ = 1;
-                                       break loop15;
-                                    }
-                                    break;
-                                 }
-                                 continue loop5;
-                              }
-                              addr57:
-                              §§goto(addr120);
-                              this.§'!u§ = param10;
-                              if(!_loc15_)
-                              {
-                                 continue loop13;
-                              }
-                           }
-                           continue loop13;
-                        }
-                        §§goto(addr36);
-                     }
-                  }
-               }
-               else
-               {
-                  §§goto(addr186);
-               }
-               §§goto(addr171);
-            }
-         }
+         this.§]l§ = param9;
+         this.§'!u§ = param10;
       }
       
       public function get front() : Boolean
@@ -300,59 +150,13 @@ package §-d§
       
       public function get shape() : §7]§
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
          var _loc1_:Texture = null;
-         if(!(_loc2_ && _loc2_))
+         if(!this.§]n§)
          {
-            §§push(this.§]n§);
-            if(_loc3_ || this)
-            {
-               if(!§§pop())
-               {
-                  _loc1_ = §^!c§.§5!Y§.animationManager.getAnimation(this.§^r§).getFrame(0).texture;
-                  addr37:
-                  if(!_loc2_)
-                  {
-                     §§push(this);
-                     §§push(§§findproperty(§7]§));
-                     §§push(this.§^r§);
-                     §§push("Rectangle");
-                     §§push(_loc1_.width);
-                     if(_loc3_)
-                     {
-                        §§push(§'u§.§18§);
-                        if(!_loc2_)
-                        {
-                           §§push(§§pop() * §§pop());
-                           if(_loc3_)
-                           {
-                              addr86:
-                              §§push(§§pop() / 2);
-                           }
-                           §§push(_loc1_.height);
-                           if(_loc3_)
-                           {
-                              §§push(§§pop() * §'u§.§18§);
-                              if(!(_loc2_ && this))
-                              {
-                                 §§push(§§pop() / 2);
-                              }
-                           }
-                        }
-                        §§pop().§]n§ = new §§pop().§7]§(§§pop(),§§pop(),§§pop(),§§pop());
-                        addr108:
-                        return this.§]n§;
-                        addr106:
-                     }
-                     §§goto(addr86);
-                  }
-               }
-               §§goto(addr106);
-            }
-            §§goto(addr108);
+            _loc1_ = §^!c§.§5!Y§.animationManager.getAnimation(this.§^r§).getFrame(0).texture;
+            this.§]n§ = new §7]§(this.§^r§,"Rectangle",_loc1_.width * §'u§.§18§ / 2,_loc1_.height * §'u§.§18§ / 2);
          }
-         §§goto(addr37);
+         return this.§]n§;
       }
       
       public function get §;!"§() : §-C§

@@ -10,363 +10,94 @@ package §>o§
       
       public function §+E§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function § -§(param1:XMLList, param2:XMLList, param3:XMLList) : void
       {
-         var _loc7_:Boolean = true;
-         var _loc8_:Boolean = false;
          var _loc4_:XML = null;
-         if(!(_loc8_ && param1))
-         {
-            §>!3§ = new Array();
-         }
-         loop0:
+         §>!3§ = new Array();
          for each(_loc4_ in param1.Material)
          {
             if(_loc4_.attribute("bodyType").length() <= 0)
             {
-               if(_loc7_)
-               {
-                  §§push(§[g§);
-                  §§push("WARNING, LevelItemMaterials constructor, bodyType is missing for material: ");
-                  if(_loc7_)
-                  {
-                     §§push(§§pop() + _loc4_.@id);
-                  }
-                  §§pop().log(§§pop());
-                  if(_loc7_)
-                  {
-                     addr230:
-                     if(_loc4_.attribute("density").length() <= 0)
-                     {
-                        if(!_loc8_)
-                        {
-                           §§push(§[g§);
-                           §§push("WARNING, LevelItemMaterials constructor, density is missing for material: ");
-                           if(_loc7_ || param3)
-                           {
-                              §§push(§§pop() + _loc4_.@id);
-                           }
-                           §§pop().log(§§pop());
-                        }
-                        while(true)
-                        {
-                        }
-                        addr261:
-                     }
-                     while(true)
-                     {
-                        if(_loc4_.attribute("friction").length() <= 0)
-                        {
-                           loop3:
-                           while(true)
-                           {
-                              §§push(§[g§);
-                              §§push("WARNING, LevelItemMaterials constructor, friction is missing for material: ");
-                              if(!_loc8_)
-                              {
-                                 §§push(§§pop() + _loc4_.@id);
-                              }
-                              §§pop().log(§§pop());
-                              addr229:
-                              loop4:
-                              while(true)
-                              {
-                                 loop14:
-                                 while(true)
-                                 {
-                                    if(_loc7_ || param2)
-                                    {
-                                       while(true)
-                                       {
-                                          if(_loc4_.attribute("strength").length() <= 0)
-                                          {
-                                             continue loop3;
-                                          }
-                                          loop2:
-                                          while(true)
-                                          {
-                                             if(_loc4_.attribute("defence").length() <= 0)
-                                             {
-                                                if(!_loc8_)
-                                                {
-                                                   if(_loc7_)
-                                                   {
-                                                      if(_loc7_ || param3)
-                                                      {
-                                                         §§push(§[g§);
-                                                         §§push("WARNING, LevelItemMaterials constructor, defence is missing for material: ");
-                                                         if(_loc7_)
-                                                         {
-                                                            §§push(§§pop() + _loc4_.@id);
-                                                         }
-                                                         §§pop().log(§§pop());
-                                                      }
-                                                      else
-                                                      {
-                                                         §§goto(addr261);
-                                                      }
-                                                   }
-                                                   else
-                                                   {
-                                                      while(_loc8_)
-                                                      {
-                                                         while(true)
-                                                         {
-                                                            §§push(§[g§);
-                                                            §§push("WARNING, LevelItemMaterials constructor, restitution is missing for material: ");
-                                                            if(_loc7_ || §+E§)
-                                                            {
-                                                               §§push(§§pop() + _loc4_.@id);
-                                                            }
-                                                            §§pop().log(§§pop());
-                                                            continue loop14;
-                                                         }
-                                                      }
-                                                      while(true)
-                                                      {
-                                                         continue loop2;
-                                                      }
-                                                      addr183:
-                                                      addr185:
-                                                   }
-                                                }
-                                                while(_loc7_ || param1)
-                                                {
-                                                }
-                                                continue loop3;
-                                                addr148:
-                                             }
-                                             loop10:
-                                             do
-                                             {
-                                                if(_loc4_.attribute("colors").length() <= 0)
-                                                {
-                                                   if(!_loc8_)
-                                                   {
-                                                      §§push(§[g§);
-                                                      §§push("WARNING, LevelItemMaterials constructor, colors is missing for material: ");
-                                                      if(_loc7_)
-                                                      {
-                                                         §§push(§§pop() + _loc4_.@id);
-                                                      }
-                                                      §§pop().log(§§pop());
-                                                   }
-                                                   while(true)
-                                                   {
-                                                      if(_loc7_)
-                                                      {
-                                                         continue;
-                                                      }
-                                                      §§goto(addr148);
-                                                   }
-                                                   addr109:
-                                                }
-                                                while(true)
-                                                {
-                                                   §!B§(_loc4_.@id,_loc4_.@bodyType,_loc4_.@density,_loc4_.@friction,_loc4_.@restitution,_loc4_.@strength,_loc4_.@defence,_loc4_.@colors);
-                                                   if(_loc7_ || param2)
-                                                   {
-                                                      if(_loc7_)
-                                                      {
-                                                         continue loop10;
-                                                      }
-                                                      continue loop14;
-                                                   }
-                                                   §§goto(addr109);
-                                                }
-                                             }
-                                             while(false);
-                                             
-                                             continue loop0;
-                                          }
-                                          continue loop14;
-                                       }
-                                       addr156:
-                                    }
-                                    continue loop4;
-                                 }
-                              }
-                           }
-                        }
-                        while(true)
-                        {
-                           if(_loc4_.attribute("restitution").length() <= 0)
-                           {
-                              §§goto(addr193);
-                           }
-                           §§goto(addr156);
-                           §§goto(addr229);
-                        }
-                     }
-                  }
-                  §§goto(addr185);
-               }
-               §§goto(addr193);
+               §[g§.log("WARNING, LevelItemMaterials constructor, bodyType is missing for material: " + _loc4_.@id);
             }
-            §§goto(addr230);
+            if(_loc4_.attribute("density").length() <= 0)
+            {
+               §[g§.log("WARNING, LevelItemMaterials constructor, density is missing for material: " + _loc4_.@id);
+            }
+            if(_loc4_.attribute("friction").length() <= 0)
+            {
+               §[g§.log("WARNING, LevelItemMaterials constructor, friction is missing for material: " + _loc4_.@id);
+            }
+            if(_loc4_.attribute("restitution").length() <= 0)
+            {
+               §[g§.log("WARNING, LevelItemMaterials constructor, restitution is missing for material: " + _loc4_.@id);
+            }
+            if(_loc4_.attribute("strength").length() <= 0)
+            {
+               §[g§.log("WARNING, LevelItemMaterials constructor, strength is missing for material: " + _loc4_.@id);
+            }
+            if(_loc4_.attribute("defence").length() <= 0)
+            {
+               §[g§.log("WARNING, LevelItemMaterials constructor, defence is missing for material: " + _loc4_.@id);
+            }
+            if(_loc4_.attribute("colors").length() <= 0)
+            {
+               §[g§.log("WARNING, LevelItemMaterials constructor, colors is missing for material: " + _loc4_.@id);
+            }
+            §!B§(_loc4_.@id,_loc4_.@bodyType,_loc4_.@density,_loc4_.@friction,_loc4_.@restitution,_loc4_.@strength,_loc4_.@defence,_loc4_.@colors);
          }
-         if(_loc7_)
-         {
-            §;!f§(param2,param3);
-         }
+         §;!f§(param2,param3);
       }
       
       public static function §;!f§(param1:XMLList, param2:XMLList) : void
       {
-         var _loc7_:Boolean = true;
-         var _loc8_:Boolean = false;
          var _loc3_:XML = null;
          var _loc4_:§"!e§ = null;
-         var _loc5_:int = 0;
-         var _loc6_:* = param1.Material;
-         loop0:
-         while(true)
+         for each(_loc3_ in param1.Material)
          {
-            §§push(§§hasnext(_loc6_,_loc5_));
-            if(_loc7_)
+            if(_loc4_ = §#?§(_loc3_.@id))
             {
-               if(§§pop())
-               {
-                  _loc3_ = §§nextvalue(_loc5_,_loc6_);
-                  if(_loc4_ = §#?§(_loc3_.@id))
-                  {
-                     if(!_loc8_)
-                     {
-                        _loc4_.§5!U§(_loc3_);
-                        if(_loc8_ && param1)
-                        {
-                           continue;
-                        }
-                     }
-                  }
-                  else
-                  {
-                     §§push(§[g§);
-                     §§push("WARNING! Damage material multiplier with unknown material!!");
-                     if(!(_loc8_ && §+E§))
-                     {
-                        §§push(§§pop() + _loc3_.@id);
-                     }
-                     §§pop().log(§§pop());
-                  }
-                  continue;
-               }
-               if(!(_loc8_ && _loc3_))
-               {
-                  if(_loc7_)
-                  {
-                     if(_loc7_)
-                     {
-                        _loc5_ = 0;
-                        if(!_loc8_)
-                        {
-                           _loc6_ = param2.Material;
-                           while(true)
-                           {
-                              §§push(§§hasnext(_loc6_,_loc5_));
-                              break loop0;
-                           }
-                           addr153:
-                           addr152:
-                           addr150:
-                        }
-                        §§goto(addr153);
-                     }
-                     return;
-                  }
-                  §§goto(addr153);
-               }
-               §§goto(addr152);
+               _loc4_.§5!U§(_loc3_);
             }
-            break;
+            else
+            {
+               §[g§.log("WARNING! Damage material multiplier with unknown material!!" + _loc3_.@id);
+            }
          }
-         while(true)
+         for each(_loc3_ in param2.Material)
          {
-            if(§§pop())
+            if(_loc4_ = §#?§(_loc3_.@id))
             {
-               _loc3_ = §§nextvalue(_loc5_,_loc6_);
-               if(_loc4_ = §#?§(_loc3_.@id))
-               {
-                  if(_loc7_)
-                  {
-                     _loc4_.§'3§(_loc3_);
-                     if(!_loc7_)
-                     {
-                        continue;
-                     }
-                  }
-               }
-               else
-               {
-                  §§push(§[g§);
-                  §§push("WARNING! Velocity material multiplier with unknown material!!");
-                  if(_loc7_ || _loc3_)
-                  {
-                     §§push(§§pop() + _loc3_.@id);
-                  }
-                  §§pop().log(§§pop());
-               }
-               continue;
+               _loc4_.§'3§(_loc3_);
             }
-            §§goto(addr153);
+            else
+            {
+               §[g§.log("WARNING! Velocity material multiplier with unknown material!!" + _loc3_.@id);
+            }
          }
       }
       
       public static function §!B§(param1:String, param2:String, param3:Number, param4:Number, param5:Number, param6:Number, param7:Number, param8:Number) : void
       {
-         var _loc9_:Boolean = false;
-         var _loc10_:Boolean = true;
-         if(!_loc9_)
-         {
-            §>!3§[§>!3§.length] = new §"!e§(param1,param2,param3,param4,param5,param6,param7,param8);
-         }
+         §>!3§[§>!3§.length] = new §"!e§(param1,param2,param3,param4,param5,param6,param7,param8);
       }
       
       public static function §#?§(param1:String) : §"!e§
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
          var _loc2_:int = 0;
-         do
+         while(_loc2_ < §>!3§.length)
          {
-            if(_loc2_ >= §>!3§.length)
+            if((§>!3§[_loc2_] as §"!e§).mName.toLowerCase() == param1.toLowerCase())
             {
-               if(!(_loc3_ && _loc2_))
-               {
-                  if(_loc3_ && §+E§)
-                  {
-                     continue;
-                  }
-                  §§push(§[g§);
-                  §§push("WARNING: LevelItemMaterials -> getMaterial request has no return value, this material does not exist: ");
-                  if(_loc4_)
-                  {
-                     §§push(§§pop() + param1);
-                  }
-                  §§pop().log(§§pop());
-               }
-               if(_loc4_)
-               {
-                  return null;
-               }
-            }
-            else if((§>!3§[_loc2_] as §"!e§).mName.toLowerCase() == param1.toLowerCase())
-            {
-               break;
+               return §"!e§(§>!3§[_loc2_]);
             }
             _loc2_++;
          }
-         while(!(_loc3_ && §+E§));
-         
-         return §"!e§(§>!3§[_loc2_]);
+         §[g§.log("WARNING: LevelItemMaterials -> getMaterial request has no return value, this material does not exist: " + param1);
+         return null;
       }
    }
 }

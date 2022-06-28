@@ -27,60 +27,7 @@ package starling.events
       public static const CONTEXT3D_CREATE:String = "context3DCreate";
       
       public static const §_-rC§:String = "removeFromJuggler";
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            ADDED = "added";
-            while(true)
-            {
-               ADDED_TO_STAGE = "addedToStage";
-            }
-            addr146:
-         }
-         while(true)
-         {
-            ENTER_FRAME = "enterFrame";
-            while(true)
-            {
-               §_-VT§ = "removed";
-               while(true)
-               {
-                  REMOVED_FROM_STAGE = "removedFromStage";
-                  while(!(_loc2_ && _loc1_))
-                  {
-                     §_-fg§ = "triggered";
-                     loop5:
-                     while(true)
-                     {
-                        §_-YD§ = "flatten";
-                        addr100:
-                        while(true)
-                        {
-                           RESIZE = "resize";
-                           continue loop5;
-                        }
-                     }
-                     if(!(_loc2_ && Event))
-                     {
-                        return;
-                     }
-                  }
-               }
-            }
-            if(_loc2_ && Event)
-            {
-               continue;
-            }
-            if(_loc1_)
-            {
-               §§goto(addr71);
-            }
-            §§goto(addr146);
-         }
-      }
+       
       
       private var §_-EY§:EventDispatcher;
       
@@ -96,44 +43,20 @@ package starling.events
       
       public function Event(param1:String, param2:Boolean = false)
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_)
-         {
-            super();
-         }
-         while(true)
-         {
-            this.§_-kV§ = param1;
-            while(!(_loc4_ && this))
-            {
-               this.§_-Be§ = param2;
-               if(_loc3_)
-               {
-                  return;
-               }
-            }
-         }
+         super();
+         this.§_-kV§ = param1;
+         this.§_-Be§ = param2;
       }
       
       public function stopPropagation() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            this.§_-2o§ = true;
-         }
+         this.§_-2o§ = true;
       }
       
       public function §_-Iu§() : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc1_))
-         {
-            this.§_-2o§ = this.§_-ZY§ = true;
-         }
+         this.§_-ZY§ = true;
+         this.§_-2o§ = true;
       }
       
       public function toString() : String
@@ -143,22 +66,12 @@ package starling.events
       
       function §_-dc§(param1:EventDispatcher) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc3_))
-         {
-            this.§_-EY§ = param1;
-         }
+         this.§_-EY§ = param1;
       }
       
       function §_-j5§(param1:EventDispatcher) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && param1))
-         {
-            this.§_-Yb§ = param1;
-         }
+         this.§_-Yb§ = param1;
       }
       
       function get §_-AR§() : Boolean

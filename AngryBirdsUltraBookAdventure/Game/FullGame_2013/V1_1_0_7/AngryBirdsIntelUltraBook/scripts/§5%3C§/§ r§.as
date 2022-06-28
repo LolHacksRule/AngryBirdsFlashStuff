@@ -16,30 +16,10 @@ package §5<§
       
       public function § r§(param1:int, param2:int, param3:Number)
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!_loc4_)
-         {
-            super();
-         }
-         while(true)
-         {
-            this.§"!H§ = param1;
-            while(_loc5_ || param3)
-            {
-               this.§@!z§ = param2;
-               do
-               {
-                  this.§<!'§ = Math.floor(param3 * 1000);
-               }
-               while(!_loc5_);
-               
-               if(!(_loc4_ && this))
-               {
-                  return;
-               }
-            }
-         }
+         super();
+         this.§"!H§ = param1;
+         this.§@!z§ = param2;
+         this.§<!'§ = Math.floor(param3 * 1000);
       }
       
       public function get §`s§() : int
@@ -49,12 +29,7 @@ package §5<§
       
       public function set §`s§(param1:int) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && this))
-         {
-            this.§"!H§ = param1;
-         }
+         this.§"!H§ = param1;
       }
       
       public function get targetId() : int
@@ -74,46 +49,17 @@ package §5<§
       
       public function set §!s§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§;B§ = param1;
-         }
+         this.§;B§ = param1;
       }
       
       public function update(param1:Number) : int
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
+         this.§4!K§ += param1;
+         if(this.§4!K§ >= this.§<!'§)
          {
-            §§push(this);
-            §§push(this.§4!K§);
-            if(!_loc2_)
-            {
-               §§push(§§pop() + param1);
-            }
-            §§pop().§4!K§ = §§pop();
+            return this.§@!z§;
          }
-         while(this.§4!K§ >= this.§<!'§)
-         {
-            if(!_loc2_)
-            {
-               §§goto(addr62);
-            }
-            if(_loc3_ || this)
-            {
-               break;
-            }
-         }
-         §§push(-1);
-         if(_loc3_ || param1)
-         {
-            return §§pop();
-         }
-         addr62:
-         return this.§@!z§;
+         return -1;
       }
    }
 }

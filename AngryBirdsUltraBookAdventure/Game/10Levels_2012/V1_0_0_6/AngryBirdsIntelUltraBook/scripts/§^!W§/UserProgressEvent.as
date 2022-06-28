@@ -8,32 +8,13 @@ package §^!W§
       public static const §-[§:String = "OnMightyEagleTimerComplete";
       
       public static const §^!k§:String = "userProgressSaved";
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            §-[§ = "OnMightyEagleTimerComplete";
-            do
-            {
-               §^!k§ = "userProgressSaved";
-            }
-            while(!(_loc2_ || _loc2_));
-            
-         }
-      }
+       
       
       public var data:Object;
       
       public function UserProgressEvent(param1:String, param2:Boolean = false, param3:Boolean = false)
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(_loc5_ || param3)
-         {
-            super(param1,param2,param3);
-         }
+         super(param1,param2,param3);
       }
       
       override public function clone() : Event

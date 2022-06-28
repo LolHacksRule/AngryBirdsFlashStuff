@@ -17,97 +17,14 @@ package §2!H§
       
       public function §'!I§()
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            super();
-            if(!_loc2_)
-            {
-               addChild(this.§'!k§ = new Sprite());
-               if(!_loc2_)
-               {
-                  this.§'!k§.addChild(this.§1c§ = new Sprite());
-                  if(_loc3_)
-                  {
-                     this.§26§ = new §3x§(2,2,0);
-                     addr150:
-                     while(true)
-                     {
-                        §§push(this.§26§);
-                        addr138:
-                        while(true)
-                        {
-                           §§push(§]!B§.SCREEN_WIDTH);
-                           addr141:
-                           while(true)
-                           {
-                              §§pop().width = §§pop();
-                           }
-                        }
-                     }
-                     addr150:
-                  }
-                  loop0:
-                  while(true)
-                  {
-                     §§push(this.§26§);
-                     addr99:
-                     loop1:
-                     while(true)
-                     {
-                        §§push(§]!B§.SCREEN_HEIGHT);
-                        if(!(_loc2_ && _loc3_))
-                        {
-                           §§pop().height = §§pop();
-                           while(true)
-                           {
-                              if(!(_loc3_ || _loc3_))
-                              {
-                                 continue loop0;
-                              }
-                              if(!(_loc2_ && this))
-                              {
-                                 addChild(this.§26§);
-                                 while(_loc3_)
-                                 {
-                                    continue loop1;
-                                    §§pop().alpha = 0.5;
-                                    if(_loc3_ || _loc2_)
-                                    {
-                                       return;
-                                       addr86:
-                                    }
-                                 }
-                                 continue;
-                              }
-                              §§goto(addr150);
-                           }
-                           §§goto(addr138);
-                        }
-                        break;
-                     }
-                     §§goto(addr141);
-                  }
-               }
-               while(true)
-               {
-                  §§push(this.§26§);
-                  if(_loc3_)
-                  {
-                     if(!(_loc2_ && _loc1_))
-                     {
-                        §§goto(addr77);
-                     }
-                     §§goto(addr138);
-                  }
-                  §§goto(addr99);
-               }
-               §§goto(addr86);
-            }
-            §§goto(addr150);
-         }
-         §§goto(addr86);
+         super();
+         addChild(this.§'!k§ = new Sprite());
+         this.§'!k§.addChild(this.§1c§ = new Sprite());
+         this.§26§ = new §3x§(2,2,0);
+         this.§26§.width = §]!B§.SCREEN_WIDTH;
+         this.§26§.height = §]!B§.SCREEN_HEIGHT;
+         addChild(this.§26§);
+         this.§26§.alpha = 0.5;
       }
       
       public function get §`!K§() : Sprite
@@ -127,56 +44,9 @@ package §2!H§
       
       public function §;0§(param1:Number, param2:Number) : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         §§push(this.§26§.width);
-         if(!(_loc5_ && param1))
-         {
-            §§push(§§pop() / this.§26§.height);
-            if(_loc4_ || param1)
-            {
-               addr37:
-               §§push(Number(§§pop()));
-            }
-            var _loc3_:* = §§pop();
-            if(_loc4_ || param1)
-            {
-               §§push(this.§26§);
-               loop0:
-               while(true)
-               {
-                  §§push(param1);
-                  addr115:
-                  while(true)
-                  {
-                     §§push(600);
-                     addr116:
-                     while(true)
-                     {
-                        §§push(_loc3_);
-                        addr117:
-                        while(true)
-                        {
-                           §§push(§§pop() / §§pop());
-                           addr118:
-                           while(true)
-                           {
-                              §§push(§§pop() + §§pop());
-                              addr119:
-                              while(true)
-                              {
-                                 §§pop().width = §§pop();
-                                 continue loop0;
-                              }
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-            §§goto(addr111);
-         }
-         §§goto(addr37);
+         var _loc3_:Number = this.§26§.width / this.§26§.height;
+         this.§26§.width = param1 + 600 / _loc3_;
+         this.§26§.height = param2 + 600 / _loc3_;
       }
    }
 }

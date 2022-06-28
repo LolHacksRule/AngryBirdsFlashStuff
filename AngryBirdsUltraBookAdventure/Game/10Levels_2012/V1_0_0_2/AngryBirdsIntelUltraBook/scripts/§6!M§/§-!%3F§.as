@@ -17,30 +17,10 @@ package §6!M§
       
       public function §-!?§(param1:String, param2:String, param3:String, param4:int, param5:int, param6:int, param7:int)
       {
-         var _loc8_:Boolean = false;
-         var _loc9_:Boolean = true;
-         if(_loc9_)
-         {
-            this.§0!F§ = param4;
-            while(true)
-            {
-               this.stars = param5;
-               while(!_loc8_)
-               {
-                  this.§?!d§ = param6;
-                  while(!_loc8_)
-                  {
-                     super(param1,param2,param3,param7);
-                     if(_loc9_)
-                     {
-                        return;
-                        addr43:
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr43);
+         this.§0!F§ = param4;
+         this.stars = param5;
+         this.§?!d§ = param6;
+         super(param1,param2,param3,param7);
       }
       
       public static function §3!x§(param1:Object) : §-!?§

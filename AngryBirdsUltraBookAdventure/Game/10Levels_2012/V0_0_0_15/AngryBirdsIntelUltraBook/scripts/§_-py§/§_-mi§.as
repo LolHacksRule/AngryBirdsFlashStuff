@@ -28,80 +28,11 @@ package §_-py§
       public static const §_-5t§:int = 11;
       
       public static const §_-TZ§:int = 12;
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            §_-7y§ = -1;
-            loop0:
-            while(true)
-            {
-               §_-f3§ = 0;
-               loop1:
-               while(true)
-               {
-                  §_-Qb§ = 1;
-                  while(true)
-                  {
-                     §_-XT§ = 2;
-                     continue loop0;
-                     addr98:
-                     if(!(_loc2_ && §_-mi§))
-                     {
-                        NULL = 9;
-                        while(true)
-                        {
-                           if(_loc1_ || _loc2_)
-                           {
-                              addr84:
-                              if(_loc2_ && _loc2_)
-                              {
-                                 break;
-                              }
-                              §_-0DV§ = 10;
-                              continue;
-                           }
-                           loop7:
-                           while(true)
-                           {
-                              if(!(_loc2_ && _loc2_))
-                              {
-                                 continue loop1;
-                              }
-                              addr144:
-                              while(true)
-                              {
-                                 §_-04x§ = 6;
-                                 addr129:
-                                 while(true)
-                                 {
-                                    TRUE = 7;
-                                    continue loop7;
-                                 }
-                                 continue loop7;
-                              }
-                           }
-                           continue loop1;
-                        }
-                        continue loop0;
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr36);
-      }
+       
       
       public function §_-mi§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            super();
-         }
+         super();
       }
    }
 }

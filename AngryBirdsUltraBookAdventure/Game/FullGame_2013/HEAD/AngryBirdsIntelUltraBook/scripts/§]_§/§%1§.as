@@ -20,25 +20,7 @@ package §]_§
       
       public function §%1§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || this)
-         {
-         }
-         if(_loc1_ && _loc1_)
-         {
-         }
-         while(true)
-         {
-            super();
-            while(_loc2_)
-            {
-               if(!(_loc1_ && _loc1_))
-               {
-                  return;
-               }
-            }
-         }
+         super();
       }
    }
 }

@@ -13,59 +13,16 @@ package §%Q§
       
       public static const §+!6§:int = 4;
       
-      private static var §'4§:§=N§;
+      private static var §'4§:§=N§ = new §=N§(0,0,10,500,7.5,600,§[!6§);
       
-      private static var §!?§:§=N§;
+      private static var §!?§:§=N§ = new §=N§(0,0,10,500,7.5,600,§;!P§);
       
-      private static var §6D§:§=N§;
+      private static var §6D§:§=N§ = new §=N§(0,0,15,1750,5,300,§ w§);
       
-      private static var §0!9§:§=N§;
+      private static var §0!9§:§=N§ = new §=N§(0,0,10,1500,5,150,§;!I§);
       
-      private static var §<!w§:§=N§;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc1_))
-         {
-            §[!6§ = 0;
-            while(true)
-            {
-               §;!P§ = 1;
-               loop1:
-               while(true)
-               {
-                  §;!I§ = 2;
-                  addr171:
-                  while(true)
-                  {
-                     § w§ = 3;
-                     continue loop1;
-                  }
-               }
-            }
-         }
-         loop4:
-         while(true)
-         {
-            §'4§ = new §=N§(0,0,10,500,7.5,600,§[!6§);
-            loop5:
-            while(true)
-            {
-               §!?§ = new §=N§(0,0,10,500,7.5,600,§;!P§);
-               while(true)
-               {
-                  §6D§ = new §=N§(0,0,15,1750,5,300,§ w§);
-                  continue loop4;
-                  addr50:
-                  if(!(_loc1_ && _loc2_))
-                  {
-                     continue loop5;
-                  }
-               }
-            }
-         }
-      }
+      private static var §<!w§:§=N§ = new §=N§(0,0,5,10,7,275,§+!6§);
+       
       
       public var x:Number;
       
@@ -83,213 +40,37 @@ package §%Q§
       
       public function §=N§(param1:Number, param2:Number, param3:Number, param4:Number, param5:Number, param6:Number, param7:int = 0)
       {
-         var _loc8_:Boolean = false;
-         var _loc9_:Boolean = true;
-         if(!(_loc8_ && param1))
-         {
-            super();
-            loop0:
-            while(true)
-            {
-               this.x = param1;
-               loop1:
-               while(true)
-               {
-                  this.y = param2;
-                  while(true)
-                  {
-                     this.§0!a§ = param3;
-                     addr102:
-                     while(true)
-                     {
-                        this.§#!i§ = param4;
-                        continue loop0;
-                     }
-                     addr56:
-                     if(_loc9_ || this)
-                     {
-                        this.§,s§ = param7;
-                        addr63:
-                        if(_loc8_)
-                        {
-                           while(true)
-                           {
-                              if(_loc8_)
-                              {
-                                 continue loop1;
-                              }
-                              if(!_loc9_)
-                              {
-                                 break;
-                              }
-                              §§goto(addr56);
-                              §§goto(addr63);
-                           }
-                           §§goto(addr102);
-                           addr52:
-                        }
-                        if(!_loc8_)
-                        {
-                           return;
-                           addr37:
-                        }
-                        continue loop0;
-                     }
-                  }
-               }
-            }
-         }
-         while(true)
-         {
-            this.§>!p§ = param5;
-            §§goto(addr68);
-         }
-         §§goto(addr37);
+         super();
+         this.x = param1;
+         this.y = param2;
+         this.§0!a§ = param3;
+         this.§#!i§ = param4;
+         this.§>!p§ = param5;
+         this.§2!O§ = param6;
+         this.§,s§ = param7;
       }
       
       public static function createExplosion(param1:int, param2:Number, param3:Number) : §=N§
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
          var _loc4_:§=N§ = null;
-         §§push(param1);
-         if(!(_loc7_ && §=N§))
+         switch(param1)
          {
-            var _loc5_:* = §§pop();
-            if(_loc6_)
-            {
-               §§push(§;!P§);
-               if(_loc6_ || param3)
-               {
-                  §§push(_loc5_);
-                  if(!_loc7_)
-                  {
-                     if(§§pop() === §§pop())
-                     {
-                        if(!(_loc7_ && param1))
-                        {
-                           §§push(0);
-                           if(!_loc6_)
-                           {
-                           }
-                        }
-                        else
-                        {
-                           addr161:
-                           §§push(3);
-                           if(_loc6_ || param2)
-                           {
-                              addr169:
-                           }
-                        }
-                     }
-                     else
-                     {
-                        §§push(§;!I§);
-                        if(_loc6_ || param1)
-                        {
-                           §§push(_loc5_);
-                           if(_loc6_)
-                           {
-                              if(§§pop() === §§pop())
-                              {
-                                 if(!_loc7_)
-                                 {
-                                    §§push(1);
-                                    if(!(_loc7_ && §=N§))
-                                    {
-                                       addr175:
-                                       switch(§§pop())
-                                       {
-                                          case 0:
-                                             _loc4_ = §!?§;
-                                             break;
-                                          case 1:
-                                             _loc4_ = §0!9§;
-                                             break;
-                                          case 2:
-                                             _loc4_ = §6D§;
-                                             break;
-                                          case 3:
-                                             _loc4_ = §<!w§;
-                                             break;
-                                          default:
-                                             _loc4_ = §'4§;
-                                       }
-                                       return new §=N§(param2,param3,_loc4_.§@!§,_loc4_.push,_loc4_.§8!K§,_loc4_.damage,param1);
-                                       addr174:
-                                       addr112:
-                                    }
-                                    else
-                                    {
-                                       §§goto(addr169);
-                                    }
-                                 }
-                                 else
-                                 {
-                                    addr132:
-                                    §§push(2);
-                                    if(_loc6_ || param2)
-                                    {
-                                    }
-                                 }
-                                 §§goto(addr174);
-                              }
-                              else
-                              {
-                                 §§push(§ w§);
-                                 if(_loc6_ || param1)
-                                 {
-                                    §§push(_loc5_);
-                                    if(_loc6_)
-                                    {
-                                       addr124:
-                                       if(§§pop() === §§pop())
-                                       {
-                                          if(!(_loc7_ && param3))
-                                          {
-                                             §§goto(addr132);
-                                          }
-                                          §§goto(addr161);
-                                       }
-                                       else
-                                       {
-                                          §§push(§+!6§);
-                                          if(!(_loc7_ && param1))
-                                          {
-                                             addr149:
-                                             §§push(_loc5_);
-                                          }
-                                          §§goto(addr174);
-                                       }
-                                    }
-                                    if(§§pop() === §§pop())
-                                    {
-                                       §§goto(addr161);
-                                    }
-                                    else
-                                    {
-                                       §§goto(addr174);
-                                       §§push(4);
-                                    }
-                                    §§goto(addr174);
-                                 }
-                              }
-                              §§goto(addr149);
-                           }
-                           §§goto(addr124);
-                        }
-                        §§goto(addr112);
-                     }
-                     §§goto(addr174);
-                  }
-                  §§goto(addr124);
-               }
-               §§goto(addr174);
-            }
-            §§goto(addr161);
+            case §;!P§:
+               _loc4_ = §!?§;
+               break;
+            case §;!I§:
+               _loc4_ = §0!9§;
+               break;
+            case § w§:
+               _loc4_ = §6D§;
+               break;
+            case §+!6§:
+               _loc4_ = §<!w§;
+               break;
+            default:
+               _loc4_ = §'4§;
          }
-         §§goto(addr175);
+         return new §=N§(param2,param3,_loc4_.§@!§,_loc4_.push,_loc4_.§8!K§,_loc4_.damage,param1);
       }
       
       public function get §@!§() : Number

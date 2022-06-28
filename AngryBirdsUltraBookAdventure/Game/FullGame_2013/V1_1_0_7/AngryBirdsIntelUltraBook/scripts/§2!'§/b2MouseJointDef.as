@@ -19,35 +19,12 @@ package §2!'§
       
       public function b2MouseJointDef()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc2_)
-         {
-            this.target = new b2Vec2();
-            loop0:
-            while(true)
-            {
-               super();
-               do
-               {
-                  type = b2Joint.§%![§;
-                  loop2:
-                  while(true)
-                  {
-                     this.§6""§ = 0;
-                     addr86:
-                     while(_loc2_)
-                     {
-                        this.§'S§ = 5;
-                        continue loop2;
-                     }
-                     continue loop0;
-                  }
-               }
-               while(!(_loc2_ || this));
-               
-            }
-         }
+         this.target = new b2Vec2();
+         super();
+         type = b2Joint.§%![§;
+         this.§6""§ = 0;
+         this.§'S§ = 5;
+         this.§&!u§ = 0.7;
       }
    }
 }

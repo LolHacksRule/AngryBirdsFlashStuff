@@ -33,44 +33,7 @@ package §3b§
       public static const §]!i§:int = 0;
       
       public static const §"!r§:int = -1;
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            §7!]§ = -1;
-            while(true)
-            {
-               §^!6§ = 0;
-               loop5:
-               while(_loc1_ || _loc1_)
-               {
-                  §]!i§ = 0;
-                  while(true)
-                  {
-                     if(_loc1_ || b2Shape)
-                     {
-                        addr58:
-                        if(!(_loc1_ || b2Shape))
-                        {
-                           break;
-                        }
-                        continue;
-                     }
-                     continue loop5;
-                  }
-                  while(true)
-                  {
-                     §=!#§ = 3;
-                     §§goto(addr92);
-                     §§goto(addr58);
-                  }
-               }
-            }
-         }
-         §§goto(addr116);
-      }
+       
       
       b2internal var §3r§:int;
       
@@ -78,86 +41,26 @@ package §3b§
       
       public function b2Shape()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc2_)
-         {
-            super();
-            do
-            {
-               this.§3r§ = b2internal::7!];
-               do
-               {
-                  this.§ !c§ = b2Settings.b2_linearSlop;
-               }
-               while(!(_loc1_ || _loc2_));
-               
-            }
-            while(!_loc1_);
-            
-         }
+         super();
+         this.§3r§ = b2internal::7!];
+         this.§ !c§ = b2Settings.b2_linearSlop;
       }
       
       public static function §]I§(param1:b2Shape, param2:b2Transform, param3:b2Shape, param4:b2Transform) : Boolean
       {
-         var _loc8_:Boolean = true;
-         var _loc9_:Boolean = false;
          var _loc5_:b2DistanceInput;
          (_loc5_ = new b2DistanceInput()).§,N§ = new b2DistanceProxy();
-         if(!(_loc9_ && param1))
-         {
-            _loc5_.§,N§.Set(param1);
-            while(true)
-            {
-               _loc5_.§#y§ = new b2DistanceProxy();
-            }
-            addr99:
-         }
-         loop1:
-         while(true)
-         {
-            _loc5_.§#y§.Set(param3);
-            while(true)
-            {
-               _loc5_.§ !f§ = param2;
-               loop3:
-               for(; _loc8_ || b2Shape; if(_loc8_ || param2)
-               {
-                  continue loop1;
-               })
-               {
-                  while(true)
-                  {
-                     _loc5_.§!@§ = param4;
-                     while(!_loc9_)
-                     {
-                        _loc5_.§#!+§ = true;
-                        if(_loc8_)
-                        {
-                           continue loop3;
-                        }
-                     }
-                     §§goto(addr99);
-                     addr54:
-                  }
-               }
-            }
-            if(_loc8_ || b2Shape)
-            {
-               if(false)
-               {
-                  §§goto(addr54);
-               }
-               var _loc6_:b2SimplexCache;
-               (_loc6_ = new b2SimplexCache()).count = 0;
-               var _loc7_:b2DistanceOutput = new b2DistanceOutput();
-               if(_loc8_ || b2Shape)
-               {
-                  b2Distance.§65§(_loc7_,_loc6_,_loc5_);
-               }
-               return _loc7_.§>!_§ < 10 * Number.MIN_VALUE;
-            }
-         }
+         _loc5_.§,N§.Set(param1);
+         _loc5_.§#y§ = new b2DistanceProxy();
+         _loc5_.§#y§.Set(param3);
+         _loc5_.§ !f§ = param2;
+         _loc5_.§!@§ = param4;
+         _loc5_.§#!+§ = true;
+         var _loc6_:b2SimplexCache;
+         (_loc6_ = new b2SimplexCache()).count = 0;
+         var _loc7_:b2DistanceOutput = new b2DistanceOutput();
+         b2Distance.§65§(_loc7_,_loc6_,_loc5_);
+         return _loc7_.§>!_§ < 10 * Number.MIN_VALUE;
       }
       
       public function Copy() : b2Shape
@@ -167,12 +70,7 @@ package §3b§
       
       public function Set(param1:b2Shape) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§ !c§ = param1.§ !c§;
-         }
+         this.§ !c§ = param1.§ !c§;
       }
       
       public function § 5§() : int

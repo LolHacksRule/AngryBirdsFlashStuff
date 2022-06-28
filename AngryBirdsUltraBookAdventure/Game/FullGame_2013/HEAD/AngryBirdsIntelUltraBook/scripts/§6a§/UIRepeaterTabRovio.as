@@ -28,292 +28,55 @@ package §6a§
       
       public function UIRepeaterTabRovio(param1:XML, param2:UIContainerRovio, param3:§`X§, param4:MovieClip = null)
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(!_loc5_)
-         {
-            super(param1,param2,param3,param4);
-         }
-         do
-         {
-            §`!X§ = true;
-         }
-         while(_loc5_ && param1);
-         
+         super(param1,param2,param3,param4);
+         §`!X§ = true;
       }
       
       public function §-W§(param1:int, param2:Number, param3:Number, param4:Number, param5:Number, param6:int, param7:int) : void
       {
-         var _loc8_:Boolean = true;
-         var _loc9_:Boolean = false;
-         if(!(_loc9_ && param1))
+         this.§,C§ = param6;
+         this.§@!]§ = param1 * this.§,C§;
+         this.§9Y§ = param7;
+         this.§"c§ = param2;
+         this.§05§ = param3;
+         this.§6d§ = param4;
+         this.§@p§ = param5;
+         if(false)
          {
-            this.§,C§ = param6;
-            loop0:
-            while(true)
+            this.§"=§ = Math.max(1,Math.ceil(§]6§.length / this.§@!]§));
+         }
+         else
+         {
+            this.§"=§ = 1;
+            if(§]6§.length > this.§@!]§)
             {
-               this.§@!]§ = param1 * this.§,C§;
-               while(true)
-               {
-                  this.§9Y§ = param7;
-                  loop2:
-                  while(!(_loc9_ && param3))
-                  {
-                     this.§"c§ = param2;
-                     loop3:
-                     while(true)
-                     {
-                        this.§05§ = param3;
-                        while(true)
-                        {
-                           this.§6d§ = param4;
-                           loop5:
-                           while(_loc8_)
-                           {
-                              this.§@p§ = param5;
-                              loop6:
-                              while(true)
-                              {
-                                 §§push(false);
-                                 loop7:
-                                 while(true)
-                                 {
-                                    §§push(Boolean(§§pop()));
-                                    loop8:
-                                    while(true)
-                                    {
-                                       §§push(§§pop());
-                                       if(_loc8_ || this)
-                                       {
-                                          §§push(Boolean(§§pop()));
-                                       }
-                                       if(!§§pop())
-                                       {
-                                          while(true)
-                                          {
-                                             if(!§§pop())
-                                             {
-                                                this.§"=§ = 1;
-                                                loop12:
-                                                while(true)
-                                                {
-                                                   if(_loc9_ && this)
-                                                   {
-                                                      while(true)
-                                                      {
-                                                         if(!_loc8_)
-                                                         {
-                                                            loop10:
-                                                            while(true)
-                                                            {
-                                                               §§push(param1 == param7);
-                                                               if(!_loc8_)
-                                                               {
-                                                                  continue loop7;
-                                                               }
-                                                               addr121:
-                                                               if(!(_loc9_ && param1))
-                                                               {
-                                                                  if(!_loc8_)
-                                                                  {
-                                                                     break;
-                                                                  }
-                                                                  §§push(Boolean(§§pop()));
-                                                                  continue loop7;
-                                                               }
-                                                               addr175:
-                                                               while(true)
-                                                               {
-                                                                  §§pop();
-                                                                  continue loop10;
-                                                                  §§goto(addr121);
-                                                               }
-                                                            }
-                                                            continue loop8;
-                                                         }
-                                                         if(_loc9_)
-                                                         {
-                                                            break;
-                                                         }
-                                                         if(_loc9_)
-                                                         {
-                                                            continue loop2;
-                                                         }
-                                                         this.§"=§ = Math.max(1,Math.ceil(§]6§.length / this.§@!]§));
-                                                      }
-                                                      continue loop6;
-                                                      addr140:
-                                                   }
-                                                   if(_loc9_)
-                                                   {
-                                                      break;
-                                                   }
-                                                   while(true)
-                                                   {
-                                                      if(§]6§.length <= this.§@!]§)
-                                                      {
-                                                         do
-                                                         {
-                                                            this.§0!K§(0);
-                                                            if(!(_loc8_ || param3))
-                                                            {
-                                                               continue loop3;
-                                                            }
-                                                         }
-                                                         while(!(_loc8_ || param3));
-                                                         
-                                                         addr28:
-                                                         if(_loc8_)
-                                                         {
-                                                            addr49:
-                                                            if(_loc9_)
-                                                            {
-                                                               while(true)
-                                                               {
-                                                                  §§goto(addr28);
-                                                                  §§goto(addr49);
-                                                               }
-                                                               addr161:
-                                                            }
-                                                            if(!_loc9_)
-                                                            {
-                                                               return;
-                                                            }
-                                                            continue loop0;
-                                                         }
-                                                         continue loop12;
-                                                      }
-                                                      while(true)
-                                                      {
-                                                         this.§"=§ += Math.ceil((§]6§.length - this.§@!]§) / (this.§,C§ * this.§9Y§));
-                                                         continue loop3;
-                                                      }
-                                                   }
-                                                   §§goto(addr161);
-                                                }
-                                                continue loop5;
-                                             }
-                                             §§goto(addr140);
-                                          }
-                                          addr138:
-                                       }
-                                       §§goto(addr175);
-                                    }
-                                 }
-                              }
-                           }
-                        }
-                     }
-                  }
-               }
+               this.§"=§ += Math.ceil((§]6§.length - this.§@!]§) / (this.§,C§ * this.§9Y§));
             }
          }
-         §§goto(addr114);
+         this.§0!K§(0);
       }
       
       public function §0!K§(param1:int) : void
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         if(!(_loc6_ && this))
+         if(param1 < 0)
          {
-            §§push(param1);
-            if(_loc5_)
-            {
-               §§push(0);
-               loop0:
-               while(true)
-               {
-                  if(§§pop() < §§pop())
-                  {
-                     while(true)
-                     {
-                        §§push(0);
-                        addr97:
-                        while(true)
-                        {
-                           §§push(int(§§pop()));
-                           addr98:
-                           while(true)
-                           {
-                              param1 = §§pop();
-                              addr99:
-                              while(true)
-                              {
-                              }
-                           }
-                        }
-                     }
-                     addr96:
-                  }
-                  while(true)
-                  {
-                     §§push(param1);
-                     if(!_loc6_)
-                     {
-                        if(!(_loc6_ && _loc2_))
-                        {
-                           §§push(this.§"=§);
-                           if(_loc5_)
-                           {
-                              if(§§pop() >= §§pop())
-                              {
-                                 if(!(_loc6_ && param1))
-                                 {
-                                    §§push(this.§"=§);
-                                    if(_loc5_)
-                                    {
-                                       addr72:
-                                       §§push(1);
-                                       if(!_loc6_)
-                                       {
-                                          §§push(§§pop() - §§pop());
-                                          if(_loc5_ || this)
-                                          {
-                                             §§push(int(§§pop()));
-                                             if(_loc5_)
-                                             {
-                                                addr85:
-                                                if(_loc5_)
-                                                {
-                                                   param1 = §§pop();
-                                                   while(true)
-                                                   {
-                                                      if(!_loc6_)
-                                                      {
-                                                         continue;
-                                                      }
-                                                      §§goto(addr96);
-                                                   }
-                                                   §§goto(addr99);
-                                                   addr88:
-                                                }
-                                                §§goto(addr98);
-                                             }
-                                             §§goto(addr104);
-                                          }
-                                          break;
-                                       }
-                                       continue loop0;
-                                    }
-                                    §§goto(addr104);
-                                 }
-                                 §§goto(addr88);
-                              }
-                              §§goto(addr24);
-                           }
-                           §§goto(addr72);
-                        }
-                        §§goto(addr97);
-                     }
-                     §§goto(addr85);
-                  }
-                  §§goto(addr112);
-               }
-            }
-            §§goto(addr104);
+            param1 = 0;
          }
-         §§goto(addr99);
+         if(param1 >= this.§"=§)
+         {
+            param1 = this.§"=§ - 1;
+         }
+         this.§]Y§ = param1;
+         var _loc2_:int = this.§]Y§ * this.§9Y§ * this.§,C§;
+         var _loc3_:int = _loc2_ + this.§@!]§;
+         var _loc4_:int = 0;
+         while(_loc4_ < §]6§.length)
+         {
+            (§]6§[_loc4_] as UIComponentRovio).setVisibility(_loc4_ >= _loc2_ && _loc4_ < _loc3_);
+            _loc4_++;
+         }
+         x = this.§"c§ - this.§]Y§ * this.§6d§;
+         y = this.§05§ - this.§]Y§ * this.§@p§;
       }
    }
 }

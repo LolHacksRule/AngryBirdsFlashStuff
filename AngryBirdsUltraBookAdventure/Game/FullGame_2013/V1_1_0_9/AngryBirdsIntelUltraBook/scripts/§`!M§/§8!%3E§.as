@@ -14,28 +14,11 @@ package §`!M§
       
       public function §8!>§(param1:Number, param2:Number, param3:Number, param4:Boolean)
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         if(!(_loc6_ && param3))
-         {
-            super();
-            while(true)
-            {
-               this.§#!!§ = param1;
-               loop1:
-               while(true)
-               {
-                  this.§!!3§ = param2;
-                  do
-                  {
-                     this.§?z§ = param3;
-                     continue loop1;
-                  }
-                  while(!_loc5_);
-                  
-               }
-            }
-         }
+         super();
+         this.§#!!§ = param1;
+         this.§!!3§ = param2;
+         this.§?z§ = param3;
+         this.§<L§ = param4;
       }
       
       public function get x() : Number

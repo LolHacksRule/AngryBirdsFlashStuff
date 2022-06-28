@@ -13,18 +13,8 @@ package §+&§
       
       public function §8-§(param1:§8Y§)
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            super();
-            do
-            {
-               this.mWorld = param1;
-            }
-            while(_loc3_ && param1);
-            
-         }
+         super();
+         this.mWorld = param1;
       }
       
       override public function EndContact(param1:b2Contact) : void
@@ -41,23 +31,10 @@ package §+&§
       
       override public function BeginContact(param1:b2Contact) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         §§push(this.mWorld.§+!X§.objects.§!!u§(param1.§5J§().GetBody().GetUserData(),param1.§@!X§().GetBody().GetUserData()));
-         if(_loc3_ || param1)
+         var _loc2_:Boolean = this.mWorld.§+!X§.objects.§!!u§(param1.§5J§().GetBody().GetUserData(),param1.§@!X§().GetBody().GetUserData());
+         if(_loc2_)
          {
-            §§push(Boolean(§§pop()));
-         }
-         var _loc2_:* = §§pop();
-         if(_loc3_)
-         {
-            if(_loc2_)
-            {
-               if(!(_loc4_ && param1))
-               {
-                  param1.§!!s§(false);
-               }
-            }
+            param1.§!!s§(false);
          }
       }
    }

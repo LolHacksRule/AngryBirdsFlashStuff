@@ -25,371 +25,80 @@ package §?!Y§
       
       public function §4!U§(stage:Stage)
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc3_)
-         {
-         }
-         if(_loc3_ || stage)
-         {
-         }
-         loop0:
-         while(true)
-         {
-            loop1:
-            while(true)
-            {
-               super();
-               while(true)
-               {
-                  loop3:
-                  for(; !(_loc2_ && _loc2_); if(!(_loc2_ && _loc3_))
-                  {
-                     continue loop1;
-                  })
-                  {
-                     if(!_loc3_)
-                     {
-                        continue loop0;
-                     }
-                     this.§[;§ = stage;
-                     loop4:
-                     while(true)
-                     {
-                        do
-                        {
-                           this.init();
-                           continue loop4;
-                        }
-                        while(!(_loc3_ || stage));
-                        
-                        continue loop3;
-                     }
-                  }
-               }
-               if(_loc3_ || stage)
-               {
-                  return;
-               }
-            }
-         }
+         super();
+         this.§[;§ = stage;
+         this.init();
       }
       
       private function init() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc2_)
-         {
-         }
-         if(_loc1_)
-         {
-         }
-         do
-         {
-            ExternalInterfaceHandler.addCallback("pause",this.§<!d§);
-            do
-            {
-               do
-               {
-                  ExternalInterfaceHandler.addCallback("resume",this.§49§);
-                  while(!_loc2_)
-                  {
-                  }
-               }
-               while(_loc1_ && _loc1_);
-               
-            }
-            while(!(_loc2_ || this));
-            
-         }
-         while(!_loc2_);
-         
+         ExternalInterfaceHandler.addCallback("pause",this.§<!d§);
+         ExternalInterfaceHandler.addCallback("resume",this.§49§);
       }
       
       private function §<!d§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc1_)
+         if(!this.§^^§)
          {
+            this.§^^§ = true;
+            this.§9!,§ = !§`S§.isPaused;
+            §`S§.pause();
+            AngryBirdsFP11.§'t§.§?]§();
+            this.§&!`§();
+            AngryBirdsFP11.§'t§.externalPause();
          }
-         if(_loc1_ || this)
-         {
-            while(true)
-            {
-               §§push(this.§^^§);
-               if(!(_loc2_ && _loc2_))
-               {
-                  §§push(!§§pop());
-               }
-               if(§§pop())
-               {
-                  loop1:
-                  while(true)
-                  {
-                     loop2:
-                     while(true)
-                     {
-                        this.§^^§ = true;
-                        loop3:
-                        while(true)
-                        {
-                           while(true)
-                           {
-                              §§push(this);
-                              §§push(§`S§.isPaused);
-                              if(_loc1_)
-                              {
-                                 §§push(!§§pop());
-                              }
-                              §§pop().§9!,§ = §§pop();
-                              continue loop1;
-                              addr89:
-                              if(!(_loc1_ || _loc1_))
-                              {
-                                 continue;
-                              }
-                              addr96:
-                              §§push(AngryBirdsFP11.§'t§);
-                              if(_loc1_)
-                              {
-                                 §§pop().externalPause();
-                                 loop14:
-                                 while(true)
-                                 {
-                                    if(!(_loc2_ && _loc1_))
-                                    {
-                                       addr52:
-                                       if(!(_loc2_ && this))
-                                       {
-                                          if(_loc1_)
-                                          {
-                                             addr61:
-                                             if(!(_loc1_ || _loc1_))
-                                             {
-                                                break;
-                                             }
-                                             if(_loc1_)
-                                             {
-                                                continue;
-                                             }
-                                             continue loop2;
-                                          }
-                                          addr113:
-                                          while(true)
-                                          {
-                                             addr106:
-                                             while(true)
-                                             {
-                                                this.§&!`§();
-                                             }
-                                          }
-                                          addr113:
-                                       }
-                                       while(_loc1_)
-                                       {
-                                          §§goto(addr52);
-                                       }
-                                       while(true)
-                                       {
-                                          §`S§.pause();
-                                          addr122:
-                                          while(_loc1_)
-                                          {
-                                             while(true)
-                                             {
-                                                §§push(AngryBirdsFP11.§'t§);
-                                                addr111:
-                                                while(true)
-                                                {
-                                                   §§pop().§?]§();
-                                                   §§goto(addr113);
-                                                   §§goto(addr96);
-                                                }
-                                             }
-                                          }
-                                          continue loop3;
-                                       }
-                                       addr127:
-                                    }
-                                    while(true)
-                                    {
-                                       if(!_loc2_)
-                                       {
-                                          if(!_loc2_)
-                                          {
-                                             if(_loc1_)
-                                             {
-                                                §§goto(addr89);
-                                             }
-                                             §§goto(addr122);
-                                          }
-                                          break;
-                                       }
-                                       §§goto(addr106);
-                                       continue loop14;
-                                    }
-                                    §§goto(addr116);
-                                 }
-                                 continue loop1;
-                              }
-                              §§goto(addr111);
-                           }
-                        }
-                     }
-                  }
-               }
-               break;
-            }
-            return;
-         }
-         §§goto(addr113);
       }
       
       private function §49§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc2_ && this)
+         if(!this.§^^§)
          {
+            return;
          }
-         if(_loc1_ || this)
+         this.§^^§ = false;
+         if(this.§9!,§)
          {
-            while(true)
-            {
-               §§push(this.§^^§);
-               if(_loc1_ || _loc2_)
-               {
-                  §§push(!§§pop());
-               }
-               loop1:
-               while(true)
-               {
-                  if(§§pop())
-                  {
-                     return;
-                     addr222:
-                     addr223:
-                  }
-                  else
-                  {
-                     addr195:
-                  }
-                  while(true)
-                  {
-                     this.§^^§ = false;
-                     addr199:
-                     while(true)
-                     {
-                        continue loop1;
-                     }
-                  }
-               }
-               if(!(_loc2_ && _loc1_))
-               {
-                  return;
-               }
-            }
+            §`S§.resume();
          }
-         §§goto(addr179);
+         SoundEngine.§=!f§(AngryBirdsFP11.sSoundsEnabled);
+         AngryBirdsFP11.§'t§.externalResume();
+         AngryBirdsFP11.§'t§.§"-§();
       }
       
       public function §&!`§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc1_)
-         {
-         }
-         if(_loc1_ || _loc2_)
-         {
-            while(true)
-            {
-               Starling.§7!+§.§2S§ = this.§+!F§;
-               §§goto(addr71);
-            }
-         }
-         addr71:
-         while(true)
-         {
-            if(_loc1_ || _loc2_)
-            {
-               if(_loc1_)
-               {
-                  break;
-               }
-               continue loop0;
-            }
-         }
+         Starling.§7!+§.§2S§ = this.§+!F§;
       }
       
       private function §+!F§() : void
       {
-         var _loc7_:Boolean = false;
-         var _loc8_:Boolean = true;
-         if(_loc7_ && this)
+         dispatchEvent(new Event(Event.INIT));
+         var width:int = this.§[;§.stageWidth;
+         var height:int = this.§[;§.stageHeight;
+         if(width < 2 || height < 2)
+         {
+            width = AngryBirdsFP11.stageWidth;
+            height = AngryBirdsFP11.stageHeight;
+         }
+         width = Math.max(8,Math.min(width,2880));
+         height = Math.max(8,Math.min(height,2880));
+         var bd:BitmapData = new BitmapData(Math.floor(width * 0.25),Math.floor(height * 0.25),false);
+         var threeDbd:BitmapData = new BitmapData(width,height,false);
+         Starling.drawToBitmapData(threeDbd);
+         bd.draw(threeDbd,new Matrix(0.25,0,0,0.25));
+         try
+         {
+            bd.draw(this.§[;§,new Matrix(0.25,0,0,0.25));
+         }
+         catch(e:Error)
          {
          }
-         if(!_loc7_)
-         {
-            while(true)
-            {
-               addr96:
-               while(true)
-               {
-               }
-               addr83:
-               if(_loc7_ && scale)
-               {
-                  continue;
-               }
-               loop4:
-               for(; _loc8_; while(_loc8_ || width)
-               {
-                  if(!(_loc8_ || this))
-                  {
-                     continue;
-                  }
-                  §§goto(addr38);
-               })
-               {
-                  while(true)
-                  {
-                     addr54:
-                     while(true)
-                     {
-                        dispatchEvent(new Event(Event.INIT));
-                        continue loop4;
-                     }
-                     loop3:
-                     while(true)
-                     {
-                        if(_loc8_)
-                        {
-                           §§goto(addr83);
-                        }
-                        else
-                        {
-                           while(true)
-                           {
-                              continue loop3;
-                           }
-                           addr93:
-                        }
-                     }
-                     addr38:
-                     if(_loc7_ && width)
-                     {
-                        continue;
-                     }
-                     §§goto(addr45);
-                  }
-               }
-               §§goto(addr96);
-            }
-         }
-         §§goto(addr93);
+         bd.applyFilter(bd,bd.rect,new Point(0,0),new BlurFilter());
+         ExternalInterfaceHandler.§`F§("flashScreenshotReadyHandler",Base64.§>&§(new JPGEncoder(70).encode(bd)));
+         threeDbd.dispose();
+         bd.dispose();
+         Starling.§7!+§.§2S§ = null;
+         dispatchEvent(new Event(Event.COMPLETE));
       }
    }
 }

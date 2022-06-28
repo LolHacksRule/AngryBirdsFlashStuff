@@ -8,299 +8,55 @@ package §<u§
       private static const §+!Z§:String = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
       
       public static const version:String = "1.1.0";
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            §+!Z§ = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
-         }
-         do
-         {
-            version = "1.1.0";
-         }
-         while(!(_loc2_ || _loc1_));
-         
-      }
+       
       
       public function Base64()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            super();
-         }
+         super();
          throw new Error("Base64 class is static container only");
       }
       
       public static function encode(param1:String) : String
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
          var _loc2_:ByteArray = new ByteArray();
-         if(!_loc4_)
-         {
-            _loc2_.writeUTFBytes(param1);
-         }
+         _loc2_.writeUTFBytes(param1);
          return §>&§(_loc2_);
       }
       
       public static function §>&§(param1:ByteArray) : String
       {
-         var _loc8_:Boolean = true;
-         var _loc9_:Boolean = false;
          var _loc3_:Array = null;
-         var _loc5_:* = uint(0);
-         var _loc6_:* = uint(0);
+         var _loc5_:uint = 0;
+         var _loc6_:uint = 0;
          var _loc7_:uint = 0;
-         var _loc2_:* = "";
+         var _loc2_:String = "";
          var _loc4_:Array = new Array(4);
-         if(!(_loc9_ && Base64))
-         {
-            param1.position = 0;
-         }
-         loop0:
+         param1.position = 0;
          while(param1.bytesAvailable > 0)
          {
             _loc3_ = new Array();
-            if(_loc8_)
+            _loc5_ = 0;
+            while(_loc5_ < 3 && param1.bytesAvailable > 0)
             {
-               §§push(0);
-               loop1:
-               while(true)
-               {
-                  §§push(uint(§§pop()));
-                  if(!_loc9_)
-                  {
-                     _loc5_ = §§pop();
-                     loop2:
-                     while(true)
-                     {
-                        loop3:
-                        while(true)
-                        {
-                           §§push(_loc5_);
-                           while(true)
-                           {
-                              §§push(3);
-                              loop5:
-                              while(true)
-                              {
-                                 §§push(§§pop() < §§pop());
-                                 while(true)
-                                 {
-                                    §§push(Boolean(§§pop()));
-                                    while(true)
-                                    {
-                                       §§push(§§pop());
-                                       if(_loc8_)
-                                       {
-                                          §§push(Boolean(§§pop()));
-                                       }
-                                       if(§§pop())
-                                       {
-                                          loop8:
-                                          while(true)
-                                          {
-                                             §§pop();
-                                             loop9:
-                                             while(_loc8_)
-                                             {
-                                                §§push(param1.bytesAvailable > 0);
-                                                if(!(_loc9_ && _loc2_))
-                                                {
-                                                   continue loop8;
-                                                }
-                                                addr332:
-                                                while(true)
-                                                {
-                                                   if(!§§pop())
-                                                   {
-                                                      loop10:
-                                                      while(true)
-                                                      {
-                                                         _loc4_[0] = (_loc3_[0] & 252) >> 2;
-                                                         addr343:
-                                                         while(true)
-                                                         {
-                                                            _loc4_[1] = (_loc3_[0] & 3) << 4 | _loc3_[1] >> 4;
-                                                            loop12:
-                                                            while(!_loc9_)
-                                                            {
-                                                               _loc4_[2] = (_loc3_[1] & 15) << 2 | _loc3_[2] >> 6;
-                                                               while(true)
-                                                               {
-                                                                  if(_loc8_)
-                                                                  {
-                                                                     _loc4_[3] = _loc3_[2] & 63;
-                                                                     loop14:
-                                                                     while(!_loc9_)
-                                                                     {
-                                                                        §§push(uint(_loc3_.length));
-                                                                        loop15:
-                                                                        while(true)
-                                                                        {
-                                                                           _loc6_ = §§pop();
-                                                                           if(_loc9_)
-                                                                           {
-                                                                              continue loop0;
-                                                                           }
-                                                                           if(_loc9_)
-                                                                           {
-                                                                              break;
-                                                                           }
-                                                                           loop16:
-                                                                           while(true)
-                                                                           {
-                                                                              §§push(_loc6_);
-                                                                              addr154:
-                                                                              while(true)
-                                                                              {
-                                                                                 if(_loc9_)
-                                                                                 {
-                                                                                    continue loop15;
-                                                                                 }
-                                                                                 §§push(3);
-                                                                                 if(!_loc8_)
-                                                                                 {
-                                                                                    break;
-                                                                                 }
-                                                                                 if(§§pop() >= §§pop())
-                                                                                 {
-                                                                                    if(_loc8_)
-                                                                                    {
-                                                                                       if(_loc8_ || Base64)
-                                                                                       {
-                                                                                          if(!_loc9_)
-                                                                                          {
-                                                                                             continue loop1;
-                                                                                          }
-                                                                                          continue loop14;
-                                                                                       }
-                                                                                       continue loop16;
-                                                                                    }
-                                                                                    continue loop0;
-                                                                                 }
-                                                                                 _loc4_[_loc6_ + 1] = 64;
-                                                                                 if(!(_loc8_ || param1))
-                                                                                 {
-                                                                                    continue loop0;
-                                                                                 }
-                                                                                 §§push(_loc6_);
-                                                                                 if(_loc8_ || Base64)
-                                                                                 {
-                                                                                    §§push(§§pop() + 1);
-                                                                                    while(true)
-                                                                                    {
-                                                                                       §§push(uint(§§pop()));
-                                                                                       addr221:
-                                                                                       while(true)
-                                                                                       {
-                                                                                          _loc6_ = §§pop();
-                                                                                          continue loop16;
-                                                                                       }
-                                                                                    }
-                                                                                    addr220:
-                                                                                 }
-                                                                                 else
-                                                                                 {
-                                                                                    addr372:
-                                                                                    while(true)
-                                                                                    {
-                                                                                       _loc5_ = §§pop();
-                                                                                       break loop9;
-                                                                                    }
-                                                                                    addr372:
-                                                                                 }
-                                                                              }
-                                                                              continue loop5;
-                                                                           }
-                                                                        }
-                                                                        continue loop12;
-                                                                     }
-                                                                     continue loop9;
-                                                                  }
-                                                                  addr108:
-                                                                  if(_loc9_ && param1)
-                                                                  {
-                                                                     continue;
-                                                                  }
-                                                                  if(false)
-                                                                  {
-                                                                     while(true)
-                                                                     {
-                                                                     }
-                                                                     addr117:
-                                                                  }
-                                                                  while(true)
-                                                                  {
-                                                                     §§push(_loc7_);
-                                                                     addr390:
-                                                                     while(true)
-                                                                     {
-                                                                        if(§§pop() < _loc4_.length)
-                                                                        {
-                                                                           §§push(_loc2_);
-                                                                           if(_loc8_ || Base64)
-                                                                           {
-                                                                              §§push(§§pop() + §+!Z§.charAt(_loc4_[_loc7_]));
-                                                                           }
-                                                                           _loc2_ = §§pop();
-                                                                           if(_loc8_ || _loc3_)
-                                                                           {
-                                                                              continue loop10;
-                                                                           }
-                                                                        }
-                                                                        continue loop0;
-                                                                     }
-                                                                  }
-                                                               }
-                                                               while(true)
-                                                               {
-                                                                  §§push(§§pop() + 1);
-                                                                  addr371:
-                                                                  while(true)
-                                                                  {
-                                                                     §§goto(addr372);
-                                                                  }
-                                                               }
-                                                            }
-                                                            continue loop2;
-                                                         }
-                                                      }
-                                                      addr333:
-                                                   }
-                                                   else
-                                                   {
-                                                      _loc3_[_loc5_] = param1.readUnsignedByte();
-                                                   }
-                                                   §§goto(addr370);
-                                                }
-                                             }
-                                             continue loop3;
-                                          }
-                                       }
-                                       while(true)
-                                       {
-                                          §§goto(addr332);
-                                       }
-                                    }
-                                 }
-                              }
-                           }
-                        }
-                     }
-                  }
-                  else
-                  {
-                     §§goto(addr390);
-                  }
-                  §§goto(addr333);
-               }
+               _loc3_[_loc5_] = param1.readUnsignedByte();
+               _loc5_++;
             }
-            §§goto(addr151);
+            _loc4_[0] = (_loc3_[0] & 252) >> 2;
+            _loc4_[1] = (_loc3_[0] & 3) << 4 | _loc3_[1] >> 4;
+            _loc4_[2] = (_loc3_[1] & 15) << 2 | _loc3_[2] >> 6;
+            _loc4_[3] = _loc3_[2] & 63;
+            _loc6_ = _loc3_.length;
+            while(_loc6_ < 3)
+            {
+               _loc4_[_loc6_ + 1] = 64;
+               _loc6_++;
+            }
+            _loc7_ = 0;
+            while(_loc7_ < _loc4_.length)
+            {
+               _loc2_ += §+!Z§.charAt(_loc4_[_loc7_]);
+               _loc7_++;
+            }
          }
          return _loc2_;
       }
@@ -313,372 +69,36 @@ package §<u§
       
       public static function §3@§(param1:String) : ByteArray
       {
-         var _loc8_:Boolean = false;
-         var _loc9_:Boolean = true;
-         var _loc6_:* = uint(0);
-         var _loc7_:* = uint(0);
+         var _loc6_:uint = 0;
+         var _loc7_:uint = 0;
          var _loc2_:ByteArray = new ByteArray();
          var _loc3_:Array = new Array(4);
          var _loc4_:Array = new Array(3);
-         var _loc5_:* = uint(0);
-         loop0:
-         while(true)
+         var _loc5_:uint = 0;
+         while(_loc5_ < param1.length)
          {
-            §§push(_loc5_);
-            if(!_loc8_)
+            _loc6_ = 0;
+            while(_loc6_ < 4 && _loc5_ + _loc6_ < param1.length)
             {
-               if(!(_loc8_ && _loc3_))
-               {
-                  if(_loc9_ || _loc2_)
-                  {
-                     if(§§pop() >= param1.length)
-                     {
-                        if(_loc9_ || param1)
-                        {
-                           if(_loc8_ && _loc2_)
-                           {
-                              continue;
-                           }
-                           if(_loc9_ || Base64)
-                           {
-                              if(!(_loc8_ && param1))
-                              {
-                                 if(!_loc8_)
-                                 {
-                                    if(_loc9_)
-                                    {
-                                       _loc2_.position = 0;
-                                       addr102:
-                                       if(!_loc8_)
-                                       {
-                                          if(_loc9_)
-                                          {
-                                             break;
-                                          }
-                                          loop29:
-                                          while(true)
-                                          {
-                                             §§push(_loc5_);
-                                             loop18:
-                                             while(true)
-                                             {
-                                                §§push(§§pop() + _loc6_);
-                                                loop19:
-                                                while(true)
-                                                {
-                                                   §§push(§§pop() < param1.length);
-                                                   if(_loc9_ || param1)
-                                                   {
-                                                      if(_loc9_)
-                                                      {
-                                                         if(_loc9_)
-                                                         {
-                                                            addr277:
-                                                            §§push(Boolean(§§pop()));
-                                                            if(_loc9_ || param1)
-                                                            {
-                                                               loop17:
-                                                               while(true)
-                                                               {
-                                                                  if(§§pop())
-                                                                  {
-                                                                     _loc3_[_loc6_] = §+!Z§.indexOf(param1.charAt(_loc5_ + _loc6_));
-                                                                     break;
-                                                                  }
-                                                                  loop21:
-                                                                  while(true)
-                                                                  {
-                                                                     if(!(_loc9_ || Base64))
-                                                                     {
-                                                                        break loop17;
-                                                                     }
-                                                                     if(_loc9_)
-                                                                     {
-                                                                        _loc4_[0] = (_loc3_[0] << 2) + ((_loc3_[1] & 48) >> 4);
-                                                                        loop22:
-                                                                        while(true)
-                                                                        {
-                                                                           _loc4_[1] = ((_loc3_[1] & 15) << 4) + ((_loc3_[2] & 60) >> 2);
-                                                                           addr250:
-                                                                           while(true)
-                                                                           {
-                                                                              if(_loc9_ || _loc3_)
-                                                                              {
-                                                                                 break loop22;
-                                                                              }
-                                                                              continue loop22;
-                                                                           }
-                                                                        }
-                                                                        _loc4_[2] = ((_loc3_[2] & 3) << 6) + _loc3_[3];
-                                                                        loop24:
-                                                                        while(true)
-                                                                        {
-                                                                           §§push(0);
-                                                                           if(_loc9_ || _loc2_)
-                                                                           {
-                                                                              §§push(uint(§§pop()));
-                                                                              while(true)
-                                                                              {
-                                                                                 _loc7_ = §§pop();
-                                                                                 loop25:
-                                                                                 while(true)
-                                                                                 {
-                                                                                    loop26:
-                                                                                    while(true)
-                                                                                    {
-                                                                                       §§push(_loc7_);
-                                                                                       if(!_loc8_)
-                                                                                       {
-                                                                                          if(§§pop() < _loc4_.length)
-                                                                                          {
-                                                                                             addr164:
-                                                                                             if(_loc3_[_loc7_ + 1] != 64)
-                                                                                             {
-                                                                                                break;
-                                                                                             }
-                                                                                             while(true)
-                                                                                             {
-                                                                                                §§goto(addr164);
-                                                                                             }
-                                                                                          }
-                                                                                          while(true)
-                                                                                          {
-                                                                                             addr115:
-                                                                                             while(true)
-                                                                                             {
-                                                                                                §§push(_loc5_);
-                                                                                                addr116:
-                                                                                                while(true)
-                                                                                                {
-                                                                                                   if(_loc9_)
-                                                                                                   {
-                                                                                                      if(!_loc8_)
-                                                                                                      {
-                                                                                                         §§push(4);
-                                                                                                         if(_loc9_ || _loc2_)
-                                                                                                         {
-                                                                                                            §§push(§§pop() + §§pop());
-                                                                                                            if(_loc9_ || _loc3_)
-                                                                                                            {
-                                                                                                               if(!_loc8_)
-                                                                                                               {
-                                                                                                                  §§push(uint(§§pop()));
-                                                                                                                  loop34:
-                                                                                                                  while(_loc8_ && Base64)
-                                                                                                                  {
-                                                                                                                     while(true)
-                                                                                                                     {
-                                                                                                                        if(_loc8_)
-                                                                                                                        {
-                                                                                                                           continue loop18;
-                                                                                                                        }
-                                                                                                                        if(_loc9_)
-                                                                                                                        {
-                                                                                                                           §§push(§§pop() + 1);
-                                                                                                                           while(true)
-                                                                                                                           {
-                                                                                                                              if(!_loc8_)
-                                                                                                                              {
-                                                                                                                                 §§push(uint(§§pop()));
-                                                                                                                                 while(true)
-                                                                                                                                 {
-                                                                                                                                    if(_loc9_)
-                                                                                                                                    {
-                                                                                                                                       _loc7_ = §§pop();
-                                                                                                                                       while(true)
-                                                                                                                                       {
-                                                                                                                                          continue loop26;
-                                                                                                                                       }
-                                                                                                                                       addr161:
-                                                                                                                                    }
-                                                                                                                                    else
-                                                                                                                                    {
-                                                                                                                                       loop7:
-                                                                                                                                       while(true)
-                                                                                                                                       {
-                                                                                                                                          _loc6_ = §§pop();
-                                                                                                                                          addr362:
-                                                                                                                                          addr360:
-                                                                                                                                          while(true)
-                                                                                                                                          {
-                                                                                                                                          }
-                                                                                                                                          addr360:
-                                                                                                                                          while(true)
-                                                                                                                                          {
-                                                                                                                                             continue loop7;
-                                                                                                                                          }
-                                                                                                                                       }
-                                                                                                                                       addr361:
-                                                                                                                                    }
-                                                                                                                                 }
-                                                                                                                                 addr158:
-                                                                                                                              }
-                                                                                                                              else
-                                                                                                                              {
-                                                                                                                                 while(true)
-                                                                                                                                 {
-                                                                                                                                    §§push(uint(§§pop()));
-                                                                                                                                    addr340:
-                                                                                                                                    while(true)
-                                                                                                                                    {
-                                                                                                                                       _loc6_ = §§pop();
-                                                                                                                                       addr341:
-                                                                                                                                       while(true)
-                                                                                                                                       {
-                                                                                                                                       }
-                                                                                                                                    }
-                                                                                                                                 }
-                                                                                                                                 addr339:
-                                                                                                                              }
-                                                                                                                              while(true)
-                                                                                                                              {
-                                                                                                                                 §§push(_loc6_);
-                                                                                                                                 §§goto(addr341);
-                                                                                                                              }
-                                                                                                                           }
-                                                                                                                           addr155:
-                                                                                                                        }
-                                                                                                                        while(true)
-                                                                                                                        {
-                                                                                                                           §§push(4);
-                                                                                                                           addr315:
-                                                                                                                           while(true)
-                                                                                                                           {
-                                                                                                                              §§push(§§pop() < §§pop());
-                                                                                                                              addr316:
-                                                                                                                              while(true)
-                                                                                                                              {
-                                                                                                                                 §§push(Boolean(§§pop()));
-                                                                                                                                 addr317:
-                                                                                                                                 while(true)
-                                                                                                                                 {
-                                                                                                                                    §§push(§§pop());
-                                                                                                                                    if(!_loc8_)
-                                                                                                                                    {
-                                                                                                                                       §§push(Boolean(§§pop()));
-                                                                                                                                    }
-                                                                                                                                    if(§§pop())
-                                                                                                                                    {
-                                                                                                                                       break loop19;
-                                                                                                                                    }
-                                                                                                                                    continue loop17;
-                                                                                                                                 }
-                                                                                                                              }
-                                                                                                                           }
-                                                                                                                        }
-                                                                                                                        continue loop34;
-                                                                                                                     }
-                                                                                                                  }
-                                                                                                                  _loc5_ = §§pop();
-                                                                                                                  addr139:
-                                                                                                                  continue loop0;
-                                                                                                                  addr139:
-                                                                                                               }
-                                                                                                               continue loop19;
-                                                                                                            }
-                                                                                                            §§goto(addr155);
-                                                                                                         }
-                                                                                                         §§goto(addr315);
-                                                                                                      }
-                                                                                                      §§goto(addr340);
-                                                                                                   }
-                                                                                                   §§goto(addr158);
-                                                                                                }
-                                                                                             }
-                                                                                          }
-                                                                                       }
-                                                                                       §§goto(addr139);
-                                                                                    }
-                                                                                    addr183:
-                                                                                    addr189:
-                                                                                    _loc2_.writeByte(_loc4_[_loc7_]);
-                                                                                    while(true)
-                                                                                    {
-                                                                                       if(!_loc9_)
-                                                                                       {
-                                                                                          continue loop25;
-                                                                                       }
-                                                                                       if(!_loc9_)
-                                                                                       {
-                                                                                          continue loop24;
-                                                                                       }
-                                                                                       if(_loc8_)
-                                                                                       {
-                                                                                          continue loop21;
-                                                                                       }
-                                                                                       if(!(_loc8_ && _loc2_))
-                                                                                       {
-                                                                                          §§goto(addr150);
-                                                                                          §§push(_loc7_);
-                                                                                       }
-                                                                                       §§goto(addr341);
-                                                                                       §§goto(addr183);
-                                                                                    }
-                                                                                 }
-                                                                              }
-                                                                              addr213:
-                                                                           }
-                                                                           else
-                                                                           {
-                                                                              §§goto(addr360);
-                                                                           }
-                                                                           §§goto(addr361);
-                                                                        }
-                                                                     }
-                                                                     §§goto(addr362);
-                                                                  }
-                                                               }
-                                                               while(true)
-                                                               {
-                                                                  §§push(_loc6_);
-                                                                  if(!_loc8_)
-                                                                  {
-                                                                     §§goto(addr339);
-                                                                     §§push(§§pop() + 1);
-                                                                  }
-                                                                  §§goto(addr340);
-                                                               }
-                                                            }
-                                                            §§goto(addr317);
-                                                         }
-                                                         §§goto(addr316);
-                                                      }
-                                                      break;
-                                                   }
-                                                   §§goto(addr277);
-                                                }
-                                                while(true)
-                                                {
-                                                   §§pop();
-                                                   continue loop29;
-                                                }
-                                             }
-                                          }
-                                       }
-                                       §§goto(addr250);
-                                    }
-                                    §§goto(addr182);
-                                 }
-                                 §§goto(addr189);
-                              }
-                              §§goto(addr161);
-                           }
-                           §§goto(addr115);
-                        }
-                        §§goto(addr102);
-                     }
-                     else
-                     {
-                        §§push(0);
-                     }
-                     §§goto(addr360);
-                  }
-                  §§goto(addr213);
-               }
-               §§goto(addr116);
+               _loc3_[_loc6_] = §+!Z§.indexOf(param1.charAt(_loc5_ + _loc6_));
+               _loc6_++;
             }
-            §§goto(addr139);
+            _loc4_[0] = (_loc3_[0] << 2) + ((_loc3_[1] & 48) >> 4);
+            _loc4_[1] = ((_loc3_[1] & 15) << 4) + ((_loc3_[2] & 60) >> 2);
+            _loc4_[2] = ((_loc3_[2] & 3) << 6) + _loc3_[3];
+            _loc7_ = 0;
+            while(_loc7_ < _loc4_.length)
+            {
+               if(_loc3_[_loc7_ + 1] == 64)
+               {
+                  break;
+               }
+               _loc2_.writeByte(_loc4_[_loc7_]);
+               _loc7_++;
+            }
+            _loc5_ += 4;
          }
+         _loc2_.position = 0;
          return _loc2_;
       }
    }

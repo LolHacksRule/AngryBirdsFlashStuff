@@ -23,78 +23,7 @@ package §<!1§
       public static const §4x§:int = 2;
       
       public static const §<I§:int = 1;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc2_)
-         {
-            §%!>§ = 0;
-            loop0:
-            while(true)
-            {
-               §]!=§ = 6;
-               while(true)
-               {
-                  §+!]§ = 7;
-                  while(true)
-                  {
-                     §;!r§ = 8;
-                     continue loop0;
-                     addr35:
-                     if(!(_loc1_ && _loc2_))
-                     {
-                        return;
-                        addr42:
-                     }
-                  }
-                  addr64:
-                  if(_loc1_ && _loc1_)
-                  {
-                     continue;
-                  }
-                  §<I§ = 1;
-                  addr71:
-                  if(!_loc2_)
-                  {
-                     loop6:
-                     while(true)
-                     {
-                        if(_loc1_ && §9B§)
-                        {
-                           loop5:
-                           while(true)
-                           {
-                              if(!(_loc1_ && §9B§))
-                              {
-                                 addr83:
-                                 if(_loc1_)
-                                 {
-                                    break;
-                                 }
-                                 §4x§ = 2;
-                                 continue loop6;
-                              }
-                              addr100:
-                              while(true)
-                              {
-                                 §#!s§ = 5;
-                                 continue loop5;
-                              }
-                              §§goto(addr42);
-                           }
-                           continue loop0;
-                        }
-                        §§goto(addr64);
-                     }
-                     continue;
-                  }
-                  §§goto(addr35);
-               }
-            }
-         }
-         §§goto(addr100);
-      }
+       
       
       public var §<!]§:String;
       
@@ -124,55 +53,24 @@ package §<!1§
       
       public function §9B§(param1:String, param2:int, param3:§0"§, param4:§<!R§, param5:§2!W§, param6:int, param7:String, param8:Number, param9:Number, param10:Number, param11:Boolean = false, param12:String = "", param13:int = 1)
       {
-         var _loc14_:Boolean = true;
-         var _loc15_:Boolean = false;
-         if(_loc14_)
+         super();
+         this.§<!]§ = param1;
+         this.§6K§ = param2;
+         this.§!T§ = param3;
+         this.§4!c§ = param12;
+         this.§!!?§ = param13;
+         this.§"n§ = param11;
+         this.§]4§ = param4;
+         this.§6r§ = param5;
+         this.§#!%§ = new §&'§(param6);
+         this.§@§ = param7;
+         this.§"g§ = param8;
+         if(this.§"g§ <= 0)
          {
-            super();
-            while(true)
-            {
-               this.§<!]§ = param1;
-               addr191:
-               while(!_loc15_)
-               {
-                  this.§6K§ = param2;
-               }
-            }
+            this.§"g§ = 1;
          }
-         while(true)
-         {
-            this.§!T§ = param3;
-            while(true)
-            {
-               this.§4!c§ = param12;
-               loop4:
-               while(true)
-               {
-                  this.§!!?§ = param13;
-                  addr171:
-                  while(true)
-                  {
-                     this.§"n§ = param11;
-                     continue loop4;
-                  }
-               }
-               while(!(_loc15_ && param1))
-               {
-                  this.§6r§ = param5;
-                  §§goto(addr130);
-                  §§goto(addr45);
-               }
-            }
-            while(_loc14_ || param1)
-            {
-               if(this.§"g§ <= 0)
-               {
-                  §§goto(addr130);
-               }
-               §§goto(addr32);
-               §§goto(addr38);
-            }
-         }
+         this.§-!!§ = param9;
+         this.§>j§ = param10;
       }
       
       public function get front() : Boolean
@@ -252,62 +150,13 @@ package §<!1§
       
       public function get shape() : §2!W§
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
          var _loc1_:Texture = null;
-         if(_loc3_)
+         if(!this.§6r§)
          {
-            §§push(this.§6r§);
-            if(_loc3_ || _loc3_)
-            {
-               if(!§§pop())
-               {
-                  _loc1_ = § _§.§!6§.animationManager.getAnimation(this.§<!]§).getFrame(0).texture;
-                  addr32:
-                  if(_loc3_)
-                  {
-                     §§push(this);
-                     §§push(§§findproperty(§2!W§));
-                     §§push(this.§<!]§);
-                     §§push("Rectangle");
-                     §§push(_loc1_.width);
-                     if(_loc3_ || _loc3_)
-                     {
-                        §§push(§^g§.§^!S§);
-                        if(_loc3_)
-                        {
-                           §§push(§§pop() * §§pop());
-                           if(_loc3_ || _loc1_)
-                           {
-                              addr93:
-                              §§push(§§pop() / 2);
-                              §§push(_loc1_.height);
-                              if(_loc3_)
-                              {
-                                 §§push(§§pop() * §^g§.§^!S§);
-                                 if(!_loc2_)
-                                 {
-                                    addr102:
-                                    §§push(§§pop() / 2);
-                                 }
-                                 §§pop().§6r§ = new §§pop().§2!W§(§§pop(),§§pop(),§§pop(),§§pop());
-                                 addr108:
-                                 return this.§6r§;
-                                 addr106:
-                              }
-                           }
-                           §§goto(addr93);
-                        }
-                        §§goto(addr102);
-                     }
-                     §§goto(addr93);
-                  }
-               }
-               §§goto(addr106);
-            }
-            §§goto(addr108);
+            _loc1_ = § _§.§!6§.animationManager.getAnimation(this.§<!]§).getFrame(0).texture;
+            this.§6r§ = new §2!W§(this.§<!]§,"Rectangle",_loc1_.width * §^g§.§^!S§ / 2,_loc1_.height * §^g§.§^!S§ / 2);
          }
-         §§goto(addr32);
+         return this.§6r§;
       }
       
       public function get §!9§() : §<!R§

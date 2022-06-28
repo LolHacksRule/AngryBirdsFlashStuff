@@ -14,48 +14,11 @@ package starling.events
       public static const §9z§:String = "stationary";
       
       public static const §3!p§:String = "ended";
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            §[!7§ = "hover";
-            while(true)
-            {
-               §5i§ = "began";
-               loop1:
-               for(; _loc2_; if(!(_loc2_ || _loc2_))
-               {
-                  continue;
-               })
-               {
-                  §6!A§ = "moved";
-                  while(true)
-                  {
-                     §9z§ = "stationary";
-                     while(_loc2_ || §^K§)
-                     {
-                        §3!p§ = "ended";
-                        if(_loc2_ || _loc1_)
-                        {
-                           continue loop1;
-                        }
-                     }
-                  }
-               }
-            }
-         }
-      }
+       
       
       public function §^K§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            super();
-         }
+         super();
          throw new §#!s§();
       }
    }

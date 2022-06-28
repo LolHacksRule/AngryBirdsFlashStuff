@@ -11,21 +11,7 @@ package §1N§
       public static const STATE_NAME:String = "load";
       
       public static var §2g§:uint = 4000;
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && StateLoad))
-         {
-            STATE_NAME = "load";
-         }
-         do
-         {
-            §2g§ = 4000;
-         }
-         while(!(_loc1_ || _loc2_));
-         
-      }
+       
       
       private var §^'§:Boolean = false;
       
@@ -45,428 +31,98 @@ package §1N§
       
       public function StateLoad(param1:Boolean = true, param2:String = "load", param3:Number = 1000, param4:String = "", param5:String = "")
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
-         if(_loc6_)
-         {
-            this.§+&§ = param4;
-         }
-         loop0:
-         while(true)
-         {
-            this.§#!B§ = param5;
-            do
-            {
-               super(param1,param2);
-               continue loop0;
-            }
-            while(_loc7_ && param1);
-            
-            return;
-         }
+         this.§+&§ = param4;
+         this.§#!B§ = param5;
+         super(param1,param2);
+         §1!O§ = true;
+         §2g§ = param3;
       }
       
       override public function init() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
+         super.init();
+         Server.init(§!!Z§("connectionProfileId"));
+         if(!LoadManager.§7!E§.§]L§())
          {
-            super.init();
-            while(true)
-            {
-               Server.init(§!!Z§("connectionProfileId"));
-               addr38:
-               if(_loc1_ && _loc1_)
-               {
-                  continue;
-               }
-               return;
-               addr45:
-            }
+            LoadManager.§7!E§.init(Server.§'!%§(),this.§+&§,this.§#!B§,null);
          }
-         loop1:
-         while(true)
-         {
-            §§push(LoadManager.§7!E§);
-            if(_loc2_ || this)
-            {
-               §§push(§§pop().§]L§());
-               if(_loc2_ || this)
-               {
-                  §§push(!§§pop());
-               }
-               if(!§§pop())
-               {
-                  while(true)
-                  {
-                     §,!]§(true);
-                     if(_loc1_ && _loc2_)
-                     {
-                        continue;
-                     }
-                     if(_loc2_)
-                     {
-                        §§goto(addr38);
-                     }
-                  }
-                  continue;
-                  addr24:
-               }
-               while(true)
-               {
-                  §§push(LoadManager.§7!E§);
-               }
-            }
-            while(true)
-            {
-               §§pop().init(Server.§'!%§(),this.§+&§,this.§#!B§,null);
-               continue loop1;
-            }
-         }
-         §§goto(addr45);
+         §,!]§(true);
       }
       
       public function setLoadingScreen(param1:DisplayObjectContainer) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            this.§6!W§ = param1;
-         }
+         this.§6!W§ = param1;
       }
       
       public function §'e§(param1:XML) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§!U§ = param1;
-         }
+         this.§!U§ = param1;
       }
       
       override public function activate() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            super.activate();
-            while(true)
-            {
-               §"!,§.addChild(this.§6!W§);
-               §§goto(addr78);
-            }
-         }
-         addr78:
-         while(true)
-         {
-            this.setLoadingPercentage(0);
-            do
-            {
-               this.§9^§ = getTimer();
-            }
-            while(!(_loc1_ || _loc1_));
-            
-            if(_loc1_ || _loc2_)
-            {
-               if(_loc1_)
-               {
-                  break;
-               }
-               continue loop0;
-            }
-         }
+         super.activate();
+         §"!,§.addChild(this.§6!W§);
+         this.setLoadingPercentage(0);
+         this.§9^§ = getTimer();
       }
       
       private function §=!§() : Boolean
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
          var _loc1_:XML = null;
          var _loc2_:XML = null;
-         if(_loc5_ || this)
+         if(LoadManager.§7!E§.§ n§())
          {
-            if(LoadManager.§7!E§.§ n§())
+            for each(_loc1_ in this.§!U§.Library)
             {
-               addr34:
-               var _loc3_:int = 0;
-               var _loc4_:* = this.§!U§.Library;
-               loop0:
-               while(true)
+               if(_loc1_.@startupLoad.toString().toLowerCase() == "true")
                {
-                  §§push(§§hasnext(_loc4_,_loc3_));
-                  if(!_loc6_)
-                  {
-                     if(§§pop())
-                     {
-                        _loc1_ = §§nextvalue(_loc3_,_loc4_);
-                        if(_loc5_ || _loc1_)
-                        {
-                           if(_loc1_.@startupLoad.toString().toLowerCase() != "true")
-                           {
-                              continue;
-                           }
-                           if(!(_loc5_ || this))
-                           {
-                              continue;
-                           }
-                        }
-                        LoadManager.§7!E§.§1!=§(_loc1_);
-                        continue;
-                     }
-                     if(!(_loc6_ && _loc2_))
-                     {
-                        if(_loc5_)
-                        {
-                           if(!(_loc6_ && _loc2_))
-                           {
-                              _loc3_ = 0;
-                              if(_loc5_ || this)
-                              {
-                                 _loc4_ = this.§!U§.packages.pack;
-                                 while(true)
-                                 {
-                                    §§push(§§hasnext(_loc4_,_loc3_));
-                                    break loop0;
-                                 }
-                                 addr139:
-                                 if(_loc5_ || _loc1_)
-                                 {
-                                    LoadManager.§7!E§.§,!H§(this.§0!i§);
-                                    §§push(true);
-                                 }
-                                 else
-                                 {
-                                    addr159:
-                                    §§push(false);
-                                    if(_loc5_ || _loc2_)
-                                    {
-                                       return §§pop();
-                                    }
-                                    addr180:
-                                 }
-                                 return §§pop();
-                                 addr138:
-                                 addr136:
-                              }
-                              §§goto(addr139);
-                           }
-                           §§goto(addr180);
-                        }
-                        §§goto(addr139);
-                     }
-                     §§goto(addr138);
-                  }
-                  break;
-               }
-               while(true)
-               {
-                  if(§§pop())
-                  {
-                     _loc2_ = §§nextvalue(_loc3_,_loc4_);
-                     if(_loc5_)
-                     {
-                        LoadManager.§7!E§.§1!=§(_loc2_);
-                     }
-                     continue;
-                  }
-                  §§goto(addr139);
+                  LoadManager.§7!E§.§1!=§(_loc1_);
                }
             }
-            §§goto(addr159);
+            for each(_loc2_ in this.§!U§.packages.pack)
+            {
+               LoadManager.§7!E§.§1!=§(_loc2_);
+            }
+            LoadManager.§7!E§.§,!H§(this.§0!i§);
+            return true;
          }
-         §§goto(addr34);
+         return false;
       }
       
       override public function run(param1:Number) : int
       {
-         var _loc6_:Boolean = false;
-         var _loc7_:Boolean = true;
-         §§push(super.run(param1));
-         if(!_loc6_)
+         var _loc2_:int = super.run(param1);
+         if(_loc2_ != StateBase.STATE_STATUS_RUNNING)
          {
-            §§push(int(§§pop()));
+            return _loc2_;
          }
-         var _loc2_:* = §§pop();
-         if(_loc7_)
+         if(!this.§1!?§ && this.§=!§())
          {
-            §§push(_loc2_);
-            if(!(_loc6_ && param1))
-            {
-               if(§§pop() != StateBase.STATE_STATUS_RUNNING)
-               {
-                  if(_loc7_ || param1)
-                  {
-                     §§goto(addr136);
-                  }
-                  else
-                  {
-                     while(true)
-                     {
-                        addr80:
-                        if(_loc7_ || _loc2_)
-                        {
-                           if(false)
-                           {
-                              while(true)
-                              {
-                                 §§push(this.§1!?§);
-                                 loop2:
-                                 while(true)
-                                 {
-                                    §§push(!§§pop());
-                                    loop3:
-                                    while(true)
-                                    {
-                                       §§push(Boolean(§§pop()));
-                                       loop4:
-                                       while(true)
-                                       {
-                                          §§push(§§pop());
-                                          if(!(_loc6_ && param1))
-                                          {
-                                             §§push(Boolean(§§pop()));
-                                          }
-                                          if(§§pop())
-                                          {
-                                             loop5:
-                                             while(true)
-                                             {
-                                                §§pop();
-                                                addr105:
-                                                while(true)
-                                                {
-                                                   §§push(this.§=!§());
-                                                   if(!(_loc6_ && _loc2_))
-                                                   {
-                                                      if(!_loc7_)
-                                                      {
-                                                         break;
-                                                      }
-                                                      if(!(_loc6_ && _loc3_))
-                                                      {
-                                                         if(!(_loc6_ && param1))
-                                                         {
-                                                            §§push(Boolean(§§pop()));
-                                                            continue loop5;
-                                                         }
-                                                         continue loop2;
-                                                      }
-                                                      continue loop3;
-                                                   }
-                                                   continue loop5;
-                                                }
-                                                continue loop4;
-                                             }
-                                          }
-                                          while(§§pop())
-                                          {
-                                             if(_loc7_ || _loc2_)
-                                             {
-                                                if(_loc7_ || _loc2_)
-                                                {
-                                                   this.§1!?§ = true;
-                                                }
-                                                else
-                                                {
-                                                   §§goto(addr105);
-                                                }
-                                             }
-                                             §§goto(addr80);
-                                          }
-                                       }
-                                    }
-                                 }
-                              }
-                              addr89:
-                           }
-                           §§push(Math.min(1,LoadManager.§7!E§.§"U§()) * 9);
-                           if(_loc7_)
-                           {
-                              §§push(Number(§§pop()));
-                           }
-                           var _loc3_:* = §§pop();
-                           var _loc4_:Number = Math.min(1,(getTimer() - this.§9^§) / §2g§);
-                           §§push(_loc3_);
-                           if(!(_loc6_ && this))
-                           {
-                              §§push(§§pop() + _loc4_);
-                              if(_loc7_ || this)
-                              {
-                                 §§push(§§pop() / 10);
-                                 if(_loc7_)
-                                 {
-                                    §§push(Number(§§pop()));
-                                 }
-                              }
-                           }
-                           var _loc5_:* = §§pop();
-                           if(_loc7_)
-                           {
-                              this.setLoadingPercentage(_loc5_);
-                              §§push(LoadManager.§7!E§);
-                              if(!(_loc6_ && this))
-                              {
-                                 if(§§pop().§"U§() >= 1)
-                                 {
-                                    if(_loc7_)
-                                    {
-                                       addr248:
-                                       LoadManager.§7!E§.§<L§();
-                                    }
-                                    return StateBase.STATE_STATUS_COMPLETED;
-                                 }
-                                 §§goto(addr192);
-                              }
-                              §§goto(addr248);
-                           }
-                           addr192:
-                           return StateBase.STATE_STATUS_RUNNING;
-                        }
-                     }
-                  }
-               }
-               §§goto(addr89);
-            }
-            §§goto(addr136);
+            this.§1!?§ = true;
          }
-         addr136:
-         return _loc2_;
+         var _loc3_:Number = Math.min(1,LoadManager.§7!E§.§"U§()) * 9;
+         var _loc4_:Number = Math.min(1,(getTimer() - this.§9^§) / §2g§);
+         var _loc5_:Number = (_loc3_ + _loc4_) / 10;
+         this.setLoadingPercentage(_loc5_);
+         if(LoadManager.§7!E§.§"U§() >= 1)
+         {
+            LoadManager.§7!E§.§<L§();
+            return StateBase.STATE_STATUS_COMPLETED;
+         }
+         return StateBase.STATE_STATUS_RUNNING;
       }
       
       override public function deActivate() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            super.deActivate();
-         }
+         super.deActivate();
       }
       
       override public function cleanup() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            §"!,§.removeChild(this.§6!W§);
-            do
-            {
-               this.§6!W§ = null;
-               do
-               {
-                  super.cleanup();
-               }
-               while(!_loc1_);
-               
-            }
-            while(_loc2_);
-            
-         }
+         §"!,§.removeChild(this.§6!W§);
+         this.§6!W§ = null;
+         super.cleanup();
       }
       
       private function §0!i§() : void
@@ -479,28 +135,11 @@ package §1N§
       
       override public function setViewSize(param1:Number, param2:Number) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_)
+         super.setViewSize(param1,param2);
+         if(this.§6!W§)
          {
-            super.setViewSize(param1,param2);
-         }
-         while(this.§6!W§)
-         {
-            if(_loc4_)
-            {
-               this.§6!W§.x = param1 - this.§6!W§.width >> 1;
-            }
-            do
-            {
-               this.§6!W§.y = param2 - this.§6!W§.height >> 1;
-            }
-            while(_loc3_ && _loc3_);
-            
-            if(!(_loc3_ && this))
-            {
-               break;
-            }
+            this.§6!W§.x = param1 - this.§6!W§.width >> 1;
+            this.§6!W§.y = param2 - this.§6!W§.height >> 1;
          }
       }
    }

@@ -10,26 +10,9 @@ package §5!3§
       
       public function §8!k§(param1:String, param2:String)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_)
-         {
-            super();
-            while(true)
-            {
-               this.§0!V§ = param1;
-               while(!_loc3_)
-               {
-                  this.name = param2;
-                  if(!(_loc3_ && param1))
-                  {
-                     return;
-                     addr45:
-                  }
-               }
-            }
-         }
-         §§goto(addr45);
+         super();
+         this.§0!V§ = param1;
+         this.name = param2;
       }
       
       public static function §+q§(param1:Object) : §8!k§

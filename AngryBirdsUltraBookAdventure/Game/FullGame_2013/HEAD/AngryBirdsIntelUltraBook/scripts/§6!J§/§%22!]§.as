@@ -10,16 +10,8 @@ package §6!J§
    public class §"!]§ extends Texture
    {
       
-      private static var §3!;§:Point;
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            §3!;§ = new Point();
-         }
-      }
+      private static var §3!;§:Point = new Point();
+       
       
       private var §;4§:Texture;
       
@@ -33,288 +25,64 @@ package §6!J§
       
       public function §"!]§(param1:Texture, param2:Rectangle, param3:Boolean = false)
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(_loc4_ || param3)
+         super();
+         this.§;4§ = param1;
+         this.§?!T§ = param3;
+         if(param2 == null)
          {
-            super();
-            while(true)
-            {
-               this.§;4§ = param1;
-               addr94:
-               if(!(_loc4_ || param1))
-               {
-                  continue;
-               }
-               addr101:
-               this.§[!Q§(new Rectangle(0,0,1,1));
-               addr24:
-               return;
-               addr110:
-            }
+            this.§[!Q§(new Rectangle(0,0,1,1));
          }
-         loop1:
-         while(true)
+         else
          {
-            this.§?!T§ = param3;
-            for(; param2 != null; if(!_loc4_)
-            {
-               break;
-            },if(_loc4_)
-            {
-               continue loop1;
-            })
-            {
-               this.§[!Q§(new Rectangle(param2.x / param1.width,param2.y / param1.height,param2.width / param1.width,param2.height / param1.height));
-               if(!_loc5_)
-               {
-                  continue;
-               }
-               §§goto(addr110);
-            }
-            §§goto(addr94);
-            if(!(_loc4_ || param3))
-            {
-               continue;
-            }
-            §§goto(addr24);
+            this.§[!Q§(new Rectangle(param2.x / param1.width,param2.y / param1.height,param2.width / param1.width,param2.height / param1.height));
          }
-         §§goto(addr101);
       }
       
       override public function dispose() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc2_))
+         if(this.§?!T§)
          {
-            §§push(this.§?!T§);
-            while(true)
-            {
-               if(§§pop())
-               {
-                  while(true)
-                  {
-                     this.§;4§.dispose();
-                     addr103:
-                     while(true)
-                     {
-                     }
-                  }
-                  addr99:
-               }
-               while(true)
-               {
-                  §§push(Boolean(this.§^!+§));
-                  if(_loc1_)
-                  {
-                     break;
-                  }
-                  if(§§pop())
-                  {
-                     loop4:
-                     while(true)
-                     {
-                        this.§^!+§.dispose();
-                        loop5:
-                        while(_loc2_ || _loc1_)
-                        {
-                           while(true)
-                           {
-                              this.§^!+§ = null;
-                              loop7:
-                              while(true)
-                              {
-                                 if(_loc1_ && _loc2_)
-                                 {
-                                    continue loop5;
-                                 }
-                                 if(_loc2_)
-                                 {
-                                    addr76:
-                                    while(true)
-                                    {
-                                       super.dispose();
-                                       if(_loc2_)
-                                       {
-                                          continue loop4;
-                                       }
-                                       continue loop7;
-                                       §§goto(addr76);
-                                    }
-                                    return;
-                                    addr52:
-                                    addr29:
-                                 }
-                                 §§goto(addr99);
-                              }
-                           }
-                        }
-                        §§goto(addr103);
-                     }
-                  }
-                  §§goto(addr29);
-               }
-            }
+            this.§;4§.dispose();
          }
-         §§goto(addr95);
+         if(this.§^!+§)
+         {
+            this.§^!+§.dispose();
+            this.§^!+§ = null;
+         }
+         super.dispose();
       }
       
       private function §[!Q§(param1:Rectangle) : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
          var _loc3_:Rectangle = null;
-         if(_loc4_ || _loc3_)
+         this.§<!j§ = param1;
+         this.§8!e§ = param1.clone();
+         var _loc2_:§"!]§ = this.§;4§ as §"!]§;
+         while(_loc2_)
          {
-            this.§<!j§ = param1;
-            if(!(_loc5_ && this))
-            {
-               addr36:
-               this.§8!e§ = param1.clone();
-            }
-            var _loc2_:§"!]§ = this.§;4§ as §"!]§;
-            loop0:
-            for(; _loc2_; _loc2_ = _loc2_.§;4§ as §"!]§)
-            {
-               _loc3_ = _loc2_.§<!j§;
-               if(_loc4_ || param1)
-               {
-                  this.§8!e§.x = _loc3_.x + this.§8!e§.x * _loc3_.width;
-                  while(true)
-                  {
-                     this.§8!e§.y = _loc3_.y + this.§8!e§.y * _loc3_.height;
-                     while(!_loc5_)
-                     {
-                        while(true)
-                        {
-                           this.§8!e§.width *= _loc3_.width;
-                           do
-                           {
-                              this.§8!e§.height *= _loc3_.height;
-                           }
-                           while(_loc5_);
-                           
-                           if(_loc5_)
-                           {
-                              break;
-                           }
-                           if(false)
-                           {
-                              continue;
-                           }
-                           continue loop0;
-                        }
-                     }
-                  }
-               }
-               while(true)
-               {
-                  §§goto(addr87);
-               }
-            }
-            return;
+            _loc3_ = _loc2_.§<!j§;
+            this.§8!e§.x = _loc3_.x + this.§8!e§.x * _loc3_.width;
+            this.§8!e§.y = _loc3_.y + this.§8!e§.y * _loc3_.height;
+            this.§8!e§.width *= _loc3_.width;
+            this.§8!e§.height *= _loc3_.height;
+            _loc2_ = _loc2_.§;4§ as §"!]§;
          }
-         §§goto(addr36);
       }
       
       override public function adjustVertexData(param1:VertexData, param2:int, param3:int) : void
       {
-         var _loc10_:Boolean = false;
-         var _loc11_:Boolean = true;
-         if(_loc11_ || param3)
-         {
-            super.adjustVertexData(param1,param2,param3);
-         }
+         super.adjustVertexData(param1,param2,param3);
          var _loc4_:Number = this.§8!e§.x;
          var _loc5_:Number = this.§8!e§.y;
          var _loc6_:Number = this.§8!e§.width;
          var _loc7_:Number = this.§8!e§.height;
-         §§push(param2);
-         if(!(_loc10_ && param3))
+         var _loc8_:int = param2 + param3;
+         var _loc9_:int = param2;
+         while(_loc9_ < _loc8_)
          {
-            §§push(int(§§pop() + param3));
-         }
-         var _loc8_:* = §§pop();
-         §§push(param2);
-         if(_loc11_)
-         {
-            §§push(int(§§pop()));
-         }
-         var _loc9_:* = §§pop();
-         while(true)
-         {
-            §§push(_loc9_);
-            if(_loc11_ || param2)
-            {
-               if(_loc11_)
-               {
-                  if(§§pop() >= _loc8_)
-                  {
-                     if(!_loc10_)
-                     {
-                        break;
-                     }
-                     loop1:
-                     while(true)
-                     {
-                        if(_loc11_ || param2)
-                        {
-                           if(_loc11_ || param3)
-                           {
-                              break;
-                           }
-                           addr177:
-                           while(true)
-                           {
-                              §§push(param1);
-                              §§push(_loc9_);
-                              §§push(_loc4_);
-                              if(!(_loc10_ && param3))
-                              {
-                                 §§push(§3!;§.x * _loc6_);
-                                 if(!(_loc10_ && param1))
-                                 {
-                                    addr157:
-                                    §§push(§§pop() + §§pop());
-                                    §§push(_loc5_);
-                                    if(!_loc10_)
-                                    {
-                                       addr160:
-                                       §§push(§§pop() + §3!;§.y * _loc7_);
-                                    }
-                                    §§pop().setTexCoords(§§pop(),§§pop(),§§pop());
-                                    while(true)
-                                    {
-                                       §§push(_loc9_);
-                                       addr98:
-                                       while(true)
-                                       {
-                                          §§push(§§pop() + 1);
-                                          if(!(_loc10_ && param1))
-                                          {
-                                             §§push(int(§§pop()));
-                                          }
-                                          continue loop1;
-                                       }
-                                    }
-                                    addr168:
-                                 }
-                                 §§goto(addr160);
-                              }
-                              §§goto(addr157);
-                           }
-                        }
-                        §§goto(addr168);
-                     }
-                     continue;
-                  }
-                  param1.getTexCoords(_loc9_,§3!;§);
-                  §§goto(addr177);
-               }
-               §§goto(addr98);
-            }
-            §§goto(addr107);
+            param1.getTexCoords(_loc9_,§3!;§);
+            param1.setTexCoords(_loc9_,_loc4_ + §3!;§.x * _loc6_,_loc5_ + §3!;§.y * _loc7_);
+            _loc9_++;
          }
       }
       
@@ -330,105 +98,26 @@ package §6!J§
       
       override public function get clippedBitmapData() : BitmapData
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
          var _loc2_:Rectangle = null;
-         var _loc3_:* = 0;
-         var _loc4_:* = 0;
-         if(!(_loc6_ && this))
+         var _loc3_:int = 0;
+         var _loc4_:int = 0;
+         if(this.§^!+§)
          {
-            if(this.§^!+§)
-            {
-               if(!(_loc6_ && _loc2_))
-               {
-                  §§goto(addr41);
-               }
-            }
-            var _loc1_:BitmapData = this.bitmapData;
-            if(_loc5_)
-            {
-               if(_loc1_)
-               {
-                  addr53:
-                  _loc2_ = this.clipping;
-                  if(_loc5_ || _loc3_)
-                  {
-                     _loc2_.x *= this.bitmapData.width;
-                  }
-                  loop0:
-                  while(true)
-                  {
-                     _loc2_.y *= this.bitmapData.height;
-                     while(true)
-                     {
-                        _loc2_.width *= this.bitmapData.width;
-                        loop2:
-                        while(true)
-                        {
-                           _loc2_.height *= this.bitmapData.height;
-                           addr176:
-                           while(true)
-                           {
-                              §§push(int(Math.max(2,_loc2_.width)));
-                              while(true)
-                              {
-                                 _loc3_ = §§pop();
-                                 §§push(int(Math.max(2,_loc2_.height)));
-                                 addr166:
-                                 continue loop2;
-                                 if(!(_loc6_ && this))
-                                 {
-                                    _loc4_ = §§pop();
-                                    continue loop0;
-                                 }
-                              }
-                           }
-                        }
-                        addr107:
-                        if(_loc5_ || _loc3_)
-                        {
-                           if(false)
-                           {
-                              while(true)
-                              {
-                                 this.§^!+§ = new BitmapData(_loc3_,_loc4_,true,0);
-                                 do
-                                 {
-                                    this.§^!+§.copyPixels(_loc1_,_loc2_,new Point(0,0),null,null,true);
-                                 }
-                                 while(_loc6_);
-                                 
-                                 if(!(_loc6_ && _loc2_))
-                                 {
-                                    if(!(_loc6_ && _loc3_))
-                                    {
-                                       if(!_loc6_)
-                                       {
-                                          §§goto(addr107);
-                                       }
-                                       else
-                                       {
-                                          §§goto(addr176);
-                                       }
-                                    }
-                                    break;
-                                 }
-                                 continue loop0;
-                              }
-                              §§goto(addr159);
-                              addr116:
-                           }
-                           §§goto(addr216);
-                        }
-                     }
-                  }
-               }
-               addr216:
-               return this.§^!+§;
-            }
-            §§goto(addr53);
+            return this.§^!+§;
          }
-         addr41:
+         var _loc1_:BitmapData = this.bitmapData;
+         if(_loc1_)
+         {
+            _loc2_ = this.clipping;
+            _loc2_.x *= this.bitmapData.width;
+            _loc2_.y *= this.bitmapData.height;
+            _loc2_.width *= this.bitmapData.width;
+            _loc2_.height *= this.bitmapData.height;
+            _loc3_ = Math.max(2,_loc2_.width);
+            _loc4_ = Math.max(2,_loc2_.height);
+            this.§^!+§ = new BitmapData(_loc3_,_loc4_,true,0);
+            this.§^!+§.copyPixels(_loc1_,_loc2_,new Point(0,0),null,null,true);
+         }
          return this.§^!+§;
       }
       
@@ -454,24 +143,12 @@ package §6!J§
       
       override public function get width() : Number
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         §§push(this.§;4§.width);
-         if(!(_loc1_ && _loc1_))
-         {
-            return §§pop() * this.§<!j§.width;
-         }
+         return this.§;4§.width * this.§<!j§.width;
       }
       
       override public function get height() : Number
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         §§push(this.§;4§.height);
-         if(!_loc2_)
-         {
-            return §§pop() * this.§<!j§.height;
-         }
+         return this.§;4§.height * this.§<!j§.height;
       }
       
       override public function get mipMapping() : Boolean
@@ -486,12 +163,7 @@ package §6!J§
       
       override public function requestBaseTextureUpdate(param1:Object) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            this.§;4§.requestBaseTextureUpdate(param1);
-         }
+         this.§;4§.requestBaseTextureUpdate(param1);
       }
    }
 }

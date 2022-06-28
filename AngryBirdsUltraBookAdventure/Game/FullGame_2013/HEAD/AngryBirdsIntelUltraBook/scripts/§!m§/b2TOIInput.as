@@ -18,39 +18,11 @@ package §!m§
       
       public function b2TOIInput()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            this.§'[§ = new b2DistanceProxy();
-            loop0:
-            while(true)
-            {
-               this.§4P§ = new b2DistanceProxy();
-               loop1:
-               while(true)
-               {
-                  this.§=!S§ = new b2Sweep();
-                  while(!_loc2_)
-                  {
-                     this.§&+§ = new b2Sweep();
-                     while(!_loc2_)
-                     {
-                        if(!_loc2_)
-                        {
-                           super();
-                           if(_loc1_ || _loc1_)
-                           {
-                           }
-                           continue;
-                        }
-                        continue loop1;
-                     }
-                  }
-                  continue loop0;
-               }
-            }
-         }
+         this.§'[§ = new b2DistanceProxy();
+         this.§4P§ = new b2DistanceProxy();
+         this.§=!S§ = new b2Sweep();
+         this.§&+§ = new b2Sweep();
+         super();
       }
    }
 }

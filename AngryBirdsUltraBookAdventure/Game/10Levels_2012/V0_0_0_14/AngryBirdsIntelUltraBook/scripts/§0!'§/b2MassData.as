@@ -14,18 +14,8 @@ package §0!'§
       
       public function b2MassData()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            this.center = new b2Vec2(0,0);
-            do
-            {
-               super();
-            }
-            while(_loc1_);
-            
-         }
+         this.center = new b2Vec2(0,0);
+         super();
       }
    }
 }

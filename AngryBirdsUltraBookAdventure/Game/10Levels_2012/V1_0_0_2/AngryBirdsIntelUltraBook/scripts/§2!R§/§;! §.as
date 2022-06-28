@@ -14,29 +14,11 @@ package §2!R§
       
       public function §;! §(param1:Number, param2:Number, param3:Number, param4:Boolean)
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(!_loc5_)
-         {
-            super();
-            loop0:
-            while(true)
-            {
-               this.§,G§ = param1;
-               while(true)
-               {
-                  this.§78§ = param2;
-                  continue loop0;
-                  addr45:
-                  if(_loc6_ || this)
-                  {
-                     return;
-                     addr62:
-                  }
-               }
-            }
-         }
-         §§goto(addr69);
+         super();
+         this.§,G§ = param1;
+         this.§78§ = param2;
+         this.§'8§ = param3;
+         this.§ !s§ = param4;
       }
       
       public function get x() : Number

@@ -21,400 +21,88 @@ package §4H§
       private static var §,!>§:String = "";
       
       private static var §8t§:int = 0;
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            §,!>§ = "";
-         }
-         do
-         {
-            §8t§ = 0;
-         }
-         while(!_loc1_);
-         
-      }
+       
       
       public function §!!5§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function load(param1:String, param2:String, param3:String) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!_loc4_)
+         §9^§ = new §45§();
+         §9^§.dataFormat = URLLoaderDataFormat.TEXT;
+         §9^§.addEventListener(Event.COMPLETE,§94§);
+         §9^§.addEventListener(IOErrorEvent.IO_ERROR,§2!@§);
+         §9^§.addEventListener(SecurityErrorEvent.SECURITY_ERROR,§2!@§);
+         if(param1)
          {
-            §9^§ = new §45§();
-            loop0:
-            while(true)
-            {
-               §§push(§9^§);
-               loop1:
-               while(true)
-               {
-                  §§pop().dataFormat = URLLoaderDataFormat.TEXT;
-                  addr224:
-                  while(true)
-                  {
-                     §§push(§9^§);
-                     addr214:
-                     while(true)
-                     {
-                        §§pop().addEventListener(Event.COMPLETE,§94§);
-                        addr218:
-                        addr55:
-                        while(true)
-                        {
-                           §§push(§9^§);
-                           continue loop1;
-                        }
-                        if(_loc4_)
-                        {
-                           continue loop0;
-                        }
-                     }
-                  }
-               }
-            }
+            §9^§.load(§7!6§.§7V§(AngryBirdsFP11.§[!S§ + "/init/" + param1 + "/" + param2 + "/" + param3 + "/" + (new Date().timezoneOffset / 60).toString()));
          }
-         §§goto(addr20);
+         else
+         {
+            §9^§.load(§7!6§.§7V§(AngryBirdsFP11.§[!S§ + "/init"));
+         }
       }
       
       protected static function §2!@§(param1:Event) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || §!!5§)
-         {
-            §§push(§§findproperty(§,!>§));
-            §§push("Can\'t contact server.\n");
-            if(!(_loc3_ && §!!5§))
-            {
-               §§push(§§pop() + param1.toString());
-            }
-            §§pop().§,!>§ = §§pop();
-            do
-            {
-               §9^§ = null;
-            }
-            while(!(_loc2_ || _loc2_));
-            
-         }
+         §,!>§ = "Can\'t contact server.\n" + param1.toString();
+         §9^§ = null;
       }
       
       private static function §94§(param1:Event) : void
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         §§push(§§newactivation());
-         loop0:
-         while(true)
+         var serverResponse:String = null;
+         var bragObject:Object = null;
+         var e:Event = param1;
+         var threwError:Boolean = false;
+         serverResponse = String(§9^§.data);
+         try
          {
-            §§push(null);
-            loop1:
-            while(true)
+            §+7§ = JSON.parse(serverResponse);
+            if(§+7§.error)
             {
-               §§push(§§pop());
-               loop2:
-               while(true)
+               §,!>§ = "Server error of type \'" + §+7§.type + "\':\n" + §+7§.message;
+               if(§+7§.type == "OAuthException")
                {
-                  §§pop().§§slot[3] = §§pop();
-                  loop3:
-                  while(true)
-                  {
-                     §§push(§§newactivation());
-                     loop4:
-                     while(true)
-                     {
-                        §§push(null);
-                        if(!(_loc5_ || param1))
-                        {
-                           break;
-                        }
-                        §§pop().§§slot[4] = §§pop();
-                        loop5:
-                        while(true)
-                        {
-                           §§push(§§newactivation());
-                           loop6:
-                           while(!_loc6_)
-                           {
-                              §§pop().§§slot[1] = param1;
-                              loop7:
-                              while(!_loc6_)
-                              {
-                                 loop8:
-                                 do
-                                 {
-                                    §§push(§§newactivation());
-                                    loop9:
-                                    while(_loc5_)
-                                    {
-                                       §§pop().§§slot[2] = false;
-                                       while(true)
-                                       {
-                                          if(_loc5_)
-                                          {
-                                             if(!(_loc5_ || param1))
-                                             {
-                                                break;
-                                             }
-                                             §§push(§§newactivation());
-                                             if(_loc5_)
-                                             {
-                                                if(_loc5_)
-                                                {
-                                                   §§push(String(§9^§.data));
-                                                   if(!_loc6_)
-                                                   {
-                                                      §§pop().§§slot[3] = §§pop();
-                                                      if(_loc5_)
-                                                      {
-                                                         continue loop8;
-                                                      }
-                                                      continue;
-                                                   }
-                                                   continue loop2;
-                                                }
-                                                continue loop4;
-                                             }
-                                             continue loop9;
-                                          }
-                                          continue loop7;
-                                       }
-                                       continue loop3;
-                                    }
-                                    continue loop6;
-                                 }
-                                 while(false);
-                                 
-                                 try
-                                 {
-                                    §+7§ = JSON.parse(serverResponse);
-                                    if(_loc5_ || _loc2_)
-                                    {
-                                       if(§+7§.error)
-                                       {
-                                          addr145:
-                                          §§push(§§findproperty(§,!>§));
-                                          §§push("Server error of type \'");
-                                          if(!_loc6_)
-                                          {
-                                             §§push(§§pop() + §+7§.type);
-                                             if(_loc5_ || §!!5§)
-                                             {
-                                                §§push(§§pop() + "\':\n");
-                                                if(!_loc6_)
-                                                {
-                                                   §§push(§§pop() + §+7§.message);
-                                                }
-                                             }
-                                          }
-                                          §§pop().§,!>§ = §§pop();
-                                          if(_loc5_)
-                                          {
-                                             addr118:
-                                             if(§+7§.type == "OAuthException")
-                                             {
-                                                if(!(_loc6_ && §!!5§))
-                                                {
-                                                   §8t§ = §"K§.§6$§;
-                                                   if(_loc5_ || _loc2_)
-                                                   {
-                                                      addr96:
-                                                      §§push(§§newactivation());
-                                                      if(_loc5_)
-                                                      {
-                                                         §§pop().§§slot[2] = true;
-                                                         if(_loc5_ || _loc3_)
-                                                         {
-                                                            if(_loc5_ || _loc2_)
-                                                            {
-                                                               if(false)
-                                                               {
-                                                                  §§goto(addr118);
-                                                               }
-                                                               addr228:
-                                                               if(!threwError)
-                                                               {
-                                                                  if(!(_loc6_ && _loc3_))
-                                                                  {
-                                                                     §6!_§.§8m§(§+7§.friends);
-                                                                     if(_loc5_)
-                                                                     {
-                                                                        (AngryBirdsFP11.sUserProgress as §#!6§).§0!2§(§+7§.state as Array,§+7§.user.name,§+7§.user.avatar,§+7§.user.userId,§+7§.eggs,§+7§.user.tutorials);
-                                                                        addr330:
-                                                                        §0c§.§[U§.§-c§(§+7§.excludedUserIds);
-                                                                        addr357:
-                                                                        addr333:
-                                                                        §§push(§0c§.§[U§);
-                                                                        if(!_loc6_)
-                                                                        {
-                                                                           §§pop().§4C§(§+7§.deauthorizedUserIds);
-                                                                           if(_loc5_)
-                                                                           {
-                                                                              if(§+7§.user.name == null)
-                                                                              {
-                                                                                 §§goto(addr297);
-                                                                              }
-                                                                              addr258:
-                                                                              if(§+7§.user.ap == true)
-                                                                              {
-                                                                                 if(_loc5_ || param1)
-                                                                                 {
-                                                                                    addr271:
-                                                                                    §+!i§.§>!y§("doAdParlorConversion");
-                                                                                    if(_loc5_ || param1)
-                                                                                    {
-                                                                                       if(_loc5_ || §!!5§)
-                                                                                       {
-                                                                                          if(_loc5_)
-                                                                                          {
-                                                                                             addr244:
-                                                                                             §<t§.§6v§(§+7§.friends);
-                                                                                             if(!(_loc6_ && §!!5§))
-                                                                                             {
-                                                                                                if(false)
-                                                                                                {
-                                                                                                   §§goto(addr258);
-                                                                                                }
-                                                                                                var _loc3_:* = 0;
-                                                                                                if(!_loc6_)
-                                                                                                {
-                                                                                                   var _loc4_:* = §+7§.requests.brags;
-                                                                                                   if(_loc5_ || _loc3_)
-                                                                                                   {
-                                                                                                      addr400:
-                                                                                                      for each(bragObject in _loc4_)
-                                                                                                      {
-                                                                                                         if(!_loc6_)
-                                                                                                         {
-                                                                                                            addr394:
-                                                                                                            §+!i§.§>!y§("flashDeleteRequest",bragObject.r);
-                                                                                                         }
-                                                                                                         §§goto(addr400);
-                                                                                                      }
-                                                                                                      §§goto(addr403);
-                                                                                                   }
-                                                                                                   §§goto(addr394);
-                                                                                                }
-                                                                                                addr403:
-                                                                                                if(!_loc6_)
-                                                                                                {
-                                                                                                   addr406:
-                                                                                                   §9^§ = null;
-                                                                                                }
-                                                                                             }
-                                                                                             §§goto(addr409);
-                                                                                          }
-                                                                                          §§goto(addr333);
-                                                                                       }
-                                                                                       §§goto(addr297);
-                                                                                    }
-                                                                                 }
-                                                                                 addr409:
-                                                                                 return;
-                                                                              }
-                                                                              §§goto(addr244);
-                                                                              addr326:
-                                                                           }
-                                                                           §§goto(addr406);
-                                                                        }
-                                                                        §§goto(addr330);
-                                                                     }
-                                                                     §§goto(addr271);
-                                                                  }
-                                                               }
-                                                               §§goto(addr406);
-                                                               addr170:
-                                                            }
-                                                            §§goto(addr145);
-                                                         }
-                                                         §§goto(addr330);
-                                                      }
-                                                      §§goto(addr228);
-                                                   }
-                                                   §§goto(addr297);
-                                                }
-                                                §§goto(addr271);
-                                             }
-                                             §§goto(addr96);
-                                          }
-                                          §§goto(addr326);
-                                       }
-                                       §§goto(addr170);
-                                    }
-                                    addr297:
-                                    if(_loc6_ && param1)
-                                    {
-                                       §§goto(addr357);
-                                    }
-                                    throw new Error("User name cannot be null");
-                                 }
-                                 catch(e:Error)
-                                 {
-                                    _loc3_ = e;
-                                    if(!_loc6_)
-                                    {
-                                       §§push(§§findproperty(§,!>§));
-                                       §§push("Invalid server response. Expected a json string but got this:\n");
-                                       if(_loc5_)
-                                       {
-                                          §§push(§§pop() + serverResponse);
-                                       }
-                                       §§pop().§,!>§ = §§pop();
-                                       addr210:
-                                       §8t§ = §"K§.§6#§;
-                                       addr224:
-                                    }
-                                    var threwError:Boolean = true;
-                                    if(!_loc6_)
-                                    {
-                                       if(!(_loc6_ && §!!5§))
-                                       {
-                                          if(false)
-                                          {
-                                             §§goto(addr210);
-                                          }
-                                          §§goto(addr228);
-                                       }
-                                       §§goto(addr224);
-                                    }
-                                    addr215:
-                                    §§goto(addr215);
-                                 }
-                                 §§goto(addr228);
-                              }
-                              continue loop5;
-                           }
-                           continue loop0;
-                        }
-                     }
-                     continue loop1;
-                  }
+                  §8t§ = §"K§.§6$§;
                }
+               threwError = true;
             }
          }
+         catch(e:Error)
+         {
+            §,!>§ = "Invalid server response. Expected a json string but got this:\n" + serverResponse;
+            §8t§ = §"K§.§6#§;
+            threwError = true;
+         }
+         if(!threwError)
+         {
+            §6!_§.§8m§(§+7§.friends);
+            (AngryBirdsFP11.sUserProgress as §#!6§).§0!2§(§+7§.state as Array,§+7§.user.name,§+7§.user.avatar,§+7§.user.userId,§+7§.eggs,§+7§.user.tutorials);
+            §0c§.§[U§.§-c§(§+7§.excludedUserIds);
+            §0c§.§[U§.§4C§(§+7§.deauthorizedUserIds);
+            if(§+7§.user.name == null)
+            {
+               throw new Error("User name cannot be null");
+            }
+            if(§+7§.user.ap == true)
+            {
+               §+!i§.§>!y§("doAdParlorConversion");
+            }
+            §<t§.§6v§(§+7§.friends);
+            for each(bragObject in §+7§.requests.brags)
+            {
+               §+!i§.§>!y§("flashDeleteRequest",bragObject.r);
+            }
+         }
+         §9^§ = null;
       }
       
       public static function get §6;§() : Boolean
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         §§push(§9^§ == null);
-         if(_loc2_ || §!!5§)
-         {
-            return !§§pop();
-         }
+         return §9^§ != null;
       }
       
       private static function get data() : Object

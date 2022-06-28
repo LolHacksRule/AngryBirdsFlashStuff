@@ -13,35 +13,12 @@ package §7!B§
    public class §;R§ extends DisplayObject
    {
       
-      private static var §+!<§:Vector3D;
+      private static var §+!<§:Vector3D = new Vector3D();
       
-      private static var §3K§:Point;
+      private static var §3K§:Point = new Point();
       
-      private static var §'V§:Matrix;
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            §+!<§ = new Vector3D();
-            while(true)
-            {
-               §3K§ = new Point();
-               while(_loc1_ || _loc1_)
-               {
-                  §'V§ = new Matrix();
-                  if(_loc2_)
-                  {
-                     continue;
-                  }
-                  return;
-                  addr40:
-               }
-            }
-         }
-         §§goto(addr40);
-      }
+      private static var §'V§:Matrix = new Matrix();
+       
       
       protected var § !3§:§=A§;
       
@@ -53,30 +30,10 @@ package §7!B§
       
       public function §;R§(param1:Number, param2:Number, param3:uint = 16777215, param4:Boolean = true)
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         if(_loc5_)
-         {
-            super();
-         }
-         while(true)
-         {
-            this.§ !3§ = new §=A§(4,param4);
-            while(!(_loc6_ && param2))
-            {
-               this.updateVertexData(param1,param2,param3,param4);
-               do
-               {
-                  this.§>!§ = param3;
-               }
-               while(!(_loc5_ || param1));
-               
-               if(!(_loc6_ && param3))
-               {
-                  return;
-               }
-            }
-         }
+         super();
+         this.§ !3§ = new §=A§(4,param4);
+         this.updateVertexData(param1,param2,param3,param4);
+         this.§>!§ = param3;
       }
       
       public function get highQuality() : Boolean
@@ -86,206 +43,60 @@ package §7!B§
       
       protected function updateVertexData(param1:Number, param2:Number, param3:uint, param4:Boolean) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(!_loc5_)
-         {
-            §§push(this.§ !3§);
-            while(true)
-            {
-               §§pop().setPremultipliedAlpha(param4);
-               while(true)
-               {
-                  §§push(this.§ !3§);
-                  loop2:
-                  while(true)
-                  {
-                     §§push(0);
-                     addr175:
-                     while(true)
-                     {
-                        §§push(0);
-                        addr176:
-                        while(true)
-                        {
-                           §§push(0);
-                           addr177:
-                           while(true)
-                           {
-                              §§pop().setPosition(§§pop(),§§pop(),§§pop());
-                              addr178:
-                              while(true)
-                              {
-                                 §§push(this.§ !3§);
-                                 addr166:
-                                 while(true)
-                                 {
-                                    §§push(1);
-                                    addr167:
-                                    while(true)
-                                    {
-                                       §§push(param1);
-                                       addr168:
-                                       while(true)
-                                       {
-                                          §§push(0);
-                                          addr169:
-                                          while(true)
-                                          {
-                                             §§pop().setPosition(§§pop(),§§pop(),§§pop());
-                                             addr170:
-                                             while(true)
-                                             {
-                                                §§push(this.§ !3§);
-                                                continue loop2;
-                                             }
-                                          }
-                                       }
-                                    }
-                                 }
-                              }
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr49);
+         this.§ !3§.setPremultipliedAlpha(param4);
+         this.§ !3§.setPosition(0,0,0);
+         this.§ !3§.setPosition(1,param1,0);
+         this.§ !3§.setPosition(2,0,param2);
+         this.§ !3§.setPosition(3,param1,param2);
+         this.§ !3§.§'f§(param3);
+         this.§'!0§ = param1;
+         this.§6c§ = param2;
       }
       
       override public function getBounds(param1:DisplayObject, param2:Rectangle = null) : Rectangle
       {
-         var _loc8_:Boolean = false;
-         var _loc9_:Boolean = true;
          var _loc7_:int = 0;
-         if(!(_loc8_ && this))
+         if(param2 == null)
          {
-            if(param2 == null)
-            {
-               addr29:
-               param2 = new Rectangle();
-            }
-            var _loc3_:Number = Number.MAX_VALUE;
-            §§push(-Number.MAX_VALUE);
-            if(_loc9_ || param2)
-            {
-               §§push(Number(§§pop()));
-            }
-            var _loc4_:* = §§pop();
-            var _loc5_:Number = Number.MAX_VALUE;
-            §§push(-Number.MAX_VALUE);
-            if(_loc9_ || param1)
-            {
-               §§push(Number(§§pop()));
-            }
-            var _loc6_:* = §§pop();
-            if(!(_loc8_ && this))
-            {
-               if(param1 == this)
-               {
-                  if(!(_loc8_ && param1))
-                  {
-                     addr668:
-                     _loc7_ = 0;
-                  }
-                  loop0:
-                  while(true)
-                  {
-                     §§push(_loc7_);
-                     while(true)
-                     {
-                        §§push(4);
-                        while(true)
-                        {
-                           if(§§pop() >= §§pop())
-                           {
-                              loop3:
-                              while(true)
-                              {
-                                 loop4:
-                                 while(true)
-                                 {
-                                    param2.x = _loc3_;
-                                    loop5:
-                                    while(_loc9_)
-                                    {
-                                       param2.y = _loc5_;
-                                       while(true)
-                                       {
-                                          if(_loc9_ || param2)
-                                          {
-                                             if(_loc8_)
-                                             {
-                                                break;
-                                             }
-                                             if(_loc8_)
-                                             {
-                                                break loop4;
-                                             }
-                                             param2.width = _loc4_ - _loc3_;
-                                             continue;
-                                          }
-                                          continue loop5;
-                                       }
-                                       while(true)
-                                       {
-                                          if(!(_loc8_ && _loc3_))
-                                          {
-                                             if(_loc9_)
-                                             {
-                                                §§push(_loc5_);
-                                                if(_loc9_)
-                                                {
-                                                   if(!(_loc8_ && param2))
-                                                   {
-                                                      §§goto(addr342);
-                                                      §§push(Number(§§pop()));
-                                                   }
-                                                   §§goto(addr647);
-                                                }
-                                                §§goto(addr362);
-                                             }
-                                             while(true)
-                                             {
-                                                if(_loc8_ && param1)
-                                                {
-                                                   continue loop3;
-                                                }
-                                                §§goto(addr489);
-                                             }
-                                             addr482:
-                                          }
-                                          §§goto(addr436);
-                                       }
-                                    }
-                                    while(true)
-                                    {
-                                       transformCoords(§'V§,§+!<§.x,§+!<§.y,§3K§);
-                                       §§goto(addr482);
-                                    }
-                                 }
-                                 continue loop0;
-                              }
-                           }
-                           else
-                           {
-                              §§push(this.§ !3§);
-                           }
-                           §§goto(addr654);
-                        }
-                     }
-                  }
-               }
-               else
-               {
-                  §6!8§(param1,§'V§);
-               }
-               §§goto(addr536);
-            }
-            §§goto(addr668);
+            param2 = new Rectangle();
          }
-         §§goto(addr29);
+         var _loc3_:Number = Number.MAX_VALUE;
+         var _loc4_:Number = -Number.MAX_VALUE;
+         var _loc5_:Number = Number.MAX_VALUE;
+         var _loc6_:Number = -Number.MAX_VALUE;
+         if(param1 == this)
+         {
+            _loc7_ = 0;
+            while(_loc7_ < 4)
+            {
+               this.§ !3§.§7!b§(_loc7_,§+!<§);
+               _loc3_ = _loc3_ < §+!<§.x ? Number(_loc3_) : Number(§+!<§.x);
+               _loc4_ = _loc4_ > §+!<§.x ? Number(_loc4_) : Number(§+!<§.x);
+               _loc5_ = _loc5_ < §+!<§.y ? Number(_loc5_) : Number(§+!<§.y);
+               _loc6_ = _loc6_ > §+!<§.y ? Number(_loc6_) : Number(§+!<§.y);
+               _loc7_++;
+            }
+         }
+         else
+         {
+            §6!8§(param1,§'V§);
+            _loc7_ = 0;
+            while(_loc7_ < 4)
+            {
+               this.§ !3§.§7!b§(_loc7_,§+!<§);
+               transformCoords(§'V§,§+!<§.x,§+!<§.y,§3K§);
+               _loc3_ = _loc3_ < §3K§.x ? Number(_loc3_) : Number(§3K§.x);
+               _loc4_ = _loc4_ > §3K§.x ? Number(_loc4_) : Number(§3K§.x);
+               _loc5_ = _loc5_ < §3K§.y ? Number(_loc5_) : Number(§3K§.y);
+               _loc6_ = _loc6_ > §3K§.y ? Number(_loc6_) : Number(§3K§.y);
+               _loc7_++;
+            }
+         }
+         param2.x = _loc3_;
+         param2.y = _loc5_;
+         param2.width = _loc4_ - _loc3_;
+         param2.height = _loc6_ - _loc5_;
+         return param2;
       }
       
       public function §?!2§(param1:int) : uint
@@ -295,12 +106,7 @@ package §7!B§
       
       public function setVertexColor(param1:int, param2:uint) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(!(_loc4_ && _loc3_))
-         {
-            this.§ !3§.§!A§(param1,param2);
-         }
+         this.§ !3§.§!A§(param1,param2);
       }
       
       public function §,o§(param1:int) : Number
@@ -310,12 +116,7 @@ package §7!B§
       
       public function setVertexAlpha(param1:int, param2:Number) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_)
-         {
-            this.§ !3§.§%$§(param1,param2);
-         }
+         this.§ !3§.§%$§(param1,param2);
       }
       
       public function get color() : uint
@@ -325,49 +126,21 @@ package §7!B§
       
       override public function set color(param1:uint) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || _loc2_)
+         if(this.§>!§ != param1)
          {
-            if(this.§>!§ != param1)
-            {
-               do
-               {
-                  this.§>!§ = param1;
-                  do
-                  {
-                     this.§ !3§.§'f§(param1,1);
-                  }
-                  while(!(_loc3_ || this));
-                  
-               }
-               while(_loc2_ && _loc2_);
-               
-               addr74:
-            }
-            return;
+            this.§>!§ = param1;
+            this.§ !3§.§'f§(param1,1);
          }
-         §§goto(addr74);
       }
       
       public function copyVertexDataTo(param1:§=A§, param2:int = 0, param3:Number = 1.0, param4:Matrix3D = null) : void
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         if(_loc5_)
-         {
-            this.§ !3§.copyTo(param1,param2,param3,true,param4);
-         }
+         this.§ !3§.copyTo(param1,param2,param3,true,param4);
       }
       
       override public function render(param1:§?%§, param2:Number) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_ || param1)
-         {
-            param1.batchQuad(this,param2);
-         }
+         param1.batchQuad(this,param2);
       }
       
       public function get useColor() : Boolean

@@ -14,42 +14,11 @@ package §`!%§
       private static var §4!v§:Items = null;
       
       private static var §=,§:§5e§ = null;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            §][§ = "Tue 04/26";
-            do
-            {
-               §<c§ = null;
-               do
-               {
-                  §4!v§ = null;
-                  do
-                  {
-                     §=,§ = null;
-                  }
-                  while(!(_loc2_ || _loc2_));
-                  
-               }
-               while(_loc1_);
-               
-            }
-            while(_loc1_ && _loc2_);
-            
-         }
-      }
+       
       
       public function §6!_§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function get §+!e§() : §7A§
@@ -59,60 +28,25 @@ package §`!%§
       
       public static function set §+!e§(param1:§7A§) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || _loc3_)
-         {
-            §<c§ = param1;
-         }
+         §<c§ = param1;
       }
       
       public static function §1w§() : Items
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc1_)
+         if(§4!v§ == null)
          {
-            §§push(§4!v§);
-            if(!(_loc1_ && _loc1_))
-            {
-               if(§§pop() == null)
-               {
-                  if(!(_loc1_ && _loc1_))
-                  {
-                     §4!v§ = new Items();
-                     addr55:
-                     §§push(§4!v§);
-                  }
-               }
-               §§goto(addr55);
-            }
-            return §§pop();
+            §4!v§ = new Items();
          }
-         §§goto(addr55);
+         return §4!v§;
       }
       
       public static function §`;§() : §5e§
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
+         if(§=,§ == null)
          {
-            §§push(§=,§);
-            if(_loc1_ || _loc2_)
-            {
-               if(§§pop() == null)
-               {
-                  if(!(_loc2_ && _loc2_))
-                  {
-                     addr45:
-                     §=,§ = new §5e§();
-                  }
-               }
-               return §=,§;
-            }
+            §=,§ = new §5e§();
          }
-         §§goto(addr45);
+         return §=,§;
       }
    }
 }

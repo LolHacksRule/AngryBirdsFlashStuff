@@ -27,162 +27,63 @@ package §@N§
       
       public function §2w§(param1:Stage)
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || _loc2_)
-         {
-            this.§;p§ = param1;
-            do
-            {
-               super(param1);
-            }
-            while(!(_loc3_ || this));
-            
-         }
+         this.§;p§ = param1;
+         super(param1);
       }
       
       public function §&!y§() : Array
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || this)
+         if(this.§"!w§)
          {
-            §§push(this.§"!w§);
-            if(_loc1_ || _loc1_)
-            {
-               if(§§pop())
-               {
-                  if(_loc1_ || this)
-                  {
-                     §§goto(addr52);
-                  }
-               }
-               return null;
-            }
-            §§goto(addr52);
+            return this.§"!w§.concat();
          }
-         addr52:
-         return this.§"!w§.concat();
+         return null;
       }
       
       public function §''§() : int
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
+         if(this.§"!w§)
          {
-            §§push(this.§"!w§);
-            if(!(_loc1_ && _loc1_))
-            {
-               if(§§pop())
-               {
-                  if(!(_loc1_ && _loc2_))
-                  {
-                     §§goto(addr48);
-                  }
-               }
-               return 0;
-            }
-            §§goto(addr48);
+            return this.§"!w§.length;
          }
-         addr48:
-         return this.§"!w§.length;
+         return 0;
       }
       
       public function §!=§(param1:String) : Boolean
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
+         if(!this.§"!w§)
          {
-            §§push(this.§"!w§);
-            if(_loc2_ || _loc3_)
-            {
-               if(!§§pop())
-               {
-                  if(_loc2_ || this)
-                  {
-                     addr45:
-                     §§push(false);
-                     if(_loc2_)
-                     {
-                        return §§pop();
-                     }
-                  }
-                  else
-                  {
-                     addr49:
-                     return this.§"!w§.indexOf(param1) >= 0;
-                  }
-                  return §§pop();
-               }
-            }
-            §§goto(addr49);
+            return false;
          }
-         §§goto(addr45);
+         return this.§"!w§.indexOf(param1) >= 0;
       }
       
       public function §0T§(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
+         if(!this.§"!w§)
          {
-            §§push(this.§"!w§);
-            while(true)
-            {
-               if(§§pop())
-               {
-                  continue;
-               }
-            }
+            this.§"!w§ = [];
          }
-         §§goto(addr69);
+         this.§"!w§.push(param1);
       }
       
       override public function init(param1:§=+§) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            super.init(param1);
-         }
-         do
-         {
-            this.§"!w§ = [];
-         }
-         while(!(_loc3_ || this));
-         
+         super.init(param1);
+         this.§"!w§ = [];
       }
       
       override public function setController(param1:§3!`§) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && this))
+         super.setController(param1);
+         if(param1 is §'=§)
          {
-            super.setController(param1);
-            if(_loc2_ || this)
-            {
-               addr43:
-               if(param1 is §'=§)
-               {
-               }
-            }
-            return;
          }
-         §§goto(addr43);
       }
       
       override public function clearLevel() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            super.clearLevel();
-         }
+         super.clearLevel();
       }
       
       override protected function updateWithTime(param1:Number, param2:Boolean, param3:Boolean, param4:Boolean) : Number
@@ -192,159 +93,29 @@ package §@N§
       
       override public function handleEngineUpdateStep(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            super.handleEngineUpdateStep(param1);
-         }
+         super.handleEngineUpdateStep(param1);
       }
       
       override protected function initThemeGraphicsManager() : §6!O§
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         §§push(§§findproperty(§6!O§));
-         if(_loc1_)
-         {
-            §§push(this.§;p§.loaderInfo.parameters.assetsUrl);
-            if(_loc1_ || _loc2_)
-            {
-               §§push(§§pop());
-               if(!(_loc2_ && _loc1_))
-               {
-                  if(!§§pop())
-                  {
-                     §§goto(addr81);
-                  }
-                  §§push(this.§;p§.loaderInfo.parameters.buildNumber);
-                  if(!(_loc2_ && _loc2_))
-                  {
-                     §§goto(addr78);
-                  }
-                  §§goto(addr80);
-               }
-               addr78:
-               if(!§§pop())
-               {
-                  addr80:
-                  §§pop();
-               }
-               §§goto(addr81);
-            }
-            addr81:
-            if(_loc1_)
-            {
-               §§pop();
-               addr64:
-               §§push("");
-            }
-            return new §§pop().§6!O§(§§pop(),"");
-         }
-         §§goto(addr64);
+         return new §6!O§(this.§;p§.loaderInfo.parameters.assetsUrl || "",this.§;p§.loaderInfo.parameters.buildNumber || "");
       }
       
       override protected function initThemeSoundsManager() : §6!O§
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         §§push(§§findproperty(§6!O§));
-         if(_loc2_ || _loc1_)
-         {
-            §§push(this.§;p§.loaderInfo.parameters.assetsUrl);
-            if(!(_loc1_ && _loc1_))
-            {
-               §§push(§§pop());
-               if(_loc2_ || _loc2_)
-               {
-                  if(!§§pop())
-                  {
-                     §§goto(addr82);
-                  }
-                  §§push(this.§;p§.loaderInfo.parameters.buildNumber);
-                  if(!_loc1_)
-                  {
-                     §§goto(addr79);
-                  }
-                  §§goto(addr81);
-               }
-               addr79:
-               if(!§§pop())
-               {
-                  addr81:
-                  §§pop();
-               }
-               §§goto(addr82);
-            }
-            addr82:
-            if(_loc2_)
-            {
-               §§pop();
-               addr70:
-               §§push("");
-            }
-            return new §§pop().§6!O§(§§pop(),"",false);
-         }
-         §§goto(addr70);
+         return new §6!O§(this.§;p§.loaderInfo.parameters.assetsUrl || "",this.§;p§.loaderInfo.parameters.buildNumber || "",false);
       }
       
       override protected function initCutSceneManager() : §6!O§
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         §§push(§§findproperty(§6!O§));
-         if(!_loc1_)
-         {
-            §§push(this.§;p§.loaderInfo.parameters.assetsUrl);
-            if(!_loc1_)
-            {
-               §§push(§§pop());
-               if(!(_loc1_ && this))
-               {
-                  if(!§§pop())
-                  {
-                     §§goto(addr77);
-                  }
-                  §§push(this.§;p§.loaderInfo.parameters.buildNumber);
-                  if(_loc2_)
-                  {
-                     §§goto(addr74);
-                  }
-                  §§goto(addr76);
-               }
-               addr74:
-               if(!§§pop())
-               {
-                  addr76:
-                  §§pop();
-               }
-               §§goto(addr77);
-            }
-            addr77:
-            if(_loc2_ || _loc2_)
-            {
-               §§pop();
-               addr65:
-               §§push("");
-            }
-            return new §§pop().§6!O§(§§pop(),"");
-         }
-         §§goto(addr65);
+         return new §6!O§(this.§;p§.loaderInfo.parameters.assetsUrl || "",this.§;p§.loaderInfo.parameters.buildNumber || "");
       }
       
       override public function get backgroundTextureManager() : §,Q§
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
+         if(§8!Z§)
          {
-            if(§8!Z§)
-            {
-               if(_loc2_)
-               {
-                  return §8!Z§.textureManager;
-               }
-            }
+            return §8!Z§.textureManager;
          }
          return null;
       }
@@ -356,59 +127,11 @@ package §@N§
       
       override protected function initLevelBackground(param1:String, param2:Number, param3:§,Q§, param4:Number) : §+!`§
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(_loc6_ || this)
+         if(param1 == "BACKGROUND_FB_MOUNTAINS" && !§^b§.§7h§)
          {
-            §§push(param1 == "BACKGROUND_FB_MOUNTAINS");
-            loop0:
-            while(true)
-            {
-               if(§§pop())
-               {
-                  while(true)
-                  {
-                     §§pop();
-                     addr90:
-                     loop4:
-                     while(true)
-                     {
-                        §§push(§^b§.§7h§);
-                        if(_loc6_)
-                        {
-                           if(_loc5_)
-                           {
-                              continue;
-                           }
-                           if(!_loc6_)
-                           {
-                              continue loop0;
-                           }
-                           §§push(!§§pop());
-                           while(true)
-                           {
-                           }
-                        }
-                        while(§§pop())
-                        {
-                           if(_loc6_ || param1)
-                           {
-                              return new §3h§(param1,param2,param3,param4);
-                           }
-                           if(!_loc5_)
-                           {
-                              break;
-                           }
-                           continue loop4;
-                        }
-                        return new §+!`§(param1,param2,param3,param4);
-                     }
-                  }
-               }
-               §§goto(addr65);
-            }
+            return new §3h§(param1,param2,param3,param4);
          }
-         §§goto(addr90);
+         return new §+!`§(param1,param2,param3,param4);
       }
       
       override protected function initLevelSlingshot(param1:§=+§) : §>!A§

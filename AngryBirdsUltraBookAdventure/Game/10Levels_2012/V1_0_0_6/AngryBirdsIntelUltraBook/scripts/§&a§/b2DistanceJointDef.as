@@ -22,120 +22,26 @@ package §&a§
       
       public function b2DistanceJointDef()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && this))
-         {
-            this.§4!%§ = new b2Vec2();
-            loop0:
-            while(true)
-            {
-               this.§=!I§ = new b2Vec2();
-               loop1:
-               while(true)
-               {
-                  super();
-                  while(true)
-                  {
-                     type = b2Joint.§&!D§;
-                     while(!_loc1_)
-                     {
-                        continue loop0;
-                        while(_loc2_ || _loc1_)
-                        {
-                           continue loop1;
-                           this.§4p§ = 0;
-                           do
-                           {
-                              this.§2=§ = 0;
-                           }
-                           while(!_loc2_);
-                           
-                           if(_loc2_)
-                           {
-                              return;
-                              addr47:
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr47);
+         this.§4!%§ = new b2Vec2();
+         this.§=!I§ = new b2Vec2();
+         super();
+         type = b2Joint.§&!D§;
+         this.length = 1;
+         this.§4p§ = 0;
+         this.§2=§ = 0;
       }
       
       public function §'K§(param1:b2Body, param2:b2Body, param3:b2Vec2, param4:b2Vec2) : void
       {
-         var _loc7_:Boolean = false;
-         var _loc8_:Boolean = true;
-         if(_loc8_)
-         {
-            §0w§ = param1;
-            while(true)
-            {
-               §^2§ = param2;
-               loop1:
-               for(; _loc8_ || param1; while(true)
-               {
-                  this.§=!I§.SetV(§^2§.GetLocalPoint(param4));
-                  if(_loc7_ && param1)
-                  {
-                     continue;
-                  }
-                  if(_loc7_ && param2)
-                  {
-                     continue loop1;
-                  }
-                  if(true)
-                  {
-                     break;
-                  }
-                  §§goto(addr43);
-               },§§push(param4.x),if(!_loc7_)
-               {
-                  §§push(§§pop() - param3.x);
-                  if(_loc8_ || param1)
-                  {
-                     §§push(Number(§§pop()));
-                  }
-               },var _loc5_:* = §§pop(),§§push(param4.y),if(_loc8_ || param2)
-               {
-                  §§push(§§pop() - param3.y);
-                  if(!(_loc7_ && param1))
-                  {
-                     addr112:
-                     §§push(Number(§§pop()));
-                  }
-                  var _loc6_:* = §§pop();
-                  if(!_loc7_)
-                  {
-                     this.length = Math.sqrt(_loc5_ * _loc5_ + _loc6_ * _loc6_);
-                     do
-                     {
-                        this.§4p§ = 0;
-                        do
-                        {
-                           this.§2=§ = 0;
-                        }
-                        while(_loc7_ && this);
-                        
-                     }
-                     while(_loc7_ && this);
-                     
-                  }
-                  return;
-               },§§goto(addr112))
-               {
-                  while(true)
-                  {
-                     this.§4!%§.SetV(§0w§.GetLocalPoint(param3));
-                     continue loop1;
-                  }
-               }
-            }
-         }
-         §§goto(addr50);
+         §0w§ = param1;
+         §^2§ = param2;
+         this.§4!%§.SetV(§0w§.GetLocalPoint(param3));
+         this.§=!I§.SetV(§^2§.GetLocalPoint(param4));
+         var _loc5_:Number = param4.x - param3.x;
+         var _loc6_:Number = param4.y - param3.y;
+         this.length = Math.sqrt(_loc5_ * _loc5_ + _loc6_ * _loc6_);
+         this.§4p§ = 0;
+         this.§2=§ = 0;
       }
    }
 }

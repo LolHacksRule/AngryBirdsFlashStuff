@@ -8,18 +8,8 @@ package §4H§
       
       public function §%!E§(param1:String, param2:String, param3:String, param4:int)
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(!_loc5_)
-         {
-            this.§1<§ = param4;
-         }
-         do
-         {
-            super(param1,param2,param3);
-         }
-         while(!_loc6_);
-         
+         this.§1<§ = param4;
+         super(param1,param2,param3);
       }
    }
 }

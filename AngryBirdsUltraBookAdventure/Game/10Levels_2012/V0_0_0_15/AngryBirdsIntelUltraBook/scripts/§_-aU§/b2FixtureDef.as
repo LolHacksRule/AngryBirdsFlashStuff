@@ -22,59 +22,17 @@ package §_-aU§
       
       public function b2FixtureDef()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            this.filter = new b2FilterData();
-            loop0:
-            while(true)
-            {
-               super();
-               addr162:
-               while(true)
-               {
-                  this.shape = null;
-                  loop2:
-                  while(true)
-                  {
-                     this.§_-05u§ = null;
-                     loop3:
-                     while(true)
-                     {
-                        this.friction = 0.2;
-                        addr148:
-                        while(true)
-                        {
-                           this.restitution = 0;
-                           loop5:
-                           while(_loc1_)
-                           {
-                              this.density = 0;
-                              while(_loc1_)
-                              {
-                                 while(_loc1_ || this)
-                                 {
-                                    if(!_loc2_)
-                                    {
-                                       continue loop0;
-                                    }
-                                    continue loop5;
-                                 }
-                              }
-                              continue loop3;
-                           }
-                           continue loop2;
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         while(true)
-         {
-            §§goto(addr101);
-         }
+         this.filter = new b2FilterData();
+         super();
+         this.shape = null;
+         this.§_-05u§ = null;
+         this.friction = 0.2;
+         this.restitution = 0;
+         this.density = 0;
+         this.filter.§_-R-§ = 1;
+         this.filter.§_-j6§ = 65535;
+         this.filter.§_-0CL§ = 0;
+         this.§_-bz§ = false;
       }
    }
 }

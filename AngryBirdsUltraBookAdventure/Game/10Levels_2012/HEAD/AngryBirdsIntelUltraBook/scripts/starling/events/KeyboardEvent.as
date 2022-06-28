@@ -6,21 +6,7 @@ package starling.events
       public static const KEY_UP:String = "keyUp";
       
       public static const KEY_DOWN:String = "keyDown";
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc2_))
-         {
-            KEY_UP = "keyUp";
-         }
-         do
-         {
-            KEY_DOWN = "keyDown";
-         }
-         while(!_loc2_);
-         
-      }
+       
       
       private var §6!e§:uint;
       
@@ -36,43 +22,13 @@ package starling.events
       
       public function KeyboardEvent(param1:String, param2:uint = 0, param3:uint = 0, param4:uint = 0, param5:Boolean = false, param6:Boolean = false, param7:Boolean = false)
       {
-         var _loc8_:Boolean = true;
-         var _loc9_:Boolean = false;
-         if(!_loc9_)
-         {
-            super(param1,false);
-         }
-         loop0:
-         while(true)
-         {
-            this.§6!e§ = param2;
-            while(true)
-            {
-               this.§#!g§ = param3;
-               loop2:
-               while(true)
-               {
-                  this.§3O§ = param4;
-                  while(true)
-                  {
-                     this.§^!5§ = param5;
-                     addr70:
-                     while(_loc8_)
-                     {
-                        continue loop2;
-                     }
-                  }
-               }
-               if(!(_loc9_ && param1))
-               {
-                  if(!_loc9_)
-                  {
-                     return;
-                  }
-                  continue loop0;
-               }
-            }
-         }
+         super(param1,false);
+         this.§6!e§ = param2;
+         this.§#!g§ = param3;
+         this.§3O§ = param4;
+         this.§^!5§ = param5;
+         this.§"!C§ = param6;
+         this.§7F§ = param7;
       }
       
       public function get charCode() : uint

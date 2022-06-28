@@ -11,24 +11,10 @@ package §6!9§
    public class b2ContactSolver
    {
       
-      private static var §0T§:b2WorldManifold;
+      private static var §0T§:b2WorldManifold = new b2WorldManifold();
       
-      private static var §3!5§:b2PositionSolverManifold;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            §0T§ = new b2WorldManifold();
-            do
-            {
-               §3!5§ = new b2PositionSolverManifold();
-            }
-            while(!(_loc2_ || b2ContactSolver));
-            
-         }
-      }
+      private static var §3!5§:b2PositionSolverManifold = new b2PositionSolverManifold();
+       
       
       private var §>?§:b2TimeStep;
       
@@ -40,912 +26,523 @@ package §6!9§
       
       public function b2ContactSolver()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || this)
-         {
-            this.§>?§ = new b2TimeStep();
-            while(true)
-            {
-               this.§2!7§ = new Vector.<b2ContactConstraint>();
-               §§goto(addr70);
-            }
-         }
-         addr70:
-         while(true)
-         {
-            super();
-            if(!(_loc2_ && _loc1_))
-            {
-               if(!_loc2_)
-               {
-                  break;
-               }
-               continue loop0;
-            }
-         }
+         this.§>?§ = new b2TimeStep();
+         this.§2!7§ = new Vector.<b2ContactConstraint>();
+         super();
       }
       
       public function §;o§(param1:b2TimeStep, param2:Vector.<b2Contact>, param3:int, param4:*) : void
       {
-         /*
-          * Decompilation error
-          * Code may be obfuscated
-          * Tip: You can try enabling "Automatic deobfuscation" in Settings
-          * Error type: ExecutionException (java.lang.StackOverflowError)
-          */
-         throw new flash.errors.IllegalOperationError("Not decompiled due to error");
+         var _loc5_:b2Contact = null;
+         var _loc6_:int = 0;
+         var _loc9_:b2Fixture = null;
+         var _loc10_:b2Fixture = null;
+         var _loc11_:b2Shape = null;
+         var _loc12_:b2Shape = null;
+         var _loc13_:Number = NaN;
+         var _loc14_:Number = NaN;
+         var _loc15_:b2Body = null;
+         var _loc16_:b2Body = null;
+         var _loc17_:b2Manifold = null;
+         var _loc18_:Number = NaN;
+         var _loc19_:Number = NaN;
+         var _loc20_:Number = NaN;
+         var _loc21_:Number = NaN;
+         var _loc22_:Number = NaN;
+         var _loc23_:Number = NaN;
+         var _loc24_:Number = NaN;
+         var _loc25_:Number = NaN;
+         var _loc26_:Number = NaN;
+         var _loc27_:Number = NaN;
+         var _loc28_:b2ContactConstraint = null;
+         var _loc29_:uint = 0;
+         var _loc30_:b2ManifoldPoint = null;
+         var _loc31_:b2ContactConstraintPoint = null;
+         var _loc32_:Number = NaN;
+         var _loc33_:Number = NaN;
+         var _loc34_:Number = NaN;
+         var _loc35_:Number = NaN;
+         var _loc36_:Number = NaN;
+         var _loc37_:Number = NaN;
+         var _loc38_:Number = NaN;
+         var _loc39_:Number = NaN;
+         var _loc40_:Number = NaN;
+         var _loc41_:Number = NaN;
+         var _loc42_:Number = NaN;
+         var _loc43_:Number = NaN;
+         var _loc44_:Number = NaN;
+         var _loc45_:Number = NaN;
+         var _loc46_:Number = NaN;
+         var _loc47_:Number = NaN;
+         var _loc48_:b2ContactConstraintPoint = null;
+         var _loc49_:b2ContactConstraintPoint = null;
+         var _loc50_:Number = NaN;
+         var _loc51_:Number = NaN;
+         var _loc52_:Number = NaN;
+         var _loc53_:Number = NaN;
+         var _loc54_:Number = NaN;
+         var _loc55_:Number = NaN;
+         var _loc56_:Number = NaN;
+         var _loc57_:Number = NaN;
+         var _loc58_:Number = NaN;
+         var _loc59_:Number = NaN;
+         var _loc60_:Number = NaN;
+         var _loc61_:Number = NaN;
+         this.§>?§.Set(param1);
+         this.§;!,§ = param4;
+         this.§]!F§ = param3;
+         while(this.§2!7§.length < this.§]!F§)
+         {
+            this.§2!7§[this.§2!7§.length] = new b2ContactConstraint();
+         }
+         _loc6_ = 0;
+         while(_loc6_ < param3)
+         {
+            _loc5_ = param2[_loc6_];
+            _loc9_ = _loc5_.§41§;
+            _loc10_ = _loc5_.§[0§;
+            _loc11_ = _loc9_.§2!d§;
+            _loc12_ = _loc10_.§2!d§;
+            _loc13_ = _loc11_.§5!`§;
+            _loc14_ = _loc12_.§5!`§;
+            _loc15_ = _loc9_.m_body;
+            _loc16_ = _loc10_.m_body;
+            _loc17_ = _loc5_.§8!P§();
+            _loc18_ = b2Settings.b2MixFriction(_loc9_.§6p§(),_loc10_.§6p§());
+            _loc19_ = b2Settings.b2MixRestitution(_loc9_.§@x§(),_loc10_.§@x§());
+            _loc20_ = _loc15_.§45§.x;
+            _loc21_ = _loc15_.§45§.y;
+            _loc22_ = _loc16_.§45§.x;
+            _loc23_ = _loc16_.§45§.y;
+            _loc24_ = _loc15_.m_angularVelocity;
+            _loc25_ = _loc16_.m_angularVelocity;
+            b2Settings.b2Assert(_loc17_.§'!j§ > 0);
+            §0T§.§;o§(_loc17_,_loc15_.m_xf,_loc13_,_loc16_.m_xf,_loc14_);
+            _loc26_ = §0T§.§9O§.x;
+            _loc27_ = §0T§.§9O§.y;
+            _loc28_ = this.§2!7§[_loc6_];
+            _loc28_.§^!G§ = _loc15_;
+            _loc28_.§-z§ = _loc16_;
+            _loc28_.§ l§ = _loc17_;
+            _loc28_.normal.x = _loc26_;
+            _loc28_.normal.y = _loc27_;
+            _loc28_.§<!8§ = _loc17_.§'!j§;
+            _loc28_.friction = _loc18_;
+            _loc28_.restitution = _loc19_;
+            _loc28_.§>v§.x = _loc17_.§&!E§.x;
+            _loc28_.§>v§.y = _loc17_.§&!E§.y;
+            _loc28_.localPoint.x = _loc17_.m_localPoint.x;
+            _loc28_.localPoint.y = _loc17_.m_localPoint.y;
+            _loc28_.radius = _loc13_ + _loc14_;
+            _loc28_.type = _loc17_.§32§;
+            _loc29_ = 0;
+            while(_loc29_ < _loc28_.§<!8§)
+            {
+               _loc30_ = _loc17_.§`!$§[_loc29_];
+               _loc31_ = _loc28_.§5o§[_loc29_];
+               _loc31_.normalImpulse = _loc30_.§-!L§;
+               _loc31_.tangentImpulse = _loc30_.§^s§;
+               _loc31_.localPoint.SetV(_loc30_.m_localPoint);
+               _loc32_ = _loc31_.§=!I§.x = §0T§.§`!$§[_loc29_].x - _loc15_.m_sweep.c.x;
+               _loc33_ = _loc31_.§=!I§.y = §0T§.§`!$§[_loc29_].y - _loc15_.m_sweep.c.y;
+               _loc34_ = _loc31_.§7!E§.x = §0T§.§`!$§[_loc29_].x - _loc16_.m_sweep.c.x;
+               _loc35_ = _loc31_.§7!E§.y = §0T§.§`!$§[_loc29_].y - _loc16_.m_sweep.c.y;
+               _loc36_ = _loc32_ * _loc27_ - _loc33_ * _loc26_;
+               _loc37_ = _loc34_ * _loc27_ - _loc35_ * _loc26_;
+               _loc36_ *= _loc36_;
+               _loc37_ *= _loc37_;
+               _loc38_ = _loc15_.§8[§ + _loc16_.§8[§ + _loc15_.§&f§ * _loc36_ + _loc16_.§&f§ * _loc37_;
+               _loc31_.§48§ = 1 / _loc38_;
+               _loc39_ = _loc15_.§&v§ * _loc15_.§8[§ + _loc16_.§&v§ * _loc16_.§8[§;
+               _loc39_ += _loc15_.§&v§ * _loc15_.§&f§ * _loc36_ + _loc16_.§&v§ * _loc16_.§&f§ * _loc37_;
+               _loc31_.§%!e§ = 1 / _loc39_;
+               _loc40_ = _loc27_;
+               _loc41_ = -_loc26_;
+               _loc42_ = _loc32_ * _loc41_ - _loc33_ * _loc40_;
+               _loc43_ = _loc34_ * _loc41_ - _loc35_ * _loc40_;
+               _loc42_ *= _loc42_;
+               _loc43_ *= _loc43_;
+               _loc44_ = _loc15_.§8[§ + _loc16_.§8[§ + _loc15_.§&f§ * _loc42_ + _loc16_.§&f§ * _loc43_;
+               _loc31_.§%T§ = 1 / _loc44_;
+               _loc31_.§2W§ = 0;
+               _loc45_ = _loc22_ + -_loc25_ * _loc35_ - _loc20_ - -_loc24_ * _loc33_;
+               _loc46_ = _loc23_ + _loc25_ * _loc34_ - _loc21_ - _loc24_ * _loc32_;
+               _loc47_ = _loc28_.normal.x * _loc45_ + _loc28_.normal.y * _loc46_;
+               if(_loc47_ < -b2Settings.b2_velocityThreshold)
+               {
+                  _loc31_.§2W§ += -_loc28_.restitution * _loc47_;
+               }
+               _loc29_++;
+            }
+            if(_loc28_.§<!8§ == 2)
+            {
+               _loc48_ = _loc28_.§5o§[0];
+               _loc49_ = _loc28_.§5o§[1];
+               _loc50_ = _loc15_.§8[§;
+               _loc51_ = _loc15_.§&f§;
+               _loc52_ = _loc16_.§8[§;
+               _loc53_ = _loc16_.§&f§;
+               _loc54_ = _loc48_.§=!I§.x * _loc27_ - _loc48_.§=!I§.y * _loc26_;
+               _loc55_ = _loc48_.§7!E§.x * _loc27_ - _loc48_.§7!E§.y * _loc26_;
+               _loc56_ = _loc49_.§=!I§.x * _loc27_ - _loc49_.§=!I§.y * _loc26_;
+               _loc57_ = _loc49_.§7!E§.x * _loc27_ - _loc49_.§7!E§.y * _loc26_;
+               _loc58_ = _loc50_ + _loc52_ + _loc51_ * _loc54_ * _loc54_ + _loc53_ * _loc55_ * _loc55_;
+               _loc59_ = _loc50_ + _loc52_ + _loc51_ * _loc56_ * _loc56_ + _loc53_ * _loc57_ * _loc57_;
+               _loc60_ = _loc50_ + _loc52_ + _loc51_ * _loc54_ * _loc56_ + _loc53_ * _loc55_ * _loc57_;
+               _loc61_ = 100;
+               if(_loc58_ * _loc58_ < _loc61_ * (_loc58_ * _loc59_ - _loc60_ * _loc60_))
+               {
+                  _loc28_.§0"§.col1.Set(_loc58_,_loc60_);
+                  _loc28_.§0"§.col2.Set(_loc60_,_loc59_);
+                  _loc28_.§0"§.§,0§(_loc28_.§48§);
+               }
+               else
+               {
+                  _loc28_.§<!8§ = 1;
+               }
+            }
+            _loc6_++;
+         }
       }
       
       public function InitVelocityConstraints(param1:b2TimeStep) : void
       {
-         var _loc24_:Boolean = false;
-         var _loc25_:Boolean = true;
-         var _loc2_:b2Vec2 = null;
-         var _loc3_:b2Vec2 = null;
-         var _loc4_:b2Mat22 = null;
          var _loc6_:b2ContactConstraint = null;
          var _loc7_:b2Body = null;
          var _loc8_:b2Body = null;
-         var _loc9_:* = NaN;
-         var _loc10_:* = NaN;
-         var _loc11_:* = NaN;
-         var _loc12_:* = NaN;
-         var _loc13_:* = NaN;
-         var _loc14_:* = NaN;
-         var _loc15_:* = NaN;
-         var _loc16_:* = NaN;
+         var _loc9_:Number = NaN;
+         var _loc10_:Number = NaN;
+         var _loc11_:Number = NaN;
+         var _loc12_:Number = NaN;
+         var _loc13_:Number = NaN;
+         var _loc14_:Number = NaN;
+         var _loc15_:Number = NaN;
+         var _loc16_:Number = NaN;
          var _loc17_:Number = NaN;
-         var _loc18_:* = 0;
-         var _loc19_:* = 0;
+         var _loc18_:int = 0;
+         var _loc19_:int = 0;
          var _loc20_:b2ContactConstraintPoint = null;
-         var _loc21_:* = NaN;
-         var _loc22_:* = NaN;
+         var _loc21_:Number = NaN;
+         var _loc22_:Number = NaN;
          var _loc23_:b2ContactConstraintPoint = null;
-         §§push(0);
-         if(!(_loc24_ && _loc2_))
-         {
-            §§push(int(§§pop()));
-         }
-         var _loc5_:* = §§pop();
-         loop0:
+         var _loc5_:int = 0;
          while(_loc5_ < this.§]!F§)
          {
             _loc6_ = this.§2!7§[_loc5_];
             _loc7_ = _loc6_.§^!G§;
             _loc8_ = _loc6_.§-z§;
-            if(_loc25_)
+            _loc9_ = _loc7_.§8[§;
+            _loc10_ = _loc7_.§&f§;
+            _loc11_ = _loc8_.§8[§;
+            _loc12_ = _loc8_.§&f§;
+            _loc13_ = _loc6_.normal.x;
+            _loc14_ = _loc6_.normal.y;
+            _loc15_ = _loc14_;
+            _loc16_ = -_loc13_;
+            if(param1.§5h§)
             {
-               §§push(_loc7_.§8[§);
-               loop1:
-               while(true)
+               _loc19_ = _loc6_.§<!8§;
+               _loc18_ = 0;
+               while(_loc18_ < _loc19_)
                {
-                  §§push(Number(§§pop()));
-                  loop2:
-                  while(true)
-                  {
-                     _loc9_ = §§pop();
-                     loop3:
-                     while(true)
-                     {
-                        §§push(_loc7_.§&f§);
-                        while(true)
-                        {
-                           §§push(Number(§§pop()));
-                           addr289:
-                           while(true)
-                           {
-                              _loc10_ = §§pop();
-                              if(!(_loc24_ && param1))
-                              {
-                                 §§push(_loc8_.§8[§);
-                                 continue loop1;
-                              }
-                           }
-                           loop10:
-                           while(_loc25_ || _loc3_)
-                           {
-                              _loc12_ = §§pop();
-                              if(_loc25_)
-                              {
-                                 §§push(_loc6_.normal);
-                                 loop11:
-                                 while(true)
-                                 {
-                                    §§push(§§pop().x);
-                                    loop12:
-                                    while(!_loc24_)
-                                    {
-                                       §§push(Number(§§pop()));
-                                       while(true)
-                                       {
-                                          if(_loc24_)
-                                          {
-                                             continue loop1;
-                                          }
-                                          if(!(_loc25_ || _loc3_))
-                                          {
-                                             break;
-                                          }
-                                          _loc13_ = §§pop();
-                                          if(!(_loc24_ && _loc2_))
-                                          {
-                                             continue loop11;
-                                          }
-                                          addr188:
-                                          if(!(_loc25_ || _loc3_))
-                                          {
-                                             continue;
-                                          }
-                                          if(_loc24_)
-                                          {
-                                             continue loop10;
-                                          }
-                                          if(!_loc24_)
-                                          {
-                                             §§push(Number(§§pop()));
-                                             loop16:
-                                             while(true)
-                                             {
-                                                _loc15_ = §§pop();
-                                                loop17:
-                                                while(true)
-                                                {
-                                                   if(!(_loc25_ || _loc3_))
-                                                   {
-                                                      continue loop3;
-                                                   }
-                                                   §§push(_loc13_);
-                                                   if(_loc25_)
-                                                   {
-                                                      if(_loc24_)
-                                                      {
-                                                         continue loop16;
-                                                      }
-                                                      §§push(-§§pop());
-                                                      if(_loc25_)
-                                                      {
-                                                         if(!_loc24_)
-                                                         {
-                                                            addr166:
-                                                            §§push(Number(§§pop()));
-                                                            if(!(_loc24_ && param1))
-                                                            {
-                                                               _loc16_ = §§pop();
-                                                               if(_loc25_)
-                                                               {
-                                                                  while(true)
-                                                                  {
-                                                                     if(param1.§5h§)
-                                                                     {
-                                                                        if(_loc25_)
-                                                                        {
-                                                                           if(!(_loc25_ || _loc2_))
-                                                                           {
-                                                                              continue loop17;
-                                                                           }
-                                                                           §§push(_loc6_.§<!8§);
-                                                                           if(_loc25_ || _loc3_)
-                                                                           {
-                                                                              §§push(int(§§pop()));
-                                                                              if(_loc25_)
-                                                                              {
-                                                                                 _loc19_ = §§pop();
-                                                                                 if(!_loc24_)
-                                                                                 {
-                                                                                    §§push(0);
-                                                                                    if(_loc25_)
-                                                                                    {
-                                                                                       §§push(int(§§pop()));
-                                                                                       if(_loc25_ || _loc2_)
-                                                                                       {
-                                                                                          addr108:
-                                                                                          _loc18_ = §§pop();
-                                                                                          if(!(_loc24_ && _loc2_))
-                                                                                          {
-                                                                                             if(!(_loc24_ && _loc3_))
-                                                                                             {
-                                                                                                if(false)
-                                                                                                {
-                                                                                                   continue;
-                                                                                                }
-                                                                                                addr751:
-                                                                                                §§push(_loc18_);
-                                                                                                if(_loc25_ || _loc3_)
-                                                                                                {
-                                                                                                   §§push(_loc19_);
-                                                                                                   if(_loc25_ || this)
-                                                                                                   {
-                                                                                                      if(§§pop() < §§pop())
-                                                                                                      {
-                                                                                                         _loc20_ = _loc6_.§5o§[_loc18_];
-                                                                                                         if(_loc25_ || _loc2_)
-                                                                                                         {
-                                                                                                            §§push(_loc20_);
-                                                                                                            §§push(_loc20_.normalImpulse);
-                                                                                                            if(_loc25_ || param1)
-                                                                                                            {
-                                                                                                               §§push(§§pop() * param1.§<!1§);
-                                                                                                            }
-                                                                                                            §§pop().normalImpulse = §§pop();
-                                                                                                            §§push(_loc20_);
-                                                                                                            §§push(_loc20_.tangentImpulse);
-                                                                                                            if(!_loc24_)
-                                                                                                            {
-                                                                                                               §§push(§§pop() * param1.§<!1§);
-                                                                                                            }
-                                                                                                            §§pop().tangentImpulse = §§pop();
-                                                                                                            addr735:
-                                                                                                            addr750:
-                                                                                                            §§push(_loc20_.normalImpulse);
-                                                                                                            §§push(_loc13_);
-                                                                                                            if(!_loc24_)
-                                                                                                            {
-                                                                                                               addr723:
-                                                                                                               §§push(§§pop() * §§pop());
-                                                                                                               if(_loc25_)
-                                                                                                               {
-                                                                                                                  addr720:
-                                                                                                                  §§push(Number(§§pop() + _loc20_.tangentImpulse * _loc15_));
-                                                                                                               }
-                                                                                                               _loc21_ = §§pop();
-                                                                                                               addr724:
-                                                                                                               §§push(_loc20_.normalImpulse);
-                                                                                                               if(_loc25_ || param1)
-                                                                                                               {
-                                                                                                                  if(!(_loc24_ && _loc2_))
-                                                                                                                  {
-                                                                                                                     §§push(_loc14_);
-                                                                                                                     if(_loc25_ || _loc3_)
-                                                                                                                     {
-                                                                                                                        if(!_loc24_)
-                                                                                                                        {
-                                                                                                                           §§push(§§pop() * §§pop());
-                                                                                                                           if(_loc25_)
-                                                                                                                           {
-                                                                                                                              if(!_loc24_)
-                                                                                                                              {
-                                                                                                                                 §§push(_loc20_.tangentImpulse);
-                                                                                                                                 if(_loc25_)
-                                                                                                                                 {
-                                                                                                                                    if(_loc25_)
-                                                                                                                                    {
-                                                                                                                                       §§push(_loc16_);
-                                                                                                                                       if(!(_loc24_ && param1))
-                                                                                                                                       {
-                                                                                                                                          addr695:
-                                                                                                                                          §§push(§§pop() + §§pop() * §§pop());
-                                                                                                                                          if(_loc25_)
-                                                                                                                                          {
-                                                                                                                                             addr698:
-                                                                                                                                             §§push(Number(§§pop()));
-                                                                                                                                          }
-                                                                                                                                          if(_loc25_ || _loc3_)
-                                                                                                                                          {
-                                                                                                                                             _loc22_ = §§pop();
-                                                                                                                                             addr707:
-                                                                                                                                             §§push(_loc7_);
-                                                                                                                                             §§push(_loc7_.m_angularVelocity);
-                                                                                                                                             if(!_loc24_)
-                                                                                                                                             {
-                                                                                                                                                §§push(_loc10_);
-                                                                                                                                                if(_loc25_ || this)
-                                                                                                                                                {
-                                                                                                                                                   §§push(_loc20_.§=!I§.x);
-                                                                                                                                                   if(_loc25_ || this)
-                                                                                                                                                   {
-                                                                                                                                                      §§push(_loc22_);
-                                                                                                                                                      if(!(_loc24_ && param1))
-                                                                                                                                                      {
-                                                                                                                                                         §§push(§§pop() * §§pop());
-                                                                                                                                                         if(!(_loc24_ && _loc2_))
-                                                                                                                                                         {
-                                                                                                                                                            addr644:
-                                                                                                                                                            addr645:
-                                                                                                                                                            addr646:
-                                                                                                                                                            §§push(_loc20_.§=!I§.y);
-                                                                                                                                                            if(!(_loc24_ && param1))
-                                                                                                                                                            {
-                                                                                                                                                               addr641:
-                                                                                                                                                               §§push(§§pop() * _loc21_);
-                                                                                                                                                            }
-                                                                                                                                                            §§pop().m_angularVelocity = §§pop() - §§pop() * (§§pop() - §§pop());
-                                                                                                                                                            addr589:
-                                                                                                                                                            _loc7_.§45§.x -= _loc9_ * _loc21_;
-                                                                                                                                                            addr647:
-                                                                                                                                                            addr587:
-                                                                                                                                                            addr586:
-                                                                                                                                                            addr582:
-                                                                                                                                                            addr590:
-                                                                                                                                                            addr585:
-                                                                                                                                                            addr588:
-                                                                                                                                                            §§push(_loc7_.§45§);
-                                                                                                                                                            §§push(_loc7_.§45§);
-                                                                                                                                                            if(!_loc24_)
-                                                                                                                                                            {
-                                                                                                                                                               §§push(§§pop().y);
-                                                                                                                                                               if(_loc25_ || _loc2_)
-                                                                                                                                                               {
-                                                                                                                                                                  addr555:
-                                                                                                                                                                  §§push(_loc9_ * _loc22_);
-                                                                                                                                                                  if(!(_loc24_ && _loc3_))
-                                                                                                                                                                  {
-                                                                                                                                                                     addr564:
-                                                                                                                                                                     §§push(§§pop() - §§pop());
-                                                                                                                                                                     if(_loc25_)
-                                                                                                                                                                     {
-                                                                                                                                                                        if(_loc25_ || _loc3_)
-                                                                                                                                                                        {
-                                                                                                                                                                           §§pop().y = §§pop();
-                                                                                                                                                                           addr574:
-                                                                                                                                                                           if(_loc25_)
-                                                                                                                                                                           {
-                                                                                                                                                                              if(_loc25_)
-                                                                                                                                                                              {
-                                                                                                                                                                                 §§push(_loc8_);
-                                                                                                                                                                                 §§push(_loc8_.m_angularVelocity);
-                                                                                                                                                                                 if(!_loc24_)
-                                                                                                                                                                                 {
-                                                                                                                                                                                    §§push(_loc12_);
-                                                                                                                                                                                    if(_loc25_)
-                                                                                                                                                                                    {
-                                                                                                                                                                                       §§push(_loc20_.§7!E§.x);
-                                                                                                                                                                                       if(_loc25_)
-                                                                                                                                                                                       {
-                                                                                                                                                                                          §§push(_loc22_);
-                                                                                                                                                                                          if(_loc25_)
-                                                                                                                                                                                          {
-                                                                                                                                                                                             addr527:
-                                                                                                                                                                                             addr528:
-                                                                                                                                                                                             addr529:
-                                                                                                                                                                                             §§push(§§pop() * §§pop());
-                                                                                                                                                                                             if(!_loc24_)
-                                                                                                                                                                                             {
-                                                                                                                                                                                                §§push(_loc20_.§7!E§.y);
-                                                                                                                                                                                                if(_loc25_ || _loc3_)
-                                                                                                                                                                                                {
-                                                                                                                                                                                                   §§push(§§pop() * _loc21_);
-                                                                                                                                                                                                }
-                                                                                                                                                                                             }
-                                                                                                                                                                                             §§pop().m_angularVelocity = §§pop() + §§pop() * §§pop();
-                                                                                                                                                                                             addr530:
-                                                                                                                                                                                             if(_loc25_ || _loc3_)
-                                                                                                                                                                                             {
-                                                                                                                                                                                                addr453:
-                                                                                                                                                                                                §§push(_loc8_.§45§);
-                                                                                                                                                                                                if(_loc25_ || _loc3_)
-                                                                                                                                                                                                {
-                                                                                                                                                                                                   addr462:
-                                                                                                                                                                                                   §§push(_loc8_.§45§);
-                                                                                                                                                                                                   if(!(_loc24_ && param1))
-                                                                                                                                                                                                   {
-                                                                                                                                                                                                      addr470:
-                                                                                                                                                                                                      §§push(§§pop().x);
-                                                                                                                                                                                                      §§push(_loc11_);
-                                                                                                                                                                                                      if(_loc25_ || this)
-                                                                                                                                                                                                      {
-                                                                                                                                                                                                         if(_loc25_)
-                                                                                                                                                                                                         {
-                                                                                                                                                                                                            addr482:
-                                                                                                                                                                                                            §§push(§§pop() * _loc21_);
-                                                                                                                                                                                                            if(!_loc24_)
-                                                                                                                                                                                                            {
-                                                                                                                                                                                                               addr485:
-                                                                                                                                                                                                               §§pop().x = §§pop() + §§pop();
-                                                                                                                                                                                                               addr486:
-                                                                                                                                                                                                               if(_loc25_ || param1)
-                                                                                                                                                                                                               {
-                                                                                                                                                                                                                  addr346:
-                                                                                                                                                                                                                  §§push(_loc8_.§45§);
-                                                                                                                                                                                                                  if(!_loc24_)
-                                                                                                                                                                                                                  {
-                                                                                                                                                                                                                     if(_loc25_)
-                                                                                                                                                                                                                     {
-                                                                                                                                                                                                                        §§push(_loc8_.§45§);
-                                                                                                                                                                                                                        if(!(_loc24_ && _loc3_))
-                                                                                                                                                                                                                        {
-                                                                                                                                                                                                                           §§push(§§pop().y);
-                                                                                                                                                                                                                           if(!(_loc24_ && param1))
-                                                                                                                                                                                                                           {
-                                                                                                                                                                                                                              if(_loc25_ || _loc3_)
-                                                                                                                                                                                                                              {
-                                                                                                                                                                                                                                 if(_loc25_ || this)
-                                                                                                                                                                                                                                 {
-                                                                                                                                                                                                                                    §§push(_loc11_);
-                                                                                                                                                                                                                                    if(_loc25_)
-                                                                                                                                                                                                                                    {
-                                                                                                                                                                                                                                       if(!(_loc24_ && this))
-                                                                                                                                                                                                                                       {
-                                                                                                                                                                                                                                          §§push(_loc22_);
-                                                                                                                                                                                                                                          if(!(_loc24_ && param1))
-                                                                                                                                                                                                                                          {
-                                                                                                                                                                                                                                             if(_loc25_)
-                                                                                                                                                                                                                                             {
-                                                                                                                                                                                                                                                if(!_loc24_)
-                                                                                                                                                                                                                                                {
-                                                                                                                                                                                                                                                   addr407:
-                                                                                                                                                                                                                                                   §§push(§§pop() * §§pop());
-                                                                                                                                                                                                                                                   if(_loc25_ || _loc3_)
-                                                                                                                                                                                                                                                   {
-                                                                                                                                                                                                                                                      addr415:
-                                                                                                                                                                                                                                                      §§push(§§pop() + §§pop());
-                                                                                                                                                                                                                                                      if(_loc25_ || param1)
-                                                                                                                                                                                                                                                      {
-                                                                                                                                                                                                                                                         §§pop().y = §§pop();
-                                                                                                                                                                                                                                                         addr423:
-                                                                                                                                                                                                                                                         if(_loc25_ || _loc2_)
-                                                                                                                                                                                                                                                         {
-                                                                                                                                                                                                                                                            if(!(_loc24_ && this))
-                                                                                                                                                                                                                                                            {
-                                                                                                                                                                                                                                                               if(!_loc24_)
-                                                                                                                                                                                                                                                               {
-                                                                                                                                                                                                                                                                  §§push(_loc18_);
-                                                                                                                                                                                                                                                                  if(_loc25_ || _loc2_)
-                                                                                                                                                                                                                                                                  {
-                                                                                                                                                                                                                                                                     §§push(§§pop() + 1);
-                                                                                                                                                                                                                                                                     if(!_loc24_)
-                                                                                                                                                                                                                                                                     {
-                                                                                                                                                                                                                                                                        addr331:
-                                                                                                                                                                                                                                                                        §§push(int(§§pop()));
-                                                                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                                                                     _loc18_ = §§pop();
-                                                                                                                                                                                                                                                                     if(_loc25_)
-                                                                                                                                                                                                                                                                     {
-                                                                                                                                                                                                                                                                        if(_loc25_ || param1)
-                                                                                                                                                                                                                                                                        {
-                                                                                                                                                                                                                                                                           if(_loc25_)
-                                                                                                                                                                                                                                                                           {
-                                                                                                                                                                                                                                                                              if(false)
-                                                                                                                                                                                                                                                                              {
-                                                                                                                                                                                                                                                                                 §§goto(addr346);
-                                                                                                                                                                                                                                                                              }
-                                                                                                                                                                                                                                                                              §§goto(addr751);
-                                                                                                                                                                                                                                                                           }
-                                                                                                                                                                                                                                                                           §§goto(addr707);
-                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                        §§goto(addr647);
-                                                                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                                                                     §§goto(addr423);
-                                                                                                                                                                                                                                                                  }
-                                                                                                                                                                                                                                                                  §§goto(addr331);
-                                                                                                                                                                                                                                                               }
-                                                                                                                                                                                                                                                               §§goto(addr724);
-                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                            §§goto(addr530);
-                                                                                                                                                                                                                                                         }
-                                                                                                                                                                                                                                                         §§goto(addr486);
-                                                                                                                                                                                                                                                      }
-                                                                                                                                                                                                                                                      §§goto(addr564);
-                                                                                                                                                                                                                                                   }
-                                                                                                                                                                                                                                                   §§goto(addr482);
-                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                §§goto(addr587);
-                                                                                                                                                                                                                                             }
-                                                                                                                                                                                                                                             §§goto(addr555);
-                                                                                                                                                                                                                                          }
-                                                                                                                                                                                                                                          §§goto(addr482);
-                                                                                                                                                                                                                                       }
-                                                                                                                                                                                                                                       §§goto(addr586);
-                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                    §§goto(addr407);
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 §§goto(addr470);
-                                                                                                                                                                                                                              }
-                                                                                                                                                                                                                              §§goto(addr485);
-                                                                                                                                                                                                                           }
-                                                                                                                                                                                                                           §§goto(addr415);
-                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                        §§goto(addr462);
-                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                     §§goto(addr582);
-                                                                                                                                                                                                                  }
-                                                                                                                                                                                                                  §§goto(addr453);
-                                                                                                                                                                                                               }
-                                                                                                                                                                                                               §§goto(addr735);
-                                                                                                                                                                                                            }
-                                                                                                                                                                                                         }
-                                                                                                                                                                                                         §§goto(addr555);
-                                                                                                                                                                                                      }
-                                                                                                                                                                                                      §§goto(addr482);
-                                                                                                                                                                                                   }
-                                                                                                                                                                                                }
-                                                                                                                                                                                                §§goto(addr647);
-                                                                                                                                                                                                addr537:
-                                                                                                                                                                                             }
-                                                                                                                                                                                             §§goto(addr574);
-                                                                                                                                                                                          }
-                                                                                                                                                                                          §§push(§§pop() - §§pop());
-                                                                                                                                                                                       }
-                                                                                                                                                                                       §§goto(addr527);
-                                                                                                                                                                                    }
-                                                                                                                                                                                    §§goto(addr528);
-                                                                                                                                                                                 }
-                                                                                                                                                                                 §§goto(addr529);
-                                                                                                                                                                              }
-                                                                                                                                                                              §§goto(addr750);
-                                                                                                                                                                           }
-                                                                                                                                                                           §§goto(addr590);
-                                                                                                                                                                        }
-                                                                                                                                                                        §§goto(addr585);
-                                                                                                                                                                     }
-                                                                                                                                                                     §§goto(addr589);
-                                                                                                                                                                  }
-                                                                                                                                                                  §§goto(addr588);
-                                                                                                                                                               }
-                                                                                                                                                               §§goto(addr564);
-                                                                                                                                                            }
-                                                                                                                                                            addr584:
-                                                                                                                                                            §§goto(addr584);
-                                                                                                                                                         }
-                                                                                                                                                         §§goto(addr644);
-                                                                                                                                                      }
-                                                                                                                                                      §§goto(addr641);
-                                                                                                                                                   }
-                                                                                                                                                   §§goto(addr644);
-                                                                                                                                                }
-                                                                                                                                                §§goto(addr645);
-                                                                                                                                             }
-                                                                                                                                             §§goto(addr646);
-                                                                                                                                          }
-                                                                                                                                          §§goto(addr723);
-                                                                                                                                       }
-                                                                                                                                    }
-                                                                                                                                    §§goto(addr720);
-                                                                                                                                 }
-                                                                                                                                 §§goto(addr695);
-                                                                                                                              }
-                                                                                                                              §§goto(addr735);
-                                                                                                                           }
-                                                                                                                           §§goto(addr698);
-                                                                                                                        }
-                                                                                                                        §§goto(addr720);
-                                                                                                                     }
-                                                                                                                     §§goto(addr695);
-                                                                                                                  }
-                                                                                                                  §§goto(addr720);
-                                                                                                               }
-                                                                                                               §§goto(addr698);
-                                                                                                            }
-                                                                                                            §§goto(addr720);
-                                                                                                         }
-                                                                                                         §§goto(addr537);
-                                                                                                      }
-                                                                                                      if(!_loc24_)
-                                                                                                      {
-                                                                                                         break;
-                                                                                                      }
-                                                                                                      break loop17;
-                                                                                                   }
-                                                                                                   addr864:
-                                                                                                   if(§§pop() < §§pop())
-                                                                                                   {
-                                                                                                      _loc23_ = _loc6_.§5o§[_loc18_];
-                                                                                                      if(!(_loc24_ && param1))
-                                                                                                      {
-                                                                                                         _loc23_.normalImpulse = 0;
-                                                                                                      }
-                                                                                                      addr834:
-                                                                                                      _loc23_.tangentImpulse = 0;
-                                                                                                      if(!_loc24_)
-                                                                                                      {
-                                                                                                         §§push(_loc18_);
-                                                                                                         if(!(_loc24_ && _loc3_))
-                                                                                                         {
-                                                                                                            §§push(§§pop() + 1);
-                                                                                                            if(!_loc24_)
-                                                                                                            {
-                                                                                                               §§push(int(§§pop()));
-                                                                                                            }
-                                                                                                         }
-                                                                                                         _loc18_ = §§pop();
-                                                                                                         if(_loc25_)
-                                                                                                         {
-                                                                                                            if(false)
-                                                                                                            {
-                                                                                                               §§goto(addr834);
-                                                                                                            }
-                                                                                                            addr879:
-                                                                                                            §§push(_loc18_);
-                                                                                                            if(!(_loc24_ && param1))
-                                                                                                            {
-                                                                                                               addr863:
-                                                                                                               §§goto(addr864);
-                                                                                                               §§push(_loc19_);
-                                                                                                            }
-                                                                                                            _loc5_ = §§pop();
-                                                                                                            continue loop0;
-                                                                                                         }
-                                                                                                         §§goto(addr834);
-                                                                                                      }
-                                                                                                      addr844:
-                                                                                                      §§goto(addr844);
-                                                                                                   }
-                                                                                                   if(_loc24_)
-                                                                                                   {
-                                                                                                      continue loop0;
-                                                                                                   }
-                                                                                                   addr867:
-                                                                                                   §§push(_loc5_);
-                                                                                                   if(!(_loc24_ && param1))
-                                                                                                   {
-                                                                                                      §§push(§§pop() + 1);
-                                                                                                      if(_loc25_)
-                                                                                                      {
-                                                                                                         addr878:
-                                                                                                         §§push(int(§§pop()));
-                                                                                                      }
-                                                                                                   }
-                                                                                                   §§goto(addr879);
-                                                                                                }
-                                                                                                addr783:
-                                                                                                _loc19_ = §§pop();
-                                                                                                if(!_loc24_)
-                                                                                                {
-                                                                                                   break loop17;
-                                                                                                }
-                                                                                                addr800:
-                                                                                                §§goto(addr879);
-                                                                                             }
-                                                                                             else
-                                                                                             {
-                                                                                                while(true)
-                                                                                                {
-                                                                                                   §§push(_loc8_.§&f§);
-                                                                                                   break loop12;
-                                                                                                }
-                                                                                                addr284:
-                                                                                             }
-                                                                                          }
-                                                                                          break;
-                                                                                       }
-                                                                                       addr789:
-                                                                                       §§push(int(§§pop()));
-                                                                                       if(!_loc24_)
-                                                                                       {
-                                                                                          _loc18_ = §§pop();
-                                                                                          if(!(_loc25_ || _loc2_))
-                                                                                          {
-                                                                                             continue loop0;
-                                                                                          }
-                                                                                          §§goto(addr800);
-                                                                                       }
-                                                                                       §§goto(addr863);
-                                                                                    }
-                                                                                    §§goto(addr108);
-                                                                                 }
-                                                                                 §§goto(addr867);
-                                                                              }
-                                                                              §§goto(addr878);
-                                                                           }
-                                                                           §§goto(addr863);
-                                                                        }
-                                                                        §§goto(addr800);
-                                                                     }
-                                                                     else
-                                                                     {
-                                                                        §§push(_loc6_.§<!8§);
-                                                                        if(!_loc24_)
-                                                                        {
-                                                                           §§push(int(§§pop()));
-                                                                           if(!(_loc24_ && _loc2_))
-                                                                           {
-                                                                              §§goto(addr783);
-                                                                           }
-                                                                           §§goto(addr789);
-                                                                        }
-                                                                     }
-                                                                     §§goto(addr783);
-                                                                  }
-                                                                  addr770:
-                                                                  §§goto(addr867);
-                                                               }
-                                                               break;
-                                                            }
-                                                            addr283:
-                                                            while(true)
-                                                            {
-                                                               _loc11_ = §§pop();
-                                                               §§goto(addr166);
-                                                            }
-                                                            §§goto(addr284);
-                                                         }
-                                                         else
-                                                         {
-                                                            loop15:
-                                                            while(true)
-                                                            {
-                                                               if(_loc24_ && _loc3_)
-                                                               {
-                                                                  continue loop12;
-                                                               }
-                                                               _loc14_ = §§pop();
-                                                               if(!_loc25_)
-                                                               {
-                                                                  break loop17;
-                                                               }
-                                                               §§push(_loc14_);
-                                                               if(!(_loc25_ || _loc3_))
-                                                               {
-                                                                  continue loop16;
-                                                               }
-                                                               if(_loc25_)
-                                                               {
-                                                                  §§goto(addr188);
-                                                               }
-                                                               else
-                                                               {
-                                                                  while(true)
-                                                                  {
-                                                                     continue loop15;
-                                                                  }
-                                                                  addr220:
-                                                               }
-                                                            }
-                                                            §§goto(addr289);
-                                                         }
-                                                      }
-                                                   }
-                                                   §§goto(addr166);
-                                                }
-                                                §§push(0);
-                                                if(_loc25_)
-                                                {
-                                                   §§goto(addr789);
-                                                }
-                                                §§goto(addr863);
-                                             }
-                                          }
-                                          §§goto(addr289);
-                                       }
-                                       continue loop2;
-                                    }
-                                    while(true)
-                                    {
-                                       continue loop10;
-                                    }
-                                 }
-                              }
-                              §§goto(addr770);
-                           }
-                        }
-                     }
-                  }
+                  _loc20_ = _loc6_.§5o§[_loc18_];
+                  _loc20_.normalImpulse *= param1.§<!1§;
+                  _loc20_.tangentImpulse *= param1.§<!1§;
+                  _loc21_ = _loc20_.normalImpulse * _loc13_ + _loc20_.tangentImpulse * _loc15_;
+                  _loc22_ = _loc20_.normalImpulse * _loc14_ + _loc20_.tangentImpulse * _loc16_;
+                  _loc7_.m_angularVelocity -= _loc10_ * (_loc20_.§=!I§.x * _loc22_ - _loc20_.§=!I§.y * _loc21_);
+                  _loc7_.§45§.x -= _loc9_ * _loc21_;
+                  _loc7_.§45§.y -= _loc9_ * _loc22_;
+                  _loc8_.m_angularVelocity += _loc12_ * (_loc20_.§7!E§.x * _loc22_ - _loc20_.§7!E§.y * _loc21_);
+                  _loc8_.§45§.x += _loc11_ * _loc21_;
+                  _loc8_.§45§.y += _loc11_ * _loc22_;
+                  _loc18_++;
                }
             }
-            §§goto(addr770);
+            else
+            {
+               _loc19_ = _loc6_.§<!8§;
+               _loc18_ = 0;
+               while(_loc18_ < _loc19_)
+               {
+                  _loc23_ = _loc6_.§5o§[_loc18_];
+                  _loc23_.normalImpulse = 0;
+                  _loc23_.tangentImpulse = 0;
+                  _loc18_++;
+               }
+            }
+            _loc5_++;
          }
       }
       
       public function SolveVelocityConstraints() : void
       {
-         /*
-          * Decompilation error
-          * Code may be obfuscated
-          * Tip: You can try enabling "Automatic deobfuscation" in Settings
-          * Error type: ExecutionException (java.lang.StackOverflowError)
-          */
-         throw new flash.errors.IllegalOperationError("Not decompiled due to error");
+         var _loc1_:int = 0;
+         var _loc2_:b2ContactConstraintPoint = null;
+         var _loc3_:Number = NaN;
+         var _loc4_:Number = NaN;
+         var _loc5_:Number = NaN;
+         var _loc6_:Number = NaN;
+         var _loc7_:Number = NaN;
+         var _loc8_:Number = NaN;
+         var _loc9_:Number = NaN;
+         var _loc10_:Number = NaN;
+         var _loc11_:Number = NaN;
+         var _loc12_:Number = NaN;
+         var _loc13_:Number = NaN;
+         var _loc14_:Number = NaN;
+         var _loc15_:Number = NaN;
+         var _loc16_:Number = NaN;
+         var _loc17_:Number = NaN;
+         var _loc18_:Number = NaN;
+         var _loc19_:Number = NaN;
+         var _loc20_:Number = NaN;
+         var _loc21_:Number = NaN;
+         var _loc22_:b2Mat22 = null;
+         var _loc25_:b2ContactConstraint = null;
+         var _loc26_:b2Body = null;
+         var _loc27_:b2Body = null;
+         var _loc28_:Number = NaN;
+         var _loc29_:Number = NaN;
+         var _loc30_:b2Vec2 = null;
+         var _loc31_:b2Vec2 = null;
+         var _loc32_:Number = NaN;
+         var _loc33_:Number = NaN;
+         var _loc34_:Number = NaN;
+         var _loc35_:Number = NaN;
+         var _loc36_:Number = NaN;
+         var _loc37_:Number = NaN;
+         var _loc38_:Number = NaN;
+         var _loc39_:Number = NaN;
+         var _loc40_:Number = NaN;
+         var _loc41_:Number = NaN;
+         var _loc42_:int = 0;
+         var _loc43_:b2ContactConstraintPoint = null;
+         var _loc44_:b2ContactConstraintPoint = null;
+         var _loc45_:Number = NaN;
+         var _loc46_:Number = NaN;
+         var _loc47_:Number = NaN;
+         var _loc48_:Number = NaN;
+         var _loc49_:Number = NaN;
+         var _loc50_:Number = NaN;
+         var _loc51_:Number = NaN;
+         var _loc52_:Number = NaN;
+         var _loc53_:Number = NaN;
+         var _loc54_:Number = NaN;
+         var _loc55_:Number = NaN;
+         var _loc56_:Number = NaN;
+         var _loc57_:Number = NaN;
+         var _loc24_:int = 0;
+         while(_loc24_ < this.§]!F§)
+         {
+            _loc25_ = this.§2!7§[_loc24_];
+            _loc26_ = _loc25_.§^!G§;
+            _loc27_ = _loc25_.§-z§;
+            _loc28_ = _loc26_.m_angularVelocity;
+            _loc29_ = _loc27_.m_angularVelocity;
+            _loc30_ = _loc26_.§45§;
+            _loc31_ = _loc27_.§45§;
+            _loc32_ = _loc26_.§8[§;
+            _loc33_ = _loc26_.§&f§;
+            _loc34_ = _loc27_.§8[§;
+            _loc35_ = _loc27_.§&f§;
+            _loc36_ = _loc25_.normal.x;
+            _loc37_ = _loc25_.normal.y;
+            _loc38_ = _loc37_;
+            _loc39_ = -_loc36_;
+            _loc40_ = _loc25_.friction;
+            _loc1_ = 0;
+            while(_loc1_ < _loc25_.§<!8§)
+            {
+               _loc2_ = _loc25_.§5o§[_loc1_];
+               _loc7_ = _loc31_.x - _loc29_ * _loc2_.§7!E§.y - _loc30_.x + _loc28_ * _loc2_.§=!I§.y;
+               _loc8_ = _loc31_.y + _loc29_ * _loc2_.§7!E§.x - _loc30_.y - _loc28_ * _loc2_.§=!I§.x;
+               _loc10_ = _loc7_ * _loc38_ + _loc8_ * _loc39_;
+               _loc11_ = _loc2_.§%T§ * -_loc10_;
+               _loc12_ = _loc40_ * _loc2_.normalImpulse;
+               _loc13_ = b2Math.§[$§(_loc2_.tangentImpulse + _loc11_,-_loc12_,_loc12_);
+               _loc11_ = _loc13_ - _loc2_.tangentImpulse;
+               _loc14_ = _loc11_ * _loc38_;
+               _loc15_ = _loc11_ * _loc39_;
+               _loc30_.x -= _loc32_ * _loc14_;
+               _loc30_.y -= _loc32_ * _loc15_;
+               _loc28_ -= _loc33_ * (_loc2_.§=!I§.x * _loc15_ - _loc2_.§=!I§.y * _loc14_);
+               _loc31_.x += _loc34_ * _loc14_;
+               _loc31_.y += _loc34_ * _loc15_;
+               _loc29_ += _loc35_ * (_loc2_.§7!E§.x * _loc15_ - _loc2_.§7!E§.y * _loc14_);
+               _loc2_.tangentImpulse = _loc13_;
+               _loc1_++;
+            }
+            _loc42_ = _loc25_.§<!8§;
+            if(_loc25_.§<!8§ == 1)
+            {
+               _loc2_ = _loc25_.§5o§[0];
+               _loc7_ = _loc31_.x + -_loc29_ * _loc2_.§7!E§.y - _loc30_.x - -_loc28_ * _loc2_.§=!I§.y;
+               _loc8_ = _loc31_.y + _loc29_ * _loc2_.§7!E§.x - _loc30_.y - _loc28_ * _loc2_.§=!I§.x;
+               _loc9_ = _loc7_ * _loc36_ + _loc8_ * _loc37_;
+               _loc11_ = -_loc2_.§48§ * (_loc9_ - _loc2_.§2W§);
+               _loc13_ = _loc2_.normalImpulse + _loc11_;
+               _loc13_ = _loc13_ > 0 ? Number(_loc13_) : Number(0);
+               _loc11_ = _loc13_ - _loc2_.normalImpulse;
+               _loc14_ = _loc11_ * _loc36_;
+               _loc15_ = _loc11_ * _loc37_;
+               _loc30_.x -= _loc32_ * _loc14_;
+               _loc30_.y -= _loc32_ * _loc15_;
+               _loc28_ -= _loc33_ * (_loc2_.§=!I§.x * _loc15_ - _loc2_.§=!I§.y * _loc14_);
+               _loc31_.x += _loc34_ * _loc14_;
+               _loc31_.y += _loc34_ * _loc15_;
+               _loc29_ += _loc35_ * (_loc2_.§7!E§.x * _loc15_ - _loc2_.§7!E§.y * _loc14_);
+               _loc2_.normalImpulse = _loc13_;
+            }
+            else
+            {
+               _loc43_ = _loc25_.§5o§[0];
+               _loc44_ = _loc25_.§5o§[1];
+               _loc45_ = _loc43_.normalImpulse;
+               _loc46_ = _loc44_.normalImpulse;
+               _loc47_ = _loc31_.x - _loc29_ * _loc43_.§7!E§.y - _loc30_.x + _loc28_ * _loc43_.§=!I§.y;
+               _loc48_ = _loc31_.y + _loc29_ * _loc43_.§7!E§.x - _loc30_.y - _loc28_ * _loc43_.§=!I§.x;
+               _loc49_ = _loc31_.x - _loc29_ * _loc44_.§7!E§.y - _loc30_.x + _loc28_ * _loc44_.§=!I§.y;
+               _loc50_ = _loc31_.y + _loc29_ * _loc44_.§7!E§.x - _loc30_.y - _loc28_ * _loc44_.§=!I§.x;
+               _loc51_ = _loc47_ * _loc36_ + _loc48_ * _loc37_;
+               _loc52_ = _loc49_ * _loc36_ + _loc50_ * _loc37_;
+               _loc53_ = _loc51_ - _loc43_.§2W§;
+               _loc54_ = _loc52_ - _loc44_.§2W§;
+               _loc22_ = _loc25_.§0"§;
+               _loc53_ -= _loc22_.col1.x * _loc45_ + _loc22_.col2.x * _loc46_;
+               _loc54_ -= _loc22_.col1.y * _loc45_ + _loc22_.col2.y * _loc46_;
+               _loc55_ = 0.001;
+               _loc22_ = _loc25_.§48§;
+               _loc56_ = -(_loc22_.col1.x * _loc53_ + _loc22_.col2.x * _loc54_);
+               _loc57_ = -(_loc22_.col1.y * _loc53_ + _loc22_.col2.y * _loc54_);
+               if(_loc56_ >= 0 && _loc57_ >= 0)
+               {
+                  _loc16_ = _loc56_ - _loc45_;
+                  _loc17_ = _loc57_ - _loc46_;
+                  _loc18_ = _loc16_ * _loc36_;
+                  _loc19_ = _loc16_ * _loc37_;
+                  _loc20_ = _loc17_ * _loc36_;
+                  _loc21_ = _loc17_ * _loc37_;
+                  _loc30_.x -= _loc32_ * (_loc18_ + _loc20_);
+                  _loc30_.y -= _loc32_ * (_loc19_ + _loc21_);
+                  _loc28_ -= _loc33_ * (_loc43_.§=!I§.x * _loc19_ - _loc43_.§=!I§.y * _loc18_ + _loc44_.§=!I§.x * _loc21_ - _loc44_.§=!I§.y * _loc20_);
+                  _loc31_.x += _loc34_ * (_loc18_ + _loc20_);
+                  _loc31_.y += _loc34_ * (_loc19_ + _loc21_);
+                  _loc29_ += _loc35_ * (_loc43_.§7!E§.x * _loc19_ - _loc43_.§7!E§.y * _loc18_ + _loc44_.§7!E§.x * _loc21_ - _loc44_.§7!E§.y * _loc20_);
+                  _loc43_.normalImpulse = _loc56_;
+                  _loc44_.normalImpulse = _loc57_;
+               }
+               else
+               {
+                  _loc56_ = -_loc43_.§48§ * _loc53_;
+                  _loc57_ = 0;
+                  _loc51_ = 0;
+                  _loc52_ = _loc25_.§0"§.col1.y * _loc56_ + _loc54_;
+                  if(_loc56_ >= 0 && _loc52_ >= 0)
+                  {
+                     _loc16_ = _loc56_ - _loc45_;
+                     _loc17_ = _loc57_ - _loc46_;
+                     _loc18_ = _loc16_ * _loc36_;
+                     _loc19_ = _loc16_ * _loc37_;
+                     _loc20_ = _loc17_ * _loc36_;
+                     _loc21_ = _loc17_ * _loc37_;
+                     _loc30_.x -= _loc32_ * (_loc18_ + _loc20_);
+                     _loc30_.y -= _loc32_ * (_loc19_ + _loc21_);
+                     _loc28_ -= _loc33_ * (_loc43_.§=!I§.x * _loc19_ - _loc43_.§=!I§.y * _loc18_ + _loc44_.§=!I§.x * _loc21_ - _loc44_.§=!I§.y * _loc20_);
+                     _loc31_.x += _loc34_ * (_loc18_ + _loc20_);
+                     _loc31_.y += _loc34_ * (_loc19_ + _loc21_);
+                     _loc29_ += _loc35_ * (_loc43_.§7!E§.x * _loc19_ - _loc43_.§7!E§.y * _loc18_ + _loc44_.§7!E§.x * _loc21_ - _loc44_.§7!E§.y * _loc20_);
+                     _loc43_.normalImpulse = _loc56_;
+                     _loc44_.normalImpulse = _loc57_;
+                  }
+                  else
+                  {
+                     _loc56_ = 0;
+                     _loc57_ = -_loc44_.§48§ * _loc54_;
+                     _loc51_ = _loc25_.§0"§.col2.x * _loc57_ + _loc53_;
+                     _loc52_ = 0;
+                     if(_loc57_ >= 0 && _loc51_ >= 0)
+                     {
+                        _loc16_ = _loc56_ - _loc45_;
+                        _loc17_ = _loc57_ - _loc46_;
+                        _loc18_ = _loc16_ * _loc36_;
+                        _loc19_ = _loc16_ * _loc37_;
+                        _loc20_ = _loc17_ * _loc36_;
+                        _loc21_ = _loc17_ * _loc37_;
+                        _loc30_.x -= _loc32_ * (_loc18_ + _loc20_);
+                        _loc30_.y -= _loc32_ * (_loc19_ + _loc21_);
+                        _loc28_ -= _loc33_ * (_loc43_.§=!I§.x * _loc19_ - _loc43_.§=!I§.y * _loc18_ + _loc44_.§=!I§.x * _loc21_ - _loc44_.§=!I§.y * _loc20_);
+                        _loc31_.x += _loc34_ * (_loc18_ + _loc20_);
+                        _loc31_.y += _loc34_ * (_loc19_ + _loc21_);
+                        _loc29_ += _loc35_ * (_loc43_.§7!E§.x * _loc19_ - _loc43_.§7!E§.y * _loc18_ + _loc44_.§7!E§.x * _loc21_ - _loc44_.§7!E§.y * _loc20_);
+                        _loc43_.normalImpulse = _loc56_;
+                        _loc44_.normalImpulse = _loc57_;
+                     }
+                     else
+                     {
+                        _loc56_ = 0;
+                        _loc57_ = 0;
+                        _loc51_ = _loc53_;
+                        _loc52_ = _loc54_;
+                        if(_loc51_ >= 0 && _loc52_ >= 0)
+                        {
+                           _loc16_ = _loc56_ - _loc45_;
+                           _loc17_ = _loc57_ - _loc46_;
+                           _loc18_ = _loc16_ * _loc36_;
+                           _loc19_ = _loc16_ * _loc37_;
+                           _loc20_ = _loc17_ * _loc36_;
+                           _loc21_ = _loc17_ * _loc37_;
+                           _loc30_.x -= _loc32_ * (_loc18_ + _loc20_);
+                           _loc30_.y -= _loc32_ * (_loc19_ + _loc21_);
+                           _loc28_ -= _loc33_ * (_loc43_.§=!I§.x * _loc19_ - _loc43_.§=!I§.y * _loc18_ + _loc44_.§=!I§.x * _loc21_ - _loc44_.§=!I§.y * _loc20_);
+                           _loc31_.x += _loc34_ * (_loc18_ + _loc20_);
+                           _loc31_.y += _loc34_ * (_loc19_ + _loc21_);
+                           _loc29_ += _loc35_ * (_loc43_.§7!E§.x * _loc19_ - _loc43_.§7!E§.y * _loc18_ + _loc44_.§7!E§.x * _loc21_ - _loc44_.§7!E§.y * _loc20_);
+                           _loc43_.normalImpulse = _loc56_;
+                           _loc44_.normalImpulse = _loc57_;
+                        }
+                     }
+                  }
+               }
+            }
+            _loc26_.m_angularVelocity = _loc28_;
+            _loc27_.m_angularVelocity = _loc29_;
+            _loc24_++;
+         }
       }
       
       public function §[!B§() : void
       {
-         var _loc7_:Boolean = false;
-         var _loc8_:Boolean = true;
          var _loc2_:b2ContactConstraint = null;
          var _loc3_:b2Manifold = null;
-         var _loc4_:* = 0;
+         var _loc4_:int = 0;
          var _loc5_:b2ManifoldPoint = null;
          var _loc6_:b2ContactConstraintPoint = null;
-         §§push(0);
-         if(!_loc7_)
-         {
-            §§push(int(§§pop()));
-         }
-         var _loc1_:* = §§pop();
-         loop0:
+         var _loc1_:int = 0;
          while(_loc1_ < this.§]!F§)
          {
             _loc2_ = this.§2!7§[_loc1_];
             _loc3_ = _loc2_.§ l§;
-            if(!(_loc8_ || this))
+            _loc4_ = 0;
+            while(_loc4_ < _loc2_.§<!8§)
             {
-               continue;
+               _loc5_ = _loc3_.§`!$§[_loc4_];
+               _loc6_ = _loc2_.§5o§[_loc4_];
+               _loc5_.§-!L§ = _loc6_.normalImpulse;
+               _loc5_.§^s§ = _loc6_.tangentImpulse;
+               _loc4_++;
             }
-            §§push(0);
-            if(!(_loc7_ && _loc3_))
-            {
-               §§push(int(§§pop()));
-               if(_loc8_ || _loc3_)
-               {
-                  _loc4_ = §§pop();
-                  if(_loc7_)
-                  {
-                     continue;
-                  }
-                  while(true)
-                  {
-                     §§push(_loc4_);
-                     if(_loc7_)
-                     {
-                        break;
-                     }
-                     if(§§pop() >= _loc2_.§<!8§)
-                     {
-                        if(!_loc7_)
-                        {
-                           §§push(_loc1_);
-                           if(_loc8_ || _loc1_)
-                           {
-                              break;
-                           }
-                           addr162:
-                           _loc1_ = §§pop();
-                        }
-                        continue loop0;
-                     }
-                     _loc5_ = _loc3_.§`!$§[_loc4_];
-                     _loc6_ = _loc2_.§5o§[_loc4_];
-                     if(_loc8_)
-                     {
-                        _loc5_.§-!L§ = _loc6_.normalImpulse;
-                        loop2:
-                        while(true)
-                        {
-                           addr114:
-                           while(true)
-                           {
-                              _loc5_.§^s§ = _loc6_.tangentImpulse;
-                              continue loop2;
-                           }
-                        }
-                     }
-                     while(true)
-                     {
-                        §§push(_loc4_);
-                        if(_loc8_)
-                        {
-                           §§push(§§pop() + 1);
-                           if(_loc8_)
-                           {
-                              addr108:
-                              §§push(int(§§pop()));
-                           }
-                           _loc4_ = §§pop();
-                           if(_loc8_)
-                           {
-                              if(true)
-                              {
-                                 break;
-                              }
-                              §§goto(addr114);
-                           }
-                           §§goto(addr119);
-                        }
-                        §§goto(addr108);
-                     }
-                  }
-               }
-               §§push(§§pop() + 1);
-               if(_loc8_)
-               {
-                  addr161:
-                  §§push(int(§§pop()));
-               }
-               §§goto(addr162);
-            }
-            §§goto(addr161);
+            _loc1_++;
          }
       }
       
       public function SolvePositionConstraints(param1:Number) : Boolean
       {
-         var _loc24_:Boolean = false;
-         var _loc25_:Boolean = true;
          var _loc4_:b2ContactConstraint = null;
          var _loc5_:b2Body = null;
          var _loc6_:b2Body = null;
-         var _loc7_:* = NaN;
-         var _loc8_:* = NaN;
+         var _loc7_:Number = NaN;
+         var _loc8_:Number = NaN;
          var _loc9_:Number = NaN;
          var _loc10_:Number = NaN;
          var _loc11_:b2Vec2 = null;
@@ -961,76 +558,47 @@ package §6!9§
          var _loc21_:Number = NaN;
          var _loc22_:Number = NaN;
          var _loc23_:Number = NaN;
-         §§push(0);
-         if(_loc25_)
-         {
-            §§push(Number(§§pop()));
-         }
-         var _loc2_:* = §§pop();
-         §§push(0);
-         if(_loc25_)
-         {
-            §§push(int(§§pop()));
-         }
-         var _loc3_:* = §§pop();
+         var _loc2_:Number = 0;
+         var _loc3_:int = 0;
          while(_loc3_ < this.§]!F§)
          {
             _loc4_ = this.§2!7§[_loc3_];
             _loc5_ = _loc4_.§^!G§;
             _loc6_ = _loc4_.§-z§;
-            if(_loc25_ || this)
+            _loc7_ = _loc5_.§&v§ * _loc5_.§8[§;
+            _loc8_ = _loc5_.§&v§ * _loc5_.§&f§;
+            _loc9_ = _loc6_.§&v§ * _loc6_.§8[§;
+            _loc10_ = _loc6_.§&v§ * _loc6_.§&f§;
+            §3!5§.§;o§(_loc4_);
+            _loc11_ = §3!5§.§9O§;
+            _loc12_ = 0;
+            while(_loc12_ < _loc4_.§<!8§)
             {
-               §§push(_loc5_.§&v§);
-               loop1:
-               while(true)
-               {
-                  §§push(_loc5_.§8[§);
-                  addr219:
-                  while(true)
-                  {
-                     §§push(§§pop() * §§pop());
-                     addr220:
-                     loop3:
-                     while(true)
-                     {
-                        §§push(Number(§§pop()));
-                        addr221:
-                        while(true)
-                        {
-                           _loc7_ = §§pop();
-                           addr222:
-                           while(true)
-                           {
-                              §§push(_loc5_.§&v§);
-                              if(_loc25_)
-                              {
-                                 if(!_loc25_)
-                                 {
-                                    break;
-                                 }
-                                 continue loop1;
-                              }
-                              addr213:
-                              while(true)
-                              {
-                                 _loc8_ = §§pop();
-                              }
-                           }
-                           continue loop3;
-                        }
-                     }
-                  }
-               }
+               _loc13_ = _loc4_.§5o§[_loc12_];
+               _loc14_ = §3!5§.§`!$§[_loc12_];
+               _loc15_ = §3!5§.§?!4§[_loc12_];
+               _loc16_ = _loc14_.x - _loc5_.m_sweep.c.x;
+               _loc17_ = _loc14_.y - _loc5_.m_sweep.c.y;
+               _loc18_ = _loc14_.x - _loc6_.m_sweep.c.x;
+               _loc19_ = _loc14_.y - _loc6_.m_sweep.c.y;
+               _loc2_ = _loc2_ < _loc15_ ? Number(_loc2_) : Number(_loc15_);
+               _loc20_ = b2Math.§[$§(param1 * (_loc15_ + b2Settings.b2_linearSlop),-b2Settings.b2_maxLinearCorrection,0);
+               _loc21_ = -_loc13_.§%!e§ * _loc20_;
+               _loc22_ = _loc21_ * _loc11_.x;
+               _loc23_ = _loc21_ * _loc11_.y;
+               _loc5_.m_sweep.c.x -= _loc7_ * _loc22_;
+               _loc5_.m_sweep.c.y -= _loc7_ * _loc23_;
+               _loc5_.m_sweep.a -= _loc8_ * (_loc16_ * _loc23_ - _loc17_ * _loc22_);
+               _loc5_.§`!e§();
+               _loc6_.m_sweep.c.x += _loc9_ * _loc22_;
+               _loc6_.m_sweep.c.y += _loc9_ * _loc23_;
+               _loc6_.m_sweep.a += _loc10_ * (_loc18_ * _loc23_ - _loc19_ * _loc22_);
+               _loc6_.§`!e§();
+               _loc12_++;
             }
-            §§goto(addr214);
+            _loc3_++;
          }
-         §§push(_loc2_);
-         §§push(-1.5);
-         if(!(_loc24_ && _loc2_))
-         {
-            §§push(§§pop() * b2Settings.b2_linearSlop);
-         }
-         return §§pop() > §§pop();
+         return _loc2_ > -1.5 * b2Settings.b2_linearSlop;
       }
    }
 }

@@ -6,24 +6,11 @@ package §^!7§
    {
       
       public static const §6!O§:String = "thirdPartyCookiesDisabled";
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            §6!O§ = "thirdPartyCookiesDisabled";
-         }
-      }
+       
       
       public function RetryingURLLoaderErrorEvent(param1:String, param2:Boolean = false, param3:Boolean = false)
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(!_loc5_)
-         {
-            super(param1,param2,param3);
-         }
+         super(param1,param2,param3);
       }
       
       override public function clone() : Event

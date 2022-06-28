@@ -17,32 +17,10 @@ package §_-01E§
       
       public function §_-5b§(param1:String, param2:String, param3:String, param4:int, param5:int, param6:int, param7:int)
       {
-         var _loc8_:Boolean = false;
-         var _loc9_:Boolean = true;
-         if(!(_loc8_ && this))
-         {
-            this.§_-04F§ = param4;
-            while(true)
-            {
-               this.stars = param5;
-            }
-            addr76:
-         }
-         while(true)
-         {
-            this.§_-GM§ = param6;
-            for(; _loc9_; super(param1,param2,param3,param7),if(!_loc8_)
-            {
-               return;
-            })
-            {
-               if(_loc9_)
-               {
-                  continue;
-               }
-               §§goto(addr76);
-            }
-         }
+         this.§_-04F§ = param4;
+         this.stars = param5;
+         this.§_-GM§ = param6;
+         super(param1,param2,param3,param7);
       }
       
       public static function §_-Ej§(param1:Object) : §_-5b§

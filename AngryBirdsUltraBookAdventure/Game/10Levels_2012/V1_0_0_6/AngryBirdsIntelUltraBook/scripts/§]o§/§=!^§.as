@@ -18,24 +18,13 @@ package §]o§
       
       public function §=!^§(param1:int, param2:int, param3:int, param4:int, param5:int, param6:int)
       {
-         var _loc7_:Boolean = true;
-         var _loc8_:Boolean = false;
-         if(!(_loc8_ && param1))
-         {
-            super();
-            loop0:
-            while(true)
-            {
-               this.§3!;§ = param1;
-               do
-               {
-                  this.§ !`§ = param2;
-                  continue loop0;
-               }
-               while(_loc8_ && param3);
-               
-            }
-         }
+         super();
+         this.§3!;§ = param1;
+         this.§ !`§ = param2;
+         this.§?!M§ = param3;
+         this._height = param4;
+         this.§34§ = param5;
+         this.§<;§ = param6;
       }
       
       public function get x() : int

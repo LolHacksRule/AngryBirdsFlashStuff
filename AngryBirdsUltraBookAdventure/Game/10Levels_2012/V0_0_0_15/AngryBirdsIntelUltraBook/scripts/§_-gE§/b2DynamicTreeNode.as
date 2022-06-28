@@ -16,18 +16,8 @@ package §_-gE§
       
       public function b2DynamicTreeNode()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            this.aabb = new b2AABB();
-         }
-         do
-         {
-            super();
-         }
-         while(_loc2_ && this);
-         
+         this.aabb = new b2AABB();
+         super();
       }
       
       public function §_-EF§() : Boolean

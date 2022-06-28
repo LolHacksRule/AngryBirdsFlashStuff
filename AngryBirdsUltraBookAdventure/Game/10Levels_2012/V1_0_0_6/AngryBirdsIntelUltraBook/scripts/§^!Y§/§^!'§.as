@@ -6,119 +6,34 @@ package §^!Y§
       
       public function §^!'§(param1:§'R§)
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || param1)
-         {
-            super(param1);
-         }
+         super(param1);
       }
       
       override public function initializeAnimations(param1:Array) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && param1))
-         {
-            super.initializeAnimations(param1);
-            loop0:
-            while(true)
-            {
-               §,!m§("POWERUP_BOMB",["POWERUP_DROP_01"]);
-               loop1:
-               while(true)
-               {
-                  §,!m§("POWERUP_BOMB_PARACHUTE",["POWERUP_DROP_02"]);
-                  while(true)
-                  {
-                     §,!m§("SUPER_SLINGSHOT",["SLING_SHOT_02_BACK","SLING_SHOT_02_FRONT"]);
-                     while(!_loc3_)
-                     {
-                        if(!_loc3_)
-                        {
-                           §,!m§("INTEL_SLINGSHOT",["INTEL_SLING_SHOT_01_BACK","INTEL_SLING_SHOT_01_FRONT"]);
-                           continue loop1;
-                        }
-                        continue loop0;
-                        addr65:
-                        if(_loc2_ || this)
-                        {
-                           loop6:
-                           while(true)
-                           {
-                              §,!m§("INTEL_SMOKE_CLOUD",["INTEL_SMOKE_CLOUD_1","INTEL_SMOKE_CLOUD_2","INTEL_SMOKE_CLOUD_3","INTEL_SMOKE_CLOUD_4","INTEL_SMOKE_CLOUD_5","INTEL_SMOKE_CLOUD_6"]);
-                              if(_loc2_)
-                              {
-                                 break;
-                              }
-                              addr58:
-                              while(!(_loc3_ && this))
-                              {
-                                 §§goto(addr65);
-                                 continue loop6;
-                              }
-                              continue loop1;
-                           }
-                           return;
-                           addr72:
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr72);
+         super.initializeAnimations(param1);
+         §,!m§("POWERUP_BOMB",["POWERUP_DROP_01"]);
+         §,!m§("POWERUP_BOMB_PARACHUTE",["POWERUP_DROP_02"]);
+         §,!m§("SUPER_SLINGSHOT",["SLING_SHOT_02_BACK","SLING_SHOT_02_FRONT"]);
+         §,!m§("INTEL_SLINGSHOT",["INTEL_SLING_SHOT_01_BACK","INTEL_SLING_SHOT_01_FRONT"]);
+         §,!m§("LASER_DOT",["LASER_DOT"]);
+         §,!m§("INTEL_SMOKE_CLOUD",["INTEL_SMOKE_CLOUD_1","INTEL_SMOKE_CLOUD_2","INTEL_SMOKE_CLOUD_3","INTEL_SMOKE_CLOUD_4","INTEL_SMOKE_CLOUD_5","INTEL_SMOKE_CLOUD_6"]);
       }
       
       override protected function initializeBirdAnimations() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || this)
-         {
-            super.initializeBirdAnimations();
-         }
+         super.initializeBirdAnimations();
       }
       
       override protected function initializePigAnimations() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            super.initializePigAnimations();
-            loop0:
-            while(true)
-            {
-               §§push(§§findproperty(§>_§));
-               §§push("PIG_INTEL_PIGLETTE_SMALL");
-               §§push(["normal",["PIG_INTEL_PIGLETTE_SMALL_01","PIG_INTEL_PIGLETTE_SMALL_02","PIG_INTEL_PIGLETTE_SMALL_03"]]);
-               if(!_loc2_)
-               {
-                  §§push(null);
-               }
-               §§pop().§>_§(§§pop(),§§pop());
-               while(true)
-               {
-                  §§push(§§findproperty(§>_§));
-                  §§push("PIG_INTEL_PIGLETTE_MEDIUM");
-                  §§push(["normal",["PIG_INTEL_PIGLETTE_MEDIUM_01","PIG_INTEL_PIGLETTE_MEDIUM_02","PIG_INTEL_PIGLETTE_MEDIUM_03"]]);
-                  if(_loc1_)
-                  {
-                     §§push(null);
-                  }
-                  §§pop().§>_§(§§pop(),§§pop());
-                  continue loop0;
-                  addr55:
-                  if(!(_loc2_ && this))
-                  {
-                     return;
-                     addr62:
-                  }
-               }
-            }
-         }
-         §§goto(addr138);
+         super.initializePigAnimations();
+         §>_§("PIG_INTEL_PIGLETTE_SMALL",[["normal",["PIG_INTEL_PIGLETTE_SMALL_01","PIG_INTEL_PIGLETTE_SMALL_02","PIG_INTEL_PIGLETTE_SMALL_03"]],["blink",["PIG_INTEL_PIGLETTE_SMALL_01_BLINK","PIG_INTEL_PIGLETTE_SMALL_02_BLINK","PIG_INTEL_PIGLETTE_SMALL_02_BLINK"]],["yell",["PIG_INTEL_PIGLETTE_SMALL_01_SMILE","PIG_INTEL_PIGLETTE_SMALL_02_SMILE","PIG_INTEL_PIGLETTE_SMALL_03_SMILE"]]]);
+         §>_§("PIG_INTEL_PIGLETTE_MEDIUM",[["normal",["PIG_INTEL_PIGLETTE_MEDIUM_01","PIG_INTEL_PIGLETTE_MEDIUM_02","PIG_INTEL_PIGLETTE_MEDIUM_03"]],["blink",["PIG_INTEL_PIGLETTE_MEDIUM_01_BLINK","PIG_INTEL_PIGLETTE_MEDIUM_02_BLINK","PIG_INTEL_PIGLETTE_MEDIUM_03_BLINK"]],["yell",["PIG_INTEL_PIGLETTE_MEDIUM_01_SMILE","PIG_INTEL_PIGLETTE_MEDIUM_02_SMILE","PIG_INTEL_PIGLETTE_MEDIUM_03_SMILE"]]]);
+         §>_§("PIG_INTEL_PIGLETTE_BIG",[["normal",["PIG_INTEL_PIGLETTE_BIG_01","PIG_INTEL_PIGLETTE_BIG_02","PIG_INTEL_PIGLETTE_BIG_03"]],["blink",["PIG_INTEL_PIGLETTE_BIG_01_BLINK","PIG_INTEL_PIGLETTE_BIG_02_BLINK","PIG_INTEL_PIGLETTE_BIG_03_BLINK"]],["yell",["PIG_INTEL_PIGLETTE_BIG_01_SMILE","PIG_INTEL_PIGLETTE_BIG_02_SMILE","PIG_INTEL_PIGLETTE_BIG_03_SMILE"]]]);
+         §>_§("PIG_INTEL_PIGLETTE_HELMET",[["normal",["PIG_INTEL_PIGLETTE_HELMET_01","PIG_INTEL_PIGLETTE_HELMET_02","PIG_INTEL_PIGLETTE_HELMET_03"]],["blink",["PIG_INTEL_PIGLETTE_HELMET_01_BLINK","PIG_INTEL_PIGLETTE_HELMET_02_BLINK","PIG_INTEL_PIGLETTE_HELMET_03_BLINK"]],["yell",["PIG_INTEL_PIGLETTE_HELMET_01_SMILE","PIG_INTEL_PIGLETTE_HELMET_02_SMILE","PIG_INTEL_PIGLETTE_HELMET_03_SMILE"]]]);
+         §>_§("PIG_INTEL_PIGLETTE_GRANDPA",[["normal",["PIG_INTEL_PIGLETTE_GRANDPA_01","PIG_INTEL_PIGLETTE_GRANDPA_02","PIG_INTEL_PIGLETTE_GRANDPA_03"]],["blink",["PIG_INTEL_PIGLETTE_GRANDPA_01_BLINK","PIG_INTEL_PIGLETTE_GRANDPA_02_BLINK","PIG_INTEL_PIGLETTE_GRANDPA_03_BLINK"]],["yell",["PIG_INTEL_PIGLETTE_GRANDPA_01_SMILE","PIG_INTEL_PIGLETTE_GRANDPA_02_SMILE","PIG_INTEL_PIGLETTE_GRANDPA_03_SMILE"]]]);
+         §>_§("PIG_INTEL_PIGLETTE_KING",[["normal",["PIG_INTEL_PIGLETTE_KING_01","PIG_INTEL_PIGLETTE_KING_02","PIG_INTEL_PIGLETTE_KING_03"]],["blink",["PIG_INTEL_PIGLETTE_KING_01_BLINK","PIG_INTEL_PIGLETTE_KING_02_BLINK","PIG_INTEL_PIGLETTE_KING_03_BLINK"]],["yell",["PIG_INTEL_PIGLETTE_KING_01_SMILE","PIG_INTEL_PIGLETTE_KING_02_SMILE","PIG_INTEL_PIGLETTE_KING_03_SMILE"]]]);
       }
    }
 }

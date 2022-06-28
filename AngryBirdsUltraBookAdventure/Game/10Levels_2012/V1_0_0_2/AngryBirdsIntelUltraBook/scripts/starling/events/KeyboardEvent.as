@@ -6,21 +6,7 @@ package starling.events
       public static const KEY_UP:String = "keyUp";
       
       public static const KEY_DOWN:String = "keyDown";
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            KEY_UP = "keyUp";
-         }
-         do
-         {
-            KEY_DOWN = "keyDown";
-         }
-         while(!(_loc1_ || KeyboardEvent));
-         
-      }
+       
       
       private var §5!0§:uint;
       
@@ -36,52 +22,13 @@ package starling.events
       
       public function KeyboardEvent(param1:String, param2:uint = 0, param3:uint = 0, param4:uint = 0, param5:Boolean = false, param6:Boolean = false, param7:Boolean = false)
       {
-         var _loc8_:Boolean = true;
-         var _loc9_:Boolean = false;
-         if(_loc8_ || this)
-         {
-            super(param1,false);
-            while(true)
-            {
-               this.§5!0§ = param2;
-               while(_loc8_ || param2)
-               {
-                  this.§+6§ = param3;
-                  while(_loc8_)
-                  {
-                     this.§-!w§ = param4;
-                     loop3:
-                     for(; _loc8_ || param2; loop5:
-                     while(!(_loc9_ && this))
-                     {
-                        while(true)
-                        {
-                           this.§"s§ = param7;
-                           if(!(_loc8_ || param2))
-                           {
-                              continue loop5;
-                           }
-                           if(!_loc9_)
-                           {
-                              break;
-                           }
-                           §§goto(addr68);
-                        }
-                        return;
-                     })
-                     {
-                        this.§%!P§ = param5;
-                        while(true)
-                        {
-                           this.§0!@§ = param6;
-                           continue loop3;
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr63);
+         super(param1,false);
+         this.§5!0§ = param2;
+         this.§+6§ = param3;
+         this.§-!w§ = param4;
+         this.§%!P§ = param5;
+         this.§0!@§ = param6;
+         this.§"s§ = param7;
       }
       
       public function get charCode() : uint

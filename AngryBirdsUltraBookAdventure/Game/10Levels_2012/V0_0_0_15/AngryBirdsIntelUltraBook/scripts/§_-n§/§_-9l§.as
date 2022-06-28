@@ -18,66 +18,21 @@ package §_-n§
       
       public function §_-9l§(param1:Number, param2:Number, param3:String, param4:Boolean, param5:Number, param6:int)
       {
-         var _loc7_:Boolean = true;
-         var _loc8_:Boolean = false;
-         if(_loc7_)
-         {
-            super(param1,param2);
-            while(true)
-            {
-               this.§_-5o§ = param3;
-            }
-            addr85:
-         }
-         do
-         {
-            this.§ use§ = param4;
-            loop2:
-            do
-            {
-               this.§_-PN§ = param5;
-               while(_loc7_)
-               {
-                  this.§_-xX§ = param6;
-                  if(_loc7_ || this)
-                  {
-                     continue loop2;
-                  }
-               }
-               §§goto(addr85);
-            }
-            while(_loc8_);
-            
-         }
-         while(!(_loc7_ || param1));
-         
+         super(param1,param2);
+         this.§_-5o§ = param3;
+         this.§ use§ = param4;
+         this.§_-PN§ = param5;
+         this.§_-xX§ = param6;
       }
       
       override public function update(param1:Number, param2:Sprite, param3:§_-0FF§) : Boolean
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(!(_loc5_ && param2))
+         if(!super.update(param1,param2,param3))
          {
-            §§push(super.update(param1,param2,param3));
-            while(true)
-            {
-               if(§§pop())
-               {
-                  §§push(false);
-                  if(_loc5_ && param1)
-                  {
-                     break;
-                  }
-                  continue;
-               }
-            }
-            §§goto(addr65);
+            §_-pX§.playSound(this.§_-5o§);
+            return false;
          }
-         §_-pX§.playSound(this.§_-5o§);
-         addr65:
-         false;
-         return §§pop();
+         return false;
       }
       
       override public function clone() : §_-tC§

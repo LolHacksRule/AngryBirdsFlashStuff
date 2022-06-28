@@ -18,71 +18,21 @@ package §"!&§
       
       public function §#C§(param1:Number, param2:Number, param3:String, param4:Boolean, param5:Number, param6:int)
       {
-         var _loc7_:Boolean = true;
-         var _loc8_:Boolean = false;
-         if(_loc7_)
-         {
-            super(param1,param2);
-            while(true)
-            {
-               this.§>A§ = param3;
-               while(_loc7_)
-               {
-                  this.§+!Q§ = param4;
-                  loop2:
-                  while(_loc7_ || param3)
-                  {
-                     while(true)
-                     {
-                        this.§&K§ = param5;
-                        while(!_loc8_)
-                        {
-                           this.§]!`§ = param6;
-                           if(_loc7_ || param3)
-                           {
-                              return;
-                           }
-                        }
-                        continue loop2;
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr73);
+         super(param1,param2);
+         this.§>A§ = param3;
+         this.§+!Q§ = param4;
+         this.§&K§ = param5;
+         this.§]!`§ = param6;
       }
       
       override public function update(param1:Number, param2:Sprite, param3:§!o§) : Boolean
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(!(_loc5_ && this))
+         if(!super.update(param1,param2,param3))
          {
-            §§push(super.update(param1,param2,param3));
-            while(true)
-            {
-               if(!§§pop())
-               {
-                  if(_loc4_)
-                  {
-                     §6!H§.playSound(this.§>A§);
-                  }
-                  §§push(false);
-                  continue;
-               }
-            }
-            return §§pop();
+            §6!H§.playSound(this.§>A§);
+            return false;
          }
-         while(true)
-         {
-            §§push(false);
-            if(_loc4_)
-            {
-               break;
-            }
-            §§goto(addr53);
-         }
-         return §§pop();
+         return false;
       }
       
       override public function clone() : §!!%§

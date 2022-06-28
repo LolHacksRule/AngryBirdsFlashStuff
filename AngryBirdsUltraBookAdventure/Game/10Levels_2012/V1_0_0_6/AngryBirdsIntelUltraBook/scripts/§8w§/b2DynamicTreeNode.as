@@ -16,18 +16,8 @@ package §8w§
       
       public function b2DynamicTreeNode()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || this)
-         {
-            this.aabb = new b2AABB();
-         }
-         do
-         {
-            super();
-         }
-         while(!_loc1_);
-         
+         this.aabb = new b2AABB();
+         super();
       }
       
       public function §^!F§() : Boolean

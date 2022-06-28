@@ -30,124 +30,28 @@ package §_-09-§
       
       public function b2RevoluteJointDef()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            this.§_-F6§ = new b2Vec2();
-            loop0:
-            while(true)
-            {
-               this.§_-0Bf§ = new b2Vec2();
-               loop1:
-               while(true)
-               {
-                  super();
-                  while(true)
-                  {
-                     type = b2Joint.e_revoluteJoint;
-                     loop3:
-                     while(_loc2_)
-                     {
-                        this.§_-F6§.Set(0,0);
-                        while(true)
-                        {
-                           this.§_-0Bf§.Set(0,0);
-                           while(!_loc1_)
-                           {
-                              while(!(_loc1_ && _loc2_))
-                              {
-                                 this.§_-Ch§ = 0;
-                                 while(!_loc1_)
-                                 {
-                                    continue loop0;
-                                    loop10:
-                                    while(_loc2_ || this)
-                                    {
-                                       this.motorSpeed = 0;
-                                       loop11:
-                                       while(true)
-                                       {
-                                          this.§_-6W§ = false;
-                                          while(true)
-                                          {
-                                             if(!(_loc1_ && this))
-                                             {
-                                                if(_loc1_)
-                                                {
-                                                   break;
-                                                }
-                                                if(_loc2_)
-                                                {
-                                                   continue;
-                                                }
-                                                continue loop1;
-                                             }
-                                             continue loop11;
-                                          }
-                                          continue loop10;
-                                       }
-                                    }
-                                 }
-                                 continue loop3;
-                              }
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         while(true)
-         {
-            this.§_-IW§ = 0;
-            §§goto(addr106);
-         }
+         this.§_-F6§ = new b2Vec2();
+         this.§_-0Bf§ = new b2Vec2();
+         super();
+         type = b2Joint.e_revoluteJoint;
+         this.§_-F6§.Set(0,0);
+         this.§_-0Bf§.Set(0,0);
+         this.§_-IW§ = 0;
+         this.§_-Ch§ = 0;
+         this.§_-KH§ = 0;
+         this.§_-dv§ = 0;
+         this.motorSpeed = 0;
+         this.§_-6W§ = false;
+         this.§_-1g§ = false;
       }
       
       public function §_-bL§(param1:b2Body, param2:b2Body, param3:b2Vec2) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(_loc5_)
-         {
-            §_-ZR§ = param1;
-            loop0:
-            while(true)
-            {
-               §_-7b§ = param2;
-               loop1:
-               while(true)
-               {
-                  this.§_-F6§ = §_-ZR§.GetLocalPoint(param3);
-                  loop2:
-                  while(true)
-                  {
-                     this.§_-0Bf§ = §_-7b§.GetLocalPoint(param3);
-                     loop3:
-                     while(_loc5_)
-                     {
-                        while(true)
-                        {
-                           this.§_-IW§ = §_-7b§.GetAngle() - §_-ZR§.GetAngle();
-                           if(_loc5_ || param1)
-                           {
-                              if(_loc5_)
-                              {
-                                 continue loop1;
-                              }
-                              continue loop2;
-                           }
-                           continue loop3;
-                        }
-                        return;
-                     }
-                     continue loop0;
-                  }
-               }
-            }
-         }
-         §§goto(addr77);
+         §_-ZR§ = param1;
+         §_-7b§ = param2;
+         this.§_-F6§ = §_-ZR§.GetLocalPoint(param3);
+         this.§_-0Bf§ = §_-7b§.GetLocalPoint(param3);
+         this.§_-IW§ = §_-7b§.GetAngle() - §_-ZR§.GetAngle();
       }
    }
 }

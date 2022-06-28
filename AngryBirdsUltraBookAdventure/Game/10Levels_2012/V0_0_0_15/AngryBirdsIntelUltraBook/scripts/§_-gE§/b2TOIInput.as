@@ -18,31 +18,11 @@ package §_-gE§
       
       public function b2TOIInput()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc1_)
-         {
-            this.§_-05Z§ = new b2DistanceProxy();
-         }
-         loop0:
-         while(true)
-         {
-            this.§_-l4§ = new b2DistanceProxy();
-            do
-            {
-               this.§_-04k§ = new b2Sweep();
-               do
-               {
-                  this.§_-07c§ = new b2Sweep();
-                  continue loop0;
-               }
-               while(!_loc1_);
-               
-            }
-            while(_loc2_ && _loc2_);
-            
-            return;
-         }
+         this.§_-05Z§ = new b2DistanceProxy();
+         this.§_-l4§ = new b2DistanceProxy();
+         this.§_-04k§ = new b2Sweep();
+         this.§_-07c§ = new b2Sweep();
+         super();
       }
    }
 }

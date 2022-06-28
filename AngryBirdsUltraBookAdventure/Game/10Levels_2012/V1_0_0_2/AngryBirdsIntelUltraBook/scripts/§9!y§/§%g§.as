@@ -10,12 +10,7 @@ package §9!y§
       
       public function §%g§(param1:§'!^§, param2:StatePopupManager)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_ || this)
-         {
-            super(§[!'§.§+@§.Views.PopupView_Syncing[0],param1);
-         }
+         super(§[!'§.§+@§.Views.PopupView_Syncing[0],param1);
       }
    }
 }

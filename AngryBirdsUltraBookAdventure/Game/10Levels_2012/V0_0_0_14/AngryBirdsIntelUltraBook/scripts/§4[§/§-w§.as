@@ -17,30 +17,10 @@ package §4[§
       
       public function §-w§(param1:String, param2:String, param3:String, param4:int, param5:int, param6:int, param7:int)
       {
-         var _loc8_:Boolean = false;
-         var _loc9_:Boolean = true;
-         if(_loc9_ || param3)
-         {
-            this.§'!j§ = param4;
-         }
-         while(true)
-         {
-            this.stars = param5;
-            while(!(_loc8_ && param3))
-            {
-               this.§=!w§ = param6;
-               do
-               {
-                  super(param1,param2,param3,param7);
-               }
-               while(!_loc9_);
-               
-               if(!(_loc8_ && this))
-               {
-                  return;
-               }
-            }
-         }
+         this.§'!j§ = param4;
+         this.stars = param5;
+         this.§=!w§ = param6;
+         super(param1,param2,param3,param7);
       }
       
       public static function §+q§(param1:Object) : §-w§

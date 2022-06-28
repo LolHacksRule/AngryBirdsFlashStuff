@@ -27,41 +27,11 @@ package §!m§
       
       public function b2ContactPoint()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            this.position = new b2Vec2();
-         }
-         loop0:
-         while(true)
-         {
-            this.§1!K§ = new b2Vec2();
-            loop1:
-            while(true)
-            {
-               this.normal = new b2Vec2();
-               loop2:
-               while(_loc2_)
-               {
-                  this.id = new b2ContactID();
-                  while(_loc2_)
-                  {
-                     super();
-                     if(!_loc1_)
-                     {
-                        if(_loc2_)
-                        {
-                           return;
-                        }
-                        continue loop2;
-                     }
-                  }
-                  continue loop1;
-               }
-               continue loop0;
-            }
-         }
+         this.position = new b2Vec2();
+         this.§1!K§ = new b2Vec2();
+         this.normal = new b2Vec2();
+         this.id = new b2ContactID();
+         super();
       }
    }
 }

@@ -10,33 +10,21 @@ package §?2§
       
       public function §%_§(param1:XML, param2:Vector.<XML>, param3:BitmapData)
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!(_loc4_ && this))
-         {
-            super(param3);
-            do
-            {
-               this.§`K§(param1,param2);
-            }
-            while(_loc4_ && param2);
-            
-         }
+         super(param3);
+         this.§`K§(param1,param2);
       }
       
       protected function §`K§(param1:XML, param2:Vector.<XML>) : void
       {
-         var _loc19_:Boolean = true;
-         var _loc20_:Boolean = false;
          var _loc5_:XML = null;
-         var _loc6_:* = null;
+         var _loc6_:String = null;
          var _loc7_:String = null;
-         var _loc8_:* = 0;
-         var _loc9_:* = 0;
+         var _loc8_:int = 0;
+         var _loc9_:int = 0;
          var _loc10_:§3P§ = null;
-         var _loc11_:* = 0;
-         var _loc12_:* = 0;
-         var _loc13_:* = 0;
+         var _loc11_:int = 0;
+         var _loc12_:int = 0;
+         var _loc13_:int = 0;
          var _loc14_:int = 0;
          var _loc15_:Rectangle = null;
          var _loc16_:§=!L§ = null;
@@ -44,264 +32,85 @@ package §?2§
          var _loc4_:XMLList = param1.child("sprite");
          for each(_loc5_ in _loc4_)
          {
-            §§push(_loc5_.@name);
-            if(_loc19_ || param2)
+            _loc6_ = _loc5_.@name;
+            _loc7_ = _loc5_.@file;
+            _loc8_ = parseInt(_loc5_.@x);
+            _loc9_ = parseInt(_loc5_.@y);
+            if((_loc10_ = _loc3_[this.§38§(_loc7_,_loc6_)]) == null)
             {
-               _loc6_ = §§pop();
-               if(_loc19_)
+               _loc11_ = parseInt(_loc5_.@width);
+               _loc12_ = parseInt(_loc5_.@height);
+               _loc13_ = parseInt(_loc5_.@pivotX);
+               _loc14_ = parseInt(_loc5_.@pivotY);
+               if(_loc11_ > 0 && _loc12_ > 0)
                {
-                  addr108:
-                  _loc7_ = _loc5_.@file;
-                  while(true)
-                  {
-                     addr97:
-                     while(true)
-                     {
-                        §§push(int(parseInt(_loc5_.@x)));
-                        addr103:
-                        while(true)
-                        {
-                           _loc8_ = §§pop();
-                        }
-                     }
-                  }
-                  addr109:
+                  _loc10_ = new §3P§(0,0,_loc11_,_loc12_,_loc13_,_loc14_);
                }
-               while(true)
-               {
-                  §§push(int(parseInt(_loc5_.@y)));
-                  if(_loc19_)
-                  {
-                     _loc9_ = §§pop();
-                     if(_loc20_)
-                     {
-                        continue;
-                     }
-                     if(_loc19_)
-                     {
-                        if(true)
-                        {
-                           break;
-                        }
-                     }
-                     else
-                     {
-                        §§goto(addr109);
-                     }
-                     §§goto(addr97);
-                  }
-                  §§goto(addr103);
-               }
-               if((_loc10_ = _loc3_[this.§38§(_loc7_,_loc6_)]) == null)
-               {
-                  if(_loc19_ || param1)
-                  {
-                     §§push(int(parseInt(_loc5_.@width)));
-                     if(_loc19_ || param1)
-                     {
-                        _loc11_ = §§pop();
-                        if(!(_loc20_ && param1))
-                        {
-                           §§push(int(parseInt(_loc5_.@height)));
-                           if(!(_loc20_ && this))
-                           {
-                              _loc12_ = §§pop();
-                              loop2:
-                              while(true)
-                              {
-                                 §§push(int(parseInt(_loc5_.@pivotX)));
-                                 addr225:
-                                 while(true)
-                                 {
-                                    _loc13_ = §§pop();
-                                    continue loop2;
-                                 }
-                              }
-                           }
-                           §§goto(addr251);
-                        }
-                        §§goto(addr233);
-                     }
-                     §§goto(addr210);
-                  }
-                  §§goto(addr202);
-               }
-               §§goto(addr251);
             }
-            §§goto(addr108);
+            if(_loc10_)
+            {
+               _loc15_ = new Rectangle(_loc8_ + _loc10_.x,_loc9_ + _loc10_.y,_loc10_.width,_loc10_.height);
+               (_loc16_ = new §=!L§()).mName = _loc6_;
+               _loc16_.§43§ = _loc15_;
+               _loc16_.§if § = _loc10_.pivotX;
+               _loc16_.§2w§ = _loc10_.pivotY;
+               _loc16_.§^!d§ = §#n§;
+               §6!P§(_loc16_);
+            }
          }
-         if(!_loc20_)
-         {
-            mName = param1.@file;
-         }
+         mName = param1.@file;
       }
       
       private function §38§(param1:String, param2:String) : String
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         §§push(param1 + "#");
-         if(!(_loc3_ && param2))
-         {
-            return §§pop() + param2;
-         }
+         return param1 + "#" + param2;
       }
       
       private function §1!l§(param1:Vector.<XML>) : Dictionary
       {
-         var _loc20_:Boolean = false;
-         var _loc21_:Boolean = true;
          var _loc3_:XML = null;
          var _loc4_:String = null;
          var _loc5_:XMLList = null;
          var _loc6_:XML = null;
-         var _loc7_:* = null;
-         var _loc8_:* = 0;
-         var _loc9_:* = 0;
-         var _loc10_:* = 0;
-         var _loc11_:* = 0;
-         var _loc12_:* = 0;
-         var _loc13_:* = 0;
+         var _loc7_:String = null;
+         var _loc8_:int = 0;
+         var _loc9_:int = 0;
+         var _loc10_:int = 0;
+         var _loc11_:int = 0;
+         var _loc12_:int = 0;
+         var _loc13_:int = 0;
          var _loc14_:XMLList = null;
          var _loc15_:XML = null;
          var _loc2_:Dictionary = new Dictionary();
          for each(_loc3_ in param1)
          {
-            if(_loc21_ || _loc2_)
-            {
-               _loc4_ = _loc3_.@file;
-            }
+            _loc4_ = _loc3_.@file;
             _loc5_ = _loc3_.child("clipArea");
-            if(_loc21_ || _loc2_)
+            for each(_loc6_ in _loc5_)
             {
-               var _loc18_:int = 0;
-               if(!(_loc20_ && _loc3_))
+               _loc7_ = this.§38§(_loc4_,_loc6_.@name);
+               if(_loc2_[_loc7_] == null)
                {
-                  for each(_loc6_ in _loc5_)
+                  _loc8_ = parseInt(_loc6_.@width);
+                  _loc9_ = parseInt(_loc6_.@height);
+                  _loc10_ = parseInt(_loc6_.@pivotX);
+                  _loc11_ = parseInt(_loc6_.@pivotY);
+                  _loc12_ = parseInt(_loc6_.@x);
+                  _loc13_ = parseInt(_loc6_.@y);
+                  if((_loc14_ = _loc6_.child("spriteBounds")).length() == 1)
                   {
-                     if(!(_loc20_ && param1))
-                     {
-                        §§push(this.§38§(_loc4_,_loc6_.@name));
-                        if(_loc21_ || param1)
-                        {
-                           §§push(§§pop());
-                        }
-                        _loc7_ = §§pop();
-                        loop2:
-                        while(_loc2_[_loc7_] == null)
-                        {
-                           while(true)
-                           {
-                              §§push(int(parseInt(_loc6_.@width)));
-                              addr242:
-                              addr205:
-                              while(true)
-                              {
-                                 _loc8_ = §§pop();
-                              }
-                              if(_loc20_ && _loc2_)
-                              {
-                                 continue;
-                              }
-                              loop12:
-                              while(true)
-                              {
-                                 §§push(int(parseInt(_loc6_.@x)));
-                                 loop13:
-                                 while(true)
-                                 {
-                                    _loc12_ = §§pop();
-                                    while(true)
-                                    {
-                                       §§push(int(parseInt(_loc6_.@y)));
-                                       if(!(_loc21_ || _loc3_))
-                                       {
-                                          continue loop13;
-                                       }
-                                       if(_loc21_)
-                                       {
-                                          addr131:
-                                          if(!(_loc20_ && this))
-                                          {
-                                             addr138:
-                                             if(!(_loc20_ && param1))
-                                             {
-                                                if(_loc21_ || param1)
-                                                {
-                                                   _loc13_ = §§pop();
-                                                   if(!_loc20_)
-                                                   {
-                                                      continue loop12;
-                                                   }
-                                                   continue;
-                                                }
-                                                §§goto(addr242);
-                                             }
-                                             break;
-                                          }
-                                          while(true)
-                                          {
-                                             _loc10_ = §§pop();
-                                             addr220:
-                                             while(true)
-                                             {
-                                                §§push(int(parseInt(_loc6_.@pivotY)));
-                                             }
-                                             §§goto(addr131);
-                                          }
-                                          addr219:
-                                       }
-                                       while(true)
-                                       {
-                                          _loc11_ = §§pop();
-                                          break loop12;
-                                       }
-                                    }
-                                    addr227:
-                                    while(true)
-                                    {
-                                       _loc9_ = §§pop();
-                                       addr228:
-                                       while(true)
-                                       {
-                                          if(!_loc21_)
-                                          {
-                                             continue loop2;
-                                          }
-                                          §§goto(addr219);
-                                          §§push(int(parseInt(_loc6_.@pivotX)));
-                                       }
-                                       §§goto(addr138);
-                                    }
-                                 }
-                              }
-                              while(true)
-                              {
-                                 if(!(_loc20_ && param1))
-                                 {
-                                    if(!_loc20_)
-                                    {
-                                       if(_loc21_ || _loc3_)
-                                       {
-                                          §§goto(addr205);
-                                       }
-                                       while(true)
-                                       {
-                                          §§goto(addr227);
-                                       }
-                                       addr243:
-                                    }
-                                    break;
-                                 }
-                                 §§goto(addr220);
-                              }
-                              §§goto(addr228);
-                           }
-                        }
-                        continue;
-                     }
-                     §§goto(addr243);
+                     _loc15_ = _loc14_[0];
+                     _loc8_ = parseInt(_loc15_.@width);
+                     _loc9_ = parseInt(_loc15_.@height);
+                     _loc12_ = parseInt(_loc15_.@x) - _loc12_;
+                     _loc13_ = parseInt(_loc15_.@y) - _loc13_;
                   }
+                  else
+                  {
+                     _loc12_ = 0;
+                     _loc13_ = 0;
+                  }
+                  _loc2_[_loc7_] = new §3P§(_loc12_,_loc13_,_loc8_,_loc9_,_loc10_,_loc11_);
                }
             }
          }

@@ -14,12 +14,7 @@ package §<z§
       
       public function §#h§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public function get data() : Object
@@ -29,12 +24,7 @@ package §<z§
       
       public function set data(param1:Object) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§++§ = param1;
-         }
+         this.§++§ = param1;
       }
       
       public function get index() : int
@@ -44,22 +34,12 @@ package §<z§
       
       public function set index(param1:int) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || _loc2_)
-         {
-            this.§6`§ = param1;
-         }
+         this.§6`§ = param1;
       }
       
       public function set §<D§(param1:§[Z§) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§"!^§ = param1;
-         }
+         this.§"!^§ = param1;
       }
    }
 }

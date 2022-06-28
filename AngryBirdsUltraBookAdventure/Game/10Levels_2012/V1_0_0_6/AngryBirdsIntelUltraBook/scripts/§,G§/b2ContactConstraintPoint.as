@@ -26,32 +26,10 @@ package §,G§
       
       public function b2ContactConstraintPoint()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            this.localPoint = new b2Vec2();
-            loop0:
-            while(true)
-            {
-               this.§2o§ = new b2Vec2();
-               while(true)
-               {
-                  this.§ ;§ = new b2Vec2();
-                  while(!(_loc2_ && this))
-                  {
-                     continue loop0;
-                     super();
-                     if(!(_loc2_ && this))
-                     {
-                        return;
-                        addr43:
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr43);
+         this.localPoint = new b2Vec2();
+         this.§2o§ = new b2Vec2();
+         this.§ ;§ = new b2Vec2();
+         super();
       }
    }
 }

@@ -29,243 +29,51 @@ package §=5§
       private static var §'#§:int;
       
       private static var §#!h§:Boolean = true;
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            VERSION = "1.5";
-            loop0:
-            while(true)
-            {
-               §8!B§ = 0;
-               loop1:
-               while(true)
-               {
-                  §9!p§ = 1;
-                  loop2:
-                  while(true)
-                  {
-                     §?]§ = 2;
-                     loop3:
-                     do
-                     {
-                        §3![§ = "SWFWheel.join";
-                        while(!_loc2_)
-                        {
-                           § !=§ = "SWFWheel.getState";
-                           while(!_loc2_)
-                           {
-                              continue loop1;
-                              while(!(_loc2_ && SWFWheel))
-                              {
-                                 §#!h§ = true;
-                                 if(_loc1_ || SWFWheel)
-                                 {
-                                    continue loop3;
-                                 }
-                              }
-                           }
-                        }
-                        continue loop2;
-                     }
-                     while(!_loc1_);
-                     
-                     continue loop0;
-                  }
-               }
-            }
-         }
-      }
+       
       
       public function SWFWheel()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc2_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function initialize(param1:Stage) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || param1)
+         if(!available || isReady)
          {
-            §§push(available);
-            loop0:
-            while(true)
-            {
-               §§push(!§§pop());
-               loop1:
-               while(true)
-               {
-                  if(!§§pop())
-                  {
-                     while(true)
-                     {
-                        §§pop();
-                        addr167:
-                        while(true)
-                        {
-                           §§push(isReady);
-                           if(!(_loc3_ && _loc3_))
-                           {
-                              if(!_loc2_)
-                              {
-                                 continue;
-                              }
-                              if(!_loc2_)
-                              {
-                                 continue loop1;
-                              }
-                              §§push(Boolean(§§pop()));
-                           }
-                           if(_loc3_)
-                           {
-                              continue loop0;
-                           }
-                        }
-                     }
-                  }
-                  while(true)
-                  {
-                     if(!§§pop())
-                     {
-                        loop4:
-                        while(true)
-                        {
-                           §<!M§ = param1;
-                           loop5:
-                           while(true)
-                           {
-                              ExternalInterface.call(§!!G§);
-                              loop6:
-                              for(; !_loc3_; loop9:
-                              for(; _loc2_ || param1; if(!(_loc2_ || _loc3_))
-                              {
-                                 continue;
-                              },if(!_loc3_)
-                              {
-                                 return;
-                              },§§goto(addr117))
-                              {
-                                 if(§'#§ == §8!B§)
-                                 {
-                                    continue;
-                                 }
-                                 do
-                                 {
-                                    ExternalInterface.addCallback("triggerMouseEvent",triggerMouseEvent);
-                                    if(!(_loc2_ || _loc2_))
-                                    {
-                                       continue;
-                                    }
-                                    if(_loc3_ && SWFWheel)
-                                    {
-                                       continue loop9;
-                                    }
-                                    §§goto(addr47);
-                                 }
-                                 while(_loc2_ || SWFWheel);
-                                 
-                                 continue loop5;
-                              })
-                              {
-                                 ExternalInterface.call(§3![§,ExternalInterface.objectID);
-                                 while(_loc2_)
-                                 {
-                                    ExternalInterface.addCallback("checkBrowserScroll",checkBrowserScroll);
-                                    do
-                                    {
-                                       §'#§ = ExternalInterface.call(§ !=§,ExternalInterface.objectID);
-                                       continue loop6;
-                                    }
-                                    while(!_loc2_);
-                                    
-                                    if(_loc2_ || _loc3_)
-                                    {
-                                       break loop4;
-                                    }
-                                    continue loop4;
-                                 }
-                                 §§goto(addr167);
-                              }
-                           }
-                        }
-                        return;
-                     }
-                     return;
-                  }
-               }
-            }
+            return;
          }
-         §§goto(addr167);
+         §<!M§ = param1;
+         ExternalInterface.call(§!!G§);
+         ExternalInterface.call(§3![§,ExternalInterface.objectID);
+         ExternalInterface.addCallback("checkBrowserScroll",checkBrowserScroll);
+         §'#§ = ExternalInterface.call(§ !=§,ExternalInterface.objectID);
+         if(§'#§ == §8!B§)
+         {
+            return;
+         }
+         ExternalInterface.addCallback("triggerMouseEvent",triggerMouseEvent);
       }
       
       public static function get isReady() : Boolean
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         §§push(§<!M§ == null);
-         if(!(_loc2_ && _loc2_))
-         {
-            return !§§pop();
-         }
+         return §<!M§ != null;
       }
       
       public static function get available() : Boolean
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         §§push(§§newactivation());
-         if(!(_loc3_ && SWFWheel))
+         var f:Boolean = false;
+         if(!ExternalInterface.available)
          {
-            §§push(false);
-            if(_loc4_)
-            {
-               §§pop().§§slot[1] = §§pop();
-               if(_loc4_)
-               {
-                  if(!ExternalInterface.available)
-                  {
-                     if(!(_loc3_ && _loc3_))
-                     {
-                        §§push(§§newactivation());
-                        if(!(_loc3_ && SWFWheel))
-                        {
-                           return §§pop().§§slot[1];
-                        }
-                        addr84:
-                        §§pop().§§slot[1] = Boolean(Boolean(ExternalInterface.call("function(){return true;}")));
-                        addr78:
-                     }
-                     §§goto(addr99);
-                  }
-                  else
-                  {
-                     try
-                     {
-                        addr77:
-                        §§goto(addr78);
-                     }
-                     catch(e:Error)
-                     {
-                     }
-                     addr99:
-                     return f;
-                     §§push(§§newactivation());
-                  }
-                  e = §§pop();
-                  §§goto(addr99);
-               }
-               §§goto(addr77);
-            }
+            return f;
          }
-         §§goto(addr84);
+         try
+         {
+            f = Boolean(ExternalInterface.call("function(){return true;}"));
+         }
+         catch(e:Error)
+         {
+         }
+         return f;
       }
       
       public static function get state() : int
@@ -280,134 +88,36 @@ package §=5§
       
       public static function set §&!k§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            §#!h§ = param1;
-         }
+         §#!h§ = param1;
       }
       
       private static function triggerMouseEvent(param1:Number, param2:Boolean, param3:Boolean, param4:Boolean) : void
       {
-         var _loc9_:Boolean = false;
-         var _loc10_:Boolean = true;
          var _loc7_:InteractiveObject = null;
-         if(_loc10_)
+         if(§'#§ == §8!B§)
          {
-            §§push(§'#§);
-            loop0:
-            while(true)
-            {
-               §§push(§8!B§);
-               loop1:
-               while(§§pop() != §§pop())
-               {
-                  loop2:
-                  while(true)
-                  {
-                     §§push(§'#§);
-                     if(_loc9_)
-                     {
-                        break;
-                     }
-                     §§push(§9!p§);
-                     if(!(_loc10_ || SWFWheel))
-                     {
-                        continue loop1;
-                     }
-                     §§push(§§pop() == §§pop());
-                     loop3:
-                     while(true)
-                     {
-                        if(!§§pop())
-                        {
-                           while(§§pop())
-                           {
-                              if(_loc10_)
-                              {
-                                 if(!_loc9_)
-                                 {
-                                    return;
-                                 }
-                                 break loop1;
-                              }
-                              if(!(_loc9_ && SWFWheel))
-                              {
-                                 if(true)
-                                 {
-                                    break;
-                                 }
-                                 continue loop2;
-                              }
-                              addr91:
-                              loop5:
-                              while(!(_loc9_ && SWFWheel))
-                              {
-                                 §§push(§#!h§);
-                                 if(!_loc10_)
-                                 {
-                                    continue loop3;
-                                 }
-                                 if(!_loc9_)
-                                 {
-                                    §§push(Boolean(§§pop()));
-                                    continue loop3;
-                                 }
-                                 addr68:
-                                 while(true)
-                                 {
-                                    §§pop();
-                                    continue loop5;
-                                 }
-                              }
-                              while(true)
-                              {
-                                 continue loop2;
-                              }
-                           }
-                           var _loc5_:Array;
-                           var _loc6_:DisplayObject = (_loc5_ = §<!M§.getObjectsUnderPoint(new Point(§<!M§.mouseX,§<!M§.mouseY))).pop() as DisplayObject;
-                           addr129:
-                           if(_loc6_ != null)
-                           {
-                              if(!(_loc7_ = _loc6_ as InteractiveObject))
-                              {
-                                 _loc6_ = _loc6_.parent;
-                                 §§goto(addr129);
-                              }
-                              if(!(_loc9_ && SWFWheel))
-                              {
-                                 §§goto(addr132);
-                              }
-                              §§goto(addr141);
-                           }
-                           addr132:
-                           if(!_loc7_)
-                           {
-                              if(_loc10_ || SWFWheel)
-                              {
-                                 addr141:
-                                 return;
-                              }
-                           }
-                           var _loc8_:MouseEvent = new MouseEvent(MouseEvent.MOUSE_WHEEL,true,false,_loc7_.mouseX,_loc7_.mouseY,null,param2,param3,param4,false,int(param1));
-                           if(_loc10_ || param1)
-                           {
-                              _loc7_.dispatchEvent(_loc8_);
-                           }
-                           return;
-                           addr37:
-                        }
-                        §§goto(addr68);
-                     }
-                  }
-                  continue loop0;
-               }
-               return;
-            }
+            return;
          }
-         §§goto(addr91);
+         if(§'#§ == §9!p§ && §#!h§)
+         {
+            return;
+         }
+         var _loc5_:Array;
+         var _loc6_:DisplayObject = (_loc5_ = §<!M§.getObjectsUnderPoint(new Point(§<!M§.mouseX,§<!M§.mouseY))).pop() as DisplayObject;
+         while(_loc6_ != null)
+         {
+            if(_loc7_ = _loc6_ as InteractiveObject)
+            {
+               break;
+            }
+            _loc6_ = _loc6_.parent;
+         }
+         if(!_loc7_)
+         {
+            return;
+         }
+         var _loc8_:MouseEvent = new MouseEvent(MouseEvent.MOUSE_WHEEL,true,false,_loc7_.mouseX,_loc7_.mouseY,null,param2,param3,param4,false,int(param1));
+         _loc7_.dispatchEvent(_loc8_);
       }
       
       private static function checkBrowserScroll() : Boolean

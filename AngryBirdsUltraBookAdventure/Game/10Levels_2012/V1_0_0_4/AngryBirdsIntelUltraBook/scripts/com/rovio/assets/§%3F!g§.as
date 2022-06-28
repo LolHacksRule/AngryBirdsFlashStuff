@@ -10,24 +10,9 @@ package com.rovio.assets
       
       public function §?!g§(param1:String, param2:Class)
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_)
-         {
-            super();
-         }
-         do
-         {
-            this.§;!W§ = param1;
-            do
-            {
-               this.§0h§ = param2;
-            }
-            while(_loc4_);
-            
-         }
-         while(_loc4_ && _loc3_);
-         
+         super();
+         this.§;!W§ = param1;
+         this.§0h§ = param2;
       }
       
       public function get §%,§() : String
@@ -37,12 +22,7 @@ package com.rovio.assets
       
       public function set §%,§(param1:String) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && param1))
-         {
-            this.§;!W§ = param1;
-         }
+         this.§;!W§ = param1;
       }
       
       public function get §&!e§() : Class
@@ -52,12 +32,7 @@ package com.rovio.assets
       
       public function set §&!e§(param1:Class) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || this)
-         {
-            this.§0h§ = param1;
-         }
+         this.§0h§ = param1;
       }
    }
 }

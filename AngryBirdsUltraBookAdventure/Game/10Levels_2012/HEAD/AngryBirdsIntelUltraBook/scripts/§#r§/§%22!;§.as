@@ -12,220 +12,54 @@ package §#r§
       
       public function §"!;§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc1_ && this)
-         {
-         }
-         if(_loc2_ || this)
-         {
-            while(true)
-            {
-               super();
-               addr57:
-               if(_loc1_ && _loc1_)
-               {
-                  continue;
-               }
-               return;
-               addr74:
-            }
-         }
-         loop1:
-         while(true)
-         {
-            loop2:
-            while(true)
-            {
-               this.init();
-               while(true)
-               {
-                  if(_loc2_ || this)
-                  {
-                     continue loop1;
-                  }
-                  continue loop2;
-                  addr93:
-                  if(!(_loc2_ || _loc1_))
-                  {
-                     continue;
-                  }
-                  §§goto(addr57);
-               }
-               continue loop1;
-            }
-         }
-         §§goto(addr74);
+         super();
+         this.init();
       }
       
       private static function §@E§(number:*, maxDecimals:int = 2, forceDecimals:Boolean = false, siStyle:Boolean = false) : String
       {
-         var _loc13_:Boolean = false;
-         var _loc14_:Boolean = true;
-         if(!_loc14_)
-         {
-         }
          var j:int = 0;
-         if(!(_loc13_ && forceDecimals))
+         var i:int = 0;
+         var inc:Number = Math.pow(10,maxDecimals);
+         var str:String = String(Math.round(inc * Number(number)) / inc);
+         var hasSep:Boolean = str.indexOf(".") == -1;
+         var sep:int = !!hasSep ? int(str.length) : int(str.indexOf("."));
+         var ret:String = (hasSep && !forceDecimals ? "" : (!!siStyle ? "," : ".")) + str.substr(sep + 1);
+         if(forceDecimals)
          {
-            while(true)
+            for(j = 0; j <= maxDecimals - (str.length - (!!hasSep ? sep - 1 : sep)); j++)
             {
-               loop1:
-               while(true)
-               {
-                  addr113:
-                  while(true)
-                  {
-                     addr101:
-                     continue loop1;
-                  }
-               }
-               while(_loc14_ || forceDecimals)
-               {
-                  if(_loc13_ && §"!;§)
-                  {
-                     continue;
-                  }
-                  §§goto(addr40);
-               }
+               ret += "0";
             }
          }
-         while(true)
+         while(i + 3 < (str.substr(0,1) == "-" ? sep - 1 : sep))
          {
-            §§goto(addr100);
+            ret = (!!siStyle ? "." : ",") + str.substr(sep - (i = i + 3),3) + ret;
          }
+         return str.substr(0,sep - i) + ret;
       }
       
       private function init() : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc3_)
-         {
-         }
-         if(_loc2_)
-         {
-            if(_loc2_ || _loc1_)
-            {
-               addChild(this.§[!8§ = new OverallIntelScorePlateGFX());
-               if(_loc2_)
-               {
-                  loop0:
-                  while(true)
-                  {
-                     this.§[!8§.§=!F§.autoSize = TextFieldAutoSize.LEFT;
-                     addr83:
-                     while(true)
-                     {
-                        if(!_loc3_)
-                        {
-                           if(!_loc3_)
-                           {
-                              break;
-                           }
-                           continue loop0;
-                        }
-                     }
-                     §§goto(addr74);
-                  }
-                  addr63:
-               }
-               addr74:
-               return;
-            }
-            §§goto(addr63);
-         }
-         §§goto(addr83);
+         addChild(this.§[!8§ = new OverallIntelScorePlateGFX());
+         this.§[!8§.§=!F§.autoSize = TextFieldAutoSize.LEFT;
       }
       
       override public function update() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc1_)
+         if(!data)
          {
+            return;
          }
-         if(_loc1_)
-         {
-            loop0:
-            while(data)
-            {
-               loop1:
-               while(true)
-               {
-                  §§push(this.§[!8§);
-                  if(_loc1_ || _loc1_)
-                  {
-                     if(!§`![§)
-                     {
-                        §§push(1);
-                        loop2:
-                        while(true)
-                        {
-                           §§push(§§pop());
-                           addr211:
-                           addr189:
-                           while(true)
-                           {
-                              §§pop().gotoAndStop(§§pop());
-                              while(!(_loc2_ && this))
-                              {
-                                 if(_loc2_)
-                                 {
-                                    continue loop0;
-                                 }
-                                 loop5:
-                                 while(true)
-                                 {
-                                    §]C§();
-                                    while(true)
-                                    {
-                                       addr159:
-                                       while(!(_loc2_ && _loc1_))
-                                       {
-                                          §§push(this.§[!8§);
-                                          while(true)
-                                          {
-                                             §§pop().§@I§.text = this.§4m§.userName || "";
-                                             continue loop5;
-                                          }
-                                       }
-                                    }
-                                 }
-                              }
-                              continue loop1;
-                           }
-                           while(true)
-                           {
-                              §§push(2);
-                              if(_loc2_ && this)
-                              {
-                                 continue loop2;
-                              }
-                              §§goto(addr211);
-                              §§push(§§pop());
-                           }
-                        }
-                     }
-                  }
-                  §§goto(addr189);
-               }
-            }
-            §§goto(addr232);
-         }
-         §§goto(addr156);
+         this.§[!8§.gotoAndStop(!!§`![§ ? 2 : 1);
+         §]C§();
+         this.§[!8§.§@I§.text = this.§4m§.userName || "";
+         this.§[!8§.§>!,§.text = this.§4m§.totalScore.toString() || "0";
+         this.§[!8§.§=!F§.text = this.§4m§.starCount.toString() || "0";
       }
       
       public function get §4m§() : UserTotalScoreVO
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc1_)
-         {
-         }
-         if(_loc1_ || _loc2_)
-         {
-         }
          return UserTotalScoreVO(data);
       }
    }

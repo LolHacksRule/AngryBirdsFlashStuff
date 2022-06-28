@@ -15,32 +15,10 @@ package §!m§
       
       public function b2OBB()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || this)
-         {
-            this.R = new b2Mat22();
-            while(true)
-            {
-               this.§4=§ = new b2Vec2();
-               while(_loc2_)
-               {
-                  this.§8!P§ = new b2Vec2();
-                  do
-                  {
-                     super();
-                  }
-                  while(!_loc2_);
-                  
-                  if(!_loc1_)
-                  {
-                     return;
-                     addr56:
-                  }
-               }
-            }
-         }
-         §§goto(addr56);
+         this.R = new b2Mat22();
+         this.§4=§ = new b2Vec2();
+         this.§8!P§ = new b2Vec2();
+         super();
       }
    }
 }

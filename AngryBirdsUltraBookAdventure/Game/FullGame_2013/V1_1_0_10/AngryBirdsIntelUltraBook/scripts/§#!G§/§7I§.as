@@ -10,26 +10,9 @@ package §#!G§
       
       public function §7I§(param1:String, param2:String)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!_loc3_)
-         {
-            super();
-            while(true)
-            {
-               this.§ z§ = param1;
-               while(!_loc3_)
-               {
-                  this.name = param2;
-                  if(_loc4_ || this)
-                  {
-                     return;
-                     addr45:
-                  }
-               }
-            }
-         }
-         §§goto(addr45);
+         super();
+         this.§ z§ = param1;
+         this.name = param2;
       }
       
       public static function §+!7§(param1:Object) : §7I§

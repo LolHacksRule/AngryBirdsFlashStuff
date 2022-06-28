@@ -28,65 +28,11 @@ package §>o§
       public static const §93§:int = 11;
       
       public static const §,o§:int = 12;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            §`!S§ = -1;
-            while(true)
-            {
-               §[!P§ = 0;
-            }
-            addr151:
-         }
-         while(true)
-         {
-            §0j§ = 1;
-            while(_loc2_ || §4!D§)
-            {
-               §8c§ = 2;
-               while(true)
-               {
-                  §]!j§ = 3;
-                  loop4:
-                  while(true)
-                  {
-                     §8!Z§ = 4;
-                     addr120:
-                     while(true)
-                     {
-                        §+<§ = 6;
-                        continue loop4;
-                     }
-                  }
-               }
-               while(_loc2_ || §4!D§)
-               {
-                  §,o§ = 12;
-                  if(!_loc2_)
-                  {
-                     continue;
-                  }
-                  if(_loc2_)
-                  {
-                     §§goto(addr32);
-                  }
-                  §§goto(addr72);
-               }
-            }
-         }
-      }
+       
       
       public function §4!D§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc1_)
-         {
-            super();
-         }
+         super();
       }
    }
 }

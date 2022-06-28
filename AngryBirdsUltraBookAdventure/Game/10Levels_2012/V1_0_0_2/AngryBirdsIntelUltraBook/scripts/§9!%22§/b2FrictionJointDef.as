@@ -20,89 +20,20 @@ package §9!"§
       
       public function b2FrictionJointDef()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            this.§<?§ = new b2Vec2();
-            while(true)
-            {
-               this.§%!e§ = new b2Vec2();
-               addr72:
-               if(_loc1_ && _loc2_)
-               {
-                  continue;
-               }
-               this.§`z§ = 0;
-               loop4:
-               while(_loc2_)
-               {
-                  this.maxTorque = 0;
-                  if(!_loc2_)
-                  {
-                     continue;
-                  }
-                  addr30:
-                  if(_loc2_ || this)
-                  {
-                     return;
-                  }
-                  while(_loc2_)
-                  {
-                     §§goto(addr72);
-                     §§goto(addr30);
-                  }
-                  while(true)
-                  {
-                     super();
-                     break loop4;
-                  }
-                  addr70:
-                  addr89:
-               }
-               while(true)
-               {
-                  type = b2Joint.§=!d§;
-                  §§goto(addr70);
-                  §§goto(addr52);
-               }
-               addr52:
-            }
-         }
-         §§goto(addr89);
+         this.§<?§ = new b2Vec2();
+         this.§%!e§ = new b2Vec2();
+         super();
+         type = b2Joint.§=!d§;
+         this.§`z§ = 0;
+         this.maxTorque = 0;
       }
       
       public function §%%§(param1:b2Body, param2:b2Body, param3:b2Vec2) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(_loc5_)
-         {
-            §3x§ = param1;
-            while(true)
-            {
-               §8P§ = param2;
-               while(true)
-               {
-                  this.§<?§.SetV(§3x§.GetLocalPoint(param3));
-                  §§goto(addr80);
-               }
-            }
-         }
-         addr80:
-         while(true)
-         {
-            this.§%!e§.SetV(§8P§.GetLocalPoint(param3));
-            if(!(_loc4_ && param2))
-            {
-               if(!(_loc4_ && param2))
-               {
-                  continue loop0;
-               }
-               continue loop1;
-            }
-         }
-         addr72:
+         §3x§ = param1;
+         §8P§ = param2;
+         this.§<?§.SetV(§3x§.GetLocalPoint(param3));
+         this.§%!e§.SetV(§8P§.GetLocalPoint(param3));
       }
    }
 }

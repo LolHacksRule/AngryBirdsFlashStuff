@@ -10,12 +10,7 @@ package §_-7§
       
       public function §_-Ce§(param1:§_-5q§, param2:StatePopupManager)
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(!(_loc4_ && this))
-         {
-            super(§_-vB§.§_-ky§.Views.PopupView_Syncing[0],param1);
-         }
+         super(§_-vB§.§_-ky§.Views.PopupView_Syncing[0],param1);
       }
    }
 }

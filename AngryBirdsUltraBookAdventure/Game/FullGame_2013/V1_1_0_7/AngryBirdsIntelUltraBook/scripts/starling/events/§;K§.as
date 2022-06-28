@@ -7,16 +7,8 @@ package starling.events
    public class §;K§
    {
       
-      private static var §=!l§:Matrix;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            §=!l§ = new Matrix();
-         }
-      }
+      private static var §=!l§:Matrix = new Matrix();
+       
       
       private var §[!5§:int;
       
@@ -38,108 +30,36 @@ package starling.events
       
       public function §;K§(param1:int, param2:Number, param3:Number, param4:String, param5:DisplayObject)
       {
-         var _loc7_:Boolean = false;
-         var _loc8_:Boolean = true;
-         if(!_loc7_)
-         {
-            super();
-            if(!_loc7_)
-            {
-               this.§[!5§ = param1;
-               if(_loc8_ || param1)
-               {
-                  this.§=!4§ = this.§"5§ = param2;
-                  if(_loc8_ || param3)
-                  {
-                     this.§#!y§ = this.§&$§ = param3;
-                     addr59:
-                     if(_loc8_ || param1)
-                     {
-                        this.§ case§ = 0;
-                        addr107:
-                        do
-                        {
-                           this.§7C§ = param4;
-                           do
-                           {
-                              this.§+F§ = param5;
-                           }
-                           while(!_loc8_);
-                           
-                        }
-                        while(!_loc8_);
-                        
-                        addr107:
-                     }
-                     §§goto(addr107);
-                  }
-               }
-               return;
-            }
-            §§goto(addr107);
-         }
-         §§goto(addr59);
+         super();
+         this.§[!5§ = param1;
+         this.§=!4§ = this.§"5§ = param2;
+         this.§#!y§ = this.§&$§ = param3;
+         this.§ case§ = 0;
+         this.§7C§ = param4;
+         this.§+F§ = param5;
       }
       
       public function §<!$§(param1:DisplayObject) : Point
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
          var _loc2_:Point = new Point(this.§=!4§,this.§#!y§);
-         if(!_loc3_)
-         {
-            this.§+F§.root.§,!g§(param1,§=!l§);
-         }
+         this.§+F§.root.§,!g§(param1,§=!l§);
          return §=!l§.transformPoint(_loc2_);
       }
       
       public function §;!B§(param1:DisplayObject) : Point
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
          var _loc2_:Point = new Point(this.§"5§,this.§&$§);
-         if(!_loc3_)
-         {
-            this.§+F§.root.§,!g§(param1,§=!l§);
-         }
+         this.§+F§.root.§,!g§(param1,§=!l§);
          return §=!l§.transformPoint(_loc2_);
       }
       
       public function clone() : §;K§
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
          var _loc1_:§;K§ = new §;K§(this.§[!5§,this.§=!4§,this.§#!y§,this.§7C§,this.§+F§);
-         if(!(_loc2_ && _loc3_))
-         {
-            _loc1_.§"5§ = this.§"5§;
-            while(true)
-            {
-               _loc1_.§&$§ = this.§&$§;
-               while(true)
-               {
-                  _loc1_.§ case§ = this.§ case§;
-                  §§goto(addr86);
-               }
-            }
-         }
-         addr86:
-         while(true)
-         {
-            _loc1_.§>]§ = this.§>]§;
-            if(!_loc2_)
-            {
-               if(!(_loc2_ && _loc3_))
-               {
-                  if(_loc3_)
-                  {
-                     break;
-                  }
-                  continue loop0;
-               }
-               continue loop1;
-            }
-         }
+         _loc1_.§"5§ = this.§"5§;
+         _loc1_.§&$§ = this.§&$§;
+         _loc1_.§ case§ = this.§ case§;
+         _loc1_.§>]§ = this.§>]§;
          return _loc1_;
       }
       
@@ -190,80 +110,30 @@ package starling.events
       
       function setPosition(param1:Number, param2:Number) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_)
-         {
-            this.§"5§ = this.§=!4§;
-            loop0:
-            while(true)
-            {
-               this.§&$§ = this.§#!y§;
-               while(true)
-               {
-                  this.§=!4§ = param1;
-                  loop2:
-                  while(_loc4_ || this)
-                  {
-                     while(true)
-                     {
-                        this.§#!y§ = param2;
-                        if(!(_loc3_ && param2))
-                        {
-                           if(!_loc3_)
-                           {
-                              break;
-                           }
-                           continue loop0;
-                        }
-                        continue loop2;
-                     }
-                     return;
-                  }
-               }
-            }
-         }
-         §§goto(addr69);
+         this.§"5§ = this.§=!4§;
+         this.§&$§ = this.§#!y§;
+         this.§=!4§ = param1;
+         this.§#!y§ = param2;
       }
       
       function §6!=§(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc3_))
-         {
-            this.§7C§ = param1;
-         }
+         this.§7C§ = param1;
       }
       
       function §<S§(param1:int) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc2_))
-         {
-            this.§ case§ = param1;
-         }
+         this.§ case§ = param1;
       }
       
       function §<!1§(param1:DisplayObject) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && this))
-         {
-            this.§+F§ = param1;
-         }
+         this.§+F§ = param1;
       }
       
       function §5g§(param1:Number) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§>]§ = param1;
-         }
+         this.§>]§ = param1;
       }
    }
 }

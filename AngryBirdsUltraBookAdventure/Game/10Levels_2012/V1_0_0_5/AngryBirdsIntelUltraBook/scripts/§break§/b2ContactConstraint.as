@@ -41,48 +41,18 @@ package §break§
       
       public function b2ContactConstraint()
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
+         this.§?Q§ = new b2Vec2();
+         this.localPoint = new b2Vec2();
+         this.normal = new b2Vec2();
+         this.§@z§ = new b2Mat22();
+         this.§]_§ = new b2Mat22();
+         super();
+         this.§;!K§ = new Vector.<b2ContactConstraintPoint>(b2Settings.b2_maxManifoldPoints);
+         var _loc1_:int = 0;
+         while(_loc1_ < b2Settings.b2_maxManifoldPoints)
          {
-            this.§?Q§ = new b2Vec2();
-         }
-         loop0:
-         while(true)
-         {
-            this.localPoint = new b2Vec2();
-            while(true)
-            {
-               this.normal = new b2Vec2();
-               loop2:
-               while(true)
-               {
-                  this.§@z§ = new b2Mat22();
-                  while(true)
-                  {
-                     this.§]_§ = new b2Mat22();
-                     continue loop2;
-                     addr33:
-                     if(_loc3_ || _loc1_)
-                     {
-                        continue loop0;
-                     }
-                  }
-               }
-               while(_loc3_ || _loc1_)
-               {
-                  this.§;!K§ = new Vector.<b2ContactConstraintPoint>(b2Settings.b2_maxManifoldPoints);
-                  if(!_loc3_)
-                  {
-                     continue;
-                  }
-                  if(_loc3_)
-                  {
-                     §§goto(addr33);
-                  }
-                  §§goto(addr75);
-               }
-            }
+            this.§;!K§[_loc1_] = new b2ContactConstraintPoint();
+            _loc1_++;
          }
       }
    }

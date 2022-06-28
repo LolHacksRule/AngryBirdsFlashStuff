@@ -18,12 +18,7 @@ package §&!-§
       
       public function b2DistanceInput()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            super();
-         }
+         super();
       }
    }
 }

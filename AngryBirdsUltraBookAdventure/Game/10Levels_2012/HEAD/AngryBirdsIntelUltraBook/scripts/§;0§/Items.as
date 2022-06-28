@@ -6,14 +6,7 @@ package §;0§
    {
       
       private static var mItemDataTable:XML;
-      
-      {
-         var mItemDataTable:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc2_)
-         {
-         }
-      }
+       
       
       private var §1§:Vector.<§,!P§> = null;
       
@@ -23,244 +16,79 @@ package §;0§
       
       public function Items()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc1_)
-         {
-         }
-         if(_loc2_ || _loc1_)
-         {
-            loop0:
-            while(true)
-            {
-               super();
-               while(true)
-               {
-                  loop2:
-                  while(_loc2_ || _loc2_)
-                  {
-                     this.§&a§();
-                     while(true)
-                     {
-                        if(!_loc1_)
-                        {
-                           if(!(_loc1_ && _loc2_))
-                           {
-                              if(_loc2_)
-                              {
-                                 break;
-                              }
-                              continue loop0;
-                           }
-                           continue loop2;
-                        }
-                     }
-                     return;
-                  }
-               }
-            }
-         }
-         §§goto(addr76);
+         super();
+         this.§&a§();
       }
       
       public function get §]K§() : Vector.<String>
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc1_)
-         {
-         }
          return this.§+l§;
       }
       
       public function get §if§() : Vector.<§,!P§>
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc2_ && _loc1_)
-         {
-         }
          return this.§1§;
       }
       
       private function §&a§() : void
       {
-         var _loc9_:Boolean = true;
-         var _loc10_:Boolean = false;
-         if(_loc9_ || category)
-         {
-         }
          var category:XML = null;
          var categoryName:String = null;
          var item:XML = null;
          var itemObj:Item = null;
-         if(_loc9_)
+         this.§1§ = new Vector.<§,!P§>();
+         this.§ !]§ = new Array();
+         this.§+l§ = new Vector.<String>();
+         mItemDataTable = §0d§.§@A§(Characters.mCharacterDataTableBin);
+         for each(category in mItemDataTable.items.category)
          {
-            loop0:
-            while(true)
+            categoryName = category.@id;
+            this.§1§.push(new §,!P§(categoryName,category.@sid));
+            this.§ !]§[categoryName] = new Array();
+            for each(item in category.item)
             {
-               loop1:
-               while(true)
+               itemObj = new Item();
+               itemObj.§^!,§ = item.@id;
+               itemObj.sId = item.@sid;
+               itemObj.mName = item.@name;
+               itemObj.§61§ = item.@anchor;
+               itemObj.§`5§ = categoryName;
+               if(this.§+l§.indexOf(itemObj.§61§) == -1)
                {
-                  this.§1§ = new Vector.<§,!P§>();
-                  loop2:
-                  while(true)
-                  {
-                     loop3:
-                     while(true)
-                     {
-                        this.§ !]§ = new Array();
-                        loop4:
-                        while(true)
-                        {
-                           loop5:
-                           while(true)
-                           {
-                              this.§+l§ = new Vector.<String>();
-                              while(true)
-                              {
-                                 while(_loc9_)
-                                 {
-                                    if(!_loc10_)
-                                    {
-                                       if(!_loc10_)
-                                       {
-                                          continue loop0;
-                                       }
-                                       continue loop3;
-                                    }
-                                    continue loop4;
-                                    while(!(_loc10_ && item))
-                                    {
-                                       continue loop2;
-                                    }
-                                 }
-                                 continue loop5;
-                                 addr44:
-                                 if(!(_loc10_ && this))
-                                 {
-                                    continue loop1;
-                                 }
-                              }
-                           }
-                        }
-                     }
-                  }
+                  this.§+l§.push(itemObj.§61§);
                }
+               this.§ !]§[categoryName].push(itemObj);
             }
-         }
-         while(true)
-         {
-            §§goto(addr60);
          }
       }
       
       public function get items() : Array
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc1_)
-         {
-         }
-         if(_loc1_)
-         {
-         }
          return this.§ !]§;
       }
       
       public function §4a§(category:String) : Array
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc3_)
-         {
-         }
-         if(_loc3_)
-         {
-         }
-         while(_loc3_ && this)
-         {
-         }
          return this.§ !]§[category];
       }
       
       public function §><§(itemId:String) : Item
       {
-         var _loc9_:Boolean = true;
-         var _loc10_:Boolean = false;
-         if(_loc10_)
-         {
-         }
          var category:§,!P§ = null;
-         var categoryId:* = null;
+         var categoryId:String = null;
          var item:Item = null;
-         if(_loc9_)
+         for each(category in this.§1§)
          {
-            while(true)
+            categoryId = category.name;
+            for each(item in this.§ !]§[categoryId])
             {
-               loop1:
-               while(true)
+               if(item.§^!,§.toUpperCase() == itemId.toUpperCase())
                {
-                  while(!_loc9_)
-                  {
-                  }
-                  if(!(_loc10_ && category))
-                  {
-                     while(false)
-                     {
-                        continue loop1;
-                     }
-                     loop4:
-                     for each(category in this.§1§)
-                     {
-                        if(!_loc10_)
-                        {
-                           if(_loc10_)
-                           {
-                              continue;
-                           }
-                        }
-                        loop5:
-                        while(true)
-                        {
-                           loop6:
-                           while(true)
-                           {
-                              addr77:
-                              addr181:
-                              while(true)
-                              {
-                                 §§push(category.name);
-                                 if(!_loc10_)
-                                 {
-                                    §§push(§§pop());
-                                 }
-                                 categoryId = §§pop();
-                                 if(_loc10_ && category)
-                                 {
-                                    break;
-                                 }
-                                 if(_loc9_)
-                                 {
-                                    continue loop5;
-                                 }
-                                 continue loop6;
-                              }
-                              continue loop4;
-                           }
-                        }
-                     }
-                     if(_loc9_ || itemId)
-                     {
-                     }
-                     return null;
-                     addr43:
-                  }
-                  break;
+                  return item;
                }
             }
          }
-         §§goto(addr43);
+         return null;
       }
    }
 }

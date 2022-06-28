@@ -16,24 +16,9 @@ package §'s§
       
       public function b2DistanceOutput()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            this.§7P§ = new b2Vec2();
-         }
-         do
-         {
-            this.§6+§ = new b2Vec2();
-            do
-            {
-               super();
-            }
-            while(_loc1_ && _loc2_);
-            
-         }
-         while(_loc1_ && _loc2_);
-         
+         this.§7P§ = new b2Vec2();
+         this.§6+§ = new b2Vec2();
+         super();
       }
    }
 }

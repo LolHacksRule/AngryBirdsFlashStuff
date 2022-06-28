@@ -18,99 +18,33 @@ package §8w§
       
       public function b2DynamicTreeBroadPhase()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc2_))
-         {
-            this.§=!4§ = new b2DynamicTree();
-         }
-         loop0:
-         while(true)
-         {
-            this.§%! § = new Vector.<b2DynamicTreeNode>();
-            do
-            {
-               this.m_pairBuffer = new Vector.<b2DynamicTreePair>();
-               continue loop0;
-            }
-            while(!_loc2_);
-            
-            return;
-         }
+         this.§=!4§ = new b2DynamicTree();
+         this.§%! § = new Vector.<b2DynamicTreeNode>();
+         this.m_pairBuffer = new Vector.<b2DynamicTreePair>();
+         super();
       }
       
       public function §1!@§(param1:b2AABB, param2:*) : *
       {
-         var _loc6_:Boolean = false;
-         var _loc7_:Boolean = true;
          var _loc3_:b2DynamicTreeNode = this.§=!4§.§1!@§(param1,param2);
-         if(_loc7_)
-         {
-            var _loc4_:*;
-            §§push((_loc4_ = this).§2y§);
-            if(_loc7_ || param1)
-            {
-               §§push(§§pop() + 1);
-            }
-            var _loc5_:* = §§pop();
-            if(_loc7_ || param1)
-            {
-               _loc4_.§2y§ = _loc5_;
-            }
-            if(_loc7_)
-            {
-               addr73:
-               this.§4!M§(_loc3_);
-            }
-            return _loc3_;
-         }
-         §§goto(addr73);
+         ++this.§2y§;
+         this.§4!M§(_loc3_);
+         return _loc3_;
       }
       
       public function §for §(param1:*) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(_loc5_ || param1)
-         {
-            this.§1l§(param1);
-            if(!(_loc4_ && _loc2_))
-            {
-               var _loc2_:*;
-               §§push((_loc2_ = this).§2y§);
-               if(_loc5_ || _loc3_)
-               {
-                  §§push(§§pop() - 1);
-               }
-               var _loc3_:* = §§pop();
-               if(_loc5_)
-               {
-                  _loc2_.§2y§ = _loc3_;
-               }
-               if(!_loc4_)
-               {
-                  this.§=!4§.§for §(param1);
-               }
-            }
-         }
+         this.§1l§(param1);
+         --this.§2y§;
+         this.§=!4§.§for §(param1);
       }
       
       public function §&!N§(param1:*, param2:b2AABB, param3:b2Vec2) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         §§push(this.§=!4§.§&!N§(param1,param2,param3));
-         if(!(_loc5_ && param3))
+         var _loc4_:Boolean;
+         if(_loc4_ = this.§=!4§.§&!N§(param1,param2,param3))
          {
-            §§push(Boolean(§§pop()));
-         }
-         var _loc4_:*;
-         if(_loc4_ = §§pop())
-         {
-            if(!_loc5_)
-            {
-               this.§4!M§(param1);
-            }
+            this.§4!M§(param1);
          }
       }
       
@@ -138,45 +72,66 @@ package §8w§
       
       public function §"-§(param1:Function) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         §§push(§§newactivation());
-         loop0:
-         while(true)
+         var queryProxy:b2DynamicTreeNode = null;
+         var i:int = 0;
+         var fatAABB:b2AABB = null;
+         var primaryPair:b2DynamicTreePair = null;
+         var userDataA:* = undefined;
+         var userDataB:* = undefined;
+         var pair:b2DynamicTreePair = null;
+         var callback:Function = param1;
+         this.m_pairCount = 0;
+         for each(queryProxy in this.§%! §)
          {
-            §§push(null);
-            addr153:
-            while(true)
+            var QueryCallback:Function = function(param1:b2DynamicTreeNode):Boolean
             {
-               §§pop().§§slot[2] = §§pop();
-               addr155:
-               while(true)
+               if(param1 == queryProxy)
                {
-                  §§push(§§newactivation());
-                  continue loop0;
+                  return true;
                }
+               if(m_pairCount == m_pairBuffer.length)
+               {
+                  m_pairBuffer[m_pairCount] = new b2DynamicTreePair();
+               }
+               var _loc2_:b2DynamicTreePair = m_pairBuffer[m_pairCount];
+               _loc2_.§9!;§ = param1 < queryProxy ? param1 : queryProxy;
+               _loc2_.§ !%§ = param1 >= queryProxy ? param1 : queryProxy;
+               ++m_pairCount;
+               return true;
+            };
+            fatAABB = this.§=!4§.§8!W§(queryProxy);
+            this.§=!4§.§4!3§(QueryCallback,fatAABB);
+         }
+         this.§%! §.length = 0;
+         i = 0;
+         loop1:
+         while(i < this.m_pairCount)
+         {
+            primaryPair = this.m_pairBuffer[i];
+            userDataA = this.§=!4§.GetUserData(primaryPair.§9!;§);
+            userDataB = this.§=!4§.GetUserData(primaryPair.§ !%§);
+            callback(userDataA,userDataB);
+            i++;
+            while(i < this.m_pairCount)
+            {
+               pair = this.m_pairBuffer[i];
+               if(pair.§9!;§ != primaryPair.§9!;§ || pair.§ !%§ != primaryPair.§ !%§)
+               {
+                  continue loop1;
+               }
+               i++;
             }
          }
       }
       
       public function §4!3§(param1:Function, param2:b2AABB) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_)
-         {
-            this.§=!4§.§4!3§(param1,param2);
-         }
+         this.§=!4§.§4!3§(param1,param2);
       }
       
       public function RayCast(param1:Function, param2:b2RayCastInput) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!_loc3_)
-         {
-            this.§=!4§.RayCast(param1,param2);
-         }
+         this.§=!4§.RayCast(param1,param2);
       }
       
       public function §]!b§() : void
@@ -185,33 +140,18 @@ package §8w§
       
       public function §6e§(param1:int) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§=!4§.§6e§(param1);
-         }
+         this.§=!4§.§6e§(param1);
       }
       
       private function §4!M§(param1:b2DynamicTreeNode) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && this))
-         {
-            this.§%! §[this.§%! §.length] = param1;
-         }
+         this.§%! §[this.§%! §.length] = param1;
       }
       
       private function §1l§(param1:b2DynamicTreeNode) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
          var _loc2_:int = this.§%! §.indexOf(param1);
-         if(_loc3_ || this)
-         {
-            this.§%! §.splice(_loc2_,1);
-         }
+         this.§%! §.splice(_loc2_,1);
       }
       
       private function §[!R§(param1:b2DynamicTreePair, param2:b2DynamicTreePair) : int

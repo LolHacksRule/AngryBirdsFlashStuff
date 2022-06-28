@@ -13,12 +13,7 @@ package §,6§
       
       public function §,!G§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc1_)
-         {
-            super();
-         }
+         super();
       }
    }
 }

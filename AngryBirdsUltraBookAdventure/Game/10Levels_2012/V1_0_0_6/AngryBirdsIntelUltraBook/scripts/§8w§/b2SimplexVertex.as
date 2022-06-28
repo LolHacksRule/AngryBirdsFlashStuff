@@ -20,34 +20,17 @@ package §8w§
       
       function b2SimplexVertex()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public function Set(param1:b2SimplexVertex) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§%![§.SetV(param1.§%![§);
-            loop0:
-            while(true)
-            {
-               this.§8!d§.SetV(param1.§8!d§);
-               addr100:
-               while(true)
-               {
-                  this.§&U§.SetV(param1.§&U§);
-                  continue loop0;
-               }
-            }
-         }
-         §§goto(addr59);
+         this.§%![§.SetV(param1.§%![§);
+         this.§8!d§.SetV(param1.§8!d§);
+         this.§&U§.SetV(param1.§&U§);
+         this.a = param1.a;
+         this.indexA = param1.indexA;
+         this.indexB = param1.indexB;
       }
    }
 }

@@ -10,24 +10,9 @@ package §_-0EZ§
       
       public function §_-HV§(param1:String, param2:String)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_)
-         {
-            super();
-            do
-            {
-               this.§_-wl§ = param1;
-               do
-               {
-                  this.§_-1h§ = param2;
-               }
-               while(_loc3_);
-               
-            }
-            while(_loc3_ && param2);
-            
-         }
+         super();
+         this.§_-wl§ = param1;
+         this.§_-1h§ = param2;
       }
       
       public function get avatarString() : String

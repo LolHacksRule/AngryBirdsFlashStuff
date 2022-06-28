@@ -13,24 +13,9 @@ package §_-TG§
       
       public function §_-0-E§(param1:Texture, param2:Number)
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(!_loc4_)
-         {
-            super();
-         }
-         while(true)
-         {
-            this.§_-0DD§ = new §_-09b§(param1);
-            while(!(_loc4_ && _loc3_))
-            {
-               this.§_-047§ = param2;
-               if(_loc3_)
-               {
-                  return;
-               }
-            }
-         }
+         super();
+         this.§_-0DD§ = new §_-09b§(param1);
+         this.§_-047§ = param2;
       }
       
       public function get image() : §_-09b§
@@ -45,79 +30,26 @@ package §_-TG§
       
       public function dispose() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc2_))
+         if(this.§_-0DD§)
          {
-            §§push(this.§_-0DD§);
-            if(!_loc2_)
-            {
-               if(§§pop())
-               {
-                  loop2:
-                  while(true)
-                  {
-                     §§push(this.§_-0DD§);
-                     addr59:
-                     while(true)
-                     {
-                        §§pop().dispose();
-                        do
-                        {
-                           this.§_-0DD§ = null;
-                        }
-                        while(_loc2_);
-                        
-                        if(!(_loc2_ && this))
-                        {
-                           break;
-                        }
-                        continue loop2;
-                     }
-                  }
-                  addr57:
-               }
-               return;
-            }
-            §§goto(addr59);
+            this.§_-0DD§.dispose();
+            this.§_-0DD§ = null;
          }
-         §§goto(addr57);
       }
       
       public function updateLifeTime(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            §§push(this);
-            §§push(this.§_-047§);
-            if(_loc3_)
-            {
-               §§push(§§pop() - param1);
-            }
-            §§pop().§_-047§ = §§pop();
-         }
+         this.§_-047§ -= param1;
       }
       
       public function §_-tX§(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc3_))
-         {
-            this.§_-047§ = param1;
-         }
+         this.§_-047§ = param1;
       }
       
       public function §_-F§(param1:Texture) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§_-0DD§.texture = param1;
-         }
+         this.§_-0DD§.texture = param1;
       }
    }
 }

@@ -7,15 +7,7 @@ package §6F§
    {
       
       public static const §=m§:String = "onUiInteraction";
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            §=m§ = "onUiInteraction";
-         }
-      }
+       
       
       public var §1![§:int;
       
@@ -25,31 +17,10 @@ package §6F§
       
       public function §+!k§(param1:String, param2:int, param3:String, param4:§6!8§, param5:Boolean = false, param6:Boolean = false)
       {
-         var _loc7_:Boolean = true;
-         var _loc8_:Boolean = false;
-         if(!_loc8_)
-         {
-            super(param1,param5,param6);
-            loop0:
-            do
-            {
-               this.§1![§ = param2;
-               while(true)
-               {
-                  this.§?n§ = param3;
-                  while(_loc7_ || param3)
-                  {
-                     this.§>$§ = param4;
-                     if(_loc7_)
-                     {
-                        continue loop0;
-                     }
-                  }
-               }
-            }
-            while(!_loc7_);
-            
-         }
+         super(param1,param5,param6);
+         this.§1![§ = param2;
+         this.§?n§ = param3;
+         this.§>$§ = param4;
       }
       
       override public function clone() : Event

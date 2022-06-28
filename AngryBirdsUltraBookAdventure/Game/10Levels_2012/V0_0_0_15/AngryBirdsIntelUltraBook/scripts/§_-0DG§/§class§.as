@@ -14,40 +14,15 @@ package §_-0Dg§
       
       public function §class§(param1:§_-00u§, param2:String = null, param3:Boolean = true)
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!(_loc4_ && this))
-         {
-            super(param1);
-         }
-         while(true)
-         {
-            this.§_-6N§ = param2;
-            while(_loc5_ || param1)
-            {
-               this.§_-xk§ = param3;
-               if(_loc5_)
-               {
-                  return;
-               }
-            }
-         }
+         super(param1);
+         this.§_-6N§ = param2;
+         this.§_-xk§ = param3;
       }
       
       override public function init() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            §_-6A§.initEmptyEnvironment(this.§_-6N§,this.§_-xk§);
-            do
-            {
-               §_-6A§.camera.initSlowScroll(this.§_-Q3§);
-            }
-            while(!(_loc2_ || _loc2_));
-            
-         }
+         §_-6A§.initEmptyEnvironment(this.§_-6N§,this.§_-xk§);
+         §_-6A§.camera.initSlowScroll(this.§_-Q3§);
       }
    }
 }

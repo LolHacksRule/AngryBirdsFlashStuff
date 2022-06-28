@@ -14,27 +14,9 @@ package §>!Z§
       
       public function b2SimplexCache()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            this.indexA = new Vector.<int>(3);
-            while(true)
-            {
-               this.indexB = new Vector.<int>(3);
-               while(_loc1_ || _loc2_)
-               {
-                  super();
-                  if(_loc2_)
-                  {
-                     continue;
-                  }
-                  return;
-                  addr48:
-               }
-            }
-         }
-         §§goto(addr48);
+         this.indexA = new Vector.<int>(3);
+         this.indexB = new Vector.<int>(3);
+         super();
       }
    }
 }

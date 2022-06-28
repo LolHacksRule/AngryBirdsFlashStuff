@@ -18,44 +18,16 @@ package § D§
       
       public function b2TimeStep()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            super();
-         }
+         super();
       }
       
       public function Set(param1:b2TimeStep) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§6c§ = param1.§6c§;
-         }
-         while(true)
-         {
-            this.§7i§ = param1.§7i§;
-            while(_loc2_ || this)
-            {
-               this.§"!2§ = param1.§"!2§;
-               while(_loc2_)
-               {
-                  this.§@!Y§ = param1.§@!Y§;
-                  do
-                  {
-                     this.§9!G§ = param1.§9!G§;
-                  }
-                  while(!_loc2_);
-                  
-                  if(!_loc3_)
-                  {
-                     return;
-                  }
-               }
-            }
-         }
+         this.§6c§ = param1.§6c§;
+         this.§7i§ = param1.§7i§;
+         this.§"!2§ = param1.§"!2§;
+         this.§@!Y§ = param1.§@!Y§;
+         this.§9!G§ = param1.§9!G§;
       }
    }
 }

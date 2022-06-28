@@ -13,159 +13,37 @@ package §"$§
       
       public function §3!R§(data:XML, currentUIView:§`X§, tutorialSprite:Sprite)
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(_loc4_ || data)
-         {
-         }
-         if(_loc4_)
-         {
-            loop0:
-            while(true)
-            {
-               addr134:
-               while(true)
-               {
-                  continue loop0;
-               }
-            }
-         }
-         while(true)
-         {
-            this.setVisibility(false);
-            §§goto(addr88);
-         }
+         super(data,currentUIView);
+         this.setVisibility(false);
+         this.§2!_§ = tutorialSprite;
       }
       
       override public function open(useFadeEffect:Boolean = true) : void
       {
-         var _loc6_:Boolean = false;
-         var _loc7_:Boolean = true;
-         if(_loc7_ || container)
-         {
-         }
-         if(_loc7_ || x)
-         {
-            loop0:
-            while(true)
-            {
-               addr74:
-               while(true)
-               {
-                  continue loop0;
-               }
-            }
-         }
-         §§goto(addr54);
+         var container:DisplayObjectContainer = mClip.getChildByName("Container_Tutorial") as DisplayObjectContainer;
+         var x:int = container.width - this.§2!_§.width >> 1;
+         var y:int = container.height - this.§2!_§.height >> 1;
+         var rect:Rectangle = this.§2!_§.getBounds(this.§2!_§);
+         x -= rect.left;
+         y -= rect.top;
+         container.addChild(this.§2!_§);
+         this.§2!_§.x = x;
+         this.§2!_§.y = y - 10;
+         super.open(useFadeEffect);
+         mClip.getChildByName("Container_Tutorial").visible = true;
       }
       
       override public function preClose(useFadeEffect:Boolean = true) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!_loc4_)
-         {
-         }
-         if(!(_loc3_ && _loc3_))
-         {
-            loop0:
-            while(true)
-            {
-               loop1:
-               while(true)
-               {
-                  addr49:
-                  if(!(_loc4_ || _loc3_))
-                  {
-                     continue;
-                  }
-                  if(_loc4_)
-                  {
-                     if(_loc3_)
-                     {
-                        continue loop0;
-                     }
-                     if(false)
-                     {
-                        loop3:
-                        while(true)
-                        {
-                           super.preClose(useFadeEffect);
-                           addr42:
-                           while(true)
-                           {
-                              if(_loc4_ || _loc3_)
-                              {
-                                 §§goto(addr49);
-                              }
-                              else
-                              {
-                                 while(true)
-                                 {
-                                    continue loop3;
-                                 }
-                                 addr69:
-                              }
-                           }
-                           continue loop1;
-                        }
-                     }
-                     var container:DisplayObjectContainer = mClip.getChildByName("Container_Tutorial") as DisplayObjectContainer;
-                     if(!(_loc3_ && useFadeEffect))
-                     {
-                        while(true)
-                        {
-                           container.removeChild(this.§2!_§);
-                           addr132:
-                           while(!_loc3_)
-                           {
-                           }
-                        }
-                     }
-                     while(true)
-                     {
-                        mClip.getChildByName("Container_Tutorial").visible = false;
-                        for(; !_loc3_; if(!_loc3_)
-                        {
-                           return;
-                        })
-                        {
-                           if(_loc4_)
-                           {
-                              continue;
-                           }
-                           §§goto(addr132);
-                        }
-                     }
-                  }
-                  §§goto(addr42);
-               }
-            }
-         }
-         §§goto(addr69);
+         super.preClose(useFadeEffect);
+         var container:DisplayObjectContainer = mClip.getChildByName("Container_Tutorial") as DisplayObjectContainer;
+         container.removeChild(this.§2!_§);
+         mClip.getChildByName("Container_Tutorial").visible = false;
       }
       
       override public function close() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || this)
-         {
-         }
-         if(_loc2_ || this)
-         {
-         }
-         while(true)
-         {
-            super.close();
-            while(_loc2_ || _loc2_)
-            {
-               if(!_loc1_)
-               {
-                  return;
-               }
-            }
-         }
+         super.close();
       }
    }
 }

@@ -27,50 +27,11 @@ package §72§
       
       public function b2ContactPoint()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            this.position = new b2Vec2();
-            while(true)
-            {
-               this.§>!r§ = new b2Vec2();
-               addr69:
-               if(_loc1_ && _loc1_)
-               {
-                  continue;
-               }
-               super();
-               addr76:
-               if(!(_loc1_ && _loc1_))
-               {
-                  addr44:
-                  if(_loc1_ && _loc1_)
-                  {
-                     loop2:
-                     while(true)
-                     {
-                        this.id = new b2ContactID();
-                        addr67:
-                        addr88:
-                        while(_loc2_)
-                        {
-                           §§goto(addr69);
-                           §§goto(addr76);
-                        }
-                        while(true)
-                        {
-                           this.normal = new b2Vec2();
-                           continue loop2;
-                        }
-                     }
-                  }
-                  return;
-               }
-               §§goto(addr67);
-            }
-         }
-         §§goto(addr88);
+         this.position = new b2Vec2();
+         this.§>!r§ = new b2Vec2();
+         this.normal = new b2Vec2();
+         this.id = new b2ContactID();
+         super();
       }
    }
 }

@@ -41,74 +41,18 @@ package §4]§
       
       public function b2ContactConstraint()
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
+         this.§8!9§ = new b2Vec2();
+         this.localPoint = new b2Vec2();
+         this.normal = new b2Vec2();
+         this.§>!o§ = new b2Mat22();
+         this.§+!K§ = new b2Mat22();
+         super();
+         this.§+"§ = new Vector.<b2ContactConstraintPoint>(b2Settings.b2_maxManifoldPoints);
+         var _loc1_:int = 0;
+         while(_loc1_ < b2Settings.b2_maxManifoldPoints)
          {
-            this.§8!9§ = new b2Vec2();
-            while(true)
-            {
-               this.localPoint = new b2Vec2();
-            }
-            addr105:
-         }
-         loop1:
-         while(true)
-         {
-            this.normal = new b2Vec2();
-            loop2:
-            while(true)
-            {
-               this.§>!o§ = new b2Mat22();
-               while(_loc3_)
-               {
-                  this.§+!K§ = new b2Mat22();
-                  while(_loc3_ || _loc1_)
-                  {
-                     if(!_loc2_)
-                     {
-                        while(true)
-                        {
-                           super();
-                           continue loop2;
-                        }
-                        continue;
-                        if(_loc2_ && _loc2_)
-                        {
-                           continue;
-                        }
-                        if(false)
-                        {
-                           §§goto(addr45);
-                        }
-                        else
-                        {
-                           var _loc1_:int = 0;
-                           addr119:
-                           if(_loc1_ >= b2Settings.b2_maxManifoldPoints)
-                           {
-                              if(_loc3_ || _loc2_)
-                              {
-                                 if(!_loc3_)
-                                 {
-                                    _loc1_++;
-                                    addr138:
-                                    §§goto(addr119);
-                                    addr147:
-                                 }
-                                 return;
-                              }
-                              §§goto(addr138);
-                           }
-                           this.§+"§[_loc1_] = new b2ContactConstraintPoint();
-                           §§goto(addr147);
-                        }
-                     }
-                     continue loop1;
-                  }
-               }
-               §§goto(addr105);
-            }
+            this.§+"§[_loc1_] = new b2ContactConstraintPoint();
+            _loc1_++;
          }
       }
    }

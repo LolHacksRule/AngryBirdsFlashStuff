@@ -10,31 +10,10 @@ package §&!4§
       
       public function JSONParseError(param1:String = "", param2:int = 0, param3:String = "")
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(_loc4_)
-         {
-            super(param1);
-            loop0:
-            do
-            {
-               name = "JSONParseError";
-               while(true)
-               {
-                  this.§]n§ = param2;
-                  while(_loc4_)
-                  {
-                     this.§?!Y§ = param3;
-                     if(_loc4_ || this)
-                     {
-                        continue loop0;
-                     }
-                  }
-               }
-            }
-            while(_loc5_ && param2);
-            
-         }
+         super(param1);
+         name = "JSONParseError";
+         this.§]n§ = param2;
+         this.§?!Y§ = param3;
       }
       
       public function get location() : int

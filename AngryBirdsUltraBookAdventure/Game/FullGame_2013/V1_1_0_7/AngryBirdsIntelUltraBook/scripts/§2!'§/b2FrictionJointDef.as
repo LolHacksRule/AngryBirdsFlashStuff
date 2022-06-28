@@ -20,72 +20,20 @@ package §2!'§
       
       public function b2FrictionJointDef()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            this.§'G§ = new b2Vec2();
-            while(true)
-            {
-               this.§true§ = new b2Vec2();
-               while(_loc2_)
-               {
-                  while(_loc2_ || _loc2_)
-                  {
-                     type = b2Joint.§>!`§;
-                     while(!(_loc1_ && _loc1_))
-                     {
-                        this.§6""§ = 0;
-                        do
-                        {
-                           this.maxTorque = 0;
-                        }
-                        while(_loc1_ && _loc1_);
-                        
-                        if(_loc2_)
-                        {
-                           return;
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         while(true)
-         {
-            super();
-            §§goto(addr79);
-         }
+         this.§'G§ = new b2Vec2();
+         this.§true§ = new b2Vec2();
+         super();
+         type = b2Joint.§>!`§;
+         this.§6""§ = 0;
+         this.maxTorque = 0;
       }
       
       public function §`!D§(param1:b2Body, param2:b2Body, param3:b2Vec2) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!_loc4_)
-         {
-            §19§ = param1;
-            while(true)
-            {
-               §"@§ = param2;
-               while(!_loc4_)
-               {
-                  this.§'G§.SetV(§19§.GetLocalPoint(param3));
-                  do
-                  {
-                     this.§true§.SetV(§"@§.GetLocalPoint(param3));
-                  }
-                  while(_loc4_);
-                  
-                  if(_loc5_)
-                  {
-                     return;
-                     addr55:
-                  }
-               }
-            }
-         }
-         §§goto(addr55);
+         §19§ = param1;
+         §"@§ = param2;
+         this.§'G§.SetV(§19§.GetLocalPoint(param3));
+         this.§true§.SetV(§"@§.GetLocalPoint(param3));
       }
    }
 }

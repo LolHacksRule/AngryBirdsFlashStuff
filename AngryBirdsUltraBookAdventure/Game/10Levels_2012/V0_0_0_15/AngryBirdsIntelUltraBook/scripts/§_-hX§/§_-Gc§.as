@@ -14,28 +14,13 @@ package §_-hX§
       
       public function §_-Gc§(param1:String, param2:String, param3:MovieClip, param4:Boolean = false, param5:String = null)
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
-         if(_loc6_ || this)
-         {
-            this.§do § = param3;
-            do
-            {
-               super(param1,param2,param4,param5);
-            }
-            while(_loc7_);
-            
-         }
+         this.§do § = param3;
+         super(param1,param2,param4,param5);
       }
       
       public function set §_-CY§(param1:MovieClip) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§do § = param1;
-         }
+         this.§do § = param1;
       }
       
       public function get §_-CY§() : MovieClip
@@ -50,194 +35,39 @@ package §_-hX§
       
       override protected function initProfile(param1:String, param2:String, param3:Boolean = false, param4:String = null) : void
       {
-         var _loc6_:Boolean = false;
-         var _loc7_:Boolean = true;
-         if(_loc7_)
+         §_-3m§ = param4 = param4 || §_-bT§.§_-N2§;
+         §_-ck§ = param1;
+         §_-52§ = §_-K5§.§_-EE§ == param1;
+         §_-BS§(param1,param2,param3);
+         if(§_-52§)
          {
-            §§push(§§findproperty(§_-3m§));
-            if(_loc7_ || this)
-            {
-               §§push(param4);
-               if(!(_loc6_ && this))
-               {
-                  §§push(§§pop());
-                  if(_loc7_ || param3)
-                  {
-                     §§push(§§pop());
-                     if(!(_loc6_ && this))
-                     {
-                        if(!§§pop())
-                        {
-                           if(!(_loc6_ && param3))
-                           {
-                              §§pop();
-                              addr60:
-                              §§push(§_-bT§.§_-N2§);
-                              if(!_loc6_)
-                              {
-                                 §§push(§§pop());
-                                 if(!_loc7_)
-                                 {
-                                 }
-                                 addr97:
-                                 §§pop().§_-3m§ = §§pop();
-                                 if(!_loc6_)
-                                 {
-                                    §_-ck§ = param1;
-                                    loop0:
-                                    while(true)
-                                    {
-                                       §_-52§ = §_-K5§.§_-EE§ == param1;
-                                       addr187:
-                                       while(true)
-                                       {
-                                          §_-BS§(param1,param2,param3);
-                                          continue loop0;
-                                       }
-                                    }
-                                 }
-                                 §§goto(addr148);
-                              }
-                              §§goto(addr97);
-                           }
-                        }
-                        §§push(§§pop());
-                     }
-                     var _loc5_:* = §§pop();
-                     if(!(_loc6_ && param2))
-                     {
-                        §§push(§§pop());
-                        if(_loc7_ || this)
-                        {
-                           param4 = §§pop();
-                           §§push(_loc5_);
-                        }
-                     }
-                  }
-               }
-               §§goto(addr97);
-            }
-            §§goto(addr60);
+            §_-uP§.push(this);
+            addEventListener(Event.ADDED_TO_STAGE,§_-b-§);
+            addEventListener(Event.REMOVED_FROM_STAGE,§_-l5§);
          }
-         §§goto(addr187);
       }
       
       override protected function createAvatar(param1:String, param2:String, param3:Boolean = false, param4:int = 0, param5:Boolean = false) : void
       {
-         var _loc6_:Boolean = false;
-         var _loc7_:Boolean = true;
-         if(_loc7_)
+         §_-m4§ = true;
+         §_-2A§ = new §_-WC§(param1,§_-3m§,true);
+         this.§do §.visible = false;
+         this.§_-WM§ = true;
+         §_-2A§.visible = true;
+         if(§_-2A§ && !param5)
          {
-            §_-m4§ = true;
-            loop0:
-            while(true)
-            {
-               §_-2A§ = new §_-WC§(param1,§_-3m§,true);
-               while(true)
-               {
-                  this.§do §.visible = false;
-                  addr90:
-                  if(_loc6_ && param3)
-                  {
-                     continue;
-                  }
-                  §§push(param5);
-                  if(!(_loc6_ && this))
-                  {
-                     §§push(!§§pop());
-                  }
-                  addr97:
-                  if(_loc7_ || param1)
-                  {
-                     loop5:
-                     while(true)
-                     {
-                        if(§§pop())
-                        {
-                           if(!(_loc6_ && param2))
-                           {
-                              continue loop0;
-                           }
-                           addr70:
-                           if(!_loc7_)
-                           {
-                              loop6:
-                              while(true)
-                              {
-                                 if(_loc7_ || param3)
-                                 {
-                                    if(_loc6_)
-                                    {
-                                       break;
-                                    }
-                                    §§goto(addr90);
-                                 }
-                                 addr112:
-                                 addr124:
-                                 while(!(_loc6_ && param3))
-                                 {
-                                    §§push(Boolean(§_-2A§));
-                                    if(_loc7_)
-                                    {
-                                       if(§§pop())
-                                       {
-                                          continue loop6;
-                                       }
-                                       continue loop5;
-                                    }
-                                    continue loop6;
-                                 }
-                                 while(true)
-                                 {
-                                    §_-2A§.visible = true;
-                                    §§goto(addr112);
-                                 }
-                              }
-                              while(true)
-                              {
-                                 this.§_-WM§ = true;
-                                 §§goto(addr124);
-                              }
-                              addr130:
-                           }
-                        }
-                        return;
-                     }
-                     continue;
-                  }
-                  §§goto(addr80);
-               }
-            }
+            addChild(§_-2A§);
          }
-         §§goto(addr130);
       }
       
       override protected function createFacebookProfile(param1:String, param2:Boolean = false, param3:Boolean = false) : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(_loc4_)
+         this.§_-WM§ = false;
+         this.§do §.visible = true;
+         if(§_-2A§)
          {
-            this.§_-WM§ = false;
-            loop0:
-            while(true)
-            {
-               this.§do §.visible = true;
-               while(§_-2A§)
-               {
-                  if(!_loc5_)
-                  {
-                     §_-2A§.visible = false;
-                  }
-                  if(!(_loc5_ && param2))
-                  {
-                     continue loop0;
-                  }
-               }
-               §§goto(addr19);
-            }
+            §_-2A§.visible = false;
          }
-         addr19:
       }
    }
 }

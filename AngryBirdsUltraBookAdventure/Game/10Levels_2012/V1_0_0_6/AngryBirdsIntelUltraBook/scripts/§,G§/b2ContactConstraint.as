@@ -41,84 +41,19 @@ package §,G§
       
       public function b2ContactConstraint()
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && _loc3_))
+         this.§[!<§ = new b2Vec2();
+         this.localPoint = new b2Vec2();
+         this.normal = new b2Vec2();
+         this.§`!C§ = new b2Mat22();
+         this.§&+§ = new b2Mat22();
+         super();
+         this.§7!4§ = new Vector.<b2ContactConstraintPoint>(b2Settings.b2_maxManifoldPoints);
+         var _loc1_:int = 0;
+         while(_loc1_ < b2Settings.b2_maxManifoldPoints)
          {
-            this.§[!<§ = new b2Vec2();
-            loop0:
-            while(true)
-            {
-               this.localPoint = new b2Vec2();
-               loop1:
-               while(true)
-               {
-                  this.normal = new b2Vec2();
-                  while(true)
-                  {
-                     this.§`!C§ = new b2Mat22();
-                     while(_loc3_ || _loc1_)
-                     {
-                        if(!_loc2_)
-                        {
-                           this.§&+§ = new b2Mat22();
-                           while(!_loc2_)
-                           {
-                              continue loop1;
-                              loop5:
-                              while(true)
-                              {
-                                 super();
-                                 do
-                                 {
-                                    this.§7!4§ = new Vector.<b2ContactConstraintPoint>(b2Settings.b2_maxManifoldPoints);
-                                 }
-                                 while(!_loc3_);
-                                 
-                                 if(!_loc2_)
-                                 {
-                                    while(false)
-                                    {
-                                       continue loop5;
-                                    }
-                                    var _loc1_:int = 0;
-                                    while(true)
-                                    {
-                                       if(_loc1_ >= b2Settings.b2_maxManifoldPoints)
-                                       {
-                                          if(!(_loc2_ && this))
-                                          {
-                                             break;
-                                          }
-                                          loop9:
-                                          while(_loc2_ && _loc3_)
-                                          {
-                                             while(true)
-                                             {
-                                                _loc1_++;
-                                                continue loop9;
-                                             }
-                                          }
-                                          continue;
-                                       }
-                                       this.§7!4§[_loc1_] = new b2ContactConstraintPoint();
-                                       §§goto(addr147);
-                                    }
-                                    return;
-                                    addr38:
-                                 }
-                                 break;
-                              }
-                           }
-                           continue;
-                        }
-                        continue loop0;
-                     }
-                  }
-               }
-            }
+            this.§7!4§[_loc1_] = new b2ContactConstraintPoint();
+            _loc1_++;
          }
-         §§goto(addr38);
       }
    }
 }

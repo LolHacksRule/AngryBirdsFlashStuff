@@ -12,30 +12,9 @@ package §#I§
       
       public function b2ContactImpulse()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || this)
-         {
-            this.§]Q§ = new Vector.<Number>(b2Settings.b2_maxManifoldPoints);
-            while(true)
-            {
-               this.§5!K§ = new Vector.<Number>(b2Settings.b2_maxManifoldPoints);
-               §§goto(addr66);
-            }
-         }
-         addr66:
-         while(true)
-         {
-            super();
-            if(!_loc1_)
-            {
-               if(_loc2_)
-               {
-                  break;
-               }
-               continue loop0;
-            }
-         }
+         this.§]Q§ = new Vector.<Number>(b2Settings.b2_maxManifoldPoints);
+         this.§5!K§ = new Vector.<Number>(b2Settings.b2_maxManifoldPoints);
+         super();
       }
    }
 }

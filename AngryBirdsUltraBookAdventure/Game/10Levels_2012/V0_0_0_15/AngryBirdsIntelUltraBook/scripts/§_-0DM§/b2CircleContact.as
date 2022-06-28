@@ -14,12 +14,7 @@ package §_-0DM§
       
       public function b2CircleContact()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function §_-xb§(param1:*) : b2Contact
@@ -33,24 +28,14 @@ package §_-0DM§
       
       public function §_-8Y§(param1:b2Fixture, param2:b2Fixture) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(!_loc4_)
-         {
-            super.§_-8Y§(param1,param2);
-         }
+         super.§_-8Y§(param1,param2);
       }
       
       override b2internal function Evaluate() : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
          var _loc1_:b2Body = b2internal::_-f-.GetBody();
          var _loc2_:b2Body = b2internal::_-N-.GetBody();
-         if(_loc4_)
-         {
-            b2Collision.§_-YC§(b2internal::_-07u,b2internal::_-f-.GetShape() as b2CircleShape,_loc1_.m_xf,b2internal::_-N-.GetShape() as b2CircleShape,_loc2_.m_xf);
-         }
+         b2Collision.§_-YC§(b2internal::_-07u,b2internal::_-f-.GetShape() as b2CircleShape,_loc1_.m_xf,b2internal::_-N-.GetShape() as b2CircleShape,_loc2_.m_xf);
       }
    }
 }

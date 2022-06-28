@@ -6,21 +6,7 @@ package starling.events
       public static const KEY_UP:String = "keyUp";
       
       public static const KEY_DOWN:String = "keyDown";
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            KEY_UP = "keyUp";
-            do
-            {
-               KEY_DOWN = "keyDown";
-            }
-            while(!(_loc1_ || _loc2_));
-            
-         }
-      }
+       
       
       private var §^Y§:uint;
       
@@ -36,53 +22,13 @@ package starling.events
       
       public function KeyboardEvent(param1:String, param2:uint = 0, param3:uint = 0, param4:uint = 0, param5:Boolean = false, param6:Boolean = false, param7:Boolean = false)
       {
-         var _loc8_:Boolean = true;
-         var _loc9_:Boolean = false;
-         if(_loc8_ || param1)
-         {
-            super(param1,false);
-            loop0:
-            do
-            {
-               this.§^Y§ = param2;
-               loop1:
-               while(true)
-               {
-                  this.§=@§ = param3;
-                  do
-                  {
-                     this.§import§ = param4;
-                     do
-                     {
-                        this.§42§ = param5;
-                        loop4:
-                        do
-                        {
-                           this.§@A§ = param6;
-                           while(!_loc9_)
-                           {
-                              this.§-!I§ = param7;
-                              if(!(_loc9_ && param3))
-                              {
-                                 continue loop4;
-                              }
-                           }
-                           continue loop1;
-                        }
-                        while(!_loc8_);
-                        
-                     }
-                     while(_loc9_);
-                     
-                  }
-                  while(_loc9_);
-                  
-                  continue loop0;
-               }
-            }
-            while(!_loc8_);
-            
-         }
+         super(param1,false);
+         this.§^Y§ = param2;
+         this.§=@§ = param3;
+         this.§import§ = param4;
+         this.§42§ = param5;
+         this.§@A§ = param6;
+         this.§-!I§ = param7;
       }
       
       public function get charCode() : uint

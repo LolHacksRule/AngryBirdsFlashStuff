@@ -18,65 +18,23 @@ package §6!M§
       
       public function §9!d§(param1:String, param2:String, param3:String)
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!_loc4_)
-         {
-            super();
-            while(true)
-            {
-               this.userId = param1;
-               while(_loc5_ || param1)
-               {
-                  this.userName = param2;
-                  while(_loc5_)
-                  {
-                     this.avatarString = param3;
-                     if(!_loc4_)
-                     {
-                        return;
-                        addr40:
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr40);
+         super();
+         this.userId = param1;
+         this.userName = param2;
+         this.avatarString = param3;
       }
       
       public static function §3!x§(param1:Object) : §9!d§
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && param1))
+         if(param1.i)
          {
-            if(!param1.i)
-            {
-               while(param1.p != undefined)
-               {
-                  if(!(_loc3_ || §9!d§))
-                  {
-                     break;
-                  }
-                  if(_loc3_)
-                  {
-                     if(_loc3_)
-                     {
-                        §§goto(addr68);
-                     }
-                     else
-                     {
-                        addr76:
-                     }
-                     return §4W§.§3!x§(param1);
-                  }
-               }
-               return §7!m§.§3!x§(param1);
-            }
-            §§goto(addr76);
+            return §4W§.§3!x§(param1);
          }
-         addr68:
-         return §-!?§.§3!x§(param1);
+         if(param1.p != undefined)
+         {
+            return §-!?§.§3!x§(param1);
+         }
+         return §7!m§.§3!x§(param1);
       }
    }
 }

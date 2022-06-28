@@ -6,12 +6,7 @@ package §_-Hb§
       
       public function §_-07o§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            super();
-         }
+         super();
       }
    }
 }

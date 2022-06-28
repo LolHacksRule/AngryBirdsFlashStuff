@@ -13,50 +13,16 @@ package §6!!§
       
       public static const §7!c§:int = 4;
       
-      private static var DEFAULT:§[!T§;
+      private static var DEFAULT:§[!T§ = new §[!T§(0,0,10,500,7.5,600,§8!#§);
       
-      private static var §-!K§:§[!T§;
+      private static var §-!K§:§[!T§ = new §[!T§(0,0,10,500,7.5,600,§;a§);
       
-      private static var §6e§:§[!T§;
+      private static var §6e§:§[!T§ = new §[!T§(0,0,15,1750,5,300,§4G§);
       
-      private static var §6!h§:§[!T§;
+      private static var §6!h§:§[!T§ = new §[!T§(0,0,10,1500,5,150,§9j§);
       
-      private static var §9d§:§[!T§;
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            §8!#§ = 0;
-            loop0:
-            while(true)
-            {
-               §;a§ = 1;
-               loop1:
-               while(true)
-               {
-                  §9j§ = 2;
-                  while(true)
-                  {
-                     §4G§ = 3;
-                     addr165:
-                     while(true)
-                     {
-                        §7!c§ = 4;
-                        continue loop0;
-                     }
-                     addr65:
-                     if(_loc1_ || _loc2_)
-                     {
-                        continue loop1;
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr103);
-      }
+      private static var §9d§:§[!T§ = new §[!T§(0,0,5,10,7,275,§7!c§);
+       
       
       public var x:Number;
       
@@ -74,221 +40,37 @@ package §6!!§
       
       public function §[!T§(param1:Number, param2:Number, param3:Number, param4:Number, param5:Number, param6:Number, param7:int = 0)
       {
-         var _loc8_:Boolean = false;
-         var _loc9_:Boolean = true;
-         if(_loc9_)
-         {
-            super();
-            loop0:
-            while(true)
-            {
-               this.x = param1;
-               loop1:
-               while(true)
-               {
-                  this.y = param2;
-                  loop2:
-                  while(true)
-                  {
-                     this.§1!G§ = param3;
-                     continue loop0;
-                     addr63:
-                     if(!(_loc8_ && param2))
-                     {
-                        this.§!f§ = param6;
-                        while(true)
-                        {
-                           if(!(_loc8_ && param3))
-                           {
-                              if(!_loc9_)
-                              {
-                                 break;
-                              }
-                              continue;
-                           }
-                           loop6:
-                           while(true)
-                           {
-                              if(!_loc8_)
-                              {
-                                 §§goto(addr63);
-                              }
-                              else
-                              {
-                                 while(true)
-                                 {
-                                    this.§!!"§ = param5;
-                                    continue loop6;
-                                 }
-                                 addr85:
-                              }
-                           }
-                           continue loop2;
-                        }
-                        continue loop1;
-                     }
-                  }
-               }
-            }
-         }
-         while(true)
-         {
-            this.§<f§ = param4;
-            §§goto(addr85);
-         }
-         §§goto(addr32);
+         super();
+         this.x = param1;
+         this.y = param2;
+         this.§1!G§ = param3;
+         this.§<f§ = param4;
+         this.§!!"§ = param5;
+         this.§!f§ = param6;
+         this.§?!%§ = param7;
       }
       
       public static function createExplosion(param1:int, param2:Number, param3:Number) : §[!T§
       {
-         var _loc6_:Boolean = false;
-         var _loc7_:Boolean = true;
          var _loc4_:§[!T§ = null;
-         §§push(param1);
-         if(_loc7_)
+         switch(param1)
          {
-            var _loc5_:* = §§pop();
-            if(_loc7_ || param3)
-            {
-               §§push(§;a§);
-               if(_loc7_ || param3)
-               {
-                  §§push(_loc5_);
-                  if(!(_loc6_ && param1))
-                  {
-                     if(§§pop() === §§pop())
-                     {
-                        if(_loc7_ || param1)
-                        {
-                           §§push(0);
-                           if(_loc6_ && param3)
-                           {
-                              addr135:
-                              §§push(_loc5_);
-                              if(!(_loc6_ && param3))
-                              {
-                                 if(§§pop() === §§pop())
-                                 {
-                                    if(!(_loc6_ && param2))
-                                    {
-                                       addr151:
-                                       §§push(2);
-                                       if(_loc7_ || §[!T§)
-                                       {
-                                          addr159:
-                                       }
-                                    }
-                                    else
-                                    {
-                                       addr194:
-                                       §§push(4);
-                                       if(_loc7_ || param3)
-                                       {
-                                          addr202:
-                                       }
-                                    }
-                                 }
-                                 else
-                                 {
-                                    §§push(§7!c§);
-                                    if(!(_loc6_ && §[!T§))
-                                    {
-                                       addr170:
-                                       if(§§pop() === _loc5_)
-                                       {
-                                          if(!_loc6_)
-                                          {
-                                             addr173:
-                                             §§push(3);
-                                             if(!(_loc6_ && §[!T§))
-                                             {
-                                                addr205:
-                                                switch(§§pop())
-                                                {
-                                                   case 0:
-                                                      _loc4_ = §-!K§;
-                                                      break;
-                                                   case 1:
-                                                      _loc4_ = §6!h§;
-                                                      break;
-                                                   case 2:
-                                                      _loc4_ = §6e§;
-                                                      break;
-                                                   case 3:
-                                                      _loc4_ = §9d§;
-                                                      break;
-                                                   default:
-                                                      _loc4_ = DEFAULT;
-                                                }
-                                                return new §[!T§(param2,param3,_loc4_.pushRadius,_loc4_.push,_loc4_.damageRadius,_loc4_.damage,param1);
-                                                addr204:
-                                             }
-                                          }
-                                       }
-                                       else if(true)
-                                       {
-                                          §§goto(addr204);
-                                          §§push(4);
-                                       }
-                                       §§goto(addr204);
-                                    }
-                                 }
-                              }
-                              §§goto(addr170);
-                           }
-                           §§goto(addr204);
-                        }
-                        §§goto(addr173);
-                     }
-                     else
-                     {
-                        §§push(§9j§);
-                        if(_loc7_)
-                        {
-                           §§push(_loc5_);
-                           if(!_loc6_)
-                           {
-                              if(§§pop() === §§pop())
-                              {
-                                 if(!(_loc6_ && param1))
-                                 {
-                                    §§push(1);
-                                    if(_loc6_ && §[!T§)
-                                    {
-                                       §§goto(addr159);
-                                    }
-                                    else
-                                    {
-                                       addr130:
-                                    }
-                                 }
-                                 else
-                                 {
-                                    §§goto(addr151);
-                                 }
-                              }
-                              else
-                              {
-                                 §§push(§4G§);
-                                 if(_loc7_)
-                                 {
-                                    §§goto(addr135);
-                                 }
-                              }
-                              §§goto(addr204);
-                           }
-                           §§goto(addr170);
-                        }
-                     }
-                     §§goto(addr202);
-                  }
-                  §§goto(addr170);
-               }
-               §§goto(addr130);
-            }
-            §§goto(addr173);
+            case §;a§:
+               _loc4_ = §-!K§;
+               break;
+            case §9j§:
+               _loc4_ = §6!h§;
+               break;
+            case §4G§:
+               _loc4_ = §6e§;
+               break;
+            case §7!c§:
+               _loc4_ = §9d§;
+               break;
+            default:
+               _loc4_ = DEFAULT;
          }
-         §§goto(addr205);
+         return new §[!T§(param2,param3,_loc4_.pushRadius,_loc4_.push,_loc4_.damageRadius,_loc4_.damage,param1);
       }
       
       public function get pushRadius() : Number

@@ -12,13 +12,13 @@ package §[m§
    public class §;!+§
    {
       
-      protected static var §=2§:Class;
+      protected static var §=2§:Class = §!!I§;
       
-      protected static var §+!,§:Class;
+      protected static var §+!,§:Class = §[S§;
       
-      protected static var §7!C§:Class;
+      protected static var §7!C§:Class = §5X§;
       
-      private static var §+!q§:Array;
+      private static var §+!q§:Array = [];
       
       private static var §8[§:Popup = null;
       
@@ -27,815 +27,266 @@ package §[m§
       public static var isOpen:Boolean = false;
       
       private static var §1&§:Array;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || §;!+§)
-         {
-            §=2§ = §!!I§;
-            loop0:
-            while(true)
-            {
-               §+!,§ = §[S§;
-               while(true)
-               {
-                  §7!C§ = §5X§;
-                  while(!_loc1_)
-                  {
-                     §+!q§ = [];
-                     continue loop0;
-                     addr57:
-                     if(_loc2_ || _loc2_)
-                     {
-                        loop5:
-                        while(true)
-                        {
-                           isOpen = false;
-                           if(_loc2_ || _loc2_)
-                           {
-                              break;
-                           }
-                           addr55:
-                           while(_loc2_)
-                           {
-                              §§goto(addr57);
-                              continue loop5;
-                           }
-                           continue loop0;
-                        }
-                        return;
-                        addr74:
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr74);
-      }
+       
       
       public function §;!+§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       private static function §#![§(param1:String, param2:§'!^§) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         §§push(§§newactivation());
-         loop0:
-         while(true)
+         var tutorialPopup:§7!9§ = null;
+         var birdName:String = param1;
+         var currentUIView:§'!^§ = param2;
+         var tutorialName:String = "";
+         switch(birdName)
          {
-            §§pop().§§slot[4] = null;
-            addr248:
-            while(true)
-            {
-               §§push(§§newactivation());
-               continue loop0;
-            }
+            case "BIRD_BLACK":
+               tutorialName = "TUTORIAL_BLACK";
+               break;
+            case "BIRD_BLUE":
+               tutorialName = "TUTORIAL_BLUE";
+               break;
+            case "BIRD_RED":
+               tutorialName = "TUTORIAL_RED";
+               break;
+            case "BIRD_WHITE":
+               tutorialName = "TUTORIAL_WHITE";
+               break;
+            case "BIRD_YELLOW":
+               tutorialName = "TUTORIAL_YELLOW";
+               break;
+            case "BIRD_GREEN":
+               tutorialName = "TUTORIAL_BOOMERANG";
+               break;
+            case "BIRD_REDBIG":
+               tutorialName = "TUTORIAL_BIG_BROTHER";
+               break;
+            case "BIRD_SARDINE":
+               tutorialName = "TUTORIAL_MIGHTYEAGLE";
+               break;
+            default:
+               return;
+         }
+         try
+         {
+            tutorialPopup = new §7!9§(§,>§.§%2§(§=2§),currentUIView,§]c§.§ 2§(tutorialName,§,Q§.§<d§));
+         }
+         catch(e:Error)
+         {
+         }
+         if(tutorialPopup)
+         {
+            §+!q§.push(tutorialPopup);
          }
       }
       
       private static function §;'§(param1:String, param2:§'!^§) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         §§push(§§newactivation());
-         while(true)
+         var tutorialPopup:§ #§ = null;
+         var powerUpName:String = param1;
+         var currentUIView:§'!^§ = param2;
+         var tutorialName:String = powerUpName;
+         try
          {
-            §§pop().§§slot[4] = null;
-            loop1:
-            while(true)
-            {
-               §§push(§§newactivation());
-               loop2:
-               while(true)
-               {
-                  §§push(param1);
-                  addr92:
-                  while(true)
-                  {
-                     §§pop().§§slot[1] = §§pop();
-                     while(_loc6_)
-                     {
-                        while(true)
-                        {
-                           §§push(§§newactivation());
-                           continue loop2;
-                           addr51:
-                           if(_loc5_ && _loc3_)
-                           {
-                              break;
-                           }
-                           if(true)
-                           {
-                              try
-                              {
-                                 §§push(§§newactivation());
-                                 if(_loc6_ || param2)
-                                 {
-                                    §§pop().§§slot[4] = new § #§(§,>§.§%2§(§+!,§),currentUIView,§]c§.§ 2§(tutorialName,§,Q§.§<d§),tutorialName);
-                                    if(_loc6_ || param1)
-                                    {
-                                       addr158:
-                                       if(tutorialPopup)
-                                       {
-                                          if(_loc6_ || §;!+§)
-                                          {
-                                          }
-                                       }
-                                       §§goto(addr171);
-                                    }
-                                    §+!q§.push(tutorialPopup);
-                                    §§goto(addr171);
-                                 }
-                                 §§goto(addr158);
-                              }
-                              catch(e:Error)
-                              {
-                                 §§goto(addr158);
-                              }
-                              addr171:
-                           }
-                           continue;
-                           return;
-                        }
-                     }
-                     continue loop1;
-                  }
-               }
-            }
-            if(_loc5_ && param1)
-            {
-               continue;
-            }
-            §§pop().§§slot[2] = param2;
-            while(true)
-            {
-               §§push(§§newactivation());
-               if(!_loc5_)
-               {
-                  §§push(powerUpName);
-                  if(_loc6_ || _loc3_)
-                  {
-                     if(!(_loc6_ || _loc3_))
-                     {
-                        break;
-                     }
-                     §§push(§§pop());
-                  }
-                  continue;
-               }
-               §§goto(addr62);
-            }
-            §§goto(addr92);
+            tutorialPopup = new § #§(§,>§.§%2§(§+!,§),currentUIView,§]c§.§ 2§(tutorialName,§,Q§.§<d§),tutorialName);
+         }
+         catch(e:Error)
+         {
+         }
+         if(tutorialPopup)
+         {
+            §+!q§.push(tutorialPopup);
          }
       }
       
       public static function §4<§(param1:String) : void
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         §§push(§§newactivation());
-         if(!_loc6_)
+         var birdName:String = null;
+         var storageName:String = param1;
+         try
          {
-            §§push(null);
-            if(!_loc6_)
+            if(storageName)
             {
-               §§pop().§§slot[2] = §§pop();
-               if(_loc5_ || param1)
+               if(!§&!>§)
                {
-                  addr37:
-                  var storageName:String = param1;
+                  §&!>§ = SharedObject.getLocal(storageName);
                }
-               try
+               for each(birdName in §1!_§())
                {
-                  if(storageName)
-                  {
-                     if(_loc5_)
-                     {
-                        if(!§&!>§)
-                        {
-                           if(!_loc6_)
-                           {
-                              §&!>§ = SharedObject.getLocal(storageName);
-                              if(!_loc6_)
-                              {
-                                 addr55:
-                                 var _loc3_:int = 0;
-                                 if(_loc5_ || param1)
-                                 {
-                                    var _loc4_:* = §1!_§();
-                                    if(_loc5_ || §;!+§)
-                                    {
-                                       for each(birdName in _loc4_)
-                                       {
-                                          if(!_loc5_)
-                                          {
-                                             continue;
-                                          }
-                                       }
-                                       addr104:
-                                       if(_loc5_ || §;!+§)
-                                       {
-                                          §&!>§.data["POWERUP_TUTORIAL_BIRDQUAKE"] = false;
-                                          while(true)
-                                          {
-                                             §&!>§.data["POWERUP_TUTORIAL_SUPERSEED"] = false;
-                                             addr155:
-                                             while(true)
-                                             {
-                                                addr125:
-                                                §§goto(addr123);
-                                             }
-                                          }
-                                       }
-                                       §§goto(addr155);
-                                       addr101:
-                                    }
-                                    while(true)
-                                    {
-                                       §&!>§.data[birdName] = false;
-                                       §§goto(addr101);
-                                    }
-                                 }
-                                 §§goto(addr104);
-                              }
-                              §§goto(addr155);
-                           }
-                           addr123:
-                           loop1:
-                           while(true)
-                           {
-                              §&!>§.data["POWERUP_TUTORIAL_KINGSLING"] = false;
-                              while(true)
-                              {
-                                 if(_loc5_ || _loc2_)
-                                 {
-                                    §&!>§.data["POWERUP_TUTORIAL_SLINGSCOPE"] = false;
-                                    if(!_loc6_)
-                                    {
-                                       if(!_loc6_)
-                                       {
-                                          break loop1;
-                                       }
-                                       continue loop5;
-                                    }
-                                    continue;
-                                 }
-                                 continue loop6;
-                              }
-                              continue loop6;
-                           }
-                           §§goto(addr162);
-                        }
-                        §§goto(addr55);
-                     }
-                     §§goto(addr155);
-                  }
-                  §§goto(addr162);
+                  §&!>§.data[birdName] = false;
                }
-               catch(e:Error)
-               {
-               }
-               addr162:
-               while(false)
-               {
-                  §§goto(addr125);
-               }
-               return;
+               §&!>§.data["POWERUP_TUTORIAL_BIRDQUAKE"] = false;
+               §&!>§.data["POWERUP_TUTORIAL_SUPERSEED"] = false;
+               §&!>§.data["POWERUP_TUTORIAL_KINGSLING"] = false;
+               §&!>§.data["POWERUP_TUTORIAL_SLINGSCOPE"] = false;
             }
          }
-         §§goto(addr37);
+         catch(e:Error)
+         {
+         }
       }
       
       private static function §1!_§() : Array
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
          var _loc2_:§7!,§ = null;
          var _loc1_:Array = [];
          for each(_loc2_ in § _§.§!6§.slingshot.§?$§)
          {
-            if(_loc5_)
+            if(_loc1_.indexOf(_loc2_.name) < 0)
             {
-               if(_loc1_.indexOf(_loc2_.name) >= 0)
-               {
-                  continue;
-               }
-               if(_loc6_)
-               {
-                  continue;
-               }
+               _loc1_.push(_loc2_.name);
             }
-            _loc1_.push(_loc2_.name);
          }
          return _loc1_;
       }
       
       public static function §%!w§(param1:§'!^§, param2:String, param3:String) : void
       {
-         var _loc7_:Boolean = false;
-         var _loc8_:Boolean = true;
-         §§push(§§newactivation());
-         loop0:
-         while(true)
+         var i:int = 0;
+         var currentUIView:§'!^§ = param1;
+         var storageName:String = param2;
+         var powerUpName:String = param3;
+         if(isOpen)
          {
-            §§pop().§§slot[6] = 0;
-            loop1:
-            while(true)
+            return;
+         }
+         var powerUpPopupName:String = powerUpName;
+         §1&§ = [];
+         switch(powerUpName)
+         {
+            case "POWERUP4":
+               powerUpPopupName = "POWERUP_TUTORIAL_BIRDQUAKE";
+               §1&§.push(powerUpPopupName);
+               break;
+            case "POWERUP1":
+               powerUpPopupName = "POWERUP_TUTORIAL_SUPERSEED";
+               §1&§.push(powerUpPopupName);
+               break;
+            case "POWERUP2":
+               powerUpPopupName = "POWERUP_TUTORIAL_KINGSLING";
+               §1&§.push(powerUpPopupName);
+               break;
+            case "POWERUP3":
+               powerUpPopupName = "POWERUP_TUTORIAL_SLINGSCOPE";
+               §1&§.push(powerUpPopupName);
+               break;
+            case "ALL":
+               §1&§.push("POWERUP_TUTORIAL_BIRDQUAKE");
+               §1&§.push("POWERUP_TUTORIAL_SUPERSEED");
+               §1&§.push("POWERUP_TUTORIAL_KINGSLING");
+               §1&§.push("POWERUP_TUTORIAL_SLINGSCOPE");
+         }
+         var powerUpsToShow:Array = §1&§;
+         try
+         {
+            if(storageName)
             {
-               §§push(§§newactivation());
-               while(true)
+               if(!§&!>§)
                {
-                  §§pop().§§slot[1] = param1;
-                  loop3:
-                  while(_loc8_)
-                  {
-                     §§push(§§newactivation());
-                     while(true)
-                     {
-                        §§push(param2);
-                        loop5:
-                        while(true)
-                        {
-                           §§pop().§§slot[2] = §§pop();
-                           addr363:
-                           while(true)
-                           {
-                              §§push(§§newactivation());
-                              loop7:
-                              while(true)
-                              {
-                                 §§push(param3);
-                                 addr355:
-                                 while(!_loc7_)
-                                 {
-                                    §§pop().§§slot[3] = §§pop();
-                                    while(true)
-                                    {
-                                       if(isOpen)
-                                       {
-                                          addr346:
-                                          if(_loc8_)
-                                          {
-                                             return;
-                                          }
-                                          continue loop3;
-                                       }
-                                       continue loop7;
-                                    }
-                                 }
-                                 continue loop5;
-                              }
-                           }
-                        }
-                     }
-                  }
-                  continue loop1;
-                  if(!(_loc7_ && param3))
-                  {
-                     continue loop0;
-                  }
+                  §&!>§ = SharedObject.getLocal(storageName);
                }
+               i = powerUpsToShow.length - 1;
+               while(i >= 0)
+               {
+                  powerUpPopupName = powerUpsToShow[i];
+                  if(§&!>§.data[powerUpPopupName] == undefined || §&!>§.data[powerUpPopupName] == false)
+                  {
+                     §&!>§.data[powerUpPopupName] = true;
+                  }
+                  else
+                  {
+                     powerUpsToShow.splice(i,1);
+                  }
+                  i--;
+               }
+               §&!>§.flush();
             }
+         }
+         catch(e:Error)
+         {
+            §!>§.log("Unable to get local storage");
+         }
+         for each(powerUpName in powerUpsToShow)
+         {
+            §;'§(powerUpName,currentUIView);
          }
       }
       
       public static function §>!4§(param1:§'!^§, param2:String = null) : void
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
-         §§push(§§newactivation());
-         while(true)
+         var birdName:String = null;
+         var i:int = 0;
+         var currentUIView:§'!^§ = param1;
+         var storageName:String = param2;
+         if(isOpen)
          {
-            §§push(null);
-            addr99:
-            while(true)
-            {
-               §§pop().§§slot[4] = §§pop();
-               loop2:
-               while(true)
-               {
-                  §§push(§§newactivation());
-                  loop3:
-                  while(true)
-                  {
-                     §§pop().§§slot[5] = 0;
-                     loop4:
-                     while(true)
-                     {
-                        §§push(§§newactivation());
-                        loop5:
-                        while(true)
-                        {
-                           §§pop().§§slot[1] = param1;
-                           addr83:
-                           while(_loc6_ || §;!+§)
-                           {
-                              §§push(§§newactivation());
-                              continue loop5;
-                           }
-                           continue loop4;
-                        }
-                     }
-                     addr25:
-                     if(_loc7_ && param1)
-                     {
-                        continue;
-                     }
-                     §§pop().§§slot[3] = §1!_§();
-                     if(!_loc7_)
-                     {
-                        if(false)
-                        {
-                           while(true)
-                           {
-                              if(isOpen)
-                              {
-                                 if(_loc6_ || param1)
-                                 {
-                                    break;
-                                 }
-                                 addr53:
-                                 while(_loc6_)
-                                 {
-                                    while(true)
-                                    {
-                                       §§push(§§newactivation());
-                                       if(_loc6_)
-                                       {
-                                          §§goto(addr25);
-                                       }
-                                       else
-                                       {
-                                          §§goto(addr58);
-                                       }
-                                    }
-                                    continue loop3;
-                                 }
-                                 §§goto(addr83);
-                              }
-                              §§goto(addr21);
-                           }
-                           addr40:
-                           if(!_loc7_)
-                           {
-                              return;
-                              addr76:
-                           }
-                           while(_loc6_)
-                           {
-                              §§goto(addr40);
-                           }
-                           continue loop2;
-                        }
-                        try
-                        {
-                           §§push(§§newactivation());
-                           if(_loc6_)
-                           {
-                              if(§§pop().§§slot[2])
-                              {
-                                 if(!(_loc7_ && _loc3_))
-                                 {
-                                    if(!§&!>§)
-                                    {
-                                       if(_loc6_ || param1)
-                                       {
-                                          §&!>§ = SharedObject.getLocal(storageName);
-                                          if(_loc6_)
-                                          {
-                                             addr307:
-                                             var i:int = birdsToShow.length - 1;
-                                             addr131:
-                                             addr311:
-                                             addr306:
-                                             addr305:
-                                             §§push(§§newactivation());
-                                             if(_loc6_ || param1)
-                                             {
-                                                if(!_loc7_)
-                                                {
-                                                   §§push(§§pop().§§slot[5]);
-                                                   if(!(_loc7_ && §;!+§))
-                                                   {
-                                                      if(_loc6_ || param1)
-                                                      {
-                                                         if(§§pop() < 0)
-                                                         {
-                                                            if(_loc6_ || _loc3_)
-                                                            {
-                                                               if(!_loc7_)
-                                                               {
-                                                                  addr168:
-                                                                  §&!>§.flush();
-                                                                  if(_loc6_ || §;!+§)
-                                                                  {
-                                                                     if(_loc6_ || §;!+§)
-                                                                     {
-                                                                        if(!_loc7_)
-                                                                        {
-                                                                           if(false)
-                                                                           {
-                                                                              addr198:
-                                                                              addr201:
-                                                                              addr200:
-                                                                              §§push(i - 1);
-                                                                              if(!_loc7_)
-                                                                              {
-                                                                                 i = §§pop();
-                                                                                 addr207:
-                                                                                 §§goto(addr131);
-                                                                              }
-                                                                              §§goto(addr337);
-                                                                           }
-                                                                           addr336:
-                                                                           addr337:
-                                                                           var _loc4_:* = §§pop();
-                                                                           if(_loc6_ || _loc3_)
-                                                                           {
-                                                                              var _loc5_:* = birdsToShow;
-                                                                              if(_loc6_)
-                                                                              {
-                                                                                 addr377:
-                                                                                 for each(birdName in _loc5_)
-                                                                                 {
-                                                                                    if(_loc6_)
-                                                                                    {
-                                                                                       addr371:
-                                                                                       §#![§(birdName,currentUIView);
-                                                                                    }
-                                                                                    §§goto(addr377);
-                                                                                 }
-                                                                                 §§goto(addr380);
-                                                                              }
-                                                                              §§goto(addr371);
-                                                                           }
-                                                                           addr380:
-                                                                           if(!(_loc7_ && _loc3_))
-                                                                           {
-                                                                              addr388:
-                                                                              §7!S§();
-                                                                              §§goto(addr390);
-                                                                           }
-                                                                           addr390:
-                                                                           return;
-                                                                           §§push(0);
-                                                                           addr312:
-                                                                        }
-                                                                        §§goto(addr311);
-                                                                     }
-                                                                     §§goto(addr207);
-                                                                  }
-                                                                  §§goto(addr388);
-                                                               }
-                                                               addr251:
-                                                               §&!>§.data[birdName] = true;
-                                                               addr257:
-                                                               if(!(_loc7_ && §;!+§))
-                                                               {
-                                                                  §§goto(addr198);
-                                                               }
-                                                               addr303:
-                                                               §§push(§&!>§.data[birdName] == undefined);
-                                                               if(_loc6_)
-                                                               {
-                                                                  if(!§§pop())
-                                                                  {
-                                                                     addr277:
-                                                                     §§pop();
-                                                                     if(!(_loc7_ && _loc3_))
-                                                                     {
-                                                                        §§push(§&!>§.data[birdName] == false);
-                                                                        if(_loc6_ || param1)
-                                                                        {
-                                                                        }
-                                                                        §§goto(addr277);
-                                                                        addr285:
-                                                                     }
-                                                                     §§goto(addr388);
-                                                                  }
-                                                                  if(§§pop())
-                                                                  {
-                                                                     §§goto(addr251);
-                                                                  }
-                                                                  addr212:
-                                                                  §§push(§§newactivation());
-                                                                  if(_loc6_)
-                                                                  {
-                                                                     addr214:
-                                                                     §§pop().§§slot[3].splice(i,1);
-                                                                     if(_loc6_ || param1)
-                                                                     {
-                                                                        if(!(_loc7_ && §;!+§))
-                                                                        {
-                                                                           §§goto(addr198);
-                                                                        }
-                                                                        §§goto(addr257);
-                                                                     }
-                                                                     §§goto(addr388);
-                                                                  }
-                                                                  addr290:
-                                                                  if(!_loc7_)
-                                                                  {
-                                                                     §§push(§§newactivation());
-                                                                     if(!_loc7_)
-                                                                     {
-                                                                        §§push(§§pop().§§slot[3]);
-                                                                        if(!_loc7_)
-                                                                        {
-                                                                           §§pop().§§slot[4] = §§pop()[i];
-                                                                           §§goto(addr303);
-                                                                        }
-                                                                        §§goto(addr307);
-                                                                     }
-                                                                     §§goto(addr306);
-                                                                  }
-                                                                  §§goto(addr305);
-                                                               }
-                                                               §§goto(addr277);
-                                                            }
-                                                            §§goto(addr388);
-                                                         }
-                                                         §§goto(addr290);
-                                                         §§push(§§newactivation());
-                                                      }
-                                                      §§goto(addr201);
-                                                   }
-                                                   §§goto(addr198);
-                                                }
-                                                §§goto(addr212);
-                                             }
-                                             §§goto(addr200);
-                                             addr304:
-                                             addr130:
-                                          }
-                                          §§goto(addr168);
-                                       }
-                                       §§goto(addr285);
-                                    }
-                                    §§goto(addr304);
-                                 }
-                                 §§goto(addr130);
-                              }
-                              §§goto(addr312);
-                           }
-                           §§goto(addr214);
-                        }
-                        catch(e:Error)
-                        {
-                           if(!(_loc7_ && param1))
-                           {
-                              §!>§.log("Unable to get local storage");
-                           }
-                           §§goto(addr336);
-                        }
-                        §§goto(addr388);
-                     }
-                     §§goto(addr53);
-                  }
-               }
-            }
-            if(_loc7_ && param1)
-            {
-               continue;
-            }
-            §§push(param2);
-            if(!_loc7_)
-            {
-               §§pop().§§slot[2] = §§pop();
-               §§goto(addr76);
-            }
-            §§goto(addr99);
+            return;
          }
+         var birdsToShow:Array = §1!_§();
+         try
+         {
+            if(storageName)
+            {
+               if(!§&!>§)
+               {
+                  §&!>§ = SharedObject.getLocal(storageName);
+               }
+               i = birdsToShow.length - 1;
+               while(i >= 0)
+               {
+                  birdName = birdsToShow[i];
+                  if(§&!>§.data[birdName] == undefined || §&!>§.data[birdName] == false)
+                  {
+                     §&!>§.data[birdName] = true;
+                  }
+                  else
+                  {
+                     birdsToShow.splice(i,1);
+                  }
+                  i--;
+               }
+               §&!>§.flush();
+            }
+         }
+         catch(e:Error)
+         {
+            §!>§.log("Unable to get local storage");
+         }
+         for each(birdName in birdsToShow)
+         {
+            §#![§(birdName,currentUIView);
+         }
+         §7!S§();
       }
       
       private static function §7!S§(param1:Boolean = true) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
+         if(!isOpen && §+!q§.length > 0)
          {
-            §§push(isOpen);
-            if(_loc3_)
-            {
-               §§push(!§§pop());
-               loop0:
-               while(true)
-               {
-                  if(§§pop())
-                  {
-                     loop3:
-                     while(true)
-                     {
-                        §§pop();
-                        addr95:
-                        while(true)
-                        {
-                           §§push(§+!q§.length > 0);
-                           if(!_loc2_)
-                           {
-                              break;
-                           }
-                           continue loop3;
-                        }
-                        if(!_loc3_)
-                        {
-                           continue loop0;
-                        }
-                     }
-                     addr94:
-                  }
-                  loop1:
-                  while(§§pop())
-                  {
-                     if(_loc3_)
-                     {
-                        if(!_loc2_)
-                        {
-                           isOpen = true;
-                           addr87:
-                           while(true)
-                           {
-                              §8[§ = §+!q§.pop();
-                              while(_loc3_ || §;!+§)
-                              {
-                                 §8[§.open(param1);
-                                 if(_loc3_ || param1)
-                                 {
-                                    break loop1;
-                                 }
-                              }
-                           }
-                           addr87:
-                        }
-                        else
-                        {
-                           §§goto(addr95);
-                        }
-                     }
-                     §§goto(addr87);
-                  }
-                  return;
-               }
-            }
-            §§goto(addr94);
+            isOpen = true;
+            §8[§ = §+!q§.pop();
+            §8[§.open(param1);
          }
-         §§goto(addr87);
       }
       
       public static function §=M§() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
+         if(isOpen == true)
          {
-            if(isOpen == true)
+            if(§+!q§.length > 0)
             {
-               loop0:
-               while(true)
-               {
-                  if(§+!q§.length <= 0)
-                  {
-                     isOpen = false;
-                     while(true)
-                     {
-                        §§push(§8[§);
-                        if(!_loc2_)
-                        {
-                           break;
-                        }
-                        §§push(true);
-                        if(_loc2_)
-                        {
-                           continue;
-                        }
-                        addr112:
-                        addr112:
-                        §§pop().preClose(§§pop());
-                        while(true)
-                        {
-                           isOpen = false;
-                           continue loop0;
-                        }
-                     }
-                     addr110:
-                     §§goto(addr112);
-                     §§push(false);
-                  }
-                  §§goto(addr110);
-               }
+               §8[§.preClose(false);
+               isOpen = false;
+               §7!S§(false);
             }
-            return;
+            else
+            {
+               isOpen = false;
+               §8[§.preClose(true);
+            }
          }
-         §§goto(addr112);
       }
    }
 }

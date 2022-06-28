@@ -23,56 +23,7 @@ package §^L§
       public static const § !Z§:int = 2;
       
       public static const §<!S§:int = 1;
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            §5!+§ = 0;
-            while(true)
-            {
-               §8!j§ = 6;
-               loop1:
-               while(true)
-               {
-                  §2!0§ = 7;
-                  loop2:
-                  while(true)
-                  {
-                     §!!-§ = 8;
-                     while(true)
-                     {
-                        § K§ = 3;
-                        addr96:
-                        while(true)
-                        {
-                           §&!2§ = 5;
-                           continue loop2;
-                        }
-                        addr55:
-                        if(_loc1_ || §0!J§)
-                        {
-                           continue loop1;
-                        }
-                     }
-                  }
-               }
-               if(!(_loc1_ || _loc1_))
-               {
-                  continue;
-               }
-               return;
-               addr38:
-            }
-         }
-         while(true)
-         {
-            § !Z§ = 2;
-            §§goto(addr53);
-         }
-         §§goto(addr38);
-      }
+       
       
       public var §4!W§:String;
       
@@ -102,47 +53,24 @@ package §^L§
       
       public function §0!J§(param1:String, param2:int, param3:LevelItemMaterial, param4:LevelItemSoundResource, param5:LevelItemShape, param6:int, param7:String, param8:Number, param9:Number, param10:Number, param11:Boolean = false, param12:String = "", param13:int = 1)
       {
-         var _loc14_:Boolean = true;
-         var _loc15_:Boolean = false;
-         if(!_loc15_)
+         super();
+         this.§4!W§ = param1;
+         this.§4i§ = param2;
+         this.§^;§ = param3;
+         this.§8@§ = param12;
+         this.§6!E§ = param13;
+         this.§'!T§ = param11;
+         this.§@C§ = param4;
+         this.§>!V§ = param5;
+         this.§&Q§ = new Integer(param6);
+         this.§`5§ = param7;
+         this.§!!T§ = param8;
+         if(this.§!!T§ <= 0)
          {
-            super();
-            while(true)
-            {
-               this.§4!W§ = param1;
-               while(true)
-               {
-                  this.§4i§ = param2;
-                  while(true)
-                  {
-                     this.§^;§ = param3;
-                     loop3:
-                     while(true)
-                     {
-                        this.§8@§ = param12;
-                        addr168:
-                        while(true)
-                        {
-                           this.§6!E§ = param13;
-                           addr163:
-                           while(true)
-                           {
-                              this.§'!T§ = param11;
-                              continue loop3;
-                           }
-                        }
-                     }
-                  }
-               }
-               if(_loc15_ && param1)
-               {
-                  continue;
-               }
-               this.§&Q§ = new Integer(param6);
-               §§goto(addr115);
-            }
+            this.§!!T§ = 1;
          }
-         §§goto(addr94);
+         this.§^V§ = param9;
+         this.§`§ = param10;
       }
       
       public function get front() : Boolean
@@ -222,59 +150,13 @@ package §^L§
       
       public function get shape() : LevelItemShape
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
          var _loc1_:Texture = null;
-         if(!(_loc2_ && _loc2_))
+         if(!this.§>!V§)
          {
-            §§push(this.§>!V§);
-            if(!_loc2_)
-            {
-               if(!§§pop())
-               {
-                  _loc1_ = §4!T§.§1t§.animationManager.getAnimation(this.§4!W§).getFrame(0).texture;
-                  addr33:
-                  if(_loc3_)
-                  {
-                     §§push(this);
-                     §§push(§§findproperty(LevelItemShape));
-                     §§push(this.§4!W§);
-                     §§push("Rectangle");
-                     §§push(_loc1_.width);
-                     if(_loc3_ || this)
-                     {
-                        §§push(LevelMain.§!5§);
-                        if(!_loc2_)
-                        {
-                           §§push(§§pop() * §§pop());
-                           if(!(_loc2_ && this))
-                           {
-                              addr94:
-                              §§push(§§pop() / 2);
-                           }
-                           §§push(_loc1_.height);
-                           if(_loc3_)
-                           {
-                              §§push(§§pop() * LevelMain.§!5§);
-                              if(!(_loc2_ && _loc2_))
-                              {
-                                 §§push(§§pop() / 2);
-                              }
-                           }
-                        }
-                        §§pop().§>!V§ = new §§pop().LevelItemShape(§§pop(),§§pop(),§§pop(),§§pop());
-                        addr117:
-                        return this.§>!V§;
-                        addr115:
-                     }
-                     §§goto(addr94);
-                  }
-               }
-               §§goto(addr115);
-            }
-            §§goto(addr117);
+            _loc1_ = §4!T§.§1t§.animationManager.getAnimation(this.§4!W§).getFrame(0).texture;
+            this.§>!V§ = new LevelItemShape(this.§4!W§,"Rectangle",_loc1_.width * LevelMain.§!5§ / 2,_loc1_.height * LevelMain.§!5§ / 2);
          }
-         §§goto(addr33);
+         return this.§>!V§;
       }
       
       public function get §3!,§() : LevelItemSoundResource

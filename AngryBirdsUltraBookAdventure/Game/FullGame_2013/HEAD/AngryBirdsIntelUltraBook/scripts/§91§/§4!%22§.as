@@ -14,40 +14,15 @@ package §91§
       
       public function §4!"§(param1:LevelMain, param2:String = null, param3:Boolean = true)
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(!(_loc4_ && this))
-         {
-            super(param1);
-         }
-         do
-         {
-            this.§!!A§ = param2;
-            do
-            {
-               this.§;!7§ = param3;
-            }
-            while(_loc4_ && param2);
-            
-         }
-         while(!_loc5_);
-         
+         super(param1);
+         this.§!!A§ = param2;
+         this.§;!7§ = param3;
       }
       
       override public function init() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            §`s§.initEmptyEnvironment(this.§!!A§,this.§;!7§);
-         }
-         do
-         {
-            §`s§.camera.initSlowScroll(this.§]"§);
-         }
-         while(_loc1_);
-         
+         §`s§.initEmptyEnvironment(this.§!!A§,this.§;!7§);
+         §`s§.camera.initSlowScroll(this.§]"§);
       }
    }
 }

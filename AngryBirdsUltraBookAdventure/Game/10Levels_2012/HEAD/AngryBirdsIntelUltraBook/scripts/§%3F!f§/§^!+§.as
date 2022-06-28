@@ -10,24 +10,9 @@ package §?!f§
       
       public function §^!+§(param1:int = -1, param2:Object = null)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!_loc3_)
-         {
-            super();
-            do
-            {
-               this.§]!Y§ = param1;
-               do
-               {
-                  this.§@n§ = param2;
-               }
-               while(_loc3_ && _loc3_);
-               
-            }
-            while(!_loc4_);
-            
-         }
+         super();
+         this.§]!Y§ = param1;
+         this.§@n§ = param2;
       }
       
       public function get type() : int
@@ -37,12 +22,7 @@ package §?!f§
       
       public function set type(param1:int) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!_loc3_)
-         {
-            this.§]!Y§ = param1;
-         }
+         this.§]!Y§ = param1;
       }
       
       public function get value() : Object
@@ -52,12 +32,7 @@ package §?!f§
       
       public function set value(param1:Object) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§@n§ = param1;
-         }
+         this.§@n§ = param1;
       }
    }
 }

@@ -18,355 +18,155 @@ package §_-Hb§
       public static var §_-1v§:XML;
       
       public static const §_-g7§:Boolean = true;
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            §_-qP§ = true;
-         }
-         do
-         {
-            §_-FF§ = "";
-            do
-            {
-               §_-g7§ = true;
-            }
-            while(_loc2_ && _loc2_);
-            
-         }
-         while(_loc2_);
-         
-      }
+       
       
       public function §_-ok§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function init(param1:String = null) : void
       {
-         var _loc7_:Boolean = true;
-         var _loc8_:Boolean = false;
-         if(!_loc8_)
+         if(§_-CT§ == null)
          {
-            if(§_-CT§ == null)
-            {
-               if(_loc7_)
-               {
-                  addr23:
-                  §_-FK§.log("Server configuration not avaialble");
-                  if(_loc7_ || _loc2_)
-                  {
-                     return;
-                  }
-               }
-            }
-            var _loc2_:XML = null;
-            if(_loc7_ || _loc3_)
-            {
-               if(param1 != null)
-               {
-                  if(!_loc8_)
-                  {
-                     _loc2_ = §_-PW§(param1,§_-CT§);
-                     §§goto(addr55);
-                  }
-                  §§goto(addr60);
-               }
-               addr55:
-               if(_loc2_ == null)
-               {
-                  if(_loc7_)
-                  {
-                     addr60:
-                     _loc2_ = §_-PW§(§_-CT§.Default[0].toString(),§_-CT§);
-                  }
-                  §§goto(addr105);
-               }
-               §§push(§_-FK§);
-               §§push("Using connection profile:");
-               if(!(_loc8_ && param1))
-               {
-                  §§push(§§pop() + _loc2_.Id[0]);
-               }
-               §§pop().log(§§pop());
-               if(!(_loc8_ && param1))
-               {
-                  §_-1v§ = _loc2_;
-               }
-               §§goto(addr105);
-            }
-            addr105:
-            var _loc3_:Class = §_-8O§[_loc2_.ConnectionType[0].toString()];
-            var _loc4_:Class = §_-15§[_loc2_.ResponseType[0].toString()];
-            var _loc5_:Number = Number(_loc2_.Port[0].toString());
-            if(!_loc8_)
-            {
-               if(_loc2_.ServerType[0] != null)
-               {
-                  if(_loc7_ || §_-ok§)
-                  {
-                     §_-FF§ = _loc2_.ServerType[0].toString();
-                  }
-               }
-            }
-            var _loc6_:String = _loc2_.Address[0].toString();
-            if(_loc7_)
-            {
-               §_-4z§ = new _loc3_(_loc6_,_loc5_);
-               do
-               {
-                  §_-ks§ = new _loc4_();
-                  do
-                  {
-                     §_-4z§.§_-Et§(§_-ks§.§_-Oi§,§_-ks§.§_-03N§);
-                  }
-                  while(_loc8_);
-                  
-               }
-               while(!_loc7_);
-               
-            }
+            §_-FK§.log("Server configuration not avaialble");
             return;
          }
-         §§goto(addr23);
+         var _loc2_:XML = null;
+         if(param1 != null)
+         {
+            _loc2_ = §_-PW§(param1,§_-CT§);
+         }
+         if(_loc2_ == null)
+         {
+            _loc2_ = §_-PW§(§_-CT§.Default[0].toString(),§_-CT§);
+         }
+         §_-FK§.log("Using connection profile:" + _loc2_.Id[0]);
+         §_-1v§ = _loc2_;
+         var _loc3_:Class = §_-8O§[_loc2_.ConnectionType[0].toString()];
+         var _loc4_:Class = §_-15§[_loc2_.ResponseType[0].toString()];
+         var _loc5_:Number = Number(_loc2_.Port[0].toString());
+         if(_loc2_.ServerType[0] != null)
+         {
+            §_-FF§ = _loc2_.ServerType[0].toString();
+         }
+         var _loc6_:String = _loc2_.Address[0].toString();
+         §_-4z§ = new _loc3_(_loc6_,_loc5_);
+         §_-ks§ = new _loc4_();
+         §_-4z§.§_-Et§(§_-ks§.§_-Oi§,§_-ks§.§_-03N§);
       }
       
       public static function §_-PW§(param1:String, param2:XML) : XML
       {
-         var _loc6_:Boolean = false;
-         var _loc7_:Boolean = true;
          var _loc3_:XML = null;
-         if(_loc7_)
+         if(param1 != null)
          {
-            if(param1 != null)
+            for each(_loc3_ in §_-CT§.Connection)
             {
-               §§goto(addr25);
-            }
-            return null;
-         }
-         addr25:
-         var _loc4_:int = 0;
-         var _loc5_:* = §_-CT§.Connection;
-         while(true)
-         {
-            for each(_loc3_ in _loc5_)
-            {
-               if(!_loc6_)
+               if(_loc3_.Id[0])
                {
-                  if(!_loc3_.Id[0])
+                  if(_loc3_.Id[0].toString().indexOf(param1) == 0)
                   {
-                     if(_loc6_)
-                     {
-                        break;
-                     }
-                  }
-                  else if(_loc3_.Id[0].toString().indexOf(param1) == 0)
-                  {
-                     if(!_loc6_)
-                     {
-                        break;
-                     }
+                     return _loc3_;
                   }
                }
-               continue;
             }
          }
-         return _loc3_;
+         return null;
       }
       
       public static function §_-Ji§() : XML
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
+         if(§_-1v§ == null || !§_-1v§.Directories)
          {
-            §§push(§_-1v§ == null);
-            if(_loc1_ || §_-ok§)
-            {
-               if(!§§pop())
-               {
-                  loop2:
-                  while(true)
-                  {
-                     §§pop();
-                     addr95:
-                     while(true)
-                     {
-                        §§push(!§_-1v§.Directories);
-                        if(_loc1_ || _loc1_)
-                        {
-                           break;
-                        }
-                        continue loop2;
-                     }
-                  }
-                  addr94:
-               }
-               while(§§pop())
-               {
-                  if(!(_loc2_ && _loc1_))
-                  {
-                     return null;
-                  }
-                  if(_loc1_ || _loc2_)
-                  {
-                     addr81:
-                     break;
-                  }
-                  §§goto(addr95);
-               }
-               return §_-1v§.Directories[0];
-            }
-            §§goto(addr94);
+            return null;
          }
-         §§goto(addr81);
+         return §_-1v§.Directories[0];
       }
       
       public static function §_-0-r§(param1:String, param2:Function = null) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(_loc3_ || param2)
-         {
-            §_-ks§.§_-0-r§(param1,param2);
-         }
+         §_-ks§.§_-0-r§(param1,param2);
       }
       
       public static function §_-pa§(param1:String, param2:Function) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_)
-         {
-            §_-ks§.§_-nZ§(param1).addCallback(param2);
-         }
+         §_-ks§.§_-nZ§(param1).addCallback(param2);
       }
       
       public static function §_-0--§(param1:String, param2:Function) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!_loc3_)
-         {
-            §_-ks§.§_-nZ§(param1).§_-tG§(param2);
-         }
+         §_-ks§.§_-nZ§(param1).§_-tG§(param2);
       }
       
       public static function sendRequest(param1:String, param2:Object) : void
       {
-         var _loc10_:Boolean = true;
-         var _loc11_:Boolean = false;
          var _loc3_:§_-5p§ = null;
          var _loc4_:* = null;
-         var _loc5_:String = null;
+         var _loc5_:* = null;
          var _loc6_:Number = NaN;
-         var _loc7_:String = null;
-         if(_loc10_)
+         var _loc7_:* = null;
+         if(§_-qP§)
          {
-            §§push(§_-qP§);
-            if(_loc10_)
+            if(§_-g7§)
             {
-               if(§§pop())
+               _loc4_ = "";
+               §_-FK§.log("URL sending...");
+               if(!§_-FF§ || §_-FF§ == "PHP")
                {
-                  loop0:
-                  while(true)
+                  _loc4_ = §_-4z§.§_-Os§() + "?C=" + param1;
+                  for(_loc5_ in param2)
                   {
-                     §§push(§_-g7§);
-                     addr131:
-                     while(§§pop())
-                     {
-                        while(true)
-                        {
-                           §§push("");
-                           addr133:
-                           while(true)
-                           {
-                              _loc4_ = §§pop();
-                              addr134:
-                              while(true)
-                              {
-                                 §_-FK§.log("URL sending...");
-                                 continue loop0;
-                              }
-                           }
-                        }
-                     }
-                     addr426:
-                     _loc3_ = §_-ks§.§_-nZ§(param1);
-                     if(_loc10_)
-                     {
-                        if(_loc3_.§_-r6§())
-                        {
-                           if(_loc10_)
-                           {
-                              §_-4z§.sendRequest(param1,param2);
-                              if(!_loc10_)
-                              {
-                              }
-                           }
-                        }
-                        else
-                        {
-                           §_-FK§.log("[Server] WARNING: Trying to send request using a disabled command");
-                        }
-                     }
+                     _loc4_ += "&" + _loc5_ + "=" + param2[_loc5_];
                   }
+                  §_-FK§.log(_loc4_);
                }
-               else
+               else if(§_-FF§ == "Google")
                {
-                  §§push(§_-FK§);
-                  §§push("[Server] WARNING: Currently disabled, not sending request for: ");
-                  if(!(_loc11_ && param2))
+                  _loc4_ = §_-4z§.§_-Os§() + param1;
+                  _loc6_ = 0;
+                  for(_loc7_ in param2)
                   {
-                     §§push(§§pop() + param1);
+                     if(_loc6_ == 0)
+                     {
+                        _loc4_ += "?";
+                     }
+                     else
+                     {
+                        _loc4_ += "&";
+                     }
+                     _loc4_ += _loc7_ + "=" + param2[_loc7_];
+                     _loc6_++;
                   }
-                  §§pop().log(§§pop());
+                  §_-FK§.log(_loc4_);
                }
-               §§goto(addr240);
             }
-            §§goto(addr131);
+            _loc3_ = §_-ks§.§_-nZ§(param1);
+            if(_loc3_.§_-r6§())
+            {
+               §_-4z§.sendRequest(param1,param2);
+            }
+            else
+            {
+               §_-FK§.log("[Server] WARNING: Trying to send request using a disabled command");
+            }
          }
-         §§goto(addr132);
+         else
+         {
+            §_-FK§.log("[Server] WARNING: Currently disabled, not sending request for: " + param1);
+         }
       }
       
       public static function §_-Ed§() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            §_-qP§ = true;
-            do
-            {
-               §_-4z§.§_-4n§();
-            }
-            while(!_loc2_);
-            
-         }
+         §_-qP§ = true;
+         §_-4z§.§_-4n§();
       }
       
       public static function §_-Ov§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            §_-qP§ = false;
-            do
-            {
-               §_-4z§.§_-03a§();
-            }
-            while(_loc2_);
-            
-         }
+         §_-qP§ = false;
+         §_-4z§.§_-03a§();
       }
       
       public static function §_-051§() : Boolean
@@ -376,22 +176,12 @@ package §_-Hb§
       
       public static function §break§(param1:String) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || §_-ok§)
-         {
-            §_-ks§.§_-nZ§(param1).§_-9k§(true);
-         }
+         §_-ks§.§_-nZ§(param1).§_-9k§(true);
       }
       
       public static function §_-mS§(param1:String) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc3_))
-         {
-            §_-ks§.§_-nZ§(param1).§_-9k§(false);
-         }
+         §_-ks§.§_-nZ§(param1).§_-9k§(false);
       }
       
       public static function §_-p3§() : String
@@ -401,13 +191,7 @@ package §_-Hb§
       
       public static function §_-UZ§() : Boolean
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         §§push(§_-CT§ == null);
-         if(!_loc2_)
-         {
-            return !§§pop();
-         }
+         return §_-CT§ != null;
       }
    }
 }

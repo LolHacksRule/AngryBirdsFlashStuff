@@ -8,18 +8,8 @@ package §&!'§
       
       public function §#!7§(param1:int)
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || param1)
-         {
-            super();
-         }
-         do
-         {
-            this.step = param1;
-         }
-         while(_loc2_ && this);
-         
+         super();
+         this.step = param1;
       }
       
       public static function initialize(param1:String) : §#!7§

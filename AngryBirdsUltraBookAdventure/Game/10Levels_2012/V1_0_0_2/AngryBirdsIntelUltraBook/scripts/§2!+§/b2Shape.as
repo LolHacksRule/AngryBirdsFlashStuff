@@ -33,60 +33,7 @@ package §2!+§
       public static const §&C§:int = 0;
       
       public static const §@J§:int = -1;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc2_))
-         {
-            §`5§ = -1;
-         }
-         loop0:
-         while(true)
-         {
-            §=! § = 0;
-            while(true)
-            {
-               §6!t§ = 1;
-               while(_loc2_ || _loc2_)
-               {
-                  §=Q§ = 2;
-                  do
-                  {
-                     §@!q§ = 3;
-                     do
-                     {
-                        §]!S§ = 1;
-                        loop5:
-                        do
-                        {
-                           §&C§ = 0;
-                           while(!_loc1_)
-                           {
-                              §@J§ = -1;
-                              if(_loc2_ || _loc2_)
-                              {
-                                 continue loop5;
-                              }
-                           }
-                           continue loop0;
-                        }
-                        while(_loc1_);
-                        
-                     }
-                     while(!(_loc2_ || _loc1_));
-                     
-                  }
-                  while(_loc1_ && _loc1_);
-                  
-                  if(_loc2_)
-                  {
-                     return;
-                  }
-               }
-            }
-         }
-      }
+       
       
       b2internal var §+!?§:int;
       
@@ -94,56 +41,26 @@ package §2!+§
       
       public function b2Shape()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            super();
-         }
-         do
-         {
-            this.§+!?§ = b2internal::`5;
-            do
-            {
-               this.§9!A§ = b2Settings.b2_linearSlop;
-            }
-            while(_loc2_);
-            
-         }
-         while(_loc2_ && this);
-         
+         super();
+         this.§+!?§ = b2internal::`5;
+         this.§9!A§ = b2Settings.b2_linearSlop;
       }
       
       public static function §7l§(param1:b2Shape, param2:b2Transform, param3:b2Shape, param4:b2Transform) : Boolean
       {
-         var _loc8_:Boolean = true;
-         var _loc9_:Boolean = false;
          var _loc5_:b2DistanceInput;
          (_loc5_ = new b2DistanceInput()).§]!O§ = new b2DistanceProxy();
-         if(!_loc9_)
-         {
-            _loc5_.§]!O§.Set(param1);
-            loop0:
-            while(true)
-            {
-               _loc5_.§&d§ = new b2DistanceProxy();
-               addr84:
-               while(true)
-               {
-                  _loc5_.§&d§.Set(param3);
-                  addr78:
-                  while(true)
-                  {
-                     _loc5_.§=!G§ = param2;
-                     continue loop0;
-                  }
-               }
-            }
-         }
-         while(true)
-         {
-            §§goto(addr44);
-         }
+         _loc5_.§]!O§.Set(param1);
+         _loc5_.§&d§ = new b2DistanceProxy();
+         _loc5_.§&d§.Set(param3);
+         _loc5_.§=!G§ = param2;
+         _loc5_.§"!O§ = param4;
+         _loc5_.§^1§ = true;
+         var _loc6_:b2SimplexCache;
+         (_loc6_ = new b2SimplexCache()).count = 0;
+         var _loc7_:b2DistanceOutput = new b2DistanceOutput();
+         b2Distance.§&7§(_loc7_,_loc6_,_loc5_);
+         return _loc7_.§8j§ < 10 * Number.MIN_VALUE;
       }
       
       public function Copy() : b2Shape
@@ -153,12 +70,7 @@ package §2!+§
       
       public function Set(param1:b2Shape) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && param1))
-         {
-            this.§9!A§ = param1.§9!A§;
-         }
+         this.§9!A§ = param1.§9!A§;
       }
       
       public function §2!r§() : int

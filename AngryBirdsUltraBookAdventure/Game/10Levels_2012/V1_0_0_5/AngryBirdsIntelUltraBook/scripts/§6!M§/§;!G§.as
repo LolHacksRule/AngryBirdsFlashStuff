@@ -21,237 +21,88 @@ package §6!M§
       private static var §+!U§:String = "";
       
       private static var § 7§:int = 0;
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && §;!G§))
-         {
-            §+!U§ = "";
-            do
-            {
-               § 7§ = 0;
-            }
-            while(!_loc1_);
-            
-         }
-      }
+       
       
       public function §;!G§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function load(param1:String, param2:String, param3:String) : void
       {
-         var _loc4_:Boolean = false;
-         var _loc5_:Boolean = true;
-         if(_loc5_ || param2)
+         §,Y§ = new §!e§();
+         §,Y§.dataFormat = URLLoaderDataFormat.TEXT;
+         §,Y§.addEventListener(Event.COMPLETE,§#6§);
+         §,Y§.addEventListener(IOErrorEvent.IO_ERROR,§5!`§);
+         §,Y§.addEventListener(SecurityErrorEvent.SECURITY_ERROR,§5!`§);
+         if(param1)
          {
-            §,Y§ = new §!e§();
+            §,Y§.load(§ v§.§<N§(AngryBirdsFP11.§8!`§ + "/init/" + param1 + "/" + param2 + "/" + param3 + "/" + (new Date().timezoneOffset / 60).toString()));
          }
-         loop0:
-         while(true)
+         else
          {
-            §§push(§,Y§);
-            loop1:
-            while(true)
-            {
-               §§pop().dataFormat = URLLoaderDataFormat.TEXT;
-               loop2:
-               while(true)
-               {
-                  §§push(§,Y§);
-                  loop3:
-                  while(true)
-                  {
-                     §§pop().addEventListener(Event.COMPLETE,§#6§);
-                     loop4:
-                     while(true)
-                     {
-                        if(_loc5_)
-                        {
-                           §§push(§,Y§);
-                           loop5:
-                           while(_loc5_)
-                           {
-                              §§pop().addEventListener(IOErrorEvent.IO_ERROR,§5!`§);
-                              loop6:
-                              do
-                              {
-                                 §§push(§,Y§);
-                                 do
-                                 {
-                                    §§pop().addEventListener(SecurityErrorEvent.SECURITY_ERROR,§5!`§);
-                                    while(true)
-                                    {
-                                       if(param1)
-                                       {
-                                          if(!_loc4_)
-                                          {
-                                             §§push(§,Y§);
-                                             break;
-                                          }
-                                          continue loop6;
-                                       }
-                                       §§push(§,Y§);
-                                       if(!_loc5_)
-                                       {
-                                          break;
-                                       }
-                                       if(!_loc4_)
-                                       {
-                                          §§pop().load(§ v§.§<N§(AngryBirdsFP11.§8!`§ + "/init"));
-                                          if(_loc5_ || param3)
-                                          {
-                                             if(_loc5_)
-                                             {
-                                                §§goto(addr25);
-                                             }
-                                             continue;
-                                          }
-                                          continue loop6;
-                                       }
-                                       continue loop5;
-                                    }
-                                 }
-                                 while(!(_loc5_ || param1));
-                                 
-                                 continue loop3;
-                              }
-                              while(_loc4_);
-                              
-                              if(!(_loc4_ && param2))
-                              {
-                                 break loop4;
-                              }
-                              continue loop4;
-                           }
-                           continue loop1;
-                        }
-                        continue loop2;
-                     }
-                     if(_loc5_)
-                     {
-                        addr25:
-                        return;
-                     }
-                     continue loop0;
-                  }
-               }
-            }
+            §,Y§.load(§ v§.§<N§(AngryBirdsFP11.§8!`§ + "/init"));
          }
       }
       
       protected static function §5!`§(param1:Event) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && §;!G§))
-         {
-            §§push(§§findproperty(§+!U§));
-            §§push("Can\'t contact server.\n");
-            if(_loc3_ || _loc3_)
-            {
-               §§push(§§pop() + param1.toString());
-            }
-            §§pop().§+!U§ = §§pop();
-            do
-            {
-               §,Y§ = null;
-            }
-            while(_loc2_);
-            
-         }
+         §+!U§ = "Can\'t contact server.\n" + param1.toString();
+         §,Y§ = null;
       }
       
       private static function §#6§(param1:Event) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         §§push(§§newactivation());
-         loop0:
-         while(true)
+         var serverResponse:String = null;
+         var bragObject:Object = null;
+         var e:Event = param1;
+         var threwError:Boolean = false;
+         serverResponse = String(§,Y§.data);
+         try
          {
-            §§push(null);
-            loop1:
-            while(true)
+            §4M§ = JSON.parse(serverResponse);
+            if(§4M§.error)
             {
-               §§push(§§pop());
-               while(true)
+               §+!U§ = "Server error of type \'" + §4M§.type + "\':\n" + §4M§.message;
+               if(§4M§.type == "OAuthException")
                {
-                  §§pop().§§slot[3] = §§pop();
-                  loop3:
-                  while(true)
-                  {
-                     §§push(§§newactivation());
-                     loop4:
-                     while(true)
-                     {
-                        §§push(null);
-                        if(_loc5_)
-                        {
-                           break;
-                        }
-                        §§pop().§§slot[4] = §§pop();
-                        loop5:
-                        while(true)
-                        {
-                           §§push(§§newactivation());
-                           loop6:
-                           while(!_loc5_)
-                           {
-                              §§pop().§§slot[1] = param1;
-                              loop7:
-                              while(true)
-                              {
-                                 addr57:
-                                 while(true)
-                                 {
-                                    §§push(§§newactivation());
-                                    addr59:
-                                    while(_loc6_)
-                                    {
-                                       §§pop().§§slot[2] = false;
-                                       while(true)
-                                       {
-                                          if(_loc6_)
-                                          {
-                                             continue loop5;
-                                          }
-                                          continue loop7;
-                                       }
-                                       continue loop0;
-                                    }
-                                    continue loop6;
-                                 }
-                                 continue loop3;
-                              }
-                           }
-                           continue loop4;
-                        }
-                     }
-                     continue loop1;
-                  }
+                  § 7§ = §%'§.§!D§;
                }
+               threwError = true;
             }
          }
+         catch(e:Error)
+         {
+            §+!U§ = "Invalid server response. Expected a json string but got this:\n" + serverResponse;
+            § 7§ = §%'§.§<!D§;
+            threwError = true;
+         }
+         if(!threwError)
+         {
+            §%!4§.§5!J§(§4M§.friends);
+            (AngryBirdsFP11.sUserProgress as §<[§).§90§(§4M§.state as Array,§4M§.user.name,§4M§.user.avatar,§4M§.user.userId,§4M§.eggs,§4M§.user.tutorials);
+            §2F§.§<d§.§`!c§(§4M§.excludedUserIds);
+            §2F§.§<d§.§-!M§(§4M§.deauthorizedUserIds);
+            if(§4M§.user.name == null)
+            {
+               throw new Error("User name cannot be null");
+            }
+            if(§4M§.user.ap == true)
+            {
+               §=r§.§[!3§("doAdParlorConversion");
+            }
+            §@!9§.§`3§(§4M§.friends);
+            for each(bragObject in §4M§.requests.brags)
+            {
+               §=r§.§[!3§("flashDeleteRequest",bragObject.r);
+            }
+         }
+         §,Y§ = null;
       }
       
       public static function get §2Q§() : Boolean
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         §§push(§,Y§ == null);
-         if(_loc1_ || §;!G§)
-         {
-            return !§§pop();
-         }
+         return §,Y§ != null;
       }
       
       private static function get data() : Object

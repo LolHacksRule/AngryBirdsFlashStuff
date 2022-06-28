@@ -13,24 +13,9 @@ package §2_§
       
       public function §[M§(param1:Texture, param2:Number)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(!_loc3_)
-         {
-            super();
-            do
-            {
-               this.§7a§ = new §-§(param1);
-               do
-               {
-                  this.§09§ = param2;
-               }
-               while(_loc3_);
-               
-            }
-            while(_loc3_);
-            
-         }
+         super();
+         this.§7a§ = new §-§(param1);
+         this.§09§ = param2;
       }
       
       public function get image() : §-§
@@ -45,81 +30,26 @@ package §2_§
       
       public function dispose() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
+         if(this.§7a§)
          {
-            §§push(this.§7a§);
-            if(_loc1_)
-            {
-               if(§§pop())
-               {
-                  loop0:
-                  while(true)
-                  {
-                     §§push(this.§7a§);
-                     addr59:
-                     addr51:
-                     while(true)
-                     {
-                        §§pop().dispose();
-                        do
-                        {
-                           this.§7a§ = null;
-                        }
-                        while(_loc2_ && this);
-                        
-                        if(!(_loc2_ && this))
-                        {
-                           break;
-                        }
-                        continue loop0;
-                     }
-                     §§goto(addr19);
-                  }
-               }
-               addr19:
-               return;
-            }
-            §§goto(addr59);
+            this.§7a§.dispose();
+            this.§7a§ = null;
          }
-         §§goto(addr51);
       }
       
       public function updateLifeTime(param1:Number) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc2_))
-         {
-            §§push(this);
-            §§push(this.§09§);
-            if(!_loc3_)
-            {
-               §§push(§§pop() - param1);
-            }
-            §§pop().§09§ = §§pop();
-         }
+         this.§09§ -= param1;
       }
       
       public function §+q§(param1:Number) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || _loc2_)
-         {
-            this.§09§ = param1;
-         }
+         this.§09§ = param1;
       }
       
       public function §@i§(param1:Texture) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§7a§.texture = param1;
-         }
+         this.§7a§.texture = param1;
       }
    }
 }

@@ -14,40 +14,15 @@ package §9!H§
       
       public function §@1§(param1:LevelMain, param2:String = null, param3:Boolean = true)
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(!(_loc5_ && param2))
-         {
-            super(param1);
-         }
-         while(true)
-         {
-            this.§]A§ = param2;
-            while(!_loc5_)
-            {
-               this.§#!c§ = param3;
-               if(_loc4_)
-               {
-                  return;
-               }
-            }
-         }
+         super(param1);
+         this.§]A§ = param2;
+         this.§#!c§ = param3;
       }
       
       override public function init() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            §6f§.initEmptyEnvironment(this.§]A§,this.§#!c§);
-            do
-            {
-               §6f§.camera.initSlowScroll(this.§>K§);
-            }
-            while(!_loc1_);
-            
-         }
+         §6f§.initEmptyEnvironment(this.§]A§,this.§#!c§);
+         §6f§.camera.initSlowScroll(this.§>K§);
       }
    }
 }

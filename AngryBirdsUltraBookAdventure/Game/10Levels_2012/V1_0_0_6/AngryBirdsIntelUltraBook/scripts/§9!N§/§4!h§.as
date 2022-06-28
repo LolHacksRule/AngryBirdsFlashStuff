@@ -28,79 +28,12 @@ package §9!N§
       
       public function §4!h§()
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || _loc1_)
-         {
-            super();
-            if(!(_loc2_ && this))
-            {
-               §§push(this);
-               §§push(this);
-               §§push(this);
-               §§push(this.§45§ = 0);
-               if(!(_loc2_ && _loc1_))
-               {
-                  var _loc1_:*;
-                  §§push(_loc1_ = §§pop());
-               }
-               §§pop().rotation = §§pop();
-               §§push(_loc1_);
-               if(_loc3_)
-               {
-                  §§push(_loc1_ = §§pop());
-               }
-               §§pop().y = §§pop();
-               §§pop().x = _loc1_;
-               if(!_loc2_)
-               {
-                  §§push(this);
-                  §§push(this);
-                  §§push(this);
-                  §§push(this.scaleY = 1);
-                  if(_loc3_ || _loc3_)
-                  {
-                     §§push(_loc1_ = §§pop());
-                  }
-                  §§pop().scaleX = §§pop();
-                  §§push(_loc1_);
-                  if(_loc3_)
-                  {
-                     §§push(_loc1_ = §§pop());
-                  }
-                  §§pop().alpha = §§pop();
-                  §§pop().§3!&§ = _loc1_;
-                  if(!(_loc2_ && _loc3_))
-                  {
-                     this.red = 1;
-                     loop1:
-                     while(true)
-                     {
-                        this.green = 1;
-                        addr145:
-                        while(true)
-                        {
-                           this.blue = 1;
-                           if(!_loc2_)
-                           {
-                              if(_loc3_ || _loc1_)
-                              {
-                                 break;
-                              }
-                              continue loop1;
-                           }
-                        }
-                     }
-                     addr122:
-                     addr149:
-                  }
-                  return;
-               }
-               §§goto(addr145);
-            }
-            §§goto(addr122);
-         }
-         §§goto(addr149);
+         super();
+         this.x = this.y = this.rotation = this.§45§ = 0;
+         this.§3!&§ = this.alpha = this.scaleX = this.scaleY = 1;
+         this.red = 1;
+         this.green = 1;
+         this.blue = 1;
       }
    }
 }

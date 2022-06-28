@@ -10,94 +10,32 @@ package §;%§
       
       public function b2Transform(param1:b2Vec2 = null, param2:b2Mat22 = null)
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_)
+         this.position = new b2Vec2();
+         this.R = new b2Mat22();
+         super();
+         if(param1)
          {
-            this.position = new b2Vec2();
-            loop0:
-            while(true)
-            {
-               this.R = new b2Mat22();
-               while(true)
-               {
-                  super();
-                  while(true)
-                  {
-                     if(_loc4_)
-                     {
-                        if(!param1)
-                        {
-                           break;
-                        }
-                        if(_loc3_)
-                        {
-                           do
-                           {
-                              this.R.§^p§(param2);
-                           }
-                           while(!_loc4_);
-                           
-                           break;
-                        }
-                        addr70:
-                        continue;
-                     }
-                     continue loop0;
-                  }
-                  return;
-               }
-            }
+            this.position.SetV(param1);
+            this.R.§^p§(param2);
          }
-         §§goto(addr70);
       }
       
       public function §'K§(param1:b2Vec2, param2:b2Mat22) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(!_loc4_)
-         {
-            this.position.SetV(param1);
-            do
-            {
-               this.R.§^p§(param2);
-            }
-            while(_loc4_ && this);
-            
-         }
+         this.position.SetV(param1);
+         this.R.§^p§(param2);
       }
       
       public function §9!O§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && this))
-         {
-            this.position.§&!K§();
-            do
-            {
-               this.R.§9!O§();
-            }
-            while(!_loc1_);
-            
-         }
+         this.position.§&!K§();
+         this.R.§9!O§();
       }
       
       public function Set(param1:b2Transform) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.position.SetV(param1.position);
-         }
-         do
-         {
-            this.R.§^p§(param1.R);
-         }
-         while(_loc3_ && param1);
-         
+         this.position.SetV(param1.position);
+         this.R.§^p§(param1.R);
       }
       
       public function GetAngle() : Number

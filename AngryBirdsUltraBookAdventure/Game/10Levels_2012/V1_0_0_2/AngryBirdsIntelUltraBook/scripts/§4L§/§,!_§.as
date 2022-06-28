@@ -20,441 +20,101 @@ package §4L§
       
       public function §,!_§(param1:Number, param2:Number, param3:Number, param4:Number, param5:Number = NaN, param6:Number = NaN)
       {
-         var _loc8_:Boolean = false;
-         var _loc9_:Boolean = true;
-         if(!_loc8_)
-         {
-            §§push(param5);
-            loop0:
-            while(true)
-            {
-               §§push(Number(§§pop()));
-               loop1:
-               while(true)
-               {
-                  §§push(§§pop());
-                  loop2:
-                  while(true)
-                  {
-                     if(§§pop())
-                     {
-                        while(true)
-                        {
-                           §§push(Number(§§pop()));
-                           while(true)
-                           {
-                              if(_loc9_ || param1)
-                              {
-                                 param5 = §§pop();
-                                 loop8:
-                                 while(true)
-                                 {
-                                    §§push(param6);
-                                    loop9:
-                                    while(true)
-                                    {
-                                       §§push(Number(§§pop()));
-                                       addr99:
-                                       loop10:
-                                       while(true)
-                                       {
-                                          §§push(§§pop());
-                                          if(!_loc9_)
-                                          {
-                                             break;
-                                          }
-                                          if(§§pop())
-                                          {
-                                             while(true)
-                                             {
-                                                addr70:
-                                                while(true)
-                                                {
-                                                   §§push(Number(§§pop()));
-                                                   addr71:
-                                                   while(true)
-                                                   {
-                                                      if(!(_loc8_ && this))
-                                                      {
-                                                         if(_loc9_ || this)
-                                                         {
-                                                            continue loop9;
-                                                         }
-                                                         continue loop10;
-                                                      }
-                                                   }
-                                                }
-                                             }
-                                             addr69:
-                                          }
-                                          while(true)
-                                          {
-                                             if(_loc9_)
-                                             {
-                                                §§pop();
-                                                continue loop8;
-                                             }
-                                             continue loop0;
-                                             §§goto(addr71);
-                                          }
-                                          continue loop1;
-                                       }
-                                       continue loop2;
-                                    }
-                                 }
-                                 addr143:
-                              }
-                              else
-                              {
-                                 while(true)
-                                 {
-                                    §§pop();
-                                 }
-                                 addr148:
-                              }
-                              while(true)
-                              {
-                                 §§goto(addr117);
-                              }
-                           }
-                        }
-                     }
-                     §§goto(addr148);
-                  }
-               }
-            }
-         }
-         §§goto(addr143);
+         param5 = Number(param5) || Number(AngryBirdsFP11.§3!a§.getAppWidth());
+         param6 = Number(param6) || Number(AngryBirdsFP11.§3!a§.getAppHeight());
+         super();
+         var _loc7_:ColorTransform;
+         (_loc7_ = new ColorTransform()).redOffset = param1;
+         _loc7_.greenOffset = param2;
+         _loc7_.blueOffset = param3;
+         transform.colorTransform = _loc7_;
+         graphics.beginFill(0,1);
+         graphics.drawRect(-param5,-param6,param5 * 2,param6 * 2);
+         scaleX = 100;
+         scaleY = 100;
+         graphics.endFill();
+         this.mNewAlpha = param4;
+         alpha = param4;
+         this.mouseEnabled = true;
+         AngryBirdsFP11.§3!a§.addEventListener(Event.ENTER_FRAME,this.onEnterFrame);
       }
       
       public function §"!h§(param1:Number, param2:Number, param3:Number, param4:Number = 0.3) : void
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(!(_loc5_ && param2))
+         if(this.§-<§)
          {
-            if(!this.§-<§)
-            {
-               loop0:
-               while(true)
-               {
-                  §§push(this.get);
-                  if(!_loc5_)
-                  {
-                     if(§§pop())
-                     {
-                        addr181:
-                        while(true)
-                        {
-                           §§push(this.get);
-                           addr183:
-                           while(true)
-                           {
-                              §§pop().stop();
-                              addr184:
-                              while(true)
-                              {
-                              }
-                           }
-                        }
-                        addr181:
-                     }
-                     loop1:
-                     while(true)
-                     {
-                        this.§]u§ = new ColorTransform();
-                        while(true)
-                        {
-                           this.§]u§.redOffset = transform.colorTransform.redOffset;
-                           loop3:
-                           while(true)
-                           {
-                              this.§]u§.greenOffset = transform.colorTransform.greenOffset;
-                              loop4:
-                              while(true)
-                              {
-                                 this.§]u§.blueOffset = transform.colorTransform.blueOffset;
-                                 loop5:
-                                 while(!(_loc5_ && param3))
-                                 {
-                                    this.get = §,!b§.§<d§.§>a§(this.§]u§,{
-                                       "redOffset":param1,
-                                       "greenOffset":param2,
-                                       "blueOffset":param3
-                                    },null,param4);
-                                    loop6:
-                                    for(; _loc6_; while(true)
-                                    {
-                                       if(_loc6_ || param1)
-                                       {
-                                          continue loop5;
-                                       }
-                                       continue loop6;
-                                       §§goto(addr40);
-                                    },continue loop5)
-                                    {
-                                       §§push(this.get);
-                                       while(!_loc5_)
-                                       {
-                                          §§pop().onComplete = this.§4d§;
-                                          §§push(this.get);
-                                          continue loop6;
-                                          if(_loc6_ || param1)
-                                          {
-                                             §§pop().play();
-                                             while(true)
-                                             {
-                                                if(_loc5_)
-                                                {
-                                                   continue loop4;
-                                                }
-                                                if(_loc6_)
-                                                {
-                                                   if(_loc5_)
-                                                   {
-                                                      return;
-                                                   }
-                                                   addr188:
-                                                   continue;
-                                                }
-                                                §§goto(addr181);
-                                             }
-                                             continue loop1;
-                                          }
-                                       }
-                                    }
-                                    continue loop3;
-                                    if(!(_loc6_ || this))
-                                    {
-                                       continue;
-                                    }
-                                    §§goto(addr107);
-                                 }
-                                 continue loop0;
-                              }
-                           }
-                        }
-                     }
-                  }
-                  §§goto(addr183);
-               }
-            }
-            §§goto(addr188);
+            return;
          }
-         §§goto(addr181);
+         if(this.get)
+         {
+            this.get.stop();
+         }
+         this.§]u§ = new ColorTransform();
+         this.§]u§.redOffset = transform.colorTransform.redOffset;
+         this.§]u§.greenOffset = transform.colorTransform.greenOffset;
+         this.§]u§.blueOffset = transform.colorTransform.blueOffset;
+         this.get = §,!b§.§<d§.§>a§(this.§]u§,{
+            "redOffset":param1,
+            "greenOffset":param2,
+            "blueOffset":param3
+         },null,param4);
+         this.get.onComplete = this.§4d§;
+         this.get.play();
+         this.§-<§ = true;
       }
       
       public function §]f§(param1:Number) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.mNewAlpha = param1;
-            do
-            {
-               alpha = param1;
-            }
-            while(!_loc3_);
-            
-         }
+         this.mNewAlpha = param1;
+         alpha = param1;
       }
       
       public function §7!+§(param1:Number, param2:Number = 0.5) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_ || param2)
+         if(this.get != null)
          {
-            §§push(this.get);
-            if(_loc4_ || param2)
-            {
-               if(§§pop() != null)
-               {
-                  addr127:
-                  while(true)
-                  {
-                     §§push(this.get);
-                     addr129:
-                     while(true)
-                     {
-                        §§pop().stop();
-                        addr130:
-                        while(true)
-                        {
-                        }
-                     }
-                  }
-                  addr127:
-               }
-               loop0:
-               while(true)
-               {
-                  this.get = §,!b§.§<d§.§>a§(this,{"mNewAlpha":param1},null,param2);
-                  while(true)
-                  {
-                     §§push(this.get);
-                     while(true)
-                     {
-                        §§pop().onComplete = this.§-!t§;
-                        loop3:
-                        while(!(_loc3_ && _loc3_))
-                        {
-                           §§push(this.get);
-                           loop4:
-                           while(true)
-                           {
-                              §§pop().§-3§ = false;
-                              addr69:
-                              while(true)
-                              {
-                                 if(_loc3_)
-                                 {
-                                    continue loop3;
-                                 }
-                                 if(_loc4_ || _loc3_)
-                                 {
-                                    continue loop4;
-                                 }
-                                 §§goto(addr127);
-                              }
-                           }
-                        }
-                        continue loop0;
-                     }
-                  }
-               }
-            }
-            §§goto(addr129);
+            this.get.stop();
          }
-         §§goto(addr127);
+         this.get = §,!b§.§<d§.§>a§(this,{"mNewAlpha":param1},null,param2);
+         this.get.onComplete = this.§-!t§;
+         this.get.§-3§ = false;
+         this.get.play();
       }
       
       private function §-!t§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            dispatchEvent(new ColorFadeLayerEvent(ColorFadeLayerEvent.§5!t§));
-         }
+         dispatchEvent(new ColorFadeLayerEvent(ColorFadeLayerEvent.§5!t§));
       }
       
       private function §4d§() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc2_)
-         {
-            this.§-<§ = false;
-         }
+         this.§-<§ = false;
       }
       
       private function onEnterFrame(param1:Event) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || _loc3_)
+         if(this.§]u§)
          {
-            if(this.§]u§)
+            transform.colorTransform = this.§]u§;
+            if(!this.§-<§)
             {
-               while(true)
-               {
-                  transform.colorTransform = this.§]u§;
-                  loop1:
-                  while(true)
-                  {
-                     if(!this.§-<§)
-                     {
-                        while(true)
-                        {
-                           this.§]u§ = null;
-                           addr84:
-                           while(!_loc2_)
-                           {
-                           }
-                           continue loop1;
-                        }
-                        addr81:
-                     }
-                  }
-                  addr53:
-                  if(!(_loc3_ || _loc3_))
-                  {
-                     continue;
-                  }
-                  while(true)
-                  {
-                     alpha = this.mNewAlpha;
-                     addr74:
-                     while(true)
-                     {
-                        if(!_loc3_)
-                        {
-                           §§goto(addr81);
-                        }
-                        §§goto(addr25);
-                     }
-                  }
-                  addr70:
-               }
+               this.§]u§ = null;
             }
-            while(alpha != this.mNewAlpha)
-            {
-               if(!(_loc2_ && this))
-               {
-                  if(!_loc2_)
-                  {
-                     §§goto(addr53);
-                  }
-                  §§goto(addr84);
-               }
-               §§goto(addr74);
-            }
-            addr25:
-            return;
          }
-         §§goto(addr70);
+         if(alpha != this.mNewAlpha)
+         {
+            alpha = this.mNewAlpha;
+         }
       }
       
       public function clean() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
+         AngryBirdsFP11.§3!a§.removeEventListener(Event.ENTER_FRAME,this.onEnterFrame);
+         if(this.get)
          {
-            AngryBirdsFP11.§3!a§.removeEventListener(Event.ENTER_FRAME,this.onEnterFrame);
-            while(true)
-            {
-               §§push(this.get);
-               if(!(_loc2_ && this))
-               {
-                  if(§§pop())
-                  {
-                     if(_loc1_ || this)
-                     {
-                        if(!_loc2_)
-                        {
-                           §§push(this.get);
-                           break;
-                        }
-                        continue;
-                     }
-                     do
-                     {
-                        this.get = null;
-                     }
-                     while(_loc2_);
-                     
-                     addr78:
-                  }
-                  return;
-               }
-               break;
-            }
-            §§pop().stop();
+            this.get.stop();
+            this.get = null;
          }
-         §§goto(addr78);
       }
    }
 }

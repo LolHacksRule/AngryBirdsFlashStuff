@@ -31,96 +31,19 @@ package §[!N§
       
       public function b2FrictionJoint(param1:b2FrictionJointDef)
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§^!i§ = new b2Vec2();
-            loop0:
-            while(true)
-            {
-               this.§?!5§ = new b2Vec2();
-               loop1:
-               while(true)
-               {
-                  this.§=_§ = new b2Mat22();
-                  while(true)
-                  {
-                     this.§%M§ = new b2Vec2();
-                     loop3:
-                     for(; !(_loc2_ && param1); loop6:
-                     for(; _loc3_ || _loc2_; if(!(_loc3_ || this))
-                     {
-                        continue;
-                     },§§goto(addr72))
-                     {
-                        while(true)
-                        {
-                           this.§=_§.§%&§();
-                           loop8:
-                           while(true)
-                           {
-                              this.§>5§ = 0;
-                              while(true)
-                              {
-                                 this.§%M§.§%&§();
-                                 while(_loc3_)
-                                 {
-                                    this.§]a§ = 0;
-                                    while(true)
-                                    {
-                                       if(_loc3_)
-                                       {
-                                          continue loop6;
-                                       }
-                                       continue loop8;
-                                       addr36:
-                                       if(_loc3_ || _loc2_)
-                                       {
-                                          return;
-                                       }
-                                    }
-                                    continue loop6;
-                                    for(; !(_loc2_ && this); this.§7!X§ = param1.maxTorque,if(_loc2_ && _loc3_)
-                                    {
-                                       continue;
-                                    },§§goto(addr36))
-                                    {
-                                       if(!_loc2_)
-                                       {
-                                          continue;
-                                       }
-                                       §§goto(addr134);
-                                    }
-                                 }
-                              }
-                           }
-                        }
-                     })
-                     {
-                        super(param1);
-                        while(true)
-                        {
-                           this.§^!i§.SetV(param1.§9!9§);
-                           addr134:
-                           while(!_loc2_)
-                           {
-                              this.§?!5§.SetV(param1.§^G§);
-                              continue loop3;
-                           }
-                           addr72:
-                           continue loop1;
-                           if(!(_loc2_ && _loc3_))
-                           {
-                              continue loop0;
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr127);
+         this.§^!i§ = new b2Vec2();
+         this.§?!5§ = new b2Vec2();
+         this.§=_§ = new b2Mat22();
+         this.§%M§ = new b2Vec2();
+         super(param1);
+         this.§^!i§.SetV(param1.§9!9§);
+         this.§?!5§.SetV(param1.§^G§);
+         this.§=_§.§%&§();
+         this.§>5§ = 0;
+         this.§%M§.§%&§();
+         this.§]a§ = 0;
+         this.§[!Y§ = param1.§4!G§;
+         this.§7!X§ = param1.maxTorque;
       }
       
       override public function GetAnchorA() : b2Vec2
@@ -135,49 +58,17 @@ package §[!N§
       
       override public function GetReactionForce(param1:Number) : b2Vec2
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         §§push(§§findproperty(b2Vec2));
-         §§push(param1);
-         if(_loc2_ || param1)
-         {
-            §§push(this.§%M§.x);
-            if(!(_loc3_ && param1))
-            {
-               §§goto(addr46);
-            }
-            §§goto(addr49);
-         }
-         addr46:
-         §§push(§§pop() * §§pop());
-         §§push(param1);
-         if(_loc2_)
-         {
-            addr49:
-            §§push(§§pop() * this.§%M§.y);
-         }
-         return new §§pop().b2Vec2(§§pop(),§§pop());
+         return new b2Vec2(param1 * this.§%M§.x,param1 * this.§%M§.y);
       }
       
       override public function GetReactionTorque(param1:Number) : Number
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         §§push(param1);
-         if(_loc3_)
-         {
-            return §§pop() * this.§]a§;
-         }
+         return param1 * this.§]a§;
       }
       
       public function §`n§(param1:Number) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc2_))
-         {
-            this.§[!Y§ = param1;
-         }
+         this.§[!Y§ = param1;
       }
       
       public function § !#§() : Number
@@ -187,12 +78,7 @@ package §[!N§
       
       public function §]7§(param1:Number) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§7!X§ = param1;
-         }
+         this.§7!X§ = param1;
       }
       
       public function §23§() : Number
@@ -202,13 +88,11 @@ package §[!N§
       
       override b2internal function InitVelocityConstraints(param1:b2TimeStep) : void
       {
-         var _loc16_:Boolean = true;
-         var _loc17_:Boolean = false;
          var _loc2_:b2Mat22 = null;
-         var _loc3_:* = NaN;
+         var _loc3_:Number = NaN;
          var _loc4_:b2Body = null;
          var _loc5_:b2Body = null;
-         var _loc6_:* = NaN;
+         var _loc6_:Number = NaN;
          var _loc8_:Number = NaN;
          var _loc10_:Number = NaN;
          var _loc12_:Number = NaN;
@@ -218,239 +102,114 @@ package §[!N§
          _loc4_ = b2internal::^^;
          _loc5_ = b2internal::7!<;
          _loc2_ = _loc4_.m_xf.R;
-         if(!(_loc17_ && _loc2_))
+         _loc6_ = this.§^!i§.x - _loc4_.m_sweep.localCenter.x;
+         var _loc7_:Number = this.§^!i§.y - _loc4_.m_sweep.localCenter.y;
+         _loc3_ = _loc2_.col1.x * _loc6_ + _loc2_.col2.x * _loc7_;
+         _loc7_ = _loc2_.col1.y * _loc6_ + _loc2_.col2.y * _loc7_;
+         _loc6_ = _loc3_;
+         _loc2_ = _loc5_.m_xf.R;
+         _loc8_ = this.§?!5§.x - _loc5_.m_sweep.localCenter.x;
+         var _loc9_:Number = this.§?!5§.y - _loc5_.m_sweep.localCenter.y;
+         _loc3_ = _loc2_.col1.x * _loc8_ + _loc2_.col2.x * _loc9_;
+         _loc9_ = _loc2_.col1.y * _loc8_ + _loc2_.col2.y * _loc9_;
+         _loc8_ = _loc3_;
+         _loc10_ = _loc4_.§1!X§;
+         var _loc11_:Number = _loc5_.§1!X§;
+         _loc12_ = _loc4_.§^!B§;
+         _loc13_ = _loc5_.§^!B§;
+         (_loc14_ = new b2Mat22()).col1.x = _loc10_ + _loc11_;
+         _loc14_.col2.x = 0;
+         _loc14_.col1.y = 0;
+         _loc14_.col2.y = _loc10_ + _loc11_;
+         _loc14_.col1.x += _loc12_ * _loc7_ * _loc7_;
+         _loc14_.col2.x += -_loc12_ * _loc6_ * _loc7_;
+         _loc14_.col1.y += -_loc12_ * _loc6_ * _loc7_;
+         _loc14_.col2.y += _loc12_ * _loc6_ * _loc6_;
+         _loc14_.col1.x += _loc13_ * _loc9_ * _loc9_;
+         _loc14_.col2.x += -_loc13_ * _loc8_ * _loc9_;
+         _loc14_.col1.y += -_loc13_ * _loc8_ * _loc9_;
+         _loc14_.col2.y += _loc13_ * _loc8_ * _loc8_;
+         _loc14_.§+!s§(this.§=_§);
+         this.§>5§ = _loc12_ + _loc13_;
+         if(this.§>5§ > 0)
          {
-            §§push(this.§^!i§);
-            if(!_loc17_)
-            {
-               §§push(§§pop().x);
-               if(_loc16_)
-               {
-                  §§push(_loc4_.m_sweep);
-                  if(!(_loc17_ && this))
-                  {
-                     §§push(§§pop().localCenter);
-                     if(!_loc17_)
-                     {
-                        §§push(§§pop().x);
-                        if(!(_loc17_ && _loc3_))
-                        {
-                           §§push(§§pop() - §§pop());
-                           if(!_loc17_)
-                           {
-                              §§push(Number(§§pop()));
-                              if(_loc16_)
-                              {
-                                 _loc6_ = §§pop();
-                                 addr97:
-                                 §§push(this.§^!i§.y);
-                                 if(_loc16_ || _loc3_)
-                                 {
-                                    addr109:
-                                    §§push(§§pop() - _loc4_.m_sweep.localCenter.y);
-                                    if(!(_loc17_ && param1))
-                                    {
-                                       §§push(Number(§§pop()));
-                                    }
-                                 }
-                              }
-                           }
-                           var _loc7_:* = §§pop();
-                           if(!(_loc17_ && _loc2_))
-                           {
-                              §§push(_loc2_.col1);
-                              loop0:
-                              while(true)
-                              {
-                                 §§push(§§pop().x);
-                                 addr225:
-                                 while(true)
-                                 {
-                                    §§push(_loc6_);
-                                    if(!(_loc17_ && param1))
-                                    {
-                                       §§push(§§pop() * §§pop());
-                                       while(true)
-                                       {
-                                          §§push(_loc2_.col2);
-                                          addr236:
-                                          while(true)
-                                          {
-                                             §§push(§§pop().x);
-                                             addr237:
-                                             while(true)
-                                             {
-                                                §§push(_loc7_);
-                                                addr238:
-                                                while(true)
-                                                {
-                                                   §§push(§§pop() * §§pop());
-                                                }
-                                             }
-                                          }
-                                       }
-                                       addr234:
-                                    }
-                                    addr239:
-                                    while(true)
-                                    {
-                                       §§push(§§pop() + §§pop());
-                                       if(_loc16_)
-                                       {
-                                          §§push(Number(§§pop()));
-                                       }
-                                       addr243:
-                                       while(true)
-                                       {
-                                          _loc3_ = §§pop();
-                                          addr244:
-                                          while(true)
-                                          {
-                                             continue loop0;
-                                          }
-                                       }
-                                    }
-                                 }
-                              }
-                           }
-                           §§goto(addr153);
-                        }
-                     }
-                  }
-               }
-               §§goto(addr109);
-            }
+            this.§>5§ = 1 / this.§>5§;
          }
-         §§goto(addr97);
+         if(param1.§9!G§)
+         {
+            this.§%M§.x *= param1.§&t§;
+            this.§%M§.y *= param1.§&t§;
+            this.§]a§ *= param1.§&t§;
+            _loc15_ = this.§%M§;
+            _loc4_.§9!§.x -= _loc10_ * _loc15_.x;
+            _loc4_.§9!§.y -= _loc10_ * _loc15_.y;
+            _loc4_.m_angularVelocity -= _loc12_ * (_loc6_ * _loc15_.y - _loc7_ * _loc15_.x + this.§]a§);
+            _loc5_.§9!§.x += _loc11_ * _loc15_.x;
+            _loc5_.§9!§.y += _loc11_ * _loc15_.y;
+            _loc5_.m_angularVelocity += _loc13_ * (_loc8_ * _loc15_.y - _loc9_ * _loc15_.x + this.§]a§);
+         }
+         else
+         {
+            this.§%M§.§%&§();
+            this.§]a§ = 0;
+         }
       }
       
       override b2internal function SolveVelocityConstraints(param1:b2TimeStep) : void
       {
-         var _loc26_:Boolean = false;
-         var _loc27_:Boolean = true;
          var _loc2_:b2Mat22 = null;
-         var _loc3_:* = NaN;
+         var _loc3_:Number = NaN;
          var _loc18_:Number = NaN;
          var _loc4_:b2Body = b2internal::^^;
          var _loc5_:b2Body = b2internal::7!<;
          var _loc6_:b2Vec2 = _loc4_.§9!§;
-         §§push(_loc4_.m_angularVelocity);
-         if(_loc27_)
-         {
-            §§push(Number(§§pop()));
-         }
-         var _loc7_:* = §§pop();
+         var _loc7_:Number = _loc4_.m_angularVelocity;
          var _loc8_:b2Vec2 = _loc5_.§9!§;
-         §§push(_loc5_.m_angularVelocity);
-         if(_loc27_)
-         {
-            §§push(Number(§§pop()));
-         }
-         var _loc9_:* = §§pop();
-         §§push(_loc4_.§1!X§);
-         if(!_loc26_)
-         {
-            §§push(Number(§§pop()));
-         }
-         var _loc10_:* = §§pop();
-         §§push(_loc5_.§1!X§);
-         if(_loc27_)
-         {
-            §§push(Number(§§pop()));
-         }
-         var _loc11_:* = §§pop();
-         §§push(_loc4_.§^!B§);
-         if(_loc27_)
-         {
-            §§push(Number(§§pop()));
-         }
-         var _loc12_:* = §§pop();
-         §§push(_loc5_.§^!B§);
-         if(!(_loc26_ && _loc2_))
-         {
-            §§push(Number(§§pop()));
-         }
-         var _loc13_:* = §§pop();
+         var _loc9_:Number = _loc5_.m_angularVelocity;
+         var _loc10_:Number = _loc4_.§1!X§;
+         var _loc11_:Number = _loc5_.§1!X§;
+         var _loc12_:Number = _loc4_.§^!B§;
+         var _loc13_:Number = _loc5_.§^!B§;
          _loc2_ = _loc4_.m_xf.R;
-         §§push(this.§^!i§.x);
-         if(_loc27_ || this)
+         var _loc14_:Number = this.§^!i§.x - _loc4_.m_sweep.localCenter.x;
+         var _loc15_:Number = this.§^!i§.y - _loc4_.m_sweep.localCenter.y;
+         _loc3_ = _loc2_.col1.x * _loc14_ + _loc2_.col2.x * _loc15_;
+         _loc15_ = _loc2_.col1.y * _loc14_ + _loc2_.col2.y * _loc15_;
+         _loc14_ = _loc3_;
+         _loc2_ = _loc5_.m_xf.R;
+         var _loc16_:Number = this.§?!5§.x - _loc5_.m_sweep.localCenter.x;
+         var _loc17_:Number = this.§?!5§.y - _loc5_.m_sweep.localCenter.y;
+         _loc3_ = _loc2_.col1.x * _loc16_ + _loc2_.col2.x * _loc17_;
+         _loc17_ = _loc2_.col1.y * _loc16_ + _loc2_.col2.y * _loc17_;
+         _loc16_ = _loc3_;
+         var _loc19_:Number = _loc9_ - _loc7_;
+         var _loc20_:Number = -this.§>5§ * _loc19_;
+         var _loc21_:Number = this.§]a§;
+         _loc18_ = param1.§6c§ * this.§7!X§;
+         this.§]a§ = b2Math.§5L§(this.§]a§ + _loc20_,-_loc18_,_loc18_);
+         _loc20_ = this.§]a§ - _loc21_;
+         _loc7_ -= _loc12_ * _loc20_;
+         _loc9_ += _loc13_ * _loc20_;
+         var _loc22_:Number = _loc8_.x - _loc9_ * _loc17_ - _loc6_.x + _loc7_ * _loc15_;
+         var _loc23_:Number = _loc8_.y + _loc9_ * _loc16_ - _loc6_.y - _loc7_ * _loc14_;
+         var _loc24_:b2Vec2 = b2Math.§"!+§(this.§=_§,new b2Vec2(-_loc22_,-_loc23_));
+         var _loc25_:b2Vec2 = this.§%M§.Copy();
+         this.§%M§.§[!C§(_loc24_);
+         _loc18_ = param1.§6c§ * this.§[!Y§;
+         if(this.§%M§.§!!v§() > _loc18_ * _loc18_)
          {
-            §§push(§§pop() - _loc4_.m_sweep.localCenter.x);
-            if(!_loc26_)
-            {
-               §§push(Number(§§pop()));
-            }
+            this.§%M§.Normalize();
+            this.§%M§.§;a§(_loc18_);
          }
-         var _loc14_:* = §§pop();
-         §§push(this.§^!i§.y);
-         if(!(_loc26_ && _loc2_))
-         {
-            §§push(§§pop() - _loc4_.m_sweep.localCenter.y);
-            if(!_loc26_)
-            {
-               §§push(Number(§§pop()));
-            }
-         }
-         var _loc15_:* = §§pop();
-         if(!_loc26_)
-         {
-            §§push(_loc2_.col1);
-            loop0:
-            while(true)
-            {
-               §§push(§§pop().x);
-               if(_loc27_)
-               {
-                  §§push(_loc14_);
-                  while(true)
-                  {
-                     §§push(§§pop() * §§pop());
-                     addr244:
-                     while(true)
-                     {
-                        §§push(_loc2_.col2);
-                        addr246:
-                        while(true)
-                        {
-                           §§push(§§pop().x);
-                           addr247:
-                           while(true)
-                           {
-                              §§push(_loc15_);
-                              addr248:
-                              while(true)
-                              {
-                                 §§push(§§pop() * §§pop());
-                                 addr249:
-                                 while(true)
-                                 {
-                                    §§push(§§pop() + §§pop());
-                                 }
-                              }
-                           }
-                        }
-                     }
-                  }
-                  addr243:
-               }
-               addr250:
-               while(true)
-               {
-                  §§push(Number(§§pop()));
-                  addr251:
-                  while(true)
-                  {
-                     _loc3_ = §§pop();
-                     addr252:
-                     while(true)
-                     {
-                        continue loop0;
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr236);
+         _loc24_ = b2Math.§>G§(this.§%M§,_loc25_);
+         _loc6_.x -= _loc10_ * _loc24_.x;
+         _loc6_.y -= _loc10_ * _loc24_.y;
+         _loc7_ -= _loc12_ * (_loc14_ * _loc24_.y - _loc15_ * _loc24_.x);
+         _loc8_.x += _loc11_ * _loc24_.x;
+         _loc8_.y += _loc11_ * _loc24_.y;
+         _loc9_ += _loc13_ * (_loc16_ * _loc24_.y - _loc17_ * _loc24_.x);
+         _loc4_.m_angularVelocity = _loc7_;
+         _loc5_.m_angularVelocity = _loc9_;
       }
       
       override b2internal function SolvePositionConstraints(param1:Number) : Boolean

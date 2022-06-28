@@ -18,58 +18,13 @@ package §<8§
       
       public function §5J§(param1:int, param2:int, param3:int, param4:int, param5:int, param6:int)
       {
-         var _loc7_:Boolean = false;
-         var _loc8_:Boolean = true;
-         if(!(_loc7_ && param3))
-         {
-            super();
-            loop0:
-            while(true)
-            {
-               this.§+5§ = param1;
-               loop1:
-               while(true)
-               {
-                  this.§;^§ = param2;
-                  loop2:
-                  while(true)
-                  {
-                     this.§+n§ = param3;
-                     while(true)
-                     {
-                        this._height = param4;
-                        while(_loc8_)
-                        {
-                           continue loop0;
-                           if(_loc8_)
-                           {
-                              return;
-                              addr52:
-                           }
-                        }
-                        continue loop1;
-                        addr57:
-                        loop5:
-                        while(!(_loc7_ && param2))
-                        {
-                           continue loop2;
-                           while(true)
-                           {
-                              this.§11§ = param6;
-                              if(_loc7_ && this)
-                              {
-                                 continue loop5;
-                              }
-                              §§goto(addr40);
-                           }
-                           §§goto(addr52);
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr81);
+         super();
+         this.§+5§ = param1;
+         this.§;^§ = param2;
+         this.§+n§ = param3;
+         this._height = param4;
+         this.§[S§ = param5;
+         this.§11§ = param6;
       }
       
       public function get x() : int

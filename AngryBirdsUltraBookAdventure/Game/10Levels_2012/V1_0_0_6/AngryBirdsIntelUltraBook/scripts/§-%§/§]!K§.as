@@ -14,40 +14,15 @@ package §-%§
       
       public function §]!K§(param1:§'u§, param2:String = null, param3:Boolean = true)
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(!_loc5_)
-         {
-            super(param1);
-            do
-            {
-               this.§<t§ = param2;
-               do
-               {
-                  this.§8m§ = param3;
-               }
-               while(_loc5_ && param3);
-               
-            }
-            while(!_loc4_);
-            
-         }
+         super(param1);
+         this.§<t§ = param2;
+         this.§8m§ = param3;
       }
       
       override public function init() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc2_))
-         {
-            §#!3§.initEmptyEnvironment(this.§<t§,this.§8m§);
-            do
-            {
-               §#!3§.camera.initSlowScroll(this.§5%§);
-            }
-            while(!_loc1_);
-            
-         }
+         §#!3§.initEmptyEnvironment(this.§<t§,this.§8m§);
+         §#!3§.camera.initSlowScroll(this.§5%§);
       }
    }
 }

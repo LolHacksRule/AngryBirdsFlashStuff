@@ -29,273 +29,51 @@ package §]]§
       private static var §"h§:int;
       
       private static var §5G§:Boolean = true;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || SWFWheel)
-         {
-            VERSION = "1.5";
-            while(true)
-            {
-               §`!>§ = 0;
-               loop1:
-               while(true)
-               {
-                  §'!g§ = 1;
-                  addr122:
-                  while(true)
-                  {
-                     §]2§ = 2;
-                     addr83:
-                     if(!(_loc1_ && SWFWheel))
-                     {
-                        continue loop1;
-                     }
-                  }
-               }
-               if(_loc1_ && _loc2_)
-               {
-                  continue;
-               }
-               §§goto(addr71);
-            }
-         }
-         while(true)
-         {
-            §;J§ = "SWFWheel.join";
-            §§goto(addr112);
-            §§goto(addr76);
-         }
-      }
+       
       
       public function SWFWheel()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!_loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function initialize(param1:Stage) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!(_loc2_ && SWFWheel))
+         if(!available || isReady)
          {
-            §§push(available);
-            if(_loc3_ || SWFWheel)
-            {
-               §§push(!§§pop());
-               while(true)
-               {
-                  §§push(Boolean(§§pop()));
-                  if(!(_loc2_ && _loc3_))
-                  {
-                     §§push(§§pop());
-                     if(_loc3_)
-                     {
-                        §§push(Boolean(§§pop()));
-                     }
-                     if(§§pop())
-                     {
-                        loop1:
-                        while(true)
-                        {
-                           if(!§§pop())
-                           {
-                              loop2:
-                              while(true)
-                              {
-                                 §]!O§ = param1;
-                                 loop3:
-                                 while(true)
-                                 {
-                                    ExternalInterface.call(§7T§);
-                                    loop4:
-                                    while(!_loc2_)
-                                    {
-                                       if(_loc3_)
-                                       {
-                                          while(true)
-                                          {
-                                             ExternalInterface.call(§;J§,ExternalInterface.objectID);
-                                             do
-                                             {
-                                                ExternalInterface.addCallback("checkBrowserScroll",checkBrowserScroll);
-                                                loop9:
-                                                do
-                                                {
-                                                   §"h§ = ExternalInterface.call(§0!Q§,ExternalInterface.objectID);
-                                                   loop10:
-                                                   while(§"h§ == §`!>§)
-                                                   {
-                                                      if(!_loc2_)
-                                                      {
-                                                         if(!(_loc2_ && SWFWheel))
-                                                         {
-                                                            return;
-                                                         }
-                                                         continue;
-                                                         continue;
-                                                      }
-                                                      addr65:
-                                                      while(_loc3_)
-                                                      {
-                                                         if(_loc2_ && SWFWheel)
-                                                         {
-                                                            continue loop3;
-                                                         }
-                                                         if(!(_loc2_ && _loc3_))
-                                                         {
-                                                            break loop10;
-                                                         }
-                                                         addr193:
-                                                         while(true)
-                                                         {
-                                                            §§push(isReady);
-                                                            if(!_loc2_)
-                                                            {
-                                                               addr146:
-                                                               if(_loc2_ && _loc2_)
-                                                               {
-                                                                  break;
-                                                               }
-                                                               §§push(Boolean(§§pop()));
-                                                            }
-                                                            continue loop1;
-                                                         }
-                                                         while(true)
-                                                         {
-                                                            §§pop();
-                                                            §§goto(addr194);
-                                                            §§goto(addr146);
-                                                         }
-                                                         addr194:
-                                                      }
-                                                      continue loop4;
-                                                   }
-                                                   while(true)
-                                                   {
-                                                      ExternalInterface.addCallback("triggerMouseEvent",triggerMouseEvent);
-                                                      if(_loc3_)
-                                                      {
-                                                         continue loop9;
-                                                      }
-                                                      §§goto(addr65);
-                                                   }
-                                                }
-                                                while(_loc2_ && _loc2_);
-                                                
-                                             }
-                                             while(_loc2_);
-                                             
-                                             return;
-                                          }
-                                          addr135:
-                                       }
-                                    }
-                                    continue loop2;
-                                 }
-                              }
-                           }
-                           return;
-                        }
-                        addr166:
-                     }
-                  }
-                  if(_loc2_)
-                  {
-                     continue;
-                  }
-                  §§goto(addr166);
-               }
-            }
-            §§goto(addr193);
+            return;
          }
-         §§goto(addr135);
+         §]!O§ = param1;
+         ExternalInterface.call(§7T§);
+         ExternalInterface.call(§;J§,ExternalInterface.objectID);
+         ExternalInterface.addCallback("checkBrowserScroll",checkBrowserScroll);
+         §"h§ = ExternalInterface.call(§0!Q§,ExternalInterface.objectID);
+         if(§"h§ == §`!>§)
+         {
+            return;
+         }
+         ExternalInterface.addCallback("triggerMouseEvent",triggerMouseEvent);
       }
       
       public static function get isReady() : Boolean
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         §§push(§]!O§ == null);
-         if(_loc2_)
-         {
-            return !§§pop();
-         }
+         return §]!O§ != null;
       }
       
       public static function get available() : Boolean
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         §§push(§§newactivation());
-         if(!_loc4_)
+         var f:Boolean = false;
+         if(!ExternalInterface.available)
          {
-            §§push(false);
-            if(!(_loc4_ && _loc3_))
-            {
-               §§push(Boolean(§§pop()));
-               if(_loc3_ || SWFWheel)
-               {
-                  addr39:
-                  §§pop().§§slot[1] = §§pop();
-                  if(!_loc4_)
-                  {
-                     §§push(!ExternalInterface.available);
-                     if(!_loc4_)
-                     {
-                        if(§§pop())
-                        {
-                           if(!_loc4_)
-                           {
-                              §§push(§§newactivation());
-                              if(_loc3_ || SWFWheel)
-                              {
-                                 §§goto(addr80);
-                              }
-                              else
-                              {
-                                 addr91:
-                                 §§pop().§§slot[1] = Boolean(Boolean(ExternalInterface.call("function(){return true;}")));
-                                 addr106:
-                                 return f;
-                                 addr84:
-                                 addr92:
-                              }
-                           }
-                           else
-                           {
-                              try
-                              {
-                                 addr83:
-                                 §§goto(addr84);
-                              }
-                              catch(e:Error)
-                              {
-                              }
-                              §§goto(addr106);
-                              §§push(§§newactivation());
-                           }
-                           e = §§pop();
-                           §§goto(addr106);
-                        }
-                        §§goto(addr83);
-                     }
-                     §§goto(addr80);
-                  }
-                  §§goto(addr92);
-               }
-               §§goto(addr91);
-            }
-            §§goto(addr39);
+            return f;
          }
-         addr80:
-         return §§pop().§§slot[1];
+         try
+         {
+            f = Boolean(ExternalInterface.call("function(){return true;}"));
+         }
+         catch(e:Error)
+         {
+         }
+         return f;
       }
       
       public static function get state() : int
@@ -310,36 +88,37 @@ package §]]§
       
       public static function set §[S§(param1:Boolean) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || SWFWheel)
-         {
-            §5G§ = param1;
-         }
+         §5G§ = param1;
       }
       
       private static function triggerMouseEvent(param1:Number, param2:Boolean, param3:Boolean, param4:Boolean) : void
       {
-         var _loc9_:Boolean = false;
-         var _loc10_:Boolean = true;
          var _loc7_:InteractiveObject = null;
-         if(!_loc9_)
+         if(§"h§ == §`!>§)
          {
-            §§push(§"h§);
-            loop0:
-            while(true)
-            {
-               §§push(§`!>§);
-               addr110:
-               while(true)
-               {
-                  if(§§pop() != §§pop())
-                  {
-                     continue loop0;
-                  }
-               }
-            }
+            return;
          }
+         if(§"h§ == §'!g§ && §5G§)
+         {
+            return;
+         }
+         var _loc5_:Array = §]!O§.getObjectsUnderPoint(new Point(§]!O§.mouseX,§]!O§.mouseY));
+         var _loc6_:DisplayObject = _loc5_.pop() as DisplayObject;
+         while(_loc6_ != null)
+         {
+            _loc7_ = _loc6_ as InteractiveObject;
+            if(_loc7_)
+            {
+               break;
+            }
+            _loc6_ = _loc6_.parent;
+         }
+         if(!_loc7_)
+         {
+            return;
+         }
+         var _loc8_:MouseEvent = new MouseEvent(MouseEvent.MOUSE_WHEEL,true,false,_loc7_.mouseX,_loc7_.mouseY,null,param2,param3,param4,false,int(param1));
+         _loc7_.dispatchEvent(_loc8_);
       }
       
       private static function checkBrowserScroll() : Boolean

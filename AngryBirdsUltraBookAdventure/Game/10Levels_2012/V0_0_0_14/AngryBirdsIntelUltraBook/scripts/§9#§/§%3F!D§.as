@@ -6,32 +6,14 @@ package §9#§
    {
       
       public static const §9!R§:String = "OnCloseComplete";
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || _loc2_)
-         {
-            §9!R§ = "OnCloseComplete";
-         }
-      }
+       
       
       private var §1%§:Popup;
       
       public function §?!D§(param1:String, param2:Popup, param3:Boolean = false, param4:Boolean = false)
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         if(_loc5_)
-         {
-            super(param1,param3,param4);
-            do
-            {
-               this.§1%§ = param2;
-            }
-            while(_loc6_);
-            
-         }
+         super(param1,param3,param4);
+         this.§1%§ = param2;
       }
       
       public function get §#!!§() : Popup

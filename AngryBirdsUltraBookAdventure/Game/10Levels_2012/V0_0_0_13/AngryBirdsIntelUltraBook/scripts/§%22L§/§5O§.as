@@ -26,12 +26,7 @@ package §"L§
       
       public function §5O§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!_loc2_)
-         {
-            super();
-         }
+         super();
       }
       
       public function get §7!C§() : String
@@ -41,12 +36,7 @@ package §"L§
       
       public function set §7!C§(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || _loc3_)
-         {
-            this.§ &§ = param1;
-         }
+         this.§ &§ = param1;
       }
       
       public function get §=v§() : String
@@ -56,12 +46,7 @@ package §"L§
       
       public function set §=v§(param1:String) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§ "§ = param1;
-         }
+         this.§ "§ = param1;
       }
       
       public function get §^K§() : String
@@ -71,12 +56,7 @@ package §"L§
       
       public function set §^K§(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§[x§ = param1;
-         }
+         this.§[x§ = param1;
       }
       
       public function get levelName() : String
@@ -86,12 +66,7 @@ package §"L§
       
       public function set levelName(param1:String) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc2_))
-         {
-            this.§#!?§ = param1;
-         }
+         this.§#!?§ = param1;
       }
       
       public function get §1&§() : String
@@ -101,12 +76,7 @@ package §"L§
       
       public function set §1&§(param1:String) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_ || this)
-         {
-            this.§]!L§ = param1;
-         }
+         this.§]!L§ = param1;
       }
       
       public function get §8B§() : String
@@ -116,12 +86,7 @@ package §"L§
       
       public function set §8B§(param1:String) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc2_))
-         {
-            this.§8=§ = param1;
-         }
+         this.§8=§ = param1;
       }
       
       public function get §=§() : int
@@ -131,12 +96,7 @@ package §"L§
       
       public function set §=§(param1:int) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§6!N§ = param1;
-         }
+         this.§6!N§ = param1;
       }
       
       public function get §1X§() : int
@@ -146,12 +106,7 @@ package §"L§
       
       public function set §1X§(param1:int) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§,e§ = param1;
-         }
+         this.§,e§ = param1;
       }
       
       public function get §?!Z§() : int
@@ -161,12 +116,7 @@ package §"L§
       
       public function set §?!Z§(param1:int) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc3_)
-         {
-            this.§=!N§ = param1;
-         }
+         this.§=!N§ = param1;
       }
       
       public function get §9#§() : int
@@ -176,12 +126,7 @@ package §"L§
       
       public function set §9#§(param1:int) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc2_)
-         {
-            this.§-!!§ = param1;
-         }
+         this.§-!!§ = param1;
       }
    }
 }

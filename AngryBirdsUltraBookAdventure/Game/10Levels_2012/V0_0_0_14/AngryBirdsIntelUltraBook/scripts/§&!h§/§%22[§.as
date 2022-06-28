@@ -36,56 +36,12 @@ package §&!h§
       
       public static var enabled:Boolean = false;
       
-      private static var §,!M§:Vector.<§9b§>;
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(!(_loc2_ && _loc1_))
-         {
-            §]!H§ = "trackEvent";
-            while(true)
-            {
-               TRACKING_FUNCTION_10_PERCENT = "trackEvent10Percent";
-               while(true)
-               {
-                  TRACKING_FUNCTION_1_PERCENT = "trackEvent1Percent";
-                  loop2:
-                  while(true)
-                  {
-                     §-!$§ = "flash";
-                     addr185:
-                     while(true)
-                     {
-                        §"@§ = "initialized";
-                        continue loop2;
-                     }
-                  }
-                  if(!(_loc2_ && _loc2_))
-                  {
-                     return;
-                     addr56:
-                  }
-               }
-               if(_loc2_ && _loc2_)
-               {
-                  continue;
-               }
-               ACTION_CPU_FPS_REPORT = "cpu-rendering";
-               §§goto(addr127);
-            }
-         }
-         §§goto(addr56);
-      }
+      private static var §,!M§:Vector.<§9b§> = new Vector.<§9b§>();
+       
       
       public function §"[§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function § i§(param1:DisplayObject, param2:String) : void
@@ -94,41 +50,20 @@ package §&!h§
       
       public static function §8![§(param1:String, param2:String = null, param3:int = 0) : void
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(_loc4_ || param3)
-         {
-            trackEvent(§-!$§,param1,param2,param3);
-         }
+         trackEvent(§-!$§,param1,param2,param3);
       }
       
       private static function trackEvent(param1:String, param2:String, param3:String, param4:int = 0) : void
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
-         if(_loc5_)
-         {
-            trackSampledEvent(§]!H§,param1,param2,param3,param4);
-         }
+         trackSampledEvent(§]!H§,param1,param2,param3,param4);
       }
       
       protected static function trackSampledEvent(param1:String, param2:String, param3:String, param4:String, param5:int = 0) : void
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
-         if(!(_loc7_ && param1))
+         if(enabled)
          {
-            if(enabled)
-            {
-               if(!(_loc7_ && §"[§))
-               {
-                  addr42:
-                  §1?§.§>!X§(param1,param2,param3,param4,param5);
-               }
-            }
-            return;
+            §1?§.§>!X§(param1,param2,param3,param4,param5);
          }
-         §§goto(addr42);
       }
    }
 }

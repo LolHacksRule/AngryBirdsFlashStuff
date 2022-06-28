@@ -13,28 +13,13 @@ package §40§
       
       public function §80§(param1:§?S§)
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(!(_loc3_ && _loc2_))
-         {
-            super();
-         }
-         do
-         {
-            this.mWorld = param1;
-         }
-         while(_loc3_ && _loc2_);
-         
+         super();
+         this.mWorld = param1;
       }
       
       override public function EndContact(param1:b2Contact) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || this)
-         {
-            this.mWorld.§#!U§.objects.§33§(param1.§`!a§().GetBody().GetUserData(),param1.§2!s§().GetBody().GetUserData());
-         }
+         this.mWorld.§#!U§.objects.§33§(param1.§`!a§().GetBody().GetUserData(),param1.§2!s§().GetBody().GetUserData());
       }
       
       override public function PostSolve(param1:b2Contact, param2:b2ContactImpulse) : void
@@ -47,27 +32,11 @@ package §40§
       
       override public function BeginContact(param1:b2Contact) : void
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         §§push(this.mWorld.§#!U§.objects.§&!K§(param1.§`!a§().GetBody().GetUserData(),param1.§2!s§().GetBody().GetUserData()));
-         if(_loc3_)
+         var _loc2_:Boolean = this.mWorld.§#!U§.objects.§&!K§(param1.§`!a§().GetBody().GetUserData(),param1.§2!s§().GetBody().GetUserData());
+         if(_loc2_)
          {
-            §§push(Boolean(§§pop()));
+            param1.§@@§(false);
          }
-         var _loc2_:* = §§pop();
-         if(!(_loc4_ && _loc3_))
-         {
-            if(_loc2_)
-            {
-               if(_loc3_ || this)
-               {
-                  addr69:
-                  param1.§@@§(false);
-               }
-            }
-            return;
-         }
-         §§goto(addr69);
       }
    }
 }

@@ -16,12 +16,7 @@ package §8!6§
       
       public function Item()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            super();
-         }
+         super();
       }
       
       public function get category() : String

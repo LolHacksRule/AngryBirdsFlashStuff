@@ -14,50 +14,11 @@ package §!!X§
       
       public function §4!x§(param1:Number, param2:Number, param3:Number, param4:Boolean)
       {
-         var _loc5_:Boolean = false;
-         var _loc6_:Boolean = true;
-         if(!(_loc5_ && this))
-         {
-            super();
-            loop0:
-            while(true)
-            {
-               this.§;!@§ = param1;
-               loop1:
-               while(true)
-               {
-                  this.§3L§ = param2;
-                  while(true)
-                  {
-                     this.§!+§ = param3;
-                     loop3:
-                     while(!(_loc5_ && param2))
-                     {
-                        if(!_loc5_)
-                        {
-                           if(_loc6_)
-                           {
-                              while(true)
-                              {
-                                 this.§0!%§ = param4;
-                                 if(!(_loc5_ && param2))
-                                 {
-                                    break;
-                                 }
-                                 continue loop3;
-                              }
-                              return;
-                              continue;
-                           }
-                           continue loop0;
-                        }
-                        continue loop1;
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr76);
+         super();
+         this.§;!@§ = param1;
+         this.§3L§ = param2;
+         this.§!+§ = param3;
+         this.§0!%§ = param4;
       }
       
       public function get x() : Number

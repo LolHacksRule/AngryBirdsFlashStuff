@@ -11,132 +11,91 @@ package §0S§
       
       public function §^s§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function §78§(param1:XMLList) : void
       {
-         var _loc12_:Boolean = true;
-         var _loc13_:Boolean = false;
          var _loc2_:XML = null;
          var _loc3_:String = null;
          var _loc4_:String = null;
          var _loc5_:Array = null;
          var _loc6_:XML = null;
          var _loc7_:Number = NaN;
-         if(!(_loc13_ && param1))
-         {
-            §>!%§ = new Array();
-         }
+         §>!%§ = new Array();
          for each(_loc2_ in param1.Shape)
          {
-            if(!_loc13_)
+            if(_loc2_.@shape == "CIRCLE" || _loc2_.@shape == "POLYGON" || _loc2_.@shape == "NONE")
             {
-               §§push(_loc2_.@shape == "CIRCLE");
-               if(_loc12_ || _loc3_)
+               _loc3_ = _loc2_.@id;
+               _loc4_ = _loc2_.@shape;
+               _loc5_ = new Array();
+               for each(_loc6_ in _loc2_.Vertex)
                {
-                  §§push(§§pop());
-                  while(true)
-                  {
-                     if(§§pop())
-                     {
-                        continue;
-                     }
-                  }
+                  _loc5_.push(new b2Vec2(_loc6_.@x,_loc6_.@y));
                }
-               §§goto(addr150);
+               if(_loc4_ == "CIRCLE")
+               {
+                  _loc7_ = parseFloat(_loc2_.Radius[0].@value);
+                  §]!2§(_loc3_,_loc4_,_loc7_,_loc5_);
+               }
+               else
+               {
+                  §8!6§(_loc3_,_loc4_,_loc5_,_loc2_.@flipAngleCorrection);
+               }
             }
-            §§goto(addr101);
+            else
+            {
+               if(_loc2_.attribute("shape").length() <= 0)
+               {
+                  §<m§.log("WARNING, LevelItemShapes constructor, bodyType is missing for shape: " + _loc2_.@id);
+               }
+               if(_loc2_.attribute("width").length() <= 0)
+               {
+                  §<m§.log("WARNING, LevelItemShapes constructor, density is missing for shape: " + _loc2_.@id);
+               }
+               if(_loc2_.attribute("height").length() <= 0)
+               {
+                  §<m§.log("WARNING, LevelItemShapes constructor, friction is missing for shape: " + _loc2_.@id);
+               }
+               §`!F§(_loc2_.@id,_loc2_.@shape,_loc2_.@width,_loc2_.@height,_loc2_.@flipAngleCorrection);
+            }
          }
       }
       
       public static function §`!F§(param1:String, param2:String, param3:Number, param4:Number, param5:Number) : void
       {
-         var _loc6_:Boolean = true;
-         var _loc7_:Boolean = false;
-         if(!(_loc7_ && param3))
-         {
-            §>!%§[§>!%§.length] = new §6R§(param1,param2,param3,param4,param5);
-         }
+         §>!%§[§>!%§.length] = new §6R§(param1,param2,param3,param4,param5);
       }
       
       public static function §8!6§(param1:String, param2:String, param3:Array, param4:Number) : void
       {
-         var _loc6_:Boolean = false;
-         var _loc7_:Boolean = true;
          var _loc5_:§6R§;
          (_loc5_ = new §6R§(param1,param2,-1,-1,param4)).§6!O§(param3);
-         if(!_loc6_)
-         {
-            _loc5_.§+!k§();
-            do
-            {
-               §>!%§[§>!%§.length] = _loc5_;
-            }
-            while(!(_loc7_ || param1));
-            
-         }
+         _loc5_.§+!k§();
+         §>!%§[§>!%§.length] = _loc5_;
       }
       
       public static function §]!2§(param1:String, param2:String, param3:Number, param4:Array) : void
       {
-         var _loc6_:Boolean = false;
-         var _loc7_:Boolean = true;
          var _loc5_:§6R§;
          (_loc5_ = new §6R§(param1,param2,param3,param3)).§6!O§(param4);
-         if(!_loc6_)
-         {
-            §>!%§[§>!%§.length] = _loc5_;
-         }
+         §>!%§[§>!%§.length] = _loc5_;
       }
       
       public static function §%!>§(param1:String) : §6R§
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
          var _loc2_:int = 0;
-         while(true)
+         while(_loc2_ < §>!%§.length)
          {
-            if(_loc2_ >= §>!%§.length)
-            {
-               if(!(_loc3_ && param1))
-               {
-                  if(_loc3_)
-                  {
-                     addr81:
-                     _loc2_++;
-                     continue;
-                  }
-                  if(!(_loc4_ || _loc2_))
-                  {
-                     break;
-                  }
-                  §§push(§<m§);
-                  §§push("WARNING: LevelItemShapes -> getShape request has no return value, this shape does not exist: ");
-                  if(_loc4_)
-                  {
-                     §§push(§§pop() + param1);
-                  }
-                  §§pop().log(§§pop());
-               }
-               if(!(_loc3_ && _loc3_))
-               {
-                  return null;
-               }
-               continue;
-            }
             if((§>!%§[_loc2_] as §6R§).mName.toLowerCase() == param1.toLowerCase())
             {
-               break;
+               return §6R§(§>!%§[_loc2_]);
             }
-            §§goto(addr81);
+            _loc2_++;
          }
-         return §6R§(§>!%§[_loc2_]);
+         §<m§.log("WARNING: LevelItemShapes -> getShape request has no return value, this shape does not exist: " + param1);
+         return null;
       }
    }
 }

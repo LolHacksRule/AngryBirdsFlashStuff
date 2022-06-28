@@ -18,72 +18,26 @@ package §8w§
       
       private static var b2_toiMaxRootIters:int = 0;
       
-      private static var §!!L§:b2SimplexCache;
+      private static var §!!L§:b2SimplexCache = new b2SimplexCache();
       
-      private static var §]!w§:b2DistanceInput;
+      private static var §]!w§:b2DistanceInput = new b2DistanceInput();
       
-      private static var §"y§:b2Transform;
+      private static var §"y§:b2Transform = new b2Transform();
       
-      private static var § U§:b2Transform;
+      private static var § U§:b2Transform = new b2Transform();
       
-      private static var §1!7§:b2SeparationFunction;
+      private static var §1!7§:b2SeparationFunction = new b2SeparationFunction();
       
-      private static var §9!X§:b2DistanceOutput;
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || b2TimeOfImpact)
-         {
-            b2_toiCalls = 0;
-            while(true)
-            {
-               b2_toiIters = 0;
-               addr143:
-               while(true)
-               {
-                  b2_toiMaxIters = 0;
-               }
-            }
-            addr147:
-         }
-         while(true)
-         {
-            b2_toiRootIters = 0;
-            while(true)
-            {
-               b2_toiMaxRootIters = 0;
-               loop4:
-               while(true)
-               {
-                  §!!L§ = new b2SimplexCache();
-                  do
-                  {
-                     §]!w§ = new b2DistanceInput();
-                     continue loop4;
-                  }
-                  while(_loc2_ && _loc1_);
-                  
-                  return;
-               }
-            }
-         }
-      }
+      private static var §9!X§:b2DistanceOutput = new b2DistanceOutput();
+       
       
       public function b2TimeOfImpact()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function §^$§(param1:b2TOIInput) : Number
       {
-         var _loc23_:Boolean = true;
-         var _loc24_:Boolean = false;
          var _loc12_:Number = NaN;
          var _loc13_:Number = NaN;
          var _loc14_:Number = NaN;
@@ -93,107 +47,118 @@ package §8w§
          var _loc18_:int = 0;
          var _loc19_:Number = NaN;
          var _loc20_:Number = NaN;
-         if(_loc23_)
-         {
-            var _loc21_:*;
-            §§push((_loc21_ = §§findproperty(b2_toiCalls)).b2_toiCalls);
-            if(!(_loc24_ && _loc2_))
-            {
-               §§push(§§pop() + 1);
-            }
-            var _loc22_:* = §§pop();
-            if(_loc23_ || _loc2_)
-            {
-               _loc21_.b2_toiCalls = _loc22_;
-            }
-         }
+         ++b2_toiCalls;
          var _loc2_:b2DistanceProxy = param1.§9!;§;
          var _loc3_:b2DistanceProxy = param1.§ !%§;
          var _loc4_:b2Sweep = param1.§"!L§;
          var _loc5_:b2Sweep = param1.§'!5§;
-         if(_loc23_)
+         b2Settings.b2Assert(_loc4_.§!%§ == _loc5_.§!%§);
+         b2Settings.b2Assert(1 - _loc4_.§!%§ > Number.MIN_VALUE);
+         var _loc6_:Number = _loc2_.§?!X§ + _loc3_.§?!X§;
+         var _loc7_:Number = param1.§@M§;
+         var _loc8_:Number = 0;
+         var _loc10_:int = 0;
+         var _loc11_:Number = 0;
+         §!!L§.count = 0;
+         §]!w§.§5!=§ = false;
+         do
          {
-            b2Settings.b2Assert(_loc4_.§!%§ == _loc5_.§!%§);
-            if(_loc23_ || _loc2_)
+            _loc4_.§7§(§"y§,_loc8_);
+            _loc5_.§7§(§ U§,_loc8_);
+            §]!w§.§9!;§ = _loc2_;
+            §]!w§.§ !%§ = _loc3_;
+            §]!w§.§ T§ = §"y§;
+            §]!w§.§?!+§ = § U§;
+            b2Distance.§3H§(§9!X§,§!!L§,§]!w§);
+            if(§9!X§.§6=§ <= 0)
             {
-               addr93:
-               b2Settings.b2Assert(1 - _loc4_.§!%§ > Number.MIN_VALUE);
+               _loc8_ = 1;
+               break;
             }
-            §§push(_loc2_.§?!X§);
-            if(!(_loc24_ && b2TimeOfImpact))
+            §1!7§.§'K§(§!!L§,_loc2_,§"y§,_loc3_,§ U§);
+            if((_loc12_ = §1!7§.Evaluate(§"y§,§ U§)) <= 0)
             {
-               §§push(§§pop() + _loc3_.§?!X§);
-               if(_loc23_ || _loc3_)
+               _loc8_ = 1;
+               break;
+            }
+            if(_loc10_ == 0)
+            {
+               if(_loc12_ > _loc6_)
                {
-                  §§push(Number(§§pop()));
+                  _loc11_ = b2Math.§!!X§(_loc6_ - _loc7_,0.75 * _loc6_);
+               }
+               else
+               {
+                  _loc11_ = b2Math.§!!X§(_loc12_ - _loc7_,0.02 * _loc6_);
                }
             }
-            var _loc6_:* = §§pop();
-            §§push(param1.§@M§);
-            if(_loc23_ || b2TimeOfImpact)
+            if(_loc12_ - _loc11_ < 0.5 * _loc7_)
             {
-               §§push(Number(§§pop()));
-            }
-            var _loc7_:* = §§pop();
-            §§push(0);
-            if(!(_loc24_ && param1))
-            {
-               §§push(Number(§§pop()));
-            }
-            var _loc8_:* = §§pop();
-            var _loc9_:int = 1000;
-            var _loc10_:int = 0;
-            §§push(0);
-            if(!(_loc24_ && param1))
-            {
-               §§push(Number(§§pop()));
-            }
-            var _loc11_:* = §§pop();
-            if(!(_loc24_ && param1))
-            {
-               §!!L§.count = 0;
-               do
+               if(_loc10_ == 0)
                {
-                  §]!w§.§5!=§ = false;
+                  _loc8_ = 1;
+                  break;
                }
-               while(!_loc23_);
-               
+               break;
             }
-            while(true)
+            _loc13_ = _loc8_;
+            _loc14_ = _loc8_;
+            _loc15_ = 1;
+            _loc16_ = _loc12_;
+            _loc4_.§7§(§"y§,_loc15_);
+            _loc5_.§7§(§ U§,_loc15_);
+            if((_loc17_ = §1!7§.Evaluate(§"y§,§ U§)) >= _loc11_)
             {
-               _loc4_.§7§(§"y§,_loc8_);
-               while(true)
-               {
-                  _loc5_.§7§(§ U§,_loc8_);
-                  loop3:
-                  while(_loc23_ || param1)
-                  {
-                     §§push(§]!w§);
-                     while(true)
-                     {
-                        §§pop().§9!;§ = _loc2_;
-                        while(true)
-                        {
-                           §§push(§]!w§);
-                           loop6:
-                           while(true)
-                           {
-                              §§pop().§ !%§ = _loc3_;
-                              addr1024:
-                              while(_loc23_)
-                              {
-                                 §§push(§]!w§);
-                                 continue loop6;
-                              }
-                              continue loop3;
-                           }
-                        }
-                     }
-                  }
-               }
+               _loc8_ = 1;
+               break;
             }
+            _loc18_ = 0;
+            do
+            {
+               if(_loc18_ & 1)
+               {
+                  _loc19_ = _loc14_ + (_loc11_ - _loc16_) * (_loc15_ - _loc14_) / (_loc17_ - _loc16_);
+               }
+               else
+               {
+                  _loc19_ = 0.5 * (_loc14_ + _loc15_);
+               }
+               _loc4_.§7§(§"y§,_loc19_);
+               _loc5_.§7§(§ U§,_loc19_);
+               _loc20_ = §1!7§.Evaluate(§"y§,§ U§);
+               if(b2Math.§`c§(_loc20_ - _loc11_) < 0.025 * _loc7_)
+               {
+                  _loc13_ = _loc19_;
+                  break;
+               }
+               if(_loc20_ > _loc11_)
+               {
+                  _loc14_ = _loc19_;
+                  _loc16_ = _loc20_;
+               }
+               else
+               {
+                  _loc15_ = _loc19_;
+                  _loc17_ = _loc20_;
+               }
+               _loc18_++;
+               ++b2_toiRootIters;
+            }
+            while(_loc18_ != 50);
+            
+            b2_toiMaxRootIters = b2Math.§!!X§(b2_toiMaxRootIters,_loc18_);
+            if(_loc13_ < (1 + 100 * Number.MIN_VALUE) * _loc8_)
+            {
+               break;
+            }
+            _loc8_ = _loc13_;
+            _loc10_++;
+            ++b2_toiIters;
          }
-         §§goto(addr93);
+         while(_loc10_ != 1000);
+         
+         b2_toiMaxIters = b2Math.§!!X§(b2_toiMaxIters,_loc10_);
+         return _loc8_;
       }
    }
 }

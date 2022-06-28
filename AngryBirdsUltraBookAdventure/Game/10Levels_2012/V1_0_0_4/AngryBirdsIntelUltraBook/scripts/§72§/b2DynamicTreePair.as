@@ -10,12 +10,7 @@ package §72§
       
       public function b2DynamicTreePair()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || this)
-         {
-            super();
-         }
+         super();
       }
    }
 }

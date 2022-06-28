@@ -38,117 +38,7 @@ package §&a§
       b2internal static const §>6§:int = 2;
       
       b2internal static const §`C§:int = 3;
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_)
-         {
-            §9!j§ = 0;
-            loop0:
-            while(true)
-            {
-               e_revoluteJoint = 1;
-               loop1:
-               while(true)
-               {
-                  §>!V§ = 2;
-                  while(true)
-                  {
-                     §&!D§ = 3;
-                     while(_loc2_)
-                     {
-                        §-L§ = 4;
-                        while(true)
-                        {
-                           §5!?§ = 5;
-                           loop5:
-                           for(; _loc2_ || _loc1_; while(_loc2_ || _loc2_)
-                           {
-                              §#!?§ = 0;
-                              loop10:
-                              while(true)
-                              {
-                                 §'`§ = 1;
-                                 addr80:
-                                 while(true)
-                                 {
-                                    if(!_loc1_)
-                                    {
-                                       if(_loc1_)
-                                       {
-                                          break;
-                                       }
-                                       continue loop1;
-                                    }
-                                    continue loop10;
-                                 }
-                                 §§goto(addr125);
-                              }
-                              if(_loc1_ && _loc2_)
-                              {
-                                 continue;
-                              }
-                              if(!_loc1_)
-                              {
-                                 continue loop0;
-                              }
-                              §§goto(addr113);
-                           })
-                           {
-                              §+!W§ = 6;
-                              while(true)
-                              {
-                                 §&M§ = 7;
-                                 addr120:
-                                 loop7:
-                                 while(true)
-                                 {
-                                    §@!>§ = 8;
-                                    addr113:
-                                    while(true)
-                                    {
-                                       if(!_loc1_)
-                                       {
-                                          §0!!§ = 9;
-                                          continue loop5;
-                                       }
-                                       continue loop7;
-                                    }
-                                 }
-                              }
-                           }
-                        }
-                        while(_loc2_ || _loc2_)
-                        {
-                           §`C§ = 3;
-                           if(!(_loc2_ || b2Joint))
-                           {
-                              continue;
-                           }
-                           if(_loc2_)
-                           {
-                              §§goto(addr37);
-                           }
-                           §§goto(addr80);
-                        }
-                     }
-                  }
-                  if(!(_loc2_ || _loc2_))
-                  {
-                     continue;
-                  }
-                  §>6§ = 2;
-                  §§goto(addr58);
-               }
-               if(_loc2_ || _loc2_)
-               {
-                  return;
-               }
-            }
-         }
-         §§goto(addr120);
-      }
+       
       
       b2internal var §"_§:int;
       
@@ -184,435 +74,55 @@ package §&a§
       
       public function b2Joint(param1:b2JointDef)
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§>v§ = new b2JointEdge();
-            loop0:
-            while(true)
-            {
-               this.§?!>§ = new b2JointEdge();
-               loop1:
-               while(true)
-               {
-                  this.§#A§ = new b2Vec2();
-                  while(true)
-                  {
-                     this.§9!@§ = new b2Vec2();
-                     loop3:
-                     while(true)
-                     {
-                        super();
-                        loop4:
-                        while(true)
-                        {
-                           §§push(b2Settings);
-                           §§push(param1.§0w§ == param1.§^2§);
-                           if(_loc2_ || this)
-                           {
-                              §§push(!§§pop());
-                           }
-                           §§pop().b2Assert(§§pop());
-                           while(true)
-                           {
-                              this.§"_§ = param1.type;
-                              continue loop3;
-                              addr55:
-                              if(!(_loc2_ || _loc3_))
-                              {
-                                 continue;
-                              }
-                              this.§,h§ = param1.§#+§;
-                              addr62:
-                              if(!_loc2_)
-                              {
-                                 loop13:
-                                 while(true)
-                                 {
-                                    if(!(_loc3_ && _loc2_))
-                                    {
-                                       if(_loc3_)
-                                       {
-                                          addr76:
-                                          while(_loc2_)
-                                          {
-                                             this.§ "§ = param1.collideConnected;
-                                             break loop13;
-                                          }
-                                          loop9:
-                                          while(true)
-                                          {
-                                             if(!(_loc3_ && _loc2_))
-                                             {
-                                                continue loop4;
-                                             }
-                                             addr120:
-                                             while(true)
-                                             {
-                                                this.§@o§ = null;
-                                                addr115:
-                                                while(true)
-                                                {
-                                                   this.§>0§ = param1.§0w§;
-                                                   continue loop9;
-                                                }
-                                                continue loop9;
-                                             }
-                                          }
-                                          addr76:
-                                          continue loop4;
-                                       }
-                                       §§goto(addr55);
-                                    }
-                                    break;
-                                    §§goto(addr62);
-                                 }
-                                 loop11:
-                                 while(!_loc3_)
-                                 {
-                                    while(true)
-                                    {
-                                       this.§%!'§ = false;
-                                       §§goto(addr46);
-                                       continue loop11;
-                                    }
-                                    return;
-                                 }
-                                 addr46:
-                                 continue loop1;
-                              }
-                              if(_loc2_)
-                              {
-                                 if(_loc2_)
-                                 {
-                                    continue loop0;
-                                 }
-                                 continue loop3;
-                              }
-                              §§goto(addr115);
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr70);
+         this.§>v§ = new b2JointEdge();
+         this.§?!>§ = new b2JointEdge();
+         this.§#A§ = new b2Vec2();
+         this.§9!@§ = new b2Vec2();
+         super();
+         b2Settings.b2Assert(param1.§0w§ != param1.§^2§);
+         this.§"_§ = param1.type;
+         this.§[2§ = null;
+         this.§@o§ = null;
+         this.§>0§ = param1.§0w§;
+         this.§[=§ = param1.§^2§;
+         this.§ "§ = param1.collideConnected;
+         this.§%!'§ = false;
+         this.§,h§ = param1.§#+§;
       }
       
       b2internal static function §1#§(param1:b2JointDef, param2:*) : b2Joint
       {
-         var _loc5_:Boolean = true;
-         var _loc6_:Boolean = false;
          var _loc3_:b2Joint = null;
-         §§push(param1.type);
-         if(_loc5_ || _loc3_)
+         switch(param1.type)
          {
-            var _loc4_:* = §§pop();
-            if(!(_loc6_ && param2))
-            {
-               §§push(b2internal::&!D);
-               if(!_loc6_)
-               {
-                  §§push(_loc4_);
-                  if(!_loc6_)
-                  {
-                     if(§§pop() === §§pop())
-                     {
-                        if(!_loc6_)
-                        {
-                           §§push(0);
-                           if(_loc5_ || _loc3_)
-                           {
-                              addr354:
-                              switch(§§pop())
-                              {
-                                 case 0:
-                                    _loc3_ = new b2DistanceJoint(param1 as b2DistanceJointDef);
-                                    break;
-                                 case 1:
-                                    _loc3_ = new b2MouseJoint(param1 as b2MouseJointDef);
-                                    break;
-                                 case 2:
-                                    _loc3_ = new b2PrismaticJoint(param1 as b2PrismaticJointDef);
-                                    break;
-                                 case 3:
-                                    _loc3_ = new b2RevoluteJoint(param1 as b2RevoluteJointDef);
-                                    break;
-                                 case 4:
-                                    _loc3_ = new b2PulleyJoint(param1 as b2PulleyJointDef);
-                                    break;
-                                 case 5:
-                                    _loc3_ = new b2GearJoint(param1 as b2GearJointDef);
-                                    break;
-                                 case 6:
-                                    _loc3_ = new b2LineJoint(param1 as b2LineJointDef);
-                                    break;
-                                 case 7:
-                                    _loc3_ = new b2WeldJoint(param1 as b2WeldJointDef);
-                                    break;
-                                 case 8:
-                                    _loc3_ = new b2FrictionJoint(param1 as b2FrictionJointDef);
-                              }
-                              return _loc3_;
-                              addr353:
-                           }
-                        }
-                        else
-                        {
-                           addr204:
-                           §§push(3);
-                           if(_loc6_)
-                           {
-                              addr343:
-                              if(§§pop() === _loc4_)
-                              {
-                                 addr345:
-                                 §§push(8);
-                                 if(!_loc6_)
-                                 {
-                                    addr348:
-                                 }
-                                 §§goto(addr353);
-                              }
-                              else
-                              {
-                                 §§goto(addr353);
-                                 §§push(9);
-                              }
-                           }
-                        }
-                        §§goto(addr353);
-                     }
-                     else
-                     {
-                        §§push(b2internal::5!?);
-                        if(_loc5_)
-                        {
-                           §§push(_loc4_);
-                           if(_loc5_)
-                           {
-                              if(§§pop() === §§pop())
-                              {
-                                 if(!(_loc6_ && param1))
-                                 {
-                                    §§push(1);
-                                    if(_loc5_)
-                                    {
-                                       §§goto(addr353);
-                                    }
-                                    else
-                                    {
-                                       addr160:
-                                       §§push(_loc4_);
-                                       if(_loc5_ || b2Joint)
-                                       {
-                                          if(§§pop() === §§pop())
-                                          {
-                                             if(_loc5_)
-                                             {
-                                                addr181:
-                                                §§push(2);
-                                                if(_loc5_ || b2Joint)
-                                                {
-                                                   addr189:
-                                                }
-                                             }
-                                             else
-                                             {
-                                                addr227:
-                                                §§push(4);
-                                                if(_loc6_)
-                                                {
-                                                   addr267:
-                                                   §§push(_loc4_);
-                                                   if(_loc5_ || _loc3_)
-                                                   {
-                                                      addr275:
-                                                      if(§§pop() === §§pop())
-                                                      {
-                                                         if(_loc5_ || b2Joint)
-                                                         {
-                                                            §§push(6);
-                                                            if(_loc5_ || param2)
-                                                            {
-                                                               addr291:
-                                                               §§goto(addr353);
-                                                            }
-                                                            else
-                                                            {
-                                                               §§goto(addr343);
-                                                            }
-                                                         }
-                                                         else
-                                                         {
-                                                            addr316:
-                                                            §§push(7);
-                                                            if(!(_loc6_ && b2Joint))
-                                                            {
-                                                               addr334:
-                                                            }
-                                                            §§goto(addr353);
-                                                         }
-                                                         §§goto(addr348);
-                                                      }
-                                                      else
-                                                      {
-                                                         §§push(b2internal::@!>);
-                                                         if(!(_loc6_ && param1))
-                                                         {
-                                                            §§push(_loc4_);
-                                                            if(!(_loc6_ && _loc3_))
-                                                            {
-                                                               addr308:
-                                                               if(§§pop() === §§pop())
-                                                               {
-                                                                  if(_loc5_ || param1)
-                                                                  {
-                                                                     §§goto(addr316);
-                                                                  }
-                                                                  else
-                                                                  {
-                                                                     §§goto(addr345);
-                                                                  }
-                                                               }
-                                                               else
-                                                               {
-                                                                  §§push(b2internal::0!!);
-                                                                  if(_loc5_ || param1)
-                                                                  {
-                                                                     §§goto(addr343);
-                                                                  }
-                                                                  §§goto(addr353);
-                                                               }
-                                                               §§goto(addr353);
-                                                            }
-                                                            §§goto(addr343);
-                                                         }
-                                                         §§goto(addr353);
-                                                      }
-                                                   }
-                                                   §§goto(addr343);
-                                                }
-                                             }
-                                             §§goto(addr353);
-                                          }
-                                          else
-                                          {
-                                             §§push(b2internal::e_revoluteJoint);
-                                             if(!_loc6_)
-                                             {
-                                                §§push(_loc4_);
-                                                if(_loc5_ || _loc3_)
-                                                {
-                                                   addr201:
-                                                   if(§§pop() === §§pop())
-                                                   {
-                                                      if(!_loc6_)
-                                                      {
-                                                         §§goto(addr204);
-                                                      }
-                                                      §§goto(addr345);
-                                                   }
-                                                   else
-                                                   {
-                                                      §§push(b2internal::-L);
-                                                      if(!(_loc6_ && b2Joint))
-                                                      {
-                                                         §§push(_loc4_);
-                                                         if(!_loc6_)
-                                                         {
-                                                            if(§§pop() === §§pop())
-                                                            {
-                                                               if(_loc5_ || param2)
-                                                               {
-                                                                  §§goto(addr227);
-                                                               }
-                                                               §§goto(addr345);
-                                                            }
-                                                            else
-                                                            {
-                                                               §§push(b2internal::+!W);
-                                                               if(_loc5_ || param2)
-                                                               {
-                                                                  §§push(_loc4_);
-                                                                  if(_loc5_)
-                                                                  {
-                                                                     addr242:
-                                                                     if(§§pop() === §§pop())
-                                                                     {
-                                                                        if(!(_loc6_ && b2Joint))
-                                                                        {
-                                                                           §§push(5);
-                                                                           if(_loc5_ || _loc3_)
-                                                                           {
-                                                                              addr258:
-                                                                              §§goto(addr353);
-                                                                           }
-                                                                           else
-                                                                           {
-                                                                              §§goto(addr291);
-                                                                           }
-                                                                        }
-                                                                        else
-                                                                        {
-                                                                           §§goto(addr316);
-                                                                        }
-                                                                        §§goto(addr353);
-                                                                     }
-                                                                     else
-                                                                     {
-                                                                        §§push(b2internal::&M);
-                                                                        if(_loc5_ || _loc3_)
-                                                                        {
-                                                                           §§goto(addr267);
-                                                                        }
-                                                                     }
-                                                                     §§goto(addr334);
-                                                                  }
-                                                                  §§goto(addr275);
-                                                               }
-                                                               §§goto(addr267);
-                                                            }
-                                                         }
-                                                         §§goto(addr242);
-                                                      }
-                                                      §§goto(addr291);
-                                                   }
-                                                }
-                                                §§goto(addr242);
-                                             }
-                                          }
-                                          §§goto(addr267);
-                                       }
-                                       §§goto(addr343);
-                                    }
-                                 }
-                                 §§goto(addr181);
-                              }
-                              else
-                              {
-                                 §§push(b2internal::>!V);
-                                 if(_loc5_)
-                                 {
-                                    §§goto(addr160);
-                                 }
-                              }
-                              §§goto(addr343);
-                           }
-                           §§goto(addr308);
-                        }
-                        §§goto(addr258);
-                     }
-                  }
-                  §§goto(addr201);
-               }
-               §§goto(addr189);
-            }
-            §§goto(addr204);
+            case b2internal::&!D:
+               _loc3_ = new b2DistanceJoint(param1 as b2DistanceJointDef);
+               break;
+            case b2internal::5!?:
+               _loc3_ = new b2MouseJoint(param1 as b2MouseJointDef);
+               break;
+            case b2internal::>!V:
+               _loc3_ = new b2PrismaticJoint(param1 as b2PrismaticJointDef);
+               break;
+            case b2internal::e_revoluteJoint:
+               _loc3_ = new b2RevoluteJoint(param1 as b2RevoluteJointDef);
+               break;
+            case b2internal::-L:
+               _loc3_ = new b2PulleyJoint(param1 as b2PulleyJointDef);
+               break;
+            case b2internal::+!W:
+               _loc3_ = new b2GearJoint(param1 as b2GearJointDef);
+               break;
+            case b2internal::&M:
+               _loc3_ = new b2LineJoint(param1 as b2LineJointDef);
+               break;
+            case b2internal::@!>:
+               _loc3_ = new b2WeldJoint(param1 as b2WeldJointDef);
+               break;
+            case b2internal::0!!:
+               _loc3_ = new b2FrictionJoint(param1 as b2FrictionJointDef);
          }
-         §§goto(addr354);
+         return _loc3_;
       }
       
       b2internal static function §,!W§(param1:b2Joint, param2:*) : void
@@ -666,47 +176,12 @@ package §&a§
       
       public function §2[§(param1:*) : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_)
-         {
-            this.§,h§ = param1;
-         }
+         this.§,h§ = param1;
       }
       
       public function §89§() : Boolean
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc2_ || _loc1_)
-         {
-            §§push(this.§>0§.§89§());
-            if(!(_loc1_ && _loc1_))
-            {
-               §§push(Boolean(§§pop()));
-               if(_loc2_ || this)
-               {
-                  if(§§pop())
-                  {
-                     if(!_loc1_)
-                     {
-                        §§pop();
-                        addr67:
-                        §§push(this.§[=§.§89§());
-                        if(!_loc1_)
-                        {
-                           addr72:
-                           §§push(Boolean(§§pop()));
-                        }
-                     }
-                     §§goto(addr72);
-                  }
-               }
-               return §§pop();
-            }
-            §§goto(addr72);
-         }
-         §§goto(addr67);
+         return this.§>0§.§89§() && this.§[=§.§89§();
       }
       
       b2internal function InitVelocityConstraints(param1:b2TimeStep) : void

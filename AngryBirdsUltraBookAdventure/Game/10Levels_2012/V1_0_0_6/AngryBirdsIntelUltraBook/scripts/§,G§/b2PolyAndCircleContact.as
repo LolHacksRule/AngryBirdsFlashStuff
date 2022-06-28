@@ -17,12 +17,7 @@ package §,G§
       
       public function b2PolyAndCircleContact()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            super();
-         }
+         super();
       }
       
       public static function §1#§(param1:*) : b2Contact
@@ -36,39 +31,16 @@ package §,G§
       
       public function §@!b§(param1:b2Fixture, param2:b2Fixture) : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
-         if(_loc4_)
-         {
-            super.§@!b§(param1,param2);
-            while(true)
-            {
-               b2Settings.b2Assert(param1.§'!_§() == b2Shape.§+!N§);
-               while(!(_loc3_ && _loc3_))
-               {
-                  b2Settings.b2Assert(param2.§'!_§() == b2Shape.§1"§);
-                  if(_loc3_ && param2)
-                  {
-                     continue;
-                  }
-                  return;
-                  addr59:
-               }
-            }
-         }
-         §§goto(addr59);
+         super.§@!b§(param1,param2);
+         b2Settings.b2Assert(param1.§'!_§() == b2Shape.§+!N§);
+         b2Settings.b2Assert(param2.§'!_§() == b2Shape.§1"§);
       }
       
       override b2internal function Evaluate() : void
       {
-         var _loc3_:Boolean = false;
-         var _loc4_:Boolean = true;
          var _loc1_:b2Body = b2internal::3t.m_body;
          var _loc2_:b2Body = b2internal::[i.m_body;
-         if(!_loc3_)
-         {
-            b2Collision.§<v§(b2internal::2?,b2internal::3t.GetShape() as b2PolygonShape,_loc1_.m_xf,b2internal::[i.GetShape() as b2CircleShape,_loc2_.m_xf);
-         }
+         b2Collision.§<v§(b2internal::2?,b2internal::3t.GetShape() as b2PolygonShape,_loc1_.m_xf,b2internal::[i.GetShape() as b2CircleShape,_loc2_.m_xf);
       }
    }
 }

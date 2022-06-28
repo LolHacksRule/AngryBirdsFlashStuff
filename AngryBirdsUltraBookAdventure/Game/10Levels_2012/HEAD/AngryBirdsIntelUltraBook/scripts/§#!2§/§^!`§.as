@@ -23,516 +23,96 @@ package §#!2§
       
       public function §^!`§(initState:Boolean = true, name:String = "LevelLoadStateClassic")
       {
-         var _loc3_:Boolean = true;
-         var _loc4_:Boolean = false;
-         if(!_loc3_)
-         {
-         }
-         if(_loc3_ || this)
-         {
-            loop0:
-            while(true)
-            {
-               while(true)
-               {
-                  addr67:
-                  while(_loc3_)
-                  {
-                     if(!_loc3_)
-                     {
-                        continue loop0;
-                     }
-                  }
-               }
-            }
-         }
-         while(true)
-         {
-            super(initState,name);
-            while(!_loc4_)
-            {
-               if(!_loc4_)
-               {
-                  return;
-               }
-            }
-            §§goto(addr67);
-         }
+         super(initState,name);
       }
       
       override public function init() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc1_)
-         {
-         }
-         if(!(_loc1_ && _loc1_))
-         {
-            loop0:
-            while(true)
-            {
-               super.init();
-               while(true)
-               {
-                  loop3:
-                  for(; !(_loc1_ && _loc1_); if(_loc2_ || _loc2_)
-                  {
-                     loop6:
-                     do
-                     {
-                        §^,§.movieClip.graphics.endFill();
-                        addr69:
-                        addr134:
-                        while(_loc2_ || _loc2_)
-                        {
-                           if(_loc2_)
-                           {
-                              if(!(_loc1_ && this))
-                              {
-                                 continue loop6;
-                              }
-                              continue;
-                              continue;
-                           }
-                           continue loop0;
-                        }
-                        while(true)
-                        {
-                           §^,§.movieClip.graphics.beginFill(0);
-                           continue loop3;
-                           §§goto(addr69);
-                        }
-                     }
-                     while(!(_loc2_ || _loc2_));
-                     
-                     if(!_loc2_)
-                     {
-                        §§goto(addr93);
-                     }
-                     return;
-                  })
-                  {
-                     loop4:
-                     while(true)
-                     {
-                        §^,§.movieClip.graphics.drawRect(0,0,4000,4000);
-                        addr93:
-                        while(true)
-                        {
-                           if(_loc2_)
-                           {
-                              continue loop3;
-                           }
-                           continue loop4;
-                        }
-                        continue loop3;
-                     }
-                  }
-               }
-            }
-         }
-         §§goto(addr134);
+         super.init();
+         §^,§.movieClip.graphics.beginFill(0);
+         §^,§.movieClip.graphics.drawRect(0,0,4000,4000);
+         §^,§.movieClip.graphics.endFill();
       }
       
       override public function activate() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc1_)
+         super.activate();
+         if(LevelManager.§!=§ != null)
          {
+            §^,§.setText(this.§[!+§(),"TextField_LevelLoading");
+            trace("loadtext: " + this.§[!+§());
          }
-         if(_loc2_)
-         {
-            while(true)
-            {
-               super.activate();
-               loop1:
-               while(true)
-               {
-                  addr118:
-                  while(LevelManager.§!=§ != null)
-                  {
-                     while(true)
-                     {
-                        addr113:
-                        while(!_loc1_)
-                        {
-                           §^,§.setText(this.§[!+§(),"TextField_LevelLoading");
-                        }
-                        continue loop1;
-                     }
-                  }
-                  §§goto(addr24);
-               }
-               addr76:
-               if(!(_loc2_ || _loc2_))
-               {
-                  continue;
-               }
-               addr93:
-               if(!_loc1_)
-               {
-                  addr32:
-                  if(_loc2_ || _loc1_)
-                  {
-                     if(_loc1_)
-                     {
-                        §§goto(addr112);
-                     }
-                     §§goto(addr41);
-                  }
-                  while(true)
-                  {
-                     loop6:
-                     while(true)
-                     {
-                        trace("loadtext: " + this.§[!+§());
-                        addr60:
-                        while(true)
-                        {
-                           if(!(_loc1_ && _loc2_))
-                           {
-                              if(_loc2_ || this)
-                              {
-                                 if(_loc2_)
-                                 {
-                                    §§goto(addr76);
-                                 }
-                                 else
-                                 {
-                                    §§goto(addr118);
-                                 }
-                              }
-                              break;
-                           }
-                           continue loop6;
-                           §§goto(addr93);
-                        }
-                        §§goto(addr113);
-                     }
-                     §§goto(addr32);
-                  }
-                  addr41:
-                  addr24:
-                  return;
-                  addr105:
-               }
-               §§goto(addr60);
-            }
-         }
-         §§goto(addr105);
       }
       
       protected function §[!+§() : String
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc2_)
-         {
-         }
-         §§push(" - ");
-         if(!(_loc2_ && _loc2_))
-         {
-            if(!_loc2_)
-            {
-               return §§pop() + FacebookLevelManager.§else§(LevelManager.§!=§);
-            }
-         }
+         return " - " + FacebookLevelManager.§else§(LevelManager.§!=§);
       }
       
       override protected function initLevelMain(levelData:LevelModel) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(!_loc3_)
-         {
-         }
-         if(!(_loc2_ && _loc2_))
-         {
-            while(true)
-            {
-               while(_loc3_ || _loc2_)
-               {
-                  super.initLevelMain(levelData);
-                  while(_loc2_ && this)
-                  {
-                  }
-                  if(!(_loc3_ || levelData))
-                  {
-                     continue;
-                  }
-                  return;
-                  addr69:
-               }
-            }
-         }
-         §§goto(addr69);
+         super.initLevelMain(levelData);
       }
       
       override protected function initLevelLoad() : void
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc2_)
+         (§4!T§.§%!K§ as AngryBirdsUltraBook).§=s§.§`!4§ = false;
+         (§4!T§.§%!K§ as AngryBirdsUltraBook).§=s§.§`!4§ = true;
+         if(this.§2!`§)
          {
+            this.§2!`§.removeEventListener(Event.COMPLETE,this.§5!J§);
+            this.§2!`§ = null;
          }
-         if(_loc1_)
+         if(LevelManager.§!=§)
          {
-            while(true)
-            {
-               §§push(§4!T§.§%!K§);
-               loop1:
-               while(true)
-               {
-                  §§push((§§pop() as AngryBirdsUltraBook).§=s§);
-                  addr372:
-                  while(true)
-                  {
-                     §§push(false);
-                     addr373:
-                     while(true)
-                     {
-                        §§pop().§`!4§ = §§pop();
-                        addr374:
-                        while(true)
-                        {
-                           continue loop1;
-                        }
-                     }
-                  }
-               }
-            }
+            this.§2!`§ = new §1!6§();
+            this.§2!`§.addEventListener(Event.COMPLETE,this.§5!J§);
+            this.§2!`§.addEventListener(IOErrorEvent.IO_ERROR,this.§3!6§);
+            this.§2!`§.addEventListener(SecurityErrorEvent.SECURITY_ERROR,this.§3!6§);
+            this.§2!`§.addEventListener(RetryingURLLoaderErrorEvent.§9#§,this.§3!6§);
+            this.§2!`§.load(§-!Q§.§<!%§(AngryBirdsFP11.SERVER_ROOT + "/startlevel/" + LevelManager.§!=§));
+            super.initLevelLoad();
+            return;
          }
-         §§goto(addr360);
+         §4!c§.§?!U§();
+         throw new Error("LevelManager.smCurrentLevel was null in initLevelLoad() in StateFacebookLevelLoad.");
       }
       
       protected function §3!6§(e:Event) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc2_)
+         if(e.type == RetryingURLLoaderErrorEvent.§9#§)
          {
+            §4!c§.§?!U§(ErrorPopup.THIRD_PARTY_COOKIES_DISABLED_ERROR);
          }
-         if(_loc3_ || this)
+         else
          {
-            addr141:
-            while(true)
-            {
-               addr137:
-            }
-            addr141:
+            §4!c§.§8B§();
          }
-         loop1:
-         while(true)
-         {
-            if(e.type != RetryingURLLoaderErrorEvent.§9#§)
-            {
-               §4!c§.§8B§();
-               while(true)
-               {
-                  loop3:
-                  while(true)
-                  {
-                     if(!_loc3_)
-                     {
-                        continue loop1;
-                     }
-                     while(true)
-                     {
-                        this.§2!`§ = null;
-                        continue loop3;
-                        addr127:
-                     }
-                     §§goto(addr141);
-                  }
-                  if(!(_loc3_ || e))
-                  {
-                     continue;
-                  }
-                  if(!(_loc2_ && e))
-                  {
-                     if(!(_loc2_ && e))
-                     {
-                        if(_loc2_ && _loc3_)
-                        {
-                           §§goto(addr118);
-                        }
-                        return;
-                     }
-                     §§goto(addr54);
-                  }
-                  §§goto(addr136);
-               }
-            }
-            while(true)
-            {
-               §§goto(addr136);
-            }
-         }
+         this.§2!`§ = null;
       }
       
       protected function §5!J§(e:Event) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:Boolean = true;
-         if(_loc2_)
-         {
-         }
-         if(!_loc2_)
-         {
-            while(true)
-            {
-            }
-            addr96:
-         }
-         loop1:
-         while(true)
-         {
-            StateFacebookPlay.sPlaySessionToken = this.§2!`§.data;
-            while(_loc3_)
-            {
-               while(!(_loc2_ && e))
-               {
-                  continue loop1;
-                  while(_loc3_ || e)
-                  {
-                     if(_loc3_)
-                     {
-                        return;
-                     }
-                  }
-               }
-            }
-            §§goto(addr96);
-         }
+         StateFacebookPlay.sPlaySessionToken = this.§2!`§.data;
+         this.§2!`§ = null;
       }
       
       override public function isReady() : Boolean
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(_loc1_)
+         if(this.§2!`§)
          {
+            return false;
          }
-         if(!_loc2_)
-         {
-         }
-         loop0:
-         while(true)
-         {
-            §§push(Boolean(this.§2!`§));
-            while(true)
-            {
-               if(§§pop())
-               {
-                  if(_loc2_ || _loc2_)
-                  {
-                     if(!_loc2_)
-                     {
-                        continue loop0;
-                     }
-                  }
-                  §§push(false);
-                  break;
-               }
-               §§push(super.isReady());
-               if(!_loc2_)
-               {
-                  break;
-               }
-               if(!(_loc1_ && _loc1_))
-               {
-                  return §§pop();
-               }
-            }
-            return §§pop();
-         }
+         return super.isReady();
       }
       
       override public function onLevelLoadError() : void
       {
-         var _loc2_:Boolean = true;
-         var _loc3_:Boolean = false;
-         if(_loc2_ || _loc3_)
-         {
-         }
-         if(_loc2_ || _loc3_)
-         {
-            loop0:
-            while(true)
-            {
-               addr53:
-               while(true)
-               {
-                  continue loop0;
-               }
-            }
-            addr57:
-         }
-         while(true)
-         {
-            super.onLevelLoadError();
-            if(_loc3_ && _loc3_)
-            {
-               continue;
-            }
-            if(!(_loc3_ && name))
-            {
-               if(true)
-               {
-                  break;
-               }
-            }
-            else
-            {
-               §§goto(addr57);
-            }
-            §§goto(addr53);
-         }
-         §§push("level-");
-         if(_loc2_)
-         {
-            if(_loc2_)
-            {
-               addr64:
-               §§push(§§pop() + LevelManager.§!=§);
-            }
-            var name:String = §§pop();
-            if(!_loc2_)
-            {
-            }
-            loop3:
-            while(true)
-            {
-               §85§.§true §(name);
-               loop4:
-               while(true)
-               {
-                  loop5:
-                  do
-                  {
-                     §4!c§.§8B§();
-                     while(true)
-                     {
-                        while(!_loc3_)
-                        {
-                           (§4!T§.§%!K§ as AngryBirdsUltraBook).§+m§();
-                           continue loop4;
-                           if(_loc2_ || _loc3_)
-                           {
-                              continue loop5;
-                           }
-                        }
-                     }
-                  }
-                  while(_loc3_ && this);
-                  
-                  continue loop3;
-               }
-            }
-         }
-         §§goto(addr64);
+         super.onLevelLoadError();
+         var name:String = "level-" + LevelManager.§!=§;
+         §85§.§true §(name);
+         §4!c§.§8B§();
+         (§4!T§.§%!K§ as AngryBirdsUltraBook).§+m§();
       }
    }
 }

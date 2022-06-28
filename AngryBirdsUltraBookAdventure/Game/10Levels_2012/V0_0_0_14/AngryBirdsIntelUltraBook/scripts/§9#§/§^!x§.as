@@ -8,12 +8,7 @@ package §9#§
       
       public function §^!x§()
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && _loc1_))
-         {
-            super();
-         }
+         super();
       }
    }
 }

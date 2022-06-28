@@ -28,40 +28,11 @@ package §&!4§
       public static const §-d§:int = 11;
       
       public static const §%p§:int = 12;
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            §`!T§ = -1;
-            loop0:
-            while(true)
-            {
-               §4K§ = 0;
-               while(true)
-               {
-                  §[!>§ = 1;
-                  addr149:
-                  while(!_loc2_)
-                  {
-                     §6N§ = 2;
-                     continue loop0;
-                  }
-               }
-            }
-         }
-         §§goto(addr96);
-      }
+       
       
       public function §]!k§()
       {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_ || this)
-         {
-            super();
-         }
+         super();
       }
    }
 }

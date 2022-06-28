@@ -6,21 +6,7 @@ package starling.events
       public static const KEY_UP:String = "keyUp";
       
       public static const KEY_DOWN:String = "keyDown";
-      
-      {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = true;
-         if(!(_loc1_ && KeyboardEvent))
-         {
-            KEY_UP = "keyUp";
-         }
-         do
-         {
-            KEY_DOWN = "keyDown";
-         }
-         while(!(_loc2_ || _loc2_));
-         
-      }
+       
       
       private var §@!+§:uint;
       
@@ -36,51 +22,13 @@ package starling.events
       
       public function KeyboardEvent(param1:String, param2:uint = 0, param3:uint = 0, param4:uint = 0, param5:Boolean = false, param6:Boolean = false, param7:Boolean = false)
       {
-         var _loc8_:Boolean = false;
-         var _loc9_:Boolean = true;
-         if(_loc9_ || param3)
-         {
-            super(param1,false);
-            loop0:
-            while(true)
-            {
-               this.§@!+§ = param2;
-               addr95:
-               while(true)
-               {
-                  this.§0!j§ = param3;
-                  addr88:
-                  while(!_loc8_)
-                  {
-                  }
-                  continue loop0;
-               }
-            }
-         }
-         while(true)
-         {
-            this.§#,§ = param4;
-            loop4:
-            while(true)
-            {
-               this.§!9§ = param5;
-               while(!_loc8_)
-               {
-                  this.§7!W§ = param6;
-                  do
-                  {
-                     this.§!z§ = param7;
-                  }
-                  while(_loc8_);
-                  
-                  if(_loc9_)
-                  {
-                     continue loop4;
-                  }
-               }
-               §§goto(addr95);
-            }
-         }
+         super(param1,false);
+         this.§@!+§ = param2;
+         this.§0!j§ = param3;
+         this.§#,§ = param4;
+         this.§!9§ = param5;
+         this.§7!W§ = param6;
+         this.§!z§ = param7;
       }
       
       public function get charCode() : uint

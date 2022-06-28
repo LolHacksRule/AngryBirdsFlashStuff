@@ -6,24 +6,11 @@ package §_-Hb§
    {
       
       public static const §_-Gy§:String = "thirdPartyCookiesDisabled";
-      
-      {
-         var _loc1_:Boolean = true;
-         var _loc2_:Boolean = false;
-         if(_loc1_)
-         {
-            §_-Gy§ = "thirdPartyCookiesDisabled";
-         }
-      }
+       
       
       public function §_-a5§(param1:String, param2:Boolean = false, param3:Boolean = false)
       {
-         var _loc4_:Boolean = true;
-         var _loc5_:Boolean = false;
-         if(_loc4_ || this)
-         {
-            super(param1,param2,param3);
-         }
+         super(param1,param2,param3);
       }
       
       override public function clone() : Event
