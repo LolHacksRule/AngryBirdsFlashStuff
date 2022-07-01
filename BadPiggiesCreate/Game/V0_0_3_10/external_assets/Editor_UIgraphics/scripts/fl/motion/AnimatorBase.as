@@ -318,8 +318,7 @@ package fl.motion
          {
             if(this.motionArray)
             {
-               this._spanEnd = -1;
-               this._spanStart = -1;
+               this._spanStart = this._spanEnd = -1;
             }
             this.motionArray = null;
          }

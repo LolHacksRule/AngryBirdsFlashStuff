@@ -1,0 +1,45 @@
+package § J§
+{
+   import §""6§.§^"'§;
+   import §+!d§.§6=§;
+   import §;"$§.§8!O§;
+   import §;"$§.§`5§;
+   import §?!k§.§0!t§;
+   
+   public class §#!r§ extends §^"'§
+   {
+      
+      public static const §^z§:String = "LevelEndEditorFailState";
+       
+      
+      public function §#!r§(param1:Boolean = false, param2:String = "LevelEndEditorFailState")
+      {
+         super(param1,param2);
+      }
+      
+      override public function init() : void
+      {
+         super.init();
+         §%""§ = new §`5§(this);
+         §%""§.init(§8!O§.§'!J§.Views.View_LevelEndFailEditor[0]);
+      }
+      
+      override public function uiInteractionHandler(param1:int, param2:String, param3:§6=§) : void
+      {
+         switch(param2)
+         {
+            case "REPLAY":
+               §6"6§.§0!f§(StateLevelEditorTestPlay.§^z§);
+               mNextState = §6"6§.§^z§;
+               break;
+            case "MENU":
+               §0!t§.§,!S§();
+               §6"6§.§0!f§(StateLevelEditor.§^z§);
+               mNextState = §6"6§.§^z§;
+               break;
+            default:
+               super.uiInteractionHandler(param1,param2,param3);
+         }
+      }
+   }
+}

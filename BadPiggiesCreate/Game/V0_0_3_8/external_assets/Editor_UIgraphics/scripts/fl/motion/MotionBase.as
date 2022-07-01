@@ -398,10 +398,11 @@ package fl.motion
                               if(_loc8_ == 0)
                               {
                                  _loc13_ = _loc11_ + 1;
-                                 break;
                               }
-                              _loc13_ = _loc11_ / _loc8_;
-                              break;
+                              else
+                              {
+                                 _loc13_ = _loc11_ / _loc8_;
+                              }
                            }
                            break;
                         case "skewX":
@@ -409,7 +410,6 @@ package fl.motion
                            if(!this._overrideSkew)
                            {
                               _loc13_ = _loc11_ - _loc8_;
-                              break;
                            }
                            break;
                         case "rotationX":
@@ -417,7 +417,6 @@ package fl.motion
                            if(!this._overrideRotate)
                            {
                               _loc13_ = _loc11_ - _loc8_;
-                              break;
                            }
                      }
                   }

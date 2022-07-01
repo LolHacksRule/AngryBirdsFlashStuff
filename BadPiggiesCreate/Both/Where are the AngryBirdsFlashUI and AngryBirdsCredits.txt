@@ -1,0 +1,3 @@
+These files despite being used were removed to save space since they're duplicated assets, you can find them in AngryBirdsFriends_Facebook\2012\FullGame\r104249\external_assets.
+
+I think you know where you'll find AngryBirdsGoesTo11
