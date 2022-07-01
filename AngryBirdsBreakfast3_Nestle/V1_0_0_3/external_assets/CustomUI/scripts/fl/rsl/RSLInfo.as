@@ -125,7 +125,6 @@ package fl.rsl
                   this._urlLoader.addEventListener(SecurityErrorEvent.SECURITY_ERROR,this.urlLoaderError);
                }
                this._urlLoader.load(req);
-               break;
             }
             catch(se:SecurityError)
             {
@@ -135,7 +134,9 @@ package fl.rsl
                   _failed = true;
                }
                dispatchEvent(new SecurityErrorEvent(SecurityErrorEvent.SECURITY_ERROR,false,false,se.message));
+               continue;
             }
+            break;
          }
          if(req == null)
          {
