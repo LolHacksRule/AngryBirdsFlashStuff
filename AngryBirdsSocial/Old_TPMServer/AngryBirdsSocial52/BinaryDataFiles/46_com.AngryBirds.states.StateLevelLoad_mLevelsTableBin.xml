@@ -1,0 +1,113 @@
+<Levels game="AngryBirds" version="0.0.0" startLevel="-1">
+
+
+
+<Level id="DEFAULT_LOCAL_LEVEL_SIMPLE" background="ThemeHills" LevelExtension="0" AutoCamera="True">
+		<Cameras>
+				<Camera id="Slingshot" x = "30" y="40" scale="1.0"></Camera>     
+				<Camera id="Castle" x = "100" y="40" scale="0.7"></Camera> 
+		</Cameras>
+
+	<Slingshot x = "25" y = "42">
+    	<Birds>
+        	<Bird id = "BIRD_RED" x = "20" y = "45"></Bird>
+			<Bird id = "BIRD_YELLOW" x = "17" y = "45"></Bird>
+			<Bird id = "BIRD_BLUE" x = "14" y = "46"></Bird>
+    	</Birds>
+	</Slingshot>
+   	
+	<Item id = "PIG_KING" x = "85" y = "48" rotation = "0"></Item>
+	<Item id = "PIG_BASIC_BIG" x = "95" y = "48" rotation = "0"></Item>
+	<Item id = "PIG_BASIC_BIG" x = "95" y = "44" rotation = "0"></Item>
+</Level>
+
+
+	
+	<Level id="DEFAULT_EDITOR_LEVEL" background="ThemeHills" LevelExtension="0" AutoCamera="True">
+
+	  <Cameras>
+	     <Camera id = "Slingshot" x = "29.16" y = "37.75" scale = "1"></Camera>
+	     <Camera id = "Castle" x = "92.5" y = "37.75" scale = "1"></Camera>
+	  </Cameras>
+	
+	<Slingshot x = "20" y = "41.5">
+	    <Birds>
+	        <Bird id = "BIRD_RED" x = "17" y = "55"></Bird>
+	        <Bird id = "BIRD_RED" x = "14" y = "55"></Bird>
+	        <Bird id = "BIRD_RED" x = "11" y = "55"></Bird>
+	    </Birds>
+	</Slingshot>
+	    
+	<Item id = "PIG_BASIC_BIG" x = "91" y = "48" rotation = "0"></Item>
+	</Level>
+
+<Level id="DEFAULT_LOCAL_LEVEL" background="ThemeHills" LevelExtension="0" AutoCamera="True">
+  <Cameras>
+     <Camera id = "Slingshot" x = "29.16" y = "37.75" scale = "1"></Camera>
+     <Camera id = "Castle" x = "92.5" y = "37.75" scale = "1"></Camera>
+  </Cameras>
+<Slingshot x = "29.12" y = "41.73">
+    <Birds>
+        <Bird id = "BIRD_RED" x = "24.43" y = "48.88"></Bird>
+        <Bird id = "BIRD_YELLOW" x = "21.18" y = "48.67"></Bird>
+        <Bird id = "BIRD_BLUE" x = "18.52" y = "49.25"></Bird>
+        <Bird id = "BIRD_WHITE" x = "15.52" y = "47.63"></Bird>
+        <Bird id = "BIRD_BLACK" x = "11.93" y = "47.96"></Bird>
+        <Bird id = "BIRD_GREEN" x = "8.37" y = "48.17"></Bird>
+        <Bird id = "BIRD_RED_BIG" x = "3.83" y = "47.58"></Bird>
+    </Birds>
+</Slingshot>
+    <Item id = "MISC_PILLAR" x = "75.18" y = "45.03" rotation = "359.97"></Item>
+    <Item id = "MISC_PILLAR" x = "85.4" y = "45.04" rotation = "359.98"></Item>
+    <Item id = "MISC_PILLAR" x = "95.2" y = "45.04" rotation = "0.08"></Item>
+    <Item id = "STONE_BLOCK_10X1" x = "80.36" y = "39.57" rotation = "359.95"></Item>
+    <Item id = "STONE_BLOCK_10X1" x = "90.42" y = "39.58" rotation = "359.97"></Item>
+    <Item id = "STONE_BLOCK_10X1" x = "100.58" y = "39.58" rotation = "0.12"></Item>
+    <Item id = "STONE_BLOCK_10X1" x = "110.78" y = "39.57" rotation = "0"></Item>
+    <Item id = "MISC_PILLAR" x = "105.8" y = "45.04" rotation = "0.01"></Item>
+    <Item id = "MISC_PILLAR" x = "115.6" y = "45.03" rotation = "0.06"></Item>
+    <Item id = "MISC_PILLAR" x = "85.64" y = "34.12" rotation = "359.68"></Item>
+    <Item id = "MISC_PILLAR" x = "95.18" y = "34.13" rotation = "0.04"></Item>
+    <Item id = "MISC_PILLAR" x = "105.56" y = "34.11" rotation = "0.42"></Item>
+    <Item id = "STONE_BLOCK_10X1" x = "90.01" y = "28.66" rotation = "359.91"></Item>
+    <Item id = "STONE_BLOCK_10X1" x = "100.18" y = "28.66" rotation = "0.1"></Item>
+    <Item id = "STONE_BLOCK_4X4_HOLLOW" x = "90.04" y = "26.12" rotation = "359.84"></Item>
+    <Item id = "STONE_BLOCK_4X4_HOLLOW" x = "95.11" y = "26.12" rotation = "0.03"></Item>
+    <Item id = "STONE_BLOCK_4X4_HOLLOW" x = "100.29" y = "26.12" rotation = "0.17"></Item>
+    <Item id = "STONE_TRIANGLE_4X4_HOLLOW" x = "94.76" y = "21.06" rotation = "0.66"></Item>
+    <Item id = "STONE_BLOCK_8X1" x = "95.42" y = "23.57" rotation = "0.06"></Item>
+    <Item id = "STONE_TRIANGLE_4X4" x = "75.24" y = "37.2" rotation = "89.84"></Item>
+    <Item id = "STONE_BLOCK_4X4_HOLLOW" x = "79.14" y = "37.03" rotation = "359.94"></Item>
+    <Item id = "STONE_TRIANGLE_4X4" x = "79.05" y = "33.16" rotation = "89.94"></Item>
+    <Item id = "STONE_TRIANGLE_4X4" x = "71.37" y = "40.99" rotation = "90"></Item>
+    <Item id = "STONE_TRIANGLE_4X4" x = "67.63" y = "45.03" rotation = "90.01"></Item>
+    <Item id = "STONE_BLOCK_4X2" x = "67.59" y = "47.9" rotation = "0.01"></Item>
+    <Item id = "STONE_BLOCK_4X1" x = "67.59" y = "49.45" rotation = "0"></Item>
+    <Item id = "STONE_BLOCK_4X2" x = "71.67" y = "47.91" rotation = "360"></Item>
+    <Item id = "STONE_BLOCK_4X1" x = "71.64" y = "49.45" rotation = "360"></Item>
+    <Item id = "STONE_BLOCK_4X4_HOLLOW" x = "71.68" y = "44.86" rotation = "360"></Item>
+    <Item id = "STONE_BLOCK_2X1" x = "74.25" y = "39.57" rotation = "359.96"></Item>
+    <Item id = "STONE_BLOCK_4X2" x = "82.34" y = "37.03" rotation = "89.96"></Item>
+    <Item id = "STONE_BLOCK_4X2" x = "82.18" y = "32.98" rotation = "89.97"></Item>
+    <Item id = "PIG_HELMET" x = "85.96" y = "26.07" rotation = "357.82"></Item>
+    <Item id = "STONE_BLOCK_4X2" x = "81.99" y = "28.93" rotation = "89.98"></Item>
+    <Item id = "MISC_GOBLET" x = "78.8" y = "47.87" rotation = "359.82"></Item>
+    <Item id = "MISC_GOBLET" x = "81.4" y = "47.88" rotation = "0.17"></Item>
+    <Item id = "MISC_CHEST" x = "80.2" y = "44.51" rotation = "0.07"></Item>
+    <Item id = "MISC_WATERMELLON" x = "88.8" y = "48.5" rotation = "0"></Item>
+    <Item id = "MISC_DONUT" x = "88.8" y = "45.56" rotation = "0"></Item>
+    <Item id = "MISC_APPLE" x = "92.2" y = "48.75" rotation = "0"></Item>
+    <Item id = "MISC_STRAWBERRY" x = "92.2" y = "46.27" rotation = "180"></Item>
+    <Item id = "PIG_BASIC_SMALL" x = "98.2" y = "48.87" rotation = "0"></Item>
+    <Item id = "PIG_BASIC_MEDIUM" x = "101.4" y = "48" rotation = "0"></Item>
+    <Item id = "PIG_MUSTACHE" x = "110.6" y = "47.53" rotation = "0"></Item>
+    <Item id = "PIG_KING" x = "100.38" y = "35.26" rotation = "2.89"></Item>
+    <Item id = "MISC_TNT" x = "111.78" y = "37.53" rotation = "359.96"></Item>
+    <Item id = "MISC_TNT" x = "111.83" y = "34.48" rotation = "359.95"></Item>
+    <Item id = "MISC_DICE" x = "90.56" y = "37.79" rotation = "0"></Item>
+    <Item id = "MISC_DICE" x = "90.45" y = "35.25" rotation = "0.05"></Item>
+    <Item id = "MISC_SMILEY" x = "111.74" y = "30.98" rotation = "1.56"></Item>
+    <Item id = "MISC_DICE" x = "90.3" y = "32.7" rotation = "0.06"></Item>
+</Level>
+</Levels>
+
