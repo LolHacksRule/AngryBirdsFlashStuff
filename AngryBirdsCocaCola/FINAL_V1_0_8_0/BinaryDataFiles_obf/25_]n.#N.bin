@@ -1,4 +1,0 @@
-	<Popup name="Popup_PersonalGoal" visible="False" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="1024" height="768">
-		<Button name="Button_Close" MouseUp="CLOSE" scaleOnMouseOver="TRUE"/>
-		<TextField name="TextField_PersonalGoal"/> 
-	</Popup>
