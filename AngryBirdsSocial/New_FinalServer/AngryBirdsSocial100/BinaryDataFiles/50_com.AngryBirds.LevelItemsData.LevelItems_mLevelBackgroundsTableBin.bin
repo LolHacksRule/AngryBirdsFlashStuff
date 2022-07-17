@@ -1,0 +1,48 @@
+<LevelBackgrounds game="AngryBirds" version="0.0.0">
+    <Backgrounds>
+		
+       <!--  The layer which will remain on front should be listed on top  -->
+	  <!--  Background id must be same with the export name of main movie clip. Also same id must be used to create a new ground material  -->
+      
+       <Background id="ThemeIceCave" sky="0x0f1545" ground="0xffffff" sound="Sound_Ambient_RedSavannah"  texture="TextureIce" icon="IconIce" textureStrokeColor="0x2b231f" cost="50"> 
+			<Layers>
+				<Layer id="GroundIceWithWater"  speed="1000" foreground="1"></Layer>
+				<Layer id="IceCrystalsFront"   speed="600" foreground="0"></Layer>
+				<Layer id="IceWallBack"   speed="100" foreground="0"></Layer>
+			</Layers>
+		</Background>
+     
+		<Background id="ThemeHills" sky="0x00a4fd" ground="0x492c20" sound="Sound_Ambient_DryForest" texture="TextureHills"  icon="IconHills" ttextureStrokeColor="0x2b231f" cost="100"> 
+			<Layers>
+				<Layer id="HillsFloor"  speed="1000" foreground="1"></Layer>
+				<Layer id="HillsShurubbery"   speed="500" foreground="0"></Layer>
+				<Layer id="Hills1"   speed="400" foreground="0"></Layer>
+				<Layer id="Hills2"   speed="100" foreground="0"></Layer>'
+				<Layer id="Hills3"   speed="50" foreground="0"></Layer>'
+				<Layer id="HillsSky"   speed="0" foreground="0"></Layer>		
+			</Layers>
+		</Background>
+		
+		<Background id="ThemeVolcano" sky="0x015381" ground="0x112245" sound="Sound_Ambient_DryForest" texture="TextureVolcano"  icon="IconVolcano" ttextureStrokeColor="0x2b231f"  cost="150"> 
+			<Layers>
+				<Layer id="VolcanoFloor"  speed="1000" foreground="1"></Layer>
+				<Layer id="VolcanoShrubbery"   speed="500" foreground="0"></Layer>
+				<Layer id="VolcanoPalm"   speed="400" foreground="0"></Layer>
+				<Layer id="VolcanoMountains"   speed="100" foreground="0"></Layer>'
+				<Layer id="VolcanoSky"   speed="0" foreground="0"></Layer>		
+			</Layers>
+		</Background>
+		
+		<Background id="ThemeJungle" sky="0x92ccde" ground="0x14170c" sound="Sound_Ambient_Jungle" texture="TextureJungle"  icon="IconJungle" ttextureStrokeColor="0x2b231f"  cost="200"> 
+			<Layers>			
+				<Layer id="JungleFloor"  speed="1000" foreground="1"></Layer>				
+				<Layer id="JungleTreesFront"   speed="600" foreground="0"></Layer>
+				<Layer id="JungleTreesBack"   speed="500" foreground="0"></Layer>
+				<Layer id="JungleBack"   speed="100" foreground="0"></Layer>			
+				<Layer id="JungleSky"   speed="0" foreground="0"></Layer>				
+			</Layers>
+		</Background>
+	
+  </Backgrounds>
+
+</LevelBackgrounds>
