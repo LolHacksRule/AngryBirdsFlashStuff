@@ -1,0 +1,62 @@
+<Assets>
+
+
+	<Library swf="external_assets/Fonts.swf" startupLoad="true" name="Fonts">
+		<Asset name="Fonts"/>
+	</Library> 
+	<Library swf="external_assets/AvatarCreator_UiAssets.swf" startupLoad="true" name="GameUiAssets">
+		<!-- UI VIEWS -->
+		<Asset name="View_AvatarCreator"/>
+		<Asset name="Popup_CharacterEditor_ProfilePicture"/>
+		<Asset name="EditorBG"/>
+		<Asset name="Repeater_Button_Editor_Tabs"/>
+		<Asset name="Repeater_Button_Editor_Items"/>
+		<Asset name="Icon_CategoryTop"/>
+		<Asset name="Icon_CategoryGlasses"/>
+		<Asset name="Icon_CategoryDetail"/>
+		<Asset name="Icon_CategoryBottom"/>
+	
+		<Asset name="Item_Inventory_Deselect"/>
+
+		<Asset name="Item_Inventory_SheriffStar"/>		
+		<Asset name="Item_Inventory_WhiteWesternHat"/>
+        <Asset name="Item_Inventory_CrazyScientistHair"/>
+        <Asset name="Item_Inventory_TieRedStripes" />
+        <Asset name="Item_Inventory_RedBow" />
+        <Asset name="Item_Inventory_RedBraw"/>
+        <Asset name="Item_Inventory_Zombrero" />
+         	
+		<Asset name="Item_Inventory_ScientistRoundGlasses"/>		
+		<Asset name="Item_Inventory_BrownMushtacheGotee"/>
+        <Asset name="Item_Inventory_BlackTopHat"/>
+        <Asset name="Item_Inventory_Revolver" />
+        <Asset name="Item_Inventory_BrownCowboyHat" />
+        <Asset name="Item_Inventory_OldLadyHat"/>
+        <Asset name="Item_Inventory_PinkFlowerDress" />
+
+		<Asset name="Item_Inventory_BrownHat"/>
+		<Asset name="Item_Inventory_BlueHeartUnderpants"/>
+		<Asset name="Item_Inventory_WhiteKarateBelt"/>
+		<Asset name="Item_Inventory_BlueKarateBelt"/>
+		<Asset name="Item_Inventory_PirateCaptainHat"/>
+		<Asset name="Item_Inventory_RedHeartUnderpants"/>
+		<Asset name="Item_Inventory_AmmoBelt"/>
+		
+		<Asset name="Item_Inventory_LightBrownMustache"/>
+		<Asset name="Item_Inventory_IndianFeathers"/>
+		<Asset name="Item_Inventory_PegLeg"/>
+		<Asset name="Item_Inventory_PirateHook"/>
+		<Asset name="Item_Inventory_PirateEyepatch"/>
+		<Asset name="Item_Inventory_PirateRedHeadscarf"/>
+
+		<Asset name="BlackBird_Animations"/>
+		<Asset name="RedBird_Animations"/>
+		<Asset name="YellowBird_Animations"/>
+		<Asset name="WhiteBird_Animations"/>
+		<Asset name="BlueBird_Animations"/>
+		<Asset name="GreenBird_Animations"/>
+		<Asset name="BigBrother_Animations"/>
+		<Asset name="Piggy_Animations"/>
+	</Library>
+
+</Assets>
