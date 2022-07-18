@@ -1,0 +1,49 @@
+		<Popup name="View_AvatarCreator"  fromLibrary="True" overlay="True" width="1024" height="768" alignH="CENTER" alignV="CENTER">      <!--  name parameter must be identical(case sensitive) with export name of the main movie clip of this UI view      -->
+			
+			<Container name="AvatarCreatorContainer" >
+				
+				<MovieClip name="WaitingForReply" visible="false"/>
+				
+				<Container name="AvatarSharing" visible="false">
+					<MovieClip name="Uploading_MovieClip"/>
+					<Container name="ShareAvatarWindow" visible="false">
+						<Button name ="Button_ShareToWall" MouseUp="SHARE_WALL_AVATAR"/>
+						<Button name ="Button_CancelShare" MouseUp="CANCEL_SHARE"/>
+					</Container>
+				</Container>
+				
+				<MovieClip name ="AvatarHolderClip"/>
+				
+				<Button name="ButtonEasterEgg2" MouseUp="EASTER_EGG_2" />
+				
+				<TextField name="Textfield_PageNumber"/>
+				
+				<Button name="Button_Share" MouseUp="SHARE_AVATAR" visible="false"/>
+				
+				<Button name="Button_Close" MouseUp="CLOSE_AVATAR" />
+
+				<Button name="Button_Unequip" MouseUp="UNEQUIP_ALL" />
+				<Button name="Button_Random" MouseUp="RANDOMIZE_AVATAR" />
+				
+				<Button name="BuyTheseButton" MouseUp="BUY_THESE" visible="false"/>
+				<TextField name="Textfield_Price" visible="false"/>
+				<Button name="SetAvatarProfileButton" MouseUp="SET_AVATAR"/>
+				<Button name="SetFacebookProfileButton" MouseUp="SET_PROFILE"/>
+				
+				<MovieClip name="AvatarSavedAnimation" visible="false" enabled="false"/>
+				
+				<Repeater name="Repeater_Items"  button="Repeater_Button_Editor_Items">
+				</Repeater>
+				
+				<Container name="Container_Bottom" >
+					<Repeater name="Repeater_Tabs"  button="Repeater_Button_Editor_Tabs">
+					</Repeater>
+				</Container>
+	
+		<!--		
+				<Container name="Container_PurchaceConfirm">
+					<Button name="Button_Buy" MouseUp="BUY"/>
+				</Container>
+	-->
+			</Container>
+		</Popup>

@@ -1,0 +1,11 @@
+	<Popup name="Popup_MightyEagle" visible="False" fromLibrary="True" overlay="True" alignH="CENTER" alignV="CENTER" width="1024" height="768">
+	
+	<Container name="Container_Popup" visible="False">
+		<Button name="Button_MEBuy" MouseDown="ME_POPUP_BUY" scaleOnMouseOver="TRUE"/>
+		<Button name="Button_MEVideo" MouseDown="ME_POPUP_VIDEO" scaleOnMouseOver="TRUE"/>
+		<Button name="Button_MEClose" MouseDown="ME_POPUP_CLOSE" scaleOnMouseOver="TRUE"/>
+
+		<MovieClip name="MovieClip_YouTubeArea" visible="False"/>
+	</Container>
+
+	</Popup>
