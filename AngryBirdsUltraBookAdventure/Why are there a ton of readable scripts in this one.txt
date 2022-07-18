@@ -1,0 +1,1 @@
+The developers uploaded builds of the game with debugging information unstripped, allowing more classes and values to be recovered.
