@@ -1,0 +1,90 @@
+<Assets>
+	<packages>
+		<pack url="packages/core.pak"/>
+		<pack url="packages/chapter1.pak"/>
+		<pack url="packages/chapter2.pak"/>
+		<pack url="packages/chapter3.pak"/>
+		<pack url="packages/chapterfacebook.pak"/>
+	</packages>
+
+	<Library swf="external_assets/AngryBirdsCredits.swf" startupLoad="true" name="GameCredits"> 
+		<Asset name="ViewCredits"/>
+	</Library>
+
+
+	<Library swf="external_assets/AngryBirdsFlashUI.swf" startupLoad="true" name="GameUiAssets"> 
+		<!-- UI VIEWS -->
+		<Asset name="ViewLevelPlay"/>
+		<Asset name="ViewCutScene"/>
+		<Asset name="ViewLevelLoad"/>
+		<Asset name="ViewLevelPause"/>
+		<Asset name="ViewLevelStart"/>
+		<Asset name="ViewChapterSelection"/>
+		<Asset name="ViewLevelSelection"/>
+		<!--<Asset name="ViewLevelEnd2"/>-->
+		<Asset name="ViewLevelEndRio"/>
+		<Asset name="ViewLevelEndEagle"/>
+		<!--<Asset name="ViewLevelEndFail"/>-->
+		<Asset name="ViewLevelEndFailRio"/>
+		<!--<Asset name="ViewLeaderboard"/>-->
+		<!-- <Asset name="ViewFeed"/> -->
+		<!--<Asset name="ViewFlashGoes11"/>-->
+		
+		<!--<Asset name="MovieClip_AdobeMaxLogo"/>-->
+		<Asset name="Component_LevelSelection_1"/>
+		<Asset name="Component_LevelSelection_2"/>
+		<Asset name="Component_LevelSelection_3"/>
+		<Asset name="Component_LevelSelection_4"/>
+		<Asset name="Component_LevelSelection_5"/>
+		<Asset name="Component_LevelSelection_6"/>
+		<Asset name="Component_LevelSelection_7"/>
+		<Asset name="Component_LevelSelection_8"/>
+		<Asset name="Repeater_LevelSelection"/>
+		<Asset name="Repeater_LevelSelection15"/>
+		<Asset name="Tooltip"/> 
+		
+		<Asset name="MovieClip_LEVELSELECTION_LEFT_CORNER_1"/>
+		<Asset name="MovieClip_LEVELSELECTION_RIGHT_CORNER_1"/>
+		<Asset name="MovieClip_LEVELSELECTION_LEFT_CORNER_2"/>
+		<Asset name="MovieClip_LEVELSELECTION_RIGHT_CORNER_2"/>
+		<Asset name="MovieClip_LEVELSELECTION_LEFT_CORNER_3"/>
+		<Asset name="MovieClip_LEVELSELECTION_RIGHT_CORNER_3"/>
+		
+		
+		<Asset name="MovieClip_Chapter_Selection_More_Coming"/>
+		<Asset name="MovieClip_Chapter_Selection_Shop"/>
+		<Asset name="MovieClip_CHAPTER_SELECTION_CHAPTER1"/>
+		<Asset name="MovieClip_CHAPTER_SELECTION_CHAPTER2"/>
+		<Asset name="MovieClip_CHAPTER_SELECTION_CHAPTER3"/>
+		<Asset name="MovieClip_CHAPTER_SELECTION_CHAPTER_FACEBOOK"/>
+		<Asset name="Button_Dot"/>
+		
+		<Asset name="Popup_Tutorial"/>
+		<Asset name="Popup_MightyEagle"/>
+		
+		<!--  Star splash effects for end screen -->
+		<Asset name="P_STAR_5"/>
+		<Asset name="P_STAR_4"/>
+		<Asset name="P_STAR_3"/>
+		<Asset name="P_STAR_2"/>
+		<Asset name="P_STAR_1"/>
+		<Asset name="P_SMOKE_3"/>
+		<Asset name="P_SMOKE_2"/>
+		<Asset name="P_SMOKE_1"/>
+		
+		<Asset name="MovieClip_SlingHolder"/>
+		
+		<!-- 
+		<Asset name="MovieClip_FeedBar_1" />
+		<Asset name="MovieClip_FeedBar_2" />
+		<Asset name="MovieClip_FeedBar_3" />
+		-->
+		
+	</Library>
+
+	<!--
+	<Library swf="external_assets/AngryBirdsGoesTo11.swf" startupLoad="true" name="AngryBirdsGoesTo11"> 
+		<Asset name="MovieClip_Animation" />
+	</Library>
+	-->
+</Assets>
