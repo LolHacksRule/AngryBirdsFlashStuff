@@ -1,0 +1,1008 @@
+package §,!7§
+{
+   public class §%$§ extends AnimationManager
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function §%$§(textureManager:TextureManager)
+      {
+         method
+            name "com.rovio.graphics:FacebookAnimationManager/FacebookAnimationManager"
+            param QName(PackageNamespace(",!7"),"TextureManager")
+            returns null
+            
+            body
+               maxstack 4
+               localcount 4
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal2
+                  jump ofs0013
+                  convert_b
+                  declocal_i 2
+                  getlocal2
+                  getlocal2
+                  kill 2
+                  add_i
+                  getlocal2
+                  getlocal0
+                  declocal_i 2
+         ofs0013:
+                  setlocal3
+                  debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\rovio\\graphics;FacebookAnimationManager.as"
+                  getlocal2
+                  iffalse ofs001d
+                  debugline 5
+         ofs001d:
+                  getlocal0
+                  jump ofs002e
+                  inclocal 2
+                  inclocal_i 2
+                  getlocal2
+                  not
+                  setlocal2
+                  increment_i
+                  lessthan
+                  inclocal_i 2
+                  nextname
+         ofs002e:
+                  pushscope
+                  getlocal3
+                  iftrue ofs0069
+                  jump ofs006d
+         ofs0038:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs003f
+         ofs003f:
+                  label
+                  debugline 8
+                  getlocal3
+                  iftrue ofs0050
+                  jump ofs0038
+         ofs004b:
+                  label
+                  getlocal0
+                  getlocal1
+                  constructsuper 1
+         ofs0050:
+                  getlocal3
+                  dup
+                  iffalse ofs0059
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0059:
+                  iftrue ofs0064
+                  jump ofs003f
+         ofs0061:
+                  label
+                  debugline 7
+         ofs0064:
+                  getlocal3
+                  iftrue ofs0072
+         ofs0069:
+                  jump ofs004b
+         ofs006d:
+                  debug 1, "textureManager", 0, 5
+         ofs0072:
+                  jump ofs0061
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      override public function initializeAnimations(itemNames:Array) : void
+      {
+         trait method QName(PackageNamespace(""),"initializeAnimations")
+            flag OVERRIDE
+            flag METADATA
+            metadata"__go_to_definition_help"
+               item "pos" "243"
+            end ; metadata
+            dispid 0
+            method
+               name "com.rovio.graphics:FacebookAnimationManager/initializeAnimations"
+               param QName(PackageNamespace(""),"Array")
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 10
+                  localcount 4
+                  initscopedepth 5
+                  maxscopedepth 6
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     swap
+                     jump ofs0014
+                     declocal_i 2
+                     setlocal2
+                     lessequals
+                     inclocal 2
+                     dup
+                     inclocal 2
+                     declocal 2
+                     getlocal0
+                     setlocal2
+            ofs0014:
+                     setlocal2
+                     setlocal3
+                     debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\rovio\\graphics;FacebookAnimationManager.as"
+                     getlocal3
+                     iffalse ofs001f
+                     debugline 10
+            ofs001f:
+                     getlocal0
+                     pushscope
+                     getlocal2
+                     iftrue ofs018c
+                     jump ofs0197
+            ofs002a:
+                     label
+                     returnvoid
+                     pushtrue
+                     iftrue ofs0031
+            ofs0031:
+                     label
+                     debugline 20
+                     getlocal2
+                     dup
+                     iffalse ofs003d
+                     pop
+                     getlocal0
+                     convert_b
+            ofs003d:
+                     iftrue ofs006e
+                     getlocal2
+                     iftrue ofs00c5
+                     getlocal3
+                     dup
+                     iftrue ofs004f
+                     pop
+                     getlocal2
+                     convert_b
+            ofs004f:
+                     iffalse ofs0124
+                     jump ofs002a
+            ofs0057:
+                     label
+                     findpropstrict QName(ProtectedNamespace("0t"),"`,")
+                     pushstring "INTEL_SMOKE_CLOUD"
+                     pushstring "INTEL_SMOKE_CLOUD_1"
+                     pushstring "INTEL_SMOKE_CLOUD_2"
+                     pushstring "INTEL_SMOKE_CLOUD_3"
+                     pushstring "INTEL_SMOKE_CLOUD_4"
+                     pushstring "INTEL_SMOKE_CLOUD_5"
+                     pushstring "INTEL_SMOKE_CLOUD_6"
+                     newarray 6
+                     callproperty QName(ProtectedNamespace("0t"),"`,"), 2
+                     pop
+            ofs006e:
+                     getlocal3
+                     iffalse ofs007a
+                     jump ofs0031
+            ofs0077:
+                     label
+                     debugline 19
+            ofs007a:
+                     getlocal3
+                     dup
+                     iftrue ofs0083
+                     pop
+                     getlocal1
+                     convert_b
+            ofs0083:
+                     iffalse ofs00de
+                     getlocal2
+                     dup
+                     iffalse ofs0090
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0090:
+                     iftrue ofs00f1
+                     getlocal2
+                     iftrue ofs00fd
+                     getlocal2
+                     dup
+                     iffalse ofs00b0
+                     pop
+                     getlocal1
+                     convert_b
+                     jump ofs00b0
+                     setlocal2
+                     multiply
+                     pushnull
+                     getlocal2
+                     convert_d
+                     bitor
+                     subtract
+                     nextname
+                     inclocal 2
+            ofs00b0:
+                     iftrue ofs018c
+                     jump ofs0057
+            ofs00b8:
+                     label
+                     findpropstrict QName(ProtectedNamespace("0t"),"`,")
+                     pushstring "LASER_DOT"
+                     pushstring "LASER_DOT"
+                     newarray 1
+                     callproperty QName(ProtectedNamespace("0t"),"`,"), 2
+                     pop
+            ofs00c5:
+                     getlocal3
+                     iffalse ofs0135
+                     getlocal2
+                     dup
+                     iffalse ofs00d3
+                     pop
+                     getlocal3
+                     convert_b
+            ofs00d3:
+                     iftrue ofs0164
+                     jump ofs0077
+            ofs00db:
+                     label
+                     debugline 17
+            ofs00de:
+                     jump ofs00b8
+            ofs00e2:
+                     label
+                     findpropstrict QName(ProtectedNamespace("0t"),"`,")
+                     pushstring "INTEL_SLINGSHOT"
+                     pushstring "INTEL_SLING_SHOT_01_BACK"
+                     pushstring "INTEL_SLING_SHOT_01_FRONT"
+                     newarray 2
+                     callproperty QName(ProtectedNamespace("0t"),"`,"), 2
+                     pop
+            ofs00f1:
+                     getlocal3
+                     iffalse ofs0110
+                     jump ofs00db
+            ofs00fa:
+                     label
+                     debugline 16
+            ofs00fd:
+                     jump ofs00e2
+            ofs0101:
+                     label
+                     findpropstrict QName(ProtectedNamespace("0t"),"`,")
+                     pushstring "SUPER_SLINGSHOT"
+                     pushstring "SLING_SHOT_02_BACK"
+                     pushstring "SLING_SHOT_02_FRONT"
+                     newarray 2
+                     callproperty QName(ProtectedNamespace("0t"),"`,"), 2
+                     pop
+            ofs0110:
+                     getlocal3
+                     dup
+                     iftrue ofs0119
+                     pop
+                     getlocal0
+                     convert_b
+            ofs0119:
+                     iffalse ofs019c
+                     jump ofs00fa
+            ofs0121:
+                     label
+                     debugline 15
+            ofs0124:
+                     jump ofs0101
+            ofs0128:
+                     label
+                     findpropstrict QName(ProtectedNamespace("0t"),"`,")
+                     pushstring "POWERUP_BOMB_PARACHUTE"
+                     pushstring "POWERUP_DROP_02"
+                     newarray 1
+                     callproperty QName(ProtectedNamespace("0t"),"`,"), 2
+                     pop
+            ofs0135:
+                     getlocal3
+                     dup
+                     iftrue ofs013e
+                     pop
+                     getlocal0
+                     convert_b
+            ofs013e:
+                     iffalse ofs0181
+                     getlocal2
+                     jump ofs0151
+                     pushnull
+                     negate
+                     decrement
+                     nextvalue
+                     setlocal2
+                     setlocal2
+                     lessthan
+                     convert_u
+                     declocal 2
+            ofs0151:
+                     dup
+                     iffalse ofs0159
+                     pop
+                     getlocal3
+                     convert_b
+            ofs0159:
+                     iftrue ofs0193
+                     jump ofs0121
+            ofs0161:
+                     label
+                     debugline 14
+            ofs0164:
+                     getlocal3
+                     iffalse ofs017a
+                     jump ofs0128
+            ofs016d:
+                     label
+                     findpropstrict QName(ProtectedNamespace("0t"),"`,")
+                     pushstring "POWERUP_BOMB"
+                     pushstring "POWERUP_DROP_01"
+                     newarray 1
+                     callproperty QName(ProtectedNamespace("0t"),"`,"), 2
+                     pop
+            ofs017a:
+                     jump ofs0161
+            ofs017e:
+                     label
+                     debugline 13
+            ofs0181:
+                     jump ofs016d
+            ofs0185:
+                     label
+                     getlocal0
+                     getlocal1
+                     callsuper QName(PackageNamespace(""),"initializeAnimations"), 1
+                     pop
+            ofs018c:
+                     jump ofs017e
+            ofs0190:
+                     label
+                     debugline 11
+            ofs0193:
+                     jump ofs0185
+            ofs0197:
+                     debug 1, "itemNames", 0, 10
+            ofs019c:
+                     jump ofs0190
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         override protected function initializeBirdAnimations() : void
+         {
+            trait method QName(ProtectedNamespace(";!U"),"initializeBirdAnimations")
+               flag OVERRIDE
+               flag METADATA
+               metadata"__go_to_definition_help"
+                  item "pos" "900"
+               end ; metadata
+               dispid 0
+               method
+                  name "com.rovio.graphics:FacebookAnimationManager/protected:initializeBirdAnimations"
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 3
+                     localcount 3
+                     initscopedepth 5
+                     maxscopedepth 6
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        setlocal1
+                        jump ofs0010
+                        dxnslate
+                        pushtrue
+                        multiply_i
+                        negate
+                        getglobalscope
+                        newactivation
+                        pushnull
+                        bitnot
+                        multiply
+               ofs0010:
+                        setlocal2
+                        debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\rovio\\graphics;FacebookAnimationManager.as"
+                        getlocal2
+                        dup
+                        jump ofs0022
+                        lshift
+                        greaterequals
+                        rshift
+                        getlocal2
+                        getlocal0
+                        multiply
+                        pushwith
+                        multiply_i
+                        convert_i
+               ofs0022:
+                        iffalse ofs0029
+                        pop
+                        getlocal2
+                        convert_b
+               ofs0029:
+                        iftrue ofs002f
+                        debugline 22
+               ofs002f:
+                        getlocal0
+                        pushscope
+                        getlocal1
+                        iffalse ofs0049
+                        jump ofs005c
+               ofs003a:
+                        label
+                        returnvoid
+                        pushtrue
+                        iftrue ofs0041
+               ofs0041:
+                        label
+                        debugline 30
+                        getlocal2
+                        iftrue ofs0053
+               ofs0049:
+                        jump ofs003a
+               ofs004d:
+                        label
+                        getlocal0
+                        callsuper QName(ProtectedNamespace("0t"),"initializeBirdAnimations"), 0
+                        pop
+               ofs0053:
+                        getlocal2
+                        iftrue ofs005e
+                        jump ofs0041
+               ofs005c:
+                        debugline 23
+               ofs005e:
+                        jump ofs004d
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            override protected function initializePigAnimations() : void
+            {
+               trait method QName(ProtectedNamespace(";!U"),"initializePigAnimations")
+                  flag OVERRIDE
+                  flag METADATA
+                  metadata"__go_to_definition_help"
+                     item "pos" "1264"
+                  end ; metadata
+                  dispid 0
+                  method
+                     name "com.rovio.graphics:FacebookAnimationManager/protected:initializePigAnimations"
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 10
+                        localcount 3
+                        initscopedepth 5
+                        maxscopedepth 6
+                        
+                        code
+                           pushfalse
+                           pushtrue
+                           swap
+                           jump ofs0010
+                           coerce_a
+                           strictequals
+                           convert_i
+                           coerce_a
+                           nextname
+                           urshift
+                           nextname
+                           dup
+                           convert_i
+                  ofs0010:
+                           setlocal1
+                           setlocal2
+                           debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\rovio\\graphics;FacebookAnimationManager.as"
+                           getlocal2
+                           iffalse ofs001b
+                           debugline 32
+                  ofs001b:
+                           getlocal0
+                           pushscope
+                           getlocal2
+                           dup
+                           iftrue ofs0026
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0026:
+                           iffalse ofs02b7
+                           jump ofs0326
+                  ofs002e:
+                           label
+                           returnvoid
+                           pushtrue
+                           iftrue ofs0035
+                  ofs0035:
+                           label
+                           debugline 60
+                           getlocal1
+                           dup
+                           iffalse ofs0041
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs0041:
+                           iftrue ofs00d1
+                           getlocal1
+                           dup
+                           iffalse ofs004e
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs004e:
+                           iftrue ofs00dd
+                           getlocal1
+                           dup
+                           iffalse ofs005b
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs005b:
+                           iftrue ofs01dd
+                           getlocal2
+                           dup
+                           iftrue ofs0068
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs0068:
+                           iffalse ofs0318
+                           jump ofs002e
+                  ofs0070:
+                           label
+                           findpropstrict QName(ProtectedNamespace("0t"),"\"!O")
+                           pushstring "PIG_INTEL_PIGLETTE_KING"
+                           pushstring "normal"
+                           pushstring "PIG_INTEL_PIGLETTE_KING_01"
+                           pushstring "PIG_INTEL_PIGLETTE_KING_02"
+                           pushstring "PIG_INTEL_PIGLETTE_KING_03"
+                           getlocal1
+                           iftrue ofs0084
+                           debugline 55
+                  ofs0084:
+                           newarray 3
+                           newarray 2
+                           getlocal1
+                           dup
+                           iffalse ofs0091
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0091:
+                           iftrue ofs00cd
+                           pushstring "blink"
+                           pushstring "PIG_INTEL_PIGLETTE_KING_01_BLINK"
+                           pushstring "PIG_INTEL_PIGLETTE_KING_02_BLINK"
+                           pushstring "PIG_INTEL_PIGLETTE_KING_03_BLINK"
+                           getlocal1
+                           dup
+                           iffalse ofs00a6
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs00a6:
+                           iftrue ofs00ac
+                           debugline 56
+                  ofs00ac:
+                           newarray 3
+                           newarray 2
+                           pushstring "yell"
+                           pushstring "PIG_INTEL_PIGLETTE_KING_01_SMILE"
+                           pushstring "PIG_INTEL_PIGLETTE_KING_02_SMILE"
+                           pushstring "PIG_INTEL_PIGLETTE_KING_03_SMILE"
+                           getlocal2
+                           dup
+                           iftrue ofs00c1
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs00c1:
+                           iffalse ofs00c7
+                           debugline 57
+                  ofs00c7:
+                           newarray 3
+                           newarray 2
+                           newarray 3
+                  ofs00cd:
+                           callproperty QName(ProtectedNamespace("0t"),"\"!O"), 2
+                           pop
+                  ofs00d1:
+                           getlocal2
+                           iffalse ofs0158
+                           jump ofs0035
+                  ofs00da:
+                           label
+                           debugline 55
+                  ofs00dd:
+                           getlocal1
+                           dup
+                           iffalse ofs00e6
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs00e6:
+                           iftrue ofs014c
+                           getlocal2
+                           iffalse ofs01cc
+                           jump ofs0070
+                  ofs00f3:
+                           label
+                           findpropstrict QName(ProtectedNamespace("0t"),"\"!O")
+                           pushstring "PIG_INTEL_PIGLETTE_GRANDPA"
+                           pushstring "normal"
+                           pushstring "PIG_INTEL_PIGLETTE_GRANDPA_01"
+                           pushstring "PIG_INTEL_PIGLETTE_GRANDPA_02"
+                           pushstring "PIG_INTEL_PIGLETTE_GRANDPA_03"
+                           getlocal1
+                           iftrue ofs0107
+                           debugline 51
+                  ofs0107:
+                           newarray 3
+                           newarray 2
+                           getlocal2
+                           iffalse ofs0148
+                           pushstring "blink"
+                           pushstring "PIG_INTEL_PIGLETTE_GRANDPA_01_BLINK"
+                           pushstring "PIG_INTEL_PIGLETTE_GRANDPA_02_BLINK"
+                           pushstring "PIG_INTEL_PIGLETTE_GRANDPA_03_BLINK"
+                           getlocal2
+                           dup
+                           iftrue ofs0121
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0121:
+                           iffalse ofs0127
+                           debugline 52
+                  ofs0127:
+                           newarray 3
+                           newarray 2
+                           pushstring "yell"
+                           pushstring "PIG_INTEL_PIGLETTE_GRANDPA_01_SMILE"
+                           pushstring "PIG_INTEL_PIGLETTE_GRANDPA_02_SMILE"
+                           pushstring "PIG_INTEL_PIGLETTE_GRANDPA_03_SMILE"
+                           getlocal2
+                           dup
+                           iftrue ofs013c
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs013c:
+                           iffalse ofs0142
+                           debugline 53
+                  ofs0142:
+                           newarray 3
+                           newarray 2
+                           newarray 3
+                  ofs0148:
+                           callproperty QName(ProtectedNamespace("0t"),"\"!O"), 2
+                           pop
+                  ofs014c:
+                           getlocal1
+                           iftrue ofs0256
+                           jump ofs00da
+                  ofs0155:
+                           label
+                           debugline 51
+                  ofs0158:
+                           getlocal1
+                           iftrue ofs0311
+                           getlocal2
+                           iffalse ofs0322
+                           jump ofs00f3
+                  ofs0166:
+                           label
+                           findpropstrict QName(ProtectedNamespace("0t"),"\"!O")
+                           pushstring "PIG_INTEL_PIGLETTE_HELMET"
+                           pushstring "normal"
+                           pushstring "PIG_INTEL_PIGLETTE_HELMET_01"
+                           pushstring "PIG_INTEL_PIGLETTE_HELMET_02"
+                           jump ofs017e
+                           increment_i
+                           checkfilter
+                           multiply_i
+                           getlocal0
+                           bitand
+                           pop
+                           checkfilter
+                           add
+                           pushscope
+                  ofs017e:
+                           pushstring "PIG_INTEL_PIGLETTE_HELMET_03"
+                           getlocal1
+                           dup
+                           iffalse ofs0189
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0189:
+                           iftrue ofs018f
+                           debugline 47
+                  ofs018f:
+                           newarray 3
+                           newarray 2
+                           getlocal2
+                           dup
+                           iftrue ofs019c
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs019c:
+                           iffalse ofs01c8
+                           pushstring "blink"
+                           pushstring "PIG_INTEL_PIGLETTE_HELMET_01_BLINK"
+                           pushstring "PIG_INTEL_PIGLETTE_HELMET_02_BLINK"
+                           pushstring "PIG_INTEL_PIGLETTE_HELMET_03_BLINK"
+                           getlocal2
+                           iffalse ofs01af
+                           debugline 48
+                  ofs01af:
+                           newarray 3
+                           newarray 2
+                           pushstring "yell"
+                           pushstring "PIG_INTEL_PIGLETTE_HELMET_01_SMILE"
+                           pushstring "PIG_INTEL_PIGLETTE_HELMET_02_SMILE"
+                           pushstring "PIG_INTEL_PIGLETTE_HELMET_03_SMILE"
+                           getlocal1
+                           iftrue ofs01c2
+                           debugline 49
+                  ofs01c2:
+                           newarray 3
+                           newarray 2
+                           newarray 3
+                  ofs01c8:
+                           callproperty QName(ProtectedNamespace("0t"),"\"!O"), 2
+                           pop
+                  ofs01cc:
+                           getlocal1
+                           iftrue ofs0242
+                           getlocal1
+                           iftrue ofs02aa
+                           jump ofs0155
+                  ofs01da:
+                           label
+                           debugline 47
+                  ofs01dd:
+                           jump ofs0166
+                  ofs01e1:
+                           label
+                           findpropstrict QName(ProtectedNamespace("0t"),"\"!O")
+                           pushstring "PIG_INTEL_PIGLETTE_BIG"
+                           pushstring "normal"
+                           pushstring "PIG_INTEL_PIGLETTE_BIG_01"
+                           pushstring "PIG_INTEL_PIGLETTE_BIG_02"
+                           pushstring "PIG_INTEL_PIGLETTE_BIG_03"
+                           getlocal1
+                           iftrue ofs01f5
+                           debugline 43
+                  ofs01f5:
+                           newarray 3
+                           newarray 2
+                           getlocal1
+                           dup
+                           iffalse ofs0202
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs0202:
+                           iftrue ofs023e
+                           pushstring "blink"
+                           pushstring "PIG_INTEL_PIGLETTE_BIG_01_BLINK"
+                           pushstring "PIG_INTEL_PIGLETTE_BIG_02_BLINK"
+                           pushstring "PIG_INTEL_PIGLETTE_BIG_03_BLINK"
+                           getlocal2
+                           dup
+                           iftrue ofs0217
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs0217:
+                           iffalse ofs021d
+                           debugline 44
+                  ofs021d:
+                           newarray 3
+                           newarray 2
+                           pushstring "yell"
+                           pushstring "PIG_INTEL_PIGLETTE_BIG_01_SMILE"
+                           pushstring "PIG_INTEL_PIGLETTE_BIG_02_SMILE"
+                           pushstring "PIG_INTEL_PIGLETTE_BIG_03_SMILE"
+                           getlocal2
+                           dup
+                           iftrue ofs0232
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs0232:
+                           iffalse ofs0238
+                           debugline 45
+                  ofs0238:
+                           newarray 3
+                           newarray 2
+                           newarray 3
+                  ofs023e:
+                           callproperty QName(ProtectedNamespace("0t"),"\"!O"), 2
+                           pop
+                  ofs0242:
+                           getlocal2
+                           dup
+                           iftrue ofs024b
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs024b:
+                           iffalse ofs02a3
+                           jump ofs01da
+                  ofs0253:
+                           label
+                           debugline 43
+                  ofs0256:
+                           jump ofs01e1
+                  ofs025a:
+                           label
+                           findpropstrict QName(ProtectedNamespace("0t"),"\"!O")
+                           pushstring "PIG_INTEL_PIGLETTE_MEDIUM"
+                           pushstring "normal"
+                           pushstring "PIG_INTEL_PIGLETTE_MEDIUM_01"
+                           pushstring "PIG_INTEL_PIGLETTE_MEDIUM_02"
+                           pushstring "PIG_INTEL_PIGLETTE_MEDIUM_03"
+                           getlocal2
+                           iffalse ofs026e
+                           debugline 39
+                  ofs026e:
+                           newarray 3
+                           newarray 2
+                           getlocal1
+                           iftrue ofs029f
+                           pushstring "blink"
+                           pushstring "PIG_INTEL_PIGLETTE_MEDIUM_01_BLINK"
+                           pushstring "PIG_INTEL_PIGLETTE_MEDIUM_02_BLINK"
+                           pushstring "PIG_INTEL_PIGLETTE_MEDIUM_03_BLINK"
+                           getlocal1
+                           iftrue ofs0286
+                           debugline 40
+                  ofs0286:
+                           newarray 3
+                           newarray 2
+                           pushstring "yell"
+                           pushstring "PIG_INTEL_PIGLETTE_MEDIUM_01_SMILE"
+                           pushstring "PIG_INTEL_PIGLETTE_MEDIUM_02_SMILE"
+                           pushstring "PIG_INTEL_PIGLETTE_MEDIUM_03_SMILE"
+                           getlocal2
+                           iffalse ofs0299
+                           debugline 41
+                  ofs0299:
+                           newarray 3
+                           newarray 2
+                           newarray 3
+                  ofs029f:
+                           callproperty QName(ProtectedNamespace("0t"),"\"!O"), 2
+                           pop
+                  ofs02a3:
+                           jump ofs0253
+                  ofs02a7:
+                           label
+                           debugline 39
+                  ofs02aa:
+                           getlocal2
+                           dup
+                           iftrue ofs02b3
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs02b3:
+                           iffalse ofs0328
+                  ofs02b7:
+                           jump ofs025a
+                  ofs02bb:
+                           label
+                           findpropstrict QName(ProtectedNamespace("0t"),"\"!O")
+                           pushstring "PIG_INTEL_PIGLETTE_SMALL"
+                           pushstring "normal"
+                           pushstring "PIG_INTEL_PIGLETTE_SMALL_01"
+                           pushstring "PIG_INTEL_PIGLETTE_SMALL_02"
+                           pushstring "PIG_INTEL_PIGLETTE_SMALL_03"
+                           getlocal2
+                           iffalse ofs02cf
+                           debugline 35
+                  ofs02cf:
+                           newarray 3
+                           newarray 2
+                           getlocal2
+                           iffalse ofs030d
+                           pushstring "blink"
+                           jump ofs02e7
+                           increment_i
+                           istypelate
+                           rshift
+                           instanceof
+                           nextname
+                           pushnan
+                           lessthan
+                           pushnan
+                           pushfalse
+                  ofs02e7:
+                           pushstring "PIG_INTEL_PIGLETTE_SMALL_01_BLINK"
+                           pushstring "PIG_INTEL_PIGLETTE_SMALL_02_BLINK"
+                           pushstring "PIG_INTEL_PIGLETTE_SMALL_02_BLINK"
+                           getlocal1
+                           iftrue ofs02f4
+                           debugline 36
+                  ofs02f4:
+                           newarray 3
+                           newarray 2
+                           pushstring "yell"
+                           pushstring "PIG_INTEL_PIGLETTE_SMALL_01_SMILE"
+                           pushstring "PIG_INTEL_PIGLETTE_SMALL_02_SMILE"
+                           pushstring "PIG_INTEL_PIGLETTE_SMALL_03_SMILE"
+                           getlocal2
+                           iffalse ofs0307
+                           debugline 37
+                  ofs0307:
+                           newarray 3
+                           newarray 2
+                           newarray 3
+                  ofs030d:
+                           callproperty QName(ProtectedNamespace("0t"),"\"!O"), 2
+                           pop
+                  ofs0311:
+                           jump ofs02a7
+                  ofs0315:
+                           label
+                           debugline 35
+                  ofs0318:
+                           jump ofs02bb
+                  ofs031c:
+                           label
+                           getlocal0
+                           callsuper QName(ProtectedNamespace("0t"),"initializePigAnimations"), 0
+                           pop
+                  ofs0322:
+                           jump ofs0315
+                  ofs0326:
+                           debugline 33
+                  ofs0328:
+                           jump ofs031c
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+            }
+         }

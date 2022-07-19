@@ -1,0 +1,234 @@
+package §,!J§
+{
+   import flash.events.Event;
+   
+   public class UserProgressEvent extends Event
+   {
+      
+      public static const §]!X§:String = "OnMightyEagleTimerComplete";
+      
+      public static const §[Y§:String = "userProgressSaved";
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  pushfalse
+                  decrement
+                  getglobalscope
+                  pushnan
+                  checkfilter
+                  subtract_i
+                  equals
+                  rshift
+                  subtract
+         ofs0010:
+                  setlocal2
+                  jump ofs001e
+                  bitand
+                  newactivation
+                  subtract
+                  nextvalue
+                  subtract
+                  bitor
+                  coerce_a
+                  getlocal3
+                  pushscope
+         ofs001e:
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  dup
+                  iftrue ofs0029
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0029:
+                  iffalse ofs0044
+                  jump ofs0048
+         ofs0031:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0038
+         ofs0038:
+                  label
+                  findproperty QName(PackageNamespace(""),"[Y")
+                  pushstring "userProgressSaved"
+                  initproperty QName(PackageNamespace(""),"[Y")
+                  getlocal1
+                  iffalse ofs004e
+         ofs0044:
+                  jump ofs0031
+         ofs0048:
+                  findproperty QName(PackageNamespace(""),"]!X")
+                  pushstring "OnMightyEagleTimerComplete"
+                  initproperty QName(PackageNamespace(""),"]!X")
+         ofs004e:
+                  jump ofs0038
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var data:Object;
+      
+      public function UserProgressEvent(param1:String, param2:Boolean = false, param3:Boolean = false)
+      {
+         method
+            name null
+            flag HAS_OPTIONAL
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace(""),"Boolean")
+            param QName(PackageNamespace(""),"Boolean")
+            optional False()
+            optional False()
+            returns null
+            
+            body
+               maxstack 6
+               localcount 6
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0015
+                  declocal 2
+                  strictequals
+                  getlocal 4
+                  hasnext
+                  inclocal_i 4
+                  inclocal_i 2
+                  declocal 2
+                  urshift
+                  convert_o
+         ofs0015:
+                  setlocal 4
+                  setlocal 5
+                  getlocal0
+                  pushscope
+                  getlocal 5
+                  dup
+                  iftrue ofs0025
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0025:
+                  iffalse ofs002f
+                  getlocal0
+                  getlocal1
+                  getlocal2
+                  getlocal3
+                  constructsuper 3
+         ofs002f:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      override public function clone() : Event
+      {
+         trait method QName(PackageNamespace(""),"clone")
+            flag OVERRIDE
+            dispid 0
+            method
+               name null
+               returns QName(PackageNamespace("flash.events"),"Event")
+               
+               body
+                  maxstack 6
+                  localcount 1
+                  initscopedepth 5
+                  maxscopedepth 6
+                  
+                  code
+                     getlocal0
+                     pushscope
+                     findpropstrict QName(PackageNamespace(",!J"),"UserProgressEvent")
+                     jump ofs0011
+                     subtract
+                     rshift
+                     urshift
+                     subtract
+                     checkfilter
+                     divide
+                     divide
+                     convert_i
+                     convert_s
+            ofs0011:
+                     findpropstrict QName(PackageNamespace(""),"type")
+                     getproperty QName(PackageNamespace(""),"type")
+                     findpropstrict QName(PackageNamespace(""),"bubbles")
+                     getproperty QName(PackageNamespace(""),"bubbles")
+                     findpropstrict QName(PackageNamespace(""),"cancelable")
+                     getproperty QName(PackageNamespace(""),"cancelable")
+                     constructprop QName(PackageNamespace(",!J"),"UserProgressEvent"), 3
+                     returnvalue
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         override public function toString() : String
+         {
+            trait method QName(PackageNamespace(""),"toString")
+               flag OVERRIDE
+               dispid 0
+               method
+                  name null
+                  returns QName(PackageNamespace(""),"String")
+                  
+                  body
+                     maxstack 8
+                     localcount 1
+                     initscopedepth 5
+                     maxscopedepth 6
+                     
+                     code
+                        getlocal0
+                        pushscope
+                        findpropstrict QName(PackageNamespace(""),"formatToString")
+                        jump ofs0011
+                        hasnext
+                        swap
+                        equals
+                        pushscope
+                        setlocal2
+                        bitnot
+                        istypelate
+                        lessequals
+                        dxnslate
+               ofs0011:
+                        pushstring "UserProgressEvent"
+                        pushstring "type"
+                        pushstring "bubbles"
+                        pushstring "cancelable"
+                        pushstring "eventPhase"
+                        callproperty QName(PackageNamespace(""),"formatToString"), 5
+                        returnvalue
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+         }
+      }

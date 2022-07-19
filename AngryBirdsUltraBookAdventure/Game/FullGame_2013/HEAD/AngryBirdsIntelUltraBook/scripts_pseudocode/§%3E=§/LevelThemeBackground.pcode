@@ -1,0 +1,656 @@
+package §>=§
+{
+   public class LevelThemeBackground
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var mName:String;
+      
+      public var §;-§:String;
+      
+      public var §5R§:Number;
+      
+      public var §'!1§:Array;
+      
+      public var §!P§:Number;
+      
+      public var §%9§:Number;
+      
+      public var § a§:String;
+      
+      public var §&T§:String;
+      
+      public var §0!+§:Number;
+      
+      public var §9!3§:String;
+      
+      public function LevelThemeBackground(param1:String, param2:XMLList, param3:Number, param4:Number, param5:String, param6:String, param7:Number, param8:String, param9:Number, param10:String)
+      {
+         method
+            name null
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace(""),"XMLList")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"String")
+            returns QName(PackageNamespace(""),"void")
+            
+            body
+               maxstack 21
+               localcount 20
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0015
+                  declocal_i 15
+                  dup
+                  setlocal 12
+                  getlocal2
+                  setlocal 17
+                  increment
+                  lessthan
+                  declocal_i 5
+                  inclocal 18
+         ofs0015:
+                  setlocal 18
+                  setlocal 19
+                  getlocal0
+                  pushscope
+                  pushnull
+                  coerce QName(PackageNamespace(""),"XML")
+                  setlocal 11
+                  pushnull
+                  coerce QName(PackageNamespace(""),"Array")
+                  setlocal 12
+                  pushnull
+                  coerce QName(PackageNamespace(""),"XML")
+                  setlocal 13
+                  getlocal 19
+                  dup
+                  iftrue ofs0034
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0034:
+                  iffalse ofs00af
+                  jump ofs00e6
+         ofs003c:
+                  label
+                  getlocal0
+                  getlocal 8
+                  initproperty QName(PackageNamespace(""),"&T")
+                  getlocal 19
+                  dup
+                  iftrue ofs004c
+                  pop
+                  getlocal2
+                  convert_b
+         ofs004c:
+                  iffalse ofs007d
+                  getlocal 19
+                  dup
+                  iftrue ofs005a
+                  pop
+                  getlocal3
+                  convert_b
+         ofs005a:
+                  iffalse ofs00cc
+                  getlocal 18
+                  dup
+                  iffalse ofs0068
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0068:
+                  iftrue ofs00d9
+                  getlocal 18
+                  iftrue ofs00e2
+                  pushtrue
+                  iftrue ofs00ed
+         ofs0077:
+                  label
+                  getlocal0
+                  getlocal 7
+                  initproperty QName(PackageNamespace(""),"5R")
+         ofs007d:
+                  getlocal 19
+                  iffalse ofs008d
+                  jump ofs003c
+         ofs0087:
+                  label
+                  getlocal0
+                  getlocal 6
+                  initproperty QName(PackageNamespace(""),";-")
+         ofs008d:
+                  getlocal 19
+                  dup
+                  iftrue ofs0097
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0097:
+                  iffalse ofs00b9
+                  getlocal 19
+                  iffalse ofs00c3
+                  getlocal 19
+                  dup
+                  iftrue ofs00ab
+                  pop
+                  getlocal2
+                  convert_b
+         ofs00ab:
+                  iffalse ofs00e9
+         ofs00af:
+                  jump ofs0077
+         ofs00b3:
+                  label
+                  getlocal0
+                  getlocal 5
+                  initproperty QName(PackageNamespace("")," a")
+         ofs00b9:
+                  jump ofs0087
+         ofs00bd:
+                  label
+                  getlocal0
+                  getlocal 4
+                  initproperty QName(PackageNamespace(""),"%9")
+         ofs00c3:
+                  jump ofs00b3
+         ofs00c7:
+                  label
+                  getlocal0
+                  getlocal3
+                  initproperty QName(PackageNamespace(""),"!P")
+         ofs00cc:
+                  jump ofs00bd
+         ofs00d0:
+                  label
+                  getlocal0
+                  findpropstrict QName(PackageNamespace(""),"Array")
+                  constructprop QName(PackageNamespace(""),"Array"), 0
+                  initproperty QName(PackageNamespace(""),"\'!1")
+         ofs00d9:
+                  jump ofs00c7
+         ofs00dd:
+                  label
+                  getlocal0
+                  getlocal1
+                  initproperty QName(PackageNamespace(""),"mName")
+         ofs00e2:
+                  jump ofs00d0
+         ofs00e6:
+                  getlocal0
+                  constructsuper 0
+         ofs00e9:
+                  jump ofs00dd
+         ofs00ed:
+                  pushbyte 0
+                  setlocal 14
+                  getlocal2
+                  getproperty Multiname("Layer",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  coerce_a
+                  setlocal 15
+                  jump ofs027e
+         ofs00fb:
+                  label
+                  getlocal 15
+                  getlocal 14
+                  nextvalue
+                  coerce QName(PackageNamespace(""),"XML")
+                  setlocal 11
+                  newarray 0
+                  coerce QName(PackageNamespace(""),"Array")
+                  setlocal 12
+                  getlocal 19
+                  dup
+                  iftrue ofs0115
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0115:
+                  iffalse ofs0214
+                  pushbyte 0
+                  setlocal 16
+                  getlocal 18
+                  dup
+                  iffalse ofs0127
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0127:
+                  iftrue ofs020c
+                  getlocal 11
+                  getproperty Multiname("ParticleEmitter",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  coerce_a
+                  setlocal 17
+                  jump ofs0203
+         ofs0136:
+                  label
+                  getlocal 17
+                  getlocal 16
+                  nextvalue
+                  coerce QName(PackageNamespace(""),"XML")
+                  setlocal 13
+                  getlocal 19
+                  dup
+                  iftrue ofs014a
+                  pop
+                  getlocal2
+                  convert_b
+         ofs014a:
+                  iffalse ofs0203
+                  getlocal 12
+                  pushstring "id"
+                  getlocal 13
+                  getproperty MultinameA("id",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  callproperty Multiname("toString",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")]), 0
+                  pushstring "x"
+                  jump ofs016c
+                  inclocal 6
+                  getglobalscope
+                  decrement_i
+                  newactivation
+                  coerce_s
+                  inclocal_i 5
+                  typeof
+                  declocal_i 4
+                  setlocal 6
+         ofs016c:
+                  findpropstrict QName(PackageNamespace(""),"Number")
+                  getlocal 13
+                  getproperty MultinameA("x",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  callproperty QName(PackageNamespace(""),"Number"), 1
+                  coerce_a
+                  dup
+                  convert_b
+                  iftrue ofs0180
+                  pop
+                  pushbyte 0
+                  coerce_a
+         ofs0180:
+                  pushstring "y"
+                  findpropstrict QName(PackageNamespace(""),"Number")
+                  getlocal 13
+                  getproperty MultinameA("y",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  callproperty QName(PackageNamespace(""),"Number"), 1
+                  coerce_a
+                  dup
+                  convert_b
+                  iftrue ofs0196
+                  pop
+                  pushbyte 0
+                  coerce_a
+         ofs0196:
+                  pushstring "rotation"
+                  findpropstrict QName(PackageNamespace(""),"Number")
+                  getlocal 13
+                  getproperty MultinameA("rotation",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  callproperty QName(PackageNamespace(""),"Number"), 1
+                  coerce_a
+                  dup
+                  convert_b
+                  iftrue ofs01ac
+                  pop
+                  pushbyte 0
+                  coerce_a
+         ofs01ac:
+                  pushstring "scale"
+                  findpropstrict QName(PackageNamespace(""),"Number")
+                  getlocal 13
+                  getproperty MultinameA("scale",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  callproperty QName(PackageNamespace(""),"Number"), 1
+                  coerce_a
+                  dup
+                  convert_b
+                  iftrue ofs01c2
+                  pop
+                  pushbyte 1
+                  coerce_a
+         ofs01c2:
+                  pushstring "alpha"
+                  findpropstrict QName(PackageNamespace(""),"Number")
+                  getlocal 13
+                  getproperty MultinameA("alpha",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  callproperty QName(PackageNamespace(""),"Number"), 1
+                  coerce_a
+                  dup
+                  convert_b
+                  iftrue ofs01d8
+                  pop
+                  pushbyte 1
+                  coerce_a
+         ofs01d8:
+                  pushstring "fastForwardsAfterAdd"
+                  findpropstrict QName(PackageNamespace(""),"Number")
+                  getlocal 13
+                  getproperty MultinameA("fastForwardsAfterAdd",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  callproperty QName(PackageNamespace(""),"Number"), 1
+                  coerce_a
+                  dup
+                  convert_b
+                  iftrue ofs01ee
+                  pop
+                  pushbyte 0
+                  coerce_a
+         ofs01ee:
+                  pushstring "isBehindGraphic"
+                  getlocal 13
+                  getproperty MultinameA("behindGraphic",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  callproperty Multiname("toString",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")]), 0
+                  callproperty Multiname("toLowerCase",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")]), 0
+                  pushstring "true"
+                  equals
+                  newobject 8
+                  callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                  pop
+         ofs0203:
+                  hasnext2 17, 16
+                  iftrue ofs0136
+                  kill 17
+         ofs020c:
+                  kill 16
+                  getlocal 18
+                  iftrue ofs027e
+         ofs0214:
+                  getlocal0
+                  getlocal 11
+                  getproperty MultinameA("id",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  getlocal 11
+                  getproperty MultinameA("speed",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  pushbyte -1
+                  pushbyte 0
+                  pushbyte 0
+                  getlocal 11
+                  getproperty MultinameA("foreground",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  pushbyte 0
+                  equals
+                  not
+                  getlocal 11
+                  getproperty MultinameA("static",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  callproperty Multiname("toString",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")]), 0
+                  callproperty Multiname("toLowerCase",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")]), 0
+                  pushstring "true"
+                  equals
+                  getlocal 11
+                  getproperty MultinameA("scale",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  getlocal 11
+                  getproperty MultinameA("tileable",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  callproperty Multiname("toString",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")]), 0
+                  callproperty Multiname("toLowerCase",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")]), 0
+                  pushstring "false"
+                  equals
+                  not
+                  getlocal 11
+                  getproperty MultinameA("xOffset",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  getlocal 11
+                  getproperty MultinameA("marginX",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  getlocal 11
+                  getproperty MultinameA("bottomOffset",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  getlocal 12
+                  getlocal 11
+                  getproperty MultinameA("optional",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  callproperty Multiname("toString",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")]), 0
+                  callproperty Multiname("toLowerCase",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")]), 0
+                  pushstring "true"
+                  equals
+                  getlocal 11
+                  getproperty MultinameA("sky",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  getlocal 11
+                  getproperty MultinameA("ground",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  getlocal 11
+                  getproperty MultinameA("highQuality",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+                  callproperty Multiname("toString",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")]), 0
+                  callproperty Multiname("toLowerCase",[PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")]), 0
+                  pushstring "true"
+                  equals
+                  callproperty QName(PackageNamespace(""),"?!`"), 17
+                  pop
+         ofs027e:
+                  hasnext2 15, 14
+                  iftrue ofs00fb
+                  kill 15
+                  kill 14
+                  getlocal 19
+                  dup
+                  iftrue ofs02a5
+                  pop
+                  jump ofs02a3
+                  getlocal 15
+                  getlocal 12
+                  convert_s
+                  greaterequals
+                  setlocal2
+                  increment
+                  inclocal_i 2
+                  getlocal 5
+                  getlocal 6
+         ofs02a3:
+                  getlocal1
+                  convert_b
+         ofs02a5:
+                  iffalse ofs02c0
+                  jump ofs02dc
+         ofs02ad:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs02b4
+         ofs02b4:
+                  label
+                  getlocal0
+                  getlocal 10
+                  initproperty QName(PackageNamespace(""),"9!3")
+                  getlocal 18
+                  iftrue ofs02ca
+         ofs02c0:
+                  jump ofs02ad
+         ofs02c4:
+                  label
+                  getlocal0
+                  getlocal 9
+                  initproperty QName(PackageNamespace(""),"0!+")
+         ofs02ca:
+                  getlocal 19
+                  dup
+                  iftrue ofs02d4
+                  pop
+                  getlocal3
+                  convert_b
+         ofs02d4:
+                  iffalse ofs02e3
+                  jump ofs02b4
+         ofs02dc:
+                  getlocal0
+                  getproperty QName(PackageNamespace(""),"\'!1")
+                  callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"reverse"), 0
+                  pop
+         ofs02e3:
+                  jump ofs02c4
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function §?!`§(param1:String, param2:Number, param3:Number, param4:Number, param5:Number, param6:Boolean, param7:Boolean, param8:Number, param9:Boolean, param10:Number, param11:Number, param12:Number, param13:Array, param14:Boolean, param15:String, param16:String, param17:Boolean = false) : void
+      {
+         trait method QName(PackageNamespace(""),"?!`")
+            dispid 0
+            method
+               name null
+               flag HAS_OPTIONAL
+               param QName(PackageNamespace(""),"String")
+               param QName(PackageNamespace(""),"Number")
+               param QName(PackageNamespace(""),"Number")
+               param QName(PackageNamespace(""),"Number")
+               param QName(PackageNamespace(""),"Number")
+               param QName(PackageNamespace(""),"Boolean")
+               param QName(PackageNamespace(""),"Boolean")
+               param QName(PackageNamespace(""),"Number")
+               param QName(PackageNamespace(""),"Boolean")
+               param QName(PackageNamespace(""),"Number")
+               param QName(PackageNamespace(""),"Number")
+               param QName(PackageNamespace(""),"Number")
+               param QName(PackageNamespace(""),"Array")
+               param QName(PackageNamespace(""),"Boolean")
+               param QName(PackageNamespace(""),"String")
+               param QName(PackageNamespace(""),"String")
+               param QName(PackageNamespace(""),"Boolean")
+               optional False()
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 22
+                  localcount 20
+                  initscopedepth 4
+                  maxscopedepth 5
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     swap
+                     jump ofs0017
+                     declocal_i 13
+                     equals
+                     inclocal 18
+                     inclocal_i 4
+                     kill 2
+                     getglobalscope
+                     declocal 9
+                     inclocal_i 14
+                     setlocal 14
+            ofs0017:
+                     setlocal 18
+                     setlocal 19
+                     getlocal0
+                     pushscope
+                     getlocal 19
+                     dup
+                     iftrue ofs0049
+                     jump ofs0036
+                     declocal 10
+                     pushundefined
+                     decrement
+                     inclocal 18
+                     pushwith
+                     declocal_i 13
+                     nextvalue
+                     declocal 8
+                     kill 10
+            ofs0036:
+                     pop
+                     jump ofs0047
+                     getlocal 9
+                     astypelate
+                     inclocal 16
+                     negate_i
+                     kill 14
+                     urshift
+                     dup
+                     subtract_i
+                     bitnot
+            ofs0047:
+                     getlocal0
+                     convert_b
+            ofs0049:
+                     iffalse ofs007b
+                     getlocal0
+                     getproperty QName(PackageNamespace(""),"\'!1")
+                     getlocal0
+                     getproperty QName(PackageNamespace(""),"\'!1")
+                     getproperty QName(PackageNamespace(""),"length")
+                     findpropstrict QName(PackageNamespace(">="),"\"_")
+                     getlocal1
+                     getlocal2
+                     getlocal3
+                     getlocal 4
+                     getlocal 5
+                     getlocal 6
+                     getlocal 7
+                     getlocal 8
+                     getlocal 9
+                     getlocal 10
+                     getlocal 11
+                     getlocal 12
+                     getlocal 13
+                     getlocal 14
+                     getlocal 15
+                     getlocal 16
+                     getlocal 17
+                     constructprop QName(PackageNamespace(">="),"\"_"), 17
+                     setproperty MultinameL([PrivateNamespace("^i"),PackageNamespace(""),PrivateNamespace("LevelThemeBackground.as$81"),PackageNamespace(">="),PackageInternalNs(">="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("^i"),StaticProtectedNs("^i")])
+            ofs007b:
+                     returnvoid
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public function §[n§() : Number
+         {
+            trait method QName(PackageNamespace(""),"[n")
+               dispid 0
+               method
+                  name null
+                  returns QName(PackageNamespace(""),"Number")
+                  
+                  body
+                     maxstack 3
+                     localcount 1
+                     initscopedepth 4
+                     maxscopedepth 5
+                     
+                     code
+                        getlocal0
+                        pushscope
+                        getlocal0
+                        jump ofs0010
+                        not
+                        lessequals
+                        decrement_i
+                        lessthan
+                        urshift
+                        decrement_i
+                        increment
+                        newactivation
+                        dxnslate
+               ofs0010:
+                        getproperty QName(PackageNamespace(""),"0!+")
+                        returnvalue
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+         }
+      }

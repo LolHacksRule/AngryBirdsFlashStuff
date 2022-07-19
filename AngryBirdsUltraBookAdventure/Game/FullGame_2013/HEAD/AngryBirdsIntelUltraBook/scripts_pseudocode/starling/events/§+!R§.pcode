@@ -1,0 +1,220 @@
+package starling.events
+{
+   public class §+!R§ extends Event
+   {
+      
+      public static const RESIZE:String = "resize";
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  lessthan
+                  decrement_i
+                  negate_i
+                  getlocal1
+                  lessthan
+                  getlocal1
+                  equals
+                  hasnext
+                  convert_b
+         ofs0010:
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  dup
+                  iffalse ofs001c
+                  pop
+                  getlocal1
+                  convert_b
+         ofs001c:
+                  iftrue ofs0026
+                  findproperty QName(PackageNamespace(""),"RESIZE")
+                  pushstring "resize"
+                  initproperty QName(PackageNamespace(""),"RESIZE")
+         ofs0026:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      private var §,<§:int;
+      
+      private var §5,§:int;
+      
+      public function §+!R§(param1:String, param2:int, param3:int, param4:Boolean = false)
+      {
+         method
+            name null
+            flag HAS_OPTIONAL
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace(""),"int")
+            param QName(PackageNamespace(""),"int")
+            param QName(PackageNamespace(""),"Boolean")
+            optional False()
+            returns null
+            
+            body
+               maxstack 5
+               localcount 7
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal 5
+                  jump ofs0015
+                  pushwith
+                  convert_i
+                  inclocal_i 3
+                  pushscope
+                  instanceof
+                  inclocal 3
+                  inclocal 5
+                  inclocal_i 3
+                  getlocal2
+         ofs0015:
+                  setlocal 6
+                  getlocal0
+                  jump ofs0028
+                  bitxor
+                  declocal_i 4
+                  swap
+                  decrement
+                  pop
+                  pushtrue
+                  getlocal0
+                  kill 3
+                  getlocal 4
+         ofs0028:
+                  pushscope
+                  getlocal 5
+                  iffalse ofs0054
+                  jump ofs0058
+         ofs0033:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs003a
+         ofs003a:
+                  label
+                  getlocal0
+                  getlocal3
+                  initproperty QName(PrivateNamespace("8!G"),"5,")
+                  getlocal 6
+                  iftrue ofs004e
+                  jump ofs0033
+         ofs0049:
+                  label
+                  getlocal0
+                  getlocal2
+                  initproperty QName(PrivateNamespace("8!G"),",<")
+         ofs004e:
+                  getlocal 6
+                  iftrue ofs005e
+         ofs0054:
+                  jump ofs003a
+         ofs0058:
+                  getlocal0
+                  getlocal1
+                  getlocal 4
+                  constructsuper 2
+         ofs005e:
+                  jump ofs0049
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function get width() : int
+      {
+         trait getter QName(PackageNamespace(""),"width")
+            dispid 0
+            method
+               name null
+               returns QName(PackageNamespace(""),"int")
+               
+               body
+                  maxstack 3
+                  localcount 1
+                  initscopedepth 5
+                  maxscopedepth 6
+                  
+                  code
+                     getlocal0
+                     pushscope
+                     getlocal0
+                     jump ofs0010
+                     dxnslate
+                     dxnslate
+                     getglobalscope
+                     convert_u
+                     negate
+                     setlocal3
+                     negate_i
+                     pushnan
+                     add_i
+            ofs0010:
+                     getproperty QName(PrivateNamespace("8!G"),",<")
+                     returnvalue
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public function get height() : int
+         {
+            trait getter QName(PackageNamespace(""),"height")
+               dispid 0
+               method
+                  name null
+                  returns QName(PackageNamespace(""),"int")
+                  
+                  body
+                     maxstack 3
+                     localcount 1
+                     initscopedepth 5
+                     maxscopedepth 6
+                     
+                     code
+                        getlocal0
+                        pushscope
+                        getlocal0
+                        jump ofs0010
+                        getlocal3
+                        convert_b
+                        convert_d
+                        bitor
+                        add_i
+                        rshift
+                        strictequals
+                        pushfalse
+                        rshift
+               ofs0010:
+                        getproperty QName(PrivateNamespace("8!G"),"5,")
+                        returnvalue
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+         }
+      }

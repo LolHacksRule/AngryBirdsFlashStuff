@@ -1,0 +1,143 @@
+package §!m§
+{
+   import §>!8§.b2Mat22;
+   import §>!8§.b2Vec2;
+   
+   public class b2OBB
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var R:b2Mat22;
+      
+      public var §4=§:b2Vec2;
+      
+      public var §8!P§:b2Vec2;
+      
+      public function b2OBB()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  getglobalscope
+                  increment
+                  pushtrue
+                  modulo
+                  convert_o
+                  multiply_i
+                  instanceof
+                  subtract_i
+                  popscope
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  dup
+                  iftrue ofs0037
+                  pop
+                  jump ofs0028
+                  pushnull
+                  getlocal2
+                  newactivation
+                  divide
+                  multiply_i
+                  pushnull
+                  setlocal3
+                  strictequals
+                  instanceof
+         ofs0028:
+                  getlocal0
+                  convert_b
+                  jump ofs0037
+                  pushnan
+                  divide
+                  convert_u
+                  urshift
+                  getlocal1
+                  convert_s
+                  convert_b
+                  negate
+                  convert_i
+         ofs0037:
+                  iffalse ofs0054
+                  jump ofs0077
+         ofs003f:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0046
+         ofs0046:
+                  label
+                  getlocal0
+                  constructsuper 0
+                  getlocal2
+                  iffalse ofs0061
+                  getlocal1
+                  iftrue ofs006e
+         ofs0054:
+                  jump ofs003f
+         ofs0058:
+                  label
+                  getlocal0
+                  findpropstrict QName(PackageNamespace(">!8"),"b2Vec2")
+                  constructprop QName(PackageNamespace(">!8"),"b2Vec2"), 0
+                  initproperty QName(PackageNamespace(""),"8!P")
+         ofs0061:
+                  jump ofs0046
+         ofs0065:
+                  label
+                  getlocal0
+                  findpropstrict QName(PackageNamespace(">!8"),"b2Vec2")
+                  constructprop QName(PackageNamespace(">!8"),"b2Vec2"), 0
+                  initproperty QName(PackageNamespace(""),"4=")
+         ofs006e:
+                  getlocal2
+                  iffalse ofs007f
+                  jump ofs0058
+         ofs0077:
+                  getlocal0
+                  findpropstrict QName(PackageNamespace(">!8"),"b2Mat22")
+                  constructprop QName(PackageNamespace(">!8"),"b2Mat22"), 0
+                  initproperty QName(PackageNamespace(""),"R")
+         ofs007f:
+                  jump ofs0065
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}

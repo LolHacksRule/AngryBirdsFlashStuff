@@ -1,0 +1,89 @@
+package com.AngryBirds.friendsbar
+{
+   import flash.display.MovieClip;
+   import flash.text.TextField;
+   
+   public dynamic class LevelScorePlateAsset extends MovieClip
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 9
+               maxscopedepth 10
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var §5!b§:MovieClip;
+      
+      public var §!H§:TextField;
+      
+      public var §^!j§:MovieClip;
+      
+      public var §6!i§:TextField;
+      
+      public var mcStar1:MovieClip;
+      
+      public var §!'§:TextField;
+      
+      public var mcStar2:MovieClip;
+      
+      public var mcStar3:MovieClip;
+      
+      public function LevelScorePlateAsset()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 10
+               maxscopedepth 11
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  not
+                  typeof
+                  dxnslate
+                  multiply_i
+                  strictequals
+                  multiply
+                  lessequals
+                  equals
+                  pushundefined
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  iffalse ofs001c
+                  getlocal0
+                  constructsuper 0
+         ofs001c:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}

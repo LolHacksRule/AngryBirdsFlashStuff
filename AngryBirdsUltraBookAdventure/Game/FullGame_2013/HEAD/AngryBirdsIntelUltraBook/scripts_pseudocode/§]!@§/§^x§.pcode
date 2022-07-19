@@ -1,0 +1,485 @@
+package §]!@§
+{
+   import §#!,§.§0!b§;
+   import §6!J§.Texture;
+   
+   public class §^x§
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      private var §'!Q§:§0!b§;
+      
+      private var §1W§:Number;
+      
+      public function §^x§(param1:Texture, param2:Number)
+      {
+         method
+            name null
+            param QName(PackageNamespace("6!J"),"Texture")
+            param QName(PackageNamespace(""),"Number")
+            returns null
+            
+            body
+               maxstack 5
+               localcount 5
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0012
+                  setlocal2
+                  inclocal 3
+                  kill 3
+                  getlocal2
+                  setlocal2
+                  lessthan
+                  getlocal2
+                  typeof
+                  getlocal2
+         ofs0012:
+                  setlocal3
+                  setlocal 4
+                  getlocal0
+                  pushscope
+                  getlocal3
+                  dup
+                  iffalse ofs003e
+                  jump ofs002c
+                  increment_i
+                  nextvalue
+                  setlocal3
+                  divide
+                  bitxor
+                  declocal_i 2
+                  setlocal3
+                  inclocal 2
+                  nextvalue
+         ofs002c:
+                  pop
+                  jump ofs003c
+                  declocal 3
+                  getlocal3
+                  checkfilter
+                  decrement
+                  setlocal3
+                  urshift
+                  coerce_a
+                  declocal_i 3
+                  getglobalscope
+         ofs003c:
+                  getlocal0
+                  convert_b
+         ofs003e:
+                  iftrue ofs005f
+                  jump ofs0076
+         ofs0046:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs004d
+         ofs004d:
+                  label
+                  getlocal0
+                  getlocal2
+                  initproperty QName(PrivateNamespace("`j"),"1W")
+                  getlocal3
+                  dup
+                  iffalse ofs005b
+                  pop
+                  getlocal2
+                  convert_b
+         ofs005b:
+                  iftrue ofs006d
+         ofs005f:
+                  jump ofs0046
+         ofs0063:
+                  label
+                  getlocal0
+                  findpropstrict QName(PackageNamespace("#!,"),"0!b")
+                  getlocal1
+                  constructprop QName(PackageNamespace("#!,"),"0!b"), 1
+                  initproperty QName(PrivateNamespace("`j"),"\'!Q")
+         ofs006d:
+                  getlocal3
+                  iftrue ofs0079
+                  jump ofs004d
+         ofs0076:
+                  getlocal0
+                  constructsuper 0
+         ofs0079:
+                  jump ofs0063
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function get image() : §0!b§
+      {
+         trait getter QName(PackageNamespace(""),"image")
+            dispid 0
+            method
+               name null
+               returns QName(PackageNamespace("#!,"),"0!b")
+               
+               body
+                  maxstack 3
+                  localcount 1
+                  initscopedepth 4
+                  maxscopedepth 5
+                  
+                  code
+                     getlocal0
+                     pushscope
+                     getlocal0
+                     jump ofs0010
+                     dup
+                     urshift
+                     dup
+                     swap
+                     convert_d
+                     not
+                     add
+                     lessequals
+                     pushfalse
+            ofs0010:
+                     getproperty QName(PrivateNamespace("`j"),"\'!Q")
+                     returnvalue
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public function get lifeTime() : Number
+         {
+            trait getter QName(PackageNamespace(""),"lifeTime")
+               dispid 0
+               method
+                  name null
+                  returns QName(PackageNamespace(""),"Number")
+                  
+                  body
+                     maxstack 3
+                     localcount 1
+                     initscopedepth 4
+                     maxscopedepth 5
+                     
+                     code
+                        getlocal0
+                        pushscope
+                        getlocal0
+                        jump ofs0010
+                        pushnan
+                        subtract
+                        newactivation
+                        divide
+                        hasnext
+                        getlocal1
+                        convert_u
+                        nextname
+                        bitxor
+               ofs0010:
+                        getproperty QName(PrivateNamespace("`j"),"1W")
+                        returnvalue
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public function dispose() : void
+            {
+               trait method QName(PackageNamespace(""),"dispose")
+                  dispid 0
+                  method
+                     name null
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 4
+                        localcount 3
+                        initscopedepth 4
+                        maxscopedepth 5
+                        
+                        code
+                           pushfalse
+                           pushtrue
+                           setlocal1
+                           jump ofs0010
+                           bitxor
+                           pushwith
+                           swap
+                           newactivation
+                           instanceof
+                           convert_u
+                           nextvalue
+                           getlocal3
+                           pushnan
+                  ofs0010:
+                           setlocal2
+                           getlocal0
+                           pushscope
+                           getlocal1
+                           dup
+                           iftrue ofs001c
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs001c:
+                           iffalse ofs007c
+                           jump ofs002d
+                           pushnan
+                           dxnslate
+                           convert_o
+                           getglobalscope
+                           pushwith
+                           bitnot
+                           add
+                           istypelate
+                           pushfalse
+                  ofs002d:
+                           jump ofs0060
+                  ofs0031:
+                           label
+                           returnvoid
+                           pushtrue
+                           iftrue ofs0038
+                  ofs0038:
+                           jump ofs003c
+                  ofs003c:
+                           dup
+                           convert_i
+                           bitnot
+                           subtract_i
+                           convert_d
+                           nextname
+                           getlocal0
+                           increment
+                           hasnext
+                  ofs0045:
+                           label
+                           getlocal0
+                           pushnull
+                           initproperty QName(PrivateNamespace("`j"),"\'!Q")
+                           getlocal1
+                           dup
+                           iftrue ofs0053
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs0053:
+                           iffalse ofs007c
+                           getlocal2
+                           iftrue ofs0075
+                           jump ofs0031
+                  ofs0060:
+                           getlocal0
+                           getproperty QName(PrivateNamespace("`j"),"\'!Q")
+                           getlocal1
+                           dup
+                           iftrue ofs006c
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs006c:
+                           iffalse ofs0078
+                           convert_b
+                           iffalse ofs0031
+                  ofs0075:
+                           getlocal0
+                           getproperty QName(PrivateNamespace("`j"),"\'!Q")
+                  ofs0078:
+                           callproperty QName(PackageNamespace(""),"dispose"), 0
+                           pop
+                  ofs007c:
+                           jump ofs0045
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public function updateLifeTime(param1:Number) : void
+               {
+                  trait method QName(PackageNamespace(""),"updateLifeTime")
+                     dispid 0
+                     method
+                        name null
+                        param QName(PackageNamespace(""),"Number")
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 5
+                           localcount 4
+                           initscopedepth 4
+                           maxscopedepth 5
+                           
+                           code
+                              pushfalse
+                              pushtrue
+                              swap
+                              jump ofs0011
+                              dup
+                              newactivation
+                              newactivation
+                              modulo
+                              declocal 2
+                              setlocal2
+                              convert_d
+                              bitand
+                              convert_u
+                     ofs0011:
+                              setlocal2
+                              setlocal3
+                              getlocal0
+                              pushscope
+                              getlocal2
+                              dup
+                              iffalse ofs001e
+                              pop
+                              getlocal1
+                              convert_b
+                     ofs001e:
+                              iftrue ofs002f
+                              getlocal0
+                              getlocal0
+                              getproperty QName(PrivateNamespace("`j"),"1W")
+                              getlocal2
+                              iftrue ofs002d
+                              getlocal1
+                              subtract
+                     ofs002d:
+                              initproperty QName(PrivateNamespace("`j"),"1W")
+                     ofs002f:
+                              returnvoid
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  public function §+! §(param1:Number) : void
+                  {
+                     trait method QName(PackageNamespace(""),"+! ")
+                        dispid 0
+                        method
+                           name null
+                           param QName(PackageNamespace(""),"Number")
+                           returns QName(PackageNamespace(""),"void")
+                           
+                           body
+                              maxstack 4
+                              localcount 4
+                              initscopedepth 4
+                              maxscopedepth 5
+                              
+                              code
+                                 pushfalse
+                                 pushtrue
+                                 swap
+                                 jump ofs0012
+                                 getlocal2
+                                 getlocal2
+                                 kill 2
+                                 kill 2
+                                 negate
+                                 setlocal2
+                                 coerce_a
+                                 getlocal2
+                                 setlocal2
+                        ofs0012:
+                                 setlocal2
+                                 setlocal3
+                                 getlocal0
+                                 pushscope
+                                 getlocal3
+                                 dup
+                                 iftrue ofs001f
+                                 pop
+                                 getlocal0
+                                 convert_b
+                        ofs001f:
+                                 iffalse ofs0027
+                                 getlocal0
+                                 getlocal1
+                                 initproperty QName(PrivateNamespace("`j"),"1W")
+                        ofs0027:
+                                 returnvoid
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     public function §^Y§(param1:Texture) : void
+                     {
+                        trait method QName(PackageNamespace(""),"^Y")
+                           dispid 0
+                           method
+                              name null
+                              param QName(PackageNamespace("6!J"),"Texture")
+                              returns QName(PackageNamespace(""),"void")
+                              
+                              body
+                                 maxstack 4
+                                 localcount 4
+                                 initscopedepth 4
+                                 maxscopedepth 5
+                                 
+                                 code
+                                    pushfalse
+                                    pushtrue
+                                    setlocal2
+                                    jump ofs0013
+                                    kill 2
+                                    divide
+                                    setlocal2
+                                    convert_b
+                                    add
+                                    getlocal2
+                                    declocal 2
+                                    inclocal 2
+                                    getlocal2
+                           ofs0013:
+                                    setlocal3
+                                    getlocal0
+                                    pushscope
+                                    getlocal3
+                                    iftrue ofs0021
+                                    getlocal0
+                                    getproperty QName(PrivateNamespace("`j"),"\'!Q")
+                                    getlocal1
+                                    setproperty QName(PackageNamespace(""),"texture")
+                           ofs0021:
+                                    returnvoid
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                        }
+                     }
+                  }

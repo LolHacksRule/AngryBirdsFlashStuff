@@ -1,0 +1,1161 @@
+package §6w§
+{
+   import flash.display.BitmapData;
+   import flash.geom.Rectangle;
+   import flash.utils.Dictionary;
+   
+   public class SpriteSheetXMLGGS extends SpriteSheetBase
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function SpriteSheetXMLGGS(param1:XML, param2:Vector.<XML>, param3:BitmapData)
+      {
+         method
+            name null
+            param QName(PackageNamespace(""),"XML")
+            param TypeName(QName(PackageNamespace("__AS3__.vec"),"Vector")<QName(PackageNamespace(""),"XML")>)
+            param QName(PackageNamespace("flash.display"),"BitmapData")
+            returns null
+            
+            body
+               maxstack 5
+               localcount 6
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal 4
+                  jump ofs0016
+                  inclocal 3
+                  setlocal 4
+                  inclocal_i 2
+                  inclocal 2
+                  declocal 2
+                  pushscope
+                  pushwith
+                  convert_b
+                  nextname
+         ofs0016:
+                  setlocal 5
+                  getlocal0
+                  jump ofs0029
+                  inclocal 4
+                  dxnslate
+                  declocal 2
+                  declocal_i 4
+                  getlocal2
+                  convert_s
+                  multiply_i
+                  subtract
+                  setlocal3
+         ofs0029:
+                  pushscope
+                  getlocal 4
+                  dup
+                  iftrue ofs0034
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0034:
+                  iffalse ofs0059
+                  jump ofs0055
+         ofs003c:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0043
+         ofs0043:
+                  label
+                  getlocal0
+                  getlocal1
+                  getlocal2
+                  callproperty QName(ProtectedNamespace("2-"),"5!Q"), 2
+                  pop
+                  getlocal 5
+                  iftrue ofs0059
+                  jump ofs003c
+         ofs0055:
+                  getlocal0
+                  getlocal3
+                  constructsuper 1
+         ofs0059:
+                  jump ofs0043
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      protected function §5!Q§(param1:XML, param2:Vector.<XML>) : void
+      {
+         trait method QName(ProtectedNamespace("2-"),"5!Q")
+            dispid 0
+            method
+               name null
+               param QName(PackageNamespace(""),"XML")
+               param TypeName(QName(PackageNamespace("__AS3__.vec"),"Vector")<QName(PackageNamespace(""),"XML")>)
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 9
+                  localcount 21
+                  initscopedepth 5
+                  maxscopedepth 6
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     swap
+                     jump ofs0014
+                     setlocal 15
+                     kill 11
+                     setlocal 11
+                     pushscope
+                     istypelate
+                     nextvalue
+                     kill 6
+                     convert_i
+                     getglobalscope
+            ofs0014:
+                     setlocal 19
+                     setlocal 20
+                     getlocal0
+                     pushscope
+                     pushnull
+                     coerce QName(PackageNamespace(""),"XML")
+                     setlocal 5
+                     pushnull
+                     coerce_s
+                     setlocal 6
+                     pushnull
+                     coerce_s
+                     setlocal 7
+                     pushbyte 0
+                     setlocal 8
+                     pushbyte 0
+                     setlocal 9
+                     pushnull
+                     coerce QName(PackageNamespace("6w"),"1_")
+                     setlocal 10
+                     pushbyte 0
+                     setlocal 11
+                     pushbyte 0
+                     setlocal 12
+                     pushbyte 0
+                     setlocal 13
+                     pushbyte 0
+                     setlocal 14
+                     pushnull
+                     coerce QName(PackageNamespace("flash.geom"),"Rectangle")
+                     setlocal 15
+                     pushnull
+                     coerce QName(PackageNamespace("6w"),"<>")
+                     setlocal 16
+                     getlocal0
+                     getlocal2
+                     callproperty QName(PrivateNamespace("2-"),"5!k"), 1
+                     coerce QName(PackageNamespace("flash.utils"),"Dictionary")
+                     setlocal3
+                     getlocal1
+                     pushstring "sprite"
+                     callproperty Multiname("child",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")]), 1
+                     coerce QName(PackageNamespace(""),"XMLList")
+                     setlocal 4
+                     pushbyte 0
+                     setlocal 17
+                     getlocal 4
+                     coerce_a
+                     setlocal 18
+                     jump ofs0332
+            ofs006d:
+                     label
+                     getlocal 18
+                     getlocal 17
+                     nextvalue
+                     coerce QName(PackageNamespace(""),"XML")
+                     setlocal 5
+                     getlocal 20
+                     iffalse ofs00da
+                     jump ofs00de
+            ofs0081:
+                     label
+                     findpropstrict QName(PackageNamespace(""),"parseInt")
+                     getlocal 5
+                     getproperty MultinameA("y",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                     callproperty QName(PackageNamespace(""),"parseInt"), 1
+                     convert_i
+                     getlocal 19
+                     dup
+                     iffalse ofs0096
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0096:
+                     iftrue ofs00ba
+                     setlocal 9
+                     getlocal 19
+                     dup
+                     iffalse ofs00a6
+                     pop
+                     getlocal0
+                     convert_b
+            ofs00a6:
+                     iftrue ofs00bc
+                     pushtrue
+                     iftrue ofs00e9
+            ofs00af:
+                     label
+                     findpropstrict QName(PackageNamespace(""),"parseInt")
+                     getlocal 5
+                     getproperty MultinameA("x",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                     callproperty QName(PackageNamespace(""),"parseInt"), 1
+                     convert_i
+            ofs00ba:
+                     setlocal 8
+            ofs00bc:
+                     getlocal 20
+                     iffalse ofs00da
+                     getlocal 19
+                     iftrue ofs00e5
+                     jump ofs0081
+            ofs00cc:
+                     label
+                     getlocal 5
+                     getproperty MultinameA("file",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                     coerce_s
+                     getlocal 20
+                     iffalse ofs00e3
+                     setlocal 7
+            ofs00da:
+                     jump ofs00af
+            ofs00de:
+                     getlocal 5
+                     getproperty MultinameA("name",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                     coerce_s
+            ofs00e3:
+                     setlocal 6
+            ofs00e5:
+                     jump ofs00cc
+            ofs00e9:
+                     getlocal3
+                     getlocal0
+                     getlocal 7
+                     getlocal 6
+                     callproperty QName(PrivateNamespace("2-"),"];"), 2
+                     getproperty MultinameL([PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                     coerce QName(PackageNamespace("6w"),"1_")
+                     setlocal 10
+                     getlocal 20
+                     dup
+                     iftrue ofs0102
+                     pop
+                     getlocal0
+                     convert_b
+            ofs0102:
+                     iffalse ofs0245
+                     jump ofs01f6
+            ofs010a:
+                     label
+                     getlocal 11
+                     getlocal 20
+                     iffalse ofs0223
+                     getlocal 20
+                     dup
+                     iftrue ofs011d
+                     pop
+                     getlocal0
+                     convert_b
+            ofs011d:
+                     iffalse ofs01a4
+                     getlocal 20
+                     iffalse ofs01c3
+                     getlocal 20
+                     dup
+                     iftrue ofs0131
+                     pop
+                     getlocal3
+                     convert_b
+            ofs0131:
+                     iffalse ofs01e2
+                     pushbyte 0
+                     getlocal 19
+                     dup
+                     iffalse ofs0141
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0141:
+                     iftrue ofs0225
+                     greaterthan
+                     getlocal 19
+                     iftrue ofs023b
+                     convert_b
+                     getlocal 20
+                     iffalse ofs016d
+                     dup
+                     getlocal 20
+                     iffalse ofs015b
+                     convert_b
+            ofs015b:
+                     iffalse ofs023b
+                     getlocal 19
+                     dup
+                     iffalse ofs0169
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0169:
+                     iftrue ofs025d
+            ofs016d:
+                     pop
+                     getlocal 20
+                     dup
+                     iftrue ofs0178
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0178:
+                     iffalse ofs0261
+                     getlocal 19
+                     jump ofs0190
+                     coerce_s
+                     setlocal 11
+                     declocal 11
+                     convert_i
+                     subtract
+                     getlocal 6
+                     declocal 11
+                     declocal 12
+                     bitor
+            ofs0190:
+                     iftrue ofs01d3
+                     pushtrue
+                     iftrue ofs0221
+            ofs0199:
+                     label
+                     findpropstrict QName(PackageNamespace(""),"parseInt")
+                     getlocal 5
+                     getproperty MultinameA("pivotY",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                     callproperty QName(PackageNamespace(""),"parseInt"), 1
+                     convert_i
+            ofs01a4:
+                     setlocal 14
+                     getlocal 20
+                     dup
+                     iftrue ofs01b0
+                     pop
+                     getlocal1
+                     convert_b
+            ofs01b0:
+                     iffalse ofs0245
+                     jump ofs010a
+            ofs01b8:
+                     label
+                     findpropstrict QName(PackageNamespace(""),"parseInt")
+                     getlocal 5
+                     getproperty MultinameA("pivotX",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                     callproperty QName(PackageNamespace(""),"parseInt"), 1
+                     convert_i
+            ofs01c3:
+                     getlocal 20
+                     dup
+                     iftrue ofs01cd
+                     pop
+                     getlocal0
+                     convert_b
+            ofs01cd:
+                     iffalse ofs020d
+                     setlocal 13
+            ofs01d3:
+                     jump ofs0199
+            ofs01d7:
+                     label
+                     findpropstrict QName(PackageNamespace(""),"parseInt")
+                     getlocal 5
+                     getproperty MultinameA("height",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                     callproperty QName(PackageNamespace(""),"parseInt"), 1
+                     convert_i
+            ofs01e2:
+                     setlocal 12
+                     getlocal 20
+                     dup
+                     iftrue ofs01ee
+                     pop
+                     getlocal0
+                     convert_b
+            ofs01ee:
+                     iffalse ofs0245
+                     jump ofs01b8
+            ofs01f6:
+                     getlocal 10
+                     pushnull
+                     ifne ofs025a
+                     getlocal 20
+                     iffalse ofs021d
+                     findpropstrict QName(PackageNamespace(""),"parseInt")
+                     getlocal 5
+                     getproperty MultinameA("width",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                     callproperty QName(PackageNamespace(""),"parseInt"), 1
+                     convert_i
+            ofs020d:
+                     setlocal 11
+                     getlocal 19
+                     dup
+                     iffalse ofs0219
+                     pop
+                     getlocal0
+                     convert_b
+            ofs0219:
+                     iftrue ofs0261
+            ofs021d:
+                     jump ofs01d7
+            ofs0221:
+                     getlocal 12
+            ofs0223:
+                     pushbyte 0
+            ofs0225:
+                     greaterthan
+                     getlocal 19
+                     iftrue ofs025d
+                     convert_b
+                     getlocal 20
+                     dup
+                     iftrue ofs0237
+                     pop
+                     getlocal3
+                     convert_b
+            ofs0237:
+                     iffalse ofs025d
+            ofs023b:
+                     iffalse ofs025a
+                     getlocal 20
+                     iffalse ofs0261
+            ofs0245:
+                     findpropstrict QName(PackageNamespace("6w"),"1_")
+                     pushbyte 0
+                     pushbyte 0
+                     getlocal 11
+                     getlocal 12
+                     getlocal 13
+                     getlocal 14
+                     constructprop QName(PackageNamespace("6w"),"1_"), 6
+                     coerce QName(PackageNamespace("6w"),"1_")
+                     setlocal 10
+            ofs025a:
+                     getlocal 10
+                     convert_b
+            ofs025d:
+                     iffalse ofs0332
+            ofs0261:
+                     findpropstrict QName(PackageNamespace("flash.geom"),"Rectangle")
+                     getlocal 8
+                     getlocal 10
+                     getproperty QName(PackageNamespace(""),"x")
+                     add
+                     getlocal 9
+                     getlocal 10
+                     getproperty QName(PackageNamespace(""),"y")
+                     add
+                     getlocal 10
+                     getproperty QName(PackageNamespace(""),"width")
+                     getlocal 10
+                     getproperty QName(PackageNamespace(""),"height")
+                     constructprop QName(PackageNamespace("flash.geom"),"Rectangle"), 4
+                     coerce QName(PackageNamespace("flash.geom"),"Rectangle")
+                     setlocal 15
+                     findpropstrict QName(PackageNamespace("6w"),"<>")
+                     constructprop QName(PackageNamespace("6w"),"<>"), 0
+                     coerce QName(PackageNamespace("6w"),"<>")
+                     setlocal 16
+                     getlocal 19
+                     dup
+                     iffalse ofs0293
+                     pop
+                     getlocal1
+                     convert_b
+            ofs0293:
+                     iftrue ofs02ce
+                     jump ofs0328
+            ofs029b:
+                     label
+                     findpropstrict QName(PackageNamespace(""),"0!L")
+                     getlocal 16
+                     callproperty QName(PackageNamespace(""),"0!L"), 1
+                     pop
+                     getlocal 20
+                     dup
+                     iftrue ofs02ae
+                     pop
+                     getlocal2
+                     convert_b
+            ofs02ae:
+                     iffalse ofs02dc
+                     getlocal 20
+                     dup
+                     iftrue ofs02bc
+                     pop
+                     getlocal3
+                     convert_b
+            ofs02bc:
+                     iffalse ofs0319
+                     getlocal 19
+                     dup
+                     iffalse ofs02ca
+                     pop
+                     getlocal3
+                     convert_b
+            ofs02ca:
+                     iftrue ofs032e
+            ofs02ce:
+                     pushtrue
+                     iftrue ofs0332
+            ofs02d3:
+                     label
+                     getlocal 16
+                     findpropstrict QName(ProtectedNamespace("1$"),"+#")
+                     getproperty QName(ProtectedNamespace("1$"),"+#")
+                     setproperty QName(PackageNamespace(""),"!c")
+            ofs02dc:
+                     getlocal 19
+                     iftrue ofs02fd
+                     getlocal 20
+                     dup
+                     iftrue ofs02ec
+                     pop
+                     getlocal3
+                     convert_b
+            ofs02ec:
+                     iffalse ofs0324
+                     jump ofs029b
+            ofs02f4:
+                     label
+                     getlocal 16
+                     getlocal 10
+                     getproperty QName(PackageNamespace(""),"pivotY")
+                     setproperty QName(PackageNamespace(""),"%!N")
+            ofs02fd:
+                     jump ofs02d3
+                     jump ofs0305
+            ofs0305:
+                     getlocal 13
+                     istypelate
+                     setlocal3
+                     bitand
+                     bitand
+                     getlocal3
+                     bitand
+                     bitnot
+                     declocal 11
+            ofs0310:
+                     label
+                     getlocal 16
+                     getlocal 10
+                     getproperty QName(PackageNamespace(""),"pivotX")
+                     setproperty QName(PackageNamespace(""),"1l")
+            ofs0319:
+                     jump ofs02f4
+            ofs031d:
+                     label
+                     getlocal 16
+                     getlocal 15
+                     setproperty QName(PackageNamespace(""),"\'?")
+            ofs0324:
+                     jump ofs0310
+            ofs0328:
+                     getlocal 16
+                     getlocal 6
+                     setproperty QName(PackageNamespace(""),"mName")
+            ofs032e:
+                     jump ofs031d
+            ofs0332:
+                     hasnext2 18, 17
+                     iftrue ofs006d
+                     kill 18
+                     kill 17
+                     getlocal 19
+                     dup
+                     iffalse ofs0347
+                     pop
+                     getlocal3
+                     convert_b
+            ofs0347:
+                     iftrue ofs0352
+                     findproperty QName(ProtectedNamespace("1$"),"mName")
+                     getlocal1
+                     getproperty MultinameA("file",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                     initproperty QName(ProtectedNamespace("1$"),"mName")
+            ofs0352:
+                     returnvoid
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         private function §];§(param1:String, param2:String) : String
+         {
+            trait method QName(PrivateNamespace("2-"),"];")
+               dispid 0
+               method
+                  name null
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"String")
+                  returns QName(PackageNamespace(""),"String")
+                  
+                  body
+                     maxstack 4
+                     localcount 5
+                     initscopedepth 5
+                     maxscopedepth 6
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        swap
+                        jump ofs0015
+                        inclocal 3
+                        getlocal3
+                        negate_i
+                        kill 3
+                        lessthan
+                        convert_b
+                        inclocal 3
+                        inclocal_i 3
+                        kill 2
+               ofs0015:
+                        setlocal3
+                        setlocal 4
+                        getlocal0
+                        pushscope
+                        getlocal1
+                        pushstring "#"
+                        add
+                        getlocal 4
+                        dup
+                        iftrue ofs0028
+                        pop
+                        getlocal0
+                        convert_b
+               ofs0028:
+                        iffalse ofs002e
+                        getlocal2
+                        add
+               ofs002e:
+                        returnvalue
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            private function §5!k§(param1:Vector.<XML>) : Dictionary
+            {
+               trait method QName(PrivateNamespace("2-"),"5!k")
+                  dispid 0
+                  method
+                     name null
+                     param TypeName(QName(PackageNamespace("__AS3__.vec"),"Vector")<QName(PackageNamespace(""),"XML")>)
+                     returns QName(PackageNamespace("flash.utils"),"Dictionary")
+                     
+                     body
+                        maxstack 11
+                        localcount 22
+                        initscopedepth 5
+                        maxscopedepth 6
+                        
+                        code
+                           pushfalse
+                           pushtrue
+                           setlocal 20
+                           jump ofs0013
+                           popscope
+                           inclocal 13
+                           getlocal3
+                           bitand
+                           subtract_i
+                           multiply_i
+                           getlocal2
+                           inclocal_i 5
+                           greaterequals
+                  ofs0013:
+                           setlocal 21
+                           getlocal0
+                           pushscope
+                           pushnull
+                           coerce QName(PackageNamespace(""),"XML")
+                           setlocal3
+                           pushnull
+                           coerce_s
+                           setlocal 4
+                           pushnull
+                           coerce QName(PackageNamespace(""),"XMLList")
+                           setlocal 5
+                           pushnull
+                           coerce QName(PackageNamespace(""),"XML")
+                           setlocal 6
+                           pushnull
+                           coerce_s
+                           setlocal 7
+                           pushbyte 0
+                           setlocal 8
+                           pushbyte 0
+                           setlocal 9
+                           pushbyte 0
+                           setlocal 10
+                           pushbyte 0
+                           setlocal 11
+                           pushbyte 0
+                           setlocal 12
+                           pushbyte 0
+                           setlocal 13
+                           pushnull
+                           coerce QName(PackageNamespace(""),"XMLList")
+                           setlocal 14
+                           pushnull
+                           coerce QName(PackageNamespace(""),"XML")
+                           setlocal 15
+                           findpropstrict QName(PackageNamespace("flash.utils"),"Dictionary")
+                           constructprop QName(PackageNamespace("flash.utils"),"Dictionary"), 0
+                           coerce QName(PackageNamespace("flash.utils"),"Dictionary")
+                           setlocal2
+                           pushbyte 0
+                           setlocal 16
+                           getlocal1
+                           coerce_a
+                           setlocal 17
+                           jump ofs032e
+                  ofs0063:
+                           label
+                           getlocal 17
+                           getlocal 16
+                           nextvalue
+                           coerce QName(PackageNamespace(""),"XML")
+                           setlocal3
+                           getlocal 21
+                           dup
+                           iffalse ofs0076
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0076:
+                           iftrue ofs0080
+                           getlocal3
+                           getproperty MultinameA("file",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                           coerce_s
+                           setlocal 4
+                  ofs0080:
+                           getlocal3
+                           pushstring "clipArea"
+                           callproperty Multiname("child",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")]), 1
+                           coerce QName(PackageNamespace(""),"XMLList")
+                           setlocal 5
+                           getlocal 21
+                           dup
+                           iffalse ofs0094
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs0094:
+                           iftrue ofs032e
+                           pushbyte 0
+                           setlocal 18
+                           getlocal 20
+                           iffalse ofs032c
+                           getlocal 5
+                           coerce_a
+                           setlocal 19
+                           jump ofs0323
+                  ofs00ab:
+                           label
+                           getlocal 19
+                           getlocal 18
+                           nextvalue
+                           coerce QName(PackageNamespace(""),"XML")
+                           setlocal 6
+                           getlocal 20
+                           iffalse ofs01ad
+                           jump ofs01cc
+                  ofs00bf:
+                           label
+                           findpropstrict QName(PackageNamespace(""),"parseInt")
+                           getlocal 6
+                           getproperty MultinameA("y",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                           callproperty QName(PackageNamespace(""),"parseInt"), 1
+                           convert_i
+                           getlocal 21
+                           dup
+                           iffalse ofs00d4
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs00d4:
+                           iftrue ofs012e
+                           getlocal 21
+                           dup
+                           iffalse ofs00e2
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs00e2:
+                           iftrue ofs01ab
+                           getlocal 21
+                           dup
+                           iffalse ofs00f0
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs00f0:
+                           iftrue ofs01c6
+                           setlocal 13
+                           getlocal 21
+                           dup
+                           iffalse ofs0100
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0100:
+                           iftrue ofs013c
+                           getlocal 21
+                           iftrue ofs01ad
+                           getlocal 21
+                           dup
+                           iffalse ofs0114
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs0114:
+                           iftrue ofs01c8
+                           getlocal 21
+                           iftrue ofs01bc
+                           pushtrue
+                           iftrue ofs01eb
+                  ofs0123:
+                           label
+                           findpropstrict QName(PackageNamespace(""),"parseInt")
+                           getlocal 6
+                           getproperty MultinameA("x",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                           callproperty QName(PackageNamespace(""),"parseInt"), 1
+                           convert_i
+                  ofs012e:
+                           getlocal 20
+                           iffalse ofs0159
+                           getlocal 21
+                           iftrue ofs018c
+                           setlocal 12
+                  ofs013c:
+                           getlocal 20
+                           dup
+                           iftrue ofs0146
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs0146:
+                           iffalse ofs015b
+                           jump ofs00bf
+                  ofs014e:
+                           label
+                           findpropstrict QName(PackageNamespace(""),"parseInt")
+                           getlocal 6
+                           getproperty MultinameA("pivotY",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                           callproperty QName(PackageNamespace(""),"parseInt"), 1
+                           convert_i
+                  ofs0159:
+                           setlocal 11
+                  ofs015b:
+                           getlocal 21
+                           dup
+                           iffalse ofs0179
+                           pop
+                           getlocal3
+                           convert_b
+                           jump ofs0179
+                           subtract
+                           kill 19
+                           convert_i
+                           getlocal 16
+                           inclocal_i 12
+                           inclocal_i 12
+                           getlocal 13
+                           declocal 13
+                           kill 7
+                  ofs0179:
+                           iftrue ofs018e
+                           jump ofs0123
+                  ofs0181:
+                           label
+                           findpropstrict QName(PackageNamespace(""),"parseInt")
+                           getlocal 6
+                           getproperty MultinameA("pivotX",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                           callproperty QName(PackageNamespace(""),"parseInt"), 1
+                           convert_i
+                  ofs018c:
+                           setlocal 10
+                  ofs018e:
+                           getlocal 20
+                           dup
+                           iftrue ofs0198
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0198:
+                           iffalse ofs01e7
+                           jump ofs014e
+                  ofs01a0:
+                           label
+                           findpropstrict QName(PackageNamespace(""),"parseInt")
+                           getlocal 6
+                           getproperty MultinameA("height",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                           callproperty QName(PackageNamespace(""),"parseInt"), 1
+                           convert_i
+                  ofs01ab:
+                           setlocal 9
+                  ofs01ad:
+                           jump ofs0181
+                  ofs01b1:
+                           label
+                           getlocal2
+                           getlocal 7
+                           getproperty MultinameL([PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                           pushnull
+                           ifne ofs0323
+                  ofs01bc:
+                           findpropstrict QName(PackageNamespace(""),"parseInt")
+                           getlocal 6
+                           getproperty MultinameA("width",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                           callproperty QName(PackageNamespace(""),"parseInt"), 1
+                           convert_i
+                  ofs01c6:
+                           setlocal 8
+                  ofs01c8:
+                           jump ofs01a0
+                  ofs01cc:
+                           getlocal0
+                           getlocal 4
+                           getlocal 6
+                           getproperty MultinameA("name",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                           callproperty QName(PrivateNamespace("2-"),"];"), 2
+                           getlocal 20
+                           dup
+                           iftrue ofs01e0
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs01e0:
+                           iffalse ofs01e5
+                           coerce_s
+                  ofs01e5:
+                           setlocal 7
+                  ofs01e7:
+                           jump ofs01b1
+                  ofs01eb:
+                           getlocal 6
+                           pushstring "spriteBounds"
+                           callproperty Multiname("child",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")]), 1
+                           coerce QName(PackageNamespace(""),"XMLList")
+                           setlocal 14
+                           getlocal 21
+                           iftrue ofs0215
+                           getlocal 14
+                           callproperty Multiname("length",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")]), 0
+                           pushbyte 1
+                           ifne ofs02bf
+                           getlocal 21
+                           dup
+                           iffalse ofs0211
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs0211:
+                           iftrue ofs0302
+                  ofs0215:
+                           getlocal 14
+                           pushbyte 0
+                           getproperty MultinameL([PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                           coerce QName(PackageNamespace(""),"XML")
+                           setlocal 15
+                           getlocal 20
+                           iffalse ofs02a1
+                           jump ofs02a5
+                  ofs0229:
+                           label
+                           findpropstrict QName(PackageNamespace(""),"parseInt")
+                           getlocal 15
+                           getproperty MultinameA("y",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                           callproperty QName(PackageNamespace(""),"parseInt"), 1
+                           getlocal 13
+                           subtract
+                           getlocal 20
+                           iffalse ofs0279
+                           convert_i
+                           getlocal 20
+                           iffalse ofs027a
+                           getlocal 20
+                           dup
+                           iftrue ofs024d
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs024d:
+                           iffalse ofs028b
+                           setlocal 13
+                           getlocal 20
+                           iffalse ofs0323
+                           getlocal 21
+                           dup
+                           iffalse ofs0263
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs0263:
+                           iftrue ofs027c
+                           pushtrue
+                           iftrue ofs02bb
+                  ofs026c:
+                           label
+                           findpropstrict QName(PackageNamespace(""),"parseInt")
+                           getlocal 15
+                           getproperty MultinameA("x",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                           callproperty QName(PackageNamespace(""),"parseInt"), 1
+                           getlocal 12
+                           subtract
+                  ofs0279:
+                           convert_i
+                  ofs027a:
+                           setlocal 12
+                  ofs027c:
+                           jump ofs0229
+                  ofs0280:
+                           label
+                           findpropstrict QName(PackageNamespace(""),"parseInt")
+                           getlocal 15
+                           getproperty MultinameA("height",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                           callproperty QName(PackageNamespace(""),"parseInt"), 1
+                           convert_i
+                  ofs028b:
+                           getlocal 21
+                           dup
+                           iffalse ofs0295
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0295:
+                           iftrue ofs02af
+                           setlocal 9
+                           getlocal 20
+                           iffalse ofs0323
+                  ofs02a1:
+                           jump ofs026c
+                  ofs02a5:
+                           findpropstrict QName(PackageNamespace(""),"parseInt")
+                           getlocal 15
+                           getproperty MultinameA("width",[PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                           callproperty QName(PackageNamespace(""),"parseInt"), 1
+                           convert_i
+                  ofs02af:
+                           setlocal 8
+                           getlocal 20
+                           iffalse ofs0323
+                           jump ofs0280
+                  ofs02bb:
+                           jump ofs030d
+                  ofs02bf:
+                           pushbyte 0
+                           getlocal 20
+                           dup
+                           iftrue ofs02cb
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs02cb:
+                           iffalse ofs030b
+                           convert_i
+                           getlocal 20
+                           dup
+                           iftrue ofs02da
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs02da:
+                           iffalse ofs030a
+                           setlocal 12
+                           getlocal 21
+                           dup
+                           iffalse ofs02fe
+                           pop
+                           jump ofs02fc
+                           declocal_i 4
+                           declocal_i 15
+                           getlocal 14
+                           inclocal 7
+                           inclocal_i 19
+                           kill 2
+                           declocal_i 8
+                           convert_i
+                           setlocal2
+                  ofs02fc:
+                           getlocal3
+                           convert_b
+                  ofs02fe:
+                           iftrue ofs030d
+                  ofs0302:
+                           pushbyte 0
+                           getlocal 21
+                           iftrue ofs030b
+                  ofs030a:
+                           convert_i
+                  ofs030b:
+                           setlocal 13
+                  ofs030d:
+                           getlocal2
+                           getlocal 7
+                           findpropstrict QName(PackageNamespace("6w"),"1_")
+                           getlocal 12
+                           getlocal 13
+                           getlocal 8
+                           getlocal 9
+                           getlocal 10
+                           getlocal 11
+                           constructprop QName(PackageNamespace("6w"),"1_"), 6
+                           setproperty MultinameL([PrivateNamespace("2-"),ProtectedNamespace("2-"),PackageNamespace(""),PackageNamespace("6w"),PrivateNamespace("SpriteSheetXMLGGS.as$103"),PackageInternalNs("6w"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("2-"),StaticProtectedNs("1$")])
+                  ofs0323:
+                           hasnext2 19, 18
+                           iftrue ofs00ab
+                           kill 19
+                  ofs032c:
+                           kill 18
+                  ofs032e:
+                           hasnext2 17, 16
+                           iftrue ofs0063
+                           kill 17
+                           kill 16
+                           getlocal2
+                           returnvalue
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+            }
+         }

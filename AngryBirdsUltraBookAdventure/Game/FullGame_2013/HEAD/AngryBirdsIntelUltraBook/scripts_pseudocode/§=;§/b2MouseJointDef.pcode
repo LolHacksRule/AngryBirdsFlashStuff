@@ -1,0 +1,171 @@
+package §=;§
+{
+   import §+!g§.b2internal;
+   import §>!8§.b2Vec2;
+   
+   use namespace b2internal;
+   
+   public class b2MouseJointDef extends b2JointDef
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var target:b2Vec2;
+      
+      public var §<!U§:Number;
+      
+      public var §5Q§:Number;
+      
+      public var §=$§:Number;
+      
+      public function b2MouseJointDef()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 3
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  pushundefined
+                  typeof
+                  setlocal2
+                  astypelate
+                  subtract_i
+                  pushscope
+                  subtract_i
+                  increment_i
+                  dxnslate
+         ofs0010:
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  iffalse ofs0076
+                  jump ofs009b
+         ofs001c:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0023
+         ofs0023:
+                  label
+                  getlocal0
+                  pushdouble 0.7
+                  initproperty QName(PackageNamespace(""),"=$")
+                  getlocal1
+                  dup
+                  iftrue ofs003f
+                  pop
+                  jump ofs003d
+                  checkfilter
+                  subtract
+                  pop
+                  dxnslate
+                  lessequals
+                  decrement_i
+                  decrement
+                  astypelate
+                  urshift
+         ofs003d:
+                  getlocal1
+                  convert_b
+         ofs003f:
+                  iffalse ofs006c
+                  getlocal2
+                  iftrue ofs0080
+                  getlocal1
+                  dup
+                  iftrue ofs005e
+                  pop
+                  getlocal2
+                  jump ofs005d
+                  urshift
+                  lessthan
+                  setlocal2
+                  equals
+                  bitand
+                  getlocal0
+                  checkfilter
+                  coerce_a
+                  greaterthan
+         ofs005d:
+                  convert_b
+         ofs005e:
+                  iffalse ofs0097
+                  jump ofs001c
+         ofs0066:
+                  label
+                  getlocal0
+                  pushbyte 5
+                  initproperty QName(PackageNamespace(""),"5Q")
+         ofs006c:
+                  getlocal2
+                  iftrue ofs008f
+                  getlocal2
+                  iftrue ofs00a3
+         ofs0076:
+                  jump ofs0023
+         ofs007a:
+                  label
+                  getlocal0
+                  pushdouble 0.0
+                  initproperty QName(PackageNamespace(""),"<!U")
+         ofs0080:
+                  jump ofs0066
+         ofs0084:
+                  label
+                  findproperty QName(PackageNamespace(""),"type")
+                  findpropstrict QName(PackageNamespace("=;"),"b2Joint")
+                  getproperty QName(PackageNamespace("=;"),"b2Joint")
+                  getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"9!C")
+                  initproperty QName(PackageNamespace(""),"type")
+         ofs008f:
+                  jump ofs007a
+         ofs0093:
+                  label
+                  getlocal0
+                  constructsuper 0
+         ofs0097:
+                  jump ofs0084
+         ofs009b:
+                  getlocal0
+                  findpropstrict QName(PackageNamespace(">!8"),"b2Vec2")
+                  constructprop QName(PackageNamespace(">!8"),"b2Vec2"), 0
+                  initproperty QName(PackageNamespace(""),"target")
+         ofs00a3:
+                  jump ofs0093
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}

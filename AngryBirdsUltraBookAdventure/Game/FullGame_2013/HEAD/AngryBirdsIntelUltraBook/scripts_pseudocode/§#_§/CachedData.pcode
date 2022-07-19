@@ -1,0 +1,2469 @@
+package §#_§
+{
+   import §5=§.§8O§;
+   import §=!i§.CachedDataEvent;
+   import §>o§.§7b§;
+   import §^!7§.§+!I§;
+   import §^!7§.RetryingURLLoaderErrorEvent;
+   import §^!7§.§[!<§;
+   import flash.events.Event;
+   import flash.events.EventDispatcher;
+   import flash.events.IOErrorEvent;
+   import flash.events.ProgressEvent;
+   import flash.events.SecurityErrorEvent;
+   import flash.net.URLLoaderDataFormat;
+   import flash.net.URLRequest;
+   import flash.net.URLRequestMethod;
+   
+   [Event(name="securityError",type="flash.events.SecurityErrorEvent")]
+   [Event(name="ioError",type="flash.events.IOErrorEvent")]
+   [Event(name="progress",type="flash.events.ProgressEvent")]
+   [Event(name="totalItemCountUpdated",type="com.angrybirds.friendsbar.events.CachedDataEvent")]
+   [Event(name="dataLoaded",type="com.angrybirds.friendsbar.events.CachedDataEvent")]
+   public class CachedData extends EventDispatcher
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      protected var §+p§:Array;
+      
+      protected var §`!C§:String;
+      
+      protected var §,!Q§:Number = -1;
+      
+      protected var §=!4§:§9k§;
+      
+      protected var §1I§:Vector.<§9k§>;
+      
+      public function CachedData(remoteServiceUrl:String)
+      {
+         method
+            name "com.angrybirds.friendsbar.data:CachedData/CachedData"
+            param QName(PackageNamespace(""),"String")
+            returns null
+            
+            body
+               maxstack 5
+               localcount 4
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0014
+                  convert_b
+                  getlocal2
+                  greaterequals
+                  kill 2
+                  istypelate
+                  inclocal 2
+                  getlocal2
+                  inclocal_i 2
+                  declocal 2
+         ofs0014:
+                  setlocal2
+                  setlocal3
+                  debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\data;CachedData.as"
+                  getlocal2
+                  iftrue ofs001f
+                  debugline 60
+         ofs001f:
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  iftrue ofs00ce
+                  jump ofs00fc
+         ofs002a:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0031
+         ofs0031:
+                  label
+                  debugline 62
+                  getlocal2
+                  dup
+                  iffalse ofs003d
+                  pop
+                  getlocal2
+                  convert_b
+         ofs003d:
+                  iftrue ofs007e
+                  getlocal2
+                  iftrue ofs0085
+                  getlocal3
+                  dup
+                  iftrue ofs004f
+                  pop
+                  getlocal2
+                  convert_b
+         ofs004f:
+                  iffalse ofs0092
+                  getlocal2
+                  dup
+                  iffalse ofs006c
+                  jump ofs0069
+                  kill 2
+                  inclocal 2
+                  getlocal1
+                  equals
+                  convert_s
+                  kill 2
+                  nextvalue
+                  convert_i
+                  convert_b
+         ofs0069:
+                  pop
+                  getlocal0
+                  convert_b
+         ofs006c:
+                  iftrue ofs00ce
+                  getlocal3
+                  iffalse ofs00f1
+                  jump ofs002a
+         ofs0079:
+                  label
+                  getlocal0
+                  getlocal1
+                  initproperty QName(ProtectedNamespace("\'H"),"`!C")
+         ofs007e:
+                  jump ofs0031
+         ofs0082:
+                  label
+                  debugline 61
+         ofs0085:
+                  getlocal2
+                  iftrue ofs00a6
+                  jump ofs0079
+         ofs008e:
+                  label
+                  getlocal0
+                  constructsuper 0
+         ofs0092:
+                  getlocal3
+                  dup
+                  iftrue ofs009b
+                  pop
+                  getlocal1
+                  convert_b
+         ofs009b:
+                  iffalse ofs00d5
+                  jump ofs0082
+         ofs00a3:
+                  label
+                  debugline 60
+         ofs00a6:
+                  jump ofs008e
+                  jump ofs00ae
+         ofs00ae:
+                  kill 2
+                  inclocal_i 2
+                  setlocal2
+                  negate_i
+                  declocal 2
+                  inclocal 2
+                  multiply_i
+                  inclocal 2
+                  setlocal2
+         ofs00bc:
+                  label
+                  getlocal0
+                  findpropstrict Multiname("Vector",[PackageNamespace("__AS3__.vec")])
+                  getproperty Multiname("Vector",[PrivateNamespace("\'H"),ProtectedNamespace("\'H"),PackageNamespace("__AS3__.vec"),PrivateNamespace("CachedData.as$433"),PackageNamespace(""),PackageNamespace("#_"),PackageInternalNs("#_"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("\'H"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  findpropstrict QName(PackageNamespace("#_"),"9k")
+                  getproperty QName(PackageNamespace("#_"),"9k")
+                  applytype 1
+                  pushbyte 0
+                  construct 1
+                  initproperty QName(ProtectedNamespace("\'H"),"1I")
+         ofs00ce:
+                  jump ofs00a3
+         ofs00d2:
+                  label
+                  debugline 52
+         ofs00d5:
+                  getlocal2
+                  dup
+                  iffalse ofs00de
+                  pop
+                  getlocal0
+                  convert_b
+         ofs00de:
+                  iftrue ofs00f8
+                  getlocal2
+                  iftrue ofs0101
+                  jump ofs00bc
+         ofs00eb:
+                  label
+                  getlocal0
+                  newarray 0
+                  initproperty QName(ProtectedNamespace("\'H"),"+p")
+         ofs00f1:
+                  jump ofs00d2
+         ofs00f5:
+                  label
+                  debugline 46
+         ofs00f8:
+                  jump ofs00eb
+         ofs00fc:
+                  debug 1, "remoteServiceUrl", 0, 60
+         ofs0101:
+                  jump ofs00f5
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function § !i§(itemIndex:int, itemCount:int) : void
+      {
+         trait method QName(PackageNamespace("")," !i")
+            flag METADATA
+            metadata"__go_to_definition_help"
+               item "pos" "2365"
+            end ; metadata
+            dispid 0
+            method
+               name "com.angrybirds.friendsbar.data:CachedData/loadItems"
+               param QName(PackageNamespace(""),"int")
+               param QName(PackageNamespace(""),"int")
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 8
+                  localcount 8
+                  initscopedepth 5
+                  maxscopedepth 6
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     swap
+                     jump ofs0016
+                     lessthan
+                     declocal_i 6
+                     getlocal0
+                     inclocal_i 4
+                     setlocal 5
+                     declocal 2
+                     inclocal 4
+                     declocal_i 5
+                     setlocal3
+            ofs0016:
+                     setlocal 6
+                     setlocal 7
+                     debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\data;CachedData.as"
+                     getlocal 7
+                     iffalse ofs0024
+                     debugline 68
+            ofs0024:
+                     getlocal0
+                     pushscope
+                     getlocal 6
+                     dup
+                     iffalse ofs0030
+                     pop
+                     getlocal3
+                     convert_b
+            ofs0030:
+                     iftrue ofs00a2
+                     jump ofs00a6
+            ofs0038:
+                     label
+                     debugline 69
+                     getlocal 7
+                     dup
+                     iftrue ofs0045
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0045:
+                     iffalse ofs0068
+                     getlocal 7
+                     iffalse ofs0080
+                     getlocal 7
+                     dup
+                     iftrue ofs0059
+                     pop
+                     getlocal3
+                     convert_b
+            ofs0059:
+                     iffalse ofs00a2
+                     pushtrue
+                     iftrue ofs00af
+            ofs0062:
+                     label
+                     debug 1, "loadingOperation", 4, 80
+            ofs0068:
+                     getlocal 7
+                     dup
+                     iftrue ofs0072
+                     pop
+                     getlocal0
+                     convert_b
+            ofs0072:
+                     iffalse ofs0098
+                     jump ofs0038
+            ofs007a:
+                     label
+                     debug 1, "urlLoader", 3, 77
+            ofs0080:
+                     getlocal 6
+                     dup
+                     iffalse ofs008a
+                     pop
+                     getlocal2
+                     convert_b
+            ofs008a:
+                     iftrue ofs00ab
+                     jump ofs0062
+            ofs0092:
+                     label
+                     debug 1, "urlRequest", 2, 69
+            ofs0098:
+                     jump ofs007a
+            ofs009c:
+                     label
+                     debug 1, "itemCount", 1, 68
+            ofs00a2:
+                     jump ofs0092
+            ofs00a6:
+                     debug 1, "itemIndex", 0, 68
+            ofs00ab:
+                     jump ofs009c
+            ofs00af:
+                     findpropstrict QName(PackageNamespace("^!7"),"+!I")
+                     getproperty QName(PackageNamespace("^!7"),"+!I")
+                     getlocal0
+                     getproperty QName(ProtectedNamespace("\'H"),"`!C")
+                     callproperty QName(PackageNamespace(""),"[O"), 1
+                     coerce QName(PackageNamespace("flash.net"),"URLRequest")
+                     setlocal3
+                     getlocal 6
+                     iftrue ofs00e3
+                     jump ofs0154
+            ofs00c6:
+                     label
+                     debugline 77
+                     getlocal 6
+                     iftrue ofs0100
+                     getlocal 7
+                     dup
+                     iftrue ofs00d9
+                     pop
+                     getlocal3
+                     convert_b
+            ofs00d9:
+                     iffalse ofs0115
+                     getlocal 6
+                     iftrue ofs0135
+            ofs00e3:
+                     pushtrue
+                     iftrue ofs015a
+            ofs00e8:
+                     label
+                     getlocal3
+                     findpropstrict QName(PackageNamespace(">o"),"7b")
+                     getproperty QName(PackageNamespace(">o"),"7b")
+                     pushstring "index"
+                     debugline 73
+                     getlocal1
+                     pushstring "count"
+                     debugline 74
+                     getlocal2
+                     newobject 2
+                     callproperty QName(PackageNamespace(""),"encode"), 1
+                     setproperty QName(PackageNamespace(""),"data")
+            ofs0100:
+                     getlocal 6
+                     dup
+                     iffalse ofs010a
+                     pop
+                     getlocal0
+                     convert_b
+            ofs010a:
+                     iftrue ofs0142
+                     jump ofs00c6
+            ofs0112:
+                     label
+                     debugline 72
+            ofs0115:
+                     getlocal 7
+                     iffalse ofs0150
+                     jump ofs00e8
+            ofs011f:
+                     label
+                     getlocal3
+                     jump ofs0131
+                     coerce_a
+                     decrement
+                     rshift
+                     inclocal_i 5
+                     setlocal 6
+                     pushfalse
+                     pushfalse
+                     hasnext
+                     inclocal_i 4
+            ofs0131:
+                     pushstring "application/json"
+                     setproperty QName(PackageNamespace(""),"contentType")
+            ofs0135:
+                     getlocal 7
+                     iffalse ofs0156
+                     jump ofs0112
+            ofs013f:
+                     label
+                     debugline 71
+            ofs0142:
+                     jump ofs011f
+            ofs0146:
+                     label
+                     getlocal3
+                     findpropstrict QName(PackageNamespace("flash.net"),"URLRequestMethod")
+                     getproperty QName(PackageNamespace("flash.net"),"URLRequestMethod")
+                     getproperty QName(PackageNamespace(""),"POST")
+                     setproperty QName(PackageNamespace(""),"method")
+            ofs0150:
+                     jump ofs013f
+            ofs0154:
+                     debugline 70
+            ofs0156:
+                     jump ofs0146
+            ofs015a:
+                     findpropstrict QName(PackageNamespace("^!7"),"[!<")
+                     constructprop QName(PackageNamespace("^!7"),"[!<"), 0
+                     coerce QName(PackageNamespace("^!7"),"[!<")
+                     setlocal 4
+                     getlocal 6
+                     dup
+                     iffalse ofs016d
+                     pop
+                     getlocal1
+                     convert_b
+            ofs016d:
+                     iftrue ofs018c
+                     jump ofs01a0
+            ofs0175:
+                     label
+                     debugline 80
+                     getlocal 7
+                     dup
+                     iftrue ofs0182
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0182:
+                     iffalse ofs019c
+                     getlocal 7
+                     iffalse ofs01a2
+            ofs018c:
+                     pushtrue
+                     iftrue ofs01a6
+            ofs0191:
+                     label
+                     getlocal 4
+                     findpropstrict QName(PackageNamespace("flash.net"),"URLLoaderDataFormat")
+                     getproperty QName(PackageNamespace("flash.net"),"URLLoaderDataFormat")
+                     getproperty QName(PackageNamespace(""),"TEXT")
+                     setproperty QName(PackageNamespace(""),"dataFormat")
+            ofs019c:
+                     jump ofs0175
+            ofs01a0:
+                     debugline 78
+            ofs01a2:
+                     jump ofs0191
+            ofs01a6:
+                     findpropstrict QName(PackageNamespace("#_"),"9k")
+                     getlocal1
+                     getlocal2
+                     getlocal 4
+                     getlocal3
+                     constructprop QName(PackageNamespace("#_"),"9k"), 4
+                     coerce QName(PackageNamespace("#_"),"9k")
+                     setlocal 5
+                     getlocal 7
+                     iffalse ofs0224
+                     jump ofs0277
+            ofs01be:
+                     label
+                     returnvoid
+                     pushtrue
+                     iftrue ofs01c5
+            ofs01c5:
+                     label
+                     debugline 87
+                     getlocal 6
+                     dup
+                     iffalse ofs01d2
+                     pop
+                     getlocal2
+                     convert_b
+            ofs01d2:
+                     iftrue ofs01e0
+                     jump ofs01be
+            ofs01da:
+                     label
+                     getlocal0
+                     callproperty QName(ProtectedNamespace("\'H"),",!8"), 0
+                     pop
+            ofs01e0:
+                     getlocal 6
+                     dup
+                     iffalse ofs01ea
+                     pop
+                     getlocal1
+                     convert_b
+            ofs01ea:
+                     iftrue ofs0211
+                     getlocal 6
+                     iftrue ofs020f
+                     getlocal 6
+                     dup
+                     iffalse ofs01fe
+                     pop
+                     getlocal3
+                     convert_b
+            ofs01fe:
+                     iftrue ofs0244
+                     jump ofs01c5
+            ofs0206:
+                     label
+                     getlocal0
+                     getproperty QName(ProtectedNamespace("\'H"),"=!4")
+                     not
+                     iffalse ofs01be
+            ofs020f:
+                     debugline 85
+            ofs0211:
+                     getlocal 6
+                     iftrue ofs021e
+                     jump ofs01da
+            ofs021b:
+                     label
+                     debugline 84
+            ofs021e:
+                     getlocal 6
+                     iftrue ofs0279
+            ofs0224:
+                     jump ofs0206
+                     jump ofs022c
+            ofs022c:
+                     setlocal2
+                     kill 6
+                     typeof
+                     declocal 3
+                     getlocal 5
+                     inclocal 3
+                     getglobalscope
+                     convert_b
+                     kill 5
+            ofs023a:
+                     label
+                     getlocal0
+                     getproperty QName(ProtectedNamespace("\'H"),"1I")
+                     getlocal 5
+                     callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"unshift"), 1
+                     pop
+            ofs0244:
+                     getlocal 7
+                     dup
+                     iftrue ofs024e
+                     pop
+                     getlocal2
+                     convert_b
+            ofs024e:
+                     iffalse ofs0267
+                     getlocal 6
+                     dup
+                     iffalse ofs025c
+                     pop
+                     getlocal0
+                     convert_b
+            ofs025c:
+                     iftrue ofs0273
+                     jump ofs021b
+            ofs0264:
+                     label
+                     debugline 83
+            ofs0267:
+                     jump ofs023a
+            ofs026b:
+                     label
+                     getlocal0
+                     getlocal 5
+                     callproperty QName(ProtectedNamespace("\'H"),"[?"), 1
+                     pop
+            ofs0273:
+                     jump ofs0264
+            ofs0277:
+                     debugline 81
+            ofs0279:
+                     jump ofs026b
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         protected function §,!8§() : void
+         {
+            trait method QName(ProtectedNamespace("\'H"),",!8")
+               flag METADATA
+               metadata"__go_to_definition_help"
+                  item "pos" "3131"
+               end ; metadata
+               dispid 0
+               method
+                  name "com.angrybirds.friendsbar.data:CachedData/protected:startNextLoadingOperation"
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 4
+                     localcount 3
+                     initscopedepth 5
+                     maxscopedepth 6
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        setlocal1
+                        jump ofs0010
+                        divide
+                        getglobalscope
+                        getlocal1
+                        subtract_i
+                        getlocal3
+                        subtract_i
+                        lessequals
+                        pushfalse
+                        typeof
+               ofs0010:
+                        setlocal2
+                        debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\data;CachedData.as"
+                        getlocal1
+                        dup
+                        iftrue ofs001c
+                        pop
+                        getlocal1
+                        convert_b
+               ofs001c:
+                        iffalse ofs0022
+                        debugline 89
+               ofs0022:
+                        getlocal0
+                        pushscope
+                        getlocal1
+                        dup
+                        iftrue ofs002d
+                        pop
+                        getlocal1
+                        convert_b
+               ofs002d:
+                        iffalse ofs0106
+                        jump ofs0127
+               ofs0035:
+                        label
+                        returnvoid
+                        pushtrue
+                        iftrue ofs003c
+               ofs003c:
+                        label
+                        debugline 95
+                        getlocal1
+                        dup
+                        iftrue ofs0048
+                        pop
+                        getlocal1
+                        convert_b
+               ofs0048:
+                        iffalse ofs0090
+                        getlocal1
+                        iffalse ofs00a4
+                        getlocal1
+                        iffalse ofs0105
+                        getlocal1
+                        dup
+                        iftrue ofs005f
+                        pop
+                        getlocal1
+                        convert_b
+               ofs005f:
+                        iffalse ofs0129
+                        jump ofs0035
+               ofs0067:
+                        label
+                        getlocal0
+                        getproperty QName(ProtectedNamespace("\'H"),"=!4")
+                        getlocal1
+                        dup
+                        iftrue ofs0074
+                        pop
+                        getlocal2
+                        convert_b
+               ofs0074:
+                        iffalse ofs010e
+                        jump ofs0085
+                        convert_s
+                        negate_i
+                        pushscope
+                        bitand
+                        pushnan
+                        instanceof
+                        bitor
+                        not
+                        getlocal2
+               ofs0085:
+                        getproperty QName(PackageNamespace(""),"urlLoader")
+                        getlocal0
+                        getproperty QName(ProtectedNamespace("\'H"),"=!4")
+                        getproperty QName(PackageNamespace(""),"urlRequest")
+                        callproperty QName(PackageNamespace(""),"load"), 1
+                        pop
+               ofs0090:
+                        getlocal2
+                        dup
+                        iffalse ofs0099
+                        pop
+                        getlocal1
+                        convert_b
+               ofs0099:
+                        iftrue ofs0106
+                        jump ofs003c
+               ofs00a1:
+                        label
+                        debugline 94
+               ofs00a4:
+                        getlocal1
+                        dup
+                        iftrue ofs00ad
+                        pop
+                        getlocal0
+                        convert_b
+               ofs00ad:
+                        iffalse ofs00c1
+                        jump ofs0067
+                        debugline 93
+               ofs00b7:
+                        label
+                        getlocal0
+                        getlocal0
+                        getproperty QName(ProtectedNamespace("\'H"),"1I")
+                        callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"pop"), 0
+                        initproperty QName(ProtectedNamespace("\'H"),"=!4")
+               ofs00c1:
+                        getlocal1
+                        iffalse ofs0123
+                        jump ofs00a1
+               ofs00ca:
+                        label
+                        getlocal0
+                        getproperty QName(ProtectedNamespace("\'H"),"1I")
+                        getproperty QName(PackageNamespace(""),"length")
+                        pushbyte 0
+                        equals
+                        getlocal1
+                        iffalse ofs00f3
+                        getlocal2
+                        dup
+                        iffalse ofs00ee
+                        pop
+                        getlocal1
+                        convert_b
+                        jump ofs00ee
+                        pushnull
+                        lessequals
+                        newactivation
+                        multiply
+                        negate_i
+                        rshift
+                        negate_i
+                        pushnull
+                        increment_i
+               ofs00ee:
+                        iftrue ofs0122
+                        convert_b
+               ofs00f3:
+                        getlocal1
+                        dup
+                        iftrue ofs00fc
+                        pop
+                        getlocal1
+                        convert_b
+               ofs00fc:
+                        iffalse ofs010f
+               ofs0100:
+                        label
+                        iffalse ofs00b7
+               ofs0105:
+                        returnvoid
+               ofs0106:
+                        jump ofs00b7
+               ofs010a:
+                        label
+                        getlocal0
+                        getproperty QName(ProtectedNamespace("\'H"),"=!4")
+               ofs010e:
+                        convert_b
+               ofs010f:
+                        dup
+                        getlocal1
+                        dup
+                        iftrue ofs0119
+                        pop
+                        getlocal0
+                        convert_b
+               ofs0119:
+                        iffalse ofs011e
+                        convert_b
+               ofs011e:
+                        iftrue ofs0100
+               ofs0122:
+                        pop
+               ofs0123:
+                        jump ofs00ca
+               ofs0127:
+                        debugline 91
+               ofs0129:
+                        jump ofs010a
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            protected function onUrlLoaderComplete(e:Event) : void
+            {
+               trait method QName(ProtectedNamespace("\'H"),"onUrlLoaderComplete")
+                  flag METADATA
+                  metadata"__go_to_definition_help"
+                     item "pos" "3485"
+                  end ; metadata
+                  dispid 0
+                  method
+                     name "com.angrybirds.friendsbar.data:CachedData/protected:onUrlLoaderComplete"
+                     param QName(PackageNamespace("flash.events"),"Event")
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 4
+                        localcount 5
+                        initscopedepth 5
+                        maxscopedepth 6
+                        
+                        code
+                           pushfalse
+                           pushtrue
+                           swap
+                           jump ofs0015
+                           inclocal_i 3
+                           istypelate
+                           declocal_i 3
+                           declocal_i 3
+                           inclocal 2
+                           inclocal 3
+                           setlocal3
+                           nextvalue
+                           pushscope
+                  ofs0015:
+                           setlocal3
+                           setlocal 4
+                           debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\data;CachedData.as"
+                           getlocal 4
+                           iffalse ofs0022
+                           debugline 97
+                  ofs0022:
+                           getlocal0
+                           pushscope
+                           getlocal3
+                           dup
+                           iffalse ofs002d
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs002d:
+                           iftrue ofs003e
+                           jump ofs006d
+                  ofs0035:
+                           label
+                           debugline 98
+                           getlocal 4
+                           iffalse ofs005c
+                  ofs003e:
+                           pushtrue
+                           iftrue ofs0076
+                           jump ofs0057
+                           getlocal0
+                           add
+                           getlocal2
+                           inclocal_i 2
+                           declocal 3
+                           declocal_i 3
+                           declocal 3
+                           kill 3
+                           declocal 3
+                  ofs0056:
+                           label
+                  ofs0057:
+                           debug 1, "dataObj", 1, 98
+                  ofs005c:
+                           getlocal3
+                           dup
+                           iffalse ofs0065
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0065:
+                           iftrue ofs0072
+                           jump ofs0035
+                  ofs006d:
+                           debug 1, "e", 0, 97
+                  ofs0072:
+                           jump ofs0056
+                  ofs0076:
+                           getlocal0
+                           getlocal0
+                           getproperty QName(ProtectedNamespace("\'H"),"=!4")
+                           jump ofs008a
+                           negate
+                           pushfalse
+                           declocal_i 2
+                           multiply_i
+                           inclocal 3
+                           declocal_i 2
+                           subtract
+                           getlocal2
+                           convert_d
+                  ofs008a:
+                           getproperty QName(PackageNamespace(""),"urlLoader")
+                           getproperty QName(PackageNamespace(""),"data")
+                           callproperty QName(ProtectedNamespace("\'H"),"]0"), 1
+                           coerce QName(PackageNamespace(""),"Object")
+                           setlocal2
+                           getlocal3
+                           iftrue ofs00ad
+                           jump ofs00c9
+                  ofs009d:
+                           label
+                           returnvoid
+                           pushtrue
+                           iftrue ofs00a4
+                  ofs00a4:
+                           label
+                           debugline 100
+                           getlocal 4
+                           iffalse ofs00b8
+                  ofs00ad:
+                           jump ofs009d
+                  ofs00b1:
+                           label
+                           getlocal0
+                           getlocal2
+                           callproperty QName(ProtectedNamespace("\'H"),"dataLoaded"), 1
+                           pop
+                  ofs00b8:
+                           getlocal3
+                           dup
+                           iffalse ofs00c1
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs00c1:
+                           iftrue ofs00cb
+                           jump ofs00a4
+                  ofs00c9:
+                           debugline 99
+                  ofs00cb:
+                           jump ofs00b1
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               protected function dataLoaded(dataObj:Object) : void
+               {
+                  trait method QName(ProtectedNamespace("\'H"),"dataLoaded")
+                     flag METADATA
+                     metadata"__go_to_definition_help"
+                        item "pos" "3652"
+                     end ; metadata
+                     dispid 0
+                     method
+                        name "com.angrybirds.friendsbar.data:CachedData/protected:dataLoaded"
+                        param QName(PackageNamespace(""),"Object")
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 7
+                           localcount 5
+                           initscopedepth 5
+                           maxscopedepth 6
+                           
+                           code
+                              pushfalse
+                              pushtrue
+                              swap
+                              jump ofs0012
+                              inclocal_i 3
+                              setlocal3
+                              multiply
+                              divide
+                              bitand
+                              hasnext
+                              pushwith
+                              greaterequals
+                              inclocal_i 3
+                     ofs0012:
+                              setlocal3
+                              setlocal 4
+                              debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\data;CachedData.as"
+                              getlocal3
+                              iftrue ofs001e
+                              debugline 102
+                     ofs001e:
+                              getlocal0
+                              pushscope
+                              getlocal 4
+                              dup
+                              iftrue ofs002a
+                              pop
+                              getlocal1
+                              convert_b
+                     ofs002a:
+                              iffalse ofs005d
+                              jump ofs0058
+                     ofs0032:
+                              label
+                              debugline 104
+                              getlocal 4
+                              iffalse ofs0046
+                              pushtrue
+                              iftrue ofs0061
+                     ofs0040:
+                              label
+                              debug 1, "i", 1, 104
+                     ofs0046:
+                              getlocal 4
+                              dup
+                              iftrue ofs0050
+                              pop
+                              getlocal3
+                              convert_b
+                     ofs0050:
+                              iffalse ofs005d
+                              jump ofs0032
+                     ofs0058:
+                              debug 1, "dataObj", 0, 102
+                     ofs005d:
+                              jump ofs0040
+                     ofs0061:
+                              pushbyte 0
+                              getlocal 4
+                              dup
+                              iftrue ofs006d
+                              pop
+                              getlocal1
+                              convert_b
+                     ofs006d:
+                              iffalse ofs0072
+                              convert_i
+                     ofs0072:
+                              setlocal2
+                              jump ofs0260
+                     ofs0077:
+                              label
+                              returnvoid
+                              pushtrue
+                              iftrue ofs007e
+                     ofs007e:
+                              label
+                              debugline 121
+                              getlocal 4
+                              dup
+                              iftrue ofs008b
+                              pop
+                              getlocal1
+                              convert_b
+                     ofs008b:
+                              iffalse ofs00a3
+                              getlocal3
+                              iftrue ofs00e7
+                              getlocal3
+                              iftrue ofs015c
+                              jump ofs0077
+                     ofs009d:
+                              label
+                              getlocal0
+                              callproperty QName(ProtectedNamespace("\'H"),",!8"), 0
+                              pop
+                     ofs00a3:
+                              getlocal 4
+                              iffalse ofs0118
+                              jump ofs007e
+                     ofs00ad:
+                              label
+                              getlocal0
+                              getproperty QName(ProtectedNamespace("\'H"),"1I")
+                              getproperty QName(PackageNamespace(""),"length")
+                              pushbyte 0
+                              ifngt ofs0077
+                              getlocal 4
+                              iffalse ofs00e7
+                              getlocal 4
+                              iffalse ofs00fd
+                              getlocal3
+                              iftrue ofs0148
+                              getlocal 4
+                              dup
+                              iftrue ofs00d4
+                              pop
+                              getlocal3
+                              convert_b
+                     ofs00d4:
+                              iffalse ofs01c3
+                              getlocal3
+                              dup
+                              iffalse ofs00e1
+                              pop
+                              getlocal3
+                              convert_b
+                     ofs00e1:
+                              iftrue ofs022e
+                              debugline 119
+                     ofs00e7:
+                              getlocal3
+                              iftrue ofs010b
+                              getlocal3
+                              iftrue ofs0189
+                              getlocal3
+                              iftrue ofs01d4
+                              jump ofs009d
+                     ofs00fa:
+                              label
+                              debugline 118
+                     ofs00fd:
+                              getlocal3
+                              iftrue ofs01d2
+                              jump ofs00ad
+                     ofs0106:
+                              label
+                              getlocal0
+                              pushnull
+                              initproperty QName(ProtectedNamespace("\'H"),"=!4")
+                     ofs010b:
+                              getlocal 4
+                              iffalse ofs0195
+                              jump ofs00fa
+                     ofs0115:
+                              label
+                              debugline 117
+                     ofs0118:
+                              getlocal3
+                              iftrue ofs0235
+                              getlocal 4
+                              dup
+                              iftrue ofs0137
+                              jump ofs0134
+                              getglobalscope
+                              setlocal3
+                              declocal_i 2
+                              bitor
+                              divide
+                              declocal 3
+                              typeof
+                              multiply
+                              inclocal_i 3
+                     ofs0134:
+                              pop
+                              getlocal2
+                              convert_b
+                     ofs0137:
+                              iffalse ofs0245
+                              jump ofs0106
+                     ofs013f:
+                              label
+                              getlocal0
+                              getlocal0
+                              getproperty QName(ProtectedNamespace("\'H"),"=!4")
+                              callproperty QName(ProtectedNamespace("\'H"),"%!5"), 1
+                              pop
+                     ofs0148:
+                              getlocal3
+                              dup
+                              iffalse ofs0151
+                              pop
+                              getlocal3
+                              convert_b
+                     ofs0151:
+                              iftrue ofs0267
+                              jump ofs0115
+                     ofs0159:
+                              label
+                              debugline 116
+                     ofs015c:
+                              getlocal3
+                              dup
+                              iffalse ofs0165
+                              pop
+                              getlocal0
+                              convert_b
+                     ofs0165:
+                              iftrue ofs01b8
+                              jump ofs013f
+                     ofs016d:
+                              label
+                              findpropstrict QName(PackageNamespace(""),"dispatchEvent")
+                              findpropstrict QName(PackageNamespace("=!i"),"CachedDataEvent")
+                              findpropstrict QName(PackageNamespace("=!i"),"CachedDataEvent")
+                              getproperty QName(PackageNamespace("=!i"),"CachedDataEvent")
+                              getproperty QName(PackageNamespace(""),"DATA_LOADED")
+                              getlocal0
+                              getproperty QName(ProtectedNamespace("\'H"),"=!4")
+                              getproperty QName(PackageNamespace(""),"itemIndex")
+                              getlocal0
+                              getproperty QName(ProtectedNamespace("\'H"),"=!4")
+                              getproperty QName(PackageNamespace(""),"itemCount")
+                              constructprop QName(PackageNamespace("=!i"),"CachedDataEvent"), 3
+                              callproperty QName(PackageNamespace(""),"dispatchEvent"), 1
+                              pop
+                     ofs0189:
+                              getlocal3
+                              iftrue ofs01b1
+                              jump ofs0159
+                     ofs0192:
+                              label
+                              debugline 114
+                     ofs0195:
+                              jump ofs016d
+                     ofs0199:
+                              label
+                              findpropstrict QName(PackageNamespace(""),"dispatchEvent")
+                              findpropstrict QName(PackageNamespace("=!i"),"CachedDataEvent")
+                              findpropstrict QName(PackageNamespace("=!i"),"CachedDataEvent")
+                              getproperty QName(PackageNamespace("=!i"),"CachedDataEvent")
+                              getproperty QName(PackageNamespace(""),"TOTAL_ITEM_COUNT_UPDATED")
+                              getlocal0
+                              getproperty QName(ProtectedNamespace("\'H"),",!Q")
+                              getlocal0
+                              getproperty QName(ProtectedNamespace("\'H"),",!Q")
+                              constructprop QName(PackageNamespace("=!i"),"CachedDataEvent"), 3
+                              callproperty QName(PackageNamespace(""),"dispatchEvent"), 1
+                              pop
+                     ofs01b1:
+                              jump ofs0192
+                     ofs01b5:
+                              label
+                              debugline 111
+                     ofs01b8:
+                              jump ofs0199
+                     ofs01bc:
+                              label
+                              getlocal0
+                              getlocal1
+                              getproperty Multiname("totalItemCount",[PrivateNamespace("\'H"),ProtectedNamespace("\'H"),PrivateNamespace("CachedData.as$433"),PackageNamespace(""),PackageNamespace("#_"),PackageInternalNs("#_"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("\'H"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              initproperty QName(ProtectedNamespace("\'H"),",!Q")
+                     ofs01c3:
+                              jump ofs01b5
+                     ofs01c7:
+                              label
+                              getlocal1
+                              getproperty Multiname("totalItemCount",[PrivateNamespace("\'H"),ProtectedNamespace("\'H"),PrivateNamespace("CachedData.as$433"),PackageNamespace(""),PackageNamespace("#_"),PackageInternalNs("#_"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("\'H"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              getlocal0
+                              getproperty QName(ProtectedNamespace("\'H"),",!Q")
+                              ifeq ofs016d
+                     ofs01d2:
+                              debugline 110
+                     ofs01d4:
+                              getlocal3
+                              dup
+                              iffalse ofs01dd
+                              pop
+                              getlocal0
+                              convert_b
+                     ofs01dd:
+                              iftrue ofs025c
+                              jump ofs01bc
+                     ofs01e5:
+                              label
+                              getlocal2
+                              getlocal3
+                              dup
+                              iffalse ofs01f0
+                              pop
+                              getlocal1
+                              convert_b
+                     ofs01f0:
+                              iftrue ofs023d
+                              getlocal 4
+                              dup
+                              iftrue ofs01fe
+                              pop
+                              getlocal3
+                              convert_b
+                     ofs01fe:
+                              iffalse ofs023c
+                              getlocal 4
+                              dup
+                              iftrue ofs020c
+                              pop
+                              getlocal2
+                              convert_b
+                     ofs020c:
+                              iffalse ofs023b
+                              getlocal1
+                              getproperty Multiname("items",[PrivateNamespace("\'H"),ProtectedNamespace("\'H"),PrivateNamespace("CachedData.as$433"),PackageNamespace(""),PackageNamespace("#_"),PackageInternalNs("#_"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("\'H"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              findpropstrict QName(PackageNamespace(""),"Array")
+                              getproperty QName(PackageNamespace(""),"Array")
+                              astypelate
+                              getproperty QName(PackageNamespace(""),"length")
+                              jump ofs022a
+                              bitnot
+                              declocal 3
+                              swap
+                              declocal_i 2
+                              pushwith
+                              pushundefined
+                              setlocal3
+                              not
+                              inclocal 3
+                     ofs022a:
+                              iflt ofs0264
+                     ofs022e:
+                              getlocal3
+                              iftrue ofs023e
+                              debugline 109
+                     ofs0235:
+                              jump ofs01c7
+                     ofs0239:
+                              label
+                              getlocal2
+                     ofs023b:
+                              increment_i
+                     ofs023c:
+                              convert_i
+                     ofs023d:
+                              setlocal2
+                     ofs023e:
+                              jump ofs01e5
+                     ofs0242:
+                              label
+                              debugline 104
+                     ofs0245:
+                              jump ofs0239
+                     ofs0249:
+                              label
+                              getlocal0
+                              getproperty QName(ProtectedNamespace("\'H"),"+p")
+                              getlocal0
+                              getproperty QName(ProtectedNamespace("\'H"),"=!4")
+                              getproperty QName(PackageNamespace(""),"itemIndex")
+                              getlocal2
+                              add
+                              getlocal1
+                              getproperty Multiname("items",[PrivateNamespace("\'H"),ProtectedNamespace("\'H"),PrivateNamespace("CachedData.as$433"),PackageNamespace(""),PackageNamespace("#_"),PackageInternalNs("#_"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("\'H"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              getlocal2
+                              getproperty MultinameL([PrivateNamespace("\'H"),ProtectedNamespace("\'H"),PrivateNamespace("CachedData.as$433"),PackageNamespace(""),PackageNamespace("#_"),PackageInternalNs("#_"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("\'H"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              setproperty MultinameL([PrivateNamespace("\'H"),ProtectedNamespace("\'H"),PrivateNamespace("CachedData.as$433"),PackageNamespace(""),PackageNamespace("#_"),PackageInternalNs("#_"),Namespace("http://adobe.com/AS3/2006/builtin"),StaticProtectedNs("\'H"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     ofs025c:
+                              jump ofs0242
+                     ofs0260:
+                              jump ofs01e5
+                     ofs0264:
+                              label
+                              debugline 105
+                     ofs0267:
+                              jump ofs0249
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  public function get totalItemCount() : Number
+                  {
+                     trait getter QName(PackageNamespace(""),"totalItemCount")
+                        flag METADATA
+                        metadata"__go_to_definition_help"
+                           item "pos" "4493"
+                        end ; metadata
+                        dispid 0
+                        method
+                           name "com.angrybirds.friendsbar.data:CachedData/totalItemCount/get"
+                           returns QName(PackageNamespace(""),"Number")
+                           
+                           body
+                              maxstack 3
+                              localcount 3
+                              initscopedepth 5
+                              maxscopedepth 6
+                              
+                              code
+                                 pushfalse
+                                 pushtrue
+                                 swap
+                                 jump ofs0010
+                                 pop
+                                 equals
+                                 bitand
+                                 getglobalscope
+                                 nextvalue
+                                 negate_i
+                                 convert_b
+                                 increment
+                                 lessequals
+                        ofs0010:
+                                 setlocal1
+                                 setlocal2
+                                 debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\data;CachedData.as"
+                                 getlocal2
+                                 iffalse ofs001b
+                                 debugline 123
+                        ofs001b:
+                                 getlocal0
+                                 pushscope
+                                 getlocal2
+                                 iffalse ofs0024
+                                 debugline 124
+                        ofs0024:
+                                 getlocal0
+                                 getproperty QName(ProtectedNamespace("\'H"),",!Q")
+                                 returnvalue
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     protected function §]0§(data:Object) : Object
+                     {
+                        trait method QName(ProtectedNamespace("\'H"),"]0")
+                           flag METADATA
+                           metadata"__go_to_definition_help"
+                              item "pos" "4634"
+                           end ; metadata
+                           dispid 0
+                           method
+                              name "com.angrybirds.friendsbar.data:CachedData/protected:parseResponse"
+                              flag NEED_ACTIVATION
+                              param QName(PackageNamespace(""),"Object")
+                              returns QName(PackageNamespace(""),"Object")
+                              
+                              body
+                                 maxstack 6
+                                 localcount 6
+                                 initscopedepth 6
+                                 maxscopedepth 11
+                                 trait slot QName(PackageInternalNs("#_"),"data")
+                                    slotid 1
+                                    type QName(PackageNamespace(""),"Object")
+                                 end ; trait
+                                 trait slot QName(PackageInternalNs("#_"),"dataObj")
+                                    slotid 2
+                                    type QName(PackageNamespace(""),"Object")
+                                 end ; trait
+                                 
+                                 code
+                                    pushfalse
+                                    pushtrue
+                                    swap
+                                    jump ofs0017
+                                    getlocal2
+                                    getlocal 4
+                                    inclocal 4
+                                    declocal_i 4
+                                    inclocal 4
+                                    declocal 2
+                                    getlocal3
+                                    inclocal_i 3
+                                    declocal 3
+                           ofs0017:
+                                    setlocal 4
+                                    setlocal 5
+                                    debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\data;CachedData.as"
+                                    getlocal 5
+                                    dup
+                                    iftrue ofs0027
+                                    pop
+                                    getlocal3
+                                    convert_b
+                           ofs0027:
+                                    iffalse ofs002e
+                                    debugline 131
+                           ofs002e:
+                                    getlocal0
+                                    pushscope
+                                    newactivation
+                                    dup
+                                    setlocal2
+                                    pushscope
+                                    getlocal 4
+                                    dup
+                                    iffalse ofs003e
+                                    pop
+                                    getlocal3
+                                    convert_b
+                           ofs003e:
+                                    iftrue ofs00b9
+                                    jump ofs00b2
+                           ofs0046:
+                                    label
+                                    debugline 135
+                                    getlocal 5
+                                    iffalse ofs005c
+                                    pushtrue
+                                    iftrue ofs00bd
+                           ofs0055:
+                                    label
+                                    debug 1, "data", 0, 131
+                           ofs005c:
+                                    getlocal 5
+                                    dup
+                                    iftrue ofs0066
+                                    pop
+                                    getlocal1
+                                    convert_b
+                           ofs0066:
+                                    iffalse ofs00a2
+                                    getlocal 5
+                                    dup
+                                    iftrue ofs0074
+                                    pop
+                                    getlocal2
+                                    convert_b
+                           ofs0074:
+                                    iffalse ofs00ae
+                                    jump ofs0046
+                           ofs007c:
+                                    label
+                                    getscopeobject 1
+                                    getlocal 5
+                                    dup
+                                    iftrue ofs009b
+                                    jump ofs0098
+                                    kill 3
+                                    subtract
+                                    lshift
+                                    inclocal_i 3
+                                    declocal 2
+                                    inclocal 3
+                                    inclocal 4
+                                    pushscope
+                                    checkfilter
+                           ofs0098:
+                                    pop
+                                    getlocal3
+                                    convert_b
+                           ofs009b:
+                                    iffalse ofs00a9
+                                    getlocal1
+                                    setslot 1
+                           ofs00a2:
+                                    jump ofs0055
+                           ofs00a6:
+                                    label
+                                    getscopeobject 1
+                           ofs00a9:
+                                    pushnull
+                                    coerce QName(PackageNamespace(""),"Object")
+                                    setslot 2
+                           ofs00ae:
+                                    jump ofs007c
+                           ofs00b2:
+                                    debug 1, "parseResponse$0", 1, 131
+                           ofs00b9:
+                                    jump ofs00a6
+                           ofs00bd:
+                                    getscopeobject 1
+                                    getlocal 5
+                                    dup
+                                    iftrue ofs00c9
+                                    pop
+                                    getlocal0
+                                    convert_b
+                           ofs00c9:
+                                    iffalse ofs013b
+                                    findpropstrict QName(PackageNamespace(">o"),"7b")
+                                    getproperty QName(PackageNamespace(">o"),"7b")
+                                    findpropstrict QName(PackageNamespace(""),"String")
+                                    getscopeobject 1
+                                    getslot 1
+                                    callproperty QName(PackageNamespace(""),"String"), 1
+                                    callproperty QName(PackageNamespace(""),"#!a"), 1
+                                    coerce QName(PackageNamespace(""),"Object")
+                                    setslot 2
+                                    getlocal 4
+                                    dup
+                                    iffalse ofs00eb
+                                    pop
+                                    getlocal0
+                                    convert_b
+                           ofs00eb:
+                                    iftrue ofs00f2
+                                    debugline 136
+                           ofs00f2:
+                                    jump ofs0139
+                           ofs00f6:
+                                    getlocal0
+                                    pushscope
+                                    getlocal2
+                                    pushscope
+                                    jump ofs0109
+                                    convert_b
+                                    increment_i
+                                    setlocal 4
+                                    setlocal3
+                                    convert_b
+                                    not
+                                    declocal 2
+                                    pushwith
+                                    getlocal1
+                           ofs0109:
+                                    newcatch 0
+                                    dup
+                                    setlocal3
+                                    dup
+                                    pushscope
+                                    swap
+                                    setslot 1
+                                    debugline 138
+                                    findpropstrict QName(PackageNamespace(""),"Error")
+                                    pushstring "Error in parsing server response. String \n\""
+                                    debugline 139
+                                    findpropstrict QName(PackageNamespace(""),"String")
+                                    getscopeobject 1
+                                    getslot 1
+                                    callproperty QName(PackageNamespace(""),"String"), 1
+                                    add
+                                    pushstring "\"\n is not valid JSON."
+                                    add
+                                    findpropstrict QName(PackageNamespace("5="),"8O")
+                                    getproperty QName(PackageNamespace("5="),"8O")
+                                    getproperty QName(PackageNamespace(""),"?6")
+                                    constructprop QName(PackageNamespace(""),"Error"), 2
+                                    throw
+                                    popscope
+                                    kill 3
+                                    debugline 141
+                           ofs0139:
+                                    getscopeobject 1
+                           ofs013b:
+                                    getslot 2
+                                    returnvalue
+                                    returnvoid
+                                 end ; code
+                                 try from ofs00bd to ofs00f2 target ofs00f6 type QName(PackageNamespace(""),"Error") name QName(PackageNamespace(""),"e") end
+                              end ; body
+                           end ; method
+                        }
+                        
+                        public function get data() : Array
+                        {
+                           trait getter QName(PackageNamespace(""),"data")
+                              flag METADATA
+                              metadata"__go_to_definition_help"
+                                 item "pos" "5053"
+                              end ; metadata
+                              dispid 0
+                              method
+                                 name "com.angrybirds.friendsbar.data:CachedData/data/get"
+                                 returns QName(PackageNamespace(""),"Array")
+                                 
+                                 body
+                                    maxstack 3
+                                    localcount 3
+                                    initscopedepth 5
+                                    maxscopedepth 6
+                                    
+                                    code
+                                       pushfalse
+                                       pushtrue
+                                       swap
+                                       jump ofs0010
+                                       swap
+                                       setlocal3
+                                       typeof
+                                       decrement_i
+                                       add_i
+                                       pushscope
+                                       getlocal0
+                                       setlocal2
+                                       add
+                              ofs0010:
+                                       setlocal1
+                                       setlocal2
+                                       debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\data;CachedData.as"
+                                       getlocal2
+                                       iffalse ofs001c
+                                       debugline 147
+                              ofs001c:
+                                       getlocal0
+                                       pushscope
+                                       getlocal2
+                                       iffalse ofs0026
+                                       debugline 148
+                              ofs0026:
+                                       getlocal0
+                                       getproperty QName(ProtectedNamespace("\'H"),"+p")
+                                       returnvalue
+                                       returnvoid
+                                    end ; code
+                                 end ; body
+                              end ; method
+                           }
+                           
+                           public function get §#]§() : Boolean
+                           {
+                              trait getter QName(PackageNamespace(""),"#]")
+                                 flag METADATA
+                                 metadata"__go_to_definition_help"
+                                    item "pos" "5202"
+                                 end ; metadata
+                                 dispid 0
+                                 method
+                                    name "com.angrybirds.friendsbar.data:CachedData/isLoading/get"
+                                    returns QName(PackageNamespace(""),"Boolean")
+                                    
+                                    body
+                                       maxstack 4
+                                       localcount 3
+                                       initscopedepth 5
+                                       maxscopedepth 6
+                                       
+                                       code
+                                          pushfalse
+                                          pushtrue
+                                          swap
+                                          jump ofs0010
+                                          multiply
+                                          setlocal3
+                                          multiply
+                                          convert_o
+                                          dxnslate
+                                          swap
+                                          pushnull
+                                          bitand
+                                          add_i
+                                 ofs0010:
+                                          setlocal1
+                                          jump ofs001e
+                                          pushnan
+                                          increment_i
+                                          lshift
+                                          coerce_a
+                                          convert_s
+                                          convert_d
+                                          pushtrue
+                                          lshift
+                                          setlocal2
+                                 ofs001e:
+                                          setlocal2
+                                          debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\data;CachedData.as"
+                                          getlocal1
+                                          iftrue ofs0029
+                                          debugline 154
+                                 ofs0029:
+                                          getlocal0
+                                          pushscope
+                                          getlocal2
+                                          iffalse ofs0033
+                                          debugline 155
+                                 ofs0033:
+                                          getlocal0
+                                          getproperty QName(ProtectedNamespace("\'H"),"=!4")
+                                          pushnull
+                                          equals
+                                          getlocal1
+                                          dup
+                                          iffalse ofs0041
+                                          pop
+                                          getlocal1
+                                          convert_b
+                                 ofs0041:
+                                          iftrue ofs0046
+                                          not
+                                 ofs0046:
+                                          returnvalue
+                                          returnvoid
+                                       end ; code
+                                    end ; body
+                                 end ; method
+                              }
+                              
+                              protected function §[?§(loadOperation:§9k§) : void
+                              {
+                                 trait method QName(ProtectedNamespace("\'H"),"[?")
+                                    flag METADATA
+                                    metadata"__go_to_definition_help"
+                                       item "pos" "5295"
+                                    end ; metadata
+                                    dispid 0
+                                    method
+                                       name "com.angrybirds.friendsbar.data:CachedData/protected:addLoadOperationEventListeners"
+                                       param QName(PackageNamespace("#_"),"9k")
+                                       returns QName(PackageNamespace(""),"void")
+                                       
+                                       body
+                                          maxstack 5
+                                          localcount 4
+                                          initscopedepth 5
+                                          maxscopedepth 6
+                                          
+                                          code
+                                             pushfalse
+                                             pushtrue
+                                             setlocal2
+                                             jump ofs0013
+                                             setlocal2
+                                             istypelate
+                                             pushwith
+                                             declocal_i 2
+                                             add
+                                             inclocal 2
+                                             declocal 2
+                                             hasnext
+                                             coerce_a
+                                    ofs0013:
+                                             setlocal3
+                                             debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\data;CachedData.as"
+                                             getlocal2
+                                             iffalse ofs001e
+                                             debugline 158
+                                    ofs001e:
+                                             getlocal0
+                                             pushscope
+                                             getlocal3
+                                             iftrue ofs0096
+                                             jump ofs0153
+                                    ofs0029:
+                                             label
+                                             returnvoid
+                                             pushtrue
+                                             iftrue ofs0030
+                                    ofs0030:
+                                             label
+                                             debugline 164
+                                             getlocal2
+                                             iffalse ofs005c
+                                             getlocal2
+                                             dup
+                                             iftrue ofs0042
+                                             pop
+                                             getlocal3
+                                             convert_b
+                                    ofs0042:
+                                             iffalse ofs00ff
+                                             jump ofs0029
+                                    ofs004a:
+                                             label
+                                             getlocal1
+                                             getproperty QName(PackageNamespace(""),"urlLoader")
+                                             findpropstrict QName(PackageNamespace("^!7"),"RetryingURLLoaderErrorEvent")
+                                             getproperty QName(PackageNamespace("^!7"),"RetryingURLLoaderErrorEvent")
+                                             getproperty QName(PackageNamespace(""),"6!O")
+                                             findpropstrict QName(PackageNamespace(""),"dispatchEvent")
+                                             getproperty QName(PackageNamespace(""),"dispatchEvent")
+                                             callproperty QName(PackageNamespace(""),"addEventListener"), 2
+                                             pop
+                                    ofs005c:
+                                             getlocal2
+                                             dup
+                                             iftrue ofs0065
+                                             pop
+                                             getlocal2
+                                             convert_b
+                                    ofs0065:
+                                             iffalse ofs009e
+                                             getlocal2
+                                             dup
+                                             iftrue ofs0072
+                                             pop
+                                             getlocal2
+                                             convert_b
+                                    ofs0072:
+                                             iffalse ofs00e1
+                                             getlocal2
+                                             dup
+                                             iftrue ofs008d
+                                             pop
+                                             getlocal2
+                                             convert_b
+                                             jump ofs008d
+                                             pushnan
+                                             hasnext
+                                             pushscope
+                                             multiply_i
+                                             getlocal2
+                                             getglobalscope
+                                             getlocal2
+                                             inclocal 2
+                                             increment_i
+                                    ofs008d:
+                                             iffalse ofs0125
+                                             getlocal3
+                                             iftrue ofs013a
+                                    ofs0096:
+                                             jump ofs0030
+                                    ofs009a:
+                                             label
+                                             debugline 163
+                                    ofs009e:
+                                             getlocal2
+                                             iffalse ofs00be
+                                             getlocal3
+                                             iftrue ofs00c6
+                                             jump ofs004a
+                                    ofs00ac:
+                                             label
+                                             getlocal1
+                                             getproperty QName(PackageNamespace(""),"urlLoader")
+                                             findpropstrict QName(PackageNamespace("flash.events"),"SecurityErrorEvent")
+                                             getproperty QName(PackageNamespace("flash.events"),"SecurityErrorEvent")
+                                             getproperty QName(PackageNamespace(""),"SECURITY_ERROR")
+                                             findpropstrict QName(PackageNamespace(""),"dispatchEvent")
+                                             getproperty QName(PackageNamespace(""),"dispatchEvent")
+                                             callproperty QName(PackageNamespace(""),"addEventListener"), 2
+                                             pop
+                                    ofs00be:
+                                             jump ofs009a
+                                    ofs00c2:
+                                             label
+                                             debugline 162
+                                    ofs00c6:
+                                             getlocal3
+                                             iftrue ofs00e9
+                                             jump ofs00ac
+                                    ofs00cf:
+                                             label
+                                             getlocal1
+                                             getproperty QName(PackageNamespace(""),"urlLoader")
+                                             findpropstrict QName(PackageNamespace("flash.events"),"IOErrorEvent")
+                                             getproperty QName(PackageNamespace("flash.events"),"IOErrorEvent")
+                                             getproperty QName(PackageNamespace(""),"IO_ERROR")
+                                             findpropstrict QName(PackageNamespace(""),"dispatchEvent")
+                                             getproperty QName(PackageNamespace(""),"dispatchEvent")
+                                             callproperty QName(PackageNamespace(""),"addEventListener"), 2
+                                             pop
+                                    ofs00e1:
+                                             jump ofs00c2
+                                    ofs00e5:
+                                             label
+                                             debugline 161
+                                    ofs00e9:
+                                             jump ofs00cf
+                                    ofs00ed:
+                                             label
+                                             getlocal1
+                                             getproperty QName(PackageNamespace(""),"urlLoader")
+                                             findpropstrict QName(PackageNamespace("flash.events"),"ProgressEvent")
+                                             getproperty QName(PackageNamespace("flash.events"),"ProgressEvent")
+                                             getproperty QName(PackageNamespace(""),"PROGRESS")
+                                             findpropstrict QName(PackageNamespace(""),"dispatchEvent")
+                                             getproperty QName(PackageNamespace(""),"dispatchEvent")
+                                             callproperty QName(PackageNamespace(""),"addEventListener"), 2
+                                             pop
+                                    ofs00ff:
+                                             getlocal3
+                                             dup
+                                             jump ofs0112
+                                             declocal_i 2
+                                             setlocal2
+                                             inclocal 2
+                                             increment
+                                             declocal_i 2
+                                             declocal_i 2
+                                             convert_i
+                                             instanceof
+                                             setlocal2
+                                    ofs0112:
+                                             iffalse ofs0119
+                                             pop
+                                             getlocal1
+                                             convert_b
+                                    ofs0119:
+                                             iftrue ofs0159
+                                             jump ofs00e5
+                                    ofs0121:
+                                             label
+                                             debugline 160
+                                    ofs0125:
+                                             jump ofs00ed
+                                    ofs0129:
+                                             label
+                                             getlocal1
+                                             getproperty QName(PackageNamespace(""),"urlLoader")
+                                             findpropstrict QName(PackageNamespace("flash.events"),"Event")
+                                             getproperty QName(PackageNamespace("flash.events"),"Event")
+                                             getproperty QName(PackageNamespace(""),"COMPLETE")
+                                             getlocal0
+                                             getproperty QName(ProtectedNamespace("\'H"),"onUrlLoaderComplete")
+                                             callproperty QName(PackageNamespace(""),"addEventListener"), 2
+                                             pop
+                                    ofs013a:
+                                             getlocal2
+                                             dup
+                                             iftrue ofs0143
+                                             pop
+                                             getlocal3
+                                             convert_b
+                                    ofs0143:
+                                             iffalse ofs014f
+                                             jump ofs0121
+                                    ofs014b:
+                                             label
+                                             debugline 159
+                                    ofs014f:
+                                             jump ofs0129
+                                    ofs0153:
+                                             debug 1, "loadOperation", 0, 158
+                                    ofs0159:
+                                             jump ofs014b
+                                             returnvoid
+                                          end ; code
+                                       end ; body
+                                    end ; method
+                                 }
+                                 
+                                 protected function §%!5§(loadOperation:§9k§) : void
+                                 {
+                                    trait method QName(ProtectedNamespace("\'H"),"%!5")
+                                       flag METADATA
+                                       metadata"__go_to_definition_help"
+                                          item "pos" "5854"
+                                       end ; metadata
+                                       dispid 0
+                                       method
+                                          name "com.angrybirds.friendsbar.data:CachedData/protected:clearLoadOperationEventListeners"
+                                          param QName(PackageNamespace("#_"),"9k")
+                                          returns QName(PackageNamespace(""),"void")
+                                          
+                                          body
+                                             maxstack 5
+                                             localcount 4
+                                             initscopedepth 5
+                                             maxscopedepth 6
+                                             
+                                             code
+                                                pushfalse
+                                                pushtrue
+                                                setlocal2
+                                                jump ofs0013
+                                                declocal_i 2
+                                                setlocal2
+                                                convert_o
+                                                declocal_i 2
+                                                increment
+                                                setlocal2
+                                                pushscope
+                                                kill 2
+                                                pushundefined
+                                       ofs0013:
+                                                setlocal3
+                                                debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\data;CachedData.as"
+                                                getlocal3
+                                                dup
+                                                iffalse ofs001f
+                                                pop
+                                                getlocal2
+                                                convert_b
+                                       ofs001f:
+                                                iftrue ofs0026
+                                                debugline 166
+                                       ofs0026:
+                                                getlocal0
+                                                pushscope
+                                                getlocal3
+                                                dup
+                                                iffalse ofs0031
+                                                pop
+                                                getlocal2
+                                                convert_b
+                                       ofs0031:
+                                                iftrue ofs0165
+                                                jump ofs0171
+                                       ofs0039:
+                                                label
+                                                returnvoid
+                                                pushtrue
+                                                iftrue ofs0040
+                                       ofs0040:
+                                                label
+                                                debugline 172
+                                                getlocal2
+                                                dup
+                                                iftrue ofs004d
+                                                pop
+                                                getlocal2
+                                                convert_b
+                                       ofs004d:
+                                                iffalse ofs0086
+                                                getlocal2
+                                                iffalse ofs00cd
+                                                getlocal3
+                                                dup
+                                                iffalse ofs005f
+                                                pop
+                                                getlocal0
+                                                convert_b
+                                       ofs005f:
+                                                iftrue ofs0148
+                                                getlocal3
+                                                dup
+                                                iffalse ofs006c
+                                                pop
+                                                getlocal0
+                                                convert_b
+                                       ofs006c:
+                                                iftrue ofs0150
+                                                jump ofs0039
+                                       ofs0074:
+                                                label
+                                                getlocal1
+                                                getproperty QName(PackageNamespace(""),"urlLoader")
+                                                findpropstrict QName(PackageNamespace("^!7"),"RetryingURLLoaderErrorEvent")
+                                                getproperty QName(PackageNamespace("^!7"),"RetryingURLLoaderErrorEvent")
+                                                getproperty QName(PackageNamespace(""),"6!O")
+                                                findpropstrict QName(PackageNamespace(""),"dispatchEvent")
+                                                getproperty QName(PackageNamespace(""),"dispatchEvent")
+                                                callproperty QName(PackageNamespace(""),"removeEventListener"), 2
+                                                pop
+                                       ofs0086:
+                                                getlocal2
+                                                iffalse ofs00b2
+                                                getlocal3
+                                                dup
+                                                jump ofs009f
+                                                kill 2
+                                                setlocal2
+                                                setlocal2
+                                                inclocal 2
+                                                inclocal_i 2
+                                                kill 2
+                                                setlocal2
+                                                nextname
+                                                declocal_i 2
+                                       ofs009f:
+                                                iffalse ofs00a6
+                                                pop
+                                                getlocal1
+                                                convert_b
+                                       ofs00a6:
+                                                iftrue ofs0177
+                                                jump ofs0040
+                                       ofs00ae:
+                                                label
+                                                debugline 171
+                                       ofs00b2:
+                                                getlocal3
+                                                iftrue ofs00fc
+                                                jump ofs0074
+                                       ofs00bb:
+                                                label
+                                                getlocal1
+                                                getproperty QName(PackageNamespace(""),"urlLoader")
+                                                findpropstrict QName(PackageNamespace("flash.events"),"SecurityErrorEvent")
+                                                getproperty QName(PackageNamespace("flash.events"),"SecurityErrorEvent")
+                                                getproperty QName(PackageNamespace(""),"SECURITY_ERROR")
+                                                findpropstrict QName(PackageNamespace(""),"dispatchEvent")
+                                                getproperty QName(PackageNamespace(""),"dispatchEvent")
+                                                callproperty QName(PackageNamespace(""),"removeEventListener"), 2
+                                                pop
+                                       ofs00cd:
+                                                getlocal3
+                                                dup
+                                                iffalse ofs00d6
+                                                pop
+                                                getlocal3
+                                                convert_b
+                                       ofs00d6:
+                                                iftrue ofs0112
+                                                getlocal2
+                                                dup
+                                                iftrue ofs00e3
+                                                pop
+                                                getlocal0
+                                                convert_b
+                                       ofs00e3:
+                                                iffalse ofs012d
+                                                getlocal3
+                                                dup
+                                                iffalse ofs00f0
+                                                pop
+                                                getlocal2
+                                                convert_b
+                                       ofs00f0:
+                                                iftrue ofs016d
+                                                jump ofs00ae
+                                       ofs00f8:
+                                                label
+                                                debugline 170
+                                       ofs00fc:
+                                                jump ofs00bb
+                                       ofs0100:
+                                                label
+                                                getlocal1
+                                                getproperty QName(PackageNamespace(""),"urlLoader")
+                                                findpropstrict QName(PackageNamespace("flash.events"),"IOErrorEvent")
+                                                getproperty QName(PackageNamespace("flash.events"),"IOErrorEvent")
+                                                getproperty QName(PackageNamespace(""),"IO_ERROR")
+                                                findpropstrict QName(PackageNamespace(""),"dispatchEvent")
+                                                getproperty QName(PackageNamespace(""),"dispatchEvent")
+                                                callproperty QName(PackageNamespace(""),"removeEventListener"), 2
+                                                pop
+                                       ofs0112:
+                                                jump ofs00f8
+                                       ofs0116:
+                                                label
+                                                debugline 169
+                                                jump ofs012d
+                                                inclocal 2
+                                                coerce_a
+                                                inclocal_i 2
+                                                dxnslate
+                                                declocal 2
+                                                declocal 2
+                                                typeof
+                                                kill 2
+                                                kill 2
+                                       ofs012d:
+                                                getlocal2
+                                                iffalse ofs0165
+                                                jump ofs0100
+                                       ofs0136:
+                                                label
+                                                getlocal1
+                                                getproperty QName(PackageNamespace(""),"urlLoader")
+                                                findpropstrict QName(PackageNamespace("flash.events"),"ProgressEvent")
+                                                getproperty QName(PackageNamespace("flash.events"),"ProgressEvent")
+                                                getproperty QName(PackageNamespace(""),"PROGRESS")
+                                                findpropstrict QName(PackageNamespace(""),"dispatchEvent")
+                                                getproperty QName(PackageNamespace(""),"dispatchEvent")
+                                                callproperty QName(PackageNamespace(""),"removeEventListener"), 2
+                                                pop
+                                       ofs0148:
+                                                jump ofs0116
+                                       ofs014c:
+                                                label
+                                                debugline 168
+                                       ofs0150:
+                                                jump ofs0136
+                                       ofs0154:
+                                                label
+                                                getlocal1
+                                                getproperty QName(PackageNamespace(""),"urlLoader")
+                                                findpropstrict QName(PackageNamespace("flash.events"),"Event")
+                                                getproperty QName(PackageNamespace("flash.events"),"Event")
+                                                getproperty QName(PackageNamespace(""),"COMPLETE")
+                                                getlocal0
+                                                getproperty QName(ProtectedNamespace("\'H"),"onUrlLoaderComplete")
+                                                callproperty QName(PackageNamespace(""),"removeEventListener"), 2
+                                                pop
+                                       ofs0165:
+                                                jump ofs014c
+                                       ofs0169:
+                                                label
+                                                debugline 167
+                                       ofs016d:
+                                                jump ofs0154
+                                       ofs0171:
+                                                debug 1, "loadOperation", 0, 166
+                                       ofs0177:
+                                                jump ofs0169
+                                                returnvoid
+                                             end ; code
+                                          end ; body
+                                       end ; method
+                                    }
+                                    
+                                    public function dispose() : void
+                                    {
+                                       trait method QName(PackageNamespace(""),"dispose")
+                                          flag METADATA
+                                          metadata"__go_to_definition_help"
+                                             item "pos" "6502"
+                                          end ; metadata
+                                          dispid 0
+                                          method
+                                             name "com.angrybirds.friendsbar.data:CachedData/dispose"
+                                             returns QName(PackageNamespace(""),"void")
+                                             
+                                             body
+                                                maxstack 5
+                                                localcount 4
+                                                initscopedepth 5
+                                                maxscopedepth 8
+                                                
+                                                code
+                                                   pushfalse
+                                                   pushtrue
+                                                   setlocal2
+                                                   jump ofs0010
+                                                   increment
+                                                   setlocal2
+                                                   pushscope
+                                                   divide
+                                                   instanceof
+                                                   bitor
+                                                   increment_i
+                                                   greaterequals
+                                                   pushtrue
+                                          ofs0010:
+                                                   setlocal3
+                                                   debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\data;CachedData.as"
+                                                   getlocal3
+                                                   iftrue ofs001b
+                                                   debugline 177
+                                          ofs001b:
+                                                   getlocal0
+                                                   pushscope
+                                                   getlocal3
+                                                   dup
+                                                   iffalse ofs0026
+                                                   pop
+                                                   getlocal2
+                                                   convert_b
+                                          ofs0026:
+                                                   iftrue ofs0076
+                                                   jump ofs007d
+                                          ofs002e:
+                                                   label
+                                                   debugline 182
+                                                   getlocal2
+                                                   iffalse ofs0064
+                                                   getlocal3
+                                                   dup
+                                                   iffalse ofs0040
+                                                   pop
+                                                   getlocal2
+                                                   convert_b
+                                          ofs0040:
+                                                   iftrue ofs0079
+                                                   getlocal3
+                                                   iftrue ofs0076
+                                                   pushtrue
+                                                   iftrue ofs0084
+                                          ofs004e:
+                                                   label
+                                                   getlocal0
+                                                   getlocal0
+                                                   getproperty QName(ProtectedNamespace("\'H"),"=!4")
+                                                   jump ofs0060
+                                                   dxnslate
+                                                   getlocal2
+                                                   equals
+                                                   getlocal2
+                                                   setlocal2
+                                                   convert_i
+                                                   greaterequals
+                                                   strictequals
+                                                   astypelate
+                                          ofs0060:
+                                                   callproperty QName(ProtectedNamespace("\'H"),"%!5"), 1
+                                                   pop
+                                          ofs0064:
+                                                   getlocal2
+                                                   iffalse ofs0080
+                                                   jump ofs002e
+                                          ofs006d:
+                                                   label
+                                                   getlocal0
+                                                   getproperty QName(ProtectedNamespace("\'H"),"=!4")
+                                                   convert_b
+                                                   iffalse ofs00e1
+                                          ofs0076:
+                                                   debugline 179
+                                          ofs0079:
+                                                   jump ofs004e
+                                          ofs007d:
+                                                   debugline 178
+                                          ofs0080:
+                                                   jump ofs006d
+                                          ofs0084:
+                                                   getlocal0
+                                                   getproperty QName(ProtectedNamespace("\'H"),"=!4")
+                                                   getproperty QName(PackageNamespace(""),"urlLoader")
+                                                   callproperty QName(PackageNamespace(""),"close"), 0
+                                                   pop
+                                                   getlocal2
+                                                   dup
+                                                   iftrue ofs0096
+                                                   pop
+                                                   getlocal0
+                                                   convert_b
+                                          ofs0096:
+                                                   iffalse ofs00de
+                                                   debugline 184
+                                                   jump ofs00ae
+                                                   newactivation
+                                                   popscope
+                                                   declocal 2
+                                                   typeof
+                                                   declocal_i 2
+                                                   subtract_i
+                                                   getlocal2
+                                                   inclocal_i 2
+                                                   inclocal_i 2
+                                          ofs00ae:
+                                                   getlocal2
+                                                   iffalse ofs00e1
+                                          ofs00b3:
+                                                   jump ofs00d5
+                                          ofs00b7:
+                                                   getlocal0
+                                                   pushscope
+                                                   newcatch 0
+                                                   dup
+                                                   setlocal1
+                                                   dup
+                                                   pushscope
+                                                   swap
+                                                   setslot 1
+                                                   popscope
+                                                   kill 1
+                                                   getlocal2
+                                                   dup
+                                                   iftrue ofs00ce
+                                                   pop
+                                                   getlocal0
+                                                   convert_b
+                                          ofs00ce:
+                                                   iffalse ofs00d5
+                                                   debugline 186
+                                          ofs00d5:
+                                                   getlocal0
+                                                   pushnull
+                                                   initproperty QName(ProtectedNamespace("\'H"),"=!4")
+                                                   getlocal2
+                                                   iffalse ofs00e1
+                                          ofs00de:
+                                                   debugline 188
+                                          ofs00e1:
+                                                   returnvoid
+                                                   returnvoid
+                                                end ; code
+                                                try from ofs0084 to ofs00b3 target ofs00b7 type QName(PackageNamespace(""),"Error") name QName(PackageNamespace(""),"e") end
+                                             end ; body
+                                          end ; method
+                                       }
+                                    }
+                                 }

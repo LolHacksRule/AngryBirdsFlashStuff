@@ -1,0 +1,2830 @@
+package §6a§
+{
+   import §0!Q§.UIComponentRovio;
+   import §0!Q§.UIEventListenerRovio;
+   import §<u§.Log;
+   import §=!5§.§`X§;
+   import com.rovio.assets.AssetCache;
+   import flash.display.*;
+   
+   public class UIContainerRovio extends UIComponentRovio
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var §"B§:§`X§;
+      
+      public var §]6§:Vector.<UIComponentRovio>;
+      
+      public var §`!X§:Boolean = false;
+      
+      public function UIContainerRovio(param1:XML, param2:UIContainerRovio, param3:§`X§, param4:MovieClip = null)
+      {
+         method
+            name null
+            flag HAS_OPTIONAL
+            param QName(PackageNamespace(""),"XML")
+            param QName(PackageNamespace("6a"),"UIContainerRovio")
+            param QName(PackageNamespace("=!5"),"`X")
+            param QName(PackageNamespace("flash.display"),"MovieClip")
+            optional Null()
+            returns QName(PackageNamespace(""),"void")
+            
+            body
+               maxstack 7
+               localcount 17
+               initscopedepth 6
+               maxscopedepth 7
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0014
+                  pushnan
+                  inclocal 15
+                  bitxor
+                  declocal 13
+                  inclocal 3
+                  convert_o
+                  inclocal_i 2
+                  getglobalscope
+                  typeof
+         ofs0014:
+                  setlocal 15
+                  setlocal 16
+                  getlocal0
+                  pushscope
+                  pushnull
+                  coerce QName(PackageNamespace(""),"XML")
+                  setlocal 5
+                  pushnull
+                  coerce QName(PackageNamespace(""),"XML")
+                  setlocal 6
+                  pushnull
+                  coerce QName(PackageNamespace(""),"XML")
+                  setlocal 7
+                  pushnull
+                  coerce QName(PackageNamespace(""),"XML")
+                  setlocal 8
+                  pushnull
+                  coerce QName(PackageNamespace(""),"XML")
+                  setlocal 9
+                  pushnull
+                  coerce QName(PackageNamespace(""),"XML")
+                  setlocal 10
+                  pushnull
+                  coerce QName(PackageNamespace(""),"XML")
+                  setlocal 11
+                  pushnull
+                  coerce QName(PackageNamespace(""),"Class")
+                  setlocal 12
+                  getlocal 15
+                  iftrue ofs00e9
+                  getlocal0
+                  getlocal1
+                  getproperty MultinameA("name",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  initproperty QName(PackageNamespace(""),"mName")
+                  getlocal 16
+                  dup
+                  iftrue ofs0058
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0058:
+                  iffalse ofs006e
+                  getlocal3
+                  convert_b
+                  getlocal 15
+                  iftrue ofs0083
+                  iffalse ofs00c5
+                  getlocal 15
+                  iftrue ofs008d
+         ofs006e:
+                  getlocal0
+                  getlocal3
+                  initproperty QName(PackageNamespace(""),"\"B")
+                  getlocal 16
+                  dup
+                  iftrue ofs007c
+                  pop
+                  getlocal1
+                  convert_b
+         ofs007c:
+                  iffalse ofs00e9
+                  getlocal 4
+                  not
+         ofs0083:
+                  iffalse ofs00c5
+                  getlocal 16
+                  iffalse ofs00da
+         ofs008d:
+                  findpropstrict QName(PackageNamespace("com.rovio.assets"),"AssetCache")
+                  getproperty QName(PackageNamespace("com.rovio.assets"),"AssetCache")
+                  findpropstrict QName(PackageNamespace(""),"mName")
+                  getproperty QName(PackageNamespace(""),"mName")
+                  callproperty QName(PackageNamespace(""),"%p"), 1
+                  coerce QName(PackageNamespace(""),"Class")
+                  setlocal 12
+                  getlocal 15
+                  iftrue ofs00b8
+                  findproperty QName(PackageNamespace(""),"mClip")
+                  getlocal 12
+                  construct 0
+                  initproperty QName(PackageNamespace(""),"mClip")
+                  getlocal 15
+                  dup
+                  iffalse ofs00b4
+                  pop
+                  getlocal2
+                  convert_b
+         ofs00b4:
+                  iftrue ofs00c5
+         ofs00b8:
+                  getlocal0
+                  getproperty QName(PackageNamespace(""),"\"B")
+                  getproperty QName(PackageNamespace(""),"movieClip")
+                  findpropstrict QName(PackageNamespace(""),"mClip")
+                  getproperty QName(PackageNamespace(""),"mClip")
+                  callproperty QName(PackageNamespace(""),"addChild"), 1
+                  pop
+         ofs00c5:
+                  getlocal0
+                  getlocal1
+                  getlocal2
+                  getlocal 4
+                  constructsuper 3
+                  getlocal 15
+                  dup
+                  iffalse ofs00d6
+                  pop
+                  getlocal0
+                  convert_b
+         ofs00d6:
+                  iftrue ofs00e9
+         ofs00da:
+                  getlocal0
+                  findpropstrict Multiname("Vector",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C"),PackageNamespace("__AS3__.vec")])
+                  getproperty Multiname("Vector",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C"),PackageNamespace("__AS3__.vec")])
+                  findpropstrict QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                  getproperty QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                  applytype 1
+                  construct 0
+                  initproperty QName(PackageNamespace(""),"]6")
+         ofs00e9:
+                  pushbyte 0
+                  setlocal 13
+                  getlocal1
+                  getproperty Multiname("Container",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  coerce_a
+                  setlocal 14
+                  jump ofs011f
+         ofs00f7:
+                  label
+                  getlocal 14
+                  getlocal 13
+                  nextvalue
+                  coerce QName(PackageNamespace(""),"XML")
+                  setlocal 5
+                  getlocal 15
+                  dup
+                  iffalse ofs010b
+                  pop
+                  getlocal1
+                  convert_b
+         ofs010b:
+                  iftrue ofs011f
+                  getlocal0
+                  getproperty QName(PackageNamespace(""),"]6")
+                  findpropstrict QName(PackageNamespace("6a"),"UIContainerRovio")
+                  getlocal 5
+                  getlocal0
+                  pushnull
+                  constructprop QName(PackageNamespace("6a"),"UIContainerRovio"), 3
+                  callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                  pop
+         ofs011f:
+                  hasnext2 14, 13
+                  getlocal 16
+                  dup
+                  iftrue ofs012c
+                  pop
+                  getlocal2
+                  convert_b
+         ofs012c:
+                  iffalse ofs03ee
+                  iftrue ofs00f7
+                  getlocal 15
+                  iftrue ofs032c
+                  kill 14
+                  getlocal 15
+                  dup
+                  iffalse ofs0146
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0146:
+                  iftrue ofs03b0
+                  kill 13
+                  getlocal 16
+                  dup
+                  iftrue ofs0156
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0156:
+                  iffalse ofs03b8
+                  pushbyte 0
+                  getlocal 15
+                  iftrue ofs0264
+                  setlocal 13
+                  getlocal 15
+                  dup
+                  iffalse ofs016e
+                  pop
+                  getlocal3
+                  convert_b
+         ofs016e:
+                  iftrue ofs023b
+                  getlocal1
+                  getproperty Multiname("Repeater",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  coerce_a
+                  setlocal 14
+                  jump ofs01a4
+         ofs017c:
+                  label
+                  getlocal 14
+                  getlocal 13
+                  nextvalue
+                  coerce QName(PackageNamespace(""),"XML")
+                  setlocal 6
+                  getlocal 15
+                  dup
+                  iffalse ofs0190
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0190:
+                  iftrue ofs01a4
+                  getlocal0
+                  getproperty QName(PackageNamespace(""),"]6")
+                  findpropstrict QName(PackageNamespace("6a"),"UIRepeaterRovio")
+                  getlocal 6
+                  getlocal0
+                  pushnull
+                  constructprop QName(PackageNamespace("6a"),"UIRepeaterRovio"), 3
+                  callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                  pop
+         ofs01a4:
+                  hasnext2 14, 13
+                  getlocal 15
+                  iftrue ofs03ee
+                  iftrue ofs017c
+                  getlocal 15
+                  dup
+                  iffalse ofs01bb
+                  pop
+                  getlocal1
+                  convert_b
+         ofs01bb:
+                  iftrue ofs03a0
+                  kill 14
+                  getlocal 15
+                  dup
+                  iffalse ofs01cb
+                  pop
+                  getlocal1
+                  convert_b
+         ofs01cb:
+                  iftrue ofs03c2
+                  kill 13
+                  getlocal 15
+                  iftrue ofs034c
+                  pushbyte 0
+                  getlocal 16
+                  dup
+                  iftrue ofs01e3
+                  pop
+                  getlocal2
+                  convert_b
+         ofs01e3:
+                  iffalse ofs03ba
+                  setlocal 13
+                  getlocal 15
+                  dup
+                  iffalse ofs01f3
+                  pop
+                  getlocal2
+                  convert_b
+         ofs01f3:
+                  iftrue ofs026c
+                  getlocal1
+                  getproperty Multiname("Button",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  coerce_a
+                  setlocal 14
+                  jump ofs0220
+         ofs0201:
+                  label
+                  getlocal 14
+                  getlocal 13
+                  nextvalue
+                  coerce QName(PackageNamespace(""),"XML")
+                  setlocal 7
+                  getlocal 16
+                  iffalse ofs0220
+                  getlocal0
+                  getproperty QName(PackageNamespace(""),"]6")
+                  findpropstrict QName(PackageNamespace("6a"),"UIButtonRovio")
+                  getlocal 7
+                  getlocal0
+                  constructprop QName(PackageNamespace("6a"),"UIButtonRovio"), 2
+                  callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                  pop
+         ofs0220:
+                  hasnext2 14, 13
+                  getlocal 16
+                  iffalse ofs038e
+                  iftrue ofs0201
+                  getlocal 15
+                  iftrue ofs03f2
+                  kill 14
+                  getlocal 16
+                  iffalse ofs02e0
+         ofs023b:
+                  kill 13
+                  getlocal 15
+                  jump ofs0250
+                  pop
+                  kill 9
+                  decrement_i
+                  inclocal_i 6
+                  declocal_i 8
+                  istypelate
+                  negate_i
+                  setlocal 10
+                  setlocal3
+         ofs0250:
+                  dup
+                  iffalse ofs0258
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0258:
+                  iftrue ofs0486
+                  pushbyte 0
+                  getlocal 15
+                  iftrue ofs02d0
+         ofs0264:
+                  setlocal 13
+                  getlocal 15
+                  iftrue ofs035c
+         ofs026c:
+                  getlocal1
+                  getproperty Multiname("TextField",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  coerce_a
+                  setlocal 14
+                  jump ofs029d
+         ofs0276:
+                  label
+                  getlocal 14
+                  getlocal 13
+                  nextvalue
+                  coerce QName(PackageNamespace(""),"XML")
+                  setlocal 8
+                  getlocal 15
+                  dup
+                  iffalse ofs028a
+                  pop
+                  getlocal1
+                  convert_b
+         ofs028a:
+                  iftrue ofs029d
+                  getlocal0
+                  getproperty QName(PackageNamespace(""),"]6")
+                  findpropstrict QName(PackageNamespace("6a"),"UITextFieldRovio")
+                  getlocal 8
+                  getlocal0
+                  constructprop QName(PackageNamespace("6a"),"UITextFieldRovio"), 2
+                  callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                  pop
+         ofs029d:
+                  hasnext2 14, 13
+                  getlocal 16
+                  iffalse ofs038e
+                  iftrue ofs0276
+                  getlocal 16
+                  iffalse ofs032c
+                  kill 14
+                  getlocal 15
+                  dup
+                  iffalse ofs02bc
+                  pop
+                  getlocal1
+                  convert_b
+         ofs02bc:
+                  iftrue ofs035c
+                  kill 13
+                  getlocal 15
+                  iftrue ofs034c
+                  pushbyte 0
+                  getlocal 16
+                  iffalse ofs0354
+         ofs02d0:
+                  setlocal 13
+                  getlocal 15
+                  dup
+                  iffalse ofs02dc
+                  pop
+                  getlocal3
+                  convert_b
+         ofs02dc:
+                  iftrue ofs033c
+         ofs02e0:
+                  getlocal1
+                  getproperty Multiname("MovieClip",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  coerce_a
+                  setlocal 14
+                  jump ofs0311
+         ofs02ea:
+                  label
+                  getlocal 14
+                  getlocal 13
+                  nextvalue
+                  coerce QName(PackageNamespace(""),"XML")
+                  setlocal 9
+                  getlocal 16
+                  dup
+                  iftrue ofs02fe
+                  pop
+                  getlocal3
+                  convert_b
+         ofs02fe:
+                  iffalse ofs0311
+                  getlocal0
+                  getproperty QName(PackageNamespace(""),"]6")
+                  findpropstrict QName(PackageNamespace("6a"),"=D")
+                  getlocal 9
+                  getlocal0
+                  constructprop QName(PackageNamespace("6a"),"=D"), 2
+                  callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                  pop
+         ofs0311:
+                  hasnext2 14, 13
+                  getlocal 15
+                  iftrue ofs038e
+                  iftrue ofs02ea
+                  getlocal 16
+                  dup
+                  iftrue ofs0328
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0328:
+                  iffalse ofs03a0
+         ofs032c:
+                  kill 14
+                  getlocal 16
+                  dup
+                  iftrue ofs0338
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0338:
+                  iffalse ofs03b0
+         ofs033c:
+                  kill 13
+                  getlocal 16
+                  dup
+                  iftrue ofs0348
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0348:
+                  iffalse ofs04bf
+         ofs034c:
+                  pushbyte 0
+                  getlocal 16
+                  iffalse ofs03ba
+         ofs0354:
+                  setlocal 13
+                  getlocal 15
+                  iftrue ofs03f4
+         ofs035c:
+                  getlocal1
+                  getproperty Multiname("Popup",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  coerce_a
+                  setlocal 14
+                  jump ofs0385
+         ofs0366:
+                  label
+                  getlocal 14
+                  getlocal 13
+                  nextvalue
+                  coerce QName(PackageNamespace(""),"XML")
+                  setlocal 10
+                  getlocal 15
+                  iftrue ofs0385
+                  getlocal0
+                  getproperty QName(PackageNamespace(""),"]6")
+                  findpropstrict QName(PackageNamespace("6a"),"+_")
+                  getlocal 10
+                  getlocal0
+                  constructprop QName(PackageNamespace("6a"),"+_"), 2
+                  callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                  pop
+         ofs0385:
+                  hasnext2 14, 13
+                  getlocal 16
+                  iffalse ofs03ee
+         ofs038e:
+                  iftrue ofs0366
+                  getlocal 15
+                  dup
+                  iffalse ofs039c
+                  pop
+                  getlocal0
+                  convert_b
+         ofs039c:
+                  iftrue ofs03f2
+         ofs03a0:
+                  kill 14
+                  getlocal 15
+                  dup
+                  iffalse ofs03ac
+                  pop
+                  getlocal2
+                  convert_b
+         ofs03ac:
+                  iftrue ofs03f4
+         ofs03b0:
+                  kill 13
+                  getlocal 15
+                  iftrue ofs04dd
+         ofs03b8:
+                  pushbyte 0
+         ofs03ba:
+                  setlocal 13
+                  getlocal 15
+                  iftrue ofs03f4
+         ofs03c2:
+                  getlocal1
+                  getproperty Multiname("Slider",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  coerce_a
+                  setlocal 14
+                  jump ofs03eb
+         ofs03cc:
+                  label
+                  getlocal 14
+                  getlocal 13
+                  nextvalue
+                  coerce QName(PackageNamespace(""),"XML")
+                  setlocal 11
+                  getlocal 16
+                  iffalse ofs03eb
+                  getlocal0
+                  getproperty QName(PackageNamespace(""),"]6")
+                  findpropstrict QName(PackageNamespace("6a"),"UISliderRovio")
+                  getlocal 11
+                  getlocal0
+                  constructprop QName(PackageNamespace("6a"),"UISliderRovio"), 2
+                  callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                  pop
+         ofs03eb:
+                  hasnext2 14, 13
+         ofs03ee:
+                  iftrue ofs03cc
+         ofs03f2:
+                  kill 14
+         ofs03f4:
+                  kill 13
+                  getlocal 16
+                  dup
+                  iftrue ofs0400
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0400:
+                  iffalse ofs046f
+                  jump ofs04e1
+         ofs0408:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs040f
+         ofs040f:
+                  label
+                  getlocal1
+                  getproperty MultinameA("MouseOut",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  callproperty Multiname("toString",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")]), 0
+                  pushstring ""
+                  ifeq ofs0408
+                  getlocal 15
+                  iftrue ofs0451
+                  getlocal 16
+                  iffalse ofs046f
+                  getlocal 16
+                  dup
+                  iftrue ofs0432
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0432:
+                  iffalse ofs0462
+                  getlocal 16
+                  dup
+                  iftrue ofs0440
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0440:
+                  iffalse ofs0493
+                  findpropstrict QName(PackageNamespace(""),"[!5")
+                  findpropstrict QName(PackageNamespace(""),"!!Q")
+                  getproperty QName(PackageNamespace(""),"!!Q")
+                  getlocal1
+                  getproperty MultinameA("MouseOut",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  callproperty QName(PackageNamespace(""),"[!5"), 2
+                  pop
+         ofs0451:
+                  jump ofs0408
+         ofs0455:
+                  label
+                  getlocal1
+                  getproperty MultinameA("MouseOver",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  callproperty Multiname("toString",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")]), 0
+                  pushstring ""
+                  ifeq ofs040f
+         ofs0462:
+                  findpropstrict QName(PackageNamespace(""),"[!5")
+                  findpropstrict QName(PackageNamespace(""),"9O")
+                  getproperty QName(PackageNamespace(""),"9O")
+                  getlocal1
+                  getproperty MultinameA("MouseOver",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  callproperty QName(PackageNamespace(""),"[!5"), 2
+                  pop
+         ofs046f:
+                  jump ofs040f
+         ofs0473:
+                  label
+                  getlocal1
+                  getproperty MultinameA("MouseUp",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  callproperty Multiname("toString",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")]), 0
+                  pushstring ""
+                  ifeq ofs0455
+                  getlocal 16
+                  iffalse ofs0493
+         ofs0486:
+                  findpropstrict QName(PackageNamespace(""),"[!5")
+                  findpropstrict QName(PackageNamespace(""),"LISTENER_EVENT_MOUSE_UP")
+                  getproperty QName(PackageNamespace(""),"LISTENER_EVENT_MOUSE_UP")
+                  getlocal1
+                  getproperty MultinameA("MouseUp",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  callproperty QName(PackageNamespace(""),"[!5"), 2
+                  pop
+         ofs0493:
+                  getlocal 16
+                  jump ofs04a7
+                  declocal_i 7
+                  setlocal 15
+                  declocal 14
+                  getlocal2
+                  modulo
+                  kill 12
+                  convert_b
+                  greaterequals
+                  inclocal_i 8
+         ofs04a7:
+                  iffalse ofs04dd
+                  getlocal 15
+                  iftrue ofs04d0
+                  getlocal 15
+                  dup
+                  iffalse ofs04bb
+                  pop
+                  getlocal2
+                  convert_b
+         ofs04bb:
+                  iftrue ofs04e7
+         ofs04bf:
+                  jump ofs0455
+         ofs04c3:
+                  label
+                  getlocal1
+                  getproperty MultinameA("MouseDown",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  callproperty Multiname("toString",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")]), 0
+                  pushstring ""
+                  ifeq ofs0473
+         ofs04d0:
+                  findpropstrict QName(PackageNamespace(""),"[!5")
+                  findpropstrict QName(PackageNamespace(""),"LISTENER_EVENT_MOUSE_DOWN")
+                  getproperty QName(PackageNamespace(""),"LISTENER_EVENT_MOUSE_DOWN")
+                  getlocal1
+                  getproperty MultinameA("MouseDown",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  callproperty QName(PackageNamespace(""),"[!5"), 2
+                  pop
+         ofs04dd:
+                  jump ofs0473
+         ofs04e1:
+                  getlocal0
+                  getlocal1
+                  callproperty QName(PackageNamespace(""),"readInitialVisibility"), 1
+                  pop
+         ofs04e7:
+                  jump ofs04c3
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function §"O§(param1:UIComponentRovio) : void
+      {
+         trait method QName(PackageNamespace(""),"\"O")
+            dispid 0
+            method
+               name null
+               param QName(PackageNamespace("0!Q"),"UIComponentRovio")
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 5
+                  localcount 4
+                  initscopedepth 6
+                  maxscopedepth 7
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     setlocal2
+                     jump ofs0011
+                     setlocal3
+                     pushnan
+                     bitnot
+                     setlocal2
+                     greaterthan
+                     bitand
+                     inclocal_i 2
+                     bitnot
+                     swap
+            ofs0011:
+                     setlocal3
+                     getlocal0
+                     pushscope
+                     getlocal3
+                     dup
+                     iffalse ofs001d
+                     pop
+                     getlocal1
+                     convert_b
+            ofs001d:
+                     iftrue ofs002e
+                     findpropstrict QName(PackageNamespace(""),"mClip")
+                     getproperty QName(PackageNamespace(""),"mClip")
+                     getlocal1
+                     getproperty QName(PackageNamespace(""),"mClip")
+                     pushbyte 0
+                     callproperty QName(PackageNamespace(""),"setChildIndex"), 2
+                     pop
+            ofs002e:
+                     returnvoid
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public function §&!R§(param1:UIComponentRovio) : void
+         {
+            trait method QName(PackageNamespace(""),"&!R")
+               dispid 0
+               method
+                  name null
+                  param QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 6
+                     localcount 4
+                     initscopedepth 6
+                     maxscopedepth 7
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        swap
+                        jump ofs0014
+                        lessthan
+                        declocal_i 2
+                        swap
+                        kill 2
+                        inclocal 2
+                        setlocal2
+                        bitand
+                        kill 2
+                        newactivation
+               ofs0014:
+                        setlocal2
+                        setlocal3
+                        getlocal0
+                        pushscope
+                        getlocal3
+                        iffalse ofs0031
+                        findpropstrict QName(PackageNamespace(""),"mClip")
+                        getproperty QName(PackageNamespace(""),"mClip")
+                        getlocal1
+                        getproperty QName(PackageNamespace(""),"mClip")
+                        findpropstrict QName(PackageNamespace(""),"mClip")
+                        getproperty QName(PackageNamespace(""),"mClip")
+                        getproperty QName(PackageNamespace(""),"numChildren")
+                        pushbyte 1
+                        subtract
+                        callproperty QName(PackageNamespace(""),"setChildIndex"), 2
+                        pop
+               ofs0031:
+                        returnvoid
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public function addComponent(param1:UIComponentRovio) : void
+            {
+               trait method QName(PackageNamespace(""),"addComponent")
+                  dispid 0
+                  method
+                     name null
+                     param QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 5
+                        localcount 4
+                        initscopedepth 6
+                        maxscopedepth 7
+                        
+                        code
+                           pushfalse
+                           pushtrue
+                           swap
+                           jump ofs0013
+                           pushfalse
+                           convert_u
+                           checkfilter
+                           declocal 2
+                           greaterequals
+                           istypelate
+                           declocal_i 2
+                           getlocal2
+                           inclocal_i 2
+                  ofs0013:
+                           setlocal2
+                           setlocal3
+                           getlocal0
+                           pushscope
+                           getlocal2
+                           dup
+                           iffalse ofs0020
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0020:
+                           iftrue ofs0113
+                           jump ofs00fe
+                  ofs0028:
+                           label
+                           returnvoid
+                           pushtrue
+                           iftrue ofs002f
+                  ofs002f:
+                           label
+                           getlocal1
+                           findpropstrict QName(PackageNamespace(""),"viewHeight")
+                           getproperty QName(PackageNamespace(""),"viewHeight")
+                           setproperty QName(PackageNamespace(""),"viewHeight")
+                           getlocal2
+                           dup
+                           iffalse ofs0040
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs0040:
+                           iftrue ofs005a
+                           getlocal3
+                           iffalse ofs00ed
+                           getlocal3
+                           iffalse ofs010b
+                           jump ofs0028
+                  ofs0052:
+                           label
+                           getlocal1
+                           findpropstrict QName(PackageNamespace(""),"viewWidth")
+                           getproperty QName(PackageNamespace(""),"viewWidth")
+                           setproperty QName(PackageNamespace(""),"viewWidth")
+                  ofs005a:
+                           getlocal3
+                           dup
+                           iftrue ofs0063
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs0063:
+                           iffalse ofs00c6
+                           getlocal2
+                           iftrue ofs00e4
+                           jump ofs002f
+                           jump ofs0074
+                  ofs0074:
+                           declocal_i 2
+                           getlocal2
+                           inclocal 2
+                           getlocal2
+                           getlocal2
+                           declocal 2
+                           pushscope
+                           subtract
+                           pushwith
+                  ofs0080:
+                           label
+                           getlocal1
+                           getlocal2
+                           iftrue ofs00b1
+                           getlocal0
+                           getproperty QName(PackageNamespace(""),"0x")
+                           convert_b
+                           getlocal2
+                           iftrue ofs00c2
+                           dup
+                           getlocal2
+                           dup
+                           iffalse ofs009a
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs009a:
+                           iftrue ofs009f
+                           convert_b
+                  ofs009f:
+                           iffalse ofs00c2
+                           getlocal2
+                           dup
+                           iffalse ofs00ac
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs00ac:
+                           iftrue ofs00c1
+                           pop
+                  ofs00b1:
+                           getlocal1
+                           getproperty QName(PackageNamespace(""),"0x")
+                           getlocal3
+                           dup
+                           iftrue ofs00bd
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs00bd:
+                           iffalse ofs00c2
+                  ofs00c1:
+                           convert_b
+                  ofs00c2:
+                           callproperty QName(PackageNamespace(""),"setVisibility"), 1
+                           pop
+                  ofs00c6:
+                           jump ofs0052
+                           jump ofs00ce
+                  ofs00ce:
+                           coerce_s
+                           declocal 2
+                           declocal_i 2
+                           inclocal_i 2
+                           negate_i
+                           swap
+                           swap
+                           kill 2
+                           increment_i
+                  ofs00db:
+                           label
+                           getlocal1
+                           getlocal0
+                           getproperty QName(PackageNamespace(""),"]`")
+                           callproperty QName(PackageNamespace(""),"setActiveStatus"), 1
+                           pop
+                  ofs00e4:
+                           jump ofs0080
+                  ofs00e8:
+                           label
+                           getlocal1
+                           getlocal0
+                           setproperty QName(PackageNamespace(""),"mParentContainer")
+                  ofs00ed:
+                           getlocal2
+                           dup
+                           iffalse ofs00f6
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs00f6:
+                           iftrue ofs0113
+                           jump ofs00db
+                  ofs00fe:
+                           getlocal0
+                           getproperty QName(PackageNamespace(""),"]6")
+                           getlocal1
+                           callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"indexOf"), 1
+                           pushbyte 0
+                           ifnlt ofs0028
+                  ofs010b:
+                           getlocal0
+                           getproperty QName(PackageNamespace(""),"]6")
+                           getlocal1
+                           callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                           pop
+                  ofs0113:
+                           jump ofs00e8
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public function §#;§(param1:UIComponentRovio) : void
+               {
+                  trait method QName(PackageNamespace(""),"#;")
+                     dispid 0
+                     method
+                        name null
+                        param QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 5
+                           localcount 5
+                           initscopedepth 6
+                           maxscopedepth 7
+                           
+                           code
+                              pushfalse
+                              pushtrue
+                              setlocal3
+                              jump ofs0013
+                              getlocal2
+                              kill 3
+                              getlocal2
+                              lessthan
+                              lessthan
+                              setlocal2
+                              bitand
+                              inclocal 2
+                              inclocal 2
+                     ofs0013:
+                              setlocal 4
+                              getlocal0
+                              pushscope
+                              getlocal0
+                              getproperty QName(PackageNamespace(""),"]6")
+                              getlocal1
+                              callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"indexOf"), 1
+                              convert_i
+                              setlocal2
+                              getlocal 4
+                              iftrue ofs0085
+                              jump ofs0089
+                     ofs002a:
+                              label
+                              returnvoid
+                              pushtrue
+                              iftrue ofs0031
+                     ofs0031:
+                              jump ofs0035
+                     ofs0035:
+                              lshift
+                              declocal_i 3
+                              not
+                              coerce_a
+                              declocal 2
+                              declocal_i 3
+                              declocal 3
+                              getlocal1
+                              astypelate
+                     ofs0042:
+                              label
+                              findpropstrict QName(PackageNamespace(""),"mClip")
+                              getproperty QName(PackageNamespace(""),"mClip")
+                              getlocal1
+                              getproperty QName(PackageNamespace(""),"mClip")
+                              callproperty QName(PackageNamespace(""),"removeChild"), 1
+                              pop
+                              getlocal3
+                              dup
+                              jump ofs005e
+                              getlocal1
+                              inclocal 2
+                              add_i
+                              getlocal3
+                              setlocal3
+                              subtract_i
+                              astypelate
+                              getlocal3
+                              getlocal2
+                     ofs005e:
+                              iftrue ofs0065
+                              pop
+                              getlocal2
+                              convert_b
+                     ofs0065:
+                              iffalse ofs0078
+                              jump ofs002a
+                     ofs006d:
+                              label
+                              getlocal0
+                              getproperty QName(PackageNamespace(""),"]6")
+                              getlocal2
+                              pushbyte 1
+                              callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"splice"), 2
+                              pop
+                     ofs0078:
+                              getlocal3
+                              dup
+                              iftrue ofs0081
+                              pop
+                              getlocal0
+                              convert_b
+                     ofs0081:
+                              iffalse ofs009a
+                     ofs0085:
+                              jump ofs0042
+                     ofs0089:
+                              getlocal2
+                              pushbyte 0
+                              ifnge ofs002a
+                              getlocal 4
+                              iftrue ofs009a
+                              getlocal1
+                              pushnull
+                              setproperty QName(PackageNamespace(""),"mParentContainer")
+                     ofs009a:
+                              jump ofs006d
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  override public function readInitialVisibility(param1:XML) : void
+                  {
+                     trait method QName(PackageNamespace(""),"readInitialVisibility")
+                        flag OVERRIDE
+                        dispid 0
+                        method
+                           name null
+                           param QName(PackageNamespace(""),"XML")
+                           returns QName(PackageNamespace(""),"void")
+                           
+                           body
+                              maxstack 4
+                              localcount 5
+                              initscopedepth 6
+                              maxscopedepth 7
+                              
+                              code
+                                 pushfalse
+                                 pushtrue
+                                 swap
+                                 jump ofs0012
+                                 setlocal3
+                                 setlocal2
+                                 subtract
+                                 bitnot
+                                 checkfilter
+                                 declocal_i 2
+                                 coerce_s
+                                 inclocal_i 3
+                                 setlocal2
+                        ofs0012:
+                                 setlocal3
+                                 setlocal 4
+                                 getlocal0
+                                 pushscope
+                                 getlocal3
+                                 iftrue ofs0034
+                                 findpropstrict QName(PackageNamespace(""),"mClip")
+                                 getproperty QName(PackageNamespace(""),"mClip")
+                                 not
+                                 iffalse ofs0034
+                                 getlocal 4
+                                 dup
+                                 iftrue ofs002f
+                                 pop
+                                 getlocal1
+                                 convert_b
+                        ofs002f:
+                                 iffalse ofs0034
+                                 returnvoid
+                        ofs0034:
+                                 getlocal1
+                                 getproperty MultinameA("visible",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                                 coerce_s
+                                 setlocal2
+                                 getlocal3
+                                 iftrue ofs019f
+                                 jump ofs01a3
+                        ofs0042:
+                                 label
+                                 returnvoid
+                                 pushtrue
+                                 iftrue ofs0049
+                        ofs0049:
+                                 label
+                                 jump ofs0042
+                        ofs004e:
+                                 label
+                                 getlocal0
+                                 pushfalse
+                                 callproperty QName(PackageNamespace(""),"setEnabled"), 1
+                                 pop
+                                 getlocal 4
+                                 iffalse ofs00e4
+                                 jump ofs0042
+                        ofs005f:
+                                 label
+                                 getlocal2
+                                 getlocal3
+                                 iftrue ofs00fe
+                                 getlocal3
+                                 iftrue ofs0179
+                                 callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"toUpperCase"), 0
+                                 pushstring "TRUE"
+                                 equals
+                                 getlocal3
+                                 dup
+                                 iffalse ofs007a
+                                 pop
+                                 getlocal1
+                                 convert_b
+                        ofs007a:
+                                 iftrue ofs0098
+                                 getlocal 4
+                                 dup
+                                 iftrue ofs0088
+                                 pop
+                                 getlocal3
+                                 convert_b
+                        ofs0088:
+                                 iffalse ofs0133
+                                 getlocal3
+                                 iftrue ofs0180
+                                 getlocal 4
+                                 iffalse ofs01a5
+                                 convert_b
+                        ofs0098:
+                                 getlocal 4
+                                 iffalse ofs010c
+                                 getlocal 4
+                                 iffalse ofs017f
+                        ofs00a4:
+                                 label
+                                 iffalse ofs004e
+                                 getlocal3
+                                 dup
+                                 iffalse ofs00b2
+                                 pop
+                                 getlocal1
+                                 convert_b
+                        ofs00b2:
+                                 iftrue ofs00e4
+                                 getlocal3
+                                 dup
+                                 iffalse ofs00cd
+                                 pop
+                                 jump ofs00cb
+                                 add_i
+                                 greaterequals
+                                 setlocal3
+                                 lessequals
+                                 getglobalscope
+                                 convert_b
+                                 strictequals
+                                 typeof
+                                 inclocal_i 3
+                        ofs00cb:
+                                 getlocal2
+                                 convert_b
+                        ofs00cd:
+                                 iftrue ofs0199
+                                 getlocal3
+                                 dup
+                                 iffalse ofs00da
+                                 pop
+                                 getlocal1
+                                 convert_b
+                        ofs00da:
+                                 iftrue ofs0193
+                                 getlocal0
+                                 pushtrue
+                                 callproperty QName(PackageNamespace(""),"setEnabled"), 1
+                                 pop
+                        ofs00e4:
+                                 getlocal 4
+                                 dup
+                                 iftrue ofs00ee
+                                 pop
+                                 getlocal3
+                                 convert_b
+                        ofs00ee:
+                                 iffalse ofs0134
+                                 getlocal 4
+                                 iffalse ofs0173
+                                 jump ofs0049
+                        ofs00fc:
+                                 label
+                                 getlocal2
+                        ofs00fe:
+                                 getlocal3
+                                 dup
+                                 iffalse ofs0107
+                                 pop
+                                 getlocal1
+                                 convert_b
+                        ofs0107:
+                                 iftrue ofs0142
+                                 convert_b
+                        ofs010c:
+                                 dup
+                                 getlocal3
+                                 dup
+                                 iffalse ofs0116
+                                 pop
+                                 getlocal2
+                                 convert_b
+                        ofs0116:
+                                 iftrue ofs0121
+                                 getlocal 4
+                                 iffalse ofs01a7
+                                 convert_b
+                        ofs0121:
+                                 getlocal 4
+                                 dup
+                                 iftrue ofs012b
+                                 pop
+                                 getlocal3
+                                 convert_b
+                        ofs012b:
+                                 iffalse ofs01a6
+                                 iffalse ofs00a4
+                        ofs0133:
+                                 pop
+                        ofs0134:
+                                 getlocal3
+                                 iftrue ofs0151
+                                 jump ofs005f
+                        ofs013d:
+                                 label
+                                 getlocal1
+                                 getproperty MultinameA("enabled",[PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                                 coerce_s
+                        ofs0142:
+                                 getlocal 4
+                                 dup
+                                 iftrue ofs014c
+                                 pop
+                                 getlocal3
+                                 convert_b
+                        ofs014c:
+                                 iffalse ofs01a4
+                                 setlocal2
+                        ofs0151:
+                                 jump ofs00fc
+                        ofs0155:
+                                 label
+                                 jump ofs013d
+                        ofs015a:
+                                 label
+                                 getlocal0
+                                 pushtrue
+                                 callproperty QName(PackageNamespace(""),"setVisibility"), 1
+                                 jump ofs0172
+                                 inclocal 3
+                                 getlocal3
+                                 convert_o
+                                 declocal_i 2
+                                 bitor
+                                 inclocal 3
+                                 declocal_i 3
+                                 popscope
+                                 inclocal 3
+                        ofs0172:
+                                 pop
+                        ofs0173:
+                                 jump ofs013d
+                        ofs0177:
+                                 label
+                                 getlocal2
+                        ofs0179:
+                                 callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"toUpperCase"), 0
+                                 pushstring "FALSE"
+                                 equals
+                        ofs017f:
+                                 convert_b
+                        ofs0180:
+                                 getlocal 4
+                                 dup
+                                 iftrue ofs018a
+                                 pop
+                                 getlocal1
+                                 convert_b
+                        ofs018a:
+                                 iffalse ofs01ab
+                        ofs018e:
+                                 label
+                                 iffalse ofs015a
+                        ofs0193:
+                                 getlocal0
+                                 pushfalse
+                                 callproperty QName(PackageNamespace(""),"setVisibility"), 1
+                                 pop
+                        ofs0199:
+                                 getlocal 4
+                                 iffalse ofs01ac
+                        ofs019f:
+                                 jump ofs0155
+                        ofs01a3:
+                                 getlocal2
+                        ofs01a4:
+                                 convert_b
+                        ofs01a5:
+                                 dup
+                        ofs01a6:
+                                 convert_b
+                        ofs01a7:
+                                 iffalse ofs018e
+                        ofs01ab:
+                                 pop
+                        ofs01ac:
+                                 jump ofs0177
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     override public function listenerEventOccured(param1:int, param2:String) : void
+                     {
+                        trait method QName(PackageNamespace(""),"listenerEventOccured")
+                           flag OVERRIDE
+                           dispid 0
+                           method
+                              name null
+                              param QName(PackageNamespace(""),"int")
+                              param QName(PackageNamespace(""),"String")
+                              returns QName(PackageNamespace(""),"void")
+                              
+                              body
+                                 maxstack 5
+                                 localcount 5
+                                 initscopedepth 6
+                                 maxscopedepth 7
+                                 
+                                 code
+                                    pushfalse
+                                    pushtrue
+                                    swap
+                                    jump ofs0014
+                                    multiply
+                                    inclocal 3
+                                    getlocal2
+                                    declocal 3
+                                    getlocal3
+                                    convert_d
+                                    inclocal_i 3
+                                    kill 2
+                                    setlocal3
+                           ofs0014:
+                                    setlocal3
+                                    setlocal 4
+                                    getlocal0
+                                    pushscope
+                                    getlocal3
+                                    iftrue ofs0025
+                                    getlocal0
+                                    getlocal1
+                                    getlocal2
+                                    callsuper QName(PackageNamespace(""),"listenerEventOccured"), 2
+                                    pop
+                           ofs0025:
+                                    returnvoid
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                        }
+                        
+                        public function containerEventOccured(param1:int, param2:String, param3:UIEventListenerRovio) : void
+                        {
+                           trait method QName(PackageNamespace(""),"containerEventOccured")
+                              dispid 0
+                              method
+                                 name null
+                                 param QName(PackageNamespace(""),"int")
+                                 param QName(PackageNamespace(""),"String")
+                                 param QName(PackageNamespace("0!Q"),"UIEventListenerRovio")
+                                 returns QName(PackageNamespace(""),"void")
+                                 
+                                 body
+                                    maxstack 6
+                                    localcount 6
+                                    initscopedepth 6
+                                    maxscopedepth 7
+                                    
+                                    code
+                                       pushfalse
+                                       pushtrue
+                                       swap
+                                       jump ofs0013
+                                       pushundefined
+                                       declocal 4
+                                       divide
+                                       subtract
+                                       inclocal_i 3
+                                       kill 2
+                                       swap
+                                       getlocal3
+                                       lshift
+                              ofs0013:
+                                       setlocal 4
+                                       setlocal 5
+                                       getlocal0
+                                       pushscope
+                                       getlocal 4
+                                       iftrue ofs0083
+                                       jump ofs0097
+                              ofs0023:
+                                       label
+                                       returnvoid
+                                       pushtrue
+                                       iftrue ofs002a
+                              ofs002a:
+                                       label
+                                       jump ofs0023
+                              ofs002f:
+                                       label
+                                       getlocal0
+                                       getproperty QName(PackageNamespace(""),"\"B")
+                                       getlocal 4
+                                       iftrue ofs0086
+                                       convert_b
+                                       jump ofs004d
+                                       declocal 2
+                                       kill 3
+                                       declocal_i 3
+                                       nextvalue
+                                       declocal 2
+                                       negate
+                                       getlocal3
+                                       declocal_i 3
+                                       kill 4
+                              ofs004d:
+                                       getlocal 4
+                                       iftrue ofs009c
+                                       iffalse ofs0023
+                                       getlocal 4
+                                       dup
+                                       iffalse ofs0061
+                                       pop
+                                       getlocal2
+                                       convert_b
+                              ofs0061:
+                                       iftrue ofs008d
+                                       jump ofs0075
+                                       declocal 3
+                                       pop
+                                       nextname
+                                       kill 4
+                                       getlocal2
+                                       declocal 2
+                                       setlocal3
+                                       modulo
+                                       modulo
+                              ofs0075:
+                                       getlocal 4
+                                       dup
+                                       iffalse ofs007f
+                                       pop
+                                       getlocal1
+                                       convert_b
+                              ofs007f:
+                                       iftrue ofs00a0
+                              ofs0083:
+                                       getlocal0
+                                       getproperty QName(PackageNamespace(""),"\"B")
+                              ofs0086:
+                                       getlocal1
+                                       getlocal2
+                                       getlocal3
+                                       callproperty QName(PackageNamespace(""),"listenerEventOccured"), 3
+                                       pop
+                              ofs008d:
+                                       getlocal 4
+                                       iftrue ofs00ab
+                                       jump ofs0023
+                              ofs0097:
+                                       findpropstrict QName(PackageNamespace(""),"mParentContainer")
+                                       getproperty QName(PackageNamespace(""),"mParentContainer")
+                                       convert_b
+                              ofs009c:
+                                       iffalse ofs002f
+                              ofs00a0:
+                                       findpropstrict QName(PackageNamespace(""),"mParentContainer")
+                                       getproperty QName(PackageNamespace(""),"mParentContainer")
+                                       getlocal1
+                                       getlocal2
+                                       getlocal3
+                                       callproperty QName(PackageNamespace(""),"containerEventOccured"), 3
+                                       pop
+                              ofs00ab:
+                                       jump ofs002a
+                                       returnvoid
+                                    end ; code
+                                 end ; body
+                              end ; method
+                           }
+                           
+                           override public function setActiveStatus(param1:Boolean) : void
+                           {
+                              trait method QName(PackageNamespace(""),"setActiveStatus")
+                                 flag OVERRIDE
+                                 dispid 0
+                                 method
+                                    name null
+                                    param QName(PackageNamespace(""),"Boolean")
+                                    returns QName(PackageNamespace(""),"void")
+                                    
+                                    body
+                                       maxstack 4
+                                       localcount 7
+                                       initscopedepth 6
+                                       maxscopedepth 7
+                                       
+                                       code
+                                          pushfalse
+                                          pushtrue
+                                          swap
+                                          jump ofs0013
+                                          pushfalse
+                                          inclocal 2
+                                          multiply
+                                          inclocal_i 3
+                                          declocal_i 2
+                                          greaterequals
+                                          lessequals
+                                          nextvalue
+                                          negate
+                                 ofs0013:
+                                          setlocal 5
+                                          setlocal 6
+                                          getlocal0
+                                          pushscope
+                                          pushnull
+                                          coerce QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                                          setlocal2
+                                          jump ofs002e
+                                          pushnan
+                                          pushundefined
+                                          kill 4
+                                          multiply
+                                          setlocal 5
+                                          kill 3
+                                          setlocal2
+                                          inclocal 2
+                                          add_i
+                                 ofs002e:
+                                          pushbyte 0
+                                          jump ofs0041
+                                          strictequals
+                                          multiply
+                                          kill 4
+                                          divide
+                                          pushtrue
+                                          inclocal_i 4
+                                          setlocal 5
+                                          coerce_a
+                                          declocal_i 5
+                                 ofs0041:
+                                          setlocal3
+                                          getlocal0
+                                          getproperty QName(PackageNamespace(""),"]6")
+                                          coerce_a
+                                          setlocal 4
+                                          jump ofs0060
+                                 ofs004c:
+                                          label
+                                          getlocal 4
+                                          getlocal3
+                                          nextvalue
+                                          coerce QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                                          setlocal2
+                                          getlocal 5
+                                          iftrue ofs0060
+                                          getlocal2
+                                          getlocal1
+                                          callproperty QName(PackageNamespace(""),"setActiveStatus"), 1
+                                          pop
+                                 ofs0060:
+                                          hasnext2 4, 3
+                                          iftrue ofs004c
+                                          kill 4
+                                          kill 3
+                                          getlocal 6
+                                          iffalse ofs0077
+                                          getlocal0
+                                          getlocal1
+                                          callsuper QName(PackageNamespace(""),"setActiveStatus"), 1
+                                          pop
+                                 ofs0077:
+                                          returnvoid
+                                          returnvoid
+                                       end ; code
+                                    end ; body
+                                 end ; method
+                              }
+                              
+                              override public function clear() : void
+                              {
+                                 trait method QName(PackageNamespace(""),"clear")
+                                    flag OVERRIDE
+                                    dispid 0
+                                    method
+                                       name null
+                                       returns QName(PackageNamespace(""),"void")
+                                       
+                                       body
+                                          maxstack 4
+                                          localcount 4
+                                          initscopedepth 6
+                                          maxscopedepth 7
+                                          
+                                          code
+                                             pushfalse
+                                             pushtrue
+                                             setlocal2
+                                             jump ofs0012
+                                             nextvalue
+                                             kill 2
+                                             inclocal_i 2
+                                             getlocal0
+                                             setlocal2
+                                             getlocal0
+                                             nextname
+                                             pop
+                                             swap
+                                    ofs0012:
+                                             setlocal3
+                                             getlocal0
+                                             pushscope
+                                             pushbyte 0
+                                             setlocal1
+                                             getlocal2
+                                             dup
+                                             iftrue ofs0021
+                                             pop
+                                             getlocal1
+                                             convert_b
+                                    ofs0021:
+                                             iffalse ofs0116
+                                             jump ofs0101
+                                    ofs0029:
+                                             label
+                                             returnvoid
+                                             pushtrue
+                                             iftrue ofs0030
+                                    ofs0030:
+                                             label
+                                             getlocal0
+                                             callsuper QName(PackageNamespace(""),"clear"), 0
+                                             pop
+                                             getlocal3
+                                             iftrue ofs00a0
+                                             getlocal2
+                                             dup
+                                             iftrue ofs0044
+                                             pop
+                                             getlocal1
+                                             convert_b
+                                    ofs0044:
+                                             iffalse ofs0067
+                                             getlocal2
+                                             dup
+                                             iftrue ofs0051
+                                             pop
+                                             getlocal0
+                                             convert_b
+                                    ofs0051:
+                                             iffalse ofs00cb
+                                             jump ofs0029
+                                    ofs0059:
+                                             label
+                                             getlocal0
+                                             getproperty QName(PackageNamespace(""),"\"B")
+                                             getlocal3
+                                             iftrue ofs0096
+                                             convert_b
+                                             iffalse ofs0030
+                                    ofs0067:
+                                             getlocal3
+                                             dup
+                                             iffalse ofs0082
+                                             pop
+                                             getlocal0
+                                             jump ofs0081
+                                             inclocal_i 2
+                                             setlocal2
+                                             inclocal_i 2
+                                             coerce_a
+                                             swap
+                                             kill 2
+                                             convert_b
+                                             declocal 2
+                                             declocal_i 2
+                                    ofs0081:
+                                             convert_b
+                                    ofs0082:
+                                             iftrue ofs00e9
+                                             getlocal3
+                                             dup
+                                             iffalse ofs008f
+                                             pop
+                                             getlocal3
+                                             convert_b
+                                    ofs008f:
+                                             iftrue ofs00fd
+                                             getlocal0
+                                             getproperty QName(PackageNamespace(""),"\"B")
+                                    ofs0096:
+                                             getproperty QName(PackageNamespace(""),"movieClip")
+                                             findpropstrict QName(PackageNamespace(""),"mClip")
+                                             getproperty QName(PackageNamespace(""),"mClip")
+                                             callproperty QName(PackageNamespace(""),"removeChild"), 1
+                                             pop
+                                    ofs00a0:
+                                             getlocal3
+                                             iftrue ofs00c7
+                                             jump ofs0030
+                                    ofs00a9:
+                                             label
+                                             getlocal1
+                                             getlocal3
+                                             dup
+                                             iffalse ofs00b4
+                                             pop
+                                             getlocal2
+                                             convert_b
+                                    ofs00b4:
+                                             iftrue ofs00e8
+                                             getlocal2
+                                             iffalse ofs00d1
+                                             getlocal0
+                                             getproperty QName(PackageNamespace(""),"]6")
+                                             getproperty QName(PackageNamespace(""),"length")
+                                             iflt ofs00f2
+                                    ofs00c6:
+                                             label
+                                    ofs00c7:
+                                             getlocal0
+                                             pushnull
+                                             initproperty QName(PackageNamespace(""),"]6")
+                                    ofs00cb:
+                                             jump ofs0059
+                                    ofs00cf:
+                                             label
+                                             getlocal1
+                                    ofs00d1:
+                                             increment_i
+                                             getlocal2
+                                             iffalse ofs00e8
+                                             jump ofs00e7
+                                             declocal 2
+                                             convert_u
+                                             setlocal2
+                                             urshift
+                                             declocal_i 2
+                                             setlocal2
+                                             getlocal2
+                                             setlocal2
+                                             inclocal_i 2
+                                    ofs00e7:
+                                             convert_i
+                                    ofs00e8:
+                                             setlocal1
+                                    ofs00e9:
+                                             jump ofs00a9
+                                    ofs00ed:
+                                             label
+                                             jump ofs00a9
+                                    ofs00f2:
+                                             label
+                                             getlocal0
+                                             getproperty QName(PackageNamespace(""),"]6")
+                                             getlocal1
+                                             getproperty MultinameL([PrivateNamespace("57"),PackageNamespace(""),PrivateNamespace("UIContainerRovio.as$280"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("57"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                                             callproperty QName(PackageNamespace(""),"clear"), 0
+                                             pop
+                                    ofs00fd:
+                                             jump ofs00cf
+                                    ofs0101:
+                                             getlocal0
+                                             getproperty QName(PackageNamespace(""),"]6")
+                                             convert_b
+                                             iffalse ofs00c6
+                                             getlocal3
+                                             dup
+                                             iffalse ofs0112
+                                             pop
+                                             getlocal1
+                                             convert_b
+                                    ofs0112:
+                                             iftrue ofs011f
+                                    ofs0116:
+                                             pushbyte 0
+                                             getlocal2
+                                             iffalse ofs011e
+                                             convert_i
+                                    ofs011e:
+                                             setlocal1
+                                    ofs011f:
+                                             jump ofs00ed
+                                             returnvoid
+                                          end ; code
+                                       end ; body
+                                    end ; method
+                                 }
+                                 
+                                 override public function setVisibility(param1:Boolean) : void
+                                 {
+                                    trait method QName(PackageNamespace(""),"setVisibility")
+                                       flag OVERRIDE
+                                       dispid 0
+                                       method
+                                          name null
+                                          param QName(PackageNamespace(""),"Boolean")
+                                          returns QName(PackageNamespace(""),"void")
+                                          
+                                          body
+                                             maxstack 4
+                                             localcount 4
+                                             initscopedepth 6
+                                             maxscopedepth 7
+                                             
+                                             code
+                                                pushfalse
+                                                pushtrue
+                                                swap
+                                                jump ofs0014
+                                                lshift
+                                                declocal_i 2
+                                                inclocal_i 2
+                                                inclocal 2
+                                                add
+                                                inclocal 2
+                                                multiply
+                                                dxnslate
+                                                convert_b
+                                       ofs0014:
+                                                setlocal2
+                                                setlocal3
+                                                getlocal0
+                                                pushscope
+                                                getlocal3
+                                                jump ofs002a
+                                                bitnot
+                                                bitand
+                                                inclocal 2
+                                                bitnot
+                                                declocal 2
+                                                lessthan
+                                                pushnan
+                                                inclocal_i 2
+                                                declocal_i 2
+                                       ofs002a:
+                                                dup
+                                                iftrue ofs0032
+                                                pop
+                                                getlocal0
+                                                convert_b
+                                       ofs0032:
+                                                iffalse ofs0055
+                                                jump ofs0059
+                                       ofs003a:
+                                                label
+                                                returnvoid
+                                                pushtrue
+                                                iftrue ofs0041
+                                       ofs0041:
+                                                label
+                                                getlocal0
+                                                getlocal1
+                                                callproperty QName(PackageNamespace(""),"onParentVisibilityChange"), 1
+                                                pop
+                                                getlocal2
+                                                dup
+                                                iffalse ofs0051
+                                                pop
+                                                getlocal3
+                                                convert_b
+                                       ofs0051:
+                                                iftrue ofs005f
+                                       ofs0055:
+                                                jump ofs003a
+                                       ofs0059:
+                                                getlocal0
+                                                getlocal1
+                                                callsuper QName(PackageNamespace(""),"setVisibility"), 1
+                                                pop
+                                       ofs005f:
+                                                jump ofs0041
+                                                returnvoid
+                                             end ; code
+                                          end ; body
+                                       end ; method
+                                    }
+                                    
+                                    override public function onParentVisibilityChange(param1:Boolean) : void
+                                    {
+                                       trait method QName(PackageNamespace(""),"onParentVisibilityChange")
+                                          flag OVERRIDE
+                                          dispid 0
+                                          method
+                                             name null
+                                             param QName(PackageNamespace(""),"Boolean")
+                                             returns QName(PackageNamespace(""),"void")
+                                             
+                                             body
+                                                maxstack 4
+                                                localcount 7
+                                                initscopedepth 6
+                                                maxscopedepth 7
+                                                
+                                                code
+                                                   pushfalse
+                                                   pushtrue
+                                                   swap
+                                                   jump ofs0015
+                                                   inclocal 4
+                                                   convert_i
+                                                   setlocal 4
+                                                   instanceof
+                                                   convert_u
+                                                   kill 3
+                                                   declocal_i 5
+                                                   declocal 2
+                                                   convert_i
+                                          ofs0015:
+                                                   setlocal 5
+                                                   setlocal 6
+                                                   getlocal0
+                                                   pushscope
+                                                   pushnull
+                                                   coerce QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                                                   setlocal2
+                                                   getlocal 6
+                                                   dup
+                                                   iftrue ofs003b
+                                                   pop
+                                                   getlocal0
+                                                   convert_b
+                                                   jump ofs003b
+                                                   coerce_a
+                                                   convert_i
+                                                   inclocal 3
+                                                   declocal_i 3
+                                                   declocal_i 3
+                                                   strictequals
+                                                   inclocal_i 3
+                                                   declocal_i 3
+                                                   not
+                                          ofs003b:
+                                                   iffalse ofs0064
+                                                   getlocal0
+                                                   getlocal1
+                                                   callsuper QName(PackageNamespace(""),"onParentVisibilityChange"), 1
+                                                   pop
+                                                   getlocal 6
+                                                   jump ofs0058
+                                                   urshift
+                                                   declocal 5
+                                                   getlocal0
+                                                   increment_i
+                                                   declocal 4
+                                                   getlocal2
+                                                   inclocal 3
+                                                   greaterthan
+                                                   declocal_i 5
+                                          ofs0058:
+                                                   iffalse ofs0064
+                                                   getlocal0
+                                                   getproperty QName(PackageNamespace(""),"]6")
+                                                   pushnull
+                                                   ifeq ofs0090
+                                          ofs0064:
+                                                   pushbyte 0
+                                                   setlocal3
+                                                   getlocal0
+                                                   getproperty QName(PackageNamespace(""),"]6")
+                                                   coerce_a
+                                                   setlocal 4
+                                                   jump ofs0085
+                                          ofs0071:
+                                                   label
+                                                   getlocal 4
+                                                   getlocal3
+                                                   nextvalue
+                                                   coerce QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                                                   setlocal2
+                                                   getlocal 5
+                                                   iftrue ofs0085
+                                                   getlocal2
+                                                   getlocal1
+                                                   callproperty QName(PackageNamespace(""),"onParentVisibilityChange"), 1
+                                                   pop
+                                          ofs0085:
+                                                   hasnext2 4, 3
+                                                   iftrue ofs0071
+                                                   kill 4
+                                                   kill 3
+                                          ofs0090:
+                                                   returnvoid
+                                                   returnvoid
+                                                end ; code
+                                             end ; body
+                                          end ; method
+                                       }
+                                       
+                                       public function §?Q§(param1:String, param2:Boolean) : void
+                                       {
+                                          trait method QName(PackageNamespace(""),"?Q")
+                                             dispid 0
+                                             method
+                                                name null
+                                                param QName(PackageNamespace(""),"String")
+                                                param QName(PackageNamespace(""),"Boolean")
+                                                returns QName(PackageNamespace(""),"void")
+                                                
+                                                body
+                                                   maxstack 5
+                                                   localcount 6
+                                                   initscopedepth 6
+                                                   maxscopedepth 7
+                                                   
+                                                   code
+                                                      pushfalse
+                                                      pushtrue
+                                                      swap
+                                                      jump ofs0013
+                                                      convert_s
+                                                      bitnot
+                                                      popscope
+                                                      inclocal 4
+                                                      swap
+                                                      inclocal 2
+                                                      getlocal1
+                                                      bitor
+                                                      inclocal_i 4
+                                             ofs0013:
+                                                      setlocal 4
+                                                      setlocal 5
+                                                      getlocal0
+                                                      pushscope
+                                                      pushnull
+                                                      coerce QName(PackageNamespace(""),"Object")
+                                                      setlocal3
+                                                      getlocal 4
+                                                      dup
+                                                      iffalse ofs0027
+                                                      pop
+                                                      getlocal3
+                                                      convert_b
+                                             ofs0027:
+                                                      iftrue ofs003d
+                                                      findpropstrict QName(PackageNamespace(""),"mName")
+                                                      getproperty QName(PackageNamespace(""),"mName")
+                                                      callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"toUpperCase"), 0
+                                                      getlocal1
+                                                      ifne ofs0047
+                                                      getlocal 4
+                                                      iftrue ofs0043
+                                             ofs003d:
+                                                      getlocal0
+                                                      getlocal2
+                                                      callproperty QName(PackageNamespace(""),"setVisibility"), 1
+                                                      pop
+                                             ofs0043:
+                                                      jump ofs00eb
+                                             ofs0047:
+                                                      getlocal0
+                                                      getlocal1
+                                                      callproperty QName(PackageNamespace(""),"getItemByName"), 1
+                                                      coerce QName(PackageNamespace(""),"Object")
+                                                      setlocal3
+                                                      getlocal 4
+                                                      iftrue ofs0077
+                                                      getlocal3
+                                                      jump ofs0068
+                                                      typeof
+                                                      typeof
+                                                      subtract_i
+                                                      inclocal_i 3
+                                                      instanceof
+                                                      kill 4
+                                                      declocal 4
+                                                      kill 3
+                                                      inclocal_i 4
+                                             ofs0068:
+                                                      findpropstrict QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                                                      getproperty QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                                                      istypelate
+                                                      iffalse ofs0094
+                                                      getlocal 4
+                                                      iftrue ofs0090
+                                             ofs0077:
+                                                      getlocal3
+                                                      findpropstrict QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                                                      getproperty QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                                                      astypelate
+                                                      getlocal2
+                                                      callproperty QName(PackageNamespace(""),"setVisibility"), 1
+                                                      pop
+                                                      getlocal 5
+                                                      dup
+                                                      iftrue ofs008c
+                                                      pop
+                                                      getlocal2
+                                                      convert_b
+                                             ofs008c:
+                                                      iffalse ofs00eb
+                                             ofs0090:
+                                                      jump ofs00eb
+                                             ofs0094:
+                                                      findpropstrict QName(PackageNamespace("<u"),"Log")
+                                                      getproperty QName(PackageNamespace("<u"),"Log")
+                                                      pushstring "WARNING: UIContainer("
+                                                      getlocal 5
+                                                      iffalse ofs00e7
+                                                      findpropstrict QName(PackageNamespace(""),"mName")
+                                                      jump ofs00b4
+                                                      greaterequals
+                                                      getlocal 4
+                                                      kill 3
+                                                      decrement
+                                                      getlocal2
+                                                      inclocal 4
+                                                      instanceof
+                                                      declocal_i 3
+                                                      inclocal_i 3
+                                             ofs00b4:
+                                                      getproperty QName(PackageNamespace(""),"mName")
+                                                      add
+                                                      getlocal 5
+                                                      dup
+                                                      iftrue ofs00c1
+                                                      pop
+                                                      getlocal0
+                                                      convert_b
+                                             ofs00c1:
+                                                      iffalse ofs00dc
+                                                      pushstring ") setItemVisibility can not be done because item "
+                                                      getlocal 5
+                                                      iffalse ofs00e6
+                                                      add
+                                                      getlocal 4
+                                                      dup
+                                                      iffalse ofs00d8
+                                                      pop
+                                                      getlocal0
+                                                      convert_b
+                                             ofs00d8:
+                                                      iftrue ofs00e4
+                                             ofs00dc:
+                                                      getlocal1
+                                                      add
+                                                      getlocal 5
+                                                      iffalse ofs00e7
+                                             ofs00e4:
+                                                      pushstring " does not exist"
+                                             ofs00e6:
+                                                      add
+                                             ofs00e7:
+                                                      callproperty QName(PackageNamespace(""),"log"), 1
+                                                      pop
+                                             ofs00eb:
+                                                      returnvoid
+                                                      returnvoid
+                                                   end ; code
+                                                end ; body
+                                             end ; method
+                                          }
+                                          
+                                          public function getItemByName(param1:String) : UIComponentRovio
+                                          {
+                                             trait method QName(PackageNamespace(""),"getItemByName")
+                                                dispid 0
+                                                method
+                                                   name null
+                                                   param QName(PackageNamespace(""),"String")
+                                                   returns QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                                                   
+                                                   body
+                                                      maxstack 4
+                                                      localcount 8
+                                                      initscopedepth 6
+                                                      maxscopedepth 7
+                                                      
+                                                      code
+                                                         pushfalse
+                                                         pushtrue
+                                                         setlocal 6
+                                                         jump ofs0016
+                                                         pushwith
+                                                         greaterthan
+                                                         inclocal 6
+                                                         negate
+                                                         inclocal 2
+                                                         kill 4
+                                                         setlocal 5
+                                                         declocal 3
+                                                         coerce_s
+                                                ofs0016:
+                                                         setlocal 7
+                                                         getlocal0
+                                                         pushscope
+                                                         pushnull
+                                                         coerce QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                                                         setlocal2
+                                                         pushnull
+                                                         coerce QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                                                         setlocal3
+                                                         getlocal 7
+                                                         dup
+                                                         iffalse ofs002c
+                                                         pop
+                                                         getlocal3
+                                                         convert_b
+                                                ofs002c:
+                                                         iftrue ofs0052
+                                                         getlocal1
+                                                         getlocal 6
+                                                         dup
+                                                         iftrue ofs003b
+                                                         pop
+                                                         getlocal1
+                                                         convert_b
+                                                ofs003b:
+                                                         iffalse ofs0043
+                                                         callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"toUpperCase"), 0
+                                                         coerce_s
+                                                ofs0043:
+                                                         setlocal1
+                                                         getlocal 6
+                                                         dup
+                                                         iftrue ofs004e
+                                                         pop
+                                                         getlocal0
+                                                         convert_b
+                                                ofs004e:
+                                                         iffalse ofs0064
+                                                ofs0052:
+                                                         findpropstrict QName(PackageNamespace(""),"mName")
+                                                         getproperty QName(PackageNamespace(""),"mName")
+                                                         callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"toUpperCase"), 0
+                                                         getlocal1
+                                                         ifne ofs0077
+                                                         getlocal 7
+                                                         iftrue ofs0077
+                                                ofs0064:
+                                                         getlocal0
+                                                         jump ofs0076
+                                                         bitnot
+                                                         kill 6
+                                                         urshift
+                                                         pushnull
+                                                         setlocal 4
+                                                         kill 3
+                                                         dup
+                                                         pushnan
+                                                         getlocal 4
+                                                ofs0076:
+                                                         returnvalue
+                                                ofs0077:
+                                                         pushbyte 0
+                                                         setlocal 4
+                                                         getlocal0
+                                                         getproperty QName(PackageNamespace(""),"]6")
+                                                         coerce_a
+                                                         setlocal 5
+                                                         jump ofs00f7
+                                                ofs0085:
+                                                         label
+                                                         getlocal 5
+                                                         getlocal 4
+                                                         nextvalue
+                                                         coerce QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                                                         setlocal2
+                                                         getlocal 6
+                                                         iffalse ofs00b5
+                                                         getlocal2
+                                                         getproperty QName(PackageNamespace(""),"mName")
+                                                         callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"toUpperCase"), 0
+                                                         getlocal1
+                                                         ifne ofs00b5
+                                                         getlocal 7
+                                                         dup
+                                                         iffalse ofs00a9
+                                                         pop
+                                                         getlocal0
+                                                         convert_b
+                                                ofs00a9:
+                                                         iftrue ofs00ce
+                                                         getlocal2
+                                                         returnvalue
+                                                         getlocal 6
+                                                         iffalse ofs00b5
+                                                ofs00b5:
+                                                         getlocal2
+                                                         findpropstrict QName(PackageNamespace("6a"),"UIContainerRovio")
+                                                         getproperty QName(PackageNamespace("6a"),"UIContainerRovio")
+                                                         istypelate
+                                                         jump ofs00ca
+                                                         nextname
+                                                         setlocal3
+                                                         setlocal2
+                                                         dxnslate
+                                                         getlocal 5
+                                                         inclocal 6
+                                                         dup
+                                                         istypelate
+                                                         setlocal3
+                                                ofs00ca:
+                                                         iffalse ofs00f7
+                                                ofs00ce:
+                                                         getlocal2
+                                                         findpropstrict QName(PackageNamespace("6a"),"UIContainerRovio")
+                                                         getproperty QName(PackageNamespace("6a"),"UIContainerRovio")
+                                                         astypelate
+                                                         getlocal1
+                                                         callproperty QName(PackageNamespace(""),"getItemByName"), 1
+                                                         coerce QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                                                         setlocal3
+                                                         getlocal 6
+                                                         dup
+                                                         iftrue ofs00e5
+                                                         pop
+                                                         getlocal2
+                                                         convert_b
+                                                ofs00e5:
+                                                         iffalse ofs00f5
+                                                         getlocal3
+                                                         pushnull
+                                                         ifeq ofs00f7
+                                                         getlocal 6
+                                                         iffalse ofs00f7
+                                                ofs00f5:
+                                                         getlocal3
+                                                         returnvalue
+                                                ofs00f7:
+                                                         hasnext2 5, 4
+                                                         iftrue ofs0085
+                                                         kill 5
+                                                         kill 4
+                                                         pushnull
+                                                         returnvalue
+                                                         returnvoid
+                                                      end ; code
+                                                   end ; body
+                                                end ; method
+                                             }
+                                             
+                                             override public function setEnabled(param1:Boolean) : void
+                                             {
+                                                trait method QName(PackageNamespace(""),"setEnabled")
+                                                   flag OVERRIDE
+                                                   dispid 0
+                                                   method
+                                                      name null
+                                                      param QName(PackageNamespace(""),"Boolean")
+                                                      returns QName(PackageNamespace(""),"void")
+                                                      
+                                                      body
+                                                         maxstack 4
+                                                         localcount 4
+                                                         initscopedepth 6
+                                                         maxscopedepth 7
+                                                         
+                                                         code
+                                                            pushfalse
+                                                            pushtrue
+                                                            swap
+                                                            jump ofs0013
+                                                            inclocal 2
+                                                            inclocal_i 2
+                                                            newactivation
+                                                            increment
+                                                            convert_s
+                                                            hasnext
+                                                            declocal 2
+                                                            newactivation
+                                                            setlocal2
+                                                   ofs0013:
+                                                            setlocal2
+                                                            setlocal3
+                                                            getlocal0
+                                                            pushscope
+                                                            getlocal3
+                                                            iffalse ofs0023
+                                                            findpropstrict QName(PackageNamespace(""),"mClip")
+                                                            getproperty QName(PackageNamespace(""),"mClip")
+                                                            getlocal1
+                                                            setproperty QName(PackageNamespace(""),"mouseEnabled")
+                                                   ofs0023:
+                                                            returnvoid
+                                                            returnvoid
+                                                         end ; code
+                                                      end ; body
+                                                   end ; method
+                                                }
+                                                
+                                                override public function getParentView() : §`X§
+                                                {
+                                                   trait method QName(PackageNamespace(""),"getParentView")
+                                                      flag OVERRIDE
+                                                      dispid 0
+                                                      method
+                                                         name null
+                                                         returns QName(PackageNamespace("=!5"),"`X")
+                                                         
+                                                         body
+                                                            maxstack 3
+                                                            localcount 3
+                                                            initscopedepth 6
+                                                            maxscopedepth 7
+                                                            
+                                                            code
+                                                               pushfalse
+                                                               pushtrue
+                                                               setlocal1
+                                                               jump ofs0010
+                                                               swap
+                                                               dup
+                                                               getglobalscope
+                                                               greaterequals
+                                                               pushscope
+                                                               increment
+                                                               pushnull
+                                                               lessthan
+                                                               pushwith
+                                                      ofs0010:
+                                                               setlocal2
+                                                               getlocal0
+                                                               pushscope
+                                                               getlocal2
+                                                               dup
+                                                               iffalse ofs0029
+                                                               jump ofs0026
+                                                               typeof
+                                                               pop
+                                                               not
+                                                               newactivation
+                                                               convert_u
+                                                               multiply
+                                                               add
+                                                               popscope
+                                                               popscope
+                                                      ofs0026:
+                                                               pop
+                                                               getlocal2
+                                                               convert_b
+                                                      ofs0029:
+                                                               iftrue ofs004f
+                                                               getlocal0
+                                                               getproperty QName(PackageNamespace(""),"\"B")
+                                                               getlocal2
+                                                               dup
+                                                               iffalse ofs0039
+                                                               pop
+                                                               getlocal1
+                                                               convert_b
+                                                      ofs0039:
+                                                               iftrue ofs0052
+                                                               convert_b
+                                                               iffalse ofs0053
+                                                               getlocal1
+                                                               dup
+                                                               iftrue ofs004b
+                                                               pop
+                                                               getlocal0
+                                                               convert_b
+                                                      ofs004b:
+                                                               iffalse ofs0053
+                                                      ofs004f:
+                                                               getlocal0
+                                                               getproperty QName(PackageNamespace(""),"\"B")
+                                                      ofs0052:
+                                                               returnvalue
+                                                      ofs0053:
+                                                               getlocal0
+                                                               callsuper QName(PackageNamespace(""),"getParentView"), 0
+                                                               returnvalue
+                                                               returnvoid
+                                                            end ; code
+                                                         end ; body
+                                                      end ; method
+                                                   }
+                                                   
+                                                   override public function set viewWidth(param1:Number) : void
+                                                   {
+                                                      trait setter QName(PackageNamespace(""),"viewWidth")
+                                                         flag OVERRIDE
+                                                         dispid 0
+                                                         method
+                                                            name null
+                                                            param QName(PackageNamespace(""),"Number")
+                                                            returns QName(PackageNamespace(""),"void")
+                                                            
+                                                            body
+                                                               maxstack 4
+                                                               localcount 7
+                                                               initscopedepth 6
+                                                               maxscopedepth 7
+                                                               
+                                                               code
+                                                                  pushfalse
+                                                                  pushtrue
+                                                                  setlocal 5
+                                                                  jump ofs0017
+                                                                  pushwith
+                                                                  getlocal2
+                                                                  getlocal 4
+                                                                  inclocal 2
+                                                                  kill 4
+                                                                  declocal 4
+                                                                  greaterthan
+                                                                  declocal_i 3
+                                                                  inclocal_i 2
+                                                         ofs0017:
+                                                                  setlocal 6
+                                                                  getlocal0
+                                                                  pushscope
+                                                                  pushnull
+                                                                  coerce QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                                                                  setlocal2
+                                                                  jump ofs002e
+                                                                  swap
+                                                                  inclocal_i 4
+                                                                  increment
+                                                                  inclocal 5
+                                                                  add
+                                                                  astypelate
+                                                                  convert_b
+                                                                  divide
+                                                                  subtract
+                                                         ofs002e:
+                                                                  getlocal 6
+                                                                  iftrue ofs0038
+                                                                  getlocal0
+                                                                  getlocal1
+                                                                  setsuper QName(PackageNamespace(""),"viewWidth")
+                                                         ofs0038:
+                                                                  pushbyte 0
+                                                                  setlocal3
+                                                                  getlocal0
+                                                                  getproperty QName(PackageNamespace(""),"]6")
+                                                                  coerce_a
+                                                                  setlocal 4
+                                                                  jump ofs0057
+                                                         ofs0045:
+                                                                  label
+                                                                  getlocal 4
+                                                                  getlocal3
+                                                                  nextvalue
+                                                                  coerce QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                                                                  setlocal2
+                                                                  getlocal 5
+                                                                  iffalse ofs0057
+                                                                  getlocal2
+                                                                  getlocal1
+                                                                  setproperty QName(PackageNamespace(""),"viewWidth")
+                                                         ofs0057:
+                                                                  hasnext2 4, 3
+                                                                  iftrue ofs0045
+                                                                  kill 4
+                                                                  kill 3
+                                                                  returnvoid
+                                                                  returnvoid
+                                                               end ; code
+                                                            end ; body
+                                                         end ; method
+                                                      }
+                                                      
+                                                      override public function set viewHeight(param1:Number) : void
+                                                      {
+                                                         trait setter QName(PackageNamespace(""),"viewHeight")
+                                                            flag OVERRIDE
+                                                            dispid 0
+                                                            method
+                                                               name null
+                                                               param QName(PackageNamespace(""),"Number")
+                                                               returns QName(PackageNamespace(""),"void")
+                                                               
+                                                               body
+                                                                  maxstack 4
+                                                                  localcount 7
+                                                                  initscopedepth 6
+                                                                  maxscopedepth 7
+                                                                  
+                                                                  code
+                                                                     pushfalse
+                                                                     pushtrue
+                                                                     setlocal 5
+                                                                     jump ofs0016
+                                                                     getlocal1
+                                                                     strictequals
+                                                                     declocal_i 2
+                                                                     pushnull
+                                                                     greaterthan
+                                                                     declocal 5
+                                                                     declocal_i 4
+                                                                     kill 5
+                                                                     inclocal 3
+                                                            ofs0016:
+                                                                     setlocal 6
+                                                                     getlocal0
+                                                                     pushscope
+                                                                     pushnull
+                                                                     coerce QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                                                                     setlocal2
+                                                                     jump ofs0031
+                                                                     kill 2
+                                                                     declocal_i 4
+                                                                     inclocal 2
+                                                                     setlocal2
+                                                                     kill 5
+                                                                     inclocal 4
+                                                                     astypelate
+                                                                     inclocal_i 5
+                                                                     equals
+                                                            ofs0031:
+                                                                     getlocal 6
+                                                                     iftrue ofs003b
+                                                                     getlocal0
+                                                                     getlocal1
+                                                                     setsuper QName(PackageNamespace(""),"viewHeight")
+                                                            ofs003b:
+                                                                     pushbyte 0
+                                                                     setlocal3
+                                                                     getlocal0
+                                                                     getproperty QName(PackageNamespace(""),"]6")
+                                                                     coerce_a
+                                                                     setlocal 4
+                                                                     jump ofs005a
+                                                            ofs0048:
+                                                                     label
+                                                                     getlocal 4
+                                                                     getlocal3
+                                                                     nextvalue
+                                                                     coerce QName(PackageNamespace("0!Q"),"UIComponentRovio")
+                                                                     setlocal2
+                                                                     getlocal 5
+                                                                     iffalse ofs005a
+                                                                     getlocal2
+                                                                     getlocal1
+                                                                     setproperty QName(PackageNamespace(""),"viewHeight")
+                                                            ofs005a:
+                                                                     hasnext2 4, 3
+                                                                     iftrue ofs0048
+                                                                     kill 4
+                                                                     kill 3
+                                                                     returnvoid
+                                                                     returnvoid
+                                                                  end ; code
+                                                               end ; body
+                                                            end ; method
+                                                         }
+                                                      }
+                                                   }

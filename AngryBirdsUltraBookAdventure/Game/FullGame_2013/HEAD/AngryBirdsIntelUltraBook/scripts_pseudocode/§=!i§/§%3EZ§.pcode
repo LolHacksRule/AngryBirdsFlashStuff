@@ -1,0 +1,564 @@
+package §=!i§
+{
+   import §"!i§.FriendListItemVO;
+   import flash.events.Event;
+   
+   public class §>Z§ extends Event
+   {
+      
+      public static const INVITE_FRIENDS_REQUESTED:String = "inviteFriendsRequested";
+      
+      public static const SHOP_REQUESTED:String = "shopRequested";
+      
+      public static const FULLSCREEN_TOGGLE_REQUESTED:String = "fullscreenToggleRequested";
+      
+      public static const MUTE_TOGGLE_REQUESTED:String = "muteToggleRequested";
+      
+      public static const TUTORIAL_REQUESTED:String = "tutorialRequested";
+      
+      public static const INFO_REQUESTED:String = "infoRequested";
+      
+      public static const AVATAR_EDITOR_REQUESTED:String = "avatarEditorRequested";
+      
+      public static const GIFT_POPUP_REQUESTED:String = "giftPopupRequested";
+      
+      public static const BRAG:String = "brag";
+      
+      public static const PLAY_LEVEL:String = "playLevel";
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  equals
+                  dxnslate
+                  multiply_i
+                  popscope
+                  strictequals
+                  getglobalscope
+                  getlocal0
+                  convert_b
+                  bitnot
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  iftrue ofs0054
+                  jump ofs01bd
+         ofs001d:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0024
+         ofs0024:
+                  label
+                  findproperty QName(PackageNamespace(""),"PLAY_LEVEL")
+                  pushstring "playLevel"
+                  initproperty QName(PackageNamespace(""),"PLAY_LEVEL")
+                  getlocal1
+                  iftrue ofs005e
+                  getlocal2
+                  iffalse ofs00a9
+                  getlocal2
+                  iffalse ofs00d8
+                  getlocal1
+                  dup
+                  iffalse ofs0043
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0043:
+                  iftrue ofs00e3
+                  getlocal1
+                  dup
+                  iffalse ofs0050
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0050:
+                  iftrue ofs01ae
+         ofs0054:
+                  jump ofs001d
+         ofs0058:
+                  label
+                  debug 1, "PLAY_LEVEL", 9, 19
+         ofs005e:
+                  getlocal1
+                  dup
+                  iffalse ofs0067
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0067:
+                  iftrue ofs0080
+                  getlocal2
+                  iffalse ofs00c1
+                  getlocal2
+                  iffalse ofs0184
+                  jump ofs0024
+         ofs0079:
+                  label
+                  findproperty QName(PackageNamespace(""),"BRAG")
+                  pushstring "brag"
+                  initproperty QName(PackageNamespace(""),"BRAG")
+         ofs0080:
+                  getlocal1
+                  iftrue ofs0112
+                  getlocal2
+                  dup
+                  iftrue ofs008e
+                  pop
+                  getlocal1
+                  convert_b
+         ofs008e:
+                  iffalse ofs01b9
+                  getlocal1
+                  dup
+                  iffalse ofs009b
+                  pop
+                  getlocal0
+                  convert_b
+         ofs009b:
+                  iftrue ofs01c2
+                  jump ofs0058
+         ofs00a3:
+                  label
+                  debug 1, "BRAG", 8, 18
+         ofs00a9:
+                  jump ofs0079
+         ofs00ad:
+                  label
+                  findproperty QName(PackageNamespace(""),"GIFT_POPUP_REQUESTED")
+                  jump ofs00bd
+                  bitor
+                  equals
+                  modulo
+                  hasnext
+                  bitxor
+                  lessequals
+                  increment
+                  strictequals
+                  pushundefined
+         ofs00bd:
+                  pushstring "giftPopupRequested"
+                  initproperty QName(PackageNamespace(""),"GIFT_POPUP_REQUESTED")
+         ofs00c1:
+                  getlocal1
+                  dup
+                  iffalse ofs00ca
+                  pop
+                  getlocal0
+                  convert_b
+         ofs00ca:
+                  iftrue ofs0139
+                  jump ofs00a3
+         ofs00d2:
+                  label
+                  debug 1, "GIFT_POPUP_REQUESTED", 7, 17
+         ofs00d8:
+                  jump ofs00ad
+         ofs00dc:
+                  label
+                  findproperty QName(PackageNamespace(""),"AVATAR_EDITOR_REQUESTED")
+                  pushstring "avatarEditorRequested"
+                  initproperty QName(PackageNamespace(""),"AVATAR_EDITOR_REQUESTED")
+         ofs00e3:
+                  getlocal1
+                  dup
+                  iffalse ofs00ec
+                  pop
+                  getlocal2
+                  convert_b
+         ofs00ec:
+                  iftrue ofs0107
+                  getlocal2
+                  dup
+                  iftrue ofs00f9
+                  pop
+                  getlocal0
+                  convert_b
+         ofs00f9:
+                  iffalse ofs0129
+                  jump ofs00d2
+         ofs0101:
+                  label
+                  debug 1, "AVATAR_EDITOR_REQUESTED", 6, 16
+         ofs0107:
+                  jump ofs00dc
+         ofs010b:
+                  label
+                  findproperty QName(PackageNamespace(""),"INFO_REQUESTED")
+                  pushstring "infoRequested"
+                  initproperty QName(PackageNamespace(""),"INFO_REQUESTED")
+         ofs0112:
+                  getlocal2
+                  dup
+                  iftrue ofs011b
+                  pop
+                  getlocal2
+                  convert_b
+         ofs011b:
+                  iffalse ofs0199
+                  jump ofs0101
+         ofs0123:
+                  label
+                  debug 1, "INFO_REQUESTED", 5, 15
+         ofs0129:
+                  getlocal2
+                  iffalse ofs0143
+                  jump ofs010b
+         ofs0132:
+                  label
+                  findproperty QName(PackageNamespace(""),"TUTORIAL_REQUESTED")
+                  pushstring "tutorialRequested"
+                  initproperty QName(PackageNamespace(""),"TUTORIAL_REQUESTED")
+         ofs0139:
+                  jump ofs0123
+         ofs013d:
+                  label
+                  debug 1, "TUTORIAL_REQUESTED", 4, 14
+         ofs0143:
+                  getlocal1
+                  dup
+                  iffalse ofs014c
+                  pop
+                  getlocal0
+                  convert_b
+         ofs014c:
+                  iftrue ofs015b
+                  jump ofs0132
+         ofs0154:
+                  label
+                  findproperty QName(PackageNamespace(""),"MUTE_TOGGLE_REQUESTED")
+                  pushstring "muteToggleRequested"
+                  initproperty QName(PackageNamespace(""),"MUTE_TOGGLE_REQUESTED")
+         ofs015b:
+                  getlocal2
+                  jump ofs0169
+                  pushscope
+                  not
+                  multiply_i
+                  getlocal3
+                  bitnot
+                  divide
+                  negate
+                  lessthan
+                  pushundefined
+         ofs0169:
+                  dup
+                  iftrue ofs0171
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0171:
+                  iffalse ofs018f
+                  getlocal2
+                  iffalse ofs01a4
+                  jump ofs013d
+         ofs017e:
+                  label
+                  debug 1, "MUTE_TOGGLE_REQUESTED", 3, 13
+         ofs0184:
+                  jump ofs0154
+         ofs0188:
+                  label
+                  findproperty QName(PackageNamespace(""),"FULLSCREEN_TOGGLE_REQUESTED")
+                  pushstring "fullscreenToggleRequested"
+                  initproperty QName(PackageNamespace(""),"FULLSCREEN_TOGGLE_REQUESTED")
+         ofs018f:
+                  jump ofs017e
+         ofs0193:
+                  label
+                  debug 1, "FULLSCREEN_TOGGLE_REQUESTED", 2, 12
+         ofs0199:
+                  jump ofs0188
+         ofs019d:
+                  label
+                  findproperty QName(PackageNamespace(""),"SHOP_REQUESTED")
+                  pushstring "shopRequested"
+                  initproperty QName(PackageNamespace(""),"SHOP_REQUESTED")
+         ofs01a4:
+                  jump ofs0193
+         ofs01a8:
+                  label
+                  debug 1, "SHOP_REQUESTED", 1, 11
+         ofs01ae:
+                  jump ofs019d
+         ofs01b2:
+                  label
+                  findproperty QName(PackageNamespace(""),"INVITE_FRIENDS_REQUESTED")
+                  pushstring "inviteFriendsRequested"
+                  initproperty QName(PackageNamespace(""),"INVITE_FRIENDS_REQUESTED")
+         ofs01b9:
+                  jump ofs01a8
+         ofs01bd:
+                  debug 1, "INVITE_FRIENDS_REQUESTED", 0, 10
+         ofs01c2:
+                  jump ofs01b2
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var data:FriendListItemVO;
+      
+      public function §>Z§(type:String, data:FriendListItemVO = null, bubbles:Boolean = false, cancelable:Boolean = false)
+      {
+         method
+            name "com.angrybirds.friendsbar.events:FriendsBarEvent/FriendsBarEvent"
+            flag HAS_OPTIONAL
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace("\"!i"),"FriendListItemVO")
+            param QName(PackageNamespace(""),"Boolean")
+            param QName(PackageNamespace(""),"Boolean")
+            optional Null()
+            optional False()
+            optional False()
+            returns null
+            
+            body
+               maxstack 6
+               localcount 7
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0013
+                  newactivation
+                  urshift
+                  getlocal 5
+                  inclocal 3
+                  kill 2
+                  setlocal3
+                  not
+                  not
+                  pushwith
+         ofs0013:
+                  setlocal 5
+                  setlocal 6
+                  debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\events;FriendsBarEvent.as"
+                  getlocal 5
+                  iftrue ofs0021
+                  debugline 23
+         ofs0021:
+                  getlocal0
+                  pushscope
+                  getlocal 6
+                  dup
+                  iftrue ofs002d
+                  pop
+                  getlocal3
+                  convert_b
+         ofs002d:
+                  iffalse ofs00e0
+                  jump ofs00e4
+         ofs0035:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs003c
+         ofs003c:
+                  label
+                  debugline 27
+                  getlocal 5
+                  iftrue ofs006c
+                  getlocal 5
+                  jump ofs0057
+                  swap
+                  getlocal1
+                  dxnslate
+                  lshift
+                  pushfalse
+                  pushnull
+                  kill 3
+                  inclocal_i 5
+                  getlocal 5
+         ofs0057:
+                  dup
+                  iffalse ofs005f
+                  pop
+                  getlocal2
+                  convert_b
+         ofs005f:
+                  iftrue ofs007f
+                  jump ofs0035
+         ofs0067:
+                  label
+                  getlocal0
+                  getlocal2
+                  initproperty QName(PackageNamespace(""),"data")
+         ofs006c:
+                  getlocal 5
+                  iftrue ofs00a8
+                  getlocal 6
+                  iffalse ofs00d0
+                  jump ofs003c
+         ofs007c:
+                  label
+                  debugline 26
+         ofs007f:
+                  getlocal 5
+                  jump ofs0091
+                  pushundefined
+                  setlocal3
+                  bitnot
+                  declocal_i 3
+                  declocal_i 5
+                  istypelate
+                  add_i
+                  setlocal2
+                  getlocal 4
+         ofs0091:
+                  iftrue ofs00a1
+                  jump ofs0067
+         ofs0099:
+                  label
+                  getlocal0
+                  getlocal1
+                  getlocal3
+                  getlocal 4
+                  constructsuper 3
+         ofs00a1:
+                  jump ofs007c
+         ofs00a5:
+                  label
+                  debugline 25
+         ofs00a8:
+                  getlocal 6
+                  iffalse ofs00b8
+                  jump ofs0099
+         ofs00b2:
+                  label
+                  debug 1, "cancelable", 3, 23
+         ofs00b8:
+                  getlocal 6
+                  dup
+                  iftrue ofs00c2
+                  pop
+                  getlocal0
+                  convert_b
+         ofs00c2:
+                  iffalse ofs00e0
+                  jump ofs00a5
+         ofs00ca:
+                  label
+                  debug 1, "bubbles", 2, 23
+         ofs00d0:
+                  getlocal 6
+                  iffalse ofs00e9
+                  jump ofs00b2
+         ofs00da:
+                  label
+                  debug 1, "data", 1, 23
+         ofs00e0:
+                  jump ofs00ca
+         ofs00e4:
+                  debug 1, "type", 0, 23
+         ofs00e9:
+                  jump ofs00da
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      override public function clone() : Event
+      {
+         trait method QName(PackageNamespace(""),"clone")
+            flag OVERRIDE
+            flag METADATA
+            metadata"__go_to_definition_help"
+               item "pos" "1202"
+            end ; metadata
+            dispid 0
+            method
+               name "com.angrybirds.friendsbar.events:FriendsBarEvent/clone"
+               returns QName(PackageNamespace("flash.events"),"Event")
+               
+               body
+                  maxstack 7
+                  localcount 3
+                  initscopedepth 5
+                  maxscopedepth 6
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     swap
+                     jump ofs0010
+                     pushtrue
+                     typeof
+                     add
+                     convert_i
+                     bitor
+                     decrement_i
+                     lessequals
+                     greaterthan
+                     bitand
+            ofs0010:
+                     setlocal1
+                     setlocal2
+                     jump ofs001f
+                     convert_s
+                     pushnull
+                     decrement_i
+                     convert_s
+                     pushfalse
+                     pushscope
+                     pushfalse
+                     add_i
+                     dxnslate
+            ofs001f:
+                     debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\events;FriendsBarEvent.as"
+                     getlocal2
+                     iffalse ofs0028
+                     debugline 29
+            ofs0028:
+                     getlocal0
+                     pushscope
+                     getlocal1
+                     dup
+                     iffalse ofs0033
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0033:
+                     iftrue ofs0039
+                     debugline 30
+            ofs0039:
+                     findpropstrict QName(PackageNamespace("=!i"),">Z")
+                     findpropstrict QName(PackageNamespace(""),"type")
+                     getproperty QName(PackageNamespace(""),"type")
+                     getlocal0
+                     getproperty QName(PackageNamespace(""),"data")
+                     findpropstrict QName(PackageNamespace(""),"bubbles")
+                     getproperty QName(PackageNamespace(""),"bubbles")
+                     findpropstrict QName(PackageNamespace(""),"cancelable")
+                     getproperty QName(PackageNamespace(""),"cancelable")
+                     constructprop QName(PackageNamespace("=!i"),">Z"), 4
+                     returnvalue
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+      }
+   }

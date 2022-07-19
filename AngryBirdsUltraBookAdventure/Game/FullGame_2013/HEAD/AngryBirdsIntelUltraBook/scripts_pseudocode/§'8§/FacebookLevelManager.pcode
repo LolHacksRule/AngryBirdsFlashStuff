@@ -1,0 +1,475 @@
+package §'8§
+{
+   import §>!_§.ChapterModel;
+   import §>!_§.LevelManager;
+   
+   public class FacebookLevelManager extends LevelManager
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function FacebookLevelManager()
+      {
+         method
+            name "com.angrybirds.data.level:FacebookLevelManager/FacebookLevelManager"
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  getlocal0
+                  dup
+                  pushfalse
+                  subtract_i
+                  bitxor
+                  convert_d
+                  convert_b
+                  nextvalue
+                  instanceof
+         ofs0010:
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  iftrue ofs002b
+                  jump ofs003b
+         ofs001c:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0023
+         ofs0023:
+                  label
+                  debugline 31
+                  getlocal2
+                  iftrue ofs0032
+         ofs002b:
+                  jump ofs001c
+         ofs002f:
+                  label
+                  debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\data\\level;FacebookLevelManager.as"
+         ofs0032:
+                  getlocal1
+                  iffalse ofs003e
+                  jump ofs0023
+         ofs003b:
+                  getlocal0
+                  constructsuper 0
+         ofs003e:
+                  jump ofs002f
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function §5j§(levelId:String) : String
+      {
+         trait method QName(PackageNamespace(""),"5j")
+            flag FINAL
+            flag METADATA
+            metadata"__go_to_definition_help"
+               item "pos" "226"
+            end ; metadata
+            dispid 3
+            method
+               name "com.angrybirds.data.level:FacebookLevelManager/getFacebookNameFromLevelId"
+               param QName(PackageNamespace(""),"String")
+               returns QName(PackageNamespace(""),"String")
+               
+               body
+                  maxstack 5
+                  localcount 10
+                  initscopedepth 4
+                  maxscopedepth 7
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     swap
+                     jump ofs0015
+                     declocal 2
+                     strictequals
+                     setlocal3
+                     getlocal 7
+                     declocal_i 2
+                     inclocal_i 3
+                     kill 8
+                     add
+                     coerce_s
+            ofs0015:
+                     setlocal 8
+                     setlocal 9
+                     debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\data\\level;FacebookLevelManager.as"
+                     getlocal 9
+                     dup
+                     iftrue ofs0025
+                     pop
+                     getlocal3
+                     convert_b
+            ofs0025:
+                     iffalse ofs002b
+                     debugline 9
+            ofs002b:
+                     getlocal0
+                     pushscope
+                     pushnull
+                     coerce QName(PackageNamespace(">!_"),"ChapterModel")
+                     setlocal2
+                     pushnull
+                     coerce QName(PackageNamespace(""),"Array")
+                     setlocal3
+                     pushbyte 0
+                     setlocal 4
+                     pushnull
+                     coerce_s
+                     setlocal 5
+                     pushbyte 0
+                     setlocal 6
+                     getlocal 8
+                     dup
+                     iffalse ofs004b
+                     pop
+                     getlocal0
+                     convert_b
+            ofs004b:
+                     iftrue ofs00d3
+                     jump ofs00de
+            ofs0053:
+                     label
+                     debugline 14
+                     getlocal 8
+                     dup
+                     iffalse ofs0060
+                     pop
+                     getlocal0
+                     convert_b
+            ofs0060:
+                     iftrue ofs0083
+                     getlocal 9
+                     iffalse ofs00b1
+                     getlocal 8
+                     dup
+                     iffalse ofs0074
+                     pop
+                     getlocal1
+                     convert_b
+            ofs0074:
+                     iftrue ofs00bb
+                     pushtrue
+                     iftrue ofs00e7
+            ofs007d:
+                     label
+                     debug 1, "pageNumber", 5, 18
+            ofs0083:
+                     getlocal 8
+                     iftrue ofs00a7
+                     getlocal 9
+                     dup
+                     iftrue ofs0093
+                     pop
+                     getlocal3
+                     convert_b
+            ofs0093:
+                     iffalse ofs00d3
+                     getlocal 9
+                     iffalse ofs00da
+                     jump ofs0053
+            ofs00a1:
+                     label
+                     debug 1, "pageId", 4, 17
+            ofs00a7:
+                     jump ofs007d
+            ofs00ab:
+                     label
+                     debug 1, "levelNumber", 3, 16
+            ofs00b1:
+                     jump ofs00a1
+            ofs00b5:
+                     label
+                     debug 1, "split", 2, 15
+            ofs00bb:
+                     getlocal 8
+                     dup
+                     iffalse ofs00c5
+                     pop
+                     getlocal2
+                     convert_b
+            ofs00c5:
+                     iftrue ofs00e3
+                     jump ofs00ab
+            ofs00cd:
+                     label
+                     debug 1, "chapter", 1, 14
+            ofs00d3:
+                     jump ofs00b5
+            ofs00d7:
+                     label
+                     debugline 14
+            ofs00da:
+                     jump ofs00cd
+            ofs00de:
+                     debug 1, "levelId", 0, 9
+            ofs00e3:
+                     jump ofs00d7
+            ofs00e7:
+                     findpropstrict QName(PackageNamespace(""),"6X")
+                     getlocal1
+                     callproperty QName(PackageNamespace(""),"6X"), 1
+                     coerce QName(PackageNamespace(">!_"),"ChapterModel")
+                     setlocal2
+                     getlocal 9
+                     dup
+                     iftrue ofs00fa
+                     pop
+                     getlocal1
+                     convert_b
+            ofs00fa:
+                     iffalse ofs0100
+                     debugline 15
+            ofs0100:
+                     getlocal1
+                     pushstring "-"
+                     callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"split"), 1
+                     coerce QName(PackageNamespace(""),"Array")
+                     setlocal3
+                     getlocal 8
+                     dup
+                     iffalse ofs0113
+                     pop
+                     getlocal1
+                     convert_b
+            ofs0113:
+                     iftrue ofs0230
+                     jump ofs012b
+                     dup
+                     declocal 2
+                     kill 8
+                     bitor
+                     kill 6
+                     inclocal_i 8
+                     inclocal 7
+                     getlocal 4
+                     inclocal 3
+            ofs012b:
+                     jump ofs0234
+            ofs012f:
+                     label
+                     getlocal 4
+                     getlocal 8
+                     iftrue ofs0189
+                     getlocal 8
+                     dup
+                     iffalse ofs0142
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0142:
+                     iftrue ofs01d6
+                     callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"toString"), 0
+                     returnvalue
+                     getlocal 9
+                     dup
+                     iftrue ofs0151
+            ofs0151:
+                     pop
+                     getlocal1
+                     convert_b
+                     iffalse ofs0158
+            ofs0158:
+                     pushtrue
+                     iftrue ofs015d
+            ofs015d:
+                     label
+                     debugline 21
+                     getlocal 8
+                     iftrue ofs018b
+                     jump ofs012f
+            ofs016a:
+                     label
+                     getlocal 4
+                     getlocal 9
+                     dup
+                     iftrue ofs0177
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0177:
+                     iffalse ofs0189
+                     getlocal 9
+                     iffalse ofs022e
+                     getlocal 6
+                     getlocal2
+                     getproperty QName(PackageNamespace(""),"levelsPerPage")
+                     multiply
+                     add
+                     convert_i
+            ofs0189:
+                     setlocal 4
+            ofs018b:
+                     getlocal 8
+                     iftrue ofs01ba
+                     getlocal 9
+                     iffalse ofs01d8
+                     getlocal 9
+                     dup
+                     iftrue ofs01a1
+                     pop
+                     getlocal0
+                     convert_b
+            ofs01a1:
+                     iffalse ofs01df
+                     getlocal 8
+                     dup
+                     iffalse ofs01af
+                     pop
+                     getlocal1
+                     convert_b
+            ofs01af:
+                     iftrue ofs0207
+                     jump ofs015d
+            ofs01b7:
+                     label
+                     debugline 20
+            ofs01ba:
+                     getlocal 8
+                     dup
+                     iffalse ofs01c4
+                     pop
+                     getlocal0
+                     convert_b
+            ofs01c4:
+                     iftrue ofs01f2
+                     jump ofs016a
+            ofs01cc:
+                     label
+                     getlocal2
+                     getproperty QName(PackageNamespace(""),"pageIndexes")
+                     getlocal 5
+                     callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"indexOf"), 1
+                     convert_i
+            ofs01d6:
+                     setlocal 6
+            ofs01d8:
+                     jump ofs01b7
+            ofs01dc:
+                     label
+                     debugline 18
+            ofs01df:
+                     jump ofs01cc
+            ofs01e3:
+                     label
+                     getlocal3
+                     pushbyte 0
+                     getproperty MultinameL([PrivateNamespace("+f"),PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("FacebookLevelManager.as$335"),PackageNamespace("\'8"),PackageInternalNs("\'8"),ProtectedNamespace("+f"),StaticProtectedNs("+f"),StaticProtectedNs("7!;")])
+                     coerce_s
+                     getlocal 9
+                     iffalse ofs0260
+                     setlocal 5
+            ofs01f2:
+                     getlocal 9
+                     dup
+                     iftrue ofs01fc
+                     pop
+                     getlocal2
+                     convert_b
+            ofs01fc:
+                     iffalse ofs0230
+                     jump ofs01dc
+            ofs0204:
+                     label
+                     debugline 17
+            ofs0207:
+                     getlocal 9
+                     iffalse ofs0236
+                     jump ofs01e3
+            ofs0211:
+                     label
+                     findpropstrict QName(PackageNamespace(""),"parseInt")
+                     getlocal3
+                     pushbyte 1
+                     getproperty MultinameL([PrivateNamespace("+f"),PackageNamespace(""),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("FacebookLevelManager.as$335"),PackageNamespace("\'8"),PackageInternalNs("\'8"),ProtectedNamespace("+f"),StaticProtectedNs("+f"),StaticProtectedNs("7!;")])
+                     jump ofs022a
+                     bitor
+                     setlocal 7
+                     convert_d
+                     setlocal 4
+                     convert_d
+                     increment_i
+                     equals
+                     setlocal 4
+                     kill 4
+            ofs022a:
+                     callproperty QName(PackageNamespace(""),"parseInt"), 1
+                     convert_i
+            ofs022e:
+                     setlocal 4
+            ofs0230:
+                     jump ofs0204
+            ofs0234:
+                     debugline 16
+            ofs0236:
+                     jump ofs0211
+                     debugline 23
+            ofs023c:
+                     jump ofs0240
+            ofs0240:
+                     getlocal0
+                     pushscope
+                     newcatch 0
+                     dup
+                     setlocal 7
+                     dup
+                     pushscope
+                     swap
+                     setslot 1
+                     popscope
+                     kill 7
+                     getlocal 8
+                     dup
+                     iffalse ofs0259
+                     pop
+                     getlocal1
+                     convert_b
+            ofs0259:
+                     iftrue ofs025f
+                     debugline 27
+            ofs025f:
+                     getlocal1
+            ofs0260:
+                     returnvalue
+                     returnvoid
+                  end ; code
+                  try from ofs00e7 to ofs023c target ofs0240 type QName(PackageNamespace(""),"Error") name QName(PackageNamespace(""),"e") end
+               end ; body
+            end ; method
+         }
+      }
+   }

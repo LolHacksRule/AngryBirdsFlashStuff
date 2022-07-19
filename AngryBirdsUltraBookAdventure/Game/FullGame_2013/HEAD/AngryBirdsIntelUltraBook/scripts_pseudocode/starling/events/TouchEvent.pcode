@@ -1,0 +1,1157 @@
+package starling.events
+{
+   import §#!,§.DisplayObject;
+   import §#!,§.DisplayObjectContainer;
+   
+   public class TouchEvent extends Event
+   {
+      
+      public static const §1!P§:String = "touch";
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  pushscope
+                  nextname
+                  not
+                  nextname
+                  astypelate
+                  instanceof
+                  lessthan
+                  setlocal3
+                  dup
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  iftrue ofs001f
+                  findproperty QName(PackageNamespace(""),"1!P")
+                  pushstring "touch"
+                  initproperty QName(PackageNamespace(""),"1!P")
+         ofs001f:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      private var §]a§:Vector.<§]!B§>;
+      
+      private var §!z§:Boolean;
+      
+      private var §!9§:Boolean;
+      
+      private var §[i§:Number;
+      
+      public function TouchEvent(param1:String, param2:Vector.<§]!B§>, param3:Boolean = false, param4:Boolean = false, param5:Boolean = true)
+      {
+         method
+            name null
+            flag HAS_OPTIONAL
+            param QName(PackageNamespace(""),"String")
+            param TypeName(QName(PackageNamespace("__AS3__.vec"),"Vector")<QName(PackageNamespace("starling.events"),"]!B")>)
+            param QName(PackageNamespace(""),"Boolean")
+            param QName(PackageNamespace(""),"Boolean")
+            param QName(PackageNamespace(""),"Boolean")
+            optional False()
+            optional False()
+            optional True()
+            returns null
+            
+            body
+               maxstack 5
+               localcount 10
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal 8
+                  jump ofs0016
+                  convert_u
+                  convert_i
+                  pushundefined
+                  kill 3
+                  inclocal 7
+                  inclocal_i 4
+                  getlocal 8
+                  lessequals
+                  kill 2
+         ofs0016:
+                  setlocal 9
+                  getlocal0
+                  pushscope
+                  getlocal 8
+                  iffalse ofs0055
+                  jump ofs00a8
+         ofs0024:
+                  label
+                  getlocal0
+                  pushbyte -1
+                  initproperty QName(PrivateNamespace("+!T"),"[i")
+                  getlocal 8
+                  iffalse ofs0055
+                  getlocal 9
+                  iftrue ofs005e
+                  getlocal 8
+                  iffalse ofs0091
+                  getlocal 8
+                  dup
+                  iftrue ofs0046
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0046:
+                  iffalse ofs00ae
+                  pushtrue
+                  iftrue ofs00b2
+         ofs004f:
+                  label
+                  getlocal0
+                  getlocal 4
+                  initproperty QName(PrivateNamespace("+!T"),"!9")
+         ofs0055:
+                  jump ofs0024
+         ofs0059:
+                  label
+                  getlocal0
+                  getlocal3
+                  initproperty QName(PrivateNamespace("+!T"),"!z")
+         ofs005e:
+                  jump ofs004f
+         ofs0062:
+                  label
+                  getlocal0
+                  getlocal 8
+                  dup
+                  iftrue ofs006e
+                  pop
+                  getlocal1
+                  convert_b
+         ofs006e:
+                  iffalse ofs0078
+                  getlocal2
+                  convert_b
+                  iffalse ofs007f
+         ofs0078:
+                  getlocal2
+                  coerce TypeName(QName(PackageNamespace("__AS3__.vec"),"Vector")<QName(PackageNamespace("starling.events"),"]!B")>)
+                  jump ofs008f
+         ofs007f:
+                  findpropstrict Multiname("Vector",[PackageNamespace("__AS3__.vec")])
+                  getproperty Multiname("Vector",[PrivateNamespace("+!T"),PackageNamespace(""),PackageNamespace("__AS3__.vec"),PackageNamespace("starling.events"),PrivateNamespace("TouchEvent.as$39"),PackageInternalNs("starling.events"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("+!T"),StaticProtectedNs("+!T"),StaticProtectedNs("9!S")])
+                  findpropstrict QName(PackageNamespace("starling.events"),"]!B")
+                  getproperty QName(PackageNamespace("starling.events"),"]!B")
+                  applytype 1
+                  pushbyte 0
+                  construct 1
+                  coerce TypeName(QName(PackageNamespace("__AS3__.vec"),"Vector")<QName(PackageNamespace("starling.events"),"]!B")>)
+         ofs008f:
+                  initproperty QName(PrivateNamespace("+!T"),"]a")
+         ofs0091:
+                  jump ofs0059
+                  jump ofs0099
+         ofs0099:
+                  inclocal 2
+                  add
+                  declocal 5
+                  dxnslate
+                  inclocal_i 5
+                  declocal 8
+                  swap
+                  declocal_i 4
+                  inclocal 4
+         ofs00a8:
+                  getlocal0
+                  getlocal1
+                  getlocal 5
+                  constructsuper 2
+         ofs00ae:
+                  jump ofs0062
+         ofs00b2:
+                  getlocal2
+                  getproperty QName(PackageNamespace(""),"length")
+                  convert_i
+                  setlocal 6
+                  pushbyte 0
+                  getlocal 9
+                  dup
+                  iffalse ofs00c4
+                  pop
+                  getlocal3
+                  convert_b
+         ofs00c4:
+                  iftrue ofs00c9
+                  convert_i
+         ofs00c9:
+                  setlocal 7
+                  jump ofs013e
+         ofs00cf:
+                  label
+                  getlocal 7
+                  getlocal 9
+                  iftrue ofs012a
+                  getlocal 8
+                  dup
+                  iftrue ofs00e2
+                  pop
+                  getlocal3
+                  convert_b
+         ofs00e2:
+                  iffalse ofs0129
+                  getlocal 6
+                  iflt ofs0142
+                  getlocal 9
+                  dup
+                  iffalse ofs00f6
+                  pop
+                  getlocal1
+                  convert_b
+         ofs00f6:
+                  iftrue ofs012c
+                  getlocal 9
+                  dup
+                  iffalse ofs0104
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0104:
+                  iftrue ofs0151
+                  returnvoid
+                  pushtrue
+                  iftrue ofs010e
+         ofs010e:
+                  label
+                  getlocal 7
+                  jump ofs0122
+                  getlocal 6
+                  inclocal_i 8
+                  equals
+                  multiply
+                  add_i
+                  kill 2
+                  coerce_s
+                  kill 3
+                  istypelate
+         ofs0122:
+                  getlocal 9
+                  iftrue ofs0129
+                  increment_i
+         ofs0129:
+                  convert_i
+         ofs012a:
+                  setlocal 7
+         ofs012c:
+                  getlocal 8
+                  dup
+                  iftrue ofs0136
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0136:
+                  iffalse ofs015b
+                  jump ofs00cf
+         ofs013e:
+                  jump ofs00cf
+         ofs0142:
+                  label
+                  getlocal2
+                  getlocal 7
+                  getproperty MultinameL([PrivateNamespace("+!T"),PackageNamespace(""),PackageNamespace("starling.events"),PrivateNamespace("TouchEvent.as$39"),PackageInternalNs("starling.events"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("+!T"),StaticProtectedNs("+!T"),StaticProtectedNs("9!S")])
+                  getproperty QName(PackageNamespace(""),"timestamp")
+                  getlocal0
+                  getproperty QName(PrivateNamespace("+!T"),"[i")
+                  ifngt ofs010e
+         ofs0151:
+                  getlocal0
+                  getlocal2
+                  getlocal 7
+                  getproperty MultinameL([PrivateNamespace("+!T"),PackageNamespace(""),PackageNamespace("starling.events"),PrivateNamespace("TouchEvent.as$39"),PackageInternalNs("starling.events"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("+!T"),StaticProtectedNs("+!T"),StaticProtectedNs("9!S")])
+                  getproperty QName(PackageNamespace(""),"timestamp")
+                  initproperty QName(PrivateNamespace("+!T"),"[i")
+         ofs015b:
+                  jump ofs010e
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function §8b§(param1:DisplayObject, param2:String = null) : Vector.<§]!B§>
+      {
+         trait method QName(PackageNamespace(""),"8b")
+            dispid 0
+            method
+               name null
+               flag HAS_OPTIONAL
+               param QName(PackageNamespace("#!,"),"DisplayObject")
+               param QName(PackageNamespace(""),"String")
+               optional Null()
+               returns TypeName(QName(PackageNamespace("__AS3__.vec"),"Vector")<QName(PackageNamespace("starling.events"),"]!B")>)
+               
+               body
+                  maxstack 4
+                  localcount 11
+                  initscopedepth 5
+                  maxscopedepth 6
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     setlocal 9
+                     jump ofs0016
+                     kill 4
+                     setlocal 9
+                     multiply
+                     getlocal 9
+                     strictequals
+                     setlocal 5
+                     inclocal 9
+                     decrement_i
+                     equals
+            ofs0016:
+                     setlocal 10
+                     getlocal0
+                     pushscope
+                     pushnull
+                     coerce QName(PackageNamespace("starling.events"),"]!B")
+                     setlocal 6
+                     pushfalse
+                     setlocal 7
+                     pushfalse
+                     setlocal 8
+                     findpropstrict Multiname("Vector",[PackageNamespace("__AS3__.vec")])
+                     getproperty Multiname("Vector",[PrivateNamespace("+!T"),PackageNamespace(""),PackageNamespace("__AS3__.vec"),PackageNamespace("starling.events"),PrivateNamespace("TouchEvent.as$39"),PackageInternalNs("starling.events"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("+!T"),StaticProtectedNs("+!T"),StaticProtectedNs("9!S")])
+                     findpropstrict QName(PackageNamespace("starling.events"),"]!B")
+                     getproperty QName(PackageNamespace("starling.events"),"]!B")
+                     applytype 1
+                     pushbyte 0
+                     construct 1
+                     coerce TypeName(QName(PackageNamespace("__AS3__.vec"),"Vector")<QName(PackageNamespace("starling.events"),"]!B")>)
+                     setlocal3
+                     getlocal0
+                     getproperty QName(PrivateNamespace("+!T"),"]a")
+                     getproperty QName(PackageNamespace(""),"length")
+                     convert_i
+                     setlocal 4
+                     pushbyte 0
+                     getlocal 10
+                     dup
+                     iffalse ofs004a
+                     pop
+                     getlocal2
+                     convert_b
+            ofs004a:
+                     iftrue ofs004f
+                     convert_i
+            ofs004f:
+                     setlocal 5
+                     jump ofs029e
+            ofs0055:
+                     label
+                     getlocal0
+                     getproperty QName(PrivateNamespace("+!T"),"]a")
+                     getlocal 5
+                     getproperty MultinameL([PrivateNamespace("+!T"),PackageNamespace(""),PackageNamespace("starling.events"),PrivateNamespace("TouchEvent.as$39"),PackageInternalNs("starling.events"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("+!T"),StaticProtectedNs("+!T"),StaticProtectedNs("9!S")])
+                     coerce QName(PackageNamespace("starling.events"),"]!B")
+                     setlocal 6
+                     getlocal 9
+                     iffalse ofs029a
+                     jump ofs028c
+            ofs006b:
+                     label
+                     getlocal 5
+                     getlocal 10
+                     dup
+                     iffalse ofs0078
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0078:
+                     iftrue ofs0083
+                     increment_i
+                     getlocal 9
+                     iffalse ofs0084
+            ofs0083:
+                     convert_i
+            ofs0084:
+                     setlocal 5
+                     getlocal 10
+                     dup
+                     iffalse ofs0090
+                     pop
+                     getlocal3
+                     convert_b
+            ofs0090:
+                     iftrue ofs00e7
+                     getlocal 10
+                     iftrue ofs00ce
+                     pushtrue
+                     iftrue ofs029e
+            ofs009f:
+                     label
+                     getlocal 8
+                     getlocal 9
+                     iffalse ofs00b5
+                     getlocal 10
+                     iftrue ofs0196
+                     getlocal 9
+                     iffalse ofs01da
+                     convert_b
+            ofs00b5:
+                     getlocal 10
+                     dup
+                     iffalse ofs00bf
+                     pop
+                     getlocal1
+                     convert_b
+            ofs00bf:
+                     iftrue ofs01db
+                     getlocal 9
+                     iffalse ofs022a
+            ofs00c9:
+                     label
+                     iffalse ofs006b
+            ofs00ce:
+                     getlocal 10
+                     iftrue ofs01eb
+                     getlocal 9
+                     iffalse ofs0242
+                     getlocal 10
+                     iftrue ofs0288
+                     getlocal3
+                     getlocal 6
+                     callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                     pop
+            ofs00e7:
+                     getlocal 9
+                     iffalse ofs01ab
+                     getlocal 10
+                     dup
+                     iffalse ofs00f7
+                     pop
+                     getlocal0
+                     convert_b
+            ofs00f7:
+                     iftrue ofs029a
+                     jump ofs006b
+            ofs00ff:
+                     label
+                     getlocal 7
+                     getlocal 10
+                     dup
+                     iffalse ofs010c
+                     pop
+                     getlocal1
+                     convert_b
+            ofs010c:
+                     iftrue ofs015a
+                     getlocal 9
+                     dup
+                     iftrue ofs011a
+                     pop
+                     getlocal0
+                     convert_b
+            ofs011a:
+                     iffalse ofs0287
+                     getlocal 9
+                     dup
+                     iftrue ofs0128
+                     pop
+                     getlocal3
+                     convert_b
+            ofs0128:
+                     iffalse ofs024e
+                     getlocal 9
+                     dup
+                     iftrue ofs0136
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0136:
+                     iffalse ofs024d
+                     convert_b
+                     getlocal 9
+                     jump ofs014e
+                     inclocal 4
+                     inclocal_i 9
+                     nextname
+                     setlocal2
+                     declocal 3
+                     subtract_i
+                     setlocal3
+                     inclocal_i 7
+                     convert_i
+            ofs014e:
+                     dup
+                     iftrue ofs0156
+                     pop
+                     getlocal1
+                     convert_b
+            ofs0156:
+                     iffalse ofs0196
+            ofs015a:
+                     getlocal 9
+                     dup
+                     iftrue ofs0164
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0164:
+                     iffalse ofs0292
+                     dup
+                     getlocal 10
+                     dup
+                     iffalse ofs0173
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0173:
+                     iftrue ofs017e
+                     getlocal 10
+                     iftrue ofs0220
+                     convert_b
+            ofs017e:
+                     getlocal 10
+                     dup
+                     iffalse ofs0188
+                     pop
+                     getlocal0
+                     convert_b
+            ofs0188:
+                     iftrue ofs021f
+                     getlocal 9
+                     iffalse ofs0255
+                     iffalse ofs00c9
+            ofs0196:
+                     getlocal 10
+                     iftrue ofs0201
+                     getlocal 10
+                     dup
+                     iffalse ofs01a6
+                     pop
+                     getlocal2
+                     convert_b
+            ofs01a6:
+                     iftrue ofs023f
+                     pop
+            ofs01ab:
+                     jump ofs009f
+            ofs01af:
+                     label
+                     getlocal2
+                     getlocal 9
+                     iffalse ofs01ff
+                     getlocal 6
+                     getproperty QName(PackageNamespace(""),"phase")
+                     equals
+                     getlocal 9
+                     dup
+                     iftrue ofs01c6
+                     pop
+                     getlocal3
+                     convert_b
+            ofs01c6:
+                     iffalse ofs01da
+                     getlocal 9
+                     dup
+                     iftrue ofs01d4
+                     pop
+                     getlocal3
+                     convert_b
+            ofs01d4:
+                     iffalse ofs0210
+                     convert_b
+            ofs01d9:
+                     label
+            ofs01da:
+                     convert_b
+            ofs01db:
+                     getlocal 10
+                     dup
+                     iffalse ofs01e5
+                     pop
+                     getlocal3
+                     convert_b
+            ofs01e5:
+                     iftrue ofs0299
+                     setlocal 8
+            ofs01eb:
+                     getlocal 9
+                     dup
+                     iftrue ofs01f5
+                     pop
+                     getlocal1
+                     convert_b
+            ofs01f5:
+                     iffalse ofs022b
+                     jump ofs00ff
+            ofs01fd:
+                     label
+                     getlocal2
+            ofs01ff:
+                     pushnull
+                     equals
+            ofs0201:
+                     getlocal 9
+                     dup
+                     iftrue ofs020b
+                     pop
+                     getlocal1
+                     convert_b
+            ofs020b:
+                     iffalse ofs0240
+                     convert_b
+            ofs0210:
+                     getlocal 9
+                     dup
+                     iftrue ofs021a
+                     pop
+                     getlocal3
+                     convert_b
+            ofs021a:
+                     iffalse ofs023d
+                     dup
+            ofs021f:
+                     convert_b
+            ofs0220:
+                     getlocal 9
+                     iffalse ofs0275
+                     iftrue ofs01d9
+            ofs022a:
+                     pop
+            ofs022b:
+                     jump ofs01af
+            ofs022f:
+                     label
+                     getlocal1
+                     findpropstrict QName(PackageNamespace("#!,"),"DisplayObjectContainer")
+                     getproperty QName(PackageNamespace("#!,"),"DisplayObjectContainer")
+                     astypelate
+                     getlocal 6
+                     getproperty QName(PackageNamespace(""),"target")
+                     callproperty QName(PackageNamespace(""),"contains"), 1
+            ofs023d:
+                     convert_b
+            ofs023e:
+                     label
+            ofs023f:
+                     convert_b
+            ofs0240:
+                     setlocal 7
+            ofs0242:
+                     jump ofs01fd
+            ofs0246:
+                     label
+                     getlocal1
+                     findpropstrict QName(PackageNamespace("#!,"),"DisplayObjectContainer")
+                     getproperty QName(PackageNamespace("#!,"),"DisplayObjectContainer")
+                     istypelate
+            ofs024d:
+                     convert_b
+            ofs024e:
+                     getlocal 9
+                     iffalse ofs0293
+                     dup
+            ofs0255:
+                     getlocal 10
+                     dup
+                     iffalse ofs0270
+                     pop
+                     jump ofs026e
+                     inclocal 3
+                     greaterequals
+                     pushtrue
+                     subtract_i
+                     convert_i
+                     inclocal 5
+                     getlocal0
+                     kill 3
+                     inclocal 6
+            ofs026e:
+                     getlocal0
+                     convert_b
+            ofs0270:
+                     iftrue ofs0295
+                     convert_b
+            ofs0275:
+                     getlocal 10
+                     dup
+                     iffalse ofs027f
+                     pop
+                     getlocal3
+                     convert_b
+            ofs027f:
+                     iftrue ofs0294
+                     iffalse ofs023e
+            ofs0287:
+                     pop
+            ofs0288:
+                     jump ofs022f
+            ofs028c:
+                     getlocal 6
+                     getproperty QName(PackageNamespace(""),"target")
+                     getlocal1
+                     equals
+            ofs0292:
+                     convert_b
+            ofs0293:
+                     dup
+            ofs0294:
+                     convert_b
+            ofs0295:
+                     iftrue ofs023e
+            ofs0299:
+                     pop
+            ofs029a:
+                     jump ofs0246
+            ofs029e:
+                     getlocal 5
+                     getlocal 4
+                     iflt ofs0055
+                     getlocal3
+                     returnvalue
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public function §%!C§(param1:DisplayObject, param2:String = null) : §]!B§
+         {
+            trait method QName(PackageNamespace(""),"%!C")
+               dispid 0
+               method
+                  name null
+                  flag HAS_OPTIONAL
+                  param QName(PackageNamespace("#!,"),"DisplayObject")
+                  param QName(PackageNamespace(""),"String")
+                  optional Null()
+                  returns QName(PackageNamespace("starling.events"),"]!B")
+                  
+                  body
+                     maxstack 5
+                     localcount 6
+                     initscopedepth 5
+                     maxscopedepth 6
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        swap
+                        jump ofs0013
+                        setlocal3
+                        strictequals
+                        declocal 4
+                        negate_i
+                        declocal_i 4
+                        kill 4
+                        getlocal3
+                        convert_u
+                        nextname
+               ofs0013:
+                        setlocal 4
+                        setlocal 5
+                        getlocal0
+                        jump ofs0029
+                        getlocal1
+                        declocal_i 2
+                        greaterequals
+                        declocal 2
+                        kill 4
+                        dup
+                        pushnan
+                        getlocal2
+                        declocal 3
+               ofs0029:
+                        pushscope
+                        getlocal0
+                        getlocal1
+                        getlocal2
+                        callproperty QName(PackageNamespace(""),"8b"), 2
+                        coerce TypeName(QName(PackageNamespace("__AS3__.vec"),"Vector")<QName(PackageNamespace("starling.events"),"]!B")>)
+                        setlocal3
+                        getlocal 5
+                        iffalse ofs0056
+                        getlocal3
+                        getproperty QName(PackageNamespace(""),"length")
+                        pushbyte 0
+                        ifngt ofs0056
+                        getlocal 4
+                        dup
+                        iffalse ofs004c
+                        pop
+                        getlocal0
+                        convert_b
+               ofs004c:
+                        iftrue ofs0056
+                        getlocal3
+                        pushbyte 0
+                        getproperty MultinameL([PrivateNamespace("+!T"),PackageNamespace(""),PackageNamespace("starling.events"),PrivateNamespace("TouchEvent.as$39"),PackageInternalNs("starling.events"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("+!T"),StaticProtectedNs("+!T"),StaticProtectedNs("9!S")])
+                        returnvalue
+               ofs0056:
+                        pushnull
+                        returnvalue
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public function §7q§(param1:DisplayObject) : Boolean
+            {
+               trait method QName(PackageNamespace(""),"7q")
+                  dispid 0
+                  method
+                     name null
+                     param QName(PackageNamespace("#!,"),"DisplayObject")
+                     returns QName(PackageNamespace(""),"Boolean")
+                     
+                     body
+                        maxstack 4
+                        localcount 6
+                        initscopedepth 5
+                        maxscopedepth 6
+                        
+                        code
+                           pushfalse
+                           pushtrue
+                           setlocal 4
+                           jump ofs0012
+                           strictequals
+                           convert_s
+                           convert_d
+                           declocal 2
+                           getlocal0
+                           getglobalscope
+                           popscope
+                           bitxor
+                           convert_b
+                  ofs0012:
+                           setlocal 5
+                           getlocal0
+                           pushscope
+                           pushnull
+                           coerce TypeName(QName(PackageNamespace("__AS3__.vec"),"Vector")<QName(PackageNamespace("starling.events"),"]!B")>)
+                           setlocal2
+                           pushbyte 0
+                           setlocal3
+                           getlocal 4
+                           dup
+                           iftrue ofs0027
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0027:
+                           iffalse ofs003b
+                           getlocal0
+                           getlocal1
+                           callproperty QName(PackageNamespace(""),"%!C"), 1
+                           pushnull
+                           ifne ofs003d
+                           getlocal 5
+                           iftrue ofs003d
+                  ofs003b:
+                           pushfalse
+                           returnvalue
+                  ofs003d:
+                           getlocal0
+                           getlocal1
+                           callproperty QName(PackageNamespace(""),"8b"), 1
+                           coerce TypeName(QName(PackageNamespace("__AS3__.vec"),"Vector")<QName(PackageNamespace("starling.events"),"]!B")>)
+                           setlocal2
+                           getlocal 5
+                           dup
+                           iffalse ofs004f
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs004f:
+                           iftrue ofs010b
+                           jump ofs0103
+                  ofs0057:
+                           label
+                           getlocal3
+                           getlocal 4
+                           dup
+                           iftrue ofs0076
+                           pop
+                           getlocal1
+                           jump ofs0075
+                           kill 4
+                           inclocal 2
+                           declocal_i 2
+                           multiply
+                           declocal 3
+                           lshift
+                           declocal 4
+                           bitor
+                           setlocal 4
+                  ofs0075:
+                           convert_b
+                  ofs0076:
+                           iffalse ofs00d4
+                           getlocal 5
+                           iftrue ofs00c0
+                           getlocal 4
+                           dup
+                           iftrue ofs008a
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs008a:
+                           iffalse ofs00bf
+                           pushbyte 0
+                           ifge ofs00ec
+                           getlocal 5
+                           dup
+                           iffalse ofs009e
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs009e:
+                           iftrue ofs00d5
+                           getlocal 4
+                           iffalse ofs00fd
+                           pushfalse
+                           getlocal 4
+                           dup
+                           iftrue ofs00b3
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs00b3:
+                           iffalse ofs00fe
+                           returnvalue
+                           pushtrue
+                           iftrue ofs00bd
+                  ofs00bd:
+                           label
+                           getlocal3
+                  ofs00bf:
+                           decrement_i
+                  ofs00c0:
+                           convert_i
+                           jump ofs00d4
+                           inclocal 4
+                           inclocal 4
+                           inclocal 4
+                           swap
+                           inclocal 3
+                           bitand
+                           getlocal3
+                           kill 4
+                           getlocal 4
+                  ofs00d4:
+                           setlocal3
+                  ofs00d5:
+                           getlocal 4
+                           dup
+                           iftrue ofs00df
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs00df:
+                           iffalse ofs00ff
+                           jump ofs0057
+                  ofs00e7:
+                           label
+                           jump ofs0057
+                  ofs00ec:
+                           label
+                           getlocal2
+                           getlocal3
+                           getproperty MultinameL([PrivateNamespace("+!T"),PackageNamespace(""),PackageNamespace("starling.events"),PrivateNamespace("TouchEvent.as$39"),PackageInternalNs("starling.events"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("+!T"),StaticProtectedNs("+!T"),StaticProtectedNs("9!S")])
+                           getproperty QName(PackageNamespace(""),"phase")
+                           findpropstrict QName(PackageNamespace("starling.events"),"?\'")
+                           getproperty QName(PackageNamespace("starling.events"),"?\'")
+                           getproperty QName(PackageNamespace(""),"&>")
+                           ifeq ofs00bd
+                  ofs00fd:
+                           pushtrue
+                  ofs00fe:
+                           returnvalue
+                  ofs00ff:
+                           jump ofs00bd
+                  ofs0103:
+                           getlocal2
+                           getproperty QName(PackageNamespace(""),"length")
+                           pushbyte 1
+                           subtract
+                           convert_i
+                           setlocal3
+                  ofs010b:
+                           jump ofs00e7
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public function get timestamp() : Number
+               {
+                  trait getter QName(PackageNamespace(""),"timestamp")
+                     dispid 0
+                     method
+                        name null
+                        returns QName(PackageNamespace(""),"Number")
+                        
+                        body
+                           maxstack 3
+                           localcount 1
+                           initscopedepth 5
+                           maxscopedepth 6
+                           
+                           code
+                              getlocal0
+                              pushscope
+                              getlocal0
+                              jump ofs0010
+                              add
+                              setlocal3
+                              dxnslate
+                              convert_u
+                              modulo
+                              negate
+                              getlocal0
+                              not
+                              equals
+                     ofs0010:
+                              getproperty QName(PrivateNamespace("+!T"),"[i")
+                              returnvalue
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  public function get §-A§() : Vector.<§]!B§>
+                  {
+                     trait getter QName(PackageNamespace(""),"-A")
+                        dispid 0
+                        method
+                           name null
+                           returns TypeName(QName(PackageNamespace("__AS3__.vec"),"Vector")<QName(PackageNamespace("starling.events"),"]!B")>)
+                           
+                           body
+                              maxstack 3
+                              localcount 1
+                              initscopedepth 5
+                              maxscopedepth 6
+                              
+                              code
+                                 getlocal0
+                                 pushscope
+                                 getlocal0
+                                 jump ofs0010
+                                 convert_o
+                                 getlocal1
+                                 multiply
+                                 getglobalscope
+                                 divide
+                                 convert_d
+                                 convert_b
+                                 dup
+                                 astypelate
+                        ofs0010:
+                                 getproperty QName(PrivateNamespace("+!T"),"]a")
+                                 callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"concat"), 0
+                                 returnvalue
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     public function get shiftKey() : Boolean
+                     {
+                        trait getter QName(PackageNamespace(""),"shiftKey")
+                           dispid 0
+                           method
+                              name null
+                              returns QName(PackageNamespace(""),"Boolean")
+                              
+                              body
+                                 maxstack 3
+                                 localcount 1
+                                 initscopedepth 5
+                                 maxscopedepth 6
+                                 
+                                 code
+                                    getlocal0
+                                    pushscope
+                                    getlocal0
+                                    jump ofs0010
+                                    bitnot
+                                    pop
+                                    checkfilter
+                                    getlocal2
+                                    popscope
+                                    coerce_a
+                                    pushundefined
+                                    bitand
+                                    strictequals
+                           ofs0010:
+                                    getproperty QName(PrivateNamespace("+!T"),"!z")
+                                    returnvalue
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                        }
+                        
+                        public function get ctrlKey() : Boolean
+                        {
+                           trait getter QName(PackageNamespace(""),"ctrlKey")
+                              dispid 0
+                              method
+                                 name null
+                                 returns QName(PackageNamespace(""),"Boolean")
+                                 
+                                 body
+                                    maxstack 3
+                                    localcount 1
+                                    initscopedepth 5
+                                    maxscopedepth 6
+                                    
+                                    code
+                                       getlocal0
+                                       pushscope
+                                       getlocal0
+                                       jump ofs0010
+                                       pushtrue
+                                       instanceof
+                                       setlocal3
+                                       decrement
+                                       pushundefined
+                                       getlocal2
+                                       pushnull
+                                       multiply
+                                       multiply
+                              ofs0010:
+                                       getproperty QName(PrivateNamespace("+!T"),"!9")
+                                       returnvalue
+                                       returnvoid
+                                    end ; code
+                                 end ; body
+                              end ; method
+                           }
+                        }
+                     }

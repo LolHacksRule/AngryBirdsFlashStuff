@@ -1,0 +1,589 @@
+package §5=§
+{
+   import §&"§.ExternalInterfaceHandler;
+   import flash.display.DisplayObject;
+   
+   public class GoogleAnalyticsTracker
+   {
+      
+      protected static const §4!?§:String = "trackEvent";
+      
+      protected static const TRACKING_FUNCTION_10_PERCENT:String = "trackEvent10Percent";
+      
+      protected static const TRACKING_FUNCTION_1_PERCENT:String = "trackEvent1Percent";
+      
+      protected static const §2!"§:String = "flash";
+      
+      public static const §+!B§:String = "initialized";
+      
+      public static const §4Q§:String = "loaded";
+      
+      public static const §4'§:String = "level-started";
+      
+      public static const § !I§:String = "level-completed";
+      
+      public static const ACTION_GPU_FPS_REPORT:String = "gpu-rendering";
+      
+      public static const ACTION_CPU_FPS_REPORT:String = "cpu-rendering";
+      
+      public static const ACTION_APPLICATION_CRASH:String = "crashed";
+      
+      public static const §&b§:String = "crash-log";
+      
+      public static const §;=§:String = "crash-trace";
+      
+      public static const § §:String = "mem-edit";
+      
+      public static var enabled:Boolean = false;
+      
+      private static var §9b§:Vector.<§6!2§>;
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 5
+               localcount 3
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  negate_i
+                  rshift
+                  subtract_i
+                  pushscope
+                  urshift
+                  coerce_s
+                  pushfalse
+                  bitxor
+                  nextname
+         ofs0010:
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  dup
+                  iftrue ofs001c
+                  pop
+                  getlocal1
+                  convert_b
+         ofs001c:
+                  iffalse ofs00d9
+                  jump ofs017e
+         ofs0024:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs002b
+         ofs002b:
+                  label
+                  findproperty QName(PrivateNamespace("4"),"9b")
+                  findpropstrict Multiname("Vector",[PrivateNamespace("4"),StaticProtectedNs("4"),PackageNamespace(""),PrivateNamespace("GoogleAnalyticsTracker.as$139"),PackageNamespace("5="),PackageInternalNs("5="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("4"),PackageNamespace("__AS3__.vec")])
+                  getproperty Multiname("Vector",[PrivateNamespace("4"),StaticProtectedNs("4"),PackageNamespace(""),PrivateNamespace("GoogleAnalyticsTracker.as$139"),PackageNamespace("5="),PackageInternalNs("5="),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("4"),PackageNamespace("__AS3__.vec")])
+                  findpropstrict QName(PackageNamespace("5="),"6!2")
+                  getproperty QName(PackageNamespace("5="),"6!2")
+                  applytype 1
+                  construct 0
+                  setproperty QName(PrivateNamespace("4"),"9b")
+                  getlocal1
+                  iffalse ofs005a
+                  getlocal1
+                  iffalse ofs0114
+                  getlocal2
+                  iftrue ofs011f
+                  getlocal1
+                  iffalse ofs012f
+                  jump ofs0024
+         ofs0054:
+                  label
+                  findproperty QName(PackageNamespace(""),"enabled")
+                  pushfalse
+                  setproperty QName(PackageNamespace(""),"enabled")
+         ofs005a:
+                  getlocal1
+                  dup
+                  iftrue ofs0063
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0063:
+                  iffalse ofs0077
+                  getlocal1
+                  iffalse ofs00d9
+                  jump ofs002b
+         ofs0070:
+                  label
+                  findproperty QName(PackageNamespace("")," ")
+                  pushstring "mem-edit"
+                  initproperty QName(PackageNamespace("")," ")
+         ofs0077:
+                  getlocal1
+                  dup
+                  iftrue ofs0080
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0080:
+                  iffalse ofs00a9
+                  getlocal2
+                  dup
+                  iffalse ofs008d
+                  pop
+                  getlocal1
+                  convert_b
+         ofs008d:
+                  iftrue ofs00b4
+                  jump ofs0054
+         ofs0095:
+                  label
+                  findproperty QName(PackageNamespace(""),";=")
+                  pushstring "crash-trace"
+                  initproperty QName(PackageNamespace(""),";=")
+                  jump ofs00a9
+                  greaterequals
+                  convert_s
+                  lessequals
+                  pushundefined
+                  popscope
+                  bitand
+                  setlocal2
+                  not
+                  hasnext
+         ofs00a9:
+                  jump ofs0070
+         ofs00ad:
+                  label
+                  findproperty QName(PackageNamespace(""),"&b")
+                  pushstring "crash-log"
+                  initproperty QName(PackageNamespace(""),"&b")
+         ofs00b4:
+                  getlocal2
+                  dup
+                  iffalse ofs00bd
+                  pop
+                  getlocal2
+                  convert_b
+         ofs00bd:
+                  iftrue ofs00e4
+                  getlocal1
+                  dup
+                  iftrue ofs00ca
+                  pop
+                  getlocal0
+                  convert_b
+         ofs00ca:
+                  iffalse ofs0109
+                  jump ofs0095
+         ofs00d2:
+                  label
+                  findproperty QName(PackageNamespace(""),"ACTION_APPLICATION_CRASH")
+                  pushstring "crashed"
+                  initproperty QName(PackageNamespace(""),"ACTION_APPLICATION_CRASH")
+         ofs00d9:
+                  jump ofs00ad
+         ofs00dd:
+                  label
+                  findproperty QName(PackageNamespace(""),"ACTION_CPU_FPS_REPORT")
+                  pushstring "cpu-rendering"
+                  initproperty QName(PackageNamespace(""),"ACTION_CPU_FPS_REPORT")
+         ofs00e4:
+                  getlocal2
+                  dup
+                  iffalse ofs00ed
+                  pop
+                  getlocal2
+                  convert_b
+         ofs00ed:
+                  iftrue ofs0157
+                  getlocal1
+                  dup
+                  iftrue ofs00fa
+                  pop
+                  getlocal0
+                  convert_b
+         ofs00fa:
+                  iffalse ofs017a
+                  jump ofs00d2
+         ofs0102:
+                  label
+                  findproperty QName(PackageNamespace(""),"ACTION_GPU_FPS_REPORT")
+                  pushstring "gpu-rendering"
+                  initproperty QName(PackageNamespace(""),"ACTION_GPU_FPS_REPORT")
+         ofs0109:
+                  jump ofs00dd
+         ofs010d:
+                  label
+                  findproperty QName(PackageNamespace("")," !I")
+                  pushstring "level-completed"
+                  initproperty QName(PackageNamespace("")," !I")
+         ofs0114:
+                  jump ofs0102
+         ofs0118:
+                  label
+                  findproperty QName(PackageNamespace(""),"4\'")
+                  pushstring "level-started"
+                  initproperty QName(PackageNamespace(""),"4\'")
+         ofs011f:
+                  getlocal2
+                  iftrue ofs0147
+                  jump ofs010d
+         ofs0128:
+                  label
+                  findproperty QName(PackageNamespace(""),"4Q")
+                  pushstring "loaded"
+                  initproperty QName(PackageNamespace(""),"4Q")
+         ofs012f:
+                  jump ofs0118
+                  jump ofs0137
+         ofs0137:
+                  bitxor
+                  convert_u
+                  increment_i
+                  istypelate
+                  setlocal2
+                  not
+                  pushnull
+                  convert_u
+                  pushfalse
+         ofs0140:
+                  label
+                  findproperty QName(PackageNamespace(""),"+!B")
+                  pushstring "initialized"
+                  initproperty QName(PackageNamespace(""),"+!B")
+         ofs0147:
+                  getlocal1
+                  iffalse ofs016f
+                  jump ofs0128
+         ofs0150:
+                  label
+                  findproperty QName(StaticProtectedNs("4"),"2!\"")
+                  pushstring "flash"
+                  initproperty QName(StaticProtectedNs("4"),"2!\"")
+         ofs0157:
+                  getlocal2
+                  dup
+                  iffalse ofs0160
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0160:
+                  iftrue ofs0184
+                  jump ofs0140
+         ofs0168:
+                  label
+                  findproperty QName(StaticProtectedNs("4"),"TRACKING_FUNCTION_1_PERCENT")
+                  pushstring "trackEvent1Percent"
+                  initproperty QName(StaticProtectedNs("4"),"TRACKING_FUNCTION_1_PERCENT")
+         ofs016f:
+                  jump ofs0150
+         ofs0173:
+                  label
+                  findproperty QName(StaticProtectedNs("4"),"TRACKING_FUNCTION_10_PERCENT")
+                  pushstring "trackEvent10Percent"
+                  initproperty QName(StaticProtectedNs("4"),"TRACKING_FUNCTION_10_PERCENT")
+         ofs017a:
+                  jump ofs0168
+         ofs017e:
+                  findproperty QName(StaticProtectedNs("4"),"4!?")
+                  pushstring "trackEvent"
+                  initproperty QName(StaticProtectedNs("4"),"4!?")
+         ofs0184:
+                  jump ofs0173
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function GoogleAnalyticsTracker()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  decrement_i
+                  bitxor
+                  convert_d
+                  getlocal1
+                  decrement_i
+                  add
+                  typeof
+                  pushtrue
+                  pushwith
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  dup
+                  iftrue ofs001d
+                  pop
+                  getlocal1
+                  convert_b
+         ofs001d:
+                  iffalse ofs0024
+                  getlocal0
+                  constructsuper 0
+         ofs0024:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function §?!?§(param1:DisplayObject, param2:String) : void
+      {
+         trait method QName(PackageNamespace(""),"?!?")
+            flag FINAL
+            dispid 3
+            method
+               name null
+               param QName(PackageNamespace("flash.display"),"DisplayObject")
+               param QName(PackageNamespace(""),"String")
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 3
+                  localcount 3
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     getlocal0
+                     pushscope
+                     returnvoid
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public static function §&k§(param1:String, param2:String = null, param3:int = 0) : void
+         {
+            trait method QName(PackageNamespace(""),"&k")
+               flag FINAL
+               dispid 4
+               method
+                  name null
+                  flag HAS_OPTIONAL
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"int")
+                  optional Null()
+                  optional Integer(0)
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 7
+                     localcount 6
+                     initscopedepth 3
+                     maxscopedepth 4
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        setlocal 4
+                        jump ofs0017
+                        inclocal 4
+                        inclocal_i 3
+                        inclocal 4
+                        declocal 4
+                        kill 3
+                        lshift
+                        setlocal 4
+                        convert_o
+                        bitand
+               ofs0017:
+                        setlocal 5
+                        getlocal0
+                        pushscope
+                        getlocal 4
+                        dup
+                        iftrue ofs0025
+                        pop
+                        getlocal2
+                        convert_b
+               ofs0025:
+                        iffalse ofs0036
+                        findpropstrict QName(PrivateNamespace("4"),"trackEvent")
+                        findpropstrict QName(StaticProtectedNs("4"),"2!\"")
+                        getproperty QName(StaticProtectedNs("4"),"2!\"")
+                        getlocal1
+                        getlocal2
+                        getlocal3
+                        callproperty QName(PrivateNamespace("4"),"trackEvent"), 4
+                        pop
+               ofs0036:
+                        returnvoid
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            private static function trackEvent(param1:String, param2:String, param3:String, param4:int = 0) : void
+            {
+               trait method QName(PrivateNamespace("4"),"trackEvent")
+                  flag FINAL
+                  dispid 5
+                  method
+                     name null
+                     flag HAS_OPTIONAL
+                     param QName(PackageNamespace(""),"String")
+                     param QName(PackageNamespace(""),"String")
+                     param QName(PackageNamespace(""),"String")
+                     param QName(PackageNamespace(""),"int")
+                     optional Integer(0)
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 8
+                        localcount 7
+                        initscopedepth 3
+                        maxscopedepth 4
+                        
+                        code
+                           pushfalse
+                           pushtrue
+                           setlocal 5
+                           jump ofs0015
+                           istypelate
+                           kill 3
+                           pushscope
+                           urshift
+                           getlocal 4
+                           getlocal3
+                           inclocal_i 5
+                           inclocal_i 3
+                           negate_i
+                  ofs0015:
+                           setlocal 6
+                           getlocal0
+                           pushscope
+                           getlocal 5
+                           dup
+                           iftrue ofs0023
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs0023:
+                           iffalse ofs0036
+                           findpropstrict QName(StaticProtectedNs("4"),"trackSampledEvent")
+                           findpropstrict QName(StaticProtectedNs("4"),"4!?")
+                           getproperty QName(StaticProtectedNs("4"),"4!?")
+                           getlocal1
+                           getlocal2
+                           getlocal3
+                           getlocal 4
+                           callproperty QName(StaticProtectedNs("4"),"trackSampledEvent"), 5
+                           pop
+                  ofs0036:
+                           returnvoid
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               protected static function trackSampledEvent(param1:String, param2:String, param3:String, param4:String, param5:int = 0) : void
+               {
+                  trait method QName(StaticProtectedNs("4"),"trackSampledEvent")
+                     flag FINAL
+                     dispid 6
+                     method
+                        name null
+                        flag HAS_OPTIONAL
+                        param QName(PackageNamespace(""),"String")
+                        param QName(PackageNamespace(""),"String")
+                        param QName(PackageNamespace(""),"String")
+                        param QName(PackageNamespace(""),"String")
+                        param QName(PackageNamespace(""),"int")
+                        optional Integer(0)
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 8
+                           localcount 8
+                           initscopedepth 3
+                           maxscopedepth 4
+                           
+                           code
+                              pushfalse
+                              pushtrue
+                              setlocal 6
+                              jump ofs0018
+                              greaterthan
+                              declocal 2
+                              inclocal 6
+                              declocal_i 6
+                              getlocal 4
+                              inclocal_i 4
+                              add
+                              setlocal 6
+                              getlocal 5
+                     ofs0018:
+                              setlocal 7
+                              jump ofs002b
+                              declocal_i 3
+                              getlocal1
+                              getlocal2
+                              declocal_i 6
+                              add
+                              convert_i
+                              decrement
+                              declocal_i 2
+                              inclocal_i 3
+                     ofs002b:
+                              getlocal0
+                              pushscope
+                              getlocal 7
+                              iftrue ofs0049
+                              findpropstrict QName(PackageNamespace(""),"enabled")
+                              getproperty QName(PackageNamespace(""),"enabled")
+                              iffalse ofs0058
+                              getlocal 6
+                              dup
+                              iftrue ofs0045
+                              pop
+                              getlocal3
+                              convert_b
+                     ofs0045:
+                              iffalse ofs0058
+                     ofs0049:
+                              findpropstrict QName(PackageNamespace("&\""),"ExternalInterfaceHandler")
+                              getproperty QName(PackageNamespace("&\""),"ExternalInterfaceHandler")
+                              getlocal1
+                              getlocal2
+                              getlocal3
+                              getlocal 4
+                              getlocal 5
+                              callproperty QName(PackageNamespace(""),"`F"), 5
+                              pop
+                     ofs0058:
+                              returnvoid
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+               }
+            }

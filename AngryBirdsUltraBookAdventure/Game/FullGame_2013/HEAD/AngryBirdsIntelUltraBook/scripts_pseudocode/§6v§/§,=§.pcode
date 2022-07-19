@@ -1,0 +1,1455 @@
+package §6v§
+{
+   import §5!]§.FriendItemRenderer;
+   import flash.display.MovieClip;
+   import flash.events.Event;
+   
+   public class §,=§ extends ProfilePicture
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 10
+               maxscopedepth 11
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      private var §0!7§:MovieClip;
+      
+      private var §=!U§:Boolean;
+      
+      public function §,=§(userId:String, avatarString:String, newSilhouette:MovieClip, useHttps:Boolean = false, imageSize:String = null)
+      {
+         method
+            name "com.angrybirds.friendsbar.ui.profile:ChapterSelectionProfilePicture/ChapterSelectionProfilePicture"
+            flag HAS_OPTIONAL
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace("flash.display"),"MovieClip")
+            param QName(PackageNamespace(""),"Boolean")
+            param QName(PackageNamespace(""),"String")
+            optional False()
+            optional Null()
+            returns null
+            
+            body
+               maxstack 7
+               localcount 8
+               initscopedepth 11
+               maxscopedepth 12
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0014
+                  inclocal_i 4
+                  greaterequals
+                  multiply_i
+                  greaterequals
+                  not
+                  setlocal 6
+                  pushundefined
+                  getlocal 6
+                  setlocal 4
+         ofs0014:
+                  setlocal 6
+                  setlocal 7
+                  debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\ui\\profile;ChapterSelectionProfilePicture.as"
+                  getlocal 7
+                  iffalse ofs0022
+                  debugline 19
+         ofs0022:
+                  getlocal0
+                  pushscope
+                  getlocal 6
+                  dup
+                  iffalse ofs002e
+                  pop
+                  getlocal3
+                  convert_b
+         ofs002e:
+                  iftrue ofs0086
+                  jump ofs0119
+         ofs0036:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs003d
+         ofs003d:
+                  label
+                  debugline 24
+                  getlocal 6
+                  dup
+                  iffalse ofs004a
+                  pop
+                  getlocal3
+                  convert_b
+         ofs004a:
+                  iftrue ofs0086
+                  getlocal 6
+                  iftrue ofs008d
+                  getlocal 7
+                  dup
+                  iftrue ofs005e
+                  pop
+                  getlocal1
+                  convert_b
+         ofs005e:
+                  iffalse ofs00d9
+                  jump ofs0072
+                  kill 4
+                  coerce_s
+                  convert_o
+                  subtract_i
+                  declocal_i 6
+                  getlocal2
+                  decrement
+                  lessthan
+                  inclocal 5
+         ofs0072:
+                  getlocal 6
+                  iftrue ofs011e
+                  jump ofs0036
+         ofs007c:
+                  label
+                  getlocal0
+                  getlocal1
+                  getlocal2
+                  getlocal 4
+                  getlocal 5
+                  constructsuper 4
+         ofs0086:
+                  jump ofs003d
+         ofs008a:
+                  label
+                  debugline 22
+         ofs008d:
+                  getlocal 6
+                  dup
+                  iffalse ofs0097
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0097:
+                  iftrue ofs00c4
+                  getlocal 7
+                  dup
+                  iftrue ofs00a5
+                  pop
+                  getlocal3
+                  convert_b
+         ofs00a5:
+                  iffalse ofs00e9
+                  jump ofs007c
+         ofs00ad:
+                  label
+                  getlocal0
+                  getlocal3
+                  initproperty QName(PrivateNamespace("%u"),"0!7")
+                  jump ofs00c4
+                  inclocal_i 4
+                  declocal_i 3
+                  subtract_i
+                  newactivation
+                  inclocal_i 3
+                  kill 4
+                  declocal_i 6
+                  urshift
+                  getlocal3
+         ofs00c4:
+                  getlocal 7
+                  dup
+                  iftrue ofs00ce
+                  pop
+                  getlocal1
+                  convert_b
+         ofs00ce:
+                  iffalse ofs00f3
+                  jump ofs008a
+         ofs00d6:
+                  label
+                  debugline 21
+         ofs00d9:
+                  getlocal 7
+                  iffalse ofs0115
+                  jump ofs00ad
+         ofs00e3:
+                  label
+                  debug 1, "imageSize", 4, 19
+         ofs00e9:
+                  jump ofs00d6
+         ofs00ed:
+                  label
+                  debug 1, "useHttps", 3, 19
+         ofs00f3:
+                  getlocal 6
+                  dup
+                  iffalse ofs00fd
+                  pop
+                  getlocal3
+                  convert_b
+         ofs00fd:
+                  iftrue ofs010b
+                  jump ofs00e3
+         ofs0105:
+                  label
+                  debug 1, "newSilhouette", 2, 19
+         ofs010b:
+                  jump ofs00ed
+         ofs010f:
+                  label
+                  debug 1, "avatarString", 1, 19
+         ofs0115:
+                  jump ofs0105
+         ofs0119:
+                  debug 1, "userId", 0, 19
+         ofs011e:
+                  jump ofs010f
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function set § !4§(silhouetteMovieClip:MovieClip) : void
+      {
+         trait setter QName(PackageNamespace("")," !4")
+            flag METADATA
+            metadata"__go_to_definition_help"
+               item "pos" "771"
+            end ; metadata
+            dispid 0
+            method
+               name "com.angrybirds.friendsbar.ui.profile:ChapterSelectionProfilePicture/silhouette/set"
+               param QName(PackageNamespace("flash.display"),"MovieClip")
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 4
+                  localcount 4
+                  initscopedepth 11
+                  maxscopedepth 12
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     setlocal2
+                     jump ofs0014
+                     setlocal2
+                     declocal 2
+                     setlocal2
+                     kill 2
+                     checkfilter
+                     inclocal_i 2
+                     istypelate
+                     getglobalscope
+                     declocal_i 2
+            ofs0014:
+                     setlocal3
+                     debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\ui\\profile;ChapterSelectionProfilePicture.as"
+                     getlocal2
+                     iffalse ofs001e
+                     debugline 26
+            ofs001e:
+                     getlocal0
+                     pushscope
+                     getlocal3
+                     jump ofs0033
+                     modulo
+                     declocal_i 2
+                     inclocal_i 2
+                     inclocal 2
+                     hasnext
+                     setlocal2
+                     declocal 2
+                     inclocal 2
+                     modulo
+            ofs0033:
+                     iftrue ofs0069
+                     jump ofs008a
+                     jump ofs003f
+            ofs003f:
+                     declocal_i 2
+                     declocal_i 2
+                     pushnull
+                     pop
+                     declocal_i 2
+                     add_i
+                     getlocal1
+                     declocal_i 2
+                     kill 2
+            ofs004d:
+                     label
+                     returnvoid
+                     pushtrue
+                     iftrue ofs0054
+            ofs0054:
+                     label
+                     debugline 29
+                     getlocal2
+                     iffalse ofs0072
+                     getlocal2
+                     dup
+                     iftrue ofs0065
+                     pop
+                     getlocal1
+                     convert_b
+            ofs0065:
+                     iffalse ofs008f
+            ofs0069:
+                     jump ofs004d
+            ofs006d:
+                     label
+                     getlocal0
+                     getlocal1
+                     initproperty QName(PrivateNamespace("%u"),"0!7")
+            ofs0072:
+                     getlocal3
+                     dup
+                     iffalse ofs007b
+                     pop
+                     getlocal2
+                     convert_b
+            ofs007b:
+                     iftrue ofs0086
+                     jump ofs0054
+            ofs0083:
+                     label
+                     debugline 28
+            ofs0086:
+                     jump ofs006d
+            ofs008a:
+                     debug 1, "silhouetteMovieClip", 0, 26
+            ofs008f:
+                     jump ofs0083
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public function get § !4§() : MovieClip
+         {
+            trait getter QName(PackageNamespace("")," !4")
+               flag METADATA
+               metadata"__go_to_definition_help"
+                  item "pos" "890"
+               end ; metadata
+               dispid 0
+               method
+                  name "com.angrybirds.friendsbar.ui.profile:ChapterSelectionProfilePicture/silhouette/get"
+                  returns QName(PackageNamespace("flash.display"),"MovieClip")
+                  
+                  body
+                     maxstack 3
+                     localcount 3
+                     initscopedepth 11
+                     maxscopedepth 12
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        swap
+                        jump ofs0010
+                        pushnan
+                        checkfilter
+                        subtract_i
+                        subtract
+                        equals
+                        increment_i
+                        coerce_s
+                        convert_i
+                        multiply_i
+               ofs0010:
+                        setlocal1
+                        setlocal2
+                        debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\ui\\profile;ChapterSelectionProfilePicture.as"
+                        getlocal1
+                        iftrue ofs001b
+                        debugline 30
+               ofs001b:
+                        getlocal0
+                        pushscope
+                        getlocal1
+                        iftrue ofs0024
+                        debugline 32
+               ofs0024:
+                        getlocal0
+                        getproperty QName(PrivateNamespace("%u"),"0!7")
+                        returnvalue
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public function get §?!S§() : Boolean
+            {
+               trait getter QName(PackageNamespace(""),"?!S")
+                  flag METADATA
+                  metadata"__go_to_definition_help"
+                     item "pos" "974"
+                  end ; metadata
+                  dispid 0
+                  method
+                     name "com.angrybirds.friendsbar.ui.profile:ChapterSelectionProfilePicture/silhouetteShouldBeHidden/get"
+                     returns QName(PackageNamespace(""),"Boolean")
+                     
+                     body
+                        maxstack 3
+                        localcount 3
+                        initscopedepth 11
+                        maxscopedepth 12
+                        
+                        code
+                           pushfalse
+                           pushtrue
+                           swap
+                           jump ofs0010
+                           getglobalscope
+                           subtract
+                           lshift
+                           convert_s
+                           not
+                           pushwith
+                           negate
+                           not
+                           istypelate
+                  ofs0010:
+                           setlocal1
+                           setlocal2
+                           debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\ui\\profile;ChapterSelectionProfilePicture.as"
+                           getlocal1
+                           dup
+                           iffalse ofs001d
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs001d:
+                           iftrue ofs0023
+                           debugline 35
+                  ofs0023:
+                           getlocal0
+                           pushscope
+                           getlocal2
+                           iffalse ofs002c
+                           debugline 37
+                  ofs002c:
+                           getlocal0
+                           getproperty QName(PrivateNamespace("%u"),"=!U")
+                           returnvalue
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               override protected function initProfile(userId:String, avatarString:String, useHttps:Boolean = false, imageSize:String = null) : void
+               {
+                  trait method QName(ProtectedNamespace("%u"),"initProfile")
+                     flag OVERRIDE
+                     flag METADATA
+                     metadata"__go_to_definition_help"
+                        item "pos" "1092"
+                     end ; metadata
+                     dispid 0
+                     method
+                        name "com.angrybirds.friendsbar.ui.profile:ChapterSelectionProfilePicture/protected:initProfile"
+                        flag HAS_OPTIONAL
+                        param QName(PackageNamespace(""),"String")
+                        param QName(PackageNamespace(""),"String")
+                        param QName(PackageNamespace(""),"Boolean")
+                        param QName(PackageNamespace(""),"String")
+                        optional False()
+                        optional Null()
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 6
+                           localcount 8
+                           initscopedepth 11
+                           maxscopedepth 12
+                           
+                           code
+                              pushfalse
+                              pushtrue
+                              swap
+                              jump ofs0016
+                              declocal 3
+                              kill 5
+                              inclocal 5
+                              convert_b
+                              setlocal 4
+                              greaterequals
+                              bitor
+                              inclocal_i 4
+                              inclocal_i 4
+                     ofs0016:
+                              setlocal 6
+                              setlocal 7
+                              debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\ui\\profile;ChapterSelectionProfilePicture.as"
+                              getlocal 6
+                              iftrue ofs0024
+                              debugline 40
+                     ofs0024:
+                              getlocal0
+                              pushscope
+                              getlocal 6
+                              dup
+                              iffalse ofs0030
+                              pop
+                              getlocal3
+                              convert_b
+                     ofs0030:
+                              iftrue ofs0218
+                              jump ofs0086
+                     ofs0038:
+                              label
+                              debugline 42
+                              getlocal 7
+                              dup
+                              iftrue ofs0045
+                              pop
+                              getlocal3
+                              convert_b
+                     ofs0045:
+                              iffalse ofs023c
+                              getlocal 6
+                              iftrue ofs005a
+                              pushtrue
+                              iftrue ofs009d
+                     ofs0054:
+                              label
+                              debug 1, "imageSize", 3, 40
+                     ofs005a:
+                              jump ofs0038
+                     ofs005e:
+                              label
+                              debug 1, "useHttps", 2, 40
+                              getlocal 7
+                              iffalse ofs023c
+                              jump ofs0054
+                     ofs006e:
+                              label
+                              debug 1, "avatarString", 1, 40
+                              getlocal 7
+                              dup
+                              iftrue ofs007e
+                              pop
+                              getlocal0
+                              convert_b
+                     ofs007e:
+                              iffalse ofs023c
+                              jump ofs005e
+                     ofs0086:
+                              debug 1, "userId", 0, 40
+                              getlocal 6
+                              dup
+                              iffalse ofs0095
+                              pop
+                              getlocal3
+                              convert_b
+                     ofs0095:
+                              iftrue ofs01d3
+                              jump ofs006e
+                     ofs009d:
+                              findproperty QName(ProtectedNamespace("33"),"\'I")
+                              getlocal 6
+                              iftrue ofs00df
+                              getlocal 4
+                              getlocal 6
+                              dup
+                              iffalse ofs00b1
+                              pop
+                              getlocal2
+                              convert_b
+                     ofs00b1:
+                              iftrue ofs0102
+                              coerce_s
+                              getlocal 6
+                              dup
+                              iffalse ofs00c0
+                              pop
+                              getlocal0
+                              convert_b
+                     ofs00c0:
+                              iftrue ofs012f
+                              dup
+                              getlocal 7
+                              dup
+                              iftrue ofs00cf
+                              pop
+                              getlocal2
+                              convert_b
+                     ofs00cf:
+                              iffalse ofs0103
+                              convert_b
+                              iftrue ofs0102
+                              getlocal 7
+                              iffalse ofs0102
+                              pop
+                     ofs00df:
+                              findpropstrict QName(PackageNamespace("6v"),"5!D")
+                              getproperty QName(PackageNamespace("6v"),"5!D")
+                              getproperty QName(PackageNamespace(""),"SQUARE")
+                              getlocal 7
+                              dup
+                              iftrue ofs00ef
+                              pop
+                              getlocal3
+                              convert_b
+                     ofs00ef:
+                              iffalse ofs0102
+                              coerce_s
+                              getlocal 6
+                              dup
+                              iffalse ofs00fe
+                              pop
+                              getlocal1
+                              convert_b
+                     ofs00fe:
+                              iftrue ofs012f
+                     ofs0102:
+                              dup
+                     ofs0103:
+                              setlocal 5
+                              getlocal 6
+                              dup
+                              iffalse ofs010f
+                              pop
+                              getlocal3
+                              convert_b
+                     ofs010f:
+                              iftrue ofs0129
+                              coerce_s
+                              getlocal 6
+                              jump ofs0125
+                              inclocal 3
+                              inclocal 4
+                              setlocal3
+                              newactivation
+                              coerce_a
+                              istypelate
+                              convert_d
+                              pushnan
+                              lessthan
+                     ofs0125:
+                              iftrue ofs012d
+                     ofs0129:
+                              setlocal 4
+                              getlocal 5
+                     ofs012d:
+                              kill 5
+                     ofs012f:
+                              initproperty QName(ProtectedNamespace("33"),"\'I")
+                              getlocal 6
+                              dup
+                              iffalse ofs013b
+                              pop
+                              getlocal3
+                              convert_b
+                     ofs013b:
+                              iftrue ofs0216
+                              jump ofs0277
+                     ofs0143:
+                              label
+                              returnvoid
+                              pushtrue
+                              iftrue ofs014a
+                     ofs014a:
+                              label
+                              debugline 55
+                              getlocal 6
+                              iftrue ofs0174
+                              getlocal 6
+                              iftrue ofs01e1
+                              getlocal 7
+                              iffalse ofs021f
+                              jump ofs0143
+                     ofs0163:
+                              label
+                              findpropstrict QName(PackageNamespace(""),"addEventListener")
+                              findpropstrict QName(PackageNamespace("flash.events"),"Event")
+                              getproperty QName(PackageNamespace("flash.events"),"Event")
+                              getproperty QName(PackageNamespace(""),"REMOVED_FROM_STAGE")
+                              findpropstrict QName(ProtectedNamespace("33"),"[q")
+                              getproperty QName(ProtectedNamespace("33"),"[q")
+                              callproperty QName(PackageNamespace(""),"addEventListener"), 2
+                              pop
+                     ofs0174:
+                              getlocal 7
+                              iffalse ofs0181
+                              jump ofs014a
+                     ofs017e:
+                              label
+                              debugline 53
+                     ofs0181:
+                              getlocal 6
+                              dup
+                              iffalse ofs018b
+                              pop
+                              getlocal1
+                              convert_b
+                     ofs018b:
+                              iftrue ofs01be
+                              getlocal 6
+                              dup
+                              iffalse ofs0199
+                              pop
+                              getlocal0
+                              convert_b
+                     ofs0199:
+                              iftrue ofs0218
+                              getlocal 7
+                              iffalse ofs024a
+                              getlocal 6
+                              iftrue ofs0279
+                              jump ofs0163
+                     ofs01ad:
+                              label
+                              findpropstrict QName(PackageNamespace(""),"addEventListener")
+                              findpropstrict QName(PackageNamespace("flash.events"),"Event")
+                              getproperty QName(PackageNamespace("flash.events"),"Event")
+                              getproperty QName(PackageNamespace(""),"ADDED_TO_STAGE")
+                              findpropstrict QName(ProtectedNamespace("33"),"1Z")
+                              getproperty QName(ProtectedNamespace("33"),"1Z")
+                              callproperty QName(PackageNamespace(""),"addEventListener"), 2
+                              pop
+                     ofs01be:
+                              getlocal 6
+                              dup
+                              iffalse ofs01c8
+                              pop
+                              getlocal1
+                              convert_b
+                     ofs01c8:
+                              iftrue ofs01d3
+                              jump ofs017e
+                     ofs01d0:
+                              label
+                              debugline 52
+                     ofs01d3:
+                              jump ofs01ad
+                     ofs01d7:
+                              label
+                              findpropstrict QName(PackageNamespace(""),"sInstances")
+                              getproperty QName(PackageNamespace(""),"sInstances")
+                              getlocal0
+                              callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                              pop
+                     ofs01e1:
+                              getlocal 6
+                              dup
+                              iffalse ofs01eb
+                              pop
+                              getlocal1
+                              convert_b
+                     ofs01eb:
+                              iftrue ofs0269
+                              jump ofs01d0
+                     ofs01f3:
+                              label
+                              findpropstrict QName(ProtectedNamespace("33"),"^o")
+                              getproperty QName(ProtectedNamespace("33"),"^o")
+                              iffalse ofs0143
+                              getlocal 6
+                              iftrue ofs0218
+                              getlocal 7
+                              iffalse ofs0251
+                              getlocal 7
+                              dup
+                              iftrue ofs0212
+                              pop
+                              getlocal3
+                              convert_b
+                     ofs0212:
+                              iffalse ofs0262
+                     ofs0216:
+                              debugline 51
+                     ofs0218:
+                              jump ofs01d7
+                     ofs021c:
+                              label
+                              debugline 49
+                     ofs021f:
+                              getlocal 7
+                              dup
+                              iftrue ofs0238
+                              pop
+                              jump ofs0236
+                              convert_b
+                              pushscope
+                              setlocal2
+                              inclocal 4
+                              greaterequals
+                              setlocal3
+                              getlocal3
+                              decrement_i
+                              inclocal_i 4
+                     ofs0236:
+                              getlocal2
+                              convert_b
+                     ofs0238:
+                              iffalse ofs0273
+                     ofs023c:
+                              jump ofs01f3
+                     ofs0240:
+                              label
+                              findpropstrict QName(ProtectedNamespace("33"),"8i")
+                              getlocal1
+                              getlocal2
+                              getlocal3
+                              callproperty QName(ProtectedNamespace("33"),"8i"), 3
+                              pop
+                     ofs024a:
+                              jump ofs021c
+                     ofs024e:
+                              label
+                              debugline 47
+                     ofs0251:
+                              jump ofs0240
+                     ofs0255:
+                              label
+                              findproperty QName(ProtectedNamespace("33"),"^o")
+                              findpropstrict QName(PackageNamespace("5!]"),"FriendItemRenderer")
+                              getproperty QName(PackageNamespace("5!]"),"FriendItemRenderer")
+                              getproperty QName(PackageNamespace(""),"sUserId")
+                              getlocal1
+                              equals
+                              initproperty QName(ProtectedNamespace("33"),"^o")
+                     ofs0262:
+                              jump ofs024e
+                     ofs0266:
+                              label
+                              debugline 45
+                     ofs0269:
+                              jump ofs0255
+                     ofs026d:
+                              label
+                              findproperty QName(ProtectedNamespace("33"),"`I")
+                              getlocal1
+                              initproperty QName(ProtectedNamespace("33"),"`I")
+                     ofs0273:
+                              jump ofs0266
+                     ofs0277:
+                              debugline 43
+                     ofs0279:
+                              jump ofs026d
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  override protected function createAvatar(avatarString:String, userId:String, useHttps:Boolean = false, overrideImageSize:int = 0, dontAddChild:Boolean = false) : void
+                  {
+                     trait method QName(ProtectedNamespace("%u"),"createAvatar")
+                        flag OVERRIDE
+                        flag METADATA
+                        metadata"__go_to_definition_help"
+                           item "pos" "1648"
+                        end ; metadata
+                        dispid 0
+                        method
+                           name "com.angrybirds.friendsbar.ui.profile:ChapterSelectionProfilePicture/protected:createAvatar"
+                           flag HAS_OPTIONAL
+                           param QName(PackageNamespace(""),"String")
+                           param QName(PackageNamespace(""),"String")
+                           param QName(PackageNamespace(""),"Boolean")
+                           param QName(PackageNamespace(""),"int")
+                           param QName(PackageNamespace(""),"Boolean")
+                           optional False()
+                           optional Integer(0)
+                           optional False()
+                           returns QName(PackageNamespace(""),"void")
+                           
+                           body
+                              maxstack 7
+                              localcount 8
+                              initscopedepth 11
+                              maxscopedepth 12
+                              
+                              code
+                                 pushfalse
+                                 pushtrue
+                                 setlocal 6
+                                 jump ofs0014
+                                 inclocal_i 4
+                                 kill 5
+                                 modulo
+                                 declocal_i 3
+                                 getlocal3
+                                 multiply_i
+                                 not
+                                 pushwith
+                                 coerce_s
+                        ofs0014:
+                                 setlocal 7
+                                 debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\ui\\profile;ChapterSelectionProfilePicture.as"
+                                 getlocal 6
+                                 dup
+                                 iftrue ofs0022
+                                 pop
+                                 getlocal2
+                                 convert_b
+                        ofs0022:
+                                 iffalse ofs0028
+                                 debugline 57
+                        ofs0028:
+                                 getlocal0
+                                 pushscope
+                                 getlocal 7
+                                 iftrue ofs0134
+                                 jump ofs0239
+                        ofs0034:
+                                 label
+                                 returnvoid
+                                 pushtrue
+                                 iftrue ofs003b
+                        ofs003b:
+                                 label
+                                 debugline 69
+                                 getlocal 6
+                                 dup
+                                 iftrue ofs0048
+                                 pop
+                                 getlocal2
+                                 convert_b
+                        ofs0048:
+                                 iffalse ofs0083
+                                 getlocal 7
+                                 iftrue ofs00eb
+                                 getlocal 7
+                                 dup
+                                 iffalse ofs005c
+                                 pop
+                                 getlocal3
+                                 convert_b
+                        ofs005c:
+                                 iftrue ofs011f
+                                 getlocal 6
+                                 dup
+                                 iftrue ofs006a
+                                 pop
+                                 getlocal0
+                                 convert_b
+                        ofs006a:
+                                 iffalse ofs0198
+                                 getlocal 7
+                                 iftrue ofs01ce
+                                 jump ofs0034
+                        ofs0078:
+                                 label
+                                 findpropstrict QName(PackageNamespace(""),"addChild")
+                                 findpropstrict QName(ProtectedNamespace("33"),"^w")
+                                 getproperty QName(ProtectedNamespace("33"),"^w")
+                                 callproperty QName(PackageNamespace(""),"addChild"), 1
+                                 pop
+                        ofs0083:
+                                 getlocal 6
+                                 dup
+                                 iftrue ofs008d
+                                 pop
+                                 getlocal2
+                                 convert_b
+                        ofs008d:
+                                 iffalse ofs014d
+                                 jump ofs003b
+                        ofs0095:
+                                 label
+                                 getlocal 5
+                                 getlocal 6
+                                 dup
+                                 iftrue ofs00a2
+                                 pop
+                                 getlocal1
+                                 convert_b
+                        ofs00a2:
+                                 iffalse ofs00c3
+                                 getlocal 7
+                                 iftrue ofs011e
+                                 not
+                                 getlocal 6
+                                 dup
+                                 iftrue ofs00b7
+                                 pop
+                                 getlocal1
+                                 convert_b
+                        ofs00b7:
+                                 iffalse ofs00c3
+                                 getlocal 6
+                                 iffalse ofs0112
+                                 convert_b
+                        ofs00c2:
+                                 label
+                        ofs00c3:
+                                 iffalse ofs0034
+                                 getlocal 6
+                                 dup
+                                 iftrue ofs00d1
+                                 pop
+                                 getlocal2
+                                 convert_b
+                        ofs00d1:
+                                 iffalse ofs00eb
+                                 getlocal 6
+                                 iffalse ofs0134
+                                 getlocal 7
+                                 dup
+                                 iffalse ofs00e5
+                                 pop
+                                 getlocal1
+                                 convert_b
+                        ofs00e5:
+                                 iftrue ofs01ea
+                                 debugline 67
+                        ofs00eb:
+                                 getlocal 6
+                                 jump ofs00fc
+                                 checkfilter
+                                 coerce_a
+                                 strictequals
+                                 bitnot
+                                 inclocal_i 3
+                                 pushwith
+                                 getlocal3
+                                 setlocal3
+                                 kill 6
+                        ofs00fc:
+                                 dup
+                                 iftrue ofs0104
+                                 pop
+                                 getlocal0
+                                 convert_b
+                        ofs0104:
+                                 iffalse ofs0164
+                                 jump ofs0078
+                        ofs010c:
+                                 label
+                                 findpropstrict QName(ProtectedNamespace("33"),"^w")
+                                 getproperty QName(ProtectedNamespace("33"),"^w")
+                                 convert_b
+                        ofs0112:
+                                 dup
+                                 getlocal 6
+                                 iffalse ofs011a
+                                 convert_b
+                        ofs011a:
+                                 iffalse ofs00c2
+                        ofs011e:
+                                 pop
+                        ofs011f:
+                                 getlocal 7
+                                 dup
+                                 iffalse ofs0129
+                                 pop
+                                 getlocal1
+                                 convert_b
+                        ofs0129:
+                                 iftrue ofs0140
+                                 jump ofs0095
+                        ofs0131:
+                                 label
+                                 debugline 65
+                        ofs0134:
+                                 jump ofs010c
+                        ofs0138:
+                                 label
+                                 findpropstrict QName(ProtectedNamespace("33"),"^w")
+                                 getproperty QName(ProtectedNamespace("33"),"^w")
+                                 pushtrue
+                                 setproperty QName(PackageNamespace(""),"visible")
+                        ofs0140:
+                                 getlocal 6
+                                 iffalse ofs01c7
+                                 jump ofs0131
+                        ofs014a:
+                                 label
+                                 debugline 63
+                        ofs014d:
+                                 getlocal 7
+                                 dup
+                                 iffalse ofs0157
+                                 pop
+                                 getlocal1
+                                 convert_b
+                        ofs0157:
+                                 iftrue ofs0179
+                                 jump ofs0138
+                        ofs015f:
+                                 label
+                                 getlocal0
+                                 pushtrue
+                                 initproperty QName(PrivateNamespace("%u"),"=!U")
+                        ofs0164:
+                                 getlocal 7
+                                 dup
+                                 iffalse ofs016e
+                                 pop
+                                 getlocal2
+                                 convert_b
+                        ofs016e:
+                                 iftrue ofs0235
+                                 jump ofs014a
+                        ofs0176:
+                                 label
+                                 debugline 62
+                        ofs0179:
+                                 getlocal 6
+                                 iffalse ofs019f
+                                 getlocal 7
+                                 dup
+                                 iffalse ofs0189
+                                 pop
+                                 getlocal2
+                                 convert_b
+                        ofs0189:
+                                 iftrue ofs021d
+                                 jump ofs015f
+                        ofs0191:
+                                 label
+                                 getlocal0
+                                 getproperty QName(PrivateNamespace("%u"),"0!7")
+                                 pushfalse
+                                 setproperty QName(PackageNamespace(""),"visible")
+                        ofs0198:
+                                 jump ofs0176
+                        ofs019c:
+                                 label
+                                 debugline 61
+                        ofs019f:
+                                 getlocal 7
+                                 dup
+                                 iffalse ofs01a9
+                                 pop
+                                 getlocal2
+                                 convert_b
+                        ofs01a9:
+                                 iftrue ofs01f1
+                                 getlocal 6
+                                 iffalse ofs0213
+                                 jump ofs0191
+                        ofs01b7:
+                                 label
+                                 findproperty QName(ProtectedNamespace("33"),"^w")
+                                 findpropstrict QName(PackageNamespace("6v"),",!f")
+                                 getlocal1
+                                 findpropstrict QName(ProtectedNamespace("33"),"\'I")
+                                 getproperty QName(ProtectedNamespace("33"),"\'I")
+                                 pushtrue
+                                 constructprop QName(PackageNamespace("6v"),",!f"), 3
+                                 initproperty QName(ProtectedNamespace("33"),"^w")
+                        ofs01c7:
+                                 jump ofs019c
+                        ofs01cb:
+                                 label
+                                 debugline 60
+                        ofs01ce:
+                                 jump ofs01b7
+                        ofs01d2:
+                                 label
+                                 findproperty QName(PackageNamespace(""),"@[")
+                                 jump ofs01e7
+                                 pushnull
+                                 getlocal 4
+                                 lshift
+                                 bitor
+                                 inclocal 5
+                                 declocal 2
+                                 kill 3
+                                 inclocal 4
+                                 equals
+                        ofs01e7:
+                                 pushtrue
+                                 initproperty QName(PackageNamespace(""),"@[")
+                        ofs01ea:
+                                 jump ofs01cb
+                        ofs01ee:
+                                 label
+                                 debugline 59
+                        ofs01f1:
+                                 getlocal 6
+                                 dup
+                                 iftrue ofs01fb
+                                 pop
+                                 getlocal3
+                                 convert_b
+                        ofs01fb:
+                                 iffalse ofs0209
+                                 jump ofs01d2
+                        ofs0203:
+                                 label
+                                 debug 1, "dontAddChild", 4, 57
+                        ofs0209:
+                                 jump ofs01ee
+                        ofs020d:
+                                 label
+                                 debug 1, "overrideImageSize", 3, 57
+                        ofs0213:
+                                 jump ofs0203
+                        ofs0217:
+                                 label
+                                 debug 1, "useHttps", 2, 57
+                        ofs021d:
+                                 getlocal 6
+                                 dup
+                                 iftrue ofs0227
+                                 pop
+                                 getlocal3
+                                 convert_b
+                        ofs0227:
+                                 iffalse ofs023e
+                                 jump ofs020d
+                        ofs022f:
+                                 label
+                                 debug 1, "userId", 1, 57
+                        ofs0235:
+                                 jump ofs0217
+                        ofs0239:
+                                 debug 1, "avatarString", 0, 57
+                        ofs023e:
+                                 jump ofs022f
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     override protected function createFacebookProfile(userId:String, useHttps:Boolean = false, dontAddChild:Boolean = false) : void
+                     {
+                        trait method QName(ProtectedNamespace("%u"),"createFacebookProfile")
+                           flag OVERRIDE
+                           flag METADATA
+                           metadata"__go_to_definition_help"
+                              item "pos" "2110"
+                           end ; metadata
+                           dispid 0
+                           method
+                              name "com.angrybirds.friendsbar.ui.profile:ChapterSelectionProfilePicture/protected:createFacebookProfile"
+                              flag HAS_OPTIONAL
+                              param QName(PackageNamespace(""),"String")
+                              param QName(PackageNamespace(""),"Boolean")
+                              param QName(PackageNamespace(""),"Boolean")
+                              optional False()
+                              optional False()
+                              returns QName(PackageNamespace(""),"void")
+                              
+                              body
+                                 maxstack 4
+                                 localcount 6
+                                 initscopedepth 11
+                                 maxscopedepth 12
+                                 
+                                 code
+                                    pushfalse
+                                    pushtrue
+                                    swap
+                                    jump ofs0013
+                                    kill 2
+                                    setlocal3
+                                    setlocal2
+                                    convert_o
+                                    inclocal 3
+                                    declocal 3
+                                    checkfilter
+                                    getlocal3
+                                    not
+                           ofs0013:
+                                    setlocal 4
+                                    setlocal 5
+                                    debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\ui\\profile;ChapterSelectionProfilePicture.as"
+                                    getlocal 5
+                                    iffalse ofs0021
+                                    debugline 71
+                           ofs0021:
+                                    getlocal0
+                                    pushscope
+                                    getlocal 4
+                                    dup
+                                    iffalse ofs002d
+                                    pop
+                                    getlocal0
+                                    convert_b
+                           ofs002d:
+                                    iftrue ofs006d
+                                    jump ofs0139
+                           ofs0035:
+                                    label
+                                    returnvoid
+                                    pushtrue
+                                    iftrue ofs003c
+                           ofs003c:
+                                    label
+                                    debugline 79
+                                    getlocal 5
+                                    dup
+                                    iftrue ofs0049
+                                    pop
+                                    getlocal2
+                                    convert_b
+                           ofs0049:
+                                    iffalse ofs005f
+                                    getlocal 4
+                                    iftrue ofs008c
+                                    jump ofs0035
+                           ofs0057:
+                                    label
+                                    findpropstrict QName(ProtectedNamespace("33"),"^w")
+                                    getproperty QName(ProtectedNamespace("33"),"^w")
+                                    pushfalse
+                                    setproperty QName(PackageNamespace(""),"visible")
+                           ofs005f:
+                                    getlocal 5
+                                    dup
+                                    iftrue ofs0069
+                                    pop
+                                    getlocal2
+                                    convert_b
+                           ofs0069:
+                                    iffalse ofs008e
+                           ofs006d:
+                                    jump ofs003c
+                           ofs0071:
+                                    label
+                                    findpropstrict QName(ProtectedNamespace("33"),"^w")
+                                    getproperty QName(ProtectedNamespace("33"),"^w")
+                                    jump ofs0087
+                                    inclocal 4
+                                    newactivation
+                                    multiply_i
+                                    bitnot
+                                    declocal_i 2
+                                    multiply
+                                    declocal 3
+                                    declocal_i 4
+                                    decrement
+                           ofs0087:
+                                    convert_b
+                                    iffalse ofs0035
+                           ofs008c:
+                                    debugline 77
+                           ofs008e:
+                                    getlocal 4
+                                    iftrue ofs00b7
+                                    getlocal 4
+                                    dup
+                                    iffalse ofs009e
+                                    pop
+                                    getlocal2
+                                    convert_b
+                           ofs009e:
+                                    iftrue ofs0103
+                                    getlocal 4
+                                    dup
+                                    iffalse ofs00ac
+                                    pop
+                                    getlocal3
+                                    convert_b
+                           ofs00ac:
+                                    iftrue ofs0135
+                                    jump ofs0057
+                           ofs00b4:
+                                    label
+                                    debugline 75
+                           ofs00b7:
+                                    getlocal 4
+                                    dup
+                                    iffalse ofs00c1
+                                    pop
+                                    getlocal1
+                                    convert_b
+                           ofs00c1:
+                                    iftrue ofs00d0
+                                    jump ofs0071
+                           ofs00c9:
+                                    label
+                                    getlocal0
+                                    getproperty QName(PrivateNamespace("%u"),"0!7")
+                                    pushtrue
+                                    setproperty QName(PackageNamespace(""),"visible")
+                           ofs00d0:
+                                    getlocal 5
+                                    dup
+                                    iftrue ofs00ec
+                                    pop
+                                    jump ofs00ea
+                                    getlocal 4
+                                    greaterequals
+                                    declocal_i 2
+                                    setlocal 4
+                                    modulo
+                                    kill 2
+                                    getglobalscope
+                                    inclocal_i 2
+                                    modulo
+                           ofs00ea:
+                                    getlocal3
+                                    convert_b
+                           ofs00ec:
+                                    iffalse ofs010c
+                                    getlocal 5
+                                    iffalse ofs0113
+                                    getlocal 4
+                                    iftrue ofs013e
+                                    jump ofs00b4
+                           ofs0100:
+                                    label
+                                    debugline 74
+                           ofs0103:
+                                    jump ofs00c9
+                           ofs0107:
+                                    label
+                                    getlocal0
+                                    pushfalse
+                                    initproperty QName(PrivateNamespace("%u"),"=!U")
+                           ofs010c:
+                                    jump ofs0100
+                           ofs0110:
+                                    label
+                                    debugline 73
+                           ofs0113:
+                                    getlocal 5
+                                    dup
+                                    iftrue ofs011d
+                                    pop
+                                    getlocal2
+                                    convert_b
+                           ofs011d:
+                                    iffalse ofs012b
+                                    jump ofs0107
+                           ofs0125:
+                                    label
+                                    debug 1, "dontAddChild", 2, 71
+                           ofs012b:
+                                    jump ofs0110
+                           ofs012f:
+                                    label
+                                    debug 1, "useHttps", 1, 71
+                           ofs0135:
+                                    jump ofs0125
+                           ofs0139:
+                                    debug 1, "userId", 0, 71
+                           ofs013e:
+                                    jump ofs012f
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                        }
+                     }
+                  }

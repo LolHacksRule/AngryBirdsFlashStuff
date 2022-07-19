@@ -1,0 +1,325 @@
+package §#!0§
+{
+   import §!m§.b2Manifold;
+   import §+!g§.b2internal;
+   import §0!3§.b2CircleShape;
+   import §0!3§.b2EdgeShape;
+   import §>!8§.b2Transform;
+   import §>!L§.b2Body;
+   import §>!L§.b2Fixture;
+   
+   use namespace b2internal;
+   
+   public class b2EdgeAndCircleContact extends b2Contact
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function b2EdgeAndCircleContact()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  getlocal1
+                  bitxor
+                  pushscope
+                  swap
+                  multiply
+                  bitor
+                  modulo
+                  getlocal2
+                  pushnan
+         ofs0010:
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  iftrue ofs001b
+                  getlocal0
+                  constructsuper 0
+         ofs001b:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function §@!L§(param1:*) : b2Contact
+      {
+         trait method QName(PackageNamespace(""),"@!L")
+            flag FINAL
+            dispid 3
+            method
+               name null
+               param null
+               returns QName(PackageNamespace("#!0"),"b2Contact")
+               
+               body
+                  maxstack 3
+                  localcount 2
+                  initscopedepth 4
+                  maxscopedepth 5
+                  
+                  code
+                     getlocal0
+                     pushscope
+                     getlocal0
+                     jump ofs0010
+                     decrement
+                     hasnext
+                     getlocal0
+                     getglobalscope
+                     bitxor
+                     getglobalscope
+                     increment_i
+                     pushnan
+                     increment
+            ofs0010:
+                     construct 0
+                     returnvalue
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public static function §"G§(param1:b2Contact, param2:*) : void
+         {
+            trait method QName(PackageNamespace(""),"\"G")
+               flag FINAL
+               dispid 4
+               method
+                  name null
+                  param QName(PackageNamespace("#!0"),"b2Contact")
+                  param null
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 3
+                     localcount 3
+                     initscopedepth 4
+                     maxscopedepth 5
+                     
+                     code
+                        getlocal0
+                        pushscope
+                        returnvoid
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public function §9=§(param1:b2Fixture, param2:b2Fixture) : void
+            {
+               trait method QName(PackageNamespace(""),"9=")
+                  dispid 0
+                  method
+                     name null
+                     param QName(PackageNamespace(">!L"),"b2Fixture")
+                     param QName(PackageNamespace(">!L"),"b2Fixture")
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 5
+                        localcount 5
+                        initscopedepth 5
+                        maxscopedepth 6
+                        
+                        code
+                           pushfalse
+                           pushtrue
+                           setlocal3
+                           jump ofs0013
+                           decrement
+                           decrement_i
+                           bitor
+                           subtract
+                           declocal 2
+                           pop
+                           declocal 2
+                           inclocal 3
+                           getlocal2
+                  ofs0013:
+                           setlocal 4
+                           getlocal0
+                           pushscope
+                           getlocal 4
+                           dup
+                           iffalse ofs0021
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0021:
+                           iftrue ofs002c
+                           getlocal0
+                           getlocal1
+                           getlocal2
+                           callsuper QName(Namespace("http://www.box2d.org/ns/b2internal"),"9="), 2
+                           pop
+                  ofs002c:
+                           returnvoid
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               override b2internal function Evaluate() : void
+               {
+                  trait method QName(Namespace("http://www.box2d.org/ns/b2internal"),"Evaluate")
+                     flag OVERRIDE
+                     dispid 0
+                     method
+                        name null
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 8
+                           localcount 5
+                           initscopedepth 5
+                           maxscopedepth 6
+                           
+                           code
+                              pushfalse
+                              pushtrue
+                              setlocal3
+                              jump ofs0013
+                              inclocal_i 2
+                              getlocal2
+                              nextname
+                              instanceof
+                              setlocal3
+                              declocal_i 2
+                              getlocal2
+                              decrement_i
+                              kill 2
+                     ofs0013:
+                              setlocal 4
+                              getlocal0
+                              pushscope
+                              findpropstrict QName(Namespace("http://www.box2d.org/ns/b2internal"),"7d")
+                              getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"7d")
+                              callproperty QName(PackageNamespace(""),"GetBody"), 0
+                              coerce QName(PackageNamespace(">!L"),"b2Body")
+                              jump ofs0032
+                              declocal 3
+                              declocal_i 3
+                              inclocal_i 2
+                              bitand
+                              typeof
+                              getlocal3
+                              inclocal_i 2
+                              inclocal 2
+                              setlocal2
+                     ofs0032:
+                              setlocal1
+                              jump ofs0042
+                              getlocal3
+                              kill 3
+                              bitand
+                              setlocal2
+                              pushscope
+                              inclocal 2
+                              urshift
+                              lessthan
+                              lshift
+                     ofs0042:
+                              findpropstrict QName(Namespace("http://www.box2d.org/ns/b2internal"),"-F")
+                              getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"-F")
+                              callproperty QName(PackageNamespace(""),"GetBody"), 0
+                              coerce QName(PackageNamespace(">!L"),"b2Body")
+                              setlocal2
+                              getlocal3
+                              iffalse ofs0078
+                              getlocal0
+                              findpropstrict QName(Namespace("http://www.box2d.org/ns/b2internal"),",S")
+                              getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),",S")
+                              findpropstrict QName(Namespace("http://www.box2d.org/ns/b2internal"),"7d")
+                              getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"7d")
+                              callproperty QName(PackageNamespace(""),"GetShape"), 0
+                              findpropstrict QName(PackageNamespace("0!3"),"b2EdgeShape")
+                              getproperty QName(PackageNamespace("0!3"),"b2EdgeShape")
+                              astypelate
+                              getlocal1
+                              getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"m_xf")
+                              findpropstrict QName(Namespace("http://www.box2d.org/ns/b2internal"),"-F")
+                              getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"-F")
+                              callproperty QName(PackageNamespace(""),"GetShape"), 0
+                              findpropstrict QName(PackageNamespace("0!3"),"b2CircleShape")
+                              getproperty QName(PackageNamespace("0!3"),"b2CircleShape")
+                              astypelate
+                              getlocal2
+                              getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"m_xf")
+                              callproperty QName(PrivateNamespace("#?"),"@j"), 5
+                              pop
+                     ofs0078:
+                              returnvoid
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  private function §@j§(param1:b2Manifold, param2:b2EdgeShape, param3:b2Transform, param4:b2CircleShape, param5:b2Transform) : void
+                  {
+                     trait method QName(PrivateNamespace("#?"),"@j")
+                        dispid 0
+                        method
+                           name null
+                           param QName(PackageNamespace("!m"),"b2Manifold")
+                           param QName(PackageNamespace("0!3"),"b2EdgeShape")
+                           param QName(PackageNamespace(">!8"),"b2Transform")
+                           param QName(PackageNamespace("0!3"),"b2CircleShape")
+                           param QName(PackageNamespace(">!8"),"b2Transform")
+                           returns QName(PackageNamespace(""),"void")
+                           
+                           body
+                              maxstack 3
+                              localcount 6
+                              initscopedepth 5
+                              maxscopedepth 6
+                              
+                              code
+                                 getlocal0
+                                 pushscope
+                                 returnvoid
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                  }
+               }

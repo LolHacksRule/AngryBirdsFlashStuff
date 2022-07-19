@@ -1,0 +1,151 @@
+package §;!1§
+{
+   import §"$§.Popup;
+   import §=!5§.§+q§;
+   import §=!5§.§`X§;
+   
+   public class SyncingPopup extends Popup
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 8
+               maxscopedepth 9
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function SyncingPopup(currentUIView:§`X§, statePopup:StatePopupManager)
+      {
+         method
+            name "com.angrybirds.popups:SyncingPopup/SyncingPopup"
+            param QName(PackageNamespace("=!5"),"`X")
+            param QName(PackageNamespace(";!1"),"StatePopupManager")
+            returns null
+            
+            body
+               maxstack 5
+               localcount 5
+               initscopedepth 9
+               maxscopedepth 10
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal3
+                  jump ofs0013
+                  kill 2
+                  declocal 2
+                  swap
+                  setlocal3
+                  inclocal_i 2
+                  increment
+                  decrement_i
+                  istypelate
+                  pop
+         ofs0013:
+                  setlocal 4
+                  debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\popups;SyncingPopup.as"
+                  getlocal3
+                  iffalse ofs001e
+                  debugline 10
+         ofs001e:
+                  getlocal0
+                  pushscope
+                  getlocal3
+                  iffalse ofs0083
+                  jump ofs009d
+         ofs0029:
+                  label
+                  returnvoid
+                  jump ofs002f
+         ofs002f:
+                  declocal_i 2
+                  declocal 3
+                  inclocal_i 3
+                  declocal_i 3
+                  bitand
+                  setlocal3
+                  strictequals
+                  inclocal 3
+                  inclocal_i 2
+                  pushtrue
+                  iftrue ofs0043
+         ofs0043:
+                  label
+                  debugline 13
+                  getlocal3
+                  iffalse ofs0075
+                  jump ofs0058
+                  pop
+                  istypelate
+                  modulo
+                  nextname
+                  pushnan
+                  lessthan
+                  getlocal0
+                  bitxor
+                  setlocal2
+         ofs0058:
+                  getlocal 4
+                  iftrue ofs0094
+                  jump ofs0029
+         ofs0062:
+                  label
+                  getlocal0
+                  findpropstrict QName(PackageNamespace("=!5"),"+q")
+                  getproperty QName(PackageNamespace("=!5"),"+q")
+                  getproperty QName(PackageNamespace(""),"%M")
+                  getproperty Multiname("Views",[PrivateNamespace("=!B"),PackageNamespace(""),PrivateNamespace("SyncingPopup.as$558"),PackageNamespace(";!1"),PackageInternalNs(";!1"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("=!B"),StaticProtectedNs("=!B"),StaticProtectedNs("7!R"),StaticProtectedNs("8!S"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  getproperty Multiname("PopupView_Syncing",[PrivateNamespace("=!B"),PackageNamespace(""),PrivateNamespace("SyncingPopup.as$558"),PackageNamespace(";!1"),PackageInternalNs(";!1"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("=!B"),StaticProtectedNs("=!B"),StaticProtectedNs("7!R"),StaticProtectedNs("8!S"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  pushbyte 0
+                  getproperty MultinameL([PrivateNamespace("=!B"),PackageNamespace(""),PrivateNamespace("SyncingPopup.as$558"),PackageNamespace(";!1"),PackageInternalNs(";!1"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("=!B"),StaticProtectedNs("=!B"),StaticProtectedNs("7!R"),StaticProtectedNs("8!S"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  getlocal1
+                  constructsuper 2
+         ofs0075:
+                  getlocal 4
+                  dup
+                  iffalse ofs007f
+                  pop
+                  getlocal2
+                  convert_b
+         ofs007f:
+                  iftrue ofs008a
+         ofs0083:
+                  jump ofs0043
+         ofs0087:
+                  label
+                  debugline 12
+         ofs008a:
+                  jump ofs0062
+         ofs008e:
+                  label
+                  debug 1, "statePopup", 1, 10
+         ofs0094:
+                  getlocal3
+                  iffalse ofs00a2
+                  jump ofs0087
+         ofs009d:
+                  debug 1, "currentUIView", 0, 10
+         ofs00a2:
+                  jump ofs008e
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}

@@ -1,0 +1,531 @@
+package §6a§
+{
+   import §0!Q§.UIComponentInteractiveRovio;
+   import flash.text.TextField;
+   
+   public class UITextFieldRovio extends UIComponentInteractiveRovio
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 6
+               maxscopedepth 7
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var §,![§:TextField;
+      
+      public function UITextFieldRovio(param1:XML, param2:UIContainerRovio)
+      {
+         method
+            name null
+            param QName(PackageNamespace(""),"XML")
+            param QName(PackageNamespace("6a"),"UIContainerRovio")
+            returns QName(PackageNamespace(""),"void")
+            
+            body
+               maxstack 5
+               localcount 5
+               initscopedepth 7
+               maxscopedepth 8
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal3
+                  jump ofs0015
+                  typeof
+                  getlocal2
+                  greaterthan
+                  inclocal 2
+                  declocal 2
+                  declocal 3
+                  declocal_i 2
+                  greaterequals
+                  inclocal_i 3
+         ofs0015:
+                  setlocal 4
+                  getlocal0
+                  pushscope
+                  getlocal 4
+                  iftrue ofs009a
+                  jump ofs010a
+         ofs0023:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs002a
+         ofs002a:
+                  label
+                  findpropstrict QName(PackageNamespace(""),"mClip")
+                  getproperty QName(PackageNamespace(""),"mClip")
+                  getproperty QName(PackageNamespace(""),"mouseEnabled")
+                  not
+                  getlocal3
+                  dup
+                  iftrue ofs003b
+                  pop
+                  getlocal0
+                  convert_b
+         ofs003b:
+                  iffalse ofs0096
+                  getlocal3
+                  dup
+                  iftrue ofs0048
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0048:
+                  iffalse ofs00ab
+                  iffalse ofs0023
+                  getlocal3
+                  dup
+                  iftrue ofs0059
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0059:
+                  iffalse ofs0088
+                  getlocal3
+                  dup
+                  iftrue ofs0066
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0066:
+                  iffalse ofs009a
+                  getlocal3
+                  jump ofs0079
+                  bitor
+                  convert_o
+                  setlocal3
+                  astypelate
+                  pushundefined
+                  kill 3
+                  setlocal2
+                  getlocal3
+                  convert_s
+         ofs0079:
+                  iffalse ofs00e3
+                  getlocal0
+                  findpropstrict QName(PackageNamespace(""),"mClip")
+                  getproperty QName(PackageNamespace(""),"mClip")
+                  getproperty QName(PackageNamespace(""),"mouseEnabled")
+                  callproperty QName(PackageNamespace(""),"setEnabled"), 1
+                  pop
+         ofs0088:
+                  getlocal3
+                  iffalse ofs00a2
+                  jump ofs0023
+         ofs0091:
+                  label
+                  getlocal1
+                  getproperty MultinameA("tabIndex",[PrivateNamespace("^y"),PackageNamespace(""),PrivateNamespace("UITextFieldRovio.as$293"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("^y"),StaticProtectedNs("^y"),StaticProtectedNs("#u"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  convert_b
+         ofs0096:
+                  iffalse ofs002a
+         ofs009a:
+                  getlocal0
+                  getproperty QName(PackageNamespace(""),",![")
+                  getlocal1
+                  getproperty MultinameA("tabIndex",[PrivateNamespace("^y"),PackageNamespace(""),PrivateNamespace("UITextFieldRovio.as$293"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("^y"),StaticProtectedNs("^y"),StaticProtectedNs("#u"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  setproperty QName(PackageNamespace(""),"tabIndex")
+         ofs00a2:
+                  jump ofs002a
+         ofs00a6:
+                  label
+                  getlocal1
+                  getproperty MultinameA("text",[PrivateNamespace("^y"),PackageNamespace(""),PrivateNamespace("UITextFieldRovio.as$293"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("^y"),StaticProtectedNs("^y"),StaticProtectedNs("#u"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  convert_b
+         ofs00ab:
+                  iffalse ofs0091
+                  getlocal3
+                  dup
+                  iftrue ofs00b8
+                  pop
+                  getlocal2
+                  convert_b
+         ofs00b8:
+                  iffalse ofs00e3
+                  getlocal 4
+                  dup
+                  iffalse ofs00d7
+                  pop
+                  getlocal3
+                  convert_b
+                  jump ofs00d7
+                  kill 3
+                  lshift
+                  inclocal_i 2
+                  setlocal3
+                  inclocal_i 2
+                  lshift
+                  setlocal2
+                  getlocal2
+                  kill 3
+         ofs00d7:
+                  iftrue ofs0106
+                  getlocal0
+                  getlocal1
+                  getproperty MultinameA("text",[PrivateNamespace("^y"),PackageNamespace(""),PrivateNamespace("UITextFieldRovio.as$293"),PackageNamespace("6a"),PackageInternalNs("6a"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("^y"),StaticProtectedNs("^y"),StaticProtectedNs("#u"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  callproperty QName(PackageNamespace(""),"setText"), 1
+                  pop
+         ofs00e3:
+                  getlocal3
+                  dup
+                  iftrue ofs00ec
+                  pop
+                  getlocal1
+                  convert_b
+         ofs00ec:
+                  iffalse ofs010f
+                  jump ofs0091
+         ofs00f4:
+                  label
+                  getlocal0
+                  findpropstrict QName(PackageNamespace(""),"mClip")
+                  getproperty QName(PackageNamespace(""),"mClip")
+                  pushstring "text"
+                  callproperty QName(PackageNamespace(""),"getChildByName"), 1
+                  findpropstrict QName(PackageNamespace("flash.text"),"TextField")
+                  getproperty QName(PackageNamespace("flash.text"),"TextField")
+                  astypelate
+                  initproperty QName(PackageNamespace(""),",![")
+         ofs0106:
+                  jump ofs00a6
+         ofs010a:
+                  getlocal0
+                  getlocal1
+                  getlocal2
+                  constructsuper 2
+         ofs010f:
+                  jump ofs00f4
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      override public function setEnabled(param1:Boolean) : void
+      {
+         trait method QName(PackageNamespace(""),"setEnabled")
+            flag OVERRIDE
+            dispid 0
+            method
+               name null
+               param QName(PackageNamespace(""),"Boolean")
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 4
+                  localcount 4
+                  initscopedepth 7
+                  maxscopedepth 8
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     setlocal2
+                     jump ofs0015
+                     add
+                     kill 2
+                     pushscope
+                     declocal 2
+                     declocal_i 2
+                     declocal_i 2
+                     pushscope
+                     bitand
+                     inclocal 2
+            ofs0015:
+                     setlocal3
+                     getlocal0
+                     pushscope
+                     jump ofs002b
+                     convert_o
+                     declocal 2
+                     declocal_i 2
+                     declocal_i 2
+                     declocal_i 2
+                     bitor
+                     pop
+                     kill 2
+                     inclocal 2
+            ofs002b:
+                     getlocal3
+                     iftrue ofs0049
+                     jump ofs005d
+            ofs0034:
+                     label
+                     returnvoid
+                     pushtrue
+                     iftrue ofs003b
+            ofs003b:
+                     label
+                     getlocal0
+                     getproperty QName(PackageNamespace(""),",![")
+                     convert_b
+                     iffalse ofs0034
+                     getlocal2
+                     iffalse ofs0054
+            ofs0049:
+                     getlocal0
+                     getproperty QName(PackageNamespace(""),",![")
+                     findpropstrict QName(PackageNamespace(""),"mClip")
+                     getproperty QName(PackageNamespace(""),"mClip")
+                     getproperty QName(PackageNamespace(""),"mouseEnabled")
+                     setproperty QName(PackageNamespace(""),"mouseEnabled")
+            ofs0054:
+                     getlocal2
+                     iffalse ofs0063
+                     jump ofs0034
+            ofs005d:
+                     getlocal0
+                     getlocal1
+                     callsuper QName(PackageNamespace(""),"setEnabled"), 1
+                     pop
+            ofs0063:
+                     jump ofs003b
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         override public function listenerEventOccured(param1:int, param2:String) : void
+         {
+            trait method QName(PackageNamespace(""),"listenerEventOccured")
+               flag OVERRIDE
+               dispid 0
+               method
+                  name null
+                  param QName(PackageNamespace(""),"int")
+                  param QName(PackageNamespace(""),"String")
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 5
+                     localcount 5
+                     initscopedepth 7
+                     maxscopedepth 8
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        swap
+                        jump ofs0014
+                        divide
+                        inclocal_i 3
+                        swap
+                        declocal_i 3
+                        kill 2
+                        inclocal_i 3
+                        setlocal2
+                        setlocal2
+                        coerce_a
+               ofs0014:
+                        setlocal3
+                        setlocal 4
+                        getlocal0
+                        pushscope
+                        getlocal3
+                        iftrue ofs0025
+                        getlocal0
+                        getlocal1
+                        getlocal2
+                        callsuper QName(PackageNamespace(""),"listenerEventOccured"), 2
+                        pop
+               ofs0025:
+                        returnvoid
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public function setText(param1:String) : void
+            {
+               trait method QName(PackageNamespace(""),"setText")
+                  dispid 0
+                  method
+                     name null
+                     param QName(PackageNamespace(""),"String")
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 4
+                        localcount 4
+                        initscopedepth 7
+                        maxscopedepth 8
+                        
+                        code
+                           pushfalse
+                           pushtrue
+                           swap
+                           jump ofs0011
+                           getlocal2
+                           convert_o
+                           setlocal2
+                           inclocal 2
+                           swap
+                           popscope
+                           negate_i
+                           setlocal2
+                           setlocal2
+                  ofs0011:
+                           setlocal2
+                           setlocal3
+                           getlocal0
+                           pushscope
+                           getlocal3
+                           iffalse ofs0020
+                           getlocal0
+                           getproperty QName(PackageNamespace(""),",![")
+                           getlocal1
+                           setproperty QName(PackageNamespace(""),"text")
+                  ofs0020:
+                           returnvoid
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public function §+b§() : String
+               {
+                  trait method QName(PackageNamespace(""),"+b")
+                     dispid 0
+                     method
+                        name null
+                        returns QName(PackageNamespace(""),"String")
+                        
+                        body
+                           maxstack 3
+                           localcount 1
+                           initscopedepth 7
+                           maxscopedepth 8
+                           
+                           code
+                              getlocal0
+                              pushscope
+                              getlocal0
+                              jump ofs0010
+                              pushfalse
+                              subtract
+                              popscope
+                              newactivation
+                              lessthan
+                              pushundefined
+                              nextname
+                              bitor
+                              coerce_a
+                     ofs0010:
+                              getproperty QName(PackageNamespace(""),",![")
+                              getproperty QName(PackageNamespace(""),"text")
+                              returnvalue
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  override public function clear() : void
+                  {
+                     trait method QName(PackageNamespace(""),"clear")
+                        flag OVERRIDE
+                        dispid 0
+                        method
+                           name null
+                           returns QName(PackageNamespace(""),"void")
+                           
+                           body
+                              maxstack 4
+                              localcount 3
+                              initscopedepth 7
+                              maxscopedepth 8
+                              
+                              code
+                                 pushfalse
+                                 pushtrue
+                                 swap
+                                 jump ofs0010
+                                 negate_i
+                                 multiply_i
+                                 strictequals
+                                 astypelate
+                                 urshift
+                                 greaterthan
+                                 lshift
+                                 negate
+                                 pop
+                        ofs0010:
+                                 setlocal1
+                                 setlocal2
+                                 getlocal0
+                                 pushscope
+                                 jump ofs0021
+                                 getglobalscope
+                                 pushtrue
+                                 instanceof
+                                 convert_o
+                                 multiply_i
+                                 nextvalue
+                                 divide
+                                 multiply
+                                 pushnan
+                        ofs0021:
+                                 getlocal1
+                                 dup
+                                 iffalse ofs002a
+                                 pop
+                                 getlocal2
+                                 convert_b
+                        ofs002a:
+                                 iftrue ofs004b
+                                 jump ofs004f
+                        ofs0032:
+                                 label
+                                 returnvoid
+                                 pushtrue
+                                 iftrue ofs0039
+                        ofs0039:
+                                 label
+                                 getlocal0
+                                 pushnull
+                                 initproperty QName(PackageNamespace(""),",![")
+                                 getlocal1
+                                 dup
+                                 iffalse ofs0047
+                                 pop
+                                 getlocal2
+                                 convert_b
+                        ofs0047:
+                                 iftrue ofs0054
+                        ofs004b:
+                                 jump ofs0032
+                        ofs004f:
+                                 getlocal0
+                                 callsuper QName(PackageNamespace(""),"clear"), 0
+                                 pop
+                        ofs0054:
+                                 jump ofs0039
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                  }
+               }

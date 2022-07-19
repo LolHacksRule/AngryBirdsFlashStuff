@@ -1,0 +1,156 @@
+package §!m§
+{
+   import §>!8§.b2Sweep;
+   
+   public class b2TOIInput
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var §'[§:b2DistanceProxy;
+      
+      public var §4P§:b2DistanceProxy;
+      
+      public var §=!S§:b2Sweep;
+      
+      public var §&+§:b2Sweep;
+      
+      public var §@O§:Number;
+      
+      public function b2TOIInput()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  convert_b
+                  popscope
+                  pushscope
+                  setlocal3
+                  bitnot
+                  bitnot
+                  pushtrue
+                  greaterequals
+                  add_i
+         ofs0010:
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  iftrue ofs004e
+                  jump ofs0088
+         ofs001c:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0023
+         ofs0023:
+                  label
+                  getlocal0
+                  constructsuper 0
+                  jump ofs0034
+                  istypelate
+                  getlocal2
+                  lessthan
+                  getlocal1
+                  greaterequals
+                  pushscope
+                  add_i
+                  astypelate
+                  greaterthan
+         ofs0034:
+                  getlocal1
+                  dup
+                  iftrue ofs004a
+                  pop
+                  getlocal1
+                  jump ofs0049
+                  pushnan
+                  multiply
+                  bitnot
+                  convert_i
+                  setlocal3
+                  modulo
+                  popscope
+                  checkfilter
+                  setlocal3
+         ofs0049:
+                  convert_b
+         ofs004a:
+                  iffalse ofs005b
+         ofs004e:
+                  jump ofs001c
+         ofs0052:
+                  label
+                  getlocal0
+                  findpropstrict QName(PackageNamespace(">!8"),"b2Sweep")
+                  constructprop QName(PackageNamespace(">!8"),"b2Sweep"), 0
+                  initproperty QName(PackageNamespace(""),"&+")
+         ofs005b:
+                  getlocal2
+                  iftrue ofs0072
+                  getlocal2
+                  iftrue ofs0084
+                  jump ofs0023
+         ofs0069:
+                  label
+                  getlocal0
+                  findpropstrict QName(PackageNamespace(">!8"),"b2Sweep")
+                  constructprop QName(PackageNamespace(">!8"),"b2Sweep"), 0
+                  initproperty QName(PackageNamespace(""),"=!S")
+         ofs0072:
+                  getlocal2
+                  iftrue ofs0090
+                  jump ofs0052
+         ofs007b:
+                  label
+                  getlocal0
+                  findpropstrict QName(PackageNamespace("!m"),"b2DistanceProxy")
+                  constructprop QName(PackageNamespace("!m"),"b2DistanceProxy"), 0
+                  initproperty QName(PackageNamespace(""),"4P")
+         ofs0084:
+                  jump ofs0069
+         ofs0088:
+                  getlocal0
+                  findpropstrict QName(PackageNamespace("!m"),"b2DistanceProxy")
+                  constructprop QName(PackageNamespace("!m"),"b2DistanceProxy"), 0
+                  initproperty QName(PackageNamespace(""),"\'[")
+         ofs0090:
+                  jump ofs007b
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}

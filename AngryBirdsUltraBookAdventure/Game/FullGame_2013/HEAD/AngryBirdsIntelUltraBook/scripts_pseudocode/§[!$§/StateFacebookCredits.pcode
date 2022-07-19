@@ -1,0 +1,945 @@
+package §[!$§
+{
+   import §0!Q§.UIEventListenerRovio;
+   import §7t§.StateChapterSelection;
+   import §7t§.StateCreditsNew;
+   import §91§.§4!"§;
+   import §=!5§.§+q§;
+   import §=!5§.§`X§;
+   import §?!Y§.§`S§;
+   import flash.net.URLRequest;
+   import flash.net.navigateToURL;
+   
+   public class StateFacebookCredits extends StateCreditsNew
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function StateFacebookCredits(initState:Boolean = false, name:String = "CreditsState")
+      {
+         method
+            name "com.angrybirds.states:StateFacebookCredits/StateFacebookCredits"
+            flag HAS_OPTIONAL
+            param QName(PackageNamespace(""),"Boolean")
+            param QName(PackageNamespace(""),"String")
+            optional False()
+            optional Utf8("CreditsState")
+            returns null
+            
+            body
+               maxstack 5
+               localcount 5
+               initscopedepth 6
+               maxscopedepth 7
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal3
+                  jump ofs0014
+                  declocal_i 3
+                  inclocal_i 2
+                  dxnslate
+                  declocal_i 2
+                  getlocal2
+                  increment
+                  declocal_i 2
+                  setlocal3
+                  setlocal3
+         ofs0014:
+                  setlocal 4
+                  debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\states;StateFacebookCredits.as"
+                  getlocal3
+                  iffalse ofs001f
+                  debugline 19
+         ofs001f:
+                  getlocal0
+                  pushscope
+                  getlocal 4
+                  dup
+                  iffalse ofs002b
+                  pop
+                  getlocal0
+                  convert_b
+         ofs002b:
+                  iftrue ofs00a0
+                  jump ofs00ae
+         ofs0033:
+                  label
+                  returnvoid
+                  jump ofs0039
+         ofs0039:
+                  declocal 2
+                  checkfilter
+                  kill 2
+                  kill 3
+                  declocal_i 3
+                  popscope
+                  getlocal2
+                  setlocal3
+                  declocal_i 2
+                  pushtrue
+                  iftrue ofs004c
+         ofs004c:
+                  label
+                  debugline 22
+                  getlocal 4
+                  dup
+                  iffalse ofs0069
+                  pop
+                  getlocal0
+                  convert_b
+                  jump ofs0069
+                  hasnext
+                  popscope
+                  negate
+                  rshift
+                  getlocal3
+                  declocal 2
+                  declocal_i 2
+                  inclocal_i 2
+                  decrement_i
+         ofs0069:
+                  iftrue ofs0093
+                  getlocal 4
+                  dup
+                  iffalse ofs0077
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0077:
+                  iftrue ofs00a0
+                  getlocal 4
+                  dup
+                  iffalse ofs0085
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0085:
+                  iftrue ofs00b3
+                  jump ofs0033
+         ofs008d:
+                  label
+                  getlocal0
+                  getlocal1
+                  getlocal2
+                  constructsuper 2
+         ofs0093:
+                  getlocal 4
+                  iftrue ofs00aa
+                  jump ofs004c
+         ofs009d:
+                  label
+                  debugline 21
+         ofs00a0:
+                  jump ofs008d
+         ofs00a4:
+                  label
+                  debug 1, "name", 1, 19
+         ofs00aa:
+                  jump ofs009d
+         ofs00ae:
+                  debug 1, "initState", 0, 19
+         ofs00b3:
+                  jump ofs00a4
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      override public function activate() : void
+      {
+         trait method QName(PackageNamespace(""),"activate")
+            flag OVERRIDE
+            flag METADATA
+            metadata"__go_to_definition_help"
+               item "pos" "731"
+            end ; metadata
+            dispid 0
+            method
+               name "com.angrybirds.states:StateFacebookCredits/activate"
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 3
+                  localcount 3
+                  initscopedepth 6
+                  maxscopedepth 7
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     setlocal1
+                     jump ofs0010
+                     nextname
+                     multiply_i
+                     dup
+                     add
+                     pushnull
+                     checkfilter
+                     convert_i
+                     bitor
+                     convert_i
+            ofs0010:
+                     setlocal2
+                     debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\states;StateFacebookCredits.as"
+                     getlocal2
+                     iftrue ofs001a
+                     debugline 24
+            ofs001a:
+                     getlocal0
+                     jump ofs0028
+                     checkfilter
+                     convert_u
+                     pushwith
+                     istypelate
+                     convert_i
+                     coerce_a
+                     pop
+                     pushwith
+                     nextname
+            ofs0028:
+                     pushscope
+                     getlocal2
+                     dup
+                     iffalse ofs0032
+                     pop
+                     getlocal1
+                     convert_b
+            ofs0032:
+                     iftrue ofs0066
+                     jump ofs0064
+            ofs003a:
+                     label
+                     returnvoid
+                     pushtrue
+                     iftrue ofs0041
+            ofs0041:
+                     label
+                     debugline 28
+                     getlocal1
+                     dup
+                     iftrue ofs004d
+                     pop
+                     getlocal1
+                     convert_b
+            ofs004d:
+                     iffalse ofs005b
+                     jump ofs003a
+            ofs0055:
+                     label
+                     getlocal0
+                     callsuper QName(PackageNamespace(""),"activate"), 0
+                     pop
+            ofs005b:
+                     getlocal2
+                     iftrue ofs0066
+                     jump ofs0041
+            ofs0064:
+                     debugline 26
+            ofs0066:
+                     jump ofs0055
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         override public function init() : void
+         {
+            trait method QName(PackageNamespace(""),"init")
+               flag OVERRIDE
+               flag METADATA
+               metadata"__go_to_definition_help"
+                  item "pos" "811"
+               end ; metadata
+               dispid 0
+               method
+                  name "com.angrybirds.states:StateFacebookCredits/init"
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 6
+                     localcount 3
+                     initscopedepth 6
+                     maxscopedepth 7
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        setlocal1
+                        jump ofs0010
+                        modulo
+                        strictequals
+                        instanceof
+                        pushnan
+                        decrement
+                        swap
+                        setlocal2
+                        multiply
+                        multiply_i
+               ofs0010:
+                        setlocal2
+                        debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\states;StateFacebookCredits.as"
+                        getlocal1
+                        dup
+                        iftrue ofs001c
+                        pop
+                        getlocal1
+                        convert_b
+               ofs001c:
+                        iffalse ofs0022
+                        debugline 30
+               ofs0022:
+                        getlocal0
+                        pushscope
+                        getlocal1
+                        iffalse ofs0086
+                        jump ofs0164
+               ofs002d:
+                        label
+                        returnvoid
+                        pushtrue
+                        iftrue ofs0034
+               ofs0034:
+                        label
+                        debugline 41
+                        getlocal2
+                        iftrue ofs0046
+                        jump ofs002d
+               ofs0040:
+                        label
+                        findproperty QName(PackageNamespace(""),"&!C")
+                        pushtrue
+                        initproperty QName(PackageNamespace(""),"&!C")
+               ofs0046:
+                        getlocal2
+                        dup
+                        iffalse ofs004f
+                        pop
+                        getlocal1
+                        convert_b
+               ofs004f:
+                        iftrue ofs006c
+                        getlocal1
+                        iffalse ofs00bd
+                        getlocal1
+                        dup
+                        iftrue ofs0061
+                        pop
+                        getlocal0
+                        convert_b
+               ofs0061:
+                        iffalse ofs00e9
+                        jump ofs0034
+               ofs0069:
+                        label
+                        debugline 40
+               ofs006c:
+                        getlocal1
+                        dup
+                        iftrue ofs0075
+                        pop
+                        getlocal2
+                        convert_b
+               ofs0075:
+                        iffalse ofs00a9
+                        getlocal2
+                        dup
+                        iffalse ofs0082
+                        pop
+                        getlocal1
+                        convert_b
+               ofs0082:
+                        iftrue ofs012f
+               ofs0086:
+                        jump ofs0040
+               ofs008a:
+                        label
+                        findproperty QName(ProtectedNamespace("<d"),"3!\'")
+                        findpropstrict QName(PackageNamespace("91"),"4!\"")
+                        jump ofs009c
+                        coerce_a
+                        pop
+                        newactivation
+                        lshift
+                        convert_s
+                        increment
+                        astypelate
+                        getglobalscope
+                        getlocal2
+               ofs009c:
+                        findpropstrict QName(PackageNamespace("?!Y"),"`S")
+                        getproperty QName(PackageNamespace("?!Y"),"`S")
+                        getproperty QName(PackageNamespace(""),"[o")
+                        pushstring "INTEL_THEME"
+                        constructprop QName(PackageNamespace("91"),"4!\""), 2
+                        initproperty QName(ProtectedNamespace("<d"),"3!\'")
+               ofs00a9:
+                        getlocal1
+                        dup
+                        iftrue ofs00b2
+                        pop
+                        getlocal2
+                        convert_b
+               ofs00b2:
+                        iffalse ofs00dd
+                        jump ofs0069
+               ofs00ba:
+                        label
+                        debugline 38
+               ofs00bd:
+                        getlocal2
+                        dup
+                        iffalse ofs00c6
+                        pop
+                        getlocal1
+                        convert_b
+               ofs00c6:
+                        iftrue ofs0160
+                        jump ofs008a
+               ofs00ce:
+                        label
+                        findpropstrict QName(PackageNamespace(""),"`=")
+                        getproperty QName(PackageNamespace(""),"`=")
+                        pushstring "Button_FullScreen"
+                        callproperty QName(PackageNamespace(""),"getItemByName"), 1
+                        pushfalse
+                        callproperty QName(PackageNamespace(""),"setVisibility"), 1
+                        pop
+               ofs00dd:
+                        getlocal2
+                        iftrue ofs014a
+                        jump ofs00ba
+               ofs00e6:
+                        label
+                        debugline 36
+               ofs00e9:
+                        getlocal1
+                        dup
+                        iftrue ofs00f2
+                        pop
+                        getlocal0
+                        convert_b
+               ofs00f2:
+                        iffalse ofs0123
+                        getlocal1
+                        dup
+                        iftrue ofs00ff
+                        pop
+                        getlocal2
+                        convert_b
+               ofs00ff:
+                        iffalse ofs0151
+                        jump ofs00ce
+               ofs0107:
+                        label
+                        findpropstrict QName(PackageNamespace(""),"`=")
+                        getproperty QName(PackageNamespace(""),"`=")
+                        pushstring "MovieClip_Loading"
+                        callproperty QName(PackageNamespace(""),"getItemByName"), 1
+                        pushtrue
+                        jump ofs011f
+                        setlocal3
+                        nextvalue
+                        setlocal2
+                        bitxor
+                        multiply
+                        multiply_i
+                        getlocal1
+                        coerce_s
+                        coerce_s
+               ofs011f:
+                        callproperty QName(PackageNamespace(""),"setVisibility"), 1
+                        pop
+               ofs0123:
+                        getlocal1
+                        iffalse ofs0166
+                        jump ofs00e6
+               ofs012c:
+                        label
+                        debugline 35
+               ofs012f:
+                        jump ofs0107
+               ofs0133:
+                        label
+                        findpropstrict QName(PackageNamespace(""),"`=")
+                        getproperty QName(PackageNamespace(""),"`=")
+                        findpropstrict QName(PackageNamespace("=!5"),"+q")
+                        getproperty QName(PackageNamespace("=!5"),"+q")
+                        getproperty QName(PackageNamespace(""),"%M")
+                        getproperty Multiname("Views",[PrivateNamespace("+!+"),PackageNamespace(""),PrivateNamespace("StateFacebookCredits.as$336"),PackageNamespace("[!$"),PackageInternalNs("[!$"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("+!+"),StaticProtectedNs("+!+"),StaticProtectedNs("<d"),StaticProtectedNs("4K")])
+                        getproperty Multiname("View_Credits",[PrivateNamespace("+!+"),PackageNamespace(""),PrivateNamespace("StateFacebookCredits.as$336"),PackageNamespace("[!$"),PackageInternalNs("[!$"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("+!+"),StaticProtectedNs("+!+"),StaticProtectedNs("<d"),StaticProtectedNs("4K")])
+                        pushbyte 0
+                        getproperty MultinameL([PrivateNamespace("+!+"),PackageNamespace(""),PrivateNamespace("StateFacebookCredits.as$336"),PackageNamespace("[!$"),PackageInternalNs("[!$"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("+!+"),StaticProtectedNs("+!+"),StaticProtectedNs("<d"),StaticProtectedNs("4K")])
+                        callproperty QName(PackageNamespace(""),"init"), 1
+                        pop
+               ofs014a:
+                        jump ofs012c
+               ofs014e:
+                        label
+                        debugline 33
+               ofs0151:
+                        jump ofs0133
+               ofs0155:
+                        label
+                        findproperty QName(PackageNamespace(""),"`=")
+                        findpropstrict QName(PackageNamespace("=!5"),"`X")
+                        getlocal0
+                        constructprop QName(PackageNamespace("=!5"),"`X"), 1
+                        initproperty QName(PackageNamespace(""),"`=")
+               ofs0160:
+                        jump ofs014e
+               ofs0164:
+                        debugline 32
+               ofs0166:
+                        jump ofs0155
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            override protected function readyToShowCredits() : void
+            {
+               trait method QName(ProtectedNamespace("+!+"),"readyToShowCredits")
+                  flag OVERRIDE
+                  flag METADATA
+                  metadata"__go_to_definition_help"
+                     item "pos" "1221"
+                  end ; metadata
+                  dispid 0
+                  method
+                     name "com.angrybirds.states:StateFacebookCredits/protected:readyToShowCredits"
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 4
+                        localcount 3
+                        initscopedepth 6
+                        maxscopedepth 7
+                        
+                        code
+                           pushfalse
+                           pushtrue
+                           swap
+                           jump ofs0010
+                           add
+                           convert_b
+                           setlocal3
+                           decrement_i
+                           pushwith
+                           decrement
+                           pushscope
+                           pushscope
+                           dxnslate
+                  ofs0010:
+                           setlocal1
+                           setlocal2
+                           debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\states;StateFacebookCredits.as"
+                           getlocal2
+                           iffalse ofs0028
+                           debugline 43
+                           jump ofs0028
+                           dxnslate
+                           negate
+                           astypelate
+                           convert_o
+                           dup
+                           bitor
+                           pop
+                           convert_b
+                           pushundefined
+                  ofs0028:
+                           getlocal0
+                           pushscope
+                           getlocal2
+                           iffalse ofs0068
+                           jump ofs0066
+                  ofs0033:
+                           label
+                           returnvoid
+                           pushtrue
+                           iftrue ofs003a
+                  ofs003a:
+                           label
+                           debugline 46
+                           getlocal2
+                           dup
+                           iftrue ofs0046
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs0046:
+                           iffalse ofs0062
+                           getlocal2
+                           iffalse ofs0068
+                           jump ofs0033
+                  ofs0053:
+                           label
+                           findpropstrict QName(PackageNamespace(""),"`=")
+                           getproperty QName(PackageNamespace(""),"`=")
+                           pushstring "MovieClip_Loading"
+                           callproperty QName(PackageNamespace(""),"getItemByName"), 1
+                           pushfalse
+                           callproperty QName(PackageNamespace(""),"setVisibility"), 1
+                           pop
+                  ofs0062:
+                           jump ofs003a
+                  ofs0066:
+                           debugline 45
+                  ofs0068:
+                           jump ofs0053
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               override public function uiInteractionHandler(eventIndex:int, eventName:String, component:UIEventListenerRovio) : void
+               {
+                  trait method QName(PackageNamespace(""),"uiInteractionHandler")
+                     flag OVERRIDE
+                     flag METADATA
+                     metadata"__go_to_definition_help"
+                        item "pos" "1358"
+                     end ; metadata
+                     dispid 0
+                     method
+                        name "com.angrybirds.states:StateFacebookCredits/uiInteractionHandler"
+                        param QName(PackageNamespace(""),"int")
+                        param QName(PackageNamespace(""),"String")
+                        param QName(PackageNamespace("0!Q"),"UIEventListenerRovio")
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 6
+                           localcount 7
+                           initscopedepth 6
+                           maxscopedepth 7
+                           
+                           code
+                              pushfalse
+                              pushtrue
+                              setlocal 5
+                              jump ofs0016
+                              convert_u
+                              inclocal_i 3
+                              setlocal 4
+                              inclocal_i 4
+                              inclocal_i 2
+                              pushnan
+                              kill 4
+                              astypelate
+                              subtract_i
+                     ofs0016:
+                              setlocal 6
+                              debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\states;StateFacebookCredits.as"
+                              getlocal 6
+                              dup
+                              iffalse ofs0024
+                              pop
+                              getlocal1
+                              convert_b
+                     ofs0024:
+                              iftrue ofs002a
+                              debugline 49
+                     ofs002a:
+                              getlocal0
+                              pushscope
+                              getlocal 5
+                              dup
+                              iftrue ofs0036
+                              pop
+                              getlocal0
+                              convert_b
+                     ofs0036:
+                              iffalse ofs010f
+                              jump ofs0143
+                     ofs003e:
+                              label
+                              debugline 62
+                              getlocal 5
+                              dup
+                              iftrue ofs004b
+                              pop
+                              getlocal0
+                              convert_b
+                     ofs004b:
+                              iffalse ofs007e
+                              pushtrue
+                              iftrue ofs014c
+                     ofs0054:
+                              label
+                              findpropstrict QName(PackageNamespace("flash.net"),"navigateToURL")
+                              findpropstrict QName(PackageNamespace("flash.net"),"URLRequest")
+                              pushstring "https://developers.google.com/appengine/"
+                              constructprop QName(PackageNamespace("flash.net"),"URLRequest"), 1
+                              pushstring "_blank"
+                              callproperty QName(PackageNamespace("flash.net"),"navigateToURL"), 2
+                              pop
+                              getlocal 6
+                              dup
+                              iffalse ofs006e
+                              pop
+                              getlocal3
+                              convert_b
+                     ofs006e:
+                              iftrue ofs00b6
+                              jump ofs003e
+                     ofs0076:
+                              label
+                              jump ofs020d
+                     ofs007b:
+                              label
+                              debugline 61
+                     ofs007e:
+                              getlocal 6
+                              dup
+                              iffalse ofs0088
+                              pop
+                              getlocal1
+                              convert_b
+                     ofs0088:
+                              iftrue ofs00d8
+                              jump ofs0054
+                     ofs0090:
+                              label
+                              debugline 58
+                              getlocal 5
+                              dup
+                              iftrue ofs009d
+                              pop
+                              getlocal3
+                              convert_b
+                     ofs009d:
+                              iffalse ofs00bd
+                              getlocal 6
+                              iftrue ofs00cc
+                              jump ofs0076
+                     ofs00ab:
+                              label
+                              findproperty QName(PackageNamespace(""),"mNextState")
+                              findpropstrict QName(PackageNamespace("7t"),"StateChapterSelection")
+                              getproperty QName(PackageNamespace("7t"),"StateChapterSelection")
+                              getproperty QName(PackageNamespace(""),"STATE_NAME")
+                              initproperty QName(PackageNamespace(""),"mNextState")
+                     ofs00b6:
+                              jump ofs0090
+                     ofs00ba:
+                              label
+                              debugline 57
+                     ofs00bd:
+                              jump ofs00ab
+                     ofs00c1:
+                              label
+                              findpropstrict QName(PackageNamespace("[!$"),"StateFacebookEpisodeSelection")
+                              getproperty QName(PackageNamespace("[!$"),"StateFacebookEpisodeSelection")
+                              findpropstrict QName(PackageNamespace(""),"STATE_NAME")
+                              getproperty QName(PackageNamespace(""),"STATE_NAME")
+                              setproperty QName(PackageNamespace(""),"sPreviousState")
+                     ofs00cc:
+                              jump ofs00ba
+                     ofs00d0:
+                              label
+                              jump ofs0157
+                     ofs00d5:
+                              label
+                              debugline 56
+                     ofs00d8:
+                              jump ofs00c1
+                     ofs00dc:
+                              label
+                              getlocal0
+                              jump ofs00ed
+                              setlocal 5
+                              checkfilter
+                              declocal 2
+                              pushwith
+                              getlocal3
+                              getlocal0
+                              instanceof
+                              convert_d
+                              getlocal2
+                     ofs00ed:
+                              getlocal1
+                              getlocal2
+                              getlocal3
+                              callsuper QName(PackageNamespace(""),"uiInteractionHandler"), 3
+                              pop
+                              getlocal 5
+                              iffalse ofs0101
+                              jump ofs00d0
+                     ofs00fe:
+                              label
+                              debugline 51
+                     ofs0101:
+                              getlocal 5
+                              dup
+                              iftrue ofs010b
+                              pop
+                              getlocal0
+                              convert_b
+                     ofs010b:
+                              iffalse ofs0119
+                     ofs010f:
+                              jump ofs00dc
+                     ofs0113:
+                              label
+                              debug 1, "component", 2, 49
+                     ofs0119:
+                              getlocal 6
+                              dup
+                              iffalse ofs0123
+                              pop
+                              getlocal0
+                              convert_b
+                     ofs0123:
+                              iftrue ofs0131
+                              jump ofs00fe
+                     ofs012b:
+                              label
+                              debug 1, "eventName", 1, 49
+                     ofs0131:
+                              getlocal 5
+                              dup
+                              iftrue ofs013b
+                              pop
+                              getlocal2
+                              convert_b
+                     ofs013b:
+                              iffalse ofs0148
+                              jump ofs0113
+                     ofs0143:
+                              debug 1, "eventIndex", 0, 49
+                     ofs0148:
+                              jump ofs012b
+                     ofs014c:
+                              jump ofs020d
+                     ofs0150:
+                              label
+                              jump ofs020d
+                              debugline 53
+                     ofs0157:
+                              getlocal2
+                              setlocal 4
+                              getlocal 5
+                              iffalse ofs019a
+                              pushstring "CREDITS_CLOSE_BUTTON"
+                              getlocal 5
+                              iffalse ofs01c8
+                              debugline 55
+                              getlocal 6
+                              dup
+                              iffalse ofs0174
+                              pop
+                              getlocal0
+                              convert_b
+                     ofs0174:
+                              iftrue ofs01c6
+                              getlocal 4
+                              getlocal 5
+                              dup
+                              iftrue ofs0184
+                              pop
+                              getlocal0
+                              convert_b
+                     ofs0184:
+                              iffalse ofs01ca
+                              ifstrictne ofs01be
+                              getlocal 6
+                              dup
+                              iffalse ofs0196
+                              pop
+                              getlocal0
+                              convert_b
+                     ofs0196:
+                              iftrue ofs01ed
+                     ofs019a:
+                              pushshort 0
+                              getlocal 5
+                              dup
+                              iftrue ofs01a6
+                              pop
+                              getlocal2
+                              convert_b
+                     ofs01a6:
+                              iffalse ofs01f5
+                              jump ofs01ba
+                              lessequals
+                              lshift
+                              inclocal_i 4
+                              inclocal_i 2
+                              kill 3
+                              strictequals
+                              setlocal3
+                              convert_b
+                              hasnext
+                     ofs01ba:
+                              jump ofs01fb
+                     ofs01be:
+                              pushstring "APP_ENGINE_BUTTON"
+                              getlocal 5
+                              iffalse ofs01c8
+                     ofs01c6:
+                              debugline 60
+                     ofs01c8:
+                              getlocal 4
+                     ofs01ca:
+                              ifstrictne ofs01e8
+                              getlocal 5
+                              iffalse ofs01ed
+                              pushshort 1
+                              getlocal 6
+                              dup
+                              iffalse ofs01e0
+                              pop
+                              getlocal1
+                              convert_b
+                     ofs01e0:
+                              iftrue ofs01fb
+                              jump ofs01fb
+                     ofs01e8:
+                              pushfalse
+                              iffalse ofs01f9
+                     ofs01ed:
+                              pushshort 2
+                              getlocal 6
+                              iftrue ofs01fb
+                     ofs01f5:
+                              jump ofs01fb
+                     ofs01f9:
+                              pushshort 2
+                     ofs01fb:
+                              kill 4
+                              lookupswitch ofs0150, [ofs00d5, ofs007b, ofs0150]
+                              debugline 65
+                     ofs020d:
+                              returnvoid
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+               }
+            }

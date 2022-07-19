@@ -1,0 +1,239 @@
+package §^s§
+{
+   public class §#-§
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var x:Number;
+      
+      public var y:Number;
+      
+      public var scaleX:Number;
+      
+      public var scaleY:Number;
+      
+      public var rotation:Number;
+      
+      public var red:Number;
+      
+      public var green:Number;
+      
+      public var blue:Number;
+      
+      public var alpha:Number;
+      
+      public var §,b§:Number;
+      
+      public var §%!2§:Number;
+      
+      public function §#-§()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 8
+               localcount 4
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0013
+                  nextvalue
+                  convert_d
+                  setlocal2
+                  kill 2
+                  pop
+                  getlocal2
+                  subtract_i
+                  declocal 2
+                  inclocal_i 2
+         ofs0013:
+                  setlocal2
+                  setlocal3
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  dup
+                  iffalse ofs0020
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0020:
+                  iftrue ofs0079
+                  getlocal0
+                  constructsuper 0
+                  getlocal3
+                  dup
+                  iftrue ofs0030
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0030:
+                  iffalse ofs0079
+                  getlocal0
+                  getlocal0
+                  getlocal0
+                  getlocal0
+                  pushdouble 0.0
+                  dup
+                  setlocal1
+                  initproperty QName(PackageNamespace(""),",b")
+                  getlocal1
+                  getlocal2
+                  iftrue ofs0048
+                  kill 1
+                  dup
+                  setlocal1
+         ofs0048:
+                  initproperty QName(PackageNamespace(""),"rotation")
+                  getlocal1
+                  getlocal2
+                  iftrue ofs0054
+                  kill 1
+                  dup
+                  setlocal1
+         ofs0054:
+                  initproperty QName(PackageNamespace(""),"y")
+                  getlocal1
+                  kill 1
+                  initproperty QName(PackageNamespace(""),"x")
+                  getlocal3
+                  jump ofs006d
+                  instanceof
+                  convert_d
+                  pushtrue
+                  declocal_i 2
+                  getlocal2
+                  inclocal 2
+                  declocal 2
+                  decrement_i
+                  declocal_i 2
+         ofs006d:
+                  dup
+                  iftrue ofs0075
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0075:
+                  iffalse ofs00ad
+         ofs0079:
+                  getlocal0
+                  getlocal0
+                  getlocal0
+                  getlocal0
+                  pushbyte 1
+                  dup
+                  setlocal1
+                  initproperty QName(PackageNamespace(""),"scaleY")
+                  getlocal1
+                  getlocal2
+                  dup
+                  iffalse ofs008d
+                  pop
+                  getlocal0
+                  convert_b
+         ofs008d:
+                  iftrue ofs0095
+                  kill 1
+                  dup
+                  setlocal1
+         ofs0095:
+                  initproperty QName(PackageNamespace(""),"scaleX")
+                  getlocal1
+                  getlocal3
+                  iffalse ofs00a1
+                  kill 1
+                  dup
+                  setlocal1
+         ofs00a1:
+                  initproperty QName(PackageNamespace(""),"alpha")
+                  getlocal1
+                  kill 1
+                  initproperty QName(PackageNamespace(""),"%!2")
+                  getlocal3
+                  iffalse ofs00f9
+         ofs00ad:
+                  jump ofs00f4
+                  jump ofs00b5
+         ofs00b5:
+                  getlocal1
+                  add
+                  subtract
+                  inclocal_i 2
+                  getlocal2
+                  greaterthan
+                  pushundefined
+                  dup
+                  setlocal2
+         ofs00bf:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs00c6
+         ofs00c6:
+                  label
+                  getlocal0
+                  pushbyte 1
+                  initproperty QName(PackageNamespace(""),"blue")
+                  getlocal3
+                  dup
+                  iftrue ofs00d5
+                  pop
+                  getlocal3
+                  convert_b
+         ofs00d5:
+                  iffalse ofs00f0
+                  getlocal2
+                  dup
+                  iffalse ofs00e2
+                  pop
+                  getlocal2
+                  convert_b
+         ofs00e2:
+                  iftrue ofs00f9
+                  jump ofs00bf
+         ofs00ea:
+                  label
+                  getlocal0
+                  pushbyte 1
+                  initproperty QName(PackageNamespace(""),"green")
+         ofs00f0:
+                  jump ofs00c6
+         ofs00f4:
+                  getlocal0
+                  pushbyte 1
+                  initproperty QName(PackageNamespace(""),"red")
+         ofs00f9:
+                  jump ofs00ea
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}

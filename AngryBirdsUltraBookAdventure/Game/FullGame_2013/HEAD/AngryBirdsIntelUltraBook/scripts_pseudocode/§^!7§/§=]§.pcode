@@ -1,0 +1,589 @@
+package §^!7§
+{
+   public class §=]§
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      private var §1!1§:Number;
+      
+      private var §?!R§:String;
+      
+      private var §9!`§:Function;
+      
+      private var §]!g§:Function;
+      
+      private var §'!9§:Boolean = true;
+      
+      public function §=]§(param1:String, param2:Number)
+      {
+         method
+            name null
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace(""),"Number")
+            returns null
+            
+            body
+               maxstack 4
+               localcount 5
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal3
+                  jump ofs0014
+                  kill 3
+                  istypelate
+                  setlocal2
+                  kill 2
+                  kill 2
+                  inclocal_i 2
+                  pushfalse
+                  lessequals
+                  setlocal2
+         ofs0014:
+                  setlocal 4
+                  jump ofs0025
+                  inclocal 2
+                  nextname
+                  astypelate
+                  pushscope
+                  typeof
+                  declocal_i 2
+                  pop
+                  getlocal2
+                  lshift
+         ofs0025:
+                  getlocal0
+                  pushscope
+                  getlocal3
+                  iffalse ofs0042
+                  jump ofs0054
+         ofs0030:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0037
+         ofs0037:
+                  label
+                  getlocal0
+                  getlocal2
+                  initproperty QName(PrivateNamespace("%!U"),"1!1")
+                  getlocal 4
+                  iftrue ofs004b
+         ofs0042:
+                  jump ofs0030
+         ofs0046:
+                  label
+                  getlocal0
+                  getlocal1
+                  initproperty QName(PrivateNamespace("%!U"),"?!R")
+         ofs004b:
+                  getlocal3
+                  iffalse ofs0057
+                  jump ofs0037
+         ofs0054:
+                  getlocal0
+                  constructsuper 0
+         ofs0057:
+                  jump ofs0046
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function sendRequest(param1:String, param2:Object) : void
+      {
+         trait method QName(PackageNamespace(""),"sendRequest")
+            dispid 0
+            method
+               name null
+               param QName(PackageNamespace(""),"String")
+               param QName(PackageNamespace(""),"Object")
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 3
+                  localcount 3
+                  initscopedepth 4
+                  maxscopedepth 5
+                  
+                  code
+                     getlocal0
+                     pushscope
+                     returnvoid
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public function closeConnection() : void
+         {
+            trait method QName(PackageNamespace(""),"closeConnection")
+               dispid 0
+               method
+                  name null
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 3
+                     localcount 1
+                     initscopedepth 4
+                     maxscopedepth 5
+                     
+                     code
+                        getlocal0
+                        pushscope
+                        returnvoid
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public function §>?§() : String
+            {
+               trait method QName(PackageNamespace(""),">?")
+                  dispid 0
+                  method
+                     name null
+                     returns QName(PackageNamespace(""),"String")
+                     
+                     body
+                        maxstack 3
+                        localcount 1
+                        initscopedepth 4
+                        maxscopedepth 5
+                        
+                        code
+                           getlocal0
+                           pushscope
+                           getlocal0
+                           jump ofs0010
+                           subtract_i
+                           getlocal0
+                           decrement
+                           instanceof
+                           nextvalue
+                           lessequals
+                           bitor
+                           add
+                           instanceof
+                  ofs0010:
+                           getproperty QName(PrivateNamespace("%!U"),"?!R")
+                           returnvalue
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public function §@P§() : Function
+               {
+                  trait method QName(PackageNamespace(""),"@P")
+                     dispid 0
+                     method
+                        name null
+                        returns QName(PackageNamespace(""),"Function")
+                        
+                        body
+                           maxstack 3
+                           localcount 1
+                           initscopedepth 4
+                           maxscopedepth 5
+                           
+                           code
+                              getlocal0
+                              pushscope
+                              getlocal0
+                              jump ofs0010
+                              convert_i
+                              getlocal2
+                              pushfalse
+                              urshift
+                              pushundefined
+                              istypelate
+                              checkfilter
+                              nextname
+                              instanceof
+                     ofs0010:
+                              getproperty QName(PrivateNamespace("%!U"),"9!`")
+                              returnvalue
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  public function §?K§() : Function
+                  {
+                     trait method QName(PackageNamespace(""),"?K")
+                        dispid 0
+                        method
+                           name null
+                           returns QName(PackageNamespace(""),"Function")
+                           
+                           body
+                              maxstack 3
+                              localcount 1
+                              initscopedepth 4
+                              maxscopedepth 5
+                              
+                              code
+                                 getlocal0
+                                 pushscope
+                                 getlocal0
+                                 jump ofs0010
+                                 strictequals
+                                 getglobalscope
+                                 getlocal0
+                                 convert_o
+                                 nextname
+                                 setlocal3
+                                 getglobalscope
+                                 instanceof
+                                 setlocal3
+                        ofs0010:
+                                 getproperty QName(PrivateNamespace("%!U"),"]!g")
+                                 returnvalue
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     public function §<!F§(param1:Object) : void
+                     {
+                        trait method QName(PackageNamespace(""),"<!F")
+                           dispid 0
+                           method
+                              name null
+                              param QName(PackageNamespace(""),"Object")
+                              returns QName(PackageNamespace(""),"void")
+                              
+                              body
+                                 maxstack 5
+                                 localcount 4
+                                 initscopedepth 4
+                                 maxscopedepth 5
+                                 
+                                 code
+                                    pushfalse
+                                    pushtrue
+                                    setlocal2
+                                    jump ofs0023
+                                    inclocal 2
+                                    rshift
+                                    declocal 2
+                                    lessequals
+                                    convert_b
+                                    declocal_i 2
+                                    declocal 2
+                                    typeof
+                                    declocal_i 2
+                                    jump ofs0019
+                           ofs0019:
+                                    hasnext
+                                    getlocal2
+                                    urshift
+                                    typeof
+                                    lessequals
+                                    bitor
+                                    nextname
+                                    add_i
+                                    inclocal_i 2
+                           ofs0023:
+                                    setlocal3
+                                    getlocal0
+                                    pushscope
+                                    getlocal3
+                                    dup
+                                    iffalse ofs002f
+                                    pop
+                                    getlocal0
+                                    convert_b
+                           ofs002f:
+                                    iftrue ofs003f
+                                    getlocal0
+                                    getproperty QName(PrivateNamespace("%!U"),"\'!9")
+                                    iffalse ofs0048
+                                    getlocal2
+                                    iffalse ofs0048
+                           ofs003f:
+                                    getlocal0
+                                    getproperty QName(PrivateNamespace("%!U"),"9!`")
+                                    pushnull
+                                    getlocal1
+                                    callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"call"), 2
+                                    pop
+                           ofs0048:
+                                    returnvoid
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                        }
+                        
+                        public function §=b§(param1:Object) : void
+                        {
+                           trait method QName(PackageNamespace(""),"=b")
+                              dispid 0
+                              method
+                                 name null
+                                 param QName(PackageNamespace(""),"Object")
+                                 returns QName(PackageNamespace(""),"void")
+                                 
+                                 body
+                                    maxstack 5
+                                    localcount 4
+                                    initscopedepth 4
+                                    maxscopedepth 5
+                                    
+                                    code
+                                       pushfalse
+                                       pushtrue
+                                       setlocal2
+                                       jump ofs0022
+                                       coerce_a
+                                       equals
+                                       declocal_i 2
+                                       inclocal 2
+                                       pushtrue
+                                       setlocal2
+                                       setlocal2
+                                       subtract
+                                       inclocal_i 2
+                                       jump ofs0017
+                              ofs0017:
+                                       setlocal2
+                                       inclocal_i 2
+                                       multiply_i
+                                       setlocal2
+                                       getlocal2
+                                       convert_i
+                                       declocal_i 2
+                                       pushscope
+                                       setlocal2
+                              ofs0022:
+                                       setlocal3
+                                       getlocal0
+                                       pushscope
+                                       getlocal3
+                                       dup
+                                       iffalse ofs002e
+                                       pop
+                                       getlocal0
+                                       convert_b
+                              ofs002e:
+                                       iftrue ofs0047
+                                       getlocal0
+                                       getproperty QName(PrivateNamespace("%!U"),"\'!9")
+                                       iffalse ofs0047
+                                       getlocal3
+                                       iftrue ofs0047
+                                       getlocal0
+                                       getproperty QName(PrivateNamespace("%!U"),"]!g")
+                                       pushnull
+                                       getlocal1
+                                       callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"call"), 2
+                                       pop
+                              ofs0047:
+                                       returnvoid
+                                       returnvoid
+                                    end ; code
+                                 end ; body
+                              end ; method
+                           }
+                           
+                           public function §<]§(param1:Function, param2:Function = null) : void
+                           {
+                              trait method QName(PackageNamespace(""),"<]")
+                                 dispid 0
+                                 method
+                                    name null
+                                    flag HAS_OPTIONAL
+                                    param QName(PackageNamespace(""),"Function")
+                                    param QName(PackageNamespace(""),"Function")
+                                    optional Null()
+                                    returns QName(PackageNamespace(""),"void")
+                                    
+                                    body
+                                       maxstack 4
+                                       localcount 5
+                                       initscopedepth 4
+                                       maxscopedepth 5
+                                       
+                                       code
+                                          pushfalse
+                                          pushtrue
+                                          setlocal3
+                                          jump ofs0013
+                                          dxnslate
+                                          declocal 2
+                                          setlocal2
+                                          lshift
+                                          getlocal2
+                                          inclocal_i 2
+                                          divide
+                                          inclocal 3
+                                          setlocal3
+                                 ofs0013:
+                                          setlocal 4
+                                          getlocal0
+                                          pushscope
+                                          getlocal3
+                                          iffalse ofs0031
+                                          jump ofs0035
+                                 ofs0020:
+                                          label
+                                          returnvoid
+                                          pushtrue
+                                          iftrue ofs0027
+                                 ofs0027:
+                                          label
+                                          getlocal0
+                                          getlocal2
+                                          initproperty QName(PrivateNamespace("%!U"),"]!g")
+                                          getlocal3
+                                          iffalse ofs0039
+                                 ofs0031:
+                                          jump ofs0020
+                                 ofs0035:
+                                          getlocal0
+                                          getlocal1
+                                          initproperty QName(PrivateNamespace("%!U"),"9!`")
+                                 ofs0039:
+                                          jump ofs0027
+                                          returnvoid
+                                       end ; code
+                                    end ; body
+                                 end ; method
+                              }
+                              
+                              public function §=!&§() : void
+                              {
+                                 trait method QName(PackageNamespace(""),"=!&")
+                                    dispid 0
+                                    method
+                                       name null
+                                       returns QName(PackageNamespace(""),"void")
+                                       
+                                       body
+                                          maxstack 4
+                                          localcount 3
+                                          initscopedepth 4
+                                          maxscopedepth 5
+                                          
+                                          code
+                                             pushfalse
+                                             pushtrue
+                                             setlocal1
+                                             jump ofs0010
+                                             convert_o
+                                             nextname
+                                             convert_d
+                                             lessthan
+                                             greaterequals
+                                             dup
+                                             lessequals
+                                             decrement_i
+                                             pushscope
+                                    ofs0010:
+                                             setlocal2
+                                             getlocal0
+                                             pushscope
+                                             getlocal2
+                                             dup
+                                             iffalse ofs001c
+                                             pop
+                                             getlocal0
+                                             convert_b
+                                    ofs001c:
+                                             iftrue ofs0024
+                                             getlocal0
+                                             pushfalse
+                                             initproperty QName(PrivateNamespace("%!U"),"\'!9")
+                                    ofs0024:
+                                             returnvoid
+                                             returnvoid
+                                          end ; code
+                                       end ; body
+                                    end ; method
+                                 }
+                                 
+                                 public function §03§() : void
+                                 {
+                                    trait method QName(PackageNamespace(""),"03")
+                                       dispid 0
+                                       method
+                                          name null
+                                          returns QName(PackageNamespace(""),"void")
+                                          
+                                          body
+                                             maxstack 4
+                                             localcount 3
+                                             initscopedepth 4
+                                             maxscopedepth 5
+                                             
+                                             code
+                                                pushfalse
+                                                pushtrue
+                                                swap
+                                                jump ofs0010
+                                                nextname
+                                                getlocal0
+                                                coerce_s
+                                                divide
+                                                add
+                                                getglobalscope
+                                                divide
+                                                multiply
+                                                checkfilter
+                                       ofs0010:
+                                                setlocal1
+                                                setlocal2
+                                                getlocal0
+                                                pushscope
+                                                getlocal1
+                                                dup
+                                                iffalse ofs001d
+                                                pop
+                                                getlocal1
+                                                convert_b
+                                       ofs001d:
+                                                iftrue ofs0025
+                                                getlocal0
+                                                pushtrue
+                                                initproperty QName(PrivateNamespace("%!U"),"\'!9")
+                                       ofs0025:
+                                                returnvoid
+                                                returnvoid
+                                             end ; code
+                                          end ; body
+                                       end ; method
+                                    }
+                                 }
+                              }

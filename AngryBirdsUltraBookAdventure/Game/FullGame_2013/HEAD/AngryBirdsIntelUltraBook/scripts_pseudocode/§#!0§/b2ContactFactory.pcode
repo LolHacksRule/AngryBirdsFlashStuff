@@ -1,0 +1,1139 @@
+package §#!0§
+{
+   import §!m§.*;
+   import §+!g§.*;
+   import §0!3§.*;
+   import §>!8§.*;
+   import §>!L§.*;
+   
+   use namespace b2internal;
+   
+   public class b2ContactFactory
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      private var §9!a§:Vector.<Vector.<b2ContactRegister>>;
+      
+      private var §6I§;
+      
+      public function b2ContactFactory(param1:*)
+      {
+         method
+            name null
+            param null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 4
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0015
+                  inclocal 2
+                  inclocal 2
+                  setlocal2
+                  greaterthan
+                  instanceof
+                  divide
+                  inclocal_i 2
+                  inclocal_i 2
+                  kill 2
+         ofs0015:
+                  setlocal2
+                  setlocal3
+                  getlocal0
+                  pushscope
+                  getlocal3
+                  dup
+                  jump ofs002b
+                  declocal 2
+                  declocal 2
+                  subtract_i
+                  inclocal 2
+                  strictequals
+                  not
+                  getlocal2
+                  newactivation
+                  divide
+         ofs002b:
+                  iftrue ofs0032
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0032:
+                  iffalse ofs0069
+                  jump ofs0066
+         ofs003a:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0041
+         ofs0041:
+                  label
+                  getlocal0
+                  callproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"89"), 0
+                  pop
+                  getlocal3
+                  dup
+                  iftrue ofs0050
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0050:
+                  iffalse ofs005d
+                  jump ofs003a
+         ofs0058:
+                  label
+                  getlocal0
+                  getlocal1
+                  initproperty QName(PrivateNamespace("%h"),"6I")
+         ofs005d:
+                  getlocal3
+                  iffalse ofs0069
+                  jump ofs0041
+         ofs0066:
+                  getlocal0
+                  constructsuper 0
+         ofs0069:
+                  jump ofs0058
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      b2internal function §'c§(param1:Function, param2:Function, param3:int, param4:int) : void
+      {
+         trait method QName(Namespace("http://www.box2d.org/ns/b2internal"),"\'c")
+            dispid 0
+            method
+               name null
+               param QName(PackageNamespace(""),"Function")
+               param QName(PackageNamespace(""),"Function")
+               param QName(PackageNamespace(""),"int")
+               param QName(PackageNamespace(""),"int")
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 4
+                  localcount 7
+                  initscopedepth 4
+                  maxscopedepth 5
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     swap
+                     jump ofs0014
+                     getlocal 5
+                     istypelate
+                     urshift
+                     kill 3
+                     declocal 2
+                     getlocal3
+                     getlocal2
+                     declocal 2
+                     getlocal3
+            ofs0014:
+                     setlocal 5
+                     setlocal 6
+                     getlocal0
+                     pushscope
+                     getlocal 6
+                     iffalse ofs00ba
+                     jump ofs00e2
+            ofs0024:
+                     label
+                     returnvoid
+                     pushtrue
+                     iftrue ofs002b
+            ofs002b:
+                     label
+                     getlocal0
+                     getproperty QName(PrivateNamespace("%h"),"9!a")
+                     getlocal 4
+                     getproperty MultinameL([PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h")])
+                     getlocal3
+                     getproperty MultinameL([PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h")])
+                     pushfalse
+                     setproperty QName(PackageNamespace(""),"primary")
+                     getlocal 5
+                     iftrue ofs0057
+                     getlocal 6
+                     iffalse ofs0081
+                     jump ofs0024
+            ofs0049:
+                     label
+                     getlocal0
+                     getproperty QName(PrivateNamespace("%h"),"9!a")
+                     getlocal 4
+                     getproperty MultinameL([PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h")])
+                     getlocal3
+                     getproperty MultinameL([PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h")])
+                     getlocal2
+                     setproperty QName(PackageNamespace(""),"destroyFcn")
+            ofs0057:
+                     getlocal 6
+                     dup
+                     jump ofs006a
+                     kill 3
+                     not
+                     inclocal 4
+                     kill 3
+                     pushundefined
+                     rshift
+                     bitxor
+                     convert_i
+                     getlocal0
+            ofs006a:
+                     iftrue ofs0071
+                     pop
+                     getlocal1
+                     convert_b
+            ofs0071:
+                     iffalse ofs009c
+                     jump ofs002b
+            ofs0079:
+                     label
+                     getlocal3
+                     getlocal 4
+                     ifeq ofs0024
+            ofs0081:
+                     getlocal 5
+                     dup
+                     iffalse ofs008b
+                     pop
+                     getlocal3
+                     convert_b
+            ofs008b:
+                     iftrue ofs00ef
+                     getlocal0
+                     getproperty QName(PrivateNamespace("%h"),"9!a")
+                     getlocal 4
+                     getproperty MultinameL([PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h")])
+                     getlocal3
+                     getproperty MultinameL([PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h")])
+                     getlocal1
+                     setproperty QName(PackageNamespace(""),"createFcn")
+            ofs009c:
+                     getlocal 5
+                     iftrue ofs00cc
+                     getlocal 5
+                     jump ofs00b6
+                     getlocal 4
+                     pushnull
+                     setlocal 5
+                     kill 5
+                     setlocal2
+                     inclocal 3
+                     getlocal0
+                     equals
+                     getlocal 4
+            ofs00b6:
+                     iftrue ofs00de
+            ofs00ba:
+                     jump ofs0049
+            ofs00be:
+                     label
+                     getlocal0
+                     getproperty QName(PrivateNamespace("%h"),"9!a")
+                     getlocal3
+                     getproperty MultinameL([PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h")])
+                     getlocal 4
+                     getproperty MultinameL([PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h")])
+                     pushtrue
+                     setproperty QName(PackageNamespace(""),"primary")
+            ofs00cc:
+                     jump ofs0079
+            ofs00d0:
+                     label
+                     getlocal0
+                     getproperty QName(PrivateNamespace("%h"),"9!a")
+                     getlocal3
+                     getproperty MultinameL([PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h")])
+                     getlocal 4
+                     getproperty MultinameL([PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h")])
+                     getlocal2
+                     setproperty QName(PackageNamespace(""),"destroyFcn")
+            ofs00de:
+                     jump ofs00be
+            ofs00e2:
+                     getlocal0
+                     getproperty QName(PrivateNamespace("%h"),"9!a")
+                     getlocal3
+                     getproperty MultinameL([PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h")])
+                     getlocal 4
+                     getproperty MultinameL([PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h")])
+                     getlocal1
+                     setproperty QName(PackageNamespace(""),"createFcn")
+            ofs00ef:
+                     jump ofs00d0
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         b2internal function §89§() : void
+         {
+            trait method QName(Namespace("http://www.box2d.org/ns/b2internal"),"89")
+               dispid 0
+               method
+                  name null
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 7
+                     localcount 5
+                     initscopedepth 4
+                     maxscopedepth 5
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        setlocal3
+                        jump ofs0015
+                        declocal_i 3
+                        hasnext
+                        declocal 2
+                        convert_i
+                        pushfalse
+                        getlocal3
+                        inclocal_i 3
+                        kill 2
+                        kill 2
+               ofs0015:
+                        setlocal 4
+                        getlocal0
+                        pushscope
+                        pushbyte 0
+                        setlocal2
+                        getlocal 4
+                        iftrue ofs003d
+                        getlocal0
+                        findpropstrict Multiname("Vector",[PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h"),PackageNamespace("__AS3__.vec")])
+                        getproperty Multiname("Vector",[PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h"),PackageNamespace("__AS3__.vec")])
+                        findpropstrict Multiname("Vector",[PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h"),PackageNamespace("__AS3__.vec")])
+                        getproperty Multiname("Vector",[PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h"),PackageNamespace("__AS3__.vec")])
+                        findpropstrict QName(PackageNamespace("#!0"),"b2ContactRegister")
+                        getproperty QName(PackageNamespace("#!0"),"b2ContactRegister")
+                        applytype 1
+                        applytype 1
+                        findpropstrict QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"[I")
+                        construct 1
+                        initproperty QName(PrivateNamespace("%h"),"9!a")
+               ofs003d:
+                        pushbyte 0
+                        getlocal 4
+                        iftrue ofs0046
+                        convert_i
+               ofs0046:
+                        setlocal1
+                        jump ofs0224
+               ofs004b:
+                        label
+                        returnvoid
+                        pushtrue
+                        iftrue ofs0052
+               ofs0052:
+                        label
+                        getlocal0
+                        findpropstrict QName(PackageNamespace("#!0"),"b2PolyAndEdgeContact")
+                        getproperty QName(PackageNamespace("#!0"),"b2PolyAndEdgeContact")
+                        getproperty QName(PackageNamespace(""),"@!L")
+                        findpropstrict QName(PackageNamespace("#!0"),"b2PolyAndEdgeContact")
+                        getproperty QName(PackageNamespace("#!0"),"b2PolyAndEdgeContact")
+                        getproperty QName(PackageNamespace(""),"\"G")
+                        findpropstrict QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"9Q")
+                        findpropstrict QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"#[")
+                        callproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"\'c"), 4
+                        pop
+                        getlocal 4
+                        dup
+                        iffalse ofs007a
+                        pop
+                        getlocal3
+                        convert_b
+               ofs007a:
+                        iftrue ofs00c6
+                        getlocal3
+                        dup
+                        iftrue ofs0087
+                        pop
+                        getlocal1
+                        convert_b
+               ofs0087:
+                        iffalse ofs00e8
+                        getlocal 4
+                        iftrue ofs012b
+                        getlocal 4
+                        iftrue ofs0159
+                        getlocal3
+                        dup
+                        iftrue ofs00a0
+                        pop
+                        getlocal3
+                        convert_b
+               ofs00a0:
+                        iffalse ofs01e8
+                        jump ofs004b
+               ofs00a8:
+                        label
+                        getlocal0
+                        findpropstrict QName(PackageNamespace("#!0"),"b2EdgeAndCircleContact")
+                        getproperty QName(PackageNamespace("#!0"),"b2EdgeAndCircleContact")
+                        getproperty QName(PackageNamespace(""),"@!L")
+                        findpropstrict QName(PackageNamespace("#!0"),"b2EdgeAndCircleContact")
+                        getproperty QName(PackageNamespace("#!0"),"b2EdgeAndCircleContact")
+                        getproperty QName(PackageNamespace(""),"\"G")
+                        findpropstrict QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"#[")
+                        findpropstrict QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"^%")
+                        callproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"\'c"), 4
+                        pop
+               ofs00c6:
+                        jump ofs0052
+               ofs00ca:
+                        label
+                        getlocal0
+                        findpropstrict QName(PackageNamespace("#!0"),"b2PolygonContact")
+                        getproperty QName(PackageNamespace("#!0"),"b2PolygonContact")
+                        getproperty QName(PackageNamespace(""),"@!L")
+                        findpropstrict QName(PackageNamespace("#!0"),"b2PolygonContact")
+                        getproperty QName(PackageNamespace("#!0"),"b2PolygonContact")
+                        getproperty QName(PackageNamespace(""),"\"G")
+                        findpropstrict QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"9Q")
+                        findpropstrict QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"9Q")
+                        callproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"\'c"), 4
+                        pop
+               ofs00e8:
+                        getlocal 4
+                        iftrue ofs0176
+                        getlocal3
+                        iffalse ofs01bf
+                        getlocal 4
+                        iftrue ofs0217
+                        jump ofs00a8
+               ofs00fd:
+                        label
+                        getlocal0
+                        findpropstrict QName(PackageNamespace("#!0"),"b2PolyAndCircleContact")
+                        getproperty QName(PackageNamespace("#!0"),"b2PolyAndCircleContact")
+                        getproperty QName(PackageNamespace(""),"@!L")
+                        jump ofs0115
+                        convert_d
+                        kill 2
+                        checkfilter
+                        getlocal2
+                        convert_o
+                        bitor
+                        inclocal 3
+                        decrement
+                        declocal 2
+               ofs0115:
+                        findpropstrict QName(PackageNamespace("#!0"),"b2PolyAndCircleContact")
+                        getproperty QName(PackageNamespace("#!0"),"b2PolyAndCircleContact")
+                        getproperty QName(PackageNamespace(""),"\"G")
+                        findpropstrict QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"9Q")
+                        findpropstrict QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"^%")
+                        callproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"\'c"), 4
+                        pop
+               ofs012b:
+                        jump ofs00ca
+               ofs012f:
+                        label
+                        getlocal1
+                        getlocal 4
+                        dup
+                        iffalse ofs013b
+                        pop
+                        getlocal3
+                        convert_b
+               ofs013b:
+                        iftrue ofs01be
+                        getlocal3
+                        iffalse ofs0198
+                        getlocal3
+                        iffalse ofs01da
+                        findpropstrict QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"[I")
+                        getlocal 4
+                        iftrue ofs019e
+                        iflt ofs0228
+               ofs0159:
+                        getlocal0
+                        findpropstrict QName(PackageNamespace("#!0"),"b2CircleContact")
+                        getproperty QName(PackageNamespace("#!0"),"b2CircleContact")
+                        getproperty QName(PackageNamespace(""),"@!L")
+                        findpropstrict QName(PackageNamespace("#!0"),"b2CircleContact")
+                        getproperty QName(PackageNamespace("#!0"),"b2CircleContact")
+                        getproperty QName(PackageNamespace(""),"\"G")
+                        findpropstrict QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"^%")
+                        findpropstrict QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"^%")
+                        callproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"\'c"), 4
+                        pop
+               ofs0176:
+                        getlocal 4
+                        dup
+                        iffalse ofs0180
+                        pop
+                        getlocal1
+                        convert_b
+               ofs0180:
+                        iftrue ofs01a2
+                        getlocal 4
+                        dup
+                        iffalse ofs018e
+                        pop
+                        getlocal1
+                        convert_b
+               ofs018e:
+                        iftrue ofs0241
+                        jump ofs00fd
+               ofs0196:
+                        label
+                        getlocal2
+               ofs0198:
+                        findpropstrict QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"[I")
+               ofs019e:
+                        iflt ofs01f7
+               ofs01a2:
+                        getlocal1
+                        getlocal 4
+                        dup
+                        iffalse ofs01ad
+                        pop
+                        getlocal1
+                        convert_b
+               ofs01ad:
+                        iftrue ofs01bd
+                        getlocal 4
+                        iftrue ofs01c5
+                        increment_i
+                        getlocal3
+                        iffalse ofs01be
+               ofs01bd:
+                        convert_i
+               ofs01be:
+                        setlocal1
+               ofs01bf:
+                        jump ofs012f
+               ofs01c3:
+                        label
+                        getlocal2
+               ofs01c5:
+                        increment_i
+                        getlocal 4
+                        dup
+                        iffalse ofs01d0
+                        pop
+                        getlocal0
+                        convert_b
+               ofs01d0:
+                        iftrue ofs01da
+                        getlocal3
+                        iffalse ofs021f
+                        convert_i
+               ofs01da:
+                        getlocal3
+                        dup
+                        iftrue ofs01e3
+                        pop
+                        getlocal2
+                        convert_b
+               ofs01e3:
+                        iffalse ofs021e
+                        setlocal2
+               ofs01e8:
+                        getlocal 4
+                        iftrue ofs0220
+                        jump ofs0196
+               ofs01f2:
+                        label
+                        jump ofs0196
+               ofs01f7:
+                        label
+                        jump ofs0209
+                        rshift
+                        declocal 2
+                        declocal 3
+                        newactivation
+                        declocal 2
+                        convert_b
+                        declocal_i 2
+                        instanceof
+                        convert_s
+               ofs0209:
+                        getlocal0
+                        getproperty QName(PrivateNamespace("%h"),"9!a")
+                        getlocal1
+                        getproperty MultinameL([PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h")])
+                        getlocal2
+                        findpropstrict QName(PackageNamespace("#!0"),"b2ContactRegister")
+                        constructprop QName(PackageNamespace("#!0"),"b2ContactRegister"), 0
+                        setproperty MultinameL([PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h")])
+               ofs0217:
+                        jump ofs01c3
+               ofs021b:
+                        label
+                        pushbyte 0
+               ofs021e:
+                        convert_i
+               ofs021f:
+                        setlocal2
+               ofs0220:
+                        jump ofs01f2
+               ofs0224:
+                        jump ofs012f
+               ofs0228:
+                        label
+                        getlocal0
+                        getproperty QName(PrivateNamespace("%h"),"9!a")
+                        getlocal1
+                        findpropstrict Multiname("Vector",[PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h"),PackageNamespace("__AS3__.vec")])
+                        getproperty Multiname("Vector",[PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h"),PackageNamespace("__AS3__.vec")])
+                        findpropstrict QName(PackageNamespace("#!0"),"b2ContactRegister")
+                        getproperty QName(PackageNamespace("#!0"),"b2ContactRegister")
+                        applytype 1
+                        findpropstrict QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(PackageNamespace("0!3"),"b2Shape")
+                        getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"[I")
+                        construct 1
+                        setproperty MultinameL([PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h")])
+               ofs0241:
+                        jump ofs021b
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public function §@!L§(param1:b2Fixture, param2:b2Fixture) : b2Contact
+            {
+               trait method QName(PackageNamespace(""),"@!L")
+                  dispid 0
+                  method
+                     name null
+                     param QName(PackageNamespace(">!L"),"b2Fixture")
+                     param QName(PackageNamespace(">!L"),"b2Fixture")
+                     returns QName(PackageNamespace("#!0"),"b2Contact")
+                     
+                     body
+                        maxstack 5
+                        localcount 12
+                        initscopedepth 4
+                        maxscopedepth 5
+                        
+                        code
+                           pushfalse
+                           pushtrue
+                           swap
+                           jump ofs0015
+                           declocal_i 10
+                           greaterequals
+                           bitor
+                           inclocal 3
+                           pushwith
+                           setlocal 8
+                           convert_o
+                           inclocal_i 2
+                           declocal 8
+                  ofs0015:
+                           setlocal 10
+                           setlocal 11
+                           getlocal0
+                           pushscope
+                           pushnull
+                           coerce QName(PackageNamespace("#!0"),"b2Contact")
+                           setlocal 6
+                           getlocal1
+                           callproperty QName(PackageNamespace(""),"6!-"), 0
+                           getlocal 10
+                           dup
+                           iffalse ofs002e
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs002e:
+                           iftrue ofs0033
+                           convert_i
+                  ofs0033:
+                           setlocal3
+                           getlocal2
+                           callproperty QName(PackageNamespace(""),"6!-"), 0
+                           getlocal 10
+                           dup
+                           iffalse ofs0042
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs0042:
+                           iftrue ofs0047
+                           convert_i
+                  ofs0047:
+                           setlocal 4
+                           getlocal0
+                           getproperty QName(PrivateNamespace("%h"),"9!a")
+                           getlocal3
+                           getproperty MultinameL([PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h")])
+                           getlocal 4
+                           getproperty MultinameL([PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h")])
+                           coerce QName(PackageNamespace("#!0"),"b2ContactRegister")
+                           setlocal 5
+                           getlocal 10
+                           dup
+                           iffalse ofs0061
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs0061:
+                           iftrue ofs0074
+                           getlocal 5
+                           getproperty QName(PackageNamespace(""),"pool")
+                           getlocal 11
+                           iffalse ofs0078
+                           convert_b
+                           iffalse ofs0103
+                  ofs0074:
+                           getlocal 5
+                           getproperty QName(PackageNamespace(""),"pool")
+                  ofs0078:
+                           coerce QName(PackageNamespace("#!0"),"b2Contact")
+                           setlocal 6
+                           getlocal 11
+                           dup
+                           iftrue ofs0086
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0086:
+                           iffalse ofs0103
+                           getlocal 5
+                           getlocal 6
+                           getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),",!Z")
+                           setproperty QName(PackageNamespace(""),"pool")
+                           getlocal 10
+                           dup
+                           iffalse ofs009c
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs009c:
+                           iftrue ofs00ea
+                           getlocal 5
+                           dup
+                           setlocal 8
+                           getproperty QName(PackageNamespace(""),"8!W")
+                           getlocal 11
+                           iffalse ofs00ae
+                           decrement_i
+                  ofs00ae:
+                           setlocal 9
+                           getlocal 11
+                           jump ofs00c6
+                           equals
+                           getlocal 8
+                           declocal 4
+                           kill 8
+                           newactivation
+                           declocal 10
+                           kill 6
+                           kill 8
+                           inclocal_i 8
+                  ofs00c6:
+                           dup
+                           iftrue ofs00ce
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs00ce:
+                           iffalse ofs00d8
+                           getlocal 8
+                           getlocal 9
+                           setproperty QName(PackageNamespace(""),"8!W")
+                  ofs00d8:
+                           kill 9
+                           kill 8
+                           getlocal 11
+                           dup
+                           iftrue ofs00e6
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs00e6:
+                           iffalse ofs0103
+                  ofs00ea:
+                           getlocal 6
+                           getlocal1
+                           getlocal2
+                           callproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"9="), 2
+                           pop
+                           getlocal 11
+                           dup
+                           iftrue ofs00fc
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs00fc:
+                           iffalse ofs0103
+                           getlocal 6
+                           returnvalue
+                  ofs0103:
+                           getlocal 5
+                           getproperty QName(PackageNamespace(""),"createFcn")
+                           coerce QName(PackageNamespace(""),"Function")
+                           setlocal 7
+                           getlocal 11
+                           dup
+                           iftrue ofs0115
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0115:
+                           iffalse ofs012e
+                           getlocal 7
+                           pushnull
+                           ifeq ofs019b
+                           getlocal 11
+                           dup
+                           iftrue ofs012a
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs012a:
+                           iffalse ofs0136
+                  ofs012e:
+                           getlocal 5
+                           getproperty QName(PackageNamespace(""),"primary")
+                           iffalse ofs0172
+                  ofs0136:
+                           getlocal 7
+                           getglobalscope
+                           getlocal0
+                           getproperty QName(PrivateNamespace("%h"),"6I")
+                           call 1
+                           coerce QName(PackageNamespace("#!0"),"b2Contact")
+                           setlocal 6
+                           getlocal 10
+                           iftrue ofs016f
+                           getlocal 6
+                           getlocal1
+                           getlocal2
+                           callproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"9="), 2
+                           pop
+                           getlocal 11
+                           dup
+                           iftrue ofs016b
+                           pop
+                           jump ofs0169
+                           setlocal 7
+                           inclocal_i 5
+                           subtract
+                           newactivation
+                           declocal_i 9
+                           instanceof
+                           getlocal 9
+                           lessthan
+                           subtract_i
+                  ofs0169:
+                           getlocal1
+                           convert_b
+                  ofs016b:
+                           iffalse ofs0172
+                  ofs016f:
+                           getlocal 6
+                           returnvalue
+                  ofs0172:
+                           getlocal 7
+                           getglobalscope
+                           getlocal0
+                           getproperty QName(PrivateNamespace("%h"),"6I")
+                           call 1
+                           coerce QName(PackageNamespace("#!0"),"b2Contact")
+                           setlocal 6
+                           getlocal 10
+                           dup
+                           iffalse ofs0188
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0188:
+                           iftrue ofs0194
+                           getlocal 6
+                           getlocal2
+                           getlocal1
+                           callproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"9="), 2
+                           pop
+                  ofs0194:
+                           getlocal 6
+                           returnvalue
+                           jump ofs019b
+                  ofs019b:
+                           pushnull
+                           returnvalue
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public function §"G§(param1:b2Contact) : void
+               {
+                  trait method QName(PackageNamespace(""),"\"G")
+                     dispid 0
+                     method
+                        name null
+                        param QName(PackageNamespace("#!0"),"b2Contact")
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 6
+                           localcount 10
+                           initscopedepth 4
+                           maxscopedepth 5
+                           
+                           code
+                              pushfalse
+                              pushtrue
+                              swap
+                              jump ofs0015
+                              inclocal 5
+                              strictequals
+                              declocal_i 8
+                              pop
+                              declocal_i 2
+                              inclocal 5
+                              lessthan
+                              pushnan
+                              inclocal 3
+                     ofs0015:
+                              setlocal 8
+                              setlocal 9
+                              getlocal0
+                              pushscope
+                              getlocal 9
+                              iffalse ofs0074
+                              getlocal1
+                              getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),",S")
+                              getproperty QName(PackageNamespace(""),"5<")
+                              getlocal 9
+                              iffalse ofs009c
+                              pushbyte 0
+                              ifngt ofs0074
+                              getlocal 8
+                              iftrue ofs006a
+                              getlocal1
+                              getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"7d")
+                              getlocal 9
+                              dup
+                              iftrue ofs0045
+                              pop
+                              getlocal3
+                              convert_b
+                     ofs0045:
+                              iffalse ofs0077
+                              getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"m_body")
+                              getlocal 9
+                              iffalse ofs006f
+                              pushtrue
+                              getlocal 9
+                              iffalse ofs0070
+                              callproperty QName(PackageNamespace(""),"SetAwake"), 1
+                              pop
+                              getlocal 9
+                              dup
+                              iftrue ofs0066
+                              pop
+                              getlocal2
+                              convert_b
+                     ofs0066:
+                              iffalse ofs0074
+                     ofs006a:
+                              getlocal1
+                              getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"-F")
+                              getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"m_body")
+                     ofs006f:
+                              pushtrue
+                     ofs0070:
+                              callproperty QName(PackageNamespace(""),"SetAwake"), 1
+                              pop
+                     ofs0074:
+                              getlocal1
+                              getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"7d")
+                     ofs0077:
+                              callproperty QName(PackageNamespace(""),"6!-"), 0
+                              getlocal 9
+                              dup
+                              iftrue ofs0084
+                              pop
+                              getlocal1
+                              convert_b
+                     ofs0084:
+                              iffalse ofs009c
+                              convert_i
+                              jump ofs009c
+                              add
+                              convert_u
+                              setlocal 8
+                              declocal 3
+                              declocal_i 3
+                              setlocal 8
+                              dxnslate
+                              declocal_i 7
+                              inclocal 3
+                     ofs009c:
+                              setlocal2
+                              getlocal1
+                              getproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),"-F")
+                              callproperty QName(PackageNamespace(""),"6!-"), 0
+                              getlocal 9
+                              dup
+                              iftrue ofs00ad
+                              pop
+                              getlocal2
+                              convert_b
+                     ofs00ad:
+                              iffalse ofs00b2
+                              convert_i
+                     ofs00b2:
+                              setlocal3
+                              getlocal0
+                              getproperty QName(PrivateNamespace("%h"),"9!a")
+                              getlocal2
+                              getproperty MultinameL([PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h")])
+                              getlocal3
+                              getproperty MultinameL([PrivateNamespace("%h"),Namespace("http://www.box2d.org/ns/b2internal"),PrivateNamespace("b2ContactFactory.as$79"),PackageNamespace(""),PackageNamespace("#!0"),PackageInternalNs("#!0"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!L"),PackageNamespace("0!3"),PackageNamespace("!m"),PackageNamespace(">!8"),PackageNamespace("+!g"),ProtectedNamespace("%h"),StaticProtectedNs("%h")])
+                              coerce QName(PackageNamespace("#!0"),"b2ContactRegister")
+                              setlocal 4
+                              getlocal 9
+                              dup
+                              iftrue ofs00ca
+                              pop
+                              getlocal0
+                              convert_b
+                     ofs00ca:
+                              iffalse ofs0125
+                              getlocal 4
+                              dup
+                              setlocal 6
+                              getproperty QName(PackageNamespace(""),"8!W")
+                              getlocal 8
+                              iftrue ofs00dc
+                              increment_i
+                     ofs00dc:
+                              setlocal 7
+                              getlocal 8
+                              dup
+                              iffalse ofs00e8
+                              pop
+                              getlocal0
+                              convert_b
+                     ofs00e8:
+                              iftrue ofs00f2
+                              getlocal 6
+                              getlocal 7
+                              setproperty QName(PackageNamespace(""),"8!W")
+                     ofs00f2:
+                              kill 7
+                              kill 6
+                              getlocal 8
+                              jump ofs0107
+                              bitnot
+                              modulo
+                              popscope
+                              kill 2
+                              newactivation
+                              add
+                              dxnslate
+                              inclocal 6
+                              convert_o
+                     ofs0107:
+                              dup
+                              iffalse ofs010f
+                              pop
+                              getlocal3
+                              convert_b
+                     ofs010f:
+                              iftrue ofs0120
+                              getlocal1
+                              getlocal 4
+                              getproperty QName(PackageNamespace(""),"pool")
+                              setproperty QName(Namespace("http://www.box2d.org/ns/b2internal"),",!Z")
+                              getlocal 8
+                              iftrue ofs0125
+                     ofs0120:
+                              getlocal 4
+                              getlocal1
+                              setproperty QName(PackageNamespace(""),"pool")
+                     ofs0125:
+                              getlocal 4
+                              getproperty QName(PackageNamespace(""),"destroyFcn")
+                              coerce QName(PackageNamespace(""),"Function")
+                              setlocal 5
+                              getlocal 8
+                              iftrue ofs013d
+                              getlocal 5
+                              getglobalscope
+                              getlocal1
+                              getlocal0
+                              getproperty QName(PrivateNamespace("%h"),"6I")
+                              call 2
+                              pop
+                     ofs013d:
+                              returnvoid
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+               }
+            }

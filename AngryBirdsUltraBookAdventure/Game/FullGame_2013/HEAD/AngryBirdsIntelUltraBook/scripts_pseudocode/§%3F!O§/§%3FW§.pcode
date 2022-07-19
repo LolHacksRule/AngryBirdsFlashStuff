@@ -1,0 +1,51 @@
+package §?!O§
+{
+   public interface §?W§
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 2
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 3
+               
+               code
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      function stop() : void;
+      
+      function §"f§() : void;
+      
+      function get isCompleted() : Boolean;
+      
+      function get isPaused() : Boolean;
+      
+      function pause() : void;
+      
+      function set §1!,§(param1:Boolean) : void;
+      
+      function get §1!,§() : Boolean;
+      
+      function set §=e§(param1:Boolean) : void;
+      
+      function get §=e§() : Boolean;
+      
+      function play() : void;
+      
+      function set delay(param1:Number) : void;
+      
+      function set onComplete(param1:Function) : void;
+      
+      function updateState() : void;
+   }
+}

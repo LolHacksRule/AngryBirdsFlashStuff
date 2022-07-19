@@ -1,0 +1,414 @@
+package §"!i§
+{
+   public class UserLevelScoreVO extends §<m§
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var levelScore:int;
+      
+      public var stars:int;
+      
+      public var mightyEagleScore:int;
+      
+      public var §'v§:Boolean;
+      
+      [Transient]
+      public var §`#§:Boolean = false;
+      
+      public function UserLevelScoreVO(userId:String, userName:String, avatarString:String, levelScore:int, stars:int, mightyEagleScore:int, rank:int)
+      {
+         method
+            name "com.angrybirds.data:UserLevelScoreVO/UserLevelScoreVO"
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace(""),"int")
+            param QName(PackageNamespace(""),"int")
+            param QName(PackageNamespace(""),"int")
+            param QName(PackageNamespace(""),"int")
+            returns null
+            
+            body
+               maxstack 7
+               localcount 10
+               initscopedepth 6
+               maxscopedepth 7
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0012
+                  modulo
+                  setlocal2
+                  subtract_i
+                  convert_s
+                  convert_u
+                  checkfilter
+                  urshift
+                  declocal_i 8
+                  inclocal_i 4
+         ofs0012:
+                  setlocal 8
+                  setlocal 9
+                  debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\data;UserLevelScoreVO.as"
+                  getlocal 8
+                  iftrue ofs0020
+                  debugline 15
+         ofs0020:
+                  getlocal0
+                  pushscope
+                  getlocal 8
+                  dup
+                  iffalse ofs002c
+                  pop
+                  getlocal3
+                  convert_b
+         ofs002c:
+                  iftrue ofs00f3
+                  jump ofs017a
+         ofs0034:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs003b
+         ofs003b:
+                  label
+                  debugline 22
+                  getlocal 9
+                  iffalse ofs007f
+                  getlocal 8
+                  iftrue ofs00fa
+                  getlocal 9
+                  iffalse ofs0104
+                  getlocal 8
+                  iftrue ofs014e
+                  getlocal 8
+                  dup
+                  iffalse ofs0060
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0060:
+                  iftrue ofs016c
+                  getlocal 9
+                  dup
+                  iftrue ofs006e
+                  pop
+                  getlocal0
+                  convert_b
+         ofs006e:
+                  iffalse ofs017f
+                  jump ofs0034
+         ofs0076:
+                  label
+                  getlocal0
+                  getlocal1
+                  getlocal2
+                  getlocal3
+                  getlocal 7
+                  constructsuper 4
+         ofs007f:
+                  getlocal 8
+                  dup
+                  iffalse ofs0099
+                  jump ofs0096
+                  typeof
+                  setlocal2
+                  declocal 6
+                  dxnslate
+                  inclocal 8
+                  getglobalscope
+                  inclocal 6
+                  urshift
+                  multiply
+         ofs0096:
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0099:
+                  iftrue ofs00b2
+                  getlocal 9
+                  dup
+                  iftrue ofs00a7
+                  pop
+                  getlocal3
+                  convert_b
+         ofs00a7:
+                  iffalse ofs0158
+                  jump ofs003b
+         ofs00af:
+                  label
+                  debugline 21
+         ofs00b2:
+                  getlocal 9
+                  dup
+                  iftrue ofs00bc
+                  pop
+                  getlocal1
+                  convert_b
+         ofs00bc:
+                  iffalse ofs00ca
+                  jump ofs0076
+         ofs00c4:
+                  label
+                  getlocal0
+                  getlocal 6
+                  initproperty QName(PackageNamespace(""),"mightyEagleScore")
+         ofs00ca:
+                  getlocal 9
+                  iffalse ofs00d7
+                  jump ofs00af
+         ofs00d4:
+                  label
+                  debugline 19
+         ofs00d7:
+                  getlocal 8
+                  iftrue ofs00ed
+                  getlocal 8
+                  iftrue ofs012c
+                  jump ofs00c4
+         ofs00e7:
+                  label
+                  getlocal0
+                  getlocal 5
+                  initproperty QName(PackageNamespace(""),"stars")
+         ofs00ed:
+                  getlocal 8
+                  iftrue ofs0136
+         ofs00f3:
+                  jump ofs00d4
+         ofs00f7:
+                  label
+                  debugline 18
+         ofs00fa:
+                  jump ofs00e7
+         ofs00fe:
+                  label
+                  getlocal0
+                  getlocal 4
+                  initproperty QName(PackageNamespace(""),"levelScore")
+         ofs0104:
+                  getlocal 9
+                  dup
+                  jump ofs011a
+                  modulo
+                  declocal_i 2
+                  getlocal 4
+                  setlocal 8
+                  setlocal 5
+                  convert_o
+                  kill 3
+                  modulo
+                  inclocal 4
+         ofs011a:
+                  iftrue ofs0121
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0121:
+                  iffalse ofs0176
+                  jump ofs00f7
+         ofs0129:
+                  label
+                  debugline 17
+         ofs012c:
+                  jump ofs00fe
+         ofs0130:
+                  label
+                  debug 1, "rank", 6, 15
+         ofs0136:
+                  getlocal 8
+                  dup
+                  iffalse ofs0140
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0140:
+                  iftrue ofs0162
+                  jump ofs0129
+         ofs0148:
+                  label
+                  debug 1, "mightyEagleScore", 5, 15
+         ofs014e:
+                  jump ofs0130
+         ofs0152:
+                  label
+                  debug 1, "stars", 4, 15
+         ofs0158:
+                  jump ofs0148
+         ofs015c:
+                  label
+                  debug 1, "levelScore", 3, 15
+         ofs0162:
+                  jump ofs0152
+         ofs0166:
+                  label
+                  debug 1, "avatarString", 2, 15
+         ofs016c:
+                  jump ofs015c
+         ofs0170:
+                  label
+                  debug 1, "userName", 1, 15
+         ofs0176:
+                  jump ofs0166
+         ofs017a:
+                  debug 1, "userId", 0, 15
+         ofs017f:
+                  jump ofs0170
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function §<! §(obj:Object) : UserLevelScoreVO
+      {
+         trait method QName(PackageNamespace(""),"<! ")
+            flag FINAL
+            flag METADATA
+            metadata"__go_to_definition_help"
+               item "pos" "631"
+            end ; metadata
+            dispid 3
+            method
+               name "com.angrybirds.data:UserLevelScoreVO/fromServerObject"
+               param QName(PackageNamespace(""),"Object")
+               returns QName(PackageNamespace("\"!i"),"UserLevelScoreVO")
+               
+               body
+                  maxstack 10
+                  localcount 4
+                  initscopedepth 5
+                  maxscopedepth 6
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     swap
+                     jump ofs0014
+                     nextname
+                     declocal 2
+                     add_i
+                     add_i
+                     declocal 2
+                     declocal_i 2
+                     astypelate
+                     decrement_i
+                     declocal_i 2
+            ofs0014:
+                     setlocal2
+                     setlocal3
+                     debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\data;UserLevelScoreVO.as"
+                     getlocal3
+                     iffalse ofs001f
+                     debugline 24
+            ofs001f:
+                     getlocal0
+                     pushscope
+                     getlocal2
+                     dup
+                     iffalse ofs002a
+                     pop
+                     getlocal3
+                     convert_b
+            ofs002a:
+                     iftrue ofs0094
+                     jump ofs0098
+                     jump ofs0036
+            ofs0036:
+                     astypelate
+                     convert_d
+                     inclocal_i 2
+                     negate
+                     kill 2
+                     decrement_i
+                     setlocal2
+                     kill 2
+                     dup
+            ofs0042:
+                     label
+                     getlocal0
+                     getlocal3
+                     dup
+                     iftrue ofs004d
+                     pop
+                     getlocal2
+                     convert_b
+            ofs004d:
+                     iffalse ofs0053
+                     debugline 27
+            ofs0053:
+                     getlocal1
+                     jump ofs0064
+                     declocal_i 2
+                     getlocal2
+                     kill 2
+                     setlocal2
+                     add
+                     setlocal2
+                     getlocal2
+                     inclocal_i 2
+                     convert_d
+            ofs0064:
+                     getproperty Multiname("u",[PrivateNamespace(">1"),PrivateNamespace("UserLevelScoreVO.as$557"),PackageNamespace(""),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(">1"),StaticProtectedNs(">1"),StaticProtectedNs("+0"),StaticProtectedNs("#!")])
+                     debugline 28
+                     getlocal1
+                     getproperty Multiname("n",[PrivateNamespace(">1"),PrivateNamespace("UserLevelScoreVO.as$557"),PackageNamespace(""),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(">1"),StaticProtectedNs(">1"),StaticProtectedNs("+0"),StaticProtectedNs("#!")])
+                     debugline 29
+                     getlocal1
+                     getproperty Multiname("a",[PrivateNamespace(">1"),PrivateNamespace("UserLevelScoreVO.as$557"),PackageNamespace(""),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(">1"),StaticProtectedNs(">1"),StaticProtectedNs("+0"),StaticProtectedNs("#!")])
+                     debugline 30
+                     getlocal1
+                     getproperty Multiname("p",[PrivateNamespace(">1"),PrivateNamespace("UserLevelScoreVO.as$557"),PackageNamespace(""),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(">1"),StaticProtectedNs(">1"),StaticProtectedNs("+0"),StaticProtectedNs("#!")])
+                     debugline 31
+                     getlocal1
+                     getproperty Multiname("s",[PrivateNamespace(">1"),PrivateNamespace("UserLevelScoreVO.as$557"),PackageNamespace(""),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(">1"),StaticProtectedNs(">1"),StaticProtectedNs("+0"),StaticProtectedNs("#!")])
+                     debugline 32
+                     getlocal1
+                     getproperty Multiname("me",[PrivateNamespace(">1"),PrivateNamespace("UserLevelScoreVO.as$557"),PackageNamespace(""),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(">1"),StaticProtectedNs(">1"),StaticProtectedNs("+0"),StaticProtectedNs("#!")])
+                     debugline 33
+                     getlocal1
+                     getproperty Multiname("r",[PrivateNamespace(">1"),PrivateNamespace("UserLevelScoreVO.as$557"),PackageNamespace(""),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(">1"),StaticProtectedNs(">1"),StaticProtectedNs("+0"),StaticProtectedNs("#!")])
+                     construct 7
+                     returnvalue
+                     pushtrue
+                     iftrue ofs008c
+            ofs008c:
+                     label
+                     debugline 26
+                     getlocal2
+                     iftrue ofs009d
+            ofs0094:
+                     jump ofs0042
+            ofs0098:
+                     debug 1, "obj", 0, 24
+            ofs009d:
+                     jump ofs008c
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+      }
+   }

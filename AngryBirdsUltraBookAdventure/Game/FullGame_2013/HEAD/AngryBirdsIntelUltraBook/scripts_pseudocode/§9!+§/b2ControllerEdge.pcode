@@ -1,0 +1,84 @@
+package §9!+§
+{
+   import §>!L§.b2Body;
+   
+   public class b2ControllerEdge
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var controller:b2Controller;
+      
+      public var §[r§:b2Body;
+      
+      public var § [§:b2ControllerEdge;
+      
+      public var §;!A§:b2ControllerEdge;
+      
+      public var §-!U§:b2ControllerEdge;
+      
+      public var §2e§:b2ControllerEdge;
+      
+      public function b2ControllerEdge()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  lshift
+                  nextname
+                  divide
+                  decrement_i
+                  increment
+                  convert_s
+                  rshift
+                  convert_o
+                  urshift
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  iffalse ofs001c
+                  getlocal0
+                  constructsuper 0
+         ofs001c:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}

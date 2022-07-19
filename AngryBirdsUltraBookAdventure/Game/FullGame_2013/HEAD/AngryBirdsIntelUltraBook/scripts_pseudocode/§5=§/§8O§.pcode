@@ -1,0 +1,145 @@
+package §5=§
+{
+   public class §8O§
+   {
+      
+      public static const §@;§:int = 10001;
+      
+      public static const §?6§:int = 10002;
+      
+      public static const §[!I§:int = 10003;
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 3
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  convert_b
+                  bitand
+                  increment_i
+                  subtract_i
+                  increment_i
+                  checkfilter
+                  convert_s
+                  hasnext
+                  instanceof
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  iffalse ofs006a
+                  jump ofs0063
+                  jump ofs0021
+         ofs0021:
+                  decrement
+                  convert_b
+                  subtract_i
+                  strictequals
+                  dup
+                  typeof
+                  newactivation
+                  pushfalse
+                  pushwith
+         ofs002a:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0031
+         ofs0031:
+                  label
+                  findproperty QName(PackageNamespace(""),"[!I")
+                  pushshort 10003
+                  initproperty QName(PackageNamespace(""),"[!I")
+                  getlocal2
+                  dup
+                  iftrue ofs0042
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0042:
+                  iffalse ofs0052
+                  jump ofs002a
+         ofs004a:
+                  label
+                  findproperty QName(PackageNamespace(""),"?6")
+                  pushshort 10002
+                  initproperty QName(PackageNamespace(""),"?6")
+         ofs0052:
+                  getlocal2
+                  dup
+                  iftrue ofs005b
+                  pop
+                  getlocal0
+                  convert_b
+         ofs005b:
+                  iffalse ofs006a
+                  jump ofs0031
+         ofs0063:
+                  findproperty QName(PackageNamespace(""),"@;")
+                  pushshort 10001
+                  initproperty QName(PackageNamespace(""),"@;")
+         ofs006a:
+                  jump ofs004a
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function §8O§()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  negate_i
+                  setlocal2
+                  multiply_i
+                  istypelate
+                  newactivation
+                  bitnot
+                  bitor
+                  lessthan
+                  instanceof
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  iftrue ofs001c
+                  getlocal0
+                  constructsuper 0
+         ofs001c:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}
