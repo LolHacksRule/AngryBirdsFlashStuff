@@ -1,0 +1,495 @@
+package §package§
+{
+   import §<u§.Log;
+   
+   public class LevelItemSoundResourceManager
+   {
+      
+      private static var §"!b§:Array;
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function LevelItemSoundResourceManager()
+      {
+         method
+            name null
+            returns QName(PackageNamespace(""),"void")
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  dup
+                  convert_u
+                  increment
+                  coerce_s
+                  strictequals
+                  getglobalscope
+                  getglobalscope
+                  convert_u
+                  convert_u
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  dup
+                  iftrue ofs001d
+                  pop
+                  getlocal2
+                  convert_b
+         ofs001d:
+                  iffalse ofs0024
+                  getlocal0
+                  constructsuper 0
+         ofs0024:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function §>E§(param1:XMLList) : void
+      {
+         trait method QName(PackageNamespace(""),">E")
+            flag FINAL
+            dispid 3
+            method
+               name null
+               param QName(PackageNamespace(""),"XMLList")
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 16
+                  localcount 7
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     setlocal 5
+                     jump ofs0016
+                     getlocal2
+                     bitor
+                     declocal_i 3
+                     bitor
+                     subtract
+                     kill 4
+                     kill 4
+                     getlocal 4
+                     inclocal 5
+            ofs0016:
+                     setlocal 6
+                     getlocal0
+                     pushscope
+                     pushnull
+                     coerce QName(PackageNamespace(""),"XML")
+                     setlocal2
+                     getlocal 5
+                     dup
+                     iftrue ofs0028
+                     pop
+                     getlocal0
+                     convert_b
+            ofs0028:
+                     iffalse ofs0035
+                     findproperty QName(PrivateNamespace(" K"),"\"!b")
+                     findpropstrict QName(PackageNamespace(""),"Array")
+                     constructprop QName(PackageNamespace(""),"Array"), 0
+                     setproperty QName(PrivateNamespace(" K"),"\"!b")
+            ofs0035:
+                     pushbyte 0
+                     setlocal3
+                     getlocal1
+                     getproperty Multiname("Resource_Sound",[PrivateNamespace(" K"),PackageNamespace(""),PrivateNamespace("LevelItemSoundResourceManager.as$72"),PackageNamespace("package"),PackageInternalNs("package"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(" K"),StaticProtectedNs(" K")])
+                     coerce_a
+                     setlocal 4
+                     jump ofs00a9
+                     jump ofs0046
+            ofs0046:
+                     declocal_i 2
+                     declocal_i 2
+                     inclocal_i 4
+                     convert_d
+                     swap
+                     hasnext
+                     kill 4
+                     getlocal3
+                     pushundefined
+            ofs0053:
+                     label
+                     getlocal 4
+                     getlocal3
+                     nextvalue
+                     coerce QName(PackageNamespace(""),"XML")
+                     setlocal2
+                     getlocal 5
+                     dup
+                     iftrue ofs0065
+                     pop
+                     getlocal3
+                     convert_b
+            ofs0065:
+                     iffalse ofs00a9
+                     findpropstrict QName(PackageNamespace(""),";0")
+                     getlocal2
+                     getproperty MultinameA("id",[PrivateNamespace(" K"),PackageNamespace(""),PrivateNamespace("LevelItemSoundResourceManager.as$72"),PackageNamespace("package"),PackageInternalNs("package"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(" K"),StaticProtectedNs(" K")])
+                     getlocal2
+                     getproperty MultinameA("channel",[PrivateNamespace(" K"),PackageNamespace(""),PrivateNamespace("LevelItemSoundResourceManager.as$72"),PackageNamespace("package"),PackageInternalNs("package"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(" K"),StaticProtectedNs(" K")])
+                     jump ofs0084
+                     inclocal_i 4
+                     inclocal_i 5
+                     add
+                     setlocal3
+                     inclocal_i 3
+                     popscope
+                     declocal 3
+                     inclocal_i 3
+                     kill 5
+            ofs0084:
+                     getlocal2
+                     getproperty MultinameA("Clicked",[PrivateNamespace(" K"),PackageNamespace(""),PrivateNamespace("LevelItemSoundResourceManager.as$72"),PackageNamespace("package"),PackageInternalNs("package"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(" K"),StaticProtectedNs(" K")])
+                     getlocal2
+                     getproperty MultinameA("Damaged",[PrivateNamespace(" K"),PackageNamespace(""),PrivateNamespace("LevelItemSoundResourceManager.as$72"),PackageNamespace("package"),PackageInternalNs("package"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(" K"),StaticProtectedNs(" K")])
+                     getlocal2
+                     getproperty MultinameA("Destroyed",[PrivateNamespace(" K"),PackageNamespace(""),PrivateNamespace("LevelItemSoundResourceManager.as$72"),PackageNamespace("package"),PackageInternalNs("package"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(" K"),StaticProtectedNs(" K")])
+                     getlocal2
+                     getproperty MultinameA("Ready",[PrivateNamespace(" K"),PackageNamespace(""),PrivateNamespace("LevelItemSoundResourceManager.as$72"),PackageNamespace("package"),PackageInternalNs("package"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(" K"),StaticProtectedNs(" K")])
+                     getlocal2
+                     getproperty MultinameA("Flying",[PrivateNamespace(" K"),PackageNamespace(""),PrivateNamespace("LevelItemSoundResourceManager.as$72"),PackageNamespace("package"),PackageInternalNs("package"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(" K"),StaticProtectedNs(" K")])
+                     getlocal2
+                     getproperty MultinameA("Rolling",[PrivateNamespace(" K"),PackageNamespace(""),PrivateNamespace("LevelItemSoundResourceManager.as$72"),PackageNamespace("package"),PackageInternalNs("package"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(" K"),StaticProtectedNs(" K")])
+                     getlocal2
+                     getproperty MultinameA("SpecialEffect",[PrivateNamespace(" K"),PackageNamespace(""),PrivateNamespace("LevelItemSoundResourceManager.as$72"),PackageNamespace("package"),PackageInternalNs("package"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(" K"),StaticProtectedNs(" K")])
+                     getlocal2
+                     getproperty MultinameA("Talk",[PrivateNamespace(" K"),PackageNamespace(""),PrivateNamespace("LevelItemSoundResourceManager.as$72"),PackageNamespace("package"),PackageInternalNs("package"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(" K"),StaticProtectedNs(" K")])
+                     getlocal2
+                     getproperty MultinameA("Scream",[PrivateNamespace(" K"),PackageNamespace(""),PrivateNamespace("LevelItemSoundResourceManager.as$72"),PackageNamespace("package"),PackageInternalNs("package"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(" K"),StaticProtectedNs(" K")])
+                     getlocal2
+                     getproperty MultinameA("Selected",[PrivateNamespace(" K"),PackageNamespace(""),PrivateNamespace("LevelItemSoundResourceManager.as$72"),PackageNamespace("package"),PackageInternalNs("package"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(" K"),StaticProtectedNs(" K")])
+                     getlocal2
+                     getproperty MultinameA("Unselected",[PrivateNamespace(" K"),PackageNamespace(""),PrivateNamespace("LevelItemSoundResourceManager.as$72"),PackageNamespace("package"),PackageInternalNs("package"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(" K"),StaticProtectedNs(" K")])
+                     callproperty QName(PackageNamespace(""),";0"), 13
+                     pop
+            ofs00a9:
+                     hasnext2 4, 3
+                     iftrue ofs0053
+                     kill 4
+                     kill 3
+                     returnvoid
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public static function §;0§(param1:String, param2:String, param3:String, param4:String, param5:String, param6:String, param7:String, param8:String, param9:String, param10:String, param11:String, param12:String, param13:String) : void
+         {
+            trait method QName(PackageNamespace(""),";0")
+               flag FINAL
+               dispid 4
+               method
+                  name null
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"String")
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 18
+                     localcount 16
+                     initscopedepth 3
+                     maxscopedepth 4
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        setlocal 14
+                        jump ofs0016
+                        not
+                        declocal 11
+                        getlocal3
+                        increment
+                        inclocal 11
+                        kill 2
+                        getlocal 11
+                        not
+                        declocal_i 5
+               ofs0016:
+                        setlocal 15
+                        getlocal0
+                        pushscope
+                        getlocal 15
+                        dup
+                        jump ofs0031
+                        getlocal 13
+                        increment_i
+                        kill 8
+                        multiply_i
+                        inclocal 13
+                        setlocal 14
+                        declocal_i 6
+                        declocal 2
+                        setlocal 14
+               ofs0031:
+                        iffalse ofs0038
+                        pop
+                        getlocal3
+                        convert_b
+               ofs0038:
+                        iftrue ofs0064
+                        findpropstrict QName(PrivateNamespace(" K"),"\"!b")
+                        getproperty QName(PrivateNamespace(" K"),"\"!b")
+                        findpropstrict QName(PrivateNamespace(" K"),"\"!b")
+                        getproperty QName(PrivateNamespace(" K"),"\"!b")
+                        getproperty QName(PackageNamespace(""),"length")
+                        findpropstrict QName(PackageNamespace("package"),"LevelItemSoundResource")
+                        getlocal1
+                        getlocal2
+                        getlocal3
+                        getlocal 4
+                        getlocal 5
+                        getlocal 6
+                        getlocal 7
+                        getlocal 8
+                        getlocal 9
+                        getlocal 10
+                        getlocal 11
+                        getlocal 12
+                        getlocal 13
+                        constructprop QName(PackageNamespace("package"),"LevelItemSoundResource"), 13
+                        setproperty MultinameL([PrivateNamespace(" K"),PackageNamespace(""),PrivateNamespace("LevelItemSoundResourceManager.as$72"),PackageNamespace("package"),PackageInternalNs("package"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(" K"),StaticProtectedNs(" K")])
+               ofs0064:
+                        returnvoid
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public static function §7!6§(param1:String) : LevelItemSoundResource
+            {
+               trait method QName(PackageNamespace(""),"7!6")
+                  flag FINAL
+                  dispid 5
+                  method
+                     name null
+                     param QName(PackageNamespace(""),"String")
+                     returns QName(PackageNamespace("package"),"LevelItemSoundResource")
+                     
+                     body
+                        maxstack 5
+                        localcount 5
+                        initscopedepth 3
+                        maxscopedepth 4
+                        
+                        code
+                           pushfalse
+                           pushtrue
+                           setlocal3
+                           jump ofs0017
+                           declocal 2
+                           inclocal_i 2
+                           inclocal 2
+                           inclocal 3
+                           declocal 2
+                           declocal 3
+                           getlocal3
+                           inclocal 2
+                           convert_i
+                  ofs0017:
+                           setlocal 4
+                           getlocal0
+                           pushscope
+                           pushbyte 0
+                           getlocal3
+                           dup
+                           iftrue ofs0026
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0026:
+                           iffalse ofs002b
+                           convert_i
+                  ofs002b:
+                           setlocal2
+                           jump ofs00d8
+                  ofs0030:
+                           label
+                           pushnull
+                           returnvalue
+                           pushtrue
+                           iftrue ofs0038
+                  ofs0038:
+                           label
+                           getlocal2
+                           getlocal3
+                           dup
+                           iftrue ofs0043
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs0043:
+                           iffalse ofs00d3
+                           getlocal3
+                           dup
+                           iftrue ofs0050
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs0050:
+                           iffalse ofs00d2
+                           getlocal 4
+                           dup
+                           iffalse ofs005e
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs005e:
+                           iftrue ofs00d1
+                           jump ofs0073
+                           declocal_i 2
+                           hasnext
+                           convert_o
+                           declocal 3
+                           inclocal_i 3
+                           inclocal_i 3
+                           setlocal2
+                           setlocal3
+                           getlocal2
+                  ofs0073:
+                           findpropstrict QName(PrivateNamespace(" K"),"\"!b")
+                           getproperty QName(PrivateNamespace(" K"),"\"!b")
+                           getproperty QName(PackageNamespace(""),"length")
+                           iflt ofs00dc
+                           getlocal 4
+                           iftrue ofs00af
+                           getlocal 4
+                           dup
+                           iffalse ofs008d
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs008d:
+                           iftrue ofs00d4
+                           getlocal3
+                           iffalse ofs00f6
+                           findpropstrict QName(PackageNamespace("<u"),"Log")
+                           getproperty QName(PackageNamespace("<u"),"Log")
+                           pushstring "WARNING: LevelItemResourcePaths -> getResourcePathSound request has no return value, this path does not exist: "
+                           getlocal3
+                           dup
+                           iftrue ofs00a5
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs00a5:
+                           iffalse ofs00ab
+                           getlocal1
+                           add
+                  ofs00ab:
+                           callproperty QName(PackageNamespace(""),"log"), 1
+                           pop
+                  ofs00af:
+                           getlocal 4
+                           dup
+                           iffalse ofs00c7
+                           pop
+                           getlocal3
+                           jump ofs00c6
+                           negate_i
+                           modulo
+                           multiply
+                           inclocal_i 2
+                           strictequals
+                           setlocal3
+                           lessthan
+                           setlocal2
+                           multiply_i
+                  ofs00c6:
+                           convert_b
+                  ofs00c7:
+                           iftrue ofs0103
+                           jump ofs0030
+                  ofs00cf:
+                           label
+                           getlocal2
+                  ofs00d1:
+                           increment_i
+                  ofs00d2:
+                           convert_i
+                  ofs00d3:
+                           setlocal2
+                  ofs00d4:
+                           jump ofs0038
+                  ofs00d8:
+                           jump ofs0038
+                  ofs00dc:
+                           label
+                           findpropstrict QName(PackageNamespace("package"),"LevelItemSoundResource")
+                           findpropstrict QName(PrivateNamespace(" K"),"\"!b")
+                           getproperty QName(PrivateNamespace(" K"),"\"!b")
+                           getlocal2
+                           getproperty MultinameL([PrivateNamespace(" K"),PackageNamespace(""),PrivateNamespace("LevelItemSoundResourceManager.as$72"),PackageNamespace("package"),PackageInternalNs("package"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(" K"),StaticProtectedNs(" K")])
+                           callproperty QName(PackageNamespace("package"),"LevelItemSoundResource"), 1
+                           getproperty QName(PackageNamespace(""),"mName")
+                           callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"toLowerCase"), 0
+                           getlocal1
+                           callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"toLowerCase"), 0
+                           ifne ofs00cf
+                  ofs00f6:
+                           findpropstrict QName(PackageNamespace("package"),"LevelItemSoundResource")
+                           findpropstrict QName(PrivateNamespace(" K"),"\"!b")
+                           getproperty QName(PrivateNamespace(" K"),"\"!b")
+                           getlocal2
+                           getproperty MultinameL([PrivateNamespace(" K"),PackageNamespace(""),PrivateNamespace("LevelItemSoundResourceManager.as$72"),PackageNamespace("package"),PackageInternalNs("package"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace(" K"),StaticProtectedNs(" K")])
+                           callproperty QName(PackageNamespace("package"),"LevelItemSoundResource"), 1
+                           returnvalue
+                  ofs0103:
+                           jump ofs00cf
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+            }
+         }

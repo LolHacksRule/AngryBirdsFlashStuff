@@ -1,0 +1,91 @@
+package §>!_§
+{
+   public class §5!"§
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var id:String = "";
+      
+      public var x:Number = 0;
+      
+      public var y:Number = 0;
+      
+      public var scale:Number = 0;
+      
+      public var top:Number = 0;
+      
+      public var left:Number = 0;
+      
+      public var right:Number = 0;
+      
+      public var bottom:Number = 0;
+      
+      public function §5!"§()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  decrement_i
+                  urshift
+                  dup
+                  bitor
+                  coerce_a
+                  add
+                  popscope
+                  dup
+                  getlocal1
+         ofs0010:
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  dup
+                  iffalse ofs001c
+                  pop
+                  getlocal0
+                  convert_b
+         ofs001c:
+                  iftrue ofs0023
+                  getlocal0
+                  constructsuper 0
+         ofs0023:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}

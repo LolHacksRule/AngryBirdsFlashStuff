@@ -1,0 +1,72 @@
+package
+{
+   import mx.core.ByteArrayAsset;
+   
+   [ExcludeClass]
+   public class §0O§ extends ByteArrayAsset
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function §0O§()
+      {
+         method
+            name "AngryBirdsUltraBook_mFacebookAssetMapBin/AngryBirdsUltraBook_mFacebookAssetMapBin"
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 6
+               maxscopedepth 7
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  setlocal2
+                  subtract_i
+                  pushundefined
+                  coerce_s
+                  nextvalue
+                  greaterequals
+                  bitnot
+                  swap
+                  convert_s
+         ofs0010:
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  iftrue ofs001b
+                  getlocal0
+                  constructsuper 0
+         ofs001b:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}

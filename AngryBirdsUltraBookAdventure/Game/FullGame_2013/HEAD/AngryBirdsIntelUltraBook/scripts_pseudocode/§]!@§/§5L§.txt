@@ -1,0 +1,1754 @@
+package §]!@§
+{
+   import §>!8§.b2Vec2;
+   import §>!L§.b2DebugDraw;
+   import §>!L§.b2World;
+   import §?!Y§.§`S§;
+   import flash.display.Sprite;
+   import flash.utils.getTimer;
+   
+   public class §5L§
+   {
+      
+      public static const §#H§:Number = 0.03333333333333333;
+      
+      public static const §]! §:int = 10;
+      
+      public static const §8[§:Boolean = false;
+      
+      public static const §+!S§:Boolean = true;
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 5
+               localcount 3
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  instanceof
+                  multiply
+                  modulo
+                  bitxor
+                  pushundefined
+                  greaterthan
+                  nextname
+                  getlocal0
+                  getlocal3
+         ofs0010:
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  dup
+                  iftrue ofs001c
+                  pop
+                  getlocal0
+                  convert_b
+         ofs001c:
+                  iffalse ofs0074
+                  jump ofs0083
+         ofs0024:
+                  label
+                  returnvoid
+                  pushtrue
+                  jump ofs002b
+         ofs002b:
+                  modulo
+                  strictequals
+                  setlocal2
+                  equals
+                  convert_o
+                  pushundefined
+                  bitxor
+                  add_i
+                  lshift
+                  iftrue ofs0038
+         ofs0038:
+                  label
+                  findproperty QName(PackageNamespace(""),"+!S")
+                  pushtrue
+                  initproperty QName(PackageNamespace(""),"+!S")
+                  getlocal1
+                  dup
+                  jump ofs004d
+                  multiply
+                  pushundefined
+                  subtract
+                  coerce_s
+                  getglobalscope
+                  pushscope
+                  equals
+                  istypelate
+                  subtract_i
+         ofs004d:
+                  iftrue ofs0054
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0054:
+                  iffalse ofs0074
+                  getlocal1
+                  iffalse ofs007f
+                  getlocal2
+                  dup
+                  iffalse ofs0066
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0066:
+                  iftrue ofs008c
+                  jump ofs0024
+         ofs006e:
+                  label
+                  findproperty QName(PackageNamespace(""),"8[")
+                  pushfalse
+                  initproperty QName(PackageNamespace(""),"8[")
+         ofs0074:
+                  jump ofs0038
+         ofs0078:
+                  label
+                  findproperty QName(PackageNamespace(""),"]! ")
+                  pushbyte 10
+                  initproperty QName(PackageNamespace(""),"]! ")
+         ofs007f:
+                  jump ofs006e
+         ofs0083:
+                  findproperty QName(PackageNamespace(""),"#H")
+                  pushbyte 1
+                  pushbyte 30
+                  divide
+                  initproperty QName(PackageNamespace(""),"#H")
+         ofs008c:
+                  jump ofs0078
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var mWorld:b2World;
+      
+      private var §2#§:Boolean = true;
+      
+      public var §#!h§:§`!=§;
+      
+      public var §4>§:Sprite;
+      
+      private var §5P§:b2DebugDraw;
+      
+      public var §`s§:LevelMain;
+      
+      public var §0L§:Number;
+      
+      private var §8j§:Number;
+      
+      private var §`!D§:int;
+      
+      public function §5L§(param1:LevelMain)
+      {
+         method
+            name null
+            param QName(PackageNamespace("]!@"),"LevelMain")
+            returns QName(PackageNamespace(""),"void")
+            
+            body
+               maxstack 4
+               localcount 4
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0013
+                  declocal_i 2
+                  setlocal2
+                  greaterequals
+                  greaterthan
+                  divide
+                  getlocal2
+                  decrement_i
+                  inclocal 2
+                  declocal_i 2
+         ofs0013:
+                  setlocal2
+                  setlocal3
+                  getlocal0
+                  pushscope
+                  getlocal3
+                  dup
+                  jump ofs0029
+                  dup
+                  inclocal 2
+                  add
+                  greaterthan
+                  hasnext
+                  dxnslate
+                  setlocal2
+                  declocal_i 2
+                  inclocal_i 2
+         ofs0029:
+                  iftrue ofs0030
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0030:
+                  iffalse ofs0060
+                  jump ofs0064
+         ofs0038:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs003f
+         ofs003f:
+                  label
+                  getlocal0
+                  callproperty QName(PrivateNamespace("9>"),"\'!!"), 0
+                  pop
+                  getlocal3
+                  iffalse ofs0060
+                  getlocal2
+                  dup
+                  iffalse ofs0053
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0053:
+                  iftrue ofs0067
+                  jump ofs0038
+         ofs005b:
+                  label
+                  getlocal0
+                  getlocal1
+                  initproperty QName(PackageNamespace(""),"`s")
+         ofs0060:
+                  jump ofs003f
+         ofs0064:
+                  getlocal0
+                  constructsuper 0
+         ofs0067:
+                  jump ofs005b
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function get §8!?§() : int
+      {
+         trait getter QName(PackageNamespace(""),"8!?")
+            dispid 0
+            method
+               name null
+               returns QName(PackageNamespace(""),"int")
+               
+               body
+                  maxstack 3
+                  localcount 1
+                  initscopedepth 4
+                  maxscopedepth 5
+                  
+                  code
+                     getlocal0
+                     pushscope
+                     getlocal0
+                     jump ofs0010
+                     coerce_s
+                     popscope
+                     setlocal3
+                     multiply_i
+                     nextvalue
+                     bitand
+                     nextvalue
+                     convert_b
+                     convert_i
+            ofs0010:
+                     getproperty QName(PrivateNamespace("9>"),"`!D")
+                     returnvalue
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public function get §7!9§() : Number
+         {
+            trait getter QName(PackageNamespace(""),"7!9")
+               dispid 0
+               method
+                  name null
+                  returns QName(PackageNamespace(""),"Number")
+                  
+                  body
+                     maxstack 3
+                     localcount 1
+                     initscopedepth 4
+                     maxscopedepth 5
+                     
+                     code
+                        getlocal0
+                        pushscope
+                        getlocal0
+                        jump ofs0010
+                        increment_i
+                        bitxor
+                        newactivation
+                        convert_u
+                        bitnot
+                        increment_i
+                        convert_o
+                        negate
+                        instanceof
+               ofs0010:
+                        getproperty QName(PrivateNamespace("9>"),"8j")
+                        returnvalue
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            private function §'!!§() : void
+            {
+               trait method QName(PrivateNamespace("9>"),"\'!!")
+                  dispid 0
+                  method
+                     name null
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 7
+                        localcount 3
+                        initscopedepth 4
+                        maxscopedepth 5
+                        
+                        code
+                           pushfalse
+                           pushtrue
+                           swap
+                           jump ofs0010
+                           rshift
+                           negate_i
+                           increment_i
+                           getglobalscope
+                           greaterequals
+                           bitor
+                           greaterequals
+                           hasnext
+                           lshift
+                  ofs0010:
+                           setlocal1
+                           setlocal2
+                           getlocal0
+                           pushscope
+                           getlocal2
+                           iffalse ofs01d9
+                           jump ofs021a
+                  ofs001d:
+                           label
+                           returnvoid
+                           pushtrue
+                           iftrue ofs0024
+                  ofs0024:
+                           label
+                           getlocal0
+                           getproperty QName(PackageNamespace(""),"mWorld")
+                           getlocal2
+                           dup
+                           iftrue ofs0031
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0031:
+                           iffalse ofs01e9
+                           getlocal1
+                           iftrue ofs01f6
+                           getlocal0
+                           getproperty QName(PrivateNamespace("9>"),"5P")
+                           callproperty QName(PackageNamespace(""),"\"5"), 1
+                           pop
+                           getlocal2
+                           iffalse ofs0076
+                           getlocal1
+                           dup
+                           iffalse ofs004f
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs004f:
+                           iftrue ofs0127
+                           getlocal1
+                           iftrue ofs019b
+                           getlocal1
+                           dup
+                           iffalse ofs0061
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs0061:
+                           iftrue ofs01ba
+                           jump ofs001d
+                  ofs0069:
+                           label
+                           getlocal0
+                           getproperty QName(PackageNamespace(""),"`s")
+                           getproperty QName(PackageNamespace(""),"stage")
+                           getlocal0
+                           getproperty QName(PackageNamespace(""),"4>")
+                           callproperty QName(PackageNamespace(""),"addChild"), 1
+                           pop
+                  ofs0076:
+                           getlocal2
+                           iffalse ofs00b1
+                           jump ofs0024
+                  ofs007f:
+                           label
+                           getlocal0
+                           getproperty QName(PrivateNamespace("9>"),"5P")
+                           getlocal2
+                           dup
+                           iftrue ofs008c
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs008c:
+                           iffalse ofs00c8
+                           getlocal1
+                           dup
+                           iffalse ofs0099
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs0099:
+                           iftrue ofs00db
+                           getlocal2
+                           dup
+                           iftrue ofs00a6
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs00a6:
+                           iffalse ofs0110
+                           getlocal0
+                           getproperty QName(PackageNamespace(""),"4>")
+                           callproperty QName(PackageNamespace(""),"=Z"), 1
+                           pop
+                  ofs00b1:
+                           getlocal2
+                           iffalse ofs00d3
+                           getlocal1
+                           iftrue ofs00ee
+                           getlocal1
+                           iftrue ofs0216
+                           jump ofs0069
+                  ofs00c4:
+                           label
+                           getlocal0
+                           getproperty QName(PrivateNamespace("9>"),"5P")
+                  ofs00c8:
+                           pushbyte 1
+                           getlocal2
+                           iffalse ofs011c
+                           callproperty QName(PackageNamespace(""),"9\'"), 1
+                           pop
+                  ofs00d3:
+                           jump ofs007f
+                  ofs00d7:
+                           label
+                           getlocal0
+                           getproperty QName(PrivateNamespace("9>"),"5P")
+                  ofs00db:
+                           pushdouble 0.3
+                           getlocal1
+                           dup
+                           iffalse ofs00e6
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs00e6:
+                           iftrue ofs0123
+                           callproperty QName(PackageNamespace(""),",c"), 1
+                           pop
+                  ofs00ee:
+                           getlocal1
+                           jump ofs00fc
+                           getlocal2
+                           pushscope
+                           modulo
+                           convert_b
+                           increment
+                           coerce_a
+                           bitand
+                           convert_u
+                           negate
+                  ofs00fc:
+                           dup
+                           iffalse ofs0104
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs0104:
+                           iftrue ofs01c7
+                           jump ofs00c4
+                  ofs010c:
+                           label
+                           getlocal0
+                           getproperty QName(PrivateNamespace("9>"),"5P")
+                  ofs0110:
+                           getlocal2
+                           iffalse ofs013c
+                           getlocal2
+                           iffalse ofs017f
+                           pushbyte 1
+                  ofs011c:
+                           findpropstrict QName(PackageNamespace("]!@"),"LevelMain")
+                           getproperty QName(PackageNamespace("]!@"),"LevelMain")
+                           getproperty QName(PackageNamespace(""),"@!d")
+                           divide
+                  ofs0123:
+                           callproperty QName(PackageNamespace(""),"\"!J"), 1
+                           pop
+                  ofs0127:
+                           getlocal2
+                           dup
+                           iftrue ofs0130
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0130:
+                           iffalse ofs0165
+                           jump ofs00d7
+                  ofs0138:
+                           label
+                           getlocal0
+                           getproperty QName(PrivateNamespace("9>"),"5P")
+                  ofs013c:
+                           getlocal2
+                           dup
+                           iftrue ofs0145
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0145:
+                           iffalse ofs0191
+                           findpropstrict QName(PackageNamespace(">!L"),"b2DebugDraw")
+                           getproperty QName(PackageNamespace(">!L"),"b2DebugDraw")
+                           getproperty QName(PackageNamespace(""),"`h")
+                           getlocal2
+                           iffalse ofs0185
+                           getlocal2
+                           dup
+                           iftrue ofs015d
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs015d:
+                           iffalse ofs0197
+                           callproperty QName(PackageNamespace(""),"#l"), 1
+                           pop
+                  ofs0165:
+                           getlocal1
+                           dup
+                           iffalse ofs016e
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs016e:
+                           iftrue ofs0189
+                           getlocal2
+                           iffalse ofs01ee
+                           jump ofs010c
+                  ofs017b:
+                           label
+                           getlocal0
+                           getproperty QName(PrivateNamespace("9>"),"5P")
+                  ofs017f:
+                           findpropstrict QName(PackageNamespace(">!L"),"b2DebugDraw")
+                           getproperty QName(PackageNamespace(">!L"),"b2DebugDraw")
+                           getproperty QName(PackageNamespace(""),"^!a")
+                  ofs0185:
+                           callproperty QName(PackageNamespace(""),"#l"), 1
+                           pop
+                  ofs0189:
+                           jump ofs0138
+                  ofs018d:
+                           label
+                           getlocal0
+                           getproperty QName(PrivateNamespace("9>"),"5P")
+                  ofs0191:
+                           findpropstrict QName(PackageNamespace(">!L"),"b2DebugDraw")
+                           getproperty QName(PackageNamespace(">!L"),"b2DebugDraw")
+                           getproperty QName(PackageNamespace(""),",x")
+                  ofs0197:
+                           callproperty QName(PackageNamespace(""),"#l"), 1
+                           pop
+                  ofs019b:
+                           getlocal1
+                           dup
+                           iffalse ofs01a4
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs01a4:
+                           iftrue ofs01fd
+                           getlocal2
+                           iffalse ofs0223
+                           jump ofs017b
+                  ofs01b1:
+                           label
+                           getlocal0
+                           findpropstrict QName(PackageNamespace(">!L"),"b2DebugDraw")
+                           constructprop QName(PackageNamespace(">!L"),"b2DebugDraw"), 0
+                           initproperty QName(PrivateNamespace("9>"),"5P")
+                  ofs01ba:
+                           jump ofs018d
+                  ofs01be:
+                           label
+                           getlocal0
+                           findpropstrict QName(PackageNamespace("flash.display"),"Sprite")
+                           constructprop QName(PackageNamespace("flash.display"),"Sprite"), 0
+                           initproperty QName(PackageNamespace(""),"4>")
+                  ofs01c7:
+                           jump ofs01b1
+                  ofs01cb:
+                           label
+                           findpropstrict QName(PackageNamespace(""),"8[")
+                           getproperty QName(PackageNamespace(""),"8[")
+                           iffalse ofs001d
+                           getlocal2
+                           iffalse ofs01ee
+                  ofs01d9:
+                           getlocal0
+                           jump ofs01e7
+                           greaterthan
+                           swap
+                           lshift
+                           astypelate
+                           bitand
+                           convert_i
+                           negate_i
+                           pushtrue
+                           coerce_a
+                  ofs01e7:
+                           getproperty QName(PackageNamespace(""),"mWorld")
+                  ofs01e9:
+                           pushtrue
+                           callproperty QName(PackageNamespace(""),"6\'"), 1
+                           pop
+                  ofs01ee:
+                           jump ofs01be
+                  ofs01f2:
+                           label
+                           getlocal0
+                           getproperty QName(PackageNamespace(""),"mWorld")
+                  ofs01f6:
+                           getlocal0
+                           getproperty QName(PackageNamespace(""),"#!h")
+                           callproperty QName(PackageNamespace(""),";!M"), 1
+                           pop
+                  ofs01fd:
+                           jump ofs01cb
+                  ofs0201:
+                           label
+                           getlocal0
+                           findpropstrict QName(PackageNamespace(">!L"),"b2World")
+                           findpropstrict QName(PackageNamespace(">!8"),"b2Vec2")
+                           pushdouble 0.0
+                           pushbyte 20
+                           constructprop QName(PackageNamespace(">!8"),"b2Vec2"), 2
+                           getlocal0
+                           getproperty QName(PrivateNamespace("9>"),"2#")
+                           constructprop QName(PackageNamespace(">!L"),"b2World"), 2
+                           initproperty QName(PackageNamespace(""),"mWorld")
+                  ofs0216:
+                           jump ofs01f2
+                  ofs021a:
+                           getlocal0
+                           findpropstrict QName(PackageNamespace("]!@"),"`!=")
+                           getlocal0
+                           constructprop QName(PackageNamespace("]!@"),"`!="), 1
+                           initproperty QName(PackageNamespace(""),"#!h")
+                  ofs0223:
+                           jump ofs0201
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public function clear() : void
+               {
+                  trait method QName(PackageNamespace(""),"clear")
+                     dispid 0
+                     method
+                        name null
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 4
+                           localcount 3
+                           initscopedepth 4
+                           maxscopedepth 5
+                           
+                           code
+                              pushfalse
+                              pushtrue
+                              setlocal1
+                              jump ofs0010
+                              subtract_i
+                              convert_b
+                              add_i
+                              istypelate
+                              negate_i
+                              bitnot
+                              pushtrue
+                              negate
+                              decrement_i
+                     ofs0010:
+                              setlocal2
+                              getlocal0
+                              pushscope
+                              getlocal2
+                              iftrue ofs00b8
+                              jump ofs00c5
+                     ofs001c:
+                              label
+                              returnvoid
+                              pushtrue
+                              iftrue ofs0023
+                     ofs0023:
+                              label
+                              getlocal0
+                              pushnull
+                              initproperty QName(PackageNamespace(""),"mWorld")
+                              getlocal1
+                              dup
+                              iftrue ofs0031
+                              pop
+                              getlocal1
+                              convert_b
+                     ofs0031:
+                              iffalse ofs005b
+                              jump ofs001c
+                     ofs0039:
+                              label
+                              getlocal0
+                              getproperty QName(PackageNamespace(""),"mWorld")
+                              getlocal1
+                              dup
+                              iftrue ofs0046
+                              pop
+                              getlocal1
+                              convert_b
+                     ofs0046:
+                              iffalse ofs00c8
+                              jump ofs0057
+                              urshift
+                              astypelate
+                              convert_b
+                              getlocal3
+                              convert_b
+                              decrement
+                              add_i
+                              equals
+                              setlocal3
+                     ofs0057:
+                              callproperty QName(PackageNamespace(""),"^z"), 0
+                              pop
+                     ofs005b:
+                              getlocal1
+                              dup
+                              iftrue ofs0064
+                              pop
+                              getlocal2
+                              convert_b
+                     ofs0064:
+                              iffalse ofs0076
+                              getlocal2
+                              iftrue ofs00a2
+                              jump ofs0023
+                     ofs0071:
+                              label
+                              getlocal0
+                              pushnull
+                              initproperty QName(PackageNamespace(""),"4>")
+                     ofs0076:
+                              getlocal2
+                              iftrue ofs00b8
+                              getlocal1
+                              dup
+                              iftrue ofs0091
+                              pop
+                              getlocal0
+                              jump ofs0090
+                              multiply_i
+                              pushnan
+                              decrement_i
+                              checkfilter
+                              getglobalscope
+                              dup
+                              coerce_s
+                              lessequals
+                              instanceof
+                     ofs0090:
+                              convert_b
+                     ofs0091:
+                              iffalse ofs00cd
+                              jump ofs0039
+                     ofs0099:
+                              label
+                              findpropstrict QName(PackageNamespace(""),"8[")
+                              getproperty QName(PackageNamespace(""),"8[")
+                              iffalse ofs0071
+                     ofs00a2:
+                              getlocal1
+                              dup
+                              iftrue ofs00ab
+                              pop
+                              getlocal2
+                              convert_b
+                     ofs00ab:
+                              iffalse ofs00c1
+                              getlocal0
+                              getproperty QName(PackageNamespace(""),"4>")
+                              getproperty QName(PackageNamespace(""),"graphics")
+                              callproperty QName(PackageNamespace(""),"clear"), 0
+                              pop
+                     ofs00b8:
+                              jump ofs0071
+                     ofs00bc:
+                              label
+                              getlocal0
+                              pushnull
+                              initproperty QName(PackageNamespace(""),"#!h")
+                     ofs00c1:
+                              jump ofs0099
+                     ofs00c5:
+                              getlocal0
+                              getproperty QName(PackageNamespace(""),"mWorld")
+                     ofs00c8:
+                              pushnull
+                              callproperty QName(PackageNamespace(""),";!M"), 1
+                              pop
+                     ofs00cd:
+                              jump ofs00bc
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  public function §0!^§() : void
+                  {
+                     trait method QName(PackageNamespace(""),"0!^")
+                        dispid 0
+                        method
+                           name null
+                           returns QName(PackageNamespace(""),"void")
+                           
+                           body
+                              maxstack 6
+                              localcount 3
+                              initscopedepth 4
+                              maxscopedepth 5
+                              
+                              code
+                                 pushfalse
+                                 pushtrue
+                                 swap
+                                 jump ofs0010
+                                 convert_s
+                                 hasnext
+                                 equals
+                                 typeof
+                                 bitxor
+                                 strictequals
+                                 add_i
+                                 newactivation
+                                 coerce_s
+                        ofs0010:
+                                 setlocal1
+                                 setlocal2
+                                 getlocal0
+                                 pushscope
+                                 getlocal1
+                                 dup
+                                 iffalse ofs001d
+                                 pop
+                                 getlocal1
+                                 convert_b
+                        ofs001d:
+                                 iftrue ofs0082
+                                 jump ofs0073
+                                 jump ofs0029
+                        ofs0029:
+                                 pushnull
+                                 getlocal1
+                                 nextname
+                                 hasnext
+                                 getlocal2
+                                 subtract_i
+                                 greaterequals
+                                 rshift
+                                 getlocal3
+                        ofs0032:
+                                 label
+                                 returnvoid
+                                 pushtrue
+                                 iftrue ofs0039
+                        ofs0039:
+                                 label
+                                 getlocal0
+                                 getproperty QName(PackageNamespace(""),"4>")
+                                 jump ofs004a
+                                 pushtrue
+                                 not
+                                 nextname
+                                 nextvalue
+                                 rshift
+                                 multiply_i
+                                 popscope
+                                 bitor
+                                 pushwith
+                        ofs004a:
+                                 getproperty QName(PackageNamespace(""),"parent")
+                                 getlocal0
+                                 getproperty QName(PackageNamespace(""),"4>")
+                                 getlocal0
+                                 getproperty QName(PackageNamespace(""),"4>")
+                                 getproperty QName(PackageNamespace(""),"parent")
+                                 getproperty QName(PackageNamespace(""),"numChildren")
+                                 pushbyte 1
+                                 subtract
+                                 callproperty QName(PackageNamespace(""),"setChildIndex"), 2
+                                 pop
+                                 getlocal2
+                                 dup
+                                 iftrue ofs0066
+                                 pop
+                                 getlocal2
+                                 convert_b
+                        ofs0066:
+                                 iffalse ofs0082
+                                 getlocal1
+                                 iftrue ofs007b
+                                 jump ofs0032
+                        ofs0073:
+                                 findpropstrict QName(PackageNamespace(""),"8[")
+                                 getproperty QName(PackageNamespace(""),"8[")
+                                 iffalse ofs0032
+                        ofs007b:
+                                 getlocal0
+                                 getproperty QName(PackageNamespace(""),"mWorld")
+                                 callproperty QName(PackageNamespace(""),"!!9"), 0
+                                 pop
+                        ofs0082:
+                                 jump ofs0039
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     public function §6!H§(param1:Number, param2:Number, param3:Number) : void
+                     {
+                        trait method QName(PackageNamespace(""),"6!H")
+                           dispid 0
+                           method
+                              name null
+                              param QName(PackageNamespace(""),"Number")
+                              param QName(PackageNamespace(""),"Number")
+                              param QName(PackageNamespace(""),"Number")
+                              returns QName(PackageNamespace(""),"void")
+                              
+                              body
+                                 maxstack 4
+                                 localcount 6
+                                 initscopedepth 4
+                                 maxscopedepth 5
+                                 
+                                 code
+                                    pushfalse
+                                    pushtrue
+                                    swap
+                                    jump ofs0011
+                                    instanceof
+                                    convert_u
+                                    nextvalue
+                                    getlocal3
+                                    declocal_i 3
+                                    popscope
+                                    getlocal3
+                                    convert_u
+                                    pushwith
+                           ofs0011:
+                                    setlocal 4
+                                    setlocal 5
+                                    getlocal0
+                                    pushscope
+                                    getlocal 4
+                                    iftrue ofs0061
+                                    jump ofs002e
+                                    modulo
+                                    declocal_i 2
+                                    setlocal 4
+                                    setlocal 4
+                                    setlocal3
+                                    modulo
+                                    increment_i
+                                    inclocal_i 4
+                                    decrement_i
+                           ofs002e:
+                                    jump ofs004b
+                           ofs0032:
+                                    label
+                                    returnvoid
+                                    pushtrue
+                                    iftrue ofs0039
+                           ofs0039:
+                                    label
+                                    getlocal0
+                                    getproperty QName(PackageNamespace(""),"4>")
+                                    getlocal2
+                                    negate
+                                    setproperty QName(PackageNamespace(""),"y")
+                                    getlocal 5
+                                    iffalse ofs0068
+                                    jump ofs0032
+                           ofs004b:
+                                    findpropstrict QName(PackageNamespace(""),"8[")
+                                    getproperty QName(PackageNamespace(""),"8[")
+                                    iffalse ofs0032
+                                    getlocal 4
+                                    dup
+                                    iffalse ofs005d
+                                    pop
+                                    getlocal0
+                                    convert_b
+                           ofs005d:
+                                    iftrue ofs0068
+                           ofs0061:
+                                    getlocal0
+                                    getproperty QName(PackageNamespace(""),"4>")
+                                    getlocal1
+                                    negate
+                                    setproperty QName(PackageNamespace(""),"x")
+                           ofs0068:
+                                    jump ofs0039
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                        }
+                        
+                        public function §&!D§(param1:Number) : Number
+                        {
+                           trait method QName(PackageNamespace(""),"&!D")
+                              dispid 0
+                              method
+                                 name null
+                                 param QName(PackageNamespace(""),"Number")
+                                 returns QName(PackageNamespace(""),"Number")
+                                 
+                                 body
+                                    maxstack 5
+                                    localcount 5
+                                    initscopedepth 4
+                                    maxscopedepth 5
+                                    
+                                    code
+                                       pushfalse
+                                       pushtrue
+                                       setlocal3
+                                       jump ofs0013
+                                       setlocal3
+                                       dup
+                                       inclocal 3
+                                       greaterthan
+                                       inclocal_i 2
+                                       pushundefined
+                                       inclocal_i 3
+                                       convert_s
+                                       greaterequals
+                              ofs0013:
+                                       setlocal 4
+                                       getlocal0
+                                       pushscope
+                                       getlocal 4
+                                       dup
+                                       iffalse ofs0021
+                                       pop
+                                       getlocal2
+                                       convert_b
+                              ofs0021:
+                                       iftrue ofs002c
+                                       getlocal0
+                                       findpropstrict QName(PackageNamespace(""),"#H")
+                                       getproperty QName(PackageNamespace(""),"#H")
+                                       initproperty QName(PrivateNamespace("9>"),"8j")
+                              ofs002c:
+                                       getlocal0
+                                       getlocal1
+                                       callproperty QName(PrivateNamespace("9>"),"7!-"), 1
+                                       getlocal 4
+                                       iftrue ofs0038
+                                       convert_i
+                              ofs0038:
+                                       setlocal2
+                                       getlocal 4
+                                       dup
+                                       iffalse ofs0043
+                                       pop
+                                       getlocal2
+                                       convert_b
+                              ofs0043:
+                                       iftrue ofs00f8
+                                       jump ofs00dc
+                              ofs004b:
+                                       label
+                                       getlocal1
+                                       getlocal3
+                                       iffalse ofs008e
+                                       getlocal3
+                                       iffalse ofs00c7
+                                       getlocal 4
+                                       iftrue ofs009b
+                                       pushdouble 0.0
+                                       getlocal3
+                                       dup
+                                       iftrue ofs0078
+                                       jump ofs0075
+                                       inclocal 3
+                                       lshift
+                                       swap
+                                       rshift
+                                       convert_u
+                                       getlocal2
+                                       convert_i
+                                       inclocal_i 2
+                                       declocal_i 3
+                              ofs0075:
+                                       pop
+                                       getlocal3
+                                       convert_b
+                              ofs0078:
+                                       iffalse ofs00b0
+                                       ifgt ofs0099
+                                       getlocal3
+                                       dup
+                                       iftrue ofs0089
+                                       pop
+                                       getlocal0
+                                       convert_b
+                              ofs0089:
+                                       iffalse ofs00c8
+                                       getlocal1
+                              ofs008e:
+                                       returnvalue
+                                       pushtrue
+                                       iftrue ofs0094
+                              ofs0094:
+                                       label
+                                       jump ofs004b
+                              ofs0099:
+                                       label
+                                       getlocal1
+                              ofs009b:
+                                       getlocal0
+                                       getproperty QName(PrivateNamespace("9>"),"8j")
+                                       getlocal 4
+                                       dup
+                                       iffalse ofs00a8
+                                       pop
+                                       getlocal0
+                                       convert_b
+                              ofs00a8:
+                                       iftrue ofs00b0
+                                       pushshort 1000
+                                       multiply
+                              ofs00b0:
+                                       subtract
+                                       getlocal 4
+                                       iftrue ofs00c7
+                                       convert_d
+                                       jump ofs00c7
+                                       pushtrue
+                                       declocal 2
+                                       convert_s
+                                       modulo
+                                       coerce_s
+                                       pop
+                                       declocal 3
+                                       convert_s
+                                       modulo
+                              ofs00c7:
+                                       setlocal1
+                              ofs00c8:
+                                       jump ofs004b
+                              ofs00cc:
+                                       label
+                                       getlocal0
+                                       getlocal2
+                                       callproperty QName(PackageNamespace(""),"\'6"), 1
+                                       pop
+                                       getlocal3
+                                       iffalse ofs0104
+                                       jump ofs0094
+                              ofs00dc:
+                                       getlocal2
+                                       getlocal 4
+                                       iftrue ofs0102
+                                       findpropstrict QName(PackageNamespace(""),"]! ")
+                                       getproperty QName(PackageNamespace(""),"]! ")
+                                       ifngt ofs00cc
+                                       getlocal3
+                                       dup
+                                       iftrue ofs00f4
+                                       pop
+                                       getlocal0
+                                       convert_b
+                              ofs00f4:
+                                       iffalse ofs0104
+                              ofs00f8:
+                                       findpropstrict QName(PackageNamespace(""),"]! ")
+                                       getproperty QName(PackageNamespace(""),"]! ")
+                                       getlocal 4
+                                       iftrue ofs0103
+                              ofs0102:
+                                       convert_i
+                              ofs0103:
+                                       setlocal2
+                              ofs0104:
+                                       jump ofs00cc
+                                       returnvoid
+                                    end ; code
+                                 end ; body
+                              end ; method
+                           }
+                           
+                           public function §'6§(param1:int) : void
+                           {
+                              trait method QName(PackageNamespace(""),"\'6")
+                                 dispid 0
+                                 method
+                                    name null
+                                    param QName(PackageNamespace(""),"int")
+                                    returns QName(PackageNamespace(""),"void")
+                                    
+                                    body
+                                       maxstack 6
+                                       localcount 10
+                                       initscopedepth 4
+                                       maxscopedepth 5
+                                       
+                                       code
+                                          pushfalse
+                                          pushtrue
+                                          swap
+                                          jump ofs0014
+                                          declocal 2
+                                          kill 7
+                                          rshift
+                                          getlocal 7
+                                          pushtrue
+                                          pushundefined
+                                          pushundefined
+                                          inclocal_i 4
+                                          convert_s
+                                 ofs0014:
+                                          setlocal 8
+                                          setlocal 9
+                                          getlocal0
+                                          pushscope
+                                          pushnan
+                                          setlocal 5
+                                          getlocal 9
+                                          dup
+                                          iftrue ofs0027
+                                          pop
+                                          getlocal1
+                                          convert_b
+                                 ofs0027:
+                                          iffalse ofs0030
+                                          getlocal0
+                                          pushbyte 0
+                                          initproperty QName(PackageNamespace(""),"0L")
+                                 ofs0030:
+                                          pushbyte 10
+                                          getlocal 8
+                                          iftrue ofs0039
+                                          convert_i
+                                 ofs0039:
+                                          setlocal2
+                                          pushbyte 10
+                                          getlocal 9
+                                          dup
+                                          iftrue ofs0046
+                                          pop
+                                          getlocal3
+                                          convert_b
+                                 ofs0046:
+                                          iffalse ofs004b
+                                          convert_i
+                                 ofs004b:
+                                          setlocal3
+                                          pushbyte 0
+                                          getlocal 9
+                                          iffalse ofs0055
+                                          convert_i
+                                 ofs0055:
+                                          setlocal 4
+                                          jump ofs009e
+                                 ofs005b:
+                                          label
+                                          getlocal0
+                                          dup
+                                          setlocal 6
+                                          getproperty QName(PrivateNamespace("9>"),"`!D")
+                                          getlocal 8
+                                          dup
+                                          iffalse ofs006c
+                                          pop
+                                          getlocal1
+                                          convert_b
+                                 ofs006c:
+                                          iftrue ofs0071
+                                          increment_i
+                                 ofs0071:
+                                          setlocal 7
+                                          getlocal 9
+                                          dup
+                                          iftrue ofs007d
+                                          pop
+                                          getlocal2
+                                          convert_b
+                                 ofs007d:
+                                          iffalse ofs0087
+                                          getlocal 6
+                                          getlocal 7
+                                          setproperty QName(PrivateNamespace("9>"),"`!D")
+                                 ofs0087:
+                                          kill 7
+                                          kill 6
+                                          getlocal 8
+                                          dup
+                                          iffalse ofs0095
+                                          pop
+                                          getlocal3
+                                          convert_b
+                                 ofs0095:
+                                          iftrue ofs0149
+                                          jump ofs0220
+                                 ofs009d:
+                                          label
+                                 ofs009e:
+                                          getlocal 4
+                                          getlocal 8
+                                          iftrue ofs00fd
+                                          getlocal1
+                                          iflt ofs005b
+                                          getlocal 9
+                                          dup
+                                          iftrue ofs00b5
+                                          pop
+                                          getlocal3
+                                          convert_b
+                                 ofs00b5:
+                                          iffalse ofs00ff
+                                          getlocal 9
+                                          dup
+                                          iftrue ofs00c3
+                                          pop
+                                          getlocal1
+                                          convert_b
+                                 ofs00c3:
+                                          iffalse ofs012e
+                                          returnvoid
+                                          pushtrue
+                                          iftrue ofs00cd
+                                 ofs00cd:
+                                          label
+                                          getlocal 4
+                                          getlocal 8
+                                          iftrue ofs00dd
+                                          increment_i
+                                          getlocal 9
+                                          iffalse ofs00fd
+                                 ofs00dd:
+                                          getlocal 9
+                                          dup
+                                          iftrue ofs00e7
+                                          pop
+                                          getlocal0
+                                          convert_b
+                                 ofs00e7:
+                                          iffalse ofs0222
+                                          convert_i
+                                          jump ofs00fd
+                                          inclocal 6
+                                          astypelate
+                                          inclocal_i 3
+                                          getlocal 4
+                                          inclocal_i 8
+                                          add_i
+                                          istypelate
+                                          swap
+                                          typeof
+                                 ofs00fd:
+                                          setlocal 4
+                                 ofs00ff:
+                                          getlocal 8
+                                          iftrue ofs015d
+                                          getlocal 9
+                                          dup
+                                          iftrue ofs010f
+                                          pop
+                                          getlocal0
+                                          convert_b
+                                 ofs010f:
+                                          iffalse ofs0149
+                                          getlocal 8
+                                          iftrue ofs01a0
+                                          getlocal 8
+                                          iftrue ofs0206
+                                          jump ofs009d
+                                 ofs0123:
+                                          label
+                                          getlocal0
+                                          getproperty QName(PackageNamespace(""),"`s")
+                                          getlocal0
+                                          getproperty QName(PrivateNamespace("9>"),"8j")
+                                          callproperty QName(PackageNamespace(""),"handleEngineUpdateStep"), 1
+                                          pop
+                                 ofs012e:
+                                          jump ofs00cd
+                                 ofs0132:
+                                          label
+                                          findpropstrict QName(PackageNamespace(""),"+!S")
+                                          getproperty QName(PackageNamespace(""),"+!S")
+                                          getlocal 8
+                                          dup
+                                          iffalse ofs0141
+                                          pop
+                                          getlocal3
+                                          convert_b
+                                 ofs0141:
+                                          iftrue ofs0202
+                                          iffalse ofs0123
+                                 ofs0149:
+                                          findpropstrict QName(PackageNamespace("?!Y"),"`S")
+                                          getproperty QName(PackageNamespace("?!Y"),"`S")
+                                          getproperty QName(PackageNamespace(""),"5I")
+                                          pushstring "Box2D"
+                                          findpropstrict QName(PackageNamespace("flash.utils"),"getTimer")
+                                          callproperty QName(PackageNamespace("flash.utils"),"getTimer"), 0
+                                          getlocal 5
+                                          subtract
+                                          callproperty QName(PackageNamespace(""),"=<"), 2
+                                          pop
+                                 ofs015d:
+                                          getlocal 8
+                                          dup
+                                          iffalse ofs0167
+                                          pop
+                                          getlocal2
+                                          convert_b
+                                 ofs0167:
+                                          iftrue ofs01f9
+                                          getlocal 9
+                                          iffalse ofs021c
+                                          jump ofs0123
+                                 ofs0175:
+                                          label
+                                          getlocal0
+                                          getlocal0
+                                          getproperty QName(PackageNamespace(""),"0L")
+                                          getlocal 8
+                                          dup
+                                          iffalse ofs0184
+                                          pop
+                                          getlocal1
+                                          convert_b
+                                 ofs0184:
+                                          iftrue ofs019e
+                                          getlocal0
+                                          getproperty QName(PrivateNamespace("9>"),"8j")
+                                          getlocal 9
+                                          dup
+                                          iftrue ofs0195
+                                          pop
+                                          getlocal1
+                                          convert_b
+                                 ofs0195:
+                                          iffalse ofs019d
+                                          pushshort 1000
+                                          multiply
+                                 ofs019d:
+                                          add
+                                 ofs019e:
+                                          initproperty QName(PackageNamespace(""),"0L")
+                                 ofs01a0:
+                                          getlocal 9
+                                          dup
+                                          iftrue ofs01aa
+                                          pop
+                                          getlocal1
+                                          convert_b
+                                 ofs01aa:
+                                          iffalse ofs01c8
+                                          jump ofs0132
+                                 ofs01b2:
+                                          label
+                                          getlocal0
+                                          getproperty QName(PackageNamespace(""),"mWorld")
+                                          getlocal 8
+                                          dup
+                                          iffalse ofs01c0
+                                          pop
+                                          getlocal1
+                                          convert_b
+                                 ofs01c0:
+                                          iftrue ofs01f0
+                                          callproperty QName(PackageNamespace(""),"^z"), 0
+                                          pop
+                                 ofs01c8:
+                                          getlocal 9
+                                          dup
+                                          iftrue ofs01d2
+                                          pop
+                                          getlocal0
+                                          convert_b
+                                 ofs01d2:
+                                          iffalse ofs0225
+                                          jump ofs01e8
+                                          astypelate
+                                          declocal 2
+                                          inclocal 3
+                                          inclocal 2
+                                          bitand
+                                          declocal_i 6
+                                          lessequals
+                                          hasnext
+                                          inclocal 2
+                                 ofs01e8:
+                                          jump ofs0175
+                                 ofs01ec:
+                                          label
+                                          getlocal0
+                                          getproperty QName(PackageNamespace(""),"mWorld")
+                                 ofs01f0:
+                                          getlocal0
+                                          getproperty QName(PrivateNamespace("9>"),"8j")
+                                          getlocal2
+                                          getlocal3
+                                          callproperty QName(PackageNamespace(""),"<!;"), 3
+                                          pop
+                                 ofs01f9:
+                                          jump ofs01b2
+                                 ofs01fd:
+                                          label
+                                          findpropstrict QName(PackageNamespace(""),"+!S")
+                                          getproperty QName(PackageNamespace(""),"+!S")
+                                 ofs0202:
+                                          iffalse ofs01ec
+                                 ofs0206:
+                                          findpropstrict QName(PackageNamespace("flash.utils"),"getTimer")
+                                          callproperty QName(PackageNamespace("flash.utils"),"getTimer"), 0
+                                          convert_d
+                                          getlocal 9
+                                          dup
+                                          iftrue ofs0216
+                                          pop
+                                          getlocal0
+                                          convert_b
+                                 ofs0216:
+                                          iffalse ofs0223
+                                          setlocal 5
+                                 ofs021c:
+                                          jump ofs01ec
+                                 ofs0220:
+                                          pushbyte 0
+                                 ofs0222:
+                                          convert_d
+                                 ofs0223:
+                                          setlocal 5
+                                 ofs0225:
+                                          jump ofs01fd
+                                          returnvoid
+                                       end ; code
+                                    end ; body
+                                 end ; method
+                              }
+                              
+                              private function §7!-§(param1:Number) : int
+                              {
+                                 trait method QName(PrivateNamespace("9>"),"7!-")
+                                    dispid 0
+                                    method
+                                       name null
+                                       param QName(PackageNamespace(""),"Number")
+                                       returns QName(PackageNamespace(""),"int")
+                                       
+                                       body
+                                          maxstack 5
+                                          localcount 5
+                                          initscopedepth 4
+                                          maxscopedepth 5
+                                          
+                                          code
+                                             pushfalse
+                                             pushtrue
+                                             swap
+                                             jump ofs0013
+                                             convert_b
+                                             coerce_a
+                                             divide
+                                             greaterequals
+                                             declocal_i 3
+                                             inclocal_i 3
+                                             getlocal2
+                                             declocal_i 3
+                                             convert_b
+                                    ofs0013:
+                                             setlocal3
+                                             setlocal 4
+                                             getlocal0
+                                             pushscope
+                                             pushbyte 0
+                                             getlocal3
+                                             dup
+                                             iffalse ofs0023
+                                             pop
+                                             getlocal0
+                                             convert_b
+                                    ofs0023:
+                                             iftrue ofs0028
+                                             convert_i
+                                    ofs0028:
+                                             setlocal2
+                                             jump ofs00c4
+                                    ofs002d:
+                                             label
+                                             getlocal1
+                                             getlocal3
+                                             dup
+                                             iffalse ofs0038
+                                             pop
+                                             getlocal2
+                                             convert_b
+                                    ofs0038:
+                                             iftrue ofs00bf
+                                             getlocal3
+                                             dup
+                                             iffalse ofs0045
+                                             pop
+                                             getlocal2
+                                             convert_b
+                                    ofs0045:
+                                             iftrue ofs00be
+                                             jump ofs0058
+                                             getlocal3
+                                             getlocal3
+                                             kill 2
+                                             setlocal3
+                                             increment
+                                             setlocal2
+                                             declocal_i 3
+                                             pushwith
+                                             swap
+                                    ofs0058:
+                                             pushdouble 0.0
+                                             getlocal3
+                                             dup
+                                             iffalse ofs0063
+                                             pop
+                                             getlocal3
+                                             convert_b
+                                    ofs0063:
+                                             iftrue ofs00bd
+                                             ifgt ofs00c8
+                                             getlocal3
+                                             dup
+                                             iffalse ofs0074
+                                             pop
+                                             getlocal3
+                                             convert_b
+                                    ofs0074:
+                                             iftrue ofs00c0
+                                             getlocal3
+                                             iftrue ofs00d3
+                                             getlocal2
+                                             getlocal 4
+                                             iffalse ofs00d2
+                                             getlocal 4
+                                             iffalse ofs00ca
+                                             returnvalue
+                                             jump ofs008f
+                                    ofs008f:
+                                             dxnslate
+                                             checkfilter
+                                             getlocal3
+                                             inclocal_i 2
+                                             declocal_i 3
+                                             declocal_i 2
+                                             getglobalscope
+                                             multiply_i
+                                             declocal_i 3
+                                             pushtrue
+                                             iftrue ofs00a1
+                                    ofs00a1:
+                                             label
+                                             getlocal1
+                                             getlocal 4
+                                             dup
+                                             iftrue ofs00ad
+                                             pop
+                                             getlocal0
+                                             convert_b
+                                    ofs00ad:
+                                             iffalse ofs00be
+                                             getlocal0
+                                             getproperty QName(PrivateNamespace("9>"),"8j")
+                                             getlocal3
+                                             iftrue ofs00bd
+                                             pushshort 1000
+                                             multiply
+                                    ofs00bd:
+                                             subtract
+                                    ofs00be:
+                                             convert_d
+                                    ofs00bf:
+                                             setlocal1
+                                    ofs00c0:
+                                             jump ofs002d
+                                    ofs00c4:
+                                             jump ofs002d
+                                    ofs00c8:
+                                             label
+                                             getlocal2
+                                    ofs00ca:
+                                             increment_i
+                                             getlocal 4
+                                             iffalse ofs00d2
+                                             convert_i
+                                    ofs00d2:
+                                             setlocal2
+                                    ofs00d3:
+                                             jump ofs00a1
+                                             returnvoid
+                                          end ; code
+                                       end ; body
+                                    end ; method
+                                 }
+                              }
+                           }

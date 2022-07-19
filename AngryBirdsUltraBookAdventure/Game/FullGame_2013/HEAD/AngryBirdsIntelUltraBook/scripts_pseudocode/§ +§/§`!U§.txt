@@ -1,0 +1,419 @@
+package § +§
+{
+   import §0!Q§.UIEventListenerRovio;
+   import flash.events.Event;
+   
+   public class §`!U§ extends Event
+   {
+      
+      public static const UI_INTERACTION:String = "onUiInteraction";
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs001d
+                  pushundefined
+                  getlocal3
+                  pushfalse
+                  pushnull
+                  newactivation
+                  greaterthan
+                  dup
+                  divide
+                  negate_i
+                  jump ofs0014
+         ofs0014:
+                  convert_d
+                  decrement_i
+                  lessequals
+                  increment_i
+                  bitand
+                  bitxor
+                  nextname
+                  checkfilter
+                  convert_o
+         ofs001d:
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  dup
+                  iffalse ofs0029
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0029:
+                  iftrue ofs004d
+                  jump ofs0048
+         ofs0031:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0038
+         ofs0038:
+                  label
+                  findproperty QName(PackageNamespace(""),"UI_INTERACTION")
+                  pushstring "onUiInteraction"
+                  initproperty QName(PackageNamespace(""),"UI_INTERACTION")
+                  getlocal2
+                  iftrue ofs004d
+                  jump ofs0031
+         ofs0048:
+                  debug 1, "UI_INTERACTION", 0, 9
+         ofs004d:
+                  jump ofs0038
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var eventIndex:int;
+      
+      public var eventName:String;
+      
+      public var component:UIEventListenerRovio;
+      
+      public function §`!U§(type:String, eventIndex:int, eventName:String, component:UIEventListenerRovio, bubbles:Boolean = false, cancelable:Boolean = false)
+      {
+         method
+            name "com.angrybirds.popups.events:UIInteractionHandlerEvent/UIInteractionHandlerEvent"
+            flag HAS_OPTIONAL
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace(""),"int")
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace("0!Q"),"UIEventListenerRovio")
+            param QName(PackageNamespace(""),"Boolean")
+            param QName(PackageNamespace(""),"Boolean")
+            optional False()
+            optional False()
+            returns null
+            
+            body
+               maxstack 6
+               localcount 9
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0013
+                  setlocal3
+                  subtract
+                  pushnull
+                  kill 7
+                  nextname
+                  typeof
+                  declocal 4
+                  kill 7
+                  subtract_i
+         ofs0013:
+                  setlocal 7
+                  setlocal 8
+                  debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\popups\\events;UIInteractionHandlerEvent.as"
+                  getlocal 7
+                  dup
+                  iffalse ofs0023
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0023:
+                  iftrue ofs0029
+                  debugline 16
+         ofs0029:
+                  getlocal0
+                  pushscope
+                  getlocal 8
+                  dup
+                  iftrue ofs0035
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0035:
+                  iffalse ofs00de
+                  jump ofs016f
+         ofs003d:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0044
+         ofs0044:
+                  label
+                  debugline 22
+                  getlocal 8
+                  dup
+                  iftrue ofs0051
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0051:
+                  iffalse ofs0092
+                  getlocal 7
+                  dup
+                  iffalse ofs005f
+                  pop
+                  getlocal1
+                  convert_b
+         ofs005f:
+                  iftrue ofs00bb
+                  getlocal 8
+                  iffalse ofs00e5
+                  getlocal 8
+                  dup
+                  iftrue ofs0073
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0073:
+                  iffalse ofs012b
+                  jump ofs003d
+         ofs007b:
+                  label
+                  getlocal0
+                  getlocal 4
+                  initproperty QName(PackageNamespace(""),"component")
+                  jump ofs0092
+                  declocal_i 5
+                  setlocal 7
+                  kill 4
+                  instanceof
+                  subtract
+                  inclocal_i 3
+                  strictequals
+                  getlocal3
+                  instanceof
+         ofs0092:
+                  getlocal 7
+                  iftrue ofs00a5
+                  getlocal 8
+                  iffalse ofs00b4
+                  jump ofs0044
+         ofs00a2:
+                  label
+                  debugline 21
+         ofs00a5:
+                  getlocal 8
+                  iffalse ofs0149
+                  jump ofs007b
+         ofs00af:
+                  label
+                  getlocal0
+                  getlocal3
+                  initproperty QName(PackageNamespace(""),"eventName")
+         ofs00b4:
+                  jump ofs00a2
+         ofs00b8:
+                  label
+                  debugline 20
+         ofs00bb:
+                  getlocal 7
+                  dup
+                  iffalse ofs00c5
+                  pop
+                  getlocal1
+                  convert_b
+         ofs00c5:
+                  iftrue ofs00d8
+                  getlocal 8
+                  iffalse ofs0135
+                  jump ofs00af
+         ofs00d3:
+                  label
+                  getlocal0
+                  getlocal2
+                  initproperty QName(PackageNamespace(""),"eventIndex")
+         ofs00d8:
+                  getlocal 8
+                  iffalse ofs0174
+         ofs00de:
+                  jump ofs00b8
+         ofs00e2:
+                  label
+                  debugline 19
+         ofs00e5:
+                  getlocal 7
+                  dup
+                  iffalse ofs00ef
+                  pop
+                  getlocal1
+                  convert_b
+         ofs00ef:
+                  iftrue ofs0100
+                  jump ofs00d3
+         ofs00f7:
+                  label
+                  getlocal0
+                  getlocal1
+                  getlocal 5
+                  getlocal 6
+                  constructsuper 3
+         ofs0100:
+                  getlocal 7
+                  iftrue ofs013f
+                  jump ofs0116
+                  getlocal 6
+                  lessequals
+                  setlocal 5
+                  getlocal3
+                  rshift
+                  hasnext
+                  hasnext
+                  newactivation
+                  declocal 3
+         ofs0116:
+                  getlocal 7
+                  dup
+                  iffalse ofs0120
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0120:
+                  iftrue ofs016b
+                  jump ofs00e2
+         ofs0128:
+                  label
+                  debugline 18
+         ofs012b:
+                  jump ofs00f7
+         ofs012f:
+                  label
+                  debug 1, "cancelable", 5, 16
+         ofs0135:
+                  jump ofs0128
+         ofs0139:
+                  label
+                  debug 1, "bubbles", 4, 16
+         ofs013f:
+                  jump ofs012f
+         ofs0143:
+                  label
+                  debug 1, "component", 3, 16
+         ofs0149:
+                  getlocal 7
+                  dup
+                  iffalse ofs0153
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0153:
+                  iftrue ofs0161
+                  jump ofs0139
+         ofs015b:
+                  label
+                  debug 1, "eventName", 2, 16
+         ofs0161:
+                  jump ofs0143
+         ofs0165:
+                  label
+                  debug 1, "eventIndex", 1, 16
+         ofs016b:
+                  jump ofs015b
+         ofs016f:
+                  debug 1, "type", 0, 16
+         ofs0174:
+                  jump ofs0165
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      override public function clone() : Event
+      {
+         trait method QName(PackageNamespace(""),"clone")
+            flag OVERRIDE
+            flag METADATA
+            metadata"__go_to_definition_help"
+               item "pos" "734"
+            end ; metadata
+            dispid 0
+            method
+               name "com.angrybirds.popups.events:UIInteractionHandlerEvent/clone"
+               returns QName(PackageNamespace("flash.events"),"Event")
+               
+               body
+                  maxstack 9
+                  localcount 3
+                  initscopedepth 5
+                  maxscopedepth 6
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     setlocal1
+                     jump ofs0010
+                     nextname
+                     divide
+                     getlocal0
+                     setlocal2
+                     lshift
+                     popscope
+                     not
+                     convert_u
+                     subtract_i
+            ofs0010:
+                     setlocal2
+                     debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\popups\\events;UIInteractionHandlerEvent.as"
+                     getlocal2
+                     dup
+                     jump ofs0022
+                     pushscope
+                     convert_d
+                     not
+                     convert_i
+                     convert_s
+                     dxnslate
+                     negate
+                     lessequals
+                     pushnan
+            ofs0022:
+                     iffalse ofs0029
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0029:
+                     iftrue ofs002f
+                     debugline 24
+            ofs002f:
+                     getlocal0
+                     pushscope
+                     getlocal1
+                     iffalse ofs0038
+                     debugline 26
+            ofs0038:
+                     findpropstrict QName(PackageNamespace(" +"),"`!U")
+                     findpropstrict QName(PackageNamespace(""),"type")
+                     getproperty QName(PackageNamespace(""),"type")
+                     getlocal0
+                     getproperty QName(PackageNamespace(""),"eventIndex")
+                     getlocal0
+                     getproperty QName(PackageNamespace(""),"eventName")
+                     getlocal0
+                     getproperty QName(PackageNamespace(""),"component")
+                     findpropstrict QName(PackageNamespace(""),"bubbles")
+                     getproperty QName(PackageNamespace(""),"bubbles")
+                     findpropstrict QName(PackageNamespace(""),"cancelable")
+                     getproperty QName(PackageNamespace(""),"cancelable")
+                     constructprop QName(PackageNamespace(" +"),"`!U"), 6
+                     returnvalue
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+      }
+   }

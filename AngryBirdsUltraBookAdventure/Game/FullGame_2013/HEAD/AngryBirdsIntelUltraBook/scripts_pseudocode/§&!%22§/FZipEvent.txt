@@ -1,0 +1,565 @@
+package §&!"§
+{
+   import flash.events.Event;
+   
+   public class FZipEvent extends Event
+   {
+      
+      public static const FILE_LOADED:String = "fileLoaded";
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  bitand
+                  convert_u
+                  decrement_i
+                  rshift
+                  lessequals
+                  pushscope
+                  decrement
+                  hasnext
+                  newactivation
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  jump ofs0020
+                  dxnslate
+                  convert_u
+                  not
+                  convert_s
+                  bitnot
+                  popscope
+                  nextvalue
+                  bitnot
+                  increment_i
+         ofs0020:
+                  pushscope
+                  getlocal2
+                  dup
+                  iftrue ofs002a
+                  pop
+                  getlocal1
+                  convert_b
+         ofs002a:
+                  iffalse ofs0056
+                  jump ofs0051
+         ofs0032:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0039
+         ofs0039:
+                  label
+                  findproperty QName(PackageNamespace(""),"FILE_LOADED")
+                  pushstring "fileLoaded"
+                  initproperty QName(PackageNamespace(""),"FILE_LOADED")
+                  getlocal2
+                  dup
+                  iftrue ofs0049
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0049:
+                  iffalse ofs0056
+                  jump ofs0032
+         ofs0051:
+                  debug 1, "FILE_LOADED", 0, 41
+         ofs0056:
+                  jump ofs0039
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var file:FZipFile;
+      
+      public function FZipEvent(type:String, file:FZipFile = null, bubbles:Boolean = false, cancelable:Boolean = false)
+      {
+         method
+            name "deng.fzip:FZipEvent/FZipEvent"
+            flag HAS_OPTIONAL
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace("&!\""),"FZipFile")
+            param QName(PackageNamespace(""),"Boolean")
+            param QName(PackageNamespace(""),"Boolean")
+            optional Null()
+            optional False()
+            optional False()
+            returns null
+            
+            body
+               maxstack 6
+               localcount 7
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  getlocal3
+                  pushundefined
+                  equals
+                  negate_i
+                  greaterequals
+                  convert_o
+                  getlocal3
+                  bitor
+                  hasnext
+         ofs0010:
+                  setlocal 5
+                  setlocal 6
+                  debugfile "/Users/claus/Projects/fzip/src;deng/fzip;FZipEvent.as"
+                  getlocal 6
+                  dup
+                  iftrue ofs0020
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0020:
+                  iffalse ofs0026
+                  debugline 61
+         ofs0026:
+                  getlocal0
+                  pushscope
+                  getlocal 5
+                  dup
+                  iffalse ofs0032
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0032:
+                  iftrue ofs00f1
+                  jump ofs00f5
+         ofs003a:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0041
+         ofs0041:
+                  label
+                  debugline 64
+                  getlocal 5
+                  dup
+                  iffalse ofs0061
+                  jump ofs005e
+                  lessthan
+                  declocal_i 5
+                  setlocal3
+                  declocal_i 4
+                  declocal 3
+                  kill 4
+                  inclocal 4
+                  declocal 4
+                  subtract
+         ofs005e:
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0061:
+                  iftrue ofs00a2
+                  getlocal 6
+                  dup
+                  iftrue ofs006f
+                  pop
+                  getlocal0
+                  convert_b
+         ofs006f:
+                  iffalse ofs00bd
+                  getlocal 5
+                  iftrue ofs00dd
+                  getlocal 6
+                  iffalse ofs00e7
+                  getlocal 5
+                  iftrue ofs00fa
+                  jump ofs003a
+         ofs0089:
+                  label
+                  getlocal0
+                  getlocal1
+                  getlocal3
+                  getlocal 4
+                  jump ofs00a0
+                  setlocal 5
+                  urshift
+                  decrement_i
+                  getlocal2
+                  kill 3
+                  getlocal 4
+                  inclocal_i 2
+                  getlocal2
+                  pushtrue
+         ofs00a0:
+                  constructsuper 3
+         ofs00a2:
+                  getlocal 6
+                  dup
+                  iftrue ofs00ac
+                  pop
+                  getlocal3
+                  convert_b
+         ofs00ac:
+                  iffalse ofs00cc
+                  getlocal 6
+                  iffalse ofs00f1
+                  jump ofs0041
+         ofs00ba:
+                  label
+                  debugline 63
+         ofs00bd:
+                  getlocal 6
+                  iffalse ofs00d3
+                  jump ofs0089
+         ofs00c7:
+                  label
+                  getlocal0
+                  getlocal2
+                  initproperty QName(PackageNamespace(""),"file")
+         ofs00cc:
+                  jump ofs00ba
+         ofs00d0:
+                  label
+                  debugline 62
+         ofs00d3:
+                  jump ofs00c7
+         ofs00d7:
+                  label
+                  debug 1, "cancelable", 3, 61
+         ofs00dd:
+                  jump ofs00d0
+         ofs00e1:
+                  label
+                  debug 1, "bubbles", 2, 61
+         ofs00e7:
+                  jump ofs00d7
+         ofs00eb:
+                  label
+                  debug 1, "file", 1, 61
+         ofs00f1:
+                  jump ofs00e1
+         ofs00f5:
+                  debug 1, "type", 0, 61
+         ofs00fa:
+                  jump ofs00eb
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      override public function clone() : Event
+      {
+         trait method QName(PackageNamespace(""),"clone")
+            flag OVERRIDE
+            flag METADATA
+            metadata"__go_to_definition_help"
+               item "file" "/Users/claus/Projects/fzip/src/deng/fzip/FZipEvent.as"
+               item "pos" "2677"
+            end ; metadata
+            dispid 0
+            method
+               name "deng.fzip:FZipEvent/clone"
+               returns QName(PackageNamespace("flash.events"),"Event")
+               
+               body
+                  maxstack 7
+                  localcount 3
+                  initscopedepth 5
+                  maxscopedepth 6
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     setlocal1
+                     jump ofs0010
+                     increment_i
+                     convert_s
+                     swap
+                     increment_i
+                     setlocal2
+                     subtract
+                     greaterequals
+                     decrement_i
+                     nextname
+            ofs0010:
+                     setlocal2
+                     debugfile "/Users/claus/Projects/fzip/src;deng/fzip;FZipEvent.as"
+                     jump ofs0020
+                     getlocal2
+                     decrement
+                     convert_b
+                     getlocal2
+                     instanceof
+                     pushwith
+                     urshift
+                     multiply_i
+                     strictequals
+            ofs0020:
+                     getlocal1
+                     dup
+                     iftrue ofs0029
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0029:
+                     iffalse ofs002f
+                     debugline 73
+            ofs002f:
+                     getlocal0
+                     pushscope
+                     getlocal1
+                     iffalse ofs0038
+                     debugline 74
+            ofs0038:
+                     findpropstrict QName(PackageNamespace("&!\""),"FZipEvent")
+                     findpropstrict QName(PackageNamespace(""),"type")
+                     getproperty QName(PackageNamespace(""),"type")
+                     getlocal0
+                     getproperty QName(PackageNamespace(""),"file")
+                     findpropstrict QName(PackageNamespace(""),"bubbles")
+                     getproperty QName(PackageNamespace(""),"bubbles")
+                     findpropstrict QName(PackageNamespace(""),"cancelable")
+                     getproperty QName(PackageNamespace(""),"cancelable")
+                     constructprop QName(PackageNamespace("&!\""),"FZipEvent"), 4
+                     returnvalue
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         override public function toString() : String
+         {
+            trait method QName(PackageNamespace(""),"toString")
+               flag OVERRIDE
+               flag METADATA
+               metadata"__go_to_definition_help"
+                  item "file" "/Users/claus/Projects/fzip/src/deng/fzip/FZipEvent.as"
+                  item "pos" "2844"
+               end ; metadata
+               dispid 0
+               method
+                  name "deng.fzip:FZipEvent/toString"
+                  returns QName(PackageNamespace(""),"String")
+                  
+                  body
+                     maxstack 4
+                     localcount 3
+                     initscopedepth 5
+                     maxscopedepth 6
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        swap
+                        jump ofs0010
+                        subtract
+                        subtract
+                        popscope
+                        nextname
+                        pushfalse
+                        bitxor
+                        strictequals
+                        convert_s
+                        convert_u
+               ofs0010:
+                        setlocal1
+                        setlocal2
+                        debugfile "/Users/claus/Projects/fzip/src;deng/fzip;FZipEvent.as"
+                        getlocal1
+                        dup
+                        iffalse ofs001d
+                        pop
+                        getlocal2
+                        convert_b
+               ofs001d:
+                        iftrue ofs0023
+                        debugline 82
+               ofs0023:
+                        getlocal0
+                        pushscope
+                        pushstring "[FZipEvent type=\""
+                        getlocal1
+                        dup
+                        iffalse ofs0030
+                        pop
+                        getlocal1
+                        convert_b
+               ofs0030:
+                        iftrue ofs00ce
+                        debugline 83
+                        getlocal1
+                        dup
+                        iffalse ofs003f
+                        pop
+                        getlocal0
+                        convert_b
+               ofs003f:
+                        iftrue ofs0082
+                        findpropstrict QName(PackageNamespace(""),"type")
+                        getproperty QName(PackageNamespace(""),"type")
+                        add
+                        getlocal1
+                        iftrue ofs009f
+                        pushstring "\" filename=\""
+                        getlocal1
+                        dup
+                        iffalse ofs0058
+                        pop
+                        getlocal1
+                        convert_b
+               ofs0058:
+                        iftrue ofs0091
+                        add
+                        getlocal2
+                        dup
+                        iftrue ofs0066
+                        pop
+                        getlocal2
+                        convert_b
+               ofs0066:
+                        iffalse ofs0117
+                        getlocal0
+                        getproperty QName(PackageNamespace(""),"file")
+                        getproperty QName(PackageNamespace(""),"4F")
+                        add
+                        getlocal1
+                        jump ofs007e
+                        coerce_s
+                        add
+                        negate_i
+                        pushtrue
+                        pushscope
+                        astypelate
+                        convert_s
+                        getglobalscope
+                        multiply_i
+               ofs007e:
+                        iftrue ofs009f
+               ofs0082:
+                        pushstring "\" bubbles="
+                        getlocal2
+                        dup
+                        iftrue ofs008d
+                        pop
+                        getlocal2
+                        convert_b
+               ofs008d:
+                        iffalse ofs00fc
+               ofs0091:
+                        add
+                        getlocal1
+                        dup
+                        iffalse ofs009b
+                        pop
+                        getlocal0
+                        convert_b
+               ofs009b:
+                        iftrue ofs00b1
+               ofs009f:
+                        findpropstrict QName(PackageNamespace(""),"bubbles")
+                        getproperty QName(PackageNamespace(""),"bubbles")
+                        add
+                        getlocal1
+                        dup
+                        iffalse ofs00ad
+                        pop
+                        getlocal1
+                        convert_b
+               ofs00ad:
+                        iftrue ofs0117
+               ofs00b1:
+                        pushstring " cancelable="
+                        getlocal2
+                        dup
+                        iftrue ofs00bc
+                        pop
+                        getlocal0
+                        convert_b
+               ofs00bc:
+                        iffalse ofs00fc
+                        add
+                        getlocal2
+                        dup
+                        iftrue ofs00ca
+                        pop
+                        getlocal0
+                        convert_b
+               ofs00ca:
+                        iffalse ofs0102
+               ofs00ce:
+                        findpropstrict QName(PackageNamespace(""),"cancelable")
+                        getproperty QName(PackageNamespace(""),"cancelable")
+                        add
+                        getlocal1
+                        dup
+                        jump ofs00e2
+                        subtract_i
+                        bitor
+                        convert_s
+                        greaterequals
+                        bitnot
+                        strictequals
+                        greaterequals
+                        bitor
+                        setlocal2
+               ofs00e2:
+                        iffalse ofs00e9
+                        pop
+                        getlocal2
+                        convert_b
+               ofs00e9:
+                        iftrue ofs0117
+                        pushstring " eventPhase="
+                        getlocal2
+                        dup
+                        iftrue ofs00f8
+                        pop
+                        getlocal1
+                        convert_b
+               ofs00f8:
+                        iffalse ofs0116
+               ofs00fc:
+                        add
+                        getlocal2
+                        iffalse ofs0117
+               ofs0102:
+                        findpropstrict QName(PackageNamespace(""),"eventPhase")
+                        getproperty QName(PackageNamespace(""),"eventPhase")
+                        add
+                        getlocal1
+                        dup
+                        iffalse ofs0110
+                        pop
+                        getlocal1
+                        convert_b
+               ofs0110:
+                        iftrue ofs0117
+                        pushstring "]"
+               ofs0116:
+                        add
+               ofs0117:
+                        returnvalue
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+         }
+      }

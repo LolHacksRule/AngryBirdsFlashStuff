@@ -1,0 +1,475 @@
+package §"$§
+{
+   import flash.events.Event;
+   
+   public class §`§ extends Event
+   {
+      
+      public static const ON_CLOSE_COMPLETE:String = "OnCloseComplete";
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs001d
+                  bitxor
+                  pushscope
+                  setlocal2
+                  setlocal2
+                  dxnslate
+                  coerce_a
+                  getlocal3
+                  dxnslate
+                  increment
+                  jump ofs0014
+         ofs0014:
+                  convert_i
+                  astypelate
+                  newactivation
+                  lessequals
+                  add
+                  negate
+                  convert_o
+                  nextvalue
+                  divide
+         ofs001d:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  dup
+                  iftrue ofs002a
+                  pop
+                  getlocal2
+                  convert_b
+         ofs002a:
+                  iffalse ofs0045
+                  jump ofs0049
+         ofs0032:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0039
+         ofs0039:
+                  label
+                  findproperty QName(PackageNamespace(""),"ON_CLOSE_COMPLETE")
+                  pushstring "OnCloseComplete"
+                  initproperty QName(PackageNamespace(""),"ON_CLOSE_COMPLETE")
+                  getlocal2
+                  iffalse ofs004e
+         ofs0045:
+                  jump ofs0032
+         ofs0049:
+                  debug 1, "ON_CLOSE_COMPLETE", 0, 11
+         ofs004e:
+                  jump ofs0039
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      private var §^!'§:Popup;
+      
+      public function §`§(type:String, popup:Popup, bubbles:Boolean = false, cancelable:Boolean = false)
+      {
+         method
+            name "com.AngryBirds.popups:PopupEvent/PopupEvent"
+            flag HAS_OPTIONAL
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace("\"$"),"Popup")
+            param QName(PackageNamespace(""),"Boolean")
+            param QName(PackageNamespace(""),"Boolean")
+            optional False()
+            optional False()
+            returns null
+            
+            body
+               maxstack 6
+               localcount 7
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0014
+                  typeof
+                  inclocal_i 2
+                  pop
+                  modulo
+                  kill 5
+                  pushscope
+                  setlocal 4
+                  pushundefined
+                  getlocal 5
+         ofs0014:
+                  setlocal 5
+                  setlocal 6
+                  debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFP11\\src;com\\AngryBirds\\popups;PopupEvent.as"
+                  getlocal 6
+                  dup
+                  iftrue ofs0024
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0024:
+                  iffalse ofs002a
+                  debugline 17
+         ofs002a:
+                  getlocal0
+                  pushscope
+                  getlocal 6
+                  dup
+                  iftrue ofs0036
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0036:
+                  iffalse ofs00e4
+                  jump ofs00fc
+         ofs003e:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0045
+         ofs0045:
+                  label
+                  debugline 21
+                  getlocal 5
+                  iftrue ofs0066
+                  jump ofs003e
+         ofs0052:
+                  label
+                  getlocal0
+                  getlocal2
+                  initproperty QName(PrivateNamespace("3"),"^!\'")
+                  jump ofs0066
+                  newactivation
+                  kill 5
+                  pushtrue
+                  hasnext
+                  not
+                  istypelate
+                  convert_o
+                  pushscope
+                  kill 5
+         ofs0066:
+                  getlocal 5
+                  dup
+                  iffalse ofs0070
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0070:
+                  iftrue ofs007b
+                  jump ofs0045
+         ofs0078:
+                  label
+                  debugline 20
+         ofs007b:
+                  getlocal 6
+                  dup
+                  iftrue ofs0085
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0085:
+                  iffalse ofs00b9
+                  getlocal 6
+                  dup
+                  iftrue ofs0093
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0093:
+                  iffalse ofs00ce
+                  getlocal 5
+                  jump ofs00a9
+                  bitor
+                  getlocal1
+                  declocal_i 4
+                  decrement_i
+                  declocal_i 4
+                  convert_u
+                  getlocal0
+                  kill 2
+                  modulo
+         ofs00a9:
+                  iftrue ofs0101
+                  jump ofs0052
+         ofs00b1:
+                  label
+                  getlocal0
+                  getlocal1
+                  getlocal3
+                  getlocal 4
+                  constructsuper 3
+         ofs00b9:
+                  getlocal 5
+                  dup
+                  iffalse ofs00c3
+                  pop
+                  getlocal0
+                  convert_b
+         ofs00c3:
+                  iftrue ofs00d8
+                  jump ofs0078
+         ofs00cb:
+                  label
+                  debugline 19
+         ofs00ce:
+                  jump ofs00b1
+         ofs00d2:
+                  label
+                  debug 1, "cancelable", 3, 17
+         ofs00d8:
+                  getlocal 6
+                  iffalse ofs00ee
+                  getlocal 5
+                  iftrue ofs00f8
+         ofs00e4:
+                  jump ofs00cb
+         ofs00e8:
+                  label
+                  debug 1, "bubbles", 2, 17
+         ofs00ee:
+                  jump ofs00d2
+         ofs00f2:
+                  label
+                  debug 1, "popup", 1, 17
+         ofs00f8:
+                  jump ofs00e8
+         ofs00fc:
+                  debug 1, "type", 0, 17
+         ofs0101:
+                  jump ofs00f2
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function get popup() : Popup
+      {
+         trait getter QName(PackageNamespace(""),"popup")
+            flag METADATA
+            metadata"__go_to_definition_help"
+               item "pos" "285"
+            end ; metadata
+            dispid 0
+            method
+               name "com.AngryBirds.popups:PopupEvent/popup/get"
+               returns QName(PackageNamespace("\"$"),"Popup")
+               
+               body
+                  maxstack 3
+                  localcount 3
+                  initscopedepth 5
+                  maxscopedepth 6
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     setlocal1
+                     jump ofs0010
+                     convert_u
+                     instanceof
+                     bitor
+                     instanceof
+                     setlocal3
+                     convert_u
+                     add_i
+                     dup
+                     lessthan
+            ofs0010:
+                     setlocal2
+                     debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFP11\\src;com\\AngryBirds\\popups;PopupEvent.as"
+                     getlocal2
+                     iftrue ofs001a
+                     debugline 15
+            ofs001a:
+                     getlocal0
+                     pushscope
+                     getlocal0
+                     getproperty QName(PrivateNamespace("3"),"^!\'")
+                     returnvalue
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         override public function clone() : Event
+         {
+            trait method QName(PackageNamespace(""),"clone")
+               flag OVERRIDE
+               flag METADATA
+               metadata"__go_to_definition_help"
+                  item "pos" "530"
+               end ; metadata
+               dispid 0
+               method
+                  name "com.AngryBirds.popups:PopupEvent/clone"
+                  returns QName(PackageNamespace("flash.events"),"Event")
+                  
+                  body
+                     maxstack 7
+                     localcount 3
+                     initscopedepth 5
+                     maxscopedepth 6
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        swap
+                        jump ofs001d
+                        getlocal2
+                        greaterequals
+                        negate_i
+                        coerce_s
+                        add
+                        strictequals
+                        negate_i
+                        greaterthan
+                        typeof
+                        jump ofs0014
+               ofs0014:
+                        typeof
+                        convert_u
+                        rshift
+                        pushtrue
+                        subtract
+                        bitnot
+                        nextname
+                        pushtrue
+                        getlocal1
+               ofs001d:
+                        setlocal1
+                        setlocal2
+                        debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFP11\\src;com\\AngryBirds\\popups;PopupEvent.as"
+                        getlocal2
+                        iffalse ofs0028
+                        debugline 23
+               ofs0028:
+                        getlocal0
+                        pushscope
+                        getlocal1
+                        iftrue ofs0031
+                        debugline 25
+               ofs0031:
+                        findpropstrict QName(PackageNamespace("\"$"),"`")
+                        findpropstrict QName(PackageNamespace(""),"type")
+                        getproperty QName(PackageNamespace(""),"type")
+                        getlocal0
+                        getproperty QName(PrivateNamespace("3"),"^!\'")
+                        findpropstrict QName(PackageNamespace(""),"bubbles")
+                        getproperty QName(PackageNamespace(""),"bubbles")
+                        findpropstrict QName(PackageNamespace(""),"cancelable")
+                        getproperty QName(PackageNamespace(""),"cancelable")
+                        constructprop QName(PackageNamespace("\"$"),"`"), 4
+                        returnvalue
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            override public function toString() : String
+            {
+               trait method QName(PackageNamespace(""),"toString")
+                  flag OVERRIDE
+                  flag METADATA
+                  metadata"__go_to_definition_help"
+                     item "pos" "651"
+                  end ; metadata
+                  dispid 0
+                  method
+                     name "com.AngryBirds.popups:PopupEvent/toString"
+                     returns QName(PackageNamespace(""),"String")
+                     
+                     body
+                        maxstack 8
+                        localcount 3
+                        initscopedepth 5
+                        maxscopedepth 6
+                        
+                        code
+                           pushfalse
+                           pushtrue
+                           swap
+                           jump ofs0010
+                           urshift
+                           bitor
+                           checkfilter
+                           decrement
+                           urshift
+                           typeof
+                           pushnan
+                           istypelate
+                           pushundefined
+                  ofs0010:
+                           setlocal1
+                           setlocal2
+                           debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFP11\\src;com\\AngryBirds\\popups;PopupEvent.as"
+                           jump ofs0021
+                           coerce_a
+                           checkfilter
+                           negate_i
+                           pushnull
+                           hasnext
+                           decrement_i
+                           subtract_i
+                           pushfalse
+                           pushnull
+                  ofs0021:
+                           getlocal1
+                           dup
+                           iffalse ofs002a
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs002a:
+                           iftrue ofs0030
+                           debugline 28
+                  ofs0030:
+                           getlocal0
+                           pushscope
+                           getlocal1
+                           dup
+                           iffalse ofs003b
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs003b:
+                           iftrue ofs0041
+                           debugline 30
+                  ofs0041:
+                           findpropstrict QName(PackageNamespace(""),"formatToString")
+                           pushstring "PopUpEvent"
+                           pushstring "type"
+                           pushstring "bubbles"
+                           pushstring "cancelable"
+                           pushstring "eventPhase"
+                           callproperty QName(PackageNamespace(""),"formatToString"), 5
+                           returnvalue
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+            }
+         }

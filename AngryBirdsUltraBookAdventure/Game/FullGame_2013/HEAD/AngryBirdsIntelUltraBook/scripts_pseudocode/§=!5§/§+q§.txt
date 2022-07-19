@@ -1,0 +1,126 @@
+package §=!5§
+{
+   public class §+q§
+   {
+      
+      public static var §%M§:XML;
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function §+q§()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  nextname
+                  negate
+                  hasnext
+                  bitnot
+                  popscope
+                  popscope
+                  pushscope
+                  strictequals
+                  setlocal2
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  dup
+                  iffalse ofs001d
+                  pop
+                  getlocal1
+                  convert_b
+         ofs001d:
+                  iftrue ofs0024
+                  getlocal0
+                  constructsuper 0
+         ofs0024:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function init(param1:XML) : void
+      {
+         trait method QName(PackageNamespace(""),"init")
+            flag FINAL
+            dispid 3
+            method
+               name null
+               param QName(PackageNamespace(""),"XML")
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 4
+                  localcount 4
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     swap
+                     jump ofs0016
+                     inclocal 2
+                     inclocal 2
+                     kill 2
+                     increment
+                     getlocal2
+                     setlocal2
+                     inclocal 2
+                     kill 2
+                     kill 2
+            ofs0016:
+                     setlocal2
+                     setlocal3
+                     getlocal0
+                     pushscope
+                     getlocal2
+                     iftrue ofs0024
+                     findproperty QName(PackageNamespace(""),"%M")
+                     getlocal1
+                     setproperty QName(PackageNamespace(""),"%M")
+            ofs0024:
+                     returnvoid
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+      }
+   }

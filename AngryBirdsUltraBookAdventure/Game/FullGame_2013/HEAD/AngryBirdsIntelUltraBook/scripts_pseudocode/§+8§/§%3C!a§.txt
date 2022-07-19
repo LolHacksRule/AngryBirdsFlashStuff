@@ -1,0 +1,83 @@
+package §+8§
+{
+   public class §<!a§ extends Error
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function §<!a§(param1:* = "", param2:* = 0)
+      {
+         method
+            name null
+            flag HAS_OPTIONAL
+            param null
+            param null
+            optional Utf8("")
+            optional Integer(0)
+            returns null
+            
+            body
+               maxstack 5
+               localcount 5
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0014
+                  nextvalue
+                  inclocal_i 2
+                  getlocal3
+                  equals
+                  typeof
+                  inclocal 2
+                  inclocal_i 3
+                  kill 2
+                  multiply_i
+         ofs0014:
+                  setlocal3
+                  setlocal 4
+                  getlocal0
+                  pushscope
+                  getlocal3
+                  dup
+                  iffalse ofs0022
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0022:
+                  iftrue ofs002b
+                  getlocal0
+                  getlocal1
+                  getlocal2
+                  constructsuper 2
+         ofs002b:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}

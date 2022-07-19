@@ -1,0 +1,33 @@
+package §6w§
+{
+   public interface §9!%§
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 2
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 3
+               
+               code
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      function dispose() : void;
+      
+      function §[@§(param1:String) : §<>§;
+      
+      function get §9q§() : int;
+      
+      function §+t§(param1:int) : SpriteSheetBase;
+   }
+}

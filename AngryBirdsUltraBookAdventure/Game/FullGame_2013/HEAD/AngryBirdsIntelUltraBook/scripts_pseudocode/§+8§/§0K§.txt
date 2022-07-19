@@ -1,0 +1,76 @@
+package §+8§
+{
+   public class §0K§ extends Error
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function §0K§(param1:* = "", param2:* = 0)
+      {
+         method
+            name null
+            flag HAS_OPTIONAL
+            param null
+            param null
+            optional Utf8("")
+            optional Integer(0)
+            returns null
+            
+            body
+               maxstack 5
+               localcount 5
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal3
+                  jump ofs0012
+                  declocal_i 2
+                  lshift
+                  setlocal3
+                  declocal_i 2
+                  add_i
+                  divide
+                  convert_b
+                  checkfilter
+                  negate_i
+         ofs0012:
+                  setlocal 4
+                  getlocal0
+                  pushscope
+                  getlocal3
+                  iffalse ofs0020
+                  getlocal0
+                  getlocal1
+                  getlocal2
+                  constructsuper 2
+         ofs0020:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}

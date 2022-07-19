@@ -1,0 +1,128 @@
+package §>!L§
+{
+   import §=;§.b2Joint;
+   
+   public class b2DestructionListener
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function b2DestructionListener()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  popscope
+                  pushwith
+                  lshift
+                  dxnslate
+                  not
+                  coerce_s
+                  pushtrue
+                  bitand
+                  multiply
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  dup
+                  iffalse ofs001d
+                  pop
+                  getlocal1
+                  convert_b
+         ofs001d:
+                  iftrue ofs0024
+                  getlocal0
+                  constructsuper 0
+         ofs0024:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function §%!f§(param1:b2Joint) : void
+      {
+         trait method QName(PackageNamespace(""),"%!f")
+            dispid 0
+            method
+               name null
+               param QName(PackageNamespace("=;"),"b2Joint")
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 3
+                  localcount 2
+                  initscopedepth 4
+                  maxscopedepth 5
+                  
+                  code
+                     getlocal0
+                     pushscope
+                     returnvoid
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public function §3!!§(param1:b2Fixture) : void
+         {
+            trait method QName(PackageNamespace(""),"3!!")
+               dispid 0
+               method
+                  name null
+                  param QName(PackageNamespace(">!L"),"b2Fixture")
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 3
+                     localcount 2
+                     initscopedepth 4
+                     maxscopedepth 5
+                     
+                     code
+                        getlocal0
+                        pushscope
+                        returnvoid
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+         }
+      }

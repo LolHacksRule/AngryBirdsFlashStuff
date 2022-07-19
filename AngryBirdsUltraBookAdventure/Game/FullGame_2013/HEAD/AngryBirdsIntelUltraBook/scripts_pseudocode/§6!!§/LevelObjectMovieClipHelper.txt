@@ -1,0 +1,902 @@
+package §6!!§
+{
+   import §>!8§.b2Vec2;
+   import §]!@§.LevelMain;
+   import flash.display.DisplayObject;
+   import flash.display.DisplayObjectContainer;
+   import flash.display.MovieClip;
+   import flash.geom.Rectangle;
+   
+   public class LevelObjectMovieClipHelper
+   {
+      
+      public static const §8!E§:Number = 100;
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 3
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  convert_i
+                  strictequals
+                  convert_b
+                  getlocal2
+                  getglobalscope
+                  hasnext
+                  newactivation
+                  subtract_i
+                  dup
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  dup
+                  iffalse ofs001d
+                  pop
+                  getlocal1
+                  convert_b
+         ofs001d:
+                  iftrue ofs0027
+                  findproperty QName(PackageNamespace(""),"8!E")
+                  pushbyte 100
+                  initproperty QName(PackageNamespace(""),"8!E")
+         ofs0027:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function LevelObjectMovieClipHelper()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  increment_i
+                  dxnslate
+                  subtract
+                  astypelate
+                  decrement
+                  negate
+                  istypelate
+                  bitnot
+                  greaterequals
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  dup
+                  iffalse ofs001d
+                  pop
+                  getlocal0
+                  convert_b
+         ofs001d:
+                  iftrue ofs0024
+                  getlocal0
+                  constructsuper 0
+         ofs0024:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function §=!P§(param1:MovieClip, param2:Boolean) : Array
+      {
+         trait method QName(PackageNamespace(""),"=!P")
+            flag FINAL
+            dispid 3
+            method
+               name null
+               param QName(PackageNamespace("flash.display"),"MovieClip")
+               param QName(PackageNamespace(""),"Boolean")
+               returns QName(PackageNamespace(""),"Array")
+               
+               body
+                  maxstack 8
+                  localcount 8
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     setlocal 6
+                     jump ofs0016
+                     setlocal 4
+                     setlocal2
+                     instanceof
+                     getlocal 5
+                     kill 6
+                     strictequals
+                     inclocal 5
+                     inclocal_i 5
+                     not
+            ofs0016:
+                     setlocal 7
+                     getlocal0
+                     pushscope
+                     pushnull
+                     coerce QName(PackageNamespace("flash.geom"),"Rectangle")
+                     setlocal3
+                     pushnull
+                     coerce QName(PackageNamespace("flash.display"),"DisplayObject")
+                     setlocal 5
+                     findpropstrict QName(PackageNamespace(""),"Array")
+                     constructprop QName(PackageNamespace(""),"Array"), 0
+                     coerce QName(PackageNamespace(""),"Array")
+                     setlocal 4
+                     getlocal 7
+                     iftrue ofs0038
+                     getlocal1
+                     convert_b
+                     iffalse ofs0062
+            ofs0038:
+                     getlocal1
+                     pushstring "Collision1_Rectangle"
+                     callproperty QName(PackageNamespace(""),"getChildByName"), 1
+                     coerce QName(PackageNamespace("flash.display"),"DisplayObject")
+                     setlocal 5
+                     getlocal 5
+                     getlocal1
+                     callproperty QName(PackageNamespace(""),"getBounds"), 1
+                     coerce QName(PackageNamespace("flash.geom"),"Rectangle")
+                     setlocal3
+                     getlocal 6
+                     iffalse ofs01e1
+                     getlocal1
+                     getlocal 5
+                     callproperty QName(PackageNamespace(""),"removeChild"), 1
+                     pop
+                     getlocal 6
+                     iffalse ofs016f
+                     jump ofs0072
+            ofs0062:
+                     findpropstrict QName(PackageNamespace("flash.geom"),"Rectangle")
+                     pushbyte 0
+                     pushbyte 0
+                     pushbyte 50
+                     pushbyte 50
+                     constructprop QName(PackageNamespace("flash.geom"),"Rectangle"), 4
+                     coerce QName(PackageNamespace("flash.geom"),"Rectangle")
+                     setlocal3
+            ofs0072:
+                     getlocal2
+                     iffalse ofs0174
+                     getlocal 7
+                     iftrue ofs01e1
+                     getlocal3
+                     getlocal3
+                     getproperty QName(PackageNamespace(""),"x")
+                     findpropstrict QName(PackageNamespace(""),"8!E")
+                     getproperty QName(PackageNamespace(""),"8!E")
+                     pushbyte 100
+                     divide
+                     multiply
+                     setproperty QName(PackageNamespace(""),"x")
+                     getlocal 7
+                     dup
+                     iffalse ofs0095
+                     pop
+                     getlocal1
+                     convert_b
+            ofs0095:
+                     iftrue ofs01b6
+                     jump ofs01d3
+            ofs009d:
+                     label
+                     getlocal 4
+                     returnvalue
+                     pushtrue
+                     iftrue ofs00a6
+            ofs00a6:
+                     label
+                     getlocal 4
+                     callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"reverse"), 0
+                     pop
+                     getlocal 7
+                     iftrue ofs00f3
+                     getlocal 6
+                     iffalse ofs0193
+                     jump ofs009d
+            ofs00bd:
+                     label
+                     getlocal 4
+                     pushbyte 3
+                     findpropstrict QName(PackageNamespace(">!8"),"b2Vec2")
+                     getlocal3
+                     getproperty QName(PackageNamespace(""),"x")
+                     getlocal3
+                     getproperty QName(PackageNamespace(""),"width")
+                     add
+                     findpropstrict QName(PackageNamespace("]!@"),"LevelMain")
+                     getproperty QName(PackageNamespace("]!@"),"LevelMain")
+                     getproperty QName(PackageNamespace(""),"@!d")
+                     multiply
+                     getlocal3
+                     getproperty QName(PackageNamespace(""),"y")
+                     findpropstrict QName(PackageNamespace("]!@"),"LevelMain")
+                     getproperty QName(PackageNamespace("]!@"),"LevelMain")
+                     getproperty QName(PackageNamespace(""),"@!d")
+                     jump ofs00ed
+                     getlocal1
+                     swap
+                     declocal_i 4
+                     popscope
+                     declocal_i 2
+                     declocal_i 2
+                     convert_s
+                     getlocal 5
+                     inclocal_i 2
+            ofs00ed:
+                     multiply
+                     constructprop QName(PackageNamespace(">!8"),"b2Vec2"), 2
+                     setproperty MultinameL([PrivateNamespace("0!k"),PackageNamespace(""),PrivateNamespace("LevelObjectMovieClipHelper.as$85"),PackageNamespace("6!!"),PackageInternalNs("6!!"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("0!k"),StaticProtectedNs("0!k")])
+            ofs00f3:
+                     getlocal 7
+                     dup
+                     iffalse ofs00fd
+                     pop
+                     getlocal3
+                     convert_b
+            ofs00fd:
+                     iftrue ofs0133
+                     getlocal 6
+                     iffalse ofs016f
+                     jump ofs00a6
+            ofs010b:
+                     label
+                     getlocal 4
+                     pushbyte 2
+                     findpropstrict QName(PackageNamespace(">!8"),"b2Vec2")
+                     getlocal3
+                     getproperty QName(PackageNamespace(""),"x")
+                     getlocal3
+                     getproperty QName(PackageNamespace(""),"width")
+                     add
+                     findpropstrict QName(PackageNamespace("]!@"),"LevelMain")
+                     getproperty QName(PackageNamespace("]!@"),"LevelMain")
+                     getproperty QName(PackageNamespace(""),"@!d")
+                     multiply
+                     getlocal3
+                     getproperty QName(PackageNamespace(""),"y")
+                     getlocal3
+                     getproperty QName(PackageNamespace(""),"height")
+                     add
+                     findpropstrict QName(PackageNamespace("]!@"),"LevelMain")
+                     getproperty QName(PackageNamespace("]!@"),"LevelMain")
+                     getproperty QName(PackageNamespace(""),"@!d")
+                     multiply
+                     constructprop QName(PackageNamespace(">!8"),"b2Vec2"), 2
+                     setproperty MultinameL([PrivateNamespace("0!k"),PackageNamespace(""),PrivateNamespace("LevelObjectMovieClipHelper.as$85"),PackageNamespace("6!!"),PackageInternalNs("6!!"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("0!k"),StaticProtectedNs("0!k")])
+            ofs0133:
+                     getlocal 6
+                     iffalse ofs01b6
+                     getlocal 6
+                     dup
+                     iftrue ofs0143
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0143:
+                     iffalse ofs01c9
+                     jump ofs00bd
+            ofs014b:
+                     label
+                     getlocal 4
+                     pushbyte 1
+                     findpropstrict QName(PackageNamespace(">!8"),"b2Vec2")
+                     getlocal3
+                     getproperty QName(PackageNamespace(""),"x")
+                     findpropstrict QName(PackageNamespace("]!@"),"LevelMain")
+                     getproperty QName(PackageNamespace("]!@"),"LevelMain")
+                     getproperty QName(PackageNamespace(""),"@!d")
+                     multiply
+                     getlocal3
+                     getproperty QName(PackageNamespace(""),"y")
+                     getlocal3
+                     getproperty QName(PackageNamespace(""),"height")
+                     add
+                     findpropstrict QName(PackageNamespace("]!@"),"LevelMain")
+                     getproperty QName(PackageNamespace("]!@"),"LevelMain")
+                     getproperty QName(PackageNamespace(""),"@!d")
+                     multiply
+                     constructprop QName(PackageNamespace(">!8"),"b2Vec2"), 2
+                     setproperty MultinameL([PrivateNamespace("0!k"),PackageNamespace(""),PrivateNamespace("LevelObjectMovieClipHelper.as$85"),PackageNamespace("6!!"),PackageInternalNs("6!!"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("0!k"),StaticProtectedNs("0!k")])
+            ofs016f:
+                     jump ofs010b
+            ofs0173:
+                     label
+            ofs0174:
+                     getlocal 4
+                     pushbyte 0
+                     findpropstrict QName(PackageNamespace(">!8"),"b2Vec2")
+                     getlocal3
+                     getproperty QName(PackageNamespace(""),"x")
+                     findpropstrict QName(PackageNamespace("]!@"),"LevelMain")
+                     getproperty QName(PackageNamespace("]!@"),"LevelMain")
+                     getproperty QName(PackageNamespace(""),"@!d")
+                     multiply
+                     getlocal3
+                     getproperty QName(PackageNamespace(""),"y")
+                     findpropstrict QName(PackageNamespace("]!@"),"LevelMain")
+                     getproperty QName(PackageNamespace("]!@"),"LevelMain")
+                     getproperty QName(PackageNamespace(""),"@!d")
+                     multiply
+                     constructprop QName(PackageNamespace(">!8"),"b2Vec2"), 2
+                     setproperty MultinameL([PrivateNamespace("0!k"),PackageNamespace(""),PrivateNamespace("LevelObjectMovieClipHelper.as$85"),PackageNamespace("6!!"),PackageInternalNs("6!!"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("0!k"),StaticProtectedNs("0!k")])
+            ofs0193:
+                     jump ofs014b
+            ofs0197:
+                     label
+                     getlocal3
+                     getlocal3
+                     getproperty QName(PackageNamespace(""),"width")
+                     jump ofs01ac
+                     strictequals
+                     getlocal3
+                     inclocal 5
+                     multiply
+                     strictequals
+                     newactivation
+                     getlocal2
+                     declocal 5
+                     setlocal 6
+            ofs01ac:
+                     findpropstrict QName(PackageNamespace(""),"8!E")
+                     getproperty QName(PackageNamespace(""),"8!E")
+                     pushbyte 100
+                     divide
+                     multiply
+                     setproperty QName(PackageNamespace(""),"width")
+            ofs01b6:
+                     jump ofs0173
+            ofs01ba:
+                     label
+                     getlocal3
+                     getlocal3
+                     getproperty QName(PackageNamespace(""),"height")
+                     findpropstrict QName(PackageNamespace(""),"8!E")
+                     getproperty QName(PackageNamespace(""),"8!E")
+                     pushbyte 100
+                     divide
+                     multiply
+                     setproperty QName(PackageNamespace(""),"height")
+            ofs01c9:
+                     getlocal 6
+                     iffalse ofs01e1
+                     jump ofs0197
+            ofs01d3:
+                     getlocal3
+                     getlocal3
+                     getproperty QName(PackageNamespace(""),"y")
+                     findpropstrict QName(PackageNamespace(""),"8!E")
+                     getproperty QName(PackageNamespace(""),"8!E")
+                     pushbyte 100
+                     divide
+                     multiply
+                     setproperty QName(PackageNamespace(""),"y")
+            ofs01e1:
+                     jump ofs01ba
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public static function §+!Y§(param1:MovieClip, param2:Boolean) : Array
+         {
+            trait method QName(PackageNamespace(""),"+!Y")
+               flag FINAL
+               dispid 4
+               method
+                  name null
+                  param QName(PackageNamespace("flash.display"),"MovieClip")
+                  param QName(PackageNamespace(""),"Boolean")
+                  returns QName(PackageNamespace(""),"Array")
+                  
+                  body
+                     maxstack 7
+                     localcount 8
+                     initscopedepth 3
+                     maxscopedepth 4
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        setlocal 6
+                        jump ofs0017
+                        equals
+                        kill 6
+                        kill 3
+                        kill 4
+                        inclocal 6
+                        decrement
+                        getlocal 4
+                        popscope
+                        kill 5
+               ofs0017:
+                        setlocal 7
+                        getlocal0
+                        pushscope
+                        pushnull
+                        coerce QName(PackageNamespace("flash.geom"),"Rectangle")
+                        setlocal 4
+                        pushnull
+                        coerce QName(PackageNamespace("flash.display"),"DisplayObject")
+                        setlocal 5
+                        findpropstrict QName(PackageNamespace(""),"Array")
+                        constructprop QName(PackageNamespace(""),"Array"), 0
+                        coerce QName(PackageNamespace(""),"Array")
+                        setlocal3
+                        getlocal 6
+                        dup
+                        iftrue ofs0037
+                        pop
+                        getlocal0
+                        convert_b
+               ofs0037:
+                        iffalse ofs0041
+                        getlocal1
+                        convert_b
+                        iffalse ofs006c
+               ofs0041:
+                        getlocal1
+                        pushstring "Collision1_Circle"
+                        callproperty QName(PackageNamespace(""),"getChildByName"), 1
+                        coerce QName(PackageNamespace("flash.display"),"DisplayObject")
+                        setlocal 5
+                        getlocal 5
+                        getlocal1
+                        callproperty QName(PackageNamespace(""),"getBounds"), 1
+                        coerce QName(PackageNamespace("flash.geom"),"Rectangle")
+                        setlocal 4
+                        getlocal 7
+                        iftrue ofs0139
+                        getlocal1
+                        getlocal 5
+                        callproperty QName(PackageNamespace(""),"removeChild"), 1
+                        pop
+                        getlocal 6
+                        iffalse ofs009e
+                        jump ofs0075
+               ofs006c:
+                        findpropstrict QName(PackageNamespace("flash.geom"),"Rectangle")
+                        constructprop QName(PackageNamespace("flash.geom"),"Rectangle"), 0
+                        coerce QName(PackageNamespace("flash.geom"),"Rectangle")
+                        setlocal 4
+               ofs0075:
+                        getlocal2
+                        iffalse ofs011f
+                        getlocal 6
+                        dup
+                        iftrue ofs0084
+                        pop
+                        getlocal0
+                        convert_b
+               ofs0084:
+                        iffalse ofs0177
+                        getlocal 4
+                        getlocal 4
+                        getproperty QName(PackageNamespace(""),"x")
+                        findpropstrict QName(PackageNamespace(""),"8!E")
+                        getproperty QName(PackageNamespace(""),"8!E")
+                        pushbyte 100
+                        divide
+                        multiply
+                        setproperty QName(PackageNamespace(""),"x")
+                        getlocal 6
+                        iffalse ofs00f7
+               ofs009e:
+                        jump ofs0190
+               ofs00a2:
+                        label
+                        getlocal3
+                        returnvalue
+                        pushtrue
+                        iftrue ofs00aa
+               ofs00aa:
+                        label
+                        getlocal3
+                        pushbyte 2
+                        getlocal 4
+                        getproperty QName(PackageNamespace(""),"y")
+                        getlocal 4
+                        jump ofs00c6
+                        setlocal 4
+                        inclocal_i 6
+                        rshift
+                        checkfilter
+                        getlocal 5
+                        kill 6
+                        declocal_i 3
+                        multiply_i
+                        setlocal3
+               ofs00c6:
+                        getproperty QName(PackageNamespace(""),"height")
+                        pushbyte 2
+                        divide
+                        add
+                        findpropstrict QName(PackageNamespace("]!@"),"LevelMain")
+                        getproperty QName(PackageNamespace("]!@"),"LevelMain")
+                        getproperty QName(PackageNamespace(""),"@!d")
+                        multiply
+                        setproperty MultinameL([PrivateNamespace("0!k"),PackageNamespace(""),PrivateNamespace("LevelObjectMovieClipHelper.as$85"),PackageNamespace("6!!"),PackageInternalNs("6!!"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("0!k"),StaticProtectedNs("0!k")])
+                        getlocal 6
+                        iffalse ofs0114
+                        getlocal 6
+                        dup
+                        iftrue ofs00e5
+                        pop
+                        getlocal3
+                        convert_b
+               ofs00e5:
+                        iffalse ofs014c
+                        getlocal 7
+                        dup
+                        iffalse ofs00f3
+                        pop
+                        getlocal1
+                        convert_b
+               ofs00f3:
+                        iftrue ofs0177
+               ofs00f7:
+                        jump ofs00a2
+               ofs00fb:
+                        label
+                        getlocal3
+                        pushbyte 1
+                        getlocal 4
+                        getproperty QName(PackageNamespace(""),"x")
+                        getlocal 4
+                        getproperty QName(PackageNamespace(""),"width")
+                        pushbyte 2
+                        divide
+                        add
+                        findpropstrict QName(PackageNamespace("]!@"),"LevelMain")
+                        getproperty QName(PackageNamespace("]!@"),"LevelMain")
+                        getproperty QName(PackageNamespace(""),"@!d")
+                        multiply
+                        setproperty MultinameL([PrivateNamespace("0!k"),PackageNamespace(""),PrivateNamespace("LevelObjectMovieClipHelper.as$85"),PackageNamespace("6!!"),PackageInternalNs("6!!"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("0!k"),StaticProtectedNs("0!k")])
+               ofs0114:
+                        getlocal 7
+                        iftrue ofs012b
+                        jump ofs00aa
+               ofs011e:
+                        label
+               ofs011f:
+                        getlocal 4
+                        getproperty QName(PackageNamespace(""),"width")
+                        getlocal 4
+                        getproperty QName(PackageNamespace(""),"height")
+                        ifeq ofs0139
+               ofs012b:
+                        getlocal 7
+                        dup
+                        iffalse ofs0135
+                        pop
+                        getlocal1
+                        convert_b
+               ofs0135:
+                        iftrue ofs01a0
+               ofs0139:
+                        getlocal3
+                        pushbyte 0
+                        getlocal 4
+                        getproperty QName(PackageNamespace(""),"width")
+                        findpropstrict QName(PackageNamespace("]!@"),"LevelMain")
+                        getproperty QName(PackageNamespace("]!@"),"LevelMain")
+                        getproperty QName(PackageNamespace(""),"@!d")
+                        multiply
+                        pushbyte 2
+                        divide
+                        setproperty MultinameL([PrivateNamespace("0!k"),PackageNamespace(""),PrivateNamespace("LevelObjectMovieClipHelper.as$85"),PackageNamespace("6!!"),PackageInternalNs("6!!"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("0!k"),StaticProtectedNs("0!k")])
+               ofs014c:
+                        getlocal 6
+                        iffalse ofs018c
+                        jump ofs00fb
+               ofs0156:
+                        label
+                        getlocal 4
+                        jump ofs0169
+                        setlocal2
+                        setlocal 5
+                        inclocal_i 3
+                        pushnan
+                        getlocal 6
+                        getlocal2
+                        getlocal2
+                        checkfilter
+                        pushnull
+               ofs0169:
+                        getlocal 4
+                        getproperty QName(PackageNamespace(""),"width")
+                        findpropstrict QName(PackageNamespace(""),"8!E")
+                        getproperty QName(PackageNamespace(""),"8!E")
+                        pushbyte 100
+                        divide
+                        multiply
+                        setproperty QName(PackageNamespace(""),"width")
+               ofs0177:
+                        jump ofs011e
+               ofs017b:
+                        label
+                        getlocal 4
+                        getlocal 4
+                        getproperty QName(PackageNamespace(""),"height")
+                        findpropstrict QName(PackageNamespace(""),"8!E")
+                        getproperty QName(PackageNamespace(""),"8!E")
+                        pushbyte 100
+                        divide
+                        multiply
+                        setproperty QName(PackageNamespace(""),"height")
+               ofs018c:
+                        jump ofs0156
+               ofs0190:
+                        getlocal 4
+                        getlocal 4
+                        getproperty QName(PackageNamespace(""),"y")
+                        findpropstrict QName(PackageNamespace(""),"8!E")
+                        getproperty QName(PackageNamespace(""),"8!E")
+                        pushbyte 100
+                        divide
+                        multiply
+                        setproperty QName(PackageNamespace(""),"y")
+               ofs01a0:
+                        jump ofs017b
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public static function §86§(param1:MovieClip) : Array
+            {
+               trait method QName(PackageNamespace(""),"86")
+                  flag FINAL
+                  dispid 5
+                  method
+                     name null
+                     param QName(PackageNamespace("flash.display"),"MovieClip")
+                     returns QName(PackageNamespace(""),"Array")
+                     
+                     body
+                        maxstack 7
+                        localcount 8
+                        initscopedepth 3
+                        maxscopedepth 4
+                        
+                        code
+                           pushfalse
+                           pushtrue
+                           swap
+                           jump ofs0016
+                           inclocal 3
+                           inclocal_i 3
+                           multiply_i
+                           inclocal 5
+                           setlocal 5
+                           pop
+                           declocal_i 3
+                           greaterthan
+                           getlocal 4
+                  ofs0016:
+                           setlocal 6
+                           setlocal 7
+                           getlocal0
+                           pushscope
+                           pushbyte 0
+                           setlocal 4
+                           pushnull
+                           coerce QName(PackageNamespace("flash.display"),"DisplayObject")
+                           setlocal 5
+                           findpropstrict QName(PackageNamespace(""),"Array")
+                           constructprop QName(PackageNamespace(""),"Array"), 0
+                           coerce QName(PackageNamespace(""),"Array")
+                           setlocal2
+                           getlocal 6
+                           dup
+                           iffalse ofs0037
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs0037:
+                           iftrue ofs004f
+                           getlocal1
+                           not
+                           iffalse ofs004f
+                           getlocal 7
+                           iffalse ofs004f
+                           findpropstrict QName(PackageNamespace(""),"=!P")
+                           getlocal1
+                           pushfalse
+                           callproperty QName(PackageNamespace(""),"=!P"), 2
+                           returnvalue
+                  ofs004f:
+                           getlocal1
+                           pushstring "Collision1_Polygon"
+                           callproperty QName(PackageNamespace(""),"getChildByName"), 1
+                           findpropstrict QName(PackageNamespace("flash.display"),"DisplayObjectContainer")
+                           getproperty QName(PackageNamespace("flash.display"),"DisplayObjectContainer")
+                           astypelate
+                           coerce QName(PackageNamespace("flash.display"),"DisplayObjectContainer")
+                           setlocal3
+                           jump ofs00f9
+                  ofs0061:
+                           label
+                           getlocal2
+                           getlocal 4
+                           findpropstrict QName(PackageNamespace(">!8"),"b2Vec2")
+                           constructprop QName(PackageNamespace(">!8"),"b2Vec2"), 0
+                           setproperty MultinameL([PrivateNamespace("0!k"),PackageNamespace(""),PrivateNamespace("LevelObjectMovieClipHelper.as$85"),PackageNamespace("6!!"),PackageInternalNs("6!!"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("0!k"),StaticProtectedNs("0!k")])
+                           getlocal 7
+                           iffalse ofs0108
+                           getlocal3
+                           pushstring "Point"
+                           getlocal 4
+                           pushbyte 1
+                           add
+                           add
+                           callproperty QName(PackageNamespace(""),"getChildByName"), 1
+                           coerce QName(PackageNamespace("flash.display"),"DisplayObject")
+                           setlocal 5
+                           getlocal 7
+                           iffalse ofs00f9
+                           getlocal2
+                           getlocal 4
+                           getproperty MultinameL([PrivateNamespace("0!k"),PackageNamespace(""),PrivateNamespace("LevelObjectMovieClipHelper.as$85"),PackageNamespace("6!!"),PackageInternalNs("6!!"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("0!k"),StaticProtectedNs("0!k")])
+                           jump ofs009f
+                           instanceof
+                           kill 3
+                           swap
+                           pushnull
+                           declocal 6
+                           inclocal_i 3
+                           declocal_i 5
+                           divide
+                           inclocal_i 3
+                  ofs009f:
+                           getlocal 5
+                           getlocal1
+                           callproperty QName(PackageNamespace(""),"getRect"), 1
+                           getproperty QName(PackageNamespace(""),"x")
+                           getlocal 5
+                           getlocal1
+                           callproperty QName(PackageNamespace(""),"getRect"), 1
+                           getproperty QName(PackageNamespace(""),"width")
+                           pushbyte 2
+                           divide
+                           add
+                           findpropstrict QName(PackageNamespace("]!@"),"LevelMain")
+                           getproperty QName(PackageNamespace("]!@"),"LevelMain")
+                           getproperty QName(PackageNamespace(""),"@!d")
+                           multiply
+                           getlocal 5
+                           getlocal1
+                           callproperty QName(PackageNamespace(""),"getRect"), 1
+                           getproperty QName(PackageNamespace(""),"y")
+                           getlocal 5
+                           getlocal1
+                           callproperty QName(PackageNamespace(""),"getRect"), 1
+                           getproperty QName(PackageNamespace(""),"height")
+                           pushbyte 2
+                           divide
+                           add
+                           findpropstrict QName(PackageNamespace("]!@"),"LevelMain")
+                           getproperty QName(PackageNamespace("]!@"),"LevelMain")
+                           getproperty QName(PackageNamespace(""),"@!d")
+                           multiply
+                           callproperty Multiname("Set",[PrivateNamespace("0!k"),PackageNamespace(""),PrivateNamespace("LevelObjectMovieClipHelper.as$85"),PackageNamespace("6!!"),PackageInternalNs("6!!"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("0!k"),StaticProtectedNs("0!k")]), 2
+                           pop
+                           getlocal 7
+                           iffalse ofs00f9
+                           getlocal 4
+                           getlocal 6
+                           dup
+                           iffalse ofs00eb
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs00eb:
+                           iftrue ofs00f7
+                           increment_i
+                           getlocal 7
+                           iffalse ofs00f7
+                           convert_i
+                  ofs00f7:
+                           setlocal 4
+                  ofs00f9:
+                           getlocal 4
+                           getlocal3
+                           getproperty QName(PackageNamespace(""),"numChildren")
+                           iflt ofs0061
+                           getlocal 7
+                           iffalse ofs012c
+                  ofs0108:
+                           getlocal2
+                           callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"reverse"), 0
+                           jump ofs011d
+                           declocal_i 6
+                           declocal 6
+                           declocal_i 6
+                           coerce_s
+                           add_i
+                           setlocal2
+                           getlocal3
+                           inclocal 4
+                           lessequals
+                  ofs011d:
+                           pop
+                           getlocal 6
+                           dup
+                           iffalse ofs0128
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs0128:
+                           iftrue ofs015a
+                  ofs012c:
+                           jump ofs014f
+                  ofs0130:
+                           label
+                           getlocal2
+                           returnvalue
+                           pushtrue
+                           iftrue ofs0138
+                  ofs0138:
+                           label
+                           getlocal1
+                           getlocal3
+                           callproperty QName(PackageNamespace(""),"removeChild"), 1
+                           pop
+                           getlocal 6
+                           iftrue ofs015a
+                           getlocal 7
+                           iffalse ofs0158
+                           jump ofs0130
+                  ofs014f:
+                           getlocal2
+                           getproperty QName(PackageNamespace(""),"length")
+                           pushbyte 3
+                           ifnlt ofs0138
+                  ofs0158:
+                           pushnull
+                           returnvalue
+                  ofs015a:
+                           jump ofs0138
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+            }
+         }

@@ -1,0 +1,326 @@
+package §^!7§
+{
+   import flash.net.URLRequest;
+   
+   public class §+!I§
+   {
+      
+      private static var §3!g§:String;
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function §+!I§()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  bitnot
+                  setlocal3
+                  increment_i
+                  convert_i
+                  getglobalscope
+                  bitand
+                  getlocal3
+                  lessequals
+                  nextvalue
+         ofs0010:
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  dup
+                  iftrue ofs001c
+                  pop
+                  getlocal1
+                  convert_b
+         ofs001c:
+                  iffalse ofs0023
+                  getlocal0
+                  constructsuper 0
+         ofs0023:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function §[O§(param1:String) : URLRequest
+      {
+         trait method QName(PackageNamespace(""),"[O")
+            flag FINAL
+            dispid 3
+            method
+               name null
+               param QName(PackageNamespace(""),"String")
+               returns QName(PackageNamespace("flash.net"),"URLRequest")
+               
+               body
+                  maxstack 6
+                  localcount 5
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     swap
+                     jump ofs0014
+                     kill 3
+                     inclocal_i 3
+                     getlocal1
+                     declocal 3
+                     inclocal 3
+                     getlocal2
+                     pushnan
+                     not
+                     divide
+            ofs0014:
+                     setlocal3
+                     setlocal 4
+                     getlocal0
+                     pushscope
+                     pushnull
+                     coerce_s
+                     setlocal2
+                     getlocal 4
+                     iffalse ofs017a
+                     jump ofs0148
+            ofs0026:
+                     label
+                     findpropstrict QName(PackageNamespace("flash.net"),"URLRequest")
+                     getlocal1
+                     constructprop QName(PackageNamespace("flash.net"),"URLRequest"), 1
+                     returnvalue
+                     pushtrue
+                     iftrue ofs0033
+            ofs0033:
+                     label
+                     jump ofs0026
+            ofs0038:
+                     label
+                     getlocal1
+                     getlocal3
+                     dup
+                     iffalse ofs0043
+                     pop
+                     getlocal1
+                     convert_b
+            ofs0043:
+                     iftrue ofs007e
+                     getlocal 4
+                     iffalse ofs013d
+                     pushstring "&hash="
+                     getlocal 4
+                     iffalse ofs00f1
+                     getlocal3
+                     iftrue ofs00d1
+                     getlocal3
+                     iftrue ofs011a
+                     add
+                     getlocal3
+                     iftrue ofs0077
+                     getlocal3
+                     iftrue ofs00f4
+                     getlocal 4
+                     iffalse ofs00f2
+                     getlocal2
+                     getlocal3
+                     iftrue ofs00f3
+                     add
+            ofs0077:
+                     getlocal 4
+                     iffalse ofs012c
+                     coerce_s
+            ofs007e:
+                     getlocal 4
+                     dup
+                     iftrue ofs0088
+                     pop
+                     getlocal3
+                     convert_b
+            ofs0088:
+                     iffalse ofs00f5
+                     getlocal3
+                     iftrue ofs00ef
+                     getlocal3
+                     dup
+                     iffalse ofs009a
+                     pop
+                     getlocal2
+                     convert_b
+            ofs009a:
+                     iftrue ofs00fc
+                     setlocal1
+                     jump ofs00b0
+                     bitxor
+                     inclocal 2
+                     decrement_i
+                     declocal 3
+                     getglobalscope
+                     astypelate
+                     inclocal_i 2
+                     pushtrue
+                     inclocal_i 2
+            ofs00b0:
+                     getlocal3
+                     dup
+                     iffalse ofs00b9
+                     pop
+                     getlocal3
+                     convert_b
+            ofs00b9:
+                     iftrue ofs00f6
+                     getlocal 4
+                     iffalse ofs00da
+                     jump ofs0026
+            ofs00c7:
+                     label
+                     getlocal1
+                     getlocal 4
+                     iffalse ofs00f5
+                     pushstring "?"
+            ofs00d1:
+                     callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"indexOf"), 1
+                     pushbyte 0
+                     ifnlt ofs0038
+            ofs00da:
+                     getlocal 4
+                     dup
+                     iftrue ofs00e4
+                     pop
+                     getlocal2
+                     convert_b
+            ofs00e4:
+                     iffalse ofs013e
+                     getlocal 4
+                     iffalse ofs0101
+                     getlocal1
+            ofs00ef:
+                     pushstring "?hash="
+            ofs00f1:
+                     add
+            ofs00f2:
+                     getlocal2
+            ofs00f3:
+                     add
+            ofs00f4:
+                     coerce_s
+            ofs00f5:
+                     setlocal1
+            ofs00f6:
+                     jump ofs0033
+            ofs00fa:
+                     label
+                     getlocal1
+            ofs00fc:
+                     pushnull
+                     ifeq ofs0026
+            ofs0101:
+                     findpropstrict QName(PrivateNamespace("+!2"),"3!g")
+                     getproperty QName(PrivateNamespace("+!2"),"3!g")
+                     getlocal 4
+                     dup
+                     iftrue ofs010f
+                     pop
+                     getlocal0
+                     convert_b
+            ofs010f:
+                     iffalse ofs013d
+                     getlocal3
+                     iftrue ofs014c
+                     pushstring "-"
+            ofs011a:
+                     add
+                     getlocal 4
+                     iffalse ofs012c
+                     findpropstrict QName(PackageNamespace(""),"Date")
+                     constructprop QName(PackageNamespace(""),"Date"), 0
+                     getproperty QName(PackageNamespace(""),"time")
+                     callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"toString"), 0
+                     add
+            ofs012c:
+                     coerce_s
+                     jump ofs013d
+                     add_i
+                     getlocal1
+                     lessthan
+                     kill 3
+                     declocal 3
+                     convert_b
+                     checkfilter
+                     checkfilter
+                     declocal_i 2
+            ofs013d:
+                     setlocal2
+            ofs013e:
+                     getlocal 4
+                     iffalse ofs017a
+                     jump ofs00c7
+            ofs0148:
+                     findpropstrict QName(PrivateNamespace("+!2"),"3!g")
+                     getproperty QName(PrivateNamespace("+!2"),"3!g")
+            ofs014c:
+                     not
+                     iffalse ofs00fa
+                     getlocal3
+                     dup
+                     iffalse ofs015a
+                     pop
+                     getlocal1
+                     convert_b
+            ofs015a:
+                     iftrue ofs017a
+                     findproperty QName(PrivateNamespace("+!2"),"3!g")
+                     findpropstrict QName(PackageNamespace(""),"Math")
+                     getproperty QName(PackageNamespace(""),"Math")
+                     findpropstrict QName(PackageNamespace(""),"Math")
+                     getproperty QName(PackageNamespace(""),"Math")
+                     callproperty QName(PackageNamespace(""),"random"), 0
+                     findpropstrict QName(PackageNamespace(""),"int")
+                     getproperty QName(PackageNamespace(""),"int")
+                     getproperty QName(PackageNamespace(""),"MAX_VALUE")
+                     multiply
+                     callproperty QName(PackageNamespace(""),"round"), 1
+                     callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"toString"), 0
+                     setproperty QName(PrivateNamespace("+!2"),"3!g")
+            ofs017a:
+                     jump ofs00fa
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+      }
+   }

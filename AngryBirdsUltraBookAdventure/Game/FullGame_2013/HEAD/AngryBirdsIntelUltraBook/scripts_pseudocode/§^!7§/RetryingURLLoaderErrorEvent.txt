@@ -1,0 +1,174 @@
+package §^!7§
+{
+   import flash.events.Event;
+   
+   public class RetryingURLLoaderErrorEvent extends Event
+   {
+      
+      public static const §6!O§:String = "thirdPartyCookiesDisabled";
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  add_i
+                  convert_b
+                  increment_i
+                  nextvalue
+                  modulo
+                  dxnslate
+                  bitxor
+                  pushscope
+                  typeof
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  iftrue ofs001f
+                  findproperty QName(PackageNamespace(""),"6!O")
+                  pushstring "thirdPartyCookiesDisabled"
+                  initproperty QName(PackageNamespace(""),"6!O")
+         ofs001f:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function RetryingURLLoaderErrorEvent(param1:String, param2:Boolean = false, param3:Boolean = false)
+      {
+         method
+            name null
+            flag HAS_OPTIONAL
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace(""),"Boolean")
+            param QName(PackageNamespace(""),"Boolean")
+            optional False()
+            optional False()
+            returns null
+            
+            body
+               maxstack 6
+               localcount 6
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal 4
+                  jump ofs0014
+                  nextvalue
+                  setlocal 4
+                  inclocal 3
+                  subtract_i
+                  inclocal 3
+                  getlocal3
+                  add
+                  pushnull
+                  nextvalue
+         ofs0014:
+                  setlocal 5
+                  getlocal0
+                  pushscope
+                  getlocal 5
+                  iftrue ofs0024
+                  getlocal0
+                  getlocal1
+                  getlocal2
+                  getlocal3
+                  constructsuper 3
+         ofs0024:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      override public function clone() : Event
+      {
+         trait method QName(PackageNamespace(""),"clone")
+            flag OVERRIDE
+            dispid 0
+            method
+               name null
+               returns QName(PackageNamespace("flash.events"),"Event")
+               
+               body
+                  maxstack 6
+                  localcount 1
+                  initscopedepth 5
+                  maxscopedepth 6
+                  
+                  code
+                     getlocal0
+                     pushscope
+                     findpropstrict QName(PackageNamespace("^!7"),"RetryingURLLoaderErrorEvent")
+                     jump ofs0011
+                     setlocal2
+                     urshift
+                     urshift
+                     nextvalue
+                     hasnext
+                     bitxor
+                     pushnull
+                     multiply
+                     popscope
+            ofs0011:
+                     findpropstrict QName(PackageNamespace(""),"type")
+                     getproperty QName(PackageNamespace(""),"type")
+                     findpropstrict QName(PackageNamespace(""),"bubbles")
+                     getproperty QName(PackageNamespace(""),"bubbles")
+                     findpropstrict QName(PackageNamespace(""),"cancelable")
+                     getproperty QName(PackageNamespace(""),"cancelable")
+                     constructprop QName(PackageNamespace("^!7"),"RetryingURLLoaderErrorEvent"), 3
+                     returnvalue
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         override public function toString() : String
+         {
+            trait method QName(PackageNamespace(""),"toString")
+               flag OVERRIDE
+               dispid 0
+               method
+                  name null
+                  returns QName(PackageNamespace(""),"String")
+                  
+                  body
+                     maxstack 3
+                     localcount 1
+                     initscopedepth 5
+                     maxscopedepth 6
+                     
+                     code
+                        getlocal0
+                        pushscope
+                        pushstring "[RetryingURLLoaderError] \'The user most likely has third party cookies disabled.\'"
+                        returnvalue
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+         }
+      }

@@ -1,0 +1,521 @@
+package §;!1§
+{
+   import §"$§.Popup;
+   import §&"§.ExternalInterfaceHandler;
+   import §=!5§.§+q§;
+   import §=!5§.§`X§;
+   import §?!Y§.§`S§;
+   import flash.events.MouseEvent;
+   
+   public class ErrorPopup extends Popup
+   {
+      
+      public static const GENERAL_ERROR:String = "generalError";
+      
+      public static const THIRD_PARTY_COOKIES_DISABLED_ERROR:String = "thirdPartyCookiesDisabled";
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 3
+               initscopedepth 8
+               maxscopedepth 9
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  convert_o
+                  typeof
+                  popscope
+                  coerce_s
+                  divide
+                  greaterequals
+                  dxnslate
+                  swap
+                  coerce_a
+         ofs0010:
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  iftrue ofs006d
+                  jump ofs007c
+         ofs001c:
+                  label
+                  returnvoid
+                  jump ofs0022
+         ofs0022:
+                  bitand
+                  setlocal3
+                  pop
+                  convert_i
+                  getlocal3
+                  decrement_i
+                  lshift
+                  lessthan
+                  not
+                  pushtrue
+                  jump ofs0030
+         ofs0030:
+                  convert_i
+                  convert_b
+                  getlocal3
+                  increment_i
+                  lessequals
+                  multiply_i
+                  convert_u
+                  equals
+                  decrement
+                  iftrue ofs003d
+         ofs003d:
+                  label
+                  findproperty QName(PackageNamespace(""),"THIRD_PARTY_COOKIES_DISABLED_ERROR")
+                  pushstring "thirdPartyCookiesDisabled"
+                  initproperty QName(PackageNamespace(""),"THIRD_PARTY_COOKIES_DISABLED_ERROR")
+                  getlocal2
+                  dup
+                  iffalse ofs004d
+                  pop
+                  getlocal0
+                  convert_b
+         ofs004d:
+                  iftrue ofs006d
+                  getlocal2
+                  iftrue ofs0078
+                  getlocal1
+                  dup
+                  iftrue ofs005f
+                  pop
+                  getlocal0
+                  convert_b
+         ofs005f:
+                  iffalse ofs0081
+                  jump ofs001c
+         ofs0067:
+                  label
+                  debug 1, "THIRD_PARTY_COOKIES_DISABLED_ERROR", 1, 15
+         ofs006d:
+                  jump ofs003d
+         ofs0071:
+                  label
+                  findproperty QName(PackageNamespace(""),"GENERAL_ERROR")
+                  pushstring "generalError"
+                  initproperty QName(PackageNamespace(""),"GENERAL_ERROR")
+         ofs0078:
+                  jump ofs0067
+         ofs007c:
+                  debug 1, "GENERAL_ERROR", 0, 14
+         ofs0081:
+                  jump ofs0071
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function ErrorPopup(currentUIView:§`X§, statePopup:StatePopupManager, errorType:String = "generalError")
+      {
+         method
+            name "com.angrybirds.popups:ErrorPopup/ErrorPopup"
+            flag HAS_OPTIONAL
+            param QName(PackageNamespace("=!5"),"`X")
+            param QName(PackageNamespace(";!1"),"StatePopupManager")
+            param QName(PackageNamespace(""),"String")
+            optional Utf8("generalError")
+            returns null
+            
+            body
+               maxstack 5
+               localcount 6
+               initscopedepth 9
+               maxscopedepth 10
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0013
+                  multiply
+                  inclocal 4
+                  lshift
+                  convert_b
+                  getlocal3
+                  getlocal 4
+                  setlocal3
+                  declocal 2
+                  lessthan
+         ofs0013:
+                  setlocal 4
+                  setlocal 5
+                  debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\popups;ErrorPopup.as"
+                  getlocal 4
+                  iftrue ofs0021
+                  debugline 17
+         ofs0021:
+                  getlocal0
+                  pushscope
+                  getlocal 4
+                  dup
+                  iffalse ofs002d
+                  pop
+                  getlocal1
+                  convert_b
+         ofs002d:
+                  iftrue ofs0187
+                  jump ofs018b
+         ofs0035:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs003c
+         ofs003c:
+                  label
+                  debugline 29
+                  getlocal 5
+                  dup
+                  iftrue ofs0049
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0049:
+                  iffalse ofs0062
+                  getlocal 5
+                  iffalse ofs0099
+                  jump ofs0035
+         ofs0057:
+                  label
+                  findpropstrict QName(PackageNamespace(""),"AngryBirdsFP11")
+                  getproperty QName(PackageNamespace(""),"AngryBirdsFP11")
+                  getproperty QName(PackageNamespace(""),"\'t")
+                  callproperty QName(PackageNamespace(""),"?]"), 0
+                  pop
+         ofs0062:
+                  getlocal 4
+                  dup
+                  iffalse ofs006c
+                  pop
+                  getlocal3
+                  convert_b
+         ofs006c:
+                  iftrue ofs00bd
+                  getlocal 5
+                  iffalse ofs0103
+                  getlocal 4
+                  dup
+                  iffalse ofs0080
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0080:
+                  iftrue ofs0123
+                  getlocal 5
+                  dup
+                  iftrue ofs008e
+                  pop
+                  getlocal3
+                  convert_b
+         ofs008e:
+                  iffalse ofs012a
+                  jump ofs003c
+         ofs0096:
+                  label
+                  debugline 28
+         ofs0099:
+                  getlocal 5
+                  iffalse ofs0157
+                  jump ofs00b0
+                  inclocal 4
+                  inclocal 2
+                  inclocal_i 2
+                  declocal_i 2
+                  setlocal3
+                  multiply_i
+                  decrement
+                  pushnan
+                  negate
+         ofs00b0:
+                  jump ofs0057
+         ofs00b4:
+                  label
+                  findpropstrict QName(PackageNamespace("?!Y"),"`S")
+                  getproperty QName(PackageNamespace("?!Y"),"`S")
+                  callproperty QName(PackageNamespace(""),"pause"), 0
+                  pop
+         ofs00bd:
+                  getlocal 4
+                  iftrue ofs00d0
+                  getlocal 4
+                  iftrue ofs00ee
+                  jump ofs0096
+         ofs00cd:
+                  label
+                  debugline 27
+         ofs00d0:
+                  getlocal 5
+                  iffalse ofs0150
+                  jump ofs00b4
+         ofs00da:
+                  label
+                  findpropstrict QName(PackageNamespace(""),"mClip")
+                  getproperty QName(PackageNamespace(""),"mClip")
+                  getproperty Multiname("btnReload",[PrivateNamespace("8G"),PackageNamespace(""),PrivateNamespace("ErrorPopup.as$559"),PackageNamespace(";!1"),PackageInternalNs(";!1"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("8G"),StaticProtectedNs("8G"),StaticProtectedNs("7!R"),StaticProtectedNs("8!S"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  findpropstrict QName(PackageNamespace("flash.events"),"MouseEvent")
+                  getproperty QName(PackageNamespace("flash.events"),"MouseEvent")
+                  getproperty QName(PackageNamespace(""),"CLICK")
+                  getlocal0
+                  getproperty QName(PrivateNamespace("8G"),"3!H")
+                  callproperty Multiname("addEventListener",[PrivateNamespace("8G"),PackageNamespace(""),PrivateNamespace("ErrorPopup.as$559"),PackageNamespace(";!1"),PackageInternalNs(";!1"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("8G"),StaticProtectedNs("8G"),StaticProtectedNs("7!R"),StaticProtectedNs("8!S"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")]), 2
+                  pop
+         ofs00ee:
+                  getlocal 4
+                  dup
+                  iffalse ofs00f8
+                  pop
+                  getlocal2
+                  convert_b
+         ofs00f8:
+                  iftrue ofs016f
+                  jump ofs00cd
+         ofs0100:
+                  label
+                  debugline 25
+         ofs0103:
+                  jump ofs00da
+         ofs0107:
+                  label
+                  findpropstrict QName(PackageNamespace(""),"mClip")
+                  getproperty QName(PackageNamespace(""),"mClip")
+                  debugline 22
+                  findpropstrict QName(PackageNamespace(""),"GENERAL_ERROR")
+                  getproperty QName(PackageNamespace(""),"GENERAL_ERROR")
+                  findpropstrict QName(PackageNamespace(""),"THIRD_PARTY_COOKIES_DISABLED_ERROR")
+                  getproperty QName(PackageNamespace(""),"THIRD_PARTY_COOKIES_DISABLED_ERROR")
+                  newarray 2
+                  getlocal3
+                  callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"indexOf"), 1
+                  pushbyte 1
+                  add
+                  callproperty QName(PackageNamespace(""),"gotoAndStop"), 1
+                  pop
+         ofs0123:
+                  jump ofs0100
+         ofs0127:
+                  label
+                  debugline 21
+         ofs012a:
+                  jump ofs0107
+         ofs012e:
+                  label
+                  getlocal0
+                  findpropstrict QName(PackageNamespace("=!5"),"+q")
+                  getproperty QName(PackageNamespace("=!5"),"+q")
+                  getproperty QName(PackageNamespace(""),"%M")
+                  jump ofs0145
+                  getlocal2
+                  getlocal2
+                  instanceof
+                  setlocal2
+                  inclocal 2
+                  dup
+                  kill 3
+                  nextname
+                  lshift
+         ofs0145:
+                  getproperty Multiname("Views",[PrivateNamespace("8G"),PackageNamespace(""),PrivateNamespace("ErrorPopup.as$559"),PackageNamespace(";!1"),PackageInternalNs(";!1"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("8G"),StaticProtectedNs("8G"),StaticProtectedNs("7!R"),StaticProtectedNs("8!S"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  getproperty Multiname("PopupView_Error",[PrivateNamespace("8G"),PackageNamespace(""),PrivateNamespace("ErrorPopup.as$559"),PackageNamespace(";!1"),PackageInternalNs(";!1"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("8G"),StaticProtectedNs("8G"),StaticProtectedNs("7!R"),StaticProtectedNs("8!S"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  pushbyte 0
+                  getproperty MultinameL([PrivateNamespace("8G"),PackageNamespace(""),PrivateNamespace("ErrorPopup.as$559"),PackageNamespace(";!1"),PackageInternalNs(";!1"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("8G"),StaticProtectedNs("8G"),StaticProtectedNs("7!R"),StaticProtectedNs("8!S"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  getlocal1
+                  constructsuper 2
+         ofs0150:
+                  jump ofs0127
+         ofs0154:
+                  label
+                  debugline 19
+         ofs0157:
+                  getlocal 4
+                  dup
+                  iffalse ofs0161
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0161:
+                  iftrue ofs0187
+                  jump ofs012e
+         ofs0169:
+                  label
+                  debug 1, "errorType", 2, 17
+         ofs016f:
+                  getlocal 4
+                  dup
+                  iffalse ofs0179
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0179:
+                  iftrue ofs0190
+                  jump ofs0154
+         ofs0181:
+                  label
+                  debug 1, "statePopup", 1, 17
+         ofs0187:
+                  jump ofs0169
+         ofs018b:
+                  debug 1, "currentUIView", 0, 17
+         ofs0190:
+                  jump ofs0181
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      private function §3!H§(e:MouseEvent) : void
+      {
+         trait method QName(PrivateNamespace("8G"),"3!H")
+            flag METADATA
+            metadata"__go_to_definition_help"
+               item "pos" "988"
+            end ; metadata
+            dispid 0
+            method
+               name "com.angrybirds.popups:ErrorPopup/private:onReloadClick"
+               param QName(PackageNamespace("flash.events"),"MouseEvent")
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 4
+                  localcount 4
+                  initscopedepth 9
+                  maxscopedepth 10
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     swap
+                     jump ofs0015
+                     getlocal2
+                     inclocal 2
+                     astypelate
+                     kill 2
+                     inclocal 2
+                     inclocal_i 2
+                     instanceof
+                     lessequals
+                     declocal_i 2
+            ofs0015:
+                     setlocal2
+                     setlocal3
+                     debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\popups;ErrorPopup.as"
+                     getlocal3
+                     iffalse ofs0020
+                     debugline 31
+            ofs0020:
+                     getlocal0
+                     pushscope
+                     getlocal3
+                     dup
+                     iftrue ofs002b
+                     pop
+                     getlocal0
+                     convert_b
+            ofs002b:
+                     iffalse ofs008d
+                     jump ofs00b9
+            ofs0033:
+                     label
+                     returnvoid
+                     pushtrue
+                     jump ofs003a
+            ofs003a:
+                     typeof
+                     dup
+                     inclocal_i 2
+                     setlocal2
+                     kill 2
+                     declocal_i 2
+                     kill 2
+                     bitand
+                     declocal 2
+                     iftrue ofs004c
+            ofs004c:
+                     label
+                     debugline 35
+                     getlocal3
+                     iffalse ofs0079
+                     getlocal2
+                     iftrue ofs009c
+                     jump ofs0033
+            ofs005d:
+                     label
+                     findpropstrict QName(PackageNamespace("&\""),"ExternalInterfaceHandler")
+                     getproperty QName(PackageNamespace("&\""),"ExternalInterfaceHandler")
+                     pushstring "window.location.reload"
+                     callproperty QName(PackageNamespace(""),"`F"), 1
+                     pop
+                     jump ofs0079
+                     kill 2
+                     pop
+                     convert_s
+                     convert_b
+                     typeof
+                     setlocal2
+                     declocal 2
+                     inclocal_i 2
+                     kill 2
+            ofs0079:
+                     getlocal2
+                     dup
+                     iffalse ofs0082
+                     pop
+                     getlocal3
+                     convert_b
+            ofs0082:
+                     iftrue ofs008d
+                     jump ofs004c
+            ofs008a:
+                     label
+                     debugline 34
+            ofs008d:
+                     jump ofs005d
+            ofs0091:
+                     label
+                     findpropstrict QName(PackageNamespace(""),"AngryBirdsFP11")
+                     getproperty QName(PackageNamespace(""),"AngryBirdsFP11")
+                     getproperty QName(PackageNamespace(""),"\'t")
+                     callproperty QName(PackageNamespace(""),"?]"), 0
+                     pop
+            ofs009c:
+                     getlocal2
+                     iftrue ofs00a8
+                     jump ofs008a
+            ofs00a5:
+                     label
+                     debugline 33
+            ofs00a8:
+                     getlocal2
+                     dup
+                     iffalse ofs00b1
+                     pop
+                     getlocal1
+                     convert_b
+            ofs00b1:
+                     iftrue ofs00be
+                     jump ofs0091
+            ofs00b9:
+                     debug 1, "e", 0, 31
+            ofs00be:
+                     jump ofs00a5
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+      }
+   }

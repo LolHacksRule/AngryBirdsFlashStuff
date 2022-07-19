@@ -1,0 +1,444 @@
+package §&e§
+{
+   import flash.utils.Dictionary;
+   
+   public class FriendsDataCache
+   {
+      
+      private static var cache:Dictionary;
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  decrement
+                  convert_u
+                  subtract_i
+                  bitor
+                  instanceof
+                  coerce_s
+                  convert_o
+                  increment
+                  typeof
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  dup
+                  iffalse ofs001d
+                  pop
+                  getlocal0
+                  convert_b
+         ofs001d:
+                  iftrue ofs0026
+                  debug 1, "cache", 0, 13
+         ofs0026:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function FriendsDataCache()
+      {
+         method
+            name "com.angrybirds.friendsdatacache:FriendsDataCache/FriendsDataCache"
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  convert_d
+                  setlocal3
+                  popscope
+                  not
+                  pushnan
+                  negate
+                  convert_o
+                  convert_d
+                  dxnslate
+         ofs0010:
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  jump ofs0021
+                  setlocal3
+                  add
+                  convert_i
+                  coerce_s
+                  hasnext
+                  greaterthan
+                  getglobalscope
+                  strictequals
+                  getglobalscope
+         ofs0021:
+                  dup
+                  iftrue ofs0029
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0029:
+                  iffalse ofs005b
+                  jump ofs0058
+         ofs0031:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0038
+         ofs0038:
+                  label
+                  debugline 33
+                  getlocal1
+                  dup
+                  iftrue ofs0044
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0044:
+                  iffalse ofs0054
+                  getlocal2
+                  iftrue ofs005b
+                  jump ofs0031
+         ofs0051:
+                  label
+                  debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsdatacache;FriendsDataCache.as"
+         ofs0054:
+                  jump ofs0038
+         ofs0058:
+                  getlocal0
+                  constructsuper 0
+         ofs005b:
+                  jump ofs0051
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function §"!9§(dataObject:Object) : void
+      {
+         trait method QName(PackageNamespace(""),"\"!9")
+            flag FINAL
+            flag METADATA
+            metadata"__go_to_definition_help"
+               item "pos" "425"
+            end ; metadata
+            dispid 3
+            method
+               name "com.angrybirds.friendsdatacache:FriendsDataCache/injectData"
+               param QName(PackageNamespace(""),"Object")
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 6
+                  localcount 7
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     setlocal 5
+                     jump ofs0016
+                     convert_b
+                     pushtrue
+                     declocal 2
+                     inclocal 2
+                     swap
+                     getlocal3
+                     declocal_i 4
+                     kill 2
+                     inclocal 4
+            ofs0016:
+                     setlocal 6
+                     debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsdatacache;FriendsDataCache.as"
+                     getlocal 6
+                     dup
+                     iffalse ofs0024
+                     pop
+                     getlocal3
+                     convert_b
+            ofs0024:
+                     iftrue ofs002a
+                     debugline 15
+            ofs002a:
+                     getlocal0
+                     pushscope
+                     pushnull
+                     coerce QName(PackageNamespace(""),"Object")
+                     setlocal2
+                     getlocal 5
+                     dup
+                     iftrue ofs003a
+                     pop
+                     getlocal2
+                     convert_b
+            ofs003a:
+                     iffalse ofs0084
+                     jump ofs0099
+            ofs0042:
+                     label
+                     debugline 18
+                     getlocal 5
+                     iffalse ofs007e
+                     getlocal 5
+                     dup
+                     iftrue ofs0055
+                     pop
+                     getlocal3
+                     convert_b
+            ofs0055:
+                     iffalse ofs008b
+                     getlocal 5
+                     iffalse ofs0095
+                     pushtrue
+                     iftrue ofs00a2
+            ofs0064:
+                     label
+                     findproperty QName(PrivateNamespace("6!V"),"cache")
+                     jump ofs0077
+                     declocal_i 4
+                     inclocal_i 4
+                     setlocal2
+                     astypelate
+                     lessequals
+                     bitxor
+                     declocal 3
+                     lshift
+                     nextname
+            ofs0077:
+                     findpropstrict QName(PackageNamespace("flash.utils"),"Dictionary")
+                     constructprop QName(PackageNamespace("flash.utils"),"Dictionary"), 0
+                     setproperty QName(PrivateNamespace("6!V"),"cache")
+            ofs007e:
+                     getlocal 5
+                     iffalse ofs009e
+            ofs0084:
+                     jump ofs0042
+            ofs0088:
+                     label
+                     debugline 17
+            ofs008b:
+                     jump ofs0064
+            ofs008f:
+                     label
+                     debug 1, "object", 1, 18
+            ofs0095:
+                     jump ofs0088
+            ofs0099:
+                     debug 1, "dataObject", 0, 15
+            ofs009e:
+                     jump ofs008f
+            ofs00a2:
+                     pushbyte 0
+                     setlocal3
+                     getlocal1
+                     getproperty Multiname("items",[PrivateNamespace("6!V"),PackageNamespace(""),PrivateNamespace("FriendsDataCache.as$491"),PackageNamespace("&e"),PackageInternalNs("&e"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("6!V"),StaticProtectedNs("6!V")])
+                     coerce_a
+                     setlocal 4
+                     jump ofs0108
+            ofs00af:
+                     label
+                     getlocal 4
+                     getlocal3
+                     nextvalue
+                     coerce QName(PackageNamespace(""),"Object")
+                     setlocal2
+                     getlocal 6
+                     dup
+                     iffalse ofs00d0
+                     pop
+                     getlocal2
+                     convert_b
+                     jump ofs00d0
+                     nextname
+                     typeof
+                     inclocal 5
+                     bitnot
+                     multiply
+                     inclocal_i 3
+                     getlocal3
+                     getlocal2
+                     setlocal2
+            ofs00d0:
+                     iftrue ofs00fe
+                     jump ofs0102
+            ofs00d8:
+                     label
+                     debugline 18
+                     getlocal 6
+                     iftrue ofs00f8
+                     pushtrue
+                     iftrue ofs0108
+            ofs00e6:
+                     label
+                     findpropstrict QName(PrivateNamespace("6!V"),"cache")
+                     getproperty QName(PrivateNamespace("6!V"),"cache")
+                     getlocal2
+                     getproperty Multiname("u",[PrivateNamespace("6!V"),PackageNamespace(""),PrivateNamespace("FriendsDataCache.as$491"),PackageNamespace("&e"),PackageInternalNs("&e"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("6!V"),StaticProtectedNs("6!V")])
+                     findpropstrict QName(PackageNamespace("&e"),"CachedFriendDataVO")
+                     getproperty QName(PackageNamespace("&e"),"CachedFriendDataVO")
+                     getlocal2
+                     callproperty QName(PackageNamespace(""),"<! "), 1
+                     setproperty MultinameL([PrivateNamespace("6!V"),PackageNamespace(""),PrivateNamespace("FriendsDataCache.as$491"),PackageNamespace("&e"),PackageInternalNs("&e"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("6!V"),StaticProtectedNs("6!V")])
+            ofs00f8:
+                     getlocal 5
+                     iffalse ofs0104
+            ofs00fe:
+                     jump ofs00d8
+            ofs0102:
+                     debugline 20
+            ofs0104:
+                     jump ofs00e6
+            ofs0108:
+                     hasnext2 4, 3
+                     iftrue ofs00af
+                     kill 4
+                     kill 3
+                     getlocal 5
+                     iffalse ofs011b
+                     debugline 22
+            ofs011b:
+                     returnvoid
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public static function §&!0§(uid:String) : CachedFriendDataVO
+         {
+            trait method QName(PackageNamespace(""),"&!0")
+               flag FINAL
+               flag METADATA
+               metadata"__go_to_definition_help"
+                  item "pos" "662"
+               end ; metadata
+               dispid 4
+               method
+                  name "com.angrybirds.friendsdatacache:FriendsDataCache/getFriendData"
+                  param QName(PackageNamespace(""),"String")
+                  returns QName(PackageNamespace("&e"),"CachedFriendDataVO")
+                  
+                  body
+                     maxstack 4
+                     localcount 4
+                     initscopedepth 3
+                     maxscopedepth 4
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        setlocal2
+                        jump ofs0015
+                        pushwith
+                        declocal 2
+                        kill 2
+                        getlocal0
+                        decrement
+                        inclocal 2
+                        setlocal2
+                        declocal_i 2
+                        declocal_i 2
+               ofs0015:
+                        setlocal3
+                        debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsdatacache;FriendsDataCache.as"
+                        getlocal3
+                        dup
+                        iffalse ofs0031
+                        pop
+                        getlocal2
+                        convert_b
+                        jump ofs0031
+                        subtract
+                        inclocal_i 2
+                        pushfalse
+                        getlocal2
+                        kill 2
+                        pushundefined
+                        swap
+                        setlocal2
+                        declocal 2
+               ofs0031:
+                        iftrue ofs0047
+                        jump ofs0045
+                        popscope
+                        greaterthan
+                        pushwith
+                        inclocal_i 2
+                        setlocal2
+                        kill 2
+                        multiply
+                        inclocal_i 2
+                        getlocal2
+               ofs0045:
+                        debugline 24
+               ofs0047:
+                        getlocal0
+                        pushscope
+                        getlocal3
+                        dup
+                        iffalse ofs0052
+                        pop
+                        getlocal0
+                        convert_b
+               ofs0052:
+                        iftrue ofs0078
+                        jump ofs007c
+               ofs005a:
+                        label
+                        findpropstrict QName(PrivateNamespace("6!V"),"cache")
+                        getproperty QName(PrivateNamespace("6!V"),"cache")
+                        getlocal1
+                        getproperty MultinameL([PrivateNamespace("6!V"),PackageNamespace(""),PrivateNamespace("FriendsDataCache.as$491"),PackageNamespace("&e"),PackageInternalNs("&e"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("6!V"),StaticProtectedNs("6!V")])
+                        returnvalue
+                        pushtrue
+                        iftrue ofs0068
+               ofs0068:
+                        label
+                        debugline 26
+                        getlocal2
+                        dup
+                        iftrue ofs0074
+                        pop
+                        getlocal2
+                        convert_b
+               ofs0074:
+                        iffalse ofs0081
+               ofs0078:
+                        jump ofs005a
+               ofs007c:
+                        debug 1, "uid", 0, 24
+               ofs0081:
+                        jump ofs0068
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+         }
+      }

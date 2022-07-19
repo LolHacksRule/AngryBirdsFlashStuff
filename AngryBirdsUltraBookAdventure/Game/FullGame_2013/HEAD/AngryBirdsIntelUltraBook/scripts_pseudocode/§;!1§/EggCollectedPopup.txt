@@ -1,0 +1,489 @@
+package §;!1§
+{
+   import §!!0§.SoundEngine;
+   import §"$§.Popup;
+   import §=!5§.§+q§;
+   import §=!5§.§`X§;
+   import flash.events.Event;
+   
+   public class EggCollectedPopup extends Popup
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 8
+               maxscopedepth 9
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function EggCollectedPopup(currentUIView:§`X§, statePopup:StatePopupManager, eggId:String)
+      {
+         method
+            name "com.angrybirds.popups:EggCollectedPopup/EggCollectedPopup"
+            param QName(PackageNamespace("=!5"),"`X")
+            param QName(PackageNamespace(";!1"),"StatePopupManager")
+            param QName(PackageNamespace(""),"String")
+            returns null
+            
+            body
+               maxstack 5
+               localcount 6
+               initscopedepth 9
+               maxscopedepth 10
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0014
+                  setlocal3
+                  setlocal3
+                  getlocal 4
+                  declocal_i 2
+                  declocal 4
+                  setlocal3
+                  kill 4
+                  checkfilter
+                  pushwith
+         ofs0014:
+                  setlocal 4
+                  setlocal 5
+                  debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\popups;EggCollectedPopup.as"
+                  getlocal 4
+                  iftrue ofs0022
+                  debugline 13
+         ofs0022:
+                  getlocal0
+                  pushscope
+                  getlocal 5
+                  dup
+                  iftrue ofs002e
+                  pop
+                  getlocal2
+                  convert_b
+         ofs002e:
+                  iffalse ofs011d
+                  jump ofs0187
+         ofs0036:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs003d
+         ofs003d:
+                  label
+                  debugline 23
+                  getlocal 5
+                  iffalse ofs006e
+                  getlocal 4
+                  iftrue ofs00d5
+                  getlocal 4
+                  iftrue ofs014c
+                  getlocal 5
+                  iffalse ofs016b
+                  jump ofs0036
+         ofs005c:
+                  label
+                  findpropstrict QName(PackageNamespace(""),"mClip")
+                  getproperty QName(PackageNamespace(""),"mClip")
+                  findpropstrict QName(PackageNamespace("flash.events"),"Event")
+                  getproperty QName(PackageNamespace("flash.events"),"Event")
+                  getproperty QName(PackageNamespace(""),"ENTER_FRAME")
+                  getlocal0
+                  getproperty QName(PrivateNamespace("%"),"onEnterFrame")
+                  callproperty QName(PackageNamespace(""),"addEventListener"), 2
+                  pop
+         ofs006e:
+                  getlocal 4
+                  dup
+                  iffalse ofs0078
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0078:
+                  iftrue ofs00b1
+                  getlocal 5
+                  dup
+                  iftrue ofs0086
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0086:
+                  iffalse ofs00ce
+                  getlocal 4
+                  dup
+                  iffalse ofs0094
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0094:
+                  iftrue ofs0161
+                  jump ofs003d
+                  jump ofs00a0
+         ofs00a0:
+                  setlocal3
+                  declocal 4
+                  kill 2
+                  add_i
+                  inclocal 4
+                  pushundefined
+                  declocal 2
+                  kill 3
+                  typeof
+         ofs00ae:
+                  label
+                  debugline 22
+         ofs00b1:
+                  getlocal 4
+                  dup
+                  iffalse ofs00bb
+                  pop
+                  getlocal1
+                  convert_b
+         ofs00bb:
+                  iftrue ofs00ff
+                  jump ofs005c
+         ofs00c3:
+                  label
+                  findpropstrict QName(PackageNamespace(""),"mClip")
+                  getproperty QName(PackageNamespace(""),"mClip")
+                  pushbyte 1
+                  callproperty QName(PackageNamespace(""),"gotoAndPlay"), 1
+                  pop
+         ofs00ce:
+                  jump ofs00ae
+         ofs00d2:
+                  label
+                  debugline 21
+         ofs00d5:
+                  getlocal 4
+                  dup
+                  iffalse ofs00df
+                  pop
+                  getlocal3
+                  convert_b
+         ofs00df:
+                  iftrue ofs00f8
+                  getlocal 5
+                  iffalse ofs011d
+                  jump ofs00c3
+         ofs00ed:
+                  label
+                  findpropstrict QName(PackageNamespace("!!0"),"SoundEngine")
+                  getproperty QName(PackageNamespace("!!0"),"SoundEngine")
+                  pushstring "Found_GoldenEgg"
+                  callproperty QName(PackageNamespace(""),"-!h"), 1
+                  pop
+         ofs00f8:
+                  jump ofs00d2
+         ofs00fc:
+                  label
+                  debugline 19
+         ofs00ff:
+                  getlocal 4
+                  dup
+                  iffalse ofs0109
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0109:
+                  iftrue ofs0124
+                  jump ofs00ed
+         ofs0111:
+                  label
+                  findpropstrict QName(PackageNamespace(""),"mClip")
+                  getproperty QName(PackageNamespace(""),"mClip")
+                  getproperty Multiname("EasterEgg",[PrivateNamespace("%"),PackageNamespace(""),PrivateNamespace("EggCollectedPopup.as$560"),PackageNamespace(";!1"),PackageInternalNs(";!1"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("%"),StaticProtectedNs("%"),StaticProtectedNs("7!R"),StaticProtectedNs("8!S"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  getlocal3
+                  callproperty Multiname("gotoAndStop",[PrivateNamespace("%"),PackageNamespace(""),PrivateNamespace("EggCollectedPopup.as$560"),PackageNamespace(";!1"),PackageInternalNs(";!1"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("%"),StaticProtectedNs("%"),StaticProtectedNs("7!R"),StaticProtectedNs("8!S"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")]), 1
+                  pop
+         ofs011d:
+                  jump ofs00fc
+         ofs0121:
+                  label
+                  debugline 17
+         ofs0124:
+                  jump ofs0111
+         ofs0128:
+                  label
+                  getlocal0
+                  findpropstrict QName(PackageNamespace("=!5"),"+q")
+                  getproperty QName(PackageNamespace("=!5"),"+q")
+                  getproperty QName(PackageNamespace(""),"%M")
+                  jump ofs0141
+                  decrement
+                  inclocal_i 2
+                  declocal_i 2
+                  getlocal0
+                  lessthan
+                  inclocal_i 3
+                  not
+                  not
+                  declocal_i 4
+         ofs0141:
+                  getproperty Multiname("Views",[PrivateNamespace("%"),PackageNamespace(""),PrivateNamespace("EggCollectedPopup.as$560"),PackageNamespace(";!1"),PackageInternalNs(";!1"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("%"),StaticProtectedNs("%"),StaticProtectedNs("7!R"),StaticProtectedNs("8!S"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  getproperty Multiname("PopupView_EggFound",[PrivateNamespace("%"),PackageNamespace(""),PrivateNamespace("EggCollectedPopup.as$560"),PackageNamespace(";!1"),PackageInternalNs(";!1"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("%"),StaticProtectedNs("%"),StaticProtectedNs("7!R"),StaticProtectedNs("8!S"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  pushbyte 0
+                  getproperty MultinameL([PrivateNamespace("%"),PackageNamespace(""),PrivateNamespace("EggCollectedPopup.as$560"),PackageNamespace(";!1"),PackageInternalNs(";!1"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("%"),StaticProtectedNs("%"),StaticProtectedNs("7!R"),StaticProtectedNs("8!S"),StaticProtectedNs("57"),StaticProtectedNs("?F"),StaticProtectedNs("4C")])
+                  getlocal1
+                  constructsuper 2
+         ofs014c:
+                  getlocal 5
+                  dup
+                  iftrue ofs0156
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0156:
+                  iffalse ofs0175
+                  jump ofs0121
+         ofs015e:
+                  label
+                  debugline 15
+         ofs0161:
+                  jump ofs0128
+         ofs0165:
+                  label
+                  debug 1, "eggId", 2, 13
+         ofs016b:
+                  jump ofs015e
+         ofs016f:
+                  label
+                  debug 1, "statePopup", 1, 13
+         ofs0175:
+                  getlocal 5
+                  dup
+                  iftrue ofs017f
+                  pop
+                  getlocal0
+                  convert_b
+         ofs017f:
+                  iffalse ofs018c
+                  jump ofs0165
+         ofs0187:
+                  debug 1, "currentUIView", 0, 13
+         ofs018c:
+                  jump ofs016f
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      private function onEnterFrame(e:Event) : void
+      {
+         trait method QName(PrivateNamespace("%"),"onEnterFrame")
+            flag METADATA
+            metadata"__go_to_definition_help"
+               item "pos" "668"
+            end ; metadata
+            dispid 0
+            method
+               name "com.angrybirds.popups:EggCollectedPopup/private:onEnterFrame"
+               param QName(PackageNamespace("flash.events"),"Event")
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 5
+                  localcount 4
+                  initscopedepth 9
+                  maxscopedepth 10
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     swap
+                     jump ofs0011
+                     convert_b
+                     convert_d
+                     lessthan
+                     setlocal2
+                     nextvalue
+                     lessthan
+                     subtract_i
+                     subtract
+                     inclocal 2
+            ofs0011:
+                     setlocal2
+                     setlocal3
+                     debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\popups;EggCollectedPopup.as"
+                     getlocal2
+                     iftrue ofs001c
+                     debugline 25
+            ofs001c:
+                     getlocal0
+                     pushscope
+                     getlocal2
+                     iftrue ofs00ab
+                     jump ofs0117
+            ofs0027:
+                     label
+                     returnvoid
+                     pushtrue
+                     iftrue ofs002e
+            ofs002e:
+                     label
+                     debugline 33
+                     getlocal2
+                     dup
+                     iffalse ofs003a
+                     pop
+                     getlocal0
+                     convert_b
+            ofs003a:
+                     iftrue ofs005b
+                     getlocal2
+                     iftrue ofs00bf
+                     getlocal2
+                     dup
+                     iffalse ofs004c
+                     pop
+                     getlocal3
+                     convert_b
+            ofs004c:
+                     iftrue ofs0106
+                     jump ofs0027
+            ofs0054:
+                     label
+                     findpropstrict QName(PackageNamespace(""),"preClose")
+                     callproperty QName(PackageNamespace(""),"preClose"), 0
+                     pop
+            ofs005b:
+                     getlocal3
+                     dup
+                     iftrue ofs0074
+                     pop
+                     getlocal0
+                     convert_b
+                     jump ofs0074
+                     greaterequals
+                     lessthan
+                     pushundefined
+                     inclocal 2
+                     rshift
+                     kill 2
+                     getlocal2
+                     declocal_i 2
+                     nextname
+            ofs0074:
+                     iffalse ofs0084
+                     getlocal3
+                     iffalse ofs00ff
+                     jump ofs002e
+            ofs0081:
+                     label
+                     debugline 31
+            ofs0084:
+                     getlocal2
+                     dup
+                     iffalse ofs008d
+                     pop
+                     getlocal0
+                     convert_b
+            ofs008d:
+                     iftrue ofs00b8
+                     getlocal2
+                     dup
+                     iffalse ofs009a
+                     pop
+                     getlocal3
+                     convert_b
+            ofs009a:
+                     iftrue ofs00e8
+                     getlocal3
+                     dup
+                     iftrue ofs00a7
+                     pop
+                     getlocal3
+                     convert_b
+            ofs00a7:
+                     iffalse ofs00fd
+            ofs00ab:
+                     jump ofs0054
+            ofs00af:
+                     label
+                     findpropstrict QName(PackageNamespace(""),"mClip")
+                     getproperty QName(PackageNamespace(""),"mClip")
+                     callproperty QName(PackageNamespace(""),"stop"), 0
+                     pop
+            ofs00b8:
+                     jump ofs0081
+            ofs00bc:
+                     label
+                     debugline 30
+            ofs00bf:
+                     jump ofs00af
+            ofs00c3:
+                     label
+                     findpropstrict QName(PackageNamespace(""),"mClip")
+                     jump ofs00d9
+                     add
+                     inclocal 2
+                     kill 2
+                     negate
+                     inclocal_i 2
+                     declocal_i 2
+                     kill 2
+                     modulo
+                     declocal_i 2
+            ofs00d9:
+                     getproperty QName(PackageNamespace(""),"mClip")
+                     findpropstrict QName(PackageNamespace("flash.events"),"Event")
+                     getproperty QName(PackageNamespace("flash.events"),"Event")
+                     getproperty QName(PackageNamespace(""),"ENTER_FRAME")
+                     getlocal0
+                     getproperty QName(PrivateNamespace("%"),"onEnterFrame")
+                     callproperty QName(PackageNamespace(""),"removeEventListener"), 2
+                     pop
+            ofs00e8:
+                     jump ofs00bc
+            ofs00ec:
+                     label
+                     findpropstrict QName(PackageNamespace(""),"mClip")
+                     getproperty QName(PackageNamespace(""),"mClip")
+                     getproperty QName(PackageNamespace(""),"currentFrame")
+                     findpropstrict QName(PackageNamespace(""),"mClip")
+                     getproperty QName(PackageNamespace(""),"mClip")
+                     getproperty QName(PackageNamespace(""),"totalFrames")
+                     ifne ofs0027
+            ofs00fd:
+                     debugline 29
+            ofs00ff:
+                     jump ofs00c3
+            ofs0103:
+                     label
+                     debugline 27
+            ofs0106:
+                     getlocal3
+                     dup
+                     iftrue ofs010f
+                     pop
+                     getlocal1
+                     convert_b
+            ofs010f:
+                     iffalse ofs011c
+                     jump ofs00ec
+            ofs0117:
+                     debug 1, "e", 0, 25
+            ofs011c:
+                     jump ofs0103
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+      }
+   }

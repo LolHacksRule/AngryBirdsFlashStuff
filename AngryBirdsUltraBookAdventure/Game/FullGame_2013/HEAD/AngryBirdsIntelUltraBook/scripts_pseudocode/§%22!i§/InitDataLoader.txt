@@ -1,0 +1,1952 @@
+package §"!i§
+{
+   import § 3§.FacebookUserProgress;
+   import §&"§.ExternalInterfaceHandler;
+   import §&e§.FriendsDataCache;
+   import §5=§.§8O§;
+   import §^!7§.§+!I§;
+   import §^!7§.§[!<§;
+   import flash.events.Event;
+   import flash.events.IOErrorEvent;
+   import flash.events.SecurityErrorEvent;
+   import flash.net.URLLoaderDataFormat;
+   
+   public class InitDataLoader
+   {
+      
+      private static var sLoader:§[!<§;
+      
+      private static var sData:Object;
+      
+      private static var sError:String = "";
+      
+      private static var sErrorCode:int = 0;
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 3
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  not
+                  lessthan
+                  bitxor
+                  multiply_i
+                  setlocal2
+                  getlocal3
+                  pushnull
+                  convert_s
+                  astypelate
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  iftrue ofs0066
+                  jump ofs009b
+         ofs001d:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0024
+         ofs0024:
+                  label
+                  findproperty QName(PrivateNamespace("8!"),"sErrorCode")
+                  pushbyte 0
+                  jump ofs0036
+                  lessthan
+                  pushfalse
+                  pushnan
+                  dup
+                  bitxor
+                  setlocal3
+                  decrement
+                  pushwith
+                  bitxor
+         ofs0036:
+                  setproperty QName(PrivateNamespace("8!"),"sErrorCode")
+                  getlocal1
+                  iftrue ofs0066
+                  getlocal2
+                  iffalse ofs0071
+                  jump ofs004f
+                  getlocal0
+                  negate
+                  checkfilter
+                  decrement
+                  coerce_s
+                  increment_i
+                  decrement_i
+                  hasnext
+                  nextvalue
+         ofs004f:
+                  getlocal2
+                  dup
+                  iftrue ofs0058
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0058:
+                  iffalse ofs007b
+                  jump ofs001d
+         ofs0060:
+                  label
+                  debug 1, "sErrorCode", 3, 22
+         ofs0066:
+                  jump ofs0024
+         ofs006a:
+                  label
+                  findproperty QName(PrivateNamespace("8!"),"sError")
+                  pushstring ""
+                  setproperty QName(PrivateNamespace("8!"),"sError")
+         ofs0071:
+                  jump ofs0060
+         ofs0075:
+                  label
+                  debug 1, "sError", 2, 21
+         ofs007b:
+                  getlocal2
+                  dup
+                  iftrue ofs0084
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0084:
+                  iffalse ofs0097
+                  getlocal2
+                  iffalse ofs00a0
+                  jump ofs006a
+         ofs0091:
+                  label
+                  debug 1, "sData", 1, 20
+         ofs0097:
+                  jump ofs0075
+         ofs009b:
+                  debug 1, "sLoader", 0, 19
+         ofs00a0:
+                  jump ofs0091
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function InitDataLoader()
+      {
+         method
+            name "com.angrybirds.data:InitDataLoader/InitDataLoader"
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  decrement_i
+                  lessthan
+                  coerce_a
+                  pushtrue
+                  popscope
+                  swap
+                  hasnext
+                  pushfalse
+                  getlocal1
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  jump ofs0021
+                  setlocal2
+                  bitor
+                  decrement
+                  istypelate
+                  multiply_i
+                  greaterequals
+                  negate_i
+                  equals
+                  not
+         ofs0021:
+                  getlocal1
+                  dup
+                  iffalse ofs002a
+                  pop
+                  getlocal2
+                  convert_b
+         ofs002a:
+                  iftrue ofs005d
+                  jump ofs005a
+         ofs0032:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0039
+         ofs0039:
+                  label
+                  debugline 184
+                  getlocal2
+                  dup
+                  iftrue ofs0046
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0046:
+                  iffalse ofs0056
+                  getlocal1
+                  iftrue ofs005d
+                  jump ofs0032
+         ofs0053:
+                  label
+                  debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\data;InitDataLoader.as"
+         ofs0056:
+                  jump ofs0039
+         ofs005a:
+                  getlocal0
+                  constructsuper 0
+         ofs005d:
+                  jump ofs0053
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function load(facebookUserId:String, accessToken:String, expiresInSeconds:String) : void
+      {
+         trait method QName(PackageNamespace(""),"load")
+            flag FINAL
+            flag METADATA
+            metadata"__go_to_definition_help"
+               item "pos" "737"
+            end ; metadata
+            dispid 3
+            method
+               name "com.angrybirds.data:InitDataLoader/load"
+               param QName(PackageNamespace(""),"String")
+               param QName(PackageNamespace(""),"String")
+               param QName(PackageNamespace(""),"String")
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 7
+                  localcount 6
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     setlocal 4
+                     jump ofs0013
+                     inclocal_i 4
+                     convert_u
+                     nextvalue
+                     newactivation
+                     checkfilter
+                     convert_u
+                     declocal 2
+                     popscope
+                     nextname
+            ofs0013:
+                     setlocal 5
+                     debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\data;InitDataLoader.as"
+                     getlocal 4
+                     iffalse ofs001f
+                     debugline 24
+            ofs001f:
+                     getlocal0
+                     pushscope
+                     getlocal 5
+                     iftrue ofs026b
+                     jump ofs02b3
+            ofs002b:
+                     label
+                     returnvoid
+                     pushtrue
+                     iftrue ofs0032
+            ofs0032:
+                     label
+                     debugline 37
+                     getlocal 4
+                     dup
+                     iftrue ofs003f
+                     pop
+                     getlocal3
+                     convert_b
+            ofs003f:
+                     iffalse ofs008f
+                     getlocal 4
+                     dup
+                     iftrue ofs004d
+                     pop
+                     getlocal1
+                     convert_b
+            ofs004d:
+                     iffalse ofs0192
+                     getlocal 4
+                     iffalse ofs0206
+                     jump ofs002b
+            ofs005b:
+                     label
+                     jump ofs002b
+                     debugline 34
+            ofs0062:
+                     label
+                     findpropstrict QName(PrivateNamespace("8!"),"sLoader")
+                     getproperty QName(PrivateNamespace("8!"),"sLoader")
+                     getlocal 4
+                     iffalse ofs00b2
+                     getlocal 4
+                     dup
+                     iftrue ofs0077
+                     pop
+                     getlocal3
+                     convert_b
+            ofs0077:
+                     iffalse ofs0263
+                     findpropstrict QName(PackageNamespace("^!7"),"+!I")
+                     getproperty QName(PackageNamespace("^!7"),"+!I")
+                     findpropstrict QName(PackageNamespace(""),"AngryBirdsFP11")
+                     getproperty QName(PackageNamespace(""),"AngryBirdsFP11")
+                     getproperty QName(PackageNamespace(""),"SERVER_ROOT")
+                     pushstring "/init"
+                     add
+                     callproperty QName(PackageNamespace(""),"[O"), 1
+                     callproperty QName(PackageNamespace(""),"load"), 1
+                     pop
+            ofs008f:
+                     getlocal 5
+                     iftrue ofs016b
+                     getlocal 5
+                     iftrue ofs01a7
+                     getlocal 4
+                     dup
+                     iftrue ofs00a5
+                     pop
+                     getlocal3
+                     convert_b
+            ofs00a5:
+                     iffalse ofs0272
+                     jump ofs0032
+            ofs00ad:
+                     label
+                     findpropstrict QName(PrivateNamespace("8!"),"sLoader")
+                     getproperty QName(PrivateNamespace("8!"),"sLoader")
+            ofs00b2:
+                     getlocal 4
+                     dup
+                     iftrue ofs00bc
+                     pop
+                     getlocal2
+                     convert_b
+            ofs00bc:
+                     iffalse ofs01be
+                     getlocal 4
+                     iffalse ofs01ea
+                     findpropstrict QName(PackageNamespace("^!7"),"+!I")
+                     getproperty QName(PackageNamespace("^!7"),"+!I")
+                     findpropstrict QName(PackageNamespace(""),"AngryBirdsFP11")
+                     getproperty QName(PackageNamespace(""),"AngryBirdsFP11")
+                     getproperty QName(PackageNamespace(""),"SERVER_ROOT")
+                     pushstring "/init/"
+                     add
+                     getlocal 4
+                     iffalse ofs010c
+                     getlocal1
+                     getlocal 5
+                     iftrue ofs013e
+                     add
+                     getlocal 5
+                     iftrue ofs00f6
+                     pushstring "/"
+                     getlocal 5
+                     iftrue ofs014f
+                     add
+                     getlocal 5
+                     iftrue ofs0164
+            ofs00f6:
+                     getlocal2
+                     getlocal 5
+                     iftrue ofs013e
+                     add
+                     getlocal 5
+                     dup
+                     iffalse ofs0108
+                     pop
+                     getlocal0
+                     convert_b
+            ofs0108:
+                     iftrue ofs0164
+            ofs010c:
+                     pushstring "/"
+                     getlocal 5
+                     dup
+                     iffalse ofs0118
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0118:
+                     iftrue ofs014f
+                     add
+                     getlocal 4
+                     dup
+                     iftrue ofs0127
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0127:
+                     iffalse ofs0164
+                     getlocal3
+                     jump ofs013e
+                     negate
+                     pop
+                     kill 3
+                     declocal 2
+                     pushfalse
+                     greaterthan
+                     kill 3
+                     declocal_i 3
+                     inclocal_i 4
+            ofs013e:
+                     add
+                     getlocal 5
+                     dup
+                     iffalse ofs0149
+                     pop
+                     getlocal0
+                     convert_b
+            ofs0149:
+                     iftrue ofs0156
+                     pushstring "/"
+            ofs014f:
+                     add
+                     getlocal 5
+                     iftrue ofs0164
+            ofs0156:
+                     findpropstrict QName(PackageNamespace(""),"Date")
+                     constructprop QName(PackageNamespace(""),"Date"), 0
+                     getproperty QName(PackageNamespace(""),"timezoneOffset")
+                     pushbyte 60
+                     divide
+                     callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"toString"), 0
+                     add
+            ofs0164:
+                     callproperty QName(PackageNamespace(""),"[O"), 1
+                     callproperty QName(PackageNamespace(""),"load"), 1
+                     pop
+            ofs016b:
+                     getlocal 4
+                     dup
+                     iftrue ofs0175
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0175:
+                     iffalse ofs0190
+                     getlocal 5
+                     iftrue ofs01cc
+                     getlocal 4
+                     iffalse ofs0219
+                     jump ofs005b
+            ofs0189:
+                     label
+                     getlocal1
+                     convert_b
+                     iffalse ofs0062
+            ofs0190:
+                     debugline 31
+            ofs0192:
+                     getlocal 4
+                     dup
+                     iftrue ofs019c
+                     pop
+                     getlocal2
+                     convert_b
+            ofs019c:
+                     iffalse ofs01d3
+                     jump ofs00ad
+            ofs01a4:
+                     label
+                     debugline 30
+            ofs01a7:
+                     getlocal 5
+                     dup
+                     iffalse ofs01b1
+                     pop
+                     getlocal2
+                     convert_b
+            ofs01b1:
+                     iftrue ofs0245
+                     jump ofs0189
+            ofs01b9:
+                     label
+                     findpropstrict QName(PrivateNamespace("8!"),"sLoader")
+                     getproperty QName(PrivateNamespace("8!"),"sLoader")
+            ofs01be:
+                     findpropstrict QName(PackageNamespace("flash.events"),"SecurityErrorEvent")
+                     getproperty QName(PackageNamespace("flash.events"),"SecurityErrorEvent")
+                     getproperty QName(PackageNamespace(""),"SECURITY_ERROR")
+                     findpropstrict QName(StaticProtectedNs("8!"),"`3")
+                     getproperty QName(StaticProtectedNs("8!"),"`3")
+                     callproperty QName(PackageNamespace(""),"addEventListener"), 2
+                     pop
+            ofs01cc:
+                     jump ofs01a4
+            ofs01d0:
+                     label
+                     debugline 29
+            ofs01d3:
+                     getlocal 4
+                     dup
+                     iftrue ofs01dd
+                     pop
+                     getlocal3
+                     convert_b
+            ofs01dd:
+                     iffalse ofs026b
+                     jump ofs01b9
+            ofs01e5:
+                     label
+                     findpropstrict QName(PrivateNamespace("8!"),"sLoader")
+                     getproperty QName(PrivateNamespace("8!"),"sLoader")
+            ofs01ea:
+                     getlocal 4
+                     dup
+                     iftrue ofs01f4
+                     pop
+                     getlocal1
+                     convert_b
+            ofs01f4:
+                     iffalse ofs0222
+                     findpropstrict QName(PackageNamespace("flash.events"),"IOErrorEvent")
+                     getproperty QName(PackageNamespace("flash.events"),"IOErrorEvent")
+                     getproperty QName(PackageNamespace(""),"IO_ERROR")
+                     findpropstrict QName(StaticProtectedNs("8!"),"`3")
+                     getproperty QName(StaticProtectedNs("8!"),"`3")
+                     callproperty QName(PackageNamespace(""),"addEventListener"), 2
+                     pop
+            ofs0206:
+                     getlocal 5
+                     iftrue ofs0230
+                     getlocal 5
+                     iftrue ofs0280
+                     jump ofs01d0
+            ofs0216:
+                     label
+                     debugline 28
+            ofs0219:
+                     jump ofs01e5
+            ofs021d:
+                     label
+                     findpropstrict QName(PrivateNamespace("8!"),"sLoader")
+                     getproperty QName(PrivateNamespace("8!"),"sLoader")
+            ofs0222:
+                     findpropstrict QName(PackageNamespace("flash.events"),"Event")
+                     getproperty QName(PackageNamespace("flash.events"),"Event")
+                     getproperty QName(PackageNamespace(""),"COMPLETE")
+                     findpropstrict QName(PrivateNamespace("8!"),"5f")
+                     getproperty QName(PrivateNamespace("8!"),"5f")
+                     callproperty QName(PackageNamespace(""),"addEventListener"), 2
+                     pop
+            ofs0230:
+                     getlocal 5
+                     dup
+                     iffalse ofs023a
+                     pop
+                     getlocal0
+                     convert_b
+            ofs023a:
+                     iftrue ofs02b8
+                     jump ofs0216
+            ofs0242:
+                     label
+                     debugline 27
+            ofs0245:
+                     getlocal 4
+                     iffalse ofs0287
+                     jump ofs021d
+            ofs024f:
+                     label
+                     findpropstrict QName(PrivateNamespace("8!"),"sLoader")
+                     getproperty QName(PrivateNamespace("8!"),"sLoader")
+                     jump ofs0263
+                     lessthan
+                     multiply
+                     kill 3
+                     pushtrue
+                     swap
+                     kill 4
+                     getlocal2
+                     pop
+                     multiply
+            ofs0263:
+                     findpropstrict QName(PackageNamespace("flash.net"),"URLLoaderDataFormat")
+                     getproperty QName(PackageNamespace("flash.net"),"URLLoaderDataFormat")
+                     getproperty QName(PackageNamespace(""),"TEXT")
+                     setproperty QName(PackageNamespace(""),"dataFormat")
+            ofs026b:
+                     jump ofs0242
+            ofs026f:
+                     label
+                     debugline 26
+            ofs0272:
+                     jump ofs024f
+            ofs0276:
+                     label
+                     findproperty QName(PrivateNamespace("8!"),"sLoader")
+                     findpropstrict QName(PackageNamespace("^!7"),"[!<")
+                     constructprop QName(PackageNamespace("^!7"),"[!<"), 0
+                     setproperty QName(PrivateNamespace("8!"),"sLoader")
+            ofs0280:
+                     jump ofs026f
+            ofs0284:
+                     label
+                     debugline 25
+            ofs0287:
+                     getlocal 5
+                     iftrue ofs02a5
+                     getlocal 4
+                     dup
+                     iftrue ofs0297
+                     pop
+                     getlocal0
+                     convert_b
+            ofs0297:
+                     iffalse ofs02af
+                     jump ofs0276
+            ofs029f:
+                     label
+                     debug 1, "expiresInSeconds", 2, 24
+            ofs02a5:
+                     jump ofs0284
+            ofs02a9:
+                     label
+                     debug 1, "accessToken", 1, 24
+            ofs02af:
+                     jump ofs029f
+            ofs02b3:
+                     debug 1, "facebookUserId", 0, 24
+            ofs02b8:
+                     jump ofs02a9
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         protected static function §`3§(e:Event) : void
+         {
+            trait method QName(StaticProtectedNs("8!"),"`3")
+               flag FINAL
+               flag METADATA
+               metadata"__go_to_definition_help"
+                  item "pos" "1623"
+               end ; metadata
+               dispid 4
+               method
+                  name "com.angrybirds.data:InitDataLoader/protected:onInitDataLoaderError"
+                  param QName(PackageNamespace("flash.events"),"Event")
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 5
+                     localcount 4
+                     initscopedepth 3
+                     maxscopedepth 4
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        swap
+                        jump ofs0014
+                        declocal 2
+                        getlocal2
+                        getlocal2
+                        declocal 2
+                        inclocal_i 2
+                        bitor
+                        lessequals
+                        negate_i
+                        kill 2
+               ofs0014:
+                        setlocal2
+                        setlocal3
+                        debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\data;InitDataLoader.as"
+                        getlocal2
+                        dup
+                        iffalse ofs0021
+                        pop
+                        getlocal1
+                        convert_b
+               ofs0021:
+                        iftrue ofs0027
+                        debugline 39
+               ofs0027:
+                        getlocal0
+                        pushscope
+                        getlocal2
+                        iftrue ofs00a6
+                        jump ofs00b1
+                        jump ofs0036
+               ofs0036:
+                        getlocal2
+                        kill 2
+                        multiply_i
+                        declocal 2
+                        checkfilter
+                        greaterthan
+                        greaterthan
+                        pushnull
+                        kill 2
+               ofs0042:
+                        label
+                        returnvoid
+                        pushtrue
+                        iftrue ofs0049
+               ofs0049:
+                        label
+                        debugline 42
+                        getlocal2
+                        iftrue ofs0073
+                        getlocal3
+                        iffalse ofs0099
+                        jump ofs0042
+               ofs005a:
+                        label
+                        findproperty QName(PrivateNamespace("8!"),"sLoader")
+                        jump ofs0070
+                        inclocal 2
+                        inclocal 2
+                        lessthan
+                        inclocal 2
+                        kill 2
+                        divide
+                        divide
+                        declocal 2
+                        declocal 2
+               ofs0070:
+                        pushnull
+                        setproperty QName(PrivateNamespace("8!"),"sLoader")
+               ofs0073:
+                        getlocal2
+                        iftrue ofs0084
+                        getlocal2
+                        iftrue ofs00b6
+                        jump ofs0049
+               ofs0081:
+                        label
+                        debugline 41
+               ofs0084:
+                        jump ofs005a
+               ofs0088:
+                        label
+                        findproperty QName(PrivateNamespace("8!"),"sError")
+                        pushstring "Can\'t contact server.\n"
+                        getlocal3
+                        iffalse ofs0097
+                        getlocal1
+                        callproperty QName(PackageNamespace(""),"toString"), 0
+                        add
+               ofs0097:
+                        setproperty QName(PrivateNamespace("8!"),"sError")
+               ofs0099:
+                        getlocal3
+                        dup
+                        iftrue ofs00a2
+                        pop
+                        getlocal2
+                        convert_b
+               ofs00a2:
+                        iffalse ofs00ad
+               ofs00a6:
+                        jump ofs0081
+               ofs00aa:
+                        label
+                        debugline 40
+               ofs00ad:
+                        jump ofs0088
+               ofs00b1:
+                        debug 1, "e", 0, 39
+               ofs00b6:
+                        jump ofs00aa
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            private static function §5f§(e:Event) : void
+            {
+               trait method QName(PrivateNamespace("8!"),"5f")
+                  flag FINAL
+                  flag METADATA
+                  metadata"__go_to_definition_help"
+                     item "pos" "1772"
+                  end ; metadata
+                  dispid 5
+                  method
+                     name "com.angrybirds.data:InitDataLoader/private:onInitDataLoaded"
+                     flag NEED_ACTIVATION
+                     param QName(PackageNamespace("flash.events"),"Event")
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 9
+                        localcount 7
+                        initscopedepth 4
+                        maxscopedepth 9
+                        trait slot QName(PackageInternalNs("\"!i"),"e")
+                           slotid 1
+                           type QName(PackageNamespace("flash.events"),"Event")
+                        end ; trait
+                        trait slot QName(PackageInternalNs("\"!i"),"threwError")
+                           slotid 2
+                           type QName(PackageNamespace(""),"Boolean")
+                        end ; trait
+                        trait slot QName(PackageInternalNs("\"!i"),"serverResponse")
+                           slotid 3
+                           type QName(PackageNamespace(""),"String")
+                        end ; trait
+                        trait slot QName(PackageInternalNs("\"!i"),"bragObject")
+                           slotid 4
+                           type QName(PackageNamespace(""),"Object")
+                        end ; trait
+                        
+                        code
+                           pushfalse
+                           pushtrue
+                           swap
+                           jump ofs0015
+                           increment_i
+                           pop
+                           declocal_i 5
+                           increment
+                           kill 3
+                           getlocal 5
+                           pushtrue
+                           kill 5
+                           declocal_i 3
+                  ofs0015:
+                           setlocal 5
+                           setlocal 6
+                           debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\data;InitDataLoader.as"
+                           getlocal 5
+                           iftrue ofs0023
+                           debugline 44
+                  ofs0023:
+                           getlocal0
+                           pushscope
+                           newactivation
+                           dup
+                           setlocal2
+                           pushscope
+                           getlocal 5
+                           dup
+                           iffalse ofs0033
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs0033:
+                           iftrue ofs014b
+                           jump ofs0146
+                  ofs003b:
+                           label
+                           debugline 124
+                           getlocal 5
+                           dup
+                           iffalse ofs0048
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs0048:
+                           iftrue ofs0084
+                           getlocal 6
+                           dup
+                           iftrue ofs0056
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0056:
+                           iffalse ofs00f7
+                           pushtrue
+                           iftrue ofs014f
+                  ofs005f:
+                           label
+                           getscopeobject 1
+                           getlocal 6
+                           dup
+                           iftrue ofs006c
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs006c:
+                           iffalse ofs00b2
+                           findpropstrict QName(PackageNamespace(""),"String")
+                           findpropstrict QName(PrivateNamespace("8!"),"sLoader")
+                           getproperty QName(PrivateNamespace("8!"),"sLoader")
+                           getproperty QName(PackageNamespace(""),"data")
+                           callproperty QName(PackageNamespace(""),"String"), 1
+                           coerce_s
+                           getlocal 6
+                           iffalse ofs0140
+                           setslot 3
+                  ofs0084:
+                           getlocal 6
+                           iffalse ofs0097
+                           getlocal 6
+                           iffalse ofs00d8
+                           jump ofs003b
+                  ofs0094:
+                           label
+                           debugline 46
+                  ofs0097:
+                           getlocal 6
+                           iffalse ofs00df
+                           getlocal 5
+                           dup
+                           iffalse ofs00a7
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs00a7:
+                           iftrue ofs0142
+                           jump ofs005f
+                  ofs00af:
+                           label
+                           getscopeobject 1
+                  ofs00b2:
+                           getlocal 5
+                           dup
+                           iffalse ofs00bc
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs00bc:
+                           iftrue ofs00fe
+                           getlocal 6
+                           iffalse ofs0116
+                           pushfalse
+                           getlocal 5
+                           dup
+                           iffalse ofs00d1
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs00d1:
+                           iftrue ofs00d6
+                           convert_b
+                  ofs00d6:
+                           setslot 2
+                  ofs00d8:
+                           jump ofs0094
+                  ofs00dc:
+                           label
+                           debugline 45
+                  ofs00df:
+                           getlocal 6
+                           dup
+                           iftrue ofs00e9
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs00e9:
+                           iffalse ofs0101
+                           jump ofs00af
+                  ofs00f1:
+                           label
+                           debug 1, "e", 0, 44
+                  ofs00f7:
+                           jump ofs00dc
+                  ofs00fb:
+                           label
+                           getscopeobject 1
+                  ofs00fe:
+                           getlocal1
+                           setslot 1
+                  ofs0101:
+                           getlocal 6
+                           dup
+                           iftrue ofs010b
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs010b:
+                           iffalse ofs0137
+                           jump ofs00f1
+                  ofs0113:
+                           label
+                           getscopeobject 1
+                  ofs0116:
+                           getlocal 6
+                           dup
+                           iftrue ofs0120
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0120:
+                           iffalse ofs013e
+                           pushnull
+                           getlocal 5
+                           dup
+                           iffalse ofs012f
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs012f:
+                           iftrue ofs013f
+                           coerce QName(PackageNamespace(""),"Object")
+                           setslot 4
+                  ofs0137:
+                           jump ofs00fb
+                  ofs013b:
+                           label
+                           getscopeobject 1
+                  ofs013e:
+                           pushnull
+                  ofs013f:
+                           coerce_s
+                  ofs0140:
+                           setslot 3
+                  ofs0142:
+                           jump ofs0113
+                  ofs0146:
+                           debug 1, "onInitDataLoaded$0", 1, 44
+                  ofs014b:
+                           jump ofs013b
+                  ofs014f:
+                           findproperty QName(PrivateNamespace("8!"),"sData")
+                           findpropstrict QName(PackageNamespace(""),"JSON")
+                           getproperty QName(PackageNamespace(""),"JSON")
+                           getscopeobject 1
+                           getslot 3
+                           callproperty QName(PackageNamespace(""),"parse"), 1
+                           setproperty QName(PrivateNamespace("8!"),"sData")
+                           getlocal 5
+                           dup
+                           iffalse ofs0168
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs0168:
+                           iftrue ofs05c5
+                           jump ofs0274
+                  ofs0170:
+                           label
+                           debugline 133
+                           getlocal 5
+                           dup
+                           iffalse ofs017e
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs017e:
+                           iftrue ofs0457
+                           getlocal 6
+                           iffalse ofs01cb
+                           pushtrue
+                           iftrue ofs0288
+                  ofs018d:
+                           label
+                           getscopeobject 1
+                           getlocal 5
+                           iftrue ofs0358
+                           pushtrue
+                           getlocal 5
+                           dup
+                           iffalse ofs01a1
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs01a1:
+                           iftrue ofs01a6
+                           convert_b
+                  ofs01a6:
+                           setslot 2
+                           getlocal 5
+                           iftrue ofs05f9
+                           jump ofs0170
+                  ofs01b2:
+                           label
+                           debugline 131
+                           getlocal 5
+                           iftrue ofs037c
+                           jump ofs018d
+                  ofs01c0:
+                           label
+                           findproperty QName(PrivateNamespace("8!"),"sErrorCode")
+                           findpropstrict QName(PackageNamespace("5="),"8O")
+                           getproperty QName(PackageNamespace("5="),"8O")
+                           getproperty QName(PackageNamespace(""),"[!I")
+                           setproperty QName(PrivateNamespace("8!"),"sErrorCode")
+                  ofs01cb:
+                           jump ofs01b2
+                  ofs01cf:
+                           label
+                           findpropstrict QName(PrivateNamespace("8!"),"sData")
+                           getproperty QName(PrivateNamespace("8!"),"sData")
+                           getproperty Multiname("type",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           pushstring "OAuthException"
+                           ifne ofs018d
+                           getlocal 6
+                           iffalse ofs05e2
+                           debugline 129
+                           getlocal 6
+                           dup
+                           iftrue ofs01ef
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs01ef:
+                           iffalse ofs05f9
+                           jump ofs01c0
+                  ofs01f7:
+                           label
+                           debugline 127
+                           getlocal 6
+                           dup
+                           iftrue ofs0204
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs0204:
+                           iffalse ofs04c7
+                           jump ofs01cf
+                  ofs020c:
+                           label
+                           findproperty QName(PrivateNamespace("8!"),"sError")
+                           pushstring "Server error of type \'"
+                           getlocal 6
+                           iffalse ofs023c
+                           findpropstrict QName(PrivateNamespace("8!"),"sData")
+                           getproperty QName(PrivateNamespace("8!"),"sData")
+                           getproperty Multiname("type",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           add
+                           getlocal 6
+                           dup
+                           iftrue ofs0228
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs0228:
+                           iffalse ofs023c
+                           pushstring "\':\n"
+                           add
+                           getlocal 6
+                           iffalse ofs023c
+                           findpropstrict QName(PrivateNamespace("8!"),"sData")
+                           getproperty QName(PrivateNamespace("8!"),"sData")
+                           getproperty Multiname("message",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           add
+                  ofs023c:
+                           setproperty QName(PrivateNamespace("8!"),"sError")
+                           getlocal 6
+                           iffalse ofs039e
+                           jump ofs01f7
+                  ofs0248:
+                           label
+                           findpropstrict QName(PrivateNamespace("8!"),"sData")
+                           getproperty QName(PrivateNamespace("8!"),"sData")
+                           getproperty Multiname("error",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           convert_b
+                           getlocal 5
+                           iftrue ofs0361
+                           iffalse ofs0288
+                           getlocal 6
+                           iffalse ofs05f2
+                           debugline 126
+                           getlocal 6
+                           dup
+                           iftrue ofs026c
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs026c:
+                           iffalse ofs03e9
+                           jump ofs020c
+                  ofs0274:
+                           debugline 125
+                           getlocal 6
+                           dup
+                           iftrue ofs0280
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs0280:
+                           iffalse ofs03e9
+                           jump ofs0248
+                  ofs0288:
+                           jump ofs0356
+                  ofs028c:
+                           getlocal0
+                           pushscope
+                           getlocal2
+                           pushscope
+                           newcatch 0
+                           dup
+                           setlocal3
+                           dup
+                           pushscope
+                           swap
+                           setslot 1
+                           getlocal 5
+                           iftrue ofs02f9
+                           jump ofs033b
+                  ofs02a3:
+                           label
+                           getscopeobject 1
+                           pushtrue
+                           getlocal 6
+                           dup
+                           iftrue ofs02b1
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs02b1:
+                           iffalse ofs02b6
+                           convert_b
+                  ofs02b6:
+                           setslot 2
+                           getlocal 6
+                           dup
+                           iftrue ofs02d5
+                           pop
+                           getlocal2
+                           jump ofs02d4
+                           multiply_i
+                           kill 2
+                           inclocal 2
+                           declocal 4
+                           setlocal2
+                           declocal_i 2
+                           setlocal 5
+                           setlocal 4
+                           decrement
+                  ofs02d4:
+                           convert_b
+                  ofs02d5:
+                           iffalse ofs0302
+                           getlocal 6
+                           iffalse ofs0311
+                           getlocal 5
+                           dup
+                           iffalse ofs02e9
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs02e9:
+                           iftrue ofs0319
+                           getlocal 6
+                           iffalse ofs0337
+                           getlocal 6
+                           iffalse ofs033e
+                  ofs02f9:
+                           pushtrue
+                           iftrue ofs0342
+                  ofs02fe:
+                           label
+                           debugline 137
+                  ofs0302:
+                           jump ofs02a3
+                  ofs0306:
+                           label
+                           findproperty QName(PrivateNamespace("8!"),"sErrorCode")
+                           findpropstrict QName(PackageNamespace("5="),"8O")
+                           getproperty QName(PackageNamespace("5="),"8O")
+                           getproperty QName(PackageNamespace(""),"?6")
+                           setproperty QName(PrivateNamespace("8!"),"sErrorCode")
+                  ofs0311:
+                           jump ofs02fe
+                  ofs0315:
+                           label
+                           debugline 136
+                  ofs0319:
+                           jump ofs0306
+                  ofs031d:
+                           label
+                           findproperty QName(PrivateNamespace("8!"),"sError")
+                           pushstring "Invalid server response. Expected a json string but got this:\n"
+                           getlocal 6
+                           dup
+                           iftrue ofs032c
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs032c:
+                           iffalse ofs0335
+                           getscopeobject 1
+                           getslot 3
+                           add
+                  ofs0335:
+                           setproperty QName(PrivateNamespace("8!"),"sError")
+                  ofs0337:
+                           jump ofs0315
+                  ofs033b:
+                           debugline 135
+                  ofs033e:
+                           jump ofs031d
+                  ofs0342:
+                           popscope
+                           kill 3
+                           getlocal 5
+                           dup
+                           iffalse ofs034f
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs034f:
+                           iftrue ofs0356
+                           debugline 141
+                  ofs0356:
+                           getscopeobject 1
+                  ofs0358:
+                           getslot 2
+                           getlocal 5
+                           iftrue ofs0361
+                           not
+                  ofs0361:
+                           iffalse ofs05e7
+                           getlocal 5
+                           iftrue ofs0457
+                           debugline 143
+                           getlocal 6
+                           dup
+                           iftrue ofs0378
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs0378:
+                           iffalse ofs05f2
+                  ofs037c:
+                           jump ofs0518
+                  ofs0380:
+                           label
+                           debugline 158
+                           getlocal 6
+                           dup
+                           iftrue ofs038e
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs038e:
+                           iffalse ofs05f9
+                           getlocal 5
+                           iftrue ofs03b2
+                           getlocal 5
+                           iftrue ofs050c
+                  ofs039e:
+                           pushtrue
+                           iftrue ofs052a
+                  ofs03a3:
+                           label
+                           findpropstrict QName(PackageNamespace(""),"AngryBirdsUltraBook")
+                           getproperty QName(PackageNamespace(""),"AngryBirdsUltraBook")
+                           findpropstrict QName(PrivateNamespace("8!"),"sData")
+                           getproperty QName(PrivateNamespace("8!"),"sData")
+                           getproperty Multiname("friends",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           callproperty QName(PackageNamespace(""),"=["), 1
+                           pop
+                  ofs03b2:
+                           getlocal 6
+                           iffalse ofs03c0
+                           jump ofs0380
+                  ofs03bc:
+                           label
+                           debugline 155
+                  ofs03c0:
+                           getlocal 5
+                           iftrue ofs03e9
+                           getlocal 5
+                           iftrue ofs03fe
+                           getlocal 6
+                           dup
+                           iftrue ofs03d6
+                           pop
+                           getlocal0
+                           convert_b
+                  ofs03d6:
+                           iffalse ofs0457
+                           jump ofs03a3
+                  ofs03de:
+                           label
+                           findpropstrict QName(PackageNamespace("&\""),"ExternalInterfaceHandler")
+                           getproperty QName(PackageNamespace("&\""),"ExternalInterfaceHandler")
+                           pushstring "doAdParlorConversion"
+                           callproperty QName(PackageNamespace(""),"`F"), 1
+                           pop
+                  ofs03e9:
+                           jump ofs03bc
+                           debugline 152
+                  ofs03f0:
+                           label
+                           findpropstrict QName(PrivateNamespace("8!"),"sData")
+                           getproperty QName(PrivateNamespace("8!"),"sData")
+                           getproperty Multiname("user",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           getproperty Multiname("ap",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           pushtrue
+                           ifne ofs03a3
+                  ofs03fe:
+                           getlocal 6
+                           iffalse ofs0496
+                           debugline 153
+                           getlocal 5
+                           iftrue ofs05f9
+                           getlocal 6
+                           iffalse ofs04c7
+                           jump ofs03de
+                  ofs0417:
+                           label
+                           findpropstrict QName(PackageNamespace(""),"Error")
+                           pushstring "User name cannot be null"
+                           constructprop QName(PackageNamespace(""),"Error"), 1
+                           throw
+                           getlocal 5
+                           iftrue ofs0426
+                  ofs0426:
+                           jump ofs042a
+                  ofs042a:
+                           label
+                           findpropstrict QName(PrivateNamespace("8!"),"sData")
+                           getproperty QName(PrivateNamespace("8!"),"sData")
+                           getproperty Multiname("user",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           getproperty Multiname("name",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           pushnull
+                           ifne ofs03f0
+                           getlocal 6
+                           dup
+                           iftrue ofs0442
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs0442:
+                           iffalse ofs05c5
+                           getlocal 5
+                           dup
+                           iffalse ofs0450
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0450:
+                           iftrue ofs0514
+                           debugline 150
+                  ofs0457:
+                           jump ofs0417
+                  ofs045b:
+                           label
+                           debugline 149
+                           getlocal 6
+                           dup
+                           iftrue ofs0469
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0469:
+                           iffalse ofs05c5
+                           getlocal 6
+                           iffalse ofs04b9
+                           jump ofs042a
+                  ofs0477:
+                           label
+                           findpropstrict QName(PackageNamespace("\"!i"),"5>")
+                           getproperty QName(PackageNamespace("\"!i"),"5>")
+                           getproperty QName(PackageNamespace(""),"7!E")
+                           getlocal 6
+                           dup
+                           iftrue ofs0488
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs0488:
+                           iffalse ofs04af
+                           findpropstrict QName(PrivateNamespace("8!"),"sData")
+                           getproperty QName(PrivateNamespace("8!"),"sData")
+                           getproperty Multiname("deauthorizedUserIds",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           callproperty QName(PackageNamespace(""),"+X"), 1
+                           pop
+                  ofs0496:
+                           getlocal 6
+                           iffalse ofs04a4
+                           jump ofs045b
+                  ofs04a0:
+                           label
+                           debugline 146
+                  ofs04a4:
+                           jump ofs0477
+                  ofs04a8:
+                           label
+                           findpropstrict QName(PackageNamespace("\"!i"),"5>")
+                           getproperty QName(PackageNamespace("\"!i"),"5>")
+                           getproperty QName(PackageNamespace(""),"7!E")
+                  ofs04af:
+                           findpropstrict QName(PrivateNamespace("8!"),"sData")
+                           getproperty QName(PrivateNamespace("8!"),"sData")
+                           getproperty Multiname("excludedUserIds",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           callproperty QName(PackageNamespace(""),"[F"), 1
+                           pop
+                  ofs04b9:
+                           getlocal 5
+                           iftrue ofs0526
+                           jump ofs04a0
+                  ofs04c3:
+                           label
+                           debugline 145
+                  ofs04c7:
+                           jump ofs04a8
+                  ofs04cb:
+                           label
+                           findpropstrict QName(PackageNamespace(""),"AngryBirdsFP11")
+                           getproperty QName(PackageNamespace(""),"AngryBirdsFP11")
+                           getproperty QName(PackageNamespace(""),"sUserProgress")
+                           findpropstrict QName(PackageNamespace(" 3"),"FacebookUserProgress")
+                           getproperty QName(PackageNamespace(" 3"),"FacebookUserProgress")
+                           astypelate
+                           findpropstrict QName(PrivateNamespace("8!"),"sData")
+                           getproperty QName(PrivateNamespace("8!"),"sData")
+                           getproperty Multiname("state",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           findpropstrict QName(PackageNamespace(""),"Array")
+                           getproperty QName(PackageNamespace(""),"Array")
+                           astypelate
+                           findpropstrict QName(PrivateNamespace("8!"),"sData")
+                           getproperty QName(PrivateNamespace("8!"),"sData")
+                           getproperty Multiname("user",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           getproperty Multiname("name",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           findpropstrict QName(PrivateNamespace("8!"),"sData")
+                           getproperty QName(PrivateNamespace("8!"),"sData")
+                           getproperty Multiname("user",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           getproperty Multiname("avatar",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           findpropstrict QName(PrivateNamespace("8!"),"sData")
+                           getproperty QName(PrivateNamespace("8!"),"sData")
+                           getproperty Multiname("user",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           getproperty Multiname("userId",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           findpropstrict QName(PrivateNamespace("8!"),"sData")
+                           getproperty QName(PrivateNamespace("8!"),"sData")
+                           getproperty Multiname("eggs",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           findpropstrict QName(PrivateNamespace("8!"),"sData")
+                           getproperty QName(PrivateNamespace("8!"),"sData")
+                           getproperty Multiname("user",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           getproperty Multiname("tutorials",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           callproperty QName(PackageNamespace(""),"?!7"), 6
+                           pop
+                  ofs050c:
+                           jump ofs04c3
+                  ofs0510:
+                           label
+                           debugline 144
+                  ofs0514:
+                           jump ofs04cb
+                  ofs0518:
+                           findpropstrict QName(PackageNamespace("&e"),"FriendsDataCache")
+                           getproperty QName(PackageNamespace("&e"),"FriendsDataCache")
+                           findpropstrict QName(PrivateNamespace("8!"),"sData")
+                           getproperty QName(PrivateNamespace("8!"),"sData")
+                           getproperty Multiname("friends",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           callproperty QName(PackageNamespace(""),"\"!9"), 1
+                           pop
+                  ofs0526:
+                           jump ofs0510
+                  ofs052a:
+                           pushbyte 0
+                           setlocal3
+                           getlocal 6
+                           dup
+                           iftrue ofs0537
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs0537:
+                           iffalse ofs05b5
+                           findpropstrict QName(PrivateNamespace("8!"),"sData")
+                           getproperty QName(PrivateNamespace("8!"),"sData")
+                           getproperty Multiname("requests",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           getproperty Multiname("brags",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           coerce_a
+                           setlocal 4
+                           getlocal 5
+                           iftrue ofs0560
+                           jump ofs0588
+                  ofs0550:
+                           label
+                           debugline 158
+                           getlocal 5
+                           iftrue ofs0576
+                           getlocal 5
+                           iftrue ofs0597
+                  ofs0560:
+                           pushtrue
+                           iftrue ofs059b
+                  ofs0565:
+                           label
+                           findpropstrict QName(PackageNamespace("&\""),"ExternalInterfaceHandler")
+                           getproperty QName(PackageNamespace("&\""),"ExternalInterfaceHandler")
+                           pushstring "flashDeleteRequest"
+                           getscopeobject 1
+                           getslot 4
+                           getproperty Multiname("r",[PrivateNamespace("8!"),PackageNamespace(""),StaticProtectedNs("8!"),Namespace("http://adobe.com/AS3/2006/builtin"),PrivateNamespace("InitDataLoader.as$381"),PackageNamespace("\"!i"),PackageInternalNs("\"!i"),ProtectedNamespace("8!")])
+                           callproperty QName(PackageNamespace(""),"`F"), 2
+                           pop
+                  ofs0576:
+                           getlocal 5
+                           iftrue ofs0584
+                           jump ofs0550
+                  ofs0580:
+                           label
+                           debugline 159
+                  ofs0584:
+                           jump ofs0565
+                  ofs0588:
+                           jump ofs059b
+                  ofs058c:
+                           label
+                           getscopeobject 1
+                           getlocal 4
+                           getlocal3
+                           nextvalue
+                           coerce QName(PackageNamespace(""),"Object")
+                           setslot 4
+                  ofs0597:
+                           jump ofs0580
+                  ofs059b:
+                           hasnext2 4, 3
+                           iftrue ofs058c
+                           kill 4
+                           jump ofs05b5
+                           not
+                           inclocal_i 4
+                           getlocal0
+                           dup
+                           setlocal3
+                           kill 2
+                           kill 4
+                           coerce_a
+                           kill 5
+                  ofs05b5:
+                           kill 3
+                           getlocal 6
+                           dup
+                           iftrue ofs05c1
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs05c1:
+                           iffalse ofs05e2
+                  ofs05c5:
+                           jump ofs05f6
+                  ofs05c9:
+                           label
+                           returnvoid
+                           pushtrue
+                           iftrue ofs05d0
+                  ofs05d0:
+                           label
+                           debugline 164
+                           getlocal 5
+                           dup
+                           iffalse ofs05de
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs05de:
+                           iftrue ofs05ec
+                  ofs05e2:
+                           jump ofs05c9
+                  ofs05e6:
+                           label
+                  ofs05e7:
+                           findproperty QName(PrivateNamespace("8!"),"sLoader")
+                           pushnull
+                           setproperty QName(PrivateNamespace("8!"),"sLoader")
+                  ofs05ec:
+                           getlocal 6
+                           iffalse ofs05f9
+                  ofs05f2:
+                           jump ofs05d0
+                  ofs05f6:
+                           debugline 163
+                  ofs05f9:
+                           jump ofs05e6
+                           returnvoid
+                        end ; code
+                        try from ofs014f to ofs0288 target ofs028c type QName(PackageNamespace(""),"Error") name QName(PackageNamespace(""),"e") end
+                     end ; body
+                  end ; method
+               }
+               
+               public static function get §#]§() : Boolean
+               {
+                  trait getter QName(PackageNamespace(""),"#]")
+                     flag FINAL
+                     flag METADATA
+                     metadata"__go_to_definition_help"
+                        item "pos" "6898"
+                     end ; metadata
+                     dispid 6
+                     method
+                        name "com.angrybirds.data:InitDataLoader/isLoading/get"
+                        returns QName(PackageNamespace(""),"Boolean")
+                        
+                        body
+                           maxstack 4
+                           localcount 3
+                           initscopedepth 3
+                           maxscopedepth 4
+                           
+                           code
+                              pushfalse
+                              pushtrue
+                              setlocal1
+                              jump ofs001d
+                              bitand
+                              popscope
+                              negate
+                              subtract
+                              greaterequals
+                              getglobalscope
+                              multiply_i
+                              convert_b
+                              greaterequals
+                              jump ofs0014
+                     ofs0014:
+                              convert_s
+                              negate
+                              typeof
+                              increment
+                              getglobalscope
+                              getlocal0
+                              increment_i
+                              decrement_i
+                              dup
+                     ofs001d:
+                              setlocal2
+                              debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\data;InitDataLoader.as"
+                              getlocal1
+                              iffalse ofs0028
+                              debugline 166
+                     ofs0028:
+                              getlocal0
+                              pushscope
+                              getlocal2
+                              iftrue ofs0032
+                              debugline 167
+                     ofs0032:
+                              findpropstrict QName(PrivateNamespace("8!"),"sLoader")
+                              getproperty QName(PrivateNamespace("8!"),"sLoader")
+                              pushnull
+                              equals
+                              getlocal1
+                              dup
+                              iftrue ofs0041
+                              pop
+                              getlocal0
+                              convert_b
+                     ofs0041:
+                              iffalse ofs0046
+                              not
+                     ofs0046:
+                              returnvalue
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  private static function get data() : Object
+                  {
+                     trait getter QName(PrivateNamespace("8!"),"data")
+                        flag FINAL
+                        flag METADATA
+                        metadata"__go_to_definition_help"
+                           item "pos" "6988"
+                        end ; metadata
+                        dispid 7
+                        method
+                           name "com.angrybirds.data:InitDataLoader/private:data/get"
+                           returns QName(PackageNamespace(""),"Object")
+                           
+                           body
+                              maxstack 3
+                              localcount 3
+                              initscopedepth 3
+                              maxscopedepth 4
+                              
+                              code
+                                 pushfalse
+                                 pushtrue
+                                 swap
+                                 jump ofs0010
+                                 not
+                                 increment
+                                 strictequals
+                                 bitand
+                                 convert_s
+                                 lshift
+                                 nextvalue
+                                 astypelate
+                                 add_i
+                        ofs0010:
+                                 setlocal1
+                                 setlocal2
+                                 debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\data;InitDataLoader.as"
+                                 getlocal2
+                                 iffalse ofs001c
+                                 debugline 170
+                        ofs001c:
+                                 getlocal0
+                                 pushscope
+                                 getlocal1
+                                 dup
+                                 iffalse ofs0027
+                                 pop
+                                 getlocal2
+                                 convert_b
+                        ofs0027:
+                                 iftrue ofs002e
+                                 debugline 171
+                        ofs002e:
+                                 findpropstrict QName(PrivateNamespace("8!"),"sData")
+                                 getproperty QName(PrivateNamespace("8!"),"sData")
+                                 returnvalue
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     public static function §=J§() : String
+                     {
+                        trait method QName(PackageNamespace(""),"=J")
+                           flag FINAL
+                           flag METADATA
+                           metadata"__go_to_definition_help"
+                              item "pos" "7057"
+                           end ; metadata
+                           dispid 8
+                           method
+                              name "com.angrybirds.data:InitDataLoader/getErrorMessage"
+                              returns QName(PackageNamespace(""),"String")
+                              
+                              body
+                                 maxstack 3
+                                 localcount 3
+                                 initscopedepth 3
+                                 maxscopedepth 4
+                                 
+                                 code
+                                    pushfalse
+                                    pushtrue
+                                    setlocal1
+                                    jump ofs0010
+                                    increment_i
+                                    convert_s
+                                    convert_i
+                                    strictequals
+                                    convert_o
+                                    decrement_i
+                                    multiply_i
+                                    coerce_s
+                                    astypelate
+                           ofs0010:
+                                    setlocal2
+                                    debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\data;InitDataLoader.as"
+                                    getlocal2
+                                    dup
+                                    iffalse ofs001c
+                                    pop
+                                    getlocal2
+                                    convert_b
+                           ofs001c:
+                                    iftrue ofs0023
+                                    debugline 174
+                           ofs0023:
+                                    getlocal0
+                                    pushscope
+                                    getlocal2
+                                    iftrue ofs002d
+                                    debugline 175
+                           ofs002d:
+                                    findpropstrict QName(PrivateNamespace("8!"),"sError")
+                                    getproperty QName(PrivateNamespace("8!"),"sError")
+                                    returnvalue
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                        }
+                        
+                        public static function §2!§() : int
+                        {
+                           trait method QName(PackageNamespace(""),"2!")
+                              flag FINAL
+                              flag METADATA
+                              metadata"__go_to_definition_help"
+                                 item "pos" "7138"
+                              end ; metadata
+                              dispid 9
+                              method
+                                 name "com.angrybirds.data:InitDataLoader/getErrorCode"
+                                 returns QName(PackageNamespace(""),"int")
+                                 
+                                 body
+                                    maxstack 3
+                                    localcount 3
+                                    initscopedepth 3
+                                    maxscopedepth 4
+                                    
+                                    code
+                                       pushfalse
+                                       pushtrue
+                                       setlocal1
+                                       jump ofs0010
+                                       istypelate
+                                       decrement
+                                       istypelate
+                                       pop
+                                       add
+                                       modulo
+                                       negate_i
+                                       coerce_a
+                                       pushnan
+                              ofs0010:
+                                       setlocal2
+                                       debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\data;InitDataLoader.as"
+                                       getlocal1
+                                       dup
+                                       iftrue ofs001c
+                                       pop
+                                       getlocal1
+                                       convert_b
+                              ofs001c:
+                                       iffalse ofs0023
+                                       debugline 178
+                              ofs0023:
+                                       getlocal0
+                                       pushscope
+                                       getlocal2
+                                       iftrue ofs002d
+                                       debugline 180
+                              ofs002d:
+                                       findpropstrict QName(PrivateNamespace("8!"),"sErrorCode")
+                                       getproperty QName(PrivateNamespace("8!"),"sErrorCode")
+                                       returnvalue
+                                       returnvoid
+                                    end ; code
+                                 end ; body
+                              end ; method
+                           }
+                        }
+                     }

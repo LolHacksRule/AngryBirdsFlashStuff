@@ -1,0 +1,975 @@
+package mx.utils
+{
+   import flash.utils.ByteArray;
+   
+   public class Base64Encoder
+   {
+      
+      public static const CHARSET_UTF_8:String = "UTF-8";
+      
+      public static var newLine:int = 10;
+      
+      public static const MAX_BUFFER_SIZE:uint = 32767;
+      
+      private static const ESCAPE_CHAR_CODE:Number = 61;
+      
+      private static const ALPHABET_CHAR_CODES:Array;
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 65
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  debug 1, "CHARSET_UTF_8", 0, 41
+                  findproperty QName(PackageNamespace(""),"CHARSET_UTF_8")
+                  pushstring "UTF-8"
+                  initproperty QName(PackageNamespace(""),"CHARSET_UTF_8")
+                  debug 1, "newLine", 1, 54
+                  findproperty QName(PackageNamespace(""),"newLine")
+                  pushbyte 10
+                  setproperty QName(PackageNamespace(""),"newLine")
+                  debug 1, "MAX_BUFFER_SIZE", 2, 349
+                  findproperty QName(PackageNamespace(""),"MAX_BUFFER_SIZE")
+                  pushshort 32767
+                  initproperty QName(PackageNamespace(""),"MAX_BUFFER_SIZE")
+                  debug 1, "ESCAPE_CHAR_CODE", 3, 351
+                  findproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"ESCAPE_CHAR_CODE")
+                  pushbyte 61
+                  initproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"ESCAPE_CHAR_CODE")
+                  debug 1, "ALPHABET_CHAR_CODES", 4, 363
+                  findproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"ALPHABET_CHAR_CODES")
+                  pushbyte 65
+                  pushbyte 66
+                  pushbyte 67
+                  pushbyte 68
+                  pushbyte 69
+                  pushbyte 70
+                  pushbyte 71
+                  pushbyte 72
+                  pushbyte 73
+                  pushbyte 74
+                  pushbyte 75
+                  pushbyte 76
+                  pushbyte 77
+                  pushbyte 78
+                  pushbyte 79
+                  pushbyte 80
+                  pushbyte 81
+                  pushbyte 82
+                  pushbyte 83
+                  pushbyte 84
+                  pushbyte 85
+                  pushbyte 86
+                  pushbyte 87
+                  pushbyte 88
+                  pushbyte 89
+                  pushbyte 90
+                  pushbyte 97
+                  pushbyte 98
+                  pushbyte 99
+                  pushbyte 100
+                  pushbyte 101
+                  pushbyte 102
+                  pushbyte 103
+                  pushbyte 104
+                  pushbyte 105
+                  pushbyte 106
+                  pushbyte 107
+                  pushbyte 108
+                  pushbyte 109
+                  pushbyte 110
+                  pushbyte 111
+                  pushbyte 112
+                  pushbyte 113
+                  pushbyte 114
+                  pushbyte 115
+                  pushbyte 116
+                  pushbyte 117
+                  pushbyte 118
+                  pushbyte 119
+                  pushbyte 120
+                  pushbyte 121
+                  pushbyte 122
+                  pushbyte 48
+                  pushbyte 49
+                  pushbyte 50
+                  pushbyte 51
+                  pushbyte 52
+                  pushbyte 53
+                  pushbyte 54
+                  pushbyte 55
+                  pushbyte 56
+                  pushbyte 57
+                  pushbyte 43
+                  pushbyte 47
+                  newarray 64
+                  initproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"ALPHABET_CHAR_CODES")
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var insertNewLines:Boolean = true;
+      
+      private var _buffers:Array;
+      
+      private var _count:uint;
+      
+      private var _line:uint;
+      
+      private var _work:Array;
+      
+      public function Base64Encoder()
+      {
+         method
+            name "mx.utils:Base64Encoder/Base64Encoder"
+            returns null
+            
+            body
+               maxstack 4
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  debugfile "E:\\dev\\4.5.1\\frameworks\\projects\\framework\\src;mx\\utils;Base64Encoder.as"
+                  debugline 70
+                  getlocal0
+                  pushscope
+                  debugline 340
+                  getlocal0
+                  pushbyte 0
+                  pushbyte 0
+                  pushbyte 0
+                  newarray 3
+                  initproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                  debugline 72
+                  getlocal0
+                  constructsuper 0
+                  debugline 73
+                  getlocal0
+                  callproperty QName(PackageNamespace(""),"reset"), 0
+                  pop
+                  debugline 74
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function drain() : String
+      {
+         trait method QName(PackageNamespace(""),"drain")
+            flag METADATA
+            metadata"__go_to_definition_help"
+               item "pos" "2983"
+            end ; metadata
+            dispid 0
+            method
+               name "mx.utils:Base64Encoder/drain"
+               returns QName(PackageNamespace(""),"String")
+               
+               body
+                  maxstack 4
+                  localcount 4
+                  initscopedepth 4
+                  maxscopedepth 5
+                  
+                  code
+                     debugfile "E:\\dev\\4.5.1\\frameworks\\projects\\framework\\src;mx\\utils;Base64Encoder.as"
+                     debugline 105
+                     getlocal0
+                     pushscope
+                     pushnull
+                     coerce QName(PackageNamespace(""),"Array")
+                     setlocal3
+                     debug 1, "result", 0, 107
+                     debug 1, "i", 1, 109
+                     pushstring ""
+                     debugline 107
+                     coerce_s
+                     setlocal1
+                     debugline 109
+                     pushbyte 0
+                     convert_u
+                     setlocal2
+                     jump ofs0051
+            ofs0024:
+                     label
+                     debug 1, "buffer", 2, 111
+                     debugline 111
+                     getlocal0
+                     getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_buffers")
+                     getlocal2
+                     getproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                     findpropstrict QName(PackageNamespace(""),"Array")
+                     getproperty QName(PackageNamespace(""),"Array")
+                     astypelate
+                     coerce QName(PackageNamespace(""),"Array")
+                     setlocal3
+                     debugline 112
+                     getlocal1
+                     findpropstrict QName(PackageNamespace(""),"String")
+                     getproperty QName(PackageNamespace(""),"String")
+                     getproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"fromCharCode")
+                     pushnull
+                     getlocal3
+                     callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"apply"), 2
+                     add
+                     coerce_s
+                     setlocal1
+                     debugline 109
+                     getlocal2
+                     increment
+                     convert_u
+                     setlocal2
+            ofs0051:
+                     getlocal2
+                     getlocal0
+                     getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_buffers")
+                     getproperty QName(PackageNamespace(""),"length")
+                     iflt ofs0024
+                     debugline 115
+                     getlocal0
+                     newarray 0
+                     initproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_buffers")
+                     debugline 116
+                     getlocal0
+                     getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_buffers")
+                     newarray 0
+                     callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                     pop
+                     debugline 118
+                     getlocal1
+                     returnvalue
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public function encode(data:String, offset:uint = 0, length:uint = 0) : void
+         {
+            trait method QName(PackageNamespace(""),"encode")
+               flag METADATA
+               metadata"__go_to_definition_help"
+                  item "pos" "3977"
+               end ; metadata
+               dispid 0
+               method
+                  name "mx.utils:Base64Encoder/encode"
+                  flag HAS_OPTIONAL
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"uint")
+                  param QName(PackageNamespace(""),"uint")
+                  optional Integer(0)
+                  optional Integer(0)
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 4
+                     localcount 8
+                     initscopedepth 4
+                     maxscopedepth 5
+                     
+                     code
+                        debugfile "E:\\dev\\4.5.1\\frameworks\\projects\\framework\\src;mx\\utils;Base64Encoder.as"
+                        debugline 136
+                        getlocal0
+                        pushscope
+                        debug 1, "data", 0, 136
+                        debug 1, "offset", 1, 136
+                        debug 1, "length", 2, 136
+                        debug 1, "currentIndex", 3, 141
+                        debug 1, "endIndex", 4, 143
+                        debugline 138
+                        getlocal3
+                        pushbyte 0
+                        ifne ofs003a
+                        debugline 139
+                        getlocal1
+                        getproperty QName(PackageNamespace(""),"length")
+                        convert_u
+                        setlocal3
+                        debugline 141
+               ofs003a:
+                        getlocal2
+                        convert_u
+                        setlocal 4
+                        debugline 143
+                        getlocal2
+                        getlocal3
+                        add
+                        convert_u
+                        setlocal 5
+                        debugline 144
+                        getlocal 5
+                        getlocal1
+                        getproperty QName(PackageNamespace(""),"length")
+                        ifngt ofs005c
+                        debugline 145
+                        getlocal1
+                        getproperty QName(PackageNamespace(""),"length")
+                        convert_u
+                        setlocal 5
+               ofs005c:
+                        jump ofs00e9
+               ofs0060:
+                        label
+                        debugline 149
+                        getlocal0
+                        getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                        getlocal0
+                        getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_count")
+                        getlocal1
+                        getlocal 4
+                        callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"charCodeAt"), 1
+                        setproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                        debugline 150
+                        getlocal0
+                        dup
+                        setlocal 6
+                        getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_count")
+                        increment
+                        setlocal 7
+                        getlocal 6
+                        getlocal 7
+                        setproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_count")
+                        kill 7
+                        kill 6
+                        debugline 152
+                        getlocal0
+                        getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_count")
+                        getlocal0
+                        getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                        getproperty QName(PackageNamespace(""),"length")
+                        equals
+                        convert_b
+                        dup
+                        convert_b
+                        iftrue ofs00a5
+                        pop
+                        getlocal 5
+                        getlocal 4
+                        subtract
+                        pushbyte 1
+                        equals
+                        convert_b
+               ofs00a5:
+                        iffalse ofs00e0
+                        debugline 154
+                        getlocal0
+                        callproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"encodeBlock"), 0
+                        pop
+                        debugline 155
+                        getlocal0
+                        pushbyte 0
+                        initproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_count")
+                        debugline 156
+                        getlocal0
+                        getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                        pushbyte 0
+                        pushbyte 0
+                        setproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                        debugline 157
+                        getlocal0
+                        getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                        pushbyte 1
+                        pushbyte 0
+                        setproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                        debugline 158
+                        getlocal0
+                        getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                        pushbyte 2
+                        pushbyte 0
+                        setproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                        debugline 160
+               ofs00e0:
+                        getlocal 4
+                        increment
+                        convert_u
+                        setlocal 4
+                        debugline 147
+               ofs00e9:
+                        getlocal 4
+                        getlocal 5
+                        iflt ofs0060
+                        debugline 162
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public function encodeUTFBytes(data:String) : void
+            {
+               trait method QName(PackageNamespace(""),"encodeUTFBytes")
+                  flag METADATA
+                  metadata"__go_to_definition_help"
+                     item "pos" "5279"
+                  end ; metadata
+                  dispid 0
+                  method
+                     name "mx.utils:Base64Encoder/encodeUTFBytes"
+                     param QName(PackageNamespace(""),"String")
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 2
+                        localcount 3
+                        initscopedepth 4
+                        maxscopedepth 5
+                        
+                        code
+                           debugfile "E:\\dev\\4.5.1\\frameworks\\projects\\framework\\src;mx\\utils;Base64Encoder.as"
+                           debugline 178
+                           getlocal0
+                           pushscope
+                           debug 1, "data", 0, 178
+                           debug 1, "bytes", 1, 180
+                           debugline 180
+                           findpropstrict QName(PackageNamespace("flash.utils"),"ByteArray")
+                           constructprop QName(PackageNamespace("flash.utils"),"ByteArray"), 0
+                           coerce QName(PackageNamespace("flash.utils"),"ByteArray")
+                           setlocal2
+                           debugline 181
+                           getlocal2
+                           getlocal1
+                           callproperty QName(PackageNamespace(""),"writeUTFBytes"), 1
+                           pop
+                           debugline 182
+                           getlocal2
+                           pushbyte 0
+                           setproperty QName(PackageNamespace(""),"position")
+                           debugline 183
+                           getlocal0
+                           getlocal2
+                           callproperty QName(PackageNamespace(""),"encodeBytes"), 1
+                           pop
+                           debugline 184
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public function encodeBytes(data:ByteArray, offset:uint = 0, length:uint = 0) : void
+               {
+                  trait method QName(PackageNamespace(""),"encodeBytes")
+                     flag METADATA
+                     metadata"__go_to_definition_help"
+                        item "pos" "6092"
+                     end ; metadata
+                     dispid 0
+                     method
+                        name "mx.utils:Base64Encoder/encodeBytes"
+                        flag HAS_OPTIONAL
+                        param QName(PackageNamespace("flash.utils"),"ByteArray")
+                        param QName(PackageNamespace(""),"uint")
+                        param QName(PackageNamespace(""),"uint")
+                        optional Integer(0)
+                        optional Integer(0)
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 4
+                           localcount 9
+                           initscopedepth 4
+                           maxscopedepth 5
+                           
+                           code
+                              debugfile "E:\\dev\\4.5.1\\frameworks\\projects\\framework\\src;mx\\utils;Base64Encoder.as"
+                              debugline 201
+                              getlocal0
+                              pushscope
+                              debug 1, "data", 0, 201
+                              debug 1, "offset", 1, 201
+                              debug 1, "length", 2, 201
+                              debug 1, "oldPosition", 3, 206
+                              debug 1, "currentIndex", 4, 208
+                              debug 1, "endIndex", 5, 210
+                              debugline 203
+                              getlocal3
+                              pushbyte 0
+                              ifne ofs0040
+                              debugline 204
+                              getlocal1
+                              getproperty QName(PackageNamespace(""),"length")
+                              convert_u
+                              setlocal3
+                              debugline 206
+                     ofs0040:
+                              getlocal1
+                              getproperty QName(PackageNamespace(""),"position")
+                              convert_u
+                              setlocal 4
+                              debugline 207
+                              getlocal1
+                              getlocal2
+                              setproperty QName(PackageNamespace(""),"position")
+                              debugline 208
+                              getlocal2
+                              convert_u
+                              setlocal 5
+                              debugline 210
+                              getlocal2
+                              getlocal3
+                              add
+                              convert_u
+                              setlocal 6
+                              debugline 211
+                              getlocal 6
+                              getlocal1
+                              getproperty QName(PackageNamespace(""),"length")
+                              ifngt ofs0072
+                              debugline 212
+                              getlocal1
+                              getproperty QName(PackageNamespace(""),"length")
+                              convert_u
+                              setlocal 6
+                     ofs0072:
+                              jump ofs00fe
+                     ofs0076:
+                              label
+                              debugline 216
+                              getlocal0
+                              getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                              getlocal0
+                              getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_count")
+                              getlocal1
+                              getlocal 5
+                              getproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                              setproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                              debugline 217
+                              getlocal0
+                              dup
+                              setlocal 7
+                              getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_count")
+                              increment
+                              setlocal 8
+                              getlocal 7
+                              getlocal 8
+                              setproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_count")
+                              kill 8
+                              kill 7
+                              debugline 219
+                              getlocal0
+                              getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_count")
+                              getlocal0
+                              getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                              getproperty QName(PackageNamespace(""),"length")
+                              equals
+                              convert_b
+                              dup
+                              convert_b
+                              iftrue ofs00ba
+                              pop
+                              getlocal 6
+                              getlocal 5
+                              subtract
+                              pushbyte 1
+                              equals
+                              convert_b
+                     ofs00ba:
+                              iffalse ofs00f5
+                              debugline 221
+                              getlocal0
+                              callproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"encodeBlock"), 0
+                              pop
+                              debugline 222
+                              getlocal0
+                              pushbyte 0
+                              initproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_count")
+                              debugline 223
+                              getlocal0
+                              getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                              pushbyte 0
+                              pushbyte 0
+                              setproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                              debugline 224
+                              getlocal0
+                              getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                              pushbyte 1
+                              pushbyte 0
+                              setproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                              debugline 225
+                              getlocal0
+                              getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                              pushbyte 2
+                              pushbyte 0
+                              setproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                              debugline 227
+                     ofs00f5:
+                              getlocal 5
+                              increment
+                              convert_u
+                              setlocal 5
+                              debugline 214
+                     ofs00fe:
+                              getlocal 5
+                              getlocal 6
+                              iflt ofs0076
+                              debugline 230
+                              getlocal1
+                              getlocal 4
+                              setproperty QName(PackageNamespace(""),"position")
+                              debugline 231
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  public function flush() : String
+                  {
+                     trait method QName(PackageNamespace(""),"flush")
+                        flag METADATA
+                        metadata"__go_to_definition_help"
+                           item "pos" "6998"
+                        end ; metadata
+                        dispid 0
+                        method
+                           name "mx.utils:Base64Encoder/flush"
+                           returns QName(PackageNamespace(""),"String")
+                           
+                           body
+                              maxstack 2
+                              localcount 2
+                              initscopedepth 4
+                              maxscopedepth 5
+                              
+                              code
+                                 debugfile "E:\\dev\\4.5.1\\frameworks\\projects\\framework\\src;mx\\utils;Base64Encoder.as"
+                                 debugline 236
+                                 getlocal0
+                                 pushscope
+                                 debug 1, "result", 0, 241
+                                 debugline 238
+                                 getlocal0
+                                 getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_count")
+                                 pushbyte 0
+                                 ifngt ofs0024
+                                 debugline 239
+                                 getlocal0
+                                 callproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"encodeBlock"), 0
+                                 pop
+                                 debugline 241
+                        ofs0024:
+                                 getlocal0
+                                 callproperty QName(PackageNamespace(""),"drain"), 0
+                                 coerce_s
+                                 setlocal1
+                                 debugline 242
+                                 getlocal0
+                                 callproperty QName(PackageNamespace(""),"reset"), 0
+                                 pop
+                                 debugline 243
+                                 getlocal1
+                                 returnvalue
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     public function reset() : void
+                     {
+                        trait method QName(PackageNamespace(""),"reset")
+                           flag METADATA
+                           metadata"__go_to_definition_help"
+                              item "pos" "7407"
+                           end ; metadata
+                           dispid 0
+                           method
+                              name "mx.utils:Base64Encoder/reset"
+                              returns QName(PackageNamespace(""),"void")
+                              
+                              body
+                                 maxstack 3
+                                 localcount 1
+                                 initscopedepth 4
+                                 maxscopedepth 5
+                                 
+                                 code
+                                    debugfile "E:\\dev\\4.5.1\\frameworks\\projects\\framework\\src;mx\\utils;Base64Encoder.as"
+                                    debugline 254
+                                    getlocal0
+                                    pushscope
+                                    debugline 256
+                                    getlocal0
+                                    newarray 0
+                                    initproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_buffers")
+                                    debugline 257
+                                    getlocal0
+                                    getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_buffers")
+                                    newarray 0
+                                    callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                                    pop
+                                    debugline 258
+                                    getlocal0
+                                    pushbyte 0
+                                    initproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_count")
+                                    debugline 259
+                                    getlocal0
+                                    pushbyte 0
+                                    initproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_line")
+                                    debugline 260
+                                    getlocal0
+                                    getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                                    pushbyte 0
+                                    pushbyte 0
+                                    setproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                                    debugline 261
+                                    getlocal0
+                                    getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                                    pushbyte 1
+                                    pushbyte 0
+                                    setproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                                    debugline 262
+                                    getlocal0
+                                    getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                                    pushbyte 2
+                                    pushbyte 0
+                                    setproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                                    debugline 263
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                        }
+                        
+                        public function toString() : String
+                        {
+                           trait method QName(PackageNamespace(""),"toString")
+                              flag METADATA
+                              metadata"__go_to_definition_help"
+                                 item "pos" "7999"
+                              end ; metadata
+                              dispid 0
+                              method
+                                 name "mx.utils:Base64Encoder/toString"
+                                 returns QName(PackageNamespace(""),"String")
+                                 
+                                 body
+                                    maxstack 1
+                                    localcount 1
+                                    initscopedepth 4
+                                    maxscopedepth 5
+                                    
+                                    code
+                                       debugfile "E:\\dev\\4.5.1\\frameworks\\projects\\framework\\src;mx\\utils;Base64Encoder.as"
+                                       debugline 277
+                                       getlocal0
+                                       pushscope
+                                       debugline 279
+                                       getlocal0
+                                       callproperty QName(PackageNamespace(""),"flush"), 0
+                                       returnvalue
+                                    end ; code
+                                 end ; body
+                              end ; method
+                           }
+                           
+                           private function encodeBlock() : void
+                           {
+                              trait method QName(PrivateNamespace("mx.utils:Base64Encoder"),"encodeBlock")
+                                 flag METADATA
+                                 metadata"__go_to_definition_help"
+                                    item "pos" "8322"
+                                 end ; metadata
+                                 dispid 0
+                                 method
+                                    name "mx.utils:Base64Encoder/private:encodeBlock"
+                                    returns QName(PackageNamespace(""),"void")
+                                    
+                                    body
+                                       maxstack 5
+                                       localcount 3
+                                       initscopedepth 4
+                                       maxscopedepth 5
+                                       
+                                       code
+                                          debugfile "E:\\dev\\4.5.1\\frameworks\\projects\\framework\\src;mx\\utils;Base64Encoder.as"
+                                          debugline 291
+                                          getlocal0
+                                          pushscope
+                                          debug 1, "currentBuffer", 0, 293
+                                          debugline 293
+                                          getlocal0
+                                          getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_buffers")
+                                          getlocal0
+                                          getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_buffers")
+                                          getproperty QName(PackageNamespace(""),"length")
+                                          pushbyte 1
+                                          subtract
+                                          getproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                                          findpropstrict QName(PackageNamespace(""),"Array")
+                                          getproperty QName(PackageNamespace(""),"Array")
+                                          astypelate
+                                          coerce QName(PackageNamespace(""),"Array")
+                                          setlocal1
+                                          debugline 294
+                                          getlocal1
+                                          getproperty QName(PackageNamespace(""),"length")
+                                          findpropstrict QName(PackageNamespace(""),"MAX_BUFFER_SIZE")
+                                          getproperty QName(PackageNamespace(""),"MAX_BUFFER_SIZE")
+                                          ifnge ofs0049
+                                          debugline 296
+                                          newarray 0
+                                          coerce QName(PackageNamespace(""),"Array")
+                                          setlocal1
+                                          debugline 297
+                                          getlocal0
+                                          getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_buffers")
+                                          getlocal1
+                                          callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                                          pop
+                                          debugline 300
+                                 ofs0049:
+                                          getlocal1
+                                          findpropstrict QName(PrivateNamespace("mx.utils:Base64Encoder"),"ALPHABET_CHAR_CODES")
+                                          getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"ALPHABET_CHAR_CODES")
+                                          getlocal0
+                                          getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                                          pushbyte 0
+                                          getproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                                          pushshort 255
+                                          bitand
+                                          pushbyte 2
+                                          rshift
+                                          getproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                                          callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                                          pop
+                                          debugline 301
+                                          getlocal1
+                                          findpropstrict QName(PrivateNamespace("mx.utils:Base64Encoder"),"ALPHABET_CHAR_CODES")
+                                          getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"ALPHABET_CHAR_CODES")
+                                          getlocal0
+                                          getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                                          pushbyte 0
+                                          getproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                                          pushbyte 3
+                                          bitand
+                                          pushbyte 4
+                                          lshift
+                                          getlocal0
+                                          getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                                          pushbyte 1
+                                          getproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                                          pushshort 240
+                                          bitand
+                                          pushbyte 4
+                                          rshift
+                                          bitor
+                                          getproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                                          callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                                          pop
+                                          debugline 303
+                                          getlocal0
+                                          getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_count")
+                                          pushbyte 1
+                                          ifngt ofs00c9
+                                          debugline 304
+                                          getlocal1
+                                          findpropstrict QName(PrivateNamespace("mx.utils:Base64Encoder"),"ALPHABET_CHAR_CODES")
+                                          getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"ALPHABET_CHAR_CODES")
+                                          getlocal0
+                                          getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                                          pushbyte 1
+                                          getproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                                          pushbyte 15
+                                          bitand
+                                          pushbyte 2
+                                          lshift
+                                          getlocal0
+                                          getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                                          pushbyte 2
+                                          getproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                                          pushshort 192
+                                          bitand
+                                          pushbyte 6
+                                          rshift
+                                          bitor
+                                          getproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                                          callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                                          pop
+                                          jump ofs00d5
+                                          debugline 306
+                                 ofs00c9:
+                                          getlocal1
+                                          findpropstrict QName(PrivateNamespace("mx.utils:Base64Encoder"),"ESCAPE_CHAR_CODE")
+                                          getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"ESCAPE_CHAR_CODE")
+                                          callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                                          pop
+                                          debugline 308
+                                 ofs00d5:
+                                          getlocal0
+                                          getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_count")
+                                          pushbyte 2
+                                          ifngt ofs00fd
+                                          debugline 309
+                                          getlocal1
+                                          findpropstrict QName(PrivateNamespace("mx.utils:Base64Encoder"),"ALPHABET_CHAR_CODES")
+                                          getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"ALPHABET_CHAR_CODES")
+                                          getlocal0
+                                          getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_work")
+                                          pushbyte 2
+                                          getproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                                          pushbyte 63
+                                          bitand
+                                          getproperty MultinameL([PrivateNamespace("mx.utils:Base64Encoder"),PackageNamespace(""),PrivateNamespace("Base64Encoder.as$220"),PackageNamespace("mx.utils"),PackageInternalNs("mx.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("mx.utils:Base64Encoder"),StaticProtectedNs("mx.utils:Base64Encoder")])
+                                          callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                                          pop
+                                          jump ofs0109
+                                          debugline 311
+                                 ofs00fd:
+                                          getlocal1
+                                          findpropstrict QName(PrivateNamespace("mx.utils:Base64Encoder"),"ESCAPE_CHAR_CODE")
+                                          getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"ESCAPE_CHAR_CODE")
+                                          callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                                          pop
+                                          debugline 313
+                                 ofs0109:
+                                          getlocal0
+                                          getproperty QName(PackageNamespace(""),"insertNewLines")
+                                          iffalse ofs013e
+                                          debugline 315
+                                          getlocal0
+                                          getlocal0
+                                          getproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_line")
+                                          pushbyte 4
+                                          add
+                                          dup
+                                          setlocal2
+                                          initproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_line")
+                                          getlocal2
+                                          kill 2
+                                          pushbyte 76
+                                          ifne ofs013e
+                                          debugline 317
+                                          getlocal1
+                                          findpropstrict QName(PackageNamespace(""),"newLine")
+                                          getproperty QName(PackageNamespace(""),"newLine")
+                                          callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                                          pop
+                                          debugline 318
+                                          getlocal0
+                                          pushbyte 0
+                                          initproperty QName(PrivateNamespace("mx.utils:Base64Encoder"),"_line")
+                                          debugline 321
+                                 ofs013e:
+                                          returnvoid
+                                       end ; code
+                                    end ; body
+                                 end ; method
+                              }
+                           }
+                        }

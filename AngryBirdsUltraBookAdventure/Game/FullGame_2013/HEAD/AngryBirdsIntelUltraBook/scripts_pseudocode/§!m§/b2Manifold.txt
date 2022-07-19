@@ -1,0 +1,735 @@
+package §!m§
+{
+   import §+!g§.*;
+   import §>!8§.*;
+   
+   use namespace b2internal;
+   
+   public class b2Manifold
+   {
+      
+      public static const §@!"§:int = 1;
+      
+      public static const §<!!§:int = 2;
+      
+      public static const §&!>§:int = 4;
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 3
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  dxnslate
+                  lessthan
+                  increment
+                  nextvalue
+                  instanceof
+                  convert_i
+                  urshift
+                  hasnext
+                  pushtrue
+         ofs0010:
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  jump ofs0021
+                  modulo
+                  pushfalse
+                  popscope
+                  lessthan
+                  lessthan
+                  pushnull
+                  convert_i
+                  instanceof
+                  dup
+         ofs0021:
+                  dup
+                  iftrue ofs0029
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0029:
+                  iffalse ofs0054
+                  jump ofs0058
+         ofs0031:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0038
+         ofs0038:
+                  label
+                  findproperty QName(PackageNamespace(""),"&!>")
+                  pushbyte 4
+                  initproperty QName(PackageNamespace(""),"&!>")
+                  getlocal2
+                  iftrue ofs004f
+                  jump ofs0031
+         ofs0048:
+                  label
+                  findproperty QName(PackageNamespace(""),"<!!")
+                  pushbyte 2
+                  initproperty QName(PackageNamespace(""),"<!!")
+         ofs004f:
+                  getlocal1
+                  iffalse ofs005e
+         ofs0054:
+                  jump ofs0038
+         ofs0058:
+                  findproperty QName(PackageNamespace(""),"@!\"")
+                  pushbyte 1
+                  initproperty QName(PackageNamespace(""),"@!\"")
+         ofs005e:
+                  jump ofs0048
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var §&!2§:Vector.<b2ManifoldPoint>;
+      
+      public var §-O§:b2Vec2;
+      
+      public var m_localPoint:b2Vec2;
+      
+      public var §2!5§:int;
+      
+      public var §5<§:int = 0;
+      
+      public function b2Manifold()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 5
+               localcount 4
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal2
+                  jump ofs0014
+                  inclocal 2
+                  getlocal0
+                  coerce_s
+                  urshift
+                  typeof
+                  declocal_i 2
+                  inclocal_i 2
+                  kill 2
+                  getlocal2
+         ofs0014:
+                  setlocal3
+                  getlocal0
+                  pushscope
+                  getlocal3
+                  iftrue ofs0039
+                  getlocal0
+                  constructsuper 0
+                  getlocal2
+                  iffalse ofs0039
+                  getlocal0
+                  findpropstrict Multiname("Vector",[PrivateNamespace(">c"),PackageNamespace(""),PrivateNamespace("b2Manifold.as$310"),PackageNamespace("!m"),PackageInternalNs("!m"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!8"),PackageNamespace("+!g"),Namespace("http://www.box2d.org/ns/b2internal"),ProtectedNamespace(">c"),StaticProtectedNs(">c"),PackageNamespace("__AS3__.vec")])
+                  getproperty Multiname("Vector",[PrivateNamespace(">c"),PackageNamespace(""),PrivateNamespace("b2Manifold.as$310"),PackageNamespace("!m"),PackageInternalNs("!m"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!8"),PackageNamespace("+!g"),Namespace("http://www.box2d.org/ns/b2internal"),ProtectedNamespace(">c"),StaticProtectedNs(">c"),PackageNamespace("__AS3__.vec")])
+                  findpropstrict QName(PackageNamespace("!m"),"b2ManifoldPoint")
+                  getproperty QName(PackageNamespace("!m"),"b2ManifoldPoint")
+                  applytype 1
+                  findpropstrict QName(PackageNamespace("+!g"),"b2Settings")
+                  getproperty QName(PackageNamespace("+!g"),"b2Settings")
+                  getproperty QName(PackageNamespace(""),"b2_maxManifoldPoints")
+                  construct 1
+                  initproperty QName(PackageNamespace(""),"&!2")
+         ofs0039:
+                  pushbyte 0
+                  getlocal3
+                  iftrue ofs0041
+                  convert_i
+         ofs0041:
+                  setlocal1
+                  jump ofs00ef
+         ofs0046:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs004d
+         ofs004d:
+                  label
+                  getlocal0
+                  findpropstrict QName(PackageNamespace(">!8"),"b2Vec2")
+                  constructprop QName(PackageNamespace(">!8"),"b2Vec2"), 0
+                  initproperty QName(PackageNamespace(""),"m_localPoint")
+                  getlocal2
+                  dup
+                  iftrue ofs005f
+                  pop
+                  getlocal2
+                  convert_b
+         ofs005f:
+                  iffalse ofs00d0
+                  jump ofs0073
+                  declocal 2
+                  bitxor
+                  bitnot
+                  decrement
+                  equals
+                  modulo
+                  inclocal_i 2
+                  declocal_i 2
+                  setlocal3
+         ofs0073:
+                  getlocal2
+                  dup
+                  iftrue ofs007c
+                  pop
+                  getlocal2
+                  convert_b
+         ofs007c:
+                  iffalse ofs00aa
+                  getlocal2
+                  dup
+                  iftrue ofs0089
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0089:
+                  iffalse ofs00eb
+                  jump ofs0046
+         ofs0091:
+                  label
+                  getlocal1
+                  getlocal3
+                  dup
+                  iffalse ofs009c
+                  pop
+                  getlocal1
+                  convert_b
+         ofs009c:
+                  iftrue ofs00ea
+                  findpropstrict QName(PackageNamespace("+!g"),"b2Settings")
+                  getproperty QName(PackageNamespace("+!g"),"b2Settings")
+                  getproperty QName(PackageNamespace(""),"b2_maxManifoldPoints")
+                  iflt ofs00f3
+         ofs00aa:
+                  getlocal3
+                  dup
+                  iffalse ofs00c4
+                  pop
+                  getlocal2
+                  convert_b
+                  jump ofs00c4
+                  lessequals
+                  kill 2
+                  inclocal 2
+                  increment_i
+                  hasnext
+                  inclocal_i 2
+                  declocal_i 2
+                  dxnslate
+                  setlocal2
+         ofs00c4:
+                  iftrue ofs00ff
+                  getlocal0
+                  findpropstrict QName(PackageNamespace(">!8"),"b2Vec2")
+                  constructprop QName(PackageNamespace(">!8"),"b2Vec2"), 0
+                  initproperty QName(PackageNamespace(""),"-O")
+         ofs00d0:
+                  jump ofs004d
+         ofs00d4:
+                  label
+                  getlocal1
+                  getlocal2
+                  iffalse ofs00e9
+                  increment_i
+                  getlocal2
+                  dup
+                  iftrue ofs00e5
+                  pop
+                  getlocal3
+                  convert_b
+         ofs00e5:
+                  iffalse ofs00ea
+         ofs00e9:
+                  convert_i
+         ofs00ea:
+                  setlocal1
+         ofs00eb:
+                  jump ofs0091
+         ofs00ef:
+                  jump ofs0091
+         ofs00f3:
+                  label
+                  getlocal0
+                  getproperty QName(PackageNamespace(""),"&!2")
+                  getlocal1
+                  findpropstrict QName(PackageNamespace("!m"),"b2ManifoldPoint")
+                  constructprop QName(PackageNamespace("!m"),"b2ManifoldPoint"), 0
+                  setproperty MultinameL([PrivateNamespace(">c"),PackageNamespace(""),PrivateNamespace("b2Manifold.as$310"),PackageNamespace("!m"),PackageInternalNs("!m"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!8"),PackageNamespace("+!g"),Namespace("http://www.box2d.org/ns/b2internal"),ProtectedNamespace(">c"),StaticProtectedNs(">c")])
+         ofs00ff:
+                  jump ofs00d4
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function §9=§() : void
+      {
+         trait method QName(PackageNamespace(""),"9=")
+            dispid 0
+            method
+               name null
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 4
+                  localcount 4
+                  initscopedepth 4
+                  maxscopedepth 5
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     setlocal2
+                     jump ofs0015
+                     dxnslate
+                     getlocal2
+                     negate
+                     declocal 2
+                     add
+                     inclocal 2
+                     inclocal 2
+                     inclocal 2
+                     declocal_i 2
+            ofs0015:
+                     setlocal3
+                     getlocal0
+                     pushscope
+                     pushbyte 0
+                     getlocal2
+                     dup
+                     iftrue ofs0023
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0023:
+                     iffalse ofs0028
+                     convert_i
+            ofs0028:
+                     setlocal1
+                     jump ofs00e9
+            ofs002d:
+                     label
+                     returnvoid
+                     pushtrue
+                     iftrue ofs0034
+            ofs0034:
+                     label
+                     getlocal0
+                     pushbyte 0
+                     initproperty QName(PackageNamespace(""),"5<")
+                     getlocal2
+                     dup
+                     iftrue ofs0043
+                     pop
+                     getlocal0
+                     convert_b
+            ofs0043:
+                     iffalse ofs007c
+                     getlocal2
+                     dup
+                     iftrue ofs0050
+                     pop
+                     getlocal1
+                     convert_b
+            ofs0050:
+                     iffalse ofs008d
+                     getlocal2
+                     dup
+                     iftrue ofs006e
+                     pop
+                     getlocal1
+                     jump ofs006d
+                     bitand
+                     pushscope
+                     kill 2
+                     istypelate
+                     declocal_i 2
+                     inclocal_i 2
+                     setlocal2
+                     convert_s
+                     inclocal_i 2
+            ofs006d:
+                     convert_b
+            ofs006e:
+                     iffalse ofs00af
+                     jump ofs002d
+            ofs0076:
+                     label
+                     getlocal0
+                     pushbyte 0
+                     initproperty QName(PackageNamespace(""),"2!5")
+            ofs007c:
+                     getlocal3
+                     iftrue ofs00d2
+                     jump ofs0034
+            ofs0085:
+                     label
+                     getlocal0
+                     getproperty QName(PackageNamespace(""),"m_localPoint")
+                     callproperty QName(PackageNamespace(""),"@!;"), 0
+                     pop
+            ofs008d:
+                     jump ofs0076
+            ofs0091:
+                     label
+                     getlocal1
+                     getlocal2
+                     dup
+                     iftrue ofs009c
+                     pop
+                     getlocal1
+                     convert_b
+            ofs009c:
+                     iffalse ofs00e4
+                     getlocal3
+                     iftrue ofs00e3
+                     findpropstrict QName(PackageNamespace("+!g"),"b2Settings")
+                     getproperty QName(PackageNamespace("+!g"),"b2Settings")
+                     getproperty QName(PackageNamespace(""),"b2_maxManifoldPoints")
+                     iflt ofs00ed
+            ofs00af:
+                     getlocal2
+                     dup
+                     iftrue ofs00c7
+                     pop
+                     jump ofs00c5
+                     getlocal2
+                     astypelate
+                     declocal 2
+                     convert_i
+                     convert_o
+                     divide
+                     getlocal2
+                     checkfilter
+                     inclocal_i 2
+            ofs00c5:
+                     getlocal1
+                     convert_b
+            ofs00c7:
+                     iffalse ofs00e5
+                     getlocal0
+                     getproperty QName(PackageNamespace(""),"-O")
+                     callproperty QName(PackageNamespace(""),"@!;"), 0
+                     pop
+            ofs00d2:
+                     getlocal3
+                     iftrue ofs00fd
+                     jump ofs0085
+            ofs00db:
+                     label
+                     getlocal1
+                     getlocal3
+                     iftrue ofs00e3
+                     increment_i
+            ofs00e3:
+                     convert_i
+            ofs00e4:
+                     setlocal1
+            ofs00e5:
+                     jump ofs0091
+            ofs00e9:
+                     jump ofs0091
+            ofs00ed:
+                     label
+                     getlocal0
+                     getproperty QName(PackageNamespace(""),"&!2")
+                     getlocal1
+                     getproperty MultinameL([PrivateNamespace(">c"),PackageNamespace(""),PrivateNamespace("b2Manifold.as$310"),PackageNamespace("!m"),PackageInternalNs("!m"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!8"),PackageNamespace("+!g"),Namespace("http://www.box2d.org/ns/b2internal"),ProtectedNamespace(">c"),StaticProtectedNs(">c")])
+                     findpropstrict QName(PackageNamespace("!m"),"b2ManifoldPoint")
+                     getproperty QName(PackageNamespace("!m"),"b2ManifoldPoint")
+                     astypelate
+                     callproperty QName(PackageNamespace(""),"9="), 0
+                     pop
+            ofs00fd:
+                     jump ofs00db
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public function Set(param1:b2Manifold) : void
+         {
+            trait method QName(PackageNamespace(""),"Set")
+               dispid 0
+               method
+                  name null
+                  param QName(PackageNamespace("!m"),"b2Manifold")
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 5
+                     localcount 5
+                     initscopedepth 4
+                     maxscopedepth 5
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        setlocal3
+                        jump ofs0015
+                        swap
+                        inclocal_i 3
+                        getglobalscope
+                        declocal 2
+                        multiply
+                        kill 3
+                        getglobalscope
+                        declocal_i 2
+                        declocal 3
+               ofs0015:
+                        setlocal 4
+                        getlocal0
+                        pushscope
+                        getlocal 4
+                        dup
+                        iffalse ofs0023
+                        pop
+                        getlocal3
+                        convert_b
+               ofs0023:
+                        iftrue ofs002d
+                        getlocal0
+                        getlocal1
+                        getproperty QName(PackageNamespace(""),"5<")
+                        initproperty QName(PackageNamespace(""),"5<")
+               ofs002d:
+                        pushbyte 0
+                        getlocal 4
+                        iftrue ofs0036
+                        convert_i
+               ofs0036:
+                        setlocal2
+                        jump ofs00fc
+               ofs003b:
+                        label
+                        returnvoid
+                        pushtrue
+                        iftrue ofs0042
+               ofs0042:
+                        label
+                        getlocal0
+                        getlocal1
+                        getproperty QName(PackageNamespace(""),"2!5")
+                        initproperty QName(PackageNamespace(""),"2!5")
+                        getlocal 4
+                        dup
+                        iffalse ofs0053
+                        pop
+                        getlocal2
+                        convert_b
+               ofs0053:
+                        iftrue ofs0098
+                        getlocal3
+                        dup
+                        iftrue ofs0060
+                        pop
+                        getlocal2
+                        convert_b
+               ofs0060:
+                        iffalse ofs00c5
+                        getlocal 4
+                        dup
+                        iffalse ofs007f
+                        pop
+                        getlocal3
+                        jump ofs007e
+                        declocal 2
+                        kill 3
+                        getlocal3
+                        setlocal2
+                        instanceof
+                        setlocal2
+                        declocal 2
+                        kill 2
+                        getlocal2
+               ofs007e:
+                        convert_b
+               ofs007f:
+                        iftrue ofs00ad
+                        getlocal 4
+                        iftrue ofs00f8
+                        jump ofs003b
+               ofs008d:
+                        label
+                        getlocal0
+                        getproperty QName(PackageNamespace(""),"m_localPoint")
+                        getlocal1
+                        getproperty QName(PackageNamespace(""),"m_localPoint")
+                        callproperty QName(PackageNamespace(""),"SetV"), 1
+                        pop
+               ofs0098:
+                        jump ofs0042
+               ofs009c:
+                        label
+                        getlocal2
+                        getlocal3
+                        iffalse ofs00f7
+                        findpropstrict QName(PackageNamespace("+!g"),"b2Settings")
+                        getproperty QName(PackageNamespace("+!g"),"b2Settings")
+                        getproperty QName(PackageNamespace(""),"b2_maxManifoldPoints")
+                        iflt ofs0100
+               ofs00ad:
+                        getlocal 4
+                        dup
+                        iffalse ofs00b7
+                        pop
+                        getlocal2
+                        convert_b
+               ofs00b7:
+                        iftrue ofs0116
+                        getlocal0
+                        getproperty QName(PackageNamespace(""),"-O")
+                        getlocal1
+                        getproperty QName(PackageNamespace(""),"-O")
+                        callproperty QName(PackageNamespace(""),"SetV"), 1
+                        pop
+               ofs00c5:
+                        jump ofs008d
+               ofs00c9:
+                        label
+                        getlocal2
+                        getlocal 4
+                        dup
+                        iffalse ofs00e4
+                        pop
+                        getlocal2
+                        jump ofs00e3
+                        astypelate
+                        coerce_a
+                        dxnslate
+                        inclocal 2
+                        strictequals
+                        inclocal_i 3
+                        getlocal1
+                        getglobalscope
+                        getlocal0
+               ofs00e3:
+                        convert_b
+               ofs00e4:
+                        iftrue ofs00f6
+                        increment_i
+                        getlocal3
+                        dup
+                        iftrue ofs00f2
+                        pop
+                        getlocal1
+                        convert_b
+               ofs00f2:
+                        iffalse ofs00f7
+               ofs00f6:
+                        convert_i
+               ofs00f7:
+                        setlocal2
+               ofs00f8:
+                        jump ofs009c
+               ofs00fc:
+                        jump ofs009c
+               ofs0100:
+                        label
+                        getlocal0
+                        getproperty QName(PackageNamespace(""),"&!2")
+                        getlocal2
+                        getproperty MultinameL([PrivateNamespace(">c"),PackageNamespace(""),PrivateNamespace("b2Manifold.as$310"),PackageNamespace("!m"),PackageInternalNs("!m"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!8"),PackageNamespace("+!g"),Namespace("http://www.box2d.org/ns/b2internal"),ProtectedNamespace(">c"),StaticProtectedNs(">c")])
+                        findpropstrict QName(PackageNamespace("!m"),"b2ManifoldPoint")
+                        getproperty QName(PackageNamespace("!m"),"b2ManifoldPoint")
+                        astypelate
+                        getlocal1
+                        getproperty QName(PackageNamespace(""),"&!2")
+                        getlocal2
+                        getproperty MultinameL([PrivateNamespace(">c"),PackageNamespace(""),PrivateNamespace("b2Manifold.as$310"),PackageNamespace("!m"),PackageInternalNs("!m"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace(">!8"),PackageNamespace("+!g"),Namespace("http://www.box2d.org/ns/b2internal"),ProtectedNamespace(">c"),StaticProtectedNs(">c")])
+                        callproperty QName(PackageNamespace(""),"Set"), 1
+                        pop
+               ofs0116:
+                        jump ofs00c9
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public function Copy() : b2Manifold
+            {
+               trait method QName(PackageNamespace(""),"Copy")
+                  dispid 0
+                  method
+                     name null
+                     returns QName(PackageNamespace("!m"),"b2Manifold")
+                     
+                     body
+                        maxstack 4
+                        localcount 4
+                        initscopedepth 4
+                        maxscopedepth 5
+                        
+                        code
+                           pushfalse
+                           pushtrue
+                           swap
+                           jump ofs0011
+                           astypelate
+                           getlocal2
+                           decrement
+                           pushwith
+                           kill 2
+                           convert_i
+                           pushundefined
+                           lshift
+                           getlocal2
+                  ofs0011:
+                           setlocal2
+                           setlocal3
+                           getlocal0
+                           pushscope
+                           findpropstrict QName(PackageNamespace("!m"),"b2Manifold")
+                           constructprop QName(PackageNamespace("!m"),"b2Manifold"), 0
+                           coerce QName(PackageNamespace("!m"),"b2Manifold")
+                           setlocal1
+                           getlocal2
+                           dup
+                           iffalse ofs0026
+                           pop
+                           getlocal2
+                           convert_b
+                  ofs0026:
+                           iftrue ofs0030
+                           getlocal1
+                           getlocal0
+                           callproperty QName(PackageNamespace(""),"Set"), 1
+                           pop
+                  ofs0030:
+                           getlocal1
+                           returnvalue
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+            }
+         }

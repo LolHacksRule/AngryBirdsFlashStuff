@@ -1,0 +1,82 @@
+package §4!C§
+{
+   public class §,!0§
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var id:String = "";
+      
+      public var uniqueID:String = "";
+      
+      public var x:Number = 0;
+      
+      public var y:Number = 0;
+      
+      public var angle:Number = 0;
+      
+      public var front:Boolean = false;
+      
+      public function §,!0§()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  getlocal3
+                  add_i
+                  pop
+                  popscope
+                  convert_i
+                  popscope
+                  pushundefined
+                  not
+                  coerce_a
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  iftrue ofs001c
+                  getlocal0
+                  constructsuper 0
+         ofs001c:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}

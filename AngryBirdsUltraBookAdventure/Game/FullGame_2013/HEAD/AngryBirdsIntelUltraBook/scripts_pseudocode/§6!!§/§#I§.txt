@@ -1,0 +1,227 @@
+package §6!!§
+{
+   import §#!,§.Sprite;
+   import §>!L§.b2World;
+   import §]!@§.LevelMain;
+   import §]!@§.LevelSlingshot;
+   
+   public class §#I§ extends §6!f§
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 6
+               maxscopedepth 7
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function §#I§(param1:LevelObjectManager, param2:Sprite, param3:b2World, param4:LevelMain, param5:int, param6:String, param7:Number, param8:Number, param9:Number, param10:Boolean = true, param11:Number = 1.0)
+      {
+         method
+            name null
+            flag HAS_OPTIONAL
+            param QName(PackageNamespace("6!!"),"LevelObjectManager")
+            param QName(PackageNamespace("#!,"),"Sprite")
+            param QName(PackageNamespace(">!L"),"b2World")
+            param QName(PackageNamespace("]!@"),"LevelMain")
+            param QName(PackageNamespace(""),"int")
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"Boolean")
+            param QName(PackageNamespace(""),"Number")
+            optional True()
+            optional Double(1.0)
+            returns null
+            
+            body
+               maxstack 14
+               localcount 14
+               initscopedepth 7
+               maxscopedepth 8
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal 12
+                  jump ofs0014
+                  convert_i
+                  getlocal3
+                  checkfilter
+                  lessthan
+                  coerce_a
+                  getlocal 4
+                  getlocal 6
+                  getlocal3
+                  declocal 4
+         ofs0014:
+                  setlocal 13
+                  getlocal0
+                  pushscope
+                  getlocal 12
+                  iffalse ofs0034
+                  getlocal0
+                  getlocal1
+                  getlocal2
+                  getlocal3
+                  getlocal 4
+                  getlocal 5
+                  getlocal 6
+                  getlocal 7
+                  getlocal 8
+                  getlocal 9
+                  getlocal 10
+                  getlocal 11
+                  constructsuper 11
+         ofs0034:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      override public function activateSpecialPower(param1:LevelObjectManager) : Boolean
+      {
+         trait method QName(PackageNamespace(""),"activateSpecialPower")
+            flag OVERRIDE
+            dispid 0
+            method
+               name null
+               param QName(PackageNamespace("6!!"),"LevelObjectManager")
+               returns QName(PackageNamespace(""),"Boolean")
+               
+               body
+                  maxstack 4
+                  localcount 4
+                  initscopedepth 7
+                  maxscopedepth 8
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     swap
+                     jump ofs0013
+                     declocal_i 2
+                     subtract
+                     lshift
+                     setlocal2
+                     hasnext
+                     pop
+                     urshift
+                     declocal_i 2
+                     inclocal 2
+            ofs0013:
+                     setlocal2
+                     setlocal3
+                     getlocal0
+                     pushscope
+                     getlocal2
+                     dup
+                     iffalse ofs0020
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0020:
+                     iftrue ofs0099
+                     jump ofs0082
+            ofs0028:
+                     label
+                     pushtrue
+                     getlocal3
+                     dup
+                     iftrue ofs0040
+                     pop
+                     jump ofs003e
+                     convert_o
+                     multiply_i
+                     setlocal2
+                     rshift
+                     getlocal2
+                     setlocal2
+                     pushscope
+                     pushnan
+                     lshift
+            ofs003e:
+                     getlocal0
+                     convert_b
+            ofs0040:
+                     iffalse ofs009a
+                     getlocal3
+                     iffalse ofs0087
+                     returnvalue
+                     pushtrue
+                     iftrue ofs004f
+            ofs004f:
+                     label
+                     findpropstrict QName(PackageNamespace(""),"&%")
+                     findpropstrict QName(PackageNamespace("]!@"),"LevelSlingshot")
+                     jump ofs0064
+                     declocal 2
+                     setlocal2
+                     convert_s
+                     modulo
+                     declocal_i 2
+                     inclocal 2
+                     pop
+                     increment
+                     getlocal2
+            ofs0064:
+                     getproperty QName(PackageNamespace("]!@"),"LevelSlingshot")
+                     getproperty QName(PackageNamespace(""),"BIRD_LAUNCH_FORCE")
+                     callproperty QName(PackageNamespace(""),"&%"), 1
+                     pop
+                     getlocal2
+                     dup
+                     iffalse ofs0075
+                     pop
+                     getlocal3
+                     convert_b
+            ofs0075:
+                     iftrue ofs009b
+                     getlocal2
+                     iftrue ofs0099
+                     jump ofs0028
+            ofs0082:
+                     getlocal0
+                     getlocal1
+                     callsuper QName(PackageNamespace(""),"activateSpecialPower"), 1
+            ofs0087:
+                     not
+                     getlocal2
+                     dup
+                     iffalse ofs0091
+                     pop
+                     getlocal3
+                     convert_b
+            ofs0091:
+                     iftrue ofs009a
+                     iffalse ofs004f
+            ofs0099:
+                     pushfalse
+            ofs009a:
+                     returnvalue
+            ofs009b:
+                     jump ofs004f
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+      }
+   }

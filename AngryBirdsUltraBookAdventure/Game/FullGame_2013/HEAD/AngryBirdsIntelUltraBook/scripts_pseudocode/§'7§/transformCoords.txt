@@ -1,0 +1,71 @@
+package §'7§
+{
+   import flash.geom.Matrix;
+   import flash.geom.Point;
+   
+   public function transformCoords(param1:Matrix, param2:Number, param3:Number, param4:Point = null) : Point
+   {
+      trait method QName(PackageNamespace("\'7"),"transformCoords")
+         dispid 25
+         method
+            name null
+            flag HAS_OPTIONAL
+            param QName(PackageNamespace("flash.geom"),"Matrix")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace("flash.geom"),"Point")
+            optional Null()
+            returns QName(PackageNamespace("flash.geom"),"Point")
+            
+            body
+               maxstack 4
+               localcount 5
+               initscopedepth 1
+               maxscopedepth 2
+               
+               code
+                  getlocal0
+                  pushscope
+                  getlocal 4
+                  pushnull
+                  ifne ofs0012
+                  findpropstrict QName(PackageNamespace("flash.geom"),"Point")
+                  constructprop QName(PackageNamespace("flash.geom"),"Point"), 0
+                  coerce QName(PackageNamespace("flash.geom"),"Point")
+                  setlocal 4
+         ofs0012:
+                  getlocal 4
+                  getlocal1
+                  getproperty QName(PackageNamespace(""),"a")
+                  getlocal2
+                  multiply
+                  getlocal1
+                  getproperty QName(PackageNamespace(""),"c")
+                  getlocal3
+                  multiply
+                  add
+                  getlocal1
+                  getproperty QName(PackageNamespace(""),"tx")
+                  add
+                  setproperty QName(PackageNamespace(""),"x")
+                  getlocal 4
+                  getlocal1
+                  getproperty QName(PackageNamespace(""),"d")
+                  getlocal3
+                  multiply
+                  getlocal1
+                  getproperty QName(PackageNamespace(""),"b")
+                  getlocal2
+                  multiply
+                  add
+                  getlocal1
+                  getproperty QName(PackageNamespace(""),"ty")
+                  add
+                  setproperty QName(PackageNamespace(""),"y")
+                  getlocal 4
+                  returnvalue
+               end ; code
+            end ; body
+         end ; method
+      }
+   }

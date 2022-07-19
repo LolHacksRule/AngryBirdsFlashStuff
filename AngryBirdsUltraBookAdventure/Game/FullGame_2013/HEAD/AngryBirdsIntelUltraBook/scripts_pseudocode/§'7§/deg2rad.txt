@@ -1,0 +1,33 @@
+package §'7§
+{
+   public function deg2rad(param1:Number) : Number
+   {
+      trait method QName(PackageNamespace("\'7"),"deg2rad")
+         dispid 23
+         method
+            name null
+            param QName(PackageNamespace(""),"Number")
+            returns QName(PackageNamespace(""),"Number")
+            
+            body
+               maxstack 2
+               localcount 2
+               initscopedepth 1
+               maxscopedepth 2
+               
+               code
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  pushshort 180
+                  divide
+                  findpropstrict QName(PackageNamespace(""),"Math")
+                  getproperty QName(PackageNamespace(""),"Math")
+                  getproperty QName(PackageNamespace(""),"PI")
+                  multiply
+                  returnvalue
+               end ; code
+            end ; body
+         end ; method
+      }
+   }

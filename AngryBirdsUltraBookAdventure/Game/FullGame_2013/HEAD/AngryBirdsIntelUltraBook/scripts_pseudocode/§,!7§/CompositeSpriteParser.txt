@@ -1,0 +1,690 @@
+package §,!7§
+{
+   import §#!,§.§0!b§;
+   import §#!,§.Sprite;
+   import flash.display.Bitmap;
+   import flash.display.Sprite;
+   import flash.utils.Dictionary;
+   
+   public class CompositeSpriteParser
+   {
+      
+      private static const §7!a§:String = "compositeSprite";
+      
+      private static const §1!N§:String = "sprite";
+      
+      private static var §?c§:Dictionary;
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 3
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  pushnull
+                  getlocal2
+                  checkfilter
+                  pushfalse
+                  pushnull
+                  bitxor
+                  pushfalse
+                  pushscope
+                  lessthan
+         ofs0010:
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  dup
+                  iffalse ofs0029
+                  pop
+                  jump ofs0027
+                  checkfilter
+                  lshift
+                  getlocal1
+                  lshift
+                  decrement
+                  greaterthan
+                  greaterthan
+                  convert_s
+                  add_i
+         ofs0027:
+                  getlocal2
+                  convert_b
+         ofs0029:
+                  iftrue ofs005f
+                  jump ofs0063
+         ofs0031:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0038
+         ofs0038:
+                  label
+                  findproperty QName(PrivateNamespace("5!H"),"?c")
+                  findpropstrict QName(PackageNamespace("flash.utils"),"Dictionary")
+                  constructprop QName(PackageNamespace("flash.utils"),"Dictionary"), 0
+                  setproperty QName(PrivateNamespace("5!H"),"?c")
+                  getlocal2
+                  dup
+                  iffalse ofs004b
+                  pop
+                  getlocal2
+                  convert_b
+         ofs004b:
+                  iftrue ofs005a
+                  jump ofs0031
+         ofs0053:
+                  label
+                  findproperty QName(PrivateNamespace("5!H"),"1!N")
+                  pushstring "sprite"
+                  initproperty QName(PrivateNamespace("5!H"),"1!N")
+         ofs005a:
+                  getlocal2
+                  iftrue ofs0069
+         ofs005f:
+                  jump ofs0038
+         ofs0063:
+                  findproperty QName(PrivateNamespace("5!H"),"7!a")
+                  pushstring "compositeSprite"
+                  initproperty QName(PrivateNamespace("5!H"),"7!a")
+         ofs0069:
+                  jump ofs0053
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function CompositeSpriteParser()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  urshift
+                  divide
+                  decrement_i
+                  instanceof
+                  convert_d
+                  hasnext
+                  getlocal3
+                  dup
+                  increment
+         ofs0010:
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  iffalse ofs001b
+                  getlocal0
+                  constructsuper 0
+         ofs001b:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function §<!§(param1:XML) : void
+      {
+         trait method QName(PackageNamespace(""),"<!")
+            flag FINAL
+            dispid 3
+            method
+               name null
+               param QName(PackageNamespace(""),"XML")
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 5
+                  localcount 8
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     setlocal 6
+                     jump ofs0016
+                     add
+                     setlocal 5
+                     kill 6
+                     inclocal_i 3
+                     getlocal 5
+                     convert_u
+                     setlocal3
+                     add
+                     inclocal 2
+            ofs0016:
+                     setlocal 7
+                     getlocal0
+                     pushscope
+                     pushnull
+                     coerce QName(PackageNamespace(""),"XML")
+                     setlocal3
+                     getlocal1
+                     findpropstrict QName(PrivateNamespace("5!H"),"7!a")
+                     jump ofs0031
+                     negate
+                     inclocal_i 2
+                     urshift
+                     getlocal3
+                     subtract_i
+                     convert_d
+                     declocal 4
+                     declocal_i 5
+                     bitand
+            ofs0031:
+                     getproperty QName(PrivateNamespace("5!H"),"7!a")
+                     callproperty Multiname("child",[PrivateNamespace("5!H"),PackageNamespace(""),PrivateNamespace("CompositeSpriteParser.as$28"),PackageNamespace(",!7"),PackageInternalNs(",!7"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("5!H"),StaticProtectedNs("5!H")]), 1
+                     jump ofs0044
+                     declocal 4
+                     getlocal1
+                     convert_b
+                     decrement_i
+                     setlocal2
+                     instanceof
+                     getlocal2
+                     coerce_s
+                     setlocal3
+            ofs0044:
+                     coerce QName(PackageNamespace(""),"XMLList")
+                     setlocal2
+                     pushbyte 0
+                     setlocal 4
+                     getlocal2
+                     coerce_a
+                     setlocal 5
+                     jump ofs0071
+            ofs0053:
+                     label
+                     getlocal 5
+                     getlocal 4
+                     nextvalue
+                     coerce QName(PackageNamespace(""),"XML")
+                     setlocal3
+                     getlocal 6
+                     iffalse ofs0071
+                     findpropstrict QName(PrivateNamespace("5!H"),"?c")
+                     getproperty QName(PrivateNamespace("5!H"),"?c")
+                     findpropstrict QName(PackageNamespace(""),"String")
+                     getlocal3
+                     getproperty MultinameA("name",[PrivateNamespace("5!H"),PackageNamespace(""),PrivateNamespace("CompositeSpriteParser.as$28"),PackageNamespace(",!7"),PackageInternalNs(",!7"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("5!H"),StaticProtectedNs("5!H")])
+                     callproperty QName(PackageNamespace(""),"String"), 1
+                     getlocal3
+                     setproperty MultinameL([PrivateNamespace("5!H"),PackageNamespace(""),PrivateNamespace("CompositeSpriteParser.as$28"),PackageNamespace(",!7"),PackageInternalNs(",!7"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("5!H"),StaticProtectedNs("5!H")])
+            ofs0071:
+                     hasnext2 5, 4
+                     iftrue ofs0053
+                     kill 5
+                     kill 4
+                     returnvoid
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public static function §]P§(param1:String, param2:TextureManager, param3:Boolean = true) : §#!,§.Sprite
+         {
+            trait method QName(PackageNamespace(""),"]P")
+               flag FINAL
+               dispid 4
+               method
+                  name null
+                  flag HAS_OPTIONAL
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(",!7"),"TextureManager")
+                  param QName(PackageNamespace(""),"Boolean")
+                  optional True()
+                  returns QName(PackageNamespace("#!,"),"Sprite")
+                  
+                  body
+                     maxstack 6
+                     localcount 14
+                     initscopedepth 3
+                     maxscopedepth 4
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        swap
+                        jump ofs0014
+                        decrement
+                        declocal 5
+                        getlocal 8
+                        getlocal 12
+                        inclocal_i 2
+                        dup
+                        convert_d
+                        pushfalse
+                        greaterthan
+               ofs0014:
+                        setlocal 12
+                        setlocal 13
+                        getlocal0
+                        pushscope
+                        pushnull
+                        coerce QName(PackageNamespace(""),"XML")
+                        setlocal 7
+                        pushnull
+                        coerce QName(PackageNamespace(",!7")," H")
+                        setlocal 8
+                        pushnull
+                        coerce QName(PackageNamespace("#!,"),"0!b")
+                        setlocal 9
+                        findpropstrict QName(PrivateNamespace("5!H"),"?c")
+                        getproperty QName(PrivateNamespace("5!H"),"?c")
+                        getlocal1
+                        getproperty MultinameL([PrivateNamespace("5!H"),PackageNamespace(""),PrivateNamespace("CompositeSpriteParser.as$28"),PackageNamespace(",!7"),PackageInternalNs(",!7"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("5!H"),StaticProtectedNs("5!H")])
+                        coerce QName(PackageNamespace(""),"XML")
+                        setlocal 4
+                        getlocal 12
+                        dup
+                        iffalse ofs003e
+                        pop
+                        getlocal0
+                        convert_b
+               ofs003e:
+                        iftrue ofs0057
+                        getlocal 4
+                        not
+                        iffalse ofs0059
+                        getlocal 13
+                        dup
+                        iftrue ofs0053
+                        pop
+                        getlocal3
+                        convert_b
+               ofs0053:
+                        iffalse ofs0059
+               ofs0057:
+                        pushnull
+                        returnvalue
+               ofs0059:
+                        findpropstrict QName(PackageNamespace("#!,"),"Sprite")
+                        constructprop QName(PackageNamespace("#!,"),"Sprite"), 0
+                        coerce QName(PackageNamespace("#!,"),"Sprite")
+                        setlocal 5
+                        getlocal 4
+                        findpropstrict QName(PrivateNamespace("5!H"),"1!N")
+                        getproperty QName(PrivateNamespace("5!H"),"1!N")
+                        callproperty Multiname("child",[PrivateNamespace("5!H"),PackageNamespace(""),PrivateNamespace("CompositeSpriteParser.as$28"),PackageNamespace(",!7"),PackageInternalNs(",!7"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("5!H"),StaticProtectedNs("5!H")]), 1
+                        coerce QName(PackageNamespace(""),"XMLList")
+                        setlocal 6
+                        pushbyte 0
+                        setlocal 10
+                        getlocal 6
+                        coerce_a
+                        setlocal 11
+                        jump ofs017a
+               ofs007c:
+                        label
+                        getlocal 11
+                        getlocal 10
+                        nextvalue
+                        coerce QName(PackageNamespace(""),"XML")
+                        setlocal 7
+                        getlocal2
+                        getlocal 7
+                        getproperty MultinameA("name",[PrivateNamespace("5!H"),PackageNamespace(""),PrivateNamespace("CompositeSpriteParser.as$28"),PackageNamespace(",!7"),PackageInternalNs(",!7"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("5!H"),StaticProtectedNs("5!H")])
+                        callproperty QName(PackageNamespace(""),"]w"), 1
+                        coerce QName(PackageNamespace(",!7")," H")
+                        setlocal 8
+                        getlocal 13
+                        dup
+                        iftrue ofs00ac
+                        jump ofs00a9
+                        divide
+                        inclocal 10
+                        popscope
+                        bitxor
+                        inclocal 8
+                        setlocal3
+                        convert_o
+                        equals
+                        inclocal_i 3
+               ofs00a9:
+                        pop
+                        getlocal2
+                        convert_b
+               ofs00ac:
+                        iffalse ofs00b7
+                        getlocal 8
+                        convert_b
+                        iffalse ofs017a
+               ofs00b7:
+                        findpropstrict QName(PackageNamespace("#!,"),"0!b")
+                        getlocal 8
+                        getproperty QName(PackageNamespace(""),"texture")
+                        pushfalse
+                        getlocal3
+                        constructprop QName(PackageNamespace("#!,"),"0!b"), 3
+                        coerce QName(PackageNamespace("#!,"),"0!b")
+                        setlocal 9
+                        getlocal 12
+                        iftrue ofs0176
+                        jump ofs016c
+               ofs00d0:
+                        label
+                        getlocal 9
+                        getlocal 7
+                        getproperty MultinameA("tag",[PrivateNamespace("5!H"),PackageNamespace(""),PrivateNamespace("CompositeSpriteParser.as$28"),PackageNamespace(",!7"),PackageInternalNs(",!7"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("5!H"),StaticProtectedNs("5!H")])
+                        setproperty QName(PackageNamespace(""),"name")
+                        getlocal 12
+                        iftrue ofs00ed
+                        pushtrue
+                        iftrue ofs017a
+               ofs00e4:
+                        label
+                        getlocal 9
+                        getlocal 8
+                        getproperty QName(PackageNamespace(""),"scale")
+                        setproperty QName(PackageNamespace(""),"scaleY")
+               ofs00ed:
+                        getlocal 13
+                        iffalse ofs010e
+                        getlocal 13
+                        dup
+                        iftrue ofs00fd
+                        pop
+                        getlocal3
+                        convert_b
+               ofs00fd:
+                        iffalse ofs0176
+                        jump ofs00d0
+               ofs0105:
+                        label
+                        getlocal 9
+                        getlocal 8
+                        getproperty QName(PackageNamespace(""),"scale")
+                        setproperty QName(PackageNamespace(""),"scaleX")
+               ofs010e:
+                        getlocal 12
+                        dup
+                        iffalse ofs0118
+                        pop
+                        getlocal0
+                        convert_b
+               ofs0118:
+                        iftrue ofs0151
+                        getlocal 12
+                        dup
+                        iffalse ofs0126
+                        pop
+                        getlocal3
+                        convert_b
+               ofs0126:
+                        iftrue ofs0168
+                        jump ofs00e4
+               ofs012e:
+                        label
+                        getlocal 9
+                        findpropstrict QName(PackageNamespace(""),"parseInt")
+                        getlocal 7
+                        jump ofs0145
+                        lshift
+                        setlocal2
+                        declocal 7
+                        newactivation
+                        setlocal 11
+                        hasnext
+                        checkfilter
+                        kill 3
+                        getlocal3
+               ofs0145:
+                        getproperty MultinameA("y",[PrivateNamespace("5!H"),PackageNamespace(""),PrivateNamespace("CompositeSpriteParser.as$28"),PackageNamespace(",!7"),PackageInternalNs(",!7"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("5!H"),StaticProtectedNs("5!H")])
+                        callproperty QName(PackageNamespace(""),"parseInt"), 1
+                        getlocal 8
+                        getproperty QName(PackageNamespace(""),"pivotY")
+                        subtract
+                        setproperty QName(PackageNamespace(""),"y")
+               ofs0151:
+                        jump ofs0105
+               ofs0155:
+                        label
+                        getlocal 9
+                        findpropstrict QName(PackageNamespace(""),"parseInt")
+                        getlocal 7
+                        getproperty MultinameA("x",[PrivateNamespace("5!H"),PackageNamespace(""),PrivateNamespace("CompositeSpriteParser.as$28"),PackageNamespace(",!7"),PackageInternalNs(",!7"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("5!H"),StaticProtectedNs("5!H")])
+                        callproperty QName(PackageNamespace(""),"parseInt"), 1
+                        getlocal 8
+                        getproperty QName(PackageNamespace(""),"pivotX")
+                        subtract
+                        setproperty QName(PackageNamespace(""),"x")
+               ofs0168:
+                        jump ofs012e
+               ofs016c:
+                        getlocal 5
+                        getlocal 9
+                        pushbyte 0
+                        callproperty QName(PackageNamespace(""),"addChildAt"), 2
+                        pop
+               ofs0176:
+                        jump ofs0155
+               ofs017a:
+                        hasnext2 11, 10
+                        iftrue ofs007c
+                        kill 11
+                        kill 10
+                        getlocal 5
+                        returnvalue
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public static function §3k§(param1:String, param2:TextureManager) : flash.display.Sprite
+            {
+               trait method QName(PackageNamespace(""),"3k")
+                  flag FINAL
+                  dispid 5
+                  method
+                     name null
+                     param QName(PackageNamespace(""),"String")
+                     param QName(PackageNamespace(",!7"),"TextureManager")
+                     returns QName(PackageNamespace("flash.display"),"Sprite")
+                     
+                     body
+                        maxstack 5
+                        localcount 13
+                        initscopedepth 3
+                        maxscopedepth 4
+                        
+                        code
+                           pushfalse
+                           pushtrue
+                           setlocal 11
+                           jump ofs0013
+                           setlocal2
+                           setlocal2
+                           pop
+                           pushnull
+                           swap
+                           setlocal 6
+                           declocal 5
+                           newactivation
+                           pushnan
+                  ofs0013:
+                           setlocal 12
+                           getlocal0
+                           pushscope
+                           pushnull
+                           coerce QName(PackageNamespace(""),"XML")
+                           setlocal 6
+                           pushnull
+                           coerce QName(PackageNamespace(",!7")," H")
+                           setlocal 7
+                           pushnull
+                           coerce QName(PackageNamespace("flash.display"),"Bitmap")
+                           setlocal 8
+                           findpropstrict QName(PackageNamespace("flash.display"),"Sprite")
+                           constructprop QName(PackageNamespace("flash.display"),"Sprite"), 0
+                           coerce QName(PackageNamespace("flash.display"),"Sprite")
+                           setlocal3
+                           findpropstrict QName(PrivateNamespace("5!H"),"?c")
+                           getproperty QName(PrivateNamespace("5!H"),"?c")
+                           getlocal1
+                           getproperty MultinameL([PrivateNamespace("5!H"),PackageNamespace(""),PrivateNamespace("CompositeSpriteParser.as$28"),PackageNamespace(",!7"),PackageInternalNs(",!7"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("5!H"),StaticProtectedNs("5!H")])
+                           coerce QName(PackageNamespace(""),"XML")
+                           setlocal 4
+                           getlocal 4
+                           findpropstrict QName(PrivateNamespace("5!H"),"1!N")
+                           getproperty QName(PrivateNamespace("5!H"),"1!N")
+                           callproperty Multiname("child",[PrivateNamespace("5!H"),PackageNamespace(""),PrivateNamespace("CompositeSpriteParser.as$28"),PackageNamespace(",!7"),PackageInternalNs(",!7"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("5!H"),StaticProtectedNs("5!H")]), 1
+                           coerce QName(PackageNamespace(""),"XMLList")
+                           setlocal 5
+                           pushbyte 0
+                           setlocal 9
+                           getlocal 5
+                           coerce_a
+                           setlocal 10
+                           jump ofs0117
+                  ofs0053:
+                           label
+                           getlocal 10
+                           getlocal 9
+                           nextvalue
+                           coerce QName(PackageNamespace(""),"XML")
+                           setlocal 6
+                           getlocal2
+                           getlocal 6
+                           getproperty MultinameA("name",[PrivateNamespace("5!H"),PackageNamespace(""),PrivateNamespace("CompositeSpriteParser.as$28"),PackageNamespace(",!7"),PackageInternalNs(",!7"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("5!H"),StaticProtectedNs("5!H")])
+                           callproperty QName(PackageNamespace(""),"]w"), 1
+                           coerce QName(PackageNamespace(",!7")," H")
+                           jump ofs0078
+                           getglobalscope
+                           nextvalue
+                           setlocal3
+                           getglobalscope
+                           setlocal 11
+                           kill 7
+                           inclocal 7
+                           declocal_i 9
+                           astypelate
+                  ofs0078:
+                           setlocal 7
+                           getlocal 12
+                           iftrue ofs0087
+                           getlocal 7
+                           convert_b
+                           iffalse ofs0117
+                  ofs0087:
+                           findpropstrict QName(PackageNamespace("flash.display"),"Bitmap")
+                           getlocal 7
+                           getproperty QName(PackageNamespace(""),"bitmapData")
+                           constructprop QName(PackageNamespace("flash.display"),"Bitmap"), 1
+                           coerce QName(PackageNamespace("flash.display"),"Bitmap")
+                           setlocal 8
+                           getlocal 11
+                           iffalse ofs00b8
+                           jump ofs010a
+                  ofs009e:
+                           label
+                           getlocal 8
+                           pushtrue
+                           setproperty QName(PackageNamespace(""),"smoothing")
+                           getlocal 11
+                           dup
+                           iftrue ofs00ae
+                           pop
+                           getlocal1
+                           convert_b
+                  ofs00ae:
+                           iffalse ofs00d0
+                           getlocal 12
+                           iftrue ofs0113
+                  ofs00b8:
+                           pushtrue
+                           iftrue ofs0117
+                  ofs00bd:
+                           label
+                           getlocal 8
+                           findpropstrict QName(PackageNamespace(""),"parseInt")
+                           getlocal 6
+                           getproperty MultinameA("y",[PrivateNamespace("5!H"),PackageNamespace(""),PrivateNamespace("CompositeSpriteParser.as$28"),PackageNamespace(",!7"),PackageInternalNs(",!7"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("5!H"),StaticProtectedNs("5!H")])
+                           callproperty QName(PackageNamespace(""),"parseInt"), 1
+                           getlocal 7
+                           getproperty QName(PackageNamespace(""),"pivotY")
+                           subtract
+                           setproperty QName(PackageNamespace(""),"y")
+                  ofs00d0:
+                           getlocal 12
+                           jump ofs00e3
+                           setlocal2
+                           declocal 9
+                           setlocal 5
+                           lshift
+                           increment
+                           inclocal_i 11
+                           decrement_i
+                           getlocal 8
+                           subtract_i
+                  ofs00e3:
+                           dup
+                           iffalse ofs00eb
+                           pop
+                           getlocal3
+                           convert_b
+                  ofs00eb:
+                           iftrue ofs0106
+                           jump ofs009e
+                  ofs00f3:
+                           label
+                           getlocal 8
+                           findpropstrict QName(PackageNamespace(""),"parseInt")
+                           getlocal 6
+                           getproperty MultinameA("x",[PrivateNamespace("5!H"),PackageNamespace(""),PrivateNamespace("CompositeSpriteParser.as$28"),PackageNamespace(",!7"),PackageInternalNs(",!7"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("5!H"),StaticProtectedNs("5!H")])
+                           callproperty QName(PackageNamespace(""),"parseInt"), 1
+                           getlocal 7
+                           getproperty QName(PackageNamespace(""),"pivotX")
+                           subtract
+                           setproperty QName(PackageNamespace(""),"x")
+                  ofs0106:
+                           jump ofs00bd
+                  ofs010a:
+                           getlocal3
+                           getlocal 8
+                           pushbyte 0
+                           callproperty QName(PackageNamespace(""),"addChildAt"), 2
+                           pop
+                  ofs0113:
+                           jump ofs00f3
+                  ofs0117:
+                           hasnext2 10, 9
+                           iftrue ofs0053
+                           kill 10
+                           kill 9
+                           getlocal3
+                           returnvalue
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+            }
+         }

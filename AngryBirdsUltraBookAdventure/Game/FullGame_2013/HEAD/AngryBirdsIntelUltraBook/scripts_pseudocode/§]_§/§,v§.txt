@@ -1,0 +1,211 @@
+package §]_§
+{
+   public class §,v§
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var name:String;
+      
+      public var sid:String;
+      
+      public function §,v§(categoryName:String, categorySid:String)
+      {
+         method
+            name "com.angrybirds.avatarcreator.data:Category/Category"
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace(""),"String")
+            returns null
+            
+            body
+               maxstack 4
+               localcount 5
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal3
+                  jump ofs0013
+                  instanceof
+                  setlocal3
+                  add_i
+                  declocal_i 3
+                  coerce_a
+                  kill 2
+                  inclocal_i 2
+                  typeof
+                  pushfalse
+         ofs0013:
+                  setlocal 4
+                  debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\avatarcreator\\data;Category.as"
+                  getlocal3
+                  iffalse ofs001e
+                  debugline 8
+         ofs001e:
+                  getlocal0
+                  pushscope
+                  getlocal 4
+                  dup
+                  iffalse ofs002a
+                  pop
+                  getlocal0
+                  convert_b
+         ofs002a:
+                  iftrue ofs006c
+                  jump ofs00f3
+         ofs0032:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0039
+         ofs0039:
+                  label
+                  debugline 12
+                  getlocal3
+                  iffalse ofs0075
+                  getlocal 4
+                  dup
+                  iffalse ofs004b
+                  pop
+                  getlocal2
+                  convert_b
+         ofs004b:
+                  iftrue ofs00de
+                  getlocal3
+                  dup
+                  iftrue ofs0068
+                  pop
+                  jump ofs0066
+                  inclocal 2
+                  getlocal0
+                  declocal_i 2
+                  equals
+                  declocal_i 3
+                  getlocal0
+                  getlocal2
+                  setlocal2
+                  negate_i
+         ofs0066:
+                  getlocal3
+                  convert_b
+         ofs0068:
+                  iffalse ofs00ef
+         ofs006c:
+                  jump ofs0032
+         ofs0070:
+                  label
+                  getlocal0
+                  getlocal1
+                  initproperty QName(PackageNamespace(""),"name")
+         ofs0075:
+                  getlocal3
+                  iffalse ofs0081
+                  jump ofs0039
+         ofs007e:
+                  label
+                  debugline 11
+         ofs0081:
+                  getlocal 4
+                  dup
+                  iffalse ofs008b
+                  pop
+                  getlocal0
+                  convert_b
+         ofs008b:
+                  iftrue ofs00b4
+                  getlocal 4
+                  dup
+                  iffalse ofs0099
+                  pop
+                  getlocal3
+                  convert_b
+         ofs0099:
+                  iftrue ofs00f8
+                  jump ofs0070
+                  jump ofs00a5
+         ofs00a5:
+                  not
+                  greaterequals
+                  bitnot
+                  add_i
+                  dup
+                  kill 2
+                  setlocal3
+                  rshift
+                  setlocal3
+         ofs00af:
+                  label
+                  getlocal0
+                  getlocal2
+                  initproperty QName(PackageNamespace(""),"sid")
+         ofs00b4:
+                  getlocal3
+                  dup
+                  iftrue ofs00bd
+                  pop
+                  getlocal0
+                  convert_b
+         ofs00bd:
+                  iffalse ofs00c8
+                  jump ofs007e
+         ofs00c5:
+                  label
+                  debugline 10
+         ofs00c8:
+                  getlocal 4
+                  dup
+                  iffalse ofs00d2
+                  pop
+                  getlocal1
+                  convert_b
+         ofs00d2:
+                  iftrue ofs00e5
+                  jump ofs00af
+         ofs00da:
+                  label
+                  getlocal0
+                  constructsuper 0
+         ofs00de:
+                  jump ofs00c5
+         ofs00e2:
+                  label
+                  debugline 9
+         ofs00e5:
+                  jump ofs00da
+         ofs00e9:
+                  label
+                  debug 1, "categorySid", 1, 8
+         ofs00ef:
+                  jump ofs00e2
+         ofs00f3:
+                  debug 1, "categoryName", 0, 8
+         ofs00f8:
+                  jump ofs00e9
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}

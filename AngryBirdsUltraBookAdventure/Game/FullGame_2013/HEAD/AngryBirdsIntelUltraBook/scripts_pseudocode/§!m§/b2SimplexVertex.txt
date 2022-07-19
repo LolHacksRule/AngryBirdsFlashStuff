@@ -1,0 +1,233 @@
+package §!m§
+{
+   import §>!8§.b2Vec2;
+   
+   class b2SimplexVertex
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var § !E§:b2Vec2;
+      
+      public var §2!2§:b2Vec2;
+      
+      public var §^[§:b2Vec2;
+      
+      public var a:Number;
+      
+      public var indexA:int;
+      
+      public var indexB:int;
+      
+      function b2SimplexVertex()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  multiply
+                  convert_u
+                  popscope
+                  instanceof
+                  negate_i
+                  lshift
+                  pushfalse
+                  newactivation
+                  equals
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  iftrue ofs001c
+                  getlocal0
+                  constructsuper 0
+         ofs001c:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function Set(param1:b2SimplexVertex) : void
+      {
+         trait method QName(PackageNamespace(""),"Set")
+            dispid 0
+            method
+               name null
+               param QName(PackageInternalNs("!m"),"b2SimplexVertex")
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 4
+                  localcount 4
+                  initscopedepth 4
+                  maxscopedepth 5
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     swap
+                     jump ofs0013
+                     declocal_i 2
+                     divide
+                     increment_i
+                     inclocal_i 2
+                     add_i
+                     declocal_i 2
+                     hasnext
+                     coerce_s
+                     getlocal1
+            ofs0013:
+                     setlocal2
+                     setlocal3
+                     getlocal0
+                     pushscope
+                     getlocal3
+                     dup
+                     iftrue ofs0020
+                     pop
+                     getlocal0
+                     convert_b
+            ofs0020:
+                     iffalse ofs0096
+                     jump ofs00b8
+            ofs0028:
+                     label
+                     returnvoid
+                     pushtrue
+                     iftrue ofs002f
+            ofs002f:
+                     label
+                     getlocal0
+                     getlocal1
+                     getproperty QName(PackageNamespace(""),"indexB")
+                     initproperty QName(PackageNamespace(""),"indexB")
+                     getlocal2
+                     dup
+                     iffalse ofs004f
+                     pop
+                     getlocal0
+                     jump ofs004e
+                     declocal_i 2
+                     setlocal2
+                     inclocal 2
+                     getlocal2
+                     inclocal 2
+                     increment_i
+                     rshift
+                     coerce_s
+                     setlocal2
+            ofs004e:
+                     convert_b
+            ofs004f:
+                     iftrue ofs0086
+                     getlocal2
+                     iftrue ofs0096
+                     getlocal3
+                     dup
+                     iftrue ofs0061
+                     pop
+                     getlocal3
+                     convert_b
+            ofs0061:
+                     iffalse ofs00a5
+                     getlocal2
+                     iftrue ofs00c2
+                     jump ofs0028
+            ofs006e:
+                     label
+                     getlocal0
+                     getlocal1
+                     getproperty QName(PackageNamespace(""),"indexA")
+                     initproperty QName(PackageNamespace(""),"indexA")
+                     jump ofs0086
+                     inclocal 2
+                     negate
+                     convert_u
+                     inclocal_i 2
+                     getlocal2
+                     setlocal2
+                     setlocal2
+                     declocal 2
+                     declocal 2
+            ofs0086:
+                     getlocal3
+                     iffalse ofs00b4
+                     jump ofs002f
+            ofs008f:
+                     label
+                     getlocal0
+                     getlocal1
+                     getproperty QName(PackageNamespace(""),"a")
+                     initproperty QName(PackageNamespace(""),"a")
+            ofs0096:
+                     jump ofs006e
+            ofs009a:
+                     label
+                     getlocal0
+                     getproperty QName(PackageNamespace(""),"^[")
+                     getlocal1
+                     getproperty QName(PackageNamespace(""),"^[")
+                     callproperty QName(PackageNamespace(""),"SetV"), 1
+                     pop
+            ofs00a5:
+                     jump ofs008f
+            ofs00a9:
+                     label
+                     getlocal0
+                     getproperty QName(PackageNamespace(""),"2!2")
+                     getlocal1
+                     getproperty QName(PackageNamespace(""),"2!2")
+                     callproperty QName(PackageNamespace(""),"SetV"), 1
+                     pop
+            ofs00b4:
+                     jump ofs009a
+            ofs00b8:
+                     getlocal0
+                     getproperty QName(PackageNamespace("")," !E")
+                     getlocal1
+                     getproperty QName(PackageNamespace("")," !E")
+                     callproperty QName(PackageNamespace(""),"SetV"), 1
+                     pop
+            ofs00c2:
+                     jump ofs00a9
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+      }
+   }

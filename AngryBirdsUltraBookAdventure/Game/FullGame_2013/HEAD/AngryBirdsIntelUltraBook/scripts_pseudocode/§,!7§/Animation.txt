@@ -1,0 +1,437 @@
+package §,!7§
+{
+   public class Animation
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      private var §>^§:Vector.<§ H§>;
+      
+      public function Animation()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 5
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  greaterthan
+                  increment_i
+                  negate
+                  getlocal3
+                  coerce_a
+                  pushtrue
+                  istypelate
+                  istypelate
+                  swap
+         ofs0010:
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  dup
+                  jump ofs0022
+                  urshift
+                  pushtrue
+                  setlocal3
+                  getlocal2
+                  increment
+                  getlocal1
+                  hasnext
+                  add_i
+                  convert_s
+         ofs0022:
+                  iftrue ofs0029
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0029:
+                  iffalse ofs005c
+                  jump ofs0059
+         ofs0031:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0038
+         ofs0038:
+                  label
+                  getlocal0
+                  findpropstrict Multiname("Vector",[PrivateNamespace("]U"),PrivateNamespace("Animation.as$70"),PackageNamespace(""),PackageNamespace(",!7"),PackageInternalNs(",!7"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("]U"),StaticProtectedNs("]U"),PackageNamespace("__AS3__.vec")])
+                  getproperty Multiname("Vector",[PrivateNamespace("]U"),PrivateNamespace("Animation.as$70"),PackageNamespace(""),PackageNamespace(",!7"),PackageInternalNs(",!7"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("]U"),StaticProtectedNs("]U"),PackageNamespace("__AS3__.vec")])
+                  findpropstrict QName(PackageNamespace(",!7")," H")
+                  getproperty QName(PackageNamespace(",!7")," H")
+                  applytype 1
+                  construct 0
+                  initproperty QName(PrivateNamespace("]U"),">^")
+                  getlocal2
+                  dup
+                  iffalse ofs0051
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0051:
+                  iftrue ofs005c
+                  jump ofs0031
+         ofs0059:
+                  getlocal0
+                  constructsuper 0
+         ofs005c:
+                  jump ofs0038
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function addFrame(param1:§ H§) : void
+      {
+         trait method QName(PackageNamespace(""),"addFrame")
+            dispid 0
+            method
+               name null
+               param QName(PackageNamespace(",!7")," H")
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 4
+                  localcount 4
+                  initscopedepth 4
+                  maxscopedepth 5
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     setlocal2
+                     jump ofs0012
+                     inclocal_i 2
+                     getlocal2
+                     increment_i
+                     multiply
+                     getlocal2
+                     kill 2
+                     setlocal2
+                     instanceof
+                     typeof
+            ofs0012:
+                     setlocal3
+                     getlocal0
+                     pushscope
+                     getlocal2
+                     dup
+                     jump ofs0027
+                     astypelate
+                     pushfalse
+                     kill 2
+                     urshift
+                     instanceof
+                     astypelate
+                     inclocal_i 2
+                     inclocal 2
+                     getlocal2
+            ofs0027:
+                     iftrue ofs002e
+                     pop
+                     getlocal1
+                     convert_b
+            ofs002e:
+                     iffalse ofs004b
+                     jump ofs004f
+            ofs0036:
+                     label
+                     returnvoid
+                     pushtrue
+                     iftrue ofs003d
+            ofs003d:
+                     label
+                     getlocal0
+                     getproperty QName(PrivateNamespace("]U"),">^")
+                     getlocal1
+                     callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"push"), 1
+                     pop
+                     getlocal3
+                     iftrue ofs0062
+            ofs004b:
+                     jump ofs0036
+            ofs004f:
+                     getlocal1
+                     pushnull
+                     ifne ofs003d
+                     getlocal2
+                     iffalse ofs0062
+                     findpropstrict QName(PackageNamespace(""),"Error")
+                     pushstring "Trying to add a null frame"
+                     constructprop QName(PackageNamespace(""),"Error"), 1
+                     throw
+            ofs0062:
+                     jump ofs003d
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public function getFrame(param1:int) : § H§
+         {
+            trait method QName(PackageNamespace(""),"getFrame")
+               dispid 0
+               method
+                  name null
+                  param QName(PackageNamespace(""),"int")
+                  returns QName(PackageNamespace(",!7")," H")
+                  
+                  body
+                     maxstack 4
+                     localcount 4
+                     initscopedepth 4
+                     maxscopedepth 5
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        swap
+                        jump ofs0011
+                        getlocal2
+                        convert_b
+                        getlocal2
+                        inclocal 2
+                        typeof
+                        setlocal2
+                        lessequals
+                        negate
+                        lessthan
+               ofs0011:
+                        setlocal2
+                        setlocal3
+                        getlocal0
+                        pushscope
+                        getlocal3
+                        dup
+                        iftrue ofs001e
+                        pop
+                        getlocal3
+                        convert_b
+               ofs001e:
+                        iffalse ofs00d7
+                        jump ofs00cd
+               ofs0026:
+                        label
+                        getlocal0
+                        getproperty QName(PrivateNamespace("]U"),">^")
+                        getlocal1
+                        getproperty MultinameL([PrivateNamespace("]U"),PrivateNamespace("Animation.as$70"),PackageNamespace(""),PackageNamespace(",!7"),PackageInternalNs(",!7"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("]U"),StaticProtectedNs("]U")])
+                        returnvalue
+                        pushtrue
+                        iftrue ofs0033
+               ofs0033:
+                        label
+                        getlocal1
+                        getlocal3
+                        iffalse ofs0088
+                        getlocal0
+                        getproperty QName(PrivateNamespace("]U"),">^")
+                        getproperty QName(PackageNamespace(""),"length")
+                        greaterequals
+                        getlocal3
+                        iffalse ofs0046
+                        convert_b
+               ofs0046:
+                        getlocal3
+                        iffalse ofs00c8
+                        getlocal2
+                        iftrue ofs00bd
+               ofs0050:
+                        label
+                        iffalse ofs0026
+                        jump ofs0064
+                        decrement
+                        convert_i
+                        popscope
+                        inclocal_i 2
+                        convert_o
+                        getlocal2
+                        greaterequals
+                        declocal 2
+                        getlocal2
+               ofs0064:
+                        getlocal3
+                        iffalse ofs007d
+                        getlocal2
+                        dup
+                        iffalse ofs0072
+                        pop
+                        getlocal2
+                        convert_b
+               ofs0072:
+                        iftrue ofs00c9
+                        getlocal3
+                        iffalse ofs00e1
+                        pushnull
+                        returnvalue
+               ofs007d:
+                        getlocal3
+                        iffalse ofs00d7
+                        jump ofs0026
+               ofs0086:
+                        label
+                        getlocal1
+               ofs0088:
+                        getlocal2
+                        iftrue ofs00e0
+                        getlocal3
+                        dup
+                        iftrue ofs0096
+                        pop
+                        getlocal0
+                        convert_b
+               ofs0096:
+                        iffalse ofs00ce
+                        pushbyte 0
+                        jump ofs00ae
+                        decrement
+                        setlocal2
+                        convert_i
+                        kill 2
+                        inclocal 2
+                        subtract_i
+                        kill 2
+                        declocal_i 2
+                        inclocal_i 2
+               ofs00ae:
+                        lessthan
+                        getlocal2
+                        dup
+                        iffalse ofs00b8
+                        pop
+                        getlocal2
+                        convert_b
+               ofs00b8:
+                        iftrue ofs00bd
+                        convert_b
+               ofs00bd:
+                        dup
+                        getlocal3
+                        iffalse ofs00c4
+                        convert_b
+               ofs00c4:
+                        iftrue ofs0050
+               ofs00c8:
+                        pop
+               ofs00c9:
+                        jump ofs0033
+               ofs00cd:
+                        getlocal1
+               ofs00ce:
+                        getlocal0
+                        getproperty QName(PrivateNamespace("]U"),">^")
+                        getproperty QName(PackageNamespace(""),"length")
+                        ifnge ofs0086
+               ofs00d7:
+                        getlocal0
+                        getproperty QName(PrivateNamespace("]U"),">^")
+                        getproperty QName(PackageNamespace(""),"length")
+                        pushbyte 1
+                        subtract
+                        convert_i
+               ofs00e0:
+                        setlocal1
+               ofs00e1:
+                        jump ofs0086
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public function getFrameCount() : int
+            {
+               trait method QName(PackageNamespace(""),"getFrameCount")
+                  dispid 0
+                  method
+                     name null
+                     returns QName(PackageNamespace(""),"int")
+                     
+                     body
+                        maxstack 3
+                        localcount 1
+                        initscopedepth 4
+                        maxscopedepth 5
+                        
+                        code
+                           getlocal0
+                           pushscope
+                           getlocal0
+                           jump ofs0010
+                           dxnslate
+                           urshift
+                           urshift
+                           swap
+                           convert_u
+                           increment
+                           equals
+                           multiply
+                           pushnan
+                  ofs0010:
+                           getproperty QName(PrivateNamespace("]U"),">^")
+                           getproperty QName(PackageNamespace(""),"length")
+                           returnvalue
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public function getSubAnimation(param1:String) : Animation
+               {
+                  trait method QName(PackageNamespace(""),"getSubAnimation")
+                     dispid 0
+                     method
+                        name null
+                        param QName(PackageNamespace(""),"String")
+                        returns QName(PackageNamespace(",!7"),"Animation")
+                        
+                        body
+                           maxstack 3
+                           localcount 2
+                           initscopedepth 4
+                           maxscopedepth 5
+                           
+                           code
+                              getlocal0
+                              pushscope
+                              pushnull
+                              returnvalue
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+               }
+            }

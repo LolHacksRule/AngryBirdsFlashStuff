@@ -1,0 +1,58 @@
+package §'7§
+{
+   public function formatString(param1:String, ... rest) : String
+   {
+      trait method QName(PackageNamespace("\'7"),"formatString")
+         dispid 22
+         method
+            name null
+            flag NEED_REST
+            param QName(PackageNamespace(""),"String")
+            returns QName(PackageNamespace(""),"String")
+            
+            body
+               maxstack 4
+               localcount 4
+               initscopedepth 1
+               maxscopedepth 2
+               
+               code
+                  getlocal0
+                  pushscope
+                  pushbyte 0
+                  convert_i
+                  setlocal3
+                  jump ofs0027
+         ofs000a:
+                  label
+                  getlocal1
+                  findpropstrict QName(PackageNamespace(""),"RegExp")
+                  pushstring "\\{"
+                  getlocal3
+                  add
+                  pushstring "\\}"
+                  add
+                  pushstring "g"
+                  constructprop QName(PackageNamespace(""),"RegExp"), 2
+                  getlocal2
+                  getlocal3
+                  getproperty MultinameL([PackageNamespace(""),PrivateNamespace("formatString.as$1"),PackageNamespace("\'7"),PackageInternalNs("\'7"),Namespace("http://adobe.com/AS3/2006/builtin")])
+                  callproperty QName(Namespace("http://adobe.com/AS3/2006/builtin"),"replace"), 2
+                  coerce_s
+                  setlocal1
+                  getlocal3
+                  increment_i
+                  convert_i
+                  setlocal3
+         ofs0027:
+                  getlocal3
+                  getlocal2
+                  getproperty QName(PackageNamespace(""),"length")
+                  iflt ofs000a
+                  getlocal1
+                  returnvalue
+               end ; code
+            end ; body
+         end ; method
+      }
+   }

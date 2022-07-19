@@ -1,0 +1,335 @@
+package §#_§
+{
+   public class §3a§
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      private var §-!%§:String;
+      
+      private var §7!D§:String;
+      
+      public function §3a§(avatarString:String, userID:String)
+      {
+         method
+            name "com.angrybirds.friendsbar.data:AvatarVO/AvatarVO"
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace(""),"String")
+            returns null
+            
+            body
+               maxstack 4
+               localcount 5
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal3
+                  jump ofs0013
+                  inclocal 3
+                  bitnot
+                  declocal 3
+                  negate_i
+                  inclocal 2
+                  istypelate
+                  greaterthan
+                  modulo
+                  getlocal3
+         ofs0013:
+                  setlocal 4
+                  debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\data;AvatarVO.as"
+                  getlocal 4
+                  iftrue ofs001f
+                  debugline 9
+         ofs001f:
+                  getlocal0
+                  pushscope
+                  getlocal 4
+                  iftrue ofs00b7
+                  jump ofs00ea
+         ofs002b:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0032
+         ofs0032:
+                  label
+                  debugline 13
+                  getlocal3
+                  dup
+                  iftrue ofs003e
+                  pop
+                  getlocal1
+                  convert_b
+         ofs003e:
+                  iffalse ofs0085
+                  getlocal3
+                  dup
+                  iftrue ofs005c
+                  pop
+                  getlocal1
+                  convert_b
+                  jump ofs005c
+                  kill 3
+                  declocal_i 3
+                  bitnot
+                  declocal_i 3
+                  subtract
+                  inclocal_i 3
+                  setlocal3
+                  not
+                  subtract
+         ofs005c:
+                  iffalse ofs009f
+                  getlocal 4
+                  dup
+                  iffalse ofs006a
+                  pop
+                  getlocal0
+                  convert_b
+         ofs006a:
+                  iftrue ofs00cf
+                  getlocal 4
+                  dup
+                  iffalse ofs0078
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0078:
+                  iftrue ofs00d6
+                  jump ofs002b
+         ofs0080:
+                  label
+                  getlocal0
+                  getlocal2
+                  initproperty QName(PrivateNamespace("\'y"),"7!D")
+         ofs0085:
+                  jump ofs0032
+         ofs0089:
+                  label
+                  debugline 12
+                  jump ofs009f
+                  kill 3
+                  inclocal 3
+                  inclocal_i 2
+                  pushtrue
+                  inclocal_i 3
+                  kill 3
+                  lshift
+                  bitxor
+                  kill 2
+         ofs009f:
+                  getlocal3
+                  dup
+                  iftrue ofs00a8
+                  pop
+                  getlocal2
+                  convert_b
+         ofs00a8:
+                  iffalse ofs00c0
+                  getlocal3
+                  iffalse ofs00c7
+                  getlocal 4
+                  iftrue ofs00e6
+         ofs00b7:
+                  jump ofs0080
+         ofs00bb:
+                  label
+                  getlocal0
+                  getlocal1
+                  initproperty QName(PrivateNamespace("\'y"),"-!%")
+         ofs00c0:
+                  jump ofs0089
+         ofs00c4:
+                  label
+                  debugline 11
+         ofs00c7:
+                  jump ofs00bb
+         ofs00cb:
+                  label
+                  getlocal0
+                  constructsuper 0
+         ofs00cf:
+                  jump ofs00c4
+         ofs00d3:
+                  label
+                  debugline 10
+         ofs00d6:
+                  getlocal 4
+                  iftrue ofs00ef
+                  jump ofs00cb
+         ofs00e0:
+                  label
+                  debug 1, "userID", 1, 9
+         ofs00e6:
+                  jump ofs00d3
+         ofs00ea:
+                  debug 1, "avatarString", 0, 9
+         ofs00ef:
+                  jump ofs00e0
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function get avatarString() : String
+      {
+         trait getter QName(PackageNamespace(""),"avatarString")
+            flag METADATA
+            metadata"__go_to_definition_help"
+               item "pos" "295"
+            end ; metadata
+            dispid 0
+            method
+               name "com.angrybirds.friendsbar.data:AvatarVO/avatarString/get"
+               returns QName(PackageNamespace(""),"String")
+               
+               body
+                  maxstack 3
+                  localcount 3
+                  initscopedepth 4
+                  maxscopedepth 5
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     setlocal1
+                     jump ofs001d
+                     add
+                     convert_b
+                     modulo
+                     getlocal2
+                     multiply
+                     convert_u
+                     divide
+                     pushfalse
+                     astypelate
+                     jump ofs0014
+            ofs0014:
+                     bitor
+                     dxnslate
+                     convert_d
+                     bitxor
+                     convert_s
+                     setlocal2
+                     multiply
+                     pop
+                     equals
+            ofs001d:
+                     setlocal2
+                     debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\data;AvatarVO.as"
+                     getlocal2
+                     dup
+                     iffalse ofs0029
+                     pop
+                     getlocal2
+                     convert_b
+            ofs0029:
+                     iftrue ofs002f
+                     debugline 15
+            ofs002f:
+                     getlocal0
+                     pushscope
+                     getlocal2
+                     dup
+                     iffalse ofs003a
+                     pop
+                     getlocal1
+                     convert_b
+            ofs003a:
+                     iftrue ofs0040
+                     debugline 17
+            ofs0040:
+                     getlocal0
+                     getproperty QName(PrivateNamespace("\'y"),"-!%")
+                     returnvalue
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public function get id() : String
+         {
+            trait getter QName(PackageNamespace(""),"id")
+               flag METADATA
+               metadata"__go_to_definition_help"
+                  item "pos" "380"
+               end ; metadata
+               dispid 0
+               method
+                  name "com.angrybirds.friendsbar.data:AvatarVO/id/get"
+                  returns QName(PackageNamespace(""),"String")
+                  
+                  body
+                     maxstack 3
+                     localcount 3
+                     initscopedepth 4
+                     maxscopedepth 5
+                     
+                     code
+                        pushfalse
+                        pushtrue
+                        swap
+                        jump ofs0010
+                        rshift
+                        rshift
+                        instanceof
+                        pushnan
+                        greaterthan
+                        getglobalscope
+                        greaterequals
+                        newactivation
+                        bitxor
+               ofs0010:
+                        setlocal1
+                        setlocal2
+                        debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\friendsbar\\data;AvatarVO.as"
+                        getlocal2
+                        dup
+                        iftrue ofs001d
+                        pop
+                        getlocal2
+                        convert_b
+               ofs001d:
+                        iffalse ofs0023
+                        debugline 20
+               ofs0023:
+                        getlocal0
+                        pushscope
+                        getlocal2
+                        iffalse ofs002c
+                        debugline 22
+               ofs002c:
+                        getlocal0
+                        getproperty QName(PrivateNamespace("\'y"),"7!D")
+                        returnvalue
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+         }
+      }

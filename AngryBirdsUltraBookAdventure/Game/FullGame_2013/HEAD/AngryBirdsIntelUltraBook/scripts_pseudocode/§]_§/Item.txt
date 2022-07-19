@@ -1,0 +1,197 @@
+package §]_§
+{
+   public class Item
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var §7!D§:String = "";
+      
+      public var sId:String;
+      
+      public var mName:String = "";
+      
+      public var §[L§:String = "";
+      
+      public var §-o§:String = "";
+      
+      public function Item()
+      {
+         method
+            name "com.angrybirds.avatarcreator.data:Item/Item"
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  negate
+                  negate
+                  strictequals
+                  increment
+                  setlocal2
+                  pushundefined
+                  not
+                  istypelate
+                  negate
+         ofs0010:
+                  setlocal2
+                  debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\avatarcreator\\data;Item.as"
+                  getlocal1
+                  dup
+                  iftrue ofs0029
+                  pop
+                  getlocal2
+                  convert_b
+                  jump ofs0029
+                  convert_b
+                  newactivation
+                  negate
+                  pushnull
+                  convert_s
+                  astypelate
+                  nextname
+                  pushtrue
+                  instanceof
+         ofs0029:
+                  iffalse ofs003c
+                  debugline 35
+                  jump ofs003c
+                  convert_b
+                  getglobalscope
+                  increment_i
+                  bitnot
+                  convert_o
+                  convert_d
+                  pop
+                  equals
+                  increment_i
+         ofs003c:
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  dup
+                  iffalse ofs0047
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0047:
+                  iftrue ofs0079
+                  jump ofs0077
+         ofs004f:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0056
+         ofs0056:
+                  label
+                  debugline 37
+                  getlocal2
+                  iftrue ofs0073
+                  getlocal2
+                  dup
+                  iffalse ofs0067
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0067:
+                  iftrue ofs0079
+                  jump ofs004f
+         ofs006f:
+                  label
+                  getlocal0
+                  constructsuper 0
+         ofs0073:
+                  jump ofs0056
+         ofs0077:
+                  debugline 36
+         ofs0079:
+                  jump ofs006f
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function get category() : String
+      {
+         trait getter QName(PackageNamespace(""),"category")
+            flag METADATA
+            metadata"__go_to_definition_help"
+               item "pos" "487"
+            end ; metadata
+            dispid 0
+            method
+               name "com.angrybirds.avatarcreator.data:Item/category/get"
+               returns QName(PackageNamespace(""),"String")
+               
+               body
+                  maxstack 3
+                  localcount 3
+                  initscopedepth 4
+                  maxscopedepth 5
+                  
+                  code
+                     pushfalse
+                     pushtrue
+                     swap
+                     jump ofs0010
+                     increment_i
+                     multiply_i
+                     setlocal2
+                     convert_s
+                     pushnull
+                     getlocal1
+                     setlocal2
+                     setlocal2
+                     convert_s
+            ofs0010:
+                     setlocal1
+                     setlocal2
+                     debugfile "C:\\Program Files (x86)\\Jenkins\\workspace\\ULTRABOOK-FLASH-player-continuous\\AngryBirdsFacebookIntel\\src;com\\angrybirds\\avatarcreator\\data;Item.as"
+                     getlocal2
+                     iffalse ofs001b
+                     debugline 30
+            ofs001b:
+                     getlocal0
+                     pushscope
+                     getlocal2
+                     iffalse ofs0024
+                     debugline 32
+            ofs0024:
+                     getlocal0
+                     getproperty QName(PackageNamespace(""),"[L")
+                     returnvalue
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+      }
+   }

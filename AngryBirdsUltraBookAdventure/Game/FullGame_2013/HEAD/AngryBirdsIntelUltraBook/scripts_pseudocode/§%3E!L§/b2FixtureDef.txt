@@ -1,0 +1,286 @@
+package §>!L§
+{
+   import §0!3§.b2Shape;
+   
+   public class b2FixtureDef
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var shape:b2Shape;
+      
+      public var §+!f§;
+      
+      public var friction:Number;
+      
+      public var restitution:Number;
+      
+      public var density:Number;
+      
+      public var §[!i§:Boolean;
+      
+      public var filter:b2FilterData;
+      
+      public function b2FixtureDef()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  swap
+                  jump ofs0010
+                  subtract_i
+                  pushtrue
+                  getlocal1
+                  multiply_i
+                  checkfilter
+                  coerce_s
+                  greaterequals
+                  lessequals
+                  setlocal2
+         ofs0010:
+                  setlocal1
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  dup
+                  iffalse ofs001d
+                  pop
+                  getlocal0
+                  convert_b
+         ofs001d:
+                  iftrue ofs0058
+                  jump ofs0141
+         ofs0025:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs002c
+         ofs002c:
+                  label
+                  getlocal0
+                  pushfalse
+                  initproperty QName(PackageNamespace(""),"[!i")
+                  getlocal1
+                  dup
+                  iffalse ofs003a
+                  pop
+                  getlocal2
+                  convert_b
+         ofs003a:
+                  iftrue ofs0090
+                  getlocal1
+                  dup
+                  iffalse ofs0047
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0047:
+                  iftrue ofs00b8
+                  getlocal2
+                  dup
+                  iftrue ofs0054
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0054:
+                  iffalse ofs0135
+         ofs0058:
+                  jump ofs0025
+         ofs005c:
+                  label
+                  getlocal0
+                  getproperty QName(PackageNamespace(""),"filter")
+                  getlocal2
+                  dup
+                  iftrue ofs0069
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0069:
+                  iffalse ofs00af
+                  getlocal2
+                  dup
+                  iftrue ofs0076
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0076:
+                  iffalse ofs00cd
+                  pushbyte 0
+                  getlocal2
+                  iffalse ofs00b1
+                  jump ofs008e
+                  multiply
+                  equals
+                  lessthan
+                  decrement
+                  lshift
+                  astypelate
+                  convert_u
+                  convert_s
+                  convert_u
+         ofs008e:
+                  setproperty QName(PackageNamespace(""),"4U")
+         ofs0090:
+                  getlocal2
+                  iffalse ofs00d1
+                  getlocal2
+                  dup
+                  iftrue ofs009e
+                  pop
+                  getlocal1
+                  convert_b
+         ofs009e:
+                  iffalse ofs00e8
+                  getlocal1
+                  iftrue ofs011f
+                  jump ofs002c
+         ofs00ab:
+                  label
+                  getlocal0
+                  getproperty QName(PackageNamespace(""),"filter")
+         ofs00af:
+                  pushint 65535
+         ofs00b1:
+                  getlocal1
+                  iftrue ofs00cf
+                  setproperty QName(PackageNamespace(""),"\"!`")
+         ofs00b8:
+                  getlocal2
+                  dup
+                  iftrue ofs00c1
+                  pop
+                  getlocal1
+                  convert_b
+         ofs00c1:
+                  iffalse ofs013d
+                  jump ofs005c
+         ofs00c9:
+                  label
+                  getlocal0
+                  getproperty QName(PackageNamespace(""),"filter")
+         ofs00cd:
+                  pushbyte 1
+         ofs00cf:
+                  setproperty QName(PackageNamespace(""),"4!<")
+         ofs00d1:
+                  getlocal1
+                  dup
+                  iffalse ofs00da
+                  pop
+                  getlocal1
+                  convert_b
+         ofs00da:
+                  iftrue ofs00f2
+                  jump ofs00ab
+         ofs00e2:
+                  label
+                  getlocal0
+                  pushdouble 0.0
+                  initproperty QName(PackageNamespace(""),"density")
+         ofs00e8:
+                  jump ofs00c9
+         ofs00ec:
+                  label
+                  getlocal0
+                  pushdouble 0.0
+                  initproperty QName(PackageNamespace(""),"restitution")
+         ofs00f2:
+                  getlocal1
+                  dup
+                  iffalse ofs0108
+                  pop
+                  getlocal2
+                  convert_b
+                  jump ofs0108
+                  greaterthan
+                  dup
+                  pushnull
+                  nextname
+                  bitnot
+                  lessequals
+                  instanceof
+                  checkfilter
+                  getlocal3
+         ofs0108:
+                  iftrue ofs0116
+                  jump ofs00e2
+         ofs0110:
+                  label
+                  getlocal0
+                  pushdouble 0.2
+                  initproperty QName(PackageNamespace(""),"friction")
+         ofs0116:
+                  jump ofs00ec
+         ofs011a:
+                  label
+                  getlocal0
+                  pushnull
+                  initproperty QName(PackageNamespace(""),"+!f")
+         ofs011f:
+                  getlocal2
+                  dup
+                  iftrue ofs0128
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0128:
+                  iffalse ofs0149
+                  jump ofs0110
+         ofs0130:
+                  label
+                  getlocal0
+                  pushnull
+                  initproperty QName(PackageNamespace(""),"shape")
+         ofs0135:
+                  jump ofs011a
+         ofs0139:
+                  label
+                  getlocal0
+                  constructsuper 0
+         ofs013d:
+                  jump ofs0130
+         ofs0141:
+                  getlocal0
+                  findpropstrict QName(PackageNamespace(">!L"),"b2FilterData")
+                  constructprop QName(PackageNamespace(">!L"),"b2FilterData"), 0
+                  initproperty QName(PackageNamespace(""),"filter")
+         ofs0149:
+                  jump ofs0139
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}

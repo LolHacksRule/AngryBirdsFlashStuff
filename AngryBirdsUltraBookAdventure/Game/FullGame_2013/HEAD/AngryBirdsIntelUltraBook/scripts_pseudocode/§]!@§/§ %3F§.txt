@@ -1,0 +1,955 @@
+package §]!@§
+{
+   import §6!!§.LevelObject;
+   
+   public final class § ?§
+   {
+      
+      public static const MIGHTY_EAGLE_USE_SHADE:Boolean = true;
+      
+      public static const MIGHTY_EAGLE_FLYING_ANGLE:Number = -22.9;
+      
+      public static const MIGHTY_EAGLE_FLYING_SPEED:Number = 0.128;
+      
+      public static const MIGHTY_EAGLE_ROTATION_SPEED:Number = 8.0;
+      
+      public static const MIGHTY_EAGLE_WAIT_TIME:Number = 2400;
+      
+      public static const MIGHTY_EAGLE_SOUND_DELAY:Number = 1000;
+      
+      public static const MIGHTY_EAGLE_SHADING_DELAY:Number = 2900;
+      
+      public static const MIGHTY_EAGLE_STARTING_DISTANCE_X:Number = 140.0;
+      
+      public static const MIGHTY_EAGLE_STARTING_DISTANCE_Y:Number = 140.0;
+      
+      public static const MIGHTY_EAGLE_Y_CHANGE:Number;
+      
+      public static const MIGHTY_EAGLE_X_DIRECTION:Number = 1;
+      
+      public static const §#!S§:Number = 1500;
+      
+      public static const §'!-§:Number = 0.7;
+      
+      public static const §@!Q§:Number = 0.2;
+      
+      public static const §81§:Number = 8.8;
+      
+      public static const §-!a§:Number = 2400;
+      
+      public static const §]!N§:Number = 1;
+      
+      public static const §`!-§:Number = 0.15;
+      
+      public static const §8g§:Number = 4;
+      
+      public static const §^D§:Number = 60;
+      
+      public static const §-!-§:Number = 16;
+      
+      public static const §[C§:Number = 96.0;
+      
+      public static const SARDINE_CAN_INITIAL_ROTATION_SPEED:Number = 0.07;
+      
+      public static const SARDINE_CAN_ROTATION_ACCELERATION:Number = 2.0E-4;
+      
+      public static const SARDINE_CAN_MAX_ROTATION_SPEED:Number = 0.30800000000000005;
+      
+      public static const SARDINE_CAN_DELAY_AFTER_HIT:int = 3000;
+      
+      public static const §=M§:Number = 5;
+      
+      public static const §04§:int = 2;
+      
+      public static const §8A§:Number = 600;
+      
+      public static const §5!I§:Number = 1.3;
+      
+      public static const §<!G§:Number = 1.3;
+      
+      public static const § try§:Number = 1.3;
+      
+      public static const §"n§:Number = 1.3;
+      
+      public static const §9!=§:Number = 1.3;
+      
+      public static const §4!A§:Number = 1.3;
+      
+      public static const §?$§:Number = 1.5;
+      
+      public static const §0g§:int = 60;
+      
+      public static const §6@§:Number = 9;
+      
+      public static const §&5§:Number = 5;
+      
+      public static const §7r§:Number = 3000;
+      
+      public static const §;S§:Number = 60;
+      
+      public static const §-!Y§:Number = 6;
+      
+      public static const §"y§:Number = 3;
+      
+      public static const §[=§:Number = 0.03333333333333333;
+      
+      public static const §-§:int = 100;
+      
+      public static const §'M§:int = 3;
+      
+      public static const §]!c§:Number = 70;
+      
+      public static const §2=§:Number = 10;
+      
+      public static const §,T§:Number = 1000;
+      
+      public static const §^_§:Number = 1.3;
+      
+      public static const §[!3§:Number = 7.5;
+      
+      public static const §+!H§:Number = 300;
+      
+      public static const §@!M§:Number = 0.5;
+      
+      public static const §+>§:Number = 6;
+      
+      public static const §4,§:Number = 9;
+      
+      public static const § h§:Number = 0.15;
+      
+      public static const §&!-§:Number = 10;
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 6
+               localcount 3
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  typeof
+                  convert_b
+                  getlocal1
+                  bitnot
+                  convert_s
+                  convert_i
+                  bitor
+                  modulo
+                  bitor
+         ofs0010:
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  iftrue ofs0446
+                  jump ofs04eb
+         ofs001c:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0023
+         ofs0023:
+                  label
+                  findproperty QName(PackageNamespace(""),"&!-")
+                  pushbyte 10
+                  initproperty QName(PackageNamespace(""),"&!-")
+                  getlocal1
+                  dup
+                  iftrue ofs0033
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0033:
+                  iffalse ofs004c
+                  getlocal1
+                  iffalse ofs00ce
+                  getlocal2
+                  iftrue ofs02cc
+                  jump ofs001c
+         ofs0045:
+                  label
+                  findproperty QName(PackageNamespace("")," h")
+                  pushdouble 0.15
+                  initproperty QName(PackageNamespace("")," h")
+         ofs004c:
+                  getlocal1
+                  iffalse ofs0085
+                  getlocal2
+                  iftrue ofs01ab
+                  getlocal2
+                  dup
+                  iffalse ofs005f
+                  pop
+                  getlocal1
+                  convert_b
+         ofs005f:
+                  iftrue ofs0203
+                  getlocal1
+                  iffalse ofs02a4
+                  getlocal2
+                  dup
+                  iffalse ofs0071
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0071:
+                  iftrue ofs02ff
+                  getlocal2
+                  iftrue ofs03ca
+                  jump ofs0023
+         ofs007e:
+                  label
+                  findproperty QName(PackageNamespace(""),"4,")
+                  pushbyte 9
+                  initproperty QName(PackageNamespace(""),"4,")
+         ofs0085:
+                  getlocal1
+                  iffalse ofs00b9
+                  getlocal2
+                  dup
+                  iffalse ofs0093
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0093:
+                  iftrue ofs0176
+                  getlocal1
+                  iffalse ofs0193
+                  getlocal1
+                  dup
+                  iftrue ofs00a5
+                  pop
+                  getlocal1
+                  convert_b
+         ofs00a5:
+                  iffalse ofs01b6
+                  getlocal1
+                  iffalse ofs0434
+                  jump ofs0045
+         ofs00b2:
+                  label
+                  findproperty QName(PackageNamespace(""),"+>")
+                  pushbyte 6
+                  initproperty QName(PackageNamespace(""),"+>")
+         ofs00b9:
+                  getlocal2
+                  iftrue ofs00fc
+                  getlocal2
+                  iftrue ofs03ef
+                  jump ofs007e
+         ofs00c7:
+                  label
+                  findproperty QName(PackageNamespace(""),"@!M")
+                  pushdouble 0.5
+                  initproperty QName(PackageNamespace(""),"@!M")
+         ofs00ce:
+                  getlocal2
+                  dup
+                  iffalse ofs00d7
+                  pop
+                  getlocal2
+                  convert_b
+         ofs00d7:
+                  iftrue ofs00ec
+                  getlocal1
+                  iffalse ofs03fa
+                  jump ofs00b2
+         ofs00e4:
+                  label
+                  findproperty QName(PackageNamespace(""),"+!H")
+                  pushshort 300
+                  initproperty QName(PackageNamespace(""),"+!H")
+         ofs00ec:
+                  getlocal1
+                  iffalse ofs0114
+                  jump ofs00c7
+         ofs00f5:
+                  label
+                  findproperty QName(PackageNamespace(""),"[!3")
+                  pushdouble 7.5
+                  initproperty QName(PackageNamespace(""),"[!3")
+         ofs00fc:
+                  getlocal2
+                  dup
+                  iffalse ofs0105
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0105:
+                  iftrue ofs01de
+                  jump ofs00e4
+         ofs010d:
+                  label
+                  findproperty QName(PackageNamespace(""),"^_")
+                  pushdouble 1.3
+                  initproperty QName(PackageNamespace(""),"^_")
+         ofs0114:
+                  getlocal1
+                  dup
+                  iftrue ofs011d
+                  pop
+                  getlocal2
+                  convert_b
+         ofs011d:
+                  iffalse ofs0159
+                  getlocal1
+                  dup
+                  iftrue ofs012a
+                  pop
+                  getlocal2
+                  convert_b
+         ofs012a:
+                  iffalse ofs021a
+                  getlocal1
+                  dup
+                  iftrue ofs0137
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0137:
+                  iffalse ofs0257
+                  getlocal1
+                  dup
+                  iftrue ofs0144
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0144:
+                  iffalse ofs02e2
+                  getlocal2
+                  iftrue ofs04d1
+                  jump ofs00f5
+         ofs0151:
+                  label
+                  findproperty QName(PackageNamespace(""),",T")
+                  pushshort 1000
+                  initproperty QName(PackageNamespace(""),",T")
+         ofs0159:
+                  getlocal2
+                  iftrue ofs01ee
+                  getlocal1
+                  dup
+                  iftrue ofs0167
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0167:
+                  iffalse ofs027a
+                  jump ofs010d
+         ofs016f:
+                  label
+                  findproperty QName(PackageNamespace(""),"2=")
+                  pushbyte 10
+                  initproperty QName(PackageNamespace(""),"2=")
+         ofs0176:
+                  getlocal2
+                  dup
+                  iffalse ofs017f
+                  pop
+                  getlocal1
+                  convert_b
+         ofs017f:
+                  iftrue ofs0321
+                  getlocal2
+                  iftrue ofs03b4
+                  jump ofs0151
+         ofs018c:
+                  label
+                  findproperty QName(PackageNamespace(""),"]!c")
+                  pushbyte 70
+                  initproperty QName(PackageNamespace(""),"]!c")
+         ofs0193:
+                  getlocal1
+                  dup
+                  iftrue ofs019c
+                  pop
+                  getlocal2
+                  convert_b
+         ofs019c:
+                  iffalse ofs0374
+                  jump ofs016f
+         ofs01a4:
+                  label
+                  findproperty QName(PackageNamespace(""),"\'M")
+                  pushbyte 3
+                  initproperty QName(PackageNamespace(""),"\'M")
+         ofs01ab:
+                  jump ofs018c
+         ofs01af:
+                  label
+                  findproperty QName(PackageNamespace(""),"-")
+                  pushbyte 100
+                  initproperty QName(PackageNamespace(""),"-")
+         ofs01b6:
+                  getlocal1
+                  dup
+                  iftrue ofs01bf
+                  pop
+                  getlocal2
+                  convert_b
+         ofs01bf:
+                  iffalse ofs020e
+                  getlocal1
+                  dup
+                  iftrue ofs01cc
+                  pop
+                  getlocal2
+                  convert_b
+         ofs01cc:
+                  iffalse ofs030b
+                  jump ofs01a4
+         ofs01d4:
+                  label
+                  findproperty QName(PackageNamespace(""),"[=")
+                  pushbyte 1
+                  pushbyte 30
+                  divide
+                  initproperty QName(PackageNamespace(""),"[=")
+         ofs01de:
+                  getlocal1
+                  iffalse ofs023f
+                  jump ofs01af
+         ofs01e7:
+                  label
+                  findproperty QName(PackageNamespace(""),"\"y")
+                  pushbyte 3
+                  initproperty QName(PackageNamespace(""),"\"y")
+         ofs01ee:
+                  getlocal1
+                  iffalse ofs0262
+                  getlocal2
+                  iftrue ofs02d7
+                  jump ofs01d4
+         ofs01fc:
+                  label
+                  findproperty QName(PackageNamespace(""),"-!Y")
+                  pushbyte 6
+                  initproperty QName(PackageNamespace(""),"-!Y")
+         ofs0203:
+                  jump ofs01e7
+         ofs0207:
+                  label
+                  findproperty QName(PackageNamespace(""),";S")
+                  pushbyte 60
+                  initproperty QName(PackageNamespace(""),";S")
+         ofs020e:
+                  jump ofs01fc
+         ofs0212:
+                  label
+                  findproperty QName(PackageNamespace(""),"7r")
+                  pushshort 3000
+                  initproperty QName(PackageNamespace(""),"7r")
+         ofs021a:
+                  getlocal1
+                  dup
+                  iftrue ofs0223
+                  pop
+                  getlocal0
+                  convert_b
+         ofs0223:
+                  iffalse ofs039c
+                  getlocal1
+                  dup
+                  iftrue ofs0230
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0230:
+                  iffalse ofs04e7
+                  jump ofs0207
+         ofs0238:
+                  label
+                  findproperty QName(PackageNamespace(""),"&5")
+                  pushbyte 5
+                  initproperty QName(PackageNamespace(""),"&5")
+         ofs023f:
+                  jump ofs0212
+         ofs0243:
+                  label
+                  findproperty QName(PackageNamespace(""),"6@")
+                  jump ofs0253
+                  dup
+                  getglobalscope
+                  typeof
+                  urshift
+                  getlocal0
+                  lessequals
+                  instanceof
+                  getlocal2
+                  convert_i
+         ofs0253:
+                  pushbyte 9
+                  initproperty QName(PackageNamespace(""),"6@")
+         ofs0257:
+                  jump ofs0238
+         ofs025b:
+                  label
+                  findproperty QName(PackageNamespace(""),"0g")
+                  pushbyte 60
+                  initproperty QName(PackageNamespace(""),"0g")
+         ofs0262:
+                  getlocal2
+                  dup
+                  iffalse ofs026b
+                  pop
+                  getlocal1
+                  convert_b
+         ofs026b:
+                  iftrue ofs02c1
+                  jump ofs0243
+         ofs0273:
+                  label
+                  findproperty QName(PackageNamespace(""),"?$")
+                  pushdouble 1.5
+                  initproperty QName(PackageNamespace(""),"?$")
+         ofs027a:
+                  getlocal2
+                  dup
+                  iffalse ofs0283
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0283:
+                  iftrue ofs037f
+                  getlocal1
+                  iffalse ofs0484
+                  getlocal2
+                  dup
+                  iffalse ofs0295
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0295:
+                  iftrue ofs04dc
+                  jump ofs025b
+         ofs029d:
+                  label
+                  findproperty QName(PackageNamespace(""),"4!A")
+                  pushdouble 1.3
+                  initproperty QName(PackageNamespace(""),"4!A")
+         ofs02a4:
+                  getlocal1
+                  dup
+                  iftrue ofs02ad
+                  pop
+                  getlocal0
+                  convert_b
+         ofs02ad:
+                  iffalse ofs041e
+                  getlocal2
+                  iftrue ofs04f0
+                  jump ofs0273
+         ofs02ba:
+                  label
+                  findproperty QName(PackageNamespace(""),"9!=")
+                  pushdouble 1.3
+                  initproperty QName(PackageNamespace(""),"9!=")
+         ofs02c1:
+                  jump ofs029d
+         ofs02c5:
+                  label
+                  findproperty QName(PackageNamespace(""),"\"n")
+                  pushdouble 1.3
+                  initproperty QName(PackageNamespace(""),"\"n")
+         ofs02cc:
+                  jump ofs02ba
+         ofs02d0:
+                  label
+                  findproperty QName(PackageNamespace("")," try")
+                  pushdouble 1.3
+                  initproperty QName(PackageNamespace("")," try")
+         ofs02d7:
+                  jump ofs02c5
+         ofs02db:
+                  label
+                  findproperty QName(PackageNamespace(""),"<!G")
+                  pushdouble 1.3
+                  initproperty QName(PackageNamespace(""),"<!G")
+         ofs02e2:
+                  getlocal2
+                  dup
+                  iffalse ofs02eb
+                  pop
+                  getlocal0
+                  convert_b
+         ofs02eb:
+                  iftrue ofs0316
+                  getlocal2
+                  iftrue ofs0429
+                  jump ofs02d0
+         ofs02f8:
+                  label
+                  findproperty QName(PackageNamespace(""),"5!I")
+                  pushdouble 1.3
+                  initproperty QName(PackageNamespace(""),"5!I")
+         ofs02ff:
+                  jump ofs02db
+         ofs0303:
+                  label
+                  findproperty QName(PackageNamespace(""),"8A")
+                  pushshort 600
+                  initproperty QName(PackageNamespace(""),"8A")
+         ofs030b:
+                  jump ofs02f8
+         ofs030f:
+                  label
+                  findproperty QName(PackageNamespace(""),"04")
+                  pushbyte 2
+                  initproperty QName(PackageNamespace(""),"04")
+         ofs0316:
+                  jump ofs0303
+         ofs031a:
+                  label
+                  findproperty QName(PackageNamespace(""),"=M")
+                  pushbyte 5
+                  initproperty QName(PackageNamespace(""),"=M")
+         ofs0321:
+                  getlocal2
+                  dup
+                  iffalse ofs032a
+                  pop
+                  getlocal0
+                  convert_b
+         ofs032a:
+                  iftrue ofs0347
+                  getlocal2
+                  dup
+                  iffalse ofs0337
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0337:
+                  iftrue ofs04a9
+                  jump ofs030f
+         ofs033f:
+                  label
+                  findproperty QName(PackageNamespace(""),"SARDINE_CAN_DELAY_AFTER_HIT")
+                  pushshort 3000
+                  initproperty QName(PackageNamespace(""),"SARDINE_CAN_DELAY_AFTER_HIT")
+         ofs0347:
+                  getlocal2
+                  dup
+                  iffalse ofs0350
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0350:
+                  iftrue ofs0369
+                  jump ofs031a
+         ofs0358:
+                  label
+                  findproperty QName(PackageNamespace(""),"SARDINE_CAN_MAX_ROTATION_SPEED")
+                  findpropstrict QName(PackageNamespace(""),"SARDINE_CAN_INITIAL_ROTATION_SPEED")
+                  getproperty QName(PackageNamespace(""),"SARDINE_CAN_INITIAL_ROTATION_SPEED")
+                  getlocal2
+                  iftrue ofs0367
+                  pushdouble 4.4
+                  multiply
+         ofs0367:
+                  initproperty QName(PackageNamespace(""),"SARDINE_CAN_MAX_ROTATION_SPEED")
+         ofs0369:
+                  jump ofs033f
+         ofs036d:
+                  label
+                  findproperty QName(PackageNamespace(""),"SARDINE_CAN_ROTATION_ACCELERATION")
+                  pushdouble 2.0E-4
+                  initproperty QName(PackageNamespace(""),"SARDINE_CAN_ROTATION_ACCELERATION")
+         ofs0374:
+                  jump ofs0358
+         ofs0378:
+                  label
+                  findproperty QName(PackageNamespace(""),"SARDINE_CAN_INITIAL_ROTATION_SPEED")
+                  pushdouble 0.07
+                  initproperty QName(PackageNamespace(""),"SARDINE_CAN_INITIAL_ROTATION_SPEED")
+         ofs037f:
+                  getlocal2
+                  dup
+                  iffalse ofs0388
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0388:
+                  iftrue ofs03bf
+                  jump ofs036d
+         ofs0390:
+                  label
+                  findproperty QName(PackageNamespace(""),"[C")
+                  pushbyte 6
+                  findpropstrict QName(PackageNamespace(""),"-!-")
+                  getproperty QName(PackageNamespace(""),"-!-")
+                  multiply
+                  initproperty QName(PackageNamespace(""),"[C")
+         ofs039c:
+                  getlocal2
+                  dup
+                  iffalse ofs03a5
+                  pop
+                  getlocal0
+                  convert_b
+         ofs03a5:
+                  iftrue ofs0490
+                  jump ofs0378
+         ofs03ad:
+                  label
+                  findproperty QName(PackageNamespace(""),"-!-")
+                  pushbyte 16
+                  initproperty QName(PackageNamespace(""),"-!-")
+         ofs03b4:
+                  jump ofs0390
+         ofs03b8:
+                  label
+                  findproperty QName(PackageNamespace(""),"^D")
+                  pushbyte 60
+                  initproperty QName(PackageNamespace(""),"^D")
+         ofs03bf:
+                  jump ofs03ad
+         ofs03c3:
+                  label
+                  findproperty QName(PackageNamespace(""),"8g")
+                  pushbyte 4
+                  initproperty QName(PackageNamespace(""),"8g")
+         ofs03ca:
+                  getlocal2
+                  dup
+                  iffalse ofs03d3
+                  pop
+                  getlocal2
+                  convert_b
+         ofs03d3:
+                  iftrue ofs0406
+                  getlocal2
+                  dup
+                  iffalse ofs03e0
+                  pop
+                  getlocal1
+                  convert_b
+         ofs03e0:
+                  iftrue ofs0478
+                  jump ofs03b8
+         ofs03e8:
+                  label
+                  findproperty QName(PackageNamespace(""),"`!-")
+                  pushdouble 0.15
+                  initproperty QName(PackageNamespace(""),"`!-")
+         ofs03ef:
+                  jump ofs03c3
+         ofs03f3:
+                  label
+                  findproperty QName(PackageNamespace(""),"]!N")
+                  pushbyte 1
+                  initproperty QName(PackageNamespace(""),"]!N")
+         ofs03fa:
+                  jump ofs03e8
+         ofs03fe:
+                  label
+                  findproperty QName(PackageNamespace(""),"-!a")
+                  pushshort 2400
+                  initproperty QName(PackageNamespace(""),"-!a")
+         ofs0406:
+                  getlocal2
+                  dup
+                  iffalse ofs040f
+                  pop
+                  getlocal2
+                  convert_b
+         ofs040f:
+                  iftrue ofs04c6
+                  jump ofs03f3
+         ofs0417:
+                  label
+                  findproperty QName(PackageNamespace(""),"81")
+                  pushdouble 8.8
+                  initproperty QName(PackageNamespace(""),"81")
+         ofs041e:
+                  jump ofs03fe
+         ofs0422:
+                  label
+                  findproperty QName(PackageNamespace(""),"@!Q")
+                  pushdouble 0.2
+                  initproperty QName(PackageNamespace(""),"@!Q")
+         ofs0429:
+                  jump ofs0417
+         ofs042d:
+                  label
+                  findproperty QName(PackageNamespace(""),"\'!-")
+                  pushdouble 0.7
+                  initproperty QName(PackageNamespace(""),"\'!-")
+         ofs0434:
+                  getlocal1
+                  iffalse ofs0452
+                  getlocal1
+                  dup
+                  iftrue ofs0442
+                  pop
+                  getlocal1
+                  convert_b
+         ofs0442:
+                  iffalse ofs045d
+         ofs0446:
+                  jump ofs0422
+         ofs044a:
+                  label
+                  findproperty QName(PackageNamespace(""),"#!S")
+                  pushshort 1500
+                  initproperty QName(PackageNamespace(""),"#!S")
+         ofs0452:
+                  jump ofs042d
+         ofs0456:
+                  label
+                  findproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_X_DIRECTION")
+                  pushbyte 1
+                  initproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_X_DIRECTION")
+         ofs045d:
+                  jump ofs044a
+         ofs0461:
+                  label
+                  findproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_Y_CHANGE")
+                  findpropstrict QName(PackageNamespace(""),"Math")
+                  getproperty QName(PackageNamespace(""),"Math")
+                  findpropstrict QName(PackageNamespace("6!!"),"LevelObject")
+                  getproperty QName(PackageNamespace("6!!"),"LevelObject")
+                  findpropstrict QName(PackageNamespace(""),"MIGHTY_EAGLE_FLYING_ANGLE")
+                  getproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_FLYING_ANGLE")
+                  callproperty QName(PackageNamespace(""),"`!;"), 1
+                  callproperty QName(PackageNamespace(""),"sin"), 1
+                  initproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_Y_CHANGE")
+         ofs0478:
+                  jump ofs0456
+         ofs047c:
+                  label
+                  findproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_STARTING_DISTANCE_Y")
+                  pushshort 140
+                  initproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_STARTING_DISTANCE_Y")
+         ofs0484:
+                  jump ofs0461
+         ofs0488:
+                  label
+                  findproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_STARTING_DISTANCE_X")
+                  pushshort 140
+                  initproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_STARTING_DISTANCE_X")
+         ofs0490:
+                  jump ofs047c
+         ofs0494:
+                  label
+                  findproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_SHADING_DELAY")
+                  jump ofs04a4
+                  multiply_i
+                  modulo
+                  coerce_a
+                  not
+                  instanceof
+                  bitnot
+                  decrement_i
+                  subtract
+                  bitor
+         ofs04a4:
+                  pushshort 2900
+                  initproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_SHADING_DELAY")
+         ofs04a9:
+                  getlocal1
+                  iffalse ofs04ba
+                  jump ofs0488
+         ofs04b2:
+                  label
+                  findproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_SOUND_DELAY")
+                  pushshort 1000
+                  initproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_SOUND_DELAY")
+         ofs04ba:
+                  jump ofs0494
+         ofs04be:
+                  label
+                  findproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_WAIT_TIME")
+                  pushshort 2400
+                  initproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_WAIT_TIME")
+         ofs04c6:
+                  jump ofs04b2
+         ofs04ca:
+                  label
+                  findproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_ROTATION_SPEED")
+                  pushbyte 8
+                  initproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_ROTATION_SPEED")
+         ofs04d1:
+                  jump ofs04be
+         ofs04d5:
+                  label
+                  findproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_FLYING_SPEED")
+                  pushdouble 0.128
+                  initproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_FLYING_SPEED")
+         ofs04dc:
+                  jump ofs04ca
+         ofs04e0:
+                  label
+                  findproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_FLYING_ANGLE")
+                  pushdouble -22.9
+                  initproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_FLYING_ANGLE")
+         ofs04e7:
+                  jump ofs04d5
+         ofs04eb:
+                  findproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_USE_SHADE")
+                  pushtrue
+                  initproperty QName(PackageNamespace(""),"MIGHTY_EAGLE_USE_SHADE")
+         ofs04f0:
+                  jump ofs04e0
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function § ?§()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  decrement
+                  negate
+                  instanceof
+                  popscope
+                  strictequals
+                  multiply
+                  equals
+                  convert_s
+                  getglobalscope
+         ofs0010:
+                  setlocal2
+                  getlocal0
+                  pushscope
+                  getlocal1
+                  dup
+                  iftrue ofs001c
+                  pop
+                  getlocal1
+                  convert_b
+         ofs001c:
+                  iffalse ofs0023
+                  getlocal0
+                  constructsuper 0
+         ofs0023:
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}

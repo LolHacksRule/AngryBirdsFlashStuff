@@ -1,0 +1,108 @@
+package §!m§
+{
+   import §>!8§.b2Vec2;
+   
+   public class b2RayCastOutput
+   {
+      
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 3
+               maxscopedepth 4
+               
+               code
+                  getlocal0
+                  pushscope
+                  returnvoid
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public var normal:b2Vec2;
+      
+      public var fraction:Number;
+      
+      public function b2RayCastOutput()
+      {
+         method
+            name null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  pushfalse
+                  pushtrue
+                  setlocal1
+                  jump ofs0010
+                  astypelate
+                  istypelate
+                  convert_b
+                  increment_i
+                  lshift
+                  typeof
+                  rshift
+                  pushnan
+                  decrement_i
+         ofs0010:
+                  setlocal2
+                  jump ofs001e
+                  greaterequals
+                  checkfilter
+                  add
+                  increment_i
+                  increment_i
+                  modulo
+                  popscope
+                  getglobalscope
+                  equals
+         ofs001e:
+                  getlocal0
+                  pushscope
+                  getlocal2
+                  dup
+                  iffalse ofs0029
+                  pop
+                  getlocal2
+                  convert_b
+         ofs0029:
+                  iftrue ofs004d
+                  jump ofs0045
+         ofs0031:
+                  label
+                  returnvoid
+                  pushtrue
+                  iftrue ofs0038
+         ofs0038:
+                  label
+                  getlocal0
+                  constructsuper 0
+                  getlocal2
+                  iftrue ofs004d
+                  jump ofs0031
+         ofs0045:
+                  getlocal0
+                  findpropstrict QName(PackageNamespace(">!8"),"b2Vec2")
+                  constructprop QName(PackageNamespace(">!8"),"b2Vec2"), 0
+                  initproperty QName(PackageNamespace(""),"normal")
+         ofs004d:
+                  jump ofs0038
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}
