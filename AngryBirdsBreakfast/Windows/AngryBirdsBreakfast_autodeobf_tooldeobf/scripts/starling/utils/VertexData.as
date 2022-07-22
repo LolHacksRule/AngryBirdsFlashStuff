@@ -306,7 +306,7 @@ package starling.utils
          param2.y = this.mVertexTextureData.readFloat();
       }
       
-      public function include(param1:int, param2:Number, param3:Number, param4:Number = 0.0) : void
+      public function translateVertex(param1:int, param2:Number, param3:Number, param4:Number = 0.0) : void
       {
          var _loc5_:int = param1 * ELEMENTS_PER_POSITION_VERTEX;
          var _loc6_:*;

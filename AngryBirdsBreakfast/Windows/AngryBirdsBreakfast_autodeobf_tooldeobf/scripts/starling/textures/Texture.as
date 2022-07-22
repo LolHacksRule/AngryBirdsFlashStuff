@@ -173,10 +173,10 @@ package starling.textures
             }
             _loc4_ = this.mFrame.width + this.mFrame.x - this.width;
             _loc5_ = this.mFrame.height + this.mFrame.y - this.height;
-            param1.include(param2,-this.mFrame.x,-this.mFrame.y);
-            param1.include(param2 + 1,-_loc4_,-this.mFrame.y);
-            param1.include(param2 + 2,-this.mFrame.x,-_loc5_);
-            param1.include(param2 + 3,-_loc4_,-_loc5_);
+            param1.translateVertex(param2,-this.mFrame.x,-this.mFrame.y);
+            param1.translateVertex(param2 + 1,-_loc4_,-this.mFrame.y);
+            param1.translateVertex(param2 + 2,-this.mFrame.x,-_loc5_);
+            param1.translateVertex(param2 + 3,-_loc4_,-_loc5_);
          }
       }
       
