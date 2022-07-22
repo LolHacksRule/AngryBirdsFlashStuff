@@ -116,7 +116,7 @@ package com.rovio.Box2D.Dynamics.Joints
             case b2internal::e_lineJoint:
                _loc3_ = new b2LineJoint(param1 as b2LineJointDef);
                break;
-            case b2internal::e_weldJoint::
+            case b2internal::e_weldJoint:
                _loc3_ = new b2WeldJoint(param1 as b2WeldJointDef);
                break;
             case b2internal::e_frictionJoint:
